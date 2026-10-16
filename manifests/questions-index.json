@@ -1,0 +1,97 @@
+{
+  "version": 1,
+  "generatedAt": "2026-10-16T19:21:02.130Z",
+  "totalQuestions": 10,
+  "questions": [
+    {
+      "id": "1",
+      "slug": "two-sum",
+      "title": "Two Sum",
+      "category": "dsa",
+      "subcategory": "hashing",
+      "difficulty": "Easy",
+      "path": "questions/dsa/hashing/two-sum.json"
+    },
+    {
+      "id": "2",
+      "slug": "add-two-numbers",
+      "title": "Add Two Numbers",
+      "category": "dsa",
+      "subcategory": "recursion-backtracking",
+      "difficulty": "Medium",
+      "path": "questions/dsa/recursion-backtracking/add-two-numbers.json"
+    },
+    {
+      "id": "3",
+      "slug": "longest-substring-without-repeating-characters",
+      "title": "Longest Substring Without Repeating Characters",
+      "category": "dsa",
+      "subcategory": "sliding-window",
+      "difficulty": "Medium",
+      "path": "questions/dsa/sliding-window/longest-substring-without-repeating-characters.json"
+    },
+    {
+      "id": "4",
+      "slug": "median-of-two-sorted-arrays",
+      "title": "Median of Two Sorted Arrays",
+      "category": "dsa",
+      "subcategory": "divide-and-conquer",
+      "difficulty": "Hard",
+      "path": "questions/dsa/divide-and-conquer/median-of-two-sorted-arrays.json"
+    },
+    {
+      "id": "5",
+      "slug": "longest-palindromic-substring",
+      "title": "Longest Palindromic Substring",
+      "category": "dsa",
+      "subcategory": "dynamic-programming",
+      "difficulty": "Medium",
+      "path": "questions/dsa/dynamic-programming/longest-palindromic-substring.json"
+    },
+    {
+      "id": "175",
+      "slug": "combine-two-tables",
+      "title": "Combine Two Tables",
+      "category": "database",
+      "subcategory": "joins",
+      "difficulty": "Easy",
+      "path": "questions/database/joins/combine-two-tables.json"
+    },
+    {
+      "id": "176",
+      "slug": "second-highest-salary",
+      "title": "Second Highest Salary",
+      "category": "database",
+      "subcategory": "aggregation",
+      "difficulty": "Medium",
+      "path": "questions/database/aggregation/second-highest-salary.json"
+    },
+    {
+      "id": "177",
+      "slug": "nth-highest-salary",
+      "title": "Nth Highest Salary",
+      "category": "database",
+      "subcategory": "aggregation",
+      "difficulty": "Medium",
+      "path": "questions/database/aggregation/nth-highest-salary.json"
+    },
+    {
+      "id": "178",
+      "slug": "rank-scores",
+      "title": "Rank Scores",
+      "category": "database",
+      "subcategory": "window-functions",
+      "difficulty": "Medium",
+      "path": "questions/database/window-functions/rank-scores.json"
+    },
+    {
+      "id": "180",
+      "slug": "consecutive-numbers",
+      "title": "Consecutive Numbers",
+      "category": "database",
+      "subcategory": "select-filtering",
+      "difficulty": "Medium",
+      "path": "questions/database/select-filtering/consecutive-numbers.json"
+    }
+  ]
+}

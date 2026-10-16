@@ -1,0 +1,161 @@
+{
+  "discovered": [],
+  "pending": [],
+  "completed": [],
+  "failed": [],
+  "lastUpdated": "2026-10-16T19:17:44.653Z",
+  "questions": [
+    {
+      "titleSlug": "two-sum",
+      "frontendQuestionId": "1",
+      "title": "Two Sum",
+      "difficulty": "Easy",
+      "paidOnly": false,
+      "categoryTitle": "Algorithms",
+      "topicTags": [
+        "Array",
+        "Hash Table"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.866Z",
+      "collectedAt": "2026-10-16T19:17:27.473Z"
+    },
+    {
+      "titleSlug": "add-two-numbers",
+      "frontendQuestionId": "2",
+      "title": "Add Two Numbers",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Algorithms",
+      "topicTags": [
+        "Linked List",
+        "Math",
+        "Recursion"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:29.276Z"
+    },
+    {
+      "titleSlug": "longest-substring-without-repeating-characters",
+      "frontendQuestionId": "3",
+      "title": "Longest Substring Without Repeating Characters",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Algorithms",
+      "topicTags": [
+        "Hash Table",
+        "String",
+        "Sliding Window"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:31.360Z"
+    },
+    {
+      "titleSlug": "median-of-two-sorted-arrays",
+      "frontendQuestionId": "4",
+      "title": "Median of Two Sorted Arrays",
+      "difficulty": "Hard",
+      "paidOnly": false,
+      "categoryTitle": "Algorithms",
+      "topicTags": [
+        "Array",
+        "Binary Search",
+        "Divide and Conquer"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:33.174Z"
+    },
+    {
+      "titleSlug": "longest-palindromic-substring",
+      "frontendQuestionId": "5",
+      "title": "Longest Palindromic Substring",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Algorithms",
+      "topicTags": [
+        "Two Pointers",
+        "String",
+        "Dynamic Programming",
+        "Manacher"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:35.018Z"
+    },
+    {
+      "titleSlug": "combine-two-tables",
+      "frontendQuestionId": "175",
+      "title": "Combine Two Tables",
+      "difficulty": "Easy",
+      "paidOnly": false,
+      "categoryTitle": "Database",
+      "topicTags": [
+        "Database"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:36.823Z"
+    },
+    {
+      "titleSlug": "second-highest-salary",
+      "frontendQuestionId": "176",
+      "title": "Second Highest Salary",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Database",
+      "topicTags": [
+        "Database"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:38.632Z"
+    },
+    {
+      "titleSlug": "nth-highest-salary",
+      "frontendQuestionId": "177",
+      "title": "Nth Highest Salary",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Database",
+      "topicTags": [
+        "Database"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:40.832Z"
+    },
+    {
+      "titleSlug": "rank-scores",
+      "frontendQuestionId": "178",
+      "title": "Rank Scores",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Database",
+      "topicTags": [
+        "Database"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:42.660Z"
+    },
+    {
+      "titleSlug": "consecutive-numbers",
+      "frontendQuestionId": "180",
+      "title": "Consecutive Numbers",
+      "difficulty": "Medium",
+      "paidOnly": false,
+      "categoryTitle": "Database",
+      "topicTags": [
+        "Database"
+      ],
+      "status": "completed",
+      "discoveredAt": "2026-10-16T19:17:15.868Z",
+      "collectedAt": "2026-10-16T19:17:44.652Z"
+    }
+  ],
+  "lastDiscoveryRun": "2026-10-16T19:17:15.868Z",
+  "totalDiscovered": 10
+}
