@@ -1,14 +1,14 @@
 # LeetCode Question Bank — Collection Report
 
-> Generated at **2026-10-16T19:21:02.134Z**
+> Generated at **2026-10-16T19:48:08.748Z**
 
 ## Overview
 
 | Metric             | Value |
 | ------------------ | ----- |
 | Total Collected    | 10 |
-| Total Discovered   | 10 |
-| Completion Rate    | 100.0% |
+| Total Discovered   | 4082 |
+| Completion Rate    | 0.2% |
 
 ## By Difficulty
 

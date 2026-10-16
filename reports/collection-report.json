@@ -1,9 +1,9 @@
 {
-  "generatedAt": "2026-10-16T19:21:02.134Z",
+  "generatedAt": "2026-10-16T19:48:08.748Z",
   "summary": {
     "totalCollected": 10,
-    "totalDiscovered": 10,
-    "completionRate": "100.0%",
+    "totalDiscovered": 4082,
+    "completionRate": "0.2%",
     "byDifficulty": {
       "Easy": 2,
       "Medium": 7,
