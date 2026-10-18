@@ -1,20 +1,20 @@
 # LeetCode Question Bank — Collection Report
 
-> Generated at **2026-10-16T19:48:08.748Z**
+> Generated at **2026-10-18T18:13:39.867Z**
 
 ## Overview
 
 | Metric             | Value |
 | ------------------ | ----- |
-| Total Collected    | 10 |
+| Total Collected    | 12 |
 | Total Discovered   | 4082 |
-| Completion Rate    | 0.2% |
+| Completion Rate    | 0.3% |
 
 ## By Difficulty
 
 | Difficulty | Count |
 | ---------- | ----- |
-| Easy | 2 |
+| Easy | 4 |
 | Medium | 7 |
 | Hard | 1 |
 
@@ -22,7 +22,7 @@
 
 | Category | Count |
 | -------- | ----- |
-| dsa | 5 |
+| dsa | 7 |
 | database | 5 |
 
 ## By Subcategory
@@ -30,7 +30,7 @@
 | Subcategory | Count |
 | ----------- | ----- |
 | dsa/hashing | 1 |
-| dsa/recursion-backtracking | 1 |
+| dsa/recursion-backtracking | 2 |
 | dsa/sliding-window | 1 |
 | dsa/divide-and-conquer | 1 |
 | dsa/dynamic-programming | 1 |
@@ -38,12 +38,13 @@
 | database/aggregation | 2 |
 | database/window-functions | 1 |
 | database/select-filtering | 1 |
+| dsa/graphs | 1 |
 
 ## Validation
 
 | Status  | Count |
 | ------- | ----- |
-| Valid   | 10 |
+| Valid   | 12 |
 | Invalid | 0 |
 
 ---

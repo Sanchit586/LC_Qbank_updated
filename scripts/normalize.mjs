@@ -22,7 +22,8 @@
  */
 
 import { readFile, readdir, writeFile, access } from 'node:fs/promises';
-import { join, basename } from 'node:path';
+import { existsSync, writeFileSync } from 'node:fs';
+import { join, basename, extname } from 'node:path';
 import TurndownService from 'turndown';
 import {
   PROJECT_ROOT,
@@ -31,6 +32,7 @@ import {
   resolveCategory,
   getQuestionFilePath,
 } from './utils.mjs';
+import { generateTestCases } from './test-engine.mjs';
 
 // ---------------------------------------------------------------------------
 // Constants
@@ -124,20 +126,16 @@ function parseArgs() {
 function extractConstraints(html) {
   if (!html) return [];
 
-  // Match constraints section: look for "Constraints:" followed by a <ul>
-  const constraintsRegex =
-    /(?:<strong>|<b>|<p><strong>)\s*Constraints:\s*(?:<\/strong>|<\/b>|<\/p>)\s*<ul>([\s\S]*?)<\/ul>/i;
-  const match = html.match(constraintsRegex);
+  // Match "Constraints:" followed by <ul>...</ul>
+  const constraintsMatch = html.match(/Constraints:[\s\S]*?<ul>([\s\S]*?)<\/ul>/i);
+  if (!constraintsMatch) return [];
 
-  if (!match) return [];
-
-  const listHtml = match[1];
+  const listHtml = constraintsMatch[1];
   const items = [];
   const liRegex = /<li>([\s\S]*?)<\/li>/gi;
   let m;
 
   while ((m = liRegex.exec(listHtml)) !== null) {
-    // Strip inner HTML tags for a clean text constraint
     const text = m[1]
       .replace(/<[^>]+>/g, '')
       .replace(/&lt;/g, '<')
@@ -165,18 +163,16 @@ function extractExamples(html) {
 
   const examples = [];
 
-  // Split by "Example N:" markers
-  const exampleBlocks =
-    html.split(/(?:<strong>|<b>|<p><strong>)\s*Example\s+\d+:\s*(?:<\/strong>|<\/b>|<\/p>)/i);
+  // Split by "Example N:" with any HTML wrapping tags like <strong class="example">Example 1:</strong>
+  const exampleBlocks = html.split(/<[^>]*>\s*Example\s+\d+:\s*<\/[^>]*>/i);
 
-  // First element is content before examples – skip it
   for (let i = 1; i < exampleBlocks.length; i++) {
     const block = exampleBlocks[i];
     const example = { input: '', output: '', explanation: null };
 
     // Extract Input
     const inputMatch = block.match(
-      /(?:<strong>|<b>)\s*Input:\s*(?:<\/strong>|<\/b>)\s*([\s\S]*?)(?=(?:<strong>|<b>)\s*Output:|$)/i
+      /(?:<strong>|<b>)?\s*Input:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Output:|$)/i
     );
     if (inputMatch) {
       example.input = inputMatch[1].replace(/<[^>]+>/g, '').trim();
@@ -184,7 +180,7 @@ function extractExamples(html) {
 
     // Extract Output
     const outputMatch = block.match(
-      /(?:<strong>|<b>)\s*Output:\s*(?:<\/strong>|<\/b>)\s*([\s\S]*?)(?=(?:<strong>|<b>)\s*Explanation:|<\/pre>|$)/i
+      /(?:<strong>|<b>)?\s*Output:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Explanation:|<\/pre>|<p>|$)/i
     );
     if (outputMatch) {
       example.output = outputMatch[1].replace(/<[^>]+>/g, '').trim();
@@ -192,13 +188,12 @@ function extractExamples(html) {
 
     // Extract Explanation (optional)
     const explainMatch = block.match(
-      /(?:<strong>|<b>)\s*Explanation:\s*(?:<\/strong>|<\/b>)\s*([\s\S]*?)(?=<\/pre>|$)/i
+      /(?:<strong>|<b>)?\s*Explanation:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=<\/pre>|<p>|$)/i
     );
     if (explainMatch) {
       example.explanation = explainMatch[1].replace(/<[^>]+>/g, '').trim() || null;
     }
 
-    // Only include if we got at least input or output
     if (example.input || example.output) {
       examples.push(example);
     }
@@ -227,17 +222,79 @@ function safeParse(str) {
 // ---------------------------------------------------------------------------
 
 /**
+ * Downloads all remote images from problem statement and rewrites links to local relative paths.
+ *
+ * @param {string} content - Markdown problem statement
+ * @param {string} category - Top-level category
+ * @param {string} subcategory - Subcategory folder name
+ * @param {string} slug - Question slug
+ * @returns {Promise<string>} Statement with local image links
+ */
+async function processAndDownloadImages(content, category, subcategory, slug) {
+  if (!content) return '';
+
+  const assetsDir = join(QUESTIONS_DIR, category, subcategory, 'assets');
+  let updatedContent = content;
+
+  // Match markdown images and raw image URLs
+  const imgUrlRegex = /(?:https?:\/\/assets\.leetcode\.com\/[^\s"')]+|https?:\/\/[^\s"')]+\.(?:png|jpg|jpeg|svg|gif))/gi;
+  const matches = [...new Set(content.match(imgUrlRegex) || [])];
+
+  if (matches.length === 0) return updatedContent;
+
+  await ensureDir(assetsDir);
+
+  for (let i = 0; i < matches.length; i++) {
+    const remoteUrl = matches[i];
+    try {
+      const urlObj = new URL(remoteUrl);
+      let ext = extname(urlObj.pathname).toLowerCase();
+      if (!ext || !['.png', '.jpg', '.jpeg', '.gif', '.svg'].includes(ext)) {
+        ext = '.png';
+      }
+
+      const filename = `${slug}-${i + 1}${ext}`;
+      const localFilePath = join(assetsDir, filename);
+
+      // Download if not already cached
+      if (!existsSync(localFilePath)) {
+        const res = await fetch(remoteUrl, {
+          headers: {
+            'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64)',
+          },
+        });
+        if (res.ok) {
+          const buffer = Buffer.from(await res.arrayBuffer());
+          writeFileSync(localFilePath, buffer);
+        }
+      }
+
+      // Rewrite URL in content to relative path
+      const relativePath = `./assets/${filename}`;
+      updatedContent = updatedContent.replaceAll(remoteUrl, relativePath);
+    } catch (err) {
+      console.warn(`  ⚠️ Could not download image ${remoteUrl}: ${err.message}`);
+    }
+  }
+
+  return updatedContent;
+}
+
+/**
  * Normalizes a single raw question object into the final schema.
  *
  * @param {object} raw - The raw question data from the API.
- * @returns {object} The normalized question object.
+ * @returns {Promise<object>} The normalized question object.
  */
-function normalizeQuestion(raw) {
+async function normalizeQuestion(raw) {
   const tags = (raw.topicTags ?? []).map((t) => t.name);
   const { category, subcategory } = resolveCategory(tags, raw.categoryTitle, raw.content, raw.title);
 
   // Convert HTML content to Markdown
-  const statement = raw.content ? turndown.turndown(raw.content) : '';
+  let statement = raw.content ? turndown.turndown(raw.content) : '';
+
+  // Download images and rewrite statement image links
+  statement = await processAndDownloadImages(statement, category, subcategory, raw.titleSlug);
 
   // Extract structured data from HTML
   const constraints = extractConstraints(raw.content);
@@ -252,7 +309,7 @@ function normalizeQuestion(raw) {
     }
   }
 
-  // Parse test cases
+  // Parse public test cases
   let publicTests = null;
   if (examples.length > 0) {
     publicTests = examples.map((e) => ({
@@ -266,18 +323,8 @@ function normalizeQuestion(raw) {
     }));
   }
 
-  // Parse stats
-  let stats = null;
-  const parsedStats = safeParse(raw.stats);
-  if (parsedStats) {
-    stats = {
-      totalAccepted: String(parsedStats.totalAccepted ?? '0'),
-      totalSubmission: String(parsedStats.totalSubmission ?? '0'),
-      totalAcceptedRaw: parsedStats.totalAcceptedRaw,
-      totalSubmissionRaw: parsedStats.totalSubmissionRaw,
-      acRate: String(parsedStats.acRate ?? '0%'),
-    };
-  }
+  // Generate 20 comprehensive test cases
+  const testCases = generateTestCases(raw, examples, constraints, category);
 
   // Handle SQL/database questions
   let sqlSchema = null;
@@ -319,12 +366,12 @@ function normalizeQuestion(raw) {
     examples,
     starterCode,
     publicTests,
+    testCases,
     sqlSchema,
     sqlSetup,
     expectedOutput: null,
     solution: null,
     hints: raw.hints ?? [],
-    stats,
     source: {
       name: 'LeetCode',
       url: `https://leetcode.com/problems/${raw.titleSlug}/`,
@@ -449,7 +496,7 @@ async function main() {
       }
 
       // Normalize
-      const norm = normalizeQuestion(raw);
+      const norm = await normalizeQuestion(raw);
       const relPath = await writeNormalized(norm);
 
       // Track category stats

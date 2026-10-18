@@ -10,9 +10,29 @@
     "Math",
     "Recursion"
   ],
-  "statement": "You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\n**Example 1:**\n\n![](https://assets.leetcode.com/uploads/2020/10/02/addtwonumber1.jpg)\n```\nInput: l1 = [2,4,3], l2 = [5,6,4]\nOutput: [7,0,8]\nExplanation: 342 + 465 = 807.\n```\n\n**Example 2:**\n\n```\nInput: l1 = [0], l2 = [0]\nOutput: [0]\n```\n\n**Example 3:**\n\n```\nInput: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\nOutput: [8,9,9,9,0,0,0,1]\n```\n\n**Constraints:**\n\n*   The number of nodes in each linked list is in the range `[1, 100]`.\n*   `0 <= Node.val <= 9`\n*   It is guaranteed that the list represents a number that does not have leading zeros.",
-  "constraints": [],
-  "examples": [],
+  "statement": "You are given two **non-empty** linked lists representing two non-negative integers. The digits are stored in **reverse order**, and each of their nodes contains a single digit. Add the two numbers and return the sum as a linked list.\n\nYou may assume the two numbers do not contain any leading zero, except the number 0 itself.\n\n**Example 1:**\n\n![](./assets/add-two-numbers-1.jpg)\n```\nInput: l1 = [2,4,3], l2 = [5,6,4]\nOutput: [7,0,8]\nExplanation: 342 + 465 = 807.\n```\n\n**Example 2:**\n\n```\nInput: l1 = [0], l2 = [0]\nOutput: [0]\n```\n\n**Example 3:**\n\n```\nInput: l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]\nOutput: [8,9,9,9,0,0,0,1]\n```\n\n**Constraints:**\n\n*   The number of nodes in each linked list is in the range `[1, 100]`.\n*   `0 <= Node.val <= 9`\n*   It is guaranteed that the list represents a number that does not have leading zeros.",
+  "constraints": [
+    "The number of nodes in each linked list is in the range [1, 100].",
+    "0 <= Node.val <= 9",
+    "It is guaranteed that the list represents a number that does not have leading zeros."
+  ],
+  "examples": [
+    {
+      "input": "l1 = [2,4,3], l2 = [5,6,4]",
+      "output": "[7,0,8]",
+      "explanation": "342 + 465 = 807."
+    },
+    {
+      "input": "l1 = [0], l2 = [0]",
+      "output": "[0]",
+      "explanation": null
+    },
+    {
+      "input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]",
+      "output": "[8,9,9,9,0,0,0,1]",
+      "explanation": null
+    }
+  ],
   "starterCode": {
     "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {\n        \n    }\n};",
     "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode addTwoNumbers(ListNode l1, ListNode l2) {\n        \n    }\n}",
@@ -36,6 +56,32 @@
   },
   "publicTests": [
     {
+      "input": "l1 = [2,4,3], l2 = [5,6,4]",
+      "expectedOutput": "[7,0,8]"
+    },
+    {
+      "input": "l1 = [0], l2 = [0]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]",
+      "expectedOutput": "[8,9,9,9,0,0,0,1]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "l1 = [2,4,3], l2 = [5,6,4]",
+      "expectedOutput": "[7,0,8]"
+    },
+    {
+      "input": "l1 = [0], l2 = [0]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "l1 = [9,9,9,9,9,9,9], l2 = [9,9,9,9]",
+      "expectedOutput": "[8,9,9,9,0,0,0,1]"
+    },
+    {
       "input": "[2,4,3]\n[5,6,4]",
       "expectedOutput": null
     },
@@ -46,6 +92,26 @@
     {
       "input": "[9,9,9,9,9,9,9]\n[9,9,9,9]",
       "expectedOutput": null
+    },
+    {
+      "input": "l2 = [1], l3 = [1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "l2 = [10,10,10,10,10,10,10], l3 = [10,10,10,10]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,5,4]\n[6,7,5]",
+      "expectedOutput": "[9,2,0,1]"
+    },
+    {
+      "input": "[1]\n[1]",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "l2 = [3,5,4], l3 = [6,7,5]",
+      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -53,18 +119,11 @@
   "expectedOutput": null,
   "solution": null,
   "hints": [],
-  "stats": {
-    "totalAccepted": "7.6M",
-    "totalSubmission": "15.4M",
-    "totalAcceptedRaw": 7643996,
-    "totalSubmissionRaw": 15431807,
-    "acRate": "49.5%"
-  },
   "source": {
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/add-two-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-16T19:18:18.811Z",
+    "collectedAt": "2026-10-18T18:11:43.544Z",
     "sourceUpdatedAt": null
   }
 }

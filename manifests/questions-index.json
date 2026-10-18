@@ -1,7 +1,7 @@
 {
   "version": 1,
-  "generatedAt": "2026-10-16T19:48:08.735Z",
-  "totalQuestions": 10,
+  "generatedAt": "2026-10-18T18:13:39.854Z",
+  "totalQuestions": 12,
   "questions": [
     {
       "id": "1",
@@ -92,6 +92,24 @@
       "subcategory": "select-filtering",
       "difficulty": "Medium",
       "path": "questions/database/select-filtering/consecutive-numbers.json"
+    },
+    {
+      "id": "206",
+      "slug": "reverse-linked-list",
+      "title": "Reverse Linked List",
+      "category": "dsa",
+      "subcategory": "recursion-backtracking",
+      "difficulty": "Easy",
+      "path": "questions/dsa/recursion-backtracking/reverse-linked-list.json"
+    },
+    {
+      "id": "226",
+      "slug": "invert-binary-tree",
+      "title": "Invert Binary Tree",
+      "category": "dsa",
+      "subcategory": "graphs",
+      "difficulty": "Easy",
+      "path": "questions/dsa/graphs/invert-binary-tree.json"
     }
   ]
 }

@@ -63,11 +63,12 @@ function makeValidQuestion(overrides = {}) {
     expectedOutput: null,
     solution: null,
     hints: ['A really brute force way would be to search for all possible pairs of numbers but that would be too slow.'],
-    stats: {
-      totalAccepted: '2.1M',
-      totalSubmission: '4.2M',
-      acRate: '50.1%',
-    },
+    testCases: [
+      {
+        input: '[2,7,11,15]\n9',
+        expectedOutput: '[0,1]',
+      },
+    ],
     source: {
       name: 'LeetCode',
       url: 'https://leetcode.com/problems/two-sum/',

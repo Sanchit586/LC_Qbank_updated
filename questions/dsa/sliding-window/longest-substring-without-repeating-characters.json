@@ -11,8 +11,27 @@
     "Sliding Window"
   ],
   "statement": "Given a string `s`, find the length of the **longest** **substring** without duplicate characters.\n\n**Example 1:**\n\n```\n\"bca\"\n```\n\n**Example 2:**\n\n```\nInput: s = \"bbbbb\"\nOutput: 1\nExplanation: The answer is \"b\", with the length of 1.\n```\n\n**Example 3:**\n\n```\nInput: s = \"pwwkew\"\nOutput: 3\nExplanation: The answer is \"wke\", with the length of 3.\nNotice that the answer must be a substring, \"pwke\" is a subsequence and not a substring.\n```\n\n**Constraints:**\n\n*   `0 <= s.length <= 10^(5)`\n*   `s` consists of English letters, digits, symbols and spaces.",
-  "constraints": [],
-  "examples": [],
+  "constraints": [
+    "0 <= s.length <= 105",
+    "s consists of English letters, digits, symbols and spaces."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abcabcbb&quot;",
+      "output": "3",
+      "explanation": "The answer is &quot;abc&quot;, with the length of 3. Note that &quot;bca&quot; and &quot;cab&quot; are also correct answers."
+    },
+    {
+      "input": "s = &quot;bbbbb&quot;",
+      "output": "1",
+      "explanation": "The answer is &quot;b&quot;, with the length of 1."
+    },
+    {
+      "input": "s = &quot;pwwkew&quot;",
+      "output": "3",
+      "explanation": "The answer is &quot;wke&quot;, with the length of 3.\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring."
+    }
+  ],
   "starterCode": {
     "cpp": "class Solution {\npublic:\n    int lengthOfLongestSubstring(string s) {\n        \n    }\n};",
     "java": "class Solution {\n    public int lengthOfLongestSubstring(String s) {\n        \n    }\n}",
@@ -36,6 +55,32 @@
   },
   "publicTests": [
     {
+      "input": "s = &quot;abcabcbb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;bbbbb&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;pwwkew&quot;",
+      "expectedOutput": "3"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abcabcbb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;bbbbb&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;pwwkew&quot;",
+      "expectedOutput": "3"
+    },
+    {
       "input": "\"abcabcbb\"",
       "expectedOutput": null
     },
@@ -46,6 +91,62 @@
     {
       "input": "\"pwwkew\"",
       "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"tmmzuxt\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -55,18 +156,11 @@
   "hints": [
     "There are less than 100 unique characters. We can check all substrings with length at most 100 for example. This is a good enough approximation."
   ],
-  "stats": {
-    "totalAccepted": "10.4M",
-    "totalSubmission": "26.1M",
-    "totalAcceptedRaw": 10448624,
-    "totalSubmissionRaw": 26119879,
-    "acRate": "40.0%"
-  },
   "source": {
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-16T19:18:18.896Z",
+    "collectedAt": "2026-10-18T18:11:43.576Z",
     "sourceUpdatedAt": null
   }
 }

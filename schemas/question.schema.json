@@ -149,30 +149,22 @@
       },
       "default": []
     },
-    "stats": {
-      "type": ["object", "null"],
-      "description": "Submission statistics",
-      "properties": {
-        "totalAccepted": {
-          "type": ["string", "integer"],
-          "description": "Total accepted submissions"
+    "testCases": {
+      "type": ["array", "null"],
+      "description": "Comprehensive test cases covering boundary, edge, duplicate, and scale conditions",
+      "items": {
+        "type": "object",
+        "properties": {
+          "input": {
+            "type": "string"
+          },
+          "expectedOutput": {
+            "type": ["string", "null"]
+          }
         },
-        "totalSubmission": {
-          "type": ["string", "integer"],
-          "description": "Total submissions"
-        },
-        "totalAcceptedRaw": {
-          "type": "integer"
-        },
-        "totalSubmissionRaw": {
-          "type": "integer"
-        },
-        "acRate": {
-          "type": ["string", "number"],
-          "description": "Acceptance rate"
-        }
+        "required": ["input"],
+        "additionalProperties": false
       },
-      "additionalProperties": true,
       "default": null
     },
     "source": {

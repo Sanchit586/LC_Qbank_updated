@@ -1,32 +1,33 @@
 {
-  "generatedAt": "2026-10-16T19:48:08.748Z",
+  "generatedAt": "2026-10-18T18:13:39.867Z",
   "summary": {
-    "totalCollected": 10,
+    "totalCollected": 12,
     "totalDiscovered": 4082,
-    "completionRate": "0.2%",
+    "completionRate": "0.3%",
     "byDifficulty": {
-      "Easy": 2,
+      "Easy": 4,
       "Medium": 7,
       "Hard": 1
     },
     "byCategory": {
-      "dsa": 5,
+      "dsa": 7,
       "database": 5
     },
     "bySubcategory": {
       "dsa/hashing": 1,
-      "dsa/recursion-backtracking": 1,
+      "dsa/recursion-backtracking": 2,
       "dsa/sliding-window": 1,
       "dsa/divide-and-conquer": 1,
       "dsa/dynamic-programming": 1,
       "database/joins": 1,
       "database/aggregation": 2,
       "database/window-functions": 1,
-      "database/select-filtering": 1
+      "database/select-filtering": 1,
+      "dsa/graphs": 1
     }
   },
   "validation": {
-    "valid": 10,
+    "valid": 12,
     "invalid": 0,
     "errors": []
   },
