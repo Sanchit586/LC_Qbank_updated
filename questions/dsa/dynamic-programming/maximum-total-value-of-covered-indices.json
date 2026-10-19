@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "nums = [9,2,6,1], s = &quot;0101&quot;",
+      "input": "nums = [9,2,6,1], s = \"0101\"",
       "output": "15",
       "explanation": "Initially, indices 1 and 3 contain tokens.\n\tMove the token from index 3 to index 2.\n\tMove the token from index 1 to index 0.\n\tThe covered indices are [0, 2], so the total value is nums[0] + nums[2] = 9 + 6 = 15."
     },
     {
-      "input": "nums = [5,1,4], s = &quot;001&quot;",
+      "input": "nums = [5,1,4], s = \"001\"",
       "output": "4",
       "explanation": "Initially, only index 2 contains a token.\n\tIt is optimal to leave the token at index 2.\n\tThe covered index is [2], so the total value is nums[2] = 4."
     },
     {
-      "input": "nums = [9,3,5], s = &quot;011&quot;",
+      "input": "nums = [9,3,5], s = \"011\"",
       "output": "14",
       "explanation": "Initially, indices 1 and 2 contain tokens.\n\tMove the token from index 1 to index 0.\n\tThe covered indices are [0, 2], so the total value is nums[0] + nums[2] = 9 + 5 = 14."
     }
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "nums = [9,2,6,1], s = &quot;0101&quot;",
+      "input": "[9,2,6,1]\n\"0101\"",
       "expectedOutput": "15"
     },
     {
-      "input": "nums = [5,1,4], s = &quot;001&quot;",
+      "input": "[5,1,4]\n\"001\"",
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [9,3,5], s = &quot;011&quot;",
+      "input": "[9,3,5]\n\"011\"",
       "expectedOutput": "14"
     }
   ],
   "testCases": [
     {
-      "input": "nums = [9,2,6,1], s = &quot;0101&quot;",
+      "input": "[9,2,6,1]\n\"0101\"",
       "expectedOutput": "15"
     },
     {
-      "input": "nums = [5,1,4], s = &quot;001&quot;",
+      "input": "[5,1,4]\n\"001\"",
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [9,3,5], s = &quot;011&quot;",
+      "input": "[9,3,5]\n\"011\"",
       "expectedOutput": "14"
     },
     {
-      "input": "[9,2,6,1]\n\"0101\"",
-      "expectedOutput": null
+      "input": "nums = [9,2,6,1], s = \"0101\"",
+      "expectedOutput": "15"
     },
     {
-      "input": "[5,1,4]\n\"001\"",
-      "expectedOutput": null
+      "input": "nums = [5,1,4], s = \"001\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "[9,3,5]\n\"011\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [6,2,5], s = &quot;2&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [10,4,6], s = &quot;12&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,3,7,2]\n\"102\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,2,5]\n\"2\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [10,3,7,2], s = &quot;102&quot;",
-      "expectedOutput": null
+      "input": "nums = [9,3,5], s = \"011\"",
+      "expectedOutput": "14"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-total-value-of-covered-indices/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.692Z",
+    "collectedAt": "2026-10-19T18:40:22.847Z",
     "sourceUpdatedAt": null
   }
 }

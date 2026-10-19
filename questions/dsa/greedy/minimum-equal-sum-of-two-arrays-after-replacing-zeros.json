@@ -18,7 +18,7 @@
     {
       "input": "nums1 = [3,2,0,1,0], nums2 = [6,5,0]",
       "output": "12",
-      "explanation": "We can replace 0&#39;s in the following way:\n- Replace the two 0&#39;s in nums1 with the values 2 and 4. The resulting array is nums1 = [3,2,2,1,4].\n- Replace the 0 in nums2 with the value 1. The resulting array is nums2 = [6,5,1].\nBoth arrays have an equal sum of 12. It can be shown that it is the minimum sum we can obtain."
+      "explanation": "We can replace 0's in the following way:\n- Replace the two 0's in nums1 with the values 2 and 4. The resulting array is nums1 = [3,2,2,1,4].\n- Replace the 0 in nums2 with the value 1. The resulting array is nums2 = [6,5,1].\nBoth arrays have an equal sum of 12. It can be shown that it is the minimum sum we can obtain."
     },
     {
       "input": "nums1 = [2,0,2,0], nums2 = [1,4]",
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [3,2,0,1,0], nums2 = [6,5,0]",
+      "input": "[3,2,0,1,0]\n[6,5,0]",
       "expectedOutput": "12"
     },
     {
-      "input": "nums1 = [2,0,2,0], nums2 = [1,4]",
+      "input": "[2,0,2,0]\n[1,4]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[3,2,0,1,0]\n[6,5,0]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[2,0,2,0]\n[1,4]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums1 = [3,2,0,1,0], nums2 = [6,5,0]",
       "expectedOutput": "12"
     },
     {
       "input": "nums1 = [2,0,2,0], nums2 = [1,4]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[3,2,0,1,0]\n[6,5,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,0,2,0]\n[1,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [4,3,1,2,1], nums3 = [7,6,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-equal-sum-of-two-arrays-after-replacing-zeros/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:56.963Z",
+    "collectedAt": "2026-10-19T18:40:23.906Z",
     "sourceUpdatedAt": null
   }
 }

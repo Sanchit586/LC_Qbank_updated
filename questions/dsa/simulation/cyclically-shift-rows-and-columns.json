@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, grid = [[1,2],[3,4]], rowShift = [1,0], colShift = [0,1]",
+      "input": "2\n[[1,2],[3,4]]\n[1,0]\n[0,1]",
       "expectedOutput": "[[2,4],[3,1]]"
     },
     {
-      "input": "n = 3, grid = [[1,2,3],[4,5,6],[7,8,9]], rowShift = [1,2,0], colShift = [2,2,1]",
+      "input": "3\n[[1,2,3],[4,5,6],[7,8,9]]\n[1,2,0]\n[2,2,1]",
       "expectedOutput": "[[7,8,5],[2,3,9],[6,4,1]]"
     }
   ],
   "testCases": [
     {
+      "input": "2\n[[1,2],[3,4]]\n[1,0]\n[0,1]",
+      "expectedOutput": "[[2,4],[3,1]]"
+    },
+    {
+      "input": "3\n[[1,2,3],[4,5,6],[7,8,9]]\n[1,2,0]\n[2,2,1]",
+      "expectedOutput": "[[7,8,5],[2,3,9],[6,4,1]]"
+    },
+    {
       "input": "n = 2, grid = [[1,2],[3,4]], rowShift = [1,0], colShift = [0,1]",
       "expectedOutput": "[[2,4],[3,1]]"
     },
     {
       "input": "n = 3, grid = [[1,2,3],[4,5,6],[7,8,9]], rowShift = [1,2,0], colShift = [2,2,1]",
       "expectedOutput": "[[7,8,5],[2,3,9],[6,4,1]]"
-    },
-    {
-      "input": "2\n[[1,2],[3,4]]\n[1,0]\n[0,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[1,2,3],[4,5,6],[7,8,9]]\n[1,2,0]\n[2,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, grid = [[2,3],[4,5]], rowShift = [2,1], colShift = [1,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cyclically-shift-rows-and-columns/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:33.730Z",
+    "collectedAt": "2026-10-19T18:40:16.143Z",
     "sourceUpdatedAt": null
   }
 }

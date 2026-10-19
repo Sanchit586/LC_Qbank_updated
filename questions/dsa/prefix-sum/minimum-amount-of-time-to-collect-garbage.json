@@ -20,12 +20,12 @@
   ],
   "examples": [
     {
-      "input": "garbage = [&quot;G&quot;,&quot;P&quot;,&quot;GP&quot;,&quot;GG&quot;], travel = [2,4,3]",
+      "input": "garbage = [\"G\",\"P\",\"GP\",\"GG\"], travel = [2,4,3]",
       "output": "21",
       "explanation": "The paper garbage truck:\n1. Travels from house 0 to house 1\n2. Collects the paper garbage at house 1\n3. Travels from house 1 to house 2\n4. Collects the paper garbage at house 2\nAltogether, it takes 8 minutes to pick up all the paper garbage.\nThe glass garbage truck:\n1. Collects the glass garbage at house 0\n2. Travels from house 0 to house 1\n3. Travels from house 1 to house 2\n4. Collects the glass garbage at house 2\n5. Travels from house 2 to house 3\n6. Collects the glass garbage at house 3\nAltogether, it takes 13 minutes to pick up all the glass garbage.\nSince there is no metal garbage, we do not need to consider the metal garbage truck.\nTherefore, it takes a total of 8 + 13 = 21 minutes to collect all the garbage."
     },
     {
-      "input": "garbage = [&quot;MMM&quot;,&quot;PGM&quot;,&quot;GP&quot;], travel = [3,10]",
+      "input": "garbage = [\"MMM\",\"PGM\",\"GP\"], travel = [3,10]",
       "output": "37",
       "explanation": "The metal garbage truck takes 7 minutes to pick up all the metal garbage.\nThe paper garbage truck takes 15 minutes to pick up all the paper garbage.\nThe glass garbage truck takes 15 minutes to pick up all the glass garbage.\nIt takes a total of 7 + 15 + 15 = 37 minutes to collect all the garbage."
     }
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "garbage = [&quot;G&quot;,&quot;P&quot;,&quot;GP&quot;,&quot;GG&quot;], travel = [2,4,3]",
+      "input": "[\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]",
       "expectedOutput": "21"
     },
     {
-      "input": "garbage = [&quot;MMM&quot;,&quot;PGM&quot;,&quot;GP&quot;], travel = [3,10]",
+      "input": "[\"MMM\",\"PGM\",\"GP\"]\n[3,10]",
       "expectedOutput": "37"
     }
   ],
   "testCases": [
     {
-      "input": "garbage = [&quot;G&quot;,&quot;P&quot;,&quot;GP&quot;,&quot;GG&quot;], travel = [2,4,3]",
+      "input": "[\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]",
       "expectedOutput": "21"
     },
     {
-      "input": "garbage = [&quot;MMM&quot;,&quot;PGM&quot;,&quot;GP&quot;], travel = [3,10]",
+      "input": "[\"MMM\",\"PGM\",\"GP\"]\n[3,10]",
       "expectedOutput": "37"
     },
     {
-      "input": "[\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]",
-      "expectedOutput": null
+      "input": "garbage = [\"G\",\"P\",\"GP\",\"GG\"], travel = [2,4,3]",
+      "expectedOutput": "21"
     },
     {
-      "input": "[\"MMM\",\"PGM\",\"GP\"]\n[3,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "garbage = [&quot;G&quot;,&quot;P&quot;,&quot;GP&quot;,&quot;GG&quot;], travel = [3,5,4]",
-      "expectedOutput": null
+      "input": "garbage = [\"MMM\",\"PGM\",\"GP\"], travel = [3,10]",
+      "expectedOutput": "37"
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-amount-of-time-to-collect-garbage/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:43.756Z",
+    "collectedAt": "2026-10-19T18:40:23.414Z",
     "sourceUpdatedAt": null
   }
 }

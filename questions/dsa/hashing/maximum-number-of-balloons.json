@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;nlaebolko&quot;",
+      "input": "text = \"nlaebolko\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "text = &quot;loonbalxballpoon&quot;",
+      "input": "text = \"loonbalxballpoon\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "text = &quot;leetcode&quot;",
+      "input": "text = \"leetcode\"",
       "output": "0",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;nlaebolko&quot;",
+      "input": "\"nlaebolko\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;loonbalxballpoon&quot;",
+      "input": "\"loonbalxballpoon\"",
       "expectedOutput": "2"
     },
     {
-      "input": "text = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;nlaebolko&quot;",
+      "input": "\"nlaebolko\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;loonbalxballpoon&quot;",
+      "input": "\"loonbalxballpoon\"",
       "expectedOutput": "2"
     },
     {
-      "input": "text = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"nlaebolko\"",
-      "expectedOutput": null
+      "input": "text = \"nlaebolko\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"loonbalxballpoon\"",
-      "expectedOutput": null
+      "input": "text = \"loonbalxballpoon\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"leetcode\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "text = \"leetcode\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-balloons/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:18.035Z",
+    "collectedAt": "2026-10-19T18:40:21.998Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "binary = &quot;000110&quot;",
-      "output": "&quot;111011&quot;",
-      "explanation": "A valid transformation sequence can be:\n&quot;000110&quot; -&gt; &quot;000101&quot; \n&quot;000101&quot; -&gt; &quot;100101&quot; \n&quot;100101&quot; -&gt; &quot;110101&quot; \n&quot;110101&quot; -&gt; &quot;110011&quot; \n&quot;110011&quot; -&gt; &quot;111011&quot;"
+      "input": "binary = \"000110\"",
+      "output": "\"111011\"",
+      "explanation": "A valid transformation sequence can be:\n\"000110\" -> \"000101\" \n\"000101\" -> \"100101\" \n\"100101\" -> \"110101\" \n\"110101\" -> \"110011\" \n\"110011\" -> \"111011\""
     },
     {
-      "input": "binary = &quot;01&quot;",
-      "output": "&quot;01&quot;",
-      "explanation": "&nbsp;&quot;01&quot; cannot be transformed any further."
+      "input": "binary = \"01\"",
+      "output": "\"01\"",
+      "explanation": " \"01\" cannot be transformed any further."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "binary = &quot;000110&quot;",
-      "expectedOutput": "&quot;111011&quot;"
+      "input": "\"000110\"",
+      "expectedOutput": "\"111011\""
     },
     {
-      "input": "binary = &quot;01&quot;",
-      "expectedOutput": "&quot;01&quot;"
+      "input": "\"01\"",
+      "expectedOutput": "\"01\""
     }
   ],
   "testCases": [
     {
-      "input": "binary = &quot;000110&quot;",
-      "expectedOutput": "&quot;111011&quot;"
-    },
-    {
-      "input": "binary = &quot;01&quot;",
-      "expectedOutput": "&quot;01&quot;"
-    },
-    {
       "input": "\"000110\"",
-      "expectedOutput": null
+      "expectedOutput": "\"111011\""
     },
     {
       "input": "\"01\"",
-      "expectedOutput": null
+      "expectedOutput": "\"01\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "binary = \"000110\"",
+      "expectedOutput": "\"111011\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "binary = \"01\"",
+      "expectedOutput": "\"01\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-binary-string-after-change/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:08.945Z",
+    "collectedAt": "2026-10-19T18:40:21.580Z",
     "sourceUpdatedAt": null
   }
 }

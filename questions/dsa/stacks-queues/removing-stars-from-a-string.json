@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leet**cod*e&quot;",
-      "output": "&quot;lecoe&quot;",
-      "explanation": "Performing the removals from left to right:\n- The closest character to the 1st star is &#39;t&#39; in &quot;leet**cod*e&quot;. s becomes &quot;lee*cod*e&quot;.\n- The closest character to the 2nd star is &#39;e&#39; in &quot;lee*cod*e&quot;. s becomes &quot;lecod*e&quot;.\n- The closest character to the 3rd star is &#39;d&#39; in &quot;lecod*e&quot;. s becomes &quot;lecoe&quot;.\nThere are no more stars, so we return &quot;lecoe&quot;."
+      "input": "s = \"leet**cod*e\"",
+      "output": "\"lecoe\"",
+      "explanation": "Performing the removals from left to right:\n- The closest character to the 1st star is 't' in \"leet**cod*e\". s becomes \"lee*cod*e\".\n- The closest character to the 2nd star is 'e' in \"lee*cod*e\". s becomes \"lecod*e\".\n- The closest character to the 3rd star is 'd' in \"lecod*e\". s becomes \"lecoe\".\nThere are no more stars, so we return \"lecoe\"."
     },
     {
-      "input": "s = &quot;erase*****&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"erase*****\"",
+      "output": "\"\"",
       "explanation": "The entire string is removed, so we return an empty string."
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leet**cod*e&quot;",
-      "expectedOutput": "&quot;lecoe&quot;"
+      "input": "\"leet**cod*e\"",
+      "expectedOutput": "\"lecoe\""
     },
     {
-      "input": "s = &quot;erase*****&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"erase*****\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leet**cod*e&quot;",
-      "expectedOutput": "&quot;lecoe&quot;"
-    },
-    {
-      "input": "s = &quot;erase*****&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"leet**cod*e\"",
-      "expectedOutput": null
+      "expectedOutput": "\"lecoe\""
     },
     {
       "input": "\"erase*****\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leet**cod*e\"",
+      "expectedOutput": "\"lecoe\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"erase*****\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/removing-stars-from-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.044Z",
+    "collectedAt": "2026-10-19T18:40:27.631Z",
     "sourceUpdatedAt": null
   }
 }

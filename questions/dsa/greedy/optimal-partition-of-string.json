@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abacaba&quot;",
+      "input": "s = \"abacaba\"",
       "output": "4",
-      "explanation": "Two possible partitions are (&quot;a&quot;,&quot;ba&quot;,&quot;cab&quot;,&quot;a&quot;) and (&quot;ab&quot;,&quot;a&quot;,&quot;ca&quot;,&quot;ba&quot;).\nIt can be shown that 4 is the minimum number of substrings needed."
+      "explanation": "Two possible partitions are (\"a\",\"ba\",\"cab\",\"a\") and (\"ab\",\"a\",\"ca\",\"ba\").\nIt can be shown that 4 is the minimum number of substrings needed."
     },
     {
-      "input": "s = &quot;ssssss&quot;",
+      "input": "s = \"ssssss\"",
       "output": "6",
-      "explanation": "The only valid partition is (&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;,&quot;s&quot;)."
+      "explanation": "The only valid partition is (\"s\",\"s\",\"s\",\"s\",\"s\",\"s\")."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abacaba&quot;",
+      "input": "\"abacaba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;ssssss&quot;",
+      "input": "\"ssssss\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abacaba&quot;",
+      "input": "\"abacaba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;ssssss&quot;",
+      "input": "\"ssssss\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"abacaba\"",
-      "expectedOutput": null
+      "input": "s = \"abacaba\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"ssssss\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"ssssss\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/optimal-partition-of-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.393Z",
+    "collectedAt": "2026-10-19T18:40:26.407Z",
     "sourceUpdatedAt": null
   }
 }

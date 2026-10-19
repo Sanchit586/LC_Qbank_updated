@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cdbcbbaaabab&quot;, x = 4, y = 5",
+      "input": "s = \"cdbcbbaaabab\", x = 4, y = 5",
       "output": "19",
-      "explanation": "- Remove the &quot;ba&quot; underlined in &quot;cdbcbbaaabab&quot;. Now, s = &quot;cdbcbbaaab&quot; and 5 points are added to the score.\n- Remove the &quot;ab&quot; underlined in &quot;cdbcbbaaab&quot;. Now, s = &quot;cdbcbbaa&quot; and 4 points are added to the score.\n- Remove the &quot;ba&quot; underlined in &quot;cdbcbbaa&quot;. Now, s = &quot;cdbcba&quot; and 5 points are added to the score.\n- Remove the &quot;ba&quot; underlined in &quot;cdbcba&quot;. Now, s = &quot;cdbc&quot; and 5 points are added to the score.\nTotal score = 5 + 4 + 5 + 5 = 19."
+      "explanation": "- Remove the \"ba\" underlined in \"cdbcbbaaabab\". Now, s = \"cdbcbbaaab\" and 5 points are added to the score.\n- Remove the \"ab\" underlined in \"cdbcbbaaab\". Now, s = \"cdbcbbaa\" and 4 points are added to the score.\n- Remove the \"ba\" underlined in \"cdbcbbaa\". Now, s = \"cdbcba\" and 5 points are added to the score.\n- Remove the \"ba\" underlined in \"cdbcba\". Now, s = \"cdbc\" and 5 points are added to the score.\nTotal score = 5 + 4 + 5 + 5 = 19."
     },
     {
-      "input": "s = &quot;aabbaaxybbaabb&quot;, x = 5, y = 4",
+      "input": "s = \"aabbaaxybbaabb\", x = 5, y = 4",
       "output": "20",
       "explanation": null
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cdbcbbaaabab&quot;, x = 4, y = 5",
+      "input": "\"cdbcbbaaabab\"\n4\n5",
       "expectedOutput": "19"
     },
     {
-      "input": "s = &quot;aabbaaxybbaabb&quot;, x = 5, y = 4",
+      "input": "\"aabbaaxybbaabb\"\n5\n4",
       "expectedOutput": "20"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cdbcbbaaabab&quot;, x = 4, y = 5",
+      "input": "\"cdbcbbaaabab\"\n4\n5",
       "expectedOutput": "19"
     },
     {
-      "input": "s = &quot;aabbaaxybbaabb&quot;, x = 5, y = 4",
+      "input": "\"aabbaaxybbaabb\"\n5\n4",
       "expectedOutput": "20"
     },
     {
-      "input": "\"cdbcbbaaabab\"\n4\n5",
-      "expectedOutput": null
+      "input": "s = \"cdbcbbaaabab\", x = 4, y = 5",
+      "expectedOutput": "19"
     },
     {
-      "input": "\"aabbaaxybbaabb\"\n5\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;cdbcbbaaabab&quot;, x = 5, y = 6",
-      "expectedOutput": null
+      "input": "s = \"aabbaaxybbaabb\", x = 5, y = 4",
+      "expectedOutput": "20"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-score-from-removing-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:29.556Z",
+    "collectedAt": "2026-10-19T18:40:22.552Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,17 +20,17 @@
   "examples": [
     {
       "input": "n = 3, k = 5",
-      "output": "&quot;595&quot;",
+      "output": "\"595\"",
       "explanation": null
     },
     {
       "input": "n = 1, k = 4",
-      "output": "&quot;8&quot;",
+      "output": "\"8\"",
       "explanation": null
     },
     {
       "input": "n = 5, k = 6",
-      "output": "&quot;89898&quot;",
+      "output": "\"89898\"",
       "explanation": null
     }
   ],
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 5",
-      "expectedOutput": "&quot;595&quot;"
+      "input": "3\n5",
+      "expectedOutput": "\"595\""
     },
     {
-      "input": "n = 1, k = 4",
-      "expectedOutput": "&quot;8&quot;"
+      "input": "1\n4",
+      "expectedOutput": "\"8\""
     },
     {
-      "input": "n = 5, k = 6",
-      "expectedOutput": "&quot;89898&quot;"
+      "input": "5\n6",
+      "expectedOutput": "\"89898\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 3, k = 5",
-      "expectedOutput": "&quot;595&quot;"
-    },
-    {
-      "input": "n = 1, k = 4",
-      "expectedOutput": "&quot;8&quot;"
-    },
-    {
-      "input": "n = 5, k = 6",
-      "expectedOutput": "&quot;89898&quot;"
-    },
-    {
       "input": "3\n5",
-      "expectedOutput": null
+      "expectedOutput": "\"595\""
     },
     {
       "input": "1\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"8\""
     },
     {
       "input": "5\n6",
-      "expectedOutput": null
+      "expectedOutput": "\"89898\""
     },
     {
-      "input": "n = 2, k = 5",
-      "expectedOutput": null
+      "input": "n = 3, k = 5",
+      "expectedOutput": "\"595\""
     },
     {
-      "input": "n = 6, k = 7",
-      "expectedOutput": null
+      "input": "n = 1, k = 4",
+      "expectedOutput": "\"8\""
     },
     {
-      "input": "4\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 6",
-      "expectedOutput": null
+      "input": "n = 5, k = 6",
+      "expectedOutput": "\"89898\""
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-largest-palindrome-divisible-by-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.880Z",
+    "collectedAt": "2026-10-19T18:40:18.336Z",
     "sourceUpdatedAt": null
   }
 }

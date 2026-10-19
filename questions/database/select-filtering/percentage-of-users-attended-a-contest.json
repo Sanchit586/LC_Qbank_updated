@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Users table:\n+---------+-----------+\n| user_id | user_name |\n+---------+-----------+\n| 6       | Alice     |\n| 2       | Bob       |\n| 7       | Alex      |\n+---------+-----------+\nRegister table:\n+------------+---------+\n| contest_id | user_id |\n+------------+---------+\n| 215        | 6       |\n| 209        | 2       |\n| 208        | 2       |\n| 210        | 6       |\n| 208        | 6       |\n| 209        | 7       |\n| 209        | 6       |\n| 215        | 7       |\n| 208        | 7       |\n| 210        | 2       |\n| 207        | 2       |\n| 210        | 7       |\n+------------+---------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"],[2,\"Bob\"],[7,\"Alex\"]],\"Register\":[[215,6],[209,2],[208,2],[210,6],[208,6],[209,7],[209,6],[215,7],[208,7],[210,2],[207,2],[210,7]]}}",
       "expectedOutput": "+------------+------------+\n| contest_id | percentage |\n+------------+------------+\n| 208        | 100.0      |\n| 209        | 100.0      |\n| 210        | 100.0      |\n| 215        | 66.67      |\n| 207        | 33.33      |\n+------------+------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Users table:\n+---------+-----------+\n| user_id | user_name |\n+---------+-----------+\n| 6       | Alice     |\n| 2       | Bob       |\n| 7       | Alex      |\n+---------+-----------+\nRegister table:\n+------------+---------+\n| contest_id | user_id |\n+------------+---------+\n| 215        | 6       |\n| 209        | 2       |\n| 208        | 2       |\n| 210        | 6       |\n| 208        | 6       |\n| 209        | 7       |\n| 209        | 6       |\n| 215        | 7       |\n| 208        | 7       |\n| 210        | 2       |\n| 207        | 2       |\n| 210        | 7       |\n+------------+---------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"],[2,\"Bob\"],[7,\"Alex\"]],\"Register\":[[215,6],[209,2],[208,2],[210,6],[208,6],[209,7],[209,6],[215,7],[208,7],[210,2],[207,2],[210,7]]}}",
       "expectedOutput": "+------------+------------+\n| contest_id | percentage |\n+------------+------------+\n| 208        | 100.0      |\n| 209        | 100.0      |\n| 210        | 100.0      |\n| 215        | 66.67      |\n| 207        | 33.33      |\n+------------+------------+"
     },
     {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"],[2,\"Bob\"],[7,\"Alex\"]],\"Register\":[[215,6],[209,2],[208,2],[210,6],[208,6],[209,7],[209,6],[215,7],[208,7],[210,2],[207,2],[210,7]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[],\"Register\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,\"Alice\"]],\"Register\":[[215,6]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"user_name\"],\"Register\":[\"contest_id\",\"user_id\"]},\"rows\":{\"Users\":[[6,null],[2,null],[7,null]],\"Register\":[[215,null],[209,null],[208,null],[210,null],[208,null],[209,null],[209,null],[215,null],[208,null],[210,null],[207,null],[210,null]]}}",
-      "expectedOutput": null
+      "input": "Users table:\n+---------+-----------+\n| user_id | user_name |\n+---------+-----------+\n| 6       | Alice     |\n| 2       | Bob       |\n| 7       | Alex      |\n+---------+-----------+\nRegister table:\n+------------+---------+\n| contest_id | user_id |\n+------------+---------+\n| 215        | 6       |\n| 209        | 2       |\n| 208        | 2       |\n| 210        | 6       |\n| 208        | 6       |\n| 209        | 7       |\n| 209        | 6       |\n| 215        | 7       |\n| 208        | 7       |\n| 210        | 2       |\n| 207        | 2       |\n| 210        | 7       |\n+------------+---------+",
+      "expectedOutput": "+------------+------------+\n| contest_id | percentage |\n+------------+------------+\n| 208        | 100.0      |\n| 209        | 100.0      |\n| 210        | 100.0      |\n| 215        | 66.67      |\n| 207        | 33.33      |\n+------------+------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Users (user_id int, user_name varchar(20))\n\nCreate table If Not Exists Register (contest_id int, user_id int)\n\nTruncate table Users\n\nTruncate table Register",
@@ -77,7 +65,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/percentage-of-users-attended-a-contest/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:56.171Z",
+    "collectedAt": "2026-10-19T18:40:26.729Z",
     "sourceUpdatedAt": null
   }
 }

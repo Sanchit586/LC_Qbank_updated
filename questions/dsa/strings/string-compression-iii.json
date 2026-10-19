@@ -15,13 +15,13 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abcde&quot;",
-      "output": "&quot;1a1b1c1d1e&quot;",
+      "input": "word = \"abcde\"",
+      "output": "\"1a1b1c1d1e\"",
       "explanation": null
     },
     {
-      "input": "word = &quot;aaaaaaaaaaaaaabb&quot;",
-      "output": "&quot;9a5a2b&quot;",
+      "input": "word = \"aaaaaaaaaaaaaabb\"",
+      "output": "\"9a5a2b\"",
       "explanation": null
     }
   ],
@@ -48,94 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abcde&quot;",
-      "expectedOutput": "&quot;1a1b1c1d1e&quot;"
+      "input": "\"abcde\"",
+      "expectedOutput": "\"1a1b1c1d1e\""
     },
     {
-      "input": "word = &quot;aaaaaaaaaaaaaabb&quot;",
-      "expectedOutput": "&quot;9a5a2b&quot;"
+      "input": "\"aaaaaaaaaaaaaabb\"",
+      "expectedOutput": "\"9a5a2b\""
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abcde&quot;",
-      "expectedOutput": "&quot;1a1b1c1d1e&quot;"
-    },
-    {
-      "input": "word = &quot;aaaaaaaaaaaaaabb&quot;",
-      "expectedOutput": "&quot;9a5a2b&quot;"
-    },
-    {
       "input": "\"abcde\"",
-      "expectedOutput": null
+      "expectedOutput": "\"1a1b1c1d1e\""
     },
     {
       "input": "\"aaaaaaaaaaaaaabb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"9a5a2b\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "word = \"abcde\"",
+      "expectedOutput": "\"1a1b1c1d1e\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "word = \"aaaaaaaaaaaaaabb\"",
+      "expectedOutput": "\"9a5a2b\""
     }
   ],
   "sqlSchema": null,
@@ -149,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/string-compression-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.458Z",
+    "collectedAt": "2026-10-19T18:40:30.311Z",
     "sourceUpdatedAt": null
   }
 }

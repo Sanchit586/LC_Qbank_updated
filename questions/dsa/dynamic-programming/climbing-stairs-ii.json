@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, costs = [1,2,3,4]",
+      "input": "4\n[1,2,3,4]",
       "expectedOutput": "13"
     },
     {
-      "input": "n = 4, costs = [5,1,6,2]",
+      "input": "4\n[5,1,6,2]",
       "expectedOutput": "11"
     },
     {
-      "input": "n = 3, costs = [9,8,3]",
+      "input": "3\n[9,8,3]",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "4\n[5,1,6,2]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "3\n[9,8,3]",
+      "expectedOutput": "12"
+    },
+    {
       "input": "n = 4, costs = [1,2,3,4]",
       "expectedOutput": "13"
     },
@@ -78,38 +90,6 @@
     {
       "input": "n = 3, costs = [9,8,3]",
       "expectedOutput": "12"
-    },
-    {
-      "input": "4\n[1,2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[5,1,6,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[9,8,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, costs = [6,2,7,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, costs = [10,9,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[2,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[6,2,7,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, costs = [2,3,4,5]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/climbing-stairs-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:59.505Z",
+    "collectedAt": "2026-10-19T18:40:14.411Z",
     "sourceUpdatedAt": null
   }
 }

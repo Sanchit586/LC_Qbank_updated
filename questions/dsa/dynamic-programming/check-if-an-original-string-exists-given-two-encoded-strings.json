@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;internationalization&quot;, s2 = &quot;i18n&quot;",
+      "input": "s1 = \"internationalization\", s2 = \"i18n\"",
       "output": "true",
-      "explanation": "It is possible that &quot;internationalization&quot; was the original string.\n- &quot;internationalization&quot; \n  -&gt; Split:       [&quot;internationalization&quot;]\n  -&gt; Do not replace any element\n  -&gt; Concatenate:  &quot;internationalization&quot;, which is s1.\n- &quot;internationalization&quot;\n  -&gt; Split:       [&quot;i&quot;, &quot;nternationalizatio&quot;, &quot;n&quot;]\n  -&gt; Replace:     [&quot;i&quot;, &quot;18&quot;,                 &quot;n&quot;]\n  -&gt; Concatenate:  &quot;i18n&quot;, which is s2"
+      "explanation": "It is possible that \"internationalization\" was the original string.\n- \"internationalization\" \n  -> Split:       [\"internationalization\"]\n  -> Do not replace any element\n  -> Concatenate:  \"internationalization\", which is s1.\n- \"internationalization\"\n  -> Split:       [\"i\", \"nternationalizatio\", \"n\"]\n  -> Replace:     [\"i\", \"18\",                 \"n\"]\n  -> Concatenate:  \"i18n\", which is s2"
     },
     {
-      "input": "s1 = &quot;l123e&quot;, s2 = &quot;44&quot;",
+      "input": "s1 = \"l123e\", s2 = \"44\"",
       "output": "true",
-      "explanation": "It is possible that &quot;leetcode&quot; was the original string.\n- &quot;leetcode&quot; \n  -&gt; Split:      [&quot;l&quot;, &quot;e&quot;, &quot;et&quot;, &quot;cod&quot;, &quot;e&quot;]\n  -&gt; Replace:    [&quot;l&quot;, &quot;1&quot;, &quot;2&quot;,  &quot;3&quot;,   &quot;e&quot;]\n  -&gt; Concatenate: &quot;l123e&quot;, which is s1.\n- &quot;leetcode&quot; \n  -&gt; Split:      [&quot;leet&quot;, &quot;code&quot;]\n  -&gt; Replace:    [&quot;4&quot;,    &quot;4&quot;]\n  -&gt; Concatenate: &quot;44&quot;, which is s2."
+      "explanation": "It is possible that \"leetcode\" was the original string.\n- \"leetcode\" \n  -> Split:      [\"l\", \"e\", \"et\", \"cod\", \"e\"]\n  -> Replace:    [\"l\", \"1\", \"2\",  \"3\",   \"e\"]\n  -> Concatenate: \"l123e\", which is s1.\n- \"leetcode\" \n  -> Split:      [\"leet\", \"code\"]\n  -> Replace:    [\"4\",    \"4\"]\n  -> Concatenate: \"44\", which is s2."
     },
     {
-      "input": "s1 = &quot;a5b&quot;, s2 = &quot;c5b&quot;",
+      "input": "s1 = \"a5b\", s2 = \"c5b\"",
       "output": "false",
-      "explanation": "It is impossible.\n- The original string encoded as s1 must start with the letter &#39;a&#39;.\n- The original string encoded as s2 must start with the letter &#39;c&#39;."
+      "explanation": "It is impossible.\n- The original string encoded as s1 must start with the letter 'a'.\n- The original string encoded as s2 must start with the letter 'c'."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;internationalization&quot;, s2 = &quot;i18n&quot;",
+      "input": "\"internationalization\"\n\"i18n\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;l123e&quot;, s2 = &quot;44&quot;",
+      "input": "\"l123e\"\n\"44\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;a5b&quot;, s2 = &quot;c5b&quot;",
+      "input": "\"a5b\"\n\"c5b\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;internationalization&quot;, s2 = &quot;i18n&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = &quot;l123e&quot;, s2 = &quot;44&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = &quot;a5b&quot;, s2 = &quot;c5b&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"internationalization\"\n\"i18n\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"l123e\"\n\"44\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"a5b\"\n\"c5b\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s1 = \"internationalization\", s2 = \"i18n\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s1 = \"l123e\", s2 = \"44\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"internationalization\"\n\"i19n\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"l124e\"\n\"45\"",
-      "expectedOutput": null
+      "input": "s1 = \"a5b\", s2 = \"c5b\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-an-original-string-exists-given-two-encoded-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:50.625Z",
+    "collectedAt": "2026-10-19T18:40:14.088Z",
     "sourceUpdatedAt": null
   }
 }

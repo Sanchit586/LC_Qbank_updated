@@ -16,17 +16,17 @@
     {
       "input": "n = 22",
       "output": "2",
-      "explanation": "22 in binary is &quot;10110&quot;.\nThe first adjacent pair of 1&#39;s is &quot;10110&quot; with a distance of 2.\nThe second adjacent pair of 1&#39;s is &quot;10110&quot; with a distance of 1.\nThe answer is the largest of these two distances, which is 2.\nNote that &quot;10110&quot; is not a valid pair since there is a 1 separating the two 1&#39;s underlined."
+      "explanation": "22 in binary is \"10110\".\nThe first adjacent pair of 1's is \"10110\" with a distance of 2.\nThe second adjacent pair of 1's is \"10110\" with a distance of 1.\nThe answer is the largest of these two distances, which is 2.\nNote that \"10110\" is not a valid pair since there is a 1 separating the two 1's underlined."
     },
     {
       "input": "n = 8",
       "output": "0",
-      "explanation": "8 in binary is &quot;1000&quot;.\nThere are not any adjacent pairs of 1&#39;s in the binary representation of 8, so we return 0."
+      "explanation": "8 in binary is \"1000\".\nThere are not any adjacent pairs of 1's in the binary representation of 8, so we return 0."
     },
     {
       "input": "n = 5",
       "output": "2",
-      "explanation": "5 in binary is &quot;101&quot;."
+      "explanation": "5 in binary is \"101\"."
     }
   ],
   "starterCode": {
@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 22",
+      "input": "22",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 8",
+      "input": "8",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "22",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "2"
+    },
+    {
       "input": "n = 22",
       "expectedOutput": "2"
     },
@@ -76,74 +88,6 @@
     {
       "input": "n = 5",
       "expectedOutput": "2"
-    },
-    {
-      "input": "22",
-      "expectedOutput": null
-    },
-    {
-      "input": "8",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -155,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/binary-gap/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.732Z",
+    "collectedAt": "2026-10-19T18:40:13.552Z",
     "sourceUpdatedAt": null
   }
 }

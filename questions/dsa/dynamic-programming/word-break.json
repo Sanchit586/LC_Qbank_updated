@@ -24,17 +24,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;,&quot;code&quot;]",
+      "input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
       "output": "true",
-      "explanation": "Return true because &quot;leetcode&quot; can be segmented as &quot;leet code&quot;."
+      "explanation": "Return true because \"leetcode\" can be segmented as \"leet code\"."
     },
     {
-      "input": "s = &quot;applepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;]",
+      "input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]",
       "output": "true",
-      "explanation": "Return true because &quot;applepenapple&quot; can be segmented as &quot;apple pen apple&quot;.\nNote that you are allowed to reuse a dictionary word."
+      "explanation": "Return true because \"applepenapple\" can be segmented as \"apple pen apple\".\nNote that you are allowed to reuse a dictionary word."
     },
     {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
       "output": "false",
       "explanation": null
     }
@@ -62,42 +62,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;,&quot;code&quot;]",
+      "input": "\"leetcode\"\n[\"leet\",\"code\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;applepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;]",
+      "input": "\"applepenapple\"\n[\"apple\",\"pen\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;, wordDict = [&quot;leet&quot;,&quot;code&quot;]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;applepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"leetcode\"\n[\"leet\",\"code\"]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"applepenapple\"\n[\"apple\",\"pen\"]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
-      "expectedOutput": null
+      "expectedOutput": "false"
+    },
+    {
+      "input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -109,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/word-break/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:14.349Z",
+    "collectedAt": "2026-10-19T18:40:31.758Z",
     "sourceUpdatedAt": null
   }
 }

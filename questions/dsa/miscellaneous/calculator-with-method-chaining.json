@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;add&quot;, &quot;subtract&quot;, &quot;getResult&quot;], \nvalues = [10, 5, 7]",
+      "input": "actions = [\"Calculator\", \"add\", \"subtract\", \"getResult\"], \nvalues = [10, 5, 7]",
       "output": "8",
       "explanation": "new Calculator(10).add(5).subtract(7).getResult() // 10 + 5 - 7 = 8"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;multiply&quot;, &quot;power&quot;, &quot;getResult&quot;], \nvalues = [2, 5, 2]",
+      "input": "actions = [\"Calculator\", \"multiply\", \"power\", \"getResult\"], \nvalues = [2, 5, 2]",
       "output": "100",
       "explanation": "new Calculator(2).multiply(5).power(2).getResult() // (2 * 5) ^ 2 = 100"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;divide&quot;, &quot;getResult&quot;], \nvalues = [20, 0]",
-      "output": "&quot;Division by zero is not allowed&quot;",
+      "input": "actions = [\"Calculator\", \"divide\", \"getResult\"], \nvalues = [20, 0]",
+      "output": "\"Division by zero is not allowed\"",
       "explanation": "new Calculator(20).divide(0).getResult() // 20 / 0 \n\nThe error should be thrown because we cannot divide by zero."
     }
   ],
@@ -39,62 +39,42 @@
   },
   "publicTests": [
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;add&quot;, &quot;subtract&quot;, &quot;getResult&quot;], \nvalues = [10, 5, 7]",
+      "input": "[\"Calculator\", \"add\", \"subtract\", \"getResult\"]\n[10, 5, 7]",
       "expectedOutput": "8"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;multiply&quot;, &quot;power&quot;, &quot;getResult&quot;], \nvalues = [2, 5, 2]",
+      "input": "[\"Calculator\", \"multiply\", \"power\", \"getResult\"]\n[2, 5, 2]",
       "expectedOutput": "100"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;divide&quot;, &quot;getResult&quot;], \nvalues = [20, 0]",
-      "expectedOutput": "&quot;Division by zero is not allowed&quot;"
+      "input": "[\"Calculator\", \"divide\", \"getResult\"]\n[20, 0]",
+      "expectedOutput": "\"Division by zero is not allowed\""
     }
   ],
   "testCases": [
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;add&quot;, &quot;subtract&quot;, &quot;getResult&quot;], \nvalues = [10, 5, 7]",
+      "input": "[\"Calculator\", \"add\", \"subtract\", \"getResult\"]\n[10, 5, 7]",
       "expectedOutput": "8"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;multiply&quot;, &quot;power&quot;, &quot;getResult&quot;], \nvalues = [2, 5, 2]",
+      "input": "[\"Calculator\", \"multiply\", \"power\", \"getResult\"]\n[2, 5, 2]",
       "expectedOutput": "100"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;divide&quot;, &quot;getResult&quot;], \nvalues = [20, 0]",
-      "expectedOutput": "&quot;Division by zero is not allowed&quot;"
-    },
-    {
-      "input": "[\"Calculator\", \"add\", \"subtract\", \"getResult\"]\n[10, 5, 7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"Calculator\", \"multiply\", \"power\", \"getResult\"]\n[2, 5, 2]",
-      "expectedOutput": null
-    },
-    {
       "input": "[\"Calculator\", \"divide\", \"getResult\"]\n[20, 0]",
-      "expectedOutput": null
+      "expectedOutput": "\"Division by zero is not allowed\""
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;multiply&quot;, &quot;power&quot;, &quot;getResult&quot;], \nvalues = [3, 6, 3]",
-      "expectedOutput": null
+      "input": "actions = [\"Calculator\", \"add\", \"subtract\", \"getResult\"], \nvalues = [10, 5, 7]",
+      "expectedOutput": "8"
     },
     {
-      "input": "actions = [&quot;Calculator&quot;, &quot;divide&quot;, &quot;getResult&quot;], \nvalues = [21, 1]",
-      "expectedOutput": null
+      "input": "actions = [\"Calculator\", \"multiply\", \"power\", \"getResult\"], \nvalues = [2, 5, 2]",
+      "expectedOutput": "100"
     },
     {
-      "input": "[\"Calculator\", \"add\", \"subtract\", \"getResult\"]\n[11, 6, 8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"Calculator\", \"multiply\", \"power\", \"getResult\"]\n[3, 6, 3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "actions = [&quot;Calculator&quot;, &quot;add&quot;, &quot;subtract&quot;, &quot;getResult&quot;], \nvalues = [11, 6, 8]",
-      "expectedOutput": null
+      "input": "actions = [\"Calculator\", \"divide\", \"getResult\"], \nvalues = [20, 0]",
+      "expectedOutput": "\"Division by zero is not allowed\""
     }
   ],
   "sqlSchema": null,
@@ -106,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/calculator-with-method-chaining/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.256Z",
+    "collectedAt": "2026-10-19T18:40:13.839Z",
     "sourceUpdatedAt": null
   }
 }

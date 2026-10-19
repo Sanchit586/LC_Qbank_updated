@@ -18,12 +18,12 @@
     {
       "input": "n = 5, k = 2",
       "output": "[4,5]",
-      "explanation": "The game goes as follows:\n1) Start at 1st&nbsp;friend and pass the ball to the friend who is 2 steps away from them - 3rd&nbsp;friend.\n2) 3rd&nbsp;friend passes the ball to the friend who is 4 steps away from them - 2nd&nbsp;friend.\n3) 2nd&nbsp;friend passes the ball to the friend who is 6 steps away from them  - 3rd&nbsp;friend.\n4) The game ends as 3rd&nbsp;friend receives the ball for the second time."
+      "explanation": "The game goes as follows:\n1) Start at 1st friend and pass the ball to the friend who is 2 steps away from them - 3rd friend.\n2) 3rd friend passes the ball to the friend who is 4 steps away from them - 2nd friend.\n3) 2nd friend passes the ball to the friend who is 6 steps away from them  - 3rd friend.\n4) The game ends as 3rd friend receives the ball for the second time."
     },
     {
       "input": "n = 4, k = 4",
       "output": "[2,3,4]",
-      "explanation": "The game goes as follows:\n1) Start at the 1st&nbsp;friend and pass the ball to the friend who is 4 steps away from them - 1st&nbsp;friend.\n2) The game ends as 1st&nbsp;friend receives the ball for the second time."
+      "explanation": "The game goes as follows:\n1) Start at the 1st friend and pass the ball to the friend who is 4 steps away from them - 1st friend.\n2) The game ends as 1st friend receives the ball for the second time."
     }
   ],
   "starterCode": {
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, k = 2",
+      "input": "5\n2",
       "expectedOutput": "[4,5]"
     },
     {
-      "input": "n = 4, k = 4",
+      "input": "4\n4",
       "expectedOutput": "[2,3,4]"
     }
   ],
   "testCases": [
     {
+      "input": "5\n2",
+      "expectedOutput": "[4,5]"
+    },
+    {
+      "input": "4\n4",
+      "expectedOutput": "[2,3,4]"
+    },
+    {
       "input": "n = 5, k = 2",
       "expectedOutput": "[4,5]"
     },
     {
       "input": "n = 4, k = 4",
       "expectedOutput": "[2,3,4]"
-    },
-    {
-      "input": "5\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-losers-of-the-circular-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.965Z",
+    "collectedAt": "2026-10-19T18:40:18.390Z",
     "sourceUpdatedAt": null
   }
 }

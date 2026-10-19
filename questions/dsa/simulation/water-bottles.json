@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "numBottles = 9, numExchange = 3",
+      "input": "9\n3",
       "expectedOutput": "13"
     },
     {
-      "input": "numBottles = 15, numExchange = 4",
+      "input": "15\n4",
       "expectedOutput": "19"
     }
   ],
   "testCases": [
     {
+      "input": "9\n3",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "15\n4",
+      "expectedOutput": "19"
+    },
+    {
       "input": "numBottles = 9, numExchange = 3",
       "expectedOutput": "13"
     },
     {
       "input": "numBottles = 15, numExchange = 4",
       "expectedOutput": "19"
-    },
-    {
-      "input": "9\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "15\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "numBottles = 10, numExchange = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/water-bottles/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:13.226Z",
+    "collectedAt": "2026-10-19T18:40:31.666Z",
     "sourceUpdatedAt": null
   }
 }

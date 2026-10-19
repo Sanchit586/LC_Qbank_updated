@@ -50,86 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 19",
+      "input": "19",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "19",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
       "input": "n = 19",
       "expectedOutput": "true"
     },
     {
       "input": "n = 2",
       "expectedOutput": "false"
-    },
-    {
-      "input": "19",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -141,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/happy-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.700Z",
+    "collectedAt": "2026-10-19T18:40:19.340Z",
     "sourceUpdatedAt": null
   }
 }

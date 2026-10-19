@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;EEEEEEE&quot;",
+      "input": "s = \"EEEEEEE\"",
       "output": "7",
       "explanation": null
     },
     {
-      "input": "s = &quot;ELELEEL&quot;",
+      "input": "s = \"ELELEEL\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;ELEELEELLL&quot;",
+      "input": "s = \"ELEELEELLL\"",
       "output": "3",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;EEEEEEE&quot;",
+      "input": "\"EEEEEEE\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;ELELEEL&quot;",
+      "input": "\"ELELEEL\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;ELEELEELLL&quot;",
+      "input": "\"ELEELEELLL\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;EEEEEEE&quot;",
+      "input": "\"EEEEEEE\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;ELELEEL&quot;",
+      "input": "\"ELELEEL\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;ELEELEELLL&quot;",
+      "input": "\"ELEELEELLL\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"EEEEEEE\"",
-      "expectedOutput": null
+      "input": "s = \"EEEEEEE\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"ELELEEL\"",
-      "expectedOutput": null
+      "input": "s = \"ELELEEL\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"ELEELEELLL\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"ELEELEELLL\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-chairs-in-a-waiting-room/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:06.572Z",
+    "collectedAt": "2026-10-19T18:40:24.194Z",
     "sourceUpdatedAt": null
   }
 }

@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 0",
+      "input": "3\n0",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 3, k = 1",
+      "input": "3\n1",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "3\n0",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "2"
+    },
+    {
       "input": "n = 3, k = 0",
       "expectedOutput": "1"
     },
     {
       "input": "n = 3, k = 1",
       "expectedOutput": "2"
-    },
-    {
-      "input": "3\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -87,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/k-inverse-pairs-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:34.743Z",
+    "collectedAt": "2026-10-19T18:40:19.730Z",
     "sourceUpdatedAt": null
   }
 }

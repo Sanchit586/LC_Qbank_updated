@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "dominoes = &quot;RR.L&quot;",
-      "output": "&quot;RR.L&quot;",
+      "input": "dominoes = \"RR.L\"",
+      "output": "\"RR.L\"",
       "explanation": "The first domino expends no additional force on the second domino."
     },
     {
-      "input": "dominoes = &quot;.L.R...LR..L..&quot;",
-      "output": "&quot;LL.RR.LLRRLL..&quot;",
+      "input": "dominoes = \".L.R...LR..L..\"",
+      "output": "\"LL.RR.LLRRLL..\"",
       "explanation": null
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "dominoes = &quot;RR.L&quot;",
-      "expectedOutput": "&quot;RR.L&quot;"
+      "input": "\"RR.L\"",
+      "expectedOutput": "\"RR.L\""
     },
     {
-      "input": "dominoes = &quot;.L.R...LR..L..&quot;",
-      "expectedOutput": "&quot;LL.RR.LLRRLL..&quot;"
+      "input": "\".L.R...LR..L..\"",
+      "expectedOutput": "\"LL.RR.LLRRLL..\""
     }
   ],
   "testCases": [
     {
-      "input": "dominoes = &quot;RR.L&quot;",
-      "expectedOutput": "&quot;RR.L&quot;"
-    },
-    {
-      "input": "dominoes = &quot;.L.R...LR..L..&quot;",
-      "expectedOutput": "&quot;LL.RR.LLRRLL..&quot;"
-    },
-    {
       "input": "\"RR.L\"",
-      "expectedOutput": null
+      "expectedOutput": "\"RR.L\""
     },
     {
       "input": "\".L.R...LR..L..\"",
-      "expectedOutput": null
+      "expectedOutput": "\"LL.RR.LLRRLL..\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "dominoes = \"RR.L\"",
+      "expectedOutput": "\"RR.L\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "dominoes = \".L.R...LR..L..\"",
+      "expectedOutput": "\"LL.RR.LLRRLL..\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/push-dominoes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:01.241Z",
+    "collectedAt": "2026-10-19T18:40:27.049Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "grid = [[&quot;(&quot;,&quot;(&quot;,&quot;(&quot;],[&quot;)&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;]]",
+      "input": "grid = [[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
       "output": "true",
-      "explanation": "The above diagram shows two possible paths that form valid parentheses strings.\nThe first path shown results in the valid parentheses string &quot;()(())&quot;.\nThe second path shown results in the valid parentheses string &quot;((()))&quot;.\nNote that there may be other valid parentheses string paths."
+      "explanation": "The above diagram shows two possible paths that form valid parentheses strings.\nThe first path shown results in the valid parentheses string \"()(())\".\nThe second path shown results in the valid parentheses string \"((()))\".\nNote that there may be other valid parentheses string paths."
     },
     {
-      "input": "grid = [[&quot;)&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;]]",
+      "input": "grid = [[\")\",\")\"],[\"(\",\"(\"]]",
       "output": "false",
-      "explanation": "The two possible paths form the parentheses strings &quot;))(&quot; and &quot;)((&quot;. Since neither of them are valid parentheses strings, we return false."
+      "explanation": "The two possible paths form the parentheses strings \"))(\" and \")((\". Since neither of them are valid parentheses strings, we return false."
     }
   ],
   "starterCode": {
@@ -53,30 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[&quot;(&quot;,&quot;(&quot;,&quot;(&quot;],[&quot;)&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;]]",
+      "input": "[[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[&quot;)&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;]]",
+      "input": "[[\")\",\")\"],[\"(\",\"(\"]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [[&quot;(&quot;,&quot;(&quot;,&quot;(&quot;],[&quot;)&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;,&quot;)&quot;]]",
+      "input": "[[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[&quot;)&quot;,&quot;)&quot;],[&quot;(&quot;,&quot;(&quot;]]",
+      "input": "[[\")\",\")\"],[\"(\",\"(\"]]",
       "expectedOutput": "false"
     },
     {
-      "input": "[[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
-      "expectedOutput": null
+      "input": "grid = [[\"(\",\"(\",\"(\"],[\")\",\"(\",\")\"],[\"(\",\"(\",\")\"],[\"(\",\"(\",\")\"]]",
+      "expectedOutput": "true"
     },
     {
-      "input": "[[\")\",\")\"],[\"(\",\"(\"]]",
-      "expectedOutput": null
+      "input": "grid = [[\")\",\")\"],[\"(\",\"(\"]]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-there-is-a-valid-parentheses-string-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:55.787Z",
+    "collectedAt": "2026-10-19T18:40:14.255Z",
     "sourceUpdatedAt": null
   }
 }

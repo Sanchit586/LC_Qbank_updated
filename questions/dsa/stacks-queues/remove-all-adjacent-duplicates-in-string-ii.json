@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "output": "&quot;abcd&quot;",
-      "explanation": "There&#39;s nothing to delete."
+      "input": "s = \"abcd\", k = 2",
+      "output": "\"abcd\"",
+      "explanation": "There's nothing to delete."
     },
     {
-      "input": "s = &quot;deeedbbcccbdaa&quot;, k = 3",
-      "output": "&quot;aa&quot;",
-      "explanation": "First delete &quot;eee&quot; and &quot;ccc&quot;, get &quot;ddbbbdaa&quot;\nThen delete &quot;bbb&quot;, get &quot;dddaa&quot;\nFinally delete &quot;ddd&quot;, get &quot;aa&quot;"
+      "input": "s = \"deeedbbcccbdaa\", k = 3",
+      "output": "\"aa\"",
+      "explanation": "First delete \"eee\" and \"ccc\", get \"ddbbbdaa\"\nThen delete \"bbb\", get \"dddaa\"\nFinally delete \"ddd\", get \"aa\""
     },
     {
-      "input": "s = &quot;pbbcggttciiippooaais&quot;, k = 2",
-      "output": "&quot;ps&quot;",
+      "input": "s = \"pbbcggttciiippooaais\", k = 2",
+      "output": "\"ps\"",
       "explanation": null
     }
   ],
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;abcd&quot;"
+      "input": "\"abcd\"\n2",
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "s = &quot;deeedbbcccbdaa&quot;, k = 3",
-      "expectedOutput": "&quot;aa&quot;"
+      "input": "\"deeedbbcccbdaa\"\n3",
+      "expectedOutput": "\"aa\""
     },
     {
-      "input": "s = &quot;pbbcggttciiippooaais&quot;, k = 2",
-      "expectedOutput": "&quot;ps&quot;"
+      "input": "\"pbbcggttciiippooaais\"\n2",
+      "expectedOutput": "\"ps\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;abcd&quot;"
-    },
-    {
-      "input": "s = &quot;deeedbbcccbdaa&quot;, k = 3",
-      "expectedOutput": "&quot;aa&quot;"
-    },
-    {
-      "input": "s = &quot;pbbcggttciiippooaais&quot;, k = 2",
-      "expectedOutput": "&quot;ps&quot;"
-    },
-    {
       "input": "\"abcd\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"abcd\""
     },
     {
       "input": "\"deeedbbcccbdaa\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"aa\""
     },
     {
       "input": "\"pbbcggttciiippooaais\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"ps\""
     },
     {
-      "input": "s = &quot;deeedbbcccbdaa&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abcd\", k = 2",
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "s = &quot;pbbcggttciiippooaais&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"deeedbbcccbdaa\", k = 3",
+      "expectedOutput": "\"aa\""
     },
     {
-      "input": "\"abcd\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"deeedbbcccbdaa\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcd&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"pbbcggttciiippooaais\", k = 2",
+      "expectedOutput": "\"ps\""
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.165Z",
+    "collectedAt": "2026-10-19T18:40:27.456Z",
     "sourceUpdatedAt": null
   }
 }

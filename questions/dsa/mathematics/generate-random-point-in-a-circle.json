@@ -17,7 +17,13 @@
     "-107 <= x_center, y_center <= 107",
     "At most 3 * 104 calls will be made to randPoint."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Solution\", \"randPoint\", \"randPoint\", \"randPoint\"]\n[[1.0, 0.0, 0.0], [], [], []]",
+      "output": "[null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]",
+      "explanation": "Solution solution = new Solution(1.0, 0.0, 0.0);\nsolution.randPoint(); // return [-0.02493, -0.38077]\nsolution.randPoint(); // return [0.82314, 0.38945]\nsolution.randPoint(); // return [0.36572, 0.17248]"
+    }
+  ],
   "starterCode": {
     "cpp": "class Solution {\npublic:\n    Solution(double radius, double x_center, double y_center) {\n        \n    }\n    \n    vector<double> randPoint() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(radius, x_center, y_center);\n * vector<double> param_1 = obj->randPoint();\n */",
     "java": "class Solution {\n\n    public Solution(double radius, double x_center, double y_center) {\n        \n    }\n    \n    public double[] randPoint() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(radius, x_center, y_center);\n * double[] param_1 = obj.randPoint();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[1.0,0.0,0.0],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[1.0,0.0,0.0],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]"
     },
     {
-      "input": "[\"Solution\",\"randPoint\",\"randPoint\",\"randPoint\"]\n[[2.1,1.1,1.1],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"Solution\", \"randPoint\", \"randPoint\", \"randPoint\"]\n[[1.0, 0.0, 0.0], [], [], []]",
+      "expectedOutput": "[null, [-0.02493, -0.38077], [0.82314, 0.38945], [0.36572, 0.17248]]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/generate-random-point-in-a-circle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:22.081Z",
+    "collectedAt": "2026-10-19T18:40:19.153Z",
     "sourceUpdatedAt": null
   }
 }

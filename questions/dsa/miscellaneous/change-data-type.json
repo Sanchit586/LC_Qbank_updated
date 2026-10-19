@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "DataFrame students:\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73.0  |\n| 2          | Kate | 15  | 87.0  |\n+------------+------+-----+-------+",
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\",\"grade\"]},\"rows\":{\"students\":[[1,\"Ava\",6,73.0],[2,\"Kate\",15,87.0]]}}",
       "expectedOutput": "+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73    |\n| 2          | Kate | 15  | 87    |\n+------------+------+-----+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "DataFrame students:\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73.0  |\n| 2          | Kate | 15  | 87.0  |\n+------------+------+-----+-------+",
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\",\"grade\"]},\"rows\":{\"students\":[[1,\"Ava\",6,73.0],[2,\"Kate\",15,87.0]]}}",
       "expectedOutput": "+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73    |\n| 2          | Kate | 15  | 87    |\n+------------+------+-----+-------+"
     },
     {
-      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\",\"grade\"]},\"rows\":{\"students\":[[1,\"Ava\",6,73.0],[2,\"Kate\",15,87.0]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "DataFrame students:\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 2          | Ava  | 7   | 74.1  |\n| 3          | Kate | 16  | 88.1  |\n+------------+------+-----+-------+",
-      "expectedOutput": null
+      "input": "DataFrame students:\n+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73.0  |\n| 2          | Kate | 15  | 87.0  |\n+------------+------+-----+-------+",
+      "expectedOutput": "+------------+------+-----+-------+\n| student_id | name | age | grade |\n+------------+------+-----+-------+\n| 1          | Ava  | 6   | 73    |\n| 2          | Kate | 15  | 87    |\n+------------+------+-----+-------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/change-data-type/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.071Z",
+    "collectedAt": "2026-10-19T18:40:13.989Z",
     "sourceUpdatedAt": null
   }
 }

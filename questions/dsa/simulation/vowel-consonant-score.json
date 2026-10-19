@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cooear&quot;",
+      "input": "s = \"cooear\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;axeyizou&quot;",
+      "input": "s = \"axeyizou\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;au 123&quot;",
+      "input": "s = \"au 123\"",
       "output": "0",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cooear&quot;",
+      "input": "\"cooear\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;axeyizou&quot;",
+      "input": "\"axeyizou\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;au 123&quot;",
+      "input": "\"au 123\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cooear&quot;",
+      "input": "\"cooear\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;axeyizou&quot;",
+      "input": "\"axeyizou\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;au 123&quot;",
+      "input": "\"au 123\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"cooear\"",
-      "expectedOutput": null
+      "input": "s = \"cooear\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"axeyizou\"",
-      "expectedOutput": null
+      "input": "s = \"axeyizou\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"au 123\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"au 123\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/vowel-consonant-score/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.465Z",
+    "collectedAt": "2026-10-19T18:40:31.610Z",
     "sourceUpdatedAt": null
   }
 }

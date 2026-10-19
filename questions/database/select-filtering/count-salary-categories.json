@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Accounts table:\n+------------+--------+\n| account_id | income |\n+------------+--------+\n| 3          | 108939 |\n| 2          | 12747  |\n| 8          | 87709  |\n| 6          | 91796  |\n+------------+--------+",
+      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[[3,108939],[2,12747],[8,87709],[6,91796]]}}",
       "expectedOutput": "+----------------+----------------+\n| category       | accounts_count |\n+----------------+----------------+\n| Low Salary     | 1              |\n| Average Salary | 0              |\n| High Salary    | 3              |\n+----------------+----------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Accounts table:\n+------------+--------+\n| account_id | income |\n+------------+--------+\n| 3          | 108939 |\n| 2          | 12747  |\n| 8          | 87709  |\n| 6          | 91796  |\n+------------+--------+",
+      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[[3,108939],[2,12747],[8,87709],[6,91796]]}}",
       "expectedOutput": "+----------------+----------------+\n| category       | accounts_count |\n+----------------+----------------+\n| Low Salary     | 1              |\n| Average Salary | 0              |\n| High Salary    | 3              |\n+----------------+----------------+"
     },
     {
-      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[[3,108939],[2,12747],[8,87709],[6,91796]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[[3,108939]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Accounts\":[\"account_id\",\"income\"]},\"rows\":{\"Accounts\":[[3,null],[2,null],[8,null],[6,null]]}}",
-      "expectedOutput": null
+      "input": "Accounts table:\n+------------+--------+\n| account_id | income |\n+------------+--------+\n| 3          | 108939 |\n| 2          | 12747  |\n| 8          | 87709  |\n| 6          | 91796  |\n+------------+--------+",
+      "expectedOutput": "+----------------+----------------+\n| category       | accounts_count |\n+----------------+----------------+\n| Low Salary     | 1              |\n| Average Salary | 0              |\n| High Salary    | 3              |\n+----------------+----------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Accounts (account_id int, income int)\n\nTruncate table Accounts",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-salary-categories/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:20.665Z",
+    "collectedAt": "2026-10-19T18:40:15.543Z",
     "sourceUpdatedAt": null
   }
 }

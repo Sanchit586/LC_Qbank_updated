@@ -26,18 +26,18 @@
   ],
   "examples": [
     {
-      "input": "expression = &quot;e + 8 - a + 5&quot;, evalvars = [&quot;e&quot;], evalints = [1]",
-      "output": "[&quot;-1*a&quot;,&quot;14&quot;]",
+      "input": "expression = \"e + 8 - a + 5\", evalvars = [\"e\"], evalints = [1]",
+      "output": "[\"-1*a\",\"14\"]",
       "explanation": null
     },
     {
-      "input": "expression = &quot;e - 8 + temperature - pressure&quot;, evalvars = [&quot;e&quot;, &quot;temperature&quot;], evalints = [1, 12]",
-      "output": "[&quot;-1*pressure&quot;,&quot;5&quot;]",
+      "input": "expression = \"e - 8 + temperature - pressure\", evalvars = [\"e\", \"temperature\"], evalints = [1, 12]",
+      "output": "[\"-1*pressure\",\"5\"]",
       "explanation": null
     },
     {
-      "input": "expression = &quot;(e + 8) * (e - 8)&quot;, evalvars = [], evalints = []",
-      "output": "[&quot;1*e*e&quot;,&quot;-64&quot;]",
+      "input": "expression = \"(e + 8) * (e - 8)\", evalvars = [], evalints = []",
+      "output": "[\"1*e*e\",\"-64\"]",
       "explanation": null
     }
   ],
@@ -64,62 +64,42 @@
   },
   "publicTests": [
     {
-      "input": "expression = &quot;e + 8 - a + 5&quot;, evalvars = [&quot;e&quot;], evalints = [1]",
-      "expectedOutput": "[&quot;-1*a&quot;,&quot;14&quot;]"
+      "input": "\"e + 8 - a + 5\"\n[\"e\"]\n[1]",
+      "expectedOutput": "[\"-1*a\",\"14\"]"
     },
     {
-      "input": "expression = &quot;e - 8 + temperature - pressure&quot;, evalvars = [&quot;e&quot;, &quot;temperature&quot;], evalints = [1, 12]",
-      "expectedOutput": "[&quot;-1*pressure&quot;,&quot;5&quot;]"
+      "input": "\"e - 8 + temperature - pressure\"\n[\"e\", \"temperature\"]\n[1, 12]",
+      "expectedOutput": "[\"-1*pressure\",\"5\"]"
     },
     {
-      "input": "expression = &quot;(e + 8) * (e - 8)&quot;, evalvars = [], evalints = []",
-      "expectedOutput": "[&quot;1*e*e&quot;,&quot;-64&quot;]"
+      "input": "\"(e + 8) * (e - 8)\"\n[]\n[]",
+      "expectedOutput": "[\"1*e*e\",\"-64\"]"
     }
   ],
   "testCases": [
     {
-      "input": "expression = &quot;e + 8 - a + 5&quot;, evalvars = [&quot;e&quot;], evalints = [1]",
-      "expectedOutput": "[&quot;-1*a&quot;,&quot;14&quot;]"
-    },
-    {
-      "input": "expression = &quot;e - 8 + temperature - pressure&quot;, evalvars = [&quot;e&quot;, &quot;temperature&quot;], evalints = [1, 12]",
-      "expectedOutput": "[&quot;-1*pressure&quot;,&quot;5&quot;]"
-    },
-    {
-      "input": "expression = &quot;(e + 8) * (e - 8)&quot;, evalvars = [], evalints = []",
-      "expectedOutput": "[&quot;1*e*e&quot;,&quot;-64&quot;]"
-    },
-    {
       "input": "\"e + 8 - a + 5\"\n[\"e\"]\n[1]",
-      "expectedOutput": null
+      "expectedOutput": "[\"-1*a\",\"14\"]"
     },
     {
       "input": "\"e - 8 + temperature - pressure\"\n[\"e\", \"temperature\"]\n[1, 12]",
-      "expectedOutput": null
+      "expectedOutput": "[\"-1*pressure\",\"5\"]"
     },
     {
       "input": "\"(e + 8) * (e - 8)\"\n[]\n[]",
-      "expectedOutput": null
+      "expectedOutput": "[\"1*e*e\",\"-64\"]"
     },
     {
-      "input": "expression = &quot;e - 9 + temperature - pressure&quot;, evalvars = [&quot;e&quot;, &quot;temperature&quot;], evalints = [2, 13]",
-      "expectedOutput": null
+      "input": "expression = \"e + 8 - a + 5\", evalvars = [\"e\"], evalints = [1]",
+      "expectedOutput": "[\"-1*a\",\"14\"]"
     },
     {
-      "input": "expression = &quot;(e + 9) * (e - 9)&quot;, evalvars = [], evalints = []",
-      "expectedOutput": null
+      "input": "expression = \"e - 8 + temperature - pressure\", evalvars = [\"e\", \"temperature\"], evalints = [1, 12]",
+      "expectedOutput": "[\"-1*pressure\",\"5\"]"
     },
     {
-      "input": "\"e + 9 - a + 6\"\n[\"e\"]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"e - 9 + temperature - pressure\"\n[\"e\", \"temperature\"]\n[2, 13]",
-      "expectedOutput": null
-    },
-    {
-      "input": "expression = &quot;e + 9 - a + 6&quot;, evalvars = [&quot;e&quot;], evalints = [2]",
-      "expectedOutput": null
+      "input": "expression = \"(e + 8) * (e - 8)\", evalvars = [], evalints = []",
+      "expectedOutput": "[\"1*e*e\",\"-64\"]"
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/basic-calculator-iv/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.556Z",
+    "collectedAt": "2026-10-19T18:40:13.443Z",
     "sourceUpdatedAt": null
   }
 }

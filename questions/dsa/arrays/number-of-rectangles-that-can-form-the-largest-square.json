@@ -46,34 +46,30 @@
   },
   "publicTests": [
     {
-      "input": "rectangles = [[5,8],[3,9],[5,12],[16,5]]",
+      "input": "[[5,8],[3,9],[5,12],[16,5]]",
       "expectedOutput": "3"
     },
     {
-      "input": "rectangles = [[2,3],[3,7],[4,3],[3,7]]",
+      "input": "[[2,3],[3,7],[4,3],[3,7]]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[[5,8],[3,9],[5,12],[16,5]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[2,3],[3,7],[4,3],[3,7]]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "rectangles = [[5,8],[3,9],[5,12],[16,5]]",
       "expectedOutput": "3"
     },
     {
       "input": "rectangles = [[2,3],[3,7],[4,3],[3,7]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[[5,8],[3,9],[5,12],[16,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[3,7],[4,3],[3,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "rectangles = [[6,9],[4,10],[6,13],[17,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-rectangles-that-can-form-the-largest-square/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.010Z",
+    "collectedAt": "2026-10-19T18:40:26.038Z",
     "sourceUpdatedAt": null
   }
 }

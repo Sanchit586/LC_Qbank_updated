@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "low = 10, high = 20, k = 3",
+      "input": "10\n20\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "low = 1, high = 10, k = 1",
+      "input": "1\n10\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "low = 5, high = 5, k = 2",
+      "input": "5\n5\n2",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "10\n20\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1\n10\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "5\n5\n2",
+      "expectedOutput": "0"
+    },
+    {
       "input": "low = 10, high = 20, k = 3",
       "expectedOutput": "2"
     },
@@ -78,38 +90,6 @@
     {
       "input": "low = 5, high = 5, k = 2",
       "expectedOutput": "0"
-    },
-    {
-      "input": "10\n20\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n10\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n5\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "low = 2, high = 11, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "low = 6, high = 6, k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n21\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n11\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "low = 11, high = 21, k = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-beautiful-integers-in-the-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.801Z",
+    "collectedAt": "2026-10-19T18:40:25.759Z",
     "sourceUpdatedAt": null
   }
 }

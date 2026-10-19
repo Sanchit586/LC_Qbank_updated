@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 11",
+      "input": "11",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 128",
+      "input": "128",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 2147483645",
+      "input": "2147483645",
       "expectedOutput": "30"
     }
   ],
   "testCases": [
     {
+      "input": "11",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "128",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2147483645",
+      "expectedOutput": "30"
+    },
+    {
       "input": "n = 11",
       "expectedOutput": "3"
     },
@@ -77,74 +89,6 @@
     {
       "input": "n = 2147483645",
       "expectedOutput": "30"
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
-    },
-    {
-      "input": "128",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483645",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -156,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-1-bits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.751Z",
+    "collectedAt": "2026-10-19T18:40:25.729Z",
     "sourceUpdatedAt": null
   }
 }

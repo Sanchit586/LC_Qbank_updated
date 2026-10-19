@@ -19,7 +19,7 @@
     {
       "input": "n = 5, start = 0",
       "output": "8",
-      "explanation": "Array nums is equal to [0, 2, 4, 6, 8] where (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8.\nWhere &quot;^&quot; corresponds to bitwise XOR operator."
+      "explanation": "Array nums is equal to [0, 2, 4, 6, 8] where (0 ^ 2 ^ 4 ^ 6 ^ 8) = 8.\nWhere \"^\" corresponds to bitwise XOR operator."
     },
     {
       "input": "n = 4, start = 3",
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, start = 0",
+      "input": "5\n0",
       "expectedOutput": "8"
     },
     {
-      "input": "n = 4, start = 3",
+      "input": "4\n3",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "5\n0",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "4\n3",
+      "expectedOutput": "8"
+    },
+    {
       "input": "n = 5, start = 0",
       "expectedOutput": "8"
     },
     {
       "input": "n = 4, start = 3",
       "expectedOutput": "8"
-    },
-    {
-      "input": "5\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, start = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/xor-operation-in-an-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.885Z",
+    "collectedAt": "2026-10-19T18:40:31.840Z",
     "sourceUpdatedAt": null
   }
 }

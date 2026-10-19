@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;#&quot;]]",
-      "output": "[[&quot;.&quot;],\n&nbsp;        [&quot;#&quot;],\n&nbsp;        [&quot;#&quot;]]",
+      "input": "boxGrid = [[\"#\",\".\",\"#\"]]",
+      "output": "[[\".\"],\n         [\"#\"],\n         [\"#\"]]",
       "explanation": null
     },
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;]]",
-      "output": "[[&quot;#&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;*&quot;,&quot;*&quot;],\n&nbsp;        [&quot;.&quot;,&quot;.&quot;]]",
+      "input": "boxGrid = [[\"#\",\".\",\"*\",\".\"],\n              [\"#\",\"#\",\"*\",\".\"]]",
+      "output": "[[\"#\",\".\"],\n         [\"#\",\"#\"],\n         [\"*\",\"*\"],\n         [\".\",\".\"]]",
       "explanation": null
     },
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;.&quot;]]",
-      "output": "[[&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;]]",
+      "input": "boxGrid = [[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],\n              [\"#\",\"#\",\"#\",\"*\",\".\",\".\"],\n              [\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
+      "output": "[[\".\",\"#\",\"#\"],\n         [\".\",\"#\",\"#\"],\n         [\"#\",\"#\",\"*\"],\n         [\"#\",\"*\",\".\"],\n         [\"#\",\".\",\"*\"],\n         [\"#\",\".\",\".\"]]",
       "explanation": null
     }
   ],
@@ -57,42 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;#&quot;]]",
-      "expectedOutput": "[[&quot;.&quot;],\n&nbsp;        [&quot;#&quot;],\n&nbsp;        [&quot;#&quot;]]"
+      "input": "[[\"#\",\".\",\"#\"]]",
+      "expectedOutput": "[[\".\"],\n         [\"#\"],\n         [\"#\"]]"
     },
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;]]",
-      "expectedOutput": "[[&quot;#&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;*&quot;,&quot;*&quot;],\n&nbsp;        [&quot;.&quot;,&quot;.&quot;]]"
+      "input": "[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]",
+      "expectedOutput": "[[\"#\",\".\"],\n         [\"#\",\"#\"],\n         [\"*\",\"*\"],\n         [\".\",\".\"]]"
     },
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;.&quot;]]",
-      "expectedOutput": "[[&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;]]"
+      "input": "[[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],[\"#\",\"#\",\"#\",\"*\",\".\",\".\"],[\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
+      "expectedOutput": "[[\".\",\"#\",\"#\"],\n         [\".\",\"#\",\"#\"],\n         [\"#\",\"#\",\"*\"],\n         [\"#\",\"*\",\".\"],\n         [\"#\",\".\",\"*\"],\n         [\"#\",\".\",\".\"]]"
     }
   ],
   "testCases": [
     {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;#&quot;]]",
-      "expectedOutput": "[[&quot;.&quot;],\n&nbsp;        [&quot;#&quot;],\n&nbsp;        [&quot;#&quot;]]"
-    },
-    {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;]]",
-      "expectedOutput": "[[&quot;#&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;*&quot;,&quot;*&quot;],\n&nbsp;        [&quot;.&quot;,&quot;.&quot;]]"
-    },
-    {
-      "input": "boxGrid = [[&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;*&quot;,&quot;.&quot;,&quot;.&quot;],\n&nbsp;             [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;.&quot;]]",
-      "expectedOutput": "[[&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n&nbsp;        [&quot;#&quot;,&quot;#&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;*&quot;,&quot;.&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;*&quot;],\n&nbsp;        [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;]]"
-    },
-    {
       "input": "[[\"#\",\".\",\"#\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[[\".\"],\n         [\"#\"],\n         [\"#\"]]"
     },
     {
       "input": "[[\"#\",\".\",\"*\",\".\"],[\"#\",\"#\",\"*\",\".\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[[\"#\",\".\"],\n         [\"#\",\"#\"],\n         [\"*\",\"*\"],\n         [\".\",\".\"]]"
     },
     {
       "input": "[[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],[\"#\",\"#\",\"#\",\"*\",\".\",\".\"],[\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[[\".\",\"#\",\"#\"],\n         [\".\",\"#\",\"#\"],\n         [\"#\",\"#\",\"*\"],\n         [\"#\",\"*\",\".\"],\n         [\"#\",\".\",\"*\"],\n         [\"#\",\".\",\".\"]]"
+    },
+    {
+      "input": "boxGrid = [[\"#\",\".\",\"#\"]]",
+      "expectedOutput": "[[\".\"],\n         [\"#\"],\n         [\"#\"]]"
+    },
+    {
+      "input": "boxGrid = [[\"#\",\".\",\"*\",\".\"],\n              [\"#\",\"#\",\"*\",\".\"]]",
+      "expectedOutput": "[[\"#\",\".\"],\n         [\"#\",\"#\"],\n         [\"*\",\"*\"],\n         [\".\",\".\"]]"
+    },
+    {
+      "input": "boxGrid = [[\"#\",\"#\",\"*\",\".\",\"*\",\".\"],\n              [\"#\",\"#\",\"#\",\"*\",\".\",\".\"],\n              [\"#\",\"#\",\"#\",\".\",\"#\",\".\"]]",
+      "expectedOutput": "[[\".\",\"#\",\"#\"],\n         [\".\",\"#\",\"#\"],\n         [\"#\",\"#\",\"*\"],\n         [\"#\",\"*\",\".\"],\n         [\"#\",\".\",\"*\"],\n         [\"#\",\".\",\".\"]]"
     }
   ],
   "sqlSchema": null,
@@ -107,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rotating-the-box/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:16.540Z",
+    "collectedAt": "2026-10-19T18:40:28.044Z",
     "sourceUpdatedAt": null
   }
 }

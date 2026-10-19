@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;get&quot;, &quot;count&quot;, &quot;get&quot;]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]",
+      "input": "actions = [\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]",
       "output": "[null, false, 42, 1, -1]",
-      "explanation": "At t=0, the cache is constructed.\nAt t=0, a key-value pair (1: 42) is added with a time limit of 100ms. The value doesn&#39;t exist so false is returned.\nAt t=50, key=1 is requested and the value of 42 is returned.\nAt t=50, count() is called and there is one active key in the cache.\nAt t=100, key=1 expires.\nAt t=150, get(1) is called but -1 is returned because the cache is empty."
+      "explanation": "At t=0, the cache is constructed.\nAt t=0, a key-value pair (1: 42) is added with a time limit of 100ms. The value doesn't exist so false is returned.\nAt t=50, key=1 is requested and the value of 42 is returned.\nAt t=50, count() is called and there is one active key in the cache.\nAt t=100, key=1 expires.\nAt t=150, get(1) is called but -1 is returned because the cache is empty."
     },
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;set&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;, &quot;count&quot;]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]",
+      "input": "actions = [\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]",
       "output": "[null, false, true, 50, 50, -1, 0]",
-      "explanation": "At t=0, the cache is constructed.\nAt t=0, a key-value pair (1: 42) is added with a time limit of 50ms. The value doesn&#39;t exist so false is returned.\nAt t=40, a key-value pair (1: 50) is added with a time limit of 100ms. A non-expired value already existed so true is returned and the old value was overwritten.\nAt t=50, get(1) is called which returned 50.\nAt t=120, get(1) is called which returned 50.\nAt t=140, key=1 expires.\nAt t=200, get(1) is called but the cache is empty so -1 is returned.\nAt t=250, count() returns 0 because the cache is empty."
+      "explanation": "At t=0, the cache is constructed.\nAt t=0, a key-value pair (1: 42) is added with a time limit of 50ms. The value doesn't exist so false is returned.\nAt t=40, a key-value pair (1: 50) is added with a time limit of 100ms. A non-expired value already existed so true is returned and the old value was overwritten.\nAt t=50, get(1) is called which returned 50.\nAt t=120, get(1) is called which returned 50.\nAt t=140, key=1 expires.\nAt t=200, get(1) is called but the cache is empty so -1 is returned.\nAt t=250, count() returns 0 because the cache is empty."
     }
   ],
   "starterCode": {
@@ -35,34 +35,30 @@
   },
   "publicTests": [
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;get&quot;, &quot;count&quot;, &quot;get&quot;]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]",
+      "input": "[\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\n[[], [1, 42, 100], [1], [], [1]]\n[0, 0, 50, 50, 150]",
       "expectedOutput": "[null, false, 42, 1, -1]"
     },
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;set&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;, &quot;count&quot;]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]",
+      "input": "[\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\n[[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\n[0, 0, 40, 50, 120, 200, 250]",
       "expectedOutput": "[null, false, true, 50, 50, -1, 0]"
     }
   ],
   "testCases": [
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;get&quot;, &quot;count&quot;, &quot;get&quot;]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]",
+      "input": "[\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\n[[], [1, 42, 100], [1], [], [1]]\n[0, 0, 50, 50, 150]",
       "expectedOutput": "[null, false, 42, 1, -1]"
     },
     {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;set&quot;, &quot;get&quot;, &quot;get&quot;, &quot;get&quot;, &quot;count&quot;]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]",
+      "input": "[\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\n[[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\n[0, 0, 40, 50, 120, 200, 250]",
       "expectedOutput": "[null, false, true, 50, 50, -1, 0]"
     },
     {
-      "input": "[\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\n[[], [1, 42, 100], [1], [], [1]]\n[0, 0, 50, 50, 150]",
-      "expectedOutput": null
+      "input": "actions = [\"TimeLimitedCache\", \"set\", \"get\", \"count\", \"get\"]\nvalues = [[], [1, 42, 100], [1], [], [1]]\ntimeDelays = [0, 0, 50, 50, 150]",
+      "expectedOutput": "[null, false, 42, 1, -1]"
     },
     {
-      "input": "[\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\n[[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\n[0, 0, 40, 50, 120, 200, 250]",
-      "expectedOutput": null
-    },
-    {
-      "input": "actions = [&quot;TimeLimitedCache&quot;, &quot;set&quot;, &quot;get&quot;, &quot;count&quot;, &quot;get&quot;]\nvalues = [[], [2, 43, 101], [2], [], [2]]\ntimeDelays = [1, 1, 51, 51, 151]",
-      "expectedOutput": null
+      "input": "actions = [\"TimeLimitedCache\", \"set\", \"set\", \"get\", \"get\", \"get\", \"count\"]\nvalues = [[], [1, 42, 50], [1, 50, 100], [1], [1], [1], []]\ntimeDelays = [0, 0, 40, 50, 120, 200, 250]",
+      "expectedOutput": "[null, false, true, 50, 50, -1, 0]"
     }
   ],
   "sqlSchema": null,
@@ -78,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cache-with-time-limit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.203Z",
+    "collectedAt": "2026-10-19T18:40:13.804Z",
     "sourceUpdatedAt": null
   }
 }

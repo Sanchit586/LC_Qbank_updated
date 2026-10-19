@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;, p = &quot;ee*e&quot;",
+      "input": "s = \"leetcode\", p = \"ee*e\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;car&quot;, p = &quot;c*v&quot;",
+      "input": "s = \"car\", p = \"c*v\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s = &quot;luck&quot;, p = &quot;u*&quot;",
+      "input": "s = \"luck\", p = \"u*\"",
       "output": "true",
       "explanation": null
     }
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;, p = &quot;ee*e&quot;",
+      "input": "\"leetcode\"\n\"ee*e\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;car&quot;, p = &quot;c*v&quot;",
+      "input": "\"car\"\n\"c*v\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;luck&quot;, p = &quot;u*&quot;",
+      "input": "\"luck\"\n\"u*\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;, p = &quot;ee*e&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;car&quot;, p = &quot;c*v&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;luck&quot;, p = &quot;u*&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"leetcode\"\n\"ee*e\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"car\"\n\"c*v\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"luck\"\n\"u*\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", p = \"ee*e\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"car\", p = \"c*v\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"luck\", p = \"u*\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/substring-matching-pattern/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.724Z",
+    "collectedAt": "2026-10-19T18:40:30.444Z",
     "sourceUpdatedAt": null
   }
 }

@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2,3,4,5,6], nums2 = [1,1,2,2,2,2]",
+      "input": "[1,2,3,4,5,6]\n[1,1,2,2,2,2]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums1 = [1,1,1,1,1,1,1], nums2 = [6]",
+      "input": "[1,1,1,1,1,1,1]\n[6]",
       "expectedOutput": "-1"
     },
     {
-      "input": "nums1 = [6,6], nums2 = [1]",
+      "input": "[6,6]\n[1]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4,5,6]\n[1,1,2,2,2,2]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,1,1,1,1,1]\n[6]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[6,6]\n[1]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "nums1 = [1,2,3,4,5,6], nums2 = [1,1,2,2,2,2]",
       "expectedOutput": "3"
     },
@@ -80,38 +92,6 @@
     {
       "input": "nums1 = [6,6], nums2 = [1]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[1,2,3,4,5,6]\n[1,1,2,2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,1,1]\n[6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,6]\n[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,2,2,2,2,2,2], nums3 = [7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [7,7], nums3 = [2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5,6,7]\n[2,2,3,3,3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,2,2,2,2,2]\n[7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3,4,5,6,7], nums3 = [2,2,3,3,3,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/equal-sum-arrays-with-minimum-number-of-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.288Z",
+    "collectedAt": "2026-10-19T18:40:17.038Z",
     "sourceUpdatedAt": null
   }
 }

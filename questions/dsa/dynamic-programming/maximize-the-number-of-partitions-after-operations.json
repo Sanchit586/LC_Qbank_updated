@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;accca&quot;, k = 2",
+      "input": "s = \"accca\", k = 2",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;aabaab&quot;, k = 3",
+      "input": "s = \"aabaab\", k = 3",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;xxyz&quot;, k = 1",
+      "input": "s = \"xxyz\", k = 1",
       "output": "4",
       "explanation": null
     }
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;accca&quot;, k = 2",
+      "input": "\"accca\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aabaab&quot;, k = 3",
+      "input": "\"aabaab\"\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;xxyz&quot;, k = 1",
+      "input": "\"xxyz\"\n1",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;accca&quot;, k = 2",
+      "input": "\"accca\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aabaab&quot;, k = 3",
+      "input": "\"aabaab\"\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;xxyz&quot;, k = 1",
+      "input": "\"xxyz\"\n1",
       "expectedOutput": "4"
     },
     {
-      "input": "\"accca\"\n2",
-      "expectedOutput": null
+      "input": "s = \"accca\", k = 2",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aabaab\"\n3",
-      "expectedOutput": null
+      "input": "s = \"aabaab\", k = 3",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"xxyz\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aabaab&quot;, k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;xxyz&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"accca\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aabaab\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;accca&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"xxyz\", k = 1",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-the-number-of-partitions-after-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:05.216Z",
+    "collectedAt": "2026-10-19T18:40:21.410Z",
     "sourceUpdatedAt": null
   }
 }

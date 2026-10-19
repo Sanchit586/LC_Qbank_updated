@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "text1 = &quot;abcde&quot;, text2 = &quot;ace&quot;",
+      "input": "text1 = \"abcde\", text2 = \"ace\"",
       "output": "3",
-      "explanation": "The longest common subsequence is &quot;ace&quot; and its length is 3."
+      "explanation": "The longest common subsequence is \"ace\" and its length is 3."
     },
     {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;abc&quot;",
+      "input": "text1 = \"abc\", text2 = \"abc\"",
       "output": "3",
-      "explanation": "The longest common subsequence is &quot;abc&quot; and its length is 3."
+      "explanation": "The longest common subsequence is \"abc\" and its length is 3."
     },
     {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;def&quot;",
+      "input": "text1 = \"abc\", text2 = \"def\"",
       "output": "0",
       "explanation": "There is no such common subsequence, so the result is 0."
     }
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "text1 = &quot;abcde&quot;, text2 = &quot;ace&quot;",
+      "input": "\"abcde\"\n\"ace\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;abc&quot;",
+      "input": "\"abc\"\n\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;def&quot;",
+      "input": "\"abc\"\n\"def\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "text1 = &quot;abcde&quot;, text2 = &quot;ace&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;abc&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "text1 = &quot;abc&quot;, text2 = &quot;def&quot;",
-      "expectedOutput": "0"
-    },
-    {
       "input": "\"abcde\"\n\"ace\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"abc\"\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"abc\"\n\"def\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "text1 = \"abcde\", text2 = \"ace\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "text1 = \"abc\", text2 = \"abc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "text1 = \"abc\", text2 = \"def\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-common-subsequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.341Z",
+    "collectedAt": "2026-10-19T18:40:20.442Z",
     "sourceUpdatedAt": null
   }
 }

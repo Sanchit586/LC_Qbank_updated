@@ -62,20 +62,32 @@
   },
   "publicTests": [
     {
-      "input": "start = [1,1], target = [4,5], specialRoads = [[1,2,3,3,2],[3,4,4,5,1]]",
+      "input": "[1,1]\n[4,5]\n[[1,2,3,3,2],[3,4,4,5,1]]",
       "expectedOutput": "5"
     },
     {
-      "input": "start = [3,2], target = [5,7], specialRoads = [[5,7,3,2,1],[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]",
+      "input": "[3,2]\n[5,7]\n[[5,7,3,2,1],[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]",
       "expectedOutput": "7"
     },
     {
-      "input": "start = [1,1], target = [10,4], specialRoads = [[4,2,1,1,3],[1,2,7,4,4],[10,3,6,1,2],[6,1,1,2,3]]",
+      "input": "[1,1]\n[10,4]\n[[4,2,1,1,3],[1,2,7,4,4],[10,3,6,1,2],[6,1,1,2,3]]",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "[1,1]\n[4,5]\n[[1,2,3,3,2],[3,4,4,5,1]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[3,2]\n[5,7]\n[[5,7,3,2,1],[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1,1]\n[10,4]\n[[4,2,1,1,3],[1,2,7,4,4],[10,3,6,1,2],[6,1,1,2,3]]",
+      "expectedOutput": "8"
+    },
+    {
       "input": "start = [1,1], target = [4,5], specialRoads = [[1,2,3,3,2],[3,4,4,5,1]]",
       "expectedOutput": "5"
     },
@@ -86,38 +98,6 @@
     {
       "input": "start = [1,1], target = [10,4], specialRoads = [[4,2,1,1,3],[1,2,7,4,4],[10,3,6,1,2],[6,1,1,2,3]]",
       "expectedOutput": "8"
-    },
-    {
-      "input": "[1,1]\n[4,5]\n[[1,2,3,3,2],[3,4,4,5,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2]\n[5,7]\n[[5,7,3,2,1],[3,2,3,4,4],[3,3,5,5,5],[3,4,5,6,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1]\n[10,4]\n[[4,2,1,1,3],[1,2,7,4,4],[10,3,6,1,2],[6,1,1,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = [4,3], target = [6,8], specialRoads = [[6,8,4,3,2],[4,3,4,5,5],[4,4,6,6,6],[4,5,6,7,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = [2,2], target = [11,5], specialRoads = [[5,3,2,2,4],[2,3,8,5,5],[11,4,7,2,3],[7,2,2,3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2]\n[5,6]\n[[2,3,4,4,3],[4,5,5,6,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3]\n[6,8]\n[[6,8,4,3,2],[4,3,4,5,5],[4,4,6,6,6],[4,5,6,7,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = [2,2], target = [5,6], specialRoads = [[2,3,4,4,3],[4,5,5,6,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-of-a-path-with-special-roads/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:47.221Z",
+    "collectedAt": "2026-10-19T18:40:23.538Z",
     "sourceUpdatedAt": null
   }
 }

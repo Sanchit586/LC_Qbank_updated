@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "[[1,4,7],[2,5,8],[3,6,9]]"
     },
     {
-      "input": "matrix = [[1,2,3],[4,5,6]]",
+      "input": "[[1,2,3],[4,5,6]]",
       "expectedOutput": "[[1,4],[2,5],[3,6]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "expectedOutput": "[[1,4,7],[2,5,8],[3,6,9]]"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6]]",
+      "expectedOutput": "[[1,4],[2,5],[3,6]]"
+    },
+    {
       "input": "matrix = [[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "[[1,4,7],[2,5,8],[3,6,9]]"
     },
     {
       "input": "matrix = [[1,2,3],[4,5,6]]",
       "expectedOutput": "[[1,4],[2,5],[3,6]]"
-    },
-    {
-      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,3],[4,5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,3,4],[5,6,7],[8,9,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/transpose-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:01.211Z",
+    "collectedAt": "2026-10-19T18:40:31.208Z",
     "sourceUpdatedAt": null
   }
 }

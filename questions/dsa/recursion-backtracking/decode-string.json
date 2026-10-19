@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;3[a]2[bc]&quot;",
-      "output": "&quot;aaabcbc&quot;",
+      "input": "s = \"3[a]2[bc]\"",
+      "output": "\"aaabcbc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;3[a2[c]]&quot;",
-      "output": "&quot;accaccacc&quot;",
+      "input": "s = \"3[a2[c]]\"",
+      "output": "\"accaccacc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;2[abc]3[cd]ef&quot;",
-      "output": "&quot;abcabccdcdcdef&quot;",
+      "input": "s = \"2[abc]3[cd]ef\"",
+      "output": "\"abcabccdcdcdef\"",
       "explanation": null
     }
   ],
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;3[a]2[bc]&quot;",
-      "expectedOutput": "&quot;aaabcbc&quot;"
+      "input": "\"3[a]2[bc]\"",
+      "expectedOutput": "\"aaabcbc\""
     },
     {
-      "input": "s = &quot;3[a2[c]]&quot;",
-      "expectedOutput": "&quot;accaccacc&quot;"
+      "input": "\"3[a2[c]]\"",
+      "expectedOutput": "\"accaccacc\""
     },
     {
-      "input": "s = &quot;2[abc]3[cd]ef&quot;",
-      "expectedOutput": "&quot;abcabccdcdcdef&quot;"
+      "input": "\"2[abc]3[cd]ef\"",
+      "expectedOutput": "\"abcabccdcdcdef\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;3[a]2[bc]&quot;",
-      "expectedOutput": "&quot;aaabcbc&quot;"
-    },
-    {
-      "input": "s = &quot;3[a2[c]]&quot;",
-      "expectedOutput": "&quot;accaccacc&quot;"
-    },
-    {
-      "input": "s = &quot;2[abc]3[cd]ef&quot;",
-      "expectedOutput": "&quot;abcabccdcdcdef&quot;"
-    },
-    {
       "input": "\"3[a]2[bc]\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aaabcbc\""
     },
     {
       "input": "\"3[a2[c]]\"",
-      "expectedOutput": null
+      "expectedOutput": "\"accaccacc\""
     },
     {
       "input": "\"2[abc]3[cd]ef\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abcabccdcdcdef\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"3[a]2[bc]\"",
+      "expectedOutput": "\"aaabcbc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"3[a2[c]]\"",
+      "expectedOutput": "\"accaccacc\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"2[abc]3[cd]ef\"",
+      "expectedOutput": "\"abcabccdcdcdef\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decode-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:34.091Z",
+    "collectedAt": "2026-10-19T18:40:16.185Z",
     "sourceUpdatedAt": null
   }
 }

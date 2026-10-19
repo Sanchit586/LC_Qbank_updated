@@ -24,14 +24,14 @@
   ],
   "examples": [
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;addPacket&quot;, &quot;getCount&quot;]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
+      "input": "[\"Router\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"forwardPacket\", \"addPacket\", \"getCount\"]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
       "output": "[null, true, true, false, true, true, [2, 5, 90], true, 1]",
-      "explanation": null
+      "explanation": "Router router = new Router(3); // Initialize Router with memoryLimit of 3.\nrouter.addPacket(1, 4, 90); // Packet is added. Return True.\nrouter.addPacket(2, 5, 90); // Packet is added. Return True.\nrouter.addPacket(1, 4, 90); // This is a duplicate packet. Return False.\nrouter.addPacket(3, 5, 95); // Packet is added. Return True\nrouter.addPacket(4, 5, 105); // Packet is added, [1, 4, 90] is removed as number of packets exceeds memoryLimit. Return True.\nrouter.forwardPacket(); // Return [2, 5, 90] and remove it from router.\nrouter.addPacket(5, 2, 110); // Packet is added. Return True.\nrouter.getCount(5, 100, 110); // The only packet with destination 5 and timestamp in the inclusive range [100, 110] is [4, 5, 105]. Return 1."
     },
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;forwardPacket&quot;]\n[[2], [7, 4, 90], [], []]",
+      "input": "[\"Router\", \"addPacket\", \"forwardPacket\", \"forwardPacket\"]\n[[2], [7, 4, 90], [], []]",
       "output": "[null, true, [7, 4, 90], []]",
-      "explanation": null
+      "explanation": "Router router = new Router(2); // Initialize Router with memoryLimit of 2.\nrouter.addPacket(7, 4, 90); // Return True.\nrouter.forwardPacket(); // Return [7, 4, 90].\nrouter.forwardPacket(); // There are no packets left, return []."
     }
   ],
   "starterCode": {
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;addPacket&quot;, &quot;getCount&quot;]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
+      "input": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]",
       "expectedOutput": "[null, true, true, false, true, true, [2, 5, 90], true, 1]"
     },
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;forwardPacket&quot;]\n[[2], [7, 4, 90], [], []]",
+      "input": "[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
       "expectedOutput": "[null, true, [7, 4, 90], []]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;addPacket&quot;, &quot;getCount&quot;]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
+      "input": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]",
       "expectedOutput": "[null, true, true, false, true, true, [2, 5, 90], true, 1]"
     },
     {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;forwardPacket&quot;]\n[[2], [7, 4, 90], [], []]",
+      "input": "[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
       "expectedOutput": "[null, true, [7, 4, 90], []]"
     },
     {
-      "input": "[\"Router\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"addPacket\",\"forwardPacket\",\"addPacket\",\"getCount\"]\n[[3],[1,4,90],[2,5,90],[1,4,90],[3,5,95],[4,5,105],[],[5,2,110],[5,100,110]]",
-      "expectedOutput": null
+      "input": "[\"Router\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"addPacket\", \"forwardPacket\", \"addPacket\", \"getCount\"]\n[[3], [1, 4, 90], [2, 5, 90], [1, 4, 90], [3, 5, 95], [4, 5, 105], [], [5, 2, 110], [5, 100, 110]]",
+      "expectedOutput": "[null, true, true, false, true, true, [2, 5, 90], true, 1]"
     },
     {
-      "input": "[\"Router\",\"addPacket\",\"forwardPacket\",\"forwardPacket\"]\n[[2],[7,4,90],[],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;Router&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;addPacket&quot;, &quot;forwardPacket&quot;, &quot;addPacket&quot;, &quot;getCount&quot;]\n[[4], [2, 5, 91], [3, 6, 91], [2, 5, 91], [4, 6, 96], [5, 6, 106], [], [6, 3, 111], [6, 101, 111]]",
-      "expectedOutput": null
+      "input": "[\"Router\", \"addPacket\", \"forwardPacket\", \"forwardPacket\"]\n[[2], [7, 4, 90], [], []]",
+      "expectedOutput": "[null, true, [7, 4, 90], []]"
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/implement-router/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.625Z",
+    "collectedAt": "2026-10-19T18:40:19.464Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "path = &quot;NES&quot;",
+      "input": "path = \"NES\"",
       "output": "false",
-      "explanation": "Notice that the path doesn&#39;t cross any point more than once."
+      "explanation": "Notice that the path doesn't cross any point more than once."
     },
     {
-      "input": "path = &quot;NESWW&quot;",
+      "input": "path = \"NESWW\"",
       "output": "true",
       "explanation": "Notice that the path visits the origin twice."
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "path = &quot;NES&quot;",
+      "input": "\"NES\"",
       "expectedOutput": "false"
     },
     {
-      "input": "path = &quot;NESWW&quot;",
+      "input": "\"NESWW\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "path = &quot;NES&quot;",
+      "input": "\"NES\"",
       "expectedOutput": "false"
     },
     {
-      "input": "path = &quot;NESWW&quot;",
+      "input": "\"NESWW\"",
       "expectedOutput": "true"
     },
     {
-      "input": "\"NES\"",
-      "expectedOutput": null
+      "input": "path = \"NES\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"NESWW\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "path = \"NESWW\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/path-crossing/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:53.514Z",
+    "collectedAt": "2026-10-19T18:40:26.634Z",
     "sourceUpdatedAt": null
   }
 }

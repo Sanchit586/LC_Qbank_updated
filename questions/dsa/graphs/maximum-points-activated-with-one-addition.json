@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "points = [[1,1],[1,2],[2,2]]",
+      "input": "[[1,1],[1,2],[2,2]]",
       "expectedOutput": "4"
     },
     {
-      "input": "points = [[2,2],[1,1],[3,3]]",
+      "input": "[[2,2],[1,1],[3,3]]",
       "expectedOutput": "3"
     },
     {
-      "input": "points = [[2,3],[2,2],[1,1],[4,5]]",
+      "input": "[[2,3],[2,2],[1,1],[4,5]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1],[1,2],[2,2]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[2,2],[1,1],[3,3]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[2,3],[2,2],[1,1],[4,5]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "points = [[1,1],[1,2],[2,2]]",
       "expectedOutput": "4"
     },
@@ -81,38 +93,6 @@
     {
       "input": "points = [[2,3],[2,2],[1,1],[4,5]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,1],[1,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[1,1],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[2,2],[1,1],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[3,3],[2,2],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[3,4],[3,3],[2,2],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[2,3],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,3],[2,2],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[2,3],[3,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-points-activated-with-one-addition/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:23.169Z",
+    "collectedAt": "2026-10-19T18:40:22.322Z",
     "sourceUpdatedAt": null
   }
 }

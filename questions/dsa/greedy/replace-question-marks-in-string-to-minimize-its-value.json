@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;???&quot;",
-      "output": "&quot;abc&quot;",
-      "explanation": "In this example, we can replace the occurrences of &#39;?&#39; to make s equal to &quot;abc&quot;."
+      "input": "s = \"???\"",
+      "output": "\"abc\"",
+      "explanation": "In this example, we can replace the occurrences of '?' to make s equal to \"abc\"."
     },
     {
-      "input": "s = &quot;a?a?&quot;",
-      "output": "&quot;abac&quot;",
-      "explanation": "In this example, the occurrences of &#39;?&#39; can be replaced to make s equal to &quot;abac&quot;."
+      "input": "s = \"a?a?\"",
+      "output": "\"abac\"",
+      "explanation": "In this example, the occurrences of '?' can be replaced to make s equal to \"abac\"."
     }
   ],
   "starterCode": {
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;???&quot;",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"???\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = &quot;a?a?&quot;",
-      "expectedOutput": "&quot;abac&quot;"
+      "input": "\"a?a?\"",
+      "expectedOutput": "\"abac\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;???&quot;",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
-      "input": "s = &quot;a?a?&quot;",
-      "expectedOutput": "&quot;abac&quot;"
-    },
-    {
       "input": "\"???\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
       "input": "\"a?a?\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abac\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"???\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"a?a?\"",
+      "expectedOutput": "\"abac\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/replace-question-marks-in-string-to-minimize-its-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.529Z",
+    "collectedAt": "2026-10-19T18:40:27.724Z",
     "sourceUpdatedAt": null
   }
 }

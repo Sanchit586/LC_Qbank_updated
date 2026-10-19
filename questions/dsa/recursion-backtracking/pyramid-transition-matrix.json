@@ -21,12 +21,12 @@
   ],
   "examples": [
     {
-      "input": "bottom = &quot;BCD&quot;, allowed = [&quot;BCC&quot;,&quot;CDE&quot;,&quot;CEA&quot;,&quot;FFF&quot;]",
+      "input": "bottom = \"BCD\", allowed = [\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
       "output": "true",
-      "explanation": "The allowed triangular patterns are shown on the right.\nStarting from the bottom (level 3), we can build &quot;CE&quot; on level 2 and then build &quot;A&quot; on level 1.\nThere are three triangular patterns in the pyramid, which are &quot;BCC&quot;, &quot;CDE&quot;, and &quot;CEA&quot;. All are allowed."
+      "explanation": "The allowed triangular patterns are shown on the right.\nStarting from the bottom (level 3), we can build \"CE\" on level 2 and then build \"A\" on level 1.\nThere are three triangular patterns in the pyramid, which are \"BCC\", \"CDE\", and \"CEA\". All are allowed."
     },
     {
-      "input": "bottom = &quot;AAAA&quot;, allowed = [&quot;AAB&quot;,&quot;AAC&quot;,&quot;BCD&quot;,&quot;BBE&quot;,&quot;DEF&quot;]",
+      "input": "bottom = \"AAAA\", allowed = [\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]",
       "output": "false",
       "explanation": "The allowed triangular patterns are shown on the right.\nStarting from the bottom (level 4), there are multiple ways to build level 3, but trying all the possibilites, you will get always stuck before building level 1."
     }
@@ -54,30 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "bottom = &quot;BCD&quot;, allowed = [&quot;BCC&quot;,&quot;CDE&quot;,&quot;CEA&quot;,&quot;FFF&quot;]",
+      "input": "\"BCD\"\n[\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "bottom = &quot;AAAA&quot;, allowed = [&quot;AAB&quot;,&quot;AAC&quot;,&quot;BCD&quot;,&quot;BBE&quot;,&quot;DEF&quot;]",
+      "input": "\"AAAA\"\n[\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "bottom = &quot;BCD&quot;, allowed = [&quot;BCC&quot;,&quot;CDE&quot;,&quot;CEA&quot;,&quot;FFF&quot;]",
+      "input": "\"BCD\"\n[\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "bottom = &quot;AAAA&quot;, allowed = [&quot;AAB&quot;,&quot;AAC&quot;,&quot;BCD&quot;,&quot;BBE&quot;,&quot;DEF&quot;]",
+      "input": "\"AAAA\"\n[\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "\"BCD\"\n[\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
-      "expectedOutput": null
+      "input": "bottom = \"BCD\", allowed = [\"BCC\",\"CDE\",\"CEA\",\"FFF\"]",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"AAAA\"\n[\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]",
-      "expectedOutput": null
+      "input": "bottom = \"AAAA\", allowed = [\"AAB\",\"AAC\",\"BCD\",\"BBE\",\"DEF\"]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -89,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/pyramid-transition-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:01.711Z",
+    "collectedAt": "2026-10-19T18:40:27.059Z",
     "sourceUpdatedAt": null
   }
 }

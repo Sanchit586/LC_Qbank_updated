@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;bcabc&quot;",
-      "output": "&quot;abc&quot;",
+      "input": "s = \"bcabc\"",
+      "output": "\"abc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;cbacdcbc&quot;",
-      "output": "&quot;acdb&quot;",
+      "input": "s = \"cbacdcbc\"",
+      "output": "\"acdb\"",
       "explanation": null
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;bcabc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"bcabc\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = &quot;cbacdcbc&quot;",
-      "expectedOutput": "&quot;acdb&quot;"
+      "input": "\"cbacdcbc\"",
+      "expectedOutput": "\"acdb\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;bcabc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
-      "input": "s = &quot;cbacdcbc&quot;",
-      "expectedOutput": "&quot;acdb&quot;"
-    },
-    {
       "input": "\"bcabc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
       "input": "\"cbacdcbc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"acdb\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"bcabc\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"cbacdcbc\"",
+      "expectedOutput": "\"acdb\""
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-duplicate-letters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.223Z",
+    "collectedAt": "2026-10-19T18:40:27.499Z",
     "sourceUpdatedAt": null
   }
 }

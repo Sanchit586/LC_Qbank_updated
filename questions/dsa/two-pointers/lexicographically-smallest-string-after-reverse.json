@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;dcab&quot;",
-      "output": "&quot;acdb&quot;",
-      "explanation": "Choose k = 3, reverse the first 3 characters.\n\tReverse &quot;dca&quot; to &quot;acd&quot;, resulting string s = &quot;acdb&quot;, which is the lexicographically smallest string achievable."
+      "input": "s = \"dcab\"",
+      "output": "\"acdb\"",
+      "explanation": "Choose k = 3, reverse the first 3 characters.\n\tReverse \"dca\" to \"acd\", resulting string s = \"acdb\", which is the lexicographically smallest string achievable."
     },
     {
-      "input": "s = &quot;abba&quot;",
-      "output": "&quot;aabb&quot;",
-      "explanation": "Choose k = 3, reverse the last 3 characters.\n\tReverse &quot;bba&quot; to &quot;abb&quot;, so the resulting string is &quot;aabb&quot;, which is the lexicographically smallest string achievable."
+      "input": "s = \"abba\"",
+      "output": "\"aabb\"",
+      "explanation": "Choose k = 3, reverse the last 3 characters.\n\tReverse \"bba\" to \"abb\", so the resulting string is \"aabb\", which is the lexicographically smallest string achievable."
     },
     {
-      "input": "s = &quot;zxy&quot;",
-      "output": "&quot;xzy&quot;",
-      "explanation": "Choose k = 2, reverse the first 2 characters.\n\tReverse &quot;zx&quot; to &quot;xz&quot;, so the resulting string is &quot;xzy&quot;, which is the lexicographically smallest string achievable."
+      "input": "s = \"zxy\"",
+      "output": "\"xzy\"",
+      "explanation": "Choose k = 2, reverse the first 2 characters.\n\tReverse \"zx\" to \"xz\", so the resulting string is \"xzy\", which is the lexicographically smallest string achievable."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;dcab&quot;",
-      "expectedOutput": "&quot;acdb&quot;"
+      "input": "\"dcab\"",
+      "expectedOutput": "\"acdb\""
     },
     {
-      "input": "s = &quot;abba&quot;",
-      "expectedOutput": "&quot;aabb&quot;"
+      "input": "\"abba\"",
+      "expectedOutput": "\"aabb\""
     },
     {
-      "input": "s = &quot;zxy&quot;",
-      "expectedOutput": "&quot;xzy&quot;"
+      "input": "\"zxy\"",
+      "expectedOutput": "\"xzy\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;dcab&quot;",
-      "expectedOutput": "&quot;acdb&quot;"
-    },
-    {
-      "input": "s = &quot;abba&quot;",
-      "expectedOutput": "&quot;aabb&quot;"
-    },
-    {
-      "input": "s = &quot;zxy&quot;",
-      "expectedOutput": "&quot;xzy&quot;"
-    },
-    {
       "input": "\"dcab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"acdb\""
     },
     {
       "input": "\"abba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aabb\""
     },
     {
       "input": "\"zxy\"",
-      "expectedOutput": null
+      "expectedOutput": "\"xzy\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"dcab\"",
+      "expectedOutput": "\"acdb\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abba\"",
+      "expectedOutput": "\"aabb\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"zxy\"",
+      "expectedOutput": "\"xzy\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-reverse/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.179Z",
+    "collectedAt": "2026-10-19T18:40:20.284Z",
     "sourceUpdatedAt": null
   }
 }

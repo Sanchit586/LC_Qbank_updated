@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;daabcbaabcbc&quot;, part = &quot;abc&quot;",
-      "output": "&quot;dab&quot;\nExplanation: The following operations are done:\n- s = &quot;daabcbaabcbc&quot;, remove &quot;abc&quot; starting at index 2, so s = &quot;dabaabcbc&quot;.\n- s = &quot;dabaabcbc&quot;, remove &quot;abc&quot; starting at index 4, so s = &quot;dababc&quot;.\n- s = &quot;dababc&quot;, remove &quot;abc&quot; starting at index 3, so s = &quot;dab&quot;.\nNow s has no occurrences of &quot;abc&quot;.",
-      "explanation": null
+      "input": "s = \"daabcbaabcbc\", part = \"abc\"",
+      "output": "\"dab\"",
+      "explanation": ": The following operations are done:\n- s = \"daabcbaabcbc\", remove \"abc\" starting at index 2, so s = \"dabaabcbc\".\n- s = \"dabaabcbc\", remove \"abc\" starting at index 4, so s = \"dababc\".\n- s = \"dababc\", remove \"abc\" starting at index 3, so s = \"dab\".\nNow s has no occurrences of \"abc\"."
     },
     {
-      "input": "s = &quot;axxxxyyyyb&quot;, part = &quot;xy&quot;",
-      "output": "&quot;ab&quot;\nExplanation: The following operations are done:\n- s = &quot;axxxxyyyyb&quot;, remove &quot;xy&quot; starting at index 4 so s = &quot;axxxyyyb&quot;.\n- s = &quot;axxxyyyb&quot;, remove &quot;xy&quot; starting at index 3 so s = &quot;axxyyb&quot;.\n- s = &quot;axxyyb&quot;, remove &quot;xy&quot; starting at index 2 so s = &quot;axyb&quot;.\n- s = &quot;axyb&quot;, remove &quot;xy&quot; starting at index 1 so s = &quot;ab&quot;.\nNow s has no occurrences of &quot;xy&quot;.",
-      "explanation": null
+      "input": "s = \"axxxxyyyyb\", part = \"xy\"",
+      "output": "\"ab\"",
+      "explanation": ": The following operations are done:\n- s = \"axxxxyyyyb\", remove \"xy\" starting at index 4 so s = \"axxxyyyb\".\n- s = \"axxxyyyb\", remove \"xy\" starting at index 3 so s = \"axxyyb\".\n- s = \"axxyyb\", remove \"xy\" starting at index 2 so s = \"axyb\".\n- s = \"axyb\", remove \"xy\" starting at index 1 so s = \"ab\".\nNow s has no occurrences of \"xy\"."
     }
   ],
   "starterCode": {
@@ -51,78 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;daabcbaabcbc&quot;, part = &quot;abc&quot;",
-      "expectedOutput": "&quot;dab&quot;\nExplanation: The following operations are done:\n- s = &quot;daabcbaabcbc&quot;, remove &quot;abc&quot; starting at index 2, so s = &quot;dabaabcbc&quot;.\n- s = &quot;dabaabcbc&quot;, remove &quot;abc&quot; starting at index 4, so s = &quot;dababc&quot;.\n- s = &quot;dababc&quot;, remove &quot;abc&quot; starting at index 3, so s = &quot;dab&quot;.\nNow s has no occurrences of &quot;abc&quot;."
+      "input": "\"daabcbaabcbc\"\n\"abc\"",
+      "expectedOutput": "\"dab\""
     },
     {
-      "input": "s = &quot;axxxxyyyyb&quot;, part = &quot;xy&quot;",
-      "expectedOutput": "&quot;ab&quot;\nExplanation: The following operations are done:\n- s = &quot;axxxxyyyyb&quot;, remove &quot;xy&quot; starting at index 4 so s = &quot;axxxyyyb&quot;.\n- s = &quot;axxxyyyb&quot;, remove &quot;xy&quot; starting at index 3 so s = &quot;axxyyb&quot;.\n- s = &quot;axxyyb&quot;, remove &quot;xy&quot; starting at index 2 so s = &quot;axyb&quot;.\n- s = &quot;axyb&quot;, remove &quot;xy&quot; starting at index 1 so s = &quot;ab&quot;.\nNow s has no occurrences of &quot;xy&quot;."
+      "input": "\"axxxxyyyyb\"\n\"xy\"",
+      "expectedOutput": "\"ab\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;daabcbaabcbc&quot;, part = &quot;abc&quot;",
-      "expectedOutput": "&quot;dab&quot;\nExplanation: The following operations are done:\n- s = &quot;daabcbaabcbc&quot;, remove &quot;abc&quot; starting at index 2, so s = &quot;dabaabcbc&quot;.\n- s = &quot;dabaabcbc&quot;, remove &quot;abc&quot; starting at index 4, so s = &quot;dababc&quot;.\n- s = &quot;dababc&quot;, remove &quot;abc&quot; starting at index 3, so s = &quot;dab&quot;.\nNow s has no occurrences of &quot;abc&quot;."
-    },
-    {
-      "input": "s = &quot;axxxxyyyyb&quot;, part = &quot;xy&quot;",
-      "expectedOutput": "&quot;ab&quot;\nExplanation: The following operations are done:\n- s = &quot;axxxxyyyyb&quot;, remove &quot;xy&quot; starting at index 4 so s = &quot;axxxyyyb&quot;.\n- s = &quot;axxxyyyb&quot;, remove &quot;xy&quot; starting at index 3 so s = &quot;axxyyb&quot;.\n- s = &quot;axxyyb&quot;, remove &quot;xy&quot; starting at index 2 so s = &quot;axyb&quot;.\n- s = &quot;axyb&quot;, remove &quot;xy&quot; starting at index 1 so s = &quot;ab&quot;.\nNow s has no occurrences of &quot;xy&quot;."
-    },
-    {
       "input": "\"daabcbaabcbc\"\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"dab\""
     },
     {
       "input": "\"axxxxyyyyb\"\n\"xy\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ab\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"daabcbaabcbc\", part = \"abc\"",
+      "expectedOutput": "\"dab\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"axxxxyyyyb\", part = \"xy\"",
+      "expectedOutput": "\"ab\""
     }
   ],
   "sqlSchema": null,
@@ -137,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-all-occurrences-of-a-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.179Z",
+    "collectedAt": "2026-10-19T18:40:27.466Z",
     "sourceUpdatedAt": null
   }
 }

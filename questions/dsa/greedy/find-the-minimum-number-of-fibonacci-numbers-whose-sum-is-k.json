@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "k = 7",
+      "input": "7",
       "expectedOutput": "2"
     },
     {
-      "input": "k = 10",
+      "input": "10",
       "expectedOutput": "2"
     },
     {
-      "input": "k = 19",
+      "input": "19",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "7",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "19",
+      "expectedOutput": "3"
+    },
+    {
       "input": "k = 7",
       "expectedOutput": "2"
     },
@@ -77,74 +89,6 @@
     {
       "input": "k = 19",
       "expectedOutput": "3"
-    },
-    {
-      "input": "7",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "19",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-minimum-number-of-fibonacci-numbers-whose-sum-is-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:12.561Z",
+    "collectedAt": "2026-10-19T18:40:18.492Z",
     "sourceUpdatedAt": null
   }
 }

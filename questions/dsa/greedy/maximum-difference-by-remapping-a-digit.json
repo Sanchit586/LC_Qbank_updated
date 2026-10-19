@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 11891",
+      "input": "11891",
       "expectedOutput": "99009"
     },
     {
-      "input": "num = 90",
+      "input": "90",
       "expectedOutput": "99"
     }
   ],
   "testCases": [
     {
+      "input": "11891",
+      "expectedOutput": "99009"
+    },
+    {
+      "input": "90",
+      "expectedOutput": "99"
+    },
+    {
       "input": "num = 11891",
       "expectedOutput": "99009"
     },
     {
       "input": "num = 90",
       "expectedOutput": "99"
-    },
-    {
-      "input": "11891",
-      "expectedOutput": null
-    },
-    {
-      "input": "90",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-difference-by-remapping-a-digit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.782Z",
+    "collectedAt": "2026-10-19T18:40:21.766Z",
     "sourceUpdatedAt": null
   }
 }

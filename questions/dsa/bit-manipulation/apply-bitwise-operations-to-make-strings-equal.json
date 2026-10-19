@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1010&quot;, target = &quot;0110&quot;",
+      "input": "s = \"1010\", target = \"0110\"",
       "output": "true",
-      "explanation": "We can do the following operations:\n- Choose i = 2 and j = 0. We have now s = &quot;0010&quot;.\n- Choose i = 2 and j = 1. We have now s = &quot;0110&quot;.\nSince we can make s equal to target, we return true."
+      "explanation": "We can do the following operations:\n- Choose i = 2 and j = 0. We have now s = \"0010\".\n- Choose i = 2 and j = 1. We have now s = \"0110\".\nSince we can make s equal to target, we return true."
     },
     {
-      "input": "s = &quot;11&quot;, target = &quot;00&quot;",
+      "input": "s = \"11\", target = \"00\"",
       "output": "false",
       "explanation": "It is not possible to make s equal to target with any number of operations."
     }
@@ -50,90 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1010&quot;, target = &quot;0110&quot;",
+      "input": "\"1010\"\n\"0110\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;11&quot;, target = &quot;00&quot;",
+      "input": "\"11\"\n\"00\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1010&quot;, target = &quot;0110&quot;",
+      "input": "\"1010\"\n\"0110\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;11&quot;, target = &quot;00&quot;",
+      "input": "\"11\"\n\"00\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"1010\"\n\"0110\"",
-      "expectedOutput": null
+      "input": "s = \"1010\", target = \"0110\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"11\"\n\"00\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;12&quot;, target = &quot;1&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1011\"\n\"111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"12\"\n\"1\"",
-      "expectedOutput": null
+      "input": "s = \"11\", target = \"00\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/apply-bitwise-operations-to-make-strings-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.739Z",
+    "collectedAt": "2026-10-19T18:40:13.176Z",
     "sourceUpdatedAt": null
   }
 }

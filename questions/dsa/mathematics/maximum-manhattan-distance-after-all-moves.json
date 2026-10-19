@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "moves = &quot;L_D_&quot;",
+      "input": "moves = \"L_D_\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "moves = &quot;U_R&quot;",
+      "input": "moves = \"U_R\"",
       "output": "3",
       "explanation": null
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "moves = &quot;L_D_&quot;",
+      "input": "\"L_D_\"",
       "expectedOutput": "4"
     },
     {
-      "input": "moves = &quot;U_R&quot;",
+      "input": "\"U_R\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "moves = &quot;L_D_&quot;",
+      "input": "\"L_D_\"",
       "expectedOutput": "4"
     },
     {
-      "input": "moves = &quot;U_R&quot;",
+      "input": "\"U_R\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"L_D_\"",
-      "expectedOutput": null
+      "input": "moves = \"L_D_\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"U_R\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "moves = \"U_R\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-manhattan-distance-after-all-moves/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.398Z",
+    "collectedAt": "2026-10-19T18:40:21.943Z",
     "sourceUpdatedAt": null
   }
 }

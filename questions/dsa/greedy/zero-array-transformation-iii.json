@@ -61,20 +61,32 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,0,2], queries = [[0,2],[0,2],[1,1]]",
+      "input": "[2,0,2]\n[[0,2],[0,2],[1,1]]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [1,1,1,1], queries = [[1,3],[0,2],[1,3],[1,2]]",
+      "input": "[1,1,1,1]\n[[1,3],[0,2],[1,3],[1,2]]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [1,2,3,4], queries = [[0,3]]",
+      "input": "[1,2,3,4]\n[[0,3]]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[2,0,2]\n[[0,2],[0,2],[1,1]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1,1,1]\n[[1,3],[0,2],[1,3],[1,2]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2,3,4]\n[[0,3]]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums = [2,0,2], queries = [[0,2],[0,2],[1,1]]",
       "expectedOutput": "1"
     },
@@ -85,38 +97,6 @@
     {
       "input": "nums = [1,2,3,4], queries = [[0,3]]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[2,0,2]\n[[0,2],[0,2],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1]\n[[1,3],[0,2],[1,3],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4]\n[[0,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,2,2,2], queries = [[2,4],[1,3],[2,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,5], queries = [[1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1,3]\n[[1,3],[1,3],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,2,2]\n[[2,4],[1,3],[2,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [3,1,3], queries = [[1,3],[1,3],[2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/zero-array-transformation-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.924Z",
+    "collectedAt": "2026-10-19T18:40:31.864Z",
     "sourceUpdatedAt": null
   }
 }

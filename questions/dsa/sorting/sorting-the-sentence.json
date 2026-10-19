@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;is2 sentence4 This1 a3&quot;",
-      "output": "&quot;This is a sentence&quot;",
-      "explanation": "Sort the words in s to their original positions &quot;This1 is2 a3 sentence4&quot;, then remove the numbers."
+      "input": "s = \"is2 sentence4 This1 a3\"",
+      "output": "\"This is a sentence\"",
+      "explanation": "Sort the words in s to their original positions \"This1 is2 a3 sentence4\", then remove the numbers."
     },
     {
-      "input": "s = &quot;Myself2 Me1 I4 and3&quot;",
-      "output": "&quot;Me Myself and I&quot;",
-      "explanation": "Sort the words in s to their original positions &quot;Me1 Myself2 and3 I4&quot;, then remove the numbers."
+      "input": "s = \"Myself2 Me1 I4 and3\"",
+      "output": "\"Me Myself and I\"",
+      "explanation": "Sort the words in s to their original positions \"Me1 Myself2 and3 I4\", then remove the numbers."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;is2 sentence4 This1 a3&quot;",
-      "expectedOutput": "&quot;This is a sentence&quot;"
+      "input": "\"is2 sentence4 This1 a3\"",
+      "expectedOutput": "\"This is a sentence\""
     },
     {
-      "input": "s = &quot;Myself2 Me1 I4 and3&quot;",
-      "expectedOutput": "&quot;Me Myself and I&quot;"
+      "input": "\"Myself2 Me1 I4 and3\"",
+      "expectedOutput": "\"Me Myself and I\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;is2 sentence4 This1 a3&quot;",
-      "expectedOutput": "&quot;This is a sentence&quot;"
-    },
-    {
-      "input": "s = &quot;Myself2 Me1 I4 and3&quot;",
-      "expectedOutput": "&quot;Me Myself and I&quot;"
-    },
-    {
       "input": "\"is2 sentence4 This1 a3\"",
-      "expectedOutput": null
+      "expectedOutput": "\"This is a sentence\""
     },
     {
       "input": "\"Myself2 Me1 I4 and3\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Me Myself and I\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"is2 sentence4 This1 a3\"",
+      "expectedOutput": "\"This is a sentence\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"Myself2 Me1 I4 and3\"",
+      "expectedOutput": "\"Me Myself and I\""
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sorting-the-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:34.391Z",
+    "collectedAt": "2026-10-19T18:40:30.024Z",
     "sourceUpdatedAt": null
   }
 }

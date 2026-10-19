@@ -47,90 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
+      "input": "19",
       "expectedOutput": "[1,1]"
     },
     {
-      "input": "n = 11",
+      "input": "139",
       "expectedOutput": "[2,9]"
     }
   ],
   "testCases": [
     {
+      "input": "19",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "139",
+      "expectedOutput": "[2,9]"
+    },
+    {
       "input": "n = 2",
       "expectedOutput": "[1,1]"
     },
     {
       "input": "n = 11",
       "expectedOutput": "[2,9]"
-    },
-    {
-      "input": "19",
-      "expectedOutput": null
-    },
-    {
-      "input": "139",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -145,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/convert-integer-to-the-sum-of-two-no-zero-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:06.206Z",
+    "collectedAt": "2026-10-19T18:40:14.860Z",
     "sourceUpdatedAt": null
   }
 }

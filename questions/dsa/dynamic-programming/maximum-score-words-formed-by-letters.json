@@ -27,19 +27,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "input": "words = [\"dog\",\"cat\",\"dad\",\"good\"], letters = [\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
       "output": "23",
-      "explanation": "Score  a=1, c=9, d=5, g=3, o=2\nGiven letters, we can form the words &quot;dad&quot; (5+1+5) and &quot;good&quot; (3+2+2+5) with a score of 23.\nWords &quot;dad&quot; and &quot;dog&quot; only get a score of 21."
+      "explanation": "Score  a=1, c=9, d=5, g=3, o=2\nGiven letters, we can form the words \"dad\" (5+1+5) and \"good\" (3+2+2+5) with a score of 23.\nWords \"dad\" and \"dog\" only get a score of 21."
     },
     {
-      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "input": "words = [\"xxxz\",\"ax\",\"bx\",\"cx\"], letters = [\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
       "output": "27",
-      "explanation": "Score  a=4, b=4, c=4, x=5, z=10\nGiven letters, we can form the words &quot;ax&quot; (4+5), &quot;bx&quot; (4+5) and &quot;cx&quot; (4+5) with a score of 27.\nWord &quot;xxxz&quot; only get a score of 25."
+      "explanation": "Score  a=4, b=4, c=4, x=5, z=10\nGiven letters, we can form the words \"ax\" (4+5), \"bx\" (4+5) and \"cx\" (4+5) with a score of 27.\nWord \"xxxz\" only get a score of 25."
     },
     {
-      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "input": "words = [\"leetcode\"], letters = [\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
       "output": "0",
-      "explanation": "Letter &quot;e&quot; can only be used once."
+      "explanation": "Letter \"e\" can only be used once."
     }
   ],
   "starterCode": {
@@ -65,62 +65,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
       "expectedOutput": "23"
     },
     {
-      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
       "expectedOutput": "27"
     },
     {
-      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "input": "[\"leetcode\"]\n[\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"]\n[0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
       "expectedOutput": "23"
     },
     {
-      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
       "expectedOutput": "27"
     },
     {
-      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "input": "[\"leetcode\"]\n[\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"]\n[0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
       "expectedOutput": "0"
     },
     {
-      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
-      "expectedOutput": null
+      "input": "words = [\"dog\",\"cat\",\"dad\",\"good\"], letters = [\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "expectedOutput": "23"
     },
     {
-      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
-      "expectedOutput": null
+      "input": "words = [\"xxxz\",\"ax\",\"bx\",\"cx\"], letters = [\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "expectedOutput": "27"
     },
     {
-      "input": "[\"leetcode\"]\n[\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"]\n[0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [1,1,2,2,2,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[2,1,10,6,1,1,4,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [2,1,10,6,1,1,4,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1]",
-      "expectedOutput": null
+      "input": "words = [\"leetcode\"], letters = [\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -134,7 +114,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-score-words-formed-by-letters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:30.139Z",
+    "collectedAt": "2026-10-19T18:40:22.587Z",
     "sourceUpdatedAt": null
   }
 }

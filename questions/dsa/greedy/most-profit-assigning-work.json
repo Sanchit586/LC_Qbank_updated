@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]",
+      "input": "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]",
       "expectedOutput": "100"
     },
     {
-      "input": "difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]",
+      "input": "[85,47,57]\n[24,66,99]\n[40,25,25]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "[85,47,57]\n[24,66,99]\n[40,25,25]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "difficulty = [2,4,6,8,10], profit = [10,20,30,40,50], worker = [4,5,6,7]",
       "expectedOutput": "100"
     },
     {
       "input": "difficulty = [85,47,57], profit = [24,66,99], worker = [40,25,25]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[2,4,6,8,10]\n[10,20,30,40,50]\n[4,5,6,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[85,47,57]\n[24,66,99]\n[40,25,25]",
-      "expectedOutput": null
-    },
-    {
-      "input": "difficulty = [3,5,7,9,11], profit = [11,21,31,41,51], worker = [5,6,7,8]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/most-profit-assigning-work/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:34.174Z",
+    "collectedAt": "2026-10-19T18:40:25.481Z",
     "sourceUpdatedAt": null
   }
 }

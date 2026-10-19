@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
+      "input": "[[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
       "expectedOutput": "24"
     },
     {
-      "input": "grid = [[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
+      "input": "[[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
       "expectedOutput": "28"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "[[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
+      "expectedOutput": "28"
+    },
+    {
       "input": "grid = [[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
       "expectedOutput": "24"
     },
     {
       "input": "grid = [[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
       "expectedOutput": "28"
-    },
-    {
-      "input": "[[3,1,1],[2,5,1],[1,5,5],[2,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,0,0,0,0,1],[2,0,0,0,0,3,0],[2,0,9,0,0,0,0],[0,3,0,5,4,0,0],[1,0,2,3,0,0,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[4,2,2],[3,6,2],[2,6,6],[3,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cherry-pickup-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:58.193Z",
+    "collectedAt": "2026-10-19T18:40:14.327Z",
     "sourceUpdatedAt": null
   }
 }

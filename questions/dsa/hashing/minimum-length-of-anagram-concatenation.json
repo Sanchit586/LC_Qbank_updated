@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abba&quot;",
+      "input": "s = \"abba\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;cdef&quot;",
+      "input": "s = \"cdef\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcbcacabbaccba&quot;",
+      "input": "s = \"abcbcacabbaccba\"",
       "output": "3",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abba&quot;",
+      "input": "\"abba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cdef&quot;",
+      "input": "\"cdef\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcbcacabbaccba&quot;",
+      "input": "\"abcbcacabbaccba\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abba&quot;",
+      "input": "\"abba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cdef&quot;",
+      "input": "\"cdef\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcbcacabbaccba&quot;",
+      "input": "\"abcbcacabbaccba\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"abba\"",
-      "expectedOutput": null
+      "input": "s = \"abba\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"cdef\"",
-      "expectedOutput": null
+      "input": "s = \"cdef\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abcbcacabbaccba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcbcacabbaccba\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-length-of-anagram-concatenation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.362Z",
+    "collectedAt": "2026-10-19T18:40:24.050Z",
     "sourceUpdatedAt": null
   }
 }

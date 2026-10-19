@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;dart&quot;, k = 3",
-      "output": "&quot;tdar&quot;",
-      "explanation": "For i = 0, the 3rd character after &#39;d&#39; is &#39;t&#39;.\n\tFor i = 1, the 3rd character after &#39;a&#39; is &#39;d&#39;.\n\tFor i = 2, the 3rd character after &#39;r&#39; is &#39;a&#39;.\n\tFor i = 3, the 3rd character after &#39;t&#39; is &#39;r&#39;."
+      "input": "s = \"dart\", k = 3",
+      "output": "\"tdar\"",
+      "explanation": "For i = 0, the 3rd character after 'd' is 't'.\n\tFor i = 1, the 3rd character after 'a' is 'd'.\n\tFor i = 2, the 3rd character after 'r' is 'a'.\n\tFor i = 3, the 3rd character after 't' is 'r'."
     },
     {
-      "input": "s = &quot;aaa&quot;, k = 1",
-      "output": "&quot;aaa&quot;",
+      "input": "s = \"aaa\", k = 1",
+      "output": "\"aaa\"",
       "explanation": null
     }
   ],
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;dart&quot;, k = 3",
-      "expectedOutput": "&quot;tdar&quot;"
+      "input": "\"dart\"\n3",
+      "expectedOutput": "\"tdar\""
     },
     {
-      "input": "s = &quot;aaa&quot;, k = 1",
-      "expectedOutput": "&quot;aaa&quot;"
+      "input": "\"aaa\"\n1",
+      "expectedOutput": "\"aaa\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;dart&quot;, k = 3",
-      "expectedOutput": "&quot;tdar&quot;"
-    },
-    {
-      "input": "s = &quot;aaa&quot;, k = 1",
-      "expectedOutput": "&quot;aaa&quot;"
-    },
-    {
       "input": "\"dart\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"tdar\""
     },
     {
       "input": "\"aaa\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"aaa\""
     },
     {
-      "input": "s = &quot;dart&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"dart\", k = 3",
+      "expectedOutput": "\"tdar\""
+    },
+    {
+      "input": "s = \"aaa\", k = 1",
+      "expectedOutput": "\"aaa\""
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-encrypted-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:08.340Z",
+    "collectedAt": "2026-10-19T18:40:18.255Z",
     "sourceUpdatedAt": null
   }
 }

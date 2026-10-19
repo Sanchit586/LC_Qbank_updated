@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;level&quot;",
-      "output": "&quot;l&quot;",
-      "explanation": "s contains 4 prefix excluding itself (&quot;l&quot;, &quot;le&quot;, &quot;lev&quot;, &quot;leve&quot;), and suffix (&quot;l&quot;, &quot;el&quot;, &quot;vel&quot;, &quot;evel&quot;). The largest prefix which is also suffix is given by &quot;l&quot;."
+      "input": "s = \"level\"",
+      "output": "\"l\"",
+      "explanation": "s contains 4 prefix excluding itself (\"l\", \"le\", \"lev\", \"leve\"), and suffix (\"l\", \"el\", \"vel\", \"evel\"). The largest prefix which is also suffix is given by \"l\"."
     },
     {
-      "input": "s = &quot;ababab&quot;",
-      "output": "&quot;abab&quot;",
-      "explanation": "&quot;abab&quot; is the largest prefix which is also suffix. They can overlap in the original string."
+      "input": "s = \"ababab\"",
+      "output": "\"abab\"",
+      "explanation": "\"abab\" is the largest prefix which is also suffix. They can overlap in the original string."
     }
   ],
   "starterCode": {
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;level&quot;",
-      "expectedOutput": "&quot;l&quot;"
+      "input": "\"level\"",
+      "expectedOutput": "\"l\""
     },
     {
-      "input": "s = &quot;ababab&quot;",
-      "expectedOutput": "&quot;abab&quot;"
+      "input": "\"ababab\"",
+      "expectedOutput": "\"abab\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;level&quot;",
-      "expectedOutput": "&quot;l&quot;"
-    },
-    {
-      "input": "s = &quot;ababab&quot;",
-      "expectedOutput": "&quot;abab&quot;"
-    },
-    {
       "input": "\"level\"",
-      "expectedOutput": null
+      "expectedOutput": "\"l\""
     },
     {
       "input": "\"ababab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abab\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"level\"",
+      "expectedOutput": "\"l\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"ababab\"",
+      "expectedOutput": "\"abab\""
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-happy-prefix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.936Z",
+    "collectedAt": "2026-10-19T18:40:20.493Z",
     "sourceUpdatedAt": null
   }
 }

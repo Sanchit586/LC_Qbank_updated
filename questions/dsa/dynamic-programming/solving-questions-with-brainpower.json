@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "questions = [[3,2],[4,3],[4,4],[2,5]]",
+      "input": "[[3,2],[4,3],[4,4],[2,5]]",
       "expectedOutput": "5"
     },
     {
-      "input": "questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,2],[4,3],[4,4],[2,5]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "questions = [[3,2],[4,3],[4,4],[2,5]]",
       "expectedOutput": "5"
     },
     {
       "input": "questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[[3,2],[4,3],[4,4],[2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "questions = [[4,3],[5,4],[5,5],[3,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/solving-questions-with-brainpower/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:32.973Z",
+    "collectedAt": "2026-10-19T18:40:29.908Z",
     "sourceUpdatedAt": null
   }
 }

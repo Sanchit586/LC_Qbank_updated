@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "moves = &quot;UD&quot;",
-      "output": "true\nExplanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true.",
-      "explanation": null
+      "input": "moves = \"UD\"",
+      "output": "true",
+      "explanation": ": The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true."
     },
     {
-      "input": "moves = &quot;LL&quot;",
-      "output": "false\nExplanation: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves.",
-      "explanation": null
+      "input": "moves = \"LL\"",
+      "output": "false",
+      "explanation": ": The robot moves left twice. It ends up two \"moves\" to the left of the origin. We return false because it is not at the origin at the end of its moves."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "moves = &quot;UD&quot;",
-      "expectedOutput": "true\nExplanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true."
+      "input": "\"UD\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "moves = &quot;LL&quot;",
-      "expectedOutput": "false\nExplanation: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves."
+      "input": "\"LL\"",
+      "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "moves = &quot;UD&quot;",
-      "expectedOutput": "true\nExplanation: The robot moves up once, and then down once. All moves have the same magnitude, so it ended up at the origin where it started. Therefore, we return true."
-    },
-    {
-      "input": "moves = &quot;LL&quot;",
-      "expectedOutput": "false\nExplanation: The robot moves left twice. It ends up two &quot;moves&quot; to the left of the origin. We return false because it is not at the origin at the end of its moves."
-    },
-    {
       "input": "\"UD\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"LL\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "moves = \"UD\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "moves = \"LL\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/robot-return-to-origin/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:14.928Z",
+    "collectedAt": "2026-10-19T18:40:27.968Z",
     "sourceUpdatedAt": null
   }
 }

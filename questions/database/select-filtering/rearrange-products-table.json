@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Products table:\n+------------+--------+--------+--------+\n| product_id | store1 | store2 | store3 |\n+------------+--------+--------+--------+\n| 0          | 95     | 100    | 105    |\n| 1          | 70     | null   | 80     |\n+------------+--------+--------+--------+",
+      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[[0, 95, 100, 105], [1, 70, null, 80]]}}",
       "expectedOutput": "+------------+--------+-------+\n| product_id | store  | price |\n+------------+--------+-------+\n| 0          | store1 | 95    |\n| 0          | store2 | 100   |\n| 0          | store3 | 105   |\n| 1          | store1 | 70    |\n| 1          | store3 | 80    |\n+------------+--------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "Products table:\n+------------+--------+--------+--------+\n| product_id | store1 | store2 | store3 |\n+------------+--------+--------+--------+\n| 0          | 95     | 100    | 105    |\n| 1          | 70     | null   | 80     |\n+------------+--------+--------+--------+",
+      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[[0, 95, 100, 105], [1, 70, null, 80]]}}",
       "expectedOutput": "+------------+--------+-------+\n| product_id | store  | price |\n+------------+--------+-------+\n| 0          | store1 | 95    |\n| 0          | store2 | 100   |\n| 0          | store3 | 105   |\n| 1          | store1 | 70    |\n| 1          | store3 | 80    |\n+------------+--------+-------+"
     },
     {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[[0, 95, 100, 105], [1, 70, null, 80]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[[0,95,100,105]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"store1\",\"store2\",\"store3\"]},\"rows\":{\"Products\":[[0,95,100,null],[1,70,null,null]]}}",
-      "expectedOutput": null
+      "input": "Products table:\n+------------+--------+--------+--------+\n| product_id | store1 | store2 | store3 |\n+------------+--------+--------+--------+\n| 0          | 95     | 100    | 105    |\n| 1          | 70     | null   | 80     |\n+------------+--------+--------+--------+",
+      "expectedOutput": "+------------+--------+-------+\n| product_id | store  | price |\n+------------+--------+-------+\n| 0          | store1 | 95    |\n| 0          | store2 | 100   |\n| 0          | store3 | 105   |\n| 1          | store1 | 70    |\n| 1          | store3 | 80    |\n+------------+--------+-------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Products (product_id int, store1 int, store2 int, store3 int)\n\nTruncate table Products",
@@ -64,7 +52,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rearrange-products-table/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.055Z",
+    "collectedAt": "2026-10-19T18:40:27.278Z",
     "sourceUpdatedAt": null
   }
 }

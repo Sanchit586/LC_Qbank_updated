@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Products table:\n+-------------+----------+------------+\n| product_id  | low_fats | recyclable |\n+-------------+----------+------------+\n| 0           | Y        | N          |\n| 1           | Y        | Y          |\n| 2           | N        | Y          |\n| 3           | Y        | Y          |\n| 4           | N        | N          |\n+-------------+----------+------------+",
+      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[[\"0\",\"Y\",\"N\"],[\"1\",\"Y\",\"Y\"],[\"2\",\"N\",\"Y\"],[\"3\",\"Y\",\"Y\"],[\"4\",\"N\",\"N\"]]}}",
       "expectedOutput": "+-------------+\n| product_id  |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Products table:\n+-------------+----------+------------+\n| product_id  | low_fats | recyclable |\n+-------------+----------+------------+\n| 0           | Y        | N          |\n| 1           | Y        | Y          |\n| 2           | N        | Y          |\n| 3           | Y        | Y          |\n| 4           | N        | N          |\n+-------------+----------+------------+",
+      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[[\"0\",\"Y\",\"N\"],[\"1\",\"Y\",\"Y\"],[\"2\",\"N\",\"Y\"],[\"3\",\"Y\",\"Y\"],[\"4\",\"N\",\"N\"]]}}",
       "expectedOutput": "+-------------+\n| product_id  |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     },
     {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[[\"0\",\"Y\",\"N\"],[\"1\",\"Y\",\"Y\"],[\"2\",\"N\",\"Y\"],[\"3\",\"Y\",\"Y\"],[\"4\",\"N\",\"N\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[[\"0\",\"Y\",\"N\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"low_fats\",\"recyclable\"]},\"rows\":{\"Products\":[[\"0\",\"Y\",null],[\"1\",\"Y\",null],[\"2\",\"N\",null],[\"3\",\"Y\",null],[\"4\",\"N\",null]]}}",
-      "expectedOutput": null
+      "input": "Products table:\n+-------------+----------+------------+\n| product_id  | low_fats | recyclable |\n+-------------+----------+------------+\n| 0           | Y        | N          |\n| 1           | Y        | Y          |\n| 2           | N        | Y          |\n| 3           | Y        | Y          |\n| 4           | N        | N          |\n+-------------+----------+------------+",
+      "expectedOutput": "+-------------+\n| product_id  |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Products (product_id int, low_fats ENUM('Y', 'N'), recyclable ENUM('Y','N'))\n\nTruncate table Products",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/recyclable-and-low-fat-products/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:07.188Z",
+    "collectedAt": "2026-10-19T18:40:27.350Z",
     "sourceUpdatedAt": null
   }
 }

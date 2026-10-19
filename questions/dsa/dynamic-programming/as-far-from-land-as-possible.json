@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,0,1],[0,0,0],[1,0,1]]",
+      "input": "[[1,0,1],[0,0,0],[1,0,1]]",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [[1,0,0],[0,0,0],[0,0,0]]",
+      "input": "[[1,0,0],[0,0,0],[0,0,0]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,0,1],[0,0,0],[1,0,1]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,0,0],[0,0,0],[0,0,0]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "grid = [[1,0,1],[0,0,0],[1,0,1]]",
       "expectedOutput": "2"
     },
     {
       "input": "grid = [[1,0,0],[0,0,0],[0,0,0]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,0,1],[0,0,0],[1,0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,0],[0,0,0],[0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,1,2],[1,1,1],[2,1,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/as-far-from-land-as-possible/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:24.733Z",
+    "collectedAt": "2026-10-19T18:40:13.326Z",
     "sourceUpdatedAt": null
   }
 }

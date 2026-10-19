@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "s = \"leetcode\"",
       "output": "true",
-      "explanation": "Substring &quot;ee&quot; is of length 2 which is also present in reverse(s) == &quot;edocteel&quot;."
+      "explanation": "Substring \"ee\" is of length 2 which is also present in reverse(s) == \"edocteel\"."
     },
     {
-      "input": "s = &quot;abcba&quot;",
+      "input": "s = \"abcba\"",
       "output": "true",
-      "explanation": "All of the substrings of length 2 &quot;ab&quot;, &quot;bc&quot;, &quot;cb&quot;, &quot;ba&quot; are also present in reverse(s) == &quot;abcba&quot;."
+      "explanation": "All of the substrings of length 2 \"ab\", \"bc\", \"cb\", \"ba\" are also present in reverse(s) == \"abcba\"."
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "s = \"abcd\"",
       "output": "false",
       "explanation": "There is no substring of length 2 in s, which is also present in the reverse of s."
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abcba&quot;",
+      "input": "\"abcba\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "\"abcd\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abcba&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abcd&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abcba\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abcd\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abcba\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcd\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/existence-of-a-substring-in-a-string-and-its-reverse/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.051Z",
+    "collectedAt": "2026-10-19T18:40:17.184Z",
     "sourceUpdatedAt": null
   }
 }

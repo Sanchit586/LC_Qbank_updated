@@ -25,19 +25,19 @@
   ],
   "examples": [
     {
-      "input": "chunks = [&quot;hello wor&quot;,&quot;ld hello&quot;], queries = [&quot;hello&quot;,&quot;world&quot;,&quot;wor&quot;]",
+      "input": "chunks = [\"hello wor\",\"ld hello\"], queries = [\"hello\",\"world\",\"wor\"]",
       "output": "[2,1,0]",
-      "explanation": "After concatenating all strings in chunks, s = &quot;hello world hello&quot;.\n\tThe words are &quot;hello&quot;, &quot;world&quot;, and &quot;hello&quot;.\n\tThe substring &quot;wor&quot; appears inside &quot;world&quot;, but it is not a full word."
+      "explanation": "After concatenating all strings in chunks, s = \"hello world hello\".\n\tThe words are \"hello\", \"world\", and \"hello\".\n\tThe substring \"wor\" appears inside \"world\", but it is not a full word."
     },
     {
-      "input": "chunks = [&quot;a-b a--b &quot;,&quot;a-&quot;,&quot;b&quot;], queries = [&quot;a-b&quot;,&quot;a&quot;,&quot;b&quot;]",
+      "input": "chunks = [\"a-b a--b \",\"a-\",\"b\"], queries = [\"a-b\",\"a\",\"b\"]",
       "output": "[2,1,1]",
-      "explanation": "After concatenating all strings in chunks, s = &quot;a-b a--b a-b&quot;.\n\tIn &quot;a-b&quot;, the hyphen is a joiner hyphen because it is between two lowercase English letters, so &quot;a-b&quot; is one word.\n\tIn &quot;a--b&quot;, neither hyphen is a joiner hyphen, so it is split into the words &quot;a&quot; and &quot;b&quot;.\n\tTherefore, the words are &quot;a-b&quot;, &quot;a&quot;, &quot;b&quot;, and &quot;a-b&quot;."
+      "explanation": "After concatenating all strings in chunks, s = \"a-b a--b a-b\".\n\tIn \"a-b\", the hyphen is a joiner hyphen because it is between two lowercase English letters, so \"a-b\" is one word.\n\tIn \"a--b\", neither hyphen is a joiner hyphen, so it is split into the words \"a\" and \"b\".\n\tTherefore, the words are \"a-b\", \"a\", \"b\", and \"a-b\"."
     },
     {
-      "input": "chunks = [&quot;-cat dog- mouse&quot;], queries = [&quot;cat&quot;,&quot;dog&quot;,&quot;mouse&quot;,&quot;cat-dog&quot;]",
+      "input": "chunks = [\"-cat dog- mouse\"], queries = [\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
       "output": "[1,1,1,0]",
-      "explanation": "After concatenating all strings in chunks, s = &quot;-cat dog- mouse&quot;.\n\tThe leading hyphen before &quot;cat&quot; and the trailing hyphen after &quot;dog&quot; are not joiner hyphens, so they are separators.\n\tThe words are &quot;cat&quot;, &quot;dog&quot;, and &quot;mouse&quot;."
+      "explanation": "After concatenating all strings in chunks, s = \"-cat dog- mouse\".\n\tThe leading hyphen before \"cat\" and the trailing hyphen after \"dog\" are not joiner hyphens, so they are separators.\n\tThe words are \"cat\", \"dog\", and \"mouse\"."
     }
   ],
   "starterCode": {
@@ -63,42 +63,42 @@
   },
   "publicTests": [
     {
-      "input": "chunks = [&quot;hello wor&quot;,&quot;ld hello&quot;], queries = [&quot;hello&quot;,&quot;world&quot;,&quot;wor&quot;]",
+      "input": "[\"hello wor\",\"ld hello\"]\n[\"hello\",\"world\",\"wor\"]",
       "expectedOutput": "[2,1,0]"
     },
     {
-      "input": "chunks = [&quot;a-b a--b &quot;,&quot;a-&quot;,&quot;b&quot;], queries = [&quot;a-b&quot;,&quot;a&quot;,&quot;b&quot;]",
+      "input": "[\"a-b a--b \",\"a-\",\"b\"]\n[\"a-b\",\"a\",\"b\"]",
       "expectedOutput": "[2,1,1]"
     },
     {
-      "input": "chunks = [&quot;-cat dog- mouse&quot;], queries = [&quot;cat&quot;,&quot;dog&quot;,&quot;mouse&quot;,&quot;cat-dog&quot;]",
+      "input": "[\"-cat dog- mouse\"]\n[\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
       "expectedOutput": "[1,1,1,0]"
     }
   ],
   "testCases": [
     {
-      "input": "chunks = [&quot;hello wor&quot;,&quot;ld hello&quot;], queries = [&quot;hello&quot;,&quot;world&quot;,&quot;wor&quot;]",
+      "input": "[\"hello wor\",\"ld hello\"]\n[\"hello\",\"world\",\"wor\"]",
       "expectedOutput": "[2,1,0]"
     },
     {
-      "input": "chunks = [&quot;a-b a--b &quot;,&quot;a-&quot;,&quot;b&quot;], queries = [&quot;a-b&quot;,&quot;a&quot;,&quot;b&quot;]",
+      "input": "[\"a-b a--b \",\"a-\",\"b\"]\n[\"a-b\",\"a\",\"b\"]",
       "expectedOutput": "[2,1,1]"
     },
     {
-      "input": "chunks = [&quot;-cat dog- mouse&quot;], queries = [&quot;cat&quot;,&quot;dog&quot;,&quot;mouse&quot;,&quot;cat-dog&quot;]",
+      "input": "[\"-cat dog- mouse\"]\n[\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
       "expectedOutput": "[1,1,1,0]"
     },
     {
-      "input": "[\"hello wor\",\"ld hello\"]\n[\"hello\",\"world\",\"wor\"]",
-      "expectedOutput": null
+      "input": "chunks = [\"hello wor\",\"ld hello\"], queries = [\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[2,1,0]"
     },
     {
-      "input": "[\"a-b a--b \",\"a-\",\"b\"]\n[\"a-b\",\"a\",\"b\"]",
-      "expectedOutput": null
+      "input": "chunks = [\"a-b a--b \",\"a-\",\"b\"], queries = [\"a-b\",\"a\",\"b\"]",
+      "expectedOutput": "[2,1,1]"
     },
     {
-      "input": "[\"-cat dog- mouse\"]\n[\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
-      "expectedOutput": null
+      "input": "chunks = [\"-cat dog- mouse\"], queries = [\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
+      "expectedOutput": "[1,1,1,0]"
     }
   ],
   "sqlSchema": null,
@@ -110,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-valid-word-occurrences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:26.959Z",
+    "collectedAt": "2026-10-19T18:40:15.902Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;001101&quot;",
+      "input": "s = \"001101\"",
       "output": "6",
-      "explanation": "The following sets of indices selected are valid:\n- [0,2,4] from &quot;001101&quot; forms &quot;010&quot;\n- [0,3,4] from &quot;001101&quot; forms &quot;010&quot;\n- [1,2,4] from &quot;001101&quot; forms &quot;010&quot;\n- [1,3,4] from &quot;001101&quot; forms &quot;010&quot;\n- [2,4,5] from &quot;001101&quot; forms &quot;101&quot;\n- [3,4,5] from &quot;001101&quot; forms &quot;101&quot;\nNo other selection is valid. Thus, there are 6 total ways."
+      "explanation": "The following sets of indices selected are valid:\n- [0,2,4] from \"001101\" forms \"010\"\n- [0,3,4] from \"001101\" forms \"010\"\n- [1,2,4] from \"001101\" forms \"010\"\n- [1,3,4] from \"001101\" forms \"010\"\n- [2,4,5] from \"001101\" forms \"101\"\n- [3,4,5] from \"001101\" forms \"101\"\nNo other selection is valid. Thus, there are 6 total ways."
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "s = \"11100\"",
       "output": "0",
       "explanation": "It can be shown that there are no valid selections."
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;001101&quot;",
+      "input": "\"001101\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "\"11100\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;001101&quot;",
+      "input": "\"001101\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "\"11100\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"001101\"",
-      "expectedOutput": null
+      "input": "s = \"001101\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"11100\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"11100\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-select-buildings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.820Z",
+    "collectedAt": "2026-10-19T18:40:26.290Z",
     "sourceUpdatedAt": null
   }
 }

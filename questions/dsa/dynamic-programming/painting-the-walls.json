@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "cost = [1,2,3,2], time = [1,2,3,2]",
+      "input": "[1,2,3,2]\n[1,2,3,2]",
       "expectedOutput": "3"
     },
     {
-      "input": "cost = [2,3,4,2], time = [1,1,1,1]",
+      "input": "[2,3,4,2]\n[1,1,1,1]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,2]\n[1,2,3,2]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,3,4,2]\n[1,1,1,1]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "cost = [1,2,3,2], time = [1,2,3,2]",
       "expectedOutput": "3"
     },
     {
       "input": "cost = [2,3,4,2], time = [1,1,1,1]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[1,2,3,2]\n[1,2,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,2]\n[1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cost = [2,3,4,3], time = [2,3,4,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/painting-the-walls/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:50.748Z",
+    "collectedAt": "2026-10-19T18:40:26.438Z",
     "sourceUpdatedAt": null
   }
 }

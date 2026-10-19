@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;DID&quot;",
+      "input": "s = \"DID\"",
       "output": "5",
       "explanation": "The 5 valid permutations of (0, 1, 2, 3) are:\n(1, 0, 3, 2)\n(2, 0, 3, 1)\n(2, 1, 3, 0)\n(3, 0, 2, 1)\n(3, 1, 2, 0)"
     },
     {
-      "input": "s = &quot;D&quot;",
+      "input": "s = \"D\"",
       "output": "1",
       "explanation": null
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;DID&quot;",
+      "input": "\"DID\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;D&quot;",
+      "input": "\"D\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;DID&quot;",
+      "input": "\"DID\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;D&quot;",
+      "input": "\"D\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"DID\"",
-      "expectedOutput": null
+      "input": "s = \"DID\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"D\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"D\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-permutations-for-di-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.363Z",
+    "collectedAt": "2026-10-19T18:40:31.515Z",
     "sourceUpdatedAt": null
   }
 }

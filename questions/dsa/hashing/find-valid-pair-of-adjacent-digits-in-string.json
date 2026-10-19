@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;2523533&quot;",
-      "output": "&quot;23&quot;",
+      "input": "s = \"2523533\"",
+      "output": "\"23\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;221&quot;",
-      "output": "&quot;21&quot;",
+      "input": "s = \"221\"",
+      "output": "\"21\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;22&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"22\"",
+      "output": "\"\"",
       "explanation": null
     }
   ],
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;2523533&quot;",
-      "expectedOutput": "&quot;23&quot;"
+      "input": "\"2523533\"",
+      "expectedOutput": "\"23\""
     },
     {
-      "input": "s = &quot;221&quot;",
-      "expectedOutput": "&quot;21&quot;"
+      "input": "\"221\"",
+      "expectedOutput": "\"21\""
     },
     {
-      "input": "s = &quot;22&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"22\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;2523533&quot;",
-      "expectedOutput": "&quot;23&quot;"
-    },
-    {
-      "input": "s = &quot;221&quot;",
-      "expectedOutput": "&quot;21&quot;"
-    },
-    {
-      "input": "s = &quot;22&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"2523533\"",
-      "expectedOutput": null
+      "expectedOutput": "\"23\""
     },
     {
       "input": "\"221\"",
-      "expectedOutput": null
+      "expectedOutput": "\"21\""
     },
     {
       "input": "\"22\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"2523533\"",
+      "expectedOutput": "\"23\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"221\"",
+      "expectedOutput": "\"21\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"22\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-valid-pair-of-adjacent-digits-in-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:16.351Z",
+    "collectedAt": "2026-10-19T18:40:18.767Z",
     "sourceUpdatedAt": null
   }
 }

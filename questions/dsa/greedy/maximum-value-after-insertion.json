@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "n = &quot;99&quot;, x = 9",
-      "output": "&quot;999&quot;",
+      "input": "n = \"99\", x = 9",
+      "output": "\"999\"",
       "explanation": "The result is the same regardless of where you insert 9."
     },
     {
-      "input": "n = &quot;-13&quot;, x = 2",
-      "output": "&quot;-123&quot;",
+      "input": "n = \"-13\", x = 2",
+      "output": "\"-123\"",
       "explanation": "You can make n one of {-213, -123, -132}, and the largest of those three is -123."
     }
   ],
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "n = &quot;99&quot;, x = 9",
-      "expectedOutput": "&quot;999&quot;"
+      "input": "\"99\"\n9",
+      "expectedOutput": "\"999\""
     },
     {
-      "input": "n = &quot;-13&quot;, x = 2",
-      "expectedOutput": "&quot;-123&quot;"
+      "input": "\"-13\"\n2",
+      "expectedOutput": "\"-123\""
     }
   ],
   "testCases": [
     {
-      "input": "n = &quot;99&quot;, x = 9",
-      "expectedOutput": "&quot;999&quot;"
-    },
-    {
-      "input": "n = &quot;-13&quot;, x = 2",
-      "expectedOutput": "&quot;-123&quot;"
-    },
-    {
       "input": "\"99\"\n9",
-      "expectedOutput": null
+      "expectedOutput": "\"999\""
     },
     {
       "input": "\"-13\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"-123\""
     },
     {
-      "input": "n = &quot;100&quot;, x = 10",
-      "expectedOutput": null
+      "input": "n = \"99\", x = 9",
+      "expectedOutput": "\"999\""
+    },
+    {
+      "input": "n = \"-13\", x = 2",
+      "expectedOutput": "\"-123\""
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-value-after-insertion/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:35.862Z",
+    "collectedAt": "2026-10-19T18:40:22.905Z",
     "sourceUpdatedAt": null
   }
 }

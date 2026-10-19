@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "word1 = [&quot;ab&quot;, &quot;c&quot;], word2 = [&quot;a&quot;, &quot;bc&quot;]",
+      "input": "word1 = [\"ab\", \"c\"], word2 = [\"a\", \"bc\"]",
       "output": "true",
-      "explanation": "word1 represents string &quot;ab&quot; + &quot;c&quot; -&gt; &quot;abc&quot;\nword2 represents string &quot;a&quot; + &quot;bc&quot; -&gt; &quot;abc&quot;\nThe strings are the same, so return true."
+      "explanation": "word1 represents string \"ab\" + \"c\" -> \"abc\"\nword2 represents string \"a\" + \"bc\" -> \"abc\"\nThe strings are the same, so return true."
     },
     {
-      "input": "word1 = [&quot;a&quot;, &quot;cb&quot;], word2 = [&quot;ab&quot;, &quot;c&quot;]",
+      "input": "word1 = [\"a\", \"cb\"], word2 = [\"ab\", \"c\"]",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "word1  = [&quot;abc&quot;, &quot;d&quot;, &quot;defg&quot;], word2 = [&quot;abcddefg&quot;]",
+      "input": "word1  = [\"abc\", \"d\", \"defg\"], word2 = [\"abcddefg\"]",
       "output": "true",
       "explanation": null
     }
@@ -56,50 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = [&quot;ab&quot;, &quot;c&quot;], word2 = [&quot;a&quot;, &quot;bc&quot;]",
+      "input": "[\"ab\", \"c\"]\n[\"a\", \"bc\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = [&quot;a&quot;, &quot;cb&quot;], word2 = [&quot;ab&quot;, &quot;c&quot;]",
+      "input": "[\"a\", \"cb\"]\n[\"ab\", \"c\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "word1  = [&quot;abc&quot;, &quot;d&quot;, &quot;defg&quot;], word2 = [&quot;abcddefg&quot;]",
+      "input": "[\"abc\", \"d\", \"defg\"]\n[\"abcddefg\"]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = [&quot;ab&quot;, &quot;c&quot;], word2 = [&quot;a&quot;, &quot;bc&quot;]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "word1 = [&quot;a&quot;, &quot;cb&quot;], word2 = [&quot;ab&quot;, &quot;c&quot;]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "word1  = [&quot;abc&quot;, &quot;d&quot;, &quot;defg&quot;], word2 = [&quot;abcddefg&quot;]",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[\"ab\", \"c\"]\n[\"a\", \"bc\"]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[\"a\", \"cb\"]\n[\"ab\", \"c\"]",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "[\"abc\", \"d\", \"defg\"]\n[\"abcddefg\"]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "word2 = [&quot;a&quot;, &quot;cb&quot;], word3 = [&quot;ab&quot;, &quot;c&quot;]",
-      "expectedOutput": null
+      "input": "word1 = [\"ab\", \"c\"], word2 = [\"a\", \"bc\"]",
+      "expectedOutput": "true"
     },
     {
-      "input": "word2  = [&quot;abc&quot;, &quot;d&quot;, &quot;defg&quot;], word3 = [&quot;abcddefg&quot;]",
-      "expectedOutput": null
+      "input": "word1 = [\"a\", \"cb\"], word2 = [\"ab\", \"c\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "word1  = [\"abc\", \"d\", \"defg\"], word2 = [\"abcddefg\"]",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -114,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-two-string-arrays-are-equivalent/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:56.004Z",
+    "collectedAt": "2026-10-19T18:40:14.274Z",
     "sourceUpdatedAt": null
   }
 }

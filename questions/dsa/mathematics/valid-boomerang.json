@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[1,1],[2,3],[3,2]]",
+      "input": "[[1,1],[2,3],[3,2]]",
       "expectedOutput": "true"
     },
     {
-      "input": "points = [[1,1],[2,2],[3,3]]",
+      "input": "[[1,1],[2,2],[3,3]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1],[2,3],[3,2]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "points = [[1,1],[2,3],[3,2]]",
       "expectedOutput": "true"
     },
     {
       "input": "points = [[1,1],[2,2],[3,3]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,1],[2,3],[3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[2,2],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[3,4],[4,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-boomerang/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.211Z",
+    "collectedAt": "2026-10-19T18:40:31.461Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(()&quot;",
+      "input": "s = \"(()\"",
       "output": "2",
-      "explanation": "The longest valid parentheses substring is &quot;()&quot;."
+      "explanation": "The longest valid parentheses substring is \"()\"."
     },
     {
-      "input": "s = &quot;)()())&quot;",
+      "input": "s = \")()())\"",
       "output": "4",
-      "explanation": "The longest valid parentheses substring is &quot;()()&quot;."
+      "explanation": "The longest valid parentheses substring is \"()()\"."
     },
     {
-      "input": "s = &quot;&quot;",
+      "input": "s = \"\"",
       "output": "0",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(()&quot;",
+      "input": "\"(()\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;)()())&quot;",
+      "input": "\")()())\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;&quot;",
+      "input": "\"\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(()&quot;",
+      "input": "\"(()\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;)()())&quot;",
+      "input": "\")()())\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;&quot;",
+      "input": "\"\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"(()\"",
-      "expectedOutput": null
+      "input": "s = \"(()\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\")()())\"",
-      "expectedOutput": null
+      "input": "s = \")()())\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-valid-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.615Z",
+    "collectedAt": "2026-10-19T18:40:20.755Z",
     "sourceUpdatedAt": null
   }
 }

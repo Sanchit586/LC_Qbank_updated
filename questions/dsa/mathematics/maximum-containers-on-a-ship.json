@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, w = 3, maxWeight = 15",
+      "input": "2\n3\n15",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 3, w = 5, maxWeight = 20",
+      "input": "3\n5\n20",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "2\n3\n15",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n5\n20",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 2, w = 3, maxWeight = 15",
       "expectedOutput": "4"
     },
     {
       "input": "n = 3, w = 5, maxWeight = 20",
       "expectedOutput": "4"
-    },
-    {
-      "input": "2\n3\n15",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n5\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, w = 4, maxWeight = 16",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-containers-on-a-ship/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.465Z",
+    "collectedAt": "2026-10-19T18:40:21.691Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;Hello, my name is John&quot;",
+      "input": "s = \"Hello, my name is John\"",
       "output": "5",
-      "explanation": "The five segments are [&quot;Hello,&quot;, &quot;my&quot;, &quot;name&quot;, &quot;is&quot;, &quot;John&quot;]"
+      "explanation": "The five segments are [\"Hello,\", \"my\", \"name\", \"is\", \"John\"]"
     },
     {
-      "input": "s = &quot;Hello&quot;",
+      "input": "s = \"Hello\"",
       "output": "1",
       "explanation": null
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;Hello, my name is John&quot;",
+      "input": "\"Hello, my name is John\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;Hello&quot;",
+      "input": "\"Hello\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;Hello, my name is John&quot;",
+      "input": "\"Hello, my name is John\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;Hello&quot;",
+      "input": "\"Hello\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"Hello, my name is John\"",
-      "expectedOutput": null
+      "input": "s = \"Hello, my name is John\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"Hello\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"Hello\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-segments-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.119Z",
+    "collectedAt": "2026-10-19T18:40:26.048Z",
     "sourceUpdatedAt": null
   }
 }

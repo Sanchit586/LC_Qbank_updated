@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[3,2],[1,3],[3,4],[0,1]]",
+      "input": "[[3,2],[1,3],[3,4],[0,1]]",
       "expectedOutput": "15"
     },
     {
-      "input": "grid = [[3,2,1],[2,1,0],[1,2,3]]",
+      "input": "[[3,2,1],[2,1,0],[1,2,3]]",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,2],[1,3],[3,4],[0,1]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[[3,2,1],[2,1,0],[1,2,3]]",
+      "expectedOutput": "12"
+    },
+    {
       "input": "grid = [[3,2],[1,3],[3,4],[0,1]]",
       "expectedOutput": "15"
     },
     {
       "input": "grid = [[3,2,1],[2,1,0],[1,2,3]]",
       "expectedOutput": "12"
-    },
-    {
-      "input": "[[3,2],[1,3],[3,4],[0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,2,1],[2,1,0],[1,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[4,3],[2,4],[4,5],[1,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-columns-strictly-increasing/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.665Z",
+    "collectedAt": "2026-10-19T18:40:24.731Z",
     "sourceUpdatedAt": null
   }
 }

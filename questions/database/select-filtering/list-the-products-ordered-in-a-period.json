@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Products table:\n+-------------+-----------------------+------------------+\n| product_id  | product_name          | product_category |\n+-------------+-----------------------+------------------+\n| 1           | Leetcode Solutions    | Book             |\n| 2           | Jewels of Stringology | Book             |\n| 3           | HP                    | Laptop           |\n| 4           | Lenovo                | Laptop           |\n| 5           | Leetcode Kit          | T-shirt          |\n+-------------+-----------------------+------------------+\nOrders table:\n+--------------+--------------+----------+\n| product_id   | order_date   | unit     |\n+--------------+--------------+----------+\n| 1            | 2020-02-05   | 60       |\n| 1            | 2020-02-10   | 70       |\n| 2            | 2020-01-18   | 30       |\n| 2            | 2020-02-11   | 80       |\n| 3            | 2020-02-17   | 2        |\n| 3            | 2020-02-24   | 3        |\n| 4            | 2020-03-01   | 20       |\n| 4            | 2020-03-04   | 30       |\n| 4            | 2020-03-04   | 60       |\n| 5            | 2020-02-25   | 50       |\n| 5            | 2020-02-27   | 50       |\n| 5            | 2020-03-01   | 50       |\n+--------------+--------------+----------+",
+      "input": "{\"headers\": {\"Products\": [\"product_id\", \"product_name\", \"product_category\"], \"Orders\": [\"product_id\", \"order_date\", \"unit\"]}, \"rows\": {\"Products\": [[1, \"Leetcode Solutions\", \"Book\"], [2, \"Jewels of Stringology\", \"Book\"], [3, \"HP\", \"Laptop\"], [4, \"Lenovo\", \"Laptop\"], [5, \"Leetcode Kit\", \"T-shirt\"]], \"Orders\": [[1, \"2020-02-05\", 60], [1, \"2020-02-10\", 70], [2, \"2020-01-18\", 30], [2, \"2020-02-11\", 80], [3, \"2020-02-17\", 2], [3, \"2020-02-24\", 3], [4, \"2020-03-01\", 20], [4, \"2020-03-04\", 30], [4, \"2020-03-04\", 60], [5, \"2020-02-25\", 50], [5, \"2020-02-27\", 50], [5, \"2020-03-01\", 50]]}}",
       "expectedOutput": "+--------------------+---------+\n| product_name       | unit    |\n+--------------------+---------+\n| Leetcode Solutions | 130     |\n| Leetcode Kit       | 100     |\n+--------------------+---------+"
     }
   ],
   "testCases": [
     {
-      "input": "Products table:\n+-------------+-----------------------+------------------+\n| product_id  | product_name          | product_category |\n+-------------+-----------------------+------------------+\n| 1           | Leetcode Solutions    | Book             |\n| 2           | Jewels of Stringology | Book             |\n| 3           | HP                    | Laptop           |\n| 4           | Lenovo                | Laptop           |\n| 5           | Leetcode Kit          | T-shirt          |\n+-------------+-----------------------+------------------+\nOrders table:\n+--------------+--------------+----------+\n| product_id   | order_date   | unit     |\n+--------------+--------------+----------+\n| 1            | 2020-02-05   | 60       |\n| 1            | 2020-02-10   | 70       |\n| 2            | 2020-01-18   | 30       |\n| 2            | 2020-02-11   | 80       |\n| 3            | 2020-02-17   | 2        |\n| 3            | 2020-02-24   | 3        |\n| 4            | 2020-03-01   | 20       |\n| 4            | 2020-03-04   | 30       |\n| 4            | 2020-03-04   | 60       |\n| 5            | 2020-02-25   | 50       |\n| 5            | 2020-02-27   | 50       |\n| 5            | 2020-03-01   | 50       |\n+--------------+--------------+----------+",
+      "input": "{\"headers\": {\"Products\": [\"product_id\", \"product_name\", \"product_category\"], \"Orders\": [\"product_id\", \"order_date\", \"unit\"]}, \"rows\": {\"Products\": [[1, \"Leetcode Solutions\", \"Book\"], [2, \"Jewels of Stringology\", \"Book\"], [3, \"HP\", \"Laptop\"], [4, \"Lenovo\", \"Laptop\"], [5, \"Leetcode Kit\", \"T-shirt\"]], \"Orders\": [[1, \"2020-02-05\", 60], [1, \"2020-02-10\", 70], [2, \"2020-01-18\", 30], [2, \"2020-02-11\", 80], [3, \"2020-02-17\", 2], [3, \"2020-02-24\", 3], [4, \"2020-03-01\", 20], [4, \"2020-03-04\", 30], [4, \"2020-03-04\", 60], [5, \"2020-02-25\", 50], [5, \"2020-02-27\", 50], [5, \"2020-03-01\", 50]]}}",
       "expectedOutput": "+--------------------+---------+\n| product_name       | unit    |\n+--------------------+---------+\n| Leetcode Solutions | 130     |\n| Leetcode Kit       | 100     |\n+--------------------+---------+"
     },
     {
-      "input": "{\"headers\": {\"Products\": [\"product_id\", \"product_name\", \"product_category\"], \"Orders\": [\"product_id\", \"order_date\", \"unit\"]}, \"rows\": {\"Products\": [[1, \"Leetcode Solutions\", \"Book\"], [2, \"Jewels of Stringology\", \"Book\"], [3, \"HP\", \"Laptop\"], [4, \"Lenovo\", \"Laptop\"], [5, \"Leetcode Kit\", \"T-shirt\"]], \"Orders\": [[1, \"2020-02-05\", 60], [1, \"2020-02-10\", 70], [2, \"2020-01-18\", 30], [2, \"2020-02-11\", 80], [3, \"2020-02-17\", 2], [3, \"2020-02-24\", 3], [4, \"2020-03-01\", 20], [4, \"2020-03-04\", 30], [4, \"2020-03-04\", 60], [5, \"2020-02-25\", 50], [5, \"2020-02-27\", 50], [5, \"2020-03-01\", 50]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"product_name\",\"product_category\"],\"Orders\":[\"product_id\",\"order_date\",\"unit\"]},\"rows\":{\"Products\":[],\"Orders\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"product_name\",\"product_category\"],\"Orders\":[\"product_id\",\"order_date\",\"unit\"]},\"rows\":{\"Products\":[[1,\"Leetcode Solutions\",\"Book\"]],\"Orders\":[[1,\"2020-02-05\",60]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Products\":[\"product_id\",\"product_name\",\"product_category\"],\"Orders\":[\"product_id\",\"order_date\",\"unit\"]},\"rows\":{\"Products\":[[1,\"Leetcode Solutions\",null],[2,\"Jewels of Stringology\",null],[3,\"HP\",null],[4,\"Lenovo\",null],[5,\"Leetcode Kit\",null]],\"Orders\":[[1,\"2020-02-05\",null],[1,\"2020-02-10\",null],[2,\"2020-01-18\",null],[2,\"2020-02-11\",null],[3,\"2020-02-17\",null],[3,\"2020-02-24\",null],[4,\"2020-03-01\",null],[4,\"2020-03-04\",null],[4,\"2020-03-04\",null],[5,\"2020-02-25\",null],[5,\"2020-02-27\",null],[5,\"2020-03-01\",null]]}}",
-      "expectedOutput": null
+      "input": "Products table:\n+-------------+-----------------------+------------------+\n| product_id  | product_name          | product_category |\n+-------------+-----------------------+------------------+\n| 1           | Leetcode Solutions    | Book             |\n| 2           | Jewels of Stringology | Book             |\n| 3           | HP                    | Laptop           |\n| 4           | Lenovo                | Laptop           |\n| 5           | Leetcode Kit          | T-shirt          |\n+-------------+-----------------------+------------------+\nOrders table:\n+--------------+--------------+----------+\n| product_id   | order_date   | unit     |\n+--------------+--------------+----------+\n| 1            | 2020-02-05   | 60       |\n| 1            | 2020-02-10   | 70       |\n| 2            | 2020-01-18   | 30       |\n| 2            | 2020-02-11   | 80       |\n| 3            | 2020-02-17   | 2        |\n| 3            | 2020-02-24   | 3        |\n| 4            | 2020-03-01   | 20       |\n| 4            | 2020-03-04   | 30       |\n| 4            | 2020-03-04   | 60       |\n| 5            | 2020-02-25   | 50       |\n| 5            | 2020-02-27   | 50       |\n| 5            | 2020-03-01   | 50       |\n+--------------+--------------+----------+",
+      "expectedOutput": "+--------------------+---------+\n| product_name       | unit    |\n+--------------------+---------+\n| Leetcode Solutions | 130     |\n| Leetcode Kit       | 100     |\n+--------------------+---------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Products (product_id int, product_name varchar(40), product_category varchar(40))\n\nCreate table If Not Exists Orders (product_id int, order_date date, unit int)\n\nTruncate table Products\n\nTruncate table Orders",
@@ -79,7 +67,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/list-the-products-ordered-in-a-period/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.980Z",
+    "collectedAt": "2026-10-19T18:40:20.332Z",
     "sourceUpdatedAt": null
   }
 }

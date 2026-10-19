@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "num1 = &quot;11&quot;, num2 = &quot;123&quot;",
-      "output": "&quot;134&quot;",
+      "input": "num1 = \"11\", num2 = \"123\"",
+      "output": "\"134\"",
       "explanation": null
     },
     {
-      "input": "num1 = &quot;456&quot;, num2 = &quot;77&quot;",
-      "output": "&quot;533&quot;",
+      "input": "num1 = \"456\", num2 = \"77\"",
+      "output": "\"533\"",
       "explanation": null
     },
     {
-      "input": "num1 = &quot;0&quot;, num2 = &quot;0&quot;",
-      "output": "&quot;0&quot;",
+      "input": "num1 = \"0\", num2 = \"0\"",
+      "output": "\"0\"",
       "explanation": null
     }
   ],
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "num1 = &quot;11&quot;, num2 = &quot;123&quot;",
-      "expectedOutput": "&quot;134&quot;"
+      "input": "\"11\"\n\"123\"",
+      "expectedOutput": "\"134\""
     },
     {
-      "input": "num1 = &quot;456&quot;, num2 = &quot;77&quot;",
-      "expectedOutput": "&quot;533&quot;"
+      "input": "\"456\"\n\"77\"",
+      "expectedOutput": "\"533\""
     },
     {
-      "input": "num1 = &quot;0&quot;, num2 = &quot;0&quot;",
-      "expectedOutput": "&quot;0&quot;"
+      "input": "\"0\"\n\"0\"",
+      "expectedOutput": "\"0\""
     }
   ],
   "testCases": [
     {
-      "input": "num1 = &quot;11&quot;, num2 = &quot;123&quot;",
-      "expectedOutput": "&quot;134&quot;"
-    },
-    {
-      "input": "num1 = &quot;456&quot;, num2 = &quot;77&quot;",
-      "expectedOutput": "&quot;533&quot;"
-    },
-    {
-      "input": "num1 = &quot;0&quot;, num2 = &quot;0&quot;",
-      "expectedOutput": "&quot;0&quot;"
-    },
-    {
       "input": "\"11\"\n\"123\"",
-      "expectedOutput": null
+      "expectedOutput": "\"134\""
     },
     {
       "input": "\"456\"\n\"77\"",
-      "expectedOutput": null
+      "expectedOutput": "\"533\""
     },
     {
       "input": "\"0\"\n\"0\"",
-      "expectedOutput": null
+      "expectedOutput": "\"0\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "num1 = \"11\", num2 = \"123\"",
+      "expectedOutput": "\"134\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "num1 = \"456\", num2 = \"77\"",
+      "expectedOutput": "\"533\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"12\"\n\"124\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"457\"\n\"78\"",
-      "expectedOutput": null
+      "input": "num1 = \"0\", num2 = \"0\"",
+      "expectedOutput": "\"0\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/add-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.369Z",
+    "collectedAt": "2026-10-19T18:40:12.832Z",
     "sourceUpdatedAt": null
   }
 }

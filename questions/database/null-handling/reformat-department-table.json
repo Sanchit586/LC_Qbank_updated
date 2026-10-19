@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Department table:\n+------+---------+-------+\n| id   | revenue | month |\n+------+---------+-------+\n| 1    | 8000    | Jan   |\n| 2    | 9000    | Jan   |\n| 3    | 10000   | Feb   |\n| 1    | 7000    | Feb   |\n| 1    | 6000    | Mar   |\n+------+---------+-------+",
+      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,\"Jan\"],[2,9000,\"Jan\"],[3,10000,\"Feb\"],[1,7000,\"Feb\"],[1,6000,\"Mar\"]]}}",
       "expectedOutput": "+------+-------------+-------------+-------------+-----+-------------+\n| id   | Jan_Revenue | Feb_Revenue | Mar_Revenue | ... | Dec_Revenue |\n+------+-------------+-------------+-------------+-----+-------------+\n| 1    | 8000        | 7000        | 6000        | ... | null        |\n| 2    | 9000        | null        | null        | ... | null        |\n| 3    | null        | 10000       | null        | ... | null        |\n+------+-------------+-------------+-------------+-----+-------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Department table:\n+------+---------+-------+\n| id   | revenue | month |\n+------+---------+-------+\n| 1    | 8000    | Jan   |\n| 2    | 9000    | Jan   |\n| 3    | 10000   | Feb   |\n| 1    | 7000    | Feb   |\n| 1    | 6000    | Mar   |\n+------+---------+-------+",
+      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,\"Jan\"],[2,9000,\"Jan\"],[3,10000,\"Feb\"],[1,7000,\"Feb\"],[1,6000,\"Mar\"]]}}",
       "expectedOutput": "+------+-------------+-------------+-------------+-----+-------------+\n| id   | Jan_Revenue | Feb_Revenue | Mar_Revenue | ... | Dec_Revenue |\n+------+-------------+-------------+-------------+-----+-------------+\n| 1    | 8000        | 7000        | 6000        | ... | null        |\n| 2    | 9000        | null        | null        | ... | null        |\n| 3    | null        | 10000       | null        | ... | null        |\n+------+-------------+-------------+-------------+-----+-------------+"
     },
     {
-      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,\"Jan\"],[2,9000,\"Jan\"],[3,10000,\"Feb\"],[1,7000,\"Feb\"],[1,6000,\"Mar\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,\"Jan\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Department\":[\"id\",\"revenue\",\"month\"]},\"rows\":{\"Department\":[[1,8000,null],[2,9000,null],[3,10000,null],[1,7000,null],[1,6000,null]]}}",
-      "expectedOutput": null
+      "input": "Department table:\n+------+---------+-------+\n| id   | revenue | month |\n+------+---------+-------+\n| 1    | 8000    | Jan   |\n| 2    | 9000    | Jan   |\n| 3    | 10000   | Feb   |\n| 1    | 7000    | Feb   |\n| 1    | 6000    | Mar   |\n+------+---------+-------+",
+      "expectedOutput": "+------+-------------+-------------+-------------+-----+-------------+\n| id   | Jan_Revenue | Feb_Revenue | Mar_Revenue | ... | Dec_Revenue |\n+------+-------------+-------------+-------------+-----+-------------+\n| 1    | 8000        | 7000        | 6000        | ... | null        |\n| 2    | 9000        | null        | null        | ... | null        |\n| 3    | null        | 10000       | null        | ... | null        |\n+------+-------------+-------------+-------------+-----+-------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Department (id int, revenue int, month varchar(5))\n\nTruncate table Department",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reformat-department-table/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:07.956Z",
+    "collectedAt": "2026-10-19T18:40:27.399Z",
     "sourceUpdatedAt": null
   }
 }

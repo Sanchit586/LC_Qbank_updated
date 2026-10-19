@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "sx = 2, sy = 4, fx = 7, fy = 7, t = 6",
+      "input": "2\n4\n7\n7\n6",
       "expectedOutput": "true"
     },
     {
-      "input": "sx = 3, sy = 1, fx = 7, fy = 3, t = 3",
+      "input": "3\n1\n7\n3\n3",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "2\n4\n7\n7\n6",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n1\n7\n3\n3",
+      "expectedOutput": "false"
+    },
+    {
       "input": "sx = 2, sy = 4, fx = 7, fy = 7, t = 6",
       "expectedOutput": "true"
     },
     {
       "input": "sx = 3, sy = 1, fx = 7, fy = 3, t = 3",
       "expectedOutput": "false"
-    },
-    {
-      "input": "2\n4\n7\n7\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1\n7\n3\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "sx = 3, sy = 5, fx = 8, fy = 8, t = 7",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/determine-if-a-cell-is-reachable-at-a-given-time/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:43.626Z",
+    "collectedAt": "2026-10-19T18:40:16.583Z",
     "sourceUpdatedAt": null
   }
 }

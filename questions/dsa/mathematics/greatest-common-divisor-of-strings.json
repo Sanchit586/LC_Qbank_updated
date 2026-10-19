@@ -18,23 +18,23 @@
   ],
   "examples": [
     {
-      "input": "str1 = &quot;ABCABC&quot;, str2 = &quot;ABC&quot;",
-      "output": "&quot;ABC&quot;",
+      "input": "str1 = \"ABCABC\", str2 = \"ABC\"",
+      "output": "\"ABC\"",
       "explanation": null
     },
     {
-      "input": "str1 = &quot;ABABAB&quot;, str2 = &quot;ABAB&quot;",
-      "output": "&quot;AB&quot;",
+      "input": "str1 = \"ABABAB\", str2 = \"ABAB\"",
+      "output": "\"AB\"",
       "explanation": null
     },
     {
-      "input": "str1 = &quot;LEET&quot;, str2 = &quot;CODE&quot;",
-      "output": "&quot;&quot;",
+      "input": "str1 = \"LEET\", str2 = \"CODE\"",
+      "output": "\"\"",
       "explanation": null
     },
     {
-      "input": "str1 = &quot;AAAAAB&quot;, str2 = &quot;AAA&quot;",
-      "output": "&quot;&quot;​​​​​​​",
+      "input": "str1 = \"AAAAAB\", str2 = \"AAA\"",
+      "output": "\"\"​​​​​​​",
       "explanation": null
     }
   ],
@@ -61,102 +61,54 @@
   },
   "publicTests": [
     {
-      "input": "str1 = &quot;ABCABC&quot;, str2 = &quot;ABC&quot;",
-      "expectedOutput": "&quot;ABC&quot;"
+      "input": "\"ABCABC\"\n\"ABC\"",
+      "expectedOutput": "\"ABC\""
     },
     {
-      "input": "str1 = &quot;ABABAB&quot;, str2 = &quot;ABAB&quot;",
-      "expectedOutput": "&quot;AB&quot;"
+      "input": "\"ABABAB\"\n\"ABAB\"",
+      "expectedOutput": "\"AB\""
     },
     {
-      "input": "str1 = &quot;LEET&quot;, str2 = &quot;CODE&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"LEET\"\n\"CODE\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "str1 = &quot;AAAAAB&quot;, str2 = &quot;AAA&quot;",
-      "expectedOutput": "&quot;&quot;​​​​​​​"
+      "input": "\"AAAAAB\"\n\"AAA\"",
+      "expectedOutput": "\"\"​​​​​​​"
     }
   ],
   "testCases": [
     {
-      "input": "str1 = &quot;ABCABC&quot;, str2 = &quot;ABC&quot;",
-      "expectedOutput": "&quot;ABC&quot;"
-    },
-    {
-      "input": "str1 = &quot;ABABAB&quot;, str2 = &quot;ABAB&quot;",
-      "expectedOutput": "&quot;AB&quot;"
-    },
-    {
-      "input": "str1 = &quot;LEET&quot;, str2 = &quot;CODE&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "str1 = &quot;AAAAAB&quot;, str2 = &quot;AAA&quot;",
-      "expectedOutput": "&quot;&quot;​​​​​​​"
-    },
-    {
       "input": "\"ABCABC\"\n\"ABC\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ABC\""
     },
     {
       "input": "\"ABABAB\"\n\"ABAB\"",
-      "expectedOutput": null
+      "expectedOutput": "\"AB\""
     },
     {
       "input": "\"LEET\"\n\"CODE\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"AAAAAB\"\n\"AAA\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\"​​​​​​​"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "str1 = \"ABCABC\", str2 = \"ABC\"",
+      "expectedOutput": "\"ABC\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "str1 = \"ABABAB\", str2 = \"ABAB\"",
+      "expectedOutput": "\"AB\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
+      "input": "str1 = \"LEET\", str2 = \"CODE\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "str1 = \"AAAAAB\", str2 = \"AAA\"",
+      "expectedOutput": "\"\"​​​​​​​"
     }
   ],
   "sqlSchema": null,
@@ -170,7 +122,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/greatest-common-divisor-of-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:24.267Z",
+    "collectedAt": "2026-10-19T18:40:19.233Z",
     "sourceUpdatedAt": null
   }
 }

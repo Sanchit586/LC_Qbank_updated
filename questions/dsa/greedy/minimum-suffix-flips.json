@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "target = &quot;10111&quot;",
+      "input": "target = \"10111\"",
       "output": "3",
-      "explanation": "Initially, s = &quot;00000&quot;.\nChoose index i = 2: &quot;00000&quot; -&gt; &quot;00111&quot;\nChoose index i = 0: &quot;00111&quot; -&gt; &quot;11000&quot;\nChoose index i = 1: &quot;11000&quot; -&gt; &quot;10111&quot;\nWe need at least 3 flip operations to form target."
+      "explanation": "Initially, s = \"00000\".\nChoose index i = 2: \"00000\" -> \"00111\"\nChoose index i = 0: \"00111\" -> \"11000\"\nChoose index i = 1: \"11000\" -> \"10111\"\nWe need at least 3 flip operations to form target."
     },
     {
-      "input": "target = &quot;101&quot;",
+      "input": "target = \"101\"",
       "output": "3",
-      "explanation": "Initially, s = &quot;000&quot;.\nChoose index i = 0: &quot;000&quot; -&gt; &quot;111&quot;\nChoose index i = 1: &quot;111&quot; -&gt; &quot;100&quot;\nChoose index i = 2: &quot;100&quot; -&gt; &quot;101&quot;\nWe need at least 3 flip operations to form target."
+      "explanation": "Initially, s = \"000\".\nChoose index i = 0: \"000\" -> \"111\"\nChoose index i = 1: \"111\" -> \"100\"\nChoose index i = 2: \"100\" -> \"101\"\nWe need at least 3 flip operations to form target."
     },
     {
-      "input": "target = &quot;00000&quot;",
+      "input": "target = \"00000\"",
       "output": "0",
       "explanation": "We do not need any operations since the initial s already equals target."
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "target = &quot;10111&quot;",
+      "input": "\"10111\"",
       "expectedOutput": "3"
     },
     {
-      "input": "target = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "3"
     },
     {
-      "input": "target = &quot;00000&quot;",
+      "input": "\"00000\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "target = &quot;10111&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "target = &quot;101&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "target = &quot;00000&quot;",
-      "expectedOutput": "0"
-    },
-    {
       "input": "\"10111\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"101\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"00000\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "target = \"10111\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "target = \"101\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "target = \"00000\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-suffix-flips/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:18.897Z",
+    "collectedAt": "2026-10-19T18:40:25.057Z",
     "sourceUpdatedAt": null
   }
 }

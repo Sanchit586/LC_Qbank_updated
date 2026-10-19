@@ -15,12 +15,12 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;abc&quot;, s2 = &quot;abb&quot;, s3 = &quot;ab&quot;",
+      "input": "s1 = \"abc\", s2 = \"abb\", s3 = \"ab\"",
       "output": "2",
-      "explanation": "&nbsp;Deleting the rightmost character from both s1 and s2 will result in three equal strings."
+      "explanation": " Deleting the rightmost character from both s1 and s2 will result in three equal strings."
     },
     {
-      "input": "s1 = &quot;dac&quot;, s2 = &quot;bac&quot;, s3 = &quot;cac&quot;",
+      "input": "s1 = \"dac\", s2 = \"bac\", s3 = \"cac\"",
       "output": "-1",
       "explanation": "Since the first letters of s1 and s2 differ, they cannot be made equal."
     }
@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;abc&quot;, s2 = &quot;abb&quot;, s3 = &quot;ab&quot;",
+      "input": "\"abc\"\n\"abb\"\n\"ab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s1 = &quot;dac&quot;, s2 = &quot;bac&quot;, s3 = &quot;cac&quot;",
+      "input": "\"dac\"\n\"bac\"\n\"cac\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;abc&quot;, s2 = &quot;abb&quot;, s3 = &quot;ab&quot;",
+      "input": "\"abc\"\n\"abb\"\n\"ab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s1 = &quot;dac&quot;, s2 = &quot;bac&quot;, s3 = &quot;cac&quot;",
+      "input": "\"dac\"\n\"bac\"\n\"cac\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"abc\"\n\"abb\"\n\"ab\"",
-      "expectedOutput": null
+      "input": "s1 = \"abc\", s2 = \"abb\", s3 = \"ab\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"dac\"\n\"bac\"\n\"cac\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;abc&quot;, s3 = &quot;abb&quot;, s4 = &quot;ab&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"dac\", s2 = \"bac\", s3 = \"cac\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/make-three-strings-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.229Z",
+    "collectedAt": "2026-10-19T18:40:20.989Z",
     "sourceUpdatedAt": null
   }
 }

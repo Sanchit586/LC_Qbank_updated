@@ -18,7 +18,13 @@
     "It is guaranteed that for each call to dec, key is existing in the data structure.",
     "At most 5 * 104 calls will be made to inc, dec, getMaxKey, and getMinKey."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"AllOne\", \"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]\n[[], [\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]",
+      "output": "[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]",
+      "explanation": "AllOne allOne = new AllOne();\nallOne.inc(\"hello\");\nallOne.inc(\"hello\");\nallOne.getMaxKey(); // return \"hello\"\nallOne.getMinKey(); // return \"hello\"\nallOne.inc(\"leet\");\nallOne.getMaxKey(); // return \"hello\"\nallOne.getMinKey(); // return \"leet\""
+    }
+  ],
   "starterCode": {
     "cpp": "class AllOne {\npublic:\n    AllOne() {\n        \n    }\n    \n    void inc(string key) {\n        \n    }\n    \n    void dec(string key) {\n        \n    }\n    \n    string getMaxKey() {\n        \n    }\n    \n    string getMinKey() {\n        \n    }\n};\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * AllOne* obj = new AllOne();\n * obj->inc(key);\n * obj->dec(key);\n * string param_3 = obj->getMaxKey();\n * string param_4 = obj->getMinKey();\n */",
     "java": "class AllOne {\n\n    public AllOne() {\n        \n    }\n    \n    public void inc(String key) {\n        \n    }\n    \n    public void dec(String key) {\n        \n    }\n    \n    public String getMaxKey() {\n        \n    }\n    \n    public String getMinKey() {\n        \n    }\n}\n\n/**\n * Your AllOne object will be instantiated and called as such:\n * AllOne obj = new AllOne();\n * obj.inc(key);\n * obj.dec(key);\n * String param_3 = obj.getMaxKey();\n * String param_4 = obj.getMinKey();\n */",
@@ -43,13 +49,17 @@
   "publicTests": [
     {
       "input": "[\"AllOne\",\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]\n[[],[\"hello\"],[\"hello\"],[],[],[\"leet\"],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]"
     }
   ],
   "testCases": [
     {
       "input": "[\"AllOne\",\"inc\",\"inc\",\"getMaxKey\",\"getMinKey\",\"inc\",\"getMaxKey\",\"getMinKey\"]\n[[],[\"hello\"],[\"hello\"],[],[],[\"leet\"],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]"
+    },
+    {
+      "input": "[\"AllOne\", \"inc\", \"inc\", \"getMaxKey\", \"getMinKey\", \"inc\", \"getMaxKey\", \"getMinKey\"]\n[[], [\"hello\"], [\"hello\"], [], [], [\"leet\"], [], []]",
+      "expectedOutput": "[null, null, null, \"hello\", \"hello\", null, \"hello\", \"leet\"]"
     }
   ],
   "sqlSchema": null,
@@ -61,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/all-oone-data-structure/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:06.864Z",
+    "collectedAt": "2026-10-19T18:40:12.983Z",
     "sourceUpdatedAt": null
   }
 }

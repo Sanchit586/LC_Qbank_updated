@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;,&quot;ok&quot;],[&quot;ok&quot;,&quot;bad&quot;,&quot;good&quot;,&quot;ok&quot;,&quot;ok&quot;],[&quot;good&quot;],[&quot;bad&quot;]]",
-      "output": "&quot;good&quot;",
-      "explanation": "After removing duplicates within each list, responses = [[&quot;good&quot;, &quot;ok&quot;], [&quot;ok&quot;, &quot;bad&quot;, &quot;good&quot;], [&quot;good&quot;], [&quot;bad&quot;]].\n\t&quot;good&quot; appears 3 times, &quot;ok&quot; appears 2 times, and &quot;bad&quot; appears 2 times.\n\tReturn &quot;good&quot; because it has the highest frequency."
+      "input": "responses = [[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
+      "output": "\"good\"",
+      "explanation": "After removing duplicates within each list, responses = [[\"good\", \"ok\"], [\"ok\", \"bad\", \"good\"], [\"good\"], [\"bad\"]].\n\t\"good\" appears 3 times, \"ok\" appears 2 times, and \"bad\" appears 2 times.\n\tReturn \"good\" because it has the highest frequency."
     },
     {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;],[&quot;ok&quot;,&quot;bad&quot;],[&quot;bad&quot;,&quot;notsure&quot;],[&quot;great&quot;,&quot;good&quot;]]",
-      "output": "&quot;bad&quot;",
-      "explanation": "After removing duplicates within each list we have responses = [[&quot;good&quot;, &quot;ok&quot;], [&quot;ok&quot;, &quot;bad&quot;], [&quot;bad&quot;, &quot;notsure&quot;], [&quot;great&quot;, &quot;good&quot;]].\n\t&quot;bad&quot;, &quot;good&quot;, and &quot;ok&quot; each occur 2 times.\n\tThe output is &quot;bad&quot; because it is the lexicographically smallest amongst the words with the highest frequency."
+      "input": "responses = [[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
+      "output": "\"bad\"",
+      "explanation": "After removing duplicates within each list we have responses = [[\"good\", \"ok\"], [\"ok\", \"bad\"], [\"bad\", \"notsure\"], [\"great\", \"good\"]].\n\t\"bad\", \"good\", and \"ok\" each occur 2 times.\n\tThe output is \"bad\" because it is the lexicographically smallest amongst the words with the highest frequency."
     }
   ],
   "starterCode": {
@@ -53,30 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;,&quot;ok&quot;],[&quot;ok&quot;,&quot;bad&quot;,&quot;good&quot;,&quot;ok&quot;,&quot;ok&quot;],[&quot;good&quot;],[&quot;bad&quot;]]",
-      "expectedOutput": "&quot;good&quot;"
+      "input": "[[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
+      "expectedOutput": "\"good\""
     },
     {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;],[&quot;ok&quot;,&quot;bad&quot;],[&quot;bad&quot;,&quot;notsure&quot;],[&quot;great&quot;,&quot;good&quot;]]",
-      "expectedOutput": "&quot;bad&quot;"
+      "input": "[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
+      "expectedOutput": "\"bad\""
     }
   ],
   "testCases": [
     {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;,&quot;ok&quot;],[&quot;ok&quot;,&quot;bad&quot;,&quot;good&quot;,&quot;ok&quot;,&quot;ok&quot;],[&quot;good&quot;],[&quot;bad&quot;]]",
-      "expectedOutput": "&quot;good&quot;"
-    },
-    {
-      "input": "responses = [[&quot;good&quot;,&quot;ok&quot;,&quot;good&quot;],[&quot;ok&quot;,&quot;bad&quot;],[&quot;bad&quot;,&quot;notsure&quot;],[&quot;great&quot;,&quot;good&quot;]]",
-      "expectedOutput": "&quot;bad&quot;"
-    },
-    {
       "input": "[[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"good\""
     },
     {
       "input": "[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"bad\""
+    },
+    {
+      "input": "responses = [[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
+      "expectedOutput": "\"good\""
+    },
+    {
+      "input": "responses = [[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
+      "expectedOutput": "\"bad\""
     }
   ],
   "sqlSchema": null,
@@ -90,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-most-common-response/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:12.580Z",
+    "collectedAt": "2026-10-19T18:40:18.501Z",
     "sourceUpdatedAt": null
   }
 }

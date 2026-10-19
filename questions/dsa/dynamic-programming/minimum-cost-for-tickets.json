@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "days = [1,4,6,7,8,20], costs = [2,7,15]",
+      "input": "[1,4,6,7,8,20]\n[2,7,15]",
       "expectedOutput": "11"
     },
     {
-      "input": "days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]",
+      "input": "[1,2,3,4,5,6,7,8,9,10,30,31]\n[2,7,15]",
       "expectedOutput": "17"
     }
   ],
   "testCases": [
     {
+      "input": "[1,4,6,7,8,20]\n[2,7,15]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10,30,31]\n[2,7,15]",
+      "expectedOutput": "17"
+    },
+    {
       "input": "days = [1,4,6,7,8,20], costs = [2,7,15]",
       "expectedOutput": "11"
     },
     {
       "input": "days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]",
       "expectedOutput": "17"
-    },
-    {
-      "input": "[1,4,6,7,8,20]\n[2,7,15]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10,30,31]\n[2,7,15]",
-      "expectedOutput": null
-    },
-    {
-      "input": "days = [2,5,7,8,9,21], costs = [3,8,16]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-for-tickets/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:46.966Z",
+    "collectedAt": "2026-10-19T18:40:23.520Z",
     "sourceUpdatedAt": null
   }
 }

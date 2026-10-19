@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "s = \"1001\"",
       "output": "false",
       "explanation": "The string has two segments of size 1."
     },
     {
-      "input": "s = &quot;110&quot;",
+      "input": "s = \"110\"",
       "output": "true",
       "explanation": null
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "\"1001\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;110&quot;",
+      "input": "\"110\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "\"1001\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;110&quot;",
+      "input": "\"110\"",
       "expectedOutput": "true"
     },
     {
-      "input": "\"1001\"",
-      "expectedOutput": null
+      "input": "s = \"1001\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"110\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"110\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-binary-string-has-at-most-one-segment-of-ones/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:50.661Z",
+    "collectedAt": "2026-10-19T18:40:14.115Z",
     "sourceUpdatedAt": null
   }
 }

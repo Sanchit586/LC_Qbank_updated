@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;W&quot;,&quot;B&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;]]",
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
       "output": "true",
       "explanation": null
     }
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
+      "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;W&quot;,&quot;B&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
+      "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
       "expectedOutput": "false"
     },
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;]]",
+      "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;W&quot;,&quot;B&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;]]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "grid = [[&quot;B&quot;,&quot;W&quot;,&quot;B&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;],[&quot;B&quot;,&quot;W&quot;,&quot;W&quot;]]",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "[[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
-      "expectedOutput": null
+      "expectedOutput": "true"
+    },
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"B\"]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"W\",\"B\",\"W\"],[\"B\",\"W\",\"B\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "grid = [[\"B\",\"W\",\"B\"],[\"B\",\"W\",\"W\"],[\"B\",\"W\",\"W\"]]",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -105,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/make-a-square-with-the-same-color/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:58.662Z",
+    "collectedAt": "2026-10-19T18:40:20.899Z",
     "sourceUpdatedAt": null
   }
 }

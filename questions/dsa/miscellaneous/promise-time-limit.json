@@ -14,23 +14,23 @@
   ],
   "examples": [
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 50",
-      "output": "{&quot;rejected&quot;:&quot;Time Limit Exceeded&quot;,&quot;time&quot;:50}",
-      "explanation": "const limited = timeLimit(fn, t)\nconst start = performance.now()\nlet result;\ntry {\n&nbsp; &nbsp;const res = await limited(...inputs)\n&nbsp; &nbsp;result = {&quot;resolved&quot;: res, &quot;time&quot;: Math.floor(performance.now() - start)};\n} catch (err) {\n&nbsp;  result = {&quot;rejected&quot;: err, &quot;time&quot;: Math.floor(performance.now() - start)};\n}\nconsole.log(result) // Output\n\nThe provided function is set to resolve after 100ms. However, the time limit is set to 50ms. It rejects at t=50ms because the time limit was reached."
+      "input": "fn = async (n) => { \n  await new Promise(res => setTimeout(res, 100)); \n  return n * n; \n}\ninputs = [5]\nt = 50",
+      "output": "{\"rejected\":\"Time Limit Exceeded\",\"time\":50}",
+      "explanation": "const limited = timeLimit(fn, t)\nconst start = performance.now()\nlet result;\ntry {\n   const res = await limited(...inputs)\n   result = {\"resolved\": res, \"time\": Math.floor(performance.now() - start)};\n} catch (err) {\n   result = {\"rejected\": err, \"time\": Math.floor(performance.now() - start)};\n}\nconsole.log(result) // Output\n\nThe provided function is set to resolve after 100ms. However, the time limit is set to 50ms. It rejects at t=50ms because the time limit was reached."
     },
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 150",
-      "output": "{&quot;resolved&quot;:25,&quot;time&quot;:100}",
+      "input": "fn = async (n) => { \n  await new Promise(res => setTimeout(res, 100)); \n  return n * n; \n}\ninputs = [5]\nt = 150",
+      "output": "{\"resolved\":25,\"time\":100}",
       "explanation": "The function resolved 5 * 5 = 25 at t=100ms. The time limit is never reached."
     },
     {
-      "input": "fn = async (a, b) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 120)); \n&nbsp; return a + b; \n}\ninputs = [5,10]\nt = 150",
-      "output": "{&quot;resolved&quot;:15,&quot;time&quot;:120}",
+      "input": "fn = async (a, b) => { \n  await new Promise(res => setTimeout(res, 120)); \n  return a + b; \n}\ninputs = [5,10]\nt = 150",
+      "output": "{\"resolved\":15,\"time\":120}",
       "explanation": "​​​​The function resolved 5 + 10 = 15 at t=120ms. The time limit is never reached."
     },
     {
-      "input": "fn = async () =&gt; { \n&nbsp; throw &quot;Error&quot;;\n}\ninputs = []\nt = 1000",
-      "output": "{&quot;rejected&quot;:&quot;Error&quot;,&quot;time&quot;:0}",
+      "input": "fn = async () => { \n  throw \"Error\";\n}\ninputs = []\nt = 1000",
+      "output": "{\"rejected\":\"Error\",\"time\":0}",
       "explanation": "The function immediately throws an error."
     }
   ],
@@ -40,74 +40,54 @@
   },
   "publicTests": [
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 50",
-      "expectedOutput": "{&quot;rejected&quot;:&quot;Time Limit Exceeded&quot;,&quot;time&quot;:50}"
+      "input": "async (n) => { await new Promise(res => setTimeout(res, 100)); return n * n; }\n[5]\n50",
+      "expectedOutput": "{\"rejected\":\"Time Limit Exceeded\",\"time\":50}"
     },
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 150",
-      "expectedOutput": "{&quot;resolved&quot;:25,&quot;time&quot;:100}"
+      "input": "async (n) => { await new Promise(res => setTimeout(res, 100)); return n * n; }\n[5]\n150",
+      "expectedOutput": "{\"resolved\":25,\"time\":100}"
     },
     {
-      "input": "fn = async (a, b) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 120)); \n&nbsp; return a + b; \n}\ninputs = [5,10]\nt = 150",
-      "expectedOutput": "{&quot;resolved&quot;:15,&quot;time&quot;:120}"
+      "input": "async (a, b) => { await new Promise(res => setTimeout(res, 120)); return a + b; }\n[5,10]\n150",
+      "expectedOutput": "{\"resolved\":15,\"time\":120}"
     },
     {
-      "input": "fn = async () =&gt; { \n&nbsp; throw &quot;Error&quot;;\n}\ninputs = []\nt = 1000",
-      "expectedOutput": "{&quot;rejected&quot;:&quot;Error&quot;,&quot;time&quot;:0}"
+      "input": "async () => { throw \"Error\"; }\n[]\n1000",
+      "expectedOutput": "{\"rejected\":\"Error\",\"time\":0}"
     }
   ],
   "testCases": [
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 50",
-      "expectedOutput": "{&quot;rejected&quot;:&quot;Time Limit Exceeded&quot;,&quot;time&quot;:50}"
-    },
-    {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 100)); \n&nbsp; return n * n; \n}\ninputs = [5]\nt = 150",
-      "expectedOutput": "{&quot;resolved&quot;:25,&quot;time&quot;:100}"
-    },
-    {
-      "input": "fn = async (a, b) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 120)); \n&nbsp; return a + b; \n}\ninputs = [5,10]\nt = 150",
-      "expectedOutput": "{&quot;resolved&quot;:15,&quot;time&quot;:120}"
-    },
-    {
-      "input": "fn = async () =&gt; { \n&nbsp; throw &quot;Error&quot;;\n}\ninputs = []\nt = 1000",
-      "expectedOutput": "{&quot;rejected&quot;:&quot;Error&quot;,&quot;time&quot;:0}"
-    },
-    {
       "input": "async (n) => { await new Promise(res => setTimeout(res, 100)); return n * n; }\n[5]\n50",
-      "expectedOutput": null
+      "expectedOutput": "{\"rejected\":\"Time Limit Exceeded\",\"time\":50}"
     },
     {
       "input": "async (n) => { await new Promise(res => setTimeout(res, 100)); return n * n; }\n[5]\n150",
-      "expectedOutput": null
+      "expectedOutput": "{\"resolved\":25,\"time\":100}"
     },
     {
       "input": "async (a, b) => { await new Promise(res => setTimeout(res, 120)); return a + b; }\n[5,10]\n150",
-      "expectedOutput": null
+      "expectedOutput": "{\"resolved\":15,\"time\":120}"
     },
     {
       "input": "async () => { throw \"Error\"; }\n[]\n1000",
-      "expectedOutput": null
+      "expectedOutput": "{\"rejected\":\"Error\",\"time\":0}"
     },
     {
-      "input": "fn = async () =&gt; { \n&nbsp; throw &quot;Error&quot;;\n}\ninputs = []\nt = 1001",
-      "expectedOutput": null
+      "input": "fn = async (n) => { \n  await new Promise(res => setTimeout(res, 100)); \n  return n * n; \n}\ninputs = [5]\nt = 50",
+      "expectedOutput": "{\"rejected\":\"Time Limit Exceeded\",\"time\":50}"
     },
     {
-      "input": "async (n) => { await new Promise(res => setTimeout(res, 101)); return n * n; }\n[6]\n51",
-      "expectedOutput": null
+      "input": "fn = async (n) => { \n  await new Promise(res => setTimeout(res, 100)); \n  return n * n; \n}\ninputs = [5]\nt = 150",
+      "expectedOutput": "{\"resolved\":25,\"time\":100}"
     },
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 101)); \n&nbsp; return n * n; \n}\ninputs = [6]\nt = 51",
-      "expectedOutput": null
+      "input": "fn = async (a, b) => { \n  await new Promise(res => setTimeout(res, 120)); \n  return a + b; \n}\ninputs = [5,10]\nt = 150",
+      "expectedOutput": "{\"resolved\":15,\"time\":120}"
     },
     {
-      "input": "fn = async (n) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 101)); \n&nbsp; return n * n; \n}\ninputs = [6]\nt = 151",
-      "expectedOutput": null
-    },
-    {
-      "input": "fn = async (a, b) =&gt; { \n&nbsp; await new Promise(res =&gt; setTimeout(res, 121)); \n&nbsp; return a + b; \n}\ninputs = [6,11]\nt = 151",
-      "expectedOutput": null
+      "input": "fn = async () => { \n  throw \"Error\";\n}\ninputs = []\nt = 1000",
+      "expectedOutput": "{\"rejected\":\"Error\",\"time\":0}"
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/promise-time-limit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:00.018Z",
+    "collectedAt": "2026-10-19T18:40:27.035Z",
     "sourceUpdatedAt": null
   }
 }

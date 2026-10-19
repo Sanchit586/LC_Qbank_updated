@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "df1\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\ndf2\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+",
+      "input": "{\"headers\":{\"df1\":[\"student_id\",\"name\",\"age\"],\"df2\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"df1\":[[1,\"Mason\",8],[2,\"Ava\",6],[3,\"Taylor\",15],[4,\"Georgia\",17]],\"df2\":[[5,\"Leo\",7],[6,\"Alex\",7]]}}",
       "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+"
     }
   ],
   "testCases": [
     {
-      "input": "df1\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\ndf2\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+",
+      "input": "{\"headers\":{\"df1\":[\"student_id\",\"name\",\"age\"],\"df2\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"df1\":[[1,\"Mason\",8],[2,\"Ava\",6],[3,\"Taylor\",15],[4,\"Georgia\",17]],\"df2\":[[5,\"Leo\",7],[6,\"Alex\",7]]}}",
       "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+"
     },
     {
-      "input": "{\"headers\":{\"df1\":[\"student_id\",\"name\",\"age\"],\"df2\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"df1\":[[1,\"Mason\",8],[2,\"Ava\",6],[3,\"Taylor\",15],[4,\"Georgia\",17]],\"df2\":[[5,\"Leo\",7],[6,\"Alex\",7]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "df2\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 2          | Mason   | 9   |\n| 3          | Ava     | 7   |\n| 4          | Taylor  | 16  |\n| 5          | Georgia | 18  |\n+------------+---------+-----+\ndf3\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 6          | Leo  | 8   |\n| 7          | Alex | 8   |\n+------------+------+-----+",
-      "expectedOutput": null
+      "input": "df1\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n+------------+---------+-----+\ndf2\n+------------+------+-----+\n| student_id | name | age |\n+------------+------+-----+\n| 5          | Leo  | 7   |\n| 6          | Alex | 7   |\n+------------+------+-----+",
+      "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 1          | Mason   | 8   |\n| 2          | Ava     | 6   |\n| 3          | Taylor  | 15  |\n| 4          | Georgia | 17  |\n| 5          | Leo     | 7   |\n| 6          | Alex    | 7   |\n+------------+---------+-----+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reshape-data-concatenate/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.169Z",
+    "collectedAt": "2026-10-19T18:40:27.754Z",
     "sourceUpdatedAt": null
   }
 }

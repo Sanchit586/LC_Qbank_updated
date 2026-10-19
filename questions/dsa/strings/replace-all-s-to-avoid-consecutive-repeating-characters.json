@@ -15,14 +15,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;?zs&quot;",
-      "output": "&quot;azs&quot;",
-      "explanation": "There are 25 solutions for this problem. From &quot;azs&quot; to &quot;yzs&quot;, all are valid. Only &quot;z&quot; is an invalid modification as the string will consist of consecutive repeating characters in &quot;zzs&quot;."
+      "input": "s = \"?zs\"",
+      "output": "\"azs\"",
+      "explanation": "There are 25 solutions for this problem. From \"azs\" to \"yzs\", all are valid. Only \"z\" is an invalid modification as the string will consist of consecutive repeating characters in \"zzs\"."
     },
     {
-      "input": "s = &quot;ubv?w&quot;",
-      "output": "&quot;ubvaw&quot;",
-      "explanation": "There are 24 solutions for this problem. Only &quot;v&quot; and &quot;w&quot; are invalid modifications as the strings will consist of consecutive repeating characters in &quot;ubvvw&quot; and &quot;ubvww&quot;."
+      "input": "s = \"ubv?w\"",
+      "output": "\"ubvaw\"",
+      "explanation": "There are 24 solutions for this problem. Only \"v\" and \"w\" are invalid modifications as the strings will consist of consecutive repeating characters in \"ubvvw\" and \"ubvww\"."
     }
   ],
   "starterCode": {
@@ -48,94 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;?zs&quot;",
-      "expectedOutput": "&quot;azs&quot;"
+      "input": "\"?zs\"",
+      "expectedOutput": "\"azs\""
     },
     {
-      "input": "s = &quot;ubv?w&quot;",
-      "expectedOutput": "&quot;ubvaw&quot;"
+      "input": "\"ubv?w\"",
+      "expectedOutput": "\"ubvaw\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;?zs&quot;",
-      "expectedOutput": "&quot;azs&quot;"
-    },
-    {
-      "input": "s = &quot;ubv?w&quot;",
-      "expectedOutput": "&quot;ubvaw&quot;"
-    },
-    {
       "input": "\"?zs\"",
-      "expectedOutput": null
+      "expectedOutput": "\"azs\""
     },
     {
       "input": "\"ubv?w\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ubvaw\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"?zs\"",
+      "expectedOutput": "\"azs\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"ubv?w\"",
+      "expectedOutput": "\"ubvaw\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/replace-all-s-to-avoid-consecutive-repeating-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.489Z",
+    "collectedAt": "2026-10-19T18:40:27.692Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,7 +18,7 @@
     {
       "input": "dimensions = [[9,3],[8,6]]",
       "output": "48",
-      "explanation": "For index = 0, length = 9 and width = 3. Diagonal length = sqrt(9 * 9 + 3 * 3) = sqrt(90) &asymp; 9.487.\nFor index = 1, length = 8 and width = 6. Diagonal length = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10.\nSo, the rectangle at index 1 has a greater diagonal length therefore we return area = 8 * 6 = 48."
+      "explanation": "For index = 0, length = 9 and width = 3. Diagonal length = sqrt(9 * 9 + 3 * 3) = sqrt(90) ≈ 9.487.\nFor index = 1, length = 8 and width = 6. Diagonal length = sqrt(8 * 8 + 6 * 6) = sqrt(100) = 10.\nSo, the rectangle at index 1 has a greater diagonal length therefore we return area = 8 * 6 = 48."
     },
     {
       "input": "dimensions = [[3,4],[4,3]]",
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "dimensions = [[9,3],[8,6]]",
+      "input": "[[9,3],[8,6]]",
       "expectedOutput": "48"
     },
     {
-      "input": "dimensions = [[3,4],[4,3]]",
+      "input": "[[3,4],[4,3]]",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "[[9,3],[8,6]]",
+      "expectedOutput": "48"
+    },
+    {
+      "input": "[[3,4],[4,3]]",
+      "expectedOutput": "12"
+    },
+    {
       "input": "dimensions = [[9,3],[8,6]]",
       "expectedOutput": "48"
     },
     {
       "input": "dimensions = [[3,4],[4,3]]",
       "expectedOutput": "12"
-    },
-    {
-      "input": "[[9,3],[8,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,4],[4,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "dimensions = [[10,4],[9,7]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-area-of-longest-diagonal-rectangle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:06.676Z",
+    "collectedAt": "2026-10-19T18:40:21.505Z",
     "sourceUpdatedAt": null
   }
 }

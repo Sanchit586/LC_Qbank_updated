@@ -16,7 +16,13 @@
     "1 <= num <= 1000",
     "At most 1000 calls will be made in total to popSmallest and addBack."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"SmallestInfiniteSet\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\"]\n[[], [2], [], [], [], [1], [], [], []]",
+      "output": "[null, null, 1, 2, 3, null, 1, 4, 5]",
+      "explanation": "SmallestInfiniteSet smallestInfiniteSet = new SmallestInfiniteSet();\nsmallestInfiniteSet.addBack(2);    // 2 is already in the set, so no change is made.\nsmallestInfiniteSet.popSmallest(); // return 1, since 1 is the smallest number, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 2, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 3, and remove it from the set.\nsmallestInfiniteSet.addBack(1);    // 1 is added back to the set.\nsmallestInfiniteSet.popSmallest(); // return 1, since 1 was added back to the set and\n                                   // is the smallest number, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 4, and remove it from the set.\nsmallestInfiniteSet.popSmallest(); // return 5, and remove it from the set."
+    }
+  ],
   "starterCode": {
     "cpp": "class SmallestInfiniteSet {\npublic:\n    SmallestInfiniteSet() {\n        \n    }\n    \n    int popSmallest() {\n        \n    }\n    \n    void addBack(int num) {\n        \n    }\n};\n\n/**\n * Your SmallestInfiniteSet object will be instantiated and called as such:\n * SmallestInfiniteSet* obj = new SmallestInfiniteSet();\n * int param_1 = obj->popSmallest();\n * obj->addBack(num);\n */",
     "java": "class SmallestInfiniteSet {\n\n    public SmallestInfiniteSet() {\n        \n    }\n    \n    public int popSmallest() {\n        \n    }\n    \n    public void addBack(int num) {\n        \n    }\n}\n\n/**\n * Your SmallestInfiniteSet object will be instantiated and called as such:\n * SmallestInfiniteSet obj = new SmallestInfiniteSet();\n * int param_1 = obj.popSmallest();\n * obj.addBack(num);\n */",
@@ -41,17 +47,17 @@
   "publicTests": [
     {
       "input": "[\"SmallestInfiniteSet\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\"]\n[[],[2],[],[],[],[1],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 1, 2, 3, null, 1, 4, 5]"
     }
   ],
   "testCases": [
     {
       "input": "[\"SmallestInfiniteSet\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\"]\n[[],[2],[],[],[],[1],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 1, 2, 3, null, 1, 4, 5]"
     },
     {
-      "input": "[\"SmallestInfiniteSet\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\",\"addBack\",\"popSmallest\",\"popSmallest\",\"popSmallest\"]\n[[],[3],[],[],[],[2],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"SmallestInfiniteSet\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\", \"addBack\", \"popSmallest\", \"popSmallest\", \"popSmallest\"]\n[[], [2], [], [], [], [1], [], [], []]",
+      "expectedOutput": "[null, null, 1, 2, 3, null, 1, 4, 5]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-number-in-infinite-set/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.636Z",
+    "collectedAt": "2026-10-19T18:40:29.773Z",
     "sourceUpdatedAt": null
   }
 }

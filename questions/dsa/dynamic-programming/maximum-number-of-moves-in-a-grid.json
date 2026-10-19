@@ -22,7 +22,7 @@
     {
       "input": "grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
       "output": "3",
-      "explanation": "We can start at the cell (0, 0) and make the following moves:\n- (0, 0) -&gt; (0, 1).\n- (0, 1) -&gt; (1, 2).\n- (1, 2) -&gt; (2, 3).\nIt can be shown that it is the maximum number of moves that can be made."
+      "explanation": "We can start at the cell (0, 0) and make the following moves:\n- (0, 0) -> (0, 1).\n- (0, 1) -> (1, 2).\n- (1, 2) -> (2, 3).\nIt can be shown that it is the maximum number of moves that can be made."
     },
     {
       "input": "grid = [[3,2,4],[2,1,9],[1,1,7]]",
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
+      "input": "[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[3,2,4],[2,1,9],[1,1,7]]",
+      "input": "[[3,2,4],[2,1,9],[1,1,7]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[3,2,4],[2,1,9],[1,1,7]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "grid = [[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
       "expectedOutput": "3"
     },
     {
       "input": "grid = [[3,2,4],[2,1,9],[1,1,7]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[2,4,3,5],[5,4,9,3],[3,4,2,11],[10,9,13,15]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,2,4],[2,1,9],[1,1,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[3,5,4,6],[6,5,10,4],[4,5,3,12],[11,10,14,16]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-moves-in-a-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:20.369Z",
+    "collectedAt": "2026-10-19T18:40:22.083Z",
     "sourceUpdatedAt": null
   }
 }

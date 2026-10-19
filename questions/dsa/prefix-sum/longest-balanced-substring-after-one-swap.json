@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;100001&quot;",
+      "input": "s = \"100001\"",
       "output": "4",
-      "explanation": "Swap &quot;100001&quot;. The string becomes &quot;101000&quot;.\n\tSelect the substring &quot;101000&quot;, which is balanced because it has two &#39;0&#39;s and two &#39;1&#39;s."
+      "explanation": "Swap \"100001\". The string becomes \"101000\".\n\tSelect the substring \"101000\", which is balanced because it has two '0's and two '1's."
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "s = \"111\"",
       "output": "0",
-      "explanation": "Choose not to perform any swaps.\n\tSelect the empty substring, which is balanced because it has zero &#39;0&#39;s and zero &#39;1&#39;s."
+      "explanation": "Choose not to perform any swaps.\n\tSelect the empty substring, which is balanced because it has zero '0's and zero '1's."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;100001&quot;",
+      "input": "\"100001\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "\"111\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;100001&quot;",
+      "input": "\"100001\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "\"111\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"100001\"",
-      "expectedOutput": null
+      "input": "s = \"100001\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"111\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-balanced-substring-after-one-swap/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.262Z",
+    "collectedAt": "2026-10-19T18:40:20.388Z",
     "sourceUpdatedAt": null
   }
 }

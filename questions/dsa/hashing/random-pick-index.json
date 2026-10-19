@@ -18,7 +18,13 @@
     "target is an integer from nums.",
     "At most 104 calls will be made to pick."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Solution\", \"pick\", \"pick\", \"pick\"]\n[[[1, 2, 3, 3, 3]], [3], [1], [3]]",
+      "output": "[null, 4, 0, 2]",
+      "explanation": "Solution solution = new Solution([1, 2, 3, 3, 3]);\nsolution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning.\nsolution.pick(1); // It should return 0. Since in the array only nums[0] is equal to 1.\nsolution.pick(3); // It should return either index 2, 3, or 4 randomly. Each index should have equal probability of returning."
+    }
+  ],
   "starterCode": {
     "cpp": "class Solution {\npublic:\n    Solution(vector<int>& nums) {\n        \n    }\n    \n    int pick(int target) {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(nums);\n * int param_1 = obj->pick(target);\n */",
     "java": "class Solution {\n\n    public Solution(int[] nums) {\n        \n    }\n    \n    public int pick(int target) {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(nums);\n * int param_1 = obj.pick(target);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[[1,2,3,3,3]],[3],[1],[3]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 4, 0, 2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[[1,2,3,3,3]],[3],[1],[3]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 4, 0, 2]"
     },
     {
-      "input": "[\"Solution\",\"pick\",\"pick\",\"pick\"]\n[[[2,3,4,4,4]],[4],[2],[4]]",
-      "expectedOutput": null
+      "input": "[\"Solution\", \"pick\", \"pick\", \"pick\"]\n[[[1, 2, 3, 3, 3]], [3], [1], [3]]",
+      "expectedOutput": "[null, 4, 0, 2]"
     }
   ],
   "sqlSchema": null,
@@ -65,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/random-pick-index/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:02.963Z",
+    "collectedAt": "2026-10-19T18:40:27.135Z",
     "sourceUpdatedAt": null
   }
 }

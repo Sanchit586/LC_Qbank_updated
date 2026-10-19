@@ -48,86 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 16",
+      "input": "16",
       "expectedOutput": "true"
     },
     {
-      "input": "num = 14",
+      "input": "14",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "16",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "false"
+    },
+    {
       "input": "num = 16",
       "expectedOutput": "true"
     },
     {
       "input": "num = 14",
       "expectedOutput": "false"
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "14",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -139,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-perfect-square/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.355Z",
+    "collectedAt": "2026-10-19T18:40:31.509Z",
     "sourceUpdatedAt": null
   }
 }

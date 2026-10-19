@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcac&quot;, k = 2",
+      "input": "s = \"abcac\", k = 2",
       "output": "1",
-      "explanation": "Divide s into &quot;ab&quot; and &quot;cac&quot;. &quot;cac&quot; is already semi-palindrome. Change &quot;ab&quot; to &quot;aa&quot;, it becomes semi-palindrome with d = 1."
+      "explanation": "Divide s into \"ab\" and \"cac\". \"cac\" is already semi-palindrome. Change \"ab\" to \"aa\", it becomes semi-palindrome with d = 1."
     },
     {
-      "input": "s = &quot;abcdef&quot;, k = 2",
+      "input": "s = \"abcdef\", k = 2",
       "output": "2",
-      "explanation": "Divide s into substrings &quot;abc&quot; and &quot;def&quot;. Each&nbsp;needs one change to become semi-palindrome."
+      "explanation": "Divide s into substrings \"abc\" and \"def\". Each needs one change to become semi-palindrome."
     },
     {
-      "input": "s = &quot;aabbaa&quot;, k = 3",
+      "input": "s = \"aabbaa\", k = 3",
       "output": "0",
-      "explanation": "Divide s into substrings &quot;aa&quot;, &quot;bb&quot; and &quot;aa&quot;.&nbsp;All are already semi-palindromes."
+      "explanation": "Divide s into substrings \"aa\", \"bb\" and \"aa\". All are already semi-palindromes."
     }
   ],
   "starterCode": {
@@ -56,38 +56,26 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcac&quot;, k = 2",
+      "input": "\"abcac\"\n2",
       "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;abcdef&quot;, k = 2",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;aabbaa&quot;, k = 3",
-      "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcac&quot;, k = 2",
+      "input": "\"abcac\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abcdef&quot;, k = 2",
+      "input": "s = \"abcac\", k = 2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = \"abcdef\", k = 2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aabbaa&quot;, k = 3",
+      "input": "s = \"aabbaa\", k = 3",
       "expectedOutput": "0"
-    },
-    {
-      "input": "\"abcac\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcac&quot;, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -103,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-changes-to-make-k-semi-palindromes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:46.666Z",
+    "collectedAt": "2026-10-19T18:40:23.494Z",
     "sourceUpdatedAt": null
   }
 }

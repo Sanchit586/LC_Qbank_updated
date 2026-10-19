@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "mat = [[1,2,3],\n&nbsp;             [4,5,6],\n&nbsp;             [7,8,9]]",
+      "input": "mat = [[1,2,3],\n              [4,5,6],\n              [7,8,9]]",
       "output": "25",
       "explanation": "Diagonals sum: 1 + 5 + 9 + 3 + 7 = 25\nNotice that element mat[1][1] = 5 is counted only once."
     },
     {
-      "input": "mat = [[1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1]]",
+      "input": "mat = [[1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1]]",
       "output": "8",
       "explanation": null
     },
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[1,2,3],\n&nbsp;             [4,5,6],\n&nbsp;             [7,8,9]]",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "25"
     },
     {
-      "input": "mat = [[1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1]]",
+      "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
       "expectedOutput": "8"
     },
     {
-      "input": "mat = [[5]]",
+      "input": "[[5]]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "mat = [[1,2,3],\n&nbsp;             [4,5,6],\n&nbsp;             [7,8,9]]",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "25"
     },
     {
-      "input": "mat = [[1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1],\n&nbsp;             [1,1,1,1]]",
+      "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[[5]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "mat = [[1,2,3],\n              [4,5,6],\n              [7,8,9]]",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "mat = [[1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1]]",
       "expectedOutput": "8"
     },
     {
       "input": "mat = [[5]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1,1],[1,1,1,1],[1,1,1,1],[1,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,2,2,2],\n&nbsp;             [2,2,2,2],\n&nbsp;             [2,2,2,2],\n&nbsp;             [2,2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3,4],[5,6,7],[8,9,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2,2,2],[2,2,2,2],[2,2,2,2],[2,2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,3,4],\n&nbsp;             [5,6,7],\n&nbsp;             [8,9,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/matrix-diagonal-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.798Z",
+    "collectedAt": "2026-10-19T18:40:21.111Z",
     "sourceUpdatedAt": null
   }
 }

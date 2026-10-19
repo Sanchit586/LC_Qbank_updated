@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "num = 443",
+      "input": "443",
       "expectedOutput": "true"
     },
     {
-      "input": "num = 63",
+      "input": "63",
       "expectedOutput": "false"
     },
     {
-      "input": "num = 181",
+      "input": "181",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "443",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "63",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "181",
+      "expectedOutput": "true"
+    },
+    {
       "input": "num = 443",
       "expectedOutput": "true"
     },
@@ -77,74 +89,6 @@
     {
       "input": "num = 181",
       "expectedOutput": "true"
-    },
-    {
-      "input": "443",
-      "expectedOutput": null
-    },
-    {
-      "input": "63",
-      "expectedOutput": null
-    },
-    {
-      "input": "181",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sum-of-number-and-its-reverse/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:52.846Z",
+    "collectedAt": "2026-10-19T18:40:30.658Z",
     "sourceUpdatedAt": null
   }
 }

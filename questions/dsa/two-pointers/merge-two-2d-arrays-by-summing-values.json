@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]",
+      "input": "[[1,2],[2,3],[4,5]]\n[[1,4],[3,2],[4,1]]",
       "expectedOutput": "[[1,6],[2,3],[3,2],[4,6]]"
     },
     {
-      "input": "nums1 = [[2,4],[3,6],[5,5]], nums2 = [[1,3],[4,3]]",
+      "input": "[[2,4],[3,6],[5,5]]\n[[1,3],[4,3]]",
       "expectedOutput": "[[1,3],[2,4],[3,6],[4,3],[5,5]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3],[4,5]]\n[[1,4],[3,2],[4,1]]",
+      "expectedOutput": "[[1,6],[2,3],[3,2],[4,6]]"
+    },
+    {
+      "input": "[[2,4],[3,6],[5,5]]\n[[1,3],[4,3]]",
+      "expectedOutput": "[[1,3],[2,4],[3,6],[4,3],[5,5]]"
+    },
+    {
       "input": "nums1 = [[1,2],[2,3],[4,5]], nums2 = [[1,4],[3,2],[4,1]]",
       "expectedOutput": "[[1,6],[2,3],[3,2],[4,6]]"
     },
     {
       "input": "nums1 = [[2,4],[3,6],[5,5]], nums2 = [[1,3],[4,3]]",
       "expectedOutput": "[[1,3],[2,4],[3,6],[4,3],[5,5]]"
-    },
-    {
-      "input": "[[1,2],[2,3],[4,5]]\n[[1,4],[3,2],[4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,4],[3,6],[5,5]]\n[[1,3],[4,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [[2,3],[3,4],[5,6]], nums3 = [[2,5],[4,3],[5,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/merge-two-2d-arrays-by-summing-values/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:39.915Z",
+    "collectedAt": "2026-10-19T18:40:23.149Z",
     "sourceUpdatedAt": null
   }
 }

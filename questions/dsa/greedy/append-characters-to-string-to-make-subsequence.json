@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;coaching&quot;, t = &quot;coding&quot;",
+      "input": "s = \"coaching\", t = \"coding\"",
       "output": "4",
-      "explanation": "Append the characters &quot;ding&quot; to the end of s so that s = &quot;coachingding&quot;.\nNow, t is a subsequence of s (&quot;coachingding&quot;).\nIt can be shown that appending any 3 characters to the end of s will never make t a subsequence."
+      "explanation": "Append the characters \"ding\" to the end of s so that s = \"coachingding\".\nNow, t is a subsequence of s (\"coachingding\").\nIt can be shown that appending any 3 characters to the end of s will never make t a subsequence."
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;a&quot;",
+      "input": "s = \"abcde\", t = \"a\"",
       "output": "0",
-      "explanation": "t is already a subsequence of s (&quot;abcde&quot;)."
+      "explanation": "t is already a subsequence of s (\"abcde\")."
     },
     {
-      "input": "s = &quot;z&quot;, t = &quot;abcde&quot;",
+      "input": "s = \"z\", t = \"abcde\"",
       "output": "5",
-      "explanation": "Append the characters &quot;abcde&quot; to the end of s so that s = &quot;zabcde&quot;.\nNow, t is a subsequence of s (&quot;zabcde&quot;).\nIt can be shown that appending any 4 characters to the end of s will never make t a subsequence."
+      "explanation": "Append the characters \"abcde\" to the end of s so that s = \"zabcde\".\nNow, t is a subsequence of s (\"zabcde\").\nIt can be shown that appending any 4 characters to the end of s will never make t a subsequence."
     }
   ],
   "starterCode": {
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;coaching&quot;, t = &quot;coding&quot;",
+      "input": "\"coaching\"\n\"coding\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;a&quot;",
+      "input": "\"abcde\"\n\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;z&quot;, t = &quot;abcde&quot;",
+      "input": "\"z\"\n\"abcde\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;coaching&quot;, t = &quot;coding&quot;",
+      "input": "\"coaching\"\n\"coding\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;a&quot;",
+      "input": "\"abcde\"\n\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;z&quot;, t = &quot;abcde&quot;",
+      "input": "\"z\"\n\"abcde\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"coaching\"\n\"coding\"",
-      "expectedOutput": null
+      "input": "s = \"coaching\", t = \"coding\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abcde\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abcde\", t = \"a\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"z\"\n\"abcde\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"z\", t = \"abcde\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/append-characters-to-string-to-make-subsequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.706Z",
+    "collectedAt": "2026-10-19T18:40:13.112Z",
     "sourceUpdatedAt": null
   }
 }

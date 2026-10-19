@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;,&quot;microsoft&quot;],[&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;],[&quot;amazon&quot;]]",
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
       "output": "[0,1,4]",
-      "explanation": "Person with index=2 has favoriteCompanies[2]=[&quot;google&quot;,&quot;facebook&quot;] which is a subset of favoriteCompanies[0]=[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;] corresponding to the person with index 0. \nPerson with index=3 has favoriteCompanies[3]=[&quot;google&quot;] which is a subset of favoriteCompanies[0]=[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;] and favoriteCompanies[1]=[&quot;google&quot;,&quot;microsoft&quot;]. \nOther lists of favorite companies are not a subset of another list, therefore, the answer is [0,1,4]."
+      "explanation": "Person with index=2 has favoriteCompanies[2]=[\"google\",\"facebook\"] which is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"] corresponding to the person with index 0. \nPerson with index=3 has favoriteCompanies[3]=[\"google\"] which is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"] and favoriteCompanies[1]=[\"google\",\"microsoft\"]. \nOther lists of favorite companies are not a subset of another list, therefore, the answer is [0,1,4]."
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;leetcode&quot;,&quot;amazon&quot;],[&quot;facebook&quot;,&quot;google&quot;]]",
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
       "output": "[0,1]",
-      "explanation": "In this case favoriteCompanies[2]=[&quot;facebook&quot;,&quot;google&quot;] is a subset of favoriteCompanies[0]=[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;], therefore, the answer is [0,1]."
+      "explanation": "In this case favoriteCompanies[2]=[\"facebook\",\"google\"] is a subset of favoriteCompanies[0]=[\"leetcode\",\"google\",\"facebook\"], therefore, the answer is [0,1]."
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;],[&quot;google&quot;],[&quot;facebook&quot;],[&quot;amazon&quot;]]",
+      "input": "favoriteCompanies = [[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
       "output": "[0,1,2,3]",
       "explanation": null
     }
@@ -59,42 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;,&quot;microsoft&quot;],[&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;],[&quot;amazon&quot;]]",
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
       "expectedOutput": "[0,1,4]"
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;leetcode&quot;,&quot;amazon&quot;],[&quot;facebook&quot;,&quot;google&quot;]]",
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;],[&quot;google&quot;],[&quot;facebook&quot;],[&quot;amazon&quot;]]",
+      "input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
       "expectedOutput": "[0,1,2,3]"
     }
   ],
   "testCases": [
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;,&quot;microsoft&quot;],[&quot;google&quot;,&quot;facebook&quot;],[&quot;google&quot;],[&quot;amazon&quot;]]",
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
       "expectedOutput": "[0,1,4]"
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;,&quot;google&quot;,&quot;facebook&quot;],[&quot;leetcode&quot;,&quot;amazon&quot;],[&quot;facebook&quot;,&quot;google&quot;]]",
+      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "favoriteCompanies = [[&quot;leetcode&quot;],[&quot;google&quot;],[&quot;facebook&quot;],[&quot;amazon&quot;]]",
+      "input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
       "expectedOutput": "[0,1,2,3]"
     },
     {
-      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
-      "expectedOutput": null
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
+      "expectedOutput": "[0,1,4]"
     },
     {
-      "input": "[[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
-      "expectedOutput": null
+      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
+      "expectedOutput": "[0,1]"
     },
     {
-      "input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
-      "expectedOutput": null
+      "input": "favoriteCompanies = [[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
+      "expectedOutput": "[0,1,2,3]"
     }
   ],
   "sqlSchema": null,
@@ -109,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/people-whose-list-of-favorite-companies-is-not-a-subset-of-another-list/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:56.156Z",
+    "collectedAt": "2026-10-19T18:40:26.719Z",
     "sourceUpdatedAt": null
   }
 }

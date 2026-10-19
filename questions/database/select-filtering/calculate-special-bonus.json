@@ -14,7 +14,7 @@
     {
       "input": "Employees table:\n+-------------+---------+--------+\n| employee_id | name    | salary |\n+-------------+---------+--------+\n| 2           | Meir    | 3000   |\n| 3           | Michael | 3800   |\n| 7           | Addilyn | 7400   |\n| 8           | Juan    | 6100   |\n| 9           | Kannon  | 7700   |\n+-------------+---------+--------+",
       "output": "+-------------+-------+\n| employee_id | bonus |\n+-------------+-------+\n| 2           | 0     |\n| 3           | 0     |\n| 7           | 7400  |\n| 8           | 0     |\n| 9           | 7700  |\n+-------------+-------+",
-      "explanation": "The employees with IDs 2 and 8 get 0 bonus because they have an even employee_id.\nThe employee with ID 3 gets 0 bonus because their name starts with &#39;M&#39;.\nThe rest of the employees get a 100% bonus."
+      "explanation": "The employees with IDs 2 and 8 get 0 bonus because they have an even employee_id.\nThe employee with ID 3 gets 0 bonus because their name starts with 'M'.\nThe rest of the employees get a 100% bonus."
     }
   ],
   "starterCode": {
@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Employees table:\n+-------------+---------+--------+\n| employee_id | name    | salary |\n+-------------+---------+--------+\n| 2           | Meir    | 3000   |\n| 3           | Michael | 3800   |\n| 7           | Addilyn | 7400   |\n| 8           | Juan    | 6100   |\n| 9           | Kannon  | 7700   |\n+-------------+---------+--------+",
+      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[[2,\"Meir\",3000],[3,\"Michael\",3800],[7,\"Addilyn\",7400],[8,\"Juan\",6100],[9,\"Kannon\",7700]]}}",
       "expectedOutput": "+-------------+-------+\n| employee_id | bonus |\n+-------------+-------+\n| 2           | 0     |\n| 3           | 0     |\n| 7           | 7400  |\n| 8           | 0     |\n| 9           | 7700  |\n+-------------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "Employees table:\n+-------------+---------+--------+\n| employee_id | name    | salary |\n+-------------+---------+--------+\n| 2           | Meir    | 3000   |\n| 3           | Michael | 3800   |\n| 7           | Addilyn | 7400   |\n| 8           | Juan    | 6100   |\n| 9           | Kannon  | 7700   |\n+-------------+---------+--------+",
+      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[[2,\"Meir\",3000],[3,\"Michael\",3800],[7,\"Addilyn\",7400],[8,\"Juan\",6100],[9,\"Kannon\",7700]]}}",
       "expectedOutput": "+-------------+-------+\n| employee_id | bonus |\n+-------------+-------+\n| 2           | 0     |\n| 3           | 0     |\n| 7           | 7400  |\n| 8           | 0     |\n| 9           | 7700  |\n+-------------+-------+"
     },
     {
-      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[[2,\"Meir\",3000],[3,\"Michael\",3800],[7,\"Addilyn\",7400],[8,\"Juan\",6100],[9,\"Kannon\",7700]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[[2,\"Meir\",3000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"employee_id\",\"name\",\"salary\"]},\"rows\":{\"Employees\":[[2,\"Meir\",null],[3,\"Michael\",null],[7,\"Addilyn\",null],[8,\"Juan\",null],[9,\"Kannon\",null]]}}",
-      "expectedOutput": null
+      "input": "Employees table:\n+-------------+---------+--------+\n| employee_id | name    | salary |\n+-------------+---------+--------+\n| 2           | Meir    | 3000   |\n| 3           | Michael | 3800   |\n| 7           | Addilyn | 7400   |\n| 8           | Juan    | 6100   |\n| 9           | Kannon  | 7700   |\n+-------------+---------+--------+",
+      "expectedOutput": "+-------------+-------+\n| employee_id | bonus |\n+-------------+-------+\n| 2           | 0     |\n| 3           | 0     |\n| 7           | 7400  |\n| 8           | 0     |\n| 9           | 7700  |\n+-------------+-------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Employees (employee_id int, name varchar(30), salary int)\n\nTruncate table Employees",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/calculate-special-bonus/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.249Z",
+    "collectedAt": "2026-10-19T18:40:13.834Z",
     "sourceUpdatedAt": null
   }
 }

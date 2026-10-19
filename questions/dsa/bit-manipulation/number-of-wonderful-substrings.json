@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "word = \"aba\"",
       "output": "4",
-      "explanation": "The four wonderful substrings are underlined below:\r\n- &quot;aba&quot; -&gt; &quot;a&quot;\r\n- &quot;aba&quot; -&gt; &quot;b&quot;\r\n- &quot;aba&quot; -&gt; &quot;a&quot;\r\n- &quot;aba&quot; -&gt; &quot;aba&quot;"
+      "explanation": "The four wonderful substrings are underlined below:\r\n- \"aba\" -> \"a\"\r\n- \"aba\" -> \"b\"\r\n- \"aba\" -> \"a\"\r\n- \"aba\" -> \"aba\""
     },
     {
-      "input": "word = &quot;aabb&quot;",
+      "input": "word = \"aabb\"",
       "output": "9",
-      "explanation": "The nine wonderful substrings are underlined below:\r\n- &quot;aabb&quot; -&gt; &quot;a&quot;\r\n- &quot;aabb&quot; -&gt; &quot;aa&quot;\r\n- &quot;aabb&quot; -&gt; &quot;aab&quot;\r\n- &quot;aabb&quot; -&gt; &quot;aabb&quot;\r\n- &quot;aabb&quot; -&gt; &quot;a&quot;\r\n- &quot;aabb&quot; -&gt; &quot;abb&quot;\r\n- &quot;aabb&quot; -&gt; &quot;b&quot;\r\n- &quot;aabb&quot; -&gt; &quot;bb&quot;\r\n- &quot;aabb&quot; -&gt; &quot;b&quot;"
+      "explanation": "The nine wonderful substrings are underlined below:\r\n- \"aabb\" -> \"a\"\r\n- \"aabb\" -> \"aa\"\r\n- \"aabb\" -> \"aab\"\r\n- \"aabb\" -> \"aabb\"\r\n- \"aabb\" -> \"a\"\r\n- \"aabb\" -> \"abb\"\r\n- \"aabb\" -> \"b\"\r\n- \"aabb\" -> \"bb\"\r\n- \"aabb\" -> \"b\""
     },
     {
-      "input": "word = &quot;he&quot;",
+      "input": "word = \"he\"",
       "output": "2",
-      "explanation": "The two wonderful substrings are underlined below:\r\n- &quot;he&quot; -&gt; &quot;h&quot;\r\n- &quot;he&quot; -&gt; &quot;e&quot;"
+      "explanation": "The two wonderful substrings are underlined below:\r\n- \"he\" -> \"h\"\r\n- \"he\" -> \"e\""
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word = &quot;aabb&quot;",
+      "input": "\"aabb\"",
       "expectedOutput": "9"
     },
     {
-      "input": "word = &quot;he&quot;",
+      "input": "\"he\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word = &quot;aabb&quot;",
+      "input": "\"aabb\"",
       "expectedOutput": "9"
     },
     {
-      "input": "word = &quot;he&quot;",
+      "input": "\"he\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"aba\"",
-      "expectedOutput": null
+      "input": "word = \"aba\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aabb\"",
-      "expectedOutput": null
+      "input": "word = \"aabb\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"he\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"he\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-wonderful-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.883Z",
+    "collectedAt": "2026-10-19T18:40:26.320Z",
     "sourceUpdatedAt": null
   }
 }

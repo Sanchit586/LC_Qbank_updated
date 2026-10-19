@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "n = 2, s1 = &quot;aa&quot;, s2 = &quot;da&quot;, evil = &quot;b&quot;",
+      "input": "n = 2, s1 = \"aa\", s2 = \"da\", evil = \"b\"",
       "output": "51",
-      "explanation": "There are 25 good strings starting with &#39;a&#39;: &quot;aa&quot;,&quot;ac&quot;,&quot;ad&quot;,...,&quot;az&quot;. Then there are 25 good strings starting with &#39;c&#39;: &quot;ca&quot;,&quot;cc&quot;,&quot;cd&quot;,...,&quot;cz&quot; and finally there is one good string starting with &#39;d&#39;: &quot;da&quot;.&nbsp;"
+      "explanation": "There are 25 good strings starting with 'a': \"aa\",\"ac\",\"ad\",...,\"az\". Then there are 25 good strings starting with 'c': \"ca\",\"cc\",\"cd\",...,\"cz\" and finally there is one good string starting with 'd': \"da\". "
     },
     {
-      "input": "n = 8, s1 = &quot;leetcode&quot;, s2 = &quot;leetgoes&quot;, evil = &quot;leet&quot;",
+      "input": "n = 8, s1 = \"leetcode\", s2 = \"leetgoes\", evil = \"leet\"",
       "output": "0",
-      "explanation": "All strings greater than or equal to s1 and smaller than or equal to s2 start with the prefix &quot;leet&quot;, therefore, there is not any good string."
+      "explanation": "All strings greater than or equal to s1 and smaller than or equal to s2 start with the prefix \"leet\", therefore, there is not any good string."
     },
     {
-      "input": "n = 2, s1 = &quot;gx&quot;, s2 = &quot;gz&quot;, evil = &quot;x&quot;",
+      "input": "n = 2, s1 = \"gx\", s2 = \"gz\", evil = \"x\"",
       "output": "2",
       "explanation": null
     }
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, s1 = &quot;aa&quot;, s2 = &quot;da&quot;, evil = &quot;b&quot;",
+      "input": "2\n\"aa\"\n\"da\"\n\"b\"",
       "expectedOutput": "51"
     },
     {
-      "input": "n = 8, s1 = &quot;leetcode&quot;, s2 = &quot;leetgoes&quot;, evil = &quot;leet&quot;",
+      "input": "8\n\"leetcode\"\n\"leetgoes\"\n\"leet\"",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 2, s1 = &quot;gx&quot;, s2 = &quot;gz&quot;, evil = &quot;x&quot;",
+      "input": "2\n\"gx\"\n\"gz\"\n\"x\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "n = 2, s1 = &quot;aa&quot;, s2 = &quot;da&quot;, evil = &quot;b&quot;",
+      "input": "2\n\"aa\"\n\"da\"\n\"b\"",
       "expectedOutput": "51"
     },
     {
-      "input": "n = 8, s1 = &quot;leetcode&quot;, s2 = &quot;leetgoes&quot;, evil = &quot;leet&quot;",
+      "input": "8\n\"leetcode\"\n\"leetgoes\"\n\"leet\"",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 2, s1 = &quot;gx&quot;, s2 = &quot;gz&quot;, evil = &quot;x&quot;",
+      "input": "2\n\"gx\"\n\"gz\"\n\"x\"",
       "expectedOutput": "2"
     },
     {
-      "input": "2\n\"aa\"\n\"da\"\n\"b\"",
-      "expectedOutput": null
+      "input": "n = 2, s1 = \"aa\", s2 = \"da\", evil = \"b\"",
+      "expectedOutput": "51"
     },
     {
-      "input": "8\n\"leetcode\"\n\"leetgoes\"\n\"leet\"",
-      "expectedOutput": null
+      "input": "n = 8, s1 = \"leetcode\", s2 = \"leetgoes\", evil = \"leet\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "2\n\"gx\"\n\"gz\"\n\"x\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 9, s2 = &quot;leetcode&quot;, s3 = &quot;leetgoes&quot;, evil = &quot;leet&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, s2 = &quot;gx&quot;, s3 = &quot;gz&quot;, evil = &quot;x&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n\"aa\"\n\"da\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n\"leetcode\"\n\"leetgoes\"\n\"leet\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, s2 = &quot;aa&quot;, s3 = &quot;da&quot;, evil = &quot;b&quot;",
-      "expectedOutput": null
+      "input": "n = 2, s1 = \"gx\", s2 = \"gz\", evil = \"x\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-all-good-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:56.465Z",
+    "collectedAt": "2026-10-19T18:40:17.409Z",
     "sourceUpdatedAt": null
   }
 }

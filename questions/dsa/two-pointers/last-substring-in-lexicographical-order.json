@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abab&quot;",
-      "output": "&quot;bab&quot;",
-      "explanation": "The substrings are [&quot;a&quot;, &quot;ab&quot;, &quot;aba&quot;, &quot;abab&quot;, &quot;b&quot;, &quot;ba&quot;, &quot;bab&quot;]. The lexicographically maximum substring is &quot;bab&quot;."
+      "input": "s = \"abab\"",
+      "output": "\"bab\"",
+      "explanation": "The substrings are [\"a\", \"ab\", \"aba\", \"abab\", \"b\", \"ba\", \"bab\"]. The lexicographically maximum substring is \"bab\"."
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "output": "&quot;tcode&quot;",
+      "input": "s = \"leetcode\"",
+      "output": "\"tcode\"",
       "explanation": null
     }
   ],
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abab&quot;",
-      "expectedOutput": "&quot;bab&quot;"
+      "input": "\"abab\"",
+      "expectedOutput": "\"bab\""
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;tcode&quot;"
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"tcode\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abab&quot;",
-      "expectedOutput": "&quot;bab&quot;"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;tcode&quot;"
-    },
-    {
       "input": "\"abab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"bab\""
     },
     {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"tcode\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abab\"",
+      "expectedOutput": "\"bab\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "\"tcode\""
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/last-substring-in-lexicographical-order/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.188Z",
+    "collectedAt": "2026-10-19T18:40:20.082Z",
     "sourceUpdatedAt": null
   }
 }

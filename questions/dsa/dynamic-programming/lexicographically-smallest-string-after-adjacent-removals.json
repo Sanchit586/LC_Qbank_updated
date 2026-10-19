@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
-      "output": "&quot;a&quot;",
-      "explanation": "Remove &quot;bc&quot; from the string, leaving &quot;a&quot; as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is &quot;a&quot;."
+      "input": "s = \"abc\"",
+      "output": "\"a\"",
+      "explanation": "Remove \"bc\" from the string, leaving \"a\" as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is \"a\"."
     },
     {
-      "input": "s = &quot;bcda&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "​​​​​​​Remove &quot;cd&quot; from the string, leaving &quot;ba&quot; as the remaining string.\n\tRemove &quot;ba&quot; from the string, leaving &quot;&quot; as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is &quot;&quot;."
+      "input": "s = \"bcda\"",
+      "output": "\"\"",
+      "explanation": "​​​​​​​Remove \"cd\" from the string, leaving \"ba\" as the remaining string.\n\tRemove \"ba\" from the string, leaving \"\" as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is \"\"."
     },
     {
-      "input": "s = &quot;zdce&quot;",
-      "output": "&quot;zdce&quot;",
-      "explanation": "Remove &quot;dc&quot; from the string, leaving &quot;ze&quot; as the remaining string.\n\tNo further operations are possible on &quot;ze&quot;.\n\tHowever, since &quot;zdce&quot; is lexicographically smaller than &quot;ze&quot;, the smallest string after all possible removals is &quot;zdce&quot;."
+      "input": "s = \"zdce\"",
+      "output": "\"zdce\"",
+      "explanation": "Remove \"dc\" from the string, leaving \"ze\" as the remaining string.\n\tNo further operations are possible on \"ze\".\n\tHowever, since \"zdce\" is lexicographically smaller than \"ze\", the smallest string after all possible removals is \"zdce\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"abc\"",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = &quot;bcda&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"bcda\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;zdce&quot;",
-      "expectedOutput": "&quot;zdce&quot;"
+      "input": "\"zdce\"",
+      "expectedOutput": "\"zdce\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
-      "input": "s = &quot;bcda&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;zdce&quot;",
-      "expectedOutput": "&quot;zdce&quot;"
-    },
-    {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
       "input": "\"bcda\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"zdce\"",
-      "expectedOutput": null
+      "expectedOutput": "\"zdce\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"bcda\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"zdce\"",
+      "expectedOutput": "\"zdce\""
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.144Z",
+    "collectedAt": "2026-10-19T18:40:20.263Z",
     "sourceUpdatedAt": null
   }
 }

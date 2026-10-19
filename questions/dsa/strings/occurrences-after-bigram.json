@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"",
+      "input": "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\"",
       "expectedOutput": "[\"girl\",\"student\"]"
     },
     {
-      "input": "text = \"we will we will rock you\", first = \"we\", second = \"will\"",
+      "input": "\"we will we will rock you\"\n\"we\"\n\"will\"",
       "expectedOutput": "[\"we\",\"rock\"]"
     }
   ],
   "testCases": [
     {
+      "input": "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[\"girl\",\"student\"]"
+    },
+    {
+      "input": "\"we will we will rock you\"\n\"we\"\n\"will\"",
+      "expectedOutput": "[\"we\",\"rock\"]"
+    },
+    {
       "input": "text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"",
       "expectedOutput": "[\"girl\",\"student\"]"
     },
     {
       "input": "text = \"we will we will rock you\", first = \"we\", second = \"will\"",
       "expectedOutput": "[\"we\",\"rock\"]"
-    },
-    {
-      "input": "\"alice is a good girl she is a good student\"\n\"a\"\n\"good\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"we will we will rock you\"\n\"we\"\n\"will\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/occurrences-after-bigram/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.935Z",
+    "collectedAt": "2026-10-19T18:40:26.347Z",
     "sourceUpdatedAt": null
   }
 }

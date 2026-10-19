@@ -31,7 +31,7 @@
     {
       "input": "n = 6, m = 2",
       "output": "-1",
-      "explanation": "&nbsp;"
+      "explanation": " "
     }
   ],
   "starterCode": {
@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 10, m = 12",
+      "input": "10\n12",
       "expectedOutput": "85"
     },
     {
-      "input": "n = 4, m = 8",
+      "input": "4\n8",
       "expectedOutput": "-1"
     },
     {
-      "input": "n = 6, m = 2",
+      "input": "6\n2",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "10\n12",
+      "expectedOutput": "85"
+    },
+    {
+      "input": "4\n8",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "6\n2",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "n = 10, m = 12",
       "expectedOutput": "85"
     },
@@ -81,38 +93,6 @@
     {
       "input": "n = 6, m = 2",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "10\n12",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, m = 9",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, m = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n13",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 11, m = 13",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/digit-operations-to-make-two-integers-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.439Z",
+    "collectedAt": "2026-10-19T18:40:16.673Z",
     "sourceUpdatedAt": null
   }
 }

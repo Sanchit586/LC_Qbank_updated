@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 7",
+      "input": "3\n7",
       "expectedOutput": "[181,292,707,818,929]"
     },
     {
-      "input": "n = 2, k = 1",
+      "input": "2\n1",
       "expectedOutput": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
     }
   ],
   "testCases": [
     {
+      "input": "3\n7",
+      "expectedOutput": "[181,292,707,818,929]"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
+    },
+    {
       "input": "n = 3, k = 7",
       "expectedOutput": "[181,292,707,818,929]"
     },
     {
       "input": "n = 2, k = 1",
       "expectedOutput": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
-    },
-    {
-      "input": "3\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.929Z",
+    "collectedAt": "2026-10-19T18:40:26.344Z",
     "sourceUpdatedAt": null
   }
 }

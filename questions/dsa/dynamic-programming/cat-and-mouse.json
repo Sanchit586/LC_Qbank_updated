@@ -22,7 +22,7 @@
     "0 <= graph[i][j] < graph.length",
     "graph[i][j] != i",
     "graph[i] is unique.",
-    "The mouse and the cat can always move."
+    "The mouse and the cat can always move. "
   ],
   "examples": [
     {
@@ -59,34 +59,30 @@
   },
   "publicTests": [
     {
-      "input": "graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]",
+      "input": "[[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]",
       "expectedOutput": "0"
     },
     {
-      "input": "graph = [[1,3],[0],[3],[0,2]]",
+      "input": "[[1,3],[0],[3],[0,2]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,3],[0],[3],[0,2]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "graph = [[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]",
       "expectedOutput": "0"
     },
     {
       "input": "graph = [[1,3],[0],[3],[0,2]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[2,5],[3],[0,4,5],[1,4,5],[2,3],[0,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3],[0],[3],[0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "graph = [[3,6],[4],[1,5,6],[2,5,6],[3,4],[1,3,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cat-and-mouse/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:46.119Z",
+    "collectedAt": "2026-10-19T18:40:13.943Z",
     "sourceUpdatedAt": null
   }
 }

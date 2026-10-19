@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cat and mice&quot;",
-      "output": "&quot;cat dna mice&quot;",
-      "explanation": "​​​​​​​\n\n\n\tThe first word &quot;cat&quot; has 1 vowel.\n\t&quot;and&quot; has 1 vowel, so it is reversed to form &quot;dna&quot;.\n\t&quot;mice&quot; has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is &quot;cat dna mice&quot;."
+      "input": "s = \"cat and mice\"",
+      "output": "\"cat dna mice\"",
+      "explanation": "​​​​​​​\n\n\n\tThe first word \"cat\" has 1 vowel.\n\t\"and\" has 1 vowel, so it is reversed to form \"dna\".\n\t\"mice\" has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is \"cat dna mice\"."
     },
     {
-      "input": "s = &quot;book is nice&quot;",
-      "output": "&quot;book is ecin&quot;",
-      "explanation": "The first word &quot;book&quot; has 2 vowels.\n\t&quot;is&quot; has 1 vowel, so it remains unchanged.\n\t&quot;nice&quot; has 2 vowels, so it is reversed to form &quot;ecin&quot;.\n\tThus, the resulting string is &quot;book is ecin&quot;."
+      "input": "s = \"book is nice\"",
+      "output": "\"book is ecin\"",
+      "explanation": "The first word \"book\" has 2 vowels.\n\t\"is\" has 1 vowel, so it remains unchanged.\n\t\"nice\" has 2 vowels, so it is reversed to form \"ecin\".\n\tThus, the resulting string is \"book is ecin\"."
     },
     {
-      "input": "s = &quot;banana healthy&quot;",
-      "output": "&quot;banana healthy&quot;",
-      "explanation": "The first word &quot;banana&quot; has 3 vowels.\n\t&quot;healthy&quot; has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is &quot;banana healthy&quot;."
+      "input": "s = \"banana healthy\"",
+      "output": "\"banana healthy\"",
+      "explanation": "The first word \"banana\" has 3 vowels.\n\t\"healthy\" has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is \"banana healthy\"."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cat and mice&quot;",
-      "expectedOutput": "&quot;cat dna mice&quot;"
+      "input": "\"cat and mice\"",
+      "expectedOutput": "\"cat dna mice\""
     },
     {
-      "input": "s = &quot;book is nice&quot;",
-      "expectedOutput": "&quot;book is ecin&quot;"
+      "input": "\"book is nice\"",
+      "expectedOutput": "\"book is ecin\""
     },
     {
-      "input": "s = &quot;banana healthy&quot;",
-      "expectedOutput": "&quot;banana healthy&quot;"
+      "input": "\"banana healthy\"",
+      "expectedOutput": "\"banana healthy\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cat and mice&quot;",
-      "expectedOutput": "&quot;cat dna mice&quot;"
-    },
-    {
-      "input": "s = &quot;book is nice&quot;",
-      "expectedOutput": "&quot;book is ecin&quot;"
-    },
-    {
-      "input": "s = &quot;banana healthy&quot;",
-      "expectedOutput": "&quot;banana healthy&quot;"
-    },
-    {
       "input": "\"cat and mice\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cat dna mice\""
     },
     {
       "input": "\"book is nice\"",
-      "expectedOutput": null
+      "expectedOutput": "\"book is ecin\""
     },
     {
       "input": "\"banana healthy\"",
-      "expectedOutput": null
+      "expectedOutput": "\"banana healthy\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"cat and mice\"",
+      "expectedOutput": "\"cat dna mice\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"book is nice\"",
+      "expectedOutput": "\"book is ecin\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"banana healthy\"",
+      "expectedOutput": "\"banana healthy\""
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-words-with-same-vowel-count/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.995Z",
+    "collectedAt": "2026-10-19T18:40:27.917Z",
     "sourceUpdatedAt": null
   }
 }

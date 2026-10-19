@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;Hello how are you Contestant&quot;, k = 4",
-      "output": "&quot;Hello how are you&quot;",
-      "explanation": "The words in s are [&quot;Hello&quot;, &quot;how&quot;, &quot;are&quot;, &quot;you&quot;, &quot;Contestant&quot;].\nThe first 4 words are [&quot;Hello&quot;, &quot;how&quot;, &quot;are&quot;, &quot;you&quot;].\nHence, you should return &quot;Hello how are you&quot;."
+      "input": "s = \"Hello how are you Contestant\", k = 4",
+      "output": "\"Hello how are you\"",
+      "explanation": "The words in s are [\"Hello\", \"how\", \"are\", \"you\", \"Contestant\"].\nThe first 4 words are [\"Hello\", \"how\", \"are\", \"you\"].\nHence, you should return \"Hello how are you\"."
     },
     {
-      "input": "s = &quot;What is the solution to this problem&quot;, k = 4",
-      "output": "&quot;What is the solution&quot;",
-      "explanation": "The words in s are [&quot;What&quot;, &quot;is&quot;, &quot;the&quot;, &quot;solution&quot;, &quot;to&quot;, &quot;this&quot;, &quot;problem&quot;].\nThe first 4 words are [&quot;What&quot;, &quot;is&quot;, &quot;the&quot;, &quot;solution&quot;].\nHence, you should return &quot;What is the solution&quot;."
+      "input": "s = \"What is the solution to this problem\", k = 4",
+      "output": "\"What is the solution\"",
+      "explanation": "The words in s are [\"What\", \"is\", \"the\", \"solution\", \"to\", \"this\", \"problem\"].\nThe first 4 words are [\"What\", \"is\", \"the\", \"solution\"].\nHence, you should return \"What is the solution\"."
     },
     {
-      "input": "s = &quot;chopper is not a tanuki&quot;, k = 5",
-      "output": "&quot;chopper is not a tanuki&quot;",
+      "input": "s = \"chopper is not a tanuki\", k = 5",
+      "output": "\"chopper is not a tanuki\"",
       "explanation": null
     }
   ],
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;Hello how are you Contestant&quot;, k = 4",
-      "expectedOutput": "&quot;Hello how are you&quot;"
+      "input": "\"Hello how are you Contestant\"\n4",
+      "expectedOutput": "\"Hello how are you\""
     },
     {
-      "input": "s = &quot;What is the solution to this problem&quot;, k = 4",
-      "expectedOutput": "&quot;What is the solution&quot;"
+      "input": "\"What is the solution to this problem\"\n4",
+      "expectedOutput": "\"What is the solution\""
     },
     {
-      "input": "s = &quot;chopper is not a tanuki&quot;, k = 5",
-      "expectedOutput": "&quot;chopper is not a tanuki&quot;"
+      "input": "\"chopper is not a tanuki\"\n5",
+      "expectedOutput": "\"chopper is not a tanuki\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;Hello how are you Contestant&quot;, k = 4",
-      "expectedOutput": "&quot;Hello how are you&quot;"
-    },
-    {
-      "input": "s = &quot;What is the solution to this problem&quot;, k = 4",
-      "expectedOutput": "&quot;What is the solution&quot;"
-    },
-    {
-      "input": "s = &quot;chopper is not a tanuki&quot;, k = 5",
-      "expectedOutput": "&quot;chopper is not a tanuki&quot;"
-    },
-    {
       "input": "\"Hello how are you Contestant\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"Hello how are you\""
     },
     {
       "input": "\"What is the solution to this problem\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"What is the solution\""
     },
     {
       "input": "\"chopper is not a tanuki\"\n5",
-      "expectedOutput": null
+      "expectedOutput": "\"chopper is not a tanuki\""
     },
     {
-      "input": "s = &quot;What is the solution to this problem&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"Hello how are you Contestant\", k = 4",
+      "expectedOutput": "\"Hello how are you\""
     },
     {
-      "input": "s = &quot;chopper is not a tanuki&quot;, k = 6",
-      "expectedOutput": null
+      "input": "s = \"What is the solution to this problem\", k = 4",
+      "expectedOutput": "\"What is the solution\""
     },
     {
-      "input": "\"Hello how are you Contestant\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"What is the solution to this problem\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;Hello how are you Contestant&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"chopper is not a tanuki\", k = 5",
+      "expectedOutput": "\"chopper is not a tanuki\""
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/truncate-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:02.756Z",
+    "collectedAt": "2026-10-19T18:40:31.263Z",
     "sourceUpdatedAt": null
   }
 }

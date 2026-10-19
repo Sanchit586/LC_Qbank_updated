@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "m = 3, n = 3, k = 5",
+      "input": "3\n3\n5",
       "expectedOutput": "3"
     },
     {
-      "input": "m = 2, n = 3, k = 6",
+      "input": "2\n3\n6",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "3\n3\n5",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n3\n6",
+      "expectedOutput": "6"
+    },
+    {
       "input": "m = 3, n = 3, k = 5",
       "expectedOutput": "3"
     },
     {
       "input": "m = 2, n = 3, k = 6",
       "expectedOutput": "6"
-    },
-    {
-      "input": "3\n3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 4, k = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/kth-smallest-number-in-multiplication-table/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:39.703Z",
+    "collectedAt": "2026-10-19T18:40:19.872Z",
     "sourceUpdatedAt": null
   }
 }

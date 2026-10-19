@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "s = \"aa\"",
       "output": "0",
-      "explanation": "The optimal substring here is an empty substring between the two &#39;a&#39;s."
+      "explanation": "The optimal substring here is an empty substring between the two 'a's."
     },
     {
-      "input": "s = &quot;abca&quot;",
+      "input": "s = \"abca\"",
       "output": "2",
-      "explanation": "The optimal substring here is &quot;bc&quot;."
+      "explanation": "The optimal substring here is \"bc\"."
     },
     {
-      "input": "s = &quot;cbzxy&quot;",
+      "input": "s = \"cbzxy\"",
       "output": "-1",
       "explanation": "There are no characters that appear twice in s."
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;abca&quot;",
+      "input": "\"abca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cbzxy&quot;",
+      "input": "\"cbzxy\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;abca&quot;",
+      "input": "\"abca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cbzxy&quot;",
+      "input": "\"cbzxy\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "s = \"aa\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"abca\"",
-      "expectedOutput": null
+      "input": "s = \"abca\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"cbzxy\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"cbzxy\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:45.886Z",
+    "collectedAt": "2026-10-19T18:40:20.028Z",
     "sourceUpdatedAt": null
   }
 }

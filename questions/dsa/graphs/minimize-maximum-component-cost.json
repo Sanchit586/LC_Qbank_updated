@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, edges = [[0,1,4],[1,2,3],[1,3,2],[3,4,6]], k = 2",
+      "input": "5\n[[0,1,4],[1,2,3],[1,3,2],[3,4,6]]\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 4, edges = [[0,1,5],[1,2,5],[2,3,5]], k = 1",
+      "input": "4\n[[0,1,5],[1,2,5],[2,3,5]]\n1",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[0,1,4],[1,2,3],[1,3,2],[3,4,6]]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "4\n[[0,1,5],[1,2,5],[2,3,5]]\n1",
+      "expectedOutput": "5"
+    },
+    {
       "input": "n = 5, edges = [[0,1,4],[1,2,3],[1,3,2],[3,4,6]], k = 2",
       "expectedOutput": "4"
     },
     {
       "input": "n = 4, edges = [[0,1,5],[1,2,5],[2,3,5]], k = 1",
       "expectedOutput": "5"
-    },
-    {
-      "input": "5\n[[0,1,4],[1,2,3],[1,3,2],[3,4,6]]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[0,1,5],[1,2,5],[2,3,5]]\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, edges = [[1,2,5],[2,3,4],[2,4,3],[4,5,7]], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimize-maximum-component-cost/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:41.732Z",
+    "collectedAt": "2026-10-19T18:40:23.244Z",
     "sourceUpdatedAt": null
   }
 }

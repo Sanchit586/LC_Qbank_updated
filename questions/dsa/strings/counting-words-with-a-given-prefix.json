@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "input": "words = [\"pay\",\"attention\",\"practice\",\"attend\"], pref = \"at\"",
       "output": "2",
-      "explanation": "The 2 strings that contain &quot;at&quot; as a prefix are: &quot;attention&quot; and &quot;attend&quot;."
+      "explanation": "The 2 strings that contain \"at\" as a prefix are: \"attention\" and \"attend\"."
     },
     {
-      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "input": "words = [\"leetcode\",\"win\",\"loops\",\"success\"], pref = \"code\"",
       "output": "0",
-      "explanation": "There are no strings that contain &quot;code&quot; as a prefix."
+      "explanation": "There are no strings that contain \"code\" as a prefix."
     }
   ],
   "starterCode": {
@@ -51,30 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "input": "[\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "input": "[\"leetcode\",\"win\",\"loops\",\"success\"]\n\"code\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "input": "[\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "input": "[\"leetcode\",\"win\",\"loops\",\"success\"]\n\"code\"",
       "expectedOutput": "0"
     },
     {
-      "input": "[\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
-      "expectedOutput": null
+      "input": "words = [\"pay\",\"attention\",\"practice\",\"attend\"], pref = \"at\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "[\"leetcode\",\"win\",\"loops\",\"success\"]\n\"code\"",
-      "expectedOutput": null
+      "input": "words = [\"leetcode\",\"win\",\"loops\",\"success\"], pref = \"code\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -88,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/counting-words-with-a-given-prefix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.316Z",
+    "collectedAt": "2026-10-19T18:40:15.999Z",
     "sourceUpdatedAt": null
   }
 }

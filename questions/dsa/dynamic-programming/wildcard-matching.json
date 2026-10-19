@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aa&quot;, p = &quot;a&quot;",
+      "input": "s = \"aa\", p = \"a\"",
       "output": "false",
-      "explanation": "&quot;a&quot; does not match the entire string &quot;aa&quot;."
+      "explanation": "\"a\" does not match the entire string \"aa\"."
     },
     {
-      "input": "s = &quot;aa&quot;, p = &quot;*&quot;",
+      "input": "s = \"aa\", p = \"*\"",
       "output": "true",
-      "explanation": "&nbsp;&#39;*&#39; matches any sequence."
+      "explanation": " '*' matches any sequence."
     },
     {
-      "input": "s = &quot;cb&quot;, p = &quot;?a&quot;",
+      "input": "s = \"cb\", p = \"?a\"",
       "output": "false",
-      "explanation": "&nbsp;&#39;?&#39; matches &#39;c&#39;, but the second letter is &#39;a&#39;, which does not match &#39;b&#39;."
+      "explanation": " '?' matches 'c', but the second letter is 'a', which does not match 'b'."
     }
   ],
   "starterCode": {
@@ -57,90 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aa&quot;, p = &quot;a&quot;",
+      "input": "\"aa\"\n\"a\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;aa&quot;, p = &quot;*&quot;",
+      "input": "\"aa\"\n\"*\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;cb&quot;, p = &quot;?a&quot;",
+      "input": "\"cb\"\n\"?a\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aa&quot;, p = &quot;a&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;aa&quot;, p = &quot;*&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;cb&quot;, p = &quot;?a&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"aa\"\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"aa\"\n\"*\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"cb\"\n\"?a\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"aa\", p = \"a\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aa\", p = \"*\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"cb\", p = \"?a\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/wildcard-matching/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:14.334Z",
+    "collectedAt": "2026-10-19T18:40:31.747Z",
     "sourceUpdatedAt": null
   }
 }

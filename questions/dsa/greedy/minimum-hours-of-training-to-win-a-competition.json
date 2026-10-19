@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1]",
+      "input": "5\n3\n[1,4,3,2]\n[2,6,3,1]",
       "expectedOutput": "8"
     },
     {
-      "input": "initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]",
+      "input": "2\n4\n[1]\n[3]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "5\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "2\n4\n[1]\n[3]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1]",
       "expectedOutput": "8"
     },
     {
       "input": "initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "5\n3\n[1,4,3,2]\n[2,6,3,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n4\n[1]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "initialEnergy = 6, initialExperience = 4, energy = [2,5,4,3], experience = [3,7,4,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-hours-of-training-to-win-a-competition/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:59.224Z",
+    "collectedAt": "2026-10-19T18:40:23.958Z",
     "sourceUpdatedAt": null
   }
 }

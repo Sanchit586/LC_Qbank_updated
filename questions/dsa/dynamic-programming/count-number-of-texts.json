@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "pressedKeys = &quot;22233&quot;",
+      "input": "pressedKeys = \"22233\"",
       "output": "8",
-      "explanation": "The possible text messages Alice could have sent are:\n&quot;aaadd&quot;, &quot;abdd&quot;, &quot;badd&quot;, &quot;cdd&quot;, &quot;aaae&quot;, &quot;abe&quot;, &quot;bae&quot;, and &quot;ce&quot;.\nSince there are 8 possible messages, we return 8."
+      "explanation": "The possible text messages Alice could have sent are:\n\"aaadd\", \"abdd\", \"badd\", \"cdd\", \"aaae\", \"abe\", \"bae\", and \"ce\".\nSince there are 8 possible messages, we return 8."
     },
     {
-      "input": "pressedKeys = &quot;222222222222222222222222222222222222&quot;",
+      "input": "pressedKeys = \"222222222222222222222222222222222222\"",
       "output": "82876089",
       "explanation": "There are 2082876103 possible text messages Alice could have sent.\nSince we need to return the answer modulo 109 + 7, we return 2082876103 % (109 + 7) = 82876089."
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "pressedKeys = &quot;22233&quot;",
+      "input": "\"22233\"",
       "expectedOutput": "8"
     },
     {
-      "input": "pressedKeys = &quot;222222222222222222222222222222222222&quot;",
+      "input": "\"222222222222222222222222222222222222\"",
       "expectedOutput": "82876089"
     }
   ],
   "testCases": [
     {
-      "input": "pressedKeys = &quot;22233&quot;",
+      "input": "\"22233\"",
       "expectedOutput": "8"
     },
     {
-      "input": "pressedKeys = &quot;222222222222222222222222222222222222&quot;",
+      "input": "\"222222222222222222222222222222222222\"",
       "expectedOutput": "82876089"
     },
     {
-      "input": "\"22233\"",
-      "expectedOutput": null
+      "input": "pressedKeys = \"22233\"",
+      "expectedOutput": "8"
     },
     {
-      "input": "\"222222222222222222222222222222222222\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "pressedKeys = \"222222222222222222222222222222222222\"",
+      "expectedOutput": "82876089"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-number-of-texts/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:15.230Z",
+    "collectedAt": "2026-10-19T18:40:15.361Z",
     "sourceUpdatedAt": null
   }
 }

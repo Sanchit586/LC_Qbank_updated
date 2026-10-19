@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "traversal = &quot;1-2--3--4-5--6--7&quot;",
+      "input": "traversal = \"1-2--3--4-5--6--7\"",
       "output": "[1,2,5,3,4,6,7]",
       "explanation": null
     },
     {
-      "input": "traversal = &quot;1-2--3---4-5--6---7&quot;",
+      "input": "traversal = \"1-2--3---4-5--6---7\"",
       "output": "[1,2,5,3,null,6,null,4,null,7]",
       "explanation": null
     },
     {
-      "input": "traversal = &quot;1-401--349---90--88&quot;",
+      "input": "traversal = \"1-401--349---90--88\"",
       "output": "[1,401,null,349,88,90]",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "traversal = &quot;1-2--3--4-5--6--7&quot;",
+      "input": "\"1-2--3--4-5--6--7\"",
       "expectedOutput": "[1,2,5,3,4,6,7]"
     },
     {
-      "input": "traversal = &quot;1-2--3---4-5--6---7&quot;",
+      "input": "\"1-2--3---4-5--6---7\"",
       "expectedOutput": "[1,2,5,3,null,6,null,4,null,7]"
     },
     {
-      "input": "traversal = &quot;1-401--349---90--88&quot;",
+      "input": "\"1-401--349---90--88\"",
       "expectedOutput": "[1,401,null,349,88,90]"
     }
   ],
   "testCases": [
     {
-      "input": "traversal = &quot;1-2--3--4-5--6--7&quot;",
+      "input": "\"1-2--3--4-5--6--7\"",
       "expectedOutput": "[1,2,5,3,4,6,7]"
     },
     {
-      "input": "traversal = &quot;1-2--3---4-5--6---7&quot;",
+      "input": "\"1-2--3---4-5--6---7\"",
       "expectedOutput": "[1,2,5,3,null,6,null,4,null,7]"
     },
     {
-      "input": "traversal = &quot;1-401--349---90--88&quot;",
+      "input": "\"1-401--349---90--88\"",
       "expectedOutput": "[1,401,null,349,88,90]"
     },
     {
-      "input": "\"1-2--3--4-5--6--7\"",
-      "expectedOutput": null
+      "input": "traversal = \"1-2--3--4-5--6--7\"",
+      "expectedOutput": "[1,2,5,3,4,6,7]"
     },
     {
-      "input": "\"1-2--3---4-5--6---7\"",
-      "expectedOutput": null
+      "input": "traversal = \"1-2--3---4-5--6---7\"",
+      "expectedOutput": "[1,2,5,3,null,6,null,4,null,7]"
     },
     {
-      "input": "\"1-401--349---90--88\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "traversal = \"1-401--349---90--88\"",
+      "expectedOutput": "[1,401,null,349,88,90]"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/recover-a-tree-from-preorder-traversal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:06.292Z",
+    "collectedAt": "2026-10-19T18:40:27.321Z",
     "sourceUpdatedAt": null
   }
 }

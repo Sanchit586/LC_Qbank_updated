@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "original = [1,2,3,4], bounds = [[1,2],[2,3],[3,4],[4,5]]",
+      "input": "[1,2,3,4]\n[[1,2],[2,3],[3,4],[4,5]]",
       "expectedOutput": "2"
     },
     {
-      "input": "original = [1,2,3,4], bounds = [[1,10],[2,9],[3,8],[4,7]]",
+      "input": "[1,2,3,4]\n[[1,10],[2,9],[3,8],[4,7]]",
       "expectedOutput": "4"
     },
     {
-      "input": "original = [1,2,1,2], bounds = [[1,1],[2,3],[3,3],[2,3]]",
+      "input": "[1,2,1,2]\n[[1,1],[2,3],[3,3],[2,3]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4]\n[[1,2],[2,3],[3,4],[4,5]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2,3,4]\n[[1,10],[2,9],[3,8],[4,7]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,2,1,2]\n[[1,1],[2,3],[3,3],[2,3]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "original = [1,2,3,4], bounds = [[1,2],[2,3],[3,4],[4,5]]",
       "expectedOutput": "2"
     },
@@ -81,38 +93,6 @@
     {
       "input": "original = [1,2,1,2], bounds = [[1,1],[2,3],[3,3],[2,3]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,2,3,4]\n[[1,2],[2,3],[3,4],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4]\n[[1,10],[2,9],[3,8],[4,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,1,2]\n[[1,1],[2,3],[3,3],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "original = [2,3,4,5], bounds = [[2,11],[3,10],[4,9],[5,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "original = [2,3,2,3], bounds = [[2,2],[3,4],[4,4],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\n[[2,3],[3,4],[4,5],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\n[[2,11],[3,10],[4,9],[5,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "original = [2,3,4,5], bounds = [[2,3],[3,4],[4,5],[5,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-number-of-copy-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:12.617Z",
+    "collectedAt": "2026-10-19T18:40:18.517Z",
     "sourceUpdatedAt": null
   }
 }

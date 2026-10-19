@@ -22,7 +22,7 @@
     {
       "input": "envelopes = [[5,4],[6,4],[6,7],[2,3]]",
       "output": "3",
-      "explanation": "The maximum number of envelopes you can Russian doll is 3 ([2,3] =&gt; [5,4] =&gt; [6,7])."
+      "explanation": "The maximum number of envelopes you can Russian doll is 3 ([2,3] => [5,4] => [6,7])."
     },
     {
       "input": "envelopes = [[1,1],[1,1],[1,1]]",
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "envelopes = [[5,4],[6,4],[6,7],[2,3]]",
+      "input": "[[5,4],[6,4],[6,7],[2,3]]",
       "expectedOutput": "3"
     },
     {
-      "input": "envelopes = [[1,1],[1,1],[1,1]]",
+      "input": "[[1,1],[1,1],[1,1]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[5,4],[6,4],[6,7],[2,3]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,1],[1,1],[1,1]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "envelopes = [[5,4],[6,4],[6,7],[2,3]]",
       "expectedOutput": "3"
     },
     {
       "input": "envelopes = [[1,1],[1,1],[1,1]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[5,4],[6,4],[6,7],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,1],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "envelopes = [[6,5],[7,5],[7,8],[3,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/russian-doll-envelopes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:16.724Z",
+    "collectedAt": "2026-10-19T18:40:28.069Z",
     "sourceUpdatedAt": null
   }
 }

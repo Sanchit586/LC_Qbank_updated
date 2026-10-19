@@ -22,19 +22,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;fool3e7bar&quot;, sub = &quot;leet&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;]]",
+      "input": "s = \"fool3e7bar\", sub = \"leet\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
       "output": "true",
-      "explanation": "Replace the first &#39;e&#39; in sub with &#39;3&#39; and &#39;t&#39; in sub with &#39;7&#39;.\nNow sub = &quot;l3e7&quot; is a substring of s, so we return true."
+      "explanation": "Replace the first 'e' in sub with '3' and 't' in sub with '7'.\nNow sub = \"l3e7\" is a substring of s, so we return true."
     },
     {
-      "input": "s = &quot;fooleetbar&quot;, sub = &quot;f00l&quot;, mappings = [[&quot;o&quot;,&quot;0&quot;]]",
+      "input": "s = \"fooleetbar\", sub = \"f00l\", mappings = [[\"o\",\"0\"]]",
       "output": "false",
-      "explanation": "The string &quot;f00l&quot; is not a substring of s and no replacements can be made.\nNote that we cannot replace &#39;0&#39; with &#39;o&#39;."
+      "explanation": "The string \"f00l\" is not a substring of s and no replacements can be made.\nNote that we cannot replace '0' with 'o'."
     },
     {
-      "input": "s = &quot;Fool33tbaR&quot;, sub = &quot;leetd&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;],[&quot;d&quot;,&quot;b&quot;],[&quot;p&quot;,&quot;b&quot;]]",
+      "input": "s = \"Fool33tbaR\", sub = \"leetd\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
       "output": "true",
-      "explanation": "Replace the first and second &#39;e&#39; in sub with &#39;3&#39; and &#39;d&#39; in sub with &#39;b&#39;.\nNow sub = &quot;l33tb&quot; is a substring of s, so we return true."
+      "explanation": "Replace the first and second 'e' in sub with '3' and 'd' in sub with 'b'.\nNow sub = \"l33tb\" is a substring of s, so we return true."
     }
   ],
   "starterCode": {
@@ -60,62 +60,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;fool3e7bar&quot;, sub = &quot;leet&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;]]",
+      "input": "\"fool3e7bar\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;fooleetbar&quot;, sub = &quot;f00l&quot;, mappings = [[&quot;o&quot;,&quot;0&quot;]]",
+      "input": "\"fooleetbar\"\n\"f00l\"\n[[\"o\",\"0\"]]",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;Fool33tbaR&quot;, sub = &quot;leetd&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;],[&quot;d&quot;,&quot;b&quot;],[&quot;p&quot;,&quot;b&quot;]]",
+      "input": "\"Fool33tbaR\"\n\"leetd\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;fool3e7bar&quot;, sub = &quot;leet&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;fooleetbar&quot;, sub = &quot;f00l&quot;, mappings = [[&quot;o&quot;,&quot;0&quot;]]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;Fool33tbaR&quot;, sub = &quot;leetd&quot;, mappings = [[&quot;e&quot;,&quot;3&quot;],[&quot;t&quot;,&quot;7&quot;],[&quot;t&quot;,&quot;8&quot;],[&quot;d&quot;,&quot;b&quot;],[&quot;p&quot;,&quot;b&quot;]]",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"fool3e7bar\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"fooleetbar\"\n\"f00l\"\n[[\"o\",\"0\"]]",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"Fool33tbaR\"\n\"leetd\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;fooleetbar&quot;, sub = &quot;f1l&quot;, mappings = [[&quot;o&quot;,&quot;1&quot;]]",
-      "expectedOutput": null
+      "input": "s = \"fool3e7bar\", sub = \"leet\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;Fool34tbaR&quot;, sub = &quot;leetd&quot;, mappings = [[&quot;e&quot;,&quot;4&quot;],[&quot;t&quot;,&quot;8&quot;],[&quot;t&quot;,&quot;9&quot;],[&quot;d&quot;,&quot;b&quot;],[&quot;p&quot;,&quot;b&quot;]]",
-      "expectedOutput": null
+      "input": "s = \"fooleetbar\", sub = \"f00l\", mappings = [[\"o\",\"0\"]]",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"fool4e8bar\"\n\"leet\"\n[[\"e\",\"4\"],[\"t\",\"8\"],[\"t\",\"9\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"fooleetbar\"\n\"f1l\"\n[[\"o\",\"1\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;fool4e8bar&quot;, sub = &quot;leet&quot;, mappings = [[&quot;e&quot;,&quot;4&quot;],[&quot;t&quot;,&quot;8&quot;],[&quot;t&quot;,&quot;9&quot;]]",
-      "expectedOutput": null
+      "input": "s = \"Fool33tbaR\", sub = \"leetd\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/match-substring-after-replacement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.479Z",
+    "collectedAt": "2026-10-19T18:40:21.091Z",
     "sourceUpdatedAt": null
   }
 }

@@ -24,17 +24,17 @@
   ],
   "examples": [
     {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;71&quot;,&quot;HERE&quot;]]",
+      "input": "numberOfUsers = 2, events = [[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]",
       "output": "[2,2]",
       "explanation": null
     },
     {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;ALL&quot;]]",
+      "input": "numberOfUsers = 2, events = [[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]",
       "output": "[2,2]",
       "explanation": null
     },
     {
-      "input": "numberOfUsers = 2, events = [[&quot;OFFLINE&quot;,&quot;10&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;HERE&quot;]]",
+      "input": "numberOfUsers = 2, events = [[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
       "output": "[0,1]",
       "explanation": null
     }
@@ -62,62 +62,42 @@
   },
   "publicTests": [
     {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;71&quot;,&quot;HERE&quot;]]",
+      "input": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]",
       "expectedOutput": "[2,2]"
     },
     {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;ALL&quot;]]",
+      "input": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]",
       "expectedOutput": "[2,2]"
     },
     {
-      "input": "numberOfUsers = 2, events = [[&quot;OFFLINE&quot;,&quot;10&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;HERE&quot;]]",
+      "input": "2\n[[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
       "expectedOutput": "[0,1]"
     }
   ],
   "testCases": [
     {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;71&quot;,&quot;HERE&quot;]]",
-      "expectedOutput": "[2,2]"
-    },
-    {
-      "input": "numberOfUsers = 2, events = [[&quot;MESSAGE&quot;,&quot;10&quot;,&quot;id1 id0&quot;],[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;ALL&quot;]]",
-      "expectedOutput": "[2,2]"
-    },
-    {
-      "input": "numberOfUsers = 2, events = [[&quot;OFFLINE&quot;,&quot;10&quot;,&quot;0&quot;],[&quot;MESSAGE&quot;,&quot;12&quot;,&quot;HERE&quot;]]",
-      "expectedOutput": "[0,1]"
-    },
-    {
       "input": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[2,2]"
     },
     {
       "input": "2\n[[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[2,2]"
     },
     {
       "input": "2\n[[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[0,1]"
     },
     {
-      "input": "numberOfUsers = 3, events = [[&quot;MESSAGE&quot;,&quot;11&quot;,&quot;id2 id1&quot;],[&quot;OFFLINE&quot;,&quot;12&quot;,&quot;1&quot;],[&quot;MESSAGE&quot;,&quot;13&quot;,&quot;ALL&quot;]]",
-      "expectedOutput": null
+      "input": "numberOfUsers = 2, events = [[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"71\",\"HERE\"]]",
+      "expectedOutput": "[2,2]"
     },
     {
-      "input": "numberOfUsers = 3, events = [[&quot;OFFLINE&quot;,&quot;11&quot;,&quot;1&quot;],[&quot;MESSAGE&quot;,&quot;13&quot;,&quot;HERE&quot;]]",
-      "expectedOutput": null
+      "input": "numberOfUsers = 2, events = [[\"MESSAGE\",\"10\",\"id1 id0\"],[\"OFFLINE\",\"11\",\"0\"],[\"MESSAGE\",\"12\",\"ALL\"]]",
+      "expectedOutput": "[2,2]"
     },
     {
-      "input": "3\n[[\"MESSAGE\",\"11\",\"id2 id1\"],[\"OFFLINE\",\"12\",\"1\"],[\"MESSAGE\",\"72\",\"HERE\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[\"MESSAGE\",\"11\",\"id2 id1\"],[\"OFFLINE\",\"12\",\"1\"],[\"MESSAGE\",\"13\",\"ALL\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "numberOfUsers = 3, events = [[&quot;MESSAGE&quot;,&quot;11&quot;,&quot;id2 id1&quot;],[&quot;OFFLINE&quot;,&quot;12&quot;,&quot;1&quot;],[&quot;MESSAGE&quot;,&quot;72&quot;,&quot;HERE&quot;]]",
-      "expectedOutput": null
+      "input": "numberOfUsers = 2, events = [[\"OFFLINE\",\"10\",\"0\"],[\"MESSAGE\",\"12\",\"HERE\"]]",
+      "expectedOutput": "[0,1]"
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-mentions-per-user/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:13.244Z",
+    "collectedAt": "2026-10-19T18:40:15.259Z",
     "sourceUpdatedAt": null
   }
 }

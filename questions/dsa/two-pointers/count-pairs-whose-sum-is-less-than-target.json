@@ -20,12 +20,12 @@
     {
       "input": "nums = [-1,1,2,3,1], target = 2",
       "output": "3",
-      "explanation": "There are 3 pairs of indices that satisfy the conditions in the statement:\n- (0, 1) since 0 &lt; 1 and nums[0] + nums[1] = 0 &lt; target\n- (0, 2) since 0 &lt; 2 and nums[0] + nums[2] = 1 &lt; target \n- (0, 4) since 0 &lt; 4 and nums[0] + nums[4] = 0 &lt; target\nNote that (0, 3) is not counted since nums[0] + nums[3] is not strictly less than the target."
+      "explanation": "There are 3 pairs of indices that satisfy the conditions in the statement:\n- (0, 1) since 0 < 1 and nums[0] + nums[1] = 0 < target\n- (0, 2) since 0 < 2 and nums[0] + nums[2] = 1 < target \n- (0, 4) since 0 < 4 and nums[0] + nums[4] = 0 < target\nNote that (0, 3) is not counted since nums[0] + nums[3] is not strictly less than the target."
     },
     {
       "input": "nums = [-6,2,5,-2,-7,-1,3], target = -2",
       "output": "10",
-      "explanation": "There are 10 pairs of indices that satisfy the conditions in the statement:\n- (0, 1) since 0 &lt; 1 and nums[0] + nums[1] = -4 &lt; target\n- (0, 3) since 0 &lt; 3 and nums[0] + nums[3] = -8 &lt; target\n- (0, 4) since 0 &lt; 4 and nums[0] + nums[4] = -13 &lt; target\n- (0, 5) since 0 &lt; 5 and nums[0] + nums[5] = -7 &lt; target\n- (0, 6) since 0 &lt; 6 and nums[0] + nums[6] = -3 &lt; target\n- (1, 4) since 1 &lt; 4 and nums[1] + nums[4] = -5 &lt; target\n- (3, 4) since 3 &lt; 4 and nums[3] + nums[4] = -9 &lt; target\n- (3, 5) since 3 &lt; 5 and nums[3] + nums[5] = -3 &lt; target\n- (4, 5) since 4 &lt; 5 and nums[4] + nums[5] = -8 &lt; target\n- (4, 6) since 4 &lt; 6 and nums[4] + nums[6] = -4 &lt; target"
+      "explanation": "There are 10 pairs of indices that satisfy the conditions in the statement:\n- (0, 1) since 0 < 1 and nums[0] + nums[1] = -4 < target\n- (0, 3) since 0 < 3 and nums[0] + nums[3] = -8 < target\n- (0, 4) since 0 < 4 and nums[0] + nums[4] = -13 < target\n- (0, 5) since 0 < 5 and nums[0] + nums[5] = -7 < target\n- (0, 6) since 0 < 6 and nums[0] + nums[6] = -3 < target\n- (1, 4) since 1 < 4 and nums[1] + nums[4] = -5 < target\n- (3, 4) since 3 < 4 and nums[3] + nums[4] = -9 < target\n- (3, 5) since 3 < 5 and nums[3] + nums[5] = -3 < target\n- (4, 5) since 4 < 5 and nums[4] + nums[5] = -8 < target\n- (4, 6) since 4 < 6 and nums[4] + nums[6] = -4 < target"
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [-1,1,2,3,1], target = 2",
+      "input": "[-1,1,2,3,1]\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [-6,2,5,-2,-7,-1,3], target = -2",
+      "input": "[-6,2,5,-2,-7,-1,3]\n-2",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "[-1,1,2,3,1]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-6,2,5,-2,-7,-1,3]\n-2",
+      "expectedOutput": "10"
+    },
+    {
       "input": "nums = [-1,1,2,3,1], target = 2",
       "expectedOutput": "3"
     },
     {
       "input": "nums = [-6,2,5,-2,-7,-1,3], target = -2",
       "expectedOutput": "10"
-    },
-    {
-      "input": "[-1,1,2,3,1]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-6,2,5,-2,-7,-1,3]\n-2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-pairs-whose-sum-is-less-than-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:19.722Z",
+    "collectedAt": "2026-10-19T18:40:15.470Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,7 +17,13 @@
     "0 <= value <= 1000",
     "At most 3000 calls will be made to enQueue, deQueue, Front, Rear, isEmpty, and isFull."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyCircularQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"Rear\", \"isFull\", \"deQueue\", \"enQueue\", \"Rear\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]",
+      "output": "[null, true, true, true, false, 3, true, true, true, 4]",
+      "explanation": "MyCircularQueue myCircularQueue = new MyCircularQueue(3);\nmyCircularQueue.enQueue(1); // return True\nmyCircularQueue.enQueue(2); // return True\nmyCircularQueue.enQueue(3); // return True\nmyCircularQueue.enQueue(4); // return False\nmyCircularQueue.Rear();     // return 3\nmyCircularQueue.isFull();   // return True\nmyCircularQueue.deQueue();  // return True\nmyCircularQueue.enQueue(4); // return True\nmyCircularQueue.Rear();     // return 4"
+    }
+  ],
   "starterCode": {
     "cpp": "class MyCircularQueue {\npublic:\n    MyCircularQueue(int k) {\n        \n    }\n    \n    bool enQueue(int value) {\n        \n    }\n    \n    bool deQueue() {\n        \n    }\n    \n    int Front() {\n        \n    }\n    \n    int Rear() {\n        \n    }\n    \n    bool isEmpty() {\n        \n    }\n    \n    bool isFull() {\n        \n    }\n};\n\n/**\n * Your MyCircularQueue object will be instantiated and called as such:\n * MyCircularQueue* obj = new MyCircularQueue(k);\n * bool param_1 = obj->enQueue(value);\n * bool param_2 = obj->deQueue();\n * int param_3 = obj->Front();\n * int param_4 = obj->Rear();\n * bool param_5 = obj->isEmpty();\n * bool param_6 = obj->isFull();\n */",
     "java": "class MyCircularQueue {\n\n    public MyCircularQueue(int k) {\n        \n    }\n    \n    public boolean enQueue(int value) {\n        \n    }\n    \n    public boolean deQueue() {\n        \n    }\n    \n    public int Front() {\n        \n    }\n    \n    public int Rear() {\n        \n    }\n    \n    public boolean isEmpty() {\n        \n    }\n    \n    public boolean isFull() {\n        \n    }\n}\n\n/**\n * Your MyCircularQueue object will be instantiated and called as such:\n * MyCircularQueue obj = new MyCircularQueue(k);\n * boolean param_1 = obj.enQueue(value);\n * boolean param_2 = obj.deQueue();\n * int param_3 = obj.Front();\n * int param_4 = obj.Rear();\n * boolean param_5 = obj.isEmpty();\n * boolean param_6 = obj.isFull();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"Rear\",\"isFull\",\"deQueue\",\"enQueue\",\"Rear\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, 3, true, true, true, 4]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"Rear\",\"isFull\",\"deQueue\",\"enQueue\",\"Rear\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, 3, true, true, true, 4]"
     },
     {
-      "input": "[\"MyCircularQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"enQueue\",\"Rear\",\"isFull\",\"deQueue\",\"enQueue\",\"Rear\"]\n[[4],[2],[3],[4],[5],[],[],[],[5],[]]",
-      "expectedOutput": null
+      "input": "[\"MyCircularQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"enQueue\", \"Rear\", \"isFull\", \"deQueue\", \"enQueue\", \"Rear\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]",
+      "expectedOutput": "[null, true, true, true, false, 3, true, true, true, 4]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-circular-queue/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.655Z",
+    "collectedAt": "2026-10-19T18:40:16.439Z",
     "sourceUpdatedAt": null
   }
 }

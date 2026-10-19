@@ -22,12 +22,12 @@
     {
       "input": "arr = [3,5,1,2,4], m = 1",
       "output": "4",
-      "explanation": "Step 1: &quot;00100&quot;, groups: [&quot;1&quot;]\nStep 2: &quot;00101&quot;, groups: [&quot;1&quot;, &quot;1&quot;]\nStep 3: &quot;10101&quot;, groups: [&quot;1&quot;, &quot;1&quot;, &quot;1&quot;]\nStep 4: &quot;11101&quot;, groups: [&quot;111&quot;, &quot;1&quot;]\nStep 5: &quot;11111&quot;, groups: [&quot;11111&quot;]\nThe latest step at which there exists a group of size 1 is step 4."
+      "explanation": "Step 1: \"00100\", groups: [\"1\"]\nStep 2: \"00101\", groups: [\"1\", \"1\"]\nStep 3: \"10101\", groups: [\"1\", \"1\", \"1\"]\nStep 4: \"11101\", groups: [\"111\", \"1\"]\nStep 5: \"11111\", groups: [\"11111\"]\nThe latest step at which there exists a group of size 1 is step 4."
     },
     {
       "input": "arr = [3,1,5,4,2], m = 2",
       "output": "-1",
-      "explanation": "Step 1: &quot;00100&quot;, groups: [&quot;1&quot;]\nStep 2: &quot;10100&quot;, groups: [&quot;1&quot;, &quot;1&quot;]\nStep 3: &quot;10101&quot;, groups: [&quot;1&quot;, &quot;1&quot;, &quot;1&quot;]\nStep 4: &quot;10111&quot;, groups: [&quot;1&quot;, &quot;111&quot;]\nStep 5: &quot;11111&quot;, groups: [&quot;11111&quot;]\nNo group of size 2 exists during any step."
+      "explanation": "Step 1: \"00100\", groups: [\"1\"]\nStep 2: \"10100\", groups: [\"1\", \"1\"]\nStep 3: \"10101\", groups: [\"1\", \"1\", \"1\"]\nStep 4: \"10111\", groups: [\"1\", \"111\"]\nStep 5: \"11111\", groups: [\"11111\"]\nNo group of size 2 exists during any step."
     }
   ],
   "starterCode": {
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "arr = [3,5,1,2,4], m = 1",
+      "input": "[3,5,1,2,4]\n1",
       "expectedOutput": "4"
     },
     {
-      "input": "arr = [3,1,5,4,2], m = 2",
+      "input": "[3,1,5,4,2]\n2",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[3,5,1,2,4]\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[3,1,5,4,2]\n2",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "arr = [3,5,1,2,4], m = 1",
       "expectedOutput": "4"
     },
     {
       "input": "arr = [3,1,5,4,2], m = 2",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[3,5,1,2,4]\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1,5,4,2]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -156,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-latest-group-of-size-m/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:04.811Z",
+    "collectedAt": "2026-10-19T18:40:17.801Z",
     "sourceUpdatedAt": null
   }
 }

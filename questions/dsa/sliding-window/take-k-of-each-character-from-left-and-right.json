@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabaaaacaabc&quot;, k = 2",
+      "input": "s = \"aabaaaacaabc\", k = 2",
       "output": "8",
-      "explanation": "Take three characters from the left of s. You now have two &#39;a&#39; characters, and one &#39;b&#39; character.\nTake five characters from the right of s. You now have four &#39;a&#39; characters, two &#39;b&#39; characters, and two &#39;c&#39; characters.\nA total of 3 + 5 = 8 minutes is needed.\nIt can be proven that 8 is the minimum number of minutes needed."
+      "explanation": "Take three characters from the left of s. You now have two 'a' characters, and one 'b' character.\nTake five characters from the right of s. You now have four 'a' characters, two 'b' characters, and two 'c' characters.\nA total of 3 + 5 = 8 minutes is needed.\nIt can be proven that 8 is the minimum number of minutes needed."
     },
     {
-      "input": "s = &quot;a&quot;, k = 1",
+      "input": "s = \"a\", k = 1",
       "output": "-1",
-      "explanation": "It is not possible to take one &#39;b&#39; or &#39;c&#39; so return -1."
+      "explanation": "It is not possible to take one 'b' or 'c' so return -1."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabaaaacaabc&quot;, k = 2",
+      "input": "\"aabaaaacaabc\"\n2",
       "expectedOutput": "8"
     },
     {
-      "input": "s = &quot;a&quot;, k = 1",
+      "input": "\"a\"\n1",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabaaaacaabc&quot;, k = 2",
+      "input": "\"aabaaaacaabc\"\n2",
       "expectedOutput": "8"
     },
     {
-      "input": "s = &quot;a&quot;, k = 1",
+      "input": "\"a\"\n1",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"aabaaaacaabc\"\n2",
-      "expectedOutput": null
+      "input": "s = \"aabaaaacaabc\", k = 2",
+      "expectedOutput": "8"
     },
     {
-      "input": "\"a\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aabaaaacaabc&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"a\", k = 1",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/take-k-of-each-character-from-left-and-right/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.306Z",
+    "collectedAt": "2026-10-19T18:40:30.834Z",
     "sourceUpdatedAt": null
   }
 }

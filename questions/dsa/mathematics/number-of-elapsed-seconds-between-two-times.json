@@ -21,12 +21,12 @@
   ],
   "examples": [
     {
-      "input": "startTime = &quot;01:00:00&quot;, endTime = &quot;01:00:25&quot;",
+      "input": "startTime = \"01:00:00\", endTime = \"01:00:25\"",
       "output": "25",
       "explanation": "endTime is 25 seconds ahead of startTime."
     },
     {
-      "input": "startTime = &quot;12:34:56&quot;, endTime = &quot;13:00:00&quot;",
+      "input": "startTime = \"12:34:56\", endTime = \"13:00:00\"",
       "output": "1504",
       "explanation": null
     }
@@ -54,90 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "startTime = &quot;01:00:00&quot;, endTime = &quot;01:00:25&quot;",
+      "input": "\"01:00:00\"\n\"01:00:25\"",
       "expectedOutput": "25"
     },
     {
-      "input": "startTime = &quot;12:34:56&quot;, endTime = &quot;13:00:00&quot;",
+      "input": "\"12:34:56\"\n\"13:00:00\"",
       "expectedOutput": "1504"
     }
   ],
   "testCases": [
     {
-      "input": "startTime = &quot;01:00:00&quot;, endTime = &quot;01:00:25&quot;",
+      "input": "\"01:00:00\"\n\"01:00:25\"",
       "expectedOutput": "25"
     },
     {
-      "input": "startTime = &quot;12:34:56&quot;, endTime = &quot;13:00:00&quot;",
+      "input": "\"12:34:56\"\n\"13:00:00\"",
       "expectedOutput": "1504"
     },
     {
-      "input": "\"01:00:00\"\n\"01:00:25\"",
-      "expectedOutput": null
+      "input": "startTime = \"01:00:00\", endTime = \"01:00:25\"",
+      "expectedOutput": "25"
     },
     {
-      "input": "\"12:34:56\"\n\"13:00:00\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "startTime = &quot;13:35:57&quot;, endTime = &quot;14:1:1&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"2:1:1\"\n\"2:1:26\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"13:35:57\"\n\"14:1:1\"",
-      "expectedOutput": null
+      "input": "startTime = \"12:34:56\", endTime = \"13:00:00\"",
+      "expectedOutput": "1504"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-elapsed-seconds-between-two-times/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:39.060Z",
+    "collectedAt": "2026-10-19T18:40:25.847Z",
     "sourceUpdatedAt": null
   }
 }

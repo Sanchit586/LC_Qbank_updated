@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 5000",
+      "input": "5000",
       "expectedOutput": "30228214"
     }
   ],
   "testCases": [
     {
+      "input": "1",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "5000",
+      "expectedOutput": "30228214"
+    },
+    {
       "input": "n = 1",
       "expectedOutput": "12"
     },
     {
       "input": "n = 5000",
       "expectedOutput": "30228214"
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "5000",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "5001",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-paint-n-3-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.220Z",
+    "collectedAt": "2026-10-19T18:40:26.262Z",
     "sourceUpdatedAt": null
   }
 }

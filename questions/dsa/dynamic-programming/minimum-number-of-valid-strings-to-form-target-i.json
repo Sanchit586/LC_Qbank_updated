@@ -28,17 +28,17 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;aaaaa&quot;,&quot;bcdef&quot;], target = &quot;aabcdabc&quot;",
+      "input": "words = [\"abc\",\"aaaaa\",\"bcdef\"], target = \"aabcdabc\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "words = [&quot;abababab&quot;,&quot;ab&quot;], target = &quot;ababaababa&quot;",
+      "input": "words = [\"abababab\",\"ab\"], target = \"ababaababa\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "words = [&quot;abcdef&quot;], target = &quot;xyz&quot;",
+      "input": "words = [\"abcdef\"], target = \"xyz\"",
       "output": "-1",
       "explanation": null
     }
@@ -66,42 +66,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;aaaaa&quot;,&quot;bcdef&quot;], target = &quot;aabcdabc&quot;",
+      "input": "[\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "words = [&quot;abababab&quot;,&quot;ab&quot;], target = &quot;ababaababa&quot;",
+      "input": "[\"abababab\",\"ab\"]\n\"ababaababa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [&quot;abcdef&quot;], target = &quot;xyz&quot;",
+      "input": "[\"abcdef\"]\n\"xyz\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;aaaaa&quot;,&quot;bcdef&quot;], target = &quot;aabcdabc&quot;",
+      "input": "[\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "words = [&quot;abababab&quot;,&quot;ab&quot;], target = &quot;ababaababa&quot;",
+      "input": "[\"abababab\",\"ab\"]\n\"ababaababa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [&quot;abcdef&quot;], target = &quot;xyz&quot;",
+      "input": "[\"abcdef\"]\n\"xyz\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "[\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
-      "expectedOutput": null
+      "input": "words = [\"abc\",\"aaaaa\",\"bcdef\"], target = \"aabcdabc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "[\"abababab\",\"ab\"]\n\"ababaababa\"",
-      "expectedOutput": null
+      "input": "words = [\"abababab\",\"ab\"], target = \"ababaababa\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "[\"abcdef\"]\n\"xyz\"",
-      "expectedOutput": null
+      "input": "words = [\"abcdef\"], target = \"xyz\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -117,7 +117,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-valid-strings-to-form-target-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:11.282Z",
+    "collectedAt": "2026-10-19T18:40:24.500Z",
     "sourceUpdatedAt": null
   }
 }

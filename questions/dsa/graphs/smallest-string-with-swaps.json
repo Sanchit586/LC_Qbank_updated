@@ -23,18 +23,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2]]",
-      "output": "&quot;bacd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[1] and s[2], s = &quot;bacd&quot;",
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2]]",
+      "output": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2],[0,2]]",
-      "output": "&quot;abcd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[0] and s[2], s = &quot;acbd&quot;\nSwap s[1] and s[2], s = &quot;abcd&quot;",
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]",
+      "output": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;cba&quot;, pairs = [[0,1],[1,2]]",
-      "output": "&quot;abc&quot;\nExplaination: \nSwap s[0] and s[1], s = &quot;bca&quot;\nSwap s[1] and s[2], s = &quot;bac&quot;\nSwap s[0] and s[1], s = &quot;abc&quot;",
+      "input": "s = \"cba\", pairs = [[0,1],[1,2]]",
+      "output": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\"",
       "explanation": null
     }
   ],
@@ -61,62 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2]]",
-      "expectedOutput": "&quot;bacd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[1] and s[2], s = &quot;bacd&quot;"
+      "input": "\"dcab\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\""
     },
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2],[0,2]]",
-      "expectedOutput": "&quot;abcd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[0] and s[2], s = &quot;acbd&quot;\nSwap s[1] and s[2], s = &quot;abcd&quot;"
+      "input": "\"dcab\"\n[[0,3],[1,2],[0,2]]",
+      "expectedOutput": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\""
     },
     {
-      "input": "s = &quot;cba&quot;, pairs = [[0,1],[1,2]]",
-      "expectedOutput": "&quot;abc&quot;\nExplaination: \nSwap s[0] and s[1], s = &quot;bca&quot;\nSwap s[1] and s[2], s = &quot;bac&quot;\nSwap s[0] and s[1], s = &quot;abc&quot;"
+      "input": "\"cba\"\n[[0,1],[1,2]]",
+      "expectedOutput": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2]]",
-      "expectedOutput": "&quot;bacd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[1] and s[2], s = &quot;bacd&quot;"
-    },
-    {
-      "input": "s = &quot;dcab&quot;, pairs = [[0,3],[1,2],[0,2]]",
-      "expectedOutput": "&quot;abcd&quot;\nExplaination: \nSwap s[0] and s[3], s = &quot;bcad&quot;\nSwap s[0] and s[2], s = &quot;acbd&quot;\nSwap s[1] and s[2], s = &quot;abcd&quot;"
-    },
-    {
-      "input": "s = &quot;cba&quot;, pairs = [[0,1],[1,2]]",
-      "expectedOutput": "&quot;abc&quot;\nExplaination: \nSwap s[0] and s[1], s = &quot;bca&quot;\nSwap s[1] and s[2], s = &quot;bac&quot;\nSwap s[0] and s[1], s = &quot;abc&quot;"
-    },
-    {
       "input": "\"dcab\"\n[[0,3],[1,2]]",
-      "expectedOutput": null
+      "expectedOutput": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\""
     },
     {
       "input": "\"dcab\"\n[[0,3],[1,2],[0,2]]",
-      "expectedOutput": null
+      "expectedOutput": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\""
     },
     {
       "input": "\"cba\"\n[[0,1],[1,2]]",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\""
     },
     {
-      "input": "s = &quot;dcab&quot;, pairs = [[1,4],[2,3],[1,3]]",
-      "expectedOutput": null
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2]]",
+      "expectedOutput": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\""
     },
     {
-      "input": "s = &quot;cba&quot;, pairs = [[1,2],[2,3]]",
-      "expectedOutput": null
+      "input": "s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]",
+      "expectedOutput": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\""
     },
     {
-      "input": "\"dcab\"\n[[1,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dcab\"\n[[1,4],[2,3],[1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;dcab&quot;, pairs = [[1,4],[2,3]]",
-      "expectedOutput": null
+      "input": "s = \"cba\", pairs = [[0,1],[1,2]]",
+      "expectedOutput": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\""
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-string-with-swaps/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:31.424Z",
+    "collectedAt": "2026-10-19T18:40:29.833Z",
     "sourceUpdatedAt": null
   }
 }

@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,0,0,0],[1,1,1,0]], hits = [[1,0]]",
+      "input": "[[1,0,0,0],[1,1,1,0]]\n[[1,0]]",
       "expectedOutput": "[2]"
     },
     {
-      "input": "grid = [[1,0,0,0],[1,1,0,0]], hits = [[1,1],[1,0]]",
+      "input": "[[1,0,0,0],[1,1,0,0]]\n[[1,1],[1,0]]",
       "expectedOutput": "[0,0]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,0,0,0],[1,1,1,0]]\n[[1,0]]",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "[[1,0,0,0],[1,1,0,0]]\n[[1,1],[1,0]]",
+      "expectedOutput": "[0,0]"
+    },
+    {
       "input": "grid = [[1,0,0,0],[1,1,1,0]], hits = [[1,0]]",
       "expectedOutput": "[2]"
     },
     {
       "input": "grid = [[1,0,0,0],[1,1,0,0]], hits = [[1,1],[1,0]]",
       "expectedOutput": "[0,0]"
-    },
-    {
-      "input": "[[1,0,0,0],[1,1,1,0]]\n[[1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,0,0],[1,1,0,0]]\n[[1,1],[1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,1,1,1],[2,2,2,1]], hits = [[2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/bricks-falling-when-hit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:44.218Z",
+    "collectedAt": "2026-10-19T18:40:13.715Z",
     "sourceUpdatedAt": null
   }
 }

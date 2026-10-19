@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "coordinates = &quot;a1&quot;",
+      "input": "coordinates = \"a1\"",
       "output": "false",
-      "explanation": "From the chessboard above, the square with coordinates &quot;a1&quot; is black, so return false."
+      "explanation": "From the chessboard above, the square with coordinates \"a1\" is black, so return false."
     },
     {
-      "input": "coordinates = &quot;h3&quot;",
+      "input": "coordinates = \"h3\"",
       "output": "true",
-      "explanation": "From the chessboard above, the square with coordinates &quot;h3&quot; is white, so return true."
+      "explanation": "From the chessboard above, the square with coordinates \"h3\" is white, so return true."
     },
     {
-      "input": "coordinates = &quot;c7&quot;",
+      "input": "coordinates = \"c7\"",
       "output": "false",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "coordinates = &quot;a1&quot;",
+      "input": "\"a1\"",
       "expectedOutput": "false"
     },
     {
-      "input": "coordinates = &quot;h3&quot;",
+      "input": "\"h3\"",
       "expectedOutput": "true"
     },
     {
-      "input": "coordinates = &quot;c7&quot;",
+      "input": "\"c7\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "coordinates = &quot;a1&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "coordinates = &quot;h3&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "coordinates = &quot;c7&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"a1\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"h3\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"c7\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "coordinates = \"a1\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "coordinates = \"h3\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "coordinates = \"c7\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/determine-color-of-a-chessboard-square/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:43.191Z",
+    "collectedAt": "2026-10-19T18:40:16.578Z",
     "sourceUpdatedAt": null
   }
 }

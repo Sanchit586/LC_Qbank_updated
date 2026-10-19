@@ -45,20 +45,32 @@
   },
   "publicTests": [
     {
-      "input": "tree = [7,4,3,null,null,6,19], target = 3",
+      "input": "[7,4,3,null,null,6,19]\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "tree = [7], target =  7",
+      "input": "[7]\n7",
       "expectedOutput": "7"
     },
     {
-      "input": "tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4",
+      "input": "[8,null,6,null,5,null,4,null,3,null,2,null,1]\n4",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[7,4,3,null,null,6,19]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[7]\n7",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[8,null,6,null,5,null,4,null,3,null,2,null,1]\n4",
+      "expectedOutput": "4"
+    },
+    {
       "input": "tree = [7,4,3,null,null,6,19], target = 3",
       "expectedOutput": "3"
     },
@@ -69,74 +81,6 @@
     {
       "input": "tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[7,4,3,null,null,6,19]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7]\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "[8,null,6,null,5,null,4,null,3,null,2,null,1]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -148,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:55.452Z",
+    "collectedAt": "2026-10-19T18:40:17.358Z",
     "sourceUpdatedAt": null
   }
 }

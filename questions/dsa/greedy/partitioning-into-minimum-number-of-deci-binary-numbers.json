@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "n = &quot;32&quot;",
+      "input": "n = \"32\"",
       "output": "3",
       "explanation": "10 + 11 + 11 = 32"
     },
     {
-      "input": "n = &quot;82734&quot;",
+      "input": "n = \"82734\"",
       "output": "8",
       "explanation": null
     },
     {
-      "input": "n = &quot;27346209830709182346&quot;",
+      "input": "n = \"27346209830709182346\"",
       "output": "9",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "n = &quot;32&quot;",
+      "input": "\"32\"",
       "expectedOutput": "3"
     },
     {
-      "input": "n = &quot;82734&quot;",
+      "input": "\"82734\"",
       "expectedOutput": "8"
     },
     {
-      "input": "n = &quot;27346209830709182346&quot;",
+      "input": "\"27346209830709182346\"",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
-      "input": "n = &quot;32&quot;",
+      "input": "\"32\"",
       "expectedOutput": "3"
     },
     {
-      "input": "n = &quot;82734&quot;",
+      "input": "\"82734\"",
       "expectedOutput": "8"
     },
     {
-      "input": "n = &quot;27346209830709182346&quot;",
+      "input": "\"27346209830709182346\"",
       "expectedOutput": "9"
     },
     {
-      "input": "\"32\"",
-      "expectedOutput": null
+      "input": "n = \"32\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"82734\"",
-      "expectedOutput": null
+      "input": "n = \"82734\"",
+      "expectedOutput": "8"
     },
     {
-      "input": "\"27346209830709182346\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "n = \"27346209830709182346\"",
+      "expectedOutput": "9"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/partitioning-into-minimum-number-of-deci-binary-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:52.696Z",
+    "collectedAt": "2026-10-19T18:40:26.608Z",
     "sourceUpdatedAt": null
   }
 }

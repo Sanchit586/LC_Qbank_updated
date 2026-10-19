@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "word = \"aba\"",
       "output": "6",
-      "explanation": "All possible substrings are: &quot;a&quot;, &quot;ab&quot;, &quot;aba&quot;, &quot;b&quot;, &quot;ba&quot;, and &quot;a&quot;.\n- &quot;b&quot; has 0 vowels in it\n- &quot;a&quot;, &quot;ab&quot;, &quot;ba&quot;, and &quot;a&quot; have 1 vowel each\n- &quot;aba&quot; has 2 vowels in it\nHence, the total sum of vowels = 0 + 1 + 1 + 1 + 1 + 2 = 6."
+      "explanation": "All possible substrings are: \"a\", \"ab\", \"aba\", \"b\", \"ba\", and \"a\".\n- \"b\" has 0 vowels in it\n- \"a\", \"ab\", \"ba\", and \"a\" have 1 vowel each\n- \"aba\" has 2 vowels in it\nHence, the total sum of vowels = 0 + 1 + 1 + 1 + 1 + 2 = 6."
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "word = \"abc\"",
       "output": "3",
-      "explanation": "All possible substrings are: &quot;a&quot;, &quot;ab&quot;, &quot;abc&quot;, &quot;b&quot;, &quot;bc&quot;, and &quot;c&quot;.\n- &quot;a&quot;, &quot;ab&quot;, and &quot;abc&quot; have 1 vowel each\n- &quot;b&quot;, &quot;bc&quot;, and &quot;c&quot; have 0 vowels each\nHence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3."
+      "explanation": "All possible substrings are: \"a\", \"ab\", \"abc\", \"b\", \"bc\", and \"c\".\n- \"a\", \"ab\", and \"abc\" have 1 vowel each\n- \"b\", \"bc\", and \"c\" have 0 vowels each\nHence, the total sum of vowels = 1 + 1 + 1 + 0 + 0 + 0 = 3."
     },
     {
-      "input": "word = &quot;ltcd&quot;",
+      "input": "word = \"ltcd\"",
       "output": "0",
-      "explanation": "There are no vowels in any substring of &quot;ltcd&quot;."
+      "explanation": "There are no vowels in any substring of \"ltcd\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;ltcd&quot;",
+      "input": "\"ltcd\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;ltcd&quot;",
+      "input": "\"ltcd\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"aba\"",
-      "expectedOutput": null
+      "input": "word = \"aba\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "word = \"abc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"ltcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"ltcd\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/vowels-of-all-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.490Z",
+    "collectedAt": "2026-10-19T18:40:31.632Z",
     "sourceUpdatedAt": null
   }
 }

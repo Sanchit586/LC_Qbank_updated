@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "7",
-      "explanation": "The 7 distinct subsequences are &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, &quot;ab&quot;, &quot;ac&quot;, &quot;bc&quot;, and &quot;abc&quot;."
+      "explanation": "The 7 distinct subsequences are \"a\", \"b\", \"c\", \"ab\", \"ac\", \"bc\", and \"abc\"."
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "s = \"aba\"",
       "output": "6",
-      "explanation": "The 6 distinct subsequences are &quot;a&quot;, &quot;b&quot;, &quot;ab&quot;, &quot;aa&quot;, &quot;ba&quot;, and &quot;aba&quot;."
+      "explanation": "The 6 distinct subsequences are \"a\", \"b\", \"ab\", \"aa\", \"ba\", and \"aba\"."
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "s = \"aaa\"",
       "output": "3",
-      "explanation": "The 3 distinct subsequences are &quot;a&quot;, &quot;aa&quot; and &quot;aaa&quot;."
+      "explanation": "The 3 distinct subsequences are \"a\", \"aa\" and \"aaa\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "\"aaa\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "\"aaa\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"aba\"",
-      "expectedOutput": null
+      "input": "s = \"aba\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"aaa\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distinct-subsequences-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:47.885Z",
+    "collectedAt": "2026-10-19T18:40:16.732Z",
     "sourceUpdatedAt": null
   }
 }

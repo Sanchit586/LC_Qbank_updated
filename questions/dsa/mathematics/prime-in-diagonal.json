@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [[1,2,3],[5,6,7],[9,10,11]]",
+      "input": "[[1,2,3],[5,6,7],[9,10,11]]",
       "expectedOutput": "11"
     },
     {
-      "input": "nums = [[1,2,3],[5,17,7],[9,11,10]]",
+      "input": "[[1,2,3],[5,17,7],[9,11,10]]",
       "expectedOutput": "17"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[5,6,7],[9,10,11]]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[[1,2,3],[5,17,7],[9,11,10]]",
+      "expectedOutput": "17"
+    },
+    {
       "input": "nums = [[1,2,3],[5,6,7],[9,10,11]]",
       "expectedOutput": "11"
     },
     {
       "input": "nums = [[1,2,3],[5,17,7],[9,11,10]]",
       "expectedOutput": "17"
-    },
-    {
-      "input": "[[1,2,3],[5,6,7],[9,10,11]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,3],[5,17,7],[9,11,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [[2,3,4],[6,7,8],[10,11,12]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/prime-in-diagonal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.149Z",
+    "collectedAt": "2026-10-19T18:40:26.896Z",
     "sourceUpdatedAt": null
   }
 }

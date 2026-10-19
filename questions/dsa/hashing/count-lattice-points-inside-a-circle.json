@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "circles = [[2,2,1]]",
+      "input": "[[2,2,1]]",
       "expectedOutput": "5"
     },
     {
-      "input": "circles = [[2,2,2],[3,4,1]]",
+      "input": "[[2,2,2],[3,4,1]]",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,2,1]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[[2,2,2],[3,4,1]]",
+      "expectedOutput": "16"
+    },
+    {
       "input": "circles = [[2,2,1]]",
       "expectedOutput": "5"
     },
     {
       "input": "circles = [[2,2,2],[3,4,1]]",
       "expectedOutput": "16"
-    },
-    {
-      "input": "[[2,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2,2],[3,4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "circles = [[3,3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-lattice-points-inside-a-circle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:13.226Z",
+    "collectedAt": "2026-10-19T18:40:15.254Z",
     "sourceUpdatedAt": null
   }
 }

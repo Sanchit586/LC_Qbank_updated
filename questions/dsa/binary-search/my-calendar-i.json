@@ -17,7 +17,13 @@
     "0 <= start < end <= 109",
     "At most 1000 calls will be made to book."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyCalendar\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [15, 25], [20, 30]]",
+      "output": "[null, true, false, true]",
+      "explanation": "MyCalendar myCalendar = new MyCalendar();\nmyCalendar.book(10, 20); // return True\nmyCalendar.book(15, 25); // return False, It can not be booked because time 15 is already booked by another event.\nmyCalendar.book(20, 30); // return True, The event can be booked, as the first event takes every time less than 20, but not including 20."
+    }
+  ],
   "starterCode": {
     "cpp": "class MyCalendar {\npublic:\n    MyCalendar() {\n        \n    }\n    \n    bool book(int startTime, int endTime) {\n        \n    }\n};\n\n/**\n * Your MyCalendar object will be instantiated and called as such:\n * MyCalendar* obj = new MyCalendar();\n * bool param_1 = obj->book(startTime,endTime);\n */",
     "java": "class MyCalendar {\n\n    public MyCalendar() {\n        \n    }\n    \n    public boolean book(int startTime, int endTime) {\n        \n    }\n}\n\n/**\n * Your MyCalendar object will be instantiated and called as such:\n * MyCalendar obj = new MyCalendar();\n * boolean param_1 = obj.book(startTime,endTime);\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[10,20],[15,25],[20,30]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[10,20],[15,25],[20,30]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true]"
     },
     {
-      "input": "[\"MyCalendar\",\"book\",\"book\",\"book\"]\n[[],[11,21],[16,26],[21,31]]",
-      "expectedOutput": null
+      "input": "[\"MyCalendar\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [15, 25], [20, 30]]",
+      "expectedOutput": "[null, true, false, true]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/my-calendar-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:35.974Z",
+    "collectedAt": "2026-10-19T18:40:25.540Z",
     "sourceUpdatedAt": null
   }
 }

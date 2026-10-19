@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "events = [[1,2],[2,3],[3,4]]",
+      "input": "[[1,2],[2,3],[3,4]]",
       "expectedOutput": "3"
     },
     {
-      "input": "events= [[1,2],[2,3],[3,4],[1,2]]",
+      "input": "[[1,2],[2,3],[3,4],[1,2]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3],[3,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,2],[2,3],[3,4],[1,2]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "events = [[1,2],[2,3],[3,4]]",
       "expectedOutput": "3"
     },
     {
       "input": "events= [[1,2],[2,3],[3,4],[1,2]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,2],[2,3],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[2,3],[3,4],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "events = [[2,3],[3,4],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:19.344Z",
+    "collectedAt": "2026-10-19T18:40:22.035Z",
     "sourceUpdatedAt": null
   }
 }

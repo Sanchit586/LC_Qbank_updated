@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cat&quot;, t = &quot;chat&quot;",
+      "input": "s = \"cat\", t = \"chat\"",
       "output": "true",
-      "explanation": "Replace s[1] from &#39;a&#39; to &#39;h&#39;. The resulting string is &quot;cht&quot;.\n\t&quot;cht&quot; is a subsequence of &quot;chat&quot; because we can match &#39;c&#39;, &#39;h&#39;, and &#39;t&#39; in order."
+      "explanation": "Replace s[1] from 'a' to 'h'. The resulting string is \"cht\".\n\t\"cht\" is a subsequence of \"chat\" because we can match 'c', 'h', and 't' in order."
     },
     {
-      "input": "s = &quot;plane&quot;, t = &quot;apple&quot;",
+      "input": "s = \"plane\", t = \"apple\"",
       "output": "false",
-      "explanation": "The characters &#39;p&#39;, &#39;l&#39;, and &#39;e&#39; can be matched in t, but the remaining characters cannot be matched while preserving the required order.\n\tEven after replacing any one character in s, it is impossible to make s a subsequence of t."
+      "explanation": "The characters 'p', 'l', and 'e' can be matched in t, but the remaining characters cannot be matched while preserving the required order.\n\tEven after replacing any one character in s, it is impossible to make s a subsequence of t."
     }
   ],
   "starterCode": {
@@ -49,78 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cat&quot;, t = &quot;chat&quot;",
+      "input": "\"cat\"\n\"chat\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;plane&quot;, t = &quot;apple&quot;",
+      "input": "\"plane\"\n\"apple\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cat&quot;, t = &quot;chat&quot;",
+      "input": "\"cat\"\n\"chat\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;plane&quot;, t = &quot;apple&quot;",
+      "input": "\"plane\"\n\"apple\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"cat\"\n\"chat\"",
-      "expectedOutput": null
+      "input": "s = \"cat\", t = \"chat\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"plane\"\n\"apple\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"plane\", t = \"apple\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -137,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/subsequence-after-one-replacement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.660Z",
+    "collectedAt": "2026-10-19T18:40:30.415Z",
     "sourceUpdatedAt": null
   }
 }

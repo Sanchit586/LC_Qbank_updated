@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]",
+      "input": "[1,2,3,3]\n[3,4,5,6]\n[50,10,40,70]",
       "expectedOutput": "120"
     },
     {
-      "input": "startTime = [1,2,3,4,6], endTime = [3,5,10,6,9], profit = [20,20,100,70,60]",
+      "input": "[1,2,3,4,6]\n[3,5,10,6,9]\n[20,20,100,70,60]",
       "expectedOutput": "150"
     },
     {
-      "input": "startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]",
+      "input": "[1,1,1]\n[2,3,4]\n[5,6,4]",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,3]\n[3,4,5,6]\n[50,10,40,70]",
+      "expectedOutput": "120"
+    },
+    {
+      "input": "[1,2,3,4,6]\n[3,5,10,6,9]\n[20,20,100,70,60]",
+      "expectedOutput": "150"
+    },
+    {
+      "input": "[1,1,1]\n[2,3,4]\n[5,6,4]",
+      "expectedOutput": "6"
+    },
+    {
       "input": "startTime = [1,2,3,3], endTime = [3,4,5,6], profit = [50,10,40,70]",
       "expectedOutput": "120"
     },
@@ -81,38 +93,6 @@
     {
       "input": "startTime = [1,1,1], endTime = [2,3,4], profit = [5,6,4]",
       "expectedOutput": "6"
-    },
-    {
-      "input": "[1,2,3,3]\n[3,4,5,6]\n[50,10,40,70]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,6]\n[3,5,10,6,9]\n[20,20,100,70,60]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1]\n[2,3,4]\n[5,6,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "startTime = [2,3,4,5,7], endTime = [4,6,11,7,10], profit = [21,21,101,71,61]",
-      "expectedOutput": null
-    },
-    {
-      "input": "startTime = [2,2,2], endTime = [3,4,5], profit = [6,7,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,4]\n[4,5,6,7]\n[51,11,41,71]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5,7]\n[4,6,11,7,10]\n[21,21,101,71,61]",
-      "expectedOutput": null
-    },
-    {
-      "input": "startTime = [2,3,4,4], endTime = [4,5,6,7], profit = [51,11,41,71]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-profit-in-job-scheduling/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:26.860Z",
+    "collectedAt": "2026-10-19T18:40:22.489Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,1]]",
+      "input": "3\n[[0,1,1],[1,2,1],[0,2,1]]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,0]]",
+      "input": "3\n[[0,1,1],[1,2,1],[0,2,0]]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[0,1,1],[1,2,1],[0,2,1]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n[[0,1,1],[1,2,1],[0,2,0]]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,1]]",
       "expectedOutput": "2"
     },
     {
       "input": "n = 3, edges = [[0,1,1],[1,2,1],[0,2,0]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "3\n[[0,1,1],[1,2,1],[0,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,1],[1,2,1],[0,2,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,2],[2,3,2],[1,3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/incremental-even-weighted-cycle-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:30.054Z",
+    "collectedAt": "2026-10-19T18:40:19.504Z",
     "sourceUpdatedAt": null
   }
 }

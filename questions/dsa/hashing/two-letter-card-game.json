@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;a&quot;",
+      "input": "cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"a\"",
       "output": "2",
-      "explanation": "On the first turn, select and remove cards &quot;ab&quot; and &quot;ac&quot;, which are compatible because they differ at only index 1.\n\tOn the second turn, select and remove cards &quot;aa&quot; and &quot;ba&quot;, which are compatible because they differ at only index 0."
+      "explanation": "On the first turn, select and remove cards \"ab\" and \"ac\", which are compatible because they differ at only index 1.\n\tOn the second turn, select and remove cards \"aa\" and \"ba\", which are compatible because they differ at only index 0."
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;], x = &quot;a&quot;",
+      "input": "cards = [\"aa\",\"ab\",\"ba\"], x = \"a\"",
       "output": "1",
-      "explanation": "On the first turn, select and remove cards &quot;aa&quot; and &quot;ba&quot;."
+      "explanation": "On the first turn, select and remove cards \"aa\" and \"ba\"."
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;b&quot;",
+      "input": "cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"b\"",
       "output": "0",
       "explanation": null
     }
@@ -59,42 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;a&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"",
       "expectedOutput": "2"
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;], x = &quot;a&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\"]\n\"a\"",
       "expectedOutput": "1"
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;b&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"b\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;a&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"",
       "expectedOutput": "2"
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;], x = &quot;a&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\"]\n\"a\"",
       "expectedOutput": "1"
     },
     {
-      "input": "cards = [&quot;aa&quot;,&quot;ab&quot;,&quot;ba&quot;,&quot;ac&quot;], x = &quot;b&quot;",
+      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"b\"",
       "expectedOutput": "0"
     },
     {
-      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"a\"",
-      "expectedOutput": null
+      "input": "cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"a\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "[\"aa\",\"ab\",\"ba\"]\n\"a\"",
-      "expectedOutput": null
+      "input": "cards = [\"aa\",\"ab\",\"ba\"], x = \"a\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "[\"aa\",\"ab\",\"ba\",\"ac\"]\n\"b\"",
-      "expectedOutput": null
+      "input": "cards = [\"aa\",\"ab\",\"ba\",\"ac\"], x = \"b\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -110,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/two-letter-card-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:05.976Z",
+    "collectedAt": "2026-10-19T18:40:31.303Z",
     "sourceUpdatedAt": null
   }
 }

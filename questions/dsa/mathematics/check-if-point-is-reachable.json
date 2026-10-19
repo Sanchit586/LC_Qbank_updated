@@ -24,7 +24,7 @@
     {
       "input": "targetX = 4, targetY = 7",
       "output": "true",
-      "explanation": "You can follow the path (1,1) -&gt; (1,2) -&gt; (1,4) -&gt; (1,8) -&gt; (1,7) -&gt; (2,7) -&gt; (4,7)."
+      "explanation": "You can follow the path (1,1) -> (1,2) -> (1,4) -> (1,8) -> (1,7) -> (2,7) -> (4,7)."
     }
   ],
   "starterCode": {
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "targetX = 6, targetY = 9",
+      "input": "6\n9",
       "expectedOutput": "false"
     },
     {
-      "input": "targetX = 4, targetY = 7",
+      "input": "4\n7",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "6\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4\n7",
+      "expectedOutput": "true"
+    },
+    {
       "input": "targetX = 6, targetY = 9",
       "expectedOutput": "false"
     },
     {
       "input": "targetX = 4, targetY = 7",
       "expectedOutput": "true"
-    },
-    {
-      "input": "6\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "targetX = 7, targetY = 10",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-point-is-reachable/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.205Z",
+    "collectedAt": "2026-10-19T18:40:14.216Z",
     "sourceUpdatedAt": null
   }
 }

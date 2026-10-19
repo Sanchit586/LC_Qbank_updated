@@ -18,12 +18,12 @@
     {
       "input": "n = 4",
       "output": "12",
-      "explanation": "The 12 strings which can be rearranged to have &quot;leet&quot; as a substring are: &quot;eelt&quot;, &quot;eetl&quot;, &quot;elet&quot;, &quot;elte&quot;, &quot;etel&quot;, &quot;etle&quot;, &quot;leet&quot;, &quot;lete&quot;, &quot;ltee&quot;, &quot;teel&quot;, &quot;tele&quot;, and &quot;tlee&quot;."
+      "explanation": "The 12 strings which can be rearranged to have \"leet\" as a substring are: \"eelt\", \"eetl\", \"elet\", \"elte\", \"etel\", \"etle\", \"leet\", \"lete\", \"ltee\", \"teel\", \"tele\", and \"tlee\"."
     },
     {
       "input": "n = 10",
       "output": "83943898",
-      "explanation": "The number of strings with length 10 which can be rearranged to have &quot;leet&quot; as a substring is 526083947580. Hence the answer is 526083947580 % (109 + 7) = 83943898."
+      "explanation": "The number of strings with length 10 which can be rearranged to have \"leet\" as a substring is 526083947580. Hence the answer is 526083947580 % (109 + 7) = 83943898."
     }
   ],
   "starterCode": {
@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 10",
+      "input": "10",
       "expectedOutput": "83943898"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "83943898"
+    },
+    {
       "input": "n = 4",
       "expectedOutput": "12"
     },
     {
       "input": "n = 10",
       "expectedOutput": "83943898"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-strings-which-can-be-rearranged-to-contain-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.198Z",
+    "collectedAt": "2026-10-19T18:40:26.091Z",
     "sourceUpdatedAt": null
   }
 }

@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[1,-1],[-1,1]]",
+      "input": "[[1,-1],[-1,1]]",
       "expectedOutput": "4"
     },
     {
-      "input": "matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]",
+      "input": "[[1,2,3],[-1,-2,-3],[1,2,3]]",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,-1],[-1,1]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,2,3],[-1,-2,-3],[1,2,3]]",
+      "expectedOutput": "16"
+    },
+    {
       "input": "matrix = [[1,-1],[-1,1]]",
       "expectedOutput": "4"
     },
     {
       "input": "matrix = [[1,2,3],[-1,-2,-3],[1,2,3]]",
       "expectedOutput": "16"
-    },
-    {
-      "input": "[[1,-1],[-1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,3],[-1,-2,-3],[1,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,-2],[-2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-matrix-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.683Z",
+    "collectedAt": "2026-10-19T18:40:21.960Z",
     "sourceUpdatedAt": null
   }
 }

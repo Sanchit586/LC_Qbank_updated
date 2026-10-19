@@ -22,12 +22,12 @@
     {
       "input": "prices = [4,2,8], strategy = [-1,0,1], k = 2",
       "output": "10",
-      "explanation": "Modification\n\t\t\tStrategy\n\t\t\tProfit Calculation\n\t\t\tProfit\n\t\t\n\t\n\t\n\t\t\n\t\t\tOriginal\n\t\t\t[-1, 0, 1]\n\t\t\t(-1 &times; 4) + (0 &times; 2) + (1 &times; 8) = -4 + 0 + 8\n\t\t\t4\n\t\t\n\t\t\n\t\t\tModify [0, 1]\n\t\t\t[0, 1, 1]\n\t\t\t(0 &times; 4) + (1 &times; 2) + (1 &times; 8) = 0 + 2 + 8\n\t\t\t10\n\t\t\n\t\t\n\t\t\tModify [1, 2]\n\t\t\t[-1, 0, 1]\n\t\t\t(-1 &times; 4) + (0 &times; 2) + (1 &times; 8) = -4 + 0 + 8\n\t\t\t4"
+      "explanation": "Modification\n\t\t\tStrategy\n\t\t\tProfit Calculation\n\t\t\tProfit\n\t\t\n\t\n\t\n\t\t\n\t\t\tOriginal\n\t\t\t[-1, 0, 1]\n\t\t\t(-1 × 4) + (0 × 2) + (1 × 8) = -4 + 0 + 8\n\t\t\t4\n\t\t\n\t\t\n\t\t\tModify [0, 1]\n\t\t\t[0, 1, 1]\n\t\t\t(0 × 4) + (1 × 2) + (1 × 8) = 0 + 2 + 8\n\t\t\t10\n\t\t\n\t\t\n\t\t\tModify [1, 2]\n\t\t\t[-1, 0, 1]\n\t\t\t(-1 × 4) + (0 × 2) + (1 × 8) = -4 + 0 + 8\n\t\t\t4"
     },
     {
       "input": "prices = [5,4,3], strategy = [1,1,0], k = 2",
       "output": "9",
-      "explanation": "Modification\n\t\t\tStrategy\n\t\t\tProfit Calculation\n\t\t\tProfit\n\t\t\n\t\n\t\n\t\t\n\t\t\tOriginal\n\t\t\t[1, 1, 0]\n\t\t\t(1 &times; 5) + (1 &times; 4) + (0 &times; 3) = 5 + 4 + 0\n\t\t\t9\n\t\t\n\t\t\n\t\t\tModify [0, 1]\n\t\t\t[0, 1, 0]\n\t\t\t(0 &times; 5) + (1 &times; 4) + (0 &times; 3) = 0 + 4 + 0\n\t\t\t4\n\t\t\n\t\t\n\t\t\tModify [1, 2]\n\t\t\t[1, 0, 1]\n\t\t\t(1 &times; 5) + (0 &times; 4) + (1 &times; 3) = 5 + 0 + 3\n\t\t\t8"
+      "explanation": "Modification\n\t\t\tStrategy\n\t\t\tProfit Calculation\n\t\t\tProfit\n\t\t\n\t\n\t\n\t\t\n\t\t\tOriginal\n\t\t\t[1, 1, 0]\n\t\t\t(1 × 5) + (1 × 4) + (0 × 3) = 5 + 4 + 0\n\t\t\t9\n\t\t\n\t\t\n\t\t\tModify [0, 1]\n\t\t\t[0, 1, 0]\n\t\t\t(0 × 5) + (1 × 4) + (0 × 3) = 0 + 4 + 0\n\t\t\t4\n\t\t\n\t\t\n\t\t\tModify [1, 2]\n\t\t\t[1, 0, 1]\n\t\t\t(1 × 5) + (0 × 4) + (1 × 3) = 5 + 0 + 3\n\t\t\t8"
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "prices = [4,2,8], strategy = [-1,0,1], k = 2",
+      "input": "[4,2,8]\n[-1,0,1]\n2",
       "expectedOutput": "10"
     },
     {
-      "input": "prices = [5,4,3], strategy = [1,1,0], k = 2",
+      "input": "[5,4,3]\n[1,1,0]\n2",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
+      "input": "[4,2,8]\n[-1,0,1]\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[5,4,3]\n[1,1,0]\n2",
+      "expectedOutput": "9"
+    },
+    {
       "input": "prices = [4,2,8], strategy = [-1,0,1], k = 2",
       "expectedOutput": "10"
     },
     {
       "input": "prices = [5,4,3], strategy = [1,1,0], k = 2",
       "expectedOutput": "9"
-    },
-    {
-      "input": "[4,2,8]\n[-1,0,1]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,4,3]\n[1,1,0]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "prices = [5,3,9], strategy = [-2,1,2], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-using-strategy/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.668Z",
+    "collectedAt": "2026-10-19T18:40:13.520Z",
     "sourceUpdatedAt": null
   }
 }

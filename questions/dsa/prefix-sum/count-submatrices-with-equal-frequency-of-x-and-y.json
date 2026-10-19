@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "grid = [[&quot;X&quot;,&quot;Y&quot;,&quot;.&quot;],[&quot;Y&quot;,&quot;.&quot;,&quot;.&quot;]]",
+      "input": "grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;Y&quot;]]",
+      "input": "grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;.&quot;,&quot;.&quot;],[&quot;.&quot;,&quot;.&quot;]]",
+      "input": "grid = [[\".\",\".\"],[\".\",\".\"]]",
       "output": "0",
       "explanation": null
     }
@@ -55,42 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[&quot;X&quot;,&quot;Y&quot;,&quot;.&quot;],[&quot;Y&quot;,&quot;.&quot;,&quot;.&quot;]]",
+      "input": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;Y&quot;]]",
+      "input": "[[\"X\",\"X\"],[\"X\",\"Y\"]]",
       "expectedOutput": "0"
     },
     {
-      "input": "grid = [[&quot;.&quot;,&quot;.&quot;],[&quot;.&quot;,&quot;.&quot;]]",
+      "input": "[[\".\",\".\"],[\".\",\".\"]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [[&quot;X&quot;,&quot;Y&quot;,&quot;.&quot;],[&quot;Y&quot;,&quot;.&quot;,&quot;.&quot;]]",
+      "input": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[&quot;X&quot;,&quot;X&quot;],[&quot;X&quot;,&quot;Y&quot;]]",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "grid = [[&quot;.&quot;,&quot;.&quot;],[&quot;.&quot;,&quot;.&quot;]]",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "[[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
-      "expectedOutput": null
-    },
-    {
       "input": "[[\"X\",\"X\"],[\"X\",\"Y\"]]",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "[[\".\",\".\"],[\".\",\".\"]]",
-      "expectedOutput": null
+      "expectedOutput": "0"
+    },
+    {
+      "input": "grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "grid = [[\".\",\".\"],[\".\",\".\"]]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -106,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-submatrices-with-equal-frequency-of-x-and-y/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.013Z",
+    "collectedAt": "2026-10-19T18:40:15.676Z",
     "sourceUpdatedAt": null
   }
 }

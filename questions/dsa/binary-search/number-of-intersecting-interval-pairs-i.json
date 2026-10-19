@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "intervals = [[1,2],[2,3],[3,4]]",
+      "input": "[[1,2],[2,3],[3,4]]",
       "expectedOutput": "2"
     },
     {
-      "input": "intervals = [[1,5],[2,4],[3,6]]",
+      "input": "[[1,5],[2,4],[3,6]]",
       "expectedOutput": "3"
     },
     {
-      "input": "intervals = [[1,2],[3,4],[5,6]]",
+      "input": "[[1,2],[3,4],[5,6]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3],[3,4]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,5],[2,4],[3,6]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "intervals = [[1,2],[2,3],[3,4]]",
       "expectedOutput": "2"
     },
@@ -81,38 +93,6 @@
     {
       "input": "intervals = [[1,2],[3,4],[5,6]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[1,2],[2,3],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,5],[2,4],[3,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[3,4],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,6],[3,5],[4,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,3],[4,5],[6,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[3,4],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,6],[3,5],[4,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,3],[3,4],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-intersecting-interval-pairs-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:40.728Z",
+    "collectedAt": "2026-10-19T18:40:25.931Z",
     "sourceUpdatedAt": null
   }
 }

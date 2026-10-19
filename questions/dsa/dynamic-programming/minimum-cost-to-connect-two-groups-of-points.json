@@ -28,13 +28,13 @@
   "examples": [
     {
       "input": "cost = [[15, 96], [36, 2]]",
-      "output": "17\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\nThis results in a total cost of 17.",
-      "explanation": null
+      "output": "17",
+      "explanation": ": The optimal way of connecting the groups is:\n1--A\n2--B\nThis results in a total cost of 17."
     },
     {
       "input": "cost = [[1, 3, 5], [4, 1, 1], [1, 5, 3]]",
-      "output": "4\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\n2--C\n3--A\nThis results in a total cost of 4.\nNote that there are multiple points connected to point 2 in the first group and point A in the second group. This does not matter as there is no limit to the number of points that can be connected. We only care about the minimum total cost.",
-      "explanation": null
+      "output": "4",
+      "explanation": ": The optimal way of connecting the groups is:\n1--A\n2--B\n2--C\n3--A\nThis results in a total cost of 4.\nNote that there are multiple points connected to point 2 in the first group and point A in the second group. This does not matter as there is no limit to the number of points that can be connected. We only care about the minimum total cost."
     },
     {
       "input": "cost = [[2, 5, 1], [3, 4, 7], [8, 1, 2], [6, 2, 4], [3, 8, 8]]",
@@ -65,62 +65,42 @@
   },
   "publicTests": [
     {
-      "input": "cost = [[15, 96], [36, 2]]",
-      "expectedOutput": "17\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\nThis results in a total cost of 17."
+      "input": "[[15,96],[36,2]]",
+      "expectedOutput": "17"
     },
     {
-      "input": "cost = [[1, 3, 5], [4, 1, 1], [1, 5, 3]]",
-      "expectedOutput": "4\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\n2--C\n3--A\nThis results in a total cost of 4.\nNote that there are multiple points connected to point 2 in the first group and point A in the second group. This does not matter as there is no limit to the number of points that can be connected. We only care about the minimum total cost."
+      "input": "[[1,3,5],[4,1,1],[1,5,3]]",
+      "expectedOutput": "4"
     },
     {
-      "input": "cost = [[2, 5, 1], [3, 4, 7], [8, 1, 2], [6, 2, 4], [3, 8, 8]]",
+      "input": "[[2,5,1],[3,4,7],[8,1,2],[6,2,4],[3,8,8]]",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "[[15,96],[36,2]]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[[1,3,5],[4,1,1],[1,5,3]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[2,5,1],[3,4,7],[8,1,2],[6,2,4],[3,8,8]]",
+      "expectedOutput": "10"
+    },
+    {
       "input": "cost = [[15, 96], [36, 2]]",
-      "expectedOutput": "17\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\nThis results in a total cost of 17."
+      "expectedOutput": "17"
     },
     {
       "input": "cost = [[1, 3, 5], [4, 1, 1], [1, 5, 3]]",
-      "expectedOutput": "4\nExplanation: The optimal way of connecting the groups is:\n1--A\n2--B\n2--C\n3--A\nThis results in a total cost of 4.\nNote that there are multiple points connected to point 2 in the first group and point A in the second group. This does not matter as there is no limit to the number of points that can be connected. We only care about the minimum total cost."
+      "expectedOutput": "4"
     },
     {
       "input": "cost = [[2, 5, 1], [3, 4, 7], [8, 1, 2], [6, 2, 4], [3, 8, 8]]",
       "expectedOutput": "10"
-    },
-    {
-      "input": "[[15,96],[36,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3,5],[4,1,1],[1,5,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,5,1],[3,4,7],[8,1,2],[6,2,4],[3,8,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cost = [[2, 4, 6], [5, 2, 2], [2, 6, 4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cost = [[3, 6, 2], [4, 5, 8], [9, 2, 3], [7, 3, 5], [4, 9, 9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[16,97],[37,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,4,6],[5,2,2],[2,6,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cost = [[16, 97], [37, 3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -135,7 +115,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-connect-two-groups-of-points/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:48.299Z",
+    "collectedAt": "2026-10-19T18:40:23.600Z",
     "sourceUpdatedAt": null
   }
 }

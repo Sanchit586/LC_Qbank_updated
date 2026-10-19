@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "img = [[1,1,1],[1,0,1],[1,1,1]]",
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "[[0,0,0],[0,0,0],[0,0,0]]"
     },
     {
-      "input": "img = [[100,200,100],[200,50,200],[100,200,100]]",
+      "input": "[[100,200,100],[200,50,200],[100,200,100]]",
       "expectedOutput": "[[137,141,137],[141,138,141],[137,141,137]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
+      "expectedOutput": "[[0,0,0],[0,0,0],[0,0,0]]"
+    },
+    {
+      "input": "[[100,200,100],[200,50,200],[100,200,100]]",
+      "expectedOutput": "[[137,141,137],[141,138,141],[137,141,137]]"
+    },
+    {
       "input": "img = [[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "[[0,0,0],[0,0,0],[0,0,0]]"
     },
     {
       "input": "img = [[100,200,100],[200,50,200],[100,200,100]]",
       "expectedOutput": "[[137,141,137],[141,138,141],[137,141,137]]"
-    },
-    {
-      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[100,200,100],[200,50,200],[100,200,100]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "img = [[2,2,2],[2,1,2],[2,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/image-smoother/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.569Z",
+    "collectedAt": "2026-10-19T18:40:19.435Z",
     "sourceUpdatedAt": null
   }
 }

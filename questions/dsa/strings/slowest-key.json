@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "releaseTimes = [9,29,49,50], keysPressed = &quot;cbcd&quot;",
-      "output": "&quot;c&quot;",
-      "explanation": "The keypresses were as follows:\nKeypress for &#39;c&#39; had a duration of 9 (pressed at time 0 and released at time 9).\nKeypress for &#39;b&#39; had a duration of 29 - 9 = 20 (pressed at time 9 right after the release of the previous character and released at time 29).\nKeypress for &#39;c&#39; had a duration of 49 - 29 = 20 (pressed at time 29 right after the release of the previous character and released at time 49).\nKeypress for &#39;d&#39; had a duration of 50 - 49 = 1 (pressed at time 49 right after the release of the previous character and released at time 50).\nThe longest of these was the keypress for &#39;b&#39; and the second keypress for &#39;c&#39;, both with duration 20.\n&#39;c&#39; is lexicographically larger than &#39;b&#39;, so the answer is &#39;c&#39;."
+      "input": "releaseTimes = [9,29,49,50], keysPressed = \"cbcd\"",
+      "output": "\"c\"",
+      "explanation": "The keypresses were as follows:\nKeypress for 'c' had a duration of 9 (pressed at time 0 and released at time 9).\nKeypress for 'b' had a duration of 29 - 9 = 20 (pressed at time 9 right after the release of the previous character and released at time 29).\nKeypress for 'c' had a duration of 49 - 29 = 20 (pressed at time 29 right after the release of the previous character and released at time 49).\nKeypress for 'd' had a duration of 50 - 49 = 1 (pressed at time 49 right after the release of the previous character and released at time 50).\nThe longest of these was the keypress for 'b' and the second keypress for 'c', both with duration 20.\n'c' is lexicographically larger than 'b', so the answer is 'c'."
     },
     {
-      "input": "releaseTimes = [12,23,36,46,62], keysPressed = &quot;spuda&quot;",
-      "output": "&quot;a&quot;",
-      "explanation": "The keypresses were as follows:\nKeypress for &#39;s&#39; had a duration of 12.\nKeypress for &#39;p&#39; had a duration of 23 - 12 = 11.\nKeypress for &#39;u&#39; had a duration of 36 - 23 = 13.\nKeypress for &#39;d&#39; had a duration of 46 - 36 = 10.\nKeypress for &#39;a&#39; had a duration of 62 - 46 = 16.\nThe longest of these was the keypress for &#39;a&#39; with duration 16."
+      "input": "releaseTimes = [12,23,36,46,62], keysPressed = \"spuda\"",
+      "output": "\"a\"",
+      "explanation": "The keypresses were as follows:\nKeypress for 's' had a duration of 12.\nKeypress for 'p' had a duration of 23 - 12 = 11.\nKeypress for 'u' had a duration of 36 - 23 = 13.\nKeypress for 'd' had a duration of 46 - 36 = 10.\nKeypress for 'a' had a duration of 62 - 46 = 16.\nThe longest of these was the keypress for 'a' with duration 16."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "releaseTimes = [9,29,49,50], keysPressed = &quot;cbcd&quot;",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "[9,29,49,50]\n\"cbcd\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "releaseTimes = [12,23,36,46,62], keysPressed = &quot;spuda&quot;",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "[12,23,36,46,62]\n\"spuda\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "testCases": [
     {
-      "input": "releaseTimes = [9,29,49,50], keysPressed = &quot;cbcd&quot;",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
-      "input": "releaseTimes = [12,23,36,46,62], keysPressed = &quot;spuda&quot;",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
       "input": "[9,29,49,50]\n\"cbcd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
       "input": "[12,23,36,46,62]\n\"spuda\"",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "releaseTimes = [10,30,50,51], keysPressed = &quot;cbcd&quot;",
-      "expectedOutput": null
+      "input": "releaseTimes = [9,29,49,50], keysPressed = \"cbcd\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "releaseTimes = [12,23,36,46,62], keysPressed = \"spuda\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/slowest-key/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.032Z",
+    "collectedAt": "2026-10-19T18:40:29.697Z",
     "sourceUpdatedAt": null
   }
 }

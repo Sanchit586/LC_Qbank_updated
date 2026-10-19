@@ -23,9 +23,9 @@
   ],
   "examples": [
     {
-      "input": "[&quot;TaskManager&quot;, &quot;add&quot;, &quot;edit&quot;, &quot;execTop&quot;, &quot;rmv&quot;, &quot;add&quot;, &quot;execTop&quot;]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]",
+      "input": "[\"TaskManager\", \"add\", \"edit\", \"execTop\", \"rmv\", \"add\", \"execTop\"]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]",
       "output": "[null, null, null, 3, null, null, 5]",
-      "explanation": null
+      "explanation": "TaskManager taskManager = new TaskManager([[1, 101, 10], [2, 102, 20], [3, 103, 15]]); // Initializes with three tasks for Users 1, 2, and 3.\ntaskManager.add(4, 104, 5); // Adds task 104 with priority 5 for User 4.\ntaskManager.edit(102, 8); // Updates priority of task 102 to 8.\ntaskManager.execTop(); // return 3. Executes task 103 for User 3.\ntaskManager.rmv(101); // Removes task 101 from the system.\ntaskManager.add(5, 105, 15); // Adds task 105 with priority 15 for User 5.\ntaskManager.execTop(); // return 5. Executes task 105 for User 5."
     }
   ],
   "starterCode": {
@@ -51,22 +51,18 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;TaskManager&quot;, &quot;add&quot;, &quot;edit&quot;, &quot;execTop&quot;, &quot;rmv&quot;, &quot;add&quot;, &quot;execTop&quot;]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]",
+      "input": "[\"TaskManager\",\"add\",\"edit\",\"execTop\",\"rmv\",\"add\",\"execTop\"]\n[[[[1,101,10],[2,102,20],[3,103,15]]],[4,104,5],[102,8],[],[101],[5,105,15],[]]",
       "expectedOutput": "[null, null, null, 3, null, null, 5]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;TaskManager&quot;, &quot;add&quot;, &quot;edit&quot;, &quot;execTop&quot;, &quot;rmv&quot;, &quot;add&quot;, &quot;execTop&quot;]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]",
+      "input": "[\"TaskManager\",\"add\",\"edit\",\"execTop\",\"rmv\",\"add\",\"execTop\"]\n[[[[1,101,10],[2,102,20],[3,103,15]]],[4,104,5],[102,8],[],[101],[5,105,15],[]]",
       "expectedOutput": "[null, null, null, 3, null, null, 5]"
     },
     {
-      "input": "[\"TaskManager\",\"add\",\"edit\",\"execTop\",\"rmv\",\"add\",\"execTop\"]\n[[[[1,101,10],[2,102,20],[3,103,15]]],[4,104,5],[102,8],[],[101],[5,105,15],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;TaskManager&quot;, &quot;add&quot;, &quot;edit&quot;, &quot;execTop&quot;, &quot;rmv&quot;, &quot;add&quot;, &quot;execTop&quot;]\n[[[[2, 102, 11], [3, 103, 21], [4, 104, 16]]], [5, 105, 6], [103, 9], [], [102], [6, 106, 16], []]",
-      "expectedOutput": null
+      "input": "[\"TaskManager\", \"add\", \"edit\", \"execTop\", \"rmv\", \"add\", \"execTop\"]\n[[[[1, 101, 10], [2, 102, 20], [3, 103, 15]]], [4, 104, 5], [102, 8], [], [101], [5, 105, 15], []]",
+      "expectedOutput": "[null, null, null, 3, null, null, 5]"
     }
   ],
   "sqlSchema": null,
@@ -78,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-task-manager/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.912Z",
+    "collectedAt": "2026-10-19T18:40:16.528Z",
     "sourceUpdatedAt": null
   }
 }

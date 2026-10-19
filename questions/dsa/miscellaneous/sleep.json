@@ -14,7 +14,7 @@
     {
       "input": "millis = 100",
       "output": "100",
-      "explanation": "It should return a promise that resolves after 100ms.\nlet t = Date.now();\nsleep(100).then(() =&gt; {\n  console.log(Date.now() - t); // 100\n});"
+      "explanation": "It should return a promise that resolves after 100ms.\nlet t = Date.now();\nsleep(100).then(() => {\n  console.log(Date.now() - t); // 100\n});"
     },
     {
       "input": "millis = 200",
@@ -28,90 +28,30 @@
   },
   "publicTests": [
     {
-      "input": "millis = 100",
+      "input": "100",
       "expectedOutput": "100"
     },
     {
-      "input": "millis = 200",
+      "input": "200",
       "expectedOutput": "200"
     }
   ],
   "testCases": [
     {
+      "input": "100",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "200",
+      "expectedOutput": "200"
+    },
+    {
       "input": "millis = 100",
       "expectedOutput": "100"
     },
     {
       "input": "millis = 200",
       "expectedOutput": "200"
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "200",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "201",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +67,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sleep/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:29.131Z",
+    "collectedAt": "2026-10-19T18:40:29.668Z",
     "sourceUpdatedAt": null
   }
 }

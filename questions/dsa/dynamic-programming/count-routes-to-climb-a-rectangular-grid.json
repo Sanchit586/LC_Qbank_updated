@@ -13,29 +13,29 @@
   ],
   "statement": "You are given a string array `grid` of size `n`, where each string `grid[i]` has length `m`. The character `grid[i][j]` is one of the following symbols:\n\n*   `'.'`: The cell is available.\n*   `'#'`: The cell is blocked.\n\nYou want to count the number of different routes to climb `grid`. Each route must start from _any cell_ in the bottom row (row `n - 1`) and end in the top row (row 0).\n\nHowever, there are some constraints on the route.\n\n*   You can only move from one available cell to **another** available cell.\n*   The **Euclidean distance** of each move is **at most** `d`, where `d` is an integer parameter given to you. The Euclidean distance between two cells `(r1, c1)`, `(r2, c2)` is `sqrt((r1 - r2)^(2) + (c1 - c2)^(2))`.\n*   Each move either stays on the same row or moves to the row directly above (from row `r` to `r - 1`).\n*   You cannot stay on the same row for two consecutive turns. If you stay on the same row in a move (and this move is not the last move), your next move must go to the row above.\n\nReturn an integer denoting the number of such routes. Since the answer may be very large, return it **modulo** `10^(9) + 7`.\n\n**Example 1:**\n\n**Input:** grid = \\[\"..\",\"#.\"\\], d = 1\n\n**Output:** 2\n\n**Explanation:**\n\nWe label the cells we visit in the routes sequentially, starting from 1. The two routes are:\n\n```\n.2\n#1\n```\n```\n32\n#1\n```\n\nWe can move from the cell (1, 1) to the cell (0, 1) because the Euclidean distance is `sqrt((1 - 0)^(2) + (1 - 1)^(2)) = sqrt(1) <= d`.\n\nHowever, we cannot move from the cell (1, 1) to the cell (0, 0) because the Euclidean distance is `sqrt((1 - 0)^(2) + (1 - 0)^(2)) = sqrt(2) > d`.\n\n**Example 2:**\n\n**Input:** grid = \\[\"..\",\"#.\"\\], d = 2\n\n**Output:** 4\n\n**Explanation:**\n\nTwo of the routes are given in example 1. The other two routes are:\n\n```\n2.\n#1\n```\n```\n23\n#1\n```\n\nNote that we can move from (1, 1) to (0, 0) because the Euclidean distance is `sqrt(2) <= d`.\n\n**Example 3:**\n\n**Input:** grid = \\[\"#\"\\], d = 750\n\n**Output:** 0\n\n**Explanation:**\n\nWe cannot choose any cell as the starting cell. Therefore, there are no routes.\n\n**Example 4:**\n\n**Input:** grid = \\[\"..\"\\], d = 1\n\n**Output:** 4\n\n**Explanation:**\n\nThe possible routes are:\n\n```\n.1\n```\n```\n1.\n```\n```\n12\n```\n```\n21\n```\n\n**Constraints:**\n\n*   `1 <= n == grid.length <= 750`\n*   `1 <= m == grid[i].length <= 750`\n*   `grid[i][j]` is `'.'` or `'#'`.\n*   `1 <= d <= 750`",
   "constraints": [
-    "1 <= n == grid.length <= 750",
-    "1 <= m == grid[i].length <= 750",
-    "grid[i][j] is '.' or '#'.",
-    "1 <= d <= 750"
+    "You can only move from one available cell to another available cell.",
+    "The Euclidean distance of each move is at most d, where d is an integer parameter given to you. The Euclidean distance between two cells (r1, c1), (r2, c2) is sqrt((r1 - r2)2 + (c1 - c2)2).",
+    "Each move either stays on the same row or moves to the row directly above (from row r to r - 1).",
+    "You cannot stay on the same row for two consecutive turns. If you stay on the same row in a move (and this move is not the last move), your next move must go to the row above."
   ],
   "examples": [
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 1",
+      "input": "grid = [\"..\",\"#.\"], d = 1",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 2",
+      "input": "grid = [\"..\",\"#.\"], d = 2",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "grid = [&quot;#&quot;], d = 750",
+      "input": "grid = [\"#\"], d = 750",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "grid = [&quot;..&quot;], d = 1",
+      "input": "grid = [\"..\"], d = 1",
       "output": "4",
       "explanation": null
     }
@@ -63,102 +63,54 @@
   },
   "publicTests": [
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 1",
+      "input": "[\"..\",\"#.\"]\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 2",
+      "input": "[\"..\",\"#.\"]\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [&quot;#&quot;], d = 750",
+      "input": "[\"#\"]\n750",
       "expectedOutput": "0"
     },
     {
-      "input": "grid = [&quot;..&quot;], d = 1",
+      "input": "[\"..\"]\n1",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 1",
+      "input": "[\"..\",\"#.\"]\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [&quot;..&quot;,&quot;#.&quot;], d = 2",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "grid = [&quot;#&quot;], d = 750",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "grid = [&quot;..&quot;], d = 1",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "[\"..\",\"#.\"]\n1",
-      "expectedOutput": null
-    },
-    {
       "input": "[\"..\",\"#.\"]\n2",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "[\"#\"]\n750",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "[\"..\"]\n1",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "grid = [\"..\",\"#.\"], d = 1",
+      "expectedOutput": "2"
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
+      "input": "grid = [\"..\",\"#.\"], d = 2",
+      "expectedOutput": "4"
     },
     {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
+      "input": "grid = [\"#\"], d = 750",
+      "expectedOutput": "0"
     },
     {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
+      "input": "grid = [\"..\"], d = 1",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -175,7 +127,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-routes-to-climb-a-rectangular-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:20.662Z",
+    "collectedAt": "2026-10-19T18:40:15.539Z",
     "sourceUpdatedAt": null
   }
 }

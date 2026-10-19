@@ -15,7 +15,13 @@
     "Methods pop, top and getMin operations will always be called on non-empty stacks.",
     "At most 3 * 104 calls will be made to push, pop, top, and getMin."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]",
+      "output": "[null,null,null,null,-3,null,0,-2]",
+      "explanation": "MinStack minStack = new MinStack();\nminStack.push(-2);\nminStack.push(0);\nminStack.push(-3);\nminStack.getMin(); // return -3\nminStack.pop();\nminStack.top();    // return 0\nminStack.getMin(); // return -2"
+    }
+  ],
   "starterCode": {
     "cpp": "class MinStack {\npublic:\n    MinStack() {\n        \n    }\n    \n    void push(int value) {\n        \n    }\n    \n    void pop() {\n        \n    }\n    \n    int top() {\n        \n    }\n    \n    int getMin() {\n        \n    }\n};\n\n/**\n * Your MinStack object will be instantiated and called as such:\n * MinStack* obj = new MinStack();\n * obj->push(value);\n * obj->pop();\n * int param_3 = obj->top();\n * int param_4 = obj->getMin();\n */",
     "java": "class MinStack {\n\n    public MinStack() {\n        \n    }\n    \n    public void push(int value) {\n        \n    }\n    \n    public void pop() {\n        \n    }\n    \n    public int top() {\n        \n    }\n    \n    public int getMin() {\n        \n    }\n}\n\n/**\n * Your MinStack object will be instantiated and called as such:\n * MinStack obj = new MinStack();\n * obj.push(value);\n * obj.pop();\n * int param_3 = obj.top();\n * int param_4 = obj.getMin();\n */",
@@ -40,17 +46,13 @@
   "publicTests": [
     {
       "input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,-3,null,0,-2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-2],[0],[-3],[],[],[],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"MinStack\",\"push\",\"push\",\"push\",\"getMin\",\"pop\",\"top\",\"getMin\"]\n[[],[-3],[1],[-4],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,-3,null,0,-2]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +66,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/min-stack/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:40.606Z",
+    "collectedAt": "2026-10-19T18:40:23.187Z",
     "sourceUpdatedAt": null
   }
 }

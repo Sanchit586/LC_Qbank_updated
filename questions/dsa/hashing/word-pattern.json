@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat dog&quot;",
+      "input": "pattern = \"abba\", s = \"dog cat cat dog\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat fish&quot;",
+      "input": "pattern = \"abba\", s = \"dog cat cat fish\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "pattern = &quot;aaaa&quot;, s = &quot;dog cat cat dog&quot;",
+      "input": "pattern = \"aaaa\", s = \"dog cat cat dog\"",
       "output": "false",
       "explanation": null
     }
@@ -58,90 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat dog&quot;",
+      "input": "\"abba\"\n\"dog cat cat dog\"",
       "expectedOutput": "true"
     },
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat fish&quot;",
+      "input": "\"abba\"\n\"dog cat cat fish\"",
       "expectedOutput": "false"
     },
     {
-      "input": "pattern = &quot;aaaa&quot;, s = &quot;dog cat cat dog&quot;",
+      "input": "\"aaaa\"\n\"dog cat cat dog\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat dog&quot;",
+      "input": "\"abba\"\n\"dog cat cat dog\"",
       "expectedOutput": "true"
     },
     {
-      "input": "pattern = &quot;abba&quot;, s = &quot;dog cat cat fish&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "pattern = &quot;aaaa&quot;, s = &quot;dog cat cat dog&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"abba\"\n\"dog cat cat dog\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abba\"\n\"dog cat cat fish\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"aaaa\"\n\"dog cat cat dog\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "pattern = \"abba\", s = \"dog cat cat dog\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "pattern = \"abba\", s = \"dog cat cat fish\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "pattern = \"aaaa\", s = \"dog cat cat dog\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/word-pattern/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:14.391Z",
+    "collectedAt": "2026-10-19T18:40:31.782Z",
     "sourceUpdatedAt": null
   }
 }

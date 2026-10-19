@@ -112,10 +112,10 @@
             "type": "string"
           },
           "expectedOutput": {
-            "type": ["string", "null"]
+            "type": "string"
           }
         },
-        "required": ["input"],
+        "required": ["input", "expectedOutput"],
         "additionalProperties": false
       },
       "default": null
@@ -159,10 +159,10 @@
             "type": "string"
           },
           "expectedOutput": {
-            "type": ["string", "null"]
+            "type": "string"
           }
         },
-        "required": ["input"],
+        "required": ["input", "expectedOutput"],
         "additionalProperties": false
       },
       "default": null

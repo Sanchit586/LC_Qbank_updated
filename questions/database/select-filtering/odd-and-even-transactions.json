@@ -10,7 +10,13 @@
   ],
   "statement": "Table: `transactions`\n\n```\n+------------------+------+\n| Column Name      | Type | \n+------------------+------+\n| transaction_id   | int  |\n| amount           | int  |\n| transaction_date | date |\n+------------------+------+\nThe transactions_id column uniquely identifies each row in this table.\nEach row of this table contains the transaction id, amount and transaction date.\n```\n\nWrite a solution to find the **sum of amounts** for **odd** and **even** transactions for each day. If there are no odd or even transactions for a specific date, display as `0`.\n\nReturn _the result table ordered by_ `transaction_date` _in **ascending** order_.\n\nThe result format is in the following example.\n\n**Example:**\n\n**Input:**\n\n`transactions` table:\n\n```\n+----------------+--------+------------------+\n| transaction_id | amount | transaction_date |\n+----------------+--------+------------------+\n| 1              | 150    | 2024-07-01       |\n| 2              | 200    | 2024-07-01       |\n| 3              | 75     | 2024-07-01       |\n| 4              | 300    | 2024-07-02       |\n| 5              | 50     | 2024-07-02       |\n| 6              | 120    | 2024-07-03       |\n+----------------+--------+------------------+\n```\n\n**Output:**\n\n```\n+------------------+---------+----------+\n| transaction_date | odd_sum | even_sum |\n+------------------+---------+----------+\n| 2024-07-01       | 75      | 350      |\n| 2024-07-02       | 0       | 350      |\n| 2024-07-03       | 0       | 120      |\n+------------------+---------+----------+\n```\n\n**Explanation:**\n\n*   For transaction dates:\n    *   2024-07-01:\n        *   Sum of amounts for odd transactions: 75\n        *   Sum of amounts for even transactions: 150 + 200 = 350\n    *   2024-07-02:\n        *   Sum of amounts for odd transactions: 0\n        *   Sum of amounts for even transactions: 300 + 50 = 350\n    *   2024-07-03:\n        *   Sum of amounts for odd transactions: 0\n        *   Sum of amounts for even transactions: 120\n\n**Note:** The output table is ordered by `transaction_date` in ascending order.",
   "constraints": [],
-  "examples": [],
+  "examples": [
+    {
+      "input": "transactions table:\n\n\n+----------------+--------+------------------+\n| transaction_id | amount | transaction_date |\n+----------------+--------+------------------+\n| 1              | 150    | 2024-07-01       |\n| 2              | 200    | 2024-07-01       |\n| 3              | 75     | 2024-07-01       |\n| 4              | 300    | 2024-07-02       |\n| 5              | 50     | 2024-07-02       |\n| 6              | 120    | 2024-07-03       |\n+----------------+--------+------------------+",
+      "output": "+------------------+---------+----------+\n| transaction_date | odd_sum | even_sum |\n+------------------+---------+----------+\n| 2024-07-01       | 75      | 350      |\n| 2024-07-02       | 0       | 350      |\n| 2024-07-03       | 0       | 120      |\n+------------------+---------+----------+",
+      "explanation": "For transaction dates:\n\t\n\t\t2024-07-01:\n\t\t\n\t\t\tSum of amounts for odd transactions: 75\n\t\t\tSum of amounts for even transactions: 150 + 200 = 350\n\t\t\n\t\t\n\t\t2024-07-02:\n\t\t\n\t\t\tSum of amounts for odd transactions: 0\n\t\t\tSum of amounts for even transactions: 300 + 50 = 350\n\t\t\n\t\t\n\t\t2024-07-03:\n\t\t\n\t\t\tSum of amounts for odd transactions: 0\n\t\t\tSum of amounts for even transactions: 120"
+    }
+  ],
   "starterCode": {
     "mysql": "# Write your MySQL query statement below\n",
     "mssql": "/* Write your T-SQL query statement below */\n",
@@ -21,25 +27,17 @@
   "publicTests": [
     {
       "input": "{\"headers\":{\"transactions\":[\"transaction_id\",\"amount\",\"transaction_date\"]},\"rows\":{\"transactions\":[[1,150,\"2024-07-01\"],[2,200,\"2024-07-01\"],[3,75,\"2024-07-01\"],[4,300,\"2024-07-02\"],[5,50,\"2024-07-02\"],[6,120,\"2024-07-03\"]]}}",
-      "expectedOutput": null
+      "expectedOutput": "+------------------+---------+----------+\n| transaction_date | odd_sum | even_sum |\n+------------------+---------+----------+\n| 2024-07-01       | 75      | 350      |\n| 2024-07-02       | 0       | 350      |\n| 2024-07-03       | 0       | 120      |\n+------------------+---------+----------+"
     }
   ],
   "testCases": [
     {
       "input": "{\"headers\":{\"transactions\":[\"transaction_id\",\"amount\",\"transaction_date\"]},\"rows\":{\"transactions\":[[1,150,\"2024-07-01\"],[2,200,\"2024-07-01\"],[3,75,\"2024-07-01\"],[4,300,\"2024-07-02\"],[5,50,\"2024-07-02\"],[6,120,\"2024-07-03\"]]}}",
-      "expectedOutput": null
+      "expectedOutput": "+------------------+---------+----------+\n| transaction_date | odd_sum | even_sum |\n+------------------+---------+----------+\n| 2024-07-01       | 75      | 350      |\n| 2024-07-02       | 0       | 350      |\n| 2024-07-03       | 0       | 120      |\n+------------------+---------+----------+"
     },
     {
-      "input": "{\"headers\":{\"transactions\":[\"transaction_id\",\"amount\",\"transaction_date\"]},\"rows\":{\"transactions\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"transactions\":[\"transaction_id\",\"amount\",\"transaction_date\"]},\"rows\":{\"transactions\":[[1,150,\"2024-07-01\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"transactions\":[\"transaction_id\",\"amount\",\"transaction_date\"]},\"rows\":{\"transactions\":[[1,150,null],[2,200,null],[3,75,null],[4,300,null],[5,50,null],[6,120,null]]}}",
-      "expectedOutput": null
+      "input": "transactions table:\n\n\n+----------------+--------+------------------+\n| transaction_id | amount | transaction_date |\n+----------------+--------+------------------+\n| 1              | 150    | 2024-07-01       |\n| 2              | 200    | 2024-07-01       |\n| 3              | 75     | 2024-07-01       |\n| 4              | 300    | 2024-07-02       |\n| 5              | 50     | 2024-07-02       |\n| 6              | 120    | 2024-07-03       |\n+----------------+--------+------------------+",
+      "expectedOutput": "+------------------+---------+----------+\n| transaction_date | odd_sum | even_sum |\n+------------------+---------+----------+\n| 2024-07-01       | 75      | 350      |\n| 2024-07-02       | 0       | 350      |\n| 2024-07-03       | 0       | 120      |\n+------------------+---------+----------+"
     }
   ],
   "sqlSchema": "Create table if not exists transactions ( transaction_id int, amount int, transaction_date date)\n\nTruncate table transactions",
@@ -58,7 +56,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/odd-and-even-transactions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.941Z",
+    "collectedAt": "2026-10-19T18:40:26.351Z",
     "sourceUpdatedAt": null
   }
 }

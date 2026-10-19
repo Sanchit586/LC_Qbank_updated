@@ -10,18 +10,18 @@
   "constraints": [],
   "examples": [
     {
-      "input": "func = () =&gt; expect(5).toBe(5)",
-      "output": "{&quot;value&quot;: true}",
+      "input": "func = () => expect(5).toBe(5)",
+      "output": "{\"value\": true}",
       "explanation": "5 === 5 so this expression returns true."
     },
     {
-      "input": "func = () =&gt; expect(5).toBe(null)",
-      "output": "{&quot;error&quot;: &quot;Not Equal&quot;}",
-      "explanation": "5 !== null so this expression throw the error &quot;Not Equal&quot;."
+      "input": "func = () => expect(5).toBe(null)",
+      "output": "{\"error\": \"Not Equal\"}",
+      "explanation": "5 !== null so this expression throw the error \"Not Equal\"."
     },
     {
-      "input": "func = () =&gt; expect(5).notToBe(null)",
-      "output": "{&quot;value&quot;: true}",
+      "input": "func = () => expect(5).notToBe(null)",
+      "output": "{\"value\": true}",
       "explanation": "5 !== null so this expression returns true."
     }
   ],
@@ -31,62 +31,42 @@
   },
   "publicTests": [
     {
-      "input": "func = () =&gt; expect(5).toBe(5)",
-      "expectedOutput": "{&quot;value&quot;: true}"
+      "input": "() => expect(5).toBe(5)",
+      "expectedOutput": "{\"value\": true}"
     },
     {
-      "input": "func = () =&gt; expect(5).toBe(null)",
-      "expectedOutput": "{&quot;error&quot;: &quot;Not Equal&quot;}"
+      "input": "() => expect(5).toBe(null)",
+      "expectedOutput": "{\"error\": \"Not Equal\"}"
     },
     {
-      "input": "func = () =&gt; expect(5).notToBe(null)",
-      "expectedOutput": "{&quot;value&quot;: true}"
+      "input": "() => expect(5).notToBe(null)",
+      "expectedOutput": "{\"value\": true}"
     }
   ],
   "testCases": [
     {
-      "input": "func = () =&gt; expect(5).toBe(5)",
-      "expectedOutput": "{&quot;value&quot;: true}"
-    },
-    {
-      "input": "func = () =&gt; expect(5).toBe(null)",
-      "expectedOutput": "{&quot;error&quot;: &quot;Not Equal&quot;}"
-    },
-    {
-      "input": "func = () =&gt; expect(5).notToBe(null)",
-      "expectedOutput": "{&quot;value&quot;: true}"
-    },
-    {
       "input": "() => expect(5).toBe(5)",
-      "expectedOutput": null
+      "expectedOutput": "{\"value\": true}"
     },
     {
       "input": "() => expect(5).toBe(null)",
-      "expectedOutput": null
+      "expectedOutput": "{\"error\": \"Not Equal\"}"
     },
     {
       "input": "() => expect(5).notToBe(null)",
-      "expectedOutput": null
+      "expectedOutput": "{\"value\": true}"
     },
     {
-      "input": "func = () =&gt; expect(6).toBe(null)",
-      "expectedOutput": null
+      "input": "func = () => expect(5).toBe(5)",
+      "expectedOutput": "{\"value\": true}"
     },
     {
-      "input": "func = () =&gt; expect(6).notToBe(null)",
-      "expectedOutput": null
+      "input": "func = () => expect(5).toBe(null)",
+      "expectedOutput": "{\"error\": \"Not Equal\"}"
     },
     {
-      "input": "() => expect(6).toBe(6)",
-      "expectedOutput": null
-    },
-    {
-      "input": "() => expect(6).toBe(null)",
-      "expectedOutput": null
-    },
-    {
-      "input": "func = () =&gt; expect(6).toBe(6)",
-      "expectedOutput": null
+      "input": "func = () => expect(5).notToBe(null)",
+      "expectedOutput": "{\"value\": true}"
     }
   ],
   "sqlSchema": null,
@@ -98,7 +78,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/to-be-or-not-to-be/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:58.914Z",
+    "collectedAt": "2026-10-19T18:40:31.073Z",
     "sourceUpdatedAt": null
   }
 }

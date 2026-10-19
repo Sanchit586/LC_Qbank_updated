@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "k = 0",
+      "input": "0",
       "expectedOutput": "5"
     },
     {
-      "input": "k = 5",
+      "input": "5",
       "expectedOutput": "0"
     },
     {
-      "input": "k = 3",
+      "input": "3",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "0",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "5"
+    },
+    {
       "input": "k = 0",
       "expectedOutput": "5"
     },
@@ -77,66 +89,6 @@
     {
       "input": "k = 3",
       "expectedOutput": "5"
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -148,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/preimage-size-of-factorial-zeroes-function/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.905Z",
+    "collectedAt": "2026-10-19T18:40:26.877Z",
     "sourceUpdatedAt": null
   }
 }

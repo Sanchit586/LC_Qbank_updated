@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,9,15,50], divisors = [5,3,7,2]",
+      "input": "[2,9,15,50]\n[5,3,7,2]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [4,7,9,3,9], divisors = [5,2,3]",
+      "input": "[4,7,9,3,9]\n[5,2,3]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [20,14,21,10], divisors = [10,16,20]",
+      "input": "[20,14,21,10]\n[10,16,20]",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "[2,9,15,50]\n[5,3,7,2]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[4,7,9,3,9]\n[5,2,3]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[20,14,21,10]\n[10,16,20]",
+      "expectedOutput": "10"
+    },
+    {
       "input": "nums = [2,9,15,50], divisors = [5,3,7,2]",
       "expectedOutput": "2"
     },
@@ -77,38 +89,6 @@
     {
       "input": "nums = [20,14,21,10], divisors = [10,16,20]",
       "expectedOutput": "10"
-    },
-    {
-      "input": "[2,9,15,50]\n[5,3,7,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,7,9,3,9]\n[5,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[20,14,21,10]\n[10,16,20]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [5,8,10,4,10], divisors = [6,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [21,15,22,11], divisors = [11,17,21]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,10,16,51]\n[6,4,8,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,8,10,4,10]\n[6,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [3,10,16,51], divisors = [6,4,8,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-maximum-divisibility-score/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.982Z",
+    "collectedAt": "2026-10-19T18:40:18.401Z",
     "sourceUpdatedAt": null
   }
 }

@@ -25,14 +25,14 @@
   ],
   "examples": [
     {
-      "input": "stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;",
+      "input": "stickers = [\"with\",\"example\",\"science\"], target = \"thehat\"",
       "output": "3",
-      "explanation": "We can use 2 &quot;with&quot; stickers, and 1 &quot;example&quot; sticker.\nAfter cutting and rearrange the letters of those stickers, we can form the target &quot;thehat&quot;.\nAlso, this is the minimum number of stickers necessary to form the target string."
+      "explanation": "We can use 2 \"with\" stickers, and 1 \"example\" sticker.\nAfter cutting and rearrange the letters of those stickers, we can form the target \"thehat\".\nAlso, this is the minimum number of stickers necessary to form the target string."
     },
     {
-      "input": "stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;",
+      "input": "stickers = [\"notice\",\"possible\"], target = \"basicbasic\"",
       "output": "-1",
-      "explanation": "We cannot form the target &quot;basicbasic&quot; from cutting letters from the given stickers."
+      "explanation": "We cannot form the target \"basicbasic\" from cutting letters from the given stickers."
     }
   ],
   "starterCode": {
@@ -58,30 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;",
+      "input": "[\"with\",\"example\",\"science\"]\n\"thehat\"",
       "expectedOutput": "3"
     },
     {
-      "input": "stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;",
+      "input": "[\"notice\",\"possible\"]\n\"basicbasic\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "stickers = [&quot;with&quot;,&quot;example&quot;,&quot;science&quot;], target = &quot;thehat&quot;",
+      "input": "[\"with\",\"example\",\"science\"]\n\"thehat\"",
       "expectedOutput": "3"
     },
     {
-      "input": "stickers = [&quot;notice&quot;,&quot;possible&quot;], target = &quot;basicbasic&quot;",
+      "input": "[\"notice\",\"possible\"]\n\"basicbasic\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "[\"with\",\"example\",\"science\"]\n\"thehat\"",
-      "expectedOutput": null
+      "input": "stickers = [\"with\",\"example\",\"science\"], target = \"thehat\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "[\"notice\",\"possible\"]\n\"basicbasic\"",
-      "expectedOutput": null
+      "input": "stickers = [\"notice\",\"possible\"], target = \"basicbasic\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -95,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/stickers-to-spell-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:48.490Z",
+    "collectedAt": "2026-10-19T18:40:30.221Z",
     "sourceUpdatedAt": null
   }
 }

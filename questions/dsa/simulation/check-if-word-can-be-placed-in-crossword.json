@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot;c&quot;, &quot; &quot;]], word = &quot;abc&quot;",
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \"c\", \" \"]], word = \"abc\"",
       "output": "true",
-      "explanation": "The word &quot;abc&quot; can be placed as shown above (top to bottom)."
+      "explanation": "The word \"abc\" can be placed as shown above (top to bottom)."
     },
     {
-      "input": "board = [[&quot; &quot;, &quot;#&quot;, &quot;a&quot;], [&quot; &quot;, &quot;#&quot;, &quot;c&quot;], [&quot; &quot;, &quot;#&quot;, &quot;a&quot;]], word = &quot;ac&quot;",
+      "input": "board = [[\" \", \"#\", \"a\"], [\" \", \"#\", \"c\"], [\" \", \"#\", \"a\"]], word = \"ac\"",
       "output": "false",
       "explanation": "It is impossible to place the word because there will always be a space/letter above or below it."
     },
     {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot; &quot;, &quot;c&quot;]], word = &quot;ca&quot;",
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \" \", \"c\"]], word = \"ca\"",
       "output": "true",
-      "explanation": "The word &quot;ca&quot; can be placed as shown above (right to left)."
+      "explanation": "The word \"ca\" can be placed as shown above (right to left)."
     }
   ],
   "starterCode": {
@@ -59,42 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot;c&quot;, &quot; &quot;]], word = &quot;abc&quot;",
+      "input": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]\n\"abc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "board = [[&quot; &quot;, &quot;#&quot;, &quot;a&quot;], [&quot; &quot;, &quot;#&quot;, &quot;c&quot;], [&quot; &quot;, &quot;#&quot;, &quot;a&quot;]], word = &quot;ac&quot;",
+      "input": "[[\" \",\"#\",\"a\"],[\" \",\"#\", \"c\"],[\" \",\"#\",\"a\"]]\n\"ac\"",
       "expectedOutput": "false"
     },
     {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot; &quot;, &quot;c&quot;]], word = &quot;ca&quot;",
+      "input": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\" \",\"c\"]]\n\"ca\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot;c&quot;, &quot; &quot;]], word = &quot;abc&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "board = [[&quot; &quot;, &quot;#&quot;, &quot;a&quot;], [&quot; &quot;, &quot;#&quot;, &quot;c&quot;], [&quot; &quot;, &quot;#&quot;, &quot;a&quot;]], word = &quot;ac&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "board = [[&quot;#&quot;, &quot; &quot;, &quot;#&quot;], [&quot; &quot;, &quot; &quot;, &quot;#&quot;], [&quot;#&quot;, &quot; &quot;, &quot;c&quot;]], word = &quot;ca&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\"c\",\" \"]]\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[[\" \",\"#\",\"a\"],[\" \",\"#\", \"c\"],[\" \",\"#\",\"a\"]]\n\"ac\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "[[\"#\",\" \",\"#\"],[\" \",\" \",\"#\"],[\"#\",\" \",\"c\"]]\n\"ca\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
+    },
+    {
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \"c\", \" \"]], word = \"abc\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "board = [[\" \", \"#\", \"a\"], [\" \", \"#\", \"c\"], [\" \", \"#\", \"a\"]], word = \"ac\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "board = [[\"#\", \" \", \"#\"], [\" \", \" \", \"#\"], [\"#\", \" \", \"c\"]], word = \"ca\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -109,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-word-can-be-placed-in-crossword/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:56.902Z",
+    "collectedAt": "2026-10-19T18:40:14.281Z",
     "sourceUpdatedAt": null
   }
 }

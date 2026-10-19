@@ -25,19 +25,19 @@
   ],
   "examples": [
     {
-      "input": "recipes = [&quot;bread&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;corn&quot;]",
-      "output": "[&quot;bread&quot;]",
-      "explanation": "We can create &quot;bread&quot; since we have the ingredients &quot;yeast&quot; and &quot;flour&quot;."
+      "input": "recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\",\"flour\",\"corn\"]",
+      "output": "[\"bread\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\"."
     },
     {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "output": "[&quot;bread&quot;,&quot;sandwich&quot;]",
-      "explanation": "We can create &quot;bread&quot; since we have the ingredients &quot;yeast&quot; and &quot;flour&quot;.\nWe can create &quot;sandwich&quot; since we have the ingredient &quot;meat&quot; and can create the ingredient &quot;bread&quot;."
+      "input": "recipes = [\"bread\",\"sandwich\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "output": "[\"bread\",\"sandwich\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\".\nWe can create \"sandwich\" since we have the ingredient \"meat\" and can create the ingredient \"bread\"."
     },
     {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;],[&quot;sandwich&quot;,&quot;meat&quot;,&quot;bread&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "output": "[&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;]",
-      "explanation": "We can create &quot;bread&quot; since we have the ingredients &quot;yeast&quot; and &quot;flour&quot;.\nWe can create &quot;sandwich&quot; since we have the ingredient &quot;meat&quot; and can create the ingredient &quot;bread&quot;.\nWe can create &quot;burger&quot; since we have the ingredient &quot;meat&quot; and can create the ingredients &quot;bread&quot; and &quot;sandwich&quot;."
+      "input": "recipes = [\"bread\",\"sandwich\",\"burger\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "output": "[\"bread\",\"sandwich\",\"burger\"]",
+      "explanation": "We can create \"bread\" since we have the ingredients \"yeast\" and \"flour\".\nWe can create \"sandwich\" since we have the ingredient \"meat\" and can create the ingredient \"bread\".\nWe can create \"burger\" since we have the ingredient \"meat\" and can create the ingredients \"bread\" and \"sandwich\"."
     }
   ],
   "starterCode": {
@@ -63,42 +63,42 @@
   },
   "publicTests": [
     {
-      "input": "recipes = [&quot;bread&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;corn&quot;]",
-      "expectedOutput": "[&quot;bread&quot;]"
+      "input": "[\"bread\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"bread\"]"
     },
     {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "expectedOutput": "[&quot;bread&quot;,&quot;sandwich&quot;]"
+      "input": "[\"bread\",\"sandwich\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"]]\n[\"yeast\",\"flour\",\"meat\"]",
+      "expectedOutput": "[\"bread\",\"sandwich\"]"
     },
     {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;],[&quot;sandwich&quot;,&quot;meat&quot;,&quot;bread&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "expectedOutput": "[&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;]"
+      "input": "[\"bread\",\"sandwich\",\"burger\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]]\n[\"yeast\",\"flour\",\"meat\"]",
+      "expectedOutput": "[\"bread\",\"sandwich\",\"burger\"]"
     }
   ],
   "testCases": [
     {
-      "input": "recipes = [&quot;bread&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;corn&quot;]",
-      "expectedOutput": "[&quot;bread&quot;]"
-    },
-    {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "expectedOutput": "[&quot;bread&quot;,&quot;sandwich&quot;]"
-    },
-    {
-      "input": "recipes = [&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;], ingredients = [[&quot;yeast&quot;,&quot;flour&quot;],[&quot;bread&quot;,&quot;meat&quot;],[&quot;sandwich&quot;,&quot;meat&quot;,&quot;bread&quot;]], supplies = [&quot;yeast&quot;,&quot;flour&quot;,&quot;meat&quot;]",
-      "expectedOutput": "[&quot;bread&quot;,&quot;sandwich&quot;,&quot;burger&quot;]"
-    },
-    {
       "input": "[\"bread\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"bread\"]"
     },
     {
       "input": "[\"bread\",\"sandwich\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"]]\n[\"yeast\",\"flour\",\"meat\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"bread\",\"sandwich\"]"
     },
     {
       "input": "[\"bread\",\"sandwich\",\"burger\"]\n[[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]]\n[\"yeast\",\"flour\",\"meat\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"bread\",\"sandwich\",\"burger\"]"
+    },
+    {
+      "input": "recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"bread\"]"
+    },
+    {
+      "input": "recipes = [\"bread\",\"sandwich\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "expectedOutput": "[\"bread\",\"sandwich\"]"
+    },
+    {
+      "input": "recipes = [\"bread\",\"sandwich\",\"burger\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
+      "expectedOutput": "[\"bread\",\"sandwich\",\"burger\"]"
     }
   ],
   "sqlSchema": null,
@@ -113,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-all-possible-recipes-from-given-supplies/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:57.183Z",
+    "collectedAt": "2026-10-19T18:40:17.450Z",
     "sourceUpdatedAt": null
   }
 }

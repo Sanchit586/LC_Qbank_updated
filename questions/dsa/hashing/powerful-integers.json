@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 2, y = 3, bound = 10",
+      "input": "2\n3\n10",
       "expectedOutput": "[2,3,4,5,7,9,10]"
     },
     {
-      "input": "x = 3, y = 5, bound = 15",
+      "input": "3\n5\n15",
       "expectedOutput": "[2,4,6,8,10,14]"
     }
   ],
   "testCases": [
     {
+      "input": "2\n3\n10",
+      "expectedOutput": "[2,3,4,5,7,9,10]"
+    },
+    {
+      "input": "3\n5\n15",
+      "expectedOutput": "[2,4,6,8,10,14]"
+    },
+    {
       "input": "x = 2, y = 3, bound = 10",
       "expectedOutput": "[2,3,4,5,7,9,10]"
     },
     {
       "input": "x = 3, y = 5, bound = 15",
       "expectedOutput": "[2,4,6,8,10,14]"
-    },
-    {
-      "input": "2\n3\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n5\n15",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 3, y = 4, bound = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/powerful-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.884Z",
+    "collectedAt": "2026-10-19T18:40:26.851Z",
     "sourceUpdatedAt": null
   }
 }

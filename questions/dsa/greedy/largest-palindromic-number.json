@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;444947137&quot;",
-      "output": "&quot;7449447&quot;",
-      "explanation": "Use the digits &quot;4449477&quot; from &quot;444947137&quot; to form the palindromic integer &quot;7449447&quot;.\nIt can be shown that &quot;7449447&quot; is the largest palindromic integer that can be formed."
+      "input": "num = \"444947137\"",
+      "output": "\"7449447\"",
+      "explanation": "Use the digits \"4449477\" from \"444947137\" to form the palindromic integer \"7449447\".\nIt can be shown that \"7449447\" is the largest palindromic integer that can be formed."
     },
     {
-      "input": "num = &quot;00009&quot;",
-      "output": "&quot;9&quot;",
-      "explanation": "It can be shown that &quot;9&quot; is the largest palindromic integer that can be formed.\nNote that the integer returned should not contain leading zeroes."
+      "input": "num = \"00009\"",
+      "output": "\"9\"",
+      "explanation": "It can be shown that \"9\" is the largest palindromic integer that can be formed.\nNote that the integer returned should not contain leading zeroes."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;444947137&quot;",
-      "expectedOutput": "&quot;7449447&quot;"
+      "input": "\"444947137\"",
+      "expectedOutput": "\"7449447\""
     },
     {
-      "input": "num = &quot;00009&quot;",
-      "expectedOutput": "&quot;9&quot;"
+      "input": "\"00009\"",
+      "expectedOutput": "\"9\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;444947137&quot;",
-      "expectedOutput": "&quot;7449447&quot;"
-    },
-    {
-      "input": "num = &quot;00009&quot;",
-      "expectedOutput": "&quot;9&quot;"
-    },
-    {
       "input": "\"444947137\"",
-      "expectedOutput": null
+      "expectedOutput": "\"7449447\""
     },
     {
       "input": "\"00009\"",
-      "expectedOutput": null
+      "expectedOutput": "\"9\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "num = \"444947137\"",
+      "expectedOutput": "\"7449447\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "num = \"00009\"",
+      "expectedOutput": "\"9\""
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-palindromic-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:44.578Z",
+    "collectedAt": "2026-10-19T18:40:19.980Z",
     "sourceUpdatedAt": null
   }
 }

@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "positions = [[0,1],[1,0],[1,2],[2,1]]",
+      "input": "[[0,1],[1,0],[1,2],[2,1]]",
       "expectedOutput": "4.00000"
     },
     {
-      "input": "positions = [[1,1],[3,3]]",
+      "input": "[[1,1],[3,3]]",
       "expectedOutput": "2.82843"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[1,0],[1,2],[2,1]]",
+      "expectedOutput": "4.00000"
+    },
+    {
+      "input": "[[1,1],[3,3]]",
+      "expectedOutput": "2.82843"
+    },
+    {
       "input": "positions = [[0,1],[1,0],[1,2],[2,1]]",
       "expectedOutput": "4.00000"
     },
     {
       "input": "positions = [[1,1],[3,3]]",
       "expectedOutput": "2.82843"
-    },
-    {
-      "input": "[[0,1],[1,0],[1,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "positions = [[1,2],[2,1],[2,3],[3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/best-position-for-a-service-centre/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.570Z",
+    "collectedAt": "2026-10-19T18:40:13.487Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aeiaaioaaaaeiiiiouuuooaauuaeiu&quot;",
+      "input": "word = \"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
       "output": "13",
-      "explanation": "The longest beautiful substring in word is &quot;aaaaeiiiiouuu&quot; of length 13."
+      "explanation": "The longest beautiful substring in word is \"aaaaeiiiiouuu\" of length 13."
     },
     {
-      "input": "word = &quot;aeeeiiiioooauuuaeiou&quot;",
+      "input": "word = \"aeeeiiiioooauuuaeiou\"",
       "output": "5",
-      "explanation": "The longest beautiful substring in word is &quot;aeiou&quot; of length 5."
+      "explanation": "The longest beautiful substring in word is \"aeiou\" of length 5."
     },
     {
-      "input": "word = &quot;a&quot;",
+      "input": "word = \"a\"",
       "output": "0",
       "explanation": "There is no beautiful substring, so return 0."
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aeiaaioaaaaeiiiiouuuooaauuaeiu&quot;",
+      "input": "\"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
       "expectedOutput": "13"
     },
     {
-      "input": "word = &quot;aeeeiiiioooauuuaeiou&quot;",
+      "input": "\"aeeeiiiioooauuuaeiou\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aeiaaioaaaaeiiiiouuuooaauuaeiu&quot;",
+      "input": "\"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
       "expectedOutput": "13"
     },
     {
-      "input": "word = &quot;aeeeiiiioooauuuaeiou&quot;",
+      "input": "\"aeeeiiiioooauuuaeiou\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
-      "expectedOutput": null
+      "input": "word = \"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
+      "expectedOutput": "13"
     },
     {
-      "input": "\"aeeeiiiioooauuuaeiou\"",
-      "expectedOutput": null
+      "input": "word = \"aeeeiiiioooauuuaeiou\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "word = \"a\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-substring-of-all-vowels-in-order/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.099Z",
+    "collectedAt": "2026-10-19T18:40:20.703Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,12 +17,12 @@
   "examples": [
     {
       "input": "n = 3",
-      "output": "[&quot;010&quot;,&quot;011&quot;,&quot;101&quot;,&quot;110&quot;,&quot;111&quot;]",
+      "output": "[\"010\",\"011\",\"101\",\"110\",\"111\"]",
       "explanation": null
     },
     {
       "input": "n = 1",
-      "output": "[&quot;0&quot;,&quot;1&quot;]",
+      "output": "[\"0\",\"1\"]",
       "explanation": null
     }
   ],
@@ -49,86 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3",
-      "expectedOutput": "[&quot;010&quot;,&quot;011&quot;,&quot;101&quot;,&quot;110&quot;,&quot;111&quot;]"
+      "input": "3",
+      "expectedOutput": "[\"010\",\"011\",\"101\",\"110\",\"111\"]"
     },
     {
-      "input": "n = 1",
-      "expectedOutput": "[&quot;0&quot;,&quot;1&quot;]"
+      "input": "1",
+      "expectedOutput": "[\"0\",\"1\"]"
     }
   ],
   "testCases": [
     {
-      "input": "n = 3",
-      "expectedOutput": "[&quot;010&quot;,&quot;011&quot;,&quot;101&quot;,&quot;110&quot;,&quot;111&quot;]"
-    },
-    {
-      "input": "n = 1",
-      "expectedOutput": "[&quot;0&quot;,&quot;1&quot;]"
-    },
-    {
       "input": "3",
-      "expectedOutput": null
+      "expectedOutput": "[\"010\",\"011\",\"101\",\"110\",\"111\"]"
     },
     {
       "input": "1",
-      "expectedOutput": null
+      "expectedOutput": "[\"0\",\"1\"]"
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 3",
+      "expectedOutput": "[\"010\",\"011\",\"101\",\"110\",\"111\"]"
     },
     {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
+      "input": "n = 1",
+      "expectedOutput": "[\"0\",\"1\"]"
     }
   ],
   "sqlSchema": null,
@@ -144,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/generate-binary-strings-without-adjacent-zeros/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:22.057Z",
+    "collectedAt": "2026-10-19T18:40:19.143Z",
     "sourceUpdatedAt": null
   }
 }

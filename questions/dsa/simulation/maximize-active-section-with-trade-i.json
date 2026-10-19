@@ -16,24 +16,24 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;01&quot;",
+      "input": "s = \"01\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;0100&quot;",
+      "input": "s = \"0100\"",
       "output": "4",
-      "explanation": "String &quot;0100&quot; &rarr; Augmented to &quot;101001&quot;.\n\tChoose &quot;0100&quot;, convert &quot;101001&quot; &rarr; &quot;100001&quot; &rarr; &quot;111111&quot;.\n\tThe final string without augmentation is &quot;1111&quot;. The maximum number of active sections is 4."
+      "explanation": "String \"0100\" → Augmented to \"101001\".\n\tChoose \"0100\", convert \"101001\" → \"100001\" → \"111111\".\n\tThe final string without augmentation is \"1111\". The maximum number of active sections is 4."
     },
     {
-      "input": "s = &quot;1000100&quot;",
+      "input": "s = \"1000100\"",
       "output": "7",
-      "explanation": "String &quot;1000100&quot; &rarr; Augmented to &quot;110001001&quot;.\n\tChoose &quot;000100&quot;, convert &quot;110001001&quot; &rarr; &quot;110000001&quot; &rarr; &quot;111111111&quot;.\n\tThe final string without augmentation is &quot;1111111&quot;. The maximum number of active sections is 7."
+      "explanation": "String \"1000100\" → Augmented to \"110001001\".\n\tChoose \"000100\", convert \"110001001\" → \"110000001\" → \"111111111\".\n\tThe final string without augmentation is \"1111111\". The maximum number of active sections is 7."
     },
     {
-      "input": "s = &quot;01010&quot;",
+      "input": "s = \"01010\"",
       "output": "4",
-      "explanation": "String &quot;01010&quot; &rarr; Augmented to &quot;1010101&quot;.\n\tChoose &quot;010&quot;, convert &quot;1010101&quot; &rarr; &quot;1000101&quot; &rarr; &quot;1111101&quot;.\n\tThe final string without augmentation is &quot;11110&quot;. The maximum number of active sections is 4."
+      "explanation": "String \"01010\" → Augmented to \"1010101\".\n\tChoose \"010\", convert \"1010101\" → \"1000101\" → \"1111101\".\n\tThe final string without augmentation is \"11110\". The maximum number of active sections is 4."
     }
   ],
   "starterCode": {
@@ -59,102 +59,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;01&quot;",
+      "input": "\"01\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;0100&quot;",
+      "input": "\"0100\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;1000100&quot;",
+      "input": "\"1000100\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;01010&quot;",
+      "input": "\"01010\"",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;01&quot;",
+      "input": "\"01\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;0100&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;1000100&quot;",
-      "expectedOutput": "7"
-    },
-    {
-      "input": "s = &quot;01010&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "\"01\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"0100\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"1000100\"",
-      "expectedOutput": null
+      "expectedOutput": "7"
     },
     {
       "input": "\"01010\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"01\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"0100\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "s = \"1000100\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
+      "input": "s = \"01010\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -170,7 +122,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-active-section-with-trade-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:02.670Z",
+    "collectedAt": "2026-10-19T18:40:21.204Z",
     "sourceUpdatedAt": null
   }
 }

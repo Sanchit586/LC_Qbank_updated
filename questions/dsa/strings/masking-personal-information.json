@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;LeetCode@LeetCode.com&quot;",
-      "output": "&quot;l*****e@leetcode.com&quot;",
+      "input": "s = \"LeetCode@LeetCode.com\"",
+      "output": "\"l*****e@leetcode.com\"",
       "explanation": "s is an email address.\nThe name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks."
     },
     {
-      "input": "s = &quot;AB@qq.com&quot;",
-      "output": "&quot;a*****b@qq.com&quot;",
-      "explanation": "s is an email address.\nThe name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks.\nNote that even though &quot;ab&quot; is 2 characters, it still must have 5 asterisks in the middle."
+      "input": "s = \"AB@qq.com\"",
+      "output": "\"a*****b@qq.com\"",
+      "explanation": "s is an email address.\nThe name and domain are converted to lowercase, and the middle of the name is replaced by 5 asterisks.\nNote that even though \"ab\" is 2 characters, it still must have 5 asterisks in the middle."
     },
     {
-      "input": "s = &quot;1(234)567-890&quot;",
-      "output": "&quot;***-***-7890&quot;",
-      "explanation": "s is a phone number.\nThere are 10 digits, so the local number is 10 digits and the country code is 0 digits.\nThus, the resulting masked number is &quot;***-***-7890&quot;."
+      "input": "s = \"1(234)567-890\"",
+      "output": "\"***-***-7890\"",
+      "explanation": "s is a phone number.\nThere are 10 digits, so the local number is 10 digits and the country code is 0 digits.\nThus, the resulting masked number is \"***-***-7890\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;LeetCode@LeetCode.com&quot;",
-      "expectedOutput": "&quot;l*****e@leetcode.com&quot;"
+      "input": "\"LeetCode@LeetCode.com\"",
+      "expectedOutput": "\"l*****e@leetcode.com\""
     },
     {
-      "input": "s = &quot;AB@qq.com&quot;",
-      "expectedOutput": "&quot;a*****b@qq.com&quot;"
+      "input": "\"AB@qq.com\"",
+      "expectedOutput": "\"a*****b@qq.com\""
     },
     {
-      "input": "s = &quot;1(234)567-890&quot;",
-      "expectedOutput": "&quot;***-***-7890&quot;"
+      "input": "\"1(234)567-890\"",
+      "expectedOutput": "\"***-***-7890\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;LeetCode@LeetCode.com&quot;",
-      "expectedOutput": "&quot;l*****e@leetcode.com&quot;"
-    },
-    {
-      "input": "s = &quot;AB@qq.com&quot;",
-      "expectedOutput": "&quot;a*****b@qq.com&quot;"
-    },
-    {
-      "input": "s = &quot;1(234)567-890&quot;",
-      "expectedOutput": "&quot;***-***-7890&quot;"
-    },
-    {
       "input": "\"LeetCode@LeetCode.com\"",
-      "expectedOutput": null
+      "expectedOutput": "\"l*****e@leetcode.com\""
     },
     {
       "input": "\"AB@qq.com\"",
-      "expectedOutput": null
+      "expectedOutput": "\"a*****b@qq.com\""
     },
     {
       "input": "\"1(234)567-890\"",
-      "expectedOutput": null
+      "expectedOutput": "\"***-***-7890\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"LeetCode@LeetCode.com\"",
+      "expectedOutput": "\"l*****e@leetcode.com\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"AB@qq.com\"",
+      "expectedOutput": "\"a*****b@qq.com\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1(234)567-890\"",
+      "expectedOutput": "\"***-***-7890\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/masking-personal-information/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.470Z",
+    "collectedAt": "2026-10-19T18:40:21.084Z",
     "sourceUpdatedAt": null
   }
 }

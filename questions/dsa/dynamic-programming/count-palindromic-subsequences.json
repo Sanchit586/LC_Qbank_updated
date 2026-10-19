@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;103301&quot;",
+      "input": "s = \"103301\"",
       "output": "2",
-      "explanation": "There are 6 possible subsequences of length 5: &quot;10330&quot;,&quot;10331&quot;,&quot;10301&quot;,&quot;10301&quot;,&quot;13301&quot;,&quot;03301&quot;. \nTwo of them (both equal to &quot;10301&quot;) are palindromic."
+      "explanation": "There are 6 possible subsequences of length 5: \"10330\",\"10331\",\"10301\",\"10301\",\"13301\",\"03301\". \nTwo of them (both equal to \"10301\") are palindromic."
     },
     {
-      "input": "s = &quot;0000000&quot;",
+      "input": "s = \"0000000\"",
       "output": "21",
-      "explanation": "All 21 subsequences are &quot;00000&quot;, which is palindromic."
+      "explanation": "All 21 subsequences are \"00000\", which is palindromic."
     },
     {
-      "input": "s = &quot;9999900000&quot;",
+      "input": "s = \"9999900000\"",
       "output": "2",
-      "explanation": "The only two palindromic subsequences are &quot;99999&quot; and &quot;00000&quot;."
+      "explanation": "The only two palindromic subsequences are \"99999\" and \"00000\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;103301&quot;",
+      "input": "\"103301\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;0000000&quot;",
+      "input": "\"0000000\"",
       "expectedOutput": "21"
     },
     {
-      "input": "s = &quot;9999900000&quot;",
+      "input": "\"9999900000\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;103301&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;0000000&quot;",
-      "expectedOutput": "21"
-    },
-    {
-      "input": "s = &quot;9999900000&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"103301\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"0000000\"",
-      "expectedOutput": null
+      "expectedOutput": "21"
     },
     {
       "input": "\"9999900000\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"103301\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"0000000\"",
+      "expectedOutput": "21"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"9999900000\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-palindromic-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:19.741Z",
+    "collectedAt": "2026-10-19T18:40:15.478Z",
     "sourceUpdatedAt": null
   }
 }

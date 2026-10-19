@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "message = &quot;this is really a very awesome message&quot;, limit = 9",
-      "output": "[&quot;thi&lt;1/14&gt;&quot;,&quot;s i&lt;2/14&gt;&quot;,&quot;s r&lt;3/14&gt;&quot;,&quot;eal&lt;4/14&gt;&quot;,&quot;ly &lt;5/14&gt;&quot;,&quot;a v&lt;6/14&gt;&quot;,&quot;ery&lt;7/14&gt;&quot;,&quot; aw&lt;8/14&gt;&quot;,&quot;eso&lt;9/14&gt;&quot;,&quot;me&lt;10/14&gt;&quot;,&quot; m&lt;11/14&gt;&quot;,&quot;es&lt;12/14&gt;&quot;,&quot;sa&lt;13/14&gt;&quot;,&quot;ge&lt;14/14&gt;&quot;]",
+      "input": "message = \"this is really a very awesome message\", limit = 9",
+      "output": "[\"thi<1/14>\",\"s i<2/14>\",\"s r<3/14>\",\"eal<4/14>\",\"ly <5/14>\",\"a v<6/14>\",\"ery<7/14>\",\" aw<8/14>\",\"eso<9/14>\",\"me<10/14>\",\" m<11/14>\",\"es<12/14>\",\"sa<13/14>\",\"ge<14/14>\"]",
       "explanation": "The first 9 parts take 3 characters each from the beginning of message.\nThe next 5 parts take 2 characters each to finish splitting message. \nIn this example, each part, including the last, has length 9. \nIt can be shown it is not possible to split message into less than 14 parts."
     },
     {
-      "input": "message = &quot;short message&quot;, limit = 15",
-      "output": "[&quot;short mess&lt;1/2&gt;&quot;,&quot;age&lt;2/2&gt;&quot;]",
+      "input": "message = \"short message\", limit = 15",
+      "output": "[\"short mess<1/2>\",\"age<2/2>\"]",
       "explanation": "Under the given constraints, the string can be split into two parts: \n- The first part comprises of the first 10 characters, and has a length 15.\n- The next part comprises of the last 3 characters, and has a length 8."
     }
   ],
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "message = &quot;this is really a very awesome message&quot;, limit = 9",
-      "expectedOutput": "[&quot;thi&lt;1/14&gt;&quot;,&quot;s i&lt;2/14&gt;&quot;,&quot;s r&lt;3/14&gt;&quot;,&quot;eal&lt;4/14&gt;&quot;,&quot;ly &lt;5/14&gt;&quot;,&quot;a v&lt;6/14&gt;&quot;,&quot;ery&lt;7/14&gt;&quot;,&quot; aw&lt;8/14&gt;&quot;,&quot;eso&lt;9/14&gt;&quot;,&quot;me&lt;10/14&gt;&quot;,&quot; m&lt;11/14&gt;&quot;,&quot;es&lt;12/14&gt;&quot;,&quot;sa&lt;13/14&gt;&quot;,&quot;ge&lt;14/14&gt;&quot;]"
+      "input": "\"this is really a very awesome message\"\n9",
+      "expectedOutput": "[\"thi<1/14>\",\"s i<2/14>\",\"s r<3/14>\",\"eal<4/14>\",\"ly <5/14>\",\"a v<6/14>\",\"ery<7/14>\",\" aw<8/14>\",\"eso<9/14>\",\"me<10/14>\",\" m<11/14>\",\"es<12/14>\",\"sa<13/14>\",\"ge<14/14>\"]"
     },
     {
-      "input": "message = &quot;short message&quot;, limit = 15",
-      "expectedOutput": "[&quot;short mess&lt;1/2&gt;&quot;,&quot;age&lt;2/2&gt;&quot;]"
+      "input": "\"short message\"\n15",
+      "expectedOutput": "[\"short mess<1/2>\",\"age<2/2>\"]"
     }
   ],
   "testCases": [
     {
-      "input": "message = &quot;this is really a very awesome message&quot;, limit = 9",
-      "expectedOutput": "[&quot;thi&lt;1/14&gt;&quot;,&quot;s i&lt;2/14&gt;&quot;,&quot;s r&lt;3/14&gt;&quot;,&quot;eal&lt;4/14&gt;&quot;,&quot;ly &lt;5/14&gt;&quot;,&quot;a v&lt;6/14&gt;&quot;,&quot;ery&lt;7/14&gt;&quot;,&quot; aw&lt;8/14&gt;&quot;,&quot;eso&lt;9/14&gt;&quot;,&quot;me&lt;10/14&gt;&quot;,&quot; m&lt;11/14&gt;&quot;,&quot;es&lt;12/14&gt;&quot;,&quot;sa&lt;13/14&gt;&quot;,&quot;ge&lt;14/14&gt;&quot;]"
-    },
-    {
-      "input": "message = &quot;short message&quot;, limit = 15",
-      "expectedOutput": "[&quot;short mess&lt;1/2&gt;&quot;,&quot;age&lt;2/2&gt;&quot;]"
-    },
-    {
       "input": "\"this is really a very awesome message\"\n9",
-      "expectedOutput": null
+      "expectedOutput": "[\"thi<1/14>\",\"s i<2/14>\",\"s r<3/14>\",\"eal<4/14>\",\"ly <5/14>\",\"a v<6/14>\",\"ery<7/14>\",\" aw<8/14>\",\"eso<9/14>\",\"me<10/14>\",\" m<11/14>\",\"es<12/14>\",\"sa<13/14>\",\"ge<14/14>\"]"
     },
     {
       "input": "\"short message\"\n15",
-      "expectedOutput": null
+      "expectedOutput": "[\"short mess<1/2>\",\"age<2/2>\"]"
     },
     {
-      "input": "message = &quot;this is really a very awesome message&quot;, limit = 10",
-      "expectedOutput": null
+      "input": "message = \"this is really a very awesome message\", limit = 9",
+      "expectedOutput": "[\"thi<1/14>\",\"s i<2/14>\",\"s r<3/14>\",\"eal<4/14>\",\"ly <5/14>\",\"a v<6/14>\",\"ery<7/14>\",\" aw<8/14>\",\"eso<9/14>\",\"me<10/14>\",\" m<11/14>\",\"es<12/14>\",\"sa<13/14>\",\"ge<14/14>\"]"
+    },
+    {
+      "input": "message = \"short message\", limit = 15",
+      "expectedOutput": "[\"short mess<1/2>\",\"age<2/2>\"]"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-message-based-on-limit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.097Z",
+    "collectedAt": "2026-10-19T18:40:30.152Z",
     "sourceUpdatedAt": null
   }
 }

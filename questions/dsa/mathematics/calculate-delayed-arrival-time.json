@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "arrivalTime = 15, delayedTime = 5",
+      "input": "15\n5",
       "expectedOutput": "20"
     },
     {
-      "input": "arrivalTime = 13, delayedTime = 11",
+      "input": "13\n11",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "15\n5",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "13\n11",
+      "expectedOutput": "0"
+    },
+    {
       "input": "arrivalTime = 15, delayedTime = 5",
       "expectedOutput": "20"
     },
     {
       "input": "arrivalTime = 13, delayedTime = 11",
       "expectedOutput": "0"
-    },
-    {
-      "input": "15\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "13\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "arrivalTime = 16, delayedTime = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/calculate-delayed-arrival-time/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.224Z",
+    "collectedAt": "2026-10-19T18:40:13.815Z",
     "sourceUpdatedAt": null
   }
 }

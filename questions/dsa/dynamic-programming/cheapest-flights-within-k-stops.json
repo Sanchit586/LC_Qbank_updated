@@ -65,20 +65,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1",
+      "input": "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1",
       "expectedOutput": "700"
     },
     {
-      "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 1",
+      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n1",
       "expectedOutput": "200"
     },
     {
-      "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0",
+      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n0",
       "expectedOutput": "500"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1",
+      "expectedOutput": "700"
+    },
+    {
+      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n1",
+      "expectedOutput": "200"
+    },
+    {
+      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n0",
+      "expectedOutput": "500"
+    },
+    {
       "input": "n = 4, flights = [[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]], src = 0, dst = 3, k = 1",
       "expectedOutput": "700"
     },
@@ -89,38 +101,6 @@
     {
       "input": "n = 3, flights = [[0,1,100],[1,2,100],[0,2,500]], src = 0, dst = 2, k = 0",
       "expectedOutput": "500"
-    },
-    {
-      "input": "4\n[[0,1,100],[1,2,100],[2,0,100],[1,3,600],[2,3,200]]\n0\n3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,100],[1,2,100],[0,2,500]]\n0\n2\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, flights = [[1,2,101],[2,3,101],[1,3,501]], src = 1, dst = 3, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, flights = [[1,2,101],[2,3,101],[1,3,501]], src = 1, dst = 3, k = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[[1,2,101],[2,3,101],[3,1,101],[2,4,601],[3,4,201]]\n1\n4\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2,101],[2,3,101],[1,3,501]]\n1\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, flights = [[1,2,101],[2,3,101],[3,1,101],[2,4,601],[3,4,201]], src = 1, dst = 4, k = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cheapest-flights-within-k-stops/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.208Z",
+    "collectedAt": "2026-10-19T18:40:14.002Z",
     "sourceUpdatedAt": null
   }
 }

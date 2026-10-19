@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2,3],[3,1,5],[3,2,1]]",
+      "input": "[[1,2,3],[3,1,5],[3,2,1]]",
       "expectedOutput": "Output: [[1,1,0],[1,0,1],[0,1,1]]"
     },
     {
-      "input": "grid = [[1]]",
+      "input": "[[1]]",
       "expectedOutput": "Output: [[0]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[3,1,5],[3,2,1]]",
+      "expectedOutput": "Output: [[1,1,0],[1,0,1],[0,1,1]]"
+    },
+    {
+      "input": "[[1]]",
+      "expectedOutput": "Output: [[0]]"
+    },
+    {
       "input": "grid = [[1,2,3],[3,1,5],[3,2,1]]",
       "expectedOutput": "Output: [[1,1,0],[1,0,1],[0,1,1]]"
     },
     {
       "input": "grid = [[1]]",
       "expectedOutput": "Output: [[0]]"
-    },
-    {
-      "input": "[[1,2,3],[3,1,5],[3,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3,4],[4,2,6],[4,3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/difference-of-number-of-distinct-values-on-diagonals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.412Z",
+    "collectedAt": "2026-10-19T18:40:16.659Z",
     "sourceUpdatedAt": null
   }
 }

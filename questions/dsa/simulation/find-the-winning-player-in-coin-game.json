@@ -17,12 +17,12 @@
   "examples": [
     {
       "input": "x = 2, y = 7",
-      "output": "&quot;Alice&quot;",
+      "output": "\"Alice\"",
       "explanation": null
     },
     {
       "input": "x = 4, y = 11",
-      "output": "&quot;Bob&quot;",
+      "output": "\"Bob\"",
       "explanation": null
     }
   ],
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 2, y = 7",
-      "expectedOutput": "&quot;Alice&quot;"
+      "input": "2\n7",
+      "expectedOutput": "\"Alice\""
     },
     {
-      "input": "x = 4, y = 11",
-      "expectedOutput": "&quot;Bob&quot;"
+      "input": "4\n11",
+      "expectedOutput": "\"Bob\""
     }
   ],
   "testCases": [
     {
-      "input": "x = 2, y = 7",
-      "expectedOutput": "&quot;Alice&quot;"
-    },
-    {
-      "input": "x = 4, y = 11",
-      "expectedOutput": "&quot;Bob&quot;"
-    },
-    {
       "input": "2\n7",
-      "expectedOutput": null
+      "expectedOutput": "\"Alice\""
     },
     {
       "input": "4\n11",
-      "expectedOutput": null
+      "expectedOutput": "\"Bob\""
     },
     {
-      "input": "x = 3, y = 8",
-      "expectedOutput": null
+      "input": "x = 2, y = 7",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "x = 4, y = 11",
+      "expectedOutput": "\"Bob\""
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-winning-player-in-coin-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:16.194Z",
+    "collectedAt": "2026-10-19T18:40:18.698Z",
     "sourceUpdatedAt": null
   }
 }

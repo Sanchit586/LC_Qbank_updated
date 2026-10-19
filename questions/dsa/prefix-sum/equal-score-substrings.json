@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;adcb&quot;",
+      "input": "s = \"adcb\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;bace&quot;",
+      "input": "s = \"bace\"",
       "output": "false",
       "explanation": "​​​​​​"
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;adcb&quot;",
+      "input": "\"adcb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;bace&quot;",
+      "input": "\"bace\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;adcb&quot;",
+      "input": "\"adcb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;bace&quot;",
+      "input": "\"bace\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"adcb\"",
-      "expectedOutput": null
+      "input": "s = \"adcb\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"bace\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"bace\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/equal-score-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.279Z",
+    "collectedAt": "2026-10-19T18:40:17.034Z",
     "sourceUpdatedAt": null
   }
 }

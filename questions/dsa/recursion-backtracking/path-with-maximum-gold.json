@@ -22,12 +22,12 @@
     {
       "input": "grid = [[0,6,0],[5,8,7],[0,9,0]]",
       "output": "24",
-      "explanation": "[[0,6,0],\n [5,8,7],\n [0,9,0]]\nPath to get the maximum gold, 9 -&gt; 8 -&gt; 7."
+      "explanation": "[[0,6,0],\n [5,8,7],\n [0,9,0]]\nPath to get the maximum gold, 9 -> 8 -> 7."
     },
     {
       "input": "grid = [[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
       "output": "28",
-      "explanation": "[[1,0,7],\n [2,0,6],\n [3,4,5],\n [0,3,0],\n [9,0,20]]\nPath to get the maximum gold, 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 5 -&gt; 6 -&gt; 7."
+      "explanation": "[[1,0,7],\n [2,0,6],\n [3,4,5],\n [0,3,0],\n [9,0,20]]\nPath to get the maximum gold, 1 -> 2 -> 3 -> 4 -> 5 -> 6 -> 7."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[0,6,0],[5,8,7],[0,9,0]]",
+      "input": "[[0,6,0],[5,8,7],[0,9,0]]",
       "expectedOutput": "24"
     },
     {
-      "input": "grid = [[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
+      "input": "[[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
       "expectedOutput": "28"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,6,0],[5,8,7],[0,9,0]]",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "[[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
+      "expectedOutput": "28"
+    },
+    {
       "input": "grid = [[0,6,0],[5,8,7],[0,9,0]]",
       "expectedOutput": "24"
     },
     {
       "input": "grid = [[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
       "expectedOutput": "28"
-    },
-    {
-      "input": "[[0,6,0],[5,8,7],[0,9,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,7],[2,0,6],[3,4,5],[0,3,0],[9,0,20]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1,7,1],[6,9,8],[1,10,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/path-with-maximum-gold/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:55.086Z",
+    "collectedAt": "2026-10-19T18:40:26.672Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,7 +20,13 @@
     "words[i], pref and suff consist of lowercase English letters only.",
     "At most 104 calls will be made to the function f."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"WordFilter\", \"f\"]\n[[[\"apple\"]], [\"a\", \"e\"]]",
+      "output": "[null, 0]",
+      "explanation": "WordFilter wordFilter = new WordFilter([\"apple\"]);\nwordFilter.f(\"a\", \"e\"); // return 0, because the word at index 0 has prefix = \"a\" and suffix = \"e\"."
+    }
+  ],
   "starterCode": {
     "cpp": "class WordFilter {\npublic:\n    WordFilter(vector<string>& words) {\n        \n    }\n    \n    int f(string pref, string suff) {\n        \n    }\n};\n\n/**\n * Your WordFilter object will be instantiated and called as such:\n * WordFilter* obj = new WordFilter(words);\n * int param_1 = obj->f(pref,suff);\n */",
     "java": "class WordFilter {\n\n    public WordFilter(String[] words) {\n        \n    }\n    \n    public int f(String pref, String suff) {\n        \n    }\n}\n\n/**\n * Your WordFilter object will be instantiated and called as such:\n * WordFilter obj = new WordFilter(words);\n * int param_1 = obj.f(pref,suff);\n */",
@@ -45,13 +51,17 @@
   "publicTests": [
     {
       "input": "[\"WordFilter\",\"f\"]\n[[[\"apple\"]],[\"a\",\"e\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0]"
     }
   ],
   "testCases": [
     {
       "input": "[\"WordFilter\",\"f\"]\n[[[\"apple\"]],[\"a\",\"e\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0]"
+    },
+    {
+      "input": "[\"WordFilter\", \"f\"]\n[[[\"apple\"]], [\"a\", \"e\"]]",
+      "expectedOutput": "[null, 0]"
     }
   ],
   "sqlSchema": null,
@@ -67,7 +77,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/prefix-and-suffix-search/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.898Z",
+    "collectedAt": "2026-10-19T18:40:26.873Z",
     "sourceUpdatedAt": null
   }
 }

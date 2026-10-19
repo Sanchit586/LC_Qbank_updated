@@ -21,7 +21,7 @@
     {
       "input": "points = [[1,1],[3,4],[-1,0]]",
       "output": "7",
-      "explanation": "One optimal path is [1,1] -&gt; [2,2] -&gt; [3,3] -&gt; [3,4] -&gt; [2,3] -&gt; [1,2] -&gt; [0,1] -&gt; [-1,0]   \nTime from [1,1] to [3,4] = 3 seconds \nTime from [3,4] to [-1,0] = 4 seconds\nTotal time = 7 seconds"
+      "explanation": "One optimal path is [1,1] -> [2,2] -> [3,3] -> [3,4] -> [2,3] -> [1,2] -> [0,1] -> [-1,0]   \nTime from [1,1] to [3,4] = 3 seconds \nTime from [3,4] to [-1,0] = 4 seconds\nTotal time = 7 seconds"
     },
     {
       "input": "points = [[3,2],[-2,2]]",
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[1,1],[3,4],[-1,0]]",
+      "input": "[[1,1],[3,4],[-1,0]]",
       "expectedOutput": "7"
     },
     {
-      "input": "points = [[3,2],[-2,2]]",
+      "input": "[[3,2],[-2,2]]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1],[3,4],[-1,0]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[3,2],[-2,2]]",
+      "expectedOutput": "5"
+    },
+    {
       "input": "points = [[1,1],[3,4],[-1,0]]",
       "expectedOutput": "7"
     },
     {
       "input": "points = [[3,2],[-2,2]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[[1,1],[3,4],[-1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,2],[-2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[4,5],[-2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-visiting-all-points/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:29.758Z",
+    "collectedAt": "2026-10-19T18:40:25.272Z",
     "sourceUpdatedAt": null
   }
 }

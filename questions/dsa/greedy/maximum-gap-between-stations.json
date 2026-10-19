@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "skill = &quot;aa&quot;, station = &quot;aaaa&quot;",
+      "input": "skill = \"aa\", station = \"aaaa\"",
       "output": "3",
-      "explanation": "The two workers must be assigned to two different &#39;a&#39; stations.\n\tAssigning them to stations [0, 3] gives a gap of 3."
+      "explanation": "The two workers must be assigned to two different 'a' stations.\n\tAssigning them to stations [0, 3] gives a gap of 3."
     },
     {
-      "input": "skill = &quot;xyz&quot;, station = &quot;xyzz&quot;",
+      "input": "skill = \"xyz\", station = \"xyzz\"",
       "output": "2",
       "explanation": "Assign worker 0 to station j = 0, and worker 1 to station j = 1.\n\tTo maximize the gap, assign worker 2 to station j = 3.\n\tThis gives the assignment [0, 1, 3] with gaps [1, 2], so the gap is 2."
     },
     {
-      "input": "skill = &quot;cbc&quot;, station = &quot;cbcdbc&quot;",
+      "input": "skill = \"cbc\", station = \"cbcdbc\"",
       "output": "4",
       "explanation": "Assign worker 0 to station j = 0, and worker 1 to station j = 1.\n\tTo maximize the gap, assign worker 2 to station j = 5.\n\tThis gives the assignment [0, 1, 5] with gaps [1, 4], so the gap is 4."
     }
@@ -58,90 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "skill = &quot;aa&quot;, station = &quot;aaaa&quot;",
+      "input": "\"aa\"\n\"aaaa\"",
       "expectedOutput": "3"
     },
     {
-      "input": "skill = &quot;xyz&quot;, station = &quot;xyzz&quot;",
+      "input": "\"xyz\"\n\"xyzz\"",
       "expectedOutput": "2"
     },
     {
-      "input": "skill = &quot;cbc&quot;, station = &quot;cbcdbc&quot;",
+      "input": "\"cbc\"\n\"cbcdbc\"",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "skill = &quot;aa&quot;, station = &quot;aaaa&quot;",
+      "input": "\"aa\"\n\"aaaa\"",
       "expectedOutput": "3"
     },
     {
-      "input": "skill = &quot;xyz&quot;, station = &quot;xyzz&quot;",
+      "input": "\"xyz\"\n\"xyzz\"",
       "expectedOutput": "2"
     },
     {
-      "input": "skill = &quot;cbc&quot;, station = &quot;cbcdbc&quot;",
+      "input": "\"cbc\"\n\"cbcdbc\"",
       "expectedOutput": "4"
     },
     {
-      "input": "\"aa\"\n\"aaaa\"",
-      "expectedOutput": null
+      "input": "skill = \"aa\", station = \"aaaa\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"xyz\"\n\"xyzz\"",
-      "expectedOutput": null
+      "input": "skill = \"xyz\", station = \"xyzz\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"cbc\"\n\"cbcdbc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "skill = \"cbc\", station = \"cbcdbc\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -158,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-gap-between-stations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:12.739Z",
+    "collectedAt": "2026-10-19T18:40:21.868Z",
     "sourceUpdatedAt": null
   }
 }

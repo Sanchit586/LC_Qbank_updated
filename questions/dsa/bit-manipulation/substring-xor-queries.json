@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;101101&quot;, queries = [[0,5],[1,2]]",
+      "input": "s = \"101101\", queries = [[0,5],[1,2]]",
       "output": "[[0,2],[2,3]]",
-      "explanation": "For the first query the substring in range [0,2] is &quot;101&quot; which has a decimal value of 5, and 5 ^ 0 = 5, hence the answer to the first query is [0,2]. In the second query, the substring in range [2,3] is &quot;11&quot;, and has a decimal value of 3, and 3 ^ 1 = 2.&nbsp;So, [2,3] is returned for the second query."
+      "explanation": "For the first query the substring in range [0,2] is \"101\" which has a decimal value of 5, and 5 ^ 0 = 5, hence the answer to the first query is [0,2]. In the second query, the substring in range [2,3] is \"11\", and has a decimal value of 3, and 3 ^ 1 = 2. So, [2,3] is returned for the second query."
     },
     {
-      "input": "s = &quot;0101&quot;, queries = [[12,8]]",
+      "input": "s = \"0101\", queries = [[12,8]]",
       "output": "[[-1,-1]]",
       "explanation": "In this example there is no substring that answers the query, hence [-1,-1] is returned."
     },
     {
-      "input": "s = &quot;1&quot;, queries = [[4,5]]",
+      "input": "s = \"1\", queries = [[4,5]]",
       "output": "[[0,0]]",
       "explanation": "For this example, the substring in range [0,0] has a decimal value of 1, and 1 ^ 4 = 5. So, the answer is [0,0]."
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;101101&quot;, queries = [[0,5],[1,2]]",
+      "input": "\"101101\"\n[[0,5],[1,2]]",
       "expectedOutput": "[[0,2],[2,3]]"
     },
     {
-      "input": "s = &quot;0101&quot;, queries = [[12,8]]",
+      "input": "\"0101\"\n[[12,8]]",
       "expectedOutput": "[[-1,-1]]"
     },
     {
-      "input": "s = &quot;1&quot;, queries = [[4,5]]",
+      "input": "\"1\"\n[[4,5]]",
       "expectedOutput": "[[0,0]]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;101101&quot;, queries = [[0,5],[1,2]]",
+      "input": "\"101101\"\n[[0,5],[1,2]]",
       "expectedOutput": "[[0,2],[2,3]]"
     },
     {
-      "input": "s = &quot;0101&quot;, queries = [[12,8]]",
+      "input": "\"0101\"\n[[12,8]]",
       "expectedOutput": "[[-1,-1]]"
     },
     {
-      "input": "s = &quot;1&quot;, queries = [[4,5]]",
+      "input": "\"1\"\n[[4,5]]",
       "expectedOutput": "[[0,0]]"
     },
     {
-      "input": "\"101101\"\n[[0,5],[1,2]]",
-      "expectedOutput": null
+      "input": "s = \"101101\", queries = [[0,5],[1,2]]",
+      "expectedOutput": "[[0,2],[2,3]]"
     },
     {
-      "input": "\"0101\"\n[[12,8]]",
-      "expectedOutput": null
+      "input": "s = \"0101\", queries = [[12,8]]",
+      "expectedOutput": "[[-1,-1]]"
     },
     {
-      "input": "\"1\"\n[[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;102&quot;, queries = [[13,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;2&quot;, queries = [[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"101102\"\n[[1,6],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"102\"\n[[13,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;101102&quot;, queries = [[1,6],[2,3]]",
-      "expectedOutput": null
+      "input": "s = \"1\", queries = [[4,5]]",
+      "expectedOutput": "[[0,0]]"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/substring-xor-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.750Z",
+    "collectedAt": "2026-10-19T18:40:30.459Z",
     "sourceUpdatedAt": null
   }
 }

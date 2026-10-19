@@ -19,7 +19,13 @@
     "0 <= endTime - startTime <= 104",
     "There will be at most 104 calls in total to recordTweet and getTweetCountsPerFrequency."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"TweetCounts\",\"recordTweet\",\"recordTweet\",\"recordTweet\",\"getTweetCountsPerFrequency\",\"getTweetCountsPerFrequency\",\"recordTweet\",\"getTweetCountsPerFrequency\"]\n[[],[\"tweet3\",0],[\"tweet3\",60],[\"tweet3\",10],[\"minute\",\"tweet3\",0,59],[\"minute\",\"tweet3\",0,60],[\"tweet3\",120],[\"hour\",\"tweet3\",0,210]]",
+      "output": "[null,null,null,null,[2],[2,1],null,[4]]",
+      "explanation": "TweetCounts tweetCounts = new TweetCounts();\ntweetCounts.recordTweet(\"tweet3\", 0);                              // New tweet \"tweet3\" at time 0\ntweetCounts.recordTweet(\"tweet3\", 60);                             // New tweet \"tweet3\" at time 60\ntweetCounts.recordTweet(\"tweet3\", 10);                             // New tweet \"tweet3\" at time 10\ntweetCounts.getTweetCountsPerFrequency(\"minute\", \"tweet3\", 0, 59); // return [2]; chunk [0,59] had 2 tweets\ntweetCounts.getTweetCountsPerFrequency(\"minute\", \"tweet3\", 0, 60); // return [2,1]; chunk [0,59] had 2 tweets, chunk [60,60] had 1 tweet\ntweetCounts.recordTweet(\"tweet3\", 120);                            // New tweet \"tweet3\" at time 120\ntweetCounts.getTweetCountsPerFrequency(\"hour\", \"tweet3\", 0, 210);  // return [4]; chunk [0,210] had 4 tweets"
+    }
+  ],
   "starterCode": {
     "cpp": "class TweetCounts {\npublic:\n    TweetCounts() {\n        \n    }\n    \n    void recordTweet(string tweetName, int time) {\n        \n    }\n    \n    vector<int> getTweetCountsPerFrequency(string freq, string tweetName, int startTime, int endTime) {\n        \n    }\n};\n\n/**\n * Your TweetCounts object will be instantiated and called as such:\n * TweetCounts* obj = new TweetCounts();\n * obj->recordTweet(tweetName,time);\n * vector<int> param_2 = obj->getTweetCountsPerFrequency(freq,tweetName,startTime,endTime);\n */",
     "java": "class TweetCounts {\n\n    public TweetCounts() {\n        \n    }\n    \n    public void recordTweet(String tweetName, int time) {\n        \n    }\n    \n    public List<Integer> getTweetCountsPerFrequency(String freq, String tweetName, int startTime, int endTime) {\n        \n    }\n}\n\n/**\n * Your TweetCounts object will be instantiated and called as such:\n * TweetCounts obj = new TweetCounts();\n * obj.recordTweet(tweetName,time);\n * List<Integer> param_2 = obj.getTweetCountsPerFrequency(freq,tweetName,startTime,endTime);\n */",
@@ -44,17 +50,13 @@
   "publicTests": [
     {
       "input": "[\"TweetCounts\",\"recordTweet\",\"recordTweet\",\"recordTweet\",\"getTweetCountsPerFrequency\",\"getTweetCountsPerFrequency\",\"recordTweet\",\"getTweetCountsPerFrequency\"]\n[[],[\"tweet3\",0],[\"tweet3\",60],[\"tweet3\",10],[\"minute\",\"tweet3\",0,59],[\"minute\",\"tweet3\",0,60],[\"tweet3\",120],[\"hour\",\"tweet3\",0,210]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,[2],[2,1],null,[4]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"TweetCounts\",\"recordTweet\",\"recordTweet\",\"recordTweet\",\"getTweetCountsPerFrequency\",\"getTweetCountsPerFrequency\",\"recordTweet\",\"getTweetCountsPerFrequency\"]\n[[],[\"tweet3\",0],[\"tweet3\",60],[\"tweet3\",10],[\"minute\",\"tweet3\",0,59],[\"minute\",\"tweet3\",0,60],[\"tweet3\",120],[\"hour\",\"tweet3\",0,210]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"TweetCounts\",\"recordTweet\",\"recordTweet\",\"recordTweet\",\"getTweetCountsPerFrequency\",\"getTweetCountsPerFrequency\",\"recordTweet\",\"getTweetCountsPerFrequency\"]\n[[],[\"tweet4\",1],[\"tweet4\",61],[\"tweet4\",11],[\"minute\",\"tweet4\",1,60],[\"minute\",\"tweet4\",1,61],[\"tweet4\",121],[\"hour\",\"tweet4\",1,211]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,[2],[2,1],null,[4]]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +68,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/tweet-counts-per-frequency/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:02.771Z",
+    "collectedAt": "2026-10-19T18:40:31.274Z",
     "sourceUpdatedAt": null
   }
 }

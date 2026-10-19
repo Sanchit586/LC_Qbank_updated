@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "left = 5, right = 7",
+      "input": "5\n7",
       "expectedOutput": "4"
     },
     {
-      "input": "left = 0, right = 0",
+      "input": "0\n0",
       "expectedOutput": "0"
     },
     {
-      "input": "left = 1, right = 2147483647",
+      "input": "1\n2147483647",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "5\n7",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "0\n0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n2147483647",
+      "expectedOutput": "0"
+    },
+    {
       "input": "left = 5, right = 7",
       "expectedOutput": "4"
     },
@@ -76,38 +88,6 @@
     {
       "input": "left = 1, right = 2147483647",
       "expectedOutput": "0"
-    },
-    {
-      "input": "5\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "0\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 1, right = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 2, right = 2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 6, right = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -119,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/bitwise-and-of-numbers-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:43.422Z",
+    "collectedAt": "2026-10-19T18:40:13.663Z",
     "sourceUpdatedAt": null
   }
 }

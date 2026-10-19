@@ -35,20 +35,32 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,2,3,4]\nfn = function sum(accum, curr) { return accum + curr; }\ninit = 0",
+      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr; }\n0",
       "expectedOutput": "10"
     },
     {
-      "input": "nums = [1,2,3,4]\nfn = function sum(accum, curr) { return accum + curr * curr; }\ninit = 100",
+      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr * curr; }\n100",
       "expectedOutput": "130"
     },
     {
-      "input": "nums = []\nfn = function sum(accum, curr) { return 0; }\ninit = 25",
+      "input": "[]\nfunction sum(accum, curr) { return 0; }\n25",
       "expectedOutput": "25"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr; }\n0",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr * curr; }\n100",
+      "expectedOutput": "130"
+    },
+    {
+      "input": "[]\nfunction sum(accum, curr) { return 0; }\n25",
+      "expectedOutput": "25"
+    },
+    {
       "input": "nums = [1,2,3,4]\nfn = function sum(accum, curr) { return accum + curr; }\ninit = 0",
       "expectedOutput": "10"
     },
@@ -59,38 +71,6 @@
     {
       "input": "nums = []\nfn = function sum(accum, curr) { return 0; }\ninit = 25",
       "expectedOutput": "25"
-    },
-    {
-      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr; }\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4]\nfunction sum(accum, curr) { return accum + curr * curr; }\n100",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]\nfunction sum(accum, curr) { return 0; }\n25",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,5]\nfn = function sum(accum, curr) { return accum + curr * curr; }\ninit = 101",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = []\nfn = function sum(accum, curr) { return 1; }\ninit = 26",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\nfunction sum(accum, curr) { return accum + curr; }\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\nfunction sum(accum, curr) { return accum + curr * curr; }\n101",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,5]\nfn = function sum(accum, curr) { return accum + curr; }\ninit = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -105,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/array-reduce-transformation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:24.194Z",
+    "collectedAt": "2026-10-19T18:40:13.304Z",
     "sourceUpdatedAt": null
   }
 }

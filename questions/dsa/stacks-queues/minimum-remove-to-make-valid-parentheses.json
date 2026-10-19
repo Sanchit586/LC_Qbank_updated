@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;lee(t(c)o)de)&quot;",
-      "output": "&quot;lee(t(c)o)de&quot;",
-      "explanation": "&quot;lee(t(co)de)&quot; , &quot;lee(t(c)ode)&quot; would also be accepted."
+      "input": "s = \"lee(t(c)o)de)\"",
+      "output": "\"lee(t(c)o)de\"",
+      "explanation": "\"lee(t(co)de)\" , \"lee(t(c)ode)\" would also be accepted."
     },
     {
-      "input": "s = &quot;a)b(c)d&quot;",
-      "output": "&quot;ab(c)d&quot;",
+      "input": "s = \"a)b(c)d\"",
+      "output": "\"ab(c)d\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;))((&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"))((\"",
+      "output": "\"\"",
       "explanation": "An empty string is also valid."
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;lee(t(c)o)de)&quot;",
-      "expectedOutput": "&quot;lee(t(c)o)de&quot;"
+      "input": "\"lee(t(c)o)de)\"",
+      "expectedOutput": "\"lee(t(c)o)de\""
     },
     {
-      "input": "s = &quot;a)b(c)d&quot;",
-      "expectedOutput": "&quot;ab(c)d&quot;"
+      "input": "\"a)b(c)d\"",
+      "expectedOutput": "\"ab(c)d\""
     },
     {
-      "input": "s = &quot;))((&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"))((\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;lee(t(c)o)de)&quot;",
-      "expectedOutput": "&quot;lee(t(c)o)de&quot;"
-    },
-    {
-      "input": "s = &quot;a)b(c)d&quot;",
-      "expectedOutput": "&quot;ab(c)d&quot;"
-    },
-    {
-      "input": "s = &quot;))((&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"lee(t(c)o)de)\"",
-      "expectedOutput": null
+      "expectedOutput": "\"lee(t(c)o)de\""
     },
     {
       "input": "\"a)b(c)d\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ab(c)d\""
     },
     {
       "input": "\"))((\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"lee(t(c)o)de)\"",
+      "expectedOutput": "\"lee(t(c)o)de\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"a)b(c)d\"",
+      "expectedOutput": "\"ab(c)d\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"))((\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-remove-to-make-valid-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:16.871Z",
+    "collectedAt": "2026-10-19T18:40:24.927Z",
     "sourceUpdatedAt": null
   }
 }

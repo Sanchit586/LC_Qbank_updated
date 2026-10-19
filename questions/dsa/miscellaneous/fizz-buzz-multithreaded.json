@@ -34,82 +34,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 15",
+      "input": "15",
       "expectedOutput": "[1,2,\"fizz\",4,\"buzz\",\"fizz\",7,8,\"fizz\",\"buzz\",11,\"fizz\",13,14,\"fizzbuzz\"]"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "[1,2,\"fizz\",4,\"buzz\"]"
     }
   ],
   "testCases": [
     {
+      "input": "15",
+      "expectedOutput": "[1,2,\"fizz\",4,\"buzz\",\"fizz\",7,8,\"fizz\",\"buzz\",11,\"fizz\",13,14,\"fizzbuzz\"]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[1,2,\"fizz\",4,\"buzz\"]"
+    },
+    {
       "input": "n = 15",
       "expectedOutput": "[1,2,\"fizz\",4,\"buzz\",\"fizz\",7,8,\"fizz\",\"buzz\",11,\"fizz\",13,14,\"fizzbuzz\"]"
     },
     {
       "input": "n = 5",
       "expectedOutput": "[1,2,\"fizz\",4,\"buzz\"]"
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -121,7 +69,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/fizz-buzz-multithreaded/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.373Z",
+    "collectedAt": "2026-10-19T18:40:18.938Z",
     "sourceUpdatedAt": null
   }
 }

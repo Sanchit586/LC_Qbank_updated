@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "time = &quot;2?:?0&quot;",
-      "output": "&quot;23:50&quot;",
-      "explanation": "The latest hour beginning with the digit &#39;2&#39; is 23 and the latest minute ending with the digit &#39;0&#39; is 50."
+      "input": "time = \"2?:?0\"",
+      "output": "\"23:50\"",
+      "explanation": "The latest hour beginning with the digit '2' is 23 and the latest minute ending with the digit '0' is 50."
     },
     {
-      "input": "time = &quot;0?:3?&quot;",
-      "output": "&quot;09:39&quot;",
+      "input": "time = \"0?:3?\"",
+      "output": "\"09:39\"",
       "explanation": null
     },
     {
-      "input": "time = &quot;1?:22&quot;",
-      "output": "&quot;19:22&quot;",
+      "input": "time = \"1?:22\"",
+      "output": "\"19:22\"",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "time = &quot;2?:?0&quot;",
-      "expectedOutput": "&quot;23:50&quot;"
+      "input": "\"2?:?0\"",
+      "expectedOutput": "\"23:50\""
     },
     {
-      "input": "time = &quot;0?:3?&quot;",
-      "expectedOutput": "&quot;09:39&quot;"
+      "input": "\"0?:3?\"",
+      "expectedOutput": "\"09:39\""
     },
     {
-      "input": "time = &quot;1?:22&quot;",
-      "expectedOutput": "&quot;19:22&quot;"
+      "input": "\"1?:22\"",
+      "expectedOutput": "\"19:22\""
     }
   ],
   "testCases": [
     {
-      "input": "time = &quot;2?:?0&quot;",
-      "expectedOutput": "&quot;23:50&quot;"
-    },
-    {
-      "input": "time = &quot;0?:3?&quot;",
-      "expectedOutput": "&quot;09:39&quot;"
-    },
-    {
-      "input": "time = &quot;1?:22&quot;",
-      "expectedOutput": "&quot;19:22&quot;"
-    },
-    {
       "input": "\"2?:?0\"",
-      "expectedOutput": null
+      "expectedOutput": "\"23:50\""
     },
     {
       "input": "\"0?:3?\"",
-      "expectedOutput": null
+      "expectedOutput": "\"09:39\""
     },
     {
       "input": "\"1?:22\"",
-      "expectedOutput": null
+      "expectedOutput": "\"19:22\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "time = \"2?:?0\"",
+      "expectedOutput": "\"23:50\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "time = \"0?:3?\"",
+      "expectedOutput": "\"09:39\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "time = \"1?:22\"",
+      "expectedOutput": "\"19:22\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/latest-time-by-replacing-hidden-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.211Z",
+    "collectedAt": "2026-10-19T18:40:20.093Z",
     "sourceUpdatedAt": null
   }
 }

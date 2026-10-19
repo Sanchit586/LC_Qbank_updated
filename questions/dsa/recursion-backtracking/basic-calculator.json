@@ -23,17 +23,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1 + 1&quot;",
+      "input": "s = \"1 + 1\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot; 2-1 + 2 &quot;",
+      "input": "s = \" 2-1 + 2 \"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;(1+(4+5+2)-3)+(6+8)&quot;",
+      "input": "s = \"(1+(4+5+2)-3)+(6+8)\"",
       "output": "23",
       "explanation": null
     }
@@ -61,98 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1 + 1&quot;",
+      "input": "\"1 + 1\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot; 2-1 + 2 &quot;",
+      "input": "\" 2-1 + 2 \"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;(1+(4+5+2)-3)+(6+8)&quot;",
+      "input": "\"(1+(4+5+2)-3)+(6+8)\"",
       "expectedOutput": "23"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1 + 1&quot;",
+      "input": "\"1 + 1\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot; 2-1 + 2 &quot;",
+      "input": "\" 2-1 + 2 \"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;(1+(4+5+2)-3)+(6+8)&quot;",
+      "input": "\"(1+(4+5+2)-3)+(6+8)\"",
       "expectedOutput": "23"
     },
     {
-      "input": "\"1 + 1\"",
-      "expectedOutput": null
+      "input": "s = \"1 + 1\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\" 2-1 + 2 \"",
-      "expectedOutput": null
+      "input": "s = \" 2-1 + 2 \"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"(1+(4+5+2)-3)+(6+8)\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"(1+(4+5+2)-3)+(6+8)\"",
+      "expectedOutput": "23"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/basic-calculator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.565Z",
+    "collectedAt": "2026-10-19T18:40:13.448Z",
     "sourceUpdatedAt": null
   }
 }

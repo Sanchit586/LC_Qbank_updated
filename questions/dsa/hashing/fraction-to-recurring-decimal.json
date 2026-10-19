@@ -18,17 +18,17 @@
   "examples": [
     {
       "input": "numerator = 1, denominator = 2",
-      "output": "&quot;0.5&quot;",
+      "output": "\"0.5\"",
       "explanation": null
     },
     {
       "input": "numerator = 2, denominator = 1",
-      "output": "&quot;2&quot;",
+      "output": "\"2\"",
       "explanation": null
     },
     {
       "input": "numerator = 4, denominator = 333",
-      "output": "&quot;0.(012)&quot;",
+      "output": "\"0.(012)\"",
       "explanation": null
     }
   ],
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "numerator = 1, denominator = 2",
-      "expectedOutput": "&quot;0.5&quot;"
+      "input": "1\n2",
+      "expectedOutput": "\"0.5\""
     },
     {
-      "input": "numerator = 2, denominator = 1",
-      "expectedOutput": "&quot;2&quot;"
+      "input": "2\n1",
+      "expectedOutput": "\"2\""
     },
     {
-      "input": "numerator = 4, denominator = 333",
-      "expectedOutput": "&quot;0.(012)&quot;"
+      "input": "4\n333",
+      "expectedOutput": "\"0.(012)\""
     }
   ],
   "testCases": [
     {
-      "input": "numerator = 1, denominator = 2",
-      "expectedOutput": "&quot;0.5&quot;"
-    },
-    {
-      "input": "numerator = 2, denominator = 1",
-      "expectedOutput": "&quot;2&quot;"
-    },
-    {
-      "input": "numerator = 4, denominator = 333",
-      "expectedOutput": "&quot;0.(012)&quot;"
-    },
-    {
       "input": "1\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"0.5\""
     },
     {
       "input": "2\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"2\""
     },
     {
       "input": "4\n333",
-      "expectedOutput": null
+      "expectedOutput": "\"0.(012)\""
     },
     {
-      "input": "numerator = 3, denominator = 2",
-      "expectedOutput": null
+      "input": "numerator = 1, denominator = 2",
+      "expectedOutput": "\"0.5\""
     },
     {
-      "input": "numerator = 5, denominator = 334",
-      "expectedOutput": null
+      "input": "numerator = 2, denominator = 1",
+      "expectedOutput": "\"2\""
     },
     {
-      "input": "2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "numerator = 2, denominator = 3",
-      "expectedOutput": null
+      "input": "numerator = 4, denominator = 333",
+      "expectedOutput": "\"0.(012)\""
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/fraction-to-recurring-decimal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:20.141Z",
+    "collectedAt": "2026-10-19T18:40:19.028Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aaaaa&quot;",
+      "input": "word = \"aaaaa\"",
       "output": "2",
-      "explanation": "We can change word into &quot;acaca&quot; which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+      "explanation": "We can change word into \"acaca\" which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
     },
     {
-      "input": "word = &quot;abddez&quot;",
+      "input": "word = \"abddez\"",
       "output": "2",
-      "explanation": "We can change word into &quot;ybdoez&quot; which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
+      "explanation": "We can change word into \"ybdoez\" which does not have any adjacent almost-equal characters.\nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 2."
     },
     {
-      "input": "word = &quot;zyxyxyz&quot;",
+      "input": "word = \"zyxyxyz\"",
       "output": "3",
-      "explanation": "We can change word into &quot;zaxaxaz&quot; which does not have any adjacent almost-equal characters. \nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3."
+      "explanation": "We can change word into \"zaxaxaz\" which does not have any adjacent almost-equal characters. \nIt can be shown that the minimum number of operations needed to remove all adjacent almost-equal characters from word is 3."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aaaaa&quot;",
+      "input": "\"aaaaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;abddez&quot;",
+      "input": "\"abddez\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;zyxyxyz&quot;",
+      "input": "\"zyxyxyz\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aaaaa&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "word = &quot;abddez&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "word = &quot;zyxyxyz&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "\"aaaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"abddez\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"zyxyxyz\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "word = \"aaaaa\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "word = \"abddez\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"zyxyxyz\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-adjacent-almost-equal-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.157Z",
+    "collectedAt": "2026-10-19T18:40:27.443Z",
     "sourceUpdatedAt": null
   }
 }

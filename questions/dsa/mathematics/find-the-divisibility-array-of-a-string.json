@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;998244353&quot;, m = 3",
+      "input": "word = \"998244353\", m = 3",
       "output": "[1,1,0,0,0,1,1,0,0]",
-      "explanation": "There are only 4 prefixes that are divisible by 3: &quot;9&quot;, &quot;99&quot;, &quot;998244&quot;, and &quot;9982443&quot;."
+      "explanation": "There are only 4 prefixes that are divisible by 3: \"9\", \"99\", \"998244\", and \"9982443\"."
     },
     {
-      "input": "word = &quot;1010&quot;, m = 10",
+      "input": "word = \"1010\", m = 10",
       "output": "[0,1,0,1]",
-      "explanation": "There are only 2 prefixes that are divisible by 10: &quot;10&quot;, and &quot;1010&quot;."
+      "explanation": "There are only 2 prefixes that are divisible by 10: \"10\", and \"1010\"."
     }
   ],
   "starterCode": {
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;998244353&quot;, m = 3",
+      "input": "\"998244353\"\n3",
       "expectedOutput": "[1,1,0,0,0,1,1,0,0]"
     },
     {
-      "input": "word = &quot;1010&quot;, m = 10",
+      "input": "\"1010\"\n10",
       "expectedOutput": "[0,1,0,1]"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;998244353&quot;, m = 3",
+      "input": "\"998244353\"\n3",
       "expectedOutput": "[1,1,0,0,0,1,1,0,0]"
     },
     {
-      "input": "word = &quot;1010&quot;, m = 10",
+      "input": "\"1010\"\n10",
       "expectedOutput": "[0,1,0,1]"
     },
     {
-      "input": "\"998244353\"\n3",
-      "expectedOutput": null
+      "input": "word = \"998244353\", m = 3",
+      "expectedOutput": "[1,1,0,0,0,1,1,0,0]"
     },
     {
-      "input": "\"1010\"\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;998244354&quot;, m = 4",
-      "expectedOutput": null
+      "input": "word = \"1010\", m = 10",
+      "expectedOutput": "[0,1,0,1]"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-divisibility-array-of-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:08.322Z",
+    "collectedAt": "2026-10-19T18:40:18.243Z",
     "sourceUpdatedAt": null
   }
 }

@@ -13,7 +13,7 @@
   ],
   "examples": [
     {
-      "input": "arr = [0,10,20,30], fn = function greaterThan10(n) { return n &gt; 10; }",
+      "input": "arr = [0,10,20,30], fn = function greaterThan10(n) { return n > 10; }",
       "output": "[20,30]",
       "explanation": "const newArray = filter(arr, fn); // [20, 30]\nThe function filters out values that are not greater than 10"
     },
@@ -34,21 +34,33 @@
   },
   "publicTests": [
     {
-      "input": "arr = [0,10,20,30], fn = function greaterThan10(n) { return n &gt; 10; }",
+      "input": "function greaterThan10(n) { return n > 10; }\n[0,10,20,30]",
       "expectedOutput": "[20,30]"
     },
     {
-      "input": "arr = [1,2,3], fn = function firstIndex(n, i) { return i === 0; }",
+      "input": "function firstIndex(n, i) { return i === 0; }\n[1,2,3]",
       "expectedOutput": "[1]"
     },
     {
-      "input": "arr = [-2,-1,0,1,2], fn = function plusOne(n) { return n + 1 }",
+      "input": "function plusOne(n) { return n + 1 }\n[-2,-1,0,1,2]",
       "expectedOutput": "[-2,0,1,2]"
     }
   ],
   "testCases": [
     {
-      "input": "arr = [0,10,20,30], fn = function greaterThan10(n) { return n &gt; 10; }",
+      "input": "function greaterThan10(n) { return n > 10; }\n[0,10,20,30]",
+      "expectedOutput": "[20,30]"
+    },
+    {
+      "input": "function firstIndex(n, i) { return i === 0; }\n[1,2,3]",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "function plusOne(n) { return n + 1 }\n[-2,-1,0,1,2]",
+      "expectedOutput": "[-2,0,1,2]"
+    },
+    {
+      "input": "arr = [0,10,20,30], fn = function greaterThan10(n) { return n > 10; }",
       "expectedOutput": "[20,30]"
     },
     {
@@ -58,38 +70,6 @@
     {
       "input": "arr = [-2,-1,0,1,2], fn = function plusOne(n) { return n + 1 }",
       "expectedOutput": "[-2,0,1,2]"
-    },
-    {
-      "input": "function greaterThan10(n) { return n > 10; }\n[0,10,20,30]",
-      "expectedOutput": null
-    },
-    {
-      "input": "function firstIndex(n, i) { return i === 0; }\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "function plusOne(n) { return n + 1 }\n[-2,-1,0,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [2,3,4], fn = function firstIndex(n, i) { return i === 1; }",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [-3,-2,1,2,3], fn = function plusOne(n) { return n + 2 }",
-      "expectedOutput": null
-    },
-    {
-      "input": "function greaterThan11(n) { return n > 11; }\n[1,11,21,31]",
-      "expectedOutput": null
-    },
-    {
-      "input": "function firstIndex(n, i) { return i === 1; }\n[2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [1,11,21,31], fn = function greaterThan11(n) { return n &gt; 11; }",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -105,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/filter-elements-from-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.659Z",
+    "collectedAt": "2026-10-19T18:40:17.303Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ca&quot;",
+      "input": "s = \"ca\"",
       "output": "2",
-      "explanation": "You can&#39;t remove any characters, so the string stays as is."
+      "explanation": "You can't remove any characters, so the string stays as is."
     },
     {
-      "input": "s = &quot;cabaabac&quot;",
+      "input": "s = \"cabaabac\"",
       "output": "0",
-      "explanation": "An optimal sequence of operations is:\n- Take prefix = &quot;c&quot; and suffix = &quot;c&quot; and remove them, s = &quot;abaaba&quot;.\n- Take prefix = &quot;a&quot; and suffix = &quot;a&quot; and remove them, s = &quot;baab&quot;.\n- Take prefix = &quot;b&quot; and suffix = &quot;b&quot; and remove them, s = &quot;aa&quot;.\n- Take prefix = &quot;a&quot; and suffix = &quot;a&quot; and remove them, s = &quot;&quot;."
+      "explanation": "An optimal sequence of operations is:\n- Take prefix = \"c\" and suffix = \"c\" and remove them, s = \"abaaba\".\n- Take prefix = \"a\" and suffix = \"a\" and remove them, s = \"baab\".\n- Take prefix = \"b\" and suffix = \"b\" and remove them, s = \"aa\".\n- Take prefix = \"a\" and suffix = \"a\" and remove them, s = \"\"."
     },
     {
-      "input": "s = &quot;aabccabba&quot;",
+      "input": "s = \"aabccabba\"",
       "output": "3",
-      "explanation": "An optimal sequence of operations is:\n- Take prefix = &quot;aa&quot; and suffix = &quot;a&quot; and remove them, s = &quot;bccabb&quot;.\n- Take prefix = &quot;b&quot; and suffix = &quot;bb&quot; and remove them, s = &quot;cca&quot;."
+      "explanation": "An optimal sequence of operations is:\n- Take prefix = \"aa\" and suffix = \"a\" and remove them, s = \"bccabb\".\n- Take prefix = \"b\" and suffix = \"bb\" and remove them, s = \"cca\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ca&quot;",
+      "input": "\"ca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cabaabac&quot;",
+      "input": "\"cabaabac\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aabccabba&quot;",
+      "input": "\"aabccabba\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ca&quot;",
+      "input": "\"ca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;cabaabac&quot;",
+      "input": "\"cabaabac\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aabccabba&quot;",
+      "input": "\"aabccabba\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"ca\"",
-      "expectedOutput": null
+      "input": "s = \"ca\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"cabaabac\"",
-      "expectedOutput": null
+      "input": "s = \"cabaabac\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aabccabba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aabccabba\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-length-of-string-after-deleting-similar-ends/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.371Z",
+    "collectedAt": "2026-10-19T18:40:24.054Z",
     "sourceUpdatedAt": null
   }
 }

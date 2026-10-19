@@ -18,17 +18,17 @@
     {
       "input": "n = 3, pos = 1, k = 0",
       "output": "2",
-      "explanation": "​​​​​​​\n\n\n\tIndex 0 is to the left of pos = 1, and index 2 is to the right of pos = 1.\n\tTo see k = 0 people, index 0 must choose &#39;R&#39; and index 2 must choose &#39;L&#39;, keeping both invisible.\n\tThe person at index 1 can choose &#39;L&#39; or &#39;R&#39; since it does not affect the count. Thus, the answer is 2."
+      "explanation": "​​​​​​​\n\n\n\tIndex 0 is to the left of pos = 1, and index 2 is to the right of pos = 1.\n\tTo see k = 0 people, index 0 must choose 'R' and index 2 must choose 'L', keeping both invisible.\n\tThe person at index 1 can choose 'L' or 'R' since it does not affect the count. Thus, the answer is 2."
     },
     {
       "input": "n = 3, pos = 2, k = 1",
       "output": "4",
-      "explanation": "Index 0 and index 1 are left of pos = 2, and there is no index to the right.\n\tTo see k = 1 person, exactly one of index 0 or index 1 must choose &#39;L&#39;, and the other must choose &#39;R&#39;.\n\tThere are 2 ways to choose which index is visible from the left.\n\tThe person at index 2 can choose &#39;L&#39; or &#39;R&#39; since it does not affect the count. Thus, the answer is 2 + 2 = 4."
+      "explanation": "Index 0 and index 1 are left of pos = 2, and there is no index to the right.\n\tTo see k = 1 person, exactly one of index 0 or index 1 must choose 'L', and the other must choose 'R'.\n\tThere are 2 ways to choose which index is visible from the left.\n\tThe person at index 2 can choose 'L' or 'R' since it does not affect the count. Thus, the answer is 2 + 2 = 4."
     },
     {
       "input": "n = 1, pos = 0, k = 0",
       "output": "2",
-      "explanation": "There are no indices to the left or right of pos = 0.\n\tTo see k = 0 people, no additional condition is required.\n\tThe person at index 0 can choose &#39;L&#39; or &#39;R&#39;. Thus, the answer is 2."
+      "explanation": "There are no indices to the left or right of pos = 0.\n\tTo see k = 0 people, no additional condition is required.\n\tThe person at index 0 can choose 'L' or 'R'. Thus, the answer is 2."
     }
   ],
   "starterCode": {
@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, pos = 1, k = 0",
+      "input": "3\n1\n0",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, pos = 2, k = 1",
+      "input": "3\n2\n1",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 1, pos = 0, k = 0",
+      "input": "1\n0\n0",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "3\n1\n0",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n2\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n0\n0",
+      "expectedOutput": "2"
+    },
+    {
       "input": "n = 3, pos = 1, k = 0",
       "expectedOutput": "2"
     },
@@ -78,38 +90,6 @@
     {
       "input": "n = 1, pos = 0, k = 0",
       "expectedOutput": "2"
-    },
-    {
-      "input": "3\n1\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n0\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, pos = 3, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, pos = 1, k = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, pos = 2, k = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/direction-assignments-with-exactly-k-visible-people/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.460Z",
+    "collectedAt": "2026-10-19T18:40:16.685Z",
     "sourceUpdatedAt": null
   }
 }

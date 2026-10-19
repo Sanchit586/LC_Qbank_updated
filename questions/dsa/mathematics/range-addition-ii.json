@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "m = 3, n = 3, ops = [[2,2],[3,3]]",
+      "input": "3\n3\n[[2,2],[3,3]]",
       "expectedOutput": "4"
     },
     {
-      "input": "m = 3, n = 3, ops = [[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]",
+      "input": "3\n3\n[[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]",
       "expectedOutput": "4"
     },
     {
-      "input": "m = 3, n = 3, ops = []",
+      "input": "3\n3\n[]",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
+      "input": "3\n3\n[[2,2],[3,3]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n3\n[[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n3\n[]",
+      "expectedOutput": "9"
+    },
+    {
       "input": "m = 3, n = 3, ops = [[2,2],[3,3]]",
       "expectedOutput": "4"
     },
@@ -81,38 +93,6 @@
     {
       "input": "m = 3, n = 3, ops = []",
       "expectedOutput": "9"
-    },
-    {
-      "input": "3\n3\n[[2,2],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3\n[[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3],[2,2],[3,3],[3,3],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3\n[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 4, ops = [[3,3],[4,4],[4,4],[4,4],[3,3],[4,4],[4,4],[4,4],[3,3],[4,4],[4,4],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 4, ops = []",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4\n[[3,3],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4\n[[3,3],[4,4],[4,4],[4,4],[3,3],[4,4],[4,4],[4,4],[3,3],[4,4],[4,4],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 4, ops = [[3,3],[4,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-addition-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.496Z",
+    "collectedAt": "2026-10-19T18:40:27.158Z",
     "sourceUpdatedAt": null
   }
 }

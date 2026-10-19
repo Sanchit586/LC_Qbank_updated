@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Sales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+",
+      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]]}}",
       "expectedOutput": "+------------+------------+----------+-------+\n| product_id | first_year | quantity | price |\n+------------+------------+----------+-------+ \n| 100        | 2008       | 10       | 5000  |\n| 200        | 2011       | 15       | 9000  |\n+------------+------------+----------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "Sales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+",
+      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]]}}",
       "expectedOutput": "+------------+------------+----------+-------+\n| product_id | first_year | quantity | price |\n+------------+------------+----------+-------+ \n| 100        | 2008       | 10       | 5000  |\n| 200        | 2011       | 15       | 9000  |\n+------------+------------+----------+-------+"
     },
     {
-      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000],[2,100,2009,12,5000],[7,200,2011,15,9000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,5000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Sales\":[\"sale_id\",\"product_id\",\"year\",\"quantity\",\"price\"]},\"rows\":{\"Sales\":[[1,100,2008,10,null],[2,100,2009,12,null],[7,200,2011,15,null]]}}",
-      "expectedOutput": null
+      "input": "Sales table:\n+---------+------------+------+----------+-------+\n| sale_id | product_id | year | quantity | price |\n+---------+------------+------+----------+-------+ \n| 1       | 100        | 2008 | 10       | 5000  |\n| 2       | 100        | 2009 | 12       | 5000  |\n| 7       | 200        | 2011 | 15       | 9000  |\n+---------+------------+------+----------+-------+",
+      "expectedOutput": "+------------+------------+----------+-------+\n| product_id | first_year | quantity | price |\n+------------+------------+----------+-------+ \n| 100        | 2008       | 10       | 5000  |\n| 200        | 2011       | 15       | 9000  |\n+------------+------------+----------+-------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Sales (sale_id int, product_id int, year int, quantity int, price int)\n\nTruncate table Sales",
@@ -65,7 +53,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/product-sales-analysis-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.772Z",
+    "collectedAt": "2026-10-19T18:40:27.017Z",
     "sourceUpdatedAt": null
   }
 }

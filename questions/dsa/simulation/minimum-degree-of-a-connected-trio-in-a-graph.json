@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 6, edges = [[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
+      "input": "6\n[[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 7, edges = [[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
+      "input": "7\n[[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "6\n[[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "7\n[[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 6, edges = [[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
       "expectedOutput": "3"
     },
     {
       "input": "n = 7, edges = [[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "6\n[[1,2],[1,3],[3,2],[4,1],[5,2],[3,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n[[1,3],[4,1],[4,3],[2,5],[5,6],[6,7],[7,5],[2,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, edges = [[2,3],[2,4],[4,3],[5,2],[6,3],[4,7]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-degree-of-a-connected-trio-in-a-graph/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:53.728Z",
+    "collectedAt": "2026-10-19T18:40:23.750Z",
     "sourceUpdatedAt": null
   }
 }

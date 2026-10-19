@@ -18,7 +18,13 @@
     "1 <= val <= 1000",
     "At most 50 calls will be made to insert and sum."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MapSum\", \"insert\", \"sum\", \"insert\", \"sum\"]\n[[], [\"apple\", 3], [\"ap\"], [\"app\", 2], [\"ap\"]]",
+      "output": "[null, null, 3, null, 5]",
+      "explanation": "MapSum mapSum = new MapSum();\nmapSum.insert(\"apple\", 3);  \nmapSum.sum(\"ap\");           // return 3 (apple = 3)\nmapSum.insert(\"app\", 2);    \nmapSum.sum(\"ap\");           // return 5 (apple + app = 3 + 2 = 5)"
+    }
+  ],
   "starterCode": {
     "cpp": "class MapSum {\npublic:\n    MapSum() {\n        \n    }\n    \n    void insert(string key, int val) {\n        \n    }\n    \n    int sum(string prefix) {\n        \n    }\n};\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * MapSum* obj = new MapSum();\n * obj->insert(key,val);\n * int param_2 = obj->sum(prefix);\n */",
     "java": "class MapSum {\n\n    public MapSum() {\n        \n    }\n    \n    public void insert(String key, int val) {\n        \n    }\n    \n    public int sum(String prefix) {\n        \n    }\n}\n\n/**\n * Your MapSum object will be instantiated and called as such:\n * MapSum obj = new MapSum();\n * obj.insert(key,val);\n * int param_2 = obj.sum(prefix);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"MapSum\",\"insert\",\"sum\",\"insert\",\"sum\"]\n[[],[\"apple\",3],[\"ap\"],[\"app\",2],[\"ap\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 3, null, 5]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MapSum\",\"insert\",\"sum\",\"insert\",\"sum\"]\n[[],[\"apple\",3],[\"ap\"],[\"app\",2],[\"ap\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 3, null, 5]"
     },
     {
-      "input": "[\"MapSum\",\"insert\",\"sum\",\"insert\",\"sum\"]\n[[],[\"apple\",4],[\"ap\"],[\"app\",3],[\"ap\"]]",
-      "expectedOutput": null
+      "input": "[\"MapSum\", \"insert\", \"sum\", \"insert\", \"sum\"]\n[[], [\"apple\", 3], [\"ap\"], [\"app\", 2], [\"ap\"]]",
+      "expectedOutput": "[null, null, 3, null, 5]"
     }
   ],
   "sqlSchema": null,
@@ -65,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/map-sum-pairs/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.440Z",
+    "collectedAt": "2026-10-19T18:40:21.048Z",
     "sourceUpdatedAt": null
   }
 }

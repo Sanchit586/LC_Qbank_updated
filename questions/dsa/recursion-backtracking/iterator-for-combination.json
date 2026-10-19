@@ -18,7 +18,13 @@
     "At most 104 calls will be made to next and hasNext.",
     "It is guaranteed that all calls of the function next are valid."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"CombinationIterator\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\"]\n[[\"abc\", 2], [], [], [], [], [], []]",
+      "output": "[null, \"ab\", true, \"ac\", true, \"bc\", false]",
+      "explanation": "CombinationIterator itr = new CombinationIterator(\"abc\", 2);\nitr.next();    // return \"ab\"\nitr.hasNext(); // return True\nitr.next();    // return \"ac\"\nitr.hasNext(); // return True\nitr.next();    // return \"bc\"\nitr.hasNext(); // return False"
+    }
+  ],
   "starterCode": {
     "cpp": "class CombinationIterator {\npublic:\n    CombinationIterator(string characters, int combinationLength) {\n        \n    }\n    \n    string next() {\n        \n    }\n    \n    bool hasNext() {\n        \n    }\n};\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator* obj = new CombinationIterator(characters, combinationLength);\n * string param_1 = obj->next();\n * bool param_2 = obj->hasNext();\n */",
     "java": "class CombinationIterator {\n\n    public CombinationIterator(String characters, int combinationLength) {\n        \n    }\n    \n    public String next() {\n        \n    }\n    \n    public boolean hasNext() {\n        \n    }\n}\n\n/**\n * Your CombinationIterator object will be instantiated and called as such:\n * CombinationIterator obj = new CombinationIterator(characters, combinationLength);\n * String param_1 = obj.next();\n * boolean param_2 = obj.hasNext();\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",2],[],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"ab\", true, \"ac\", true, \"bc\", false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",2],[],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"ab\", true, \"ac\", true, \"bc\", false]"
     },
     {
-      "input": "[\"CombinationIterator\",\"next\",\"hasNext\",\"next\",\"hasNext\",\"next\",\"hasNext\"]\n[[\"abc\",3],[],[],[],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"CombinationIterator\", \"next\", \"hasNext\", \"next\", \"hasNext\", \"next\", \"hasNext\"]\n[[\"abc\", 2], [], [], [], [], [], []]",
+      "expectedOutput": "[null, \"ab\", true, \"ac\", true, \"bc\", false]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/iterator-for-combination/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.339Z",
+    "collectedAt": "2026-10-19T18:40:19.653Z",
     "sourceUpdatedAt": null
   }
 }

@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "board = &quot;WRRBBW&quot;, hand = &quot;RB&quot;",
+      "input": "board = \"WRRBBW\", hand = \"RB\"",
       "output": "-1",
-      "explanation": "It is impossible to clear all the balls. The best you can do is:\n- Insert &#39;R&#39; so the board becomes WRRRBBW. WRRRBBW -&gt; WBBW.\n- Insert &#39;B&#39; so the board becomes WBBBW. WBBBW -&gt; WW.\nThere are still balls remaining on the board, and you are out of balls to insert."
+      "explanation": "It is impossible to clear all the balls. The best you can do is:\n- Insert 'R' so the board becomes WRRRBBW. WRRRBBW -> WBBW.\n- Insert 'B' so the board becomes WBBBW. WBBBW -> WW.\nThere are still balls remaining on the board, and you are out of balls to insert."
     },
     {
-      "input": "board = &quot;WWRRBBWW&quot;, hand = &quot;WRBRW&quot;",
+      "input": "board = \"WWRRBBWW\", hand = \"WRBRW\"",
       "output": "2",
-      "explanation": "To make the board empty:\n- Insert &#39;R&#39; so the board becomes WWRRRBBWW. WWRRRBBWW -&gt; WWBBWW.\n- Insert &#39;B&#39; so the board becomes WWBBBWW. WWBBBWW -&gt; WWWW -&gt; empty.\n2 balls from your hand were needed to clear the board."
+      "explanation": "To make the board empty:\n- Insert 'R' so the board becomes WWRRRBBWW. WWRRRBBWW -> WWBBWW.\n- Insert 'B' so the board becomes WWBBBWW. WWBBBWW -> WWWW -> empty.\n2 balls from your hand were needed to clear the board."
     },
     {
-      "input": "board = &quot;G&quot;, hand = &quot;GGGGG&quot;",
+      "input": "board = \"G\", hand = \"GGGGG\"",
       "output": "2",
-      "explanation": "To make the board empty:\n- Insert &#39;G&#39; so the board becomes GG.\n- Insert &#39;G&#39; so the board becomes GGG. GGG -&gt; empty.\n2 balls from your hand were needed to clear the board."
+      "explanation": "To make the board empty:\n- Insert 'G' so the board becomes GG.\n- Insert 'G' so the board becomes GGG. GGG -> empty.\n2 balls from your hand were needed to clear the board."
     }
   ],
   "starterCode": {
@@ -59,90 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "board = &quot;WRRBBW&quot;, hand = &quot;RB&quot;",
+      "input": "\"WRRBBW\"\n\"RB\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "board = &quot;WWRRBBWW&quot;, hand = &quot;WRBRW&quot;",
+      "input": "\"WWRRBBWW\"\n\"WRBRW\"",
       "expectedOutput": "2"
     },
     {
-      "input": "board = &quot;G&quot;, hand = &quot;GGGGG&quot;",
+      "input": "\"G\"\n\"GGGGG\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "board = &quot;WRRBBW&quot;, hand = &quot;RB&quot;",
+      "input": "\"WRRBBW\"\n\"RB\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "board = &quot;WWRRBBWW&quot;, hand = &quot;WRBRW&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "board = &quot;G&quot;, hand = &quot;GGGGG&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"WRRBBW\"\n\"RB\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"WWRRBBWW\"\n\"WRBRW\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"G\"\n\"GGGGG\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "board = \"WRRBBW\", hand = \"RB\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "board = \"WWRRBBWW\", hand = \"WRBRW\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "board = \"G\", hand = \"GGGGG\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/zuma-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:18.314Z",
+    "collectedAt": "2026-10-19T18:40:31.893Z",
     "sourceUpdatedAt": null
   }
 }

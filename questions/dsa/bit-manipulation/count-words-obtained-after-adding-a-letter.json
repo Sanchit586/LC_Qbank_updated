@@ -21,14 +21,14 @@
   ],
   "examples": [
     {
-      "input": "startWords = [&quot;ant&quot;,&quot;act&quot;,&quot;tack&quot;], targetWords = [&quot;tack&quot;,&quot;act&quot;,&quot;acti&quot;]",
+      "input": "startWords = [\"ant\",\"act\",\"tack\"], targetWords = [\"tack\",\"act\",\"acti\"]",
       "output": "2",
-      "explanation": "- In order to form targetWords[0] = &quot;tack&quot;, we use startWords[1] = &quot;act&quot;, append &#39;k&#39; to it, and rearrange &quot;actk&quot; to &quot;tack&quot;.\n- There is no string in startWords that can be used to obtain targetWords[1] = &quot;act&quot;.\n  Note that &quot;act&quot; does exist in startWords, but we must append one letter to the string before rearranging it.\n- In order to form targetWords[2] = &quot;acti&quot;, we use startWords[1] = &quot;act&quot;, append &#39;i&#39; to it, and rearrange &quot;acti&quot; to &quot;acti&quot; itself."
+      "explanation": "- In order to form targetWords[0] = \"tack\", we use startWords[1] = \"act\", append 'k' to it, and rearrange \"actk\" to \"tack\".\n- There is no string in startWords that can be used to obtain targetWords[1] = \"act\".\n  Note that \"act\" does exist in startWords, but we must append one letter to the string before rearranging it.\n- In order to form targetWords[2] = \"acti\", we use startWords[1] = \"act\", append 'i' to it, and rearrange \"acti\" to \"acti\" itself."
     },
     {
-      "input": "startWords = [&quot;ab&quot;,&quot;a&quot;], targetWords = [&quot;abc&quot;,&quot;abcd&quot;]",
+      "input": "startWords = [\"ab\",\"a\"], targetWords = [\"abc\",\"abcd\"]",
       "output": "1",
-      "explanation": "- In order to form targetWords[0] = &quot;abc&quot;, we use startWords[0] = &quot;ab&quot;, add &#39;c&#39; to it, and rearrange it to &quot;abc&quot;.\n- There is no string in startWords that can be used to obtain targetWords[1] = &quot;abcd&quot;."
+      "explanation": "- In order to form targetWords[0] = \"abc\", we use startWords[0] = \"ab\", add 'c' to it, and rearrange it to \"abc\".\n- There is no string in startWords that can be used to obtain targetWords[1] = \"abcd\"."
     }
   ],
   "starterCode": {
@@ -54,30 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "startWords = [&quot;ant&quot;,&quot;act&quot;,&quot;tack&quot;], targetWords = [&quot;tack&quot;,&quot;act&quot;,&quot;acti&quot;]",
+      "input": "[\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "startWords = [&quot;ab&quot;,&quot;a&quot;], targetWords = [&quot;abc&quot;,&quot;abcd&quot;]",
+      "input": "[\"ab\",\"a\"]\n[\"abc\",\"abcd\"]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "startWords = [&quot;ant&quot;,&quot;act&quot;,&quot;tack&quot;], targetWords = [&quot;tack&quot;,&quot;act&quot;,&quot;acti&quot;]",
+      "input": "[\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "startWords = [&quot;ab&quot;,&quot;a&quot;], targetWords = [&quot;abc&quot;,&quot;abcd&quot;]",
+      "input": "[\"ab\",\"a\"]\n[\"abc\",\"abcd\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "[\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
-      "expectedOutput": null
+      "input": "startWords = [\"ant\",\"act\",\"tack\"], targetWords = [\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
     },
     {
-      "input": "[\"ab\",\"a\"]\n[\"abc\",\"abcd\"]",
-      "expectedOutput": null
+      "input": "startWords = [\"ab\",\"a\"], targetWords = [\"abc\",\"abcd\"]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-words-obtained-after-adding-a-letter/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.272Z",
+    "collectedAt": "2026-10-19T18:40:15.976Z",
     "sourceUpdatedAt": null
   }
 }

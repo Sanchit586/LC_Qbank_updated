@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "moves = &quot;L_RL__R&quot;",
+      "input": "moves = \"L_RL__R\"",
       "output": "3",
-      "explanation": "The furthest point we can reach from the origin 0 is point -3 through the following sequence of moves &quot;LLRLLLR&quot;."
+      "explanation": "The furthest point we can reach from the origin 0 is point -3 through the following sequence of moves \"LLRLLLR\"."
     },
     {
-      "input": "moves = &quot;_R__LL_&quot;",
+      "input": "moves = \"_R__LL_\"",
       "output": "5",
-      "explanation": "The furthest point we can reach from the origin 0 is point -5 through the following sequence of moves &quot;LRLLLLL&quot;."
+      "explanation": "The furthest point we can reach from the origin 0 is point -5 through the following sequence of moves \"LRLLLLL\"."
     },
     {
-      "input": "moves = &quot;_______&quot;",
+      "input": "moves = \"_______\"",
       "output": "7",
-      "explanation": "The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves &quot;RRRRRRR&quot;."
+      "explanation": "The furthest point we can reach from the origin 0 is point 7 through the following sequence of moves \"RRRRRRR\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "moves = &quot;L_RL__R&quot;",
+      "input": "\"L_RL__R\"",
       "expectedOutput": "3"
     },
     {
-      "input": "moves = &quot;_R__LL_&quot;",
+      "input": "\"_R__LL_\"",
       "expectedOutput": "5"
     },
     {
-      "input": "moves = &quot;_______&quot;",
+      "input": "\"_______\"",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
-      "input": "moves = &quot;L_RL__R&quot;",
+      "input": "\"L_RL__R\"",
       "expectedOutput": "3"
     },
     {
-      "input": "moves = &quot;_R__LL_&quot;",
+      "input": "\"_R__LL_\"",
       "expectedOutput": "5"
     },
     {
-      "input": "moves = &quot;_______&quot;",
+      "input": "\"_______\"",
       "expectedOutput": "7"
     },
     {
-      "input": "\"L_RL__R\"",
-      "expectedOutput": null
+      "input": "moves = \"L_RL__R\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"_R__LL_\"",
-      "expectedOutput": null
+      "input": "moves = \"_R__LL_\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"_______\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "moves = \"_______\"",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/furthest-point-from-origin/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:21.881Z",
+    "collectedAt": "2026-10-19T18:40:19.107Z",
     "sourceUpdatedAt": null
   }
 }

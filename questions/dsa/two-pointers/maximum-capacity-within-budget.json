@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "costs = [4,8,5,3], capacity = [1,5,2,7], budget = 8",
+      "input": "[4,8,5,3]\n[1,5,2,7]\n8",
       "expectedOutput": "8"
     },
     {
-      "input": "costs = [3,5,7,4], capacity = [2,4,3,6], budget = 7",
+      "input": "[3,5,7,4]\n[2,4,3,6]\n7",
       "expectedOutput": "6"
     },
     {
-      "input": "costs = [2,2,2], capacity = [3,5,4], budget = 5",
+      "input": "[2,2,2]\n[3,5,4]\n5",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
+      "input": "[4,8,5,3]\n[1,5,2,7]\n8",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[3,5,7,4]\n[2,4,3,6]\n7",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[2,2,2]\n[3,5,4]\n5",
+      "expectedOutput": "9"
+    },
+    {
       "input": "costs = [4,8,5,3], capacity = [1,5,2,7], budget = 8",
       "expectedOutput": "8"
     },
@@ -81,38 +93,6 @@
     {
       "input": "costs = [2,2,2], capacity = [3,5,4], budget = 5",
       "expectedOutput": "9"
-    },
-    {
-      "input": "[4,8,5,3]\n[1,5,2,7]\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,5,7,4]\n[2,4,3,6]\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,2]\n[3,5,4]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "costs = [4,6,8,5], capacity = [3,5,4,7], budget = 8",
-      "expectedOutput": null
-    },
-    {
-      "input": "costs = [3,3,3], capacity = [4,6,5], budget = 6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,9,6,4]\n[2,6,3,8]\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,6,8,5]\n[3,5,4,7]\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "costs = [5,9,6,4], capacity = [2,6,3,8], budget = 9",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-capacity-within-budget/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.421Z",
+    "collectedAt": "2026-10-19T18:40:21.648Z",
     "sourceUpdatedAt": null
   }
 }

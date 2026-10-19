@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abccbaacz&quot;",
-      "output": "&quot;c&quot;",
-      "explanation": "The letter &#39;a&#39; appears on the indexes 0, 5 and 6.\nThe letter &#39;b&#39; appears on the indexes 1 and 4.\nThe letter &#39;c&#39; appears on the indexes 2, 3 and 7.\nThe letter &#39;z&#39; appears on the index 8.\nThe letter &#39;c&#39; is the first letter to appear twice, because out of all the letters the index of its second occurrence is the smallest."
+      "input": "s = \"abccbaacz\"",
+      "output": "\"c\"",
+      "explanation": "The letter 'a' appears on the indexes 0, 5 and 6.\nThe letter 'b' appears on the indexes 1 and 4.\nThe letter 'c' appears on the indexes 2, 3 and 7.\nThe letter 'z' appears on the index 8.\nThe letter 'c' is the first letter to appear twice, because out of all the letters the index of its second occurrence is the smallest."
     },
     {
-      "input": "s = &quot;abcdd&quot;",
-      "output": "&quot;d&quot;",
-      "explanation": "The only letter that appears twice is &#39;d&#39; so we return &#39;d&#39;."
+      "input": "s = \"abcdd\"",
+      "output": "\"d\"",
+      "explanation": "The only letter that appears twice is 'd' so we return 'd'."
     }
   ],
   "starterCode": {
@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abccbaacz&quot;",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "\"abccbaacz\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "s = &quot;abcdd&quot;",
-      "expectedOutput": "&quot;d&quot;"
+      "input": "\"abcdd\"",
+      "expectedOutput": "\"d\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abccbaacz&quot;",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
-      "input": "s = &quot;abcdd&quot;",
-      "expectedOutput": "&quot;d&quot;"
-    },
-    {
       "input": "\"abccbaacz\"",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
       "input": "\"abcdd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"d\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abccbaacz\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcdd\"",
+      "expectedOutput": "\"d\""
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/first-letter-to-appear-twice/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.320Z",
+    "collectedAt": "2026-10-19T18:40:18.910Z",
     "sourceUpdatedAt": null
   }
 }

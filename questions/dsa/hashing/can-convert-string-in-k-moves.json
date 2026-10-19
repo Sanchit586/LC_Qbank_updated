@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;input&quot;, t = &quot;ouput&quot;, k = 9",
+      "input": "s = \"input\", t = \"ouput\", k = 9",
       "output": "true",
-      "explanation": "In the 6th move, we shift &#39;i&#39; 6 times to get &#39;o&#39;. And in the 7th move we shift &#39;n&#39; to get &#39;u&#39;."
+      "explanation": "In the 6th move, we shift 'i' 6 times to get 'o'. And in the 7th move we shift 'n' to get 'u'."
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;bcd&quot;, k = 10",
+      "input": "s = \"abc\", t = \"bcd\", k = 10",
       "output": "false",
-      "explanation": "We need to shift each character in s one time to convert it into t. We can shift &#39;a&#39; to &#39;b&#39; during the 1st move. However, there is no way to shift the other characters in the remaining moves to obtain t from s."
+      "explanation": "We need to shift each character in s one time to convert it into t. We can shift 'a' to 'b' during the 1st move. However, there is no way to shift the other characters in the remaining moves to obtain t from s."
     },
     {
-      "input": "s = &quot;aab&quot;, t = &quot;bbb&quot;, k = 27",
+      "input": "s = \"aab\", t = \"bbb\", k = 27",
       "output": "true",
-      "explanation": "In the 1st move, we shift the first &#39;a&#39; 1 time to get &#39;b&#39;. In the 27th move, we shift the second &#39;a&#39; 27 times to get &#39;b&#39;."
+      "explanation": "In the 1st move, we shift the first 'a' 1 time to get 'b'. In the 27th move, we shift the second 'a' 27 times to get 'b'."
     }
   ],
   "starterCode": {
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;input&quot;, t = &quot;ouput&quot;, k = 9",
+      "input": "\"input\"\n\"ouput\"\n9",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;bcd&quot;, k = 10",
+      "input": "\"abc\"\n\"bcd\"\n10",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;aab&quot;, t = &quot;bbb&quot;, k = 27",
+      "input": "\"aab\"\n\"bbb\"\n27",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;input&quot;, t = &quot;ouput&quot;, k = 9",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abc&quot;, t = &quot;bcd&quot;, k = 10",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;aab&quot;, t = &quot;bbb&quot;, k = 27",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"input\"\n\"ouput\"\n9",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abc\"\n\"bcd\"\n10",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"aab\"\n\"bbb\"\n27",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;bcd&quot;, k = 11",
-      "expectedOutput": null
+      "input": "s = \"input\", t = \"ouput\", k = 9",
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aab&quot;, t = &quot;bbb&quot;, k = 28",
-      "expectedOutput": null
+      "input": "s = \"abc\", t = \"bcd\", k = 10",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"input\"\n\"ouput\"\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"bcd\"\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;input&quot;, t = &quot;ouput&quot;, k = 10",
-      "expectedOutput": null
+      "input": "s = \"aab\", t = \"bbb\", k = 27",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/can-convert-string-in-k-moves/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.279Z",
+    "collectedAt": "2026-10-19T18:40:13.855Z",
     "sourceUpdatedAt": null
   }
 }

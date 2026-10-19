@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
+      "input": "words = [\"alice\",\"bob\",\"charlie\"], s = \"abc\"",
       "output": "true",
-      "explanation": "The first character in the words &quot;alice&quot;, &quot;bob&quot;, and &quot;charlie&quot; are &#39;a&#39;, &#39;b&#39;, and &#39;c&#39;, respectively. Hence, s = &quot;abc&quot; is the acronym."
+      "explanation": "The first character in the words \"alice\", \"bob\", and \"charlie\" are 'a', 'b', and 'c', respectively. Hence, s = \"abc\" is the acronym."
     },
     {
-      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
+      "input": "words = [\"an\",\"apple\"], s = \"a\"",
       "output": "false",
-      "explanation": "The first character in the words &quot;an&quot; and &quot;apple&quot; are &#39;a&#39; and &#39;a&#39;, respectively. \nThe acronym formed by concatenating these characters is &quot;aa&quot;. \nHence, s = &quot;a&quot; is not the acronym."
+      "explanation": "The first character in the words \"an\" and \"apple\" are 'a' and 'a', respectively. \nThe acronym formed by concatenating these characters is \"aa\". \nHence, s = \"a\" is not the acronym."
     },
     {
-      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
+      "input": "words = [\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"], s = \"ngguoy\"",
       "output": "true",
-      "explanation": "By concatenating the first character of the words in the array, we get the string &quot;ngguoy&quot;. \nHence, s = &quot;ngguoy&quot; is the acronym."
+      "explanation": "By concatenating the first character of the words in the array, we get the string \"ngguoy\". \nHence, s = \"ngguoy\" is the acronym."
     }
   ],
   "starterCode": {
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
+      "input": "[\"an\",\"apple\"]\n\"a\"",
       "expectedOutput": "false"
     },
     {
-      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
+      "input": "[\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"]\n\"ngguoy\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[\"an\",\"apple\"]\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "[\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"]\n\"ngguoy\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
+    },
+    {
+      "input": "words = [\"alice\",\"bob\",\"charlie\"], s = \"abc\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "words = [\"an\",\"apple\"], s = \"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "words = [\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"], s = \"ngguoy\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -105,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.870Z",
+    "collectedAt": "2026-10-19T18:40:14.061Z",
     "sourceUpdatedAt": null
   }
 }

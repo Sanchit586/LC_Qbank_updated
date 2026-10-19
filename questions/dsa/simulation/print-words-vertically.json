@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;HOW ARE YOU&quot;",
-      "output": "[&quot;HAY&quot;,&quot;ORO&quot;,&quot;WEU&quot;]",
-      "explanation": "Each word is printed vertically. \r\n &quot;HAY&quot;\r\n&nbsp;&quot;ORO&quot;\r\n&nbsp;&quot;WEU&quot;"
+      "input": "s = \"HOW ARE YOU\"",
+      "output": "[\"HAY\",\"ORO\",\"WEU\"]",
+      "explanation": "Each word is printed vertically. \r\n \"HAY\"\r\n \"ORO\"\r\n \"WEU\""
     },
     {
-      "input": "s = &quot;TO BE OR NOT TO BE&quot;",
-      "output": "[&quot;TBONTB&quot;,&quot;OEROOE&quot;,&quot;   T&quot;]",
-      "explanation": "Trailing spaces is not allowed. \r\n&quot;TBONTB&quot;\r\n&quot;OEROOE&quot;\r\n&quot;   T&quot;"
+      "input": "s = \"TO BE OR NOT TO BE\"",
+      "output": "[\"TBONTB\",\"OEROOE\",\"   T\"]",
+      "explanation": "Trailing spaces is not allowed. \r\n\"TBONTB\"\r\n\"OEROOE\"\r\n\"   T\""
     },
     {
-      "input": "s = &quot;CONTEST IS COMING&quot;",
-      "output": "[&quot;CIC&quot;,&quot;OSO&quot;,&quot;N M&quot;,&quot;T I&quot;,&quot;E N&quot;,&quot;S G&quot;,&quot;T&quot;]",
+      "input": "s = \"CONTEST IS COMING\"",
+      "output": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]",
       "explanation": null
     }
   ],
@@ -52,98 +52,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;HOW ARE YOU&quot;",
-      "expectedOutput": "[&quot;HAY&quot;,&quot;ORO&quot;,&quot;WEU&quot;]"
+      "input": "\"HOW ARE YOU\"",
+      "expectedOutput": "[\"HAY\",\"ORO\",\"WEU\"]"
     },
     {
-      "input": "s = &quot;TO BE OR NOT TO BE&quot;",
-      "expectedOutput": "[&quot;TBONTB&quot;,&quot;OEROOE&quot;,&quot;   T&quot;]"
+      "input": "\"TO BE OR NOT TO BE\"",
+      "expectedOutput": "[\"TBONTB\",\"OEROOE\",\"   T\"]"
     },
     {
-      "input": "s = &quot;CONTEST IS COMING&quot;",
-      "expectedOutput": "[&quot;CIC&quot;,&quot;OSO&quot;,&quot;N M&quot;,&quot;T I&quot;,&quot;E N&quot;,&quot;S G&quot;,&quot;T&quot;]"
+      "input": "\"CONTEST IS COMING\"",
+      "expectedOutput": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;HOW ARE YOU&quot;",
-      "expectedOutput": "[&quot;HAY&quot;,&quot;ORO&quot;,&quot;WEU&quot;]"
-    },
-    {
-      "input": "s = &quot;TO BE OR NOT TO BE&quot;",
-      "expectedOutput": "[&quot;TBONTB&quot;,&quot;OEROOE&quot;,&quot;   T&quot;]"
-    },
-    {
-      "input": "s = &quot;CONTEST IS COMING&quot;",
-      "expectedOutput": "[&quot;CIC&quot;,&quot;OSO&quot;,&quot;N M&quot;,&quot;T I&quot;,&quot;E N&quot;,&quot;S G&quot;,&quot;T&quot;]"
-    },
-    {
       "input": "\"HOW ARE YOU\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"HAY\",\"ORO\",\"WEU\"]"
     },
     {
       "input": "\"TO BE OR NOT TO BE\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"TBONTB\",\"OEROOE\",\"   T\"]"
     },
     {
       "input": "\"CONTEST IS COMING\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"HOW ARE YOU\"",
+      "expectedOutput": "[\"HAY\",\"ORO\",\"WEU\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"TO BE OR NOT TO BE\"",
+      "expectedOutput": "[\"TBONTB\",\"OEROOE\",\"   T\"]"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"CONTEST IS COMING\"",
+      "expectedOutput": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/print-words-vertically/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.669Z",
+    "collectedAt": "2026-10-19T18:40:26.941Z",
     "sourceUpdatedAt": null
   }
 }

@@ -25,17 +25,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
-      "output": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]",
+      "input": "s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "output": "[\"cats and dog\",\"cat sand dog\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
-      "output": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]",
+      "input": "s = \"pineapplepenapple\", wordDict = [\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
+      "output": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]",
       "explanation": "Note that you are allowed to reuse a dictionary word."
     },
     {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
       "output": "[]",
       "explanation": null
     }
@@ -63,42 +63,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
-      "expectedOutput": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]"
+      "input": "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[\"cats and dog\",\"cat sand dog\"]"
     },
     {
-      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
-      "expectedOutput": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]"
+      "input": "\"pineapplepenapple\"\n[\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
+      "expectedOutput": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]"
     },
     {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
-      "expectedOutput": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]"
-    },
-    {
-      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
-      "expectedOutput": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]"
-    },
-    {
-      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"cats and dog\",\"cat sand dog\"]"
     },
     {
       "input": "\"pineapplepenapple\"\n[\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]"
     },
     {
       "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
-      "expectedOutput": null
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[\"cats and dog\",\"cat sand dog\"]"
+    },
+    {
+      "input": "s = \"pineapplepenapple\", wordDict = [\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
+      "expectedOutput": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]"
+    },
+    {
+      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -110,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/word-break-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:14.342Z",
+    "collectedAt": "2026-10-19T18:40:31.752Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a#b%*&quot;",
-      "output": "&quot;ba&quot;",
-      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t&#39;a&#39;\n\t\t\tAppend &#39;a&#39;\n\t\t\t&quot;a&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate result\n\t\t\t&quot;aa&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;b&#39;\n\t\t\tAppend &#39;b&#39;\n\t\t\t&quot;aab&quot;\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&#39;%&#39;\n\t\t\tReverse result\n\t\t\t&quot;baa&quot;\n\t\t\n\t\t\n\t\t\t4\n\t\t\t&#39;*&#39;\n\t\t\tRemove the last character\n\t\t\t&quot;ba&quot;"
+      "input": "s = \"a#b%*\"",
+      "output": "\"ba\"",
+      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t'a'\n\t\t\tAppend 'a'\n\t\t\t\"a\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'#'\n\t\t\tDuplicate result\n\t\t\t\"aa\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'b'\n\t\t\tAppend 'b'\n\t\t\t\"aab\"\n\t\t\n\t\t\n\t\t\t3\n\t\t\t'%'\n\t\t\tReverse result\n\t\t\t\"baa\"\n\t\t\n\t\t\n\t\t\t4\n\t\t\t'*'\n\t\t\tRemove the last character\n\t\t\t\"ba\""
     },
     {
-      "input": "s = &quot;z*#&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t&#39;z&#39;\n\t\t\tAppend &#39;z&#39;\n\t\t\t&quot;z&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;*&#39;\n\t\t\tRemove the last character\n\t\t\t&quot;&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate the string\n\t\t\t&quot;&quot;"
+      "input": "s = \"z*#\"",
+      "output": "\"\"",
+      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t'z'\n\t\t\tAppend 'z'\n\t\t\t\"z\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'*'\n\t\t\tRemove the last character\n\t\t\t\"\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'#'\n\t\t\tDuplicate the string\n\t\t\t\"\""
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a#b%*&quot;",
-      "expectedOutput": "&quot;ba&quot;"
+      "input": "\"a#b%*\"",
+      "expectedOutput": "\"ba\""
     },
     {
-      "input": "s = &quot;z*#&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"z*#\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a#b%*&quot;",
-      "expectedOutput": "&quot;ba&quot;"
-    },
-    {
-      "input": "s = &quot;z*#&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"a#b%*\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ba\""
     },
     {
       "input": "\"z*#\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"a#b%*\"",
+      "expectedOutput": "\"ba\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"z*#\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/process-string-with-special-operations-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.724Z",
+    "collectedAt": "2026-10-19T18:40:26.975Z",
     "sourceUpdatedAt": null
   }
 }

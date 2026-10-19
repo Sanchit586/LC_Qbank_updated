@@ -50,20 +50,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 16",
+      "input": "16",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 8",
+      "input": "8",
       "expectedOutput": "false"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "16",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "true"
+    },
+    {
       "input": "n = 16",
       "expectedOutput": "true"
     },
@@ -74,74 +86,6 @@
     {
       "input": "n = 2",
       "expectedOutput": "true"
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "8",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "9",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -158,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/three-fibonacci-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:56.911Z",
+    "collectedAt": "2026-10-19T18:40:31.003Z",
     "sourceUpdatedAt": null
   }
 }

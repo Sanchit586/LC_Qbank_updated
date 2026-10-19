@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext&quot;",
+      "input": "input = \"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
       "output": "20",
-      "explanation": "We have only one file, and the absolute path is &quot;dir/subdir2/file.ext&quot; of length 20."
+      "explanation": "We have only one file, and the absolute path is \"dir/subdir2/file.ext\" of length 20."
     },
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext&quot;",
+      "input": "input = \"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
       "output": "32",
-      "explanation": "We have two files:\n&quot;dir/subdir1/file1.ext&quot; of length 21\n&quot;dir/subdir2/subsubdir2/file2.ext&quot; of length 32.\nWe return 32 since it is the longest absolute path to a file."
+      "explanation": "We have two files:\n\"dir/subdir1/file1.ext\" of length 21\n\"dir/subdir2/subsubdir2/file2.ext\" of length 32.\nWe return 32 since it is the longest absolute path to a file."
     },
     {
-      "input": "input = &quot;a&quot;",
+      "input": "input = \"a\"",
       "output": "0",
-      "explanation": "We do not have any files, just a single directory named &quot;a&quot;."
+      "explanation": "We do not have any files, just a single directory named \"a\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext&quot;",
+      "input": "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
       "expectedOutput": "20"
     },
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext&quot;",
+      "input": "\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
       "expectedOutput": "32"
     },
     {
-      "input": "input = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext&quot;",
+      "input": "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
       "expectedOutput": "20"
     },
     {
-      "input": "input = &quot;dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext&quot;",
+      "input": "\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
       "expectedOutput": "32"
     },
     {
-      "input": "input = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
-      "expectedOutput": null
+      "input": "input = \"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
+      "expectedOutput": "20"
     },
     {
-      "input": "\"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
-      "expectedOutput": null
+      "input": "input = \"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
+      "expectedOutput": "32"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "input = \"a\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-absolute-file-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.207Z",
+    "collectedAt": "2026-10-19T18:40:20.355Z",
     "sourceUpdatedAt": null
   }
 }

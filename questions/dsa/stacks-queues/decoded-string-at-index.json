@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leet2code3&quot;, k = 10",
-      "output": "&quot;o&quot;",
-      "explanation": "The decoded string is &quot;leetleetcodeleetleetcodeleetleetcode&quot;.\nThe 10th letter in the string is &quot;o&quot;."
+      "input": "s = \"leet2code3\", k = 10",
+      "output": "\"o\"",
+      "explanation": "The decoded string is \"leetleetcodeleetleetcodeleetleetcode\".\nThe 10th letter in the string is \"o\"."
     },
     {
-      "input": "s = &quot;ha22&quot;, k = 5",
-      "output": "&quot;h&quot;",
-      "explanation": "The decoded string is &quot;hahahaha&quot;.\nThe 5th letter is &quot;h&quot;."
+      "input": "s = \"ha22\", k = 5",
+      "output": "\"h\"",
+      "explanation": "The decoded string is \"hahahaha\".\nThe 5th letter is \"h\"."
     },
     {
-      "input": "s = &quot;a2345678999999999999999&quot;, k = 1",
-      "output": "&quot;a&quot;",
-      "explanation": "The decoded string is &quot;a&quot; repeated 8301530446056247680 times.\nThe 1st letter is &quot;a&quot;."
+      "input": "s = \"a2345678999999999999999\", k = 1",
+      "output": "\"a\"",
+      "explanation": "The decoded string is \"a\" repeated 8301530446056247680 times.\nThe 1st letter is \"a\"."
     }
   ],
   "starterCode": {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leet2code3&quot;, k = 10",
-      "expectedOutput": "&quot;o&quot;"
+      "input": "\"leet2code3\"\n10",
+      "expectedOutput": "\"o\""
     },
     {
-      "input": "s = &quot;ha22&quot;, k = 5",
-      "expectedOutput": "&quot;h&quot;"
+      "input": "\"ha22\"\n5",
+      "expectedOutput": "\"h\""
     },
     {
-      "input": "s = &quot;a2345678999999999999999&quot;, k = 1",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"a2345678999999999999999\"\n1",
+      "expectedOutput": "\"a\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leet2code3&quot;, k = 10",
-      "expectedOutput": "&quot;o&quot;"
-    },
-    {
-      "input": "s = &quot;ha22&quot;, k = 5",
-      "expectedOutput": "&quot;h&quot;"
-    },
-    {
-      "input": "s = &quot;a2345678999999999999999&quot;, k = 1",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
       "input": "\"leet2code3\"\n10",
-      "expectedOutput": null
+      "expectedOutput": "\"o\""
     },
     {
       "input": "\"ha22\"\n5",
-      "expectedOutput": null
+      "expectedOutput": "\"h\""
     },
     {
       "input": "\"a2345678999999999999999\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = &quot;ha23&quot;, k = 6",
-      "expectedOutput": null
+      "input": "s = \"leet2code3\", k = 10",
+      "expectedOutput": "\"o\""
     },
     {
-      "input": "s = &quot;a2.345679e+21&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"ha22\", k = 5",
+      "expectedOutput": "\"h\""
     },
     {
-      "input": "\"leet3code4\"\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"ha23\"\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;leet3code4&quot;, k = 11",
-      "expectedOutput": null
+      "input": "s = \"a2345678999999999999999\", k = 1",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decoded-string-at-index/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.731Z",
+    "collectedAt": "2026-10-19T18:40:16.220Z",
     "sourceUpdatedAt": null
   }
 }

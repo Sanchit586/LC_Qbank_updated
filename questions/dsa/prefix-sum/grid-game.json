@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[2,5,4],[1,5,1]]",
+      "input": "[[2,5,4],[1,5,1]]",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [[3,3,1],[8,5,2]]",
+      "input": "[[3,3,1],[8,5,2]]",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [[1,3,1,15],[1,3,3,1]]",
+      "input": "[[1,3,1,15],[1,3,3,1]]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,5,4],[1,5,1]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[3,3,1],[8,5,2]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,3,1,15],[1,3,3,1]]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "grid = [[2,5,4],[1,5,1]]",
       "expectedOutput": "4"
     },
@@ -81,38 +93,6 @@
     {
       "input": "grid = [[1,3,1,15],[1,3,3,1]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[[2,5,4],[1,5,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,3,1],[8,5,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3,1,15],[1,3,3,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[4,4,2],[9,6,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,4,2,16],[2,4,4,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,6,5],[2,6,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,4,2],[9,6,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[3,6,5],[2,6,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/grid-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:24.978Z",
+    "collectedAt": "2026-10-19T18:40:19.253Z",
     "sourceUpdatedAt": null
   }
 }

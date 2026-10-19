@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "logs = [[1993,1999],[2000,2010]]",
+      "input": "[[1993,1999],[2000,2010]]",
       "expectedOutput": "1993"
     },
     {
-      "input": "logs = [[1950,1961],[1960,1971],[1970,1981]]",
+      "input": "[[1950,1961],[1960,1971],[1970,1981]]",
       "expectedOutput": "1960"
     }
   ],
   "testCases": [
     {
+      "input": "[[1993,1999],[2000,2010]]",
+      "expectedOutput": "1993"
+    },
+    {
+      "input": "[[1950,1961],[1960,1971],[1970,1981]]",
+      "expectedOutput": "1960"
+    },
+    {
       "input": "logs = [[1993,1999],[2000,2010]]",
       "expectedOutput": "1993"
     },
     {
       "input": "logs = [[1950,1961],[1960,1971],[1970,1981]]",
       "expectedOutput": "1960"
-    },
-    {
-      "input": "[[1993,1999],[2000,2010]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1950,1961],[1960,1971],[1970,1981]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "logs = [[1994,2000],[2001,2011]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-population-year/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:24.647Z",
+    "collectedAt": "2026-10-19T18:40:22.370Z",
     "sourceUpdatedAt": null
   }
 }

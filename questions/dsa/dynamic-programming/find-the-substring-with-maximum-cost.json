@@ -22,14 +22,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;adaa&quot;, chars = &quot;d&quot;, vals = [-1000]",
+      "input": "s = \"adaa\", chars = \"d\", vals = [-1000]",
       "output": "2",
-      "explanation": "The value of the characters &quot;a&quot; and &quot;d&quot; is 1 and -1000 respectively.\nThe substring with the maximum cost is &quot;aa&quot; and its cost is 1 + 1 = 2.\nIt can be proven that 2 is the maximum cost."
+      "explanation": "The value of the characters \"a\" and \"d\" is 1 and -1000 respectively.\nThe substring with the maximum cost is \"aa\" and its cost is 1 + 1 = 2.\nIt can be proven that 2 is the maximum cost."
     },
     {
-      "input": "s = &quot;abc&quot;, chars = &quot;abc&quot;, vals = [-1,-1,-1]",
+      "input": "s = \"abc\", chars = \"abc\", vals = [-1,-1,-1]",
       "output": "0",
-      "explanation": "The value of the characters &quot;a&quot;, &quot;b&quot; and &quot;c&quot; is -1, -1, and -1 respectively.\nThe substring with the maximum cost is the empty substring &quot;&quot; and its cost is 0.\nIt can be proven that 0 is the maximum cost."
+      "explanation": "The value of the characters \"a\", \"b\" and \"c\" is -1, -1, and -1 respectively.\nThe substring with the maximum cost is the empty substring \"\" and its cost is 0.\nIt can be proven that 0 is the maximum cost."
     }
   ],
   "starterCode": {
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;adaa&quot;, chars = &quot;d&quot;, vals = [-1000]",
+      "input": "\"adaa\"\n\"d\"\n[-1000]",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc&quot;, chars = &quot;abc&quot;, vals = [-1,-1,-1]",
+      "input": "\"abc\"\n\"abc\"\n[-1,-1,-1]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;adaa&quot;, chars = &quot;d&quot;, vals = [-1000]",
+      "input": "\"adaa\"\n\"d\"\n[-1000]",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc&quot;, chars = &quot;abc&quot;, vals = [-1,-1,-1]",
+      "input": "\"abc\"\n\"abc\"\n[-1,-1,-1]",
       "expectedOutput": "0"
     },
     {
-      "input": "\"adaa\"\n\"d\"\n[-1000]",
-      "expectedOutput": null
+      "input": "s = \"adaa\", chars = \"d\", vals = [-1000]",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abc\"\n\"abc\"\n[-1,-1,-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;adaa&quot;, chars = &quot;d&quot;, vals = [-1001]",
-      "expectedOutput": null
+      "input": "s = \"abc\", chars = \"abc\", vals = [-1,-1,-1]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-substring-with-maximum-cost/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:16.071Z",
+    "collectedAt": "2026-10-19T18:40:18.649Z",
     "sourceUpdatedAt": null
   }
 }

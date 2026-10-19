@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;10203004&quot;, queries = [[0,7],[1,3],[4,6]]",
+      "input": "s = \"10203004\", queries = [[0,7],[1,3],[4,6]]",
       "output": "[12340, 4, 9]",
-      "explanation": "s[0..7] = &quot;10203004&quot;\n\n\t\n\t\tx = 1234\n\t\tsum = 1 + 2 + 3 + 4 = 10\n\t\tTherefore, answer is 1234 * 10 = 12340.\n\t\n\t\n\ts[1..3] = &quot;020&quot;\n\t\n\t\tx = 2\n\t\tsum = 2\n\t\tTherefore, the answer is 2 * 2 = 4.\n\t\n\t\n\ts[4..6] = &quot;300&quot;\n\t\n\t\tx = 3\n\t\tsum = 3\n\t\tTherefore, the answer is 3 * 3 = 9."
+      "explanation": "s[0..7] = \"10203004\"\n\n\t\n\t\tx = 1234\n\t\tsum = 1 + 2 + 3 + 4 = 10\n\t\tTherefore, answer is 1234 * 10 = 12340.\n\t\n\t\n\ts[1..3] = \"020\"\n\t\n\t\tx = 2\n\t\tsum = 2\n\t\tTherefore, the answer is 2 * 2 = 4.\n\t\n\t\n\ts[4..6] = \"300\"\n\t\n\t\tx = 3\n\t\tsum = 3\n\t\tTherefore, the answer is 3 * 3 = 9."
     },
     {
-      "input": "s = &quot;1000&quot;, queries = [[0,3],[1,1]]",
+      "input": "s = \"1000\", queries = [[0,3],[1,1]]",
       "output": "[1, 0]",
-      "explanation": "s[0..3] = &quot;1000&quot;\n\n\t\n\t\tx = 1\n\t\tsum = 1\n\t\tTherefore, the answer is 1 * 1 = 1.\n\t\n\t\n\ts[1..1] = &quot;0&quot;\n\t\n\t\tx = 0\n\t\tsum = 0\n\t\tTherefore, the answer is 0 * 0 = 0."
+      "explanation": "s[0..3] = \"1000\"\n\n\t\n\t\tx = 1\n\t\tsum = 1\n\t\tTherefore, the answer is 1 * 1 = 1.\n\t\n\t\n\ts[1..1] = \"0\"\n\t\n\t\tx = 0\n\t\tsum = 0\n\t\tTherefore, the answer is 0 * 0 = 0."
     },
     {
-      "input": "s = &quot;9876543210&quot;, queries = [[0,9]]",
+      "input": "s = \"9876543210\", queries = [[0,9]]",
       "output": "[444444137]",
-      "explanation": "s[0..9] = &quot;9876543210&quot;\n\n\t\n\t\tx = 987654321\n\t\tsum = 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45\n\t\tTherefore, the answer is 987654321 * 45 = 44444444445.\n\t\tWe return 44444444445 modulo (109 + 7) = 444444137."
+      "explanation": "s[0..9] = \"9876543210\"\n\n\t\n\t\tx = 987654321\n\t\tsum = 9 + 8 + 7 + 6 + 5 + 4 + 3 + 2 + 1 = 45\n\t\tTherefore, the answer is 987654321 * 45 = 44444444445.\n\t\tWe return 44444444445 modulo (109 + 7) = 444444137."
     }
   ],
   "starterCode": {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;10203004&quot;, queries = [[0,7],[1,3],[4,6]]",
+      "input": "\"10203004\"\n[[0,7],[1,3],[4,6]]",
       "expectedOutput": "[12340, 4, 9]"
     },
     {
-      "input": "s = &quot;1000&quot;, queries = [[0,3],[1,1]]",
+      "input": "\"1000\"\n[[0,3],[1,1]]",
       "expectedOutput": "[1, 0]"
     },
     {
-      "input": "s = &quot;9876543210&quot;, queries = [[0,9]]",
+      "input": "\"9876543210\"\n[[0,9]]",
       "expectedOutput": "[444444137]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;10203004&quot;, queries = [[0,7],[1,3],[4,6]]",
+      "input": "\"10203004\"\n[[0,7],[1,3],[4,6]]",
       "expectedOutput": "[12340, 4, 9]"
     },
     {
-      "input": "s = &quot;1000&quot;, queries = [[0,3],[1,1]]",
+      "input": "\"1000\"\n[[0,3],[1,1]]",
       "expectedOutput": "[1, 0]"
     },
     {
-      "input": "s = &quot;9876543210&quot;, queries = [[0,9]]",
+      "input": "\"9876543210\"\n[[0,9]]",
       "expectedOutput": "[444444137]"
     },
     {
-      "input": "\"10203004\"\n[[0,7],[1,3],[4,6]]",
-      "expectedOutput": null
+      "input": "s = \"10203004\", queries = [[0,7],[1,3],[4,6]]",
+      "expectedOutput": "[12340, 4, 9]"
     },
     {
-      "input": "\"1000\"\n[[0,3],[1,1]]",
-      "expectedOutput": null
+      "input": "s = \"1000\", queries = [[0,3],[1,1]]",
+      "expectedOutput": "[1, 0]"
     },
     {
-      "input": "\"9876543210\"\n[[0,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;1001&quot;, queries = [[1,4],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;9876543211&quot;, queries = [[1,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"10203005\"\n[[1,8],[2,4],[5,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1001\"\n[[1,4],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;10203005&quot;, queries = [[1,8],[2,4],[5,7]]",
-      "expectedOutput": null
+      "input": "s = \"9876543210\", queries = [[0,9]]",
+      "expectedOutput": "[444444137]"
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:01.002Z",
+    "collectedAt": "2026-10-19T18:40:14.634Z",
     "sourceUpdatedAt": null
   }
 }

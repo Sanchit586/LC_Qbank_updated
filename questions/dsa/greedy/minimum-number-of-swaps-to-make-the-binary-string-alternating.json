@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;111000&quot;",
+      "input": "s = \"111000\"",
       "output": "1",
-      "explanation": "Swap positions 1 and 4: &quot;111000&quot; -&gt; &quot;101010&quot;\nThe string is now alternating."
+      "explanation": "Swap positions 1 and 4: \"111000\" -> \"101010\"\nThe string is now alternating."
     },
     {
-      "input": "s = &quot;010&quot;",
+      "input": "s = \"010\"",
       "output": "0",
       "explanation": "The string is already alternating, no swaps are needed."
     },
     {
-      "input": "s = &quot;1110&quot;",
+      "input": "s = \"1110\"",
       "output": "-1",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;111000&quot;",
+      "input": "\"111000\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;010&quot;",
+      "input": "\"010\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;1110&quot;",
+      "input": "\"1110\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;111000&quot;",
+      "input": "\"111000\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;010&quot;",
+      "input": "\"010\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;1110&quot;",
+      "input": "\"1110\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"111000\"",
-      "expectedOutput": null
+      "input": "s = \"111000\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"010\"",
-      "expectedOutput": null
+      "input": "s = \"010\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"1110\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1110\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-binary-string-alternating/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:10.996Z",
+    "collectedAt": "2026-10-19T18:40:24.480Z",
     "sourceUpdatedAt": null
   }
 }

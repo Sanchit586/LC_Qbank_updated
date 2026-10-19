@@ -15,17 +15,17 @@
   "examples": [
     {
       "input": "n = 2",
-      "output": "&quot;110&quot;\nExplantion: (-2)2 + (-2)1 = 2",
+      "output": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2",
       "explanation": null
     },
     {
       "input": "n = 3",
-      "output": "&quot;111&quot;\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3",
+      "output": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3",
       "explanation": null
     },
     {
       "input": "n = 4",
-      "output": "&quot;100&quot;\nExplantion: (-2)2 = 4",
+      "output": "\"100\"\nExplantion: (-2)2 = 4",
       "explanation": null
     }
   ],
@@ -52,94 +52,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
-      "expectedOutput": "&quot;110&quot;\nExplantion: (-2)2 + (-2)1 = 2"
+      "input": "2",
+      "expectedOutput": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2"
     },
     {
-      "input": "n = 3",
-      "expectedOutput": "&quot;111&quot;\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
+      "input": "3",
+      "expectedOutput": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "&quot;100&quot;\nExplantion: (-2)2 = 4"
+      "input": "4",
+      "expectedOutput": "\"100\"\nExplantion: (-2)2 = 4"
     }
   ],
   "testCases": [
     {
-      "input": "n = 2",
-      "expectedOutput": "&quot;110&quot;\nExplantion: (-2)2 + (-2)1 = 2"
-    },
-    {
-      "input": "n = 3",
-      "expectedOutput": "&quot;111&quot;\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
-    },
-    {
-      "input": "n = 4",
-      "expectedOutput": "&quot;100&quot;\nExplantion: (-2)2 = 4"
-    },
-    {
       "input": "2",
-      "expectedOutput": null
+      "expectedOutput": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2"
     },
     {
       "input": "3",
-      "expectedOutput": null
+      "expectedOutput": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
     },
     {
       "input": "4",
-      "expectedOutput": null
+      "expectedOutput": "\"100\"\nExplantion: (-2)2 = 4"
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 2",
+      "expectedOutput": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2"
     },
     {
-      "input": "1",
-      "expectedOutput": null
+      "input": "n = 3",
+      "expectedOutput": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
     },
     {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 4",
+      "expectedOutput": "\"100\"\nExplantion: (-2)2 = 4"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/convert-to-base-2/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:06.414Z",
+    "collectedAt": "2026-10-19T18:40:14.883Z",
     "sourceUpdatedAt": null
   }
 }

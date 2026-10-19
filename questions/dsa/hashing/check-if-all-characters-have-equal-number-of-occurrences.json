@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abacbc&quot;",
+      "input": "s = \"abacbc\"",
       "output": "true",
-      "explanation": "The characters that appear in s are &#39;a&#39;, &#39;b&#39;, and &#39;c&#39;. All characters occur 2 times in s."
+      "explanation": "The characters that appear in s are 'a', 'b', and 'c'. All characters occur 2 times in s."
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "s = \"aaabb\"",
       "output": "false",
-      "explanation": "The characters that appear in s are &#39;a&#39; and &#39;b&#39;.\n&#39;a&#39; occurs 3 times while &#39;b&#39; occurs 2 times, which is not the same number of times."
+      "explanation": "The characters that appear in s are 'a' and 'b'.\n'a' occurs 3 times while 'b' occurs 2 times, which is not the same number of times."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abacbc&quot;",
+      "input": "\"abacbc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "\"aaabb\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abacbc&quot;",
+      "input": "\"abacbc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "\"aaabb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"abacbc\"",
-      "expectedOutput": null
+      "input": "s = \"abacbc\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aaabb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aaabb\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-all-characters-have-equal-number-of-occurrences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:50.609Z",
+    "collectedAt": "2026-10-19T18:40:14.080Z",
     "sourceUpdatedAt": null
   }
 }

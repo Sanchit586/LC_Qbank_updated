@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leet&quot;, k = 3, letter = &quot;e&quot;, repetition = 1",
-      "output": "&quot;eet&quot;",
-      "explanation": "There are four subsequences of length 3 that have the letter &#39;e&#39; appear at least 1 time:\n- &quot;lee&quot; (from &quot;leet&quot;)\n- &quot;let&quot; (from &quot;leet&quot;)\n- &quot;let&quot; (from &quot;leet&quot;)\n- &quot;eet&quot; (from &quot;leet&quot;)\nThe lexicographically smallest subsequence among them is &quot;eet&quot;."
+      "input": "s = \"leet\", k = 3, letter = \"e\", repetition = 1",
+      "output": "\"eet\"",
+      "explanation": "There are four subsequences of length 3 that have the letter 'e' appear at least 1 time:\n- \"lee\" (from \"leet\")\n- \"let\" (from \"leet\")\n- \"let\" (from \"leet\")\n- \"eet\" (from \"leet\")\nThe lexicographically smallest subsequence among them is \"eet\"."
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 4, letter = &quot;e&quot;, repetition = 2",
-      "output": "&quot;ecde&quot;",
-      "explanation": "&quot;ecde&quot; is the lexicographically smallest subsequence of length 4 that has the letter &quot;e&quot; appear at least 2 times."
+      "input": "s = \"leetcode\", k = 4, letter = \"e\", repetition = 2",
+      "output": "\"ecde\"",
+      "explanation": "\"ecde\" is the lexicographically smallest subsequence of length 4 that has the letter \"e\" appear at least 2 times."
     },
     {
-      "input": "s = &quot;bb&quot;, k = 2, letter = &quot;b&quot;, repetition = 2",
-      "output": "&quot;bb&quot;",
-      "explanation": "&quot;bb&quot; is the only subsequence of length 2 that has the letter &quot;b&quot; appear at least 2 times."
+      "input": "s = \"bb\", k = 2, letter = \"b\", repetition = 2",
+      "output": "\"bb\"",
+      "explanation": "\"bb\" is the only subsequence of length 2 that has the letter \"b\" appear at least 2 times."
     }
   ],
   "starterCode": {
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leet&quot;, k = 3, letter = &quot;e&quot;, repetition = 1",
-      "expectedOutput": "&quot;eet&quot;"
+      "input": "\"leet\"\n3\n\"e\"\n1",
+      "expectedOutput": "\"eet\""
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 4, letter = &quot;e&quot;, repetition = 2",
-      "expectedOutput": "&quot;ecde&quot;"
+      "input": "\"leetcode\"\n4\n\"e\"\n2",
+      "expectedOutput": "\"ecde\""
     },
     {
-      "input": "s = &quot;bb&quot;, k = 2, letter = &quot;b&quot;, repetition = 2",
-      "expectedOutput": "&quot;bb&quot;"
+      "input": "\"bb\"\n2\n\"b\"\n2",
+      "expectedOutput": "\"bb\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leet&quot;, k = 3, letter = &quot;e&quot;, repetition = 1",
-      "expectedOutput": "&quot;eet&quot;"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;, k = 4, letter = &quot;e&quot;, repetition = 2",
-      "expectedOutput": "&quot;ecde&quot;"
-    },
-    {
-      "input": "s = &quot;bb&quot;, k = 2, letter = &quot;b&quot;, repetition = 2",
-      "expectedOutput": "&quot;bb&quot;"
-    },
-    {
       "input": "\"leet\"\n3\n\"e\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"eet\""
     },
     {
       "input": "\"leetcode\"\n4\n\"e\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"ecde\""
     },
     {
       "input": "\"bb\"\n2\n\"b\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"bb\""
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 5, letter = &quot;e&quot;, repetition = 3",
-      "expectedOutput": null
+      "input": "s = \"leet\", k = 3, letter = \"e\", repetition = 1",
+      "expectedOutput": "\"eet\""
     },
     {
-      "input": "s = &quot;bb&quot;, k = 3, letter = &quot;b&quot;, repetition = 3",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", k = 4, letter = \"e\", repetition = 2",
+      "expectedOutput": "\"ecde\""
     },
     {
-      "input": "\"leet\"\n4\n\"e\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n5\n\"e\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;leet&quot;, k = 4, letter = &quot;e&quot;, repetition = 2",
-      "expectedOutput": null
+      "input": "s = \"bb\", k = 2, letter = \"b\", repetition = 2",
+      "expectedOutput": "\"bb\""
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-k-length-subsequence-with-occurrences-of-a-letter/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.325Z",
+    "collectedAt": "2026-10-19T18:40:29.748Z",
     "sourceUpdatedAt": null
   }
 }

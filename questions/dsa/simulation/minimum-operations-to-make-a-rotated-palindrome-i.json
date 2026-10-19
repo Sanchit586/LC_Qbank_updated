@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "2",
-      "explanation": "One optimal solution:\n\n\n\tLeft rotate the string: &quot;abc&quot; -&gt; &quot;bca&quot;.\n\tIncrement &#39;a&#39; to &#39;b&#39;: &quot;bca&quot; -&gt; &quot;bcb&quot;.\n\t&quot;bcb&quot; is a palindrome. Thus, the answer is 2."
+      "explanation": "One optimal solution:\n\n\n\tLeft rotate the string: \"abc\" -> \"bca\".\n\tIncrement 'a' to 'b': \"bca\" -> \"bcb\".\n\t\"bcb\" is a palindrome. Thus, the answer is 2."
     },
     {
-      "input": "s = &quot;yb&quot;",
+      "input": "s = \"yb\"",
       "output": "3",
-      "explanation": "Increment the first character three times: &quot;yb&quot; -&gt; &quot;zb&quot; -&gt; &quot;ab&quot; -&gt; &quot;bb&quot;.\n\t&quot;bb&quot; is a palindrome. Thus, the answer is 3."
+      "explanation": "Increment the first character three times: \"yb\" -> \"zb\" -> \"ab\" -> \"bb\".\n\t\"bb\" is a palindrome. Thus, the answer is 3."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;yb&quot;",
+      "input": "\"yb\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;yb&quot;",
+      "input": "\"yb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"yb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"yb\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-a-rotated-palindrome-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:13.306Z",
+    "collectedAt": "2026-10-19T18:40:24.633Z",
     "sourceUpdatedAt": null
   }
 }

@@ -25,14 +25,14 @@
   ],
   "examples": [
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;updatePriority&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[5, 7], [2, 7], [9, 4]]], [], [9, 7], [], []]",
+      "input": "[\"EventManager\", \"pollHighest\", \"updatePriority\", \"pollHighest\", \"pollHighest\"]\n[[[[5, 7], [2, 7], [9, 4]]], [], [9, 7], [], []]",
       "output": "[null, 2, null, 5, 9]",
-      "explanation": null
+      "explanation": "EventManager eventManager = new EventManager([[5,7], [2,7], [9,4]]); // Initializes the manager with three events\neventManager.pollHighest(); // both events 5 and 2 have priority 7, so return the smaller id 2\neventManager.updatePriority(9, 7); // event 9 now has priority 7\neventManager.pollHighest(); // remaining highest priority events are 5 and 9, return 5\neventManager.pollHighest(); // return 9"
     },
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[4, 1], [7, 2]]], [], [], []]",
+      "input": "[\"EventManager\", \"pollHighest\", \"pollHighest\", \"pollHighest\"]\n[[[[4, 1], [7, 2]]], [], [], []]",
       "output": "[null, 7, 4, -1]",
-      "explanation": null
+      "explanation": "EventManager eventManager = new EventManager([[4,1], [7,2]]); // Initializes the manager with two events\neventManager.pollHighest(); // return 7\neventManager.pollHighest(); // return 4\neventManager.pollHighest(); // no events remain, return -1"
     }
   ],
   "starterCode": {
@@ -58,34 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;updatePriority&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[5, 7], [2, 7], [9, 4]]], [], [9, 7], [], []]",
+      "input": "[\"EventManager\",\"pollHighest\",\"updatePriority\",\"pollHighest\",\"pollHighest\"]\n[[[[5,7],[2,7],[9,4]]],[],[9,7],[],[]]",
       "expectedOutput": "[null, 2, null, 5, 9]"
     },
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[4, 1], [7, 2]]], [], [], []]",
+      "input": "[\"EventManager\",\"pollHighest\",\"pollHighest\",\"pollHighest\"]\n[[[[4,1],[7,2]]],[],[],[]]",
       "expectedOutput": "[null, 7, 4, -1]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;updatePriority&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[5, 7], [2, 7], [9, 4]]], [], [9, 7], [], []]",
+      "input": "[\"EventManager\",\"pollHighest\",\"updatePriority\",\"pollHighest\",\"pollHighest\"]\n[[[[5,7],[2,7],[9,4]]],[],[9,7],[],[]]",
       "expectedOutput": "[null, 2, null, 5, 9]"
     },
     {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[4, 1], [7, 2]]], [], [], []]",
+      "input": "[\"EventManager\",\"pollHighest\",\"pollHighest\",\"pollHighest\"]\n[[[[4,1],[7,2]]],[],[],[]]",
       "expectedOutput": "[null, 7, 4, -1]"
     },
     {
-      "input": "[\"EventManager\",\"pollHighest\",\"updatePriority\",\"pollHighest\",\"pollHighest\"]\n[[[[5,7],[2,7],[9,4]]],[],[9,7],[],[]]",
-      "expectedOutput": null
+      "input": "[\"EventManager\", \"pollHighest\", \"updatePriority\", \"pollHighest\", \"pollHighest\"]\n[[[[5, 7], [2, 7], [9, 4]]], [], [9, 7], [], []]",
+      "expectedOutput": "[null, 2, null, 5, 9]"
     },
     {
-      "input": "[\"EventManager\",\"pollHighest\",\"pollHighest\",\"pollHighest\"]\n[[[[4,1],[7,2]]],[],[],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;EventManager&quot;, &quot;pollHighest&quot;, &quot;updatePriority&quot;, &quot;pollHighest&quot;, &quot;pollHighest&quot;]\n[[[[6, 8], [3, 8], [10, 5]]], [], [10, 8], [], []]",
-      "expectedOutput": null
+      "input": "[\"EventManager\", \"pollHighest\", \"pollHighest\", \"pollHighest\"]\n[[[[4, 1], [7, 2]]], [], [], []]",
+      "expectedOutput": "[null, 7, 4, -1]"
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-event-manager/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.664Z",
+    "collectedAt": "2026-10-19T18:40:16.445Z",
     "sourceUpdatedAt": null
   }
 }

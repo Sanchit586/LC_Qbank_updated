@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a1b2&quot;",
-      "output": "[&quot;a1b2&quot;,&quot;a1B2&quot;,&quot;A1b2&quot;,&quot;A1B2&quot;]",
+      "input": "s = \"a1b2\"",
+      "output": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;3z4&quot;",
-      "output": "[&quot;3z4&quot;,&quot;3Z4&quot;]",
+      "input": "s = \"3z4\"",
+      "output": "[\"3z4\",\"3Z4\"]",
       "explanation": null
     }
   ],
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a1b2&quot;",
-      "expectedOutput": "[&quot;a1b2&quot;,&quot;a1B2&quot;,&quot;A1b2&quot;,&quot;A1B2&quot;]"
+      "input": "\"a1b2\"",
+      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
     },
     {
-      "input": "s = &quot;3z4&quot;",
-      "expectedOutput": "[&quot;3z4&quot;,&quot;3Z4&quot;]"
+      "input": "\"3z4\"",
+      "expectedOutput": "[\"3z4\",\"3Z4\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a1b2&quot;",
-      "expectedOutput": "[&quot;a1b2&quot;,&quot;a1B2&quot;,&quot;A1b2&quot;,&quot;A1B2&quot;]"
-    },
-    {
-      "input": "s = &quot;3z4&quot;",
-      "expectedOutput": "[&quot;3z4&quot;,&quot;3Z4&quot;]"
-    },
-    {
       "input": "\"a1b2\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
     },
     {
       "input": "\"3z4\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"3z4\",\"3Z4\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"a1b2\"",
+      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"3z4\"",
+      "expectedOutput": "[\"3z4\",\"3Z4\"]"
     }
   ],
   "sqlSchema": null,
@@ -149,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/letter-case-permutation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:49.824Z",
+    "collectedAt": "2026-10-19T18:40:20.164Z",
     "sourceUpdatedAt": null
   }
 }

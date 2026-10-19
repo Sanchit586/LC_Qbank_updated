@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "output": "&quot;bf&quot;",
+      "input": "s = \"abcd\", k = 2",
+      "output": "\"bf\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;mxz&quot;, k = 3",
-      "output": "&quot;i&quot;",
+      "input": "s = \"mxz\", k = 3",
+      "output": "\"i\"",
       "explanation": null
     }
   ],
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;bf&quot;"
+      "input": "\"abcd\"\n2",
+      "expectedOutput": "\"bf\""
     },
     {
-      "input": "s = &quot;mxz&quot;, k = 3",
-      "expectedOutput": "&quot;i&quot;"
+      "input": "\"mxz\"\n3",
+      "expectedOutput": "\"i\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;bf&quot;"
-    },
-    {
-      "input": "s = &quot;mxz&quot;, k = 3",
-      "expectedOutput": "&quot;i&quot;"
-    },
-    {
       "input": "\"abcd\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"bf\""
     },
     {
       "input": "\"mxz\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"i\""
     },
     {
-      "input": "s = &quot;abcd&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abcd\", k = 2",
+      "expectedOutput": "\"bf\""
+    },
+    {
+      "input": "s = \"mxz\", k = 3",
+      "expectedOutput": "\"i\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/hash-divided-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.725Z",
+    "collectedAt": "2026-10-19T18:40:19.355Z",
     "sourceUpdatedAt": null
   }
 }

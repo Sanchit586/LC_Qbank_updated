@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Users table:\n+------+-----------+\n| id   | name      |\n+------+-----------+\n| 1    | Alice     |\n| 2    | Bob       |\n| 3    | Alex      |\n| 4    | Donald    |\n| 7    | Lee       |\n| 13   | Jonathan  |\n| 19   | Elvis     |\n+------+-----------+\nRides table:\n+------+----------+----------+\n| id   | user_id  | distance |\n+------+----------+----------+\n| 1    | 1        | 120      |\n| 2    | 2        | 317      |\n| 3    | 3        | 222      |\n| 4    | 7        | 100      |\n| 5    | 13       | 312      |\n| 6    | 19       | 50       |\n| 7    | 7        | 120      |\n| 8    | 19       | 400      |\n| 9    | 7        | 230      |\n+------+----------+----------+",
+      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[[1,\"Alice\"],[2,\"Bob\"],[3,\"Alex\"],[4,\"Donald\"],[7,\"Lee\"],[13,\"Jonathan\"],[19,\"Elvis\"]],\"Rides\":[[1,1,120],[2,2,317],[3,3,222],[4,7,100],[5,13,312],[6,19,50],[7,7,120],[8,19,400],[9,7,230]]}}",
       "expectedOutput": "+----------+--------------------+\n| name     | travelled_distance |\n+----------+--------------------+\n| Elvis    | 450                |\n| Lee      | 450                |\n| Bob      | 317                |\n| Jonathan | 312                |\n| Alex     | 222                |\n| Alice    | 120                |\n| Donald   | 0                  |\n+----------+--------------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Users table:\n+------+-----------+\n| id   | name      |\n+------+-----------+\n| 1    | Alice     |\n| 2    | Bob       |\n| 3    | Alex      |\n| 4    | Donald    |\n| 7    | Lee       |\n| 13   | Jonathan  |\n| 19   | Elvis     |\n+------+-----------+\nRides table:\n+------+----------+----------+\n| id   | user_id  | distance |\n+------+----------+----------+\n| 1    | 1        | 120      |\n| 2    | 2        | 317      |\n| 3    | 3        | 222      |\n| 4    | 7        | 100      |\n| 5    | 13       | 312      |\n| 6    | 19       | 50       |\n| 7    | 7        | 120      |\n| 8    | 19       | 400      |\n| 9    | 7        | 230      |\n+------+----------+----------+",
+      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[[1,\"Alice\"],[2,\"Bob\"],[3,\"Alex\"],[4,\"Donald\"],[7,\"Lee\"],[13,\"Jonathan\"],[19,\"Elvis\"]],\"Rides\":[[1,1,120],[2,2,317],[3,3,222],[4,7,100],[5,13,312],[6,19,50],[7,7,120],[8,19,400],[9,7,230]]}}",
       "expectedOutput": "+----------+--------------------+\n| name     | travelled_distance |\n+----------+--------------------+\n| Elvis    | 450                |\n| Lee      | 450                |\n| Bob      | 317                |\n| Jonathan | 312                |\n| Alex     | 222                |\n| Alice    | 120                |\n| Donald   | 0                  |\n+----------+--------------------+"
     },
     {
-      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[[1,\"Alice\"],[2,\"Bob\"],[3,\"Alex\"],[4,\"Donald\"],[7,\"Lee\"],[13,\"Jonathan\"],[19,\"Elvis\"]],\"Rides\":[[1,1,120],[2,2,317],[3,3,222],[4,7,100],[5,13,312],[6,19,50],[7,7,120],[8,19,400],[9,7,230]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[],\"Rides\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[[1,\"Alice\"]],\"Rides\":[[1,1,120]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"id\",\"name\"],\"Rides\":[\"id\",\"user_id\",\"distance\"]},\"rows\":{\"Users\":[[1,null],[2,null],[3,null],[4,null],[7,null],[13,null],[19,null]],\"Rides\":[[1,1,null],[2,2,null],[3,3,null],[4,7,null],[5,13,null],[6,19,null],[7,7,null],[8,19,null],[9,7,null]]}}",
-      "expectedOutput": null
+      "input": "Users table:\n+------+-----------+\n| id   | name      |\n+------+-----------+\n| 1    | Alice     |\n| 2    | Bob       |\n| 3    | Alex      |\n| 4    | Donald    |\n| 7    | Lee       |\n| 13   | Jonathan  |\n| 19   | Elvis     |\n+------+-----------+\nRides table:\n+------+----------+----------+\n| id   | user_id  | distance |\n+------+----------+----------+\n| 1    | 1        | 120      |\n| 2    | 2        | 317      |\n| 3    | 3        | 222      |\n| 4    | 7        | 100      |\n| 5    | 13       | 312      |\n| 6    | 19       | 50       |\n| 7    | 7        | 120      |\n| 8    | 19       | 400      |\n| 9    | 7        | 230      |\n+------+----------+----------+",
+      "expectedOutput": "+----------+--------------------+\n| name     | travelled_distance |\n+----------+--------------------+\n| Elvis    | 450                |\n| Lee      | 450                |\n| Bob      | 317                |\n| Jonathan | 312                |\n| Alex     | 222                |\n| Alice    | 120                |\n| Donald   | 0                  |\n+----------+--------------------+"
     }
   ],
   "sqlSchema": "Create Table If Not Exists Users (id int, name varchar(30))\n\nCreate Table If Not Exists Rides (id int, user_id int, distance int)\n\nTruncate table Users\n\nTruncate table Rides",
@@ -78,7 +66,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/top-travellers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.505Z",
+    "collectedAt": "2026-10-19T18:40:31.096Z",
     "sourceUpdatedAt": null
   }
 }

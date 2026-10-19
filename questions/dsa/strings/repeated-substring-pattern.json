@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "s = \"abab\"",
       "output": "true",
-      "explanation": "It is the substring &quot;ab&quot; twice."
+      "explanation": "It is the substring \"ab\" twice."
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "s = \"aba\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcabcabcabc&quot;",
+      "input": "s = \"abcabcabcabc\"",
       "output": "true",
-      "explanation": "It is the substring &quot;abc&quot; four times or the substring &quot;abcabc&quot; twice."
+      "explanation": "It is the substring \"abc\" four times or the substring \"abcabc\" twice."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "\"abab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;abcabcabcabc&quot;",
+      "input": "\"abcabcabcabc\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abab&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;aba&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;abcabcabcabc&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"abab\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"abcabcabcabc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abab\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aba\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcabcabcabc\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/repeated-substring-pattern/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.474Z",
+    "collectedAt": "2026-10-19T18:40:27.678Z",
     "sourceUpdatedAt": null
   }
 }

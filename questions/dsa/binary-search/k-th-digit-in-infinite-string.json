@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "k = 4",
+      "input": "4",
       "expectedOutput": "4"
     },
     {
-      "input": "k = 15",
+      "input": "15",
       "expectedOutput": "7"
     },
     {
-      "input": "k = 11",
+      "input": "11",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "15",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "11",
+      "expectedOutput": "9"
+    },
+    {
       "input": "k = 4",
       "expectedOutput": "4"
     },
@@ -77,74 +89,6 @@
     {
       "input": "k = 11",
       "expectedOutput": "9"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/k-th-digit-in-infinite-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:35.001Z",
+    "collectedAt": "2026-10-19T18:40:19.757Z",
     "sourceUpdatedAt": null
   }
 }

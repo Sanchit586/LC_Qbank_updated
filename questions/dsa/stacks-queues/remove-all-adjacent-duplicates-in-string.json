@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abbaca&quot;",
-      "output": "&quot;ca&quot;",
-      "explanation": "For example, in &quot;abbaca&quot; we could remove &quot;bb&quot; since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is &quot;aaca&quot;, of which only &quot;aa&quot; is possible, so the final string is &quot;ca&quot;."
+      "input": "s = \"abbaca\"",
+      "output": "\"ca\"",
+      "explanation": "For example, in \"abbaca\" we could remove \"bb\" since the letters are adjacent and equal, and this is the only possible move.  The result of this move is that the string is \"aaca\", of which only \"aa\" is possible, so the final string is \"ca\"."
     },
     {
-      "input": "s = &quot;azxxzy&quot;",
-      "output": "&quot;ay&quot;",
+      "input": "s = \"azxxzy\"",
+      "output": "\"ay\"",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abbaca&quot;",
-      "expectedOutput": "&quot;ca&quot;"
+      "input": "\"abbaca\"",
+      "expectedOutput": "\"ca\""
     },
     {
-      "input": "s = &quot;azxxzy&quot;",
-      "expectedOutput": "&quot;ay&quot;"
+      "input": "\"azxxzy\"",
+      "expectedOutput": "\"ay\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abbaca&quot;",
-      "expectedOutput": "&quot;ca&quot;"
-    },
-    {
-      "input": "s = &quot;azxxzy&quot;",
-      "expectedOutput": "&quot;ay&quot;"
-    },
-    {
       "input": "\"abbaca\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ca\""
     },
     {
       "input": "\"azxxzy\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ay\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abbaca\"",
+      "expectedOutput": "\"ca\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"azxxzy\"",
+      "expectedOutput": "\"ay\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.172Z",
+    "collectedAt": "2026-10-19T18:40:27.460Z",
     "sourceUpdatedAt": null
   }
 }

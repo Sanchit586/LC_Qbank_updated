@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;100011001&quot;, k = 3",
-      "output": "&quot;11001&quot;",
-      "explanation": "There are 7 beautiful substrings in this example:\n1. The substring &quot;100011001&quot;.\n2. The substring &quot;100011001&quot;.\n3. The substring &quot;100011001&quot;.\n4. The substring &quot;100011001&quot;.\n5. The substring &quot;100011001&quot;.\n6. The substring &quot;100011001&quot;.\n7. The substring &quot;100011001&quot;.\nThe length of the shortest beautiful substring is 5.\nThe lexicographically smallest beautiful substring with length 5 is the substring &quot;11001&quot;."
+      "input": "s = \"100011001\", k = 3",
+      "output": "\"11001\"",
+      "explanation": "There are 7 beautiful substrings in this"
     },
     {
-      "input": "s = &quot;1011&quot;, k = 2",
-      "output": "&quot;11&quot;",
-      "explanation": "There are 3 beautiful substrings in this example:\n1. The substring &quot;1011&quot;.\n2. The substring &quot;1011&quot;.\n3. The substring &quot;1011&quot;.\nThe length of the shortest beautiful substring is 2.\nThe lexicographically smallest beautiful substring with length 2 is the substring &quot;11&quot;."
+      "input": "s = \"1011\", k = 2",
+      "output": "\"11\"",
+      "explanation": "There are 3 beautiful substrings in this"
     },
     {
-      "input": "s = &quot;000&quot;, k = 1",
-      "output": "&quot;&quot;",
+      "input": "s = \"000\", k = 1",
+      "output": "\"\"",
       "explanation": "There are no beautiful substrings in this example."
     }
   ],
@@ -54,62 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;100011001&quot;, k = 3",
-      "expectedOutput": "&quot;11001&quot;"
+      "input": "\"100011001\"\n3",
+      "expectedOutput": "\"11001\""
     },
     {
-      "input": "s = &quot;1011&quot;, k = 2",
-      "expectedOutput": "&quot;11&quot;"
+      "input": "\"1011\"\n2",
+      "expectedOutput": "\"11\""
     },
     {
-      "input": "s = &quot;000&quot;, k = 1",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"000\"\n1",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;100011001&quot;, k = 3",
-      "expectedOutput": "&quot;11001&quot;"
-    },
-    {
-      "input": "s = &quot;1011&quot;, k = 2",
-      "expectedOutput": "&quot;11&quot;"
-    },
-    {
-      "input": "s = &quot;000&quot;, k = 1",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"100011001\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"11001\""
     },
     {
       "input": "\"1011\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"11\""
     },
     {
       "input": "\"000\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;1012&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"100011001\", k = 3",
+      "expectedOutput": "\"11001\""
     },
     {
-      "input": "s = &quot;1&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"1011\", k = 2",
+      "expectedOutput": "\"11\""
     },
     {
-      "input": "\"100011002\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1012\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;100011002&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"000\", k = 1",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-and-lexicographically-smallest-beautiful-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:23.688Z",
+    "collectedAt": "2026-10-19T18:40:28.362Z",
     "sourceUpdatedAt": null
   }
 }

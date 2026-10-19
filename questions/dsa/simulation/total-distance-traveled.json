@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "mainTank = 5, additionalTank = 10",
+      "input": "5\n10",
       "expectedOutput": "60"
     },
     {
-      "input": "mainTank = 1, additionalTank = 2",
+      "input": "1\n2",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "5\n10",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "1\n2",
+      "expectedOutput": "10"
+    },
+    {
       "input": "mainTank = 5, additionalTank = 10",
       "expectedOutput": "60"
     },
     {
       "input": "mainTank = 1, additionalTank = 2",
       "expectedOutput": "10"
-    },
-    {
-      "input": "5\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "mainTank = 6, additionalTank = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/total-distance-traveled/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.562Z",
+    "collectedAt": "2026-10-19T18:40:31.124Z",
     "sourceUpdatedAt": null
   }
 }

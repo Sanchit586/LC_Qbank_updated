@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "ax1 = -3, ay1 = 0, ax2 = 3, ay2 = 4, bx1 = 0, by1 = -1, bx2 = 9, by2 = 2",
+      "input": "-3\n0\n3\n4\n0\n-1\n9\n2",
       "expectedOutput": "45"
     },
     {
-      "input": "ax1 = -2, ay1 = -2, ax2 = 2, ay2 = 2, bx1 = -2, by1 = -2, bx2 = 2, by2 = 2",
+      "input": "-2\n-2\n2\n2\n-2\n-2\n2\n2",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
+      "input": "-3\n0\n3\n4\n0\n-1\n9\n2",
+      "expectedOutput": "45"
+    },
+    {
+      "input": "-2\n-2\n2\n2\n-2\n-2\n2\n2",
+      "expectedOutput": "16"
+    },
+    {
       "input": "ax1 = -3, ay1 = 0, ax2 = 3, ay2 = 4, bx1 = 0, by1 = -1, bx2 = 9, by2 = 2",
       "expectedOutput": "45"
     },
     {
       "input": "ax1 = -2, ay1 = -2, ax2 = 2, ay2 = 2, bx1 = -2, by1 = -2, bx2 = 2, by2 = 2",
       "expectedOutput": "16"
-    },
-    {
-      "input": "-3\n0\n3\n4\n0\n-1\n9\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2\n-2\n2\n2\n-2\n-2\n2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "ax2 = -4, ay2 = 1, ax3 = 4, ay3 = 5, bx2 = 1, by2 = -2, bx3 = 10, by3 = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rectangle-area/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:07.166Z",
+    "collectedAt": "2026-10-19T18:40:27.342Z",
     "sourceUpdatedAt": null
   }
 }

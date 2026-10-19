@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Customer table:\n+----+------+------------+\n| id | name | referee_id |\n+----+------+------------+\n| 1  | Will | null       |\n| 2  | Jane | null       |\n| 3  | Alex | 2          |\n| 4  | Bill | null       |\n| 5  | Zack | 1          |\n| 6  | Mark | 2          |\n+----+------+------------+",
+      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[[1,\"Will\",null],[2,\"Jane\",null],[3,\"Alex\",2],[4,\"Bill\",null],[5,\"Zack\",1],[6,\"Mark\",2]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| Will |\n| Jane |\n| Bill |\n| Zack |\n+------+"
     }
   ],
   "testCases": [
     {
-      "input": "Customer table:\n+----+------+------------+\n| id | name | referee_id |\n+----+------+------------+\n| 1  | Will | null       |\n| 2  | Jane | null       |\n| 3  | Alex | 2          |\n| 4  | Bill | null       |\n| 5  | Zack | 1          |\n| 6  | Mark | 2          |\n+----+------+------------+",
+      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[[1,\"Will\",null],[2,\"Jane\",null],[3,\"Alex\",2],[4,\"Bill\",null],[5,\"Zack\",1],[6,\"Mark\",2]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| Will |\n| Jane |\n| Bill |\n| Zack |\n+------+"
     },
     {
-      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[[1,\"Will\",null],[2,\"Jane\",null],[3,\"Alex\",2],[4,\"Bill\",null],[5,\"Zack\",1],[6,\"Mark\",2]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[[1,\"Will\",null]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"id\",\"name\",\"referee_id\"]},\"rows\":{\"Customer\":[[1,\"Will\",null],[2,\"Jane\",null],[3,\"Alex\",null],[4,\"Bill\",null],[5,\"Zack\",null],[6,\"Mark\",null]]}}",
-      "expectedOutput": null
+      "input": "Customer table:\n+----+------+------------+\n| id | name | referee_id |\n+----+------+------------+\n| 1  | Will | null       |\n| 2  | Jane | null       |\n| 3  | Alex | 2          |\n| 4  | Bill | null       |\n| 5  | Zack | 1          |\n| 6  | Mark | 2          |\n+----+------+------------+",
+      "expectedOutput": "+------+\n| name |\n+------+\n| Will |\n| Jane |\n| Bill |\n| Zack |\n+------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Customer (id int, name varchar(25), referee_id int)\n\nTruncate table Customer",
@@ -70,7 +58,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-customer-referee/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:01.288Z",
+    "collectedAt": "2026-10-19T18:40:17.645Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[3,10],[5,15],[10,2],[4,4]]",
+      "input": "[[3,10],[5,15],[10,2],[4,4]]",
       "expectedOutput": "12"
     },
     {
-      "input": "points = [[1,1],[1,1],[1,1]]",
+      "input": "[[1,1],[1,1],[1,1]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,10],[5,15],[10,2],[4,4]]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[[1,1],[1,1],[1,1]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "points = [[3,10],[5,15],[10,2],[4,4]]",
       "expectedOutput": "12"
     },
     {
       "input": "points = [[1,1],[1,1],[1,1]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[3,10],[5,15],[10,2],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,1],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[4,11],[6,16],[11,3],[5,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimize-manhattan-distances/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:41.150Z",
+    "collectedAt": "2026-10-19T18:40:23.238Z",
     "sourceUpdatedAt": null
   }
 }

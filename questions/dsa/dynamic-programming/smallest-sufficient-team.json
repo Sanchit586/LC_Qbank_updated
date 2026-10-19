@@ -60,30 +60,30 @@
   },
   "publicTests": [
     {
-      "input": "req_skills = [\"java\",\"nodejs\",\"reactjs\"], people = [[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+      "input": "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "req_skills = [\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"], people = [[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
       "expectedOutput": "[1,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "expectedOutput": "[1,2]"
+    },
+    {
       "input": "req_skills = [\"java\",\"nodejs\",\"reactjs\"], people = [[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
       "expectedOutput": "[0,2]"
     },
     {
       "input": "req_skills = [\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"], people = [[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
       "expectedOutput": "[1,2]"
-    },
-    {
-      "input": "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +98,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-sufficient-team/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:32.555Z",
+    "collectedAt": "2026-10-19T18:40:29.865Z",
     "sourceUpdatedAt": null
   }
 }

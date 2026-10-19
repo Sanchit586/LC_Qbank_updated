@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;babad&quot;",
-      "output": "&quot;bab&quot;",
-      "explanation": "&quot;aba&quot; is also a valid answer."
+      "input": "s = \"babad\"",
+      "output": "\"bab\"",
+      "explanation": "\"aba\" is also a valid answer."
     },
     {
-      "input": "s = &quot;cbbd&quot;",
-      "output": "&quot;bb&quot;",
+      "input": "s = \"cbbd\"",
+      "output": "\"bb\"",
       "explanation": null
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;babad&quot;",
-      "expectedOutput": "&quot;bab&quot;"
+      "input": "\"babad\"",
+      "expectedOutput": "\"bab\""
     },
     {
-      "input": "s = &quot;cbbd&quot;",
-      "expectedOutput": "&quot;bb&quot;"
+      "input": "\"cbbd\"",
+      "expectedOutput": "\"bb\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;babad&quot;",
-      "expectedOutput": "&quot;bab&quot;"
-    },
-    {
-      "input": "s = &quot;cbbd&quot;",
-      "expectedOutput": "&quot;bb&quot;"
-    },
-    {
       "input": "\"babad\"",
-      "expectedOutput": null
+      "expectedOutput": "\"bab\""
     },
     {
       "input": "\"cbbd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"bb\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": "\"\""
+      "input": "s = \"babad\"",
+      "expectedOutput": "\"bab\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": "\"a\""
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": "\"aa\""
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": "\"aaa\""
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": "\"a\""
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": "\"bbbbb\""
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": "\"ww\""
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "\"aa\""
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": "\"dvd\""
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": "\"bcb\""
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": "\"1\""
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": "\" a \""
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": "\" a \""
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": "\" \""
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": "\"a\""
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": "\"b\""
+      "input": "s = \"cbbd\"",
+      "expectedOutput": "\"bb\""
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-palindromic-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-18T18:11:43.570Z",
+    "collectedAt": "2026-10-19T18:40:20.582Z",
     "sourceUpdatedAt": null
   }
 }

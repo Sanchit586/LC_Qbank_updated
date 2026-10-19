@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "key = &quot;the quick brown fox jumps over the lazy dog&quot;, message = &quot;vkbs bs t suepuv&quot;",
-      "output": "&quot;this is a secret&quot;",
-      "explanation": "The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in &quot;the quick brown fox jumps over the lazy dog&quot;."
+      "input": "key = \"the quick brown fox jumps over the lazy dog\", message = \"vkbs bs t suepuv\"",
+      "output": "\"this is a secret\"",
+      "explanation": "The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in \"the quick brown fox jumps over the lazy dog\"."
     },
     {
-      "input": "key = &quot;eljuxhpwnyrdgtqkviszcfmabo&quot;, message = &quot;zwx hnfx lqantp mnoeius ycgk vcnjrdb&quot;",
-      "output": "&quot;the five boxing wizards jump quickly&quot;",
-      "explanation": "The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in &quot;eljuxhpwnyrdgtqkviszcfmabo&quot;."
+      "input": "key = \"eljuxhpwnyrdgtqkviszcfmabo\", message = \"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"",
+      "output": "\"the five boxing wizards jump quickly\"",
+      "explanation": "The diagram above shows the substitution table.\nIt is obtained by taking the first appearance of each letter in \"eljuxhpwnyrdgtqkviszcfmabo\"."
     }
   ],
   "starterCode": {
@@ -52,78 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "key = &quot;the quick brown fox jumps over the lazy dog&quot;, message = &quot;vkbs bs t suepuv&quot;",
-      "expectedOutput": "&quot;this is a secret&quot;"
+      "input": "\"the quick brown fox jumps over the lazy dog\"\n\"vkbs bs t suepuv\"",
+      "expectedOutput": "\"this is a secret\""
     },
     {
-      "input": "key = &quot;eljuxhpwnyrdgtqkviszcfmabo&quot;, message = &quot;zwx hnfx lqantp mnoeius ycgk vcnjrdb&quot;",
-      "expectedOutput": "&quot;the five boxing wizards jump quickly&quot;"
+      "input": "\"eljuxhpwnyrdgtqkviszcfmabo\"\n\"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"",
+      "expectedOutput": "\"the five boxing wizards jump quickly\""
     }
   ],
   "testCases": [
     {
-      "input": "key = &quot;the quick brown fox jumps over the lazy dog&quot;, message = &quot;vkbs bs t suepuv&quot;",
-      "expectedOutput": "&quot;this is a secret&quot;"
-    },
-    {
-      "input": "key = &quot;eljuxhpwnyrdgtqkviszcfmabo&quot;, message = &quot;zwx hnfx lqantp mnoeius ycgk vcnjrdb&quot;",
-      "expectedOutput": "&quot;the five boxing wizards jump quickly&quot;"
-    },
-    {
       "input": "\"the quick brown fox jumps over the lazy dog\"\n\"vkbs bs t suepuv\"",
-      "expectedOutput": null
+      "expectedOutput": "\"this is a secret\""
     },
     {
       "input": "\"eljuxhpwnyrdgtqkviszcfmabo\"\n\"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"the five boxing wizards jump quickly\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "key = \"the quick brown fox jumps over the lazy dog\", message = \"vkbs bs t suepuv\"",
+      "expectedOutput": "\"this is a secret\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "key = \"eljuxhpwnyrdgtqkviszcfmabo\", message = \"zwx hnfx lqantp mnoeius ycgk vcnjrdb\"",
+      "expectedOutput": "\"the five boxing wizards jump quickly\""
     }
   ],
   "sqlSchema": null,
@@ -139,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decode-the-message/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:34.565Z",
+    "collectedAt": "2026-10-19T18:40:16.190Z",
     "sourceUpdatedAt": null
   }
 }

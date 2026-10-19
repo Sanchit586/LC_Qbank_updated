@@ -14,18 +14,18 @@
   ],
   "examples": [
     {
-      "input": "getInputs = () =&gt; [[2,2],[2,2],[1,2]]\nfn = function (a, b) { return a + b; }",
-      "output": "[{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:3,&quot;calls&quot;:2}]",
+      "input": "getInputs = () => [[2,2],[2,2],[1,2]]\nfn = function (a, b) { return a + b; }",
+      "output": "[{\"val\":4,\"calls\":1},{\"val\":4,\"calls\":1},{\"val\":3,\"calls\":2}]",
       "explanation": "const inputs = getInputs();\nconst memoized = memoize(fn);\nfor (const arr of inputs) {\n  memoized(...arr);\n}\n\nFor the inputs of (2, 2): 2 + 2 = 4, and it required a call to fn().\nFor the inputs of (2, 2): 2 + 2 = 4, but those inputs were seen before so no call to fn() was required.\nFor the inputs of (1, 2): 1 + 2 = 3, and it required another call to fn() for a total of 2."
     },
     {
-      "input": "getInputs = () =&gt; [[{},{}],[{},{}],[{},{}]] \nfn = function (a, b) { return ({...a, ...b}); }",
-      "output": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:2},{&quot;val&quot;:{},&quot;calls&quot;:3}]",
-      "explanation": "Merging two empty objects will always result in an empty object. It may seem like there should only be 1&nbsp;call to fn() because of cache-hits, however none of those objects are === to each other."
+      "input": "getInputs = () => [[{},{}],[{},{}],[{},{}]] \nfn = function (a, b) { return ({...a, ...b}); }",
+      "output": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":2},{\"val\":{},\"calls\":3}]",
+      "explanation": "Merging two empty objects will always result in an empty object. It may seem like there should only be 1 call to fn() because of cache-hits, however none of those objects are === to each other."
     },
     {
-      "input": "getInputs = () =&gt; { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfn = function (a, b) { return ({...a, ...b}); }",
-      "output": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1}]",
+      "input": "getInputs = () => { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfn = function (a, b) { return ({...a, ...b}); }",
+      "output": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1}]",
       "explanation": "Merging two empty objects will always result in an empty object. The 2nd and 3rd third function calls result in a cache-hit. This is because every object passed in is identical."
     }
   ],
@@ -35,42 +35,42 @@
   },
   "publicTests": [
     {
-      "input": "getInputs = () =&gt; [[2,2],[2,2],[1,2]]\nfn = function (a, b) { return a + b; }",
-      "expectedOutput": "[{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:3,&quot;calls&quot;:2}]"
+      "input": "() => [[2,2],[2,2],[1,2]]\nfunction (a, b) { return a + b; }",
+      "expectedOutput": "[{\"val\":4,\"calls\":1},{\"val\":4,\"calls\":1},{\"val\":3,\"calls\":2}]"
     },
     {
-      "input": "getInputs = () =&gt; [[{},{}],[{},{}],[{},{}]] \nfn = function (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:2},{&quot;val&quot;:{},&quot;calls&quot;:3}]"
+      "input": "() => [[{},{}],[{},{}],[{},{}]]\nfunction (a, b) { return ({...a, ...b}); }",
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":2},{\"val\":{},\"calls\":3}]"
     },
     {
-      "input": "getInputs = () =&gt; { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfn = function (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1}]"
+      "input": "() => { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfunction (a, b) { return ({...a, ...b}); }",
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1}]"
     }
   ],
   "testCases": [
     {
-      "input": "getInputs = () =&gt; [[2,2],[2,2],[1,2]]\nfn = function (a, b) { return a + b; }",
-      "expectedOutput": "[{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:4,&quot;calls&quot;:1},{&quot;val&quot;:3,&quot;calls&quot;:2}]"
-    },
-    {
-      "input": "getInputs = () =&gt; [[{},{}],[{},{}],[{},{}]] \nfn = function (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:2},{&quot;val&quot;:{},&quot;calls&quot;:3}]"
-    },
-    {
-      "input": "getInputs = () =&gt; { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfn = function (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": "[{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1},{&quot;val&quot;:{},&quot;calls&quot;:1}]"
-    },
-    {
       "input": "() => [[2,2],[2,2],[1,2]]\nfunction (a, b) { return a + b; }",
-      "expectedOutput": null
+      "expectedOutput": "[{\"val\":4,\"calls\":1},{\"val\":4,\"calls\":1},{\"val\":3,\"calls\":2}]"
     },
     {
       "input": "() => [[{},{}],[{},{}],[{},{}]]\nfunction (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": null
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":2},{\"val\":{},\"calls\":3}]"
     },
     {
       "input": "() => { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfunction (a, b) { return ({...a, ...b}); }",
-      "expectedOutput": null
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1}]"
+    },
+    {
+      "input": "getInputs = () => [[2,2],[2,2],[1,2]]\nfn = function (a, b) { return a + b; }",
+      "expectedOutput": "[{\"val\":4,\"calls\":1},{\"val\":4,\"calls\":1},{\"val\":3,\"calls\":2}]"
+    },
+    {
+      "input": "getInputs = () => [[{},{}],[{},{}],[{},{}]] \nfn = function (a, b) { return ({...a, ...b}); }",
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":2},{\"val\":{},\"calls\":3}]"
+    },
+    {
+      "input": "getInputs = () => { const o = {}; return [[o,o],[o,o],[o,o]]; }\nfn = function (a, b) { return ({...a, ...b}); }",
+      "expectedOutput": "[{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1},{\"val\":{},\"calls\":1}]"
     }
   ],
   "sqlSchema": null,
@@ -87,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/memoize-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:38.193Z",
+    "collectedAt": "2026-10-19T18:40:23.082Z",
     "sourceUpdatedAt": null
   }
 }

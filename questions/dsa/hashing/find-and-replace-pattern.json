@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
-      "output": "[&quot;mee&quot;,&quot;aqq&quot;]",
-      "explanation": "&quot;mee&quot; matches the pattern because there is a permutation {a -&gt; m, b -&gt; e, ...}. \n&quot;ccc&quot; does not match the pattern because {a -&gt; c, b -&gt; c, ...} is not a permutation, since a and b map to the same letter."
+      "input": "words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"",
+      "output": "[\"mee\",\"aqq\"]",
+      "explanation": "\"mee\" matches the pattern because there is a permutation {a -> m, b -> e, ...}. \n\"ccc\" does not match the pattern because {a -> c, b -> c, ...} is not a permutation, since a and b map to the same letter."
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "input": "words = [\"a\",\"b\",\"c\"], pattern = \"a\"",
+      "output": "[\"a\",\"b\",\"c\"]",
       "explanation": null
     }
   ],
@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
-      "expectedOutput": "[&quot;mee&quot;,&quot;aqq&quot;]"
+      "input": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
+      "expectedOutput": "[\"mee\",\"aqq\"]"
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+      "input": "[\"a\",\"b\",\"c\"]\n\"a\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
-      "expectedOutput": "[&quot;mee&quot;,&quot;aqq&quot;]"
-    },
-    {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
-    },
-    {
       "input": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"mee\",\"aqq\"]"
     },
     {
       "input": "[\"a\",\"b\",\"c\"]\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
+    },
+    {
+      "input": "words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"",
+      "expectedOutput": "[\"mee\",\"aqq\"]"
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\"], pattern = \"a\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "sqlSchema": null,
@@ -87,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-and-replace-pattern/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:57.673Z",
+    "collectedAt": "2026-10-19T18:40:17.472Z",
     "sourceUpdatedAt": null
   }
 }

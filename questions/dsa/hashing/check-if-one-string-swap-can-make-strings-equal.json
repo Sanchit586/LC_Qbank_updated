@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;bank&quot;, s2 = &quot;kanb&quot;",
+      "input": "s1 = \"bank\", s2 = \"kanb\"",
       "output": "true",
-      "explanation": "For example, swap the first character with the last character of s2 to make &quot;bank&quot;."
+      "explanation": "For example, swap the first character with the last character of s2 to make \"bank\"."
     },
     {
-      "input": "s1 = &quot;attack&quot;, s2 = &quot;defend&quot;",
+      "input": "s1 = \"attack\", s2 = \"defend\"",
       "output": "false",
       "explanation": "It is impossible to make them equal with one string swap."
     },
     {
-      "input": "s1 = &quot;kelb&quot;, s2 = &quot;kelb&quot;",
+      "input": "s1 = \"kelb\", s2 = \"kelb\"",
       "output": "true",
       "explanation": "The two strings are already equal, so no string swap operation is required."
     }
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;bank&quot;, s2 = &quot;kanb&quot;",
+      "input": "\"bank\"\n\"kanb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;attack&quot;, s2 = &quot;defend&quot;",
+      "input": "\"attack\"\n\"defend\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = &quot;kelb&quot;, s2 = &quot;kelb&quot;",
+      "input": "\"kelb\"\n\"kelb\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;bank&quot;, s2 = &quot;kanb&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = &quot;attack&quot;, s2 = &quot;defend&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s1 = &quot;kelb&quot;, s2 = &quot;kelb&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"bank\"\n\"kanb\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"attack\"\n\"defend\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"kelb\"\n\"kelb\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s1 = \"bank\", s2 = \"kanb\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s1 = \"attack\", s2 = \"defend\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s1 = \"kelb\", s2 = \"kelb\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-one-string-swap-can-make-strings-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.197Z",
+    "collectedAt": "2026-10-19T18:40:14.212Z",
     "sourceUpdatedAt": null
   }
 }

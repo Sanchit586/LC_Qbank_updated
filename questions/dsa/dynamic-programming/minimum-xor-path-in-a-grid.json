@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2],[3,4]]",
+      "input": "[[1,2],[3,4]]",
       "expectedOutput": "6"
     },
     {
-      "input": "grid = [[6,7],[5,8]]",
+      "input": "[[6,7],[5,8]]",
       "expectedOutput": "9"
     },
     {
-      "input": "grid = [[2,7,5]]",
+      "input": "[[2,7,5]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[3,4]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[6,7],[5,8]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[[2,7,5]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "grid = [[1,2],[3,4]]",
       "expectedOutput": "6"
     },
@@ -82,38 +94,6 @@
     {
       "input": "grid = [[2,7,5]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[1,2],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[6,7],[5,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,7,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[7,8],[6,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[3,8,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[7,8],[6,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-xor-path-in-a-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:31.286Z",
+    "collectedAt": "2026-10-19T18:40:25.359Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "corridor = &quot;SSPPSPS&quot;",
+      "input": "corridor = \"SSPPSPS\"",
       "output": "3",
       "explanation": "There are 3 different ways to divide the corridor.\nThe black bars in the above image indicate the two room dividers already installed.\nNote that in each of the ways, each section has exactly two seats."
     },
     {
-      "input": "corridor = &quot;PPSPSP&quot;",
+      "input": "corridor = \"PPSPSP\"",
       "output": "1",
       "explanation": "There is only 1 way to divide the corridor, by not installing any additional dividers.\nInstalling any would create some section that does not have exactly two seats."
     },
     {
-      "input": "corridor = &quot;S&quot;",
+      "input": "corridor = \"S\"",
       "output": "0",
       "explanation": "There is no way to divide the corridor because there will always be a section that does not have exactly two seats."
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "corridor = &quot;SSPPSPS&quot;",
+      "input": "\"SSPPSPS\"",
       "expectedOutput": "3"
     },
     {
-      "input": "corridor = &quot;PPSPSP&quot;",
+      "input": "\"PPSPSP\"",
       "expectedOutput": "1"
     },
     {
-      "input": "corridor = &quot;S&quot;",
+      "input": "\"S\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "corridor = &quot;SSPPSPS&quot;",
+      "input": "\"SSPPSPS\"",
       "expectedOutput": "3"
     },
     {
-      "input": "corridor = &quot;PPSPSP&quot;",
+      "input": "\"PPSPSP\"",
       "expectedOutput": "1"
     },
     {
-      "input": "corridor = &quot;S&quot;",
+      "input": "\"S\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"SSPPSPS\"",
-      "expectedOutput": null
+      "input": "corridor = \"SSPPSPS\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"PPSPSP\"",
-      "expectedOutput": null
+      "input": "corridor = \"PPSPSP\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"S\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "corridor = \"S\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-divide-a-long-corridor/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:47.973Z",
+    "collectedAt": "2026-10-19T18:40:26.246Z",
     "sourceUpdatedAt": null
   }
 }

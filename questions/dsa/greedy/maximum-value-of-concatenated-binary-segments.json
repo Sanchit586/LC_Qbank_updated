@@ -21,12 +21,12 @@
     {
       "input": "nums1 = [1,2], nums0 = [1,0]",
       "output": "14",
-      "explanation": "At index 0, nums1[0] = 1 and nums0[0] = 1, so the segment formed is &quot;10&quot;.\n\tAt index 1, nums1[1] = 2 and nums0[1] = 0, so the segment formed is &quot;11&quot;.\n\tReordering the segments as &quot;11&quot; followed by &quot;10&quot; produces the binary string &quot;1110&quot;.\n\tThe binary number &quot;1110&quot; has value 14 which is the maximum possible value."
+      "explanation": "At index 0, nums1[0] = 1 and nums0[0] = 1, so the segment formed is \"10\".\n\tAt index 1, nums1[1] = 2 and nums0[1] = 0, so the segment formed is \"11\".\n\tReordering the segments as \"11\" followed by \"10\" produces the binary string \"1110\".\n\tThe binary number \"1110\" has value 14 which is the maximum possible value."
     },
     {
       "input": "nums1 = [3,1], nums0 = [0,3]",
       "output": "120",
-      "explanation": "At index 0, nums1[0] = 3 and nums0[0] = 0, so the segment formed is &quot;111&quot;.\n\tAt index 1, nums1[1] = 1 and nums0[1] = 3, so the segment formed is &quot;1000&quot;.\n\tReordering the segments as &quot;111&quot; followed by &quot;1000&quot; produces the binary string &quot;1111000&quot;.\n\tThe binary number &quot;1111000&quot; has value 120 which is the maximum possible value."
+      "explanation": "At index 0, nums1[0] = 3 and nums0[0] = 0, so the segment formed is \"111\".\n\tAt index 1, nums1[1] = 1 and nums0[1] = 3, so the segment formed is \"1000\".\n\tReordering the segments as \"111\" followed by \"1000\" produces the binary string \"1111000\".\n\tThe binary number \"1111000\" has value 120 which is the maximum possible value."
     }
   ],
   "starterCode": {
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2], nums0 = [1,0]",
+      "input": "[1,2]\n[1,0]",
       "expectedOutput": "14"
     },
     {
-      "input": "nums1 = [3,1], nums0 = [0,3]",
+      "input": "[3,1]\n[0,3]",
       "expectedOutput": "120"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2]\n[1,0]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[3,1]\n[0,3]",
+      "expectedOutput": "120"
+    },
+    {
       "input": "nums1 = [1,2], nums0 = [1,0]",
       "expectedOutput": "14"
     },
     {
       "input": "nums1 = [3,1], nums0 = [0,3]",
       "expectedOutput": "120"
-    },
-    {
-      "input": "[1,2]\n[1,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1]\n[0,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3], nums1 = [2,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-value-of-concatenated-binary-segments/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:35.919Z",
+    "collectedAt": "2026-10-19T18:40:22.977Z",
     "sourceUpdatedAt": null
   }
 }

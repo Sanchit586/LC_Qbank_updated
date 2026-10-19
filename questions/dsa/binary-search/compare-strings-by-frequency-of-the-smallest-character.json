@@ -21,14 +21,14 @@
   ],
   "examples": [
     {
-      "input": "queries = [&quot;cbd&quot;], words = [&quot;zaaaz&quot;]",
+      "input": "queries = [\"cbd\"], words = [\"zaaaz\"]",
       "output": "[1]",
-      "explanation": "On the first query we have f(&quot;cbd&quot;) = 1, f(&quot;zaaaz&quot;) = 3 so f(&quot;cbd&quot;) &lt; f(&quot;zaaaz&quot;)."
+      "explanation": "On the first query we have f(\"cbd\") = 1, f(\"zaaaz\") = 3 so f(\"cbd\") < f(\"zaaaz\")."
     },
     {
-      "input": "queries = [&quot;bbb&quot;,&quot;cc&quot;], words = [&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;,&quot;aaaa&quot;]",
+      "input": "queries = [\"bbb\",\"cc\"], words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]",
       "output": "[1,2]",
-      "explanation": "On the first query only f(&quot;bbb&quot;) &lt; f(&quot;aaaa&quot;). On the second query both f(&quot;aaa&quot;) and f(&quot;aaaa&quot;) are both &gt; f(&quot;cc&quot;)."
+      "explanation": "On the first query only f(\"bbb\") < f(\"aaaa\"). On the second query both f(\"aaa\") and f(\"aaaa\") are both > f(\"cc\")."
     }
   ],
   "starterCode": {
@@ -54,30 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "queries = [&quot;cbd&quot;], words = [&quot;zaaaz&quot;]",
+      "input": "[\"cbd\"]\n[\"zaaaz\"]",
       "expectedOutput": "[1]"
     },
     {
-      "input": "queries = [&quot;bbb&quot;,&quot;cc&quot;], words = [&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;,&quot;aaaa&quot;]",
+      "input": "[\"bbb\",\"cc\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]",
       "expectedOutput": "[1,2]"
     }
   ],
   "testCases": [
     {
-      "input": "queries = [&quot;cbd&quot;], words = [&quot;zaaaz&quot;]",
+      "input": "[\"cbd\"]\n[\"zaaaz\"]",
       "expectedOutput": "[1]"
     },
     {
-      "input": "queries = [&quot;bbb&quot;,&quot;cc&quot;], words = [&quot;a&quot;,&quot;aa&quot;,&quot;aaa&quot;,&quot;aaaa&quot;]",
+      "input": "[\"bbb\",\"cc\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "[\"cbd\"]\n[\"zaaaz\"]",
-      "expectedOutput": null
+      "input": "queries = [\"cbd\"], words = [\"zaaaz\"]",
+      "expectedOutput": "[1]"
     },
     {
-      "input": "[\"bbb\",\"cc\"]\n[\"a\",\"aa\",\"aaa\",\"aaaa\"]",
-      "expectedOutput": null
+      "input": "queries = [\"bbb\",\"cc\"], words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]",
+      "expectedOutput": "[1,2]"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/compare-strings-by-frequency-of-the-smallest-character/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.650Z",
+    "collectedAt": "2026-10-19T18:40:14.561Z",
     "sourceUpdatedAt": null
   }
 }

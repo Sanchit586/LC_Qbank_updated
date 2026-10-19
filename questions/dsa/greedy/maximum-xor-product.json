@@ -19,17 +19,17 @@
     {
       "input": "a = 12, b = 5, n = 4",
       "output": "98",
-      "explanation": "For x = 2, (a XOR x) = 14 and (b XOR x) = 7. Hence, (a XOR x) * (b XOR x) = 98. \nIt can be shown that 98 is the maximum value of (a XOR x) * (b XOR x) for all 0 &lt;= x &lt; 2n."
+      "explanation": "For x = 2, (a XOR x) = 14 and (b XOR x) = 7. Hence, (a XOR x) * (b XOR x) = 98. \nIt can be shown that 98 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
     },
     {
       "input": "a = 6, b = 7 , n = 5",
       "output": "930",
-      "explanation": "For x = 25, (a XOR x) = 31 and (b XOR x) = 30. Hence, (a XOR x) * (b XOR x) = 930.\nIt can be shown that 930 is the maximum value of (a XOR x) * (b XOR x) for all 0 &lt;= x &lt; 2n."
+      "explanation": "For x = 25, (a XOR x) = 31 and (b XOR x) = 30. Hence, (a XOR x) * (b XOR x) = 930.\nIt can be shown that 930 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
     },
     {
       "input": "a = 1, b = 6, n = 3",
       "output": "12",
-      "explanation": "For x = 5, (a XOR x) = 4 and (b XOR x) = 3. Hence, (a XOR x) * (b XOR x) = 12.\nIt can be shown that 12 is the maximum value of (a XOR x) * (b XOR x) for all 0 &lt;= x &lt; 2n."
+      "explanation": "For x = 5, (a XOR x) = 4 and (b XOR x) = 3. Hence, (a XOR x) * (b XOR x) = 12.\nIt can be shown that 12 is the maximum value of (a XOR x) * (b XOR x) for all 0 <= x < 2n."
     }
   ],
   "starterCode": {
@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "a = 12, b = 5, n = 4",
+      "input": "12\n5\n4",
       "expectedOutput": "98"
     },
     {
-      "input": "a = 6, b = 7 , n = 5",
+      "input": "6\n7\n5",
       "expectedOutput": "930"
     },
     {
-      "input": "a = 1, b = 6, n = 3",
+      "input": "1\n6\n3",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "12\n5\n4",
+      "expectedOutput": "98"
+    },
+    {
+      "input": "6\n7\n5",
+      "expectedOutput": "930"
+    },
+    {
+      "input": "1\n6\n3",
+      "expectedOutput": "12"
+    },
+    {
       "input": "a = 12, b = 5, n = 4",
       "expectedOutput": "98"
     },
@@ -79,38 +91,6 @@
     {
       "input": "a = 1, b = 6, n = 3",
       "expectedOutput": "12"
-    },
-    {
-      "input": "12\n5\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n7\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n6\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "a = 7, b = 8 , n = 6",
-      "expectedOutput": null
-    },
-    {
-      "input": "a = 2, b = 7, n = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "13\n6\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n8\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "a = 13, b = 6, n = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-xor-product/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:38.144Z",
+    "collectedAt": "2026-10-19T18:40:23.051Z",
     "sourceUpdatedAt": null
   }
 }

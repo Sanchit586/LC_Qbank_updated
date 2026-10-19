@@ -20,12 +20,12 @@
     {
       "input": "matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
       "output": "true",
-      "explanation": "In the above grid, the&nbsp;diagonals are:\n&quot;[9]&quot;, &quot;[5, 5]&quot;, &quot;[1, 1, 1]&quot;, &quot;[2, 2, 2]&quot;, &quot;[3, 3]&quot;, &quot;[4]&quot;.\nIn each diagonal all elements are the same, so the answer is True."
+      "explanation": "In the above grid, the diagonals are:\n\"[9]\", \"[5, 5]\", \"[1, 1, 1]\", \"[2, 2, 2]\", \"[3, 3]\", \"[4]\".\nIn each diagonal all elements are the same, so the answer is True."
     },
     {
       "input": "matrix = [[1,2],[2,2]]",
       "output": "false",
-      "explanation": "The diagonal &quot;[1, 2]&quot; has different elements."
+      "explanation": "The diagonal \"[1, 2]\" has different elements."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
+      "input": "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
       "expectedOutput": "true"
     },
     {
-      "input": "matrix = [[1,2],[2,2]]",
+      "input": "[[1,2],[2,2]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2],[2,2]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "matrix = [[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
       "expectedOutput": "true"
     },
     {
       "input": "matrix = [[1,2],[2,2]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,2,3,4],[5,1,2,3],[9,5,1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,3,4,5],[6,2,3,4],[10,6,2,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/toeplitz-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.476Z",
+    "collectedAt": "2026-10-19T18:40:31.083Z",
     "sourceUpdatedAt": null
   }
 }

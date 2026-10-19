@@ -16,13 +16,13 @@
   "examples": [
     {
       "input": "n = 5",
-      "output": "2\nExplanation: The square triples are (3,4,5) and (4,3,5).",
-      "explanation": null
+      "output": "2",
+      "explanation": ": The square triples are (3,4,5) and (4,3,5)."
     },
     {
       "input": "n = 10",
-      "output": "4\nExplanation: The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10).",
-      "explanation": null
+      "output": "4",
+      "explanation": ": The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10)."
     }
   ],
   "starterCode": {
@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5",
-      "expectedOutput": "2\nExplanation: The square triples are (3,4,5) and (4,3,5)."
+      "input": "5",
+      "expectedOutput": "2"
     },
     {
-      "input": "n = 10",
-      "expectedOutput": "4\nExplanation: The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10)."
+      "input": "10",
+      "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "n = 5",
-      "expectedOutput": "2\nExplanation: The square triples are (3,4,5) and (4,3,5)."
-    },
-    {
-      "input": "n = 10",
-      "expectedOutput": "4\nExplanation: The square triples are (3,4,5), (4,3,5), (6,8,10), and (8,6,10)."
-    },
-    {
       "input": "5",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "10",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 5",
+      "expectedOutput": "2"
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
+      "input": "n = 10",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-square-sum-triples/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:21.406Z",
+    "collectedAt": "2026-10-19T18:40:15.591Z",
     "sourceUpdatedAt": null
   }
 }

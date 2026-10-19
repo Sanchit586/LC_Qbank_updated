@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cczazcc&quot;, repeatLimit = 3",
-      "output": "&quot;zzcccac&quot;",
-      "explanation": "We use all of the characters from s to construct the repeatLimitedString &quot;zzcccac&quot;.\nThe letter &#39;a&#39; appears at most 1 time in a row.\nThe letter &#39;c&#39; appears at most 3 times in a row.\nThe letter &#39;z&#39; appears at most 2 times in a row.\nHence, no letter appears more than repeatLimit times in a row and the string is a valid repeatLimitedString.\nThe string is the lexicographically largest repeatLimitedString possible so we return &quot;zzcccac&quot;.\nNote that the string &quot;zzcccca&quot; is lexicographically larger but the letter &#39;c&#39; appears more than 3 times in a row, so it is not a valid repeatLimitedString."
+      "input": "s = \"cczazcc\", repeatLimit = 3",
+      "output": "\"zzcccac\"",
+      "explanation": "We use all of the characters from s to construct the repeatLimitedString \"zzcccac\".\nThe letter 'a' appears at most 1 time in a row.\nThe letter 'c' appears at most 3 times in a row.\nThe letter 'z' appears at most 2 times in a row.\nHence, no letter appears more than repeatLimit times in a row and the string is a valid repeatLimitedString.\nThe string is the lexicographically largest repeatLimitedString possible so we return \"zzcccac\".\nNote that the string \"zzcccca\" is lexicographically larger but the letter 'c' appears more than 3 times in a row, so it is not a valid repeatLimitedString."
     },
     {
-      "input": "s = &quot;aababab&quot;, repeatLimit = 2",
-      "output": "&quot;bbabaa&quot;",
-      "explanation": "We use only some of the characters from s to construct the repeatLimitedString &quot;bbabaa&quot;. \nThe letter &#39;a&#39; appears at most 2 times in a row.\nThe letter &#39;b&#39; appears at most 2 times in a row.\nHence, no letter appears more than repeatLimit times in a row and the string is a valid repeatLimitedString.\nThe string is the lexicographically largest repeatLimitedString possible so we return &quot;bbabaa&quot;.\nNote that the string &quot;bbabaaa&quot; is lexicographically larger but the letter &#39;a&#39; appears more than 2 times in a row, so it is not a valid repeatLimitedString."
+      "input": "s = \"aababab\", repeatLimit = 2",
+      "output": "\"bbabaa\"",
+      "explanation": "We use only some of the characters from s to construct the repeatLimitedString \"bbabaa\". \nThe letter 'a' appears at most 2 times in a row.\nThe letter 'b' appears at most 2 times in a row.\nHence, no letter appears more than repeatLimit times in a row and the string is a valid repeatLimitedString.\nThe string is the lexicographically largest repeatLimitedString possible so we return \"bbabaa\".\nNote that the string \"bbabaaa\" is lexicographically larger but the letter 'a' appears more than 2 times in a row, so it is not a valid repeatLimitedString."
     }
   ],
   "starterCode": {
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cczazcc&quot;, repeatLimit = 3",
-      "expectedOutput": "&quot;zzcccac&quot;"
+      "input": "\"cczazcc\"\n3",
+      "expectedOutput": "\"zzcccac\""
     },
     {
-      "input": "s = &quot;aababab&quot;, repeatLimit = 2",
-      "expectedOutput": "&quot;bbabaa&quot;"
+      "input": "\"aababab\"\n2",
+      "expectedOutput": "\"bbabaa\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cczazcc&quot;, repeatLimit = 3",
-      "expectedOutput": "&quot;zzcccac&quot;"
-    },
-    {
-      "input": "s = &quot;aababab&quot;, repeatLimit = 2",
-      "expectedOutput": "&quot;bbabaa&quot;"
-    },
-    {
       "input": "\"cczazcc\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"zzcccac\""
     },
     {
       "input": "\"aababab\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"bbabaa\""
     },
     {
-      "input": "s = &quot;cczazcc&quot;, repeatLimit = 4",
-      "expectedOutput": null
+      "input": "s = \"cczazcc\", repeatLimit = 3",
+      "expectedOutput": "\"zzcccac\""
+    },
+    {
+      "input": "s = \"aababab\", repeatLimit = 2",
+      "expectedOutput": "\"bbabaa\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-string-with-repeat-limit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:03.730Z",
+    "collectedAt": "2026-10-19T18:40:14.749Z",
     "sourceUpdatedAt": null
   }
 }

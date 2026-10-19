@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "rectangles = [[4,8],[3,6],[10,20],[15,30]]",
+      "input": "[[4,8],[3,6],[10,20],[15,30]]",
       "expectedOutput": "6"
     },
     {
-      "input": "rectangles = [[4,5],[7,8]]",
+      "input": "[[4,5],[7,8]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[4,8],[3,6],[10,20],[15,30]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[4,5],[7,8]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "rectangles = [[4,8],[3,6],[10,20],[15,30]]",
       "expectedOutput": "6"
     },
     {
       "input": "rectangles = [[4,5],[7,8]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[4,8],[3,6],[10,20],[15,30]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,5],[7,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "rectangles = [[5,9],[4,7],[11,21],[16,31]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-pairs-of-interchangeable-rectangles/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:42.406Z",
+    "collectedAt": "2026-10-19T18:40:25.996Z",
     "sourceUpdatedAt": null
   }
 }

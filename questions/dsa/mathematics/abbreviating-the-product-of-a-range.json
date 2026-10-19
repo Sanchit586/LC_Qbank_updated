@@ -16,17 +16,17 @@
   "examples": [
     {
       "input": "left = 1, right = 4",
-      "output": "&quot;24e0&quot;",
-      "explanation": "The product is 1 &times; 2 &times; 3 &times; 4 = 24.\nThere are no trailing zeros, so 24 remains the same. The abbreviation will end with &quot;e0&quot;.\nSince the number of digits is 2, which is less than 10, we do not have to abbreviate it further.\nThus, the final representation is &quot;24e0&quot;."
+      "output": "\"24e0\"",
+      "explanation": "The product is 1 × 2 × 3 × 4 = 24.\nThere are no trailing zeros, so 24 remains the same. The abbreviation will end with \"e0\".\nSince the number of digits is 2, which is less than 10, we do not have to abbreviate it further.\nThus, the final representation is \"24e0\"."
     },
     {
       "input": "left = 2, right = 11",
-      "output": "&quot;399168e2&quot;",
-      "explanation": "The product is 39916800.\nThere are 2 trailing zeros, which we remove to get 399168. The abbreviation will end with &quot;e2&quot;.\nThe number of digits after removing the trailing zeros is 6, so we do not abbreviate it further.\nHence, the abbreviated product is &quot;399168e2&quot;."
+      "output": "\"399168e2\"",
+      "explanation": "The product is 39916800.\nThere are 2 trailing zeros, which we remove to get 399168. The abbreviation will end with \"e2\".\nThe number of digits after removing the trailing zeros is 6, so we do not abbreviate it further.\nHence, the abbreviated product is \"399168e2\"."
     },
     {
       "input": "left = 371, right = 375",
-      "output": "&quot;7219856259e3&quot;",
+      "output": "\"7219856259e3\"",
       "explanation": "The product is 7219856259000."
     }
   ],
@@ -53,62 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "left = 1, right = 4",
-      "expectedOutput": "&quot;24e0&quot;"
+      "input": "1\n4",
+      "expectedOutput": "\"24e0\""
     },
     {
-      "input": "left = 2, right = 11",
-      "expectedOutput": "&quot;399168e2&quot;"
+      "input": "2\n11",
+      "expectedOutput": "\"399168e2\""
     },
     {
-      "input": "left = 371, right = 375",
-      "expectedOutput": "&quot;7219856259e3&quot;"
+      "input": "371\n375",
+      "expectedOutput": "\"7219856259e3\""
     }
   ],
   "testCases": [
     {
-      "input": "left = 1, right = 4",
-      "expectedOutput": "&quot;24e0&quot;"
-    },
-    {
-      "input": "left = 2, right = 11",
-      "expectedOutput": "&quot;399168e2&quot;"
-    },
-    {
-      "input": "left = 371, right = 375",
-      "expectedOutput": "&quot;7219856259e3&quot;"
-    },
-    {
       "input": "1\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"24e0\""
     },
     {
       "input": "2\n11",
-      "expectedOutput": null
+      "expectedOutput": "\"399168e2\""
     },
     {
       "input": "371\n375",
-      "expectedOutput": null
+      "expectedOutput": "\"7219856259e3\""
     },
     {
-      "input": "left = 3, right = 12",
-      "expectedOutput": null
+      "input": "left = 1, right = 4",
+      "expectedOutput": "\"24e0\""
     },
     {
-      "input": "left = 372, right = 376",
-      "expectedOutput": null
+      "input": "left = 2, right = 11",
+      "expectedOutput": "\"399168e2\""
     },
     {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n12",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 2, right = 5",
-      "expectedOutput": null
+      "input": "left = 371, right = 375",
+      "expectedOutput": "\"7219856259e3\""
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/abbreviating-the-product-of-a-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:54.546Z",
+    "collectedAt": "2026-10-19T18:40:12.764Z",
     "sourceUpdatedAt": null
   }
 }

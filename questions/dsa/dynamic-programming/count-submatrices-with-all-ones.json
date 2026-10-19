@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[1,0,1],[1,1,0],[1,1,0]]",
+      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "13"
     },
     {
-      "input": "mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
+      "input": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
       "expectedOutput": "24"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
+      "expectedOutput": "24"
+    },
+    {
       "input": "mat = [[1,0,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "13"
     },
     {
       "input": "mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
       "expectedOutput": "24"
-    },
-    {
-      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,1,2],[2,2,1],[2,2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-submatrices-with-all-ones/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:22.505Z",
+    "collectedAt": "2026-10-19T18:40:15.671Z",
     "sourceUpdatedAt": null
   }
 }

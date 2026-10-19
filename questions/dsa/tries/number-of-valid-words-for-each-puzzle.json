@@ -23,12 +23,12 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;aaaa&quot;,&quot;asas&quot;,&quot;able&quot;,&quot;ability&quot;,&quot;actt&quot;,&quot;actor&quot;,&quot;access&quot;], puzzles = [&quot;aboveyz&quot;,&quot;abrodyz&quot;,&quot;abslute&quot;,&quot;absoryz&quot;,&quot;actresz&quot;,&quot;gaswxyz&quot;]",
+      "input": "words = [\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"], puzzles = [\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
       "output": "[1,1,3,2,4,0]",
-      "explanation": "1 valid word for &quot;aboveyz&quot; : &quot;aaaa&quot; \n1 valid word for &quot;abrodyz&quot; : &quot;aaaa&quot;\n3 valid words for &quot;abslute&quot; : &quot;aaaa&quot;, &quot;asas&quot;, &quot;able&quot;\n2 valid words for &quot;absoryz&quot; : &quot;aaaa&quot;, &quot;asas&quot;\n4 valid words for &quot;actresz&quot; : &quot;aaaa&quot;, &quot;asas&quot;, &quot;actt&quot;, &quot;access&quot;\nThere are no valid words for &quot;gaswxyz&quot; cause none of the words in the list contains letter &#39;g&#39;."
+      "explanation": "1 valid word for \"aboveyz\" : \"aaaa\" \n1 valid word for \"abrodyz\" : \"aaaa\"\n3 valid words for \"abslute\" : \"aaaa\", \"asas\", \"able\"\n2 valid words for \"absoryz\" : \"aaaa\", \"asas\"\n4 valid words for \"actresz\" : \"aaaa\", \"asas\", \"actt\", \"access\"\nThere are no valid words for \"gaswxyz\" cause none of the words in the list contains letter 'g'."
     },
     {
-      "input": "words = [&quot;apple&quot;,&quot;pleas&quot;,&quot;please&quot;], puzzles = [&quot;aelwxyz&quot;,&quot;aelpxyz&quot;,&quot;aelpsxy&quot;,&quot;saelpxy&quot;,&quot;xaelpsy&quot;]",
+      "input": "words = [\"apple\",\"pleas\",\"please\"], puzzles = [\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
       "output": "[0,1,3,2,0]",
       "explanation": null
     }
@@ -56,30 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;aaaa&quot;,&quot;asas&quot;,&quot;able&quot;,&quot;ability&quot;,&quot;actt&quot;,&quot;actor&quot;,&quot;access&quot;], puzzles = [&quot;aboveyz&quot;,&quot;abrodyz&quot;,&quot;abslute&quot;,&quot;absoryz&quot;,&quot;actresz&quot;,&quot;gaswxyz&quot;]",
+      "input": "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
       "expectedOutput": "[1,1,3,2,4,0]"
     },
     {
-      "input": "words = [&quot;apple&quot;,&quot;pleas&quot;,&quot;please&quot;], puzzles = [&quot;aelwxyz&quot;,&quot;aelpxyz&quot;,&quot;aelpsxy&quot;,&quot;saelpxy&quot;,&quot;xaelpsy&quot;]",
+      "input": "[\"apple\",\"pleas\",\"please\"]\n[\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
       "expectedOutput": "[0,1,3,2,0]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;aaaa&quot;,&quot;asas&quot;,&quot;able&quot;,&quot;ability&quot;,&quot;actt&quot;,&quot;actor&quot;,&quot;access&quot;], puzzles = [&quot;aboveyz&quot;,&quot;abrodyz&quot;,&quot;abslute&quot;,&quot;absoryz&quot;,&quot;actresz&quot;,&quot;gaswxyz&quot;]",
+      "input": "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
       "expectedOutput": "[1,1,3,2,4,0]"
     },
     {
-      "input": "words = [&quot;apple&quot;,&quot;pleas&quot;,&quot;please&quot;], puzzles = [&quot;aelwxyz&quot;,&quot;aelpxyz&quot;,&quot;aelpsxy&quot;,&quot;saelpxy&quot;,&quot;xaelpsy&quot;]",
+      "input": "[\"apple\",\"pleas\",\"please\"]\n[\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
       "expectedOutput": "[0,1,3,2,0]"
     },
     {
-      "input": "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
-      "expectedOutput": null
+      "input": "words = [\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"], puzzles = [\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,3,2,4,0]"
     },
     {
-      "input": "[\"apple\",\"pleas\",\"please\"]\n[\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
-      "expectedOutput": null
+      "input": "words = [\"apple\",\"pleas\",\"please\"], puzzles = [\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
+      "expectedOutput": "[0,1,3,2,0]"
     }
   ],
   "sqlSchema": null,
@@ -95,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-valid-words-for-each-puzzle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:46.088Z",
+    "collectedAt": "2026-10-19T18:40:26.204Z",
     "sourceUpdatedAt": null
   }
 }

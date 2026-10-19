@@ -48,86 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 13",
+      "input": "13",
       "expectedOutput": "[1,10,11,12,13,2,3,4,5,6,7,8,9]"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "[1,2]"
     }
   ],
   "testCases": [
     {
+      "input": "13",
+      "expectedOutput": "[1,10,11,12,13,2,3,4,5,6,7,8,9]"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "[1,2]"
+    },
+    {
       "input": "n = 13",
       "expectedOutput": "[1,10,11,12,13,2,3,4,5,6,7,8,9]"
     },
     {
       "input": "n = 2",
       "expectedOutput": "[1,2]"
-    },
-    {
-      "input": "13",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -139,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographical-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.002Z",
+    "collectedAt": "2026-10-19T18:40:20.179Z",
     "sourceUpdatedAt": null
   }
 }

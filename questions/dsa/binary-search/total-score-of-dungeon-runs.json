@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "hp = 11, damage = [3,6,7], requirement = [4,2,5]",
+      "input": "11\n[3,6,7]\n[4,2,5]",
       "expectedOutput": "3"
     },
     {
-      "input": "hp = 2, damage = [10000,1], requirement = [1,1]",
+      "input": "2\n[10000,1]\n[1,1]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "11\n[3,6,7]\n[4,2,5]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n[10000,1]\n[1,1]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "hp = 11, damage = [3,6,7], requirement = [4,2,5]",
       "expectedOutput": "3"
     },
     {
       "input": "hp = 2, damage = [10000,1], requirement = [1,1]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "11\n[3,6,7]\n[4,2,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[10000,1]\n[1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "hp = 12, damage = [4,7,8], requirement = [5,3,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/total-score-of-dungeon-runs/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.585Z",
+    "collectedAt": "2026-10-19T18:40:31.134Z",
     "sourceUpdatedAt": null
   }
 }

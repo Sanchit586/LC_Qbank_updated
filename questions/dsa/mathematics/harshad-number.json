@@ -47,90 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 18",
+      "input": "18",
       "expectedOutput": "9"
     },
     {
-      "input": "x = 23",
+      "input": "23",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "18",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "23",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "x = 18",
       "expectedOutput": "9"
     },
     {
       "input": "x = 23",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "18",
-      "expectedOutput": null
-    },
-    {
-      "input": "23",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/harshad-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.715Z",
+    "collectedAt": "2026-10-19T18:40:19.350Z",
     "sourceUpdatedAt": null
   }
 }

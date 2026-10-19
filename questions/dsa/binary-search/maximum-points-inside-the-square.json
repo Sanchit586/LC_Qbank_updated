@@ -23,17 +23,17 @@
   ],
   "examples": [
     {
-      "input": "points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = &quot;abdca&quot;",
+      "input": "points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = \"abdca\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "points = [[1,1],[-2,-2],[-2,2]], s = &quot;abb&quot;",
+      "input": "points = [[1,1],[-2,-2],[-2,2]], s = \"abb\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "points = [[1,1],[-1,-1],[2,-2]], s = &quot;ccd&quot;",
+      "input": "points = [[1,1],[-1,-1],[2,-2]], s = \"ccd\"",
       "output": "0",
       "explanation": null
     }
@@ -61,62 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = &quot;abdca&quot;",
+      "input": "[[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]]\n\"abdca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "points = [[1,1],[-2,-2],[-2,2]], s = &quot;abb&quot;",
+      "input": "[[1,1],[-2,-2],[-2,2]]\n\"abb\"",
       "expectedOutput": "1"
     },
     {
-      "input": "points = [[1,1],[-1,-1],[2,-2]], s = &quot;ccd&quot;",
+      "input": "[[1,1],[-1,-1],[2,-2]]\n\"ccd\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = &quot;abdca&quot;",
+      "input": "[[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]]\n\"abdca\"",
       "expectedOutput": "2"
     },
     {
-      "input": "points = [[1,1],[-2,-2],[-2,2]], s = &quot;abb&quot;",
+      "input": "[[1,1],[-2,-2],[-2,2]]\n\"abb\"",
       "expectedOutput": "1"
     },
     {
-      "input": "points = [[1,1],[-1,-1],[2,-2]], s = &quot;ccd&quot;",
+      "input": "[[1,1],[-1,-1],[2,-2]]\n\"ccd\"",
       "expectedOutput": "0"
     },
     {
-      "input": "[[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]]\n\"abdca\"",
-      "expectedOutput": null
+      "input": "points = [[2,2],[-1,-2],[-4,4],[-3,1],[3,-3]], s = \"abdca\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "[[1,1],[-2,-2],[-2,2]]\n\"abb\"",
-      "expectedOutput": null
+      "input": "points = [[1,1],[-2,-2],[-2,2]], s = \"abb\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "[[1,1],[-1,-1],[2,-2]]\n\"ccd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[-3,-3],[-3,3]], s = &quot;abb&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[-2,-2],[3,-3]], s = &quot;ccd&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,3],[-2,-3],[-5,5],[-4,2],[4,-4]]\n\"abdca\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[-3,-3],[-3,3]]\n\"abb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[3,3],[-2,-3],[-5,5],[-4,2],[4,-4]], s = &quot;abdca&quot;",
-      "expectedOutput": null
+      "input": "points = [[1,1],[-1,-1],[2,-2]], s = \"ccd\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-points-inside-the-square/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:24.637Z",
+    "collectedAt": "2026-10-19T18:40:22.350Z",
     "sourceUpdatedAt": null
   }
 }

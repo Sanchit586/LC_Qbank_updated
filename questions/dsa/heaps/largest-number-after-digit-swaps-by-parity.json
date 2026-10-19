@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 1234",
+      "input": "1234",
       "expectedOutput": "3412"
     },
     {
-      "input": "num = 65875",
+      "input": "65875",
       "expectedOutput": "87655"
     }
   ],
   "testCases": [
     {
+      "input": "1234",
+      "expectedOutput": "3412"
+    },
+    {
+      "input": "65875",
+      "expectedOutput": "87655"
+    },
+    {
       "input": "num = 1234",
       "expectedOutput": "3412"
     },
     {
       "input": "num = 65875",
       "expectedOutput": "87655"
-    },
-    {
-      "input": "1234",
-      "expectedOutput": null
-    },
-    {
-      "input": "65875",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-number-after-digit-swaps-by-parity/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:44.526Z",
+    "collectedAt": "2026-10-19T18:40:19.953Z",
     "sourceUpdatedAt": null
   }
 }

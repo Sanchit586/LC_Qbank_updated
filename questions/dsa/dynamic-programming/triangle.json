@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]",
+      "input": "[[2],[3,4],[6,5,7],[4,1,8,3]]",
       "expectedOutput": "11"
     },
     {
-      "input": "triangle = [[-10]]",
+      "input": "[[-10]]",
       "expectedOutput": "-10"
     }
   ],
   "testCases": [
     {
+      "input": "[[2],[3,4],[6,5,7],[4,1,8,3]]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[[-10]]",
+      "expectedOutput": "-10"
+    },
+    {
       "input": "triangle = [[2],[3,4],[6,5,7],[4,1,8,3]]",
       "expectedOutput": "11"
     },
     {
       "input": "triangle = [[-10]]",
       "expectedOutput": "-10"
-    },
-    {
-      "input": "[[2],[3,4],[6,5,7],[4,1,8,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[-10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "triangle = [[3],[4,5],[7,6,8],[5,2,9,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/triangle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:02.544Z",
+    "collectedAt": "2026-10-19T18:40:31.235Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 2",
+      "input": "s = \"23542185131\", k = 3, minLength = 2",
       "output": "3",
-      "explanation": "There exists three ways to create a beautiful partition:\n&quot;2354 | 218 | 5131&quot;\n&quot;2354 | 21851 | 31&quot;\n&quot;2354218 | 51 | 31&quot;"
+      "explanation": "There exists three ways to create a beautiful partition:\n\"2354 | 218 | 5131\"\n\"2354 | 21851 | 31\"\n\"2354218 | 51 | 31\""
     },
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 3",
+      "input": "s = \"23542185131\", k = 3, minLength = 3",
       "output": "1",
-      "explanation": "There exists one way to create a beautiful partition: &quot;2354 | 218 | 5131&quot;."
+      "explanation": "There exists one way to create a beautiful partition: \"2354 | 218 | 5131\"."
     },
     {
-      "input": "s = &quot;3312958&quot;, k = 3, minLength = 1",
+      "input": "s = \"3312958\", k = 3, minLength = 1",
       "output": "1",
-      "explanation": "There exists one way to create a beautiful partition: &quot;331 | 29 | 58&quot;."
+      "explanation": "There exists one way to create a beautiful partition: \"331 | 29 | 58\"."
     }
   ],
   "starterCode": {
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 2",
+      "input": "\"23542185131\"\n3\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 3",
+      "input": "\"23542185131\"\n3\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;3312958&quot;, k = 3, minLength = 1",
+      "input": "\"3312958\"\n3\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 2",
+      "input": "\"23542185131\"\n3\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;23542185131&quot;, k = 3, minLength = 3",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;3312958&quot;, k = 3, minLength = 1",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"23542185131\"\n3\n2",
-      "expectedOutput": null
-    },
-    {
       "input": "\"23542185131\"\n3\n3",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"3312958\"\n3\n1",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;23542185132&quot;, k = 4, minLength = 4",
-      "expectedOutput": null
+      "input": "s = \"23542185131\", k = 3, minLength = 2",
+      "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;3312959&quot;, k = 4, minLength = 2",
-      "expectedOutput": null
+      "input": "s = \"23542185131\", k = 3, minLength = 3",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"23542185132\"\n4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"23542185132\"\n4\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;23542185132&quot;, k = 4, minLength = 3",
-      "expectedOutput": null
+      "input": "s = \"3312958\", k = 3, minLength = 1",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-beautiful-partitions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.814Z",
+    "collectedAt": "2026-10-19T18:40:25.772Z",
     "sourceUpdatedAt": null
   }
 }

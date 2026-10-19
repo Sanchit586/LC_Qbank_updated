@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [6,2,2,2,6], edges = [[0,1],[1,2],[1,3],[3,4]]",
+      "input": "[6,2,2,2,6]\n[[0,1],[1,2],[1,3],[3,4]]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [2], edges = []",
+      "input": "[2]\n[]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[6,2,2,2,6]\n[[0,1],[1,2],[1,3],[3,4]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2]\n[]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "nums = [6,2,2,2,6], edges = [[0,1],[1,2],[1,3],[3,4]]",
       "expectedOutput": "2"
     },
     {
       "input": "nums = [2], edges = []",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[6,2,2,2,6]\n[[0,1],[1,2],[1,3],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2]\n[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [7,3,3,3,7], edges = [[1,2],[2,3],[2,4],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/create-components-with-same-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:30.609Z",
+    "collectedAt": "2026-10-19T18:40:16.069Z",
     "sourceUpdatedAt": null
   }
 }

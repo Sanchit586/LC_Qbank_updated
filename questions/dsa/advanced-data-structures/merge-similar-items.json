@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "items1 = [[1,1],[4,5],[3,8]], items2 = [[3,1],[1,5]]",
+      "input": "[[1,1],[4,5],[3,8]]\n[[3,1],[1,5]]",
       "expectedOutput": "[[1,6],[3,9],[4,5]]"
     },
     {
-      "input": "items1 = [[1,1],[3,2],[2,3]], items2 = [[2,1],[3,2],[1,3]]",
+      "input": "[[1,1],[3,2],[2,3]]\n[[2,1],[3,2],[1,3]]",
       "expectedOutput": "[[1,4],[2,4],[3,4]]"
     },
     {
-      "input": "items1 = [[1,3],[2,2]], items2 = [[7,1],[2,2],[1,4]]",
+      "input": "[[1,3],[2,2]]\n[[7,1],[2,2],[1,4]]",
       "expectedOutput": "[[1,7],[2,4],[7,1]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1],[4,5],[3,8]]\n[[3,1],[1,5]]",
+      "expectedOutput": "[[1,6],[3,9],[4,5]]"
+    },
+    {
+      "input": "[[1,1],[3,2],[2,3]]\n[[2,1],[3,2],[1,3]]",
+      "expectedOutput": "[[1,4],[2,4],[3,4]]"
+    },
+    {
+      "input": "[[1,3],[2,2]]\n[[7,1],[2,2],[1,4]]",
+      "expectedOutput": "[[1,7],[2,4],[7,1]]"
+    },
+    {
       "input": "items1 = [[1,1],[4,5],[3,8]], items2 = [[3,1],[1,5]]",
       "expectedOutput": "[[1,6],[3,9],[4,5]]"
     },
@@ -83,38 +95,6 @@
     {
       "input": "items1 = [[1,3],[2,2]], items2 = [[7,1],[2,2],[1,4]]",
       "expectedOutput": "[[1,7],[2,4],[7,1]]"
-    },
-    {
-      "input": "[[1,1],[4,5],[3,8]]\n[[3,1],[1,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[3,2],[2,3]]\n[[2,1],[3,2],[1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3],[2,2]]\n[[7,1],[2,2],[1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "items2 = [[2,2],[4,3],[3,4]], items3 = [[3,2],[4,3],[2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "items2 = [[2,4],[3,3]], items3 = [[8,2],[3,3],[2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[5,6],[4,9]]\n[[4,2],[2,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[4,3],[3,4]]\n[[3,2],[4,3],[2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "items2 = [[2,2],[5,6],[4,9]], items3 = [[4,2],[2,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/merge-similar-items/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:39.880Z",
+    "collectedAt": "2026-10-19T18:40:23.129Z",
     "sourceUpdatedAt": null
   }
 }

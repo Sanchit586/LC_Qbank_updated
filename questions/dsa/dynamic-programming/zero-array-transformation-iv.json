@@ -63,24 +63,40 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,0,2], queries = [[0,2,1],[0,2,1],[1,1,3]]",
+      "input": "[2,0,2]\n[[0,2,1],[0,2,1],[1,1,3]]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [4,3,2,1], queries = [[1,3,2],[0,2,1]]",
+      "input": "[4,3,2,1]\n[[1,3,2],[0,2,1]]",
       "expectedOutput": "-1"
     },
     {
-      "input": "nums = [1,2,3,2,1], queries = [[0,1,1],[1,2,1],[2,3,2],[3,4,1],[4,4,1]]",
+      "input": "[1,2,3,2,1]\n[[0,1,1],[1,2,1],[2,3,2],[3,4,1],[4,4,1]]",
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [1,2,3,2,6], queries = [[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]",
+      "input": "[1,2,3,2,6]\n[[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[2,0,2]\n[[0,2,1],[0,2,1],[1,1,3]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[4,3,2,1]\n[[1,3,2],[0,2,1]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2,3,2,1]\n[[0,1,1],[1,2,1],[2,3,2],[3,4,1],[4,4,1]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,2,3,2,6]\n[[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "nums = [2,0,2], queries = [[0,2,1],[0,2,1],[1,1,3]]",
       "expectedOutput": "2"
     },
@@ -95,42 +111,6 @@
     {
       "input": "nums = [1,2,3,2,6], queries = [[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[2,0,2]\n[[0,2,1],[0,2,1],[1,1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3,2,1]\n[[1,3,2],[0,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,2,1]\n[[0,1,1],[1,2,1],[2,3,2],[3,4,1],[4,4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,2,6]\n[[0,1,1],[0,2,1],[1,4,2],[4,4,4],[3,4,1],[4,4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,3,7], queries = [[1,2,2],[1,3,2],[2,5,3],[5,5,5],[4,5,2],[5,5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1,3]\n[[1,3,2],[1,3,2],[2,2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [3,1,3], queries = [[1,3,2],[1,3,2],[2,2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [5,4,3,2], queries = [[2,4,3],[1,3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,3,2], queries = [[1,2,2],[2,3,2],[3,4,3],[4,5,2],[5,5,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -145,7 +125,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/zero-array-transformation-iv/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.936Z",
+    "collectedAt": "2026-10-19T18:40:31.873Z",
     "sourceUpdatedAt": null
   }
 }

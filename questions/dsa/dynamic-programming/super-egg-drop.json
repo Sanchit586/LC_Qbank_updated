@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "k = 1, n = 2",
+      "input": "1\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "k = 2, n = 6",
+      "input": "2\n6",
       "expectedOutput": "3"
     },
     {
-      "input": "k = 3, n = 14",
+      "input": "3\n14",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n14",
+      "expectedOutput": "4"
+    },
+    {
       "input": "k = 1, n = 2",
       "expectedOutput": "2"
     },
@@ -79,38 +91,6 @@
     {
       "input": "k = 3, n = 14",
       "expectedOutput": "4"
-    },
-    {
-      "input": "1\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 3, n = 7",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 4, n = 15",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 2, n = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -122,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/super-egg-drop/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:53.931Z",
+    "collectedAt": "2026-10-19T18:40:30.762Z",
     "sourceUpdatedAt": null
   }
 }

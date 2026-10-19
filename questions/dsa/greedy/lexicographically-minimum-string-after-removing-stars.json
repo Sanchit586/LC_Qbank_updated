@@ -20,13 +20,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaba*&quot;",
-      "output": "&quot;aab&quot;",
+      "input": "s = \"aaba*\"",
+      "output": "\"aab\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;abc&quot;",
-      "output": "&quot;abc&quot;",
+      "input": "s = \"abc\"",
+      "output": "\"abc\"",
       "explanation": null
     }
   ],
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaba*&quot;",
-      "expectedOutput": "&quot;aab&quot;"
+      "input": "\"aaba*\"",
+      "expectedOutput": "\"aab\""
     },
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"abc\"",
+      "expectedOutput": "\"abc\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaba*&quot;",
-      "expectedOutput": "&quot;aab&quot;"
-    },
-    {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
       "input": "\"aaba*\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aab\""
     },
     {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aaba*\"",
+      "expectedOutput": "\"aab\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "\"abc\""
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-minimum-string-after-removing-stars/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.040Z",
+    "collectedAt": "2026-10-19T18:40:20.200Z",
     "sourceUpdatedAt": null
   }
 }

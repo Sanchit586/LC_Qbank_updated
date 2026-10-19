@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "groups = [8,4,3,2,4], elements = [4,2]",
+      "input": "[8,4,3,2,4]\n[4,2]",
       "expectedOutput": "[0,0,-1,1,0]"
     },
     {
-      "input": "groups = [2,3,5,7], elements = [5,3,3]",
+      "input": "[2,3,5,7]\n[5,3,3]",
       "expectedOutput": "[-1,1,0,-1]"
     },
     {
-      "input": "groups = [10,21,30,41], elements = [2,1]",
+      "input": "[10,21,30,41]\n[2,1]",
       "expectedOutput": "[0,1,0,1]"
     }
   ],
   "testCases": [
     {
+      "input": "[8,4,3,2,4]\n[4,2]",
+      "expectedOutput": "[0,0,-1,1,0]"
+    },
+    {
+      "input": "[2,3,5,7]\n[5,3,3]",
+      "expectedOutput": "[-1,1,0,-1]"
+    },
+    {
+      "input": "[10,21,30,41]\n[2,1]",
+      "expectedOutput": "[0,1,0,1]"
+    },
+    {
       "input": "groups = [8,4,3,2,4], elements = [4,2]",
       "expectedOutput": "[0,0,-1,1,0]"
     },
@@ -80,38 +92,6 @@
     {
       "input": "groups = [10,21,30,41], elements = [2,1]",
       "expectedOutput": "[0,1,0,1]"
-    },
-    {
-      "input": "[8,4,3,2,4]\n[4,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,5,7]\n[5,3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,21,30,41]\n[2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "groups = [3,4,6,8], elements = [6,4,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "groups = [11,22,31,42], elements = [3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[9,5,4,3,5]\n[5,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,4,6,8]\n[6,4,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "groups = [9,5,4,3,5], elements = [5,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/assign-elements-to-groups-with-constraints/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:24.761Z",
+    "collectedAt": "2026-10-19T18:40:13.338Z",
     "sourceUpdatedAt": null
   }
 }

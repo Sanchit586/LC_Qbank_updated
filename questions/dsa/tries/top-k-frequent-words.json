@@ -24,14 +24,14 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;i&quot;,&quot;love&quot;,&quot;coding&quot;], k = 2",
-      "output": "[&quot;i&quot;,&quot;love&quot;]",
-      "explanation": "&quot;i&quot; and &quot;love&quot; are the two most frequent words.\nNote that &quot;i&quot; comes before &quot;love&quot; due to a lower alphabetical order."
+      "input": "words = [\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"], k = 2",
+      "output": "[\"i\",\"love\"]",
+      "explanation": "\"i\" and \"love\" are the two most frequent words.\nNote that \"i\" comes before \"love\" due to a lower alphabetical order."
     },
     {
-      "input": "words = [&quot;the&quot;,&quot;day&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;the&quot;,&quot;the&quot;,&quot;the&quot;,&quot;sunny&quot;,&quot;is&quot;,&quot;is&quot;], k = 4",
-      "output": "[&quot;the&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;day&quot;]",
-      "explanation": "&quot;the&quot;, &quot;is&quot;, &quot;sunny&quot; and &quot;day&quot; are the four most frequent words, with the number of occurrence being 4, 3, 2 and 1 respectively."
+      "input": "words = [\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"], k = 4",
+      "output": "[\"the\",\"is\",\"sunny\",\"day\"]",
+      "explanation": "\"the\", \"is\", \"sunny\" and \"day\" are the four most frequent words, with the number of occurrence being 4, 3, 2 and 1 respectively."
     }
   ],
   "starterCode": {
@@ -57,94 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;i&quot;,&quot;love&quot;,&quot;coding&quot;], k = 2",
-      "expectedOutput": "[&quot;i&quot;,&quot;love&quot;]"
+      "input": "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]\n2",
+      "expectedOutput": "[\"i\",\"love\"]"
     },
     {
-      "input": "words = [&quot;the&quot;,&quot;day&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;the&quot;,&quot;the&quot;,&quot;the&quot;,&quot;sunny&quot;,&quot;is&quot;,&quot;is&quot;], k = 4",
-      "expectedOutput": "[&quot;the&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;day&quot;]"
+      "input": "[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]\n4",
+      "expectedOutput": "[\"the\",\"is\",\"sunny\",\"day\"]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;i&quot;,&quot;love&quot;,&quot;coding&quot;], k = 2",
-      "expectedOutput": "[&quot;i&quot;,&quot;love&quot;]"
-    },
-    {
-      "input": "words = [&quot;the&quot;,&quot;day&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;the&quot;,&quot;the&quot;,&quot;the&quot;,&quot;sunny&quot;,&quot;is&quot;,&quot;is&quot;], k = 4",
-      "expectedOutput": "[&quot;the&quot;,&quot;is&quot;,&quot;sunny&quot;,&quot;day&quot;]"
-    },
-    {
       "input": "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]\n2",
-      "expectedOutput": null
+      "expectedOutput": "[\"i\",\"love\"]"
     },
     {
       "input": "[\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"]\n4",
-      "expectedOutput": null
+      "expectedOutput": "[\"the\",\"is\",\"sunny\",\"day\"]"
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "words = [\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"], k = 2",
+      "expectedOutput": "[\"i\",\"love\"]"
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
+      "input": "words = [\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"], k = 4",
+      "expectedOutput": "[\"the\",\"is\",\"sunny\",\"day\"]"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/top-k-frequent-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.497Z",
+    "collectedAt": "2026-10-19T18:40:31.092Z",
     "sourceUpdatedAt": null
   }
 }

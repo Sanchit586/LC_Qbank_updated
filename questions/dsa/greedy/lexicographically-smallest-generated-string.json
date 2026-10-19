@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;ab&quot;",
-      "output": "&quot;ababa&quot;",
-      "explanation": "The table below represents the string &quot;ababa&quot;\n\n\n\t\n\t\t\n\t\t\tIndex\n\t\t\tT/F\n\t\t\tSubstring of length m\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&#39;T&#39;\n\t\t\t&quot;ab&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;F&#39;\n\t\t\t&quot;ba&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;T&#39;\n\t\t\t&quot;ab&quot;\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&#39;F&#39;\n\t\t\t&quot;ba&quot;"
+      "input": "str1 = \"TFTF\", str2 = \"ab\"",
+      "output": "\"ababa\"",
+      "explanation": "The table below represents the string \"ababa\"\n\n\n\t\n\t\t\n\t\t\tIndex\n\t\t\tT/F\n\t\t\tSubstring of length m\n\t\t\n\t\t\n\t\t\t0\n\t\t\t'T'\n\t\t\t\"ab\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'F'\n\t\t\t\"ba\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'T'\n\t\t\t\"ab\"\n\t\t\n\t\t\n\t\t\t3\n\t\t\t'F'\n\t\t\t\"ba\""
     },
     {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;abc&quot;",
-      "output": "&quot;&quot;",
+      "input": "str1 = \"TFTF\", str2 = \"abc\"",
+      "output": "\"\"",
       "explanation": null
     },
     {
-      "input": "str1 = &quot;F&quot;, str2 = &quot;d&quot;",
-      "output": "&quot;a&quot;",
+      "input": "str1 = \"F\", str2 = \"d\"",
+      "output": "\"a\"",
       "explanation": null
     }
   ],
@@ -57,90 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;ab&quot;",
-      "expectedOutput": "&quot;ababa&quot;"
+      "input": "\"TFTF\"\n\"ab\"",
+      "expectedOutput": "\"ababa\""
     },
     {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;abc&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"TFTF\"\n\"abc\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "str1 = &quot;F&quot;, str2 = &quot;d&quot;",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"FT\"\n\"aa\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "testCases": [
     {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;ab&quot;",
-      "expectedOutput": "&quot;ababa&quot;"
-    },
-    {
-      "input": "str1 = &quot;TFTF&quot;, str2 = &quot;abc&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "str1 = &quot;F&quot;, str2 = &quot;d&quot;",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
       "input": "\"TFTF\"\n\"ab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ababa\""
     },
     {
       "input": "\"TFTF\"\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"FT\"\n\"aa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "str1 = \"TFTF\", str2 = \"ab\"",
+      "expectedOutput": "\"ababa\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "str1 = \"TFTF\", str2 = \"abc\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "str1 = \"F\", str2 = \"d\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-generated-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.078Z",
+    "collectedAt": "2026-10-19T18:40:20.218Z",
     "sourceUpdatedAt": null
   }
 }

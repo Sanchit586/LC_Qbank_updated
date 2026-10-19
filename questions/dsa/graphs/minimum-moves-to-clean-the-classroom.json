@@ -23,17 +23,17 @@
   ],
   "examples": [
     {
-      "input": "classroom = [&quot;S.&quot;, &quot;XL&quot;], energy = 2",
+      "input": "classroom = [\"S.\", \"XL\"], energy = 2",
       "output": "2",
-      "explanation": "The student starts at cell (0, 0) with 2 units of energy.\n\tSince cell (1, 0) contains an obstacle &#39;X&#39;, the student cannot move directly downward.\n\tA valid sequence of moves to collect all litter is as follows:\n\t\n\t\tMove 1: From (0, 0) &rarr; (0, 1) with 1 unit of energy and 1 unit remaining.\n\t\tMove 2: From (0, 1) &rarr; (1, 1) to collect the litter &#39;L&#39;.\n\t\n\t\n\tThe student collects all the litter using 2 moves. Thus, the output is 2."
+      "explanation": "The student starts at cell (0, 0) with 2 units of energy.\n\tSince cell (1, 0) contains an obstacle 'X', the student cannot move directly downward.\n\tA valid sequence of moves to collect all litter is as follows:\n\t\n\t\tMove 1: From (0, 0) → (0, 1) with 1 unit of energy and 1 unit remaining.\n\t\tMove 2: From (0, 1) → (1, 1) to collect the litter 'L'.\n\t\n\t\n\tThe student collects all the litter using 2 moves. Thus, the output is 2."
     },
     {
-      "input": "classroom = [&quot;LS&quot;, &quot;RL&quot;], energy = 4",
+      "input": "classroom = [\"LS\", \"RL\"], energy = 4",
       "output": "3",
-      "explanation": "The student starts at cell (0, 1) with 4 units of energy.\n\tA valid sequence of moves to collect all litter is as follows:\n\t\n\t\tMove 1: From (0, 1) &rarr; (0, 0) to collect the first litter &#39;L&#39; with 1 unit of energy used and 3 units remaining.\n\t\tMove 2: From (0, 0) &rarr; (1, 0) to &#39;R&#39; to reset and restore energy back to 4.\n\t\tMove 3: From (1, 0) &rarr; (1, 1) to collect the second litter &#39;L&#39;.\n\t\n\t\n\tThe student collects all the litter using 3 moves. Thus, the output is 3."
+      "explanation": "The student starts at cell (0, 1) with 4 units of energy.\n\tA valid sequence of moves to collect all litter is as follows:\n\t\n\t\tMove 1: From (0, 1) → (0, 0) to collect the first litter 'L' with 1 unit of energy used and 3 units remaining.\n\t\tMove 2: From (0, 0) → (1, 0) to 'R' to reset and restore energy back to 4.\n\t\tMove 3: From (1, 0) → (1, 1) to collect the second litter 'L'.\n\t\n\t\n\tThe student collects all the litter using 3 moves. Thus, the output is 3."
     },
     {
-      "input": "classroom = [&quot;L.S&quot;, &quot;RXL&quot;], energy = 3",
+      "input": "classroom = [\"L.S\", \"RXL\"], energy = 3",
       "output": "-1",
       "explanation": null
     }
@@ -61,98 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "classroom = [&quot;S.&quot;, &quot;XL&quot;], energy = 2",
+      "input": "[\"S.\", \"XL\"]\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "classroom = [&quot;LS&quot;, &quot;RL&quot;], energy = 4",
+      "input": "[\"LS\", \"RL\"]\n4",
       "expectedOutput": "3"
     },
     {
-      "input": "classroom = [&quot;L.S&quot;, &quot;RXL&quot;], energy = 3",
+      "input": "[\"L.S\", \"RXL\"]\n3",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "classroom = [&quot;S.&quot;, &quot;XL&quot;], energy = 2",
+      "input": "[\"S.\", \"XL\"]\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "classroom = [&quot;LS&quot;, &quot;RL&quot;], energy = 4",
+      "input": "[\"LS\", \"RL\"]\n4",
       "expectedOutput": "3"
     },
     {
-      "input": "classroom = [&quot;L.S&quot;, &quot;RXL&quot;], energy = 3",
+      "input": "[\"L.S\", \"RXL\"]\n3",
       "expectedOutput": "-1"
     },
     {
-      "input": "[\"S.\", \"XL\"]\n2",
-      "expectedOutput": null
+      "input": "classroom = [\"S.\", \"XL\"], energy = 2",
+      "expectedOutput": "2"
     },
     {
-      "input": "[\"LS\", \"RL\"]\n4",
-      "expectedOutput": null
+      "input": "classroom = [\"LS\", \"RL\"], energy = 4",
+      "expectedOutput": "3"
     },
     {
-      "input": "[\"L.S\", \"RXL\"]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
+      "input": "classroom = [\"L.S\", \"RXL\"], energy = 3",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -167,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-clean-the-classroom/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:04.948Z",
+    "collectedAt": "2026-10-19T18:40:24.115Z",
     "sourceUpdatedAt": null
   }
 }

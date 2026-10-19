@@ -45,94 +45,30 @@
   },
   "publicTests": [
     {
-      "input": "target = \"leet\"",
+      "input": "\"leet\"",
       "expectedOutput": "\"DDR!UURRR!!DDD!\""
     },
     {
-      "input": "target = \"code\"",
+      "input": "\"code\"",
       "expectedOutput": "\"RR!DDRR!UUL!R!\""
     }
   ],
   "testCases": [
     {
+      "input": "\"leet\"",
+      "expectedOutput": "\"DDR!UURRR!!DDD!\""
+    },
+    {
+      "input": "\"code\"",
+      "expectedOutput": "\"RR!DDRR!UUL!R!\""
+    },
+    {
       "input": "target = \"leet\"",
       "expectedOutput": "\"DDR!UURRR!!DDD!\""
     },
     {
       "input": "target = \"code\"",
       "expectedOutput": "\"RR!DDRR!UUL!R!\""
-    },
-    {
-      "input": "\"leet\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"code\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/alphabet-board-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:18.472Z",
+    "collectedAt": "2026-10-19T18:40:13.015Z",
     "sourceUpdatedAt": null
   }
 }

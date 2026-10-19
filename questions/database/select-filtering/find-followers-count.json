@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Followers table:\n+---------+-------------+\n| user_id | follower_id |\n+---------+-------------+\n| 0       | 1           |\n| 1       | 0           |\n| 2       | 0           |\n| 2       | 1           |\n+---------+-------------+",
+      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[[\"0\",\"1\"],[\"1\",\"0\"],[\"2\",\"0\"],[\"2\",\"1\"]]}}",
       "expectedOutput": "+---------+----------------+\n| user_id | followers_count|\n+---------+----------------+\n| 0       | 1              |\n| 1       | 1              |\n| 2       | 2              |\n+---------+----------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Followers table:\n+---------+-------------+\n| user_id | follower_id |\n+---------+-------------+\n| 0       | 1           |\n| 1       | 0           |\n| 2       | 0           |\n| 2       | 1           |\n+---------+-------------+",
+      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[[\"0\",\"1\"],[\"1\",\"0\"],[\"2\",\"0\"],[\"2\",\"1\"]]}}",
       "expectedOutput": "+---------+----------------+\n| user_id | followers_count|\n+---------+----------------+\n| 0       | 1              |\n| 1       | 1              |\n| 2       | 2              |\n+---------+----------------+"
     },
     {
-      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[[\"0\",\"1\"],[\"1\",\"0\"],[\"2\",\"0\"],[\"2\",\"1\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[[\"0\",\"1\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Followers\":[\"user_id\",\"follower_id\"]},\"rows\":{\"Followers\":[[\"0\",null],[\"1\",null],[\"2\",null],[\"2\",null]]}}",
-      "expectedOutput": null
+      "input": "Followers table:\n+---------+-------------+\n| user_id | follower_id |\n+---------+-------------+\n| 0       | 1           |\n| 1       | 0           |\n| 2       | 0           |\n| 2       | 1           |\n+---------+-------------+",
+      "expectedOutput": "+---------+----------------+\n| user_id | followers_count|\n+---------+----------------+\n| 0       | 1              |\n| 1       | 1              |\n| 2       | 2              |\n+---------+----------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Followers(user_id int, follower_id int)\n\nTruncate table Followers",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-followers-count/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:04.330Z",
+    "collectedAt": "2026-10-19T18:40:17.704Z",
     "sourceUpdatedAt": null
   }
 }

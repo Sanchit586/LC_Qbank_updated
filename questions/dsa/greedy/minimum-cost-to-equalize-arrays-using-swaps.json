@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [10,20], nums2 = [20,10]",
+      "input": "[10,20]\n[20,10]",
       "expectedOutput": "0"
     },
     {
-      "input": "nums1 = [10,10], nums2 = [20,20]",
+      "input": "[10,10]\n[20,20]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums1 = [10,20], nums2 = [30,40]",
+      "input": "[10,20]\n[30,40]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[10,20]\n[20,10]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[10,10]\n[20,20]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[10,20]\n[30,40]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums1 = [10,20], nums2 = [20,10]",
       "expectedOutput": "0"
     },
@@ -80,38 +92,6 @@
     {
       "input": "nums1 = [10,20], nums2 = [30,40]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[10,20]\n[20,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,10]\n[20,20]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,20]\n[30,40]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [11,11], nums3 = [21,21]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [11,21], nums3 = [31,41]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[11,21]\n[21,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[11,11]\n[21,21]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [11,21], nums3 = [21,11]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-equalize-arrays-using-swaps/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:48.432Z",
+    "collectedAt": "2026-10-19T18:40:23.639Z",
     "sourceUpdatedAt": null
   }
 }

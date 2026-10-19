@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5",
+      "input": "[[1,2,10],[2,3,20],[2,5,25]]\n5",
       "expectedOutput": "[10,55,45,25,25]"
     },
     {
-      "input": "bookings = [[1,2,10],[2,2,15]], n = 2",
+      "input": "[[1,2,10],[2,2,15]]\n2",
       "expectedOutput": "[10,25]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,10],[2,3,20],[2,5,25]]\n5",
+      "expectedOutput": "[10,55,45,25,25]"
+    },
+    {
+      "input": "[[1,2,10],[2,2,15]]\n2",
+      "expectedOutput": "[10,25]"
+    },
+    {
       "input": "bookings = [[1,2,10],[2,3,20],[2,5,25]], n = 5",
       "expectedOutput": "[10,55,45,25,25]"
     },
     {
       "input": "bookings = [[1,2,10],[2,2,15]], n = 2",
       "expectedOutput": "[10,25]"
-    },
-    {
-      "input": "[[1,2,10],[2,3,20],[2,5,25]]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,10],[2,2,15]]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/corporate-flight-bookings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:06.942Z",
+    "collectedAt": "2026-10-19T18:40:14.897Z",
     "sourceUpdatedAt": null
   }
 }

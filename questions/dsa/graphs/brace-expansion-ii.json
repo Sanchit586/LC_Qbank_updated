@@ -21,13 +21,13 @@
   ],
   "examples": [
     {
-      "input": "expression = &quot;{a,b}{c,{d,e}}&quot;",
-      "output": "[&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]",
+      "input": "expression = \"{a,b}{c,{d,e}}\"",
+      "output": "[\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]",
       "explanation": null
     },
     {
-      "input": "expression = &quot;{{a,z},a{b,c},{ab,z}}&quot;",
-      "output": "[&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]",
+      "input": "expression = \"{{a,z},a{b,c},{ab,z}}\"",
+      "output": "[\"a\",\"ab\",\"ac\",\"z\"]",
       "explanation": "Each distinct word is written only once in the final answer."
     }
   ],
@@ -54,94 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "expression = &quot;{a,b}{c,{d,e}}&quot;",
-      "expectedOutput": "[&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]"
+      "input": "\"{a,b}{c,{d,e}}\"",
+      "expectedOutput": "[\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]"
     },
     {
-      "input": "expression = &quot;{{a,z},a{b,c},{ab,z}}&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]"
+      "input": "\"{{a,z},a{b,c},{ab,z}}\"",
+      "expectedOutput": "[\"a\",\"ab\",\"ac\",\"z\"]"
     }
   ],
   "testCases": [
     {
-      "input": "expression = &quot;{a,b}{c,{d,e}}&quot;",
-      "expectedOutput": "[&quot;ac&quot;,&quot;ad&quot;,&quot;ae&quot;,&quot;bc&quot;,&quot;bd&quot;,&quot;be&quot;]"
-    },
-    {
-      "input": "expression = &quot;{{a,z},a{b,c},{ab,z}}&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;z&quot;]"
-    },
-    {
       "input": "\"{a,b}{c,{d,e}}\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]"
     },
     {
       "input": "\"{{a,z},a{b,c},{ab,z}}\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"ab\",\"ac\",\"z\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "expression = \"{a,b}{c,{d,e}}\"",
+      "expectedOutput": "[\"ac\",\"ad\",\"ae\",\"bc\",\"bd\",\"be\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "expression = \"{{a,z},a{b,c},{ab,z}}\"",
+      "expectedOutput": "[\"a\",\"ab\",\"ac\",\"z\"]"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/brace-expansion-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:43.961Z",
+    "collectedAt": "2026-10-19T18:40:13.699Z",
     "sourceUpdatedAt": null
   }
 }

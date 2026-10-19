@@ -26,7 +26,13 @@
     "keys, values[i], dictionary[i], word1, and word2 only contain lowercase English letters.",
     "At most 200 calls will be made to encrypt and decrypt in total."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Encrypter\", \"encrypt\", \"decrypt\"]\n[[['a', 'b', 'c', 'd'], [\"ei\", \"zf\", \"ei\", \"am\"], [\"abcd\", \"acbd\", \"adbc\", \"badc\", \"dacb\", \"cadb\", \"cbda\", \"abad\"]], [\"abcd\"], [\"eizfeiam\"]]",
+      "output": "[null, \"eizfeiam\", 2]",
+      "explanation": "Encrypter encrypter = new Encrypter([['a', 'b', 'c', 'd'], [\"ei\", \"zf\", \"ei\", \"am\"], [\"abcd\", \"acbd\", \"adbc\", \"badc\", \"dacb\", \"cadb\", \"cbda\", \"abad\"]);\nencrypter.encrypt(\"abcd\"); // return \"eizfeiam\". \n                           // 'a' maps to \"ei\", 'b' maps to \"zf\", 'c' maps to \"ei\", and 'd' maps to \"am\".\nencrypter.decrypt(\"eizfeiam\"); // return 2. \n                              // \"ei\" can map to 'a' or 'c', \"zf\" maps to 'b', and \"am\" maps to 'd'. \n                              // Thus, the possible strings after decryption are \"abad\", \"cbad\", \"abcd\", and \"cbcd\". \n                              // 2 of those strings, \"abad\" and \"abcd\", appear in dictionary, so the answer is 2."
+    }
+  ],
   "starterCode": {
     "cpp": "class Encrypter {\npublic:\n    Encrypter(vector<char>& keys, vector<string>& values, vector<string>& dictionary) {\n        \n    }\n    \n    string encrypt(string word1) {\n        \n    }\n    \n    int decrypt(string word2) {\n        \n    }\n};\n\n/**\n * Your Encrypter object will be instantiated and called as such:\n * Encrypter* obj = new Encrypter(keys, values, dictionary);\n * string param_1 = obj->encrypt(word1);\n * int param_2 = obj->decrypt(word2);\n */",
     "java": "class Encrypter {\n\n    public Encrypter(char[] keys, String[] values, String[] dictionary) {\n        \n    }\n    \n    public String encrypt(String word1) {\n        \n    }\n    \n    public int decrypt(String word2) {\n        \n    }\n}\n\n/**\n * Your Encrypter object will be instantiated and called as such:\n * Encrypter obj = new Encrypter(keys, values, dictionary);\n * String param_1 = obj.encrypt(word1);\n * int param_2 = obj.decrypt(word2);\n */",
@@ -51,13 +57,17 @@
   "publicTests": [
     {
       "input": "[\"Encrypter\",\"encrypt\",\"decrypt\"]\n[[[\"a\",\"b\",\"c\",\"d\"],[\"ei\",\"zf\",\"ei\",\"am\"],[\"abcd\",\"acbd\",\"adbc\",\"badc\",\"dacb\",\"cadb\",\"cbda\",\"abad\"]],[\"abcd\"],[\"eizfeiam\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"eizfeiam\", 2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Encrypter\",\"encrypt\",\"decrypt\"]\n[[[\"a\",\"b\",\"c\",\"d\"],[\"ei\",\"zf\",\"ei\",\"am\"],[\"abcd\",\"acbd\",\"adbc\",\"badc\",\"dacb\",\"cadb\",\"cbda\",\"abad\"]],[\"abcd\"],[\"eizfeiam\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"eizfeiam\", 2]"
+    },
+    {
+      "input": "[\"Encrypter\", \"encrypt\", \"decrypt\"]\n[[['a', 'b', 'c', 'd'], [\"ei\", \"zf\", \"ei\", \"am\"], [\"abcd\", \"acbd\", \"adbc\", \"badc\", \"dacb\", \"cadb\", \"cbda\", \"abad\"]], [\"abcd\"], [\"eizfeiam\"]]",
+      "expectedOutput": "[null, \"eizfeiam\", 2]"
     }
   ],
   "sqlSchema": null,
@@ -72,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/encrypt-and-decrypt-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.165Z",
+    "collectedAt": "2026-10-19T18:40:17.017Z",
     "sourceUpdatedAt": null
   }
 }

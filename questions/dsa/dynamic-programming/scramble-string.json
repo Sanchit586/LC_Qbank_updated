@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;great&quot;, s2 = &quot;rgeat&quot;",
+      "input": "s1 = \"great\", s2 = \"rgeat\"",
       "output": "true",
-      "explanation": "One possible scenario applied on s1 is:\n&quot;great&quot; --&gt; &quot;gr/eat&quot; // divide at random index.\n&quot;gr/eat&quot; --&gt; &quot;gr/eat&quot; // random decision is not to swap the two substrings and keep them in order.\n&quot;gr/eat&quot; --&gt; &quot;g/r / e/at&quot; // apply the same algorithm recursively on both substrings. divide at random index each of them.\n&quot;g/r / e/at&quot; --&gt; &quot;r/g / e/at&quot; // random decision was to swap the first substring and to keep the second substring in the same order.\n&quot;r/g / e/at&quot; --&gt; &quot;r/g / e/ a/t&quot; // again apply the algorithm recursively, divide &quot;at&quot; to &quot;a/t&quot;.\n&quot;r/g / e/ a/t&quot; --&gt; &quot;r/g / e/ a/t&quot; // random decision is to keep both substrings in the same order.\nThe algorithm stops now, and the result string is &quot;rgeat&quot; which is s2.\nAs one possible scenario led s1 to be scrambled to s2, we return true."
+      "explanation": "One possible scenario applied on s1 is:\n\"great\" --> \"gr/eat\" // divide at random index.\n\"gr/eat\" --> \"gr/eat\" // random decision is not to swap the two substrings and keep them in order.\n\"gr/eat\" --> \"g/r / e/at\" // apply the same algorithm recursively on both substrings. divide at random index each of them.\n\"g/r / e/at\" --> \"r/g / e/at\" // random decision was to swap the first substring and to keep the second substring in the same order.\n\"r/g / e/at\" --> \"r/g / e/ a/t\" // again apply the algorithm recursively, divide \"at\" to \"a/t\".\n\"r/g / e/ a/t\" --> \"r/g / e/ a/t\" // random decision is to keep both substrings in the same order.\nThe algorithm stops now, and the result string is \"rgeat\" which is s2.\nAs one possible scenario led s1 to be scrambled to s2, we return true."
     },
     {
-      "input": "s1 = &quot;abcde&quot;, s2 = &quot;caebd&quot;",
+      "input": "s1 = \"abcde\", s2 = \"caebd\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s1 = &quot;a&quot;, s2 = &quot;a&quot;",
+      "input": "s1 = \"a\", s2 = \"a\"",
       "output": "true",
       "explanation": null
     }
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;great&quot;, s2 = &quot;rgeat&quot;",
+      "input": "\"great\"\n\"rgeat\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;abcde&quot;, s2 = &quot;caebd&quot;",
+      "input": "\"abcde\"\n\"caebd\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = &quot;a&quot;, s2 = &quot;a&quot;",
+      "input": "\"a\"\n\"a\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;great&quot;, s2 = &quot;rgeat&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = &quot;abcde&quot;, s2 = &quot;caebd&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s1 = &quot;a&quot;, s2 = &quot;a&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"great\"\n\"rgeat\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abcde\"\n\"caebd\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s1 = \"great\", s2 = \"rgeat\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
+      "input": "s1 = \"abcde\", s2 = \"caebd\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;a&quot;, s3 = &quot;a&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"a\", s2 = \"a\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/scramble-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:17.241Z",
+    "collectedAt": "2026-10-19T18:40:28.120Z",
     "sourceUpdatedAt": null
   }
 }

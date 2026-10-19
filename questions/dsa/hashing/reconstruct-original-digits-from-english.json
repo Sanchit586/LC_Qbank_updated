@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"owoztneoer\"",
+      "input": "\"owoztneoer\"",
       "expectedOutput": "\"012\""
     },
     {
-      "input": "s = \"fviefuro\"",
+      "input": "\"fviefuro\"",
       "expectedOutput": "\"45\""
     }
   ],
   "testCases": [
     {
+      "input": "\"owoztneoer\"",
+      "expectedOutput": "\"012\""
+    },
+    {
+      "input": "\"fviefuro\"",
+      "expectedOutput": "\"45\""
+    },
+    {
       "input": "s = \"owoztneoer\"",
       "expectedOutput": "\"012\""
     },
     {
       "input": "s = \"fviefuro\"",
       "expectedOutput": "\"45\""
-    },
-    {
-      "input": "\"owoztneoer\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"fviefuro\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reconstruct-original-digits-from-english/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.552Z",
+    "collectedAt": "2026-10-19T18:40:27.313Z",
     "sourceUpdatedAt": null
   }
 }

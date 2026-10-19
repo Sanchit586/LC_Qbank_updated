@@ -28,17 +28,17 @@
   ],
   "examples": [
     {
-      "input": "grid = [&quot;####F&quot;,&quot;#C...&quot;,&quot;M....&quot;], catJump = 1, mouseJump = 2",
+      "input": "grid = [\"####F\",\"#C...\",\"M....\"], catJump = 1, mouseJump = 2",
       "output": "true",
       "explanation": "Cat cannot catch Mouse on its turn nor can it get the food before Mouse."
     },
     {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 4",
+      "input": "grid = [\"M.C...F\"], catJump = 1, mouseJump = 4",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 3",
+      "input": "grid = [\"M.C...F\"], catJump = 1, mouseJump = 3",
       "output": "false",
       "explanation": null
     }
@@ -66,98 +66,42 @@
   },
   "publicTests": [
     {
-      "input": "grid = [&quot;####F&quot;,&quot;#C...&quot;,&quot;M....&quot;], catJump = 1, mouseJump = 2",
+      "input": "[\"####F\",\"#C...\",\"M....\"]\n1\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 4",
+      "input": "[\"M.C...F\"]\n1\n4",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 3",
+      "input": "[\"M.C...F\"]\n1\n3",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [&quot;####F&quot;,&quot;#C...&quot;,&quot;M....&quot;], catJump = 1, mouseJump = 2",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 4",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "grid = [&quot;M.C...F&quot;], catJump = 1, mouseJump = 3",
-      "expectedOutput": "false"
-    },
-    {
       "input": "[\"####F\",\"#C...\",\"M....\"]\n1\n2",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[\"M.C...F\"]\n1\n4",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "[\"M.C...F\"]\n1\n3",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "grid = [\"####F\",\"#C...\",\"M....\"], catJump = 1, mouseJump = 2",
+      "expectedOutput": "true"
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
+      "input": "grid = [\"M.C...F\"], catJump = 1, mouseJump = 4",
+      "expectedOutput": "true"
     },
     {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
+      "input": "grid = [\"M.C...F\"], catJump = 1, mouseJump = 3",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -171,7 +115,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cat-and-mouse-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.675Z",
+    "collectedAt": "2026-10-19T18:40:13.937Z",
     "sourceUpdatedAt": null
   }
 }

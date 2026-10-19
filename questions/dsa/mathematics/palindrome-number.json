@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "x = 121",
+      "input": "121",
       "expectedOutput": "true"
     },
     {
-      "input": "x = -121",
+      "input": "-121",
       "expectedOutput": "false"
     },
     {
-      "input": "x = 10",
+      "input": "10",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "121",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-121",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "false"
+    },
+    {
       "input": "x = 121",
       "expectedOutput": "true"
     },
@@ -78,72 +90,32 @@
       "expectedOutput": "false"
     },
     {
-      "input": "121",
-      "expectedOutput": null
-    },
-    {
-      "input": "-121",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
       "input": "0",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "1",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "-1",
-      "expectedOutput": null
+      "input": "11",
+      "expectedOutput": "true"
     },
     {
-      "input": "2",
-      "expectedOutput": null
+      "input": "1221",
+      "expectedOutput": "true"
     },
     {
-      "input": "3",
-      "expectedOutput": null
+      "input": "12321",
+      "expectedOutput": "true"
     },
     {
-      "input": "5",
-      "expectedOutput": null
+      "input": "1000021",
+      "expectedOutput": "false"
     },
     {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "123456789987654321",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +129,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/palindrome-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.010Z",
+    "collectedAt": "2026-10-19T18:40:26.453Z",
     "sourceUpdatedAt": null
   }
 }

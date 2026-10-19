@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "technique1 = [5,2,10], technique2 = [10,3,8], k = 2",
+      "input": "[5,2,10]\n[10,3,8]\n2",
       "expectedOutput": "22"
     },
     {
-      "input": "technique1 = [10,20,30], technique2 = [5,15,25], k = 2",
+      "input": "[10,20,30]\n[5,15,25]\n2",
       "expectedOutput": "60"
     },
     {
-      "input": "technique1 = [1,2,3], technique2 = [4,5,6], k = 0",
+      "input": "[1,2,3]\n[4,5,6]\n0",
       "expectedOutput": "15"
     }
   ],
   "testCases": [
     {
+      "input": "[5,2,10]\n[10,3,8]\n2",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "[10,20,30]\n[5,15,25]\n2",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[1,2,3]\n[4,5,6]\n0",
+      "expectedOutput": "15"
+    },
+    {
       "input": "technique1 = [5,2,10], technique2 = [10,3,8], k = 2",
       "expectedOutput": "22"
     },
@@ -81,38 +93,6 @@
     {
       "input": "technique1 = [1,2,3], technique2 = [4,5,6], k = 0",
       "expectedOutput": "15"
-    },
-    {
-      "input": "[5,2,10]\n[10,3,8]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,20,30]\n[5,15,25]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n[4,5,6]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "technique2 = [11,21,31], technique3 = [6,16,26], k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "technique2 = [2,3,4], technique3 = [5,6,7], k = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,3,11]\n[11,4,9]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[11,21,31]\n[6,16,26]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "technique2 = [6,3,11], technique3 = [11,4,9], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-points-after-choosing-k-tasks/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.072Z",
+    "collectedAt": "2026-10-19T18:40:21.327Z",
     "sourceUpdatedAt": null
   }
 }

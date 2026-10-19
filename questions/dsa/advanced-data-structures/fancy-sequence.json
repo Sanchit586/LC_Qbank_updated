@@ -18,7 +18,13 @@
     "0 <= idx <= 105",
     "At most 105 calls total will be made to append, addAll, multAll, and getIndex."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Fancy\", \"append\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"getIndex\", \"getIndex\"]\n[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]",
+      "output": "[null, null, null, null, null, 10, null, null, null, 26, 34, 20]",
+      "explanation": "Fancy fancy = new Fancy();\nfancy.append(2);   // fancy sequence: [2]\nfancy.addAll(3);   // fancy sequence: [2+3] -> [5]\nfancy.append(7);   // fancy sequence: [5, 7]\nfancy.multAll(2);  // fancy sequence: [5*2, 7*2] -> [10, 14]\nfancy.getIndex(0); // return 10\nfancy.addAll(3);   // fancy sequence: [10+3, 14+3] -> [13, 17]\nfancy.append(10);  // fancy sequence: [13, 17, 10]\nfancy.multAll(2);  // fancy sequence: [13*2, 17*2, 10*2] -> [26, 34, 20]\nfancy.getIndex(0); // return 26\nfancy.getIndex(1); // return 34\nfancy.getIndex(2); // return 20"
+    }
+  ],
   "starterCode": {
     "cpp": "class Fancy {\npublic:\n    Fancy() {\n        \n    }\n    \n    void append(int val) {\n        \n    }\n    \n    void addAll(int inc) {\n        \n    }\n    \n    void multAll(int m) {\n        \n    }\n    \n    int getIndex(int idx) {\n        \n    }\n};\n\n/**\n * Your Fancy object will be instantiated and called as such:\n * Fancy* obj = new Fancy();\n * obj->append(val);\n * obj->addAll(inc);\n * obj->multAll(m);\n * int param_4 = obj->getIndex(idx);\n */",
     "java": "class Fancy {\n\n    public Fancy() {\n        \n    }\n    \n    public void append(int val) {\n        \n    }\n    \n    public void addAll(int inc) {\n        \n    }\n    \n    public void multAll(int m) {\n        \n    }\n    \n    public int getIndex(int idx) {\n        \n    }\n}\n\n/**\n * Your Fancy object will be instantiated and called as such:\n * Fancy obj = new Fancy();\n * obj.append(val);\n * obj.addAll(inc);\n * obj.multAll(m);\n * int param_4 = obj.getIndex(idx);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[2],[3],[7],[2],[0],[3],[10],[2],[0],[1],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, null, 10, null, null, null, 26, 34, 20]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[2],[3],[7],[2],[0],[3],[10],[2],[0],[1],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, null, 10, null, null, null, 26, 34, 20]"
     },
     {
-      "input": "[\"Fancy\",\"append\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"addAll\",\"append\",\"multAll\",\"getIndex\",\"getIndex\",\"getIndex\"]\n[[],[3],[4],[8],[3],[1],[4],[11],[3],[1],[2],[3]]",
-      "expectedOutput": null
+      "input": "[\"Fancy\", \"append\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"addAll\", \"append\", \"multAll\", \"getIndex\", \"getIndex\", \"getIndex\"]\n[[], [2], [3], [7], [2], [0], [3], [10], [2], [0], [1], [2]]",
+      "expectedOutput": "[null, null, null, null, null, 10, null, null, null, 26, 34, 20]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/fancy-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.341Z",
+    "collectedAt": "2026-10-19T18:40:17.256Z",
     "sourceUpdatedAt": null
   }
 }

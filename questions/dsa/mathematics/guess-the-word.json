@@ -24,12 +24,12 @@
   ],
   "examples": [
     {
-      "input": "secret = &quot;acckzz&quot;, words = [&quot;acckzz&quot;,&quot;ccbazz&quot;,&quot;eiowzz&quot;,&quot;abcczz&quot;], allowedGuesses = 10",
+      "input": "secret = \"acckzz\", words = [\"acckzz\",\"ccbazz\",\"eiowzz\",\"abcczz\"], allowedGuesses = 10",
       "output": "You guessed the secret word correctly.",
-      "explanation": "master.guess(&quot;aaaaaa&quot;) returns -1, because &quot;aaaaaa&quot; is not in words.\nmaster.guess(&quot;acckzz&quot;) returns 6, because &quot;acckzz&quot; is secret and has all 6 matches.\nmaster.guess(&quot;ccbazz&quot;) returns 3, because &quot;ccbazz&quot; has 3 matches.\nmaster.guess(&quot;eiowzz&quot;) returns 2, because &quot;eiowzz&quot; has 2 matches.\nmaster.guess(&quot;abcczz&quot;) returns 4, because &quot;abcczz&quot; has 4 matches.\nWe made 5 calls to master.guess, and one of them was the secret, so we pass the test case."
+      "explanation": "master.guess(\"aaaaaa\") returns -1, because \"aaaaaa\" is not in words.\nmaster.guess(\"acckzz\") returns 6, because \"acckzz\" is secret and has all 6 matches.\nmaster.guess(\"ccbazz\") returns 3, because \"ccbazz\" has 3 matches.\nmaster.guess(\"eiowzz\") returns 2, because \"eiowzz\" has 2 matches.\nmaster.guess(\"abcczz\") returns 4, because \"abcczz\" has 4 matches.\nWe made 5 calls to master.guess, and one of them was the secret, so we pass the test case."
     },
     {
-      "input": "secret = &quot;hamada&quot;, words = [&quot;hamada&quot;,&quot;khaled&quot;], allowedGuesses = 10",
+      "input": "secret = \"hamada\", words = [\"hamada\",\"khaled\"], allowedGuesses = 10",
       "output": "You guessed the secret word correctly.",
       "explanation": "Since there are two words, you can guess both."
     }
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "secret = &quot;acckzz&quot;, words = [&quot;acckzz&quot;,&quot;ccbazz&quot;,&quot;eiowzz&quot;,&quot;abcczz&quot;], allowedGuesses = 10",
+      "input": "\"acckzz\"\n[\"acckzz\",\"ccbazz\",\"eiowzz\",\"abcczz\"]\n10",
       "expectedOutput": "You guessed the secret word correctly."
     },
     {
-      "input": "secret = &quot;hamada&quot;, words = [&quot;hamada&quot;,&quot;khaled&quot;], allowedGuesses = 10",
+      "input": "\"hamada\"\n[\"hamada\",\"khaled\"]\n10",
       "expectedOutput": "You guessed the secret word correctly."
     }
   ],
   "testCases": [
     {
-      "input": "secret = &quot;acckzz&quot;, words = [&quot;acckzz&quot;,&quot;ccbazz&quot;,&quot;eiowzz&quot;,&quot;abcczz&quot;], allowedGuesses = 10",
-      "expectedOutput": "You guessed the secret word correctly."
-    },
-    {
-      "input": "secret = &quot;hamada&quot;, words = [&quot;hamada&quot;,&quot;khaled&quot;], allowedGuesses = 10",
-      "expectedOutput": "You guessed the secret word correctly."
-    },
-    {
       "input": "\"acckzz\"\n[\"acckzz\",\"ccbazz\",\"eiowzz\",\"abcczz\"]\n10",
-      "expectedOutput": null
+      "expectedOutput": "You guessed the secret word correctly."
     },
     {
       "input": "\"hamada\"\n[\"hamada\",\"khaled\"]\n10",
-      "expectedOutput": null
+      "expectedOutput": "You guessed the secret word correctly."
     },
     {
-      "input": "secret = &quot;acckzz&quot;, words = [&quot;acckzz&quot;,&quot;ccbazz&quot;,&quot;eiowzz&quot;,&quot;abcczz&quot;], allowedGuesses = 11",
-      "expectedOutput": null
+      "input": "secret = \"acckzz\", words = [\"acckzz\",\"ccbazz\",\"eiowzz\",\"abcczz\"], allowedGuesses = 10",
+      "expectedOutput": "You guessed the secret word correctly."
+    },
+    {
+      "input": "secret = \"hamada\", words = [\"hamada\",\"khaled\"], allowedGuesses = 10",
+      "expectedOutput": "You guessed the secret word correctly."
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/guess-the-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.669Z",
+    "collectedAt": "2026-10-19T18:40:19.314Z",
     "sourceUpdatedAt": null
   }
 }

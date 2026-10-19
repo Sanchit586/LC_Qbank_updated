@@ -21,14 +21,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;, power = 7, modulo = 20, k = 2, hashValue = 0",
-      "output": "&quot;ee&quot;",
-      "explanation": "The hash of &quot;ee&quot; can be computed to be hash(&quot;ee&quot;, 7, 20) = (5 * 1 + 5 * 7) mod 20 = 40 mod 20 = 0. \n&quot;ee&quot; is the first substring of length 2 with hashValue 0. Hence, we return &quot;ee&quot;."
+      "input": "s = \"leetcode\", power = 7, modulo = 20, k = 2, hashValue = 0",
+      "output": "\"ee\"",
+      "explanation": "The hash of \"ee\" can be computed to be hash(\"ee\", 7, 20) = (5 * 1 + 5 * 7) mod 20 = 40 mod 20 = 0. \n\"ee\" is the first substring of length 2 with hashValue 0. Hence, we return \"ee\"."
     },
     {
-      "input": "s = &quot;fbxzaad&quot;, power = 31, modulo = 100, k = 3, hashValue = 32",
-      "output": "&quot;fbx&quot;",
-      "explanation": "The hash of &quot;fbx&quot; can be computed to be hash(&quot;fbx&quot;, 31, 100) = (6 * 1 + 2 * 31 + 24 * 312) mod 100 = 23132 mod 100 = 32. \nThe hash of &quot;bxz&quot; can be computed to be hash(&quot;bxz&quot;, 31, 100) = (2 * 1 + 24 * 31 + 26 * 312) mod 100 = 25732 mod 100 = 32. \n&quot;fbx&quot; is the first substring of length 3 with hashValue 32. Hence, we return &quot;fbx&quot;.\nNote that &quot;bxz&quot; also has a hash of 32 but it appears later than &quot;fbx&quot;."
+      "input": "s = \"fbxzaad\", power = 31, modulo = 100, k = 3, hashValue = 32",
+      "output": "\"fbx\"",
+      "explanation": "The hash of \"fbx\" can be computed to be hash(\"fbx\", 31, 100) = (6 * 1 + 2 * 31 + 24 * 312) mod 100 = 23132 mod 100 = 32. \nThe hash of \"bxz\" can be computed to be hash(\"bxz\", 31, 100) = (2 * 1 + 24 * 31 + 26 * 312) mod 100 = 25732 mod 100 = 32. \n\"fbx\" is the first substring of length 3 with hashValue 32. Hence, we return \"fbx\".\nNote that \"bxz\" also has a hash of 32 but it appears later than \"fbx\"."
     }
   ],
   "starterCode": {
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;, power = 7, modulo = 20, k = 2, hashValue = 0",
-      "expectedOutput": "&quot;ee&quot;"
+      "input": "\"leetcode\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ee\""
     },
     {
-      "input": "s = &quot;fbxzaad&quot;, power = 31, modulo = 100, k = 3, hashValue = 32",
-      "expectedOutput": "&quot;fbx&quot;"
+      "input": "\"fbxzaad\"\n31\n100\n3\n32",
+      "expectedOutput": "\"fbx\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;, power = 7, modulo = 20, k = 2, hashValue = 0",
-      "expectedOutput": "&quot;ee&quot;"
-    },
-    {
-      "input": "s = &quot;fbxzaad&quot;, power = 31, modulo = 100, k = 3, hashValue = 32",
-      "expectedOutput": "&quot;fbx&quot;"
-    },
-    {
       "input": "\"leetcode\"\n7\n20\n2\n0",
-      "expectedOutput": null
+      "expectedOutput": "\"ee\""
     },
     {
       "input": "\"fbxzaad\"\n31\n100\n3\n32",
-      "expectedOutput": null
+      "expectedOutput": "\"fbx\""
     },
     {
-      "input": "s = &quot;leetcode&quot;, power = 8, modulo = 21, k = 3, hashValue = 1",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", power = 7, modulo = 20, k = 2, hashValue = 0",
+      "expectedOutput": "\"ee\""
+    },
+    {
+      "input": "s = \"fbxzaad\", power = 31, modulo = 100, k = 3, hashValue = 32",
+      "expectedOutput": "\"fbx\""
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-substring-with-given-hash-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:06.529Z",
+    "collectedAt": "2026-10-19T18:40:18.156Z",
     "sourceUpdatedAt": null
   }
 }

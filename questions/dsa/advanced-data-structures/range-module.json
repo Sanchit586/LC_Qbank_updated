@@ -15,7 +15,13 @@
     "1 <= left < right <= 109",
     "At most 104 calls will be made to addRange, queryRange, and removeRange."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"RangeModule\", \"addRange\", \"removeRange\", \"queryRange\", \"queryRange\", \"queryRange\"]\n[[], [10, 20], [14, 16], [10, 14], [13, 15], [16, 17]]",
+      "output": "[null, null, null, true, false, true]",
+      "explanation": "RangeModule rangeModule = new RangeModule();\nrangeModule.addRange(10, 20);\nrangeModule.removeRange(14, 16);\nrangeModule.queryRange(10, 14); // return True,(Every number in [10, 14) is being tracked)\nrangeModule.queryRange(13, 15); // return False,(Numbers like 14, 14.03, 14.17 in [13, 15) are not being tracked)\nrangeModule.queryRange(16, 17); // return True, (The number 16 in [16, 17) is still being tracked, despite the remove operation)"
+    }
+  ],
   "starterCode": {
     "cpp": "class RangeModule {\npublic:\n    RangeModule() {\n        \n    }\n    \n    void addRange(int left, int right) {\n        \n    }\n    \n    bool queryRange(int left, int right) {\n        \n    }\n    \n    void removeRange(int left, int right) {\n        \n    }\n};\n\n/**\n * Your RangeModule object will be instantiated and called as such:\n * RangeModule* obj = new RangeModule();\n * obj->addRange(left,right);\n * bool param_2 = obj->queryRange(left,right);\n * obj->removeRange(left,right);\n */",
     "java": "class RangeModule {\n\n    public RangeModule() {\n        \n    }\n    \n    public void addRange(int left, int right) {\n        \n    }\n    \n    public boolean queryRange(int left, int right) {\n        \n    }\n    \n    public void removeRange(int left, int right) {\n        \n    }\n}\n\n/**\n * Your RangeModule object will be instantiated and called as such:\n * RangeModule obj = new RangeModule();\n * obj.addRange(left,right);\n * boolean param_2 = obj.queryRange(left,right);\n * obj.removeRange(left,right);\n */",
@@ -40,17 +46,17 @@
   "publicTests": [
     {
       "input": "[\"RangeModule\",\"addRange\",\"removeRange\",\"queryRange\",\"queryRange\",\"queryRange\"]\n[[],[10,20],[14,16],[10,14],[13,15],[16,17]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, true, false, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"RangeModule\",\"addRange\",\"removeRange\",\"queryRange\",\"queryRange\",\"queryRange\"]\n[[],[10,20],[14,16],[10,14],[13,15],[16,17]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, true, false, true]"
     },
     {
-      "input": "[\"RangeModule\",\"addRange\",\"removeRange\",\"queryRange\",\"queryRange\",\"queryRange\"]\n[[],[11,21],[15,17],[11,15],[14,16],[17,18]]",
-      "expectedOutput": null
+      "input": "[\"RangeModule\", \"addRange\", \"removeRange\", \"queryRange\", \"queryRange\", \"queryRange\"]\n[[], [10, 20], [14, 16], [10, 14], [13, 15], [16, 17]]",
+      "expectedOutput": "[null, null, null, true, false, true]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-module/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.508Z",
+    "collectedAt": "2026-10-19T18:40:27.168Z",
     "sourceUpdatedAt": null
   }
 }

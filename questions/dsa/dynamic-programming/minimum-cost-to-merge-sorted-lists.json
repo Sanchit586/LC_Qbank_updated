@@ -65,24 +65,40 @@
   },
   "publicTests": [
     {
-      "input": "lists = [[1,3,5],[2,4],[6,7,8]]",
+      "input": "[[1,3,5],[2,4],[6,7,8]]",
       "expectedOutput": "18"
     },
     {
-      "input": "lists = [[1,1,5],[1,4,7,8]]",
+      "input": "[[1,1,5],[1,4,7,8]]",
       "expectedOutput": "10"
     },
     {
-      "input": "lists = [[1],[3]]",
+      "input": "[[1],[3]]",
       "expectedOutput": "4"
     },
     {
-      "input": "lists = [[1],[1]]",
+      "input": "[[1],[1]]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,3,5],[2,4],[6,7,8]]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[[1,1,5],[1,4,7,8]]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[[1],[3]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1],[1]]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "lists = [[1,3,5],[2,4],[6,7,8]]",
       "expectedOutput": "18"
     },
@@ -97,42 +113,6 @@
     {
       "input": "lists = [[1],[1]]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[[1,3,5],[2,4],[6,7,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,5],[1,4,7,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1],[3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1],[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "lists = [[2],[2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,4,6],[3,5],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "lists = [[2,4,6],[3,5],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "lists = [[2,2,6],[2,5,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "lists = [[2],[4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -150,7 +130,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-merge-sorted-lists/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:49.120Z",
+    "collectedAt": "2026-10-19T18:40:23.678Z",
     "sourceUpdatedAt": null
   }
 }

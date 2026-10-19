@@ -18,12 +18,12 @@
   "examples": [
     {
       "input": "a = 1, b = 1, c = 7",
-      "output": "&quot;ccaccbcc&quot;",
-      "explanation": "&quot;ccbccacc&quot; would also be a correct answer."
+      "output": "\"ccaccbcc\"",
+      "explanation": "\"ccbccacc\" would also be a correct answer."
     },
     {
       "input": "a = 7, b = 1, c = 0",
-      "output": "&quot;aabaa&quot;",
+      "output": "\"aabaa\"",
       "explanation": "It is the only correct answer in this case."
     }
   ],
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "a = 1, b = 1, c = 7",
-      "expectedOutput": "&quot;ccaccbcc&quot;"
+      "input": "1\n1\n7",
+      "expectedOutput": "\"ccaccbcc\""
     },
     {
-      "input": "a = 7, b = 1, c = 0",
-      "expectedOutput": "&quot;aabaa&quot;"
+      "input": "7\n1\n0",
+      "expectedOutput": "\"aabaa\""
     }
   ],
   "testCases": [
     {
-      "input": "a = 1, b = 1, c = 7",
-      "expectedOutput": "&quot;ccaccbcc&quot;"
-    },
-    {
-      "input": "a = 7, b = 1, c = 0",
-      "expectedOutput": "&quot;aabaa&quot;"
-    },
-    {
       "input": "1\n1\n7",
-      "expectedOutput": null
+      "expectedOutput": "\"ccaccbcc\""
     },
     {
       "input": "7\n1\n0",
-      "expectedOutput": null
+      "expectedOutput": "\"aabaa\""
     },
     {
-      "input": "a = 2, b = 2, c = 8",
-      "expectedOutput": null
+      "input": "a = 1, b = 1, c = 7",
+      "expectedOutput": "\"ccaccbcc\""
+    },
+    {
+      "input": "a = 7, b = 1, c = 0",
+      "expectedOutput": "\"aabaa\""
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-happy-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.944Z",
+    "collectedAt": "2026-10-19T18:40:20.498Z",
     "sourceUpdatedAt": null
   }
 }

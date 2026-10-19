@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;132&quot;, change = [9,8,5,0,3,6,4,2,6,8]",
-      "output": "&quot;832&quot;",
-      "explanation": "Replace the substring &quot;1&quot;:\n- 1 maps to change[1] = 8.\nThus, &quot;132&quot; becomes &quot;832&quot;.\n&quot;832&quot; is the largest number that can be created, so return it."
+      "input": "num = \"132\", change = [9,8,5,0,3,6,4,2,6,8]",
+      "output": "\"832\"",
+      "explanation": "Replace the substring \"1\":\n- 1 maps to change[1] = 8.\nThus, \"132\" becomes \"832\".\n\"832\" is the largest number that can be created, so return it."
     },
     {
-      "input": "num = &quot;021&quot;, change = [9,4,3,5,7,2,1,9,0,6]",
-      "output": "&quot;934&quot;",
-      "explanation": "Replace the substring &quot;021&quot;:\n- 0 maps to change[0] = 9.\n- 2 maps to change[2] = 3.\n- 1 maps to change[1] = 4.\nThus, &quot;021&quot; becomes &quot;934&quot;.\n&quot;934&quot; is the largest number that can be created, so return it."
+      "input": "num = \"021\", change = [9,4,3,5,7,2,1,9,0,6]",
+      "output": "\"934\"",
+      "explanation": "Replace the substring \"021\":\n- 0 maps to change[0] = 9.\n- 2 maps to change[2] = 3.\n- 1 maps to change[1] = 4.\nThus, \"021\" becomes \"934\".\n\"934\" is the largest number that can be created, so return it."
     },
     {
-      "input": "num = &quot;5&quot;, change = [1,4,7,5,3,2,5,6,9,4]",
-      "output": "&quot;5&quot;",
-      "explanation": "&quot;5&quot; is already the largest number that can be created, so return it."
+      "input": "num = \"5\", change = [1,4,7,5,3,2,5,6,9,4]",
+      "output": "\"5\"",
+      "explanation": "\"5\" is already the largest number that can be created, so return it."
     }
   ],
   "starterCode": {
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;132&quot;, change = [9,8,5,0,3,6,4,2,6,8]",
-      "expectedOutput": "&quot;832&quot;"
+      "input": "\"132\"\n[9,8,5,0,3,6,4,2,6,8]",
+      "expectedOutput": "\"832\""
     },
     {
-      "input": "num = &quot;021&quot;, change = [9,4,3,5,7,2,1,9,0,6]",
-      "expectedOutput": "&quot;934&quot;"
+      "input": "\"021\"\n[9,4,3,5,7,2,1,9,0,6]",
+      "expectedOutput": "\"934\""
     },
     {
-      "input": "num = &quot;5&quot;, change = [1,4,7,5,3,2,5,6,9,4]",
-      "expectedOutput": "&quot;5&quot;"
+      "input": "\"5\"\n[1,4,7,5,3,2,5,6,9,4]",
+      "expectedOutput": "\"5\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;132&quot;, change = [9,8,5,0,3,6,4,2,6,8]",
-      "expectedOutput": "&quot;832&quot;"
-    },
-    {
-      "input": "num = &quot;021&quot;, change = [9,4,3,5,7,2,1,9,0,6]",
-      "expectedOutput": "&quot;934&quot;"
-    },
-    {
-      "input": "num = &quot;5&quot;, change = [1,4,7,5,3,2,5,6,9,4]",
-      "expectedOutput": "&quot;5&quot;"
-    },
-    {
       "input": "\"132\"\n[9,8,5,0,3,6,4,2,6,8]",
-      "expectedOutput": null
+      "expectedOutput": "\"832\""
     },
     {
       "input": "\"021\"\n[9,4,3,5,7,2,1,9,0,6]",
-      "expectedOutput": null
+      "expectedOutput": "\"934\""
     },
     {
       "input": "\"5\"\n[1,4,7,5,3,2,5,6,9,4]",
-      "expectedOutput": null
+      "expectedOutput": "\"5\""
     },
     {
-      "input": "num = &quot;22&quot;, change = [10,5,4,6,8,3,2,10,1,7]",
-      "expectedOutput": null
+      "input": "num = \"132\", change = [9,8,5,0,3,6,4,2,6,8]",
+      "expectedOutput": "\"832\""
     },
     {
-      "input": "num = &quot;6&quot;, change = [2,5,8,6,4,3,6,7,10,5]",
-      "expectedOutput": null
+      "input": "num = \"021\", change = [9,4,3,5,7,2,1,9,0,6]",
+      "expectedOutput": "\"934\""
     },
     {
-      "input": "\"133\"\n[10,9,6,1,4,7,5,3,7,9]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"22\"\n[10,5,4,6,8,3,2,10,1,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;133&quot;, change = [10,9,6,1,4,7,5,3,7,9]",
-      "expectedOutput": null
+      "input": "num = \"5\", change = [1,4,7,5,3,2,5,6,9,4]",
+      "expectedOutput": "\"5\""
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-number-after-mutating-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:44.534Z",
+    "collectedAt": "2026-10-19T18:40:19.957Z",
     "sourceUpdatedAt": null
   }
 }

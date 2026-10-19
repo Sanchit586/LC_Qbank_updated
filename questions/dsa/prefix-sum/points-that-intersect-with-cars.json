@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [[3,6],[1,5],[4,7]]",
+      "input": "[[3,6],[1,5],[4,7]]",
       "expectedOutput": "7"
     },
     {
-      "input": "nums = [[1,3],[5,8]]",
+      "input": "[[1,3],[5,8]]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,6],[1,5],[4,7]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[1,3],[5,8]]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "nums = [[3,6],[1,5],[4,7]]",
       "expectedOutput": "7"
     },
     {
       "input": "nums = [[1,3],[5,8]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[[3,6],[1,5],[4,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3],[5,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [[4,7],[2,6],[5,8]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/points-that-intersect-with-cars/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.494Z",
+    "collectedAt": "2026-10-19T18:40:26.793Z",
     "sourceUpdatedAt": null
   }
 }

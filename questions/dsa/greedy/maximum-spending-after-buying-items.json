@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "values = [[8,5,2],[6,4,1],[9,7,3]]",
+      "input": "[[8,5,2],[6,4,1],[9,7,3]]",
       "expectedOutput": "285"
     },
     {
-      "input": "values = [[10,8,6,4,2],[9,7,5,3,2]]",
+      "input": "[[10,8,6,4,2],[9,7,5,3,2]]",
       "expectedOutput": "386"
     }
   ],
   "testCases": [
     {
+      "input": "[[8,5,2],[6,4,1],[9,7,3]]",
+      "expectedOutput": "285"
+    },
+    {
+      "input": "[[10,8,6,4,2],[9,7,5,3,2]]",
+      "expectedOutput": "386"
+    },
+    {
       "input": "values = [[8,5,2],[6,4,1],[9,7,3]]",
       "expectedOutput": "285"
     },
     {
       "input": "values = [[10,8,6,4,2],[9,7,5,3,2]]",
       "expectedOutput": "386"
-    },
-    {
-      "input": "[[8,5,2],[6,4,1],[9,7,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[10,8,6,4,2],[9,7,5,3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "values = [[9,6,3],[7,5,2],[10,8,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-spending-after-buying-items/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:30.217Z",
+    "collectedAt": "2026-10-19T18:40:22.606Z",
     "sourceUpdatedAt": null
   }
 }

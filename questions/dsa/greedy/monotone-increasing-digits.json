@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 10",
+      "input": "10",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 1234",
+      "input": "1234",
       "expectedOutput": "1234"
     },
     {
-      "input": "n = 332",
+      "input": "332",
       "expectedOutput": "299"
     }
   ],
   "testCases": [
     {
+      "input": "10",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1234",
+      "expectedOutput": "1234"
+    },
+    {
+      "input": "332",
+      "expectedOutput": "299"
+    },
+    {
       "input": "n = 10",
       "expectedOutput": "9"
     },
@@ -77,74 +89,6 @@
     {
       "input": "n = 332",
       "expectedOutput": "299"
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "1234",
-      "expectedOutput": null
-    },
-    {
-      "input": "332",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -158,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/monotone-increasing-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:33.520Z",
+    "collectedAt": "2026-10-19T18:40:25.414Z",
     "sourceUpdatedAt": null
   }
 }

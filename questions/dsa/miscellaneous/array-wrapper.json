@@ -14,17 +14,17 @@
   ],
   "examples": [
     {
-      "input": "nums = [[1,2],[3,4]], operation = &quot;Add&quot;",
+      "input": "nums = [[1,2],[3,4]], operation = \"Add\"",
       "output": "10",
       "explanation": "const obj1 = new ArrayWrapper([1,2]);\nconst obj2 = new ArrayWrapper([3,4]);\nobj1 + obj2; // 10"
     },
     {
-      "input": "nums = [[23,98,42,70]], operation = &quot;String&quot;",
-      "output": "&quot;[23,98,42,70]&quot;",
-      "explanation": "const obj = new ArrayWrapper([23,98,42,70]);\nString(obj); // &quot;[23,98,42,70]&quot;"
+      "input": "nums = [[23,98,42,70]], operation = \"String\"",
+      "output": "\"[23,98,42,70]\"",
+      "explanation": "const obj = new ArrayWrapper([23,98,42,70]);\nString(obj); // \"[23,98,42,70]\""
     },
     {
-      "input": "nums = [[],[]], operation = &quot;Add&quot;",
+      "input": "nums = [[],[]], operation = \"Add\"",
       "output": "0",
       "explanation": "const obj1 = new ArrayWrapper([]);\nconst obj2 = new ArrayWrapper([]);\nobj1 + obj2; // 0"
     }
@@ -35,46 +35,42 @@
   },
   "publicTests": [
     {
-      "input": "nums = [[1,2],[3,4]], operation = &quot;Add&quot;",
+      "input": "[[1,2],[3,4]]\n\"Add\"",
       "expectedOutput": "10"
     },
     {
-      "input": "nums = [[23,98,42,70]], operation = &quot;String&quot;",
-      "expectedOutput": "&quot;[23,98,42,70]&quot;"
+      "input": "[[23,98,42,70]]\n\"String\"",
+      "expectedOutput": "\"[23,98,42,70]\""
     },
     {
-      "input": "nums = [[],[]], operation = &quot;Add&quot;",
+      "input": "[[],[]]\n\"Add\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "nums = [[1,2],[3,4]], operation = &quot;Add&quot;",
+      "input": "[[1,2],[3,4]]\n\"Add\"",
       "expectedOutput": "10"
     },
     {
-      "input": "nums = [[23,98,42,70]], operation = &quot;String&quot;",
-      "expectedOutput": "&quot;[23,98,42,70]&quot;"
-    },
-    {
-      "input": "nums = [[],[]], operation = &quot;Add&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "[[1,2],[3,4]]\n\"Add\"",
-      "expectedOutput": null
-    },
-    {
       "input": "[[23,98,42,70]]\n\"String\"",
-      "expectedOutput": null
+      "expectedOutput": "\"[23,98,42,70]\""
     },
     {
       "input": "[[],[]]\n\"Add\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "nums = [[24,99,43,71]], operation = &quot;String&quot;",
-      "expectedOutput": null
+      "input": "nums = [[1,2],[3,4]], operation = \"Add\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "nums = [[23,98,42,70]], operation = \"String\"",
+      "expectedOutput": "\"[23,98,42,70]\""
+    },
+    {
+      "input": "nums = [[],[]], operation = \"Add\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -86,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/array-wrapper/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:24.209Z",
+    "collectedAt": "2026-10-19T18:40:13.317Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,7 +18,13 @@
     "0 <= start < end <= 109",
     "At most 1000 calls will be made to book."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyCalendarTwo\", \"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]",
+      "output": "[null, true, true, true, false, true, true]",
+      "explanation": "MyCalendarTwo myCalendarTwo = new MyCalendarTwo();\nmyCalendarTwo.book(10, 20); // return True, The event can be booked. \nmyCalendarTwo.book(50, 60); // return True, The event can be booked. \nmyCalendarTwo.book(10, 40); // return True, The event can be double booked. \nmyCalendarTwo.book(5, 15);  // return False, The event cannot be booked, because it would result in a triple booking.\nmyCalendarTwo.book(5, 10); // return True, The event can be booked, as it does not use time 10 which is already double booked.\nmyCalendarTwo.book(25, 55); // return True, The event can be booked, as the time in [25, 40) will be double booked with the third event, the time [40, 50) will be single booked, and the time [50, 55) will be double booked with the second event."
+    }
+  ],
   "starterCode": {
     "cpp": "class MyCalendarTwo {\npublic:\n    MyCalendarTwo() {\n        \n    }\n    \n    bool book(int startTime, int endTime) {\n        \n    }\n};\n\n/**\n * Your MyCalendarTwo object will be instantiated and called as such:\n * MyCalendarTwo* obj = new MyCalendarTwo();\n * bool param_1 = obj->book(startTime,endTime);\n */",
     "java": "class MyCalendarTwo {\n\n    public MyCalendarTwo() {\n        \n    }\n    \n    public boolean book(int startTime, int endTime) {\n        \n    }\n}\n\n/**\n * Your MyCalendarTwo object will be instantiated and called as such:\n * MyCalendarTwo obj = new MyCalendarTwo();\n * boolean param_1 = obj.book(startTime,endTime);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"MyCalendarTwo\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, true, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyCalendarTwo\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, true, true]"
     },
     {
-      "input": "[\"MyCalendarTwo\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[11,21],[51,61],[11,41],[6,16],[6,11],[26,56]]",
-      "expectedOutput": null
+      "input": "[\"MyCalendarTwo\", \"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]",
+      "expectedOutput": "[null, true, true, true, false, true, true]"
     }
   ],
   "sqlSchema": null,
@@ -67,7 +73,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/my-calendar-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:35.982Z",
+    "collectedAt": "2026-10-19T18:40:25.544Z",
     "sourceUpdatedAt": null
   }
 }

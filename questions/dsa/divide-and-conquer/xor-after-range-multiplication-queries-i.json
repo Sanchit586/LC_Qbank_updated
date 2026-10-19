@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,1,1], queries = [[0,2,1,4]]",
+      "input": "[1,1,1]\n[[0,2,1,4]]",
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [2,3,1,5,4], queries = [[1,4,2,3],[0,2,1,2]]",
+      "input": "[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
       "expectedOutput": "31"
     }
   ],
   "testCases": [
     {
+      "input": "[1,1,1]\n[[0,2,1,4]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
+      "expectedOutput": "31"
+    },
+    {
       "input": "nums = [1,1,1], queries = [[0,2,1,4]]",
       "expectedOutput": "4"
     },
     {
       "input": "nums = [2,3,1,5,4], queries = [[1,4,2,3],[0,2,1,2]]",
       "expectedOutput": "31"
-    },
-    {
-      "input": "[1,1,1]\n[[0,2,1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,1,5,4]\n[[1,4,2,3],[0,2,1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,2,2], queries = [[1,3,2,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/xor-after-range-multiplication-queries-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.867Z",
+    "collectedAt": "2026-10-19T18:40:31.828Z",
     "sourceUpdatedAt": null
   }
 }

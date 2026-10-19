@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "rings = &quot;B0B6G0R6R0R6G9&quot;",
+      "input": "rings = \"B0B6G0R6R0R6G9\"",
       "output": "1",
       "explanation": "- The rod labeled 0 holds 3 rings with all colors: red, green, and blue.\n- The rod labeled 6 holds 3 rings, but it only has red and blue.\n- The rod labeled 9 holds only a green ring.\nThus, the number of rods with all three colors is 1."
     },
     {
-      "input": "rings = &quot;B0R0G0R9R0B0G0&quot;",
+      "input": "rings = \"B0R0G0R9R0B0G0\"",
       "output": "1",
       "explanation": "- The rod labeled 0 holds 6 rings with all colors: red, green, and blue.\n- The rod labeled 9 holds only a red ring.\nThus, the number of rods with all three colors is 1."
     },
     {
-      "input": "rings = &quot;G4&quot;",
+      "input": "rings = \"G4\"",
       "output": "0",
       "explanation": "Only one ring is given. Thus, no rods have all three colors."
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "rings = &quot;B0B6G0R6R0R6G9&quot;",
+      "input": "\"B0B6G0R6R0R6G9\"",
       "expectedOutput": "1"
     },
     {
-      "input": "rings = &quot;B0R0G0R9R0B0G0&quot;",
+      "input": "\"B0R0G0R9R0B0G0\"",
       "expectedOutput": "1"
     },
     {
-      "input": "rings = &quot;G4&quot;",
+      "input": "\"G4\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "rings = &quot;B0B6G0R6R0R6G9&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "rings = &quot;B0R0G0R9R0B0G0&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "rings = &quot;G4&quot;",
-      "expectedOutput": "0"
-    },
-    {
       "input": "\"B0B6G0R6R0R6G9\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"B0R0G0R9R0B0G0\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"G4\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "rings = \"B0B6G0R6R0R6G9\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "rings = \"B0R0G0R9R0B0G0\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "rings = \"G4\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rings-and-rods/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:14.096Z",
+    "collectedAt": "2026-10-19T18:40:27.943Z",
     "sourceUpdatedAt": null
   }
 }

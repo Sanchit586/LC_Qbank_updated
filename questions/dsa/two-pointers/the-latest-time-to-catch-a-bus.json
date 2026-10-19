@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "buses = [10,20], passengers = [2,17,18,19], capacity = 2",
+      "input": "[10,20]\n[2,17,18,19]\n2",
       "expectedOutput": "16"
     },
     {
-      "input": "buses = [20,30,10], passengers = [19,13,26,4,25,11,21], capacity = 2",
+      "input": "[20,30,10]\n[19,13,26,4,25,11,21]\n2",
       "expectedOutput": "20"
     }
   ],
   "testCases": [
     {
+      "input": "[10,20]\n[2,17,18,19]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[20,30,10]\n[19,13,26,4,25,11,21]\n2",
+      "expectedOutput": "20"
+    },
+    {
       "input": "buses = [10,20], passengers = [2,17,18,19], capacity = 2",
       "expectedOutput": "16"
     },
     {
       "input": "buses = [20,30,10], passengers = [19,13,26,4,25,11,21], capacity = 2",
       "expectedOutput": "20"
-    },
-    {
-      "input": "[10,20]\n[2,17,18,19]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[20,30,10]\n[19,13,26,4,25,11,21]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "buses = [11,21], passengers = [3,18,19,20], capacity = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/the-latest-time-to-catch-a-bus/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.862Z",
+    "collectedAt": "2026-10-19T18:40:30.918Z",
     "sourceUpdatedAt": null
   }
 }

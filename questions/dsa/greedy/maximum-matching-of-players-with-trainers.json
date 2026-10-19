@@ -20,7 +20,7 @@
     {
       "input": "players = [4,7,9], trainers = [8,2,5,8]",
       "output": "2",
-      "explanation": "One of the ways we can form two matchings is as follows:\n- players[0] can be matched with trainers[0] since 4 &lt;= 8.\n- players[1] can be matched with trainers[3] since 7 &lt;= 8.\nIt can be proven that 2 is the maximum number of matchings that can be formed."
+      "explanation": "One of the ways we can form two matchings is as follows:\n- players[0] can be matched with trainers[0] since 4 <= 8.\n- players[1] can be matched with trainers[3] since 7 <= 8.\nIt can be proven that 2 is the maximum number of matchings that can be formed."
     },
     {
       "input": "players = [1,1,1], trainers = [10]",
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "players = [4,7,9], trainers = [8,2,5,8]",
+      "input": "[4,7,9]\n[8,2,5,8]",
       "expectedOutput": "2"
     },
     {
-      "input": "players = [1,1,1], trainers = [10]",
+      "input": "[1,1,1]\n[10]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[4,7,9]\n[8,2,5,8]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1]\n[10]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "players = [4,7,9], trainers = [8,2,5,8]",
       "expectedOutput": "2"
     },
     {
       "input": "players = [1,1,1], trainers = [10]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[4,7,9]\n[8,2,5,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1]\n[10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "players = [5,8,10], trainers = [9,3,6,9]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-matching-of-players-with-trainers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.415Z",
+    "collectedAt": "2026-10-19T18:40:21.956Z",
     "sourceUpdatedAt": null
   }
 }

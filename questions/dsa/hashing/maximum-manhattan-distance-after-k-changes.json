@@ -19,12 +19,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;NWSE&quot;, k = 1",
+      "input": "s = \"NWSE\", k = 1",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;NSWWEW&quot;, k = 3",
+      "input": "s = \"NSWWEW\", k = 3",
       "output": "6",
       "explanation": null
     }
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;NWSE&quot;, k = 1",
+      "input": "\"NWSE\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;NSWWEW&quot;, k = 3",
+      "input": "\"NSWWEW\"\n3",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;NWSE&quot;, k = 1",
+      "input": "\"NWSE\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;NSWWEW&quot;, k = 3",
+      "input": "\"NSWWEW\"\n3",
       "expectedOutput": "6"
     },
     {
-      "input": "\"NWSE\"\n1",
-      "expectedOutput": null
+      "input": "s = \"NWSE\", k = 1",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"NSWWEW\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;NWSE&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"NSWWEW\", k = 3",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-manhattan-distance-after-k-changes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.409Z",
+    "collectedAt": "2026-10-19T18:40:21.951Z",
     "sourceUpdatedAt": null
   }
 }

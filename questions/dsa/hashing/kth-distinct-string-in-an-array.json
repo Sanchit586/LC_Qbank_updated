@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "arr = [&quot;d&quot;,&quot;b&quot;,&quot;c&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;], k = 2",
-      "output": "&quot;a&quot;",
-      "explanation": "The only distinct strings in arr are &quot;d&quot; and &quot;a&quot;.\n&quot;d&quot; appears 1st, so it is the 1st distinct string.\n&quot;a&quot; appears 2nd, so it is the 2nd distinct string.\nSince k == 2, &quot;a&quot; is returned."
+      "input": "arr = [\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"], k = 2",
+      "output": "\"a\"",
+      "explanation": "The only distinct strings in arr are \"d\" and \"a\".\n\"d\" appears 1st, so it is the 1st distinct string.\n\"a\" appears 2nd, so it is the 2nd distinct string.\nSince k == 2, \"a\" is returned."
     },
     {
-      "input": "arr = [&quot;aaa&quot;,&quot;aa&quot;,&quot;a&quot;], k = 1",
-      "output": "&quot;aaa&quot;",
-      "explanation": "All strings in arr are distinct, so the 1st string &quot;aaa&quot; is returned."
+      "input": "arr = [\"aaa\",\"aa\",\"a\"], k = 1",
+      "output": "\"aaa\"",
+      "explanation": "All strings in arr are distinct, so the 1st string \"aaa\" is returned."
     },
     {
-      "input": "arr = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;], k = 3",
-      "output": "&quot;&quot;",
-      "explanation": "The only distinct string is &quot;b&quot;. Since there are fewer than 3 distinct strings, we return an empty string &quot;&quot;."
+      "input": "arr = [\"a\",\"b\",\"a\"], k = 3",
+      "output": "\"\"",
+      "explanation": "The only distinct string is \"b\". Since there are fewer than 3 distinct strings, we return an empty string \"\"."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "arr = [&quot;d&quot;,&quot;b&quot;,&quot;c&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;], k = 2",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]\n2",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "arr = [&quot;aaa&quot;,&quot;aa&quot;,&quot;a&quot;], k = 1",
-      "expectedOutput": "&quot;aaa&quot;"
+      "input": "[\"aaa\",\"aa\",\"a\"]\n1",
+      "expectedOutput": "\"aaa\""
     },
     {
-      "input": "arr = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;], k = 3",
-      "expectedOutput": "&quot;&quot;"
+      "input": "[\"a\",\"b\",\"a\"]\n3",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "arr = [&quot;d&quot;,&quot;b&quot;,&quot;c&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;], k = 2",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
-      "input": "arr = [&quot;aaa&quot;,&quot;aa&quot;,&quot;a&quot;], k = 1",
-      "expectedOutput": "&quot;aaa&quot;"
-    },
-    {
-      "input": "arr = [&quot;a&quot;,&quot;b&quot;,&quot;a&quot;], k = 3",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
       "input": "[\"aaa\",\"aa\",\"a\"]\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"aaa\""
     },
     {
       "input": "[\"a\",\"b\",\"a\"]\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "arr = [\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"], k = 2",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
+      "input": "arr = [\"aaa\",\"aa\",\"a\"], k = 1",
+      "expectedOutput": "\"aaa\""
     },
     {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
+      "input": "arr = [\"a\",\"b\",\"a\"], k = 3",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/kth-distinct-string-in-an-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:37.224Z",
+    "collectedAt": "2026-10-19T18:40:19.830Z",
     "sourceUpdatedAt": null
   }
 }

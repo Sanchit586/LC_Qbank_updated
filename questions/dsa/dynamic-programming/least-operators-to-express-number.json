@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "x = 3, target = 19",
+      "input": "3\n19",
       "expectedOutput": "5"
     },
     {
-      "input": "x = 5, target = 501",
+      "input": "5\n501",
       "expectedOutput": "8"
     },
     {
-      "input": "x = 100, target = 100000000",
+      "input": "100\n100000000",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "3\n19",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "5\n501",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "100\n100000000",
+      "expectedOutput": "3"
+    },
+    {
       "input": "x = 3, target = 19",
       "expectedOutput": "5"
     },
@@ -79,38 +91,6 @@
     {
       "input": "x = 100, target = 100000000",
       "expectedOutput": "3"
-    },
-    {
-      "input": "3\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n501",
-      "expectedOutput": null
-    },
-    {
-      "input": "100\n100000000",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 6, target = 502",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 101, target = 100000001",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n502",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 4, target = 20",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -122,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/least-operators-to-express-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.920Z",
+    "collectedAt": "2026-10-19T18:40:20.111Z",
     "sourceUpdatedAt": null
   }
 }

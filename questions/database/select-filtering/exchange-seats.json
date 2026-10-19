@@ -14,7 +14,7 @@
     {
       "input": "Seat table:\n+----+---------+\n| id | student |\n+----+---------+\n| 1  | Abbot   |\n| 2  | Doris   |\n| 3  | Emerson |\n| 4  | Green   |\n| 5  | Jeames  |\n+----+---------+",
       "output": "+----+---------+\n| id | student |\n+----+---------+\n| 1  | Doris   |\n| 2  | Abbot   |\n| 3  | Green   |\n| 4  | Emerson |\n| 5  | Jeames  |\n+----+---------+",
-      "explanation": "Note that if the number of students is odd, there is no need to change the last one&#39;s seat."
+      "explanation": "Note that if the number of students is odd, there is no need to change the last one's seat."
     }
   ],
   "starterCode": {
@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Seat table:\n+----+---------+\n| id | student |\n+----+---------+\n| 1  | Abbot   |\n| 2  | Doris   |\n| 3  | Emerson |\n| 4  | Green   |\n| 5  | Jeames  |\n+----+---------+",
+      "input": "{\"headers\": {\"Seat\": [\"id\",\"student\"]}, \"rows\": {\"Seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
       "expectedOutput": "+----+---------+\n| id | student |\n+----+---------+\n| 1  | Doris   |\n| 2  | Abbot   |\n| 3  | Green   |\n| 4  | Emerson |\n| 5  | Jeames  |\n+----+---------+"
     }
   ],
   "testCases": [
     {
-      "input": "Seat table:\n+----+---------+\n| id | student |\n+----+---------+\n| 1  | Abbot   |\n| 2  | Doris   |\n| 3  | Emerson |\n| 4  | Green   |\n| 5  | Jeames  |\n+----+---------+",
+      "input": "{\"headers\": {\"Seat\": [\"id\",\"student\"]}, \"rows\": {\"Seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
       "expectedOutput": "+----+---------+\n| id | student |\n+----+---------+\n| 1  | Doris   |\n| 2  | Abbot   |\n| 3  | Green   |\n| 4  | Emerson |\n| 5  | Jeames  |\n+----+---------+"
     },
     {
-      "input": "{\"headers\": {\"Seat\": [\"id\",\"student\"]}, \"rows\": {\"Seat\": [[1,\"Abbot\"],[2,\"Doris\"],[3,\"Emerson\"],[4,\"Green\"],[5,\"Jeames\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Seat\":[\"id\",\"student\"]},\"rows\":{\"Seat\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Seat\":[\"id\",\"student\"]},\"rows\":{\"Seat\":[[1,\"Abbot\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Seat\":[\"id\",\"student\"]},\"rows\":{\"Seat\":[[1,null],[2,null],[3,null],[4,null],[5,null]]}}",
-      "expectedOutput": null
+      "input": "Seat table:\n+----+---------+\n| id | student |\n+----+---------+\n| 1  | Abbot   |\n| 2  | Doris   |\n| 3  | Emerson |\n| 4  | Green   |\n| 5  | Jeames  |\n+----+---------+",
+      "expectedOutput": "+----+---------+\n| id | student |\n+----+---------+\n| 1  | Doris   |\n| 2  | Abbot   |\n| 3  | Green   |\n| 4  | Emerson |\n| 5  | Jeames  |\n+----+---------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Seat (id int, student varchar(255))\n\nTruncate table Seat",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/exchange-seats/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:53.160Z",
+    "collectedAt": "2026-10-19T18:40:17.145Z",
     "sourceUpdatedAt": null
   }
 }

@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [2,7,11,15], nums2 = [1,10,4,11]",
+      "input": "[2,7,11,15]\n[1,10,4,11]",
       "expectedOutput": "[2,11,7,15]"
     },
     {
-      "input": "nums1 = [12,24,8,32], nums2 = [13,25,32,11]",
+      "input": "[12,24,8,32]\n[13,25,32,11]",
       "expectedOutput": "[24,32,8,12]"
     }
   ],
   "testCases": [
     {
+      "input": "[2,7,11,15]\n[1,10,4,11]",
+      "expectedOutput": "[2,11,7,15]"
+    },
+    {
+      "input": "[12,24,8,32]\n[13,25,32,11]",
+      "expectedOutput": "[24,32,8,12]"
+    },
+    {
       "input": "nums1 = [2,7,11,15], nums2 = [1,10,4,11]",
       "expectedOutput": "[2,11,7,15]"
     },
     {
       "input": "nums1 = [12,24,8,32], nums2 = [13,25,32,11]",
       "expectedOutput": "[24,32,8,12]"
-    },
-    {
-      "input": "[2,7,11,15]\n[1,10,4,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[12,24,8,32]\n[13,25,32,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [3,8,12,16], nums3 = [2,11,5,12]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/advantage-shuffle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.561Z",
+    "collectedAt": "2026-10-19T18:40:12.912Z",
     "sourceUpdatedAt": null
   }
 }

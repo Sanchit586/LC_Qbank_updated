@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 20",
+      "input": "20",
       "expectedOutput": "19"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 135",
+      "input": "135",
       "expectedOutput": "110"
     }
   ],
   "testCases": [
     {
+      "input": "20",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "135",
+      "expectedOutput": "110"
+    },
+    {
       "input": "n = 20",
       "expectedOutput": "19"
     },
@@ -77,74 +89,6 @@
     {
       "input": "n = 135",
       "expectedOutput": "110"
-    },
-    {
-      "input": "20",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "135",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-special-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:21.360Z",
+    "collectedAt": "2026-10-19T18:40:15.568Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,9 +20,9 @@
   ],
   "examples": [
     {
-      "input": "[&quot;FrontMiddleBackQueue&quot;, &quot;pushFront&quot;, &quot;pushBack&quot;, &quot;pushMiddle&quot;, &quot;pushMiddle&quot;, &quot;popFront&quot;, &quot;popMiddle&quot;, &quot;popMiddle&quot;, &quot;popBack&quot;, &quot;popFront&quot;]\n[[], [1], [2], [3], [4], [], [], [], [], []]",
+      "input": "[\"FrontMiddleBackQueue\", \"pushFront\", \"pushBack\", \"pushMiddle\", \"pushMiddle\", \"popFront\", \"popMiddle\", \"popMiddle\", \"popBack\", \"popFront\"]\n[[], [1], [2], [3], [4], [], [], [], [], []]",
       "output": "[null, null, null, null, null, 1, 3, 4, 2, -1]",
-      "explanation": "FrontMiddleBackQueue q = new FrontMiddleBackQueue();\nq.pushFront(1);   // [1]\nq.pushBack(2);    // [1, 2]\nq.pushMiddle(3);  // [1, 3, 2]\nq.pushMiddle(4);  // [1, 4, 3, 2]\nq.popFront();     // return 1 -&gt; [4, 3, 2]\nq.popMiddle();    // return 3 -&gt; [4, 2]\nq.popMiddle();    // return 4 -&gt; [2]\nq.popBack();      // return 2 -&gt; []\nq.popFront();     // return -1 -&gt; [] (The queue is empty)"
+      "explanation": "FrontMiddleBackQueue q = new FrontMiddleBackQueue();\nq.pushFront(1);   // [1]\nq.pushBack(2);    // [1, 2]\nq.pushMiddle(3);  // [1, 3, 2]\nq.pushMiddle(4);  // [1, 4, 3, 2]\nq.popFront();     // return 1 -> [4, 3, 2]\nq.popMiddle();    // return 3 -> [4, 2]\nq.popMiddle();    // return 4 -> [2]\nq.popBack();      // return 2 -> []\nq.popFront();     // return -1 -> [] (The queue is empty)"
     }
   ],
   "starterCode": {
@@ -48,22 +48,18 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;FrontMiddleBackQueue&quot;, &quot;pushFront&quot;, &quot;pushBack&quot;, &quot;pushMiddle&quot;, &quot;pushMiddle&quot;, &quot;popFront&quot;, &quot;popMiddle&quot;, &quot;popMiddle&quot;, &quot;popBack&quot;, &quot;popFront&quot;]\n[[], [1], [2], [3], [4], [], [], [], [], []]",
+      "input": "[\"FrontMiddleBackQueue\",\"pushFront\",\"pushBack\",\"pushMiddle\",\"pushMiddle\",\"popFront\",\"popMiddle\",\"popMiddle\",\"popBack\",\"popFront\"]\n[[],[1],[2],[3],[4],[],[],[],[],[]]",
       "expectedOutput": "[null, null, null, null, null, 1, 3, 4, 2, -1]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;FrontMiddleBackQueue&quot;, &quot;pushFront&quot;, &quot;pushBack&quot;, &quot;pushMiddle&quot;, &quot;pushMiddle&quot;, &quot;popFront&quot;, &quot;popMiddle&quot;, &quot;popMiddle&quot;, &quot;popBack&quot;, &quot;popFront&quot;]\n[[], [1], [2], [3], [4], [], [], [], [], []]",
+      "input": "[\"FrontMiddleBackQueue\",\"pushFront\",\"pushBack\",\"pushMiddle\",\"pushMiddle\",\"popFront\",\"popMiddle\",\"popMiddle\",\"popBack\",\"popFront\"]\n[[],[1],[2],[3],[4],[],[],[],[],[]]",
       "expectedOutput": "[null, null, null, null, null, 1, 3, 4, 2, -1]"
     },
     {
-      "input": "[\"FrontMiddleBackQueue\",\"pushFront\",\"pushBack\",\"pushMiddle\",\"pushMiddle\",\"popFront\",\"popMiddle\",\"popMiddle\",\"popBack\",\"popFront\"]\n[[],[1],[2],[3],[4],[],[],[],[],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;FrontMiddleBackQueue&quot;, &quot;pushFront&quot;, &quot;pushBack&quot;, &quot;pushMiddle&quot;, &quot;pushMiddle&quot;, &quot;popFront&quot;, &quot;popMiddle&quot;, &quot;popMiddle&quot;, &quot;popBack&quot;, &quot;popFront&quot;]\n[[], [2], [3], [4], [5], [], [], [], [], []]",
-      "expectedOutput": null
+      "input": "[\"FrontMiddleBackQueue\", \"pushFront\", \"pushBack\", \"pushMiddle\", \"pushMiddle\", \"popFront\", \"popMiddle\", \"popMiddle\", \"popBack\", \"popFront\"]\n[[], [1], [2], [3], [4], [], [], [], [], []]",
+      "expectedOutput": "[null, null, null, null, null, 1, 3, 4, 2, -1]"
     }
   ],
   "sqlSchema": null,
@@ -78,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-front-middle-back-queue/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.686Z",
+    "collectedAt": "2026-10-19T18:40:16.456Z",
     "sourceUpdatedAt": null
   }
 }

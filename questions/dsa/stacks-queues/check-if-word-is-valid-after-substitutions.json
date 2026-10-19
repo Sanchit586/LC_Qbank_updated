@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabcbc&quot;",
+      "input": "s = \"aabcbc\"",
       "output": "true",
-      "explanation": "&quot;&quot; -&gt; &quot;abc&quot; -&gt; &quot;aabcbc&quot;\nThus, &quot;aabcbc&quot; is valid."
+      "explanation": "\"\" -> \"abc\" -> \"aabcbc\"\nThus, \"aabcbc\" is valid."
     },
     {
-      "input": "s = &quot;abcabcababcc&quot;",
+      "input": "s = \"abcabcababcc\"",
       "output": "true",
-      "explanation": "&quot;&quot; -&gt; &quot;abc&quot; -&gt; &quot;abcabc&quot; -&gt; &quot;abcabcabc&quot; -&gt; &quot;abcabcababcc&quot;\nThus, &quot;abcabcababcc&quot; is valid."
+      "explanation": "\"\" -> \"abc\" -> \"abcabc\" -> \"abcabcabc\" -> \"abcabcababcc\"\nThus, \"abcabcababcc\" is valid."
     },
     {
-      "input": "s = &quot;abccba&quot;",
+      "input": "s = \"abccba\"",
       "output": "false",
-      "explanation": "It is impossible to get &quot;abccba&quot; using the operation."
+      "explanation": "It is impossible to get \"abccba\" using the operation."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabcbc&quot;",
+      "input": "\"aabcbc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abcabcababcc&quot;",
+      "input": "\"abcabcababcc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abccba&quot;",
+      "input": "\"abccba\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabcbc&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abcabcababcc&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abccba&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"aabcbc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abcabcababcc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abccba\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aabcbc\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abcabcababcc\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abccba\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-word-is-valid-after-substitutions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:56.932Z",
+    "collectedAt": "2026-10-19T18:40:14.292Z",
     "sourceUpdatedAt": null
   }
 }

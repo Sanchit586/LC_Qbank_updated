@@ -25,17 +25,17 @@
     {
       "input": "grid = [[1,0],[0,1]]",
       "output": "0",
-      "explanation": "&nbsp;No servers can communicate with others."
+      "explanation": " No servers can communicate with others."
     },
     {
       "input": "grid = [[1,0],[1,1]]",
       "output": "3",
-      "explanation": "&nbsp;All three servers can communicate with at least one other server."
+      "explanation": " All three servers can communicate with at least one other server."
     },
     {
       "input": "grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
       "output": "4",
-      "explanation": "&nbsp;The two servers in the first row can communicate with each other. The two servers in the third column can communicate with each other. The server at right bottom corner can&#39;t communicate with any other server."
+      "explanation": " The two servers in the first row can communicate with each other. The two servers in the third column can communicate with each other. The server at right bottom corner can't communicate with any other server."
     }
   ],
   "starterCode": {
@@ -61,20 +61,32 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,0],[0,1]]",
+      "input": "[[1,0],[0,1]]",
       "expectedOutput": "0"
     },
     {
-      "input": "grid = [[1,0],[1,1]]",
+      "input": "[[1,0],[1,1]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
+      "input": "[[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,0],[0,1]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,0],[1,1]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "grid = [[1,0],[0,1]]",
       "expectedOutput": "0"
     },
@@ -85,38 +97,6 @@
     {
       "input": "grid = [[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,0],[0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,0,0],[0,0,1,0],[0,0,1,0],[0,0,0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,1],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2,1,1],[1,1,2,1],[1,1,2,1],[1,1,1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,1],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,1],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,1],[1,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-servers-that-communicate/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:21.311Z",
+    "collectedAt": "2026-10-19T18:40:15.548Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;XXX&quot;",
+      "input": "s = \"XXX\"",
       "output": "1",
-      "explanation": "XXX -&gt; OOO\nWe select all the 3 characters and convert them in one move."
+      "explanation": "XXX -> OOO\nWe select all the 3 characters and convert them in one move."
     },
     {
-      "input": "s = &quot;XXOX&quot;",
+      "input": "s = \"XXOX\"",
       "output": "2",
-      "explanation": "XXOX -&gt; OOOX -&gt; OOOO\nWe select the first 3 characters in the first move, and convert them to &#39;O&#39;.\nThen we select the last 3 characters and convert them so that the final string contains all &#39;O&#39;s."
+      "explanation": "XXOX -> OOOX -> OOOO\nWe select the first 3 characters in the first move, and convert them to 'O'.\nThen we select the last 3 characters and convert them so that the final string contains all 'O's."
     },
     {
-      "input": "s = &quot;OOOO&quot;",
+      "input": "s = \"OOOO\"",
       "output": "0",
-      "explanation": "There are no &#39;X&#39;s in s to convert."
+      "explanation": "There are no 'X's in s to convert."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;XXX&quot;",
+      "input": "\"XXX\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;XXOX&quot;",
+      "input": "\"XXOX\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;OOOO&quot;",
+      "input": "\"OOOO\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;XXX&quot;",
+      "input": "\"XXX\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;XXOX&quot;",
+      "input": "\"XXOX\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;OOOO&quot;",
+      "input": "\"OOOO\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"XXX\"",
-      "expectedOutput": null
+      "input": "s = \"XXX\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"XXOX\"",
-      "expectedOutput": null
+      "input": "s = \"XXOX\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"OOOO\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"OOOO\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-convert-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:04.958Z",
+    "collectedAt": "2026-10-19T18:40:24.119Z",
     "sourceUpdatedAt": null
   }
 }

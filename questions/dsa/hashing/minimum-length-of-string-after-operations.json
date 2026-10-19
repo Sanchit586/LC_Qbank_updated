@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abaacbcbb&quot;",
+      "input": "s = \"abaacbcbb\"",
       "output": "5",
-      "explanation": "We do the following operations:\n\n\n\tChoose index 2, then remove the characters at indices 0 and 3. The resulting string is s = &quot;bacbcbb&quot;.\n\tChoose index 3, then remove the characters at indices 0 and 5. The resulting string is s = &quot;acbcb&quot;."
+      "explanation": "We do the following operations:\n\n\n\tChoose index 2, then remove the characters at indices 0 and 3. The resulting string is s = \"bacbcbb\".\n\tChoose index 3, then remove the characters at indices 0 and 5. The resulting string is s = \"acbcb\"."
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "s = \"aa\"",
       "output": "2",
       "explanation": "We cannot perform any operations, so we return the length of the original string."
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abaacbcbb&quot;",
+      "input": "\"abaacbcbb\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abaacbcbb&quot;",
+      "input": "\"abaacbcbb\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"abaacbcbb\"",
-      "expectedOutput": null
+      "input": "s = \"abaacbcbb\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "s = \"aa\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-length-of-string-after-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.382Z",
+    "collectedAt": "2026-10-19T18:40:24.063Z",
     "sourceUpdatedAt": null
   }
 }

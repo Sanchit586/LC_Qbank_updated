@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]",
+      "input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
       "expectedOutput": "3"
     },
     {
-      "input": "courses = [[1,2]]",
+      "input": "[[1,2]]",
       "expectedOutput": "1"
     },
     {
-      "input": "courses = [[3,2],[4,3]]",
+      "input": "[[3,2],[4,3]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,2]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[3,2],[4,3]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "courses = [[100,200],[200,1300],[1000,1250],[2000,3200]]",
       "expectedOutput": "3"
     },
@@ -80,38 +92,6 @@
     {
       "input": "courses = [[3,2],[4,3]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[100,200],[200,1300],[1000,1250],[2000,3200]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,2],[4,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "courses = [[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "courses = [[4,3],[5,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[101,201],[201,1301],[1001,1251],[2001,3201]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "courses = [[101,201],[201,1301],[1001,1251],[2001,3201]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/course-schedule-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.356Z",
+    "collectedAt": "2026-10-19T18:40:16.021Z",
     "sourceUpdatedAt": null
   }
 }

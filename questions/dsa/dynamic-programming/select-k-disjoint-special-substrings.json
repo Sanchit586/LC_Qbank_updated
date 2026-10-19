@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcdbaefab&quot;, k = 2",
+      "input": "s = \"abcdbaefab\", k = 2",
       "output": "true",
-      "explanation": "We can select two disjoint special substrings: &quot;cd&quot; and &quot;ef&quot;.\n\t&quot;cd&quot; contains the characters &#39;c&#39; and &#39;d&#39;, which do not appear elsewhere in s.\n\t&quot;ef&quot; contains the characters &#39;e&#39; and &#39;f&#39;, which do not appear elsewhere in s."
+      "explanation": "We can select two disjoint special substrings: \"cd\" and \"ef\".\n\t\"cd\" contains the characters 'c' and 'd', which do not appear elsewhere in s.\n\t\"ef\" contains the characters 'e' and 'f', which do not appear elsewhere in s."
     },
     {
-      "input": "s = &quot;cdefdc&quot;, k = 3",
+      "input": "s = \"cdefdc\", k = 3",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s = &quot;abeabe&quot;, k = 0",
+      "input": "s = \"abeabe\", k = 0",
       "output": "true",
       "explanation": null
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcdbaefab&quot;, k = 2",
+      "input": "\"abcdbaefab\"\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;cdefdc&quot;, k = 3",
+      "input": "\"cdefdc\"\n3",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;abeabe&quot;, k = 0",
+      "input": "\"abeabe\"\n0",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcdbaefab&quot;, k = 2",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;cdefdc&quot;, k = 3",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;abeabe&quot;, k = 0",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"abcdbaefab\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"cdefdc\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"abeabe\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;cdefdc&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abcdbaefab\", k = 2",
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abeabe&quot;, k = 1",
-      "expectedOutput": null
+      "input": "s = \"cdefdc\", k = 3",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"abcdbaefab\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"cdefdc\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcdbaefab&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abeabe\", k = 0",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/select-k-disjoint-special-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:19.300Z",
+    "collectedAt": "2026-10-19T18:40:28.222Z",
     "sourceUpdatedAt": null
   }
 }

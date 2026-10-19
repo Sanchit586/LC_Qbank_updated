@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;III&quot;",
+      "input": "s = \"III\"",
       "output": "3",
       "explanation": "III = 3."
     },
     {
-      "input": "s = &quot;LVIII&quot;",
+      "input": "s = \"LVIII\"",
       "output": "58",
       "explanation": "L = 50, V= 5, III = 3."
     },
     {
-      "input": "s = &quot;MCMXCIV&quot;",
+      "input": "s = \"MCMXCIV\"",
       "output": "1994",
       "explanation": "M = 1000, CM = 900, XC = 90 and IV = 4."
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;III&quot;",
+      "input": "\"III\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;LVIII&quot;",
+      "input": "\"LVIII\"",
       "expectedOutput": "58"
     },
     {
-      "input": "s = &quot;MCMXCIV&quot;",
+      "input": "\"MCMXCIV\"",
       "expectedOutput": "1994"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;III&quot;",
+      "input": "\"III\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;LVIII&quot;",
+      "input": "\"LVIII\"",
       "expectedOutput": "58"
     },
     {
-      "input": "s = &quot;MCMXCIV&quot;",
+      "input": "\"MCMXCIV\"",
       "expectedOutput": "1994"
     },
     {
-      "input": "\"III\"",
-      "expectedOutput": null
+      "input": "s = \"III\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"LVIII\"",
-      "expectedOutput": null
+      "input": "s = \"LVIII\"",
+      "expectedOutput": "58"
     },
     {
-      "input": "\"MCMXCIV\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"MCMXCIV\"",
+      "expectedOutput": "1994"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/roman-to-integer/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:14.947Z",
+    "collectedAt": "2026-10-19T18:40:27.973Z",
     "sourceUpdatedAt": null
   }
 }

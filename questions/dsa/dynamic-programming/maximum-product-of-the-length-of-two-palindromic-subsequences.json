@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcodecom&quot;",
-      "output": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9.",
-      "explanation": null
+      "input": "s = \"leetcodecom\"",
+      "output": "9",
+      "explanation": ": An optimal solution is to choose \"ete\" for the 1st subsequence and \"cdc\" for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9."
     },
     {
-      "input": "s = &quot;bb&quot;",
-      "output": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1.",
-      "explanation": null
+      "input": "s = \"bb\"",
+      "output": "1",
+      "explanation": ": An optimal solution is to choose \"b\" (the first character) for the 1st subsequence and \"b\" (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1."
     },
     {
-      "input": "s = &quot;accbcaxxcxx&quot;",
-      "output": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25.",
-      "explanation": null
+      "input": "s = \"accbcaxxcxx\"",
+      "output": "25",
+      "explanation": ": An optimal solution is to choose \"accca\" for the 1st subsequence and \"xxcxx\" for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcodecom&quot;",
-      "expectedOutput": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9."
+      "input": "\"leetcodecom\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;bb&quot;",
-      "expectedOutput": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1."
+      "input": "\"bb\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;accbcaxxcxx&quot;",
-      "expectedOutput": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25."
+      "input": "\"accbcaxxcxx\"",
+      "expectedOutput": "25"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcodecom&quot;",
-      "expectedOutput": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9."
-    },
-    {
-      "input": "s = &quot;bb&quot;",
-      "expectedOutput": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1."
-    },
-    {
-      "input": "s = &quot;accbcaxxcxx&quot;",
-      "expectedOutput": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25."
-    },
-    {
       "input": "\"leetcodecom\"",
-      "expectedOutput": null
+      "expectedOutput": "9"
     },
     {
       "input": "\"bb\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"accbcaxxcxx\"",
-      "expectedOutput": null
+      "expectedOutput": "25"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leetcodecom\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"bb\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"accbcaxxcxx\"",
+      "expectedOutput": "25"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:25.018Z",
+    "collectedAt": "2026-10-19T18:40:22.417Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,12 +16,12 @@
     {
       "input": "n = 6",
       "output": "true",
-      "explanation": "Binary representation of 6 is 110.\n\tThere is exactly&nbsp;one adjacent pair of set bits (&quot;11&quot;). Thus, the answer is true​​​​​​​."
+      "explanation": "Binary representation of 6 is 110.\n\tThere is exactly one adjacent pair of set bits (\"11\"). Thus, the answer is true​​​​​​​."
     },
     {
       "input": "n = 5",
       "output": "false",
-      "explanation": "Binary representation of 5 is 101.\n\tThere is no&nbsp;adjacent pair of set bits. Thus, the answer is false​​​​​​​."
+      "explanation": "Binary representation of 5 is 101.\n\tThere is no adjacent pair of set bits. Thus, the answer is false​​​​​​​."
     }
   ],
   "starterCode": {
@@ -47,86 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 6",
+      "input": "6",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "6",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
       "input": "n = 6",
       "expectedOutput": "true"
     },
     {
       "input": "n = 5",
       "expectedOutput": "false"
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -140,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/exactly-one-consecutive-set-bits-pair/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:53.122Z",
+    "collectedAt": "2026-10-19T18:40:17.119Z",
     "sourceUpdatedAt": null
   }
 }

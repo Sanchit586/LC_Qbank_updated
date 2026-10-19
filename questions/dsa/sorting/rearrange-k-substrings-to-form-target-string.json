@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
       "output": "true",
-      "explanation": "Split s into 2 substrings of length 2: [&quot;ab&quot;, &quot;cd&quot;].\n\tRearranging these substrings as [&quot;cd&quot;, &quot;ab&quot;], and then concatenating them results in &quot;cdab&quot;, which matches t."
+      "explanation": "Split s into 2 substrings of length 2: [\"ab\", \"cd\"].\n\tRearranging these substrings as [\"cd\", \"ab\"], and then concatenating them results in \"cdab\", which matches t."
     },
     {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 3",
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 3",
       "output": "true",
-      "explanation": "Split s into 3 substrings of length 2: [&quot;aa&quot;, &quot;bb&quot;, &quot;cc&quot;].\n\tRearranging these substrings as [&quot;bb&quot;, &quot;aa&quot;, &quot;cc&quot;], and then concatenating them results in &quot;bbaacc&quot;, which matches t."
+      "explanation": "Split s into 3 substrings of length 2: [\"aa\", \"bb\", \"cc\"].\n\tRearranging these substrings as [\"bb\", \"aa\", \"cc\"], and then concatenating them results in \"bbaacc\", which matches t."
     },
     {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 2",
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 2",
       "output": "false",
-      "explanation": "Split s into 2 substrings of length 3: [&quot;aab&quot;, &quot;bcc&quot;].\n\tThese substrings cannot be rearranged to form t = &quot;bbaacc&quot;, so the output is false."
+      "explanation": "Split s into 2 substrings of length 3: [\"aab\", \"bcc\"].\n\tThese substrings cannot be rearranged to form t = \"bbaacc\", so the output is false."
     }
   ],
   "starterCode": {
@@ -58,46 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
+      "input": "\"abcd\"\n\"cdab\"\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 3",
+      "input": "\"aabbcc\"\n\"bbaacc\"\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 2",
+      "input": "\"aabbcc\"\n\"bbaacc\"\n2",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 3",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 2",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"abcd\"\n\"cdab\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"aabbcc\"\n\"bbaacc\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"aabbcc\"\n\"bbaacc\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;aabbcc&quot;, t = &quot;bbaacc&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"aabbcc\", t = \"bbaacc\", k = 2",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -111,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rearrange-k-substrings-to-form-target-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.047Z",
+    "collectedAt": "2026-10-19T18:40:27.272Z",
     "sourceUpdatedAt": null
   }
 }

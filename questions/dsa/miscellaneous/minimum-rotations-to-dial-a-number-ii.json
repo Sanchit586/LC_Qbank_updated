@@ -13,17 +13,17 @@
   ],
   "examples": [
     {
-      "input": "n = 4, s = &quot;1502&quot;",
+      "input": "n = 4, s = \"1502\"",
       "output": "9",
       "explanation": null
     },
     {
-      "input": "n = 4, s = &quot;2916&quot;",
+      "input": "n = 4, s = \"2916\"",
       "output": "12",
       "explanation": null
     },
     {
-      "input": "n = 4, s = &quot;4219&quot;",
+      "input": "n = 4, s = \"4219\"",
       "output": "6",
       "explanation": null
     }
@@ -51,62 +51,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, s = &quot;1502&quot;",
+      "input": "4\n\"1502\"",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 4, s = &quot;2916&quot;",
+      "input": "4\n\"2916\"",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 4, s = &quot;4219&quot;",
+      "input": "4\n\"4219\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "n = 4, s = &quot;1502&quot;",
+      "input": "4\n\"1502\"",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 4, s = &quot;2916&quot;",
+      "input": "4\n\"2916\"",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 4, s = &quot;4219&quot;",
+      "input": "4\n\"4219\"",
       "expectedOutput": "6"
     },
     {
-      "input": "4\n\"1502\"",
-      "expectedOutput": null
+      "input": "n = 4, s = \"1502\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "4\n\"2916\"",
-      "expectedOutput": null
+      "input": "n = 4, s = \"2916\"",
+      "expectedOutput": "12"
     },
     {
-      "input": "4\n\"4219\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, s = &quot;2917&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, s = &quot;4220&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n\"1503\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n\"2917\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, s = &quot;1503&quot;",
-      "expectedOutput": null
+      "input": "n = 4, s = \"4219\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -121,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-rotations-to-dial-a-number-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:16.919Z",
+    "collectedAt": "2026-10-19T18:40:24.956Z",
     "sourceUpdatedAt": null
   }
 }

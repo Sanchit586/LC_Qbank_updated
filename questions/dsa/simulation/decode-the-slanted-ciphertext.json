@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "encodedText = &quot;ch   ie   pr&quot;, rows = 3",
-      "output": "&quot;cipher&quot;",
+      "input": "encodedText = \"ch   ie   pr\", rows = 3",
+      "output": "\"cipher\"",
       "explanation": "This is the same example described in the problem description."
     },
     {
-      "input": "encodedText = &quot;iveo    eed   l te   olc&quot;, rows = 4",
-      "output": "&quot;i love leetcode&quot;",
+      "input": "encodedText = \"iveo    eed   l te   olc\", rows = 4",
+      "output": "\"i love leetcode\"",
       "explanation": "The figure above denotes the matrix that was used to encode originalText. \nThe blue arrows show how we can find originalText from encodedText."
     },
     {
-      "input": "encodedText = &quot;coding&quot;, rows = 1",
-      "output": "&quot;coding&quot;",
+      "input": "encodedText = \"coding\", rows = 1",
+      "output": "\"coding\"",
       "explanation": "Since there is only 1 row, both originalText and encodedText are the same."
     }
   ],
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "encodedText = &quot;ch   ie   pr&quot;, rows = 3",
-      "expectedOutput": "&quot;cipher&quot;"
+      "input": "\"ch   ie   pr\"\n3",
+      "expectedOutput": "\"cipher\""
     },
     {
-      "input": "encodedText = &quot;iveo    eed   l te   olc&quot;, rows = 4",
-      "expectedOutput": "&quot;i love leetcode&quot;"
+      "input": "\"iveo    eed   l te   olc\"\n4",
+      "expectedOutput": "\"i love leetcode\""
     },
     {
-      "input": "encodedText = &quot;coding&quot;, rows = 1",
-      "expectedOutput": "&quot;coding&quot;"
+      "input": "\"coding\"\n1",
+      "expectedOutput": "\"coding\""
     }
   ],
   "testCases": [
     {
-      "input": "encodedText = &quot;ch   ie   pr&quot;, rows = 3",
-      "expectedOutput": "&quot;cipher&quot;"
-    },
-    {
-      "input": "encodedText = &quot;iveo    eed   l te   olc&quot;, rows = 4",
-      "expectedOutput": "&quot;i love leetcode&quot;"
-    },
-    {
-      "input": "encodedText = &quot;coding&quot;, rows = 1",
-      "expectedOutput": "&quot;coding&quot;"
-    },
-    {
       "input": "\"ch   ie   pr\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"cipher\""
     },
     {
       "input": "\"iveo    eed   l te   olc\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"i love leetcode\""
     },
     {
       "input": "\"coding\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"coding\""
     },
     {
-      "input": "encodedText = &quot;iveo    eed   l te   olc&quot;, rows = 5",
-      "expectedOutput": null
+      "input": "encodedText = \"ch   ie   pr\", rows = 3",
+      "expectedOutput": "\"cipher\""
     },
     {
-      "input": "encodedText = &quot;coding&quot;, rows = 2",
-      "expectedOutput": null
+      "input": "encodedText = \"iveo    eed   l te   olc\", rows = 4",
+      "expectedOutput": "\"i love leetcode\""
     },
     {
-      "input": "\"ch   ie   pr\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"iveo    eed   l te   olc\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "encodedText = &quot;ch   ie   pr&quot;, rows = 4",
-      "expectedOutput": null
+      "input": "encodedText = \"coding\", rows = 1",
+      "expectedOutput": "\"coding\""
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decode-the-slanted-ciphertext/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.687Z",
+    "collectedAt": "2026-10-19T18:40:16.196Z",
     "sourceUpdatedAt": null
   }
 }

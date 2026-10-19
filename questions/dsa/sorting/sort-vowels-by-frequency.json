@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;",
-      "output": "&quot;leetcedo&quot;",
-      "explanation": "​​​​​​​\n\n\n\tVowels in the string are [&#39;e&#39;, &#39;e&#39;, &#39;o&#39;, &#39;e&#39;] with frequencies: e = 3, o = 1.\n\tSorting in non-increasing order of frequency and placing them back into the vowel positions results in &quot;leetcedo&quot;."
+      "input": "s = \"leetcode\"",
+      "output": "\"leetcedo\"",
+      "explanation": "​​​​​​​\n\n\n\tVowels in the string are ['e', 'e', 'o', 'e'] with frequencies: e = 3, o = 1.\n\tSorting in non-increasing order of frequency and placing them back into the vowel positions results in \"leetcedo\"."
     },
     {
-      "input": "s = &quot;aeiaaioooa&quot;",
-      "output": "&quot;aaaaoooiie&quot;",
-      "explanation": "​​​​​​​\n\n\n\tVowels in the string are [&#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;a&#39;, &#39;a&#39;, &#39;i&#39;, &#39;o&#39;, &#39;o&#39;, &#39;o&#39;, &#39;a&#39;] with frequencies: a = 4, o = 3, i = 2, e = 1.\n\tSorting them in non-increasing order of frequency and placing them back into the vowel positions results in &quot;aaaaoooiie&quot;."
+      "input": "s = \"aeiaaioooa\"",
+      "output": "\"aaaaoooiie\"",
+      "explanation": "​​​​​​​\n\n\n\tVowels in the string are ['a', 'e', 'i', 'a', 'a', 'i', 'o', 'o', 'o', 'a'] with frequencies: a = 4, o = 3, i = 2, e = 1.\n\tSorting them in non-increasing order of frequency and placing them back into the vowel positions results in \"aaaaoooiie\"."
     },
     {
-      "input": "s = &quot;baeiou&quot;",
-      "output": "&quot;baeiou&quot;",
+      "input": "s = \"baeiou\"",
+      "output": "\"baeiou\"",
       "explanation": "Each vowel appears exactly once, so all have the same frequency.\n\tThus, they retain their relative order based on first occurrence, and the string remains unchanged."
     }
   ],
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;leetcedo&quot;"
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"leetcedo\""
     },
     {
-      "input": "s = &quot;aeiaaioooa&quot;",
-      "expectedOutput": "&quot;aaaaoooiie&quot;"
+      "input": "\"aeiaaioooa\"",
+      "expectedOutput": "\"aaaaoooiie\""
     },
     {
-      "input": "s = &quot;baeiou&quot;",
-      "expectedOutput": "&quot;baeiou&quot;"
+      "input": "\"baeiou\"",
+      "expectedOutput": "\"baeiou\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;leetcedo&quot;"
-    },
-    {
-      "input": "s = &quot;aeiaaioooa&quot;",
-      "expectedOutput": "&quot;aaaaoooiie&quot;"
-    },
-    {
-      "input": "s = &quot;baeiou&quot;",
-      "expectedOutput": "&quot;baeiou&quot;"
-    },
-    {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"leetcedo\""
     },
     {
       "input": "\"aeiaaioooa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aaaaoooiie\""
     },
     {
       "input": "\"baeiou\"",
-      "expectedOutput": null
+      "expectedOutput": "\"baeiou\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "\"leetcedo\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aeiaaioooa\"",
+      "expectedOutput": "\"aaaaoooiie\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"baeiou\"",
+      "expectedOutput": "\"baeiou\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-vowels-by-frequency/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:34.362Z",
+    "collectedAt": "2026-10-19T18:40:30.009Z",
     "sourceUpdatedAt": null
   }
 }

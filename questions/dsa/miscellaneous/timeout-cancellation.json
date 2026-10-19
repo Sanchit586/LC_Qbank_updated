@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "fn = (x) =&gt; x * 5, args = [2], t = 20",
-      "output": "[{&quot;time&quot;: 20, &quot;returned&quot;: 10}]",
-      "explanation": "const cancelTimeMs = 50;\nconst cancelFn = cancellable((x) =&gt; x * 5, [2], 20);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (50ms), which happened after the execution of fn(2) at 20ms."
+      "input": "fn = (x) => x * 5, args = [2], t = 20",
+      "output": "[{\"time\": 20, \"returned\": 10}]",
+      "explanation": "const cancelTimeMs = 50;\nconst cancelFn = cancellable((x) => x * 5, [2], 20);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (50ms), which happened after the execution of fn(2) at 20ms."
     },
     {
-      "input": "fn = (x) =&gt; x**2, args = [2], t = 100",
+      "input": "fn = (x) => x**2, args = [2], t = 100",
       "output": "[]",
-      "explanation": "const cancelTimeMs = 50;\nconst cancelFn = cancellable((x) =&gt; x**2, [2], 100);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (50ms), which happened before the execution of fn(2) at 100ms, resulting in fn(2) never being called."
+      "explanation": "const cancelTimeMs = 50;\nconst cancelFn = cancellable((x) => x**2, [2], 100);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (50ms), which happened before the execution of fn(2) at 100ms, resulting in fn(2) never being called."
     },
     {
-      "input": "fn = (x1, x2) =&gt; x1 * x2, args = [2,4], t = 30",
-      "output": "[{&quot;time&quot;: 30, &quot;returned&quot;: 8}]",
-      "explanation": "const cancelTimeMs = 100;\nconst cancelFn = cancellable((x1, x2) =&gt; x1 * x2, [2,4], 30);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (100ms), which happened after the execution of fn(2,4) at 30ms."
+      "input": "fn = (x1, x2) => x1 * x2, args = [2,4], t = 30",
+      "output": "[{\"time\": 30, \"returned\": 8}]",
+      "explanation": "const cancelTimeMs = 100;\nconst cancelFn = cancellable((x1, x2) => x1 * x2, [2,4], 30);\nsetTimeout(cancelFn, cancelTimeMs);\n\nThe cancellation was scheduled to occur after a delay of cancelTimeMs (100ms), which happened after the execution of fn(2,4) at 30ms."
     }
   ],
   "starterCode": {
@@ -37,62 +37,42 @@
   },
   "publicTests": [
     {
-      "input": "fn = (x) =&gt; x * 5, args = [2], t = 20",
-      "expectedOutput": "[{&quot;time&quot;: 20, &quot;returned&quot;: 10}]"
+      "input": "(x) => x * 5\n[2]\n20\n50",
+      "expectedOutput": "[{\"time\": 20, \"returned\": 10}]"
     },
     {
-      "input": "fn = (x) =&gt; x**2, args = [2], t = 100",
+      "input": "(x) => x**2\n[2]\n100\n50",
       "expectedOutput": "[]"
     },
     {
-      "input": "fn = (x1, x2) =&gt; x1 * x2, args = [2,4], t = 30",
-      "expectedOutput": "[{&quot;time&quot;: 30, &quot;returned&quot;: 8}]"
+      "input": "(x1, x2) => x1 * x2\n[2,4]\n30\n100",
+      "expectedOutput": "[{\"time\": 30, \"returned\": 8}]"
     }
   ],
   "testCases": [
     {
-      "input": "fn = (x) =&gt; x * 5, args = [2], t = 20",
-      "expectedOutput": "[{&quot;time&quot;: 20, &quot;returned&quot;: 10}]"
-    },
-    {
-      "input": "fn = (x) =&gt; x**2, args = [2], t = 100",
-      "expectedOutput": "[]"
-    },
-    {
-      "input": "fn = (x1, x2) =&gt; x1 * x2, args = [2,4], t = 30",
-      "expectedOutput": "[{&quot;time&quot;: 30, &quot;returned&quot;: 8}]"
-    },
-    {
       "input": "(x) => x * 5\n[2]\n20\n50",
-      "expectedOutput": null
+      "expectedOutput": "[{\"time\": 20, \"returned\": 10}]"
     },
     {
       "input": "(x) => x**2\n[2]\n100\n50",
-      "expectedOutput": null
+      "expectedOutput": "[]"
     },
     {
       "input": "(x1, x2) => x1 * x2\n[2,4]\n30\n100",
-      "expectedOutput": null
+      "expectedOutput": "[{\"time\": 30, \"returned\": 8}]"
     },
     {
-      "input": "fn = (x) =&gt; x**3, args = [3], t = 101",
-      "expectedOutput": null
+      "input": "fn = (x) => x * 5, args = [2], t = 20",
+      "expectedOutput": "[{\"time\": 20, \"returned\": 10}]"
     },
     {
-      "input": "fn = (x2, x3) =&gt; x2 * x3, args = [3,5], t = 31",
-      "expectedOutput": null
+      "input": "fn = (x) => x**2, args = [2], t = 100",
+      "expectedOutput": "[]"
     },
     {
-      "input": "(x) => x * 6\n[3]\n21\n51",
-      "expectedOutput": null
-    },
-    {
-      "input": "(x) => x**3\n[3]\n101\n51",
-      "expectedOutput": null
-    },
-    {
-      "input": "fn = (x) =&gt; x * 6, args = [3], t = 21",
-      "expectedOutput": null
+      "input": "fn = (x1, x2) => x1 * x2, args = [2,4], t = 30",
+      "expectedOutput": "[{\"time\": 30, \"returned\": 8}]"
     }
   ],
   "sqlSchema": null,
@@ -104,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/timeout-cancellation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:58.905Z",
+    "collectedAt": "2026-10-19T18:40:31.069Z",
     "sourceUpdatedAt": null
   }
 }

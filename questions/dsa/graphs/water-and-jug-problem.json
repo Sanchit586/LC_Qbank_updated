@@ -58,20 +58,16 @@
   },
   "publicTests": [
     {
-      "input": "x = 3, y = 5, target = 4",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "x = 2, y = 6, target = 5",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "x = 1, y = 2, target = 3",
+      "input": "3\n5\n4",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "3\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
       "input": "x = 3, y = 5, target = 4",
       "expectedOutput": "true"
     },
@@ -82,14 +78,6 @@
     {
       "input": "x = 1, y = 2, target = 3",
       "expectedOutput": "true"
-    },
-    {
-      "input": "3\n5\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 4, y = 6, target = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -101,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/water-and-jug-problem/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.802Z",
+    "collectedAt": "2026-10-19T18:40:31.657Z",
     "sourceUpdatedAt": null
   }
 }

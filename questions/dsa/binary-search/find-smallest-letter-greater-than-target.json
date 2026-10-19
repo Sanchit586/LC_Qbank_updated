@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
-      "output": "&quot;c&quot;",
-      "explanation": "The smallest character that is lexicographically greater than &#39;a&#39; in letters is &#39;c&#39;."
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"a\"",
+      "output": "\"c\"",
+      "explanation": "The smallest character that is lexicographically greater than 'a' in letters is 'c'."
     },
     {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
-      "output": "&quot;f&quot;",
-      "explanation": "The smallest character that is lexicographically greater than &#39;c&#39; in letters is &#39;f&#39;."
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"c\"",
+      "output": "\"f\"",
+      "explanation": "The smallest character that is lexicographically greater than 'c' in letters is 'f'."
     },
     {
-      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
-      "output": "&quot;x&quot;",
-      "explanation": "There are no characters in letters that is lexicographically greater than &#39;z&#39; so we return letters[0]."
+      "input": "letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"",
+      "output": "\"x\"",
+      "explanation": "There are no characters in letters that is lexicographically greater than 'z' so we return letters[0]."
     }
   ],
   "starterCode": {
@@ -57,42 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "[\"c\",\"f\",\"j\"]\n\"a\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
-      "expectedOutput": "&quot;f&quot;"
+      "input": "[\"c\",\"f\",\"j\"]\n\"c\"",
+      "expectedOutput": "\"f\""
     },
     {
-      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
-      "expectedOutput": "&quot;x&quot;"
+      "input": "[\"x\",\"x\",\"y\",\"y\"]\n\"z\"",
+      "expectedOutput": "\"x\""
     }
   ],
   "testCases": [
     {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
-      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
-      "expectedOutput": "&quot;f&quot;"
-    },
-    {
-      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
-      "expectedOutput": "&quot;x&quot;"
-    },
-    {
       "input": "[\"c\",\"f\",\"j\"]\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
       "input": "[\"c\",\"f\",\"j\"]\n\"c\"",
-      "expectedOutput": null
+      "expectedOutput": "\"f\""
     },
     {
       "input": "[\"x\",\"x\",\"y\",\"y\"]\n\"z\"",
-      "expectedOutput": null
+      "expectedOutput": "\"x\""
+    },
+    {
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"a\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "letters = [\"c\",\"f\",\"j\"], target = \"c\"",
+      "expectedOutput": "\"f\""
+    },
+    {
+      "input": "letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"",
+      "expectedOutput": "\"x\""
     }
   ],
   "sqlSchema": null,
@@ -106,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:06.449Z",
+    "collectedAt": "2026-10-19T18:40:18.111Z",
     "sourceUpdatedAt": null
   }
 }

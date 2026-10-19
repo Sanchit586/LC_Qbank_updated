@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcoder&quot;",
+      "input": "s = \"leetcoder\"",
       "output": "true",
-      "explanation": "Alice can win the game as follows:\n\n\n\tAlice plays first, she can delete the underlined substring in s = &quot;leetcoder&quot; which contains 3 vowels. The resulting string is s = &quot;der&quot;.\n\tBob plays second, he can delete the underlined substring in s = &quot;der&quot; which contains 0 vowels. The resulting string is s = &quot;er&quot;.\n\tAlice plays third, she can delete the whole string s = &quot;er&quot; which contains 1 vowel.\n\tBob plays fourth, since the string is empty, there is no valid play for Bob. So Alice wins the game."
+      "explanation": "Alice can win the game as follows:\n\n\n\tAlice plays first, she can delete the underlined substring in s = \"leetcoder\" which contains 3 vowels. The resulting string is s = \"der\".\n\tBob plays second, he can delete the underlined substring in s = \"der\" which contains 0 vowels. The resulting string is s = \"er\".\n\tAlice plays third, she can delete the whole string s = \"er\" which contains 1 vowel.\n\tBob plays fourth, since the string is empty, there is no valid play for Bob. So Alice wins the game."
     },
     {
-      "input": "s = &quot;bbcd&quot;",
+      "input": "s = \"bbcd\"",
       "output": "false",
       "explanation": "There is no valid play for Alice in her first turn, so Alice loses the game."
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcoder&quot;",
+      "input": "\"leetcoder\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;bbcd&quot;",
+      "input": "\"bbcd\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcoder&quot;",
+      "input": "\"leetcoder\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;bbcd&quot;",
+      "input": "\"bbcd\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"leetcoder\"",
-      "expectedOutput": null
+      "input": "s = \"leetcoder\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"bbcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"bbcd\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/vowels-game-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.481Z",
+    "collectedAt": "2026-10-19T18:40:31.625Z",
     "sourceUpdatedAt": null
   }
 }

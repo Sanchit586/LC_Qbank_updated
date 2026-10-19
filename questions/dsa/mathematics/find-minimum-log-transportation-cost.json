@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 6, m = 5, k = 5",
+      "input": "6\n5\n5",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 4, m = 4, k = 6",
+      "input": "4\n4\n6",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "6\n5\n5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "4\n4\n6",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 6, m = 5, k = 5",
       "expectedOutput": "5"
     },
     {
       "input": "n = 4, m = 4, k = 6",
       "expectedOutput": "0"
-    },
-    {
-      "input": "6\n5\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, m = 6, k = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-minimum-log-transportation-cost/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:05.739Z",
+    "collectedAt": "2026-10-19T18:40:17.925Z",
     "sourceUpdatedAt": null
   }
 }

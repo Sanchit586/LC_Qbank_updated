@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabc&quot;, x = &quot;a&quot;, y = &quot;c&quot;",
-      "output": "&quot;cbaa&quot;",
+      "input": "s = \"aabc\", x = \"a\", y = \"c\"",
+      "output": "\"cbaa\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;dcab&quot;, x = &quot;d&quot;, y = &quot;b&quot;",
-      "output": "&quot;cabd&quot;",
+      "input": "s = \"dcab\", x = \"d\", y = \"b\"",
+      "output": "\"cabd\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;axe&quot;, x = &quot;o&quot;, y = &quot;x&quot;",
-      "output": "&quot;axe&quot;",
+      "input": "s = \"axe\", x = \"o\", y = \"x\"",
+      "output": "\"axe\"",
       "explanation": null
     }
   ],
@@ -57,42 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabc&quot;, x = &quot;a&quot;, y = &quot;c&quot;",
-      "expectedOutput": "&quot;cbaa&quot;"
+      "input": "\"aabc\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"cbaa\""
     },
     {
-      "input": "s = &quot;dcab&quot;, x = &quot;d&quot;, y = &quot;b&quot;",
-      "expectedOutput": "&quot;cabd&quot;"
+      "input": "\"dcab\"\n\"d\"\n\"b\"",
+      "expectedOutput": "\"cabd\""
     },
     {
-      "input": "s = &quot;axe&quot;, x = &quot;o&quot;, y = &quot;x&quot;",
-      "expectedOutput": "&quot;axe&quot;"
+      "input": "\"axe\"\n\"o\"\n\"x\"",
+      "expectedOutput": "\"axe\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabc&quot;, x = &quot;a&quot;, y = &quot;c&quot;",
-      "expectedOutput": "&quot;cbaa&quot;"
-    },
-    {
-      "input": "s = &quot;dcab&quot;, x = &quot;d&quot;, y = &quot;b&quot;",
-      "expectedOutput": "&quot;cabd&quot;"
-    },
-    {
-      "input": "s = &quot;axe&quot;, x = &quot;o&quot;, y = &quot;x&quot;",
-      "expectedOutput": "&quot;axe&quot;"
-    },
-    {
       "input": "\"aabc\"\n\"a\"\n\"c\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cbaa\""
     },
     {
       "input": "\"dcab\"\n\"d\"\n\"b\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cabd\""
     },
     {
       "input": "\"axe\"\n\"o\"\n\"x\"",
-      "expectedOutput": null
+      "expectedOutput": "\"axe\""
+    },
+    {
+      "input": "s = \"aabc\", x = \"a\", y = \"c\"",
+      "expectedOutput": "\"cbaa\""
+    },
+    {
+      "input": "s = \"dcab\", x = \"d\", y = \"b\"",
+      "expectedOutput": "\"cabd\""
+    },
+    {
+      "input": "s = \"axe\", x = \"o\", y = \"x\"",
+      "expectedOutput": "\"axe\""
     }
   ],
   "sqlSchema": null,
@@ -108,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rearrange-string-to-avoid-character-pair/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.073Z",
+    "collectedAt": "2026-10-19T18:40:27.288Z",
     "sourceUpdatedAt": null
   }
 }

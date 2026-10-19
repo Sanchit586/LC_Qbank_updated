@@ -17,12 +17,12 @@
   "examples": [
     {
       "input": "a = 1, b = 2",
-      "output": "&quot;abb&quot;",
-      "explanation": "&quot;abb&quot;, &quot;bab&quot; and &quot;bba&quot; are all correct answers."
+      "output": "\"abb\"",
+      "explanation": "\"abb\", \"bab\" and \"bba\" are all correct answers."
     },
     {
       "input": "a = 4, b = 1",
-      "output": "&quot;aabaa&quot;",
+      "output": "\"aabaa\"",
       "explanation": null
     }
   ],
@@ -45,34 +45,30 @@
   },
   "publicTests": [
     {
-      "input": "a = 1, b = 2",
-      "expectedOutput": "&quot;abb&quot;"
+      "input": "1\n2",
+      "expectedOutput": "\"abb\""
     },
     {
-      "input": "a = 4, b = 1",
-      "expectedOutput": "&quot;aabaa&quot;"
+      "input": "4\n1",
+      "expectedOutput": "\"aabaa\""
     }
   ],
   "testCases": [
     {
-      "input": "a = 1, b = 2",
-      "expectedOutput": "&quot;abb&quot;"
-    },
-    {
-      "input": "a = 4, b = 1",
-      "expectedOutput": "&quot;aabaa&quot;"
-    },
-    {
       "input": "1\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"abb\""
     },
     {
       "input": "4\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"aabaa\""
     },
     {
-      "input": "a = 2, b = 3",
-      "expectedOutput": null
+      "input": "a = 1, b = 2",
+      "expectedOutput": "\"abb\""
+    },
+    {
+      "input": "a = 4, b = 1",
+      "expectedOutput": "\"aabaa\""
     }
   ],
   "sqlSchema": null,
@@ -84,7 +80,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/string-without-aaa-or-bbb/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.517Z",
+    "collectedAt": "2026-10-19T18:40:30.340Z",
     "sourceUpdatedAt": null
   }
 }

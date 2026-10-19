@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "root = [6,2,13,1,4,9,15,null,null,null,null,null,null,14], queries = [2,5,16]",
+      "input": "[6,2,13,1,4,9,15,null,null,null,null,null,null,14]\n[2,5,16]",
       "expectedOutput": "[[2,2],[4,6],[15,-1]]"
     },
     {
-      "input": "root = [4,null,9], queries = [3]",
+      "input": "[4,null,9]\n[3]",
       "expectedOutput": "[[-1,4]]"
     }
   ],
   "testCases": [
     {
+      "input": "[6,2,13,1,4,9,15,null,null,null,null,null,null,14]\n[2,5,16]",
+      "expectedOutput": "[[2,2],[4,6],[15,-1]]"
+    },
+    {
+      "input": "[4,null,9]\n[3]",
+      "expectedOutput": "[[-1,4]]"
+    },
+    {
       "input": "root = [6,2,13,1,4,9,15,null,null,null,null,null,null,14], queries = [2,5,16]",
       "expectedOutput": "[[2,2],[4,6],[15,-1]]"
     },
     {
       "input": "root = [4,null,9], queries = [3]",
       "expectedOutput": "[[-1,4]]"
-    },
-    {
-      "input": "[6,2,13,1,4,9,15,null,null,null,null,null,null,14]\n[2,5,16]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,null,9]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "root = [7,3,14,2,5,10,16,null,null,null,null,null,null,15], queries = [3,6,17]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/closest-nodes-queries-in-a-binary-search-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.401Z",
+    "collectedAt": "2026-10-19T18:40:14.453Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 537",
+      "input": "537",
       "expectedOutput": "[500,30,7]"
     },
     {
-      "input": "n = 102",
+      "input": "102",
       "expectedOutput": "[100,2]"
     },
     {
-      "input": "n = 6",
+      "input": "6",
       "expectedOutput": "[6]"
     }
   ],
   "testCases": [
     {
+      "input": "537",
+      "expectedOutput": "[500,30,7]"
+    },
+    {
+      "input": "102",
+      "expectedOutput": "[100,2]"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "[6]"
+    },
+    {
       "input": "n = 537",
       "expectedOutput": "[500,30,7]"
     },
@@ -77,74 +89,6 @@
     {
       "input": "n = 6",
       "expectedOutput": "[6]"
-    },
-    {
-      "input": "537",
-      "expectedOutput": null
-    },
-    {
-      "input": "102",
-      "expectedOutput": null
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/compute-decimal-representation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.974Z",
+    "collectedAt": "2026-10-19T18:40:14.614Z",
     "sourceUpdatedAt": null
   }
 }

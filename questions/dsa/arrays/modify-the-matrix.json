@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[1,2,-1],[4,-1,6],[7,8,9]]",
+      "input": "[[1,2,-1],[4,-1,6],[7,8,9]]",
       "expectedOutput": "[[1,2,9],[4,8,6],[7,8,9]]"
     },
     {
-      "input": "matrix = [[3,-1],[5,2]]",
+      "input": "[[3,-1],[5,2]]",
       "expectedOutput": "[[3,2],[5,2]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,-1],[4,-1,6],[7,8,9]]",
+      "expectedOutput": "[[1,2,9],[4,8,6],[7,8,9]]"
+    },
+    {
+      "input": "[[3,-1],[5,2]]",
+      "expectedOutput": "[[3,2],[5,2]]"
+    },
+    {
       "input": "matrix = [[1,2,-1],[4,-1,6],[7,8,9]]",
       "expectedOutput": "[[1,2,9],[4,8,6],[7,8,9]]"
     },
     {
       "input": "matrix = [[3,-1],[5,2]]",
       "expectedOutput": "[[3,2],[5,2]]"
-    },
-    {
-      "input": "[[1,2,-1],[4,-1,6],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,-1],[5,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,3,-2],[5,-2,7],[8,9,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/modify-the-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:33.517Z",
+    "collectedAt": "2026-10-19T18:40:25.411Z",
     "sourceUpdatedAt": null
   }
 }

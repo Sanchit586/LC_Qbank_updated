@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "n = &quot;13&quot;",
-      "output": "&quot;3&quot;",
+      "input": "n = \"13\"",
+      "output": "\"3\"",
       "explanation": "13 base 3 is 111."
     },
     {
-      "input": "n = &quot;4681&quot;",
-      "output": "&quot;8&quot;",
+      "input": "n = \"4681\"",
+      "output": "\"8\"",
       "explanation": "4681 base 8 is 11111."
     },
     {
-      "input": "n = &quot;1000000000000000000&quot;",
-      "output": "&quot;999999999999999999&quot;",
+      "input": "n = \"1000000000000000000\"",
+      "output": "\"999999999999999999\"",
       "explanation": "1000000000000000000 base 999999999999999999 is 11."
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "n = &quot;13&quot;",
-      "expectedOutput": "&quot;3&quot;"
+      "input": "\"13\"",
+      "expectedOutput": "\"3\""
     },
     {
-      "input": "n = &quot;4681&quot;",
-      "expectedOutput": "&quot;8&quot;"
+      "input": "\"4681\"",
+      "expectedOutput": "\"8\""
     },
     {
-      "input": "n = &quot;1000000000000000000&quot;",
-      "expectedOutput": "&quot;999999999999999999&quot;"
+      "input": "\"1000000000000000000\"",
+      "expectedOutput": "\"999999999999999999\""
     }
   ],
   "testCases": [
     {
-      "input": "n = &quot;13&quot;",
-      "expectedOutput": "&quot;3&quot;"
-    },
-    {
-      "input": "n = &quot;4681&quot;",
-      "expectedOutput": "&quot;8&quot;"
-    },
-    {
-      "input": "n = &quot;1000000000000000000&quot;",
-      "expectedOutput": "&quot;999999999999999999&quot;"
-    },
-    {
       "input": "\"13\"",
-      "expectedOutput": null
+      "expectedOutput": "\"3\""
     },
     {
       "input": "\"4681\"",
-      "expectedOutput": null
+      "expectedOutput": "\"8\""
     },
     {
       "input": "\"1000000000000000000\"",
-      "expectedOutput": null
+      "expectedOutput": "\"999999999999999999\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "n = \"13\"",
+      "expectedOutput": "\"3\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "n = \"4681\"",
+      "expectedOutput": "\"8\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "n = \"1000000000000000000\"",
+      "expectedOutput": "\"999999999999999999\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-good-base/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.079Z",
+    "collectedAt": "2026-10-19T18:40:29.728Z",
     "sourceUpdatedAt": null
   }
 }

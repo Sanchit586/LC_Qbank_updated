@@ -17,22 +17,22 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "input": "s = \"a\", t = \"a\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;def&quot;",
+      "input": "s = \"abc\", t = \"def\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;b&quot;, t = &quot;aaaa&quot;",
+      "input": "s = \"b\", t = \"aaaa\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;ecdba&quot;",
+      "input": "s = \"abcde\", t = \"ecdba\"",
       "output": "5",
       "explanation": null
     }
@@ -60,98 +60,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "input": "\"a\"\n\"a\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;def&quot;",
+      "input": "\"abc\"\n\"def\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;b&quot;, t = &quot;aaaa&quot;",
+      "input": "\"b\"\n\"aaaa\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;ecdba&quot;",
+      "input": "\"abcde\"\n\"ecdba\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "input": "\"a\"\n\"a\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc&quot;, t = &quot;def&quot;",
+      "input": "\"abc\"\n\"def\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;b&quot;, t = &quot;aaaa&quot;",
+      "input": "\"b\"\n\"aaaa\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, t = &quot;ecdba&quot;",
+      "input": "\"abcde\"\n\"ecdba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"a\", t = \"a\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abc\"\n\"def\"",
-      "expectedOutput": null
+      "input": "s = \"abc\", t = \"def\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"b\"\n\"aaaa\"",
-      "expectedOutput": null
+      "input": "s = \"b\", t = \"aaaa\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abcde\"\n\"ecdba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"abcde\", t = \"ecdba\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -169,7 +125,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-palindrome-after-substring-concatenation-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:53.296Z",
+    "collectedAt": "2026-10-19T18:40:20.553Z",
     "sourceUpdatedAt": null
   }
 }

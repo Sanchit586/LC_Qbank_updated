@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "start = &quot;_L__R__R_&quot;, target = &quot;L______RR&quot;",
+      "input": "start = \"_L__R__R_\", target = \"L______RR\"",
       "output": "true",
-      "explanation": "We can obtain the string target from start by doing the following moves:\n- Move the first piece one step to the left, start becomes equal to &quot;L___R__R_&quot;.\n- Move the last piece one step to the right, start becomes equal to &quot;L___R___R&quot;.\n- Move the second piece three steps to the right, start becomes equal to &quot;L______RR&quot;.\nSince it is possible to get the string target from start, we return true."
+      "explanation": "We can obtain the string target from start by doing the following moves:\n- Move the first piece one step to the left, start becomes equal to \"L___R__R_\".\n- Move the last piece one step to the right, start becomes equal to \"L___R___R\".\n- Move the second piece three steps to the right, start becomes equal to \"L______RR\".\nSince it is possible to get the string target from start, we return true."
     },
     {
-      "input": "start = &quot;R_L_&quot;, target = &quot;__LR&quot;",
+      "input": "start = \"R_L_\", target = \"__LR\"",
       "output": "false",
-      "explanation": "The &#39;R&#39; piece in the string start can move one step to the right to obtain &quot;_RL_&quot;.\nAfter that, no pieces can move anymore, so it is impossible to obtain the string target from start."
+      "explanation": "The 'R' piece in the string start can move one step to the right to obtain \"_RL_\".\nAfter that, no pieces can move anymore, so it is impossible to obtain the string target from start."
     },
     {
-      "input": "start = &quot;_R&quot;, target = &quot;R_&quot;",
+      "input": "start = \"_R\", target = \"R_\"",
       "output": "false",
       "explanation": "The piece in the string start can move only to the right, so it is impossible to obtain the string target from start."
     }
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "start = &quot;_L__R__R_&quot;, target = &quot;L______RR&quot;",
+      "input": "\"_L__R__R_\"\n\"L______RR\"",
       "expectedOutput": "true"
     },
     {
-      "input": "start = &quot;R_L_&quot;, target = &quot;__LR&quot;",
+      "input": "\"R_L_\"\n\"__LR\"",
       "expectedOutput": "false"
     },
     {
-      "input": "start = &quot;_R&quot;, target = &quot;R_&quot;",
+      "input": "\"_R\"\n\"R_\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "start = &quot;_L__R__R_&quot;, target = &quot;L______RR&quot;",
+      "input": "\"_L__R__R_\"\n\"L______RR\"",
       "expectedOutput": "true"
     },
     {
-      "input": "start = &quot;R_L_&quot;, target = &quot;__LR&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "start = &quot;_R&quot;, target = &quot;R_&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"_L__R__R_\"\n\"L______RR\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"R_L_\"\n\"__LR\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"_R\"\n\"R_\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "start = \"_L__R__R_\", target = \"L______RR\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "start = \"R_L_\", target = \"__LR\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "start = \"_R\", target = \"R_\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/move-pieces-to-obtain-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:34.934Z",
+    "collectedAt": "2026-10-19T18:40:25.504Z",
     "sourceUpdatedAt": null
   }
 }

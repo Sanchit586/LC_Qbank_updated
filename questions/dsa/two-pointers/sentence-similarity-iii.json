@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "sentence1 = &quot;My name is Haley&quot;, sentence2 = &quot;My Haley&quot;",
+      "input": "sentence1 = \"My name is Haley\", sentence2 = \"My Haley\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "sentence1 = &quot;of&quot;, sentence2 = &quot;A lot of words&quot;",
+      "input": "sentence1 = \"of\", sentence2 = \"A lot of words\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "sentence1 = &quot;Eating right now&quot;, sentence2 = &quot;Eating&quot;",
+      "input": "sentence1 = \"Eating right now\", sentence2 = \"Eating\"",
       "output": "true",
       "explanation": null
     }
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "sentence1 = &quot;My name is Haley&quot;, sentence2 = &quot;My Haley&quot;",
+      "input": "\"My name is Haley\"\n\"My Haley\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence1 = &quot;of&quot;, sentence2 = &quot;A lot of words&quot;",
+      "input": "\"of\"\n\"A lot of words\"",
       "expectedOutput": "false"
     },
     {
-      "input": "sentence1 = &quot;Eating right now&quot;, sentence2 = &quot;Eating&quot;",
+      "input": "\"Eating right now\"\n\"Eating\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "sentence1 = &quot;My name is Haley&quot;, sentence2 = &quot;My Haley&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "sentence1 = &quot;of&quot;, sentence2 = &quot;A lot of words&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "sentence1 = &quot;Eating right now&quot;, sentence2 = &quot;Eating&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"My name is Haley\"\n\"My Haley\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"of\"\n\"A lot of words\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"Eating right now\"\n\"Eating\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "sentence1 = \"My name is Haley\", sentence2 = \"My Haley\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "sentence1 = \"of\", sentence2 = \"A lot of words\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "sentence1 = \"Eating right now\", sentence2 = \"Eating\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sentence-similarity-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:22.428Z",
+    "collectedAt": "2026-10-19T18:40:28.260Z",
     "sourceUpdatedAt": null
   }
 }

@@ -58,34 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,0,1], edges = [[0,1],[1,2]]",
+      "input": "[1,0,1]\n[[0,1],[1,2]]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [1], edges = []",
+      "input": "[1]\n[]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,0,1]\n[[0,1],[1,2]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1]\n[]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "nums = [1,0,1], edges = [[0,1],[1,2]]",
       "expectedOutput": "2"
     },
     {
       "input": "nums = [1], edges = []",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,0,1]\n[[0,1],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]\n[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,1,2], edges = [[1,2],[2,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -103,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-connected-subgraphs-with-even-node-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:09.193Z",
+    "collectedAt": "2026-10-19T18:40:15.046Z",
     "sourceUpdatedAt": null
   }
 }

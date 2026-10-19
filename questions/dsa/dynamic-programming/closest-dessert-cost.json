@@ -60,20 +60,32 @@
   },
   "publicTests": [
     {
-      "input": "baseCosts = [1,7], toppingCosts = [3,4], target = 10",
+      "input": "[1,7]\n[3,4]\n10",
       "expectedOutput": "10"
     },
     {
-      "input": "baseCosts = [2,3], toppingCosts = [4,5,100], target = 18",
+      "input": "[2,3]\n[4,5,100]\n18",
       "expectedOutput": "17"
     },
     {
-      "input": "baseCosts = [3,10], toppingCosts = [2,5], target = 9",
+      "input": "[3,10]\n[2,5]\n9",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "[1,7]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2,3]\n[4,5,100]\n18",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[3,10]\n[2,5]\n9",
+      "expectedOutput": "8"
+    },
+    {
       "input": "baseCosts = [1,7], toppingCosts = [3,4], target = 10",
       "expectedOutput": "10"
     },
@@ -84,38 +96,6 @@
     {
       "input": "baseCosts = [3,10], toppingCosts = [2,5], target = 9",
       "expectedOutput": "8"
-    },
-    {
-      "input": "[1,7]\n[3,4]\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3]\n[4,5,100]\n18",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,10]\n[2,5]\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "baseCosts = [3,4], toppingCosts = [5,6,101], target = 19",
-      "expectedOutput": null
-    },
-    {
-      "input": "baseCosts = [4,11], toppingCosts = [3,6], target = 10",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,8]\n[4,5]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,4]\n[5,6,101]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "baseCosts = [2,8], toppingCosts = [4,5], target = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/closest-dessert-cost/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:59.900Z",
+    "collectedAt": "2026-10-19T18:40:14.433Z",
     "sourceUpdatedAt": null
   }
 }

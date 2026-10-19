@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0.(52)&quot;, t = &quot;0.5(25)&quot;",
+      "input": "s = \"0.(52)\", t = \"0.5(25)\"",
       "output": "true",
-      "explanation": "Because &quot;0.(52)&quot; represents 0.52525252..., and &quot;0.5(25)&quot; represents 0.52525252525..... , the strings represent the same number."
+      "explanation": "Because \"0.(52)\" represents 0.52525252..., and \"0.5(25)\" represents 0.52525252525..... , the strings represent the same number."
     },
     {
-      "input": "s = &quot;0.1666(6)&quot;, t = &quot;0.166(66)&quot;",
+      "input": "s = \"0.1666(6)\", t = \"0.166(66)\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;0.9(9)&quot;, t = &quot;1.&quot;",
+      "input": "s = \"0.9(9)\", t = \"1.\"",
       "output": "true",
-      "explanation": "&quot;0.9(9)&quot; represents 0.999999999... repeated forever, which equals 1.  [See this link for an explanation.]\n&quot;1.&quot; represents the number 1, which is formed correctly: (IntegerPart) = &quot;1&quot; and (NonRepeatingPart) = &quot;&quot;."
+      "explanation": "\"0.9(9)\" represents 0.999999999... repeated forever, which equals 1.  [See this link for an explanation.]\n\"1.\" represents the number 1, which is formed correctly: (IntegerPart) = \"1\" and (NonRepeatingPart) = \"\"."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0.(52)&quot;, t = &quot;0.5(25)&quot;",
+      "input": "\"0.(52)\"\n\"0.5(25)\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;0.1666(6)&quot;, t = &quot;0.166(66)&quot;",
+      "input": "\"0.1666(6)\"\n\"0.166(66)\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;0.9(9)&quot;, t = &quot;1.&quot;",
+      "input": "\"0.9(9)\"\n\"1.\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0.(52)&quot;, t = &quot;0.5(25)&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;0.1666(6)&quot;, t = &quot;0.166(66)&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;0.9(9)&quot;, t = &quot;1.&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"0.(52)\"\n\"0.5(25)\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"0.1666(6)\"\n\"0.166(66)\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"0.9(9)\"\n\"1.\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"0.(52)\", t = \"0.5(25)\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"0.1666(6)\", t = \"0.166(66)\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1.(53)\"\n\"1.6(26)\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1.1667(7)\"\n\"1.167(67)\"",
-      "expectedOutput": null
+      "input": "s = \"0.9(9)\", t = \"1.\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/equal-rational-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.175Z",
+    "collectedAt": "2026-10-19T18:40:17.023Z",
     "sourceUpdatedAt": null
   }
 }

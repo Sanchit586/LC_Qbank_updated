@@ -288,6 +288,53 @@ export function slugify(text) {
 }
 
 /**
+ * Robustly decodes all HTML entities into their plain text / JSON equivalents.
+ *
+ * @param {string} text - The input string containing HTML entities.
+ * @returns {string} The decoded string.
+ */
+export function unescapeHtml(text) {
+  if (!text || typeof text !== 'string') return text;
+  return text
+    .replace(/&quot;/g, '"')
+    .replace(/&apos;/g, "'")
+    .replace(/&#39;/g, "'")
+    .replace(/&#40;/g, '(')
+    .replace(/&#41;/g, ')')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&amp;/g, '&')
+    .replace(/&nbsp;/g, ' ')
+    .replace(/&minus;/g, '-')
+    .replace(/&times;/g, '×')
+    .replace(/&divide;/g, '÷')
+    .replace(/&plusmn;/g, '±')
+    .replace(/&le;/g, '<=')
+    .replace(/&ge;/g, '>=')
+    .replace(/&ne;/g, '!=')
+    .replace(/&asymp;/g, '≈')
+    .replace(/&rarr;/g, '→')
+    .replace(/&larr;/g, '←')
+    .replace(/&uarr;/g, '↑')
+    .replace(/&darr;/g, '↓')
+    .replace(/&mdash;/g, '—')
+    .replace(/&ndash;/g, '–')
+    .replace(/&rsquo;/g, '’')
+    .replace(/&lsquo;/g, '‘')
+    .replace(/&rdquo;/g, '”')
+    .replace(/&ldquo;/g, '“')
+    .replace(/&oplus;/g, '⊕')
+    .replace(/&empty;/g, '∅')
+    .replace(/&lfloor;/g, '⌊')
+    .replace(/&rfloor;/g, '⌋')
+    .replace(/&lceil;/g, '⌈')
+    .replace(/&rceil;/g, '⌉')
+    .replace(/&frasl;/g, '/')
+    .replace(/&#(\d+);/g, (_, code) => String.fromCharCode(Number(code)))
+    .replace(/&#x([0-9a-fA-F]+);/g, (_, code) => String.fromCharCode(parseInt(code, 16)));
+}
+
+/**
  * Returns a promise that resolves after `ms` milliseconds.
  *
  * @param {number} ms - Milliseconds to sleep.

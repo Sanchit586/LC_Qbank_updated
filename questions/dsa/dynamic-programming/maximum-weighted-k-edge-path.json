@@ -63,20 +63,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1,1],[1,2,2]], k = 2, t = 4",
+      "input": "3\n[[0,1,1],[1,2,2]]\n2\n4",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, edges = [[0,1,2],[0,2,3]], k = 1, t = 3",
+      "input": "3\n[[0,1,2],[0,2,3]]\n1\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, edges = [[0,1,6],[1,2,8]], k = 1, t = 6",
+      "input": "3\n[[0,1,6],[1,2,8]]\n1\n6",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[0,1,1],[1,2,2]]\n2\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n[[0,1,2],[0,2,3]]\n1\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n[[0,1,6],[1,2,8]]\n1\n6",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "n = 3, edges = [[0,1,1],[1,2,2]], k = 2, t = 4",
       "expectedOutput": "3"
     },
@@ -87,38 +99,6 @@
     {
       "input": "n = 3, edges = [[0,1,6],[1,2,8]], k = 1, t = 6",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "3\n[[0,1,1],[1,2,2]]\n2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,2],[0,2,3]]\n1\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,6],[1,2,8]]\n1\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,3],[1,3,4]], k = 2, t = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,7],[2,3,9]], k = 2, t = 7",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2,2],[2,3,3]]\n3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2,3],[1,3,4]]\n2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,2],[2,3,3]], k = 3, t = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -134,7 +114,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-weighted-k-edge-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:37.475Z",
+    "collectedAt": "2026-10-19T18:40:23.012Z",
     "sourceUpdatedAt": null
   }
 }

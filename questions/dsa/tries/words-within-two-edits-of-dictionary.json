@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "queries = [&quot;word&quot;,&quot;note&quot;,&quot;ants&quot;,&quot;wood&quot;], dictionary = [&quot;wood&quot;,&quot;joke&quot;,&quot;moat&quot;]",
-      "output": "[&quot;word&quot;,&quot;note&quot;,&quot;wood&quot;]",
-      "explanation": "- Changing the &#39;r&#39; in &quot;word&quot; to &#39;o&#39; allows it to equal the dictionary word &quot;wood&quot;.\n- Changing the &#39;n&#39; to &#39;j&#39; and the &#39;t&#39; to &#39;k&#39; in &quot;note&quot; changes it to &quot;joke&quot;.\n- It would take more than 2 edits for &quot;ants&quot; to equal a dictionary word.\n- &quot;wood&quot; can remain unchanged (0 edits) and match the corresponding dictionary word.\nThus, we return [&quot;word&quot;,&quot;note&quot;,&quot;wood&quot;]."
+      "input": "queries = [\"word\",\"note\",\"ants\",\"wood\"], dictionary = [\"wood\",\"joke\",\"moat\"]",
+      "output": "[\"word\",\"note\",\"wood\"]",
+      "explanation": "- Changing the 'r' in \"word\" to 'o' allows it to equal the dictionary word \"wood\".\n- Changing the 'n' to 'j' and the 't' to 'k' in \"note\" changes it to \"joke\".\n- It would take more than 2 edits for \"ants\" to equal a dictionary word.\n- \"wood\" can remain unchanged (0 edits) and match the corresponding dictionary word.\nThus, we return [\"word\",\"note\",\"wood\"]."
     },
     {
-      "input": "queries = [&quot;yes&quot;], dictionary = [&quot;not&quot;]",
+      "input": "queries = [\"yes\"], dictionary = [\"not\"]",
       "output": "[]",
-      "explanation": "Applying any two edits to &quot;yes&quot; cannot make it equal to &quot;not&quot;. Thus, we return an empty array."
+      "explanation": "Applying any two edits to \"yes\" cannot make it equal to \"not\". Thus, we return an empty array."
     }
   ],
   "starterCode": {
@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "queries = [&quot;word&quot;,&quot;note&quot;,&quot;ants&quot;,&quot;wood&quot;], dictionary = [&quot;wood&quot;,&quot;joke&quot;,&quot;moat&quot;]",
-      "expectedOutput": "[&quot;word&quot;,&quot;note&quot;,&quot;wood&quot;]"
+      "input": "[\"word\",\"note\",\"ants\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"note\",\"wood\"]"
     },
     {
-      "input": "queries = [&quot;yes&quot;], dictionary = [&quot;not&quot;]",
+      "input": "[\"yes\"]\n[\"not\"]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "queries = [&quot;word&quot;,&quot;note&quot;,&quot;ants&quot;,&quot;wood&quot;], dictionary = [&quot;wood&quot;,&quot;joke&quot;,&quot;moat&quot;]",
-      "expectedOutput": "[&quot;word&quot;,&quot;note&quot;,&quot;wood&quot;]"
-    },
-    {
-      "input": "queries = [&quot;yes&quot;], dictionary = [&quot;not&quot;]",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "[\"word\",\"note\",\"ants\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"word\",\"note\",\"wood\"]"
     },
     {
       "input": "[\"yes\"]\n[\"not\"]",
-      "expectedOutput": null
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "queries = [\"word\",\"note\",\"ants\",\"wood\"], dictionary = [\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"note\",\"wood\"]"
+    },
+    {
+      "input": "queries = [\"yes\"], dictionary = [\"not\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -91,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/words-within-two-edits-of-dictionary/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.846Z",
+    "collectedAt": "2026-10-19T18:40:31.813Z",
     "sourceUpdatedAt": null
   }
 }

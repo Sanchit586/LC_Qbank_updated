@@ -58,24 +58,40 @@
   },
   "publicTests": [
     {
-      "input": "red = 2, blue = 4",
+      "input": "2\n4",
       "expectedOutput": "3"
     },
     {
-      "input": "red = 2, blue = 1",
+      "input": "2\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "red = 1, blue = 1",
+      "input": "1\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "red = 10, blue = 1",
+      "input": "10\n1",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "2\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "10\n1",
+      "expectedOutput": "2"
+    },
+    {
       "input": "red = 2, blue = 4",
       "expectedOutput": "3"
     },
@@ -90,42 +106,6 @@
     {
       "input": "red = 10, blue = 1",
       "expectedOutput": "2"
-    },
-    {
-      "input": "2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "red = 11, blue = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "red = 3, blue = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "red = 3, blue = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "red = 2, blue = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -140,7 +120,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-height-of-a-triangle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.113Z",
+    "collectedAt": "2026-10-19T18:40:21.907Z",
     "sourceUpdatedAt": null
   }
 }

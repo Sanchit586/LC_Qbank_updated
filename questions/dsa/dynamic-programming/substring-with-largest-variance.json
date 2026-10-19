@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aababbb&quot;",
+      "input": "s = \"aababbb\"",
       "output": "3",
-      "explanation": "All possible variances along with their respective substrings are listed below:\n- Variance 0 for substrings &quot;a&quot;, &quot;aa&quot;, &quot;ab&quot;, &quot;abab&quot;, &quot;aababb&quot;, &quot;ba&quot;, &quot;b&quot;, &quot;bb&quot;, and &quot;bbb&quot;.\n- Variance 1 for substrings &quot;aab&quot;, &quot;aba&quot;, &quot;abb&quot;, &quot;aabab&quot;, &quot;ababb&quot;, &quot;aababbb&quot;, and &quot;bab&quot;.\n- Variance 2 for substrings &quot;aaba&quot;, &quot;ababbb&quot;, &quot;abbb&quot;, and &quot;babb&quot;.\n- Variance 3 for substring &quot;babbb&quot;.\nSince the largest possible variance is 3, we return it."
+      "explanation": "All possible variances along with their respective substrings are listed below:\n- Variance 0 for substrings \"a\", \"aa\", \"ab\", \"abab\", \"aababb\", \"ba\", \"b\", \"bb\", and \"bbb\".\n- Variance 1 for substrings \"aab\", \"aba\", \"abb\", \"aabab\", \"ababb\", \"aababbb\", and \"bab\".\n- Variance 2 for substrings \"aaba\", \"ababbb\", \"abbb\", and \"babb\".\n- Variance 3 for substring \"babbb\".\nSince the largest possible variance is 3, we return it."
     },
     {
-      "input": "s = &quot;abcde&quot;",
+      "input": "s = \"abcde\"",
       "output": "0",
       "explanation": "No letter occurs more than once in s, so the variance of every substring is 0."
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aababbb&quot;",
+      "input": "\"aababbb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcde&quot;",
+      "input": "\"abcde\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aababbb&quot;",
+      "input": "\"aababbb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcde&quot;",
+      "input": "\"abcde\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"aababbb\"",
-      "expectedOutput": null
+      "input": "s = \"aababbb\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abcde\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcde\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/substring-with-largest-variance/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.740Z",
+    "collectedAt": "2026-10-19T18:40:30.454Z",
     "sourceUpdatedAt": null
   }
 }

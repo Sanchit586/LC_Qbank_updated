@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "palindrome = &quot;abccba&quot;",
-      "output": "&quot;aaccba&quot;",
-      "explanation": "There are many ways to make &quot;abccba&quot; not a palindrome, such as &quot;zbccba&quot;, &quot;aaccba&quot;, and &quot;abacba&quot;.\nOf all the ways, &quot;aaccba&quot; is the lexicographically smallest."
+      "input": "palindrome = \"abccba\"",
+      "output": "\"aaccba\"",
+      "explanation": "There are many ways to make \"abccba\" not a palindrome, such as \"zbccba\", \"aaccba\", and \"abacba\".\nOf all the ways, \"aaccba\" is the lexicographically smallest."
     },
     {
-      "input": "palindrome = &quot;a&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "There is no way to replace a single character to make &quot;a&quot; not a palindrome, so return an empty string."
+      "input": "palindrome = \"a\"",
+      "output": "\"\"",
+      "explanation": "There is no way to replace a single character to make \"a\" not a palindrome, so return an empty string."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "palindrome = &quot;abccba&quot;",
-      "expectedOutput": "&quot;aaccba&quot;"
+      "input": "\"abccba\"",
+      "expectedOutput": "\"aaccba\""
     },
     {
-      "input": "palindrome = &quot;a&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "palindrome = &quot;abccba&quot;",
-      "expectedOutput": "&quot;aaccba&quot;"
-    },
-    {
-      "input": "palindrome = &quot;a&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"abccba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aaccba\""
     },
     {
       "input": "\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "palindrome = \"abccba\"",
+      "expectedOutput": "\"aaccba\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "palindrome = \"a\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/break-a-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:43.972Z",
+    "collectedAt": "2026-10-19T18:40:13.704Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,28 +17,28 @@
   ],
   "examples": [
     {
-      "input": "path = &quot;/home/&quot;",
-      "output": "&quot;/home&quot;",
+      "input": "path = \"/home/\"",
+      "output": "\"/home\"",
       "explanation": null
     },
     {
-      "input": "path = &quot;/home//foo/&quot;",
-      "output": "&quot;/home/foo&quot;",
+      "input": "path = \"/home//foo/\"",
+      "output": "\"/home/foo\"",
       "explanation": null
     },
     {
-      "input": "path = &quot;/home/user/Documents/../Pictures&quot;",
-      "output": "&quot;/home/user/Pictures&quot;",
+      "input": "path = \"/home/user/Documents/../Pictures\"",
+      "output": "\"/home/user/Pictures\"",
       "explanation": null
     },
     {
-      "input": "path = &quot;/../&quot;",
-      "output": "&quot;/&quot;",
+      "input": "path = \"/../\"",
+      "output": "\"/\"",
       "explanation": null
     },
     {
-      "input": "path = &quot;/.../a/../b/c/../d/./&quot;",
-      "output": "&quot;/.../b/d&quot;",
+      "input": "path = \"/.../a/../b/c/../d/./\"",
+      "output": "\"/.../b/d\"",
       "explanation": null
     }
   ],
@@ -65,106 +65,66 @@
   },
   "publicTests": [
     {
-      "input": "path = &quot;/home/&quot;",
-      "expectedOutput": "&quot;/home&quot;"
+      "input": "\"/home/\"",
+      "expectedOutput": "\"/home\""
     },
     {
-      "input": "path = &quot;/home//foo/&quot;",
-      "expectedOutput": "&quot;/home/foo&quot;"
+      "input": "\"/home//foo/\"",
+      "expectedOutput": "\"/home/foo\""
     },
     {
-      "input": "path = &quot;/home/user/Documents/../Pictures&quot;",
-      "expectedOutput": "&quot;/home/user/Pictures&quot;"
+      "input": "\"/home/user/Documents/../Pictures\"",
+      "expectedOutput": "\"/home/user/Pictures\""
     },
     {
-      "input": "path = &quot;/../&quot;",
-      "expectedOutput": "&quot;/&quot;"
+      "input": "\"/../\"",
+      "expectedOutput": "\"/\""
     },
     {
-      "input": "path = &quot;/.../a/../b/c/../d/./&quot;",
-      "expectedOutput": "&quot;/.../b/d&quot;"
+      "input": "\"/.../a/../b/c/../d/./\"",
+      "expectedOutput": "\"/.../b/d\""
     }
   ],
   "testCases": [
     {
-      "input": "path = &quot;/home/&quot;",
-      "expectedOutput": "&quot;/home&quot;"
-    },
-    {
-      "input": "path = &quot;/home//foo/&quot;",
-      "expectedOutput": "&quot;/home/foo&quot;"
-    },
-    {
-      "input": "path = &quot;/home/user/Documents/../Pictures&quot;",
-      "expectedOutput": "&quot;/home/user/Pictures&quot;"
-    },
-    {
-      "input": "path = &quot;/../&quot;",
-      "expectedOutput": "&quot;/&quot;"
-    },
-    {
-      "input": "path = &quot;/.../a/../b/c/../d/./&quot;",
-      "expectedOutput": "&quot;/.../b/d&quot;"
-    },
-    {
       "input": "\"/home/\"",
-      "expectedOutput": null
+      "expectedOutput": "\"/home\""
     },
     {
       "input": "\"/home//foo/\"",
-      "expectedOutput": null
+      "expectedOutput": "\"/home/foo\""
     },
     {
       "input": "\"/home/user/Documents/../Pictures\"",
-      "expectedOutput": null
+      "expectedOutput": "\"/home/user/Pictures\""
     },
     {
       "input": "\"/../\"",
-      "expectedOutput": null
+      "expectedOutput": "\"/\""
     },
     {
       "input": "\"/.../a/../b/c/../d/./\"",
-      "expectedOutput": null
+      "expectedOutput": "\"/.../b/d\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "path = \"/home/\"",
+      "expectedOutput": "\"/home\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "path = \"/home//foo/\"",
+      "expectedOutput": "\"/home/foo\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "path = \"/home/user/Documents/../Pictures\"",
+      "expectedOutput": "\"/home/user/Pictures\""
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
+      "input": "path = \"/../\"",
+      "expectedOutput": "\"/\""
     },
     {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
+      "input": "path = \"/.../a/../b/c/../d/./\"",
+      "expectedOutput": "\"/.../b/d\""
     }
   ],
   "sqlSchema": null,
@@ -176,7 +136,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/simplify-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:29.084Z",
+    "collectedAt": "2026-10-19T18:40:29.633Z",
     "sourceUpdatedAt": null
   }
 }

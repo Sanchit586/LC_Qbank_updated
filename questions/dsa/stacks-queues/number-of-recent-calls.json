@@ -16,7 +16,13 @@
     "Each test case will call ping with strictly increasing values of t.",
     "At most 104 calls will be made to ping."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"RecentCounter\", \"ping\", \"ping\", \"ping\", \"ping\"]\n[[], [1], [100], [3001], [3002]]",
+      "output": "[null, 1, 2, 3, 3]",
+      "explanation": "RecentCounter recentCounter = new RecentCounter();\nrecentCounter.ping(1);     // requests = [1], range is [-2999,1], return 1\nrecentCounter.ping(100);   // requests = [1, 100], range is [-2900,100], return 2\nrecentCounter.ping(3001);  // requests = [1, 100, 3001], range is [1,3001], return 3\nrecentCounter.ping(3002);  // requests = [1, 100, 3001, 3002], range is [2,3002], return 3"
+    }
+  ],
   "starterCode": {
     "cpp": "class RecentCounter {\npublic:\n    RecentCounter() {\n        \n    }\n    \n    int ping(int t) {\n        \n    }\n};\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * RecentCounter* obj = new RecentCounter();\n * int param_1 = obj->ping(t);\n */",
     "java": "class RecentCounter {\n\n    public RecentCounter() {\n        \n    }\n    \n    public int ping(int t) {\n        \n    }\n}\n\n/**\n * Your RecentCounter object will be instantiated and called as such:\n * RecentCounter obj = new RecentCounter();\n * int param_1 = obj.ping(t);\n */",
@@ -41,17 +47,17 @@
   "publicTests": [
     {
       "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, 3, 3]"
     }
   ],
   "testCases": [
     {
       "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[1],[100],[3001],[3002]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, 3, 3]"
     },
     {
-      "input": "[\"RecentCounter\",\"ping\",\"ping\",\"ping\",\"ping\"]\n[[],[2],[101],[3002],[3003]]",
-      "expectedOutput": null
+      "input": "[\"RecentCounter\", \"ping\", \"ping\", \"ping\", \"ping\"]\n[[], [1], [100], [3001], [3002]]",
+      "expectedOutput": "[null, 1, 2, 3, 3]"
     }
   ],
   "sqlSchema": null,
@@ -63,7 +69,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-recent-calls/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.002Z",
+    "collectedAt": "2026-10-19T18:40:26.035Z",
     "sourceUpdatedAt": null
   }
 }

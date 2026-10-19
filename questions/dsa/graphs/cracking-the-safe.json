@@ -22,13 +22,13 @@
   "examples": [
     {
       "input": "n = 1, k = 2",
-      "output": "&quot;10&quot;",
-      "explanation": "The password is a single digit, so enter each digit. &quot;01&quot; would also unlock the safe."
+      "output": "\"10\"",
+      "explanation": "The password is a single digit, so enter each digit. \"01\" would also unlock the safe."
     },
     {
       "input": "n = 2, k = 2",
-      "output": "&quot;01100&quot;",
-      "explanation": "For each possible password:\n- &quot;00&quot; is typed in starting from the 4th digit.\n- &quot;01&quot; is typed in starting from the 1st digit.\n- &quot;10&quot; is typed in starting from the 3rd digit.\n- &quot;11&quot; is typed in starting from the 2nd digit.\nThus &quot;01100&quot; will unlock the safe. &quot;10011&quot;, and &quot;11001&quot; would also unlock the safe."
+      "output": "\"01100\"",
+      "explanation": "For each possible password:\n- \"00\" is typed in starting from the 4th digit.\n- \"01\" is typed in starting from the 1st digit.\n- \"10\" is typed in starting from the 3rd digit.\n- \"11\" is typed in starting from the 2nd digit.\nThus \"01100\" will unlock the safe. \"10011\", and \"11001\" would also unlock the safe."
     }
   ],
   "starterCode": {
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1, k = 2",
-      "expectedOutput": "&quot;10&quot;"
+      "input": "1\n2",
+      "expectedOutput": "\"10\""
     },
     {
-      "input": "n = 2, k = 2",
-      "expectedOutput": "&quot;01100&quot;"
+      "input": "2\n2",
+      "expectedOutput": "\"01100\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 1, k = 2",
-      "expectedOutput": "&quot;10&quot;"
-    },
-    {
-      "input": "n = 2, k = 2",
-      "expectedOutput": "&quot;01100&quot;"
-    },
-    {
       "input": "1\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"10\""
     },
     {
       "input": "2\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"01100\""
     },
     {
-      "input": "n = 2, k = 3",
-      "expectedOutput": null
+      "input": "n = 1, k = 2",
+      "expectedOutput": "\"10\""
+    },
+    {
+      "input": "n = 2, k = 2",
+      "expectedOutput": "\"01100\""
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cracking-the-safe/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:29.816Z",
+    "collectedAt": "2026-10-19T18:40:16.046Z",
     "sourceUpdatedAt": null
   }
 }

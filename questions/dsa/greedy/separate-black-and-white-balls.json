@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;101&quot;",
+      "input": "s = \"101\"",
       "output": "1",
-      "explanation": "We can group all the black balls to the right in the following way:\n- Swap s[0] and s[1], s = &quot;011&quot;.\nInitially, 1s are not grouped together, requiring at least 1 step to group them to the right."
+      "explanation": "We can group all the black balls to the right in the following way:\n- Swap s[0] and s[1], s = \"011\".\nInitially, 1s are not grouped together, requiring at least 1 step to group them to the right."
     },
     {
-      "input": "s = &quot;100&quot;",
+      "input": "s = \"100\"",
       "output": "2",
-      "explanation": "We can group all the black balls to the right in the following way:\n- Swap s[0] and s[1], s = &quot;010&quot;.\n- Swap s[1] and s[2], s = &quot;001&quot;.\nIt can be proven that the minimum number of steps needed is 2."
+      "explanation": "We can group all the black balls to the right in the following way:\n- Swap s[0] and s[1], s = \"010\".\n- Swap s[1] and s[2], s = \"001\".\nIt can be proven that the minimum number of steps needed is 2."
     },
     {
-      "input": "s = &quot;0111&quot;",
+      "input": "s = \"0111\"",
       "output": "0",
       "explanation": "All the black balls are already grouped to the right."
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;100&quot;",
+      "input": "\"100\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;0111&quot;",
+      "input": "\"0111\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;100&quot;",
+      "input": "\"100\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;0111&quot;",
+      "input": "\"0111\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"101\"",
-      "expectedOutput": null
+      "input": "s = \"101\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"100\"",
-      "expectedOutput": null
+      "input": "s = \"100\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"0111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"0111\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/separate-black-and-white-balls/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:22.435Z",
+    "collectedAt": "2026-10-19T18:40:28.265Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2,3], nums2 = [1,2,3], x = 4",
+      "input": "[1,2,3]\n[1,2,3]\n4",
       "expectedOutput": "3"
     },
     {
-      "input": "nums1 = [1,2,3], nums2 = [3,3,3], x = 4",
+      "input": "[1,2,3]\n[3,3,3]\n4",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[1,2,3]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2,3]\n[3,3,3]\n4",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums1 = [1,2,3], nums2 = [1,2,3], x = 4",
       "expectedOutput": "3"
     },
     {
       "input": "nums1 = [1,2,3], nums2 = [3,3,3], x = 4",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[1,2,3]\n[1,2,3]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n[3,3,3]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3,4], nums3 = [2,3,4], x = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-make-array-sum-at-most-x/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:21.998Z",
+    "collectedAt": "2026-10-19T18:40:25.179Z",
     "sourceUpdatedAt": null
   }
 }

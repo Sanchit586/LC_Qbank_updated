@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "p = [1,2,3], q = [1,2,3]",
+      "input": "[1,2,3]\n[1,2,3]",
       "expectedOutput": "true"
     },
     {
-      "input": "p = [1,2], q = [1,null,2]",
+      "input": "[1,2]\n[1,null,2]",
       "expectedOutput": "false"
     },
     {
-      "input": "p = [1,2,1], q = [1,1,2]",
+      "input": "[1,2,1]\n[1,1,2]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[1,2,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2]\n[1,null,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2,1]\n[1,1,2]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "p = [1,2,3], q = [1,2,3]",
       "expectedOutput": "true"
     },
@@ -80,38 +92,6 @@
     {
       "input": "p = [1,2,1], q = [1,1,2]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[1,2,3]\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2]\n[1,null,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,1]\n[1,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "p = [2,3], q = [2,null,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "p = [2,3,2], q = [2,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4]\n[2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3]\n[2,null,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "p = [2,3,4], q = [2,3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/same-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:16.893Z",
+    "collectedAt": "2026-10-19T18:40:28.086Z",
     "sourceUpdatedAt": null
   }
 }

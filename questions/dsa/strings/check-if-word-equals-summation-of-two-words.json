@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "firstWord = &quot;acb&quot;, secondWord = &quot;cba&quot;, targetWord = &quot;cdb&quot;",
+      "input": "firstWord = \"acb\", secondWord = \"cba\", targetWord = \"cdb\"",
       "output": "true",
-      "explanation": "The numerical value of firstWord is &quot;acb&quot; -&gt; &quot;021&quot; -&gt; 21.\nThe numerical value of secondWord is &quot;cba&quot; -&gt; &quot;210&quot; -&gt; 210.\nThe numerical value of targetWord is &quot;cdb&quot; -&gt; &quot;231&quot; -&gt; 231.\nWe return true because 21 + 210 == 231."
+      "explanation": "The numerical value of firstWord is \"acb\" -> \"021\" -> 21.\nThe numerical value of secondWord is \"cba\" -> \"210\" -> 210.\nThe numerical value of targetWord is \"cdb\" -> \"231\" -> 231.\nWe return true because 21 + 210 == 231."
     },
     {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aab&quot;",
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aab\"",
       "output": "false",
-      "explanation": "The numerical value of firstWord is &quot;aaa&quot; -&gt; &quot;000&quot; -&gt; 0.\nThe numerical value of secondWord is &quot;a&quot; -&gt; &quot;0&quot; -&gt; 0.\nThe numerical value of targetWord is &quot;aab&quot; -&gt; &quot;001&quot; -&gt; 1.\nWe return false because 0 + 0 != 1."
+      "explanation": "The numerical value of firstWord is \"aaa\" -> \"000\" -> 0.\nThe numerical value of secondWord is \"a\" -> \"0\" -> 0.\nThe numerical value of targetWord is \"aab\" -> \"001\" -> 1.\nWe return false because 0 + 0 != 1."
     },
     {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aaaa&quot;",
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aaaa\"",
       "output": "true",
-      "explanation": "The numerical value of firstWord is &quot;aaa&quot; -&gt; &quot;000&quot; -&gt; 0.\nThe numerical value of secondWord is &quot;a&quot; -&gt; &quot;0&quot; -&gt; 0.\nThe numerical value of targetWord is &quot;aaaa&quot; -&gt; &quot;0000&quot; -&gt; 0.\nWe return true because 0 + 0 == 0."
+      "explanation": "The numerical value of firstWord is \"aaa\" -> \"000\" -> 0.\nThe numerical value of secondWord is \"a\" -> \"0\" -> 0.\nThe numerical value of targetWord is \"aaaa\" -> \"0000\" -> 0.\nWe return true because 0 + 0 == 0."
     }
   ],
   "starterCode": {
@@ -53,42 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "firstWord = &quot;acb&quot;, secondWord = &quot;cba&quot;, targetWord = &quot;cdb&quot;",
+      "input": "\"acb\"\n\"cba\"\n\"cdb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aab&quot;",
+      "input": "\"aaa\"\n\"a\"\n\"aab\"",
       "expectedOutput": "false"
     },
     {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aaaa&quot;",
+      "input": "\"aaa\"\n\"a\"\n\"aaaa\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "firstWord = &quot;acb&quot;, secondWord = &quot;cba&quot;, targetWord = &quot;cdb&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aab&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "firstWord = &quot;aaa&quot;, secondWord = &quot;a&quot;, targetWord = &quot;aaaa&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"acb\"\n\"cba\"\n\"cdb\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"aaa\"\n\"a\"\n\"aab\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"aaa\"\n\"a\"\n\"aaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
+    },
+    {
+      "input": "firstWord = \"acb\", secondWord = \"cba\", targetWord = \"cdb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aaaa\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -103,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-word-equals-summation-of-two-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:56.922Z",
+    "collectedAt": "2026-10-19T18:40:14.287Z",
     "sourceUpdatedAt": null
   }
 }

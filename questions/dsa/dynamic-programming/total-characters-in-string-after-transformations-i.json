@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcyy&quot;, t = 2",
+      "input": "s = \"abcyy\", t = 2",
       "output": "7",
-      "explanation": "First Transformation (t = 1):\n\n\t\n\t\t&#39;a&#39; becomes &#39;b&#39;\n\t\t&#39;b&#39; becomes &#39;c&#39;\n\t\t&#39;c&#39; becomes &#39;d&#39;\n\t\t&#39;y&#39; becomes &#39;z&#39;\n\t\t&#39;y&#39; becomes &#39;z&#39;\n\t\tString after the first transformation: &quot;bcdzz&quot;\n\t\n\t\n\tSecond Transformation (t = 2):\n\t\n\t\t&#39;b&#39; becomes &#39;c&#39;\n\t\t&#39;c&#39; becomes &#39;d&#39;\n\t\t&#39;d&#39; becomes &#39;e&#39;\n\t\t&#39;z&#39; becomes &quot;ab&quot;\n\t\t&#39;z&#39; becomes &quot;ab&quot;\n\t\tString after the second transformation: &quot;cdeabab&quot;\n\t\n\t\n\tFinal Length of the string: The string is &quot;cdeabab&quot;, which has 7 characters."
+      "explanation": "First Transformation (t = 1):\n\n\t\n\t\t'a' becomes 'b'\n\t\t'b' becomes 'c'\n\t\t'c' becomes 'd'\n\t\t'y' becomes 'z'\n\t\t'y' becomes 'z'\n\t\tString after the first transformation: \"bcdzz\"\n\t\n\t\n\tSecond Transformation (t = 2):\n\t\n\t\t'b' becomes 'c'\n\t\t'c' becomes 'd'\n\t\t'd' becomes 'e'\n\t\t'z' becomes \"ab\"\n\t\t'z' becomes \"ab\"\n\t\tString after the second transformation: \"cdeabab\"\n\t\n\t\n\tFinal Length of the string: The string is \"cdeabab\", which has 7 characters."
     },
     {
-      "input": "s = &quot;azbk&quot;, t = 1",
+      "input": "s = \"azbk\", t = 1",
       "output": "5",
-      "explanation": "First Transformation (t = 1):\n\n\t\n\t\t&#39;a&#39; becomes &#39;b&#39;\n\t\t&#39;z&#39; becomes &quot;ab&quot;\n\t\t&#39;b&#39; becomes &#39;c&#39;\n\t\t&#39;k&#39; becomes &#39;l&#39;\n\t\tString after the first transformation: &quot;babcl&quot;\n\t\n\t\n\tFinal Length of the string: The string is &quot;babcl&quot;, which has 5 characters."
+      "explanation": "First Transformation (t = 1):\n\n\t\n\t\t'a' becomes 'b'\n\t\t'z' becomes \"ab\"\n\t\t'b' becomes 'c'\n\t\t'k' becomes 'l'\n\t\tString after the first transformation: \"babcl\"\n\t\n\t\n\tFinal Length of the string: The string is \"babcl\", which has 5 characters."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcyy&quot;, t = 2",
+      "input": "\"abcyy\"\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;azbk&quot;, t = 1",
+      "input": "\"azbk\"\n1",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcyy&quot;, t = 2",
+      "input": "\"abcyy\"\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;azbk&quot;, t = 1",
+      "input": "\"azbk\"\n1",
       "expectedOutput": "5"
     },
     {
-      "input": "\"abcyy\"\n2",
-      "expectedOutput": null
+      "input": "s = \"abcyy\", t = 2",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"azbk\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcyy&quot;, t = 3",
-      "expectedOutput": null
+      "input": "s = \"azbk\", t = 1",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/total-characters-in-string-after-transformations-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:59.528Z",
+    "collectedAt": "2026-10-19T18:40:31.108Z",
     "sourceUpdatedAt": null
   }
 }

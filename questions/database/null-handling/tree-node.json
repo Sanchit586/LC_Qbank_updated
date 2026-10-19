@@ -31,38 +31,30 @@
   },
   "publicTests": [
     {
-      "input": "Tree table:\n+----+------+\n| id | p_id |\n+----+------+\n| 1  | null |\n| 2  | 1    |\n| 3  | 1    |\n| 4  | 2    |\n| 5  | 2    |\n+----+------+",
+      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null],[2,1],[3,1],[4,2],[5,2]]}}",
       "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n| 2  | Inner |\n| 3  | Leaf  |\n| 4  | Leaf  |\n| 5  | Leaf  |\n+----+-------+"
     },
     {
-      "input": "Tree table:\n+----+------+\n| id | p_id |\n+----+------+\n| 1  | null |\n+----+------+",
+      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null]]}}",
       "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n+----+-------+"
     }
   ],
   "testCases": [
     {
+      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null],[2,1],[3,1],[4,2],[5,2]]}}",
+      "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n| 2  | Inner |\n| 3  | Leaf  |\n| 4  | Leaf  |\n| 5  | Leaf  |\n+----+-------+"
+    },
+    {
+      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null]]}}",
+      "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n+----+-------+"
+    },
+    {
       "input": "Tree table:\n+----+------+\n| id | p_id |\n+----+------+\n| 1  | null |\n| 2  | 1    |\n| 3  | 1    |\n| 4  | 2    |\n| 5  | 2    |\n+----+------+",
       "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n| 2  | Inner |\n| 3  | Leaf  |\n| 4  | Leaf  |\n| 5  | Leaf  |\n+----+-------+"
     },
     {
       "input": "Tree table:\n+----+------+\n| id | p_id |\n+----+------+\n| 1  | null |\n+----+------+",
       "expectedOutput": "+----+-------+\n| id | type  |\n+----+-------+\n| 1  | Root  |\n+----+-------+"
-    },
-    {
-      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null],[2,1],[3,1],[4,2],[5,2]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Tree\":[\"id\",\"p_id\"]},\"rows\":{\"Tree\":[[1,null],[2,null],[3,null],[4,null],[5,null]]}}",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": "Create table If Not Exists Tree (id int, p_id int)\n\nTruncate table Tree",
@@ -82,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/tree-node/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:02.151Z",
+    "collectedAt": "2026-10-19T18:40:31.222Z",
     "sourceUpdatedAt": null
   }
 }

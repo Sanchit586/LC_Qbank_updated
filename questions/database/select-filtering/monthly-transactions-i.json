@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Transactions table:\n+------+---------+----------+--------+------------+\n| id   | country | state    | amount | trans_date |\n+------+---------+----------+--------+------------+\n| 121  | US      | approved | 1000   | 2018-12-18 |\n| 122  | US      | declined | 2000   | 2018-12-19 |\n| 123  | US      | approved | 2000   | 2019-01-01 |\n| 124  | DE      | approved | 2000   | 2019-01-07 |\n+------+---------+----------+--------+------------+",
+      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,\"2018-12-18\"],[122,\"US\",\"declined\",2000,\"2018-12-19\"],[123,\"US\",\"approved\",2000,\"2019-01-01\"],[124,\"DE\",\"approved\",2000,\"2019-01-07\"]]}}",
       "expectedOutput": "+----------+---------+-------------+----------------+--------------------+-----------------------+\n| month    | country | trans_count | approved_count | trans_total_amount | approved_total_amount |\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n| 2018-12  | US      | 2           | 1              | 3000               | 1000                  |\n| 2019-01  | US      | 1           | 1              | 2000               | 2000                  |\n| 2019-01  | DE      | 1           | 1              | 2000               | 2000                  |\n+----------+---------+-------------+----------------+--------------------+-----------------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Transactions table:\n+------+---------+----------+--------+------------+\n| id   | country | state    | amount | trans_date |\n+------+---------+----------+--------+------------+\n| 121  | US      | approved | 1000   | 2018-12-18 |\n| 122  | US      | declined | 2000   | 2018-12-19 |\n| 123  | US      | approved | 2000   | 2019-01-01 |\n| 124  | DE      | approved | 2000   | 2019-01-07 |\n+------+---------+----------+--------+------------+",
+      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,\"2018-12-18\"],[122,\"US\",\"declined\",2000,\"2018-12-19\"],[123,\"US\",\"approved\",2000,\"2019-01-01\"],[124,\"DE\",\"approved\",2000,\"2019-01-07\"]]}}",
       "expectedOutput": "+----------+---------+-------------+----------------+--------------------+-----------------------+\n| month    | country | trans_count | approved_count | trans_total_amount | approved_total_amount |\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n| 2018-12  | US      | 2           | 1              | 3000               | 1000                  |\n| 2019-01  | US      | 1           | 1              | 2000               | 2000                  |\n| 2019-01  | DE      | 1           | 1              | 2000               | 2000                  |\n+----------+---------+-------------+----------------+--------------------+-----------------------+"
     },
     {
-      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,\"2018-12-18\"],[122,\"US\",\"declined\",2000,\"2018-12-19\"],[123,\"US\",\"approved\",2000,\"2019-01-01\"],[124,\"DE\",\"approved\",2000,\"2019-01-07\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,\"2018-12-18\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Transactions\":[\"id\",\"country\",\"state\",\"amount\",\"trans_date\"]},\"rows\":{\"Transactions\":[[121,\"US\",\"approved\",1000,null],[122,\"US\",\"declined\",2000,null],[123,\"US\",\"approved\",2000,null],[124,\"DE\",\"approved\",2000,null]]}}",
-      "expectedOutput": null
+      "input": "Transactions table:\n+------+---------+----------+--------+------------+\n| id   | country | state    | amount | trans_date |\n+------+---------+----------+--------+------------+\n| 121  | US      | approved | 1000   | 2018-12-18 |\n| 122  | US      | declined | 2000   | 2018-12-19 |\n| 123  | US      | approved | 2000   | 2019-01-01 |\n| 124  | DE      | approved | 2000   | 2019-01-07 |\n+------+---------+----------+--------+------------+",
+      "expectedOutput": "+----------+---------+-------------+----------------+--------------------+-----------------------+\n| month    | country | trans_count | approved_count | trans_total_amount | approved_total_amount |\n+----------+---------+-------------+----------------+--------------------+-----------------------+\n| 2018-12  | US      | 2           | 1              | 3000               | 1000                  |\n| 2019-01  | US      | 1           | 1              | 2000               | 2000                  |\n| 2019-01  | DE      | 1           | 1              | 2000               | 2000                  |\n+----------+---------+-------------+----------------+--------------------+-----------------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Transactions (id int, country varchar(4), state enum('approved', 'declined'), amount int, trans_date date)\n\nTruncate table Transactions",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/monthly-transactions-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:33.533Z",
+    "collectedAt": "2026-10-19T18:40:25.424Z",
     "sourceUpdatedAt": null
   }
 }

@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "arr1 = [1,2,3,4], arr2 = [-1,4,5,6]",
+      "input": "[1,2,3,4]\n[-1,4,5,6]",
       "expectedOutput": "13"
     },
     {
-      "input": "arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]",
+      "input": "[1,-2,-5,0,10]\n[0,-2,-1,-7,-4]",
       "expectedOutput": "20"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4]\n[-1,4,5,6]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[1,-2,-5,0,10]\n[0,-2,-1,-7,-4]",
+      "expectedOutput": "20"
+    },
+    {
       "input": "arr1 = [1,2,3,4], arr2 = [-1,4,5,6]",
       "expectedOutput": "13"
     },
     {
       "input": "arr1 = [1,-2,-5,0,10], arr2 = [0,-2,-1,-7,-4]",
       "expectedOutput": "20"
-    },
-    {
-      "input": "[1,2,3,4]\n[-1,4,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,-2,-5,0,10]\n[0,-2,-1,-7,-4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr2 = [2,3,4,5], arr3 = [-2,5,6,7]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-of-absolute-value-expression/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:22.147Z",
+    "collectedAt": "2026-10-19T18:40:22.257Z",
     "sourceUpdatedAt": null
   }
 }

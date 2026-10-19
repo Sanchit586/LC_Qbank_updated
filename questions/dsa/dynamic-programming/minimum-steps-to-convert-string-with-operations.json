@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;abcdf&quot;, word2 = &quot;dacbe&quot;",
+      "input": "word1 = \"abcdf\", word2 = \"dacbe\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;abceded&quot;, word2 = &quot;baecfef&quot;",
+      "input": "word1 = \"abceded\", word2 = \"baecfef\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;abcdef&quot;, word2 = &quot;fedabc&quot;",
+      "input": "word1 = \"abcdef\", word2 = \"fedabc\"",
       "output": "2",
       "explanation": null
     }
@@ -54,90 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;abcdf&quot;, word2 = &quot;dacbe&quot;",
+      "input": "\"abcdf\"\n\"dacbe\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word1 = &quot;abceded&quot;, word2 = &quot;baecfef&quot;",
+      "input": "\"abceded\"\n\"baecfef\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word1 = &quot;abcdef&quot;, word2 = &quot;fedabc&quot;",
+      "input": "\"abcdef\"\n\"fedabc\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;abcdf&quot;, word2 = &quot;dacbe&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "word1 = &quot;abceded&quot;, word2 = &quot;baecfef&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "word1 = &quot;abcdef&quot;, word2 = &quot;fedabc&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"abcdf\"\n\"dacbe\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"abceded\"\n\"baecfef\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"abcdef\"\n\"fedabc\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcdf\", word2 = \"dacbe\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "word1 = \"abceded\", word2 = \"baecfef\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcdef\", word2 = \"fedabc\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-steps-to-convert-string-with-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:18.855Z",
+    "collectedAt": "2026-10-19T18:40:25.027Z",
     "sourceUpdatedAt": null
   }
 }

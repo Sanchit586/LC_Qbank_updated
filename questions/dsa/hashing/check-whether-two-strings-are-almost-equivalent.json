@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;aaaa&quot;, word2 = &quot;bccb&quot;",
+      "input": "word1 = \"aaaa\", word2 = \"bccb\"",
       "output": "false",
-      "explanation": "There are 4 &#39;a&#39;s in &quot;aaaa&quot; but 0 &#39;a&#39;s in &quot;bccb&quot;.\nThe difference is 4, which is more than the allowed 3."
+      "explanation": "There are 4 'a's in \"aaaa\" but 0 'a's in \"bccb\".\nThe difference is 4, which is more than the allowed 3."
     },
     {
-      "input": "word1 = &quot;abcdeef&quot;, word2 = &quot;abaaacc&quot;",
+      "input": "word1 = \"abcdeef\", word2 = \"abaaacc\"",
       "output": "true",
-      "explanation": "The differences between the frequencies of each letter in word1 and word2 are at most 3:\n- &#39;a&#39; appears 1 time in word1 and 4 times in word2. The difference is 3.\n- &#39;b&#39; appears 1 time in word1 and 1 time in word2. The difference is 0.\n- &#39;c&#39; appears 1 time in word1 and 2 times in word2. The difference is 1.\n- &#39;d&#39; appears 1 time in word1 and 0 times in word2. The difference is 1.\n- &#39;e&#39; appears 2 times in word1 and 0 times in word2. The difference is 2.\n- &#39;f&#39; appears 1 time in word1 and 0 times in word2. The difference is 1."
+      "explanation": "The differences between the frequencies of each letter in word1 and word2 are at most 3:\n- 'a' appears 1 time in word1 and 4 times in word2. The difference is 3.\n- 'b' appears 1 time in word1 and 1 time in word2. The difference is 0.\n- 'c' appears 1 time in word1 and 2 times in word2. The difference is 1.\n- 'd' appears 1 time in word1 and 0 times in word2. The difference is 1.\n- 'e' appears 2 times in word1 and 0 times in word2. The difference is 2.\n- 'f' appears 1 time in word1 and 0 times in word2. The difference is 1."
     },
     {
-      "input": "word1 = &quot;cccddabba&quot;, word2 = &quot;babababab&quot;",
+      "input": "word1 = \"cccddabba\", word2 = \"babababab\"",
       "output": "true",
-      "explanation": "The differences between the frequencies of each letter in word1 and word2 are at most 3:\n- &#39;a&#39; appears 2 times in word1 and 4 times in word2. The difference is 2.\n- &#39;b&#39; appears 2 times in word1 and 5 times in word2. The difference is 3.\n- &#39;c&#39; appears 3 times in word1 and 0 times in word2. The difference is 3.\n- &#39;d&#39; appears 2 times in word1 and 0 times in word2. The difference is 2."
+      "explanation": "The differences between the frequencies of each letter in word1 and word2 are at most 3:\n- 'a' appears 2 times in word1 and 4 times in word2. The difference is 2.\n- 'b' appears 2 times in word1 and 5 times in word2. The difference is 3.\n- 'c' appears 3 times in word1 and 0 times in word2. The difference is 3.\n- 'd' appears 2 times in word1 and 0 times in word2. The difference is 2."
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;aaaa&quot;, word2 = &quot;bccb&quot;",
+      "input": "\"aaaa\"\n\"bccb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = &quot;abcdeef&quot;, word2 = &quot;abaaacc&quot;",
+      "input": "\"abcdeef\"\n\"abaaacc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = &quot;cccddabba&quot;, word2 = &quot;babababab&quot;",
+      "input": "\"cccddabba\"\n\"babababab\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;aaaa&quot;, word2 = &quot;bccb&quot;",
+      "input": "\"aaaa\"\n\"bccb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = &quot;abcdeef&quot;, word2 = &quot;abaaacc&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "word1 = &quot;cccddabba&quot;, word2 = &quot;babababab&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"aaaa\"\n\"bccb\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abcdeef\"\n\"abaaacc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"cccddabba\"\n\"babababab\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word1 = \"aaaa\", word2 = \"bccb\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcdeef\", word2 = \"abaaacc\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"cccddabba\", word2 = \"babababab\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-whether-two-strings-are-almost-equivalent/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:57.649Z",
+    "collectedAt": "2026-10-19T18:40:14.311Z",
     "sourceUpdatedAt": null
   }
 }

@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,1,1],[1,0,0],[1,1,1]]",
+      "input": "[[1,1,1],[1,0,0],[1,1,1]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[1,1,1],[1,0,1],[1,1,1]]",
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1,1],[1,0,0],[1,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "grid = [[1,1,1],[1,0,0],[1,1,1]]",
       "expectedOutput": "true"
     },
     {
       "input": "grid = [[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,1,1],[1,0,0],[1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2,2],[2,1,1],[2,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/disconnect-path-in-a-binary-matrix-by-at-most-one-flip/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.906Z",
+    "collectedAt": "2026-10-19T18:40:16.693Z",
     "sourceUpdatedAt": null
   }
 }

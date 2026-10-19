@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, minProfit = 3, group = [2,2], profit = [2,3]",
+      "input": "5\n3\n[2,2]\n[2,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]",
+      "input": "10\n5\n[2,3,5]\n[6,7,8]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "5\n3\n[2,2]\n[2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "10\n5\n[2,3,5]\n[6,7,8]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "n = 5, minProfit = 3, group = [2,2], profit = [2,3]",
       "expectedOutput": "2"
     },
     {
       "input": "n = 10, minProfit = 5, group = [2,3,5], profit = [6,7,8]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "5\n3\n[2,2]\n[2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n5\n[2,3,5]\n[6,7,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, minProfit = 4, group = [3,3], profit = [3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/profitable-schemes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.778Z",
+    "collectedAt": "2026-10-19T18:40:27.021Z",
     "sourceUpdatedAt": null
   }
 }

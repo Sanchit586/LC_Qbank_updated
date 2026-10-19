@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [60,60,60], nums2 = [10,90,10]",
+      "input": "[60,60,60]\n[10,90,10]",
       "expectedOutput": "210"
     },
     {
-      "input": "nums1 = [20,40,20,70,30], nums2 = [50,20,50,40,20]",
+      "input": "[20,40,20,70,30]\n[50,20,50,40,20]",
       "expectedOutput": "220"
     },
     {
-      "input": "nums1 = [7,11,13], nums2 = [1,1,1]",
+      "input": "[7,11,13]\n[1,1,1]",
       "expectedOutput": "31"
     }
   ],
   "testCases": [
     {
+      "input": "[60,60,60]\n[10,90,10]",
+      "expectedOutput": "210"
+    },
+    {
+      "input": "[20,40,20,70,30]\n[50,20,50,40,20]",
+      "expectedOutput": "220"
+    },
+    {
+      "input": "[7,11,13]\n[1,1,1]",
+      "expectedOutput": "31"
+    },
+    {
       "input": "nums1 = [60,60,60], nums2 = [10,90,10]",
       "expectedOutput": "210"
     },
@@ -79,38 +91,6 @@
     {
       "input": "nums1 = [7,11,13], nums2 = [1,1,1]",
       "expectedOutput": "31"
-    },
-    {
-      "input": "[60,60,60]\n[10,90,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[20,40,20,70,30]\n[50,20,50,40,20]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,11,13]\n[1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [21,41,21,71,31], nums3 = [51,21,51,41,21]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [8,12,14], nums3 = [2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[61,61,61]\n[11,91,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[21,41,21,71,31]\n[51,21,51,41,21]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [61,61,61], nums3 = [11,91,11]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-score-of-spliced-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:30.124Z",
+    "collectedAt": "2026-10-19T18:40:22.576Z",
     "sourceUpdatedAt": null
   }
 }

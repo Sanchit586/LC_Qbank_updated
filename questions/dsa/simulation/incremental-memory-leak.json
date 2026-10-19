@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "memory1 = 2, memory2 = 2",
+      "input": "2\n2",
       "expectedOutput": "[3,1,0]"
     },
     {
-      "input": "memory1 = 8, memory2 = 11",
+      "input": "8\n11",
       "expectedOutput": "[6,0,4]"
     }
   ],
   "testCases": [
     {
+      "input": "2\n2",
+      "expectedOutput": "[3,1,0]"
+    },
+    {
+      "input": "8\n11",
+      "expectedOutput": "[6,0,4]"
+    },
+    {
       "input": "memory1 = 2, memory2 = 2",
       "expectedOutput": "[3,1,0]"
     },
     {
       "input": "memory1 = 8, memory2 = 11",
       "expectedOutput": "[6,0,4]"
-    },
-    {
-      "input": "2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "memory2 = 3, memory3 = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/incremental-memory-leak/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:30.058Z",
+    "collectedAt": "2026-10-19T18:40:19.508Z",
     "sourceUpdatedAt": null
   }
 }

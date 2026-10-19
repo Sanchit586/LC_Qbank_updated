@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "value = [6,5,4], decay = [2,1,1], m = 4",
+      "input": "[6,5,4]\n[2,1,1]\n4",
       "expectedOutput": "19"
     },
     {
-      "input": "value = [7,2,2], decay = [3,2,1], m = 2",
+      "input": "[7,2,2]\n[3,2,1]\n2",
       "expectedOutput": "11"
     },
     {
-      "input": "value = [4,3], decay = [5,4], m = 5",
+      "input": "[4,3]\n[5,4]\n5",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "[6,5,4]\n[2,1,1]\n4",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[7,2,2]\n[3,2,1]\n2",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[4,3]\n[5,4]\n5",
+      "expectedOutput": "7"
+    },
+    {
       "input": "value = [6,5,4], decay = [2,1,1], m = 4",
       "expectedOutput": "19"
     },
@@ -81,38 +93,6 @@
     {
       "input": "value = [4,3], decay = [5,4], m = 5",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[6,5,4]\n[2,1,1]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,2,2]\n[3,2,1]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3]\n[5,4]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "value = [8,3,3], decay = [4,3,2], m = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "value = [5,4], decay = [6,5], m = 6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,6,5]\n[3,2,2]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[8,3,3]\n[4,3,2]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "value = [7,6,5], decay = [3,2,2], m = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-total-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.699Z",
+    "collectedAt": "2026-10-19T18:40:22.851Z",
     "sourceUpdatedAt": null
   }
 }

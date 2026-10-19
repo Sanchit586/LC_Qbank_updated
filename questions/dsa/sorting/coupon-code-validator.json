@@ -21,13 +21,13 @@
   ],
   "examples": [
     {
-      "input": "code = [&quot;SAVE20&quot;,&quot;&quot;,&quot;PHARMA5&quot;,&quot;SAVE@20&quot;], businessLine = [&quot;restaurant&quot;,&quot;grocery&quot;,&quot;pharmacy&quot;,&quot;restaurant&quot;], isActive = [true,true,true,true]",
-      "output": "[&quot;PHARMA5&quot;,&quot;SAVE20&quot;]",
+      "input": "code = [\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"], businessLine = [\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"], isActive = [true,true,true,true]",
+      "output": "[\"PHARMA5\",\"SAVE20\"]",
       "explanation": "First coupon is valid.\n\tSecond coupon has empty code (invalid).\n\tThird coupon is valid.\n\tFourth coupon has special character @ (invalid)."
     },
     {
-      "input": "code = [&quot;GROCERY15&quot;,&quot;ELECTRONICS_50&quot;,&quot;DISCOUNT10&quot;], businessLine = [&quot;grocery&quot;,&quot;electronics&quot;,&quot;invalid&quot;], isActive = [false,true,true]",
-      "output": "[&quot;ELECTRONICS_50&quot;]",
+      "input": "code = [\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"], businessLine = [\"grocery\",\"electronics\",\"invalid\"], isActive = [false,true,true]",
+      "output": "[\"ELECTRONICS_50\"]",
       "explanation": "First coupon is inactive (invalid).\n\tSecond coupon is valid.\n\tThird coupon has invalid business line (invalid)."
     }
   ],
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "code = [&quot;SAVE20&quot;,&quot;&quot;,&quot;PHARMA5&quot;,&quot;SAVE@20&quot;], businessLine = [&quot;restaurant&quot;,&quot;grocery&quot;,&quot;pharmacy&quot;,&quot;restaurant&quot;], isActive = [true,true,true,true]",
-      "expectedOutput": "[&quot;PHARMA5&quot;,&quot;SAVE20&quot;]"
+      "input": "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
     },
     {
-      "input": "code = [&quot;GROCERY15&quot;,&quot;ELECTRONICS_50&quot;,&quot;DISCOUNT10&quot;], businessLine = [&quot;grocery&quot;,&quot;electronics&quot;,&quot;invalid&quot;], isActive = [false,true,true]",
-      "expectedOutput": "[&quot;ELECTRONICS_50&quot;]"
+      "input": "[\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"]\n[\"grocery\",\"electronics\",\"invalid\"]\n[false,true,true]",
+      "expectedOutput": "[\"ELECTRONICS_50\"]"
     }
   ],
   "testCases": [
     {
-      "input": "code = [&quot;SAVE20&quot;,&quot;&quot;,&quot;PHARMA5&quot;,&quot;SAVE@20&quot;], businessLine = [&quot;restaurant&quot;,&quot;grocery&quot;,&quot;pharmacy&quot;,&quot;restaurant&quot;], isActive = [true,true,true,true]",
-      "expectedOutput": "[&quot;PHARMA5&quot;,&quot;SAVE20&quot;]"
-    },
-    {
-      "input": "code = [&quot;GROCERY15&quot;,&quot;ELECTRONICS_50&quot;,&quot;DISCOUNT10&quot;], businessLine = [&quot;grocery&quot;,&quot;electronics&quot;,&quot;invalid&quot;], isActive = [false,true,true]",
-      "expectedOutput": "[&quot;ELECTRONICS_50&quot;]"
-    },
-    {
       "input": "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
-      "expectedOutput": null
+      "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
     },
     {
       "input": "[\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"]\n[\"grocery\",\"electronics\",\"invalid\"]\n[false,true,true]",
-      "expectedOutput": null
+      "expectedOutput": "[\"ELECTRONICS_50\"]"
     },
     {
-      "input": "code = [&quot;SAVE21&quot;,&quot;&quot;,&quot;PHARMA6&quot;,&quot;SAVE@21&quot;], businessLine = [&quot;restaurant&quot;,&quot;grocery&quot;,&quot;pharmacy&quot;,&quot;restaurant&quot;], isActive = [true,true,true,true]",
-      "expectedOutput": null
+      "input": "code = [\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"], businessLine = [\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"], isActive = [true,true,true,true]",
+      "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
+    },
+    {
+      "input": "code = [\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"], businessLine = [\"grocery\",\"electronics\",\"invalid\"], isActive = [false,true,true]",
+      "expectedOutput": "[\"ELECTRONICS_50\"]"
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/coupon-code-validator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.336Z",
+    "collectedAt": "2026-10-19T18:40:16.011Z",
     "sourceUpdatedAt": null
   }
 }

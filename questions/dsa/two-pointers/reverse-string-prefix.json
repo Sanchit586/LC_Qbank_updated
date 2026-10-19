@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "output": "&quot;bacd&quot;",
+      "input": "s = \"abcd\", k = 2",
+      "output": "\"bacd\"",
       "explanation": "​​​​​​​"
     },
     {
-      "input": "s = &quot;xyz&quot;, k = 3",
-      "output": "&quot;zyx&quot;",
+      "input": "s = \"xyz\", k = 3",
+      "output": "\"zyx\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;hey&quot;, k = 1",
-      "output": "&quot;hey&quot;",
+      "input": "s = \"hey\", k = 1",
+      "output": "\"hey\"",
       "explanation": null
     }
   ],
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;bacd&quot;"
+      "input": "\"abcd\"\n2",
+      "expectedOutput": "\"bacd\""
     },
     {
-      "input": "s = &quot;xyz&quot;, k = 3",
-      "expectedOutput": "&quot;zyx&quot;"
+      "input": "\"xyz\"\n3",
+      "expectedOutput": "\"zyx\""
     },
     {
-      "input": "s = &quot;hey&quot;, k = 1",
-      "expectedOutput": "&quot;hey&quot;"
+      "input": "\"hey\"\n1",
+      "expectedOutput": "\"hey\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, k = 2",
-      "expectedOutput": "&quot;bacd&quot;"
-    },
-    {
-      "input": "s = &quot;xyz&quot;, k = 3",
-      "expectedOutput": "&quot;zyx&quot;"
-    },
-    {
-      "input": "s = &quot;hey&quot;, k = 1",
-      "expectedOutput": "&quot;hey&quot;"
-    },
-    {
       "input": "\"abcd\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"bacd\""
     },
     {
       "input": "\"xyz\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"zyx\""
     },
     {
       "input": "\"hey\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"hey\""
     },
     {
-      "input": "s = &quot;xyz&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abcd\", k = 2",
+      "expectedOutput": "\"bacd\""
     },
     {
-      "input": "s = &quot;hey&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"xyz\", k = 3",
+      "expectedOutput": "\"zyx\""
     },
     {
-      "input": "\"abcd\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"xyz\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcd&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"hey\", k = 1",
+      "expectedOutput": "\"hey\""
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-string-prefix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.934Z",
+    "collectedAt": "2026-10-19T18:40:27.885Z",
     "sourceUpdatedAt": null
   }
 }

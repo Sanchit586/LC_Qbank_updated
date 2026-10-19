@@ -30,17 +30,17 @@
   ],
   "examples": [
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]",
+      "input": "equations = [[\"a\",\"b\"],[\"b\",\"c\"]], values = [2.0,3.0], queries = [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
       "output": "[6.00000,0.50000,-1.00000,1.00000,-1.00000]",
-      "explanation": "Given: a / b = 2.0, b / c = 3.0\nqueries are: a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? \nreturn: [6.0, 0.5, -1.0, 1.0, -1.0 ]\nnote: x is undefined =&gt; -1.0"
+      "explanation": "Given: a / b = 2.0, b / c = 3.0\nqueries are: a / c = ?, b / a = ?, a / e = ?, a / a = ?, x / x = ? \nreturn: [6.0, 0.5, -1.0, 1.0, -1.0 ]\nnote: x is undefined => -1.0"
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [1.5,2.5,5.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]",
+      "input": "equations = [[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]], values = [1.5,2.5,5.0], queries = [[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
       "output": "[3.75000,0.40000,5.00000,0.20000]",
       "explanation": null
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;]], values = [0.5], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]",
+      "input": "equations = [[\"a\",\"b\"]], values = [0.5], queries = [[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
       "output": "[0.50000,2.00000,-1.00000,-1.00000]",
       "explanation": null
     }
@@ -68,62 +68,42 @@
   },
   "publicTests": [
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]",
+      "input": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
       "expectedOutput": "[6.00000,0.50000,-1.00000,1.00000,-1.00000]"
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [1.5,2.5,5.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]",
+      "input": "[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
       "expectedOutput": "[3.75000,0.40000,5.00000,0.20000]"
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;]], values = [0.5], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]",
+      "input": "[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
       "expectedOutput": "[0.50000,2.00000,-1.00000,-1.00000]"
     }
   ],
   "testCases": [
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [2.0,3.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]",
+      "input": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
       "expectedOutput": "[6.00000,0.50000,-1.00000,1.00000,-1.00000]"
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [1.5,2.5,5.0], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]",
+      "input": "[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
       "expectedOutput": "[3.75000,0.40000,5.00000,0.20000]"
     },
     {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;]], values = [0.5], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]",
+      "input": "[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
       "expectedOutput": "[0.50000,2.00000,-1.00000,-1.00000]"
     },
     {
-      "input": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[2.0,3.0]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
-      "expectedOutput": null
+      "input": "equations = [[\"a\",\"b\"],[\"b\",\"c\"]], values = [2.0,3.0], queries = [[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
+      "expectedOutput": "[6.00000,0.50000,-1.00000,1.00000,-1.00000]"
     },
     {
-      "input": "[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[1.5,2.5,5.0]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
-      "expectedOutput": null
+      "input": "equations = [[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]], values = [1.5,2.5,5.0], queries = [[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
+      "expectedOutput": "[3.75000,0.40000,5.00000,0.20000]"
     },
     {
-      "input": "[[\"a\",\"b\"]]\n[0.5]\n[[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;],[&quot;bc&quot;,&quot;cd&quot;]], values = [2.6,3.6,6.1], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;c&quot;,&quot;b&quot;],[&quot;bc&quot;,&quot;cd&quot;],[&quot;cd&quot;,&quot;bc&quot;]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;]], values = [1.6], queries = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;c&quot;],[&quot;x&quot;,&quot;y&quot;]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[\"a\",\"b\"],[\"b\",\"c\"]]\n[3.1,4.1]\n[[\"a\",\"c\"],[\"b\",\"a\"],[\"a\",\"e\"],[\"a\",\"a\"],[\"x\",\"x\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[\"a\",\"b\"],[\"b\",\"c\"],[\"bc\",\"cd\"]]\n[2.6,3.6,6.1]\n[[\"a\",\"c\"],[\"c\",\"b\"],[\"bc\",\"cd\"],[\"cd\",\"bc\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "equations = [[&quot;a&quot;,&quot;b&quot;],[&quot;b&quot;,&quot;c&quot;]], values = [3.1,4.1], queries = [[&quot;a&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;e&quot;],[&quot;a&quot;,&quot;a&quot;],[&quot;x&quot;,&quot;x&quot;]]",
-      "expectedOutput": null
+      "input": "equations = [[\"a\",\"b\"]], values = [0.5], queries = [[\"a\",\"b\"],[\"b\",\"a\"],[\"a\",\"c\"],[\"x\",\"y\"]]",
+      "expectedOutput": "[0.50000,2.00000,-1.00000,-1.00000]"
     }
   ],
   "sqlSchema": null,
@@ -137,7 +117,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/evaluate-division/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:52.860Z",
+    "collectedAt": "2026-10-19T18:40:17.086Z",
     "sourceUpdatedAt": null
   }
 }

@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2",
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n2",
       "expectedOutput": "60"
     },
     {
-      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 3",
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n3",
       "expectedOutput": "68"
     },
     {
-      "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 4",
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n4",
       "expectedOutput": "72"
     }
   ],
   "testCases": [
     {
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n2",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n3",
+      "expectedOutput": "68"
+    },
+    {
+      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n4",
+      "expectedOutput": "72"
+    },
+    {
       "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 2",
       "expectedOutput": "60"
     },
@@ -83,38 +95,6 @@
     {
       "input": "n = 6, speed = [2,10,3,1,5,8], efficiency = [5,4,3,9,7,2], k = 4",
       "expectedOutput": "72"
-    },
-    {
-      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[2,10,3,1,5,8]\n[5,4,3,9,7,2]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, speed = [3,11,4,2,6,9], efficiency = [6,5,4,10,8,3], k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, speed = [3,11,4,2,6,9], efficiency = [6,5,4,10,8,3], k = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n[3,11,4,2,6,9]\n[6,5,4,10,8,3]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n[3,11,4,2,6,9]\n[6,5,4,10,8,3]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, speed = [3,11,4,2,6,9], efficiency = [6,5,4,10,8,3], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-performance-of-a-team/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:23.159Z",
+    "collectedAt": "2026-10-19T18:40:22.316Z",
     "sourceUpdatedAt": null
   }
 }

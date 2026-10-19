@@ -20,12 +20,12 @@
   ],
   "examples": [
     {
-      "input": "l = &quot;23&quot;, r = &quot;28&quot;, b = 8",
+      "input": "l = \"23\", r = \"28\", b = 8",
       "output": "3",
       "explanation": "The numbers from 23 to 28 in base 8 are: 27, 30, 31, 32, 33, and 34.\n\tOut of these, 27, 33, and 34 have non-decreasing digits. Hence, the output is 3."
     },
     {
-      "input": "l = &quot;2&quot;, r = &quot;7&quot;, b = 2",
+      "input": "l = \"2\", r = \"7\", b = 2",
       "output": "2",
       "explanation": "The numbers from 2 to 7 in base 2 are: 10, 11, 100, 101, 110, and 111.\n\tOut of these, 11 and 111 have non-decreasing digits. Hence, the output is 2."
     }
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "l = &quot;23&quot;, r = &quot;28&quot;, b = 8",
+      "input": "\"23\"\n\"28\"\n8",
       "expectedOutput": "3"
     },
     {
-      "input": "l = &quot;2&quot;, r = &quot;7&quot;, b = 2",
+      "input": "\"2\"\n\"7\"\n2",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "l = &quot;23&quot;, r = &quot;28&quot;, b = 8",
+      "input": "\"23\"\n\"28\"\n8",
       "expectedOutput": "3"
     },
     {
-      "input": "l = &quot;2&quot;, r = &quot;7&quot;, b = 2",
+      "input": "\"2\"\n\"7\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "\"23\"\n\"28\"\n8",
-      "expectedOutput": null
+      "input": "l = \"23\", r = \"28\", b = 8",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"2\"\n\"7\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = &quot;24&quot;, r = &quot;29&quot;, b = 9",
-      "expectedOutput": null
+      "input": "l = \"2\", r = \"7\", b = 2",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-numbers-with-non-decreasing-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.785Z",
+    "collectedAt": "2026-10-19T18:40:15.381Z",
     "sourceUpdatedAt": null
   }
 }

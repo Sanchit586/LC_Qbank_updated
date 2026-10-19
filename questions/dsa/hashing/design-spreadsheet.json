@@ -22,9 +22,9 @@
   ],
   "examples": [
     {
-      "input": "[&quot;Spreadsheet&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;resetCell&quot;, &quot;getValue&quot;]\n[[3], [&quot;=5+7&quot;], [&quot;A1&quot;, 10], [&quot;=A1+6&quot;], [&quot;B2&quot;, 15], [&quot;=A1+B2&quot;], [&quot;A1&quot;], [&quot;=A1+B2&quot;]]",
+      "input": "[\"Spreadsheet\", \"getValue\", \"setCell\", \"getValue\", \"setCell\", \"getValue\", \"resetCell\", \"getValue\"]\n[[3], [\"=5+7\"], [\"A1\", 10], [\"=A1+6\"], [\"B2\", 15], [\"=A1+B2\"], [\"A1\"], [\"=A1+B2\"]]",
       "output": "[null, 12, null, 16, null, 25, null, 15]",
-      "explanation": null
+      "explanation": "Spreadsheet spreadsheet = new Spreadsheet(3); // Initializes a spreadsheet with 3 rows and 26 columns\nspreadsheet.getValue(\"=5+7\"); // returns 12 (5+7)\nspreadsheet.setCell(\"A1\", 10); // sets A1 to 10\nspreadsheet.getValue(\"=A1+6\"); // returns 16 (10+6)\nspreadsheet.setCell(\"B2\", 15); // sets B2 to 15\nspreadsheet.getValue(\"=A1+B2\"); // returns 25 (10+15)\nspreadsheet.resetCell(\"A1\"); // resets A1 to 0\nspreadsheet.getValue(\"=A1+B2\"); // returns 15 (0+15)"
     }
   ],
   "starterCode": {
@@ -50,22 +50,18 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;Spreadsheet&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;resetCell&quot;, &quot;getValue&quot;]\n[[3], [&quot;=5+7&quot;], [&quot;A1&quot;, 10], [&quot;=A1+6&quot;], [&quot;B2&quot;, 15], [&quot;=A1+B2&quot;], [&quot;A1&quot;], [&quot;=A1+B2&quot;]]",
+      "input": "[\"Spreadsheet\",\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]\n[[3],[\"=5+7\"],[\"A1\",10],[\"=A1+6\"],[\"B2\",15],[\"=A1+B2\"],[\"A1\"],[\"=A1+B2\"]]",
       "expectedOutput": "[null, 12, null, 16, null, 25, null, 15]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;Spreadsheet&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;resetCell&quot;, &quot;getValue&quot;]\n[[3], [&quot;=5+7&quot;], [&quot;A1&quot;, 10], [&quot;=A1+6&quot;], [&quot;B2&quot;, 15], [&quot;=A1+B2&quot;], [&quot;A1&quot;], [&quot;=A1+B2&quot;]]",
+      "input": "[\"Spreadsheet\",\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]\n[[3],[\"=5+7\"],[\"A1\",10],[\"=A1+6\"],[\"B2\",15],[\"=A1+B2\"],[\"A1\"],[\"=A1+B2\"]]",
       "expectedOutput": "[null, 12, null, 16, null, 25, null, 15]"
     },
     {
-      "input": "[\"Spreadsheet\",\"getValue\",\"setCell\",\"getValue\",\"setCell\",\"getValue\",\"resetCell\",\"getValue\"]\n[[3],[\"=5+7\"],[\"A1\",10],[\"=A1+6\"],[\"B2\",15],[\"=A1+B2\"],[\"A1\"],[\"=A1+B2\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;Spreadsheet&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;setCell&quot;, &quot;getValue&quot;, &quot;resetCell&quot;, &quot;getValue&quot;]\n[[4], [&quot;=6+8&quot;], [&quot;A2&quot;, 11], [&quot;=A2+7&quot;], [&quot;B3&quot;, 16], [&quot;=A2+B3&quot;], [&quot;A2&quot;], [&quot;=A2+B3&quot;]]",
-      "expectedOutput": null
+      "input": "[\"Spreadsheet\", \"getValue\", \"setCell\", \"getValue\", \"setCell\", \"getValue\", \"resetCell\", \"getValue\"]\n[[3], [\"=5+7\"], [\"A1\", 10], [\"=A1+6\"], [\"B2\", 15], [\"=A1+B2\"], [\"A1\"], [\"=A1+B2\"]]",
+      "expectedOutput": "[null, 12, null, 16, null, 25, null, 15]"
     }
   ],
   "sqlSchema": null,
@@ -82,7 +78,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-spreadsheet/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.881Z",
+    "collectedAt": "2026-10-19T18:40:16.515Z",
     "sourceUpdatedAt": null
   }
 }

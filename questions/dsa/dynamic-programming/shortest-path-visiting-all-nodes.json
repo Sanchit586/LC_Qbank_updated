@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "graph = [[1,2,3],[0],[0],[0]]",
+      "input": "[[1,2,3],[0],[0],[0]]",
       "expectedOutput": "4"
     },
     {
-      "input": "graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]",
+      "input": "[[1],[0,2,4],[1,3,4],[2],[1,2]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[0],[0],[0]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1],[0,2,4],[1,3,4],[2],[1,2]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "graph = [[1,2,3],[0],[0],[0]]",
       "expectedOutput": "4"
     },
     {
       "input": "graph = [[1],[0,2,4],[1,3,4],[2],[1,2]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,2,3],[0],[0],[0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1],[0,2,4],[1,3,4],[2],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "graph = [[2,3,4],[1],[1],[1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-path-visiting-all-nodes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:28.661Z",
+    "collectedAt": "2026-10-19T18:40:29.508Z",
     "sourceUpdatedAt": null
   }
 }

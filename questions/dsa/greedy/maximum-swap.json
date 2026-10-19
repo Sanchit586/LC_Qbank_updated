@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 2736",
+      "input": "2736",
       "expectedOutput": "7236"
     },
     {
-      "input": "num = 9973",
+      "input": "9973",
       "expectedOutput": "9973"
     }
   ],
   "testCases": [
     {
+      "input": "2736",
+      "expectedOutput": "7236"
+    },
+    {
+      "input": "9973",
+      "expectedOutput": "9973"
+    },
+    {
       "input": "num = 2736",
       "expectedOutput": "7236"
     },
     {
       "input": "num = 9973",
       "expectedOutput": "9973"
-    },
-    {
-      "input": "2736",
-      "expectedOutput": null
-    },
-    {
-      "input": "9973",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -143,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-swap/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.312Z",
+    "collectedAt": "2026-10-19T18:40:22.787Z",
     "sourceUpdatedAt": null
   }
 }

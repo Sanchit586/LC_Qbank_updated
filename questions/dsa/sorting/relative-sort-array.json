@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]",
+      "input": "[2,3,1,3,2,4,6,7,9,2,19]\n[2,1,4,3,9,6]",
       "expectedOutput": "[2,2,2,1,4,3,3,9,6,7,19]"
     },
     {
-      "input": "arr1 = [28,6,22,8,44,17], arr2 = [22,28,8,6]",
+      "input": "[28,6,22,8,44,17]\n[22,28,8,6]",
       "expectedOutput": "[22,28,8,6,17,44]"
     }
   ],
   "testCases": [
     {
+      "input": "[2,3,1,3,2,4,6,7,9,2,19]\n[2,1,4,3,9,6]",
+      "expectedOutput": "[2,2,2,1,4,3,3,9,6,7,19]"
+    },
+    {
+      "input": "[28,6,22,8,44,17]\n[22,28,8,6]",
+      "expectedOutput": "[22,28,8,6,17,44]"
+    },
+    {
       "input": "arr1 = [2,3,1,3,2,4,6,7,9,2,19], arr2 = [2,1,4,3,9,6]",
       "expectedOutput": "[2,2,2,1,4,3,3,9,6,7,19]"
     },
     {
       "input": "arr1 = [28,6,22,8,44,17], arr2 = [22,28,8,6]",
       "expectedOutput": "[22,28,8,6,17,44]"
-    },
-    {
-      "input": "[2,3,1,3,2,4,6,7,9,2,19]\n[2,1,4,3,9,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[28,6,22,8,44,17]\n[22,28,8,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr2 = [3,4,2,4,3,5,7,8,10,3,20], arr3 = [3,2,5,4,10,7]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/relative-sort-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.132Z",
+    "collectedAt": "2026-10-19T18:40:27.435Z",
     "sourceUpdatedAt": null
   }
 }

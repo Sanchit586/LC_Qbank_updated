@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;)ebc#da@f(&quot;",
-      "output": "&quot;(fad@cb#e)&quot;",
-      "explanation": "The letters in the string are [&#39;e&#39;, &#39;b&#39;, &#39;c&#39;, &#39;d&#39;, &#39;a&#39;, &#39;f&#39;]:\n\n\t\n\t\tReversing them gives [&#39;f&#39;, &#39;a&#39;, &#39;d&#39;, &#39;c&#39;, &#39;b&#39;, &#39;e&#39;]\n\t\ts becomes &quot;)fad#cb@e(&quot;\n\t\n\t\n\t​​​​​​​The special characters in the string are [&#39;)&#39;, &#39;#&#39;, &#39;@&#39;, &#39;(&#39;]:\n\t\n\t\tReversing them gives [&#39;(&#39;, &#39;@&#39;, &#39;#&#39;, &#39;)&#39;]\n\t\ts becomes &quot;(fad@cb#e)&quot;"
+      "input": "s = \")ebc#da@f(\"",
+      "output": "\"(fad@cb#e)\"",
+      "explanation": "The letters in the string are ['e', 'b', 'c', 'd', 'a', 'f']:\n\n\t\n\t\tReversing them gives ['f', 'a', 'd', 'c', 'b', 'e']\n\t\ts becomes \")fad#cb@e(\"\n\t\n\t\n\t​​​​​​​The special characters in the string are [')', '#', '@', '(']:\n\t\n\t\tReversing them gives ['(', '@', '#', ')']\n\t\ts becomes \"(fad@cb#e)\""
     },
     {
-      "input": "s = &quot;z&quot;",
-      "output": "&quot;z&quot;",
+      "input": "s = \"z\"",
+      "output": "\"z\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;!@#$%^&amp;*()&quot;",
-      "output": "&quot;)(*&amp;^%$#@!&quot;",
+      "input": "s = \"!@#$%^&*()\"",
+      "output": "\")(*&^%$#@!\"",
       "explanation": null
     }
   ],
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;)ebc#da@f(&quot;",
-      "expectedOutput": "&quot;(fad@cb#e)&quot;"
+      "input": "\")ebc#da@f(\"",
+      "expectedOutput": "\"(fad@cb#e)\""
     },
     {
-      "input": "s = &quot;z&quot;",
-      "expectedOutput": "&quot;z&quot;"
+      "input": "\"z\"",
+      "expectedOutput": "\"z\""
     },
     {
-      "input": "s = &quot;!@#$%^&amp;*()&quot;",
-      "expectedOutput": "&quot;)(*&amp;^%$#@!&quot;"
+      "input": "\"!@#$%^&*()\"",
+      "expectedOutput": "\")(*&^%$#@!\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;)ebc#da@f(&quot;",
-      "expectedOutput": "&quot;(fad@cb#e)&quot;"
-    },
-    {
-      "input": "s = &quot;z&quot;",
-      "expectedOutput": "&quot;z&quot;"
-    },
-    {
-      "input": "s = &quot;!@#$%^&amp;*()&quot;",
-      "expectedOutput": "&quot;)(*&amp;^%$#@!&quot;"
-    },
-    {
       "input": "\")ebc#da@f(\"",
-      "expectedOutput": null
+      "expectedOutput": "\"(fad@cb#e)\""
     },
     {
       "input": "\"z\"",
-      "expectedOutput": null
+      "expectedOutput": "\"z\""
     },
     {
       "input": "\"!@#$%^&*()\"",
-      "expectedOutput": null
+      "expectedOutput": "\")(*&^%$#@!\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \")ebc#da@f(\"",
+      "expectedOutput": "\"(fad@cb#e)\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"z\"",
+      "expectedOutput": "\"z\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"!@#$%^&*()\"",
+      "expectedOutput": "\")(*&^%$#@!\""
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-letters-then-special-characters-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.742Z",
+    "collectedAt": "2026-10-19T18:40:27.831Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,7 +19,13 @@
     "There will be at most 2 dots in word for search queries.",
     "At most 104 calls will be made to addWord and search."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
+      "output": "[null,null,null,null,false,true,true,true]",
+      "explanation": "WordDictionary wordDictionary = new WordDictionary();\nwordDictionary.addWord(\"bad\");\nwordDictionary.addWord(\"dad\");\nwordDictionary.addWord(\"mad\");\nwordDictionary.search(\"pad\"); // return False\nwordDictionary.search(\"bad\"); // return True\nwordDictionary.search(\".ad\"); // return True\nwordDictionary.search(\"b..\"); // return True"
+    }
+  ],
   "starterCode": {
     "cpp": "class WordDictionary {\npublic:\n    WordDictionary() {\n        \n    }\n    \n    void addWord(string word) {\n        \n    }\n    \n    bool search(string word) {\n        \n    }\n};\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * WordDictionary* obj = new WordDictionary();\n * obj->addWord(word);\n * bool param_2 = obj->search(word);\n */",
     "java": "class WordDictionary {\n\n    public WordDictionary() {\n        \n    }\n    \n    public void addWord(String word) {\n        \n    }\n    \n    public boolean search(String word) {\n        \n    }\n}\n\n/**\n * Your WordDictionary object will be instantiated and called as such:\n * WordDictionary obj = new WordDictionary();\n * obj.addWord(word);\n * boolean param_2 = obj.search(word);\n */",
@@ -44,13 +50,13 @@
   "publicTests": [
     {
       "input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,false,true,true,true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"WordDictionary\",\"addWord\",\"addWord\",\"addWord\",\"search\",\"search\",\"search\",\"search\"]\n[[],[\"bad\"],[\"dad\"],[\"mad\"],[\"pad\"],[\"bad\"],[\".ad\"],[\"b..\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,false,true,true,true]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-add-and-search-words-data-structure/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:38.928Z",
+    "collectedAt": "2026-10-19T18:40:16.382Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "sentence = &quot;i love eating burger&quot;, searchWord = &quot;burg&quot;",
+      "input": "sentence = \"i love eating burger\", searchWord = \"burg\"",
       "output": "4",
-      "explanation": "&quot;burg&quot; is prefix of &quot;burger&quot; which is the 4th word in the sentence."
+      "explanation": "\"burg\" is prefix of \"burger\" which is the 4th word in the sentence."
     },
     {
-      "input": "sentence = &quot;this problem is an easy problem&quot;, searchWord = &quot;pro&quot;",
+      "input": "sentence = \"this problem is an easy problem\", searchWord = \"pro\"",
       "output": "2",
-      "explanation": "&quot;pro&quot; is prefix of &quot;problem&quot; which is the 2nd and the 6th word in the sentence, but we return 2 as it&#39;s the minimal index."
+      "explanation": "\"pro\" is prefix of \"problem\" which is the 2nd and the 6th word in the sentence, but we return 2 as it's the minimal index."
     },
     {
-      "input": "sentence = &quot;i am tired&quot;, searchWord = &quot;you&quot;",
+      "input": "sentence = \"i am tired\", searchWord = \"you\"",
       "output": "-1",
-      "explanation": "&quot;you&quot; is not a prefix of any word in the sentence."
+      "explanation": "\"you\" is not a prefix of any word in the sentence."
     }
   ],
   "starterCode": {
@@ -57,90 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "sentence = &quot;i love eating burger&quot;, searchWord = &quot;burg&quot;",
+      "input": "\"i love eating burger\"\n\"burg\"",
       "expectedOutput": "4"
     },
     {
-      "input": "sentence = &quot;this problem is an easy problem&quot;, searchWord = &quot;pro&quot;",
+      "input": "\"this problem is an easy problem\"\n\"pro\"",
       "expectedOutput": "2"
     },
     {
-      "input": "sentence = &quot;i am tired&quot;, searchWord = &quot;you&quot;",
+      "input": "\"i am tired\"\n\"you\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "sentence = &quot;i love eating burger&quot;, searchWord = &quot;burg&quot;",
+      "input": "\"i love eating burger\"\n\"burg\"",
       "expectedOutput": "4"
     },
     {
-      "input": "sentence = &quot;this problem is an easy problem&quot;, searchWord = &quot;pro&quot;",
+      "input": "\"this problem is an easy problem\"\n\"pro\"",
       "expectedOutput": "2"
     },
     {
-      "input": "sentence = &quot;i am tired&quot;, searchWord = &quot;you&quot;",
+      "input": "\"i am tired\"\n\"you\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"i love eating burger\"\n\"burg\"",
-      "expectedOutput": null
+      "input": "sentence = \"i love eating burger\", searchWord = \"burg\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"this problem is an easy problem\"\n\"pro\"",
-      "expectedOutput": null
+      "input": "sentence = \"this problem is an easy problem\", searchWord = \"pro\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"i am tired\"\n\"you\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "sentence = \"i am tired\", searchWord = \"you\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-a-word-occurs-as-a-prefix-of-any-word-in-a-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.879Z",
+    "collectedAt": "2026-10-19T18:40:14.065Z",
     "sourceUpdatedAt": null
   }
 }

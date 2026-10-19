@@ -17,7 +17,13 @@
     "-104 <= Node.val <= 104",
     "At most 104 calls will be made to getRandom."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Solution\", \"getRandom\", \"getRandom\", \"getRandom\", \"getRandom\", \"getRandom\"]\n[[[1, 2, 3]], [], [], [], [], []]",
+      "output": "[null, 1, 3, 2, 2, 3]",
+      "explanation": "Solution solution = new Solution([1, 2, 3]);\nsolution.getRandom(); // return 1\nsolution.getRandom(); // return 3\nsolution.getRandom(); // return 2\nsolution.getRandom(); // return 2\nsolution.getRandom(); // return 3\n// getRandom() should return either 1, 2, or 3 randomly. Each element should have equal probability of returning."
+    }
+  ],
   "starterCode": {
     "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    Solution(ListNode* head) {\n        \n    }\n    \n    int getRandom() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(head);\n * int param_1 = obj->getRandom();\n */",
     "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n\n    public Solution(ListNode head) {\n        \n    }\n    \n    public int getRandom() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(head);\n * int param_1 = obj.getRandom();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"Solution\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\"]\n[[[1,2,3]],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 3, 2, 2, 3]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Solution\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\"]\n[[[1,2,3]],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 3, 2, 2, 3]"
     },
     {
-      "input": "[\"Solution\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\",\"getRandom\"]\n[[[2,3,4]],[],[],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"Solution\", \"getRandom\", \"getRandom\", \"getRandom\", \"getRandom\", \"getRandom\"]\n[[[1, 2, 3]], [], [], [], [], []]",
+      "expectedOutput": "[null, 1, 3, 2, 2, 3]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/linked-list-random-node/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.973Z",
+    "collectedAt": "2026-10-19T18:40:20.328Z",
     "sourceUpdatedAt": null
   }
 }

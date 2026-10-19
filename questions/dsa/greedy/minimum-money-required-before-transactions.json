@@ -20,7 +20,7 @@
     {
       "input": "transactions = [[2,1],[5,0],[4,2]]",
       "output": "10",
-      "explanation": "Starting with money = 10, the transactions can be performed in any order.\nIt can be shown that starting with money &lt; 10 will fail to complete all transactions in some order."
+      "explanation": "Starting with money = 10, the transactions can be performed in any order.\nIt can be shown that starting with money < 10 will fail to complete all transactions in some order."
     },
     {
       "input": "transactions = [[3,0],[0,3]]",
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "transactions = [[2,1],[5,0],[4,2]]",
+      "input": "[[2,1],[5,0],[4,2]]",
       "expectedOutput": "10"
     },
     {
-      "input": "transactions = [[3,0],[0,3]]",
+      "input": "[[3,0],[0,3]]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,1],[5,0],[4,2]]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[[3,0],[0,3]]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "transactions = [[2,1],[5,0],[4,2]]",
       "expectedOutput": "10"
     },
     {
       "input": "transactions = [[3,0],[0,3]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[[2,1],[5,0],[4,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,0],[0,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "transactions = [[3,2],[6,1],[5,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-money-required-before-transactions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:01.949Z",
+    "collectedAt": "2026-10-19T18:40:24.096Z",
     "sourceUpdatedAt": null
   }
 }

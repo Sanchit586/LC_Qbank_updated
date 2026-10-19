@@ -47,90 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 10203004",
+      "input": "10203004",
       "expectedOutput": "12340"
     },
     {
-      "input": "n = 1000",
+      "input": "1000",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "10203004",
+      "expectedOutput": "12340"
+    },
+    {
+      "input": "1000",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 10203004",
       "expectedOutput": "12340"
     },
     {
       "input": "n = 1000",
       "expectedOutput": "1"
-    },
-    {
-      "input": "10203004",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "1001",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/concatenate-non-zero-digits-and-multiply-by-sum-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.989Z",
+    "collectedAt": "2026-10-19T18:40:14.627Z",
     "sourceUpdatedAt": null
   }
 }

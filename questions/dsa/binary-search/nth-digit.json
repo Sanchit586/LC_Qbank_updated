@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3",
+      "input": "3",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 11",
+      "input": "11",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "11",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 3",
       "expectedOutput": "3"
     },
     {
       "input": "n = 11",
       "expectedOutput": "0"
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "12",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -143,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/nth-digit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.720Z",
+    "collectedAt": "2026-10-19T18:40:25.712Z",
     "sourceUpdatedAt": null
   }
 }

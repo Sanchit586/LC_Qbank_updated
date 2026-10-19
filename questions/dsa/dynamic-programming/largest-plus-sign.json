@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, mines = [[4,2]]",
+      "input": "5\n[[4,2]]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 1, mines = [[0,0]]",
+      "input": "1\n[[0,0]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[4,2]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1\n[[0,0]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 5, mines = [[4,2]]",
       "expectedOutput": "2"
     },
     {
       "input": "n = 1, mines = [[0,0]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "5\n[[4,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n[[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, mines = [[5,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-plus-sign/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:45.032Z",
+    "collectedAt": "2026-10-19T18:40:19.990Z",
     "sourceUpdatedAt": null
   }
 }

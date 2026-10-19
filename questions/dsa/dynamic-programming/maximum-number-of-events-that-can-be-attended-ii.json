@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "events = [[1,2,4],[3,4,3],[2,3,1]], k = 2",
+      "input": "[[1,2,4],[3,4,3],[2,3,1]]\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "events = [[1,2,4],[3,4,3],[2,3,10]], k = 2",
+      "input": "[[1,2,4],[3,4,3],[2,3,10]]\n2",
       "expectedOutput": "10"
     },
     {
-      "input": "events = [[1,1,1],[2,2,2],[3,3,3],[4,4,4]], k = 3",
+      "input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4]]\n3",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,4],[3,4,3],[2,3,1]]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[1,2,4],[3,4,3],[2,3,10]]\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4]]\n3",
+      "expectedOutput": "9"
+    },
+    {
       "input": "events = [[1,2,4],[3,4,3],[2,3,1]], k = 2",
       "expectedOutput": "7"
     },
@@ -82,74 +94,6 @@
     {
       "input": "events = [[1,1,1],[2,2,2],[3,3,3],[4,4,4]], k = 3",
       "expectedOutput": "9"
-    },
-    {
-      "input": "[[1,2,4],[3,4,3],[2,3,1]]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,4],[3,4,3],[2,3,10]]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1],[2,2,2],[3,3,3],[4,4,4]]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-events-that-can-be-attended-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:19.286Z",
+    "collectedAt": "2026-10-19T18:40:22.030Z",
     "sourceUpdatedAt": null
   }
 }

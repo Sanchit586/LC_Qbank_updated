@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2],[3,4]], limits = [1,2], k = 2",
+      "input": "[[1,2],[3,4]]\n[1,2]\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "grid = [[5,3,7],[8,2,6]], limits = [2,2], k = 3",
+      "input": "[[5,3,7],[8,2,6]]\n[2,2]\n3",
       "expectedOutput": "21"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[3,4]]\n[1,2]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[5,3,7],[8,2,6]]\n[2,2]\n3",
+      "expectedOutput": "21"
+    },
+    {
       "input": "grid = [[1,2],[3,4]], limits = [1,2], k = 2",
       "expectedOutput": "7"
     },
     {
       "input": "grid = [[5,3,7],[8,2,6]], limits = [2,2], k = 3",
       "expectedOutput": "21"
-    },
-    {
-      "input": "[[1,2],[3,4]]\n[1,2]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[5,3,7],[8,2,6]]\n[2,2]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3],[4,5]], limits = [2,3], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-sum-with-at-most-k-elements/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.298Z",
+    "collectedAt": "2026-10-19T18:40:22.778Z",
     "sourceUpdatedAt": null
   }
 }

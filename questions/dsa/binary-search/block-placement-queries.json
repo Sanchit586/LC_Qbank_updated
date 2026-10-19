@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "queries = [[1,2],[2,3,3],[2,3,1],[2,2,2]]",
+      "input": "[[1,2],[2,3,3],[2,3,1],[2,2,2]]",
       "expectedOutput": "[false,true,true]"
     },
     {
-      "input": "queries = [[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]",
+      "input": "[[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]",
       "expectedOutput": "[true,true,false]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3,3],[2,3,1],[2,2,2]]",
+      "expectedOutput": "[false,true,true]"
+    },
+    {
+      "input": "[[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]",
+      "expectedOutput": "[true,true,false]"
+    },
+    {
       "input": "queries = [[1,2],[2,3,3],[2,3,1],[2,2,2]]",
       "expectedOutput": "[false,true,true]"
     },
     {
       "input": "queries = [[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]",
       "expectedOutput": "[true,true,false]"
-    },
-    {
-      "input": "[[1,2],[2,3,3],[2,3,1],[2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,7],[2,7,6],[1,2],[2,7,5],[2,7,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "queries = [[2,3],[3,4,4],[3,4,2],[3,3,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/block-placement-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:43.916Z",
+    "collectedAt": "2026-10-19T18:40:13.683Z",
     "sourceUpdatedAt": null
   }
 }

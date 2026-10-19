@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "low = 1, high = 100",
+      "input": "1\n100",
       "expectedOutput": "9"
     },
     {
-      "input": "low = 1200, high = 1230",
+      "input": "1200\n1230",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "1\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1200\n1230",
+      "expectedOutput": "4"
+    },
+    {
       "input": "low = 1, high = 100",
       "expectedOutput": "9"
     },
     {
       "input": "low = 1200, high = 1230",
       "expectedOutput": "4"
-    },
-    {
-      "input": "1\n100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1200\n1230",
-      "expectedOutput": null
-    },
-    {
-      "input": "low = 2, high = 101",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-symmetric-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.819Z",
+    "collectedAt": "2026-10-19T18:40:15.727Z",
     "sourceUpdatedAt": null
   }
 }

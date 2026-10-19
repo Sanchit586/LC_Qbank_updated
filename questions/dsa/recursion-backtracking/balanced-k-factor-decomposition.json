@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 100, k = 2",
+      "input": "100\n2",
       "expectedOutput": "[10,10]"
     },
     {
-      "input": "n = 44, k = 3",
+      "input": "44\n3",
       "expectedOutput": "[2,2,11]"
     }
   ],
   "testCases": [
     {
+      "input": "100\n2",
+      "expectedOutput": "[10,10]"
+    },
+    {
+      "input": "44\n3",
+      "expectedOutput": "[2,2,11]"
+    },
+    {
       "input": "n = 100, k = 2",
       "expectedOutput": "[10,10]"
     },
     {
       "input": "n = 44, k = 3",
       "expectedOutput": "[2,2,11]"
-    },
-    {
-      "input": "100\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "44\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 101, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/balanced-k-factor-decomposition/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.495Z",
+    "collectedAt": "2026-10-19T18:40:13.405Z",
     "sourceUpdatedAt": null
   }
 }

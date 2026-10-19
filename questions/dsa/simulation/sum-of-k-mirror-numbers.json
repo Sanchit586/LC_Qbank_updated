@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "k = 2, n = 5",
+      "input": "2\n5",
       "expectedOutput": "25"
     },
     {
-      "input": "k = 3, n = 7",
+      "input": "3\n7",
       "expectedOutput": "499"
     },
     {
-      "input": "k = 7, n = 17",
+      "input": "7\n17",
       "expectedOutput": "20379000"
     }
   ],
   "testCases": [
     {
+      "input": "2\n5",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "3\n7",
+      "expectedOutput": "499"
+    },
+    {
+      "input": "7\n17",
+      "expectedOutput": "20379000"
+    },
+    {
       "input": "k = 2, n = 5",
       "expectedOutput": "25"
     },
@@ -78,38 +90,6 @@
     {
       "input": "k = 7, n = 17",
       "expectedOutput": "20379000"
-    },
-    {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n17",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 4, n = 8",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 8, n = 18",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 3, n = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sum-of-k-mirror-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:51.514Z",
+    "collectedAt": "2026-10-19T18:40:30.621Z",
     "sourceUpdatedAt": null
   }
 }

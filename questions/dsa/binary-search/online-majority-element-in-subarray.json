@@ -23,7 +23,13 @@
     "2 * threshold > right - left + 1",
     "At most 104 calls will be made to query."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MajorityChecker\", \"query\", \"query\", \"query\"]\n[[[1, 1, 2, 2, 1, 1]], [0, 5, 4], [0, 3, 3], [2, 3, 2]]",
+      "output": "[null, 1, -1, 2]",
+      "explanation": "MajorityChecker majorityChecker = new MajorityChecker([1, 1, 2, 2, 1, 1]);\nmajorityChecker.query(0, 5, 4); // return 1\nmajorityChecker.query(0, 3, 3); // return -1\nmajorityChecker.query(2, 3, 2); // return 2"
+    }
+  ],
   "starterCode": {
     "cpp": "class MajorityChecker {\npublic:\n    MajorityChecker(vector<int>& arr) {\n        \n    }\n    \n    int query(int left, int right, int threshold) {\n        \n    }\n};\n\n/**\n * Your MajorityChecker object will be instantiated and called as such:\n * MajorityChecker* obj = new MajorityChecker(arr);\n * int param_1 = obj->query(left,right,threshold);\n */",
     "java": "class MajorityChecker {\n\n    public MajorityChecker(int[] arr) {\n        \n    }\n    \n    public int query(int left, int right, int threshold) {\n        \n    }\n}\n\n/**\n * Your MajorityChecker object will be instantiated and called as such:\n * MajorityChecker obj = new MajorityChecker(arr);\n * int param_1 = obj.query(left,right,threshold);\n */",
@@ -48,17 +54,17 @@
   "publicTests": [
     {
       "input": "[\"MajorityChecker\",\"query\",\"query\",\"query\"]\n[[[1,1,2,2,1,1]],[0,5,4],[0,3,3],[2,3,2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, -1, 2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MajorityChecker\",\"query\",\"query\",\"query\"]\n[[[1,1,2,2,1,1]],[0,5,4],[0,3,3],[2,3,2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, -1, 2]"
     },
     {
-      "input": "[\"MajorityChecker\",\"query\",\"query\",\"query\"]\n[[[2,2,3,3,2,2]],[1,6,5],[1,4,4],[3,4,3]]",
-      "expectedOutput": null
+      "input": "[\"MajorityChecker\", \"query\", \"query\", \"query\"]\n[[[1, 1, 2, 2, 1, 1]], [0, 5, 4], [0, 3, 3], [2, 3, 2]]",
+      "expectedOutput": "[null, 1, -1, 2]"
     }
   ],
   "sqlSchema": null,
@@ -76,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/online-majority-element-in-subarray/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.064Z",
+    "collectedAt": "2026-10-19T18:40:26.382Z",
     "sourceUpdatedAt": null
   }
 }

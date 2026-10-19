@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcabcdabc&quot;",
+      "input": "s = \"abcabcdabc\"",
       "output": "2",
-      "explanation": "- Delete the first 3 letters (&quot;abc&quot;) since the next 3 letters are equal. Now, s = &quot;abcdabc&quot;.\n- Delete all the letters.\nWe used 2 operations so return 2. It can be proven that 2 is the maximum number of operations needed.\nNote that in the second operation we cannot delete &quot;abc&quot; again because the next occurrence of &quot;abc&quot; does not happen in the next 3 letters."
+      "explanation": "- Delete the first 3 letters (\"abc\") since the next 3 letters are equal. Now, s = \"abcdabc\".\n- Delete all the letters.\nWe used 2 operations so return 2. It can be proven that 2 is the maximum number of operations needed.\nNote that in the second operation we cannot delete \"abc\" again because the next occurrence of \"abc\" does not happen in the next 3 letters."
     },
     {
-      "input": "s = &quot;aaabaab&quot;",
+      "input": "s = \"aaabaab\"",
       "output": "4",
-      "explanation": "- Delete the first letter (&quot;a&quot;) since the next letter is equal. Now, s = &quot;aabaab&quot;.\n- Delete the first 3 letters (&quot;aab&quot;) since the next 3 letters are equal. Now, s = &quot;aab&quot;.\n- Delete the first letter (&quot;a&quot;) since the next letter is equal. Now, s = &quot;ab&quot;.\n- Delete all the letters.\nWe used 4 operations so return 4. It can be proven that 4 is the maximum number of operations needed."
+      "explanation": "- Delete the first letter (\"a\") since the next letter is equal. Now, s = \"aabaab\".\n- Delete the first 3 letters (\"aab\") since the next 3 letters are equal. Now, s = \"aab\".\n- Delete the first letter (\"a\") since the next letter is equal. Now, s = \"ab\".\n- Delete all the letters.\nWe used 4 operations so return 4. It can be proven that 4 is the maximum number of operations needed."
     },
     {
-      "input": "s = &quot;aaaaa&quot;",
+      "input": "s = \"aaaaa\"",
       "output": "5",
       "explanation": "In each operation, we can delete the first letter of s."
     }
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcabcdabc&quot;",
+      "input": "\"abcabcdabc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aaabaab&quot;",
+      "input": "\"aaabaab\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaaa&quot;",
+      "input": "\"aaaaa\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcabcdabc&quot;",
+      "input": "\"abcabcdabc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aaabaab&quot;",
+      "input": "\"aaabaab\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaaa&quot;",
+      "input": "\"aaaaa\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"abcabcdabc\"",
-      "expectedOutput": null
+      "input": "s = \"abcabcdabc\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aaabaab\"",
-      "expectedOutput": null
+      "input": "s = \"aaabaab\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aaaaa\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -165,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-deletions-on-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.484Z",
+    "collectedAt": "2026-10-19T18:40:21.702Z",
     "sourceUpdatedAt": null
   }
 }

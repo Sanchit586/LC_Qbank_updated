@@ -21,12 +21,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;too hot&quot;",
+      "input": "s = \"too hot\"",
       "output": "18",
-      "explanation": "Some of the anagrams of the given string are &quot;too hot&quot;, &quot;oot hot&quot;, &quot;oto toh&quot;, &quot;too toh&quot;, and &quot;too oht&quot;."
+      "explanation": "Some of the anagrams of the given string are \"too hot\", \"oot hot\", \"oto toh\", \"too toh\", and \"too oht\"."
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "s = \"aa\"",
       "output": "1",
       "explanation": "There is only one anagram possible for the given string."
     }
@@ -54,94 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;too hot&quot;",
+      "input": "\"too hot\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;too hot&quot;",
+      "input": "\"too hot\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;aa&quot;",
+      "input": "\"aa\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"too hot\"",
-      "expectedOutput": null
+      "input": "s = \"too hot\"",
+      "expectedOutput": "18"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "s = \"aa\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-anagrams/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:06.991Z",
+    "collectedAt": "2026-10-19T18:40:14.924Z",
     "sourceUpdatedAt": null
   }
 }

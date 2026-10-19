@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;Let&#39;s take LeetCode contest&quot;",
-      "output": "&quot;s&#39;teL ekat edoCteeL tsetnoc&quot;",
+      "input": "s = \"Let's take LeetCode contest\"",
+      "output": "\"s'teL ekat edoCteeL tsetnoc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;Mr Ding&quot;",
-      "output": "&quot;rM gniD&quot;",
+      "input": "s = \"Mr Ding\"",
+      "output": "\"rM gniD\"",
       "explanation": null
     }
   ],
@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;Let&#39;s take LeetCode contest&quot;",
-      "expectedOutput": "&quot;s&#39;teL ekat edoCteeL tsetnoc&quot;"
+      "input": "\"Let's take LeetCode contest\"",
+      "expectedOutput": "\"s'teL ekat edoCteeL tsetnoc\""
     },
     {
-      "input": "s = &quot;Mr Ding&quot;",
-      "expectedOutput": "&quot;rM gniD&quot;"
+      "input": "\"Mr Ding\"",
+      "expectedOutput": "\"rM gniD\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;Let&#39;s take LeetCode contest&quot;",
-      "expectedOutput": "&quot;s&#39;teL ekat edoCteeL tsetnoc&quot;"
-    },
-    {
-      "input": "s = &quot;Mr Ding&quot;",
-      "expectedOutput": "&quot;rM gniD&quot;"
-    },
-    {
       "input": "\"Let's take LeetCode contest\"",
-      "expectedOutput": null
+      "expectedOutput": "\"s'teL ekat edoCteeL tsetnoc\""
     },
     {
       "input": "\"Mr Ding\"",
-      "expectedOutput": null
+      "expectedOutput": "\"rM gniD\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"Let's take LeetCode contest\"",
+      "expectedOutput": "\"s'teL ekat edoCteeL tsetnoc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"Mr Ding\"",
+      "expectedOutput": "\"rM gniD\""
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-words-in-a-string-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.977Z",
+    "collectedAt": "2026-10-19T18:40:27.907Z",
     "sourceUpdatedAt": null
   }
 }

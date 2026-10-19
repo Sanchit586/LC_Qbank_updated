@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, meetings = [[0,10],[1,5],[2,7],[3,4]]",
+      "input": "2\n[[0,10],[1,5],[2,7],[3,4]]",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 3, meetings = [[1,20],[2,10],[3,5],[4,9],[6,8]]",
+      "input": "3\n[[1,20],[2,10],[3,5],[4,9],[6,8]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "2\n[[0,10],[1,5],[2,7],[3,4]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n[[1,20],[2,10],[3,5],[4,9],[6,8]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 2, meetings = [[0,10],[1,5],[2,7],[3,4]]",
       "expectedOutput": "0"
     },
     {
       "input": "n = 3, meetings = [[1,20],[2,10],[3,5],[4,9],[6,8]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "2\n[[0,10],[1,5],[2,7],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[1,20],[2,10],[3,5],[4,9],[6,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, meetings = [[1,11],[2,6],[3,8],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/meeting-rooms-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:38.186Z",
+    "collectedAt": "2026-10-19T18:40:23.078Z",
     "sourceUpdatedAt": null
   }
 }

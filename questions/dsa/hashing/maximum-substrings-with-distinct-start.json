@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "s = \"abab\"",
       "output": "2",
-      "explanation": "Split &quot;abab&quot; into &quot;a&quot; and &quot;bab&quot;.\n\tEach substring starts with a distinct character i.e &#39;a&#39; and &#39;b&#39;. Thus, the answer is 2."
+      "explanation": "Split \"abab\" into \"a\" and \"bab\".\n\tEach substring starts with a distinct character i.e 'a' and 'b'. Thus, the answer is 2."
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "s = \"abcd\"",
       "output": "4",
-      "explanation": "Split &quot;abcd&quot; into &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, and &quot;d&quot;.\n\tEach substring starts with a distinct character. Thus, the answer is 4."
+      "explanation": "Split \"abcd\" into \"a\", \"b\", \"c\", and \"d\".\n\tEach substring starts with a distinct character. Thus, the answer is 4."
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "s = \"aaaa\"",
       "output": "1",
-      "explanation": "All characters in &quot;aaaa&quot; are &#39;a&#39;.\n\tOnly one substring can start with &#39;a&#39;. Thus, the answer is 1."
+      "explanation": "All characters in \"aaaa\" are 'a'.\n\tOnly one substring can start with 'a'. Thus, the answer is 1."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "\"abab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "\"abcd\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "\"abab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "\"abcd\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"abab\"",
-      "expectedOutput": null
+      "input": "s = \"abab\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abcd\"",
-      "expectedOutput": null
+      "input": "s = \"abcd\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aaaa\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:32.590Z",
+    "collectedAt": "2026-10-19T18:40:22.699Z",
     "sourceUpdatedAt": null
   }
 }

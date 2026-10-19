@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bca&quot;",
+      "input": "word1 = \"abc\", word2 = \"bca\"",
       "output": "true",
-      "explanation": "You can attain word2 from word1 in 2 operations.\nApply Operation 1: &quot;abc&quot; -&gt; &quot;acb&quot;\nApply Operation 1: &quot;acb&quot; -&gt; &quot;bca&quot;"
+      "explanation": "You can attain word2 from word1 in 2 operations.\nApply Operation 1: \"abc\" -> \"acb\"\nApply Operation 1: \"acb\" -> \"bca\""
     },
     {
-      "input": "word1 = &quot;a&quot;, word2 = &quot;aa&quot;",
+      "input": "word1 = \"a\", word2 = \"aa\"",
       "output": "false",
       "explanation": "It is impossible to attain word2 from word1, or vice versa, in any number of operations."
     },
     {
-      "input": "word1 = &quot;cabbba&quot;, word2 = &quot;abbccc&quot;",
+      "input": "word1 = \"cabbba\", word2 = \"abbccc\"",
       "output": "true",
-      "explanation": "You can attain word2 from word1 in 3 operations.\nApply Operation 1: &quot;cabbba&quot; -&gt; &quot;caabbb&quot;\nApply Operation 2: &quot;caabbb&quot; -&gt; &quot;baaccc&quot;\nApply Operation 2: &quot;baaccc&quot; -&gt; &quot;abbccc&quot;"
+      "explanation": "You can attain word2 from word1 in 3 operations.\nApply Operation 1: \"cabbba\" -> \"caabbb\"\nApply Operation 2: \"caabbb\" -> \"baaccc\"\nApply Operation 2: \"baaccc\" -> \"abbccc\""
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bca&quot;",
+      "input": "\"abc\"\n\"bca\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = &quot;a&quot;, word2 = &quot;aa&quot;",
+      "input": "\"a\"\n\"aa\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = &quot;cabbba&quot;, word2 = &quot;abbccc&quot;",
+      "input": "\"cabbba\"\n\"abbccc\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bca&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "word1 = &quot;a&quot;, word2 = &quot;aa&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "word1 = &quot;cabbba&quot;, word2 = &quot;abbccc&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"abc\"\n\"bca\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"a\"\n\"aa\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"cabbba\"\n\"abbccc\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word1 = \"abc\", word2 = \"bca\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "word1 = \"a\", word2 = \"aa\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"cabbba\", word2 = \"abbccc\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/determine-if-two-strings-are-close/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:43.675Z",
+    "collectedAt": "2026-10-19T18:40:16.597Z",
     "sourceUpdatedAt": null
   }
 }

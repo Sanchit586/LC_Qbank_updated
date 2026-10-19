@@ -23,17 +23,17 @@
   ],
   "examples": [
     {
-      "input": "pieces = [&quot;rook&quot;], positions = [[1,1]]",
+      "input": "pieces = [\"rook\"], positions = [[1,1]]",
       "output": "15",
       "explanation": "The image above shows the possible squares the piece can move to."
     },
     {
-      "input": "pieces = [&quot;queen&quot;], positions = [[1,1]]",
+      "input": "pieces = [\"queen\"], positions = [[1,1]]",
       "output": "22",
       "explanation": "The image above shows the possible squares the piece can move to."
     },
     {
-      "input": "pieces = [&quot;bishop&quot;], positions = [[4,3]]",
+      "input": "pieces = [\"bishop\"], positions = [[4,3]]",
       "output": "12",
       "explanation": "The image above shows the possible squares the piece can move to."
     }
@@ -61,62 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "pieces = [&quot;rook&quot;], positions = [[1,1]]",
+      "input": "[\"rook\"]\n[[1,1]]",
       "expectedOutput": "15"
     },
     {
-      "input": "pieces = [&quot;queen&quot;], positions = [[1,1]]",
+      "input": "[\"queen\"]\n[[1,1]]",
       "expectedOutput": "22"
     },
     {
-      "input": "pieces = [&quot;bishop&quot;], positions = [[4,3]]",
+      "input": "[\"bishop\"]\n[[4,3]]",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
-      "input": "pieces = [&quot;rook&quot;], positions = [[1,1]]",
+      "input": "[\"rook\"]\n[[1,1]]",
       "expectedOutput": "15"
     },
     {
-      "input": "pieces = [&quot;queen&quot;], positions = [[1,1]]",
+      "input": "[\"queen\"]\n[[1,1]]",
       "expectedOutput": "22"
     },
     {
-      "input": "pieces = [&quot;bishop&quot;], positions = [[4,3]]",
+      "input": "[\"bishop\"]\n[[4,3]]",
       "expectedOutput": "12"
     },
     {
-      "input": "[\"rook\"]\n[[1,1]]",
-      "expectedOutput": null
+      "input": "pieces = [\"rook\"], positions = [[1,1]]",
+      "expectedOutput": "15"
     },
     {
-      "input": "[\"queen\"]\n[[1,1]]",
-      "expectedOutput": null
+      "input": "pieces = [\"queen\"], positions = [[1,1]]",
+      "expectedOutput": "22"
     },
     {
-      "input": "[\"bishop\"]\n[[4,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "pieces = [&quot;queen&quot;], positions = [[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "pieces = [&quot;bishop&quot;], positions = [[5,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"rook\"]\n[[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"queen\"]\n[[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "pieces = [&quot;rook&quot;], positions = [[2,2]]",
-      "expectedOutput": null
+      "input": "pieces = [\"bishop\"], positions = [[4,3]]",
+      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-valid-move-combinations-on-chessboard/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:44.595Z",
+    "collectedAt": "2026-10-19T18:40:26.200Z",
     "sourceUpdatedAt": null
   }
 }

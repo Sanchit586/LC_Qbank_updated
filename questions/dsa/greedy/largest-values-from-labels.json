@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1",
+      "input": "[5,4,3,2,1]\n[1,1,2,2,3]\n3\n1",
       "expectedOutput": "9"
     },
     {
-      "input": "values = [5,4,3,2,1], labels = [1,3,3,3,2], numWanted = 3, useLimit = 2",
+      "input": "[5,4,3,2,1]\n[1,3,3,3,2]\n3\n2",
       "expectedOutput": "12"
     },
     {
-      "input": "values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1",
+      "input": "[9,8,8,7,6]\n[0,0,0,1,1]\n3\n1",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
+      "input": "[5,4,3,2,1]\n[1,1,2,2,3]\n3\n1",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[5,4,3,2,1]\n[1,3,3,3,2]\n3\n2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[9,8,8,7,6]\n[0,0,0,1,1]\n3\n1",
+      "expectedOutput": "16"
+    },
+    {
       "input": "values = [5,4,3,2,1], labels = [1,1,2,2,3], numWanted = 3, useLimit = 1",
       "expectedOutput": "9"
     },
@@ -83,38 +95,6 @@
     {
       "input": "values = [9,8,8,7,6], labels = [0,0,0,1,1], numWanted = 3, useLimit = 1",
       "expectedOutput": "16"
-    },
-    {
-      "input": "[5,4,3,2,1]\n[1,1,2,2,3]\n3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,4,3,2,1]\n[1,3,3,3,2]\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[9,8,8,7,6]\n[0,0,0,1,1]\n3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "values = [6,5,4,3,2], labels = [2,4,4,4,3], numWanted = 4, useLimit = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "values = [10,9,9,8,7], labels = [1,1,1,2,2], numWanted = 4, useLimit = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,5,4,3,2]\n[2,2,3,3,4]\n4\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,5,4,3,2]\n[2,4,4,4,3]\n4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "values = [6,5,4,3,2], labels = [2,2,3,3,4], numWanted = 4, useLimit = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-values-from-labels/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:46.746Z",
+    "collectedAt": "2026-10-19T18:40:20.044Z",
     "sourceUpdatedAt": null
   }
 }

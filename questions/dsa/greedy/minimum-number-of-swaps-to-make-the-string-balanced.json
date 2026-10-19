@@ -22,17 +22,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;][][&quot;",
+      "input": "s = \"][][\"",
       "output": "1",
-      "explanation": "You can make the string balanced by swapping index 0 with index 3.\nThe resulting string is &quot;[[]]&quot;."
+      "explanation": "You can make the string balanced by swapping index 0 with index 3.\nThe resulting string is \"[[]]\"."
     },
     {
-      "input": "s = &quot;]]][[[&quot;",
+      "input": "s = \"]]][[[\"",
       "output": "2",
-      "explanation": "You can do the following to make the string balanced:\n- Swap index 0 with index 4. s = &quot;[]][][&quot;.\n- Swap index 1 with index 5. s = &quot;[[][]]&quot;.\nThe resulting string is &quot;[[][]]&quot;."
+      "explanation": "You can do the following to make the string balanced:\n- Swap index 0 with index 4. s = \"[]][][\".\n- Swap index 1 with index 5. s = \"[[][]]\".\nThe resulting string is \"[[][]]\"."
     },
     {
-      "input": "s = &quot;[]&quot;",
+      "input": "s = \"[]\"",
       "output": "0",
       "explanation": "The string is already balanced."
     }
@@ -60,98 +60,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;][][&quot;",
+      "input": "\"][][\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;]]][[[&quot;",
+      "input": "\"]]][[[\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;[]&quot;",
+      "input": "\"[]\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;][][&quot;",
+      "input": "\"][][\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;]]][[[&quot;",
+      "input": "\"]]][[[\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;[]&quot;",
+      "input": "\"[]\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"][][\"",
-      "expectedOutput": null
+      "input": "s = \"][][\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"]]][[[\"",
-      "expectedOutput": null
+      "input": "s = \"]]][[[\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"[]\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"[]\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -167,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-swaps-to-make-the-string-balanced/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:11.005Z",
+    "collectedAt": "2026-10-19T18:40:24.486Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;xyzzaz&quot;",
+      "input": "s = \"xyzzaz\"",
       "output": "1",
-      "explanation": "There are 4 substrings of size 3: &quot;xyz&quot;, &quot;yzz&quot;, &quot;zza&quot;, and &quot;zaz&quot;. \nThe only good substring of length 3 is &quot;xyz&quot;."
+      "explanation": "There are 4 substrings of size 3: \"xyz\", \"yzz\", \"zza\", and \"zaz\". \nThe only good substring of length 3 is \"xyz\"."
     },
     {
-      "input": "s = &quot;aababcabc&quot;",
+      "input": "s = \"aababcabc\"",
       "output": "4",
-      "explanation": "There are 7 substrings of size 3: &quot;aab&quot;, &quot;aba&quot;, &quot;bab&quot;, &quot;abc&quot;, &quot;bca&quot;, &quot;cab&quot;, and &quot;abc&quot;.\nThe good substrings are &quot;abc&quot;, &quot;bca&quot;, &quot;cab&quot;, and &quot;abc&quot;."
+      "explanation": "There are 7 substrings of size 3: \"aab\", \"aba\", \"bab\", \"abc\", \"bca\", \"cab\", and \"abc\".\nThe good substrings are \"abc\", \"bca\", \"cab\", and \"abc\"."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;xyzzaz&quot;",
+      "input": "\"xyzzaz\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aababcabc&quot;",
+      "input": "\"aababcabc\"",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;xyzzaz&quot;",
+      "input": "\"xyzzaz\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aababcabc&quot;",
+      "input": "\"aababcabc\"",
       "expectedOutput": "4"
     },
     {
-      "input": "\"xyzzaz\"",
-      "expectedOutput": null
+      "input": "s = \"xyzzaz\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aababcabc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aababcabc\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/substrings-of-size-three-with-distinct-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.759Z",
+    "collectedAt": "2026-10-19T18:40:30.465Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abcdefd&quot;, ch = &quot;d&quot;",
-      "output": "&quot;dcbaefd&quot;",
-      "explanation": "&nbsp;The first occurrence of &quot;d&quot; is at index 3. \nReverse the part of word from 0 to 3 (inclusive), the resulting string is &quot;dcbaefd&quot;."
+      "input": "word = \"abcdefd\", ch = \"d\"",
+      "output": "\"dcbaefd\"",
+      "explanation": " The first occurrence of \"d\" is at index 3. \nReverse the part of word from 0 to 3 (inclusive), the resulting string is \"dcbaefd\"."
     },
     {
-      "input": "word = &quot;xyxzxe&quot;, ch = &quot;z&quot;",
-      "output": "&quot;zxyxxe&quot;",
-      "explanation": "&nbsp;The first and only occurrence of &quot;z&quot; is at index 3.\nReverse the part of word from 0 to 3 (inclusive), the resulting string is &quot;zxyxxe&quot;."
+      "input": "word = \"xyxzxe\", ch = \"z\"",
+      "output": "\"zxyxxe\"",
+      "explanation": " The first and only occurrence of \"z\" is at index 3.\nReverse the part of word from 0 to 3 (inclusive), the resulting string is \"zxyxxe\"."
     },
     {
-      "input": "word = &quot;abcd&quot;, ch = &quot;z&quot;",
-      "output": "&quot;abcd&quot;",
-      "explanation": "&nbsp;&quot;z&quot; does not exist in word.\nYou should not do any reverse operation, the resulting string is &quot;abcd&quot;."
+      "input": "word = \"abcd\", ch = \"z\"",
+      "output": "\"abcd\"",
+      "explanation": " \"z\" does not exist in word.\nYou should not do any reverse operation, the resulting string is \"abcd\"."
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abcdefd&quot;, ch = &quot;d&quot;",
-      "expectedOutput": "&quot;dcbaefd&quot;"
+      "input": "\"abcdefd\"\n\"d\"",
+      "expectedOutput": "\"dcbaefd\""
     },
     {
-      "input": "word = &quot;xyxzxe&quot;, ch = &quot;z&quot;",
-      "expectedOutput": "&quot;zxyxxe&quot;"
+      "input": "\"xyxzxe\"\n\"z\"",
+      "expectedOutput": "\"zxyxxe\""
     },
     {
-      "input": "word = &quot;abcd&quot;, ch = &quot;z&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
+      "input": "\"abcd\"\n\"z\"",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abcdefd&quot;, ch = &quot;d&quot;",
-      "expectedOutput": "&quot;dcbaefd&quot;"
-    },
-    {
-      "input": "word = &quot;xyxzxe&quot;, ch = &quot;z&quot;",
-      "expectedOutput": "&quot;zxyxxe&quot;"
-    },
-    {
-      "input": "word = &quot;abcd&quot;, ch = &quot;z&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
-    },
-    {
       "input": "\"abcdefd\"\n\"d\"",
-      "expectedOutput": null
+      "expectedOutput": "\"dcbaefd\""
     },
     {
       "input": "\"xyxzxe\"\n\"z\"",
-      "expectedOutput": null
+      "expectedOutput": "\"zxyxxe\""
     },
     {
       "input": "\"abcd\"\n\"z\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word = \"abcdefd\", ch = \"d\"",
+      "expectedOutput": "\"dcbaefd\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "word = \"xyxzxe\", ch = \"z\"",
+      "expectedOutput": "\"zxyxxe\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word = \"abcd\", ch = \"z\"",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-prefix-of-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.915Z",
+    "collectedAt": "2026-10-19T18:40:27.866Z",
     "sourceUpdatedAt": null
   }
 }

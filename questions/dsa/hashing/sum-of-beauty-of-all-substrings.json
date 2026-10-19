@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabcb&quot;",
+      "input": "s = \"aabcb\"",
       "output": "5",
-      "explanation": "The substrings with non-zero beauty are [&quot;aab&quot;,&quot;aabc&quot;,&quot;aabcb&quot;,&quot;abcb&quot;,&quot;bcb&quot;], each with beauty equal to 1."
+      "explanation": "The substrings with non-zero beauty are [\"aab\",\"aabc\",\"aabcb\",\"abcb\",\"bcb\"], each with beauty equal to 1."
     },
     {
-      "input": "s = &quot;aabcbaa&quot;",
+      "input": "s = \"aabcbaa\"",
       "output": "17",
       "explanation": null
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabcb&quot;",
+      "input": "\"aabcb\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aabcbaa&quot;",
+      "input": "\"aabcbaa\"",
       "expectedOutput": "17"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabcb&quot;",
+      "input": "\"aabcb\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aabcbaa&quot;",
+      "input": "\"aabcbaa\"",
       "expectedOutput": "17"
     },
     {
-      "input": "\"aabcb\"",
-      "expectedOutput": null
+      "input": "s = \"aabcb\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"aabcbaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aabcbaa\"",
+      "expectedOutput": "17"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sum-of-beauty-of-all-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:50.973Z",
+    "collectedAt": "2026-10-19T18:40:30.549Z",
     "sourceUpdatedAt": null
   }
 }

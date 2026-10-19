@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "x = 26, y = 1",
+      "input": "26\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "x = 54, y = 2",
+      "input": "54\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "x = 25, y = 30",
+      "input": "25\n30",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "26\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "54\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "25\n30",
+      "expectedOutput": "5"
+    },
+    {
       "input": "x = 26, y = 1",
       "expectedOutput": "3"
     },
@@ -78,38 +90,6 @@
     {
       "input": "x = 25, y = 30",
       "expectedOutput": "5"
-    },
-    {
-      "input": "26\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "54\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "25\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 55, y = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 26, y = 31",
-      "expectedOutput": null
-    },
-    {
-      "input": "27\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "55\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 27, y = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-x-and-y-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:09.471Z",
+    "collectedAt": "2026-10-19T18:40:24.371Z",
     "sourceUpdatedAt": null
   }
 }

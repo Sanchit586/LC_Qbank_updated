@@ -24,17 +24,17 @@
   ],
   "examples": [
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], start = &quot;010&quot;, target = &quot;100&quot;",
+      "input": "n = 3, edges = [[0,1],[1,2]], start = \"010\", target = \"100\"",
       "output": "[0]",
       "explanation": null
     },
     {
-      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = &quot;0011000&quot;, target = &quot;0010001&quot;",
+      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = \"0011000\", target = \"0010001\"",
       "output": "[1,2,5]",
       "explanation": "Toggle edge with index 1, which flips nodes 1 and 2.\n\tToggle edge with index 2, which flips nodes 2 and 3.\n\tToggle edge with index 5, which flips nodes 1 and 6."
     },
     {
-      "input": "n = 2, edges = [[0,1]], start = &quot;00&quot;, target = &quot;01&quot;",
+      "input": "n = 2, edges = [[0,1]], start = \"00\", target = \"01\"",
       "output": "[-1]",
       "explanation": null
     }
@@ -62,62 +62,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], start = &quot;010&quot;, target = &quot;100&quot;",
+      "input": "3\n[[0,1],[1,2]]\n\"010\"\n\"100\"",
       "expectedOutput": "[0]"
     },
     {
-      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = &quot;0011000&quot;, target = &quot;0010001&quot;",
+      "input": "7\n[[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]]\n\"0011000\"\n\"0010001\"",
       "expectedOutput": "[1,2,5]"
     },
     {
-      "input": "n = 2, edges = [[0,1]], start = &quot;00&quot;, target = &quot;01&quot;",
+      "input": "2\n[[0,1]]\n\"00\"\n\"01\"",
       "expectedOutput": "[-1]"
     }
   ],
   "testCases": [
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], start = &quot;010&quot;, target = &quot;100&quot;",
+      "input": "3\n[[0,1],[1,2]]\n\"010\"\n\"100\"",
       "expectedOutput": "[0]"
     },
     {
-      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = &quot;0011000&quot;, target = &quot;0010001&quot;",
+      "input": "7\n[[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]]\n\"0011000\"\n\"0010001\"",
       "expectedOutput": "[1,2,5]"
     },
     {
-      "input": "n = 2, edges = [[0,1]], start = &quot;00&quot;, target = &quot;01&quot;",
+      "input": "2\n[[0,1]]\n\"00\"\n\"01\"",
       "expectedOutput": "[-1]"
     },
     {
-      "input": "3\n[[0,1],[1,2]]\n\"010\"\n\"100\"",
-      "expectedOutput": null
+      "input": "n = 3, edges = [[0,1],[1,2]], start = \"010\", target = \"100\"",
+      "expectedOutput": "[0]"
     },
     {
-      "input": "7\n[[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]]\n\"0011000\"\n\"0010001\"",
-      "expectedOutput": null
+      "input": "n = 7, edges = [[0,1],[1,2],[2,3],[3,4],[3,5],[1,6]], start = \"0011000\", target = \"0010001\"",
+      "expectedOutput": "[1,2,5]"
     },
     {
-      "input": "2\n[[0,1]]\n\"00\"\n\"01\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 8, edges = [[1,2],[2,3],[3,4],[4,5],[4,6],[2,7]], start = &quot;11001&quot;, target = &quot;10002&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, edges = [[1,2]], start = &quot;1&quot;, target = &quot;2&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2],[2,3]]\n\"11\"\n\"101\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n[[1,2],[2,3],[3,4],[4,5],[4,6],[2,7]]\n\"11001\"\n\"10002\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2],[2,3]], start = &quot;11&quot;, target = &quot;101&quot;",
-      "expectedOutput": null
+      "input": "n = 2, edges = [[0,1]], start = \"00\", target = \"01\"",
+      "expectedOutput": "[-1]"
     }
   ],
   "sqlSchema": null,
@@ -134,7 +114,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-edge-toggles-on-a-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:56.452Z",
+    "collectedAt": "2026-10-19T18:40:23.880Z",
     "sourceUpdatedAt": null
   }
 }

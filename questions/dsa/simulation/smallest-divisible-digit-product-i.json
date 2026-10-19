@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 10, t = 2",
+      "input": "10\n2",
       "expectedOutput": "10"
     },
     {
-      "input": "n = 15, t = 3",
+      "input": "15\n3",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
+      "input": "10\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "15\n3",
+      "expectedOutput": "16"
+    },
+    {
       "input": "n = 10, t = 2",
       "expectedOutput": "10"
     },
     {
       "input": "n = 15, t = 3",
       "expectedOutput": "16"
-    },
-    {
-      "input": "10\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "15\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 11, t = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-divisible-digit-product-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.056Z",
+    "collectedAt": "2026-10-19T18:40:29.713Z",
     "sourceUpdatedAt": null
   }
 }

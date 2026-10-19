@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 10, k = 1, maxPts = 10",
+      "input": "10\n1\n10",
       "expectedOutput": "1.00000"
     },
     {
-      "input": "n = 6, k = 1, maxPts = 10",
+      "input": "6\n1\n10",
       "expectedOutput": "0.60000"
     },
     {
-      "input": "n = 21, k = 17, maxPts = 10",
+      "input": "21\n17\n10",
       "expectedOutput": "0.73278"
     }
   ],
   "testCases": [
     {
+      "input": "10\n1\n10",
+      "expectedOutput": "1.00000"
+    },
+    {
+      "input": "6\n1\n10",
+      "expectedOutput": "0.60000"
+    },
+    {
+      "input": "21\n17\n10",
+      "expectedOutput": "0.73278"
+    },
+    {
       "input": "n = 10, k = 1, maxPts = 10",
       "expectedOutput": "1.00000"
     },
@@ -80,38 +92,6 @@
     {
       "input": "n = 21, k = 17, maxPts = 10",
       "expectedOutput": "0.73278"
-    },
-    {
-      "input": "10\n1\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n1\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "21\n17\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, k = 2, maxPts = 11",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 22, k = 18, maxPts = 11",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n2\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n2\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 11, k = 2, maxPts = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/new-21-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:37.644Z",
+    "collectedAt": "2026-10-19T18:40:25.626Z",
     "sourceUpdatedAt": null
   }
 }

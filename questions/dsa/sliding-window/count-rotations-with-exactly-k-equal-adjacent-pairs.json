@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aab&quot;, k = 1",
+      "input": "s = \"aab\", k = 1",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;abca&quot;, k = 0",
+      "input": "s = \"abca\", k = 0",
       "output": "1",
       "explanation": null
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aab&quot;, k = 1",
+      "input": "\"aab\"\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abca&quot;, k = 0",
+      "input": "\"abca\"\n0",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aab&quot;, k = 1",
+      "input": "\"aab\"\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abca&quot;, k = 0",
+      "input": "\"abca\"\n0",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aab\"\n1",
-      "expectedOutput": null
+      "input": "s = \"aab\", k = 1",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abca\"\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aab&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"abca\", k = 0",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-rotations-with-exactly-k-equal-adjacent-pairs/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:20.655Z",
+    "collectedAt": "2026-10-19T18:40:15.534Z",
     "sourceUpdatedAt": null
   }
 }

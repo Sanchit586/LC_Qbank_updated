@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;12&quot;, min_sum = 1, max_sum = 8",
+      "input": "num1 = \"1\", num2 = \"12\", min_sum = 1, max_sum = 8",
       "output": "11",
       "explanation": "There are 11 integers whose sum of digits lies between 1 and 8 are 1,2,3,4,5,6,7,8,10,11, and 12. Thus, we return 11."
     },
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;5&quot;, min_sum = 1, max_sum = 5",
+      "input": "num1 = \"1\", num2 = \"5\", min_sum = 1, max_sum = 5",
       "output": "5",
       "explanation": "The 5 integers whose sum of digits lies between 1 and 5 are 1,2,3,4, and 5. Thus, we return 5."
     }
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;12&quot;, min_sum = 1, max_sum = 8",
+      "input": "\"1\"\n\"12\"\n1\n8",
       "expectedOutput": "11"
     },
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;5&quot;, min_sum = 1, max_sum = 5",
+      "input": "\"1\"\n\"5\"\n1\n5",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;12&quot;, min_sum = 1, max_sum = 8",
+      "input": "\"1\"\n\"12\"\n1\n8",
       "expectedOutput": "11"
     },
     {
-      "input": "num1 = &quot;1&quot;, num2 = &quot;5&quot;, min_sum = 1, max_sum = 5",
+      "input": "\"1\"\n\"5\"\n1\n5",
       "expectedOutput": "5"
     },
     {
-      "input": "\"1\"\n\"12\"\n1\n8",
-      "expectedOutput": null
+      "input": "num1 = \"1\", num2 = \"12\", min_sum = 1, max_sum = 8",
+      "expectedOutput": "11"
     },
     {
-      "input": "\"1\"\n\"5\"\n1\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = &quot;2&quot;, num3 = &quot;13&quot;, min_sum = 2, max_sum = 9",
-      "expectedOutput": null
+      "input": "num1 = \"1\", num2 = \"5\", min_sum = 1, max_sum = 5",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-of-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.814Z",
+    "collectedAt": "2026-10-19T18:40:15.393Z",
     "sourceUpdatedAt": null
   }
 }

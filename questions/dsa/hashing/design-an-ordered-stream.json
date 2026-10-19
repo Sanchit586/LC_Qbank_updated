@@ -20,7 +20,13 @@
     "Each call to insert will have a unique id.",
     "Exactly n calls will be made to insert."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"OrderedStream\", \"insert\", \"insert\", \"insert\", \"insert\", \"insert\"]\n[[5], [3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]",
+      "output": "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]",
+      "explanation": "// Note that the values ordered by ID is [\"aaaaa\", \"bbbbb\", \"ccccc\", \"ddddd\", \"eeeee\"].\nOrderedStream os = new OrderedStream(5);\nos.insert(3, \"ccccc\"); // Inserts (3, \"ccccc\"), returns [].\nos.insert(1, \"aaaaa\"); // Inserts (1, \"aaaaa\"), returns [\"aaaaa\"].\nos.insert(2, \"bbbbb\"); // Inserts (2, \"bbbbb\"), returns [\"bbbbb\", \"ccccc\"].\nos.insert(5, \"eeeee\"); // Inserts (5, \"eeeee\"), returns [].\nos.insert(4, \"ddddd\"); // Inserts (4, \"ddddd\"), returns [\"ddddd\", \"eeeee\"].\n// Concatentating all the chunks returned:\n// [] + [\"aaaaa\"] + [\"bbbbb\", \"ccccc\"] + [] + [\"ddddd\", \"eeeee\"] = [\"aaaaa\", \"bbbbb\", \"ccccc\", \"ddddd\", \"eeeee\"]\n// The resulting order is the same as the order above."
+    }
+  ],
   "starterCode": {
     "cpp": "class OrderedStream {\npublic:\n    OrderedStream(int n) {\n        \n    }\n    \n    vector<string> insert(int idKey, string value) {\n        \n    }\n};\n\n/**\n * Your OrderedStream object will be instantiated and called as such:\n * OrderedStream* obj = new OrderedStream(n);\n * vector<string> param_1 = obj->insert(idKey,value);\n */",
     "java": "class OrderedStream {\n\n    public OrderedStream(int n) {\n        \n    }\n    \n    public List<String> insert(int idKey, String value) {\n        \n    }\n}\n\n/**\n * Your OrderedStream object will be instantiated and called as such:\n * OrderedStream obj = new OrderedStream(n);\n * List<String> param_1 = obj.insert(idKey,value);\n */",
@@ -45,17 +51,17 @@
   "publicTests": [
     {
       "input": "[\"OrderedStream\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]\n[[5],[3,\"ccccc\"],[1,\"aaaaa\"],[2,\"bbbbb\"],[5,\"eeeee\"],[4,\"ddddd\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"OrderedStream\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]\n[[5],[3,\"ccccc\"],[1,\"aaaaa\"],[2,\"bbbbb\"],[5,\"eeeee\"],[4,\"ddddd\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]"
     },
     {
-      "input": "[\"OrderedStream\",\"insert\",\"insert\",\"insert\",\"insert\",\"insert\"]\n[[6],[4,\"ccccc\"],[2,\"aaaaa\"],[3,\"bbbbb\"],[6,\"eeeee\"],[5,\"ddddd\"]]",
-      "expectedOutput": null
+      "input": "[\"OrderedStream\", \"insert\", \"insert\", \"insert\", \"insert\", \"insert\"]\n[[5], [3, \"ccccc\"], [1, \"aaaaa\"], [2, \"bbbbb\"], [5, \"eeeee\"], [4, \"ddddd\"]]",
+      "expectedOutput": "[null, [], [\"aaaaa\"], [\"bbbbb\", \"ccccc\"], [], [\"ddddd\", \"eeeee\"]]"
     }
   ],
   "sqlSchema": null,
@@ -71,7 +77,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-an-ordered-stream/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.360Z",
+    "collectedAt": "2026-10-19T18:40:16.394Z",
     "sourceUpdatedAt": null
   }
 }

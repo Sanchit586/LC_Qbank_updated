@@ -20,18 +20,18 @@
   ],
   "examples": [
     {
-      "input": "paths = [[&quot;London&quot;,&quot;New York&quot;],[&quot;New York&quot;,&quot;Lima&quot;],[&quot;Lima&quot;,&quot;Sao Paulo&quot;]]",
-      "output": "&quot;Sao Paulo&quot;",
-      "explanation": "Starting at &quot;London&quot; city you will reach &quot;Sao Paulo&quot; city which is the destination city. Your trip consist of: &quot;London&quot; -&gt; &quot;New York&quot; -&gt; &quot;Lima&quot; -&gt; &quot;Sao Paulo&quot;."
+      "input": "paths = [[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
+      "output": "\"Sao Paulo\"",
+      "explanation": "Starting at \"London\" city you will reach \"Sao Paulo\" city which is the destination city. Your trip consist of: \"London\" -> \"New York\" -> \"Lima\" -> \"Sao Paulo\"."
     },
     {
-      "input": "paths = [[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;,&quot;B&quot;],[&quot;C&quot;,&quot;A&quot;]]",
-      "output": "&quot;A&quot;",
-      "explanation": "All possible trips are:&nbsp;\n&quot;D&quot; -&gt; &quot;B&quot; -&gt; &quot;C&quot; -&gt; &quot;A&quot;.&nbsp;\n&quot;B&quot; -&gt; &quot;C&quot; -&gt; &quot;A&quot;.&nbsp;\n&quot;C&quot; -&gt; &quot;A&quot;.&nbsp;\n&quot;A&quot;.&nbsp;\nClearly the destination city is &quot;A&quot;."
+      "input": "paths = [[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
+      "output": "\"A\"",
+      "explanation": "All possible trips are: \n\"D\" -> \"B\" -> \"C\" -> \"A\". \n\"B\" -> \"C\" -> \"A\". \n\"C\" -> \"A\". \n\"A\". \nClearly the destination city is \"A\"."
     },
     {
-      "input": "paths = [[&quot;A&quot;,&quot;Z&quot;]]",
-      "output": "&quot;Z&quot;",
+      "input": "paths = [[\"A\",\"Z\"]]",
+      "output": "\"Z\"",
       "explanation": null
     }
   ],
@@ -58,42 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "paths = [[&quot;London&quot;,&quot;New York&quot;],[&quot;New York&quot;,&quot;Lima&quot;],[&quot;Lima&quot;,&quot;Sao Paulo&quot;]]",
-      "expectedOutput": "&quot;Sao Paulo&quot;"
+      "input": "[[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
+      "expectedOutput": "\"Sao Paulo\""
     },
     {
-      "input": "paths = [[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;,&quot;B&quot;],[&quot;C&quot;,&quot;A&quot;]]",
-      "expectedOutput": "&quot;A&quot;"
+      "input": "[[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
+      "expectedOutput": "\"A\""
     },
     {
-      "input": "paths = [[&quot;A&quot;,&quot;Z&quot;]]",
-      "expectedOutput": "&quot;Z&quot;"
+      "input": "[[\"A\",\"Z\"]]",
+      "expectedOutput": "\"Z\""
     }
   ],
   "testCases": [
     {
-      "input": "paths = [[&quot;London&quot;,&quot;New York&quot;],[&quot;New York&quot;,&quot;Lima&quot;],[&quot;Lima&quot;,&quot;Sao Paulo&quot;]]",
-      "expectedOutput": "&quot;Sao Paulo&quot;"
-    },
-    {
-      "input": "paths = [[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;,&quot;B&quot;],[&quot;C&quot;,&quot;A&quot;]]",
-      "expectedOutput": "&quot;A&quot;"
-    },
-    {
-      "input": "paths = [[&quot;A&quot;,&quot;Z&quot;]]",
-      "expectedOutput": "&quot;Z&quot;"
-    },
-    {
       "input": "[[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"Sao Paulo\""
     },
     {
       "input": "[[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"A\""
     },
     {
       "input": "[[\"A\",\"Z\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"Z\""
+    },
+    {
+      "input": "paths = [[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
+      "expectedOutput": "\"Sao Paulo\""
+    },
+    {
+      "input": "paths = [[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
+      "expectedOutput": "\"A\""
+    },
+    {
+      "input": "paths = [[\"A\",\"Z\"]]",
+      "expectedOutput": "\"Z\""
     }
   ],
   "sqlSchema": null,
@@ -108,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/destination-city/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.943Z",
+    "collectedAt": "2026-10-19T18:40:16.546Z",
     "sourceUpdatedAt": null
   }
 }

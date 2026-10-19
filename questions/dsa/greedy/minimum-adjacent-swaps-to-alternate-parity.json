@@ -60,24 +60,40 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,4,6,5,7]",
+      "input": "[2,4,6,5,7]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [2,4,5,7]",
+      "input": "[2,4,5,7]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [1,2,3]",
+      "input": "[1,2,3]",
       "expectedOutput": "0"
     },
     {
-      "input": "nums = [4,5,6,8]",
+      "input": "[4,5,6,8]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[2,4,6,5,7]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,4,5,7]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[4,5,6,8]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums = [2,4,6,5,7]",
       "expectedOutput": "3"
     },
@@ -92,70 +108,6 @@
     {
       "input": "nums = [4,5,6,8]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[2,4,6,5,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,5,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,5,6,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,4,3,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,3,2,4,6,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1000000000,-1000000000]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -174,7 +126,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-adjacent-swaps-to-alternate-parity/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:43.721Z",
+    "collectedAt": "2026-10-19T18:40:23.391Z",
     "sourceUpdatedAt": null
   }
 }

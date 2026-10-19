@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;LUL&quot;, k = 1",
+      "input": "s = \"LUL\", k = 1",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;UDLR&quot;, k = 4",
+      "input": "s = \"UDLR\", k = 4",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;UU&quot;, k = 1",
+      "input": "s = \"UU\", k = 1",
       "output": "1",
       "explanation": null
     }
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;LUL&quot;, k = 1",
+      "input": "\"LUL\"\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;UDLR&quot;, k = 4",
+      "input": "\"UDLR\"\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;UU&quot;, k = 1",
+      "input": "\"UU\"\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;LUL&quot;, k = 1",
+      "input": "\"LUL\"\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;UDLR&quot;, k = 4",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;UU&quot;, k = 1",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"LUL\"\n1",
-      "expectedOutput": null
-    },
-    {
       "input": "\"UDLR\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"UU\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;UDLR&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"LUL\", k = 1",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;UU&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"UDLR\", k = 4",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"LUL\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"UDLR\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;LUL&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"UU\", k = 1",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distinct-points-reachable-after-substring-removal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:47.867Z",
+    "collectedAt": "2026-10-19T18:40:16.721Z",
     "sourceUpdatedAt": null
   }
 }

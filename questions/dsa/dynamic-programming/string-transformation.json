@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
       "output": "2",
-      "explanation": "First way:\nIn first operation, choose suffix from index = 3, so resulting s = &quot;dabc&quot;.\nIn second operation, choose suffix from index = 3, so resulting s = &quot;cdab&quot;.\n\nSecond way:\nIn first operation, choose suffix from index = 1, so resulting s = &quot;bcda&quot;.\nIn second operation, choose suffix from index = 1, so resulting s = &quot;cdab&quot;."
+      "explanation": "First way:\nIn first operation, choose suffix from index = 3, so resulting s = \"dabc\".\nIn second operation, choose suffix from index = 3, so resulting s = \"cdab\".\n\nSecond way:\nIn first operation, choose suffix from index = 1, so resulting s = \"bcda\".\nIn second operation, choose suffix from index = 1, so resulting s = \"cdab\"."
     },
     {
-      "input": "s = &quot;ababab&quot;, t = &quot;ababab&quot;, k = 1",
+      "input": "s = \"ababab\", t = \"ababab\", k = 1",
       "output": "2",
-      "explanation": "First way:\nChoose suffix from index = 2, so resulting s = &quot;ababab&quot;.\n\nSecond way:\nChoose suffix from index = 4, so resulting s = &quot;ababab&quot;."
+      "explanation": "First way:\nChoose suffix from index = 2, so resulting s = \"ababab\".\n\nSecond way:\nChoose suffix from index = 4, so resulting s = \"ababab\"."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
+      "input": "\"abcd\"\n\"cdab\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;ababab&quot;, t = &quot;ababab&quot;, k = 1",
+      "input": "\"ababab\"\n\"ababab\"\n1",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 2",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;ababab&quot;, t = &quot;ababab&quot;, k = 1",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"abcd\"\n\"cdab\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"ababab\"\n\"ababab\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdab&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abcd\", t = \"cdab\", k = 2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = \"ababab\", t = \"ababab\", k = 1",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/string-transformation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.507Z",
+    "collectedAt": "2026-10-19T18:40:30.335Z",
     "sourceUpdatedAt": null
   }
 }

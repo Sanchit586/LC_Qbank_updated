@@ -22,12 +22,12 @@
   ],
   "examples": [
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]",
+      "input": "[\"NeighborSum\", \"adjacentSum\", \"adjacentSum\", \"diagonalSum\", \"diagonalSum\"]\n\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]",
       "output": "[null, 6, 16, 16, 4]",
       "explanation": null
     },
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]",
+      "input": "[\"NeighborSum\", \"adjacentSum\", \"diagonalSum\"]\n\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]",
       "output": "[null, 23, 45]",
       "explanation": null
     }
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]",
+      "input": "[\"NeighborSum\",\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]\n[[[[0,1,2],[3,4,5],[6,7,8]]],[1],[4],[4],[8]]",
       "expectedOutput": "[null, 6, 16, 16, 4]"
     },
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]",
+      "input": "[\"NeighborSum\",\"adjacentSum\",\"diagonalSum\"]\n[[[[1,2,0,3],[4,7,15,6],[8,9,10,11],[12,13,14,5]]],[15],[9]]",
       "expectedOutput": "[null, 23, 45]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]",
+      "input": "[\"NeighborSum\",\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]\n[[[[0,1,2],[3,4,5],[6,7,8]]],[1],[4],[4],[8]]",
       "expectedOutput": "[null, 6, 16, 16, 4]"
     },
     {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]",
+      "input": "[\"NeighborSum\",\"adjacentSum\",\"diagonalSum\"]\n[[[[1,2,0,3],[4,7,15,6],[8,9,10,11],[12,13,14,5]]],[15],[9]]",
       "expectedOutput": "[null, 23, 45]"
     },
     {
-      "input": "[\"NeighborSum\",\"adjacentSum\",\"adjacentSum\",\"diagonalSum\",\"diagonalSum\"]\n[[[[0,1,2],[3,4,5],[6,7,8]]],[1],[4],[4],[8]]",
-      "expectedOutput": null
+      "input": "[\"NeighborSum\", \"adjacentSum\", \"adjacentSum\", \"diagonalSum\", \"diagonalSum\"]\n\n[[[[0, 1, 2], [3, 4, 5], [6, 7, 8]]], [1], [4], [4], [8]]",
+      "expectedOutput": "[null, 6, 16, 16, 4]"
     },
     {
-      "input": "[\"NeighborSum\",\"adjacentSum\",\"diagonalSum\"]\n[[[[1,2,0,3],[4,7,15,6],[8,9,10,11],[12,13,14,5]]],[15],[9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;NeighborSum&quot;, &quot;adjacentSum&quot;, &quot;adjacentSum&quot;, &quot;diagonalSum&quot;, &quot;diagonalSum&quot;]\n\n[[[[1, 2, 3], [4, 5, 6], [7, 8, 9]]], [2], [5], [5], [9]]",
-      "expectedOutput": null
+      "input": "[\"NeighborSum\", \"adjacentSum\", \"diagonalSum\"]\n\n[[[[1, 2, 0, 3], [4, 7, 15, 6], [8, 9, 10, 11], [12, 13, 14, 5]]], [15], [9]]",
+      "expectedOutput": "[null, 23, 45]"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-neighbor-sum-service/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:40.678Z",
+    "collectedAt": "2026-10-19T18:40:16.491Z",
     "sourceUpdatedAt": null
   }
 }

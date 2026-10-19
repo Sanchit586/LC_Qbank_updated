@@ -13,12 +13,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0192837465&quot;",
+      "input": "s = \"0192837465\"",
       "output": "25",
       "explanation": "Step\n\t\t\tFrom\n\t\t\tTo\n\t\t\tRotations\n\t\t\n\t\n\t\n\t\t\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\t\t\n\t\t\n\t\t\t2\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t3\n\t\t\t1\n\t\t\t9\n\t\t\t2\n\t\t\n\t\t\n\t\t\t4\n\t\t\t9\n\t\t\t2\n\t\t\t3\n\t\t\n\t\t\n\t\t\t5\n\t\t\t2\n\t\t\t8\n\t\t\t4\n\t\t\n\t\t\n\t\t\t6\n\t\t\t8\n\t\t\t3\n\t\t\t5\n\t\t\n\t\t\n\t\t\t7\n\t\t\t3\n\t\t\t7\n\t\t\t4\n\t\t\n\t\t\n\t\t\t8\n\t\t\t7\n\t\t\t4\n\t\t\t3\n\t\t\n\t\t\n\t\t\t9\n\t\t\t4\n\t\t\t6\n\t\t\t2\n\t\t\n\t\t\n\t\t\t10\n\t\t\t6\n\t\t\t5\n\t\t\t1"
     },
     {
-      "input": "s = &quot;1200210200&quot;",
+      "input": "s = \"1200210200\"",
       "output": "12",
       "explanation": "Step\n\t\t\tFrom\n\t\t\tTo\n\t\t\tRotations\n\t\t\n\t\n\t\n\t\t\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t2\n\t\t\t1\n\t\t\t2\n\t\t\t1\n\t\t\n\t\t\n\t\t\t3\n\t\t\t2\n\t\t\t0\n\t\t\t2\n\t\t\n\t\t\n\t\t\t4\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\t\t\n\t\t\n\t\t\t5\n\t\t\t0\n\t\t\t2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t6\n\t\t\t2\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t7\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\n\t\t\n\t\t\t8\n\t\t\t0\n\t\t\t2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t9\n\t\t\t2\n\t\t\t0\n\t\t\t2\n\t\t\n\t\t\n\t\t\t10\n\t\t\t0\n\t\t\t0\n\t\t\t0"
     }
@@ -46,94 +46,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0192837465&quot;",
+      "input": "\"0192837465\"",
       "expectedOutput": "25"
     },
     {
-      "input": "s = &quot;1200210200&quot;",
+      "input": "\"1200210200\"",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0192837465&quot;",
+      "input": "\"0192837465\"",
       "expectedOutput": "25"
     },
     {
-      "input": "s = &quot;1200210200&quot;",
+      "input": "\"1200210200\"",
       "expectedOutput": "12"
     },
     {
-      "input": "\"0192837465\"",
-      "expectedOutput": null
+      "input": "s = \"0192837465\"",
+      "expectedOutput": "25"
     },
     {
-      "input": "\"1200210200\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"1200210200\"",
+      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,
@@ -147,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-rotations-to-dial-a-number-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:16.907Z",
+    "collectedAt": "2026-10-19T18:40:24.946Z",
     "sourceUpdatedAt": null
   }
 }

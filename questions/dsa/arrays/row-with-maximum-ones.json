@@ -11,16 +11,16 @@
   ],
   "statement": "Given a `m x n` binary matrix `mat`, find the **0-indexed** position of the row that contains the **maximum** count of **ones,** and the number of ones in that row.\n\nIn case there are multiple rows that have the maximum count of ones, the row with the **smallest row number** should be selected.\n\nReturn _an array containing the index of the row, and the number of ones in it._\n\n**Example 1:**\n\n```\n)\n```\n\n**Example 2:**\n\n```\n(2)\n```\n\n**Example 3:**\n\n```\nInput: mat = [[0,0],[1,1],[0,0]]\nOutput: [1,2]\nExplanation: The row indexed 1 has the maximum count of ones (2). So the answer is [1,2].\n```\n\n**Constraints:**\n\n*   `m == mat.length` \n*   `n == mat[i].length` \n*   `1 <= m, n <= 100` \n*   `mat[i][j]` is either `0` or `1`.",
   "constraints": [
-    "m == mat.length",
-    "n == mat[i].length",
-    "1 <= m, n <= 100",
+    "m == mat.length ",
+    "n == mat[i].length ",
+    "1 <= m, n <= 100 ",
     "mat[i][j] is either 0 or 1."
   ],
   "examples": [
     {
       "input": "mat = [[0,1],[1,0]]",
       "output": "[0,1]",
-      "explanation": "Both rows have the same number of 1&#39;s. So we return the index of the smaller row, 0, and the maximum count of ones (1). So, the answer is [0,1]."
+      "explanation": "Both rows have the same number of 1's. So we return the index of the smaller row, 0, and the maximum count of ones (1). So, the answer is [0,1]."
     },
     {
       "input": "mat = [[0,0,0],[0,1,1]]",
@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[0,1],[1,0]]",
+      "input": "[[0,1],[1,0]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "mat = [[0,0,0],[0,1,1]]",
+      "input": "[[0,0,0],[0,1,1]]",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "mat = [[0,0],[1,1],[0,0]]",
+      "input": "[[0,0],[1,1],[0,0]]",
       "expectedOutput": "[1,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[1,0]]",
+      "expectedOutput": "[0,1]"
+    },
+    {
+      "input": "[[0,0,0],[0,1,1]]",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[[0,0],[1,1],[0,0]]",
+      "expectedOutput": "[1,2]"
+    },
+    {
       "input": "mat = [[0,1],[1,0]]",
       "expectedOutput": "[0,1]"
     },
@@ -80,38 +92,6 @@
     {
       "input": "mat = [[0,0],[1,1],[0,0]]",
       "expectedOutput": "[1,2]"
-    },
-    {
-      "input": "[[0,1],[1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0,0],[0,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0],[1,1],[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[1,1,1],[1,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[1,1],[2,2],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1],[1,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[1,2],[2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/row-with-maximum-ones/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:16.703Z",
+    "collectedAt": "2026-10-19T18:40:28.056Z",
     "sourceUpdatedAt": null
   }
 }

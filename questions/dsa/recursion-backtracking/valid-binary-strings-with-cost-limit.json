@@ -19,12 +19,12 @@
   "examples": [
     {
       "input": "n = 3, k = 1",
-      "output": "[&quot;000&quot;,&quot;010&quot;,&quot;100&quot;]",
+      "output": "[\"000\",\"010\",\"100\"]",
       "explanation": null
     },
     {
       "input": "n = 1, k = 0",
-      "output": "[&quot;0&quot;,&quot;1&quot;]",
+      "output": "[\"0\",\"1\"]",
       "explanation": null
     }
   ],
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 1",
-      "expectedOutput": "[&quot;000&quot;,&quot;010&quot;,&quot;100&quot;]"
+      "input": "3\n1",
+      "expectedOutput": "[\"000\",\"010\",\"100\"]"
     },
     {
-      "input": "n = 1, k = 0",
-      "expectedOutput": "[&quot;0&quot;,&quot;1&quot;]"
+      "input": "1\n0",
+      "expectedOutput": "[\"0\",\"1\"]"
     }
   ],
   "testCases": [
     {
-      "input": "n = 3, k = 1",
-      "expectedOutput": "[&quot;000&quot;,&quot;010&quot;,&quot;100&quot;]"
-    },
-    {
-      "input": "n = 1, k = 0",
-      "expectedOutput": "[&quot;0&quot;,&quot;1&quot;]"
-    },
-    {
       "input": "3\n1",
-      "expectedOutput": null
+      "expectedOutput": "[\"000\",\"010\",\"100\"]"
     },
     {
       "input": "1\n0",
-      "expectedOutput": null
+      "expectedOutput": "[\"0\",\"1\"]"
     },
     {
-      "input": "n = 4, k = 2",
-      "expectedOutput": null
+      "input": "n = 3, k = 1",
+      "expectedOutput": "[\"000\",\"010\",\"100\"]"
+    },
+    {
+      "input": "n = 1, k = 0",
+      "expectedOutput": "[\"0\",\"1\"]"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-binary-strings-with-cost-limit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.203Z",
+    "collectedAt": "2026-10-19T18:40:31.457Z",
     "sourceUpdatedAt": null
   }
 }

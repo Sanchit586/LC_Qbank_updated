@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
+      "input": "[[1,3],[2,6],[8,10],[15,18]]",
       "expectedOutput": "[[1,6],[8,10],[15,18]]"
     },
     {
-      "input": "intervals = [[1,4],[4,5]]",
+      "input": "[[1,4],[4,5]]",
       "expectedOutput": "[[1,5]]"
     },
     {
-      "input": "intervals = [[4,7],[1,4]]",
+      "input": "[[4,7],[1,4]]",
       "expectedOutput": "[[1,7]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,3],[2,6],[8,10],[15,18]]",
+      "expectedOutput": "[[1,6],[8,10],[15,18]]"
+    },
+    {
+      "input": "[[1,4],[4,5]]",
+      "expectedOutput": "[[1,5]]"
+    },
+    {
+      "input": "[[4,7],[1,4]]",
+      "expectedOutput": "[[1,7]]"
+    },
+    {
       "input": "intervals = [[1,3],[2,6],[8,10],[15,18]]",
       "expectedOutput": "[[1,6],[8,10],[15,18]]"
     },
@@ -80,38 +92,6 @@
     {
       "input": "intervals = [[4,7],[1,4]]",
       "expectedOutput": "[[1,7]]"
-    },
-    {
-      "input": "[[1,3],[2,6],[8,10],[15,18]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,4],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,7],[1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,5],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[5,8],[2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,4],[3,7],[9,11],[16,19]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,5],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,4],[3,7],[9,11],[16,19]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/merge-intervals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:39.341Z",
+    "collectedAt": "2026-10-19T18:40:23.107Z",
     "sourceUpdatedAt": null
   }
 }

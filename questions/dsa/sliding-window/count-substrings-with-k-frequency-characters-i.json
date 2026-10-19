@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abacb&quot;, k = 2",
+      "input": "s = \"abacb\", k = 2",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcde&quot;, k = 1",
+      "input": "s = \"abcde\", k = 1",
       "output": "15",
       "explanation": null
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abacb&quot;, k = 2",
+      "input": "\"abacb\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, k = 1",
+      "input": "\"abcde\"\n1",
       "expectedOutput": "15"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abacb&quot;, k = 2",
+      "input": "\"abacb\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcde&quot;, k = 1",
+      "input": "\"abcde\"\n1",
       "expectedOutput": "15"
     },
     {
-      "input": "\"abacb\"\n2",
-      "expectedOutput": null
+      "input": "s = \"abacb\", k = 2",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abcde\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abacb&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abcde\", k = 1",
+      "expectedOutput": "15"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-substrings-with-k-frequency-characters-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.588Z",
+    "collectedAt": "2026-10-19T18:40:15.718Z",
     "sourceUpdatedAt": null
   }
 }

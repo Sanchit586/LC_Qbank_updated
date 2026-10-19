@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num1 = 3, num2 = 5",
+      "input": "3\n5",
       "expectedOutput": "3"
     },
     {
-      "input": "num1 = 1, num2 = 12",
+      "input": "1\n12",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "3\n5",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "1\n12",
+      "expectedOutput": "3"
+    },
+    {
       "input": "num1 = 3, num2 = 5",
       "expectedOutput": "3"
     },
     {
       "input": "num1 = 1, num2 = 12",
       "expectedOutput": "3"
-    },
-    {
-      "input": "3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n12",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 4, num3 = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimize-xor/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:43.502Z",
+    "collectedAt": "2026-10-19T18:40:23.313Z",
     "sourceUpdatedAt": null
   }
 }

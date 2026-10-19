@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;heeellooo&quot;, words = [&quot;hello&quot;, &quot;hi&quot;, &quot;helo&quot;]",
+      "input": "s = \"heeellooo\", words = [\"hello\", \"hi\", \"helo\"]",
       "output": "1",
-      "explanation": "We can extend &quot;e&quot; and &quot;o&quot; in the word &quot;hello&quot; to get &quot;heeellooo&quot;.\nWe can&#39;t extend &quot;helo&quot; to get &quot;heeellooo&quot; because the group &quot;ll&quot; is not size 3 or more."
+      "explanation": "We can extend \"e\" and \"o\" in the word \"hello\" to get \"heeellooo\".\nWe can't extend \"helo\" to get \"heeellooo\" because the group \"ll\" is not size 3 or more."
     },
     {
-      "input": "s = &quot;zzzzzyyyyy&quot;, words = [&quot;zzyy&quot;,&quot;zy&quot;,&quot;zyy&quot;]",
+      "input": "s = \"zzzzzyyyyy\", words = [\"zzyy\",\"zy\",\"zyy\"]",
       "output": "3",
       "explanation": null
     }
@@ -51,30 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;heeellooo&quot;, words = [&quot;hello&quot;, &quot;hi&quot;, &quot;helo&quot;]",
+      "input": "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;zzzzzyyyyy&quot;, words = [&quot;zzyy&quot;,&quot;zy&quot;,&quot;zyy&quot;]",
+      "input": "\"zzzzzyyyyy\"\n[\"zzyy\",\"zy\",\"zyy\"]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;heeellooo&quot;, words = [&quot;hello&quot;, &quot;hi&quot;, &quot;helo&quot;]",
+      "input": "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;zzzzzyyyyy&quot;, words = [&quot;zzyy&quot;,&quot;zy&quot;,&quot;zyy&quot;]",
+      "input": "\"zzzzzyyyyy\"\n[\"zzyy\",\"zy\",\"zyy\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "\"heeellooo\"\n[\"hello\", \"hi\", \"helo\"]",
-      "expectedOutput": null
+      "input": "s = \"heeellooo\", words = [\"hello\", \"hi\", \"helo\"]",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"zzzzzyyyyy\"\n[\"zzyy\",\"zy\",\"zyy\"]",
-      "expectedOutput": null
+      "input": "s = \"zzzzzyyyyy\", words = [\"zzyy\",\"zy\",\"zyy\"]",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -86,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/expressive-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.073Z",
+    "collectedAt": "2026-10-19T18:40:17.202Z",
     "sourceUpdatedAt": null
   }
 }

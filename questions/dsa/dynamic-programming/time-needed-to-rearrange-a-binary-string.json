@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0110101&quot;",
+      "input": "s = \"0110101\"",
       "output": "4",
-      "explanation": "After one second, s becomes &quot;1011010&quot;.\nAfter another second, s becomes &quot;1101100&quot;.\nAfter the third second, s becomes &quot;1110100&quot;.\nAfter the fourth second, s becomes &quot;1111000&quot;.\nNo occurrence of &quot;01&quot; exists any longer, and the process needed 4 seconds to complete,\nso we return 4."
+      "explanation": "After one second, s becomes \"1011010\".\nAfter another second, s becomes \"1101100\".\nAfter the third second, s becomes \"1110100\".\nAfter the fourth second, s becomes \"1111000\".\nNo occurrence of \"01\" exists any longer, and the process needed 4 seconds to complete,\nso we return 4."
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "s = \"11100\"",
       "output": "0",
-      "explanation": "No occurrence of &quot;01&quot; exists in s, and the processes needed 0 seconds to complete,\nso we return 0."
+      "explanation": "No occurrence of \"01\" exists in s, and the processes needed 0 seconds to complete,\nso we return 0."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0110101&quot;",
+      "input": "\"0110101\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "\"11100\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0110101&quot;",
+      "input": "\"0110101\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;11100&quot;",
+      "input": "\"11100\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"0110101\"",
-      "expectedOutput": null
+      "input": "s = \"0110101\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"11100\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"11100\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/time-needed-to-rearrange-a-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:58.049Z",
+    "collectedAt": "2026-10-19T18:40:31.046Z",
     "sourceUpdatedAt": null
   }
 }

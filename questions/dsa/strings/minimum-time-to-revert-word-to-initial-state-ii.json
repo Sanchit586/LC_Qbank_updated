@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abacaba&quot;, k = 3",
+      "input": "word = \"abacaba\", k = 3",
       "output": "2",
-      "explanation": "At the 1st second, we remove characters &quot;aba&quot; from the prefix of word, and add characters &quot;bac&quot; to the end of word. Thus, word becomes equal to &quot;cababac&quot;.\nAt the 2nd second, we remove characters &quot;cab&quot; from the prefix of word, and add &quot;aba&quot; to the end of word. Thus, word becomes equal to &quot;abacaba&quot; and reverts to its initial state.\nIt can be shown that 2 seconds is the minimum time greater than zero required for word to revert to its initial state."
+      "explanation": "At the 1st second, we remove characters \"aba\" from the prefix of word, and add characters \"bac\" to the end of word. Thus, word becomes equal to \"cababac\".\nAt the 2nd second, we remove characters \"cab\" from the prefix of word, and add \"aba\" to the end of word. Thus, word becomes equal to \"abacaba\" and reverts to its initial state.\nIt can be shown that 2 seconds is the minimum time greater than zero required for word to revert to its initial state."
     },
     {
-      "input": "word = &quot;abacaba&quot;, k = 4",
+      "input": "word = \"abacaba\", k = 4",
       "output": "1",
-      "explanation": "At the 1st second, we remove characters &quot;abac&quot; from the prefix of word, and add characters &quot;caba&quot; to the end of word. Thus, word becomes equal to &quot;abacaba&quot; and reverts to its initial state.\nIt can be shown that 1 second is the minimum time greater than zero required for word to revert to its initial state."
+      "explanation": "At the 1st second, we remove characters \"abac\" from the prefix of word, and add characters \"caba\" to the end of word. Thus, word becomes equal to \"abacaba\" and reverts to its initial state.\nIt can be shown that 1 second is the minimum time greater than zero required for word to revert to its initial state."
     },
     {
-      "input": "word = &quot;abcbabcd&quot;, k = 2",
+      "input": "word = \"abcbabcd\", k = 2",
       "output": "4",
-      "explanation": "At every second, we will remove the first 2 characters of word, and add the same characters to the end of word.\nAfter 4 seconds, word becomes equal to &quot;abcbabcd&quot; and reverts to its initial state.\nIt can be shown that 4 seconds is the minimum time greater than zero required for word to revert to its initial state."
+      "explanation": "At every second, we will remove the first 2 characters of word, and add the same characters to the end of word.\nAfter 4 seconds, word becomes equal to \"abcbabcd\" and reverts to its initial state.\nIt can be shown that 4 seconds is the minimum time greater than zero required for word to revert to its initial state."
     }
   ],
   "starterCode": {
@@ -57,50 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abacaba&quot;, k = 3",
+      "input": "\"abacaba\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;abacaba&quot;, k = 4",
+      "input": "\"abacaba\"\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;abcbabcd&quot;, k = 2",
+      "input": "\"abcbabcd\"\n2",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abacaba&quot;, k = 3",
+      "input": "\"abacaba\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;abacaba&quot;, k = 4",
+      "input": "\"abacaba\"\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;abcbabcd&quot;, k = 2",
+      "input": "\"abcbabcd\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "\"abacaba\"\n3",
-      "expectedOutput": null
+      "input": "word = \"abacaba\", k = 3",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abacaba\"\n4",
-      "expectedOutput": null
+      "input": "word = \"abacaba\", k = 4",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"abcbabcd\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;abacaba&quot;, k = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;abcbabcd&quot;, k = 3",
-      "expectedOutput": null
+      "input": "word = \"abcbabcd\", k = 2",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -115,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-revert-word-to-initial-state-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:28.084Z",
+    "collectedAt": "2026-10-19T18:40:25.235Z",
     "sourceUpdatedAt": null
   }
 }

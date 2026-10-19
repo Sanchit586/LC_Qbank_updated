@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;abcdba&quot;, s2 = &quot;cabdab&quot;",
+      "input": "s1 = \"abcdba\", s2 = \"cabdab\"",
       "output": "true",
-      "explanation": "We can apply the following operations on s1:\n- Choose the indices i = 0, j = 2. The resulting string is s1 = &quot;cbadba&quot;.\n- Choose the indices i = 2, j = 4. The resulting string is s1 = &quot;cbbdaa&quot;.\n- Choose the indices i = 1, j = 5. The resulting string is s1 = &quot;cabdab&quot; = s2."
+      "explanation": "We can apply the following operations on s1:\n- Choose the indices i = 0, j = 2. The resulting string is s1 = \"cbadba\".\n- Choose the indices i = 2, j = 4. The resulting string is s1 = \"cbbdaa\".\n- Choose the indices i = 1, j = 5. The resulting string is s1 = \"cabdab\" = s2."
     },
     {
-      "input": "s1 = &quot;abe&quot;, s2 = &quot;bea&quot;",
+      "input": "s1 = \"abe\", s2 = \"bea\"",
       "output": "false",
       "explanation": "It is not possible to make the two strings equal."
     }
@@ -51,82 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;abcdba&quot;, s2 = &quot;cabdab&quot;",
+      "input": "\"abcdba\"\n\"cabdab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;abe&quot;, s2 = &quot;bea&quot;",
+      "input": "\"abe\"\n\"bea\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;abcdba&quot;, s2 = &quot;cabdab&quot;",
+      "input": "\"abcdba\"\n\"cabdab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;abe&quot;, s2 = &quot;bea&quot;",
+      "input": "\"abe\"\n\"bea\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"abcdba\"\n\"cabdab\"",
-      "expectedOutput": null
+      "input": "s1 = \"abcdba\", s2 = \"cabdab\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"abe\"\n\"bea\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;abe&quot;, s3 = &quot;bea&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"abe\", s2 = \"bea\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -141,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.233Z",
+    "collectedAt": "2026-10-19T18:40:14.235Z",
     "sourceUpdatedAt": null
   }
 }

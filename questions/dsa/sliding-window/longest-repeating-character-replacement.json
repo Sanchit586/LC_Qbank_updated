@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ABAB&quot;, k = 2",
+      "input": "s = \"ABAB\", k = 2",
       "output": "4",
-      "explanation": "Replace the two &#39;A&#39;s with two &#39;B&#39;s or vice versa."
+      "explanation": "Replace the two 'A's with two 'B's or vice versa."
     },
     {
-      "input": "s = &quot;AABABBA&quot;, k = 1",
+      "input": "s = \"AABABBA\", k = 1",
       "output": "4",
-      "explanation": "Replace the one &#39;A&#39; in the middle with &#39;B&#39; and form &quot;AABBBBA&quot;.\nThe substring &quot;BBBB&quot; has the longest repeating letters, which is 4.\nThere may exists other ways to achieve this answer too."
+      "explanation": "Replace the one 'A' in the middle with 'B' and form \"AABBBBA\".\nThe substring \"BBBB\" has the longest repeating letters, which is 4.\nThere may exists other ways to achieve this answer too."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ABAB&quot;, k = 2",
+      "input": "\"ABAB\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;AABABBA&quot;, k = 1",
+      "input": "\"AABABBA\"\n1",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ABAB&quot;, k = 2",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;AABABBA&quot;, k = 1",
-      "expectedOutput": "4"
-    },
-    {
       "input": "\"ABAB\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"AABABBA\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;ABAB&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"ABAB\", k = 2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = \"AABABBA\", k = 1",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-repeating-character-replacement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:54.819Z",
+    "collectedAt": "2026-10-19T18:40:20.589Z",
     "sourceUpdatedAt": null
   }
 }

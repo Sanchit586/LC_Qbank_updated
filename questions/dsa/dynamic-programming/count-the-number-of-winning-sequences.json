@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;FFF&quot;",
+      "input": "s = \"FFF\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;FWEFW&quot;",
+      "input": "s = \"FWEFW\"",
       "output": "18",
       "explanation": null
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;FFF&quot;",
+      "input": "\"FFF\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;FWEFW&quot;",
+      "input": "\"FWEFW\"",
       "expectedOutput": "18"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;FFF&quot;",
+      "input": "\"FFF\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;FWEFW&quot;",
+      "input": "\"FWEFW\"",
       "expectedOutput": "18"
     },
     {
-      "input": "\"FFF\"",
-      "expectedOutput": null
+      "input": "s = \"FFF\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"FWEFW\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"FWEFW\"",
+      "expectedOutput": "18"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-winning-sequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.888Z",
+    "collectedAt": "2026-10-19T18:40:15.849Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;00110011&quot;",
+      "input": "s = \"00110011\"",
       "output": "6",
-      "explanation": "There are 6 substrings that have equal number of consecutive 1&#39;s and 0&#39;s: &quot;0011&quot;, &quot;01&quot;, &quot;1100&quot;, &quot;10&quot;, &quot;0011&quot;, and &quot;01&quot;.\nNotice that some of these substrings repeat and are counted the number of times they occur.\nAlso, &quot;00110011&quot; is not a valid substring because all the 0&#39;s (and 1&#39;s) are not grouped together."
+      "explanation": "There are 6 substrings that have equal number of consecutive 1's and 0's: \"0011\", \"01\", \"1100\", \"10\", \"0011\", and \"01\".\nNotice that some of these substrings repeat and are counted the number of times they occur.\nAlso, \"00110011\" is not a valid substring because all the 0's (and 1's) are not grouped together."
     },
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "s = \"10101\"",
       "output": "4",
-      "explanation": "There are 4 substrings: &quot;10&quot;, &quot;01&quot;, &quot;10&quot;, &quot;01&quot; that have equal number of consecutive 1&#39;s and 0&#39;s."
+      "explanation": "There are 4 substrings: \"10\", \"01\", \"10\", \"01\" that have equal number of consecutive 1's and 0's."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;00110011&quot;",
+      "input": "\"00110011\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "\"10101\"",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;00110011&quot;",
+      "input": "\"00110011\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "\"10101\"",
       "expectedOutput": "4"
     },
     {
-      "input": "\"00110011\"",
-      "expectedOutput": null
+      "input": "s = \"00110011\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"10101\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"10101\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-binary-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:07.599Z",
+    "collectedAt": "2026-10-19T18:40:14.978Z",
     "sourceUpdatedAt": null
   }
 }

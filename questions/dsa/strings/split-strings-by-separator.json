@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;one.two.three&quot;,&quot;four.five&quot;,&quot;six&quot;], separator = &quot;.&quot;",
-      "output": "[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;]",
-      "explanation": "In this example we split as follows:\n\n&quot;one.two.three&quot; splits into &quot;one&quot;, &quot;two&quot;, &quot;three&quot;\n&quot;four.five&quot; splits into &quot;four&quot;, &quot;five&quot;\n&quot;six&quot; splits into &quot;six&quot; \n\nHence, the resulting array is [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;]."
+      "input": "words = [\"one.two.three\",\"four.five\",\"six\"], separator = \".\"",
+      "output": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]",
+      "explanation": "In this example we split as follows:\n\n\"one.two.three\" splits into \"one\", \"two\", \"three\"\n\"four.five\" splits into \"four\", \"five\"\n\"six\" splits into \"six\" \n\nHence, the resulting array is [\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]."
     },
     {
-      "input": "words = [&quot;$easy$&quot;,&quot;$problem$&quot;], separator = &quot;$&quot;",
-      "output": "[&quot;easy&quot;,&quot;problem&quot;]",
-      "explanation": "In this example we split as follows: \n\n&quot;$easy$&quot; splits into &quot;easy&quot; (excluding empty strings)\n&quot;$problem$&quot; splits into &quot;problem&quot; (excluding empty strings)\n\nHence, the resulting array is [&quot;easy&quot;,&quot;problem&quot;]."
+      "input": "words = [\"$easy$\",\"$problem$\"], separator = \"$\"",
+      "output": "[\"easy\",\"problem\"]",
+      "explanation": "In this example we split as follows: \n\n\"$easy$\" splits into \"easy\" (excluding empty strings)\n\"$problem$\" splits into \"problem\" (excluding empty strings)\n\nHence, the resulting array is [\"easy\",\"problem\"]."
     },
     {
-      "input": "words = [&quot;|||&quot;], separator = &quot;|&quot;",
+      "input": "words = [\"|||\"], separator = \"|\"",
       "output": "[]",
-      "explanation": "In this example the resulting split of &quot;|||&quot; will contain only empty strings, so we return an empty array []."
+      "explanation": "In this example the resulting split of \"|||\" will contain only empty strings, so we return an empty array []."
     }
   ],
   "starterCode": {
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;one.two.three&quot;,&quot;four.five&quot;,&quot;six&quot;], separator = &quot;.&quot;",
-      "expectedOutput": "[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;]"
+      "input": "[\"one.two.three\",\"four.five\",\"six\"]\n\".\"",
+      "expectedOutput": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]"
     },
     {
-      "input": "words = [&quot;$easy$&quot;,&quot;$problem$&quot;], separator = &quot;$&quot;",
-      "expectedOutput": "[&quot;easy&quot;,&quot;problem&quot;]"
+      "input": "[\"$easy$\",\"$problem$\"]\n\"$\"",
+      "expectedOutput": "[\"easy\",\"problem\"]"
     },
     {
-      "input": "words = [&quot;|||&quot;], separator = &quot;|&quot;",
+      "input": "[\"|||\"]\n\"|\"",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;one.two.three&quot;,&quot;four.five&quot;,&quot;six&quot;], separator = &quot;.&quot;",
-      "expectedOutput": "[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;,&quot;five&quot;,&quot;six&quot;]"
-    },
-    {
-      "input": "words = [&quot;$easy$&quot;,&quot;$problem$&quot;], separator = &quot;$&quot;",
-      "expectedOutput": "[&quot;easy&quot;,&quot;problem&quot;]"
-    },
-    {
-      "input": "words = [&quot;|||&quot;], separator = &quot;|&quot;",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "[\"one.two.three\",\"four.five\",\"six\"]\n\".\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]"
     },
     {
       "input": "[\"$easy$\",\"$problem$\"]\n\"$\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"easy\",\"problem\"]"
     },
     {
       "input": "[\"|||\"]\n\"|\"",
-      "expectedOutput": null
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "words = [\"one.two.three\",\"four.five\",\"six\"], separator = \".\"",
+      "expectedOutput": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]"
+    },
+    {
+      "input": "words = [\"$easy$\",\"$problem$\"], separator = \"$\"",
+      "expectedOutput": "[\"easy\",\"problem\"]"
+    },
+    {
+      "input": "words = [\"|||\"], separator = \"|\"",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -106,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-strings-by-separator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.107Z",
+    "collectedAt": "2026-10-19T18:40:30.156Z",
     "sourceUpdatedAt": null
   }
 }

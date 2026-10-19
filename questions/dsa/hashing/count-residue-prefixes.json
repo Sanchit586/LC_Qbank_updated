@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "2",
-      "explanation": "​​​​​​​\n\n\n\tPrefix &quot;a&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;ab&quot; has 2 distinct characters and length modulo 3 is 2, so it is a residue.\n\tPrefix &quot;abc&quot; does not satisfy the condition. Thus, the answer is 2."
+      "explanation": "​​​​​​​\n\n\n\tPrefix \"a\" has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix \"ab\" has 2 distinct characters and length modulo 3 is 2, so it is a residue.\n\tPrefix \"abc\" does not satisfy the condition. Thus, the answer is 2."
     },
     {
-      "input": "s = &quot;dd&quot;",
+      "input": "s = \"dd\"",
       "output": "1",
-      "explanation": "Prefix &quot;d&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;dd&quot; has 1 distinct character but length modulo 3 is 2, so it is not a residue. Thus, the answer is 1."
+      "explanation": "Prefix \"d\" has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix \"dd\" has 1 distinct character but length modulo 3 is 2, so it is not a residue. Thus, the answer is 1."
     },
     {
-      "input": "s = &quot;bob&quot;",
+      "input": "s = \"bob\"",
       "output": "2",
-      "explanation": "Prefix &quot;b&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;bo&quot; has 2 distinct characters and length mod 3 is 2, so it is a residue. Thus, the answer is 2."
+      "explanation": "Prefix \"b\" has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix \"bo\" has 2 distinct characters and length mod 3 is 2, so it is a residue. Thus, the answer is 2."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;dd&quot;",
+      "input": "\"dd\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;bob&quot;",
+      "input": "\"bob\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;dd&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;bob&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"dd\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"bob\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"dd\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"bob\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-residue-prefixes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:20.109Z",
+    "collectedAt": "2026-10-19T18:40:15.525Z",
     "sourceUpdatedAt": null
   }
 }

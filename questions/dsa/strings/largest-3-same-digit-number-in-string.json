@@ -15,18 +15,18 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;6777133339&quot;",
-      "output": "&quot;777&quot;",
-      "explanation": "There are two distinct good integers: &quot;777&quot; and &quot;333&quot;.\n&quot;777&quot; is the largest, so we return &quot;777&quot;."
+      "input": "num = \"6777133339\"",
+      "output": "\"777\"",
+      "explanation": "There are two distinct good integers: \"777\" and \"333\".\n\"777\" is the largest, so we return \"777\"."
     },
     {
-      "input": "num = &quot;2300019&quot;",
-      "output": "&quot;000&quot;",
-      "explanation": "&quot;000&quot; is the only good integer."
+      "input": "num = \"2300019\"",
+      "output": "\"000\"",
+      "explanation": "\"000\" is the only good integer."
     },
     {
-      "input": "num = &quot;42352338&quot;",
-      "output": "&quot;&quot;",
+      "input": "num = \"42352338\"",
+      "output": "\"\"",
       "explanation": "No substring of length 3 consists of only one unique digit. Therefore, there are no good integers."
     }
   ],
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;6777133339&quot;",
-      "expectedOutput": "&quot;777&quot;"
+      "input": "\"6777133339\"",
+      "expectedOutput": "\"777\""
     },
     {
-      "input": "num = &quot;2300019&quot;",
-      "expectedOutput": "&quot;000&quot;"
+      "input": "\"2300019\"",
+      "expectedOutput": "\"000\""
     },
     {
-      "input": "num = &quot;42352338&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"42352338\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;6777133339&quot;",
-      "expectedOutput": "&quot;777&quot;"
-    },
-    {
-      "input": "num = &quot;2300019&quot;",
-      "expectedOutput": "&quot;000&quot;"
-    },
-    {
-      "input": "num = &quot;42352338&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"6777133339\"",
-      "expectedOutput": null
+      "expectedOutput": "\"777\""
     },
     {
       "input": "\"2300019\"",
-      "expectedOutput": null
+      "expectedOutput": "\"000\""
     },
     {
       "input": "\"42352338\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "num = \"6777133339\"",
+      "expectedOutput": "\"777\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "num = \"2300019\"",
+      "expectedOutput": "\"000\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "num = \"42352338\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-3-same-digit-number-in-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:40.380Z",
+    "collectedAt": "2026-10-19T18:40:19.892Z",
     "sourceUpdatedAt": null
   }
 }

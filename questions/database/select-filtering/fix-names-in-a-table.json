@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Users table:\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | aLice |\n| 2       | bOB   |\n+---------+-------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,\"aLice\"],[2,\"bOB\"]]}}",
       "expectedOutput": "+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | Alice |\n| 2       | Bob   |\n+---------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "Users table:\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | aLice |\n| 2       | bOB   |\n+---------+-------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,\"aLice\"],[2,\"bOB\"]]}}",
       "expectedOutput": "+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | Alice |\n| 2       | Bob   |\n+---------+-------+"
     },
     {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,\"aLice\"],[2,\"bOB\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,\"aLice\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\"]},\"rows\":{\"Users\":[[1,null],[2,null]]}}",
-      "expectedOutput": null
+      "input": "Users table:\n+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | aLice |\n| 2       | bOB   |\n+---------+-------+",
+      "expectedOutput": "+---------+-------+\n| user_id | name  |\n+---------+-------+\n| 1       | Alice |\n| 2       | Bob   |\n+---------+-------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Users (user_id int, name varchar(40))\n\nTruncate table Users",
@@ -64,7 +52,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/fix-names-in-a-table/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.363Z",
+    "collectedAt": "2026-10-19T18:40:18.933Z",
     "sourceUpdatedAt": null
   }
 }

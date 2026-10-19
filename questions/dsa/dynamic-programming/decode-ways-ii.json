@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;*&quot;",
+      "input": "s = \"*\"",
       "output": "9",
-      "explanation": "The encoded message can represent any of the encoded messages &quot;1&quot;, &quot;2&quot;, &quot;3&quot;, &quot;4&quot;, &quot;5&quot;, &quot;6&quot;, &quot;7&quot;, &quot;8&quot;, or &quot;9&quot;.\nEach of these can be decoded to the strings &quot;A&quot;, &quot;B&quot;, &quot;C&quot;, &quot;D&quot;, &quot;E&quot;, &quot;F&quot;, &quot;G&quot;, &quot;H&quot;, and &quot;I&quot; respectively.\nHence, there are a total of 9 ways to decode &quot;*&quot;."
+      "explanation": "The encoded message can represent any of the encoded messages \"1\", \"2\", \"3\", \"4\", \"5\", \"6\", \"7\", \"8\", or \"9\".\nEach of these can be decoded to the strings \"A\", \"B\", \"C\", \"D\", \"E\", \"F\", \"G\", \"H\", and \"I\" respectively.\nHence, there are a total of 9 ways to decode \"*\"."
     },
     {
-      "input": "s = &quot;1*&quot;",
+      "input": "s = \"1*\"",
       "output": "18",
-      "explanation": "The encoded message can represent any of the encoded messages &quot;11&quot;, &quot;12&quot;, &quot;13&quot;, &quot;14&quot;, &quot;15&quot;, &quot;16&quot;, &quot;17&quot;, &quot;18&quot;, or &quot;19&quot;.\nEach of these encoded messages have 2 ways to be decoded (e.g. &quot;11&quot; can be decoded to &quot;AA&quot; or &quot;K&quot;).\nHence, there are a total of 9 * 2 = 18 ways to decode &quot;1*&quot;."
+      "explanation": "The encoded message can represent any of the encoded messages \"11\", \"12\", \"13\", \"14\", \"15\", \"16\", \"17\", \"18\", or \"19\".\nEach of these encoded messages have 2 ways to be decoded (e.g. \"11\" can be decoded to \"AA\" or \"K\").\nHence, there are a total of 9 * 2 = 18 ways to decode \"1*\"."
     },
     {
-      "input": "s = &quot;2*&quot;",
+      "input": "s = \"2*\"",
       "output": "15",
-      "explanation": "The encoded message can represent any of the encoded messages &quot;21&quot;, &quot;22&quot;, &quot;23&quot;, &quot;24&quot;, &quot;25&quot;, &quot;26&quot;, &quot;27&quot;, &quot;28&quot;, or &quot;29&quot;.\n&quot;21&quot;, &quot;22&quot;, &quot;23&quot;, &quot;24&quot;, &quot;25&quot;, and &quot;26&quot; have 2 ways of being decoded, but &quot;27&quot;, &quot;28&quot;, and &quot;29&quot; only have 1 way.\nHence, there are a total of (6 * 2) + (3 * 1) = 12 + 3 = 15 ways to decode &quot;2*&quot;."
+      "explanation": "The encoded message can represent any of the encoded messages \"21\", \"22\", \"23\", \"24\", \"25\", \"26\", \"27\", \"28\", or \"29\".\n\"21\", \"22\", \"23\", \"24\", \"25\", and \"26\" have 2 ways of being decoded, but \"27\", \"28\", and \"29\" only have 1 way.\nHence, there are a total of (6 * 2) + (3 * 1) = 12 + 3 = 15 ways to decode \"2*\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;*&quot;",
+      "input": "\"*\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;1*&quot;",
+      "input": "\"1*\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;2*&quot;",
+      "input": "\"2*\"",
       "expectedOutput": "15"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;*&quot;",
+      "input": "\"*\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;1*&quot;",
+      "input": "\"1*\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;2*&quot;",
+      "input": "\"2*\"",
       "expectedOutput": "15"
     },
     {
-      "input": "\"*\"",
-      "expectedOutput": null
+      "input": "s = \"*\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"1*\"",
-      "expectedOutput": null
+      "input": "s = \"1*\"",
+      "expectedOutput": "18"
     },
     {
-      "input": "\"2*\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"2*\"",
+      "expectedOutput": "15"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decode-ways-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.698Z",
+    "collectedAt": "2026-10-19T18:40:16.201Z",
     "sourceUpdatedAt": null
   }
 }

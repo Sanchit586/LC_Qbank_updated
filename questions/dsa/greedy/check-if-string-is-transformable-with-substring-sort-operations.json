@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
+      "input": "s = \"84532\", t = \"34852\"",
       "output": "true",
-      "explanation": "You can transform s into t using the following sort operations:\n&quot;84532&quot; (from index 2 to 3) -&gt; &quot;84352&quot;\n&quot;84352&quot; (from index 0 to 2) -&gt; &quot;34852&quot;"
+      "explanation": "You can transform s into t using the following sort operations:\n\"84532\" (from index 2 to 3) -> \"84352\"\n\"84352\" (from index 0 to 2) -> \"34852\""
     },
     {
-      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
+      "input": "s = \"34521\", t = \"23415\"",
       "output": "true",
-      "explanation": "You can transform s into t using the following sort operations:\n&quot;34521&quot; -&gt; &quot;23451&quot;\n&quot;23451&quot; -&gt; &quot;23415&quot;"
+      "explanation": "You can transform s into t using the following sort operations:\n\"34521\" -> \"23451\"\n\"23451\" -> \"23415\""
     },
     {
-      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
+      "input": "s = \"12345\", t = \"12435\"",
       "output": "false",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
+      "input": "\"84532\"\n\"34852\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
+      "input": "\"34521\"\n\"23415\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
+      "input": "\"12345\"\n\"12435\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"84532\"\n\"34852\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"34521\"\n\"23415\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"12345\"\n\"12435\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"84532\", t = \"34852\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"34521\", t = \"23415\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"84533\"\n\"34853\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"34522\"\n\"23416\"",
-      "expectedOutput": null
+      "input": "s = \"12345\", t = \"12435\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.220Z",
+    "collectedAt": "2026-10-19T18:40:14.226Z",
     "sourceUpdatedAt": null
   }
 }

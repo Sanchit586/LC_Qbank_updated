@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;110&quot;, k = 1",
+      "input": "s = \"110\", k = 1",
       "output": "1",
-      "explanation": "There is one &#39;0&#39; in s.\n\tSince k = 1, we can flip it directly in one operation."
+      "explanation": "There is one '0' in s.\n\tSince k = 1, we can flip it directly in one operation."
     },
     {
-      "input": "s = &quot;0101&quot;, k = 3",
+      "input": "s = \"0101\", k = 3",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;101&quot;, k = 2",
+      "input": "s = \"101\", k = 2",
       "output": "-1",
       "explanation": null
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;110&quot;, k = 1",
+      "input": "\"110\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;0101&quot;, k = 3",
+      "input": "\"0101\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;101&quot;, k = 2",
+      "input": "\"101\"\n2",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;110&quot;, k = 1",
+      "input": "\"110\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;0101&quot;, k = 3",
+      "input": "\"0101\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;101&quot;, k = 2",
+      "input": "\"101\"\n2",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"110\"\n1",
-      "expectedOutput": null
+      "input": "s = \"110\", k = 1",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"0101\"\n3",
-      "expectedOutput": null
+      "input": "s = \"0101\", k = 3",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"101\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;102&quot;, k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;102&quot;, k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"111\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"102\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;111&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"101\", k = 2",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-equalize-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:13.231Z",
+    "collectedAt": "2026-10-19T18:40:24.584Z",
     "sourceUpdatedAt": null
   }
 }

@@ -23,7 +23,7 @@
     {
       "input": "m = 3, n = 2",
       "output": "3",
-      "explanation": "From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -&gt; Down -&gt; Down\n2. Down -&gt; Down -&gt; Right\n3. Down -&gt; Right -&gt; Down"
+      "explanation": "From the top-left corner, there are a total of 3 ways to reach the bottom-right corner:\n1. Right -> Down -> Down\n2. Down -> Down -> Right\n3. Down -> Right -> Down"
     }
   ],
   "starterCode": {
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "m = 3, n = 7",
+      "input": "3\n7",
       "expectedOutput": "28"
     },
     {
-      "input": "m = 3, n = 2",
+      "input": "3\n2",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "3\n7",
+      "expectedOutput": "28"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "3"
+    },
+    {
       "input": "m = 3, n = 7",
       "expectedOutput": "28"
     },
     {
       "input": "m = 3, n = 2",
       "expectedOutput": "3"
-    },
-    {
-      "input": "3\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/unique-paths/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:07.464Z",
+    "collectedAt": "2026-10-19T18:40:31.415Z",
     "sourceUpdatedAt": null
   }
 }

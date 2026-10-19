@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(123)&quot;",
-      "output": "[&quot;(1, 2.3)&quot;,&quot;(1, 23)&quot;,&quot;(1.2, 3)&quot;,&quot;(12, 3)&quot;]",
+      "input": "s = \"(123)\"",
+      "output": "[\"(1, 2.3)\",\"(1, 23)\",\"(1.2, 3)\",\"(12, 3)\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;(0123)&quot;",
-      "output": "[&quot;(0, 1.23)&quot;,&quot;(0, 12.3)&quot;,&quot;(0, 123)&quot;,&quot;(0.1, 2.3)&quot;,&quot;(0.1, 23)&quot;,&quot;(0.12, 3)&quot;]",
+      "input": "s = \"(0123)\"",
+      "output": "[\"(0, 1.23)\",\"(0, 12.3)\",\"(0, 123)\",\"(0.1, 2.3)\",\"(0.1, 23)\",\"(0.12, 3)\"]",
       "explanation": "0.0, 00, 0001 or 00.01 are not allowed."
     },
     {
-      "input": "s = &quot;(00011)&quot;",
-      "output": "[&quot;(0, 0.011)&quot;,&quot;(0.001, 1)&quot;]",
+      "input": "s = \"(00011)\"",
+      "output": "[\"(0, 0.011)\",\"(0.001, 1)\"]",
       "explanation": null
     }
   ],
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(123)&quot;",
-      "expectedOutput": "[&quot;(1, 2.3)&quot;,&quot;(1, 23)&quot;,&quot;(1.2, 3)&quot;,&quot;(12, 3)&quot;]"
+      "input": "\"(123)\"",
+      "expectedOutput": "[\"(1, 2.3)\",\"(1, 23)\",\"(1.2, 3)\",\"(12, 3)\"]"
     },
     {
-      "input": "s = &quot;(0123)&quot;",
-      "expectedOutput": "[&quot;(0, 1.23)&quot;,&quot;(0, 12.3)&quot;,&quot;(0, 123)&quot;,&quot;(0.1, 2.3)&quot;,&quot;(0.1, 23)&quot;,&quot;(0.12, 3)&quot;]"
+      "input": "\"(0123)\"",
+      "expectedOutput": "[\"(0, 1.23)\",\"(0, 12.3)\",\"(0, 123)\",\"(0.1, 2.3)\",\"(0.1, 23)\",\"(0.12, 3)\"]"
     },
     {
-      "input": "s = &quot;(00011)&quot;",
-      "expectedOutput": "[&quot;(0, 0.011)&quot;,&quot;(0.001, 1)&quot;]"
+      "input": "\"(00011)\"",
+      "expectedOutput": "[\"(0, 0.011)\",\"(0.001, 1)\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(123)&quot;",
-      "expectedOutput": "[&quot;(1, 2.3)&quot;,&quot;(1, 23)&quot;,&quot;(1.2, 3)&quot;,&quot;(12, 3)&quot;]"
-    },
-    {
-      "input": "s = &quot;(0123)&quot;",
-      "expectedOutput": "[&quot;(0, 1.23)&quot;,&quot;(0, 12.3)&quot;,&quot;(0, 123)&quot;,&quot;(0.1, 2.3)&quot;,&quot;(0.1, 23)&quot;,&quot;(0.12, 3)&quot;]"
-    },
-    {
-      "input": "s = &quot;(00011)&quot;",
-      "expectedOutput": "[&quot;(0, 0.011)&quot;,&quot;(0.001, 1)&quot;]"
-    },
-    {
       "input": "\"(123)\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"(1, 2.3)\",\"(1, 23)\",\"(1.2, 3)\",\"(12, 3)\"]"
     },
     {
       "input": "\"(0123)\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"(0, 1.23)\",\"(0, 12.3)\",\"(0, 123)\",\"(0.1, 2.3)\",\"(0.1, 23)\",\"(0.12, 3)\"]"
     },
     {
       "input": "\"(00011)\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"(0, 0.011)\",\"(0.001, 1)\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"(123)\"",
+      "expectedOutput": "[\"(1, 2.3)\",\"(1, 23)\",\"(1.2, 3)\",\"(12, 3)\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(0123)\"",
+      "expectedOutput": "[\"(0, 1.23)\",\"(0, 12.3)\",\"(0, 123)\",\"(0.1, 2.3)\",\"(0.1, 23)\",\"(0.12, 3)\"]"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"(00011)\"",
+      "expectedOutput": "[\"(0, 0.011)\",\"(0.001, 1)\"]"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/ambiguous-coordinates/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:22.590Z",
+    "collectedAt": "2026-10-19T18:40:13.065Z",
     "sourceUpdatedAt": null
   }
 }

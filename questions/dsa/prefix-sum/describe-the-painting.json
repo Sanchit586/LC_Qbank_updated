@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "segments = [[1,4,5],[4,7,7],[1,7,9]]",
+      "input": "[[1,4,5],[4,7,7],[1,7,9]]",
       "expectedOutput": "[[1,4,14],[4,7,16]]"
     },
     {
-      "input": "segments = [[1,7,9],[6,8,15],[8,10,7]]",
+      "input": "[[1,7,9],[6,8,15],[8,10,7]]",
       "expectedOutput": "[[1,6,9],[6,7,24],[7,8,15],[8,10,7]]"
     },
     {
-      "input": "segments = [[1,4,5],[1,4,7],[4,7,1],[4,7,11]]",
+      "input": "[[1,4,5],[1,4,7],[4,7,1],[4,7,11]]",
       "expectedOutput": "[[1,4,12],[4,7,12]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,4,5],[4,7,7],[1,7,9]]",
+      "expectedOutput": "[[1,4,14],[4,7,16]]"
+    },
+    {
+      "input": "[[1,7,9],[6,8,15],[8,10,7]]",
+      "expectedOutput": "[[1,6,9],[6,7,24],[7,8,15],[8,10,7]]"
+    },
+    {
+      "input": "[[1,4,5],[1,4,7],[4,7,1],[4,7,11]]",
+      "expectedOutput": "[[1,4,12],[4,7,12]]"
+    },
+    {
       "input": "segments = [[1,4,5],[4,7,7],[1,7,9]]",
       "expectedOutput": "[[1,4,14],[4,7,16]]"
     },
@@ -83,38 +95,6 @@
     {
       "input": "segments = [[1,4,5],[1,4,7],[4,7,1],[4,7,11]]",
       "expectedOutput": "[[1,4,12],[4,7,12]]"
-    },
-    {
-      "input": "[[1,4,5],[4,7,7],[1,7,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,7,9],[6,8,15],[8,10,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,4,5],[1,4,7],[4,7,1],[4,7,11]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "segments = [[2,8,10],[7,9,16],[9,11,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "segments = [[2,5,6],[2,5,8],[5,8,2],[5,8,12]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,5,6],[5,8,8],[2,8,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,8,10],[7,9,16],[9,11,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "segments = [[2,5,6],[5,8,8],[2,8,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/describe-the-painting/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:38.848Z",
+    "collectedAt": "2026-10-19T18:40:16.349Z",
     "sourceUpdatedAt": null
   }
 }

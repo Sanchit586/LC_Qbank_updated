@@ -19,7 +19,13 @@
     "At least one call will be made to all, one, count, or toString.",
     "At most 5 calls will be made to toString."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Bitset\", \"fix\", \"fix\", \"flip\", \"all\", \"unfix\", \"flip\", \"one\", \"unfix\", \"count\", \"toString\"]\n[[5], [3], [1], [], [], [0], [], [], [0], [], []]",
+      "output": "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]",
+      "explanation": "Bitset bs = new Bitset(5); // bitset = \"00000\".\nbs.fix(3);     // the value at idx = 3 is updated to 1, so bitset = \"00010\".\nbs.fix(1);     // the value at idx = 1 is updated to 1, so bitset = \"01010\". \nbs.flip();     // the value of each bit is flipped, so bitset = \"10101\". \nbs.all();      // return False, as not all values of the bitset are 1.\nbs.unfix(0);   // the value at idx = 0 is updated to 0, so bitset = \"00101\".\nbs.flip();     // the value of each bit is flipped, so bitset = \"11010\". \nbs.one();      // return True, as there is at least 1 index with value 1.\nbs.unfix(0);   // the value at idx = 0 is updated to 0, so bitset = \"01010\".\nbs.count();    // return 2, as there are 2 bits with value 1.\nbs.toString(); // return \"01010\", which is the composition of bitset."
+    }
+  ],
   "starterCode": {
     "cpp": "class Bitset {\npublic:\n    Bitset(int size) {\n        \n    }\n    \n    void fix(int idx) {\n        \n    }\n    \n    void unfix(int idx) {\n        \n    }\n    \n    void flip() {\n        \n    }\n    \n    bool all() {\n        \n    }\n    \n    bool one() {\n        \n    }\n    \n    int count() {\n        \n    }\n    \n    string toString() {\n        \n    }\n};\n\n/**\n * Your Bitset object will be instantiated and called as such:\n * Bitset* obj = new Bitset(size);\n * obj->fix(idx);\n * obj->unfix(idx);\n * obj->flip();\n * bool param_4 = obj->all();\n * bool param_5 = obj->one();\n * int param_6 = obj->count();\n * string param_7 = obj->toString();\n */",
     "java": "class Bitset {\n\n    public Bitset(int size) {\n        \n    }\n    \n    public void fix(int idx) {\n        \n    }\n    \n    public void unfix(int idx) {\n        \n    }\n    \n    public void flip() {\n        \n    }\n    \n    public boolean all() {\n        \n    }\n    \n    public boolean one() {\n        \n    }\n    \n    public int count() {\n        \n    }\n    \n    public String toString() {\n        \n    }\n}\n\n/**\n * Your Bitset object will be instantiated and called as such:\n * Bitset obj = new Bitset(size);\n * obj.fix(idx);\n * obj.unfix(idx);\n * obj.flip();\n * boolean param_4 = obj.all();\n * boolean param_5 = obj.one();\n * int param_6 = obj.count();\n * String param_7 = obj.toString();\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"Bitset\",\"fix\",\"fix\",\"flip\",\"all\",\"unfix\",\"flip\",\"one\",\"unfix\",\"count\",\"toString\"]\n[[5],[3],[1],[],[],[0],[],[],[0],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Bitset\",\"fix\",\"fix\",\"flip\",\"all\",\"unfix\",\"flip\",\"one\",\"unfix\",\"count\",\"toString\"]\n[[5],[3],[1],[],[],[0],[],[],[0],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]"
     },
     {
-      "input": "[\"Bitset\",\"fix\",\"fix\",\"flip\",\"all\",\"unfix\",\"flip\",\"one\",\"unfix\",\"count\",\"toString\"]\n[[6],[4],[2],[],[],[1],[],[],[1],[],[]]",
-      "expectedOutput": null
+      "input": "[\"Bitset\", \"fix\", \"fix\", \"flip\", \"all\", \"unfix\", \"flip\", \"one\", \"unfix\", \"count\", \"toString\"]\n[[5], [3], [1], [], [], [0], [], [], [0], [], []]",
+      "expectedOutput": "[null, null, null, null, false, null, null, true, null, 2, \"01010\"]"
     }
   ],
   "sqlSchema": null,
@@ -69,7 +75,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-bitset/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.630Z",
+    "collectedAt": "2026-10-19T18:40:16.409Z",
     "sourceUpdatedAt": null
   }
 }

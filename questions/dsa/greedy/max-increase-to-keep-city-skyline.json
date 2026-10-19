@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
+      "input": "[[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
       "expectedOutput": "35"
     },
     {
-      "input": "grid = [[0,0,0],[0,0,0],[0,0,0]]",
+      "input": "[[0,0,0],[0,0,0],[0,0,0]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
+      "expectedOutput": "35"
+    },
+    {
+      "input": "[[0,0,0],[0,0,0],[0,0,0]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "grid = [[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
       "expectedOutput": "35"
     },
     {
       "input": "grid = [[0,0,0],[0,0,0],[0,0,0]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[3,0,8,4],[2,4,5,7],[9,2,6,3],[0,3,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0,0],[0,0,0],[0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[4,1,9,5],[3,5,6,8],[10,3,7,4],[1,4,2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/max-increase-to-keep-city-skyline/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:01.550Z",
+    "collectedAt": "2026-10-19T18:40:21.150Z",
     "sourceUpdatedAt": null
   }
 }

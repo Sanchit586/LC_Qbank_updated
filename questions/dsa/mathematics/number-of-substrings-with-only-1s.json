@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0110111&quot;",
+      "input": "s = \"0110111\"",
       "output": "9",
-      "explanation": "There are 9 substring in total with only 1&#39;s characters.\n&quot;1&quot; -&gt; 5 times.\n&quot;11&quot; -&gt; 3 times.\n&quot;111&quot; -&gt; 1 time."
+      "explanation": "There are 9 substring in total with only 1's characters.\n\"1\" -> 5 times.\n\"11\" -> 3 times.\n\"111\" -> 1 time."
     },
     {
-      "input": "s = &quot;101&quot;",
+      "input": "s = \"101\"",
       "output": "2",
-      "explanation": "Substring &quot;1&quot; is shown 2 times in s."
+      "explanation": "Substring \"1\" is shown 2 times in s."
     },
     {
-      "input": "s = &quot;111111&quot;",
+      "input": "s = \"111111\"",
       "output": "21",
-      "explanation": "Each substring contains only 1&#39;s characters."
+      "explanation": "Each substring contains only 1's characters."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0110111&quot;",
+      "input": "\"0110111\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;111111&quot;",
+      "input": "\"111111\"",
       "expectedOutput": "21"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0110111&quot;",
+      "input": "\"0110111\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;111111&quot;",
+      "input": "\"111111\"",
       "expectedOutput": "21"
     },
     {
-      "input": "\"0110111\"",
-      "expectedOutput": null
+      "input": "s = \"0110111\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"101\"",
-      "expectedOutput": null
+      "input": "s = \"101\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"111111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"111111\"",
+      "expectedOutput": "21"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-substrings-with-only-1s/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.518Z",
+    "collectedAt": "2026-10-19T18:40:26.157Z",
     "sourceUpdatedAt": null
   }
 }

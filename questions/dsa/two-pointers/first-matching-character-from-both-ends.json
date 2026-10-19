@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcacbd&quot;",
+      "input": "s = \"abcacbd\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcdab&quot;",
+      "input": "s = \"abcdab\"",
       "output": "-1",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcacbd&quot;",
+      "input": "\"abcacbd\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abcdab&quot;",
+      "input": "\"abcdab\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcacbd&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;abcdab&quot;",
-      "expectedOutput": "-1"
-    },
-    {
       "input": "\"abcacbd\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"abcdab\"",
-      "expectedOutput": null
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abcacbd\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcdab\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/first-matching-character-from-both-ends/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.329Z",
+    "collectedAt": "2026-10-19T18:40:18.915Z",
     "sourceUpdatedAt": null
   }
 }

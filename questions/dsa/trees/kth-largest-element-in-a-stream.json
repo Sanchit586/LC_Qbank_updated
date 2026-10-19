@@ -23,12 +23,12 @@
   ],
   "examples": [
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]",
+      "input": "[\"KthLargest\", \"add\", \"add\", \"add\", \"add\", \"add\"]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]",
       "output": "[null, 4, 5, 5, 8, 8]",
       "explanation": null
     },
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]",
+      "input": "[\"KthLargest\", \"add\", \"add\", \"add\", \"add\"]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]",
       "output": "[null, 7, 7, 7, 8]",
       "explanation": "KthLargest kthLargest = new KthLargest(4, [7, 7, 7, 7, 8, 3]);\nkthLargest.add(2); // return 7\nkthLargest.add(10); // return 7\nkthLargest.add(9); // return 7\nkthLargest.add(9); // return 8"
     }
@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]",
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
       "expectedOutput": "[null, 4, 5, 5, 8, 8]"
     },
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]",
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\"]\n[[4,[7,7,7,7,8,3]],[2],[10],[9],[9]]",
       "expectedOutput": "[null, 7, 7, 7, 8]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]",
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
       "expectedOutput": "[null, 4, 5, 5, 8, 8]"
     },
     {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]",
+      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\"]\n[[4,[7,7,7,7,8,3]],[2],[10],[9],[9]]",
       "expectedOutput": "[null, 7, 7, 7, 8]"
     },
     {
-      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\",\"add\"]\n[[3,[4,5,8,2]],[3],[5],[10],[9],[4]]",
-      "expectedOutput": null
+      "input": "[\"KthLargest\", \"add\", \"add\", \"add\", \"add\", \"add\"]\n[[3, [4, 5, 8, 2]], [3], [5], [10], [9], [4]]",
+      "expectedOutput": "[null, 4, 5, 5, 8, 8]"
     },
     {
-      "input": "[\"KthLargest\",\"add\",\"add\",\"add\",\"add\"]\n[[4,[7,7,7,7,8,3]],[2],[10],[9],[9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;KthLargest&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;, &quot;add&quot;]\n[[4, [5, 6, 9, 3]], [4], [6], [11], [10], [5]]",
-      "expectedOutput": null
+      "input": "[\"KthLargest\", \"add\", \"add\", \"add\", \"add\"]\n[[4, [7, 7, 7, 7, 8, 3]], [2], [10], [9], [9]]",
+      "expectedOutput": "[null, 7, 7, 7, 8]"
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/kth-largest-element-in-a-stream/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:37.234Z",
+    "collectedAt": "2026-10-19T18:40:19.835Z",
     "sourceUpdatedAt": null
   }
 }

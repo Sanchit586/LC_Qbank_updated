@@ -24,12 +24,12 @@
   ],
   "examples": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;aababa&quot;",
+      "input": "parent = [-1,0,0,1,1,2], s = \"aababa\"",
       "output": "[true,true,false,true,true,true]",
-      "explanation": "Calling dfs(0) results in the string dfsStr = &quot;abaaba&quot;, which is a palindrome.\n\tCalling dfs(1) results in the string dfsStr = &quot;aba&quot;, which is a palindrome.\n\tCalling dfs(2) results in the string dfsStr = &quot;ab&quot;, which is not a palindrome.\n\tCalling dfs(3) results in the string dfsStr = &quot;a&quot;, which is a palindrome.\n\tCalling dfs(4) results in the string dfsStr = &quot;b&quot;, which is a palindrome.\n\tCalling dfs(5) results in the string dfsStr = &quot;a&quot;, which is a palindrome."
+      "explanation": "Calling dfs(0) results in the string dfsStr = \"abaaba\", which is a palindrome.\n\tCalling dfs(1) results in the string dfsStr = \"aba\", which is a palindrome.\n\tCalling dfs(2) results in the string dfsStr = \"ab\", which is not a palindrome.\n\tCalling dfs(3) results in the string dfsStr = \"a\", which is a palindrome.\n\tCalling dfs(4) results in the string dfsStr = \"b\", which is a palindrome.\n\tCalling dfs(5) results in the string dfsStr = \"a\", which is a palindrome."
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aabcb&quot;",
+      "input": "parent = [-1,0,0,0,0], s = \"aabcb\"",
       "output": "[true,true,true,true,true]",
       "explanation": null
     }
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;aababa&quot;",
+      "input": "[-1,0,0,1,1,2]\n\"aababa\"",
       "expectedOutput": "[true,true,false,true,true,true]"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aabcb&quot;",
+      "input": "[-1,0,0,0,0]\n\"aabcb\"",
       "expectedOutput": "[true,true,true,true,true]"
     }
   ],
   "testCases": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;aababa&quot;",
+      "input": "[-1,0,0,1,1,2]\n\"aababa\"",
       "expectedOutput": "[true,true,false,true,true,true]"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aabcb&quot;",
+      "input": "[-1,0,0,0,0]\n\"aabcb\"",
       "expectedOutput": "[true,true,true,true,true]"
     },
     {
-      "input": "[-1,0,0,1,1,2]\n\"aababa\"",
-      "expectedOutput": null
+      "input": "parent = [-1,0,0,1,1,2], s = \"aababa\"",
+      "expectedOutput": "[true,true,false,true,true,true]"
     },
     {
-      "input": "[-1,0,0,0,0]\n\"aabcb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "parent = [-2,1,1,2,2,3], s = &quot;aababa&quot;",
-      "expectedOutput": null
+      "input": "parent = [-1,0,0,0,0], s = \"aabcb\"",
+      "expectedOutput": "[true,true,true,true,true]"
     }
   ],
   "sqlSchema": null,
@@ -100,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-dfs-strings-are-palindromes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:51.089Z",
+    "collectedAt": "2026-10-19T18:40:14.129Z",
     "sourceUpdatedAt": null
   }
 }

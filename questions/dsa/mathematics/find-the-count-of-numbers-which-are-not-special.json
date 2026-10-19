@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "l = 5, r = 7",
+      "input": "5\n7",
       "expectedOutput": "3"
     },
     {
-      "input": "l = 4, r = 16",
+      "input": "4\n16",
       "expectedOutput": "11"
     }
   ],
   "testCases": [
     {
+      "input": "5\n7",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4\n16",
+      "expectedOutput": "11"
+    },
+    {
       "input": "l = 5, r = 7",
       "expectedOutput": "3"
     },
     {
       "input": "l = 4, r = 16",
       "expectedOutput": "11"
-    },
-    {
-      "input": "5\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n16",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 6, r = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-count-of-numbers-which-are-not-special/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:07.264Z",
+    "collectedAt": "2026-10-19T18:40:18.211Z",
     "sourceUpdatedAt": null
   }
 }

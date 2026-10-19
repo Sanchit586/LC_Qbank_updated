@@ -15,17 +15,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;01000111&quot;",
+      "input": "s = \"01000111\"",
       "output": "6",
-      "explanation": "The longest balanced substring is &quot;000111&quot;, which has length 6."
+      "explanation": "The longest balanced substring is \"000111\", which has length 6."
     },
     {
-      "input": "s = &quot;00111&quot;",
+      "input": "s = \"00111\"",
       "output": "4",
-      "explanation": "The longest balanced substring is &quot;0011&quot;, which has length 4.&nbsp;"
+      "explanation": "The longest balanced substring is \"0011\", which has length 4. "
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "s = \"111\"",
       "output": "0",
       "explanation": "There is no balanced substring except the empty substring, so the answer is 0."
     }
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;01000111&quot;",
+      "input": "\"01000111\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;00111&quot;",
+      "input": "\"00111\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "\"111\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;01000111&quot;",
+      "input": "\"01000111\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;00111&quot;",
+      "input": "\"00111\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;111&quot;",
+      "input": "\"111\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"01000111\"",
-      "expectedOutput": null
+      "input": "s = \"01000111\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"00111\"",
-      "expectedOutput": null
+      "input": "s = \"00111\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"111\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-longest-balanced-substring-of-a-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.929Z",
+    "collectedAt": "2026-10-19T18:40:18.365Z",
     "sourceUpdatedAt": null
   }
 }

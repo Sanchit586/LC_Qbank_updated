@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [55,30,5,4,2], nums2 = [100,20,10,10,5]",
+      "input": "[55,30,5,4,2]\n[100,20,10,10,5]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums1 = [2,2,2], nums2 = [10,10,1]",
+      "input": "[2,2,2]\n[10,10,1]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums1 = [30,29,19,5], nums2 = [25,25,25,25,25]",
+      "input": "[30,29,19,5]\n[25,25,25,25,25]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[55,30,5,4,2]\n[100,20,10,10,5]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,2,2]\n[10,10,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[30,29,19,5]\n[25,25,25,25,25]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "nums1 = [55,30,5,4,2], nums2 = [100,20,10,10,5]",
       "expectedOutput": "2"
     },
@@ -80,38 +92,6 @@
     {
       "input": "nums1 = [30,29,19,5], nums2 = [25,25,25,25,25]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[55,30,5,4,2]\n[100,20,10,10,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,2]\n[10,10,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[30,29,19,5]\n[25,25,25,25,25]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [3,3,3], nums3 = [11,11,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [31,30,20,6], nums3 = [26,26,26,26,26]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[56,31,6,5,3]\n[101,21,11,11,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3,3]\n[11,11,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [56,31,6,5,3], nums3 = [101,21,11,11,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-distance-between-a-pair-of-values/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:11.321Z",
+    "collectedAt": "2026-10-19T18:40:21.777Z",
     "sourceUpdatedAt": null
   }
 }

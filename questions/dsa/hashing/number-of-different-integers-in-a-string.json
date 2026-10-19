@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "input": "word = \"a123bc34d8ef34\"",
       "output": "3",
-      "explanation": "The three different integers are &quot;123&quot;, &quot;34&quot;, and &quot;8&quot;. Notice that &quot;34&quot; is only counted once."
+      "explanation": "The three different integers are \"123\", \"34\", and \"8\". Notice that \"34\" is only counted once."
     },
     {
-      "input": "word = &quot;leet1234code234&quot;",
+      "input": "word = \"leet1234code234\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "word = &quot;a1b01c001&quot;",
+      "input": "word = \"a1b01c001\"",
       "output": "1",
-      "explanation": "The three integers &quot;1&quot;, &quot;01&quot;, and &quot;001&quot; all represent the same integer because\nthe leading zeros are ignored when comparing their decimal values."
+      "explanation": "The three integers \"1\", \"01\", and \"001\" all represent the same integer because\nthe leading zeros are ignored when comparing their decimal values."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "input": "\"a123bc34d8ef34\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;leet1234code234&quot;",
+      "input": "\"leet1234code234\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;a1b01c001&quot;",
+      "input": "\"a1b01c001\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "input": "\"a123bc34d8ef34\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;leet1234code234&quot;",
+      "input": "\"leet1234code234\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;a1b01c001&quot;",
+      "input": "\"a1b01c001\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"a123bc34d8ef34\"",
-      "expectedOutput": null
+      "input": "word = \"a123bc34d8ef34\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"leet1234code234\"",
-      "expectedOutput": null
+      "input": "word = \"leet1234code234\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a1b01c001\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"a1b01c001\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-different-integers-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.971Z",
+    "collectedAt": "2026-10-19T18:40:25.820Z",
     "sourceUpdatedAt": null
   }
 }

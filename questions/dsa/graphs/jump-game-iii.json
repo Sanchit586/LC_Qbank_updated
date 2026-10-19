@@ -20,12 +20,12 @@
     {
       "input": "arr = [4,2,3,0,3,1,2], start = 5",
       "output": "true",
-      "explanation": "All possible ways to reach at index 3 with value 0 are: \nindex 5 -&gt; index 4 -&gt; index 1 -&gt; index 3 \nindex 5 -&gt; index 6 -&gt; index 4 -&gt; index 1 -&gt; index 3"
+      "explanation": "All possible ways to reach at index 3 with value 0 are: \nindex 5 -> index 4 -> index 1 -> index 3 \nindex 5 -> index 6 -> index 4 -> index 1 -> index 3"
     },
     {
       "input": "arr = [4,2,3,0,3,1,2], start = 0",
       "output": "true",
-      "explanation": "One possible way to reach at index 3 with value 0 is: \nindex 0 -&gt; index 4 -&gt; index 1 -&gt; index 3"
+      "explanation": "One possible way to reach at index 3 with value 0 is: \nindex 0 -> index 4 -> index 1 -> index 3"
     },
     {
       "input": "arr = [3,0,2,1,2], start = 2",
@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "arr = [4,2,3,0,3,1,2], start = 5",
+      "input": "[4,2,3,0,3,1,2]\n5",
       "expectedOutput": "true"
     },
     {
-      "input": "arr = [4,2,3,0,3,1,2], start = 0",
+      "input": "[4,2,3,0,3,1,2]\n0",
       "expectedOutput": "true"
     },
     {
-      "input": "arr = [3,0,2,1,2], start = 2",
+      "input": "[3,0,2,1,2]\n2",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[4,2,3,0,3,1,2]\n5",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,2,3,0,3,1,2]\n0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,0,2,1,2]\n2",
+      "expectedOutput": "false"
+    },
+    {
       "input": "arr = [4,2,3,0,3,1,2], start = 5",
       "expectedOutput": "true"
     },
@@ -80,74 +92,6 @@
     {
       "input": "arr = [3,0,2,1,2], start = 2",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[4,2,3,0,3,1,2]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,2,3,0,3,1,2]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,0,2,1,2]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/jump-game-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.377Z",
+    "collectedAt": "2026-10-19T18:40:19.671Z",
     "sourceUpdatedAt": null
   }
 }

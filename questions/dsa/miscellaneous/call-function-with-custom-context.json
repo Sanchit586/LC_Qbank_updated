@@ -14,14 +14,14 @@
   ],
   "examples": [
     {
-      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{&quot;a&quot;: 5}, 7]",
+      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{\"a\": 5}, 7]",
       "output": "12",
-      "explanation": "fn.callPolyfill({&quot;a&quot;: 5}, 7); // 12\ncallPolyfill sets the &quot;this&quot; context to {&quot;a&quot;: 5}. 7 is passed as an argument."
+      "explanation": "fn.callPolyfill({\"a\": 5}, 7); // 12\ncallPolyfill sets the \"this\" context to {\"a\": 5}. 7 is passed as an argument."
     },
     {
-      "input": "fn = function tax(price, taxRate) { \n&nbsp;return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{&quot;item&quot;: &quot;burger&quot;}, 10, 1.1]",
-      "output": "&quot;The cost of the burger is 11&quot;",
-      "explanation": "callPolyfill sets the &quot;this&quot; context to {&quot;item&quot;: &quot;burger&quot;}. 10 and 1.1 are passed as additional arguments."
+      "input": "fn = function tax(price, taxRate) { \n return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{\"item\": \"burger\"}, 10, 1.1]",
+      "output": "\"The cost of the burger is 11\"",
+      "explanation": "callPolyfill sets the \"this\" context to {\"item\": \"burger\"}. 10 and 1.1 are passed as additional arguments."
     }
   ],
   "starterCode": {
@@ -30,34 +30,30 @@
   },
   "publicTests": [
     {
-      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{&quot;a&quot;: 5}, 7]",
+      "input": "function add(b) { return this.a + b; }\n[{\"a\":5},7]",
       "expectedOutput": "12"
     },
     {
-      "input": "fn = function tax(price, taxRate) { \n&nbsp;return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{&quot;item&quot;: &quot;burger&quot;}, 10, 1.1]",
-      "expectedOutput": "&quot;The cost of the burger is 11&quot;"
+      "input": "function tax(price, taxRate) { return `The cost of the ${this.item} is ${price * taxRate}`; }\n[{\"item\":\"burger\"},10,1.1]",
+      "expectedOutput": "\"The cost of the burger is 11\""
     }
   ],
   "testCases": [
     {
-      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{&quot;a&quot;: 5}, 7]",
+      "input": "function add(b) { return this.a + b; }\n[{\"a\":5},7]",
       "expectedOutput": "12"
     },
     {
-      "input": "fn = function tax(price, taxRate) { \n&nbsp;return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{&quot;item&quot;: &quot;burger&quot;}, 10, 1.1]",
-      "expectedOutput": "&quot;The cost of the burger is 11&quot;"
-    },
-    {
-      "input": "function add(b) { return this.a + b; }\n[{\"a\":5},7]",
-      "expectedOutput": null
-    },
-    {
       "input": "function tax(price, taxRate) { return `The cost of the ${this.item} is ${price * taxRate}`; }\n[{\"item\":\"burger\"},10,1.1]",
-      "expectedOutput": null
+      "expectedOutput": "\"The cost of the burger is 11\""
     },
     {
-      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{&quot;a&quot;: 6}, 8]",
-      "expectedOutput": null
+      "input": "fn = function add(b) {\n  return this.a + b;\n}\nargs = [{\"a\": 5}, 7]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "fn = function tax(price, taxRate) { \n return `The cost of the ${this.item} is ${price * taxRate}`; \n}\nargs = [{\"item\": \"burger\"}, 10, 1.1]",
+      "expectedOutput": "\"The cost of the burger is 11\""
     }
   ],
   "sqlSchema": null,
@@ -69,7 +65,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/call-function-with-custom-context/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.261Z",
+    "collectedAt": "2026-10-19T18:40:13.843Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1?:?4&quot;",
-      "output": "&quot;11:54&quot;",
-      "explanation": "The latest 12-hour format time we can achieve by replacing &quot;?&quot; characters is &quot;11:54&quot;."
+      "input": "s = \"1?:?4\"",
+      "output": "\"11:54\"",
+      "explanation": "The latest 12-hour format time we can achieve by replacing \"?\" characters is \"11:54\"."
     },
     {
-      "input": "s = &quot;0?:5?&quot;",
-      "output": "&quot;09:59&quot;",
-      "explanation": "The latest 12-hour format time we can achieve by replacing &quot;?&quot; characters is &quot;09:59&quot;."
+      "input": "s = \"0?:5?\"",
+      "output": "\"09:59\"",
+      "explanation": "The latest 12-hour format time we can achieve by replacing \"?\" characters is \"09:59\"."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1?:?4&quot;",
-      "expectedOutput": "&quot;11:54&quot;"
+      "input": "\"1?:?4\"",
+      "expectedOutput": "\"11:54\""
     },
     {
-      "input": "s = &quot;0?:5?&quot;",
-      "expectedOutput": "&quot;09:59&quot;"
+      "input": "\"0?:5?\"",
+      "expectedOutput": "\"09:59\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1?:?4&quot;",
-      "expectedOutput": "&quot;11:54&quot;"
-    },
-    {
-      "input": "s = &quot;0?:5?&quot;",
-      "expectedOutput": "&quot;09:59&quot;"
-    },
-    {
       "input": "\"1?:?4\"",
-      "expectedOutput": null
+      "expectedOutput": "\"11:54\""
     },
     {
       "input": "\"0?:5?\"",
-      "expectedOutput": null
+      "expectedOutput": "\"09:59\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"1?:?4\"",
+      "expectedOutput": "\"11:54\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"0?:5?\"",
+      "expectedOutput": "\"09:59\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/latest-time-you-can-obtain-after-replacing-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.222Z",
+    "collectedAt": "2026-10-19T18:40:20.097Z",
     "sourceUpdatedAt": null
   }
 }

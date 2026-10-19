@@ -15,17 +15,17 @@
   "examples": [
     {
       "input": "day = 31, month = 8, year = 2019",
-      "output": "&quot;Saturday&quot;",
+      "output": "\"Saturday\"",
       "explanation": null
     },
     {
       "input": "day = 18, month = 7, year = 1999",
-      "output": "&quot;Sunday&quot;",
+      "output": "\"Sunday\"",
       "explanation": null
     },
     {
       "input": "day = 15, month = 8, year = 1993",
-      "output": "&quot;Sunday&quot;",
+      "output": "\"Sunday\"",
       "explanation": null
     }
   ],
@@ -52,62 +52,42 @@
   },
   "publicTests": [
     {
-      "input": "day = 31, month = 8, year = 2019",
-      "expectedOutput": "&quot;Saturday&quot;"
+      "input": "31\n8\n2019",
+      "expectedOutput": "\"Saturday\""
     },
     {
-      "input": "day = 18, month = 7, year = 1999",
-      "expectedOutput": "&quot;Sunday&quot;"
+      "input": "18\n7\n1999",
+      "expectedOutput": "\"Sunday\""
     },
     {
-      "input": "day = 15, month = 8, year = 1993",
-      "expectedOutput": "&quot;Sunday&quot;"
+      "input": "15\n8\n1993",
+      "expectedOutput": "\"Sunday\""
     }
   ],
   "testCases": [
     {
-      "input": "day = 31, month = 8, year = 2019",
-      "expectedOutput": "&quot;Saturday&quot;"
-    },
-    {
-      "input": "day = 18, month = 7, year = 1999",
-      "expectedOutput": "&quot;Sunday&quot;"
-    },
-    {
-      "input": "day = 15, month = 8, year = 1993",
-      "expectedOutput": "&quot;Sunday&quot;"
-    },
-    {
       "input": "31\n8\n2019",
-      "expectedOutput": null
+      "expectedOutput": "\"Saturday\""
     },
     {
       "input": "18\n7\n1999",
-      "expectedOutput": null
+      "expectedOutput": "\"Sunday\""
     },
     {
       "input": "15\n8\n1993",
-      "expectedOutput": null
+      "expectedOutput": "\"Sunday\""
     },
     {
-      "input": "day = 19, month = 8, year = 2000",
-      "expectedOutput": null
+      "input": "day = 31, month = 8, year = 2019",
+      "expectedOutput": "\"Saturday\""
     },
     {
-      "input": "day = 16, month = 9, year = 1994",
-      "expectedOutput": null
+      "input": "day = 18, month = 7, year = 1999",
+      "expectedOutput": "\"Sunday\""
     },
     {
-      "input": "32\n9\n2020",
-      "expectedOutput": null
-    },
-    {
-      "input": "19\n8\n2000",
-      "expectedOutput": null
-    },
-    {
-      "input": "day = 32, month = 9, year = 2020",
-      "expectedOutput": null
+      "input": "day = 15, month = 8, year = 1993",
+      "expectedOutput": "\"Sunday\""
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/day-of-the-week/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:33.777Z",
+    "collectedAt": "2026-10-19T18:40:16.163Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,22 +19,22 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;()&quot;",
+      "input": "s = \"()\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;(*)&quot;",
+      "input": "s = \"(*)\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;(*))&quot;",
+      "input": "s = \"(*))\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;(&quot;",
+      "input": "s = \"(\"",
       "output": "false",
       "explanation": null
     }
@@ -62,102 +62,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;()&quot;",
+      "input": "\"()\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;(*)&quot;",
+      "input": "\"(*)\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;(*))&quot;",
+      "input": "\"(*))\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;(&quot;",
+      "input": "\"(\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;()&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;(*)&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;(*))&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;(&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"()\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"(*)\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"(*))\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"(\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"()\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(*)\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "s = \"(*))\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
+      "input": "s = \"(\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -174,7 +126,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-parenthesis-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.347Z",
+    "collectedAt": "2026-10-19T18:40:31.505Z",
     "sourceUpdatedAt": null
   }
 }

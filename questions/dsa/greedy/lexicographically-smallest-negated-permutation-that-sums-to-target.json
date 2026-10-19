@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, target = 0",
+      "input": "3\n0",
       "expectedOutput": "[-3,1,2]"
     },
     {
-      "input": "n = 1, target = 10000000000",
+      "input": "1\n10000000000",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "3\n0",
+      "expectedOutput": "[-3,1,2]"
+    },
+    {
+      "input": "1\n10000000000",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 3, target = 0",
       "expectedOutput": "[-3,1,2]"
     },
     {
       "input": "n = 1, target = 10000000000",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "3\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n10000000000",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, target = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-negated-permutation-that-sums-to-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.087Z",
+    "collectedAt": "2026-10-19T18:40:20.223Z",
     "sourceUpdatedAt": null
   }
 }

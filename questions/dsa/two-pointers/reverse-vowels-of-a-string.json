@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;IceCreAm&quot;",
-      "output": "&quot;AceCreIm&quot;",
+      "input": "s = \"IceCreAm\"",
+      "output": "\"AceCreIm\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "output": "&quot;leotcede&quot;",
+      "input": "s = \"leetcode\"",
+      "output": "\"leotcede\"",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;IceCreAm&quot;",
-      "expectedOutput": "&quot;AceCreIm&quot;"
+      "input": "\"IceCreAm\"",
+      "expectedOutput": "\"AceCreIm\""
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;leotcede&quot;"
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"leotcede\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;IceCreAm&quot;",
-      "expectedOutput": "&quot;AceCreIm&quot;"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;leotcede&quot;"
-    },
-    {
       "input": "\"IceCreAm\"",
-      "expectedOutput": null
+      "expectedOutput": "\"AceCreIm\""
     },
     {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"leotcede\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"IceCreAm\"",
+      "expectedOutput": "\"AceCreIm\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "\"leotcede\""
     }
   ],
   "sqlSchema": null,
@@ -148,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-vowels-of-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.969Z",
+    "collectedAt": "2026-10-19T18:40:27.903Z",
     "sourceUpdatedAt": null
   }
 }

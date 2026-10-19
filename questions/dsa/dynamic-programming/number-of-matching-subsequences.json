@@ -23,12 +23,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcde&quot;, words = [&quot;a&quot;,&quot;bb&quot;,&quot;acd&quot;,&quot;ace&quot;]",
+      "input": "s = \"abcde\", words = [\"a\",\"bb\",\"acd\",\"ace\"]",
       "output": "3",
-      "explanation": "There are three strings in words that are a subsequence of s: &quot;a&quot;, &quot;acd&quot;, &quot;ace&quot;."
+      "explanation": "There are three strings in words that are a subsequence of s: \"a\", \"acd\", \"ace\"."
     },
     {
-      "input": "s = &quot;dsahjpjauf&quot;, words = [&quot;ahjpjau&quot;,&quot;ja&quot;,&quot;ahbwzgqnuk&quot;,&quot;tnmlanowax&quot;]",
+      "input": "s = \"dsahjpjauf\", words = [\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
       "output": "2",
       "explanation": null
     }
@@ -56,30 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcde&quot;, words = [&quot;a&quot;,&quot;bb&quot;,&quot;acd&quot;,&quot;ace&quot;]",
+      "input": "\"abcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;dsahjpjauf&quot;, words = [&quot;ahjpjau&quot;,&quot;ja&quot;,&quot;ahbwzgqnuk&quot;,&quot;tnmlanowax&quot;]",
+      "input": "\"dsahjpjauf\"\n[\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcde&quot;, words = [&quot;a&quot;,&quot;bb&quot;,&quot;acd&quot;,&quot;ace&quot;]",
+      "input": "\"abcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;dsahjpjauf&quot;, words = [&quot;ahjpjau&quot;,&quot;ja&quot;,&quot;ahbwzgqnuk&quot;,&quot;tnmlanowax&quot;]",
+      "input": "\"dsahjpjauf\"\n[\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "\"abcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
-      "expectedOutput": null
+      "input": "s = \"abcde\", words = [\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"dsahjpjauf\"\n[\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
-      "expectedOutput": null
+      "input": "s = \"dsahjpjauf\", words = [\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -91,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-matching-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:41.026Z",
+    "collectedAt": "2026-10-19T18:40:25.962Z",
     "sourceUpdatedAt": null
   }
 }

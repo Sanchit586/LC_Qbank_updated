@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aaAbcBC&quot;",
+      "input": "word = \"aaAbcBC\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "word = \"abc\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "word = &quot;abBCab&quot;",
+      "input": "word = \"abBCab\"",
       "output": "1",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aaAbcBC&quot;",
+      "input": "\"aaAbcBC\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "word = &quot;abBCab&quot;",
+      "input": "\"abBCab\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aaAbcBC&quot;",
+      "input": "\"aaAbcBC\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "word = &quot;abBCab&quot;",
+      "input": "\"abBCab\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aaAbcBC\"",
-      "expectedOutput": null
+      "input": "word = \"aaAbcBC\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "word = \"abc\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"abBCab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"abBCab\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-special-characters-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.857Z",
+    "collectedAt": "2026-10-19T18:40:15.826Z",
     "sourceUpdatedAt": null
   }
 }

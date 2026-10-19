@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "steps = 3, arrLen = 2",
+      "input": "3\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "steps = 2, arrLen = 4",
+      "input": "2\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "steps = 4, arrLen = 2",
+      "input": "4\n2",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n2",
+      "expectedOutput": "8"
+    },
+    {
       "input": "steps = 3, arrLen = 2",
       "expectedOutput": "4"
     },
@@ -77,38 +89,6 @@
     {
       "input": "steps = 4, arrLen = 2",
       "expectedOutput": "8"
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "steps = 3, arrLen = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "steps = 5, arrLen = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "steps = 4, arrLen = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-stay-in-the-same-place-after-some-steps/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.857Z",
+    "collectedAt": "2026-10-19T18:40:26.306Z",
     "sourceUpdatedAt": null
   }
 }

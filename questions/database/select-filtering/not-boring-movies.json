@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Cinema table:\n+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 1  | War        | great 3D    | 8.9    |\n| 2  | Science    | fiction     | 8.5    |\n| 3  | irish      | boring      | 6.2    |\n| 4  | Ice song   | Fantacy     | 8.6    |\n| 5  | House card | Interesting | 9.1    |\n+----+------------+-------------+--------+",
+      "input": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
       "expectedOutput": "+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 5  | House card | Interesting | 9.1    |\n| 1  | War        | great 3D    | 8.9    |\n+----+------------+-------------+--------+"
     }
   ],
   "testCases": [
     {
-      "input": "Cinema table:\n+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 1  | War        | great 3D    | 8.9    |\n| 2  | Science    | fiction     | 8.5    |\n| 3  | irish      | boring      | 6.2    |\n| 4  | Ice song   | Fantacy     | 8.6    |\n| 5  | House card | Interesting | 9.1    |\n+----+------------+-------------+--------+",
+      "input": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
       "expectedOutput": "+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 5  | House card | Interesting | 9.1    |\n| 1  | War        | great 3D    | 8.9    |\n+----+------------+-------------+--------+"
     },
     {
-      "input": "{\"headers\":{\"cinema\":[\"id\", \"movie\", \"description\", \"rating\"]},\"rows\":{\"cinema\":[[1, \"War\", \"great 3D\", 8.9], [2, \"Science\", \"fiction\", 8.5], [3, \"irish\", \"boring\", 6.2], [4, \"Ice song\", \"Fantacy\", 8.6], [5, \"House card\", \"Interesting\", 9.1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"cinema\":[\"id\",\"movie\",\"description\",\"rating\"]},\"rows\":{\"cinema\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"cinema\":[\"id\",\"movie\",\"description\",\"rating\"]},\"rows\":{\"cinema\":[[1,\"War\",\"great 3D\",8.9]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"cinema\":[\"id\",\"movie\",\"description\",\"rating\"]},\"rows\":{\"cinema\":[[1,\"War\",\"great 3D\",null],[2,\"Science\",\"fiction\",null],[3,\"irish\",\"boring\",null],[4,\"Ice song\",\"Fantacy\",null],[5,\"House card\",\"Interesting\",null]]}}",
-      "expectedOutput": null
+      "input": "Cinema table:\n+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 1  | War        | great 3D    | 8.9    |\n| 2  | Science    | fiction     | 8.5    |\n| 3  | irish      | boring      | 6.2    |\n| 4  | Ice song   | Fantacy     | 8.6    |\n| 5  | House card | Interesting | 9.1    |\n+----+------------+-------------+--------+",
+      "expectedOutput": "+----+------------+-------------+--------+\n| id | movie      | description | rating |\n+----+------------+-------------+--------+\n| 5  | House card | Interesting | 9.1    |\n| 1  | War        | great 3D    | 8.9    |\n+----+------------+-------------+--------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists cinema (id int, movie varchar(255), description varchar(255), rating float(2, 1))\n\nTruncate table cinema",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/not-boring-movies/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.715Z",
+    "collectedAt": "2026-10-19T18:40:25.700Z",
     "sourceUpdatedAt": null
   }
 }

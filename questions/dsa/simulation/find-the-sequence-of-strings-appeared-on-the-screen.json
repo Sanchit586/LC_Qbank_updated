@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "target = &quot;abc&quot;",
-      "output": "[&quot;a&quot;,&quot;aa&quot;,&quot;ab&quot;,&quot;aba&quot;,&quot;abb&quot;,&quot;abc&quot;]",
+      "input": "target = \"abc\"",
+      "output": "[\"a\",\"aa\",\"ab\",\"aba\",\"abb\",\"abc\"]",
       "explanation": null
     },
     {
-      "input": "target = &quot;he&quot;",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;ha&quot;,&quot;hb&quot;,&quot;hc&quot;,&quot;hd&quot;,&quot;he&quot;]",
+      "input": "target = \"he\"",
+      "output": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"ha\",\"hb\",\"hc\",\"hd\",\"he\"]",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "target = &quot;abc&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;aa&quot;,&quot;ab&quot;,&quot;aba&quot;,&quot;abb&quot;,&quot;abc&quot;]"
+      "input": "\"abc\"",
+      "expectedOutput": "[\"a\",\"aa\",\"ab\",\"aba\",\"abb\",\"abc\"]"
     },
     {
-      "input": "target = &quot;he&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;ha&quot;,&quot;hb&quot;,&quot;hc&quot;,&quot;hd&quot;,&quot;he&quot;]"
+      "input": "\"he\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"ha\",\"hb\",\"hc\",\"hd\",\"he\"]"
     }
   ],
   "testCases": [
     {
-      "input": "target = &quot;abc&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;aa&quot;,&quot;ab&quot;,&quot;aba&quot;,&quot;abb&quot;,&quot;abc&quot;]"
-    },
-    {
-      "input": "target = &quot;he&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;,&quot;e&quot;,&quot;f&quot;,&quot;g&quot;,&quot;h&quot;,&quot;ha&quot;,&quot;hb&quot;,&quot;hc&quot;,&quot;hd&quot;,&quot;he&quot;]"
-    },
-    {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"aa\",\"ab\",\"aba\",\"abb\",\"abc\"]"
     },
     {
       "input": "\"he\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"ha\",\"hb\",\"hc\",\"hd\",\"he\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "target = \"abc\"",
+      "expectedOutput": "[\"a\",\"aa\",\"ab\",\"aba\",\"abb\",\"abc\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "target = \"he\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\",\"f\",\"g\",\"h\",\"ha\",\"hb\",\"hc\",\"hd\",\"he\"]"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-sequence-of-strings-appeared-on-the-screen/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:16.024Z",
+    "collectedAt": "2026-10-19T18:40:18.627Z",
     "sourceUpdatedAt": null
   }
 }

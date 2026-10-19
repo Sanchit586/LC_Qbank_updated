@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2,3], nums2 = [2,4,6]",
+      "input": "[1,2,3]\n[2,4,6]",
       "expectedOutput": "[[1,3],[4,6]]"
     },
     {
-      "input": "nums1 = [1,2,3,3], nums2 = [1,1,2,2]",
+      "input": "[1,2,3,3]\n[1,1,2,2]",
       "expectedOutput": "[[3],[]]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[2,4,6]",
+      "expectedOutput": "[[1,3],[4,6]]"
+    },
+    {
+      "input": "[1,2,3,3]\n[1,1,2,2]",
+      "expectedOutput": "[[3],[]]"
+    },
+    {
       "input": "nums1 = [1,2,3], nums2 = [2,4,6]",
       "expectedOutput": "[[1,3],[4,6]]"
     },
     {
       "input": "nums1 = [1,2,3,3], nums2 = [1,1,2,2]",
       "expectedOutput": "[[3],[]]"
-    },
-    {
-      "input": "[1,2,3]\n[2,4,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,3]\n[1,1,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3,4], nums3 = [3,5,7]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-difference-of-two-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:08.271Z",
+    "collectedAt": "2026-10-19T18:40:18.225Z",
     "sourceUpdatedAt": null
   }
 }

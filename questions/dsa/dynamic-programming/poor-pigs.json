@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "buckets = 4, minutesToDie = 15, minutesToTest = 15",
+      "input": "4\n15\n15",
       "expectedOutput": "2"
     },
     {
-      "input": "buckets = 4, minutesToDie = 15, minutesToTest = 30",
+      "input": "4\n15\n30",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "4\n15\n15",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n15\n30",
+      "expectedOutput": "2"
+    },
+    {
       "input": "buckets = 4, minutesToDie = 15, minutesToTest = 15",
       "expectedOutput": "2"
     },
     {
       "input": "buckets = 4, minutesToDie = 15, minutesToTest = 30",
       "expectedOutput": "2"
-    },
-    {
-      "input": "4\n15\n15",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n15\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "buckets = 5, minutesToDie = 16, minutesToTest = 16",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/poor-pigs/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.501Z",
+    "collectedAt": "2026-10-19T18:40:26.798Z",
     "sourceUpdatedAt": null
   }
 }

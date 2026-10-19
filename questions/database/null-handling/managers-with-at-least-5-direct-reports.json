@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Employee table:\n+-----+-------+------------+-----------+\n| id  | name  | department | managerId |\n+-----+-------+------------+-----------+\n| 101 | John  | A          | null      |\n| 102 | Dan   | A          | 101       |\n| 103 | James | A          | 101       |\n| 104 | Amy   | A          | 101       |\n| 105 | Anne  | A          | 101       |\n| 106 | Ron   | B          | 101       |\n+-----+-------+------------+-----------+",
+      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"department\", \"managerId\"]}, \"rows\": {\"Employee\": [[101, \"John\", \"A\", null],[102, \"Dan\", \"A\", 101], [103, \"James\", \"A\", 101], [104, \"Amy\", \"A\", 101], [105, \"Anne\", \"A\", 101], [106, \"Ron\", \"B\", 101]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| John |\n+------+"
     }
   ],
   "testCases": [
     {
-      "input": "Employee table:\n+-----+-------+------------+-----------+\n| id  | name  | department | managerId |\n+-----+-------+------------+-----------+\n| 101 | John  | A          | null      |\n| 102 | Dan   | A          | 101       |\n| 103 | James | A          | 101       |\n| 104 | Amy   | A          | 101       |\n| 105 | Anne  | A          | 101       |\n| 106 | Ron   | B          | 101       |\n+-----+-------+------------+-----------+",
+      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"department\", \"managerId\"]}, \"rows\": {\"Employee\": [[101, \"John\", \"A\", null],[102, \"Dan\", \"A\", 101], [103, \"James\", \"A\", 101], [104, \"Amy\", \"A\", 101], [105, \"Anne\", \"A\", 101], [106, \"Ron\", \"B\", 101]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| John |\n+------+"
     },
     {
-      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"department\", \"managerId\"]}, \"rows\": {\"Employee\": [[101, \"John\", \"A\", null],[102, \"Dan\", \"A\", 101], [103, \"James\", \"A\", 101], [104, \"Amy\", \"A\", 101], [105, \"Anne\", \"A\", 101], [106, \"Ron\", \"B\", 101]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"department\",\"managerId\"]},\"rows\":{\"Employee\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"department\",\"managerId\"]},\"rows\":{\"Employee\":[[101,\"John\",\"A\",null]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"department\",\"managerId\"]},\"rows\":{\"Employee\":[[101,\"John\",\"A\",null],[102,\"Dan\",\"A\",null],[103,\"James\",\"A\",null],[104,\"Amy\",\"A\",null],[105,\"Anne\",\"A\",null],[106,\"Ron\",\"B\",null]]}}",
-      "expectedOutput": null
+      "input": "Employee table:\n+-----+-------+------------+-----------+\n| id  | name  | department | managerId |\n+-----+-------+------------+-----------+\n| 101 | John  | A          | null      |\n| 102 | Dan   | A          | 101       |\n| 103 | James | A          | 101       |\n| 104 | Amy   | A          | 101       |\n| 105 | Anne  | A          | 101       |\n| 106 | Ron   | B          | 101       |\n+-----+-------+------------+-----------+",
+      "expectedOutput": "+------+\n| name |\n+------+\n| John |\n+------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Employee (id int, name varchar(255), department varchar(255), managerId int)\n\nTruncate table Employee",
@@ -73,7 +61,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/managers-with-at-least-5-direct-reports/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.258Z",
+    "collectedAt": "2026-10-19T18:40:21.022Z",
     "sourceUpdatedAt": null
   }
 }

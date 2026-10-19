@@ -21,7 +21,7 @@
     {
       "input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]",
       "output": "2",
-      "explanation": "There is one obstacle in the middle of the 3x3 grid above.\nThere are two ways to reach the bottom-right corner:\n1. Right -&gt; Right -&gt; Down -&gt; Down\n2. Down -&gt; Down -&gt; Right -&gt; Right"
+      "explanation": "There is one obstacle in the middle of the 3x3 grid above.\nThere are two ways to reach the bottom-right corner:\n1. Right -> Right -> Down -> Down\n2. Down -> Down -> Right -> Right"
     },
     {
       "input": "obstacleGrid = [[0,1],[0,0]]",
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]",
+      "input": "[[0,0,0],[0,1,0],[0,0,0]]",
       "expectedOutput": "2"
     },
     {
-      "input": "obstacleGrid = [[0,1],[0,0]]",
+      "input": "[[0,1],[0,0]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,0,0],[0,1,0],[0,0,0]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[0,1],[0,0]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]",
       "expectedOutput": "2"
     },
     {
       "input": "obstacleGrid = [[0,1],[0,0]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[0,0,0],[0,1,0],[0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1],[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "obstacleGrid = [[1,1,1],[1,2,1],[1,1,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/unique-paths-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:06.650Z",
+    "collectedAt": "2026-10-19T18:40:31.406Z",
     "sourceUpdatedAt": null
   }
 }

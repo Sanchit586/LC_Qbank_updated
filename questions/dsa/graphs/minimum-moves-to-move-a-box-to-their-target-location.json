@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\".\",\".\",\"B\",\".\",\"#\"],\n               [\"#\",\".\",\"#\",\"#\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "output": "3",
       "explanation": "We return only the number of times the box is pushed."
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\".\",\".\",\"B\",\".\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "output": "-1",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\".\",\".\",\"#\",\"#\"],\n               [\"#\",\".\",\"#\",\"B\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "output": "5",
       "explanation": "push the box down, left, left, up and up."
     }
@@ -59,42 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\".\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "-1"
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\".\",\".\",\"#\",\"#\"],[\"#\",\".\",\"#\",\"B\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\".\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "-1"
     },
     {
-      "input": "grid = [[&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;T&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;#&quot;,&quot;B&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;S&quot;,&quot;#&quot;],\n               [&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;,&quot;#&quot;]]",
+      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\".\",\".\",\"#\",\"#\"],[\"#\",\".\",\"#\",\"B\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
       "expectedOutput": "5"
     },
     {
-      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\".\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
-      "expectedOutput": null
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\".\",\".\",\"B\",\".\",\"#\"],\n               [\"#\",\".\",\"#\",\"#\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "expectedOutput": "3"
     },
     {
-      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\".\",\".\",\"B\",\".\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
-      "expectedOutput": null
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\".\",\".\",\"B\",\".\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "expectedOutput": "-1"
     },
     {
-      "input": "[[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],[\"#\",\"T\",\".\",\".\",\"#\",\"#\"],[\"#\",\".\",\"#\",\"B\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\".\",\"#\"],[\"#\",\".\",\".\",\".\",\"S\",\"#\"],[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
-      "expectedOutput": null
+      "input": "grid = [[\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"],\n               [\"#\",\"T\",\".\",\".\",\"#\",\"#\"],\n               [\"#\",\".\",\"#\",\"B\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\".\",\"#\"],\n               [\"#\",\".\",\".\",\".\",\"S\",\"#\"],\n               [\"#\",\"#\",\"#\",\"#\",\"#\",\"#\"]]",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -109,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-move-a-box-to-their-target-location/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:05.269Z",
+    "collectedAt": "2026-10-19T18:40:24.143Z",
     "sourceUpdatedAt": null
   }
 }

@@ -21,7 +21,13 @@
     "times[0] <= t <= 109",
     "At most 104 calls will be made to q."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"TopVotedCandidate\", \"q\", \"q\", \"q\", \"q\", \"q\", \"q\"]\n[[[0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30]], [3], [12], [25], [15], [24], [8]]",
+      "output": "[null, 0, 1, 1, 0, 0, 1]",
+      "explanation": "TopVotedCandidate topVotedCandidate = new TopVotedCandidate([0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30]);\ntopVotedCandidate.q(3); // return 0, At time 3, the votes are [0], and 0 is leading.\ntopVotedCandidate.q(12); // return 1, At time 12, the votes are [0,1,1], and 1 is leading.\ntopVotedCandidate.q(25); // return 1, At time 25, the votes are [0,1,1,0,0,1], and 1 is leading (as ties go to the most recent vote.)\ntopVotedCandidate.q(15); // return 0\ntopVotedCandidate.q(24); // return 0\ntopVotedCandidate.q(8); // return 1"
+    }
+  ],
   "starterCode": {
     "cpp": "class TopVotedCandidate {\npublic:\n    TopVotedCandidate(vector<int>& persons, vector<int>& times) {\n        \n    }\n    \n    int q(int t) {\n        \n    }\n};\n\n/**\n * Your TopVotedCandidate object will be instantiated and called as such:\n * TopVotedCandidate* obj = new TopVotedCandidate(persons, times);\n * int param_1 = obj->q(t);\n */",
     "java": "class TopVotedCandidate {\n\n    public TopVotedCandidate(int[] persons, int[] times) {\n        \n    }\n    \n    public int q(int t) {\n        \n    }\n}\n\n/**\n * Your TopVotedCandidate object will be instantiated and called as such:\n * TopVotedCandidate obj = new TopVotedCandidate(persons, times);\n * int param_1 = obj.q(t);\n */",
@@ -46,17 +52,17 @@
   "publicTests": [
     {
       "input": "[\"TopVotedCandidate\",\"q\",\"q\",\"q\",\"q\",\"q\",\"q\"]\n[[[0,1,1,0,0,1,0],[0,5,10,15,20,25,30]],[3],[12],[25],[15],[24],[8]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0, 1, 1, 0, 0, 1]"
     }
   ],
   "testCases": [
     {
       "input": "[\"TopVotedCandidate\",\"q\",\"q\",\"q\",\"q\",\"q\",\"q\"]\n[[[0,1,1,0,0,1,0],[0,5,10,15,20,25,30]],[3],[12],[25],[15],[24],[8]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0, 1, 1, 0, 0, 1]"
     },
     {
-      "input": "[\"TopVotedCandidate\",\"q\",\"q\",\"q\",\"q\",\"q\",\"q\"]\n[[[1,2,2,1,1,2,1],[1,6,11,16,21,26,31]],[4],[13],[26],[16],[25],[9]]",
-      "expectedOutput": null
+      "input": "[\"TopVotedCandidate\", \"q\", \"q\", \"q\", \"q\", \"q\", \"q\"]\n[[[0, 1, 1, 0, 0, 1, 0], [0, 5, 10, 15, 20, 25, 30]], [3], [12], [25], [15], [24], [8]]",
+      "expectedOutput": "[null, 0, 1, 1, 0, 0, 1]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/online-election/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.056Z",
+    "collectedAt": "2026-10-19T18:40:26.378Z",
     "sourceUpdatedAt": null
   }
 }

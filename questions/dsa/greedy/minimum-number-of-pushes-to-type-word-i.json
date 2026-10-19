@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abcde&quot;",
+      "input": "word = \"abcde\"",
       "output": "5",
-      "explanation": "The remapped keypad given in the image provides the minimum cost.\n&quot;a&quot; -&gt; one push on key 2\n&quot;b&quot; -&gt; one push on key 3\n&quot;c&quot; -&gt; one push on key 4\n&quot;d&quot; -&gt; one push on key 5\n&quot;e&quot; -&gt; one push on key 6\nTotal cost is 1 + 1 + 1 + 1 + 1 = 5.\nIt can be shown that no other mapping can provide a lower cost."
+      "explanation": "The remapped keypad given in the image provides the minimum cost.\n\"a\" -> one push on key 2\n\"b\" -> one push on key 3\n\"c\" -> one push on key 4\n\"d\" -> one push on key 5\n\"e\" -> one push on key 6\nTotal cost is 1 + 1 + 1 + 1 + 1 = 5.\nIt can be shown that no other mapping can provide a lower cost."
     },
     {
-      "input": "word = &quot;xycdefghij&quot;",
+      "input": "word = \"xycdefghij\"",
       "output": "12",
-      "explanation": "The remapped keypad given in the image provides the minimum cost.\n&quot;x&quot; -&gt; one push on key 2\n&quot;y&quot; -&gt; two pushes on key 2\n&quot;c&quot; -&gt; one push on key 3\n&quot;d&quot; -&gt; two pushes on key 3\n&quot;e&quot; -&gt; one push on key 4\n&quot;f&quot; -&gt; one push on key 5\n&quot;g&quot; -&gt; one push on key 6\n&quot;h&quot; -&gt; one push on key 7\n&quot;i&quot; -&gt; one push on key 8\n&quot;j&quot; -&gt; one push on key 9\nTotal cost is 1 + 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 1 = 12.\nIt can be shown that no other mapping can provide a lower cost."
+      "explanation": "The remapped keypad given in the image provides the minimum cost.\n\"x\" -> one push on key 2\n\"y\" -> two pushes on key 2\n\"c\" -> one push on key 3\n\"d\" -> two pushes on key 3\n\"e\" -> one push on key 4\n\"f\" -> one push on key 5\n\"g\" -> one push on key 6\n\"h\" -> one push on key 7\n\"i\" -> one push on key 8\n\"j\" -> one push on key 9\nTotal cost is 1 + 2 + 1 + 2 + 1 + 1 + 1 + 1 + 1 + 1 = 12.\nIt can be shown that no other mapping can provide a lower cost."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abcde&quot;",
+      "input": "\"abcde\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;xycdefghij&quot;",
+      "input": "\"xycdefghij\"",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abcde&quot;",
+      "input": "\"abcde\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;xycdefghij&quot;",
+      "input": "\"xycdefghij\"",
       "expectedOutput": "12"
     },
     {
-      "input": "\"abcde\"",
-      "expectedOutput": null
+      "input": "word = \"abcde\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"xycdefghij\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "word = \"xycdefghij\"",
+      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-pushes-to-type-word-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:10.741Z",
+    "collectedAt": "2026-10-19T18:40:24.425Z",
     "sourceUpdatedAt": null
   }
 }

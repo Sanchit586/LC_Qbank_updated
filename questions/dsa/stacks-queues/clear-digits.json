@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
-      "output": "&quot;abc&quot;",
+      "input": "s = \"abc\"",
+      "output": "\"abc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;cb34&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"cb34\"",
+      "output": "\"\"",
       "explanation": null
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"abc\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = &quot;cb34&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"cb34\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
-      "input": "s = &quot;cb34&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
       "input": "\"cb34\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"cb34\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/clear-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:59.491Z",
+    "collectedAt": "2026-10-19T18:40:14.403Z",
     "sourceUpdatedAt": null
   }
 }

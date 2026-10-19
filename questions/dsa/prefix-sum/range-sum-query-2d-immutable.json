@@ -21,7 +21,13 @@
     "0 <= col1 <= col2 < n",
     "At most 104 calls will be made to sumRegion."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"NumMatrix\", \"sumRegion\", \"sumRegion\", \"sumRegion\"]\n[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [1, 1, 2, 2], [1, 2, 2, 4]]",
+      "output": "[null, 8, 11, 12]",
+      "explanation": "NumMatrix numMatrix = new NumMatrix([[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]);\nnumMatrix.sumRegion(2, 1, 4, 3); // return 8 (i.e sum of the red rectangle)\nnumMatrix.sumRegion(1, 1, 2, 2); // return 11 (i.e sum of the green rectangle)\nnumMatrix.sumRegion(1, 2, 2, 4); // return 12 (i.e sum of the blue rectangle)"
+    }
+  ],
   "starterCode": {
     "cpp": "class NumMatrix {\npublic:\n    NumMatrix(vector<vector<int>>& matrix) {\n        \n    }\n    \n    int sumRegion(int row1, int col1, int row2, int col2) {\n        \n    }\n};\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * NumMatrix* obj = new NumMatrix(matrix);\n * int param_1 = obj->sumRegion(row1,col1,row2,col2);\n */",
     "java": "class NumMatrix {\n\n    public NumMatrix(int[][] matrix) {\n        \n    }\n    \n    public int sumRegion(int row1, int col1, int row2, int col2) {\n        \n    }\n}\n\n/**\n * Your NumMatrix object will be instantiated and called as such:\n * NumMatrix obj = new NumMatrix(matrix);\n * int param_1 = obj.sumRegion(row1,col1,row2,col2);\n */",
@@ -46,17 +52,17 @@
   "publicTests": [
     {
       "input": "[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 8, 11, 12]"
     }
   ],
   "testCases": [
     {
       "input": "[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[3,0,1,4,2],[5,6,3,2,1],[1,2,0,1,5],[4,1,0,1,7],[1,0,3,0,5]]],[2,1,4,3],[1,1,2,2],[1,2,2,4]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 8, 11, 12]"
     },
     {
-      "input": "[\"NumMatrix\",\"sumRegion\",\"sumRegion\",\"sumRegion\"]\n[[[[4,1,2,5,3],[6,7,4,3,2],[2,3,1,2,6],[5,2,1,2,8],[2,1,4,1,6]]],[3,2,5,4],[2,2,3,3],[2,3,3,5]]",
-      "expectedOutput": null
+      "input": "[\"NumMatrix\", \"sumRegion\", \"sumRegion\", \"sumRegion\"]\n[[[[3, 0, 1, 4, 2], [5, 6, 3, 2, 1], [1, 2, 0, 1, 5], [4, 1, 0, 1, 7], [1, 0, 3, 0, 5]]], [2, 1, 4, 3], [1, 1, 2, 2], [1, 2, 2, 4]]",
+      "expectedOutput": "[null, 8, 11, 12]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-sum-query-2d-immutable/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.685Z",
+    "collectedAt": "2026-10-19T18:40:27.187Z",
     "sourceUpdatedAt": null
   }
 }

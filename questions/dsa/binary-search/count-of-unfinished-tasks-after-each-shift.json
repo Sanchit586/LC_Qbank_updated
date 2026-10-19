@@ -21,12 +21,12 @@
     {
       "input": "tasks = [1,4,4], shifts = [9,1,4]",
       "output": "[0,2,1]",
-      "explanation": "Shift 0: The tasks require 1 + 4 + 4 = 9&nbsp;units of time, so all tasks are completed. There are 0 unfinished tasks.\n\tShift 1: Processing restarts from task 0. The shift has time 1, so task 0 is completed. There are 2 unfinished tasks.\n\tShift 2: Processing continues from task 1. The shift has time 4, so task 1 is completed. There is 1 unfinished task."
+      "explanation": "Shift 0: The tasks require 1 + 4 + 4 = 9 units of time, so all tasks are completed. There are 0 unfinished tasks.\n\tShift 1: Processing restarts from task 0. The shift has time 1, so task 0 is completed. There are 2 unfinished tasks.\n\tShift 2: Processing continues from task 1. The shift has time 4, so task 1 is completed. There is 1 unfinished task."
     },
     {
       "input": "tasks = [2,3,4], shifts = [20,4,5]",
       "output": "[0,2,0]",
-      "explanation": "Shift 0: The tasks require 2 + 3 + 4 = 9&nbsp;units of time, so all tasks are completed. The remaining time in this shift is ignored. There are 0 unfinished tasks.\n\tShift 1: Processing restarts from task 0. The shift has time 4, so task 0 is completed and task 1 is partially completed. There are 2 unfinished tasks.\n\tShift 2: Processing continues from task 1. The remaining time needed is 1 + 4 = 5, so all tasks are completed. There are 0 unfinished tasks."
+      "explanation": "Shift 0: The tasks require 2 + 3 + 4 = 9 units of time, so all tasks are completed. The remaining time in this shift is ignored. There are 0 unfinished tasks.\n\tShift 1: Processing restarts from task 0. The shift has time 4, so task 0 is completed and task 1 is partially completed. There are 2 unfinished tasks.\n\tShift 2: Processing continues from task 1. The remaining time needed is 1 + 4 = 5, so all tasks are completed. There are 0 unfinished tasks."
     },
     {
       "input": "tasks = [4,2], shifts = [3,6,1]",
@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "tasks = [1,4,4], shifts = [9,1,4]",
+      "input": "[1,4,4]\n[9,1,4]",
       "expectedOutput": "[0,2,1]"
     },
     {
-      "input": "tasks = [2,3,4], shifts = [20,4,5]",
+      "input": "[2,3,4]\n[20,4,5]",
       "expectedOutput": "[0,2,0]"
     },
     {
-      "input": "tasks = [4,2], shifts = [3,6,1]",
+      "input": "[4,2]\n[3,6,1]",
       "expectedOutput": "[2,0,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,4,4]\n[9,1,4]",
+      "expectedOutput": "[0,2,1]"
+    },
+    {
+      "input": "[2,3,4]\n[20,4,5]",
+      "expectedOutput": "[0,2,0]"
+    },
+    {
+      "input": "[4,2]\n[3,6,1]",
+      "expectedOutput": "[2,0,2]"
+    },
+    {
       "input": "tasks = [1,4,4], shifts = [9,1,4]",
       "expectedOutput": "[0,2,1]"
     },
@@ -81,38 +93,6 @@
     {
       "input": "tasks = [4,2], shifts = [3,6,1]",
       "expectedOutput": "[2,0,2]"
-    },
-    {
-      "input": "[1,4,4]\n[9,1,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4]\n[20,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,2]\n[3,6,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "tasks = [3,4,5], shifts = [21,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "tasks = [5,3], shifts = [4,7,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,5,5]\n[10,2,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,4,5]\n[21,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "tasks = [2,5,5], shifts = [10,2,5]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-of-unfinished-tasks-after-each-shift/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.906Z",
+    "collectedAt": "2026-10-19T18:40:15.436Z",
     "sourceUpdatedAt": null
   }
 }

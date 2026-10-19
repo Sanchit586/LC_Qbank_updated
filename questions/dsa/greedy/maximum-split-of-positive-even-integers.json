@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "finalSum = 12",
+      "input": "12",
       "expectedOutput": "[2,4,6]"
     },
     {
-      "input": "finalSum = 7",
+      "input": "7",
       "expectedOutput": "[]"
     },
     {
-      "input": "finalSum = 28",
+      "input": "28",
       "expectedOutput": "[6,8,2,12]"
     }
   ],
   "testCases": [
     {
+      "input": "12",
+      "expectedOutput": "[2,4,6]"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "28",
+      "expectedOutput": "[6,8,2,12]"
+    },
+    {
       "input": "finalSum = 12",
       "expectedOutput": "[2,4,6]"
     },
@@ -78,74 +90,6 @@
     {
       "input": "finalSum = 28",
       "expectedOutput": "[6,8,2,12]"
-    },
-    {
-      "input": "12",
-      "expectedOutput": null
-    },
-    {
-      "input": "7",
-      "expectedOutput": null
-    },
-    {
-      "input": "28",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-split-of-positive-even-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:30.225Z",
+    "collectedAt": "2026-10-19T18:40:22.611Z",
     "sourceUpdatedAt": null
   }
 }

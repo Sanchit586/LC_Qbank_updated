@@ -57,94 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"banana\"",
+      "input": "\"banana\"",
       "expectedOutput": "\"ana\""
     },
     {
-      "input": "s = \"abcd\"",
+      "input": "\"abcd\"",
       "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
+      "input": "\"banana\"",
+      "expectedOutput": "\"ana\""
+    },
+    {
+      "input": "\"abcd\"",
+      "expectedOutput": "\"\""
+    },
+    {
       "input": "s = \"banana\"",
       "expectedOutput": "\"ana\""
     },
     {
       "input": "s = \"abcd\"",
       "expectedOutput": "\"\""
-    },
-    {
-      "input": "\"banana\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -159,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-duplicate-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.907Z",
+    "collectedAt": "2026-10-19T18:40:20.479Z",
     "sourceUpdatedAt": null
   }
 }

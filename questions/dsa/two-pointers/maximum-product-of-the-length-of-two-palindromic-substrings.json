@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ababbb&quot;",
+      "input": "s = \"ababbb\"",
       "output": "9",
-      "explanation": "Substrings &quot;aba&quot; and &quot;bbb&quot; are palindromes with odd length. product = 3 * 3 = 9."
+      "explanation": "Substrings \"aba\" and \"bbb\" are palindromes with odd length. product = 3 * 3 = 9."
     },
     {
-      "input": "s = &quot;zaaaxbbby&quot;",
+      "input": "s = \"zaaaxbbby\"",
       "output": "9",
-      "explanation": "Substrings &quot;aaa&quot; and &quot;bbb&quot; are palindromes with odd length. product = 3 * 3 = 9."
+      "explanation": "Substrings \"aaa\" and \"bbb\" are palindromes with odd length. product = 3 * 3 = 9."
     }
   ],
   "starterCode": {
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ababbb&quot;",
+      "input": "\"ababbb\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = &quot;zaaaxbbby&quot;",
+      "input": "\"zaaaxbbby\"",
       "expectedOutput": "9"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ababbb&quot;",
-      "expectedOutput": "9"
-    },
-    {
-      "input": "s = &quot;zaaaxbbby&quot;",
-      "expectedOutput": "9"
-    },
-    {
       "input": "\"ababbb\"",
-      "expectedOutput": null
+      "expectedOutput": "9"
     },
     {
       "input": "\"zaaaxbbby\"",
-      "expectedOutput": null
+      "expectedOutput": "9"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"ababbb\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"zaaaxbbby\"",
+      "expectedOutput": "9"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:25.027Z",
+    "collectedAt": "2026-10-19T18:40:22.422Z",
     "sourceUpdatedAt": null
   }
 }

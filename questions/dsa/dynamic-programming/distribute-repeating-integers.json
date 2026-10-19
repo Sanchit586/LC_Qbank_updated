@@ -64,20 +64,32 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,2,3,4], quantity = [2]",
+      "input": "[1,2,3,4]\n[2]",
       "expectedOutput": "false"
     },
     {
-      "input": "nums = [1,2,3,3], quantity = [2]",
+      "input": "[1,2,3,3]\n[2]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,1,2,2], quantity = [2,2]",
+      "input": "[1,1,2,2]\n[2,2]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2,3,3]\n[2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,2,2]\n[2,2]",
+      "expectedOutput": "true"
+    },
+    {
       "input": "nums = [1,2,3,4], quantity = [2]",
       "expectedOutput": "false"
     },
@@ -88,38 +100,6 @@
     {
       "input": "nums = [1,1,2,2], quantity = [2,2]",
       "expectedOutput": "true"
-    },
-    {
-      "input": "[1,2,3,4]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,3]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,2,2]\n[2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,4], quantity = [3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,2,3,3], quantity = [3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,4]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4,5], quantity = [3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -135,7 +115,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distribute-repeating-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.072Z",
+    "collectedAt": "2026-10-19T18:40:16.790Z",
     "sourceUpdatedAt": null
   }
 }

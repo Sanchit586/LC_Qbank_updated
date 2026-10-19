@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "students = [1,1,0,0], sandwiches = [0,1,0,1]",
+      "input": "[1,1,0,0]\n[0,1,0,1]",
       "expectedOutput": "0"
     },
     {
-      "input": "students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]",
+      "input": "[1,1,1,0,0,1]\n[1,0,0,0,1,1]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[1,1,0,0]\n[0,1,0,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,0,0,1]\n[1,0,0,0,1,1]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "students = [1,1,0,0], sandwiches = [0,1,0,1]",
       "expectedOutput": "0"
     },
     {
       "input": "students = [1,1,1,0,0,1], sandwiches = [1,0,0,0,1,1]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[1,1,0,0]\n[0,1,0,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,0,0,1]\n[1,0,0,0,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "students = [2,2,1,1], sandwiches = [1,2,1,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-students-unable-to-eat-lunch/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.216Z",
+    "collectedAt": "2026-10-19T18:40:26.100Z",
     "sourceUpdatedAt": null
   }
 }

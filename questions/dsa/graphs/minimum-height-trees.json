@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, edges = [[1,0],[1,2],[1,3]]",
+      "input": "4\n[[1,0],[1,2],[1,3]]",
       "expectedOutput": "[1]"
     },
     {
-      "input": "n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]",
+      "input": "6\n[[3,0],[3,1],[3,2],[3,4],[5,4]]",
       "expectedOutput": "[3,4]"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[[1,0],[1,2],[1,3]]",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "6\n[[3,0],[3,1],[3,2],[3,4],[5,4]]",
+      "expectedOutput": "[3,4]"
+    },
+    {
       "input": "n = 4, edges = [[1,0],[1,2],[1,3]]",
       "expectedOutput": "[1]"
     },
     {
       "input": "n = 6, edges = [[3,0],[3,1],[3,2],[3,4],[5,4]]",
       "expectedOutput": "[3,4]"
-    },
-    {
-      "input": "4\n[[1,0],[1,2],[1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[3,0],[3,1],[3,2],[3,4],[5,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, edges = [[2,1],[2,3],[2,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-height-trees/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:59.220Z",
+    "collectedAt": "2026-10-19T18:40:23.954Z",
     "sourceUpdatedAt": null
   }
 }

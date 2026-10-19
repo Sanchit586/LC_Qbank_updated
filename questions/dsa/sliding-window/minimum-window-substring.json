@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
-      "output": "&quot;BANC&quot;",
-      "explanation": "The minimum window substring &quot;BANC&quot; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t."
+      "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+      "output": "\"BANC\"",
+      "explanation": "The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t."
     },
     {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
-      "output": "&quot;a&quot;",
+      "input": "s = \"a\", t = \"a\"",
+      "output": "\"a\"",
       "explanation": "The entire string s is the minimum window."
     },
     {
-      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "Both &#39;a&#39;s from t must be included in the window.\nSince the largest window of s only has one &#39;a&#39;, return empty string."
+      "input": "s = \"a\", t = \"aa\"",
+      "output": "\"\"",
+      "explanation": "Both 'a's from t must be included in the window.\nSince the largest window of s only has one 'a', return empty string."
     }
   ],
   "starterCode": {
@@ -57,86 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
-      "expectedOutput": "&quot;BANC&quot;"
+      "input": "\"ADOBECODEBANC\"\n\"ABC\"",
+      "expectedOutput": "\"BANC\""
     },
     {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"a\"\n\"aa\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
-      "expectedOutput": "&quot;BANC&quot;"
-    },
-    {
-      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
-      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"ADOBECODEBANC\"\n\"ABC\"",
-      "expectedOutput": null
+      "expectedOutput": "\"BANC\""
     },
     {
       "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
       "input": "\"a\"\n\"aa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+      "expectedOutput": "\"BANC\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
+      "input": "s = \"a\", t = \"a\"",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"a\", t = \"aa\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-window-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:31.277Z",
+    "collectedAt": "2026-10-19T18:40:25.353Z",
     "sourceUpdatedAt": null
   }
 }

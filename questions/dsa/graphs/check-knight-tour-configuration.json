@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
+      "input": "[[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[0,3,6],[5,8,1],[2,7,4]]",
+      "input": "[[0,3,6],[5,8,1],[2,7,4]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,3,6],[5,8,1],[2,7,4]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "grid = [[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
       "expectedOutput": "true"
     },
     {
       "input": "grid = [[0,3,6],[5,8,1],[2,7,4]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[0,11,16,5,20],[17,4,19,10,15],[12,1,8,21,6],[3,18,23,14,9],[24,13,2,7,22]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,3,6],[5,8,1],[2,7,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1,12,17,6,21],[18,5,20,11,16],[13,2,9,22,7],[4,19,24,15,10],[25,14,3,8,23]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-knight-tour-configuration/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:57.631Z",
+    "collectedAt": "2026-10-19T18:40:14.305Z",
     "sourceUpdatedAt": null
   }
 }

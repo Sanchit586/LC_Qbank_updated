@@ -25,13 +25,13 @@
   "examples": [
     {
       "input": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6",
-      "output": "&quot;UURL&quot;",
-      "explanation": "The shortest path is: 3 &rarr; 1 &rarr; 5 &rarr; 2 &rarr; 6."
+      "output": "\"UURL\"",
+      "explanation": "The shortest path is: 3 → 1 → 5 → 2 → 6."
     },
     {
       "input": "root = [2,1], startValue = 2, destValue = 1",
-      "output": "&quot;L&quot;",
-      "explanation": "The shortest path is: 2 &rarr; 1."
+      "output": "\"L\"",
+      "explanation": "The shortest path is: 2 → 1."
     }
   ],
   "starterCode": {
@@ -57,94 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6",
-      "expectedOutput": "&quot;UURL&quot;"
+      "input": "[5,1,2,3,null,6,4]\n3\n6",
+      "expectedOutput": "\"UURL\""
     },
     {
-      "input": "root = [2,1], startValue = 2, destValue = 1",
-      "expectedOutput": "&quot;L&quot;"
+      "input": "[2,1]\n2\n1",
+      "expectedOutput": "\"L\""
     }
   ],
   "testCases": [
     {
-      "input": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6",
-      "expectedOutput": "&quot;UURL&quot;"
-    },
-    {
-      "input": "root = [2,1], startValue = 2, destValue = 1",
-      "expectedOutput": "&quot;L&quot;"
-    },
-    {
       "input": "[5,1,2,3,null,6,4]\n3\n6",
-      "expectedOutput": null
+      "expectedOutput": "\"UURL\""
     },
     {
       "input": "[2,1]\n2\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"L\""
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "root = [5,1,2,3,null,6,4], startValue = 3, destValue = 6",
+      "expectedOutput": "\"UURL\""
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
+      "input": "root = [2,1], startValue = 2, destValue = 1",
+      "expectedOutput": "\"L\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/step-by-step-directions-from-a-binary-tree-node-to-another/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:48.469Z",
+    "collectedAt": "2026-10-19T18:40:30.213Z",
     "sourceUpdatedAt": null
   }
 }

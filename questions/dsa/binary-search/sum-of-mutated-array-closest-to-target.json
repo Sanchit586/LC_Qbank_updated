@@ -19,7 +19,7 @@
     {
       "input": "arr = [4,9,3], target = 10",
       "output": "3",
-      "explanation": "When using 3 arr converts to [3, 3, 3] which sums 9 and that&#39;s the optimal answer."
+      "explanation": "When using 3 arr converts to [3, 3, 3] which sums 9 and that's the optimal answer."
     },
     {
       "input": "arr = [2,3,5], target = 10",
@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "arr = [4,9,3], target = 10",
+      "input": "[4,9,3]\n10",
       "expectedOutput": "3"
     },
     {
-      "input": "arr = [2,3,5], target = 10",
+      "input": "[2,3,5]\n10",
       "expectedOutput": "5"
     },
     {
-      "input": "arr = [60864,25176,27249,21296,20204], target = 56803",
+      "input": "[60864,25176,27249,21296,20204]\n56803",
       "expectedOutput": "11361"
     }
   ],
   "testCases": [
     {
+      "input": "[4,9,3]\n10",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,3,5]\n10",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[60864,25176,27249,21296,20204]\n56803",
+      "expectedOutput": "11361"
+    },
+    {
       "input": "arr = [4,9,3], target = 10",
       "expectedOutput": "3"
     },
@@ -79,74 +91,6 @@
     {
       "input": "arr = [60864,25176,27249,21296,20204], target = 56803",
       "expectedOutput": "11361"
-    },
-    {
-      "input": "[4,9,3]\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,5]\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "[60864,25176,27249,21296,20204]\n56803",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sum-of-mutated-array-closest-to-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:52.341Z",
+    "collectedAt": "2026-10-19T18:40:30.649Z",
     "sourceUpdatedAt": null
   }
 }

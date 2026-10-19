@@ -16,7 +16,7 @@
     "1 <= n <= 1000",
     "prices.length == n",
     "1 <= prices[i] <= 109",
-    "0 <= roads.length <= min(n &times; (n - 1) / 2, 2000)",
+    "0 <= roads.length <= min(n × (n - 1) / 2, 2000)",
     "roads[i] = [ui, vi, costi, taxi]",
     "0 <= ui, vi <= n - 1",
     "ui != vi",
@@ -64,20 +64,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, prices = [8,3], roads = [[0,1,1,2]]",
+      "input": "2\n[8,3]\n[[0,1,1,2]]",
       "expectedOutput": "[6,3]"
     },
     {
-      "input": "n = 3, prices = [9,4,6], roads = [[0,1,1,3],[1,2,4,2]]",
+      "input": "3\n[9,4,6]\n[[0,1,1,3],[1,2,4,2]]",
       "expectedOutput": "[8,4,6]"
     },
     {
-      "input": "n = 3, prices = [10,11,1], roads = [[0,2,1,3],[1,2,3,4],[0,1,5,2]]",
+      "input": "3\n[10,11,1]\n[[0,2,1,3],[1,2,3,4],[0,1,5,2]]",
       "expectedOutput": "[5,11,1]"
     }
   ],
   "testCases": [
     {
+      "input": "2\n[8,3]\n[[0,1,1,2]]",
+      "expectedOutput": "[6,3]"
+    },
+    {
+      "input": "3\n[9,4,6]\n[[0,1,1,3],[1,2,4,2]]",
+      "expectedOutput": "[8,4,6]"
+    },
+    {
+      "input": "3\n[10,11,1]\n[[0,2,1,3],[1,2,3,4],[0,1,5,2]]",
+      "expectedOutput": "[5,11,1]"
+    },
+    {
       "input": "n = 2, prices = [8,3], roads = [[0,1,1,2]]",
       "expectedOutput": "[6,3]"
     },
@@ -88,38 +100,6 @@
     {
       "input": "n = 3, prices = [10,11,1], roads = [[0,2,1,3],[1,2,3,4],[0,1,5,2]]",
       "expectedOutput": "[5,11,1]"
-    },
-    {
-      "input": "2\n[8,3]\n[[0,1,1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[9,4,6]\n[[0,1,1,3],[1,2,4,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[10,11,1]\n[[0,2,1,3],[1,2,3,4],[0,1,5,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, prices = [10,5,7], roads = [[1,2,2,4],[2,3,5,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, prices = [11,12,2], roads = [[1,3,2,4],[2,3,4,5],[1,2,6,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[9,4]\n[[1,2,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[10,5,7]\n[[1,2,2,4],[2,3,5,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, prices = [9,4], roads = [[1,2,2,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-buy-apples-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:48.210Z",
+    "collectedAt": "2026-10-19T18:40:23.584Z",
     "sourceUpdatedAt": null
   }
 }

@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1, a = 2, b = 3",
+      "input": "1\n2\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 4, a = 2, b = 3",
+      "input": "4\n2\n3",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "1\n2\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n2\n3",
+      "expectedOutput": "6"
+    },
+    {
       "input": "n = 1, a = 2, b = 3",
       "expectedOutput": "2"
     },
     {
       "input": "n = 4, a = 2, b = 3",
       "expectedOutput": "6"
-    },
-    {
-      "input": "1\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, a = 3, b = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/nth-magical-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.735Z",
+    "collectedAt": "2026-10-19T18:40:25.721Z",
     "sourceUpdatedAt": null
   }
 }

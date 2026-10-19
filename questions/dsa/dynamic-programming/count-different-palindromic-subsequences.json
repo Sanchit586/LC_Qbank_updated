@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;bccb&quot;",
+      "input": "s = \"bccb\"",
       "output": "6",
-      "explanation": "The 6 different non-empty palindromic subsequences are &#39;b&#39;, &#39;c&#39;, &#39;bb&#39;, &#39;cc&#39;, &#39;bcb&#39;, &#39;bccb&#39;.\nNote that &#39;bcb&#39; is counted only once, even though it occurs twice."
+      "explanation": "The 6 different non-empty palindromic subsequences are 'b', 'c', 'bb', 'cc', 'bcb', 'bccb'.\nNote that 'bcb' is counted only once, even though it occurs twice."
     },
     {
-      "input": "s = &quot;abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba&quot;",
+      "input": "s = \"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
       "output": "104860361",
       "explanation": "There are 3104860382 different non-empty palindromic subsequences, which is 104860361 modulo 109 + 7."
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;bccb&quot;",
+      "input": "\"bccb\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba&quot;",
+      "input": "\"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
       "expectedOutput": "104860361"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;bccb&quot;",
+      "input": "\"bccb\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba&quot;",
+      "input": "\"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
       "expectedOutput": "104860361"
     },
     {
-      "input": "\"bccb\"",
-      "expectedOutput": null
+      "input": "s = \"bccb\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcdabcdabcdabcdabcdabcdabcdabcddcbadcbadcbadcbadcbadcbadcbadcba\"",
+      "expectedOutput": "104860361"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-different-palindromic-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:10.385Z",
+    "collectedAt": "2026-10-19T18:40:15.065Z",
     "sourceUpdatedAt": null
   }
 }

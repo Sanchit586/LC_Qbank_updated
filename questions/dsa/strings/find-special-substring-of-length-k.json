@@ -15,12 +15,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaabaaa&quot;, k = 3",
+      "input": "s = \"aaabaaa\", k = 3",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "s = \"abc\", k = 2",
       "output": "false",
       "explanation": null
     }
@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaabaaa&quot;, k = 3",
+      "input": "\"aaabaaa\"\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaabaaa&quot;, k = 3",
+      "input": "\"aaabaaa\"\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "false"
     },
     {
-      "input": "\"aaabaaa\"\n3",
-      "expectedOutput": null
+      "input": "s = \"aaabaaa\", k = 3",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"abc\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aaabaaa&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abc\", k = 2",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-special-substring-of-length-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:06.459Z",
+    "collectedAt": "2026-10-19T18:40:18.117Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [3,1,6,8], queries = [1,5]",
+      "input": "[3,1,6,8]\n[1,5]",
       "expectedOutput": "[14,10]"
     },
     {
-      "input": "nums = [2,9,6,3], queries = [10]",
+      "input": "[2,9,6,3]\n[10]",
       "expectedOutput": "[20]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,1,6,8]\n[1,5]",
+      "expectedOutput": "[14,10]"
+    },
+    {
+      "input": "[2,9,6,3]\n[10]",
+      "expectedOutput": "[20]"
+    },
+    {
       "input": "nums = [3,1,6,8], queries = [1,5]",
       "expectedOutput": "[14,10]"
     },
     {
       "input": "nums = [2,9,6,3], queries = [10]",
       "expectedOutput": "[20]"
-    },
-    {
-      "input": "[3,1,6,8]\n[1,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,9,6,3]\n[10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [4,2,7,9], queries = [2,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-all-array-elements-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.029Z",
+    "collectedAt": "2026-10-19T18:40:24.656Z",
     "sourceUpdatedAt": null
   }
 }

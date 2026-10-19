@@ -17,7 +17,7 @@
     {
       "input": "n = 2",
       "output": "2",
-      "explanation": "We can drop the first egg from floor 1 and the second egg from floor 2.\nIf the first egg breaks, we know that f = 0.\nIf the second egg breaks but the first egg didn&#39;t, we know that f = 1.\nOtherwise, if both eggs survive, we know that f = 2."
+      "explanation": "We can drop the first egg from floor 1 and the second egg from floor 2.\nIf the first egg breaks, we know that f = 0.\nIf the second egg breaks but the first egg didn't, we know that f = 1.\nOtherwise, if both eggs survive, we know that f = 2."
     },
     {
       "input": "n = 100",
@@ -48,82 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 100",
+      "input": "100",
       "expectedOutput": "14"
     }
   ],
   "testCases": [
     {
+      "input": "2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "100",
+      "expectedOutput": "14"
+    },
+    {
       "input": "n = 2",
       "expectedOutput": "2"
     },
     {
       "input": "n = 100",
       "expectedOutput": "14"
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -138,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/egg-drop-with-2-eggs-and-n-floors/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.964Z",
+    "collectedAt": "2026-10-19T18:40:16.954Z",
     "sourceUpdatedAt": null
   }
 }

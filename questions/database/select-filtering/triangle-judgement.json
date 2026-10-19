@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Triangle table:\n+----+----+----+\n| x  | y  | z  |\n+----+----+----+\n| 13 | 15 | 30 |\n| 10 | 20 | 15 |\n+----+----+----+",
+      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[[13,15,30],[10,20,15]]}}",
       "expectedOutput": "+----+----+----+----------+\n| x  | y  | z  | triangle |\n+----+----+----+----------+\n| 13 | 15 | 30 | No       |\n| 10 | 20 | 15 | Yes      |\n+----+----+----+----------+"
     }
   ],
   "testCases": [
     {
-      "input": "Triangle table:\n+----+----+----+\n| x  | y  | z  |\n+----+----+----+\n| 13 | 15 | 30 |\n| 10 | 20 | 15 |\n+----+----+----+",
+      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[[13,15,30],[10,20,15]]}}",
       "expectedOutput": "+----+----+----+----------+\n| x  | y  | z  | triangle |\n+----+----+----+----------+\n| 13 | 15 | 30 | No       |\n| 10 | 20 | 15 | Yes      |\n+----+----+----+----------+"
     },
     {
-      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[[13,15,30],[10,20,15]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[[13,15,30]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Triangle\":[\"x\",\"y\",\"z\"]},\"rows\":{\"Triangle\":[[13,15,null],[10,20,null]]}}",
-      "expectedOutput": null
+      "input": "Triangle table:\n+----+----+----+\n| x  | y  | z  |\n+----+----+----+\n| 13 | 15 | 30 |\n| 10 | 20 | 15 |\n+----+----+----+",
+      "expectedOutput": "+----+----+----+----------+\n| x  | y  | z  | triangle |\n+----+----+----+----------+\n| 13 | 15 | 30 | No       |\n| 10 | 20 | 15 | Yes      |\n+----+----+----+----------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Triangle (x int, y int, z int)\n\nTruncate table Triangle",
@@ -64,7 +52,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/triangle-judgement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:02.537Z",
+    "collectedAt": "2026-10-19T18:40:31.230Z",
     "sourceUpdatedAt": null
   }
 }

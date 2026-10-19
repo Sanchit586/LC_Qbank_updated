@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"abcdefg\", k = 2",
+      "input": "\"abcdefg\"\n2",
       "expectedOutput": "\"bacdfeg\""
     },
     {
-      "input": "s = \"abcd\", k = 2",
+      "input": "\"abcd\"\n2",
       "expectedOutput": "\"bacd\""
     }
   ],
   "testCases": [
     {
+      "input": "\"abcdefg\"\n2",
+      "expectedOutput": "\"bacdfeg\""
+    },
+    {
+      "input": "\"abcd\"\n2",
+      "expectedOutput": "\"bacd\""
+    },
+    {
       "input": "s = \"abcdefg\", k = 2",
       "expectedOutput": "\"bacdfeg\""
     },
     {
       "input": "s = \"abcd\", k = 2",
       "expectedOutput": "\"bacd\""
-    },
-    {
-      "input": "\"abcdefg\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcd\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = \"abcdefg\", k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-string-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.924Z",
+    "collectedAt": "2026-10-19T18:40:27.871Z",
     "sourceUpdatedAt": null
   }
 }

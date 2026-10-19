@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[0,0],[0,1]]",
+      "input": "[[0,0],[0,1]]",
       "expectedOutput": "3"
     },
     {
-      "input": "mat = [[0]]",
+      "input": "[[0]]",
       "expectedOutput": "0"
     },
     {
-      "input": "mat = [[1,0,0],[1,0,0]]",
+      "input": "[[1,0,0],[1,0,0]]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,0],[0,1]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[0]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,0,0],[1,0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "mat = [[0,0],[0,1]]",
       "expectedOutput": "3"
     },
@@ -83,38 +95,6 @@
     {
       "input": "mat = [[1,0,0],[1,0,0]]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[[0,0],[0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,0],[1,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,1,1],[2,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[1,1],[1,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-flips-to-convert-binary-matrix-to-zero-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:06.749Z",
+    "collectedAt": "2026-10-19T18:40:24.230Z",
     "sourceUpdatedAt": null
   }
 }

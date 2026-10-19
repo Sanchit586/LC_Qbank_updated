@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "sentence = &quot;leetcode exercises sound delightful&quot;",
+      "input": "sentence = \"leetcode exercises sound delightful\"",
       "output": "true",
-      "explanation": "The words in sentence are [&quot;leetcode&quot;, &quot;exercises&quot;, &quot;sound&quot;, &quot;delightful&quot;].\n- leetcode&#39;s&nbsp;last character is equal to exercises&#39;s first character.\n- exercises&#39;s&nbsp;last character is equal to sound&#39;s first character.\n- sound&#39;s&nbsp;last character is equal to delightful&#39;s first character.\n- delightful&#39;s&nbsp;last character is equal to leetcode&#39;s first character.\nThe sentence is circular."
+      "explanation": "The words in sentence are [\"leetcode\", \"exercises\", \"sound\", \"delightful\"].\n- leetcode's last character is equal to exercises's first character.\n- exercises's last character is equal to sound's first character.\n- sound's last character is equal to delightful's first character.\n- delightful's last character is equal to leetcode's first character.\nThe sentence is circular."
     },
     {
-      "input": "sentence = &quot;eetcode&quot;",
+      "input": "sentence = \"eetcode\"",
       "output": "true",
-      "explanation": "The words in sentence are [&quot;eetcode&quot;].\n- eetcode&#39;s&nbsp;last character is equal to eetcode&#39;s first character.\nThe sentence is circular."
+      "explanation": "The words in sentence are [\"eetcode\"].\n- eetcode's last character is equal to eetcode's first character.\nThe sentence is circular."
     },
     {
-      "input": "sentence = &quot;Leetcode is cool&quot;",
+      "input": "sentence = \"Leetcode is cool\"",
       "output": "false",
-      "explanation": "The words in sentence are [&quot;Leetcode&quot;, &quot;is&quot;, &quot;cool&quot;].\n- Leetcode&#39;s&nbsp;last character is not equal to is&#39;s first character.\nThe sentence is not circular."
+      "explanation": "The words in sentence are [\"Leetcode\", \"is\", \"cool\"].\n- Leetcode's last character is not equal to is's first character.\nThe sentence is not circular."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "sentence = &quot;leetcode exercises sound delightful&quot;",
+      "input": "\"leetcode exercises sound delightful\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence = &quot;eetcode&quot;",
+      "input": "\"eetcode\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence = &quot;Leetcode is cool&quot;",
+      "input": "\"Leetcode is cool\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "sentence = &quot;leetcode exercises sound delightful&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "sentence = &quot;eetcode&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "sentence = &quot;Leetcode is cool&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"leetcode exercises sound delightful\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"eetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"Leetcode is cool\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "sentence = \"leetcode exercises sound delightful\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "sentence = \"eetcode\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "sentence = \"Leetcode is cool\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/circular-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:59.474Z",
+    "collectedAt": "2026-10-19T18:40:14.386Z",
     "sourceUpdatedAt": null
   }
 }

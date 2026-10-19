@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;cacb&quot;, word2 = &quot;cbba&quot;",
+      "input": "word1 = \"cacb\", word2 = \"cbba\"",
       "output": "5",
-      "explanation": "Choose &quot;ab&quot; from word1 and &quot;cba&quot; from word2 to make &quot;abcba&quot;, which is a palindrome."
+      "explanation": "Choose \"ab\" from word1 and \"cba\" from word2 to make \"abcba\", which is a palindrome."
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;ab&quot;",
+      "input": "word1 = \"ab\", word2 = \"ab\"",
       "output": "3",
-      "explanation": "Choose &quot;ab&quot; from word1 and &quot;a&quot; from word2 to make &quot;aba&quot;, which is a palindrome."
+      "explanation": "Choose \"ab\" from word1 and \"a\" from word2 to make \"aba\", which is a palindrome."
     },
     {
-      "input": "word1 = &quot;aa&quot;, word2 = &quot;bb&quot;",
+      "input": "word1 = \"aa\", word2 = \"bb\"",
       "output": "0",
       "explanation": "You cannot construct a palindrome from the described method, so return 0."
     }
@@ -54,90 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;cacb&quot;, word2 = &quot;cbba&quot;",
+      "input": "\"cacb\"\n\"cbba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;ab&quot;",
+      "input": "\"ab\"\n\"ab\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word1 = &quot;aa&quot;, word2 = &quot;bb&quot;",
+      "input": "\"aa\"\n\"bb\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;cacb&quot;, word2 = &quot;cbba&quot;",
+      "input": "\"cacb\"\n\"cbba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;ab&quot;",
+      "input": "\"ab\"\n\"ab\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word1 = &quot;aa&quot;, word2 = &quot;bb&quot;",
+      "input": "\"aa\"\n\"bb\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"cacb\"\n\"cbba\"",
-      "expectedOutput": null
+      "input": "word1 = \"cacb\", word2 = \"cbba\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"ab\"\n\"ab\"",
-      "expectedOutput": null
+      "input": "word1 = \"ab\", word2 = \"ab\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aa\"\n\"bb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"aa\", word2 = \"bb\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-palindrome-length-from-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.063Z",
+    "collectedAt": "2026-10-19T18:40:21.321Z",
     "sourceUpdatedAt": null
   }
 }

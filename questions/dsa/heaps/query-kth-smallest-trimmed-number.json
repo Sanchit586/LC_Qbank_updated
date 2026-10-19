@@ -27,14 +27,14 @@
   ],
   "examples": [
     {
-      "input": "nums = [&quot;102&quot;,&quot;473&quot;,&quot;251&quot;,&quot;814&quot;], queries = [[1,1],[2,3],[4,2],[1,2]]",
+      "input": "nums = [\"102\",\"473\",\"251\",\"814\"], queries = [[1,1],[2,3],[4,2],[1,2]]",
       "output": "[2,2,1,0]",
-      "explanation": "1. After trimming to the last digit, nums = [&quot;2&quot;,&quot;3&quot;,&quot;1&quot;,&quot;4&quot;]. The smallest number is 1 at index 2.\n2. Trimmed to the last 3 digits, nums is unchanged. The 2nd smallest number is 251 at index 2.\n3. Trimmed to the last 2 digits, nums = [&quot;02&quot;,&quot;73&quot;,&quot;51&quot;,&quot;14&quot;]. The 4th smallest number is 73.\n4. Trimmed to the last 2 digits, the smallest number is 2 at index 0.\n   Note that the trimmed number &quot;02&quot; is evaluated as 2."
+      "explanation": "1. After trimming to the last digit, nums = [\"2\",\"3\",\"1\",\"4\"]. The smallest number is 1 at index 2.\n2. Trimmed to the last 3 digits, nums is unchanged. The 2nd smallest number is 251 at index 2.\n3. Trimmed to the last 2 digits, nums = [\"02\",\"73\",\"51\",\"14\"]. The 4th smallest number is 73.\n4. Trimmed to the last 2 digits, the smallest number is 2 at index 0.\n   Note that the trimmed number \"02\" is evaluated as 2."
     },
     {
-      "input": "nums = [&quot;24&quot;,&quot;37&quot;,&quot;96&quot;,&quot;04&quot;], queries = [[2,1],[2,2]]",
+      "input": "nums = [\"24\",\"37\",\"96\",\"04\"], queries = [[2,1],[2,2]]",
       "output": "[3,0]",
-      "explanation": "1. Trimmed to the last digit, nums = [&quot;4&quot;,&quot;7&quot;,&quot;6&quot;,&quot;4&quot;]. The 2nd smallest number is 4 at index 3.\n   There are two occurrences of 4, but the one at index 0 is considered smaller than the one at index 3.\n2. Trimmed to the last 2 digits, nums is unchanged. The 2nd smallest number is 24."
+      "explanation": "1. Trimmed to the last digit, nums = [\"4\",\"7\",\"6\",\"4\"]. The 2nd smallest number is 4 at index 3.\n   There are two occurrences of 4, but the one at index 0 is considered smaller than the one at index 3.\n2. Trimmed to the last 2 digits, nums is unchanged. The 2nd smallest number is 24."
     }
   ],
   "starterCode": {
@@ -60,34 +60,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [&quot;102&quot;,&quot;473&quot;,&quot;251&quot;,&quot;814&quot;], queries = [[1,1],[2,3],[4,2],[1,2]]",
+      "input": "[\"102\",\"473\",\"251\",\"814\"]\n[[1,1],[2,3],[4,2],[1,2]]",
       "expectedOutput": "[2,2,1,0]"
     },
     {
-      "input": "nums = [&quot;24&quot;,&quot;37&quot;,&quot;96&quot;,&quot;04&quot;], queries = [[2,1],[2,2]]",
+      "input": "[\"24\",\"37\",\"96\",\"04\"]\n[[2,1],[2,2]]",
       "expectedOutput": "[3,0]"
     }
   ],
   "testCases": [
     {
-      "input": "nums = [&quot;102&quot;,&quot;473&quot;,&quot;251&quot;,&quot;814&quot;], queries = [[1,1],[2,3],[4,2],[1,2]]",
+      "input": "[\"102\",\"473\",\"251\",\"814\"]\n[[1,1],[2,3],[4,2],[1,2]]",
       "expectedOutput": "[2,2,1,0]"
     },
     {
-      "input": "nums = [&quot;24&quot;,&quot;37&quot;,&quot;96&quot;,&quot;04&quot;], queries = [[2,1],[2,2]]",
+      "input": "[\"24\",\"37\",\"96\",\"04\"]\n[[2,1],[2,2]]",
       "expectedOutput": "[3,0]"
     },
     {
-      "input": "[\"102\",\"473\",\"251\",\"814\"]\n[[1,1],[2,3],[4,2],[1,2]]",
-      "expectedOutput": null
+      "input": "nums = [\"102\",\"473\",\"251\",\"814\"], queries = [[1,1],[2,3],[4,2],[1,2]]",
+      "expectedOutput": "[2,2,1,0]"
     },
     {
-      "input": "[\"24\",\"37\",\"96\",\"04\"]\n[[2,1],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [&quot;103&quot;,&quot;474&quot;,&quot;252&quot;,&quot;815&quot;], queries = [[2,2],[3,4],[5,3],[2,3]]",
-      "expectedOutput": null
+      "input": "nums = [\"24\",\"37\",\"96\",\"04\"], queries = [[2,1],[2,2]]",
+      "expectedOutput": "[3,0]"
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/query-kth-smallest-trimmed-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:02.926Z",
+    "collectedAt": "2026-10-19T18:40:27.103Z",
     "sourceUpdatedAt": null
   }
 }

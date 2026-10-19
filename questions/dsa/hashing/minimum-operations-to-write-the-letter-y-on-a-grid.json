@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2,2],[1,1,0],[0,1,0]]",
+      "input": "[[1,2,2],[1,1,0],[0,1,0]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
+      "input": "[[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,2],[1,1,0],[0,1,0]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
+      "expectedOutput": "12"
+    },
+    {
       "input": "grid = [[1,2,2],[1,1,0],[0,1,0]]",
       "expectedOutput": "3"
     },
     {
       "input": "grid = [[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
       "expectedOutput": "12"
-    },
-    {
-      "input": "[[1,2,2],[1,1,0],[0,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1,0,1,0],[2,1,0,1,2],[2,2,2,0,1],[2,2,2,2,2],[2,1,2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3,3],[2,2,1],[1,2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-write-the-letter-y-on-a-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:15.404Z",
+    "collectedAt": "2026-10-19T18:40:24.839Z",
     "sourceUpdatedAt": null
   }
 }

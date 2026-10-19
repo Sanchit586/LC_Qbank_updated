@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]",
+      "input": "[1,2,3,2,1]\n[3,2,1,4,7]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]",
+      "input": "[0,0,0,0,0]\n[0,0,0,0,0]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,2,1]\n[3,2,1,4,7]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0,0,0]\n[0,0,0,0,0]",
+      "expectedOutput": "5"
+    },
+    {
       "input": "nums1 = [1,2,3,2,1], nums2 = [3,2,1,4,7]",
       "expectedOutput": "3"
     },
     {
       "input": "nums1 = [0,0,0,0,0], nums2 = [0,0,0,0,0]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[1,2,3,2,1]\n[3,2,1,4,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0,0,0,0]\n[0,0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3,4,3,2], nums3 = [4,3,2,5,8]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-length-of-repeated-subarray/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.151Z",
+    "collectedAt": "2026-10-19T18:40:21.927Z",
     "sourceUpdatedAt": null
   }
 }

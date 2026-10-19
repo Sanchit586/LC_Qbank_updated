@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abbac&quot;",
+      "input": "s = \"abbac\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;zzabccy&quot;",
+      "input": "s = \"zzabccy\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "s = \"aba\"",
       "output": "2",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abbac&quot;",
+      "input": "\"abbac\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;zzabccy&quot;",
+      "input": "\"zzabccy\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abbac&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;zzabccy&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;aba&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"abbac\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"zzabccy\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abbac\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"zzabccy\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aba\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-balanced-substring-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.269Z",
+    "collectedAt": "2026-10-19T18:40:20.393Z",
     "sourceUpdatedAt": null
   }
 }

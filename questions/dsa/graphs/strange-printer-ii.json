@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "targetGrid = [[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
+      "input": "[[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
       "expectedOutput": "true"
     },
     {
-      "input": "targetGrid = [[1,1,1,1],[1,1,3,3],[1,1,3,4],[5,5,1,4]]",
+      "input": "[[1,1,1,1],[1,1,3,3],[1,1,3,4],[5,5,1,4]]",
       "expectedOutput": "true"
     },
     {
-      "input": "targetGrid = [[1,2,1],[2,1,2],[1,2,1]]",
+      "input": "[[1,2,1],[2,1,2],[1,2,1]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,1,1,1],[1,1,3,3],[1,1,3,4],[5,5,1,4]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,1],[2,1,2],[1,2,1]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "targetGrid = [[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
       "expectedOutput": "true"
     },
@@ -83,38 +95,6 @@
     {
       "input": "targetGrid = [[1,2,1],[2,1,2],[1,2,1]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,1,1,1],[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1,1],[1,1,3,3],[1,1,3,4],[5,5,1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,1],[2,1,2],[1,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "targetGrid = [[2,2,2,2],[2,2,4,4],[2,2,4,5],[6,6,2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "targetGrid = [[2,3,2],[3,2,3],[2,3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2,2,2],[2,3,3,2],[2,3,3,2],[2,2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2,2,2],[2,2,4,4],[2,2,4,5],[6,6,2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "targetGrid = [[2,2,2,2],[2,3,3,2],[2,3,3,2],[2,2,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/strange-printer-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.399Z",
+    "collectedAt": "2026-10-19T18:40:30.283Z",
     "sourceUpdatedAt": null
   }
 }

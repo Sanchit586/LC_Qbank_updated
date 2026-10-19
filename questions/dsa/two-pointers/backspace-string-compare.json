@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ab#c&quot;, t = &quot;ad#c&quot;",
+      "input": "s = \"ab#c\", t = \"ad#c\"",
       "output": "true",
-      "explanation": "Both s and t become &quot;ac&quot;."
+      "explanation": "Both s and t become \"ac\"."
     },
     {
-      "input": "s = &quot;ab##&quot;, t = &quot;c#d#&quot;",
+      "input": "s = \"ab##\", t = \"c#d#\"",
       "output": "true",
-      "explanation": "Both s and t become &quot;&quot;."
+      "explanation": "Both s and t become \"\"."
     },
     {
-      "input": "s = &quot;a#c&quot;, t = &quot;b&quot;",
+      "input": "s = \"a#c\", t = \"b\"",
       "output": "false",
-      "explanation": "s becomes &quot;c&quot; while t becomes &quot;b&quot;."
+      "explanation": "s becomes \"c\" while t becomes \"b\"."
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ab#c&quot;, t = &quot;ad#c&quot;",
+      "input": "\"ab#c\"\n\"ad#c\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;ab##&quot;, t = &quot;c#d#&quot;",
+      "input": "\"ab##\"\n\"c#d#\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;a#c&quot;, t = &quot;b&quot;",
+      "input": "\"a#c\"\n\"b\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ab#c&quot;, t = &quot;ad#c&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;ab##&quot;, t = &quot;c#d#&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;a#c&quot;, t = &quot;b&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"ab#c\"\n\"ad#c\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"ab##\"\n\"c#d#\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"a#c\"\n\"b\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"ab#c\", t = \"ad#c\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"ab##\", t = \"c#d#\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"a#c\", t = \"b\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/backspace-string-compare/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:25.723Z",
+    "collectedAt": "2026-10-19T18:40:13.385Z",
     "sourceUpdatedAt": null
   }
 }

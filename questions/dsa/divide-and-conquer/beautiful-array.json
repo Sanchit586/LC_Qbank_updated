@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "[2,1,4,3]"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "[3,1,2,5,4]"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "[2,1,4,3]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[3,1,2,5,4]"
+    },
+    {
       "input": "n = 4",
       "expectedOutput": "[2,1,4,3]"
     },
     {
       "input": "n = 5",
       "expectedOutput": "[3,1,2,5,4]"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/beautiful-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.678Z",
+    "collectedAt": "2026-10-19T18:40:13.468Z",
     "sourceUpdatedAt": null
   }
 }

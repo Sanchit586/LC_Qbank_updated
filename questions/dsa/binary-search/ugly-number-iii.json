@@ -61,20 +61,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, a = 2, b = 3, c = 5",
+      "input": "3\n2\n3\n5",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 4, a = 2, b = 3, c = 4",
+      "input": "4\n2\n3\n4",
       "expectedOutput": "6"
     },
     {
-      "input": "n = 5, a = 2, b = 11, c = 13",
+      "input": "5\n2\n11\n13",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2\n3\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "4\n2\n3\n4",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "5\n2\n11\n13",
+      "expectedOutput": "10"
+    },
+    {
       "input": "n = 3, a = 2, b = 3, c = 5",
       "expectedOutput": "4"
     },
@@ -85,38 +97,6 @@
     {
       "input": "n = 5, a = 2, b = 11, c = 13",
       "expectedOutput": "10"
-    },
-    {
-      "input": "3\n2\n3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2\n3\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n2\n11\n13",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, a = 3, b = 4, c = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, a = 3, b = 12, c = 14",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3\n4\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n3\n4\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, a = 3, b = 4, c = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/ugly-number-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:06.335Z",
+    "collectedAt": "2026-10-19T18:40:31.341Z",
     "sourceUpdatedAt": null
   }
 }

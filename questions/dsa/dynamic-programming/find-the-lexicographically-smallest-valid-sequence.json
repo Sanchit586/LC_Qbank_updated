@@ -18,22 +18,22 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;vbcca&quot;, word2 = &quot;abc&quot;",
+      "input": "word1 = \"vbcca\", word2 = \"abc\"",
       "output": "[0,1,2]",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;bacdc&quot;, word2 = &quot;abc&quot;",
+      "input": "word1 = \"bacdc\", word2 = \"abc\"",
       "output": "[1,2,4]",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;aaaaaa&quot;, word2 = &quot;aaabc&quot;",
+      "input": "word1 = \"aaaaaa\", word2 = \"aaabc\"",
       "output": "[]",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;ab&quot;",
+      "input": "word1 = \"abc\", word2 = \"ab\"",
       "output": "[0,1]",
       "explanation": null
     }
@@ -61,102 +61,54 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;vbcca&quot;, word2 = &quot;abc&quot;",
+      "input": "\"vbcca\"\n\"abc\"",
       "expectedOutput": "[0,1,2]"
     },
     {
-      "input": "word1 = &quot;bacdc&quot;, word2 = &quot;abc&quot;",
+      "input": "\"bacdc\"\n\"abc\"",
       "expectedOutput": "[1,2,4]"
     },
     {
-      "input": "word1 = &quot;aaaaaa&quot;, word2 = &quot;aaabc&quot;",
+      "input": "\"aaaaaa\"\n\"aaabc\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;ab&quot;",
+      "input": "\"abc\"\n\"ab\"",
       "expectedOutput": "[0,1]"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;vbcca&quot;, word2 = &quot;abc&quot;",
+      "input": "\"vbcca\"\n\"abc\"",
       "expectedOutput": "[0,1,2]"
     },
     {
-      "input": "word1 = &quot;bacdc&quot;, word2 = &quot;abc&quot;",
+      "input": "\"bacdc\"\n\"abc\"",
       "expectedOutput": "[1,2,4]"
     },
     {
-      "input": "word1 = &quot;aaaaaa&quot;, word2 = &quot;aaabc&quot;",
+      "input": "\"aaaaaa\"\n\"aaabc\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;ab&quot;",
+      "input": "\"abc\"\n\"ab\"",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "\"vbcca\"\n\"abc\"",
-      "expectedOutput": null
+      "input": "word1 = \"vbcca\", word2 = \"abc\"",
+      "expectedOutput": "[0,1,2]"
     },
     {
-      "input": "\"bacdc\"\n\"abc\"",
-      "expectedOutput": null
+      "input": "word1 = \"bacdc\", word2 = \"abc\"",
+      "expectedOutput": "[1,2,4]"
     },
     {
-      "input": "\"aaaaaa\"\n\"aaabc\"",
-      "expectedOutput": null
+      "input": "word1 = \"aaaaaa\", word2 = \"aaabc\"",
+      "expectedOutput": "[]"
     },
     {
-      "input": "\"abc\"\n\"ab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"abc\", word2 = \"ab\"",
+      "expectedOutput": "[0,1]"
     }
   ],
   "sqlSchema": null,
@@ -172,7 +124,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-lexicographically-smallest-valid-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.922Z",
+    "collectedAt": "2026-10-19T18:40:18.360Z",
     "sourceUpdatedAt": null
   }
 }

@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "expression = &quot;(let x 2 (mult x (let x 3 y 4 (add x y))))&quot;",
+      "input": "expression = \"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
       "output": "14",
       "explanation": "In the expression (add x y), when checking for the value of the variable x,\nwe check from the innermost scope to the outermost in the context of the variable we are trying to evaluate.\nSince x = 3 is found first, the value of x is 3."
     },
     {
-      "input": "expression = &quot;(let x 3 x 2 x)&quot;",
+      "input": "expression = \"(let x 3 x 2 x)\"",
       "output": "2",
       "explanation": "Assignment in let statements is processed sequentially."
     },
     {
-      "input": "expression = &quot;(let x 1 y 2 x (add x y) (add x y))&quot;",
+      "input": "expression = \"(let x 1 y 2 x (add x y) (add x y))\"",
       "output": "5",
       "explanation": "The first (add x y) evaluates as 3, and is assigned to x.\nThe second (add x y) evaluates as 3+2 = 5."
     }
@@ -59,98 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "expression = &quot;(let x 2 (mult x (let x 3 y 4 (add x y))))&quot;",
+      "input": "\"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
       "expectedOutput": "14"
     },
     {
-      "input": "expression = &quot;(let x 3 x 2 x)&quot;",
+      "input": "\"(let x 3 x 2 x)\"",
       "expectedOutput": "2"
     },
     {
-      "input": "expression = &quot;(let x 1 y 2 x (add x y) (add x y))&quot;",
+      "input": "\"(let x 1 y 2 x (add x y) (add x y))\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "expression = &quot;(let x 2 (mult x (let x 3 y 4 (add x y))))&quot;",
+      "input": "\"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
       "expectedOutput": "14"
     },
     {
-      "input": "expression = &quot;(let x 3 x 2 x)&quot;",
+      "input": "\"(let x 3 x 2 x)\"",
       "expectedOutput": "2"
     },
     {
-      "input": "expression = &quot;(let x 1 y 2 x (add x y) (add x y))&quot;",
+      "input": "\"(let x 1 y 2 x (add x y) (add x y))\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
-      "expectedOutput": null
+      "input": "expression = \"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
+      "expectedOutput": "14"
     },
     {
-      "input": "\"(let x 3 x 2 x)\"",
-      "expectedOutput": null
+      "input": "expression = \"(let x 3 x 2 x)\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"(let x 1 y 2 x (add x y) (add x y))\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "expression = \"(let x 1 y 2 x (add x y) (add x y))\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/parse-lisp-expression/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.974Z",
+    "collectedAt": "2026-10-19T18:40:26.512Z",
     "sourceUpdatedAt": null
   }
 }

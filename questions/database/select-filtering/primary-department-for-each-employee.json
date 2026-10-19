@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Employee table:\n+-------------+---------------+--------------+\n| employee_id | department_id | primary_flag |\n+-------------+---------------+--------------+\n| 1           | 1             | N            |\n| 2           | 1             | Y            |\n| 2           | 2             | N            |\n| 3           | 3             | N            |\n| 4           | 2             | N            |\n| 4           | 3             | Y            |\n| 4           | 4             | N            |\n+-------------+---------------+--------------+",
+      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[[\"1\",\"1\",\"N\"],[\"2\",\"1\",\"Y\"],[\"2\",\"2\",\"N\"],[\"3\",\"3\",\"N\"],[\"4\",\"2\",\"N\"],[\"4\",\"3\",\"Y\"],[\"4\",\"4\",\"N\"]]}}",
       "expectedOutput": "+-------------+---------------+\n| employee_id | department_id |\n+-------------+---------------+\n| 1           | 1             |\n| 2           | 1             |\n| 3           | 3             |\n| 4           | 3             |\n+-------------+---------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Employee table:\n+-------------+---------------+--------------+\n| employee_id | department_id | primary_flag |\n+-------------+---------------+--------------+\n| 1           | 1             | N            |\n| 2           | 1             | Y            |\n| 2           | 2             | N            |\n| 3           | 3             | N            |\n| 4           | 2             | N            |\n| 4           | 3             | Y            |\n| 4           | 4             | N            |\n+-------------+---------------+--------------+",
+      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[[\"1\",\"1\",\"N\"],[\"2\",\"1\",\"Y\"],[\"2\",\"2\",\"N\"],[\"3\",\"3\",\"N\"],[\"4\",\"2\",\"N\"],[\"4\",\"3\",\"Y\"],[\"4\",\"4\",\"N\"]]}}",
       "expectedOutput": "+-------------+---------------+\n| employee_id | department_id |\n+-------------+---------------+\n| 1           | 1             |\n| 2           | 1             |\n| 3           | 3             |\n| 4           | 3             |\n+-------------+---------------+"
     },
     {
-      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[[\"1\",\"1\",\"N\"],[\"2\",\"1\",\"Y\"],[\"2\",\"2\",\"N\"],[\"3\",\"3\",\"N\"],[\"4\",\"2\",\"N\"],[\"4\",\"3\",\"Y\"],[\"4\",\"4\",\"N\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[[\"1\",\"1\",\"N\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"employee_id\",\"department_id\",\"primary_flag\"]},\"rows\":{\"Employee\":[[\"1\",\"1\",null],[\"2\",\"1\",null],[\"2\",\"2\",null],[\"3\",\"3\",null],[\"4\",\"2\",null],[\"4\",\"3\",null],[\"4\",\"4\",null]]}}",
-      "expectedOutput": null
+      "input": "Employee table:\n+-------------+---------------+--------------+\n| employee_id | department_id | primary_flag |\n+-------------+---------------+--------------+\n| 1           | 1             | N            |\n| 2           | 1             | Y            |\n| 2           | 2             | N            |\n| 3           | 3             | N            |\n| 4           | 2             | N            |\n| 4           | 3             | Y            |\n| 4           | 4             | N            |\n+-------------+---------------+--------------+",
+      "expectedOutput": "+-------------+---------------+\n| employee_id | department_id |\n+-------------+---------------+\n| 1           | 1             |\n| 2           | 1             |\n| 3           | 3             |\n| 4           | 3             |\n+-------------+---------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Employee (employee_id int, department_id int, primary_flag ENUM('Y','N'))\n\nTruncate table Employee",
@@ -69,7 +57,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/primary-department-for-each-employee/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.918Z",
+    "collectedAt": "2026-10-19T18:40:26.888Z",
     "sourceUpdatedAt": null
   }
 }

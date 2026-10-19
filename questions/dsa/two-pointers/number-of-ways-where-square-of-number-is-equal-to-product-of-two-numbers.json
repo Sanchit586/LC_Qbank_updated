@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [7,4], nums2 = [5,2,8,9]",
+      "input": "[7,4]\n[5,2,8,9]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums1 = [1,1], nums2 = [1,1,1]",
+      "input": "[1,1]\n[1,1,1]",
       "expectedOutput": "9"
     },
     {
-      "input": "nums1 = [7,7,8,3], nums2 = [1,2,9,7]",
+      "input": "[7,7,8,3]\n[1,2,9,7]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[7,4]\n[5,2,8,9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1]\n[1,1,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[7,7,8,3]\n[1,2,9,7]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "nums1 = [7,4], nums2 = [5,2,8,9]",
       "expectedOutput": "1"
     },
@@ -80,38 +92,6 @@
     {
       "input": "nums1 = [7,7,8,3], nums2 = [1,2,9,7]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[7,4]\n[5,2,8,9]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1]\n[1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,7,8,3]\n[1,2,9,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,2], nums3 = [2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [8,8,9,4], nums3 = [2,3,10,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[8,5]\n[6,3,9,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2]\n[2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [8,5], nums3 = [6,3,9,10]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-where-square-of-number-is-equal-to-product-of-two-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.872Z",
+    "collectedAt": "2026-10-19T18:40:26.315Z",
     "sourceUpdatedAt": null
   }
 }

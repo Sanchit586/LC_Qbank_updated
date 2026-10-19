@@ -13,17 +13,17 @@
   "examples": [
     {
       "input": "m = 2, n = 3",
-      "output": "[&quot;..#&quot;,&quot;#..&quot;]",
+      "output": "[\"..#\",\"#..\"]",
       "explanation": null
     },
     {
       "input": "m = 3, n = 3",
-      "output": "[&quot;..#&quot;,&quot;#..&quot;,&quot;##.&quot;]",
+      "output": "[\"..#\",\"#..\",\"##.\"]",
       "explanation": null
     },
     {
       "input": "m = 1, n = 4",
-      "output": "[&quot;....&quot;]",
+      "output": "[\"....\"]",
       "explanation": null
     }
   ],
@@ -50,62 +50,42 @@
   },
   "publicTests": [
     {
-      "input": "m = 2, n = 3",
-      "expectedOutput": "[&quot;..#&quot;,&quot;#..&quot;]"
+      "input": "2\n3",
+      "expectedOutput": "[\"..#\",\"#..\"]"
     },
     {
-      "input": "m = 3, n = 3",
-      "expectedOutput": "[&quot;..#&quot;,&quot;#..&quot;,&quot;##.&quot;]"
+      "input": "3\n3",
+      "expectedOutput": "[\"..#\",\"#..\",\"##.\"]"
     },
     {
-      "input": "m = 1, n = 4",
-      "expectedOutput": "[&quot;....&quot;]"
+      "input": "1\n4",
+      "expectedOutput": "[\"....\"]"
     }
   ],
   "testCases": [
     {
-      "input": "m = 2, n = 3",
-      "expectedOutput": "[&quot;..#&quot;,&quot;#..&quot;]"
-    },
-    {
-      "input": "m = 3, n = 3",
-      "expectedOutput": "[&quot;..#&quot;,&quot;#..&quot;,&quot;##.&quot;]"
-    },
-    {
-      "input": "m = 1, n = 4",
-      "expectedOutput": "[&quot;....&quot;]"
-    },
-    {
       "input": "2\n3",
-      "expectedOutput": null
+      "expectedOutput": "[\"..#\",\"#..\"]"
     },
     {
       "input": "3\n3",
-      "expectedOutput": null
+      "expectedOutput": "[\"..#\",\"#..\",\"##.\"]"
     },
     {
       "input": "1\n4",
-      "expectedOutput": null
+      "expectedOutput": "[\"....\"]"
     },
     {
-      "input": "m = 4, n = 4",
-      "expectedOutput": null
+      "input": "m = 2, n = 3",
+      "expectedOutput": "[\"..#\",\"#..\"]"
     },
     {
-      "input": "m = 2, n = 5",
-      "expectedOutput": null
+      "input": "m = 3, n = 3",
+      "expectedOutput": "[\"..#\",\"#..\",\"##.\"]"
     },
     {
-      "input": "3\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 3, n = 4",
-      "expectedOutput": null
+      "input": "m = 1, n = 4",
+      "expectedOutput": "[\"....\"]"
     }
   ],
   "sqlSchema": null,
@@ -121,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/create-grid-with-exactly-one-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:31.351Z",
+    "collectedAt": "2026-10-19T18:40:16.079Z",
     "sourceUpdatedAt": null
   }
 }

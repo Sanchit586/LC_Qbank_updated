@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "spells = [5,1,3], potions = [1,2,3,4,5], success = 7",
+      "input": "[5,1,3]\n[1,2,3,4,5]\n7",
       "expectedOutput": "[4,0,3]"
     },
     {
-      "input": "spells = [3,1,2], potions = [8,5,8], success = 16",
+      "input": "[3,1,2]\n[8,5,8]\n16",
       "expectedOutput": "[2,0,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[5,1,3]\n[1,2,3,4,5]\n7",
+      "expectedOutput": "[4,0,3]"
+    },
+    {
+      "input": "[3,1,2]\n[8,5,8]\n16",
+      "expectedOutput": "[2,0,2]"
+    },
+    {
       "input": "spells = [5,1,3], potions = [1,2,3,4,5], success = 7",
       "expectedOutput": "[4,0,3]"
     },
     {
       "input": "spells = [3,1,2], potions = [8,5,8], success = 16",
       "expectedOutput": "[2,0,2]"
-    },
-    {
-      "input": "[5,1,3]\n[1,2,3,4,5]\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1,2]\n[8,5,8]\n16",
-      "expectedOutput": null
-    },
-    {
-      "input": "spells = [6,2,4], potions = [2,3,4,5,6], success = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/successful-pairs-of-spells-and-potions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:50.645Z",
+    "collectedAt": "2026-10-19T18:40:30.495Z",
     "sourceUpdatedAt": null
   }
 }

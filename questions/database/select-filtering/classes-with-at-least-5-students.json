@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Courses table:\n+---------+----------+\n| student | class    |\n+---------+----------+\n| A       | Math     |\n| B       | English  |\n| C       | Math     |\n| D       | Biology  |\n| E       | Math     |\n| F       | Computer |\n| G       | Math     |\n| H       | Math     |\n| I       | Math     |\n+---------+----------+",
+      "input": "{\"headers\": {\"Courses\": [\"student\", \"class\"]}, \"rows\": {\"Courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
       "expectedOutput": "+---------+\n| class   |\n+---------+\n| Math    |\n+---------+"
     }
   ],
   "testCases": [
     {
-      "input": "Courses table:\n+---------+----------+\n| student | class    |\n+---------+----------+\n| A       | Math     |\n| B       | English  |\n| C       | Math     |\n| D       | Biology  |\n| E       | Math     |\n| F       | Computer |\n| G       | Math     |\n| H       | Math     |\n| I       | Math     |\n+---------+----------+",
+      "input": "{\"headers\": {\"Courses\": [\"student\", \"class\"]}, \"rows\": {\"Courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
       "expectedOutput": "+---------+\n| class   |\n+---------+\n| Math    |\n+---------+"
     },
     {
-      "input": "{\"headers\": {\"Courses\": [\"student\", \"class\"]}, \"rows\": {\"Courses\": [[\"A\", \"Math\"], [\"B\", \"English\"], [\"C\", \"Math\"], [\"D\", \"Biology\"], [\"E\", \"Math\"], [\"F\", \"Computer\"], [\"G\", \"Math\"], [\"H\", \"Math\"], [\"I\", \"Math\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Courses\":[\"student\",\"class\"]},\"rows\":{\"Courses\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Courses\":[\"student\",\"class\"]},\"rows\":{\"Courses\":[[\"A\",\"Math\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Courses\":[\"student\",\"class\"]},\"rows\":{\"Courses\":[[\"A\",null],[\"B\",null],[\"C\",null],[\"D\",null],[\"E\",null],[\"F\",null],[\"G\",null],[\"H\",null],[\"I\",null]]}}",
-      "expectedOutput": null
+      "input": "Courses table:\n+---------+----------+\n| student | class    |\n+---------+----------+\n| A       | Math     |\n| B       | English  |\n| C       | Math     |\n| D       | Biology  |\n| E       | Math     |\n| F       | Computer |\n| G       | Math     |\n| H       | Math     |\n| I       | Math     |\n+---------+----------+",
+      "expectedOutput": "+---------+\n| class   |\n+---------+\n| Math    |\n+---------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Courses (student varchar(255), class varchar(255))\n\nTruncate table Courses",
@@ -71,7 +59,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/classes-with-at-least-5-students/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:59.482Z",
+    "collectedAt": "2026-10-19T18:40:14.395Z",
     "sourceUpdatedAt": null
   }
 }

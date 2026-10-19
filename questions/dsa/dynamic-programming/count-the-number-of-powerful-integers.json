@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "start = 1, finish = 6000, limit = 4, s = &quot;124&quot;",
+      "input": "start = 1, finish = 6000, limit = 4, s = \"124\"",
       "output": "5",
-      "explanation": "The powerful integers in the range [1..6000] are 124, 1124, 2124, 3124, and, 4124. All these integers have each digit &lt;= 4, and &quot;124&quot; as a suffix. Note that 5124 is not a powerful integer because the first digit is 5 which is greater than 4.\nIt can be shown that there are only 5 powerful integers in this range."
+      "explanation": "The powerful integers in the range [1..6000] are 124, 1124, 2124, 3124, and, 4124. All these integers have each digit <= 4, and \"124\" as a suffix. Note that 5124 is not a powerful integer because the first digit is 5 which is greater than 4.\nIt can be shown that there are only 5 powerful integers in this range."
     },
     {
-      "input": "start = 15, finish = 215, limit = 6, s = &quot;10&quot;",
+      "input": "start = 15, finish = 215, limit = 6, s = \"10\"",
       "output": "2",
-      "explanation": "The powerful integers in the range [15..215] are 110 and 210. All these integers have each digit &lt;= 6, and &quot;10&quot; as a suffix.\nIt can be shown that there are only 2 powerful integers in this range."
+      "explanation": "The powerful integers in the range [15..215] are 110 and 210. All these integers have each digit <= 6, and \"10\" as a suffix.\nIt can be shown that there are only 2 powerful integers in this range."
     },
     {
-      "input": "start = 1000, finish = 2000, limit = 4, s = &quot;3000&quot;",
+      "input": "start = 1000, finish = 2000, limit = 4, s = \"3000\"",
       "output": "0",
-      "explanation": "All integers in the range [1000..2000] are smaller than 3000, hence &quot;3000&quot; cannot be a suffix of any integer in this range."
+      "explanation": "All integers in the range [1000..2000] are smaller than 3000, hence \"3000\" cannot be a suffix of any integer in this range."
     }
   ],
   "starterCode": {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "start = 1, finish = 6000, limit = 4, s = &quot;124&quot;",
+      "input": "1\n6000\n4\n\"124\"",
       "expectedOutput": "5"
     },
     {
-      "input": "start = 15, finish = 215, limit = 6, s = &quot;10&quot;",
+      "input": "15\n215\n6\n\"10\"",
       "expectedOutput": "2"
     },
     {
-      "input": "start = 1000, finish = 2000, limit = 4, s = &quot;3000&quot;",
+      "input": "1000\n2000\n4\n\"3000\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "start = 1, finish = 6000, limit = 4, s = &quot;124&quot;",
+      "input": "1\n6000\n4\n\"124\"",
       "expectedOutput": "5"
     },
     {
-      "input": "start = 15, finish = 215, limit = 6, s = &quot;10&quot;",
+      "input": "15\n215\n6\n\"10\"",
       "expectedOutput": "2"
     },
     {
-      "input": "start = 1000, finish = 2000, limit = 4, s = &quot;3000&quot;",
+      "input": "1000\n2000\n4\n\"3000\"",
       "expectedOutput": "0"
     },
     {
-      "input": "1\n6000\n4\n\"124\"",
-      "expectedOutput": null
+      "input": "start = 1, finish = 6000, limit = 4, s = \"124\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "15\n215\n6\n\"10\"",
-      "expectedOutput": null
+      "input": "start = 15, finish = 215, limit = 6, s = \"10\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "1000\n2000\n4\n\"3000\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = 16, finish = 216, limit = 7, s = &quot;11&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = 1001, finish = 2001, limit = 5, s = &quot;3001&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n6001\n5\n\"125\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "16\n216\n7\n\"11\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = 2, finish = 6001, limit = 5, s = &quot;125&quot;",
-      "expectedOutput": null
+      "input": "start = 1000, finish = 2000, limit = 4, s = \"3000\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-powerful-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.847Z",
+    "collectedAt": "2026-10-19T18:40:15.820Z",
     "sourceUpdatedAt": null
   }
 }

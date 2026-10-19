@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "isWater = [[0,1],[0,0]]",
+      "input": "[[0,1],[0,0]]",
       "expectedOutput": "[[1,0],[2,1]]"
     },
     {
-      "input": "isWater = [[0,0,1],[1,0,0],[0,0,0]]",
+      "input": "[[0,0,1],[1,0,0],[0,0,0]]",
       "expectedOutput": "[[1,1,0],[0,1,1],[1,2,2]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[0,0]]",
+      "expectedOutput": "[[1,0],[2,1]]"
+    },
+    {
+      "input": "[[0,0,1],[1,0,0],[0,0,0]]",
+      "expectedOutput": "[[1,1,0],[0,1,1],[1,2,2]]"
+    },
+    {
       "input": "isWater = [[0,1],[0,0]]",
       "expectedOutput": "[[1,0],[2,1]]"
     },
     {
       "input": "isWater = [[0,0,1],[1,0,0],[0,0,0]]",
       "expectedOutput": "[[1,1,0],[0,1,1],[1,2,2]]"
-    },
-    {
-      "input": "[[0,1],[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0,1],[1,0,0],[0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "isWater = [[1,2],[1,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/map-of-highest-peak/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.434Z",
+    "collectedAt": "2026-10-19T18:40:21.038Z",
     "sourceUpdatedAt": null
   }
 }

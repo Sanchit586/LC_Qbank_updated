@@ -51,30 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
       "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
     },
     {
-      "input": "wordlist = [\"yellow\"], queries = [\"YellOw\"]",
+      "input": "[\"yellow\"]\n[\"YellOw\"]",
       "expectedOutput": "[\"yellow\"]"
     }
   ],
   "testCases": [
     {
+      "input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"yellow\"]\n[\"YellOw\"]",
+      "expectedOutput": "[\"yellow\"]"
+    },
+    {
       "input": "wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
       "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
     },
     {
       "input": "wordlist = [\"yellow\"], queries = [\"YellOw\"]",
       "expectedOutput": "[\"yellow\"]"
-    },
-    {
-      "input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"yellow\"]\n[\"YellOw\"]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -86,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/vowel-spellchecker/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.474Z",
+    "collectedAt": "2026-10-19T18:40:31.617Z",
     "sourceUpdatedAt": null
   }
 }

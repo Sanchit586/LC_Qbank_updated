@@ -23,7 +23,7 @@
     {
       "input": "queries = [[2,6],[5,1],[73,660]]",
       "output": "[4,1,50734910]",
-      "explanation": "&nbsp;Each query is independent.\n[2,6]: There are 4 ways to fill an array of size 2 that multiply to 6: [1,6], [2,3], [3,2], [6,1].\n[5,1]: There is 1 way to fill an array of size 5 that multiply to 1: [1,1,1,1,1].\n[73,660]: There are 1050734917 ways to fill an array of size 73 that multiply to 660. 1050734917 modulo 109 + 7 = 50734910."
+      "explanation": " Each query is independent.\n[2,6]: There are 4 ways to fill an array of size 2 that multiply to 6: [1,6], [2,3], [3,2], [6,1].\n[5,1]: There is 1 way to fill an array of size 5 that multiply to 1: [1,1,1,1,1].\n[73,660]: There are 1050734917 ways to fill an array of size 73 that multiply to 660. 1050734917 modulo 109 + 7 = 50734910."
     },
     {
       "input": "queries = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "queries = [[2,6],[5,1],[73,660]]",
+      "input": "[[2,6],[5,1],[73,660]]",
       "expectedOutput": "[4,1,50734910]"
     },
     {
-      "input": "queries = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "[1,2,3,10,5]"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,6],[5,1],[73,660]]",
+      "expectedOutput": "[4,1,50734910]"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
+      "expectedOutput": "[1,2,3,10,5]"
+    },
+    {
       "input": "queries = [[2,6],[5,1],[73,660]]",
       "expectedOutput": "[4,1,50734910]"
     },
     {
       "input": "queries = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "[1,2,3,10,5]"
-    },
-    {
-      "input": "[[2,6],[5,1],[73,660]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "queries = [[3,7],[6,2],[74,661]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-ways-to-make-array-with-product/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.260Z",
+    "collectedAt": "2026-10-19T18:40:15.970Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;, order = [1,0,2], k = 2",
+      "input": "s = \"abc\", order = [1,0,2], k = 2",
       "output": "0",
-      "explanation": "t\n\t\t\torder[t]\n\t\t\tModified s\n\t\t\tValid Substrings\n\t\t\tCount\n\t\t\tActive\n\t\t\t(Count &gt;= k)\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\t&quot;a*c&quot;\n\t\t\t&quot;*&quot;, &quot;a*&quot;, &quot;*c&quot;, &quot;a*c&quot;\n\t\t\t4\n\t\t\tYes"
+      "explanation": "t\n\t\t\torder[t]\n\t\t\tModified s\n\t\t\tValid Substrings\n\t\t\tCount\n\t\t\tActive\n\t\t\t(Count >= k)\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\t\"a*c\"\n\t\t\t\"*\", \"a*\", \"*c\", \"a*c\"\n\t\t\t4\n\t\t\tYes"
     },
     {
-      "input": "s = &quot;cat&quot;, order = [0,2,1], k = 6",
+      "input": "s = \"cat\", order = [0,2,1], k = 6",
       "output": "2",
-      "explanation": "t\n\t\t\torder[t]\n\t\t\tModified s\n\t\t\tValid Substrings\n\t\t\tCount\n\t\t\tActive\n\t\t\t(Count &gt;= k)\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t0\n\t\t\t&quot;*at&quot;\n\t\t\t&quot;*&quot;, &quot;*a&quot;, &quot;*at&quot;\n\t\t\t3\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t1\n\t\t\t2\n\t\t\t&quot;*a*&quot;\n\t\t\t&quot;*&quot;, &quot;*a&quot;, &quot;*a*&quot;, &quot;a*&quot;, &quot;*&quot;\n\t\t\t5\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t2\n\t\t\t1\n\t\t\t&quot;***&quot;\n\t\t\tAll substrings (contain &#39;*&#39;)\n\t\t\t6\n\t\t\tYes"
+      "explanation": "t\n\t\t\torder[t]\n\t\t\tModified s\n\t\t\tValid Substrings\n\t\t\tCount\n\t\t\tActive\n\t\t\t(Count >= k)\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t0\n\t\t\t\"*at\"\n\t\t\t\"*\", \"*a\", \"*at\"\n\t\t\t3\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t1\n\t\t\t2\n\t\t\t\"*a*\"\n\t\t\t\"*\", \"*a\", \"*a*\", \"a*\", \"*\"\n\t\t\t5\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t2\n\t\t\t1\n\t\t\t\"***\"\n\t\t\tAll substrings (contain '*')\n\t\t\t6\n\t\t\tYes"
     },
     {
-      "input": "s = &quot;xy&quot;, order = [0,1], k = 4",
+      "input": "s = \"xy\", order = [0,1], k = 4",
       "output": "-1",
       "explanation": null
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;, order = [1,0,2], k = 2",
+      "input": "\"abc\"\n[1,0,2]\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;cat&quot;, order = [0,2,1], k = 6",
+      "input": "\"cat\"\n[0,2,1]\n6",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;xy&quot;, order = [0,1], k = 4",
+      "input": "\"xy\"\n[0,1]\n4",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;, order = [1,0,2], k = 2",
+      "input": "\"abc\"\n[1,0,2]\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;cat&quot;, order = [0,2,1], k = 6",
+      "input": "\"cat\"\n[0,2,1]\n6",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;xy&quot;, order = [0,1], k = 4",
+      "input": "\"xy\"\n[0,1]\n4",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"abc\"\n[1,0,2]\n2",
-      "expectedOutput": null
+      "input": "s = \"abc\", order = [1,0,2], k = 2",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"cat\"\n[0,2,1]\n6",
-      "expectedOutput": null
+      "input": "s = \"cat\", order = [0,2,1], k = 6",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"xy\"\n[0,1]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;cat&quot;, order = [1,3,2], k = 7",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;xy&quot;, order = [1,2], k = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n[2,1,3]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"cat\"\n[1,3,2]\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abc&quot;, order = [2,1,3], k = 3",
-      "expectedOutput": null
+      "input": "s = \"xy\", order = [0,1], k = 4",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-activate-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:21.451Z",
+    "collectedAt": "2026-10-19T18:40:25.140Z",
     "sourceUpdatedAt": null
   }
 }

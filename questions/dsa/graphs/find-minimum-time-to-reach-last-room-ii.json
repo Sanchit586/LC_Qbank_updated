@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "moveTime = [[0,4],[4,4]]",
+      "input": "[[0,4],[4,4]]",
       "expectedOutput": "7"
     },
     {
-      "input": "moveTime = [[0,0,0,0],[0,0,0,0]]",
+      "input": "[[0,0,0,0],[0,0,0,0]]",
       "expectedOutput": "6"
     },
     {
-      "input": "moveTime = [[0,1],[1,2]]",
+      "input": "[[0,1],[1,2]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,4],[4,4]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[0,0,0,0],[0,0,0,0]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[0,1],[1,2]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "moveTime = [[0,4],[4,4]]",
       "expectedOutput": "7"
     },
@@ -82,38 +94,6 @@
     {
       "input": "moveTime = [[0,1],[1,2]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[0,4],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0,0,0],[0,0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "moveTime = [[1,1,1,1],[1,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "moveTime = [[1,2],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,5],[5,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1,1],[1,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "moveTime = [[1,5],[5,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-minimum-time-to-reach-last-room-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:05.782Z",
+    "collectedAt": "2026-10-19T18:40:17.946Z",
     "sourceUpdatedAt": null
   }
 }

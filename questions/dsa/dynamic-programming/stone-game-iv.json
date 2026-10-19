@@ -22,17 +22,17 @@
     {
       "input": "n = 1",
       "output": "true",
-      "explanation": "Alice can remove 1 stone winning the game because Bob doesn&#39;t have any moves."
+      "explanation": "Alice can remove 1 stone winning the game because Bob doesn't have any moves."
     },
     {
       "input": "n = 2",
       "output": "false",
-      "explanation": "Alice can only remove 1 stone, after that Bob removes the last one winning the game (2 -&gt; 1 -&gt; 0)."
+      "explanation": "Alice can only remove 1 stone, after that Bob removes the last one winning the game (2 -> 1 -> 0)."
     },
     {
       "input": "n = 4",
       "output": "true",
-      "explanation": "n is already a perfect square, Alice can win with one move, removing 4 stones (4 -&gt; 0)."
+      "explanation": "n is already a perfect square, Alice can win with one move, removing 4 stones (4 -> 0)."
     }
   ],
   "starterCode": {
@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "false"
     },
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "true"
+    },
+    {
       "input": "n = 1",
       "expectedOutput": "true"
     },
@@ -82,70 +94,6 @@
     {
       "input": "n = 4",
       "expectedOutput": "true"
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -159,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/stone-game-iv/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:48.530Z",
+    "collectedAt": "2026-10-19T18:40:30.243Z",
     "sourceUpdatedAt": null
   }
 }

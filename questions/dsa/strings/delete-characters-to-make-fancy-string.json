@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leeetcode&quot;",
-      "output": "&quot;leetcode&quot;",
-      "explanation": "Remove an &#39;e&#39; from the first group of &#39;e&#39;s to create &quot;leetcode&quot;.\nNo three consecutive characters are equal, so return &quot;leetcode&quot;."
+      "input": "s = \"leeetcode\"",
+      "output": "\"leetcode\"",
+      "explanation": "Remove an 'e' from the first group of 'e's to create \"leetcode\".\nNo three consecutive characters are equal, so return \"leetcode\"."
     },
     {
-      "input": "s = &quot;aaabaaaa&quot;",
-      "output": "&quot;aabaa&quot;",
-      "explanation": "Remove an &#39;a&#39; from the first group of &#39;a&#39;s to create &quot;aabaaaa&quot;.\nRemove two &#39;a&#39;s from the second group of &#39;a&#39;s to create &quot;aabaa&quot;.\nNo three consecutive characters are equal, so return &quot;aabaa&quot;."
+      "input": "s = \"aaabaaaa\"",
+      "output": "\"aabaa\"",
+      "explanation": "Remove an 'a' from the first group of 'a's to create \"aabaaaa\".\nRemove two 'a's from the second group of 'a's to create \"aabaa\".\nNo three consecutive characters are equal, so return \"aabaa\"."
     },
     {
-      "input": "s = &quot;aab&quot;",
-      "output": "&quot;aab&quot;",
-      "explanation": "No three consecutive characters are equal, so return &quot;aab&quot;."
+      "input": "s = \"aab\"",
+      "output": "\"aab\"",
+      "explanation": "No three consecutive characters are equal, so return \"aab\"."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leeetcode&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
+      "input": "\"leeetcode\"",
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "s = &quot;aaabaaaa&quot;",
-      "expectedOutput": "&quot;aabaa&quot;"
+      "input": "\"aaabaaaa\"",
+      "expectedOutput": "\"aabaa\""
     },
     {
-      "input": "s = &quot;aab&quot;",
-      "expectedOutput": "&quot;aab&quot;"
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leeetcode&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
-    },
-    {
-      "input": "s = &quot;aaabaaaa&quot;",
-      "expectedOutput": "&quot;aabaa&quot;"
-    },
-    {
-      "input": "s = &quot;aab&quot;",
-      "expectedOutput": "&quot;aab&quot;"
-    },
-    {
       "input": "\"leeetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"leetcode\""
     },
     {
       "input": "\"aaabaaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aabaa\""
     },
     {
       "input": "\"aab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aab\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leeetcode\"",
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aaabaaaa\"",
+      "expectedOutput": "\"aabaa\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/delete-characters-to-make-fancy-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.865Z",
+    "collectedAt": "2026-10-19T18:40:16.267Z",
     "sourceUpdatedAt": null
   }
 }

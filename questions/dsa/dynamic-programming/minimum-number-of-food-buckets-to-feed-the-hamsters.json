@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "hamsters = &quot;H..H&quot;",
+      "input": "hamsters = \"H..H\"",
       "output": "2",
       "explanation": "We place two food buckets at indices 1 and 2.\nIt can be shown that if we place only one food bucket, one of the hamsters will not be fed."
     },
     {
-      "input": "hamsters = &quot;.H.H.&quot;",
+      "input": "hamsters = \".H.H.\"",
       "output": "1",
       "explanation": "We place one food bucket at index 2."
     },
     {
-      "input": "hamsters = &quot;.HHH.&quot;",
+      "input": "hamsters = \".HHH.\"",
       "output": "-1",
       "explanation": "If we place a food bucket at every empty index as shown, the hamster at index 2 will not be able to eat."
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "hamsters = &quot;H..H&quot;",
+      "input": "\"H..H\"",
       "expectedOutput": "2"
     },
     {
-      "input": "hamsters = &quot;.H.H.&quot;",
+      "input": "\".H.H.\"",
       "expectedOutput": "1"
     },
     {
-      "input": "hamsters = &quot;.HHH.&quot;",
+      "input": "\".HHH.\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "hamsters = &quot;H..H&quot;",
+      "input": "\"H..H\"",
       "expectedOutput": "2"
     },
     {
-      "input": "hamsters = &quot;.H.H.&quot;",
+      "input": "\".H.H.\"",
       "expectedOutput": "1"
     },
     {
-      "input": "hamsters = &quot;.HHH.&quot;",
+      "input": "\".HHH.\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"H..H\"",
-      "expectedOutput": null
+      "input": "hamsters = \"H..H\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\".H.H.\"",
-      "expectedOutput": null
+      "input": "hamsters = \".H.H.\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\".HHH.\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "hamsters = \".HHH.\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-food-buckets-to-feed-the-hamsters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:09.322Z",
+    "collectedAt": "2026-10-19T18:40:24.255Z",
     "sourceUpdatedAt": null
   }
 }

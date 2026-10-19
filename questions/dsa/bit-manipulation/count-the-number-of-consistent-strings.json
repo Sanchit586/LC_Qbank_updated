@@ -22,19 +22,19 @@
   ],
   "examples": [
     {
-      "input": "allowed = &quot;ab&quot;, words = [&quot;ad&quot;,&quot;bd&quot;,&quot;aaab&quot;,&quot;baa&quot;,&quot;badab&quot;]",
+      "input": "allowed = \"ab\", words = [\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
       "output": "2",
-      "explanation": "Strings &quot;aaab&quot; and &quot;baa&quot; are consistent since they only contain characters &#39;a&#39; and &#39;b&#39;."
+      "explanation": "Strings \"aaab\" and \"baa\" are consistent since they only contain characters 'a' and 'b'."
     },
     {
-      "input": "allowed = &quot;abc&quot;, words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;bc&quot;,&quot;abc&quot;]",
+      "input": "allowed = \"abc\", words = [\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
       "output": "7",
       "explanation": "All strings are consistent."
     },
     {
-      "input": "allowed = &quot;cad&quot;, words = [&quot;cc&quot;,&quot;acd&quot;,&quot;b&quot;,&quot;ba&quot;,&quot;bac&quot;,&quot;bad&quot;,&quot;ac&quot;,&quot;d&quot;]",
+      "input": "allowed = \"cad\", words = [\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
       "output": "4",
-      "explanation": "Strings &quot;cc&quot;, &quot;acd&quot;, &quot;ac&quot;, and &quot;d&quot; are consistent."
+      "explanation": "Strings \"cc\", \"acd\", \"ac\", and \"d\" are consistent."
     }
   ],
   "starterCode": {
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "allowed = &quot;ab&quot;, words = [&quot;ad&quot;,&quot;bd&quot;,&quot;aaab&quot;,&quot;baa&quot;,&quot;badab&quot;]",
+      "input": "\"ab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "allowed = &quot;abc&quot;, words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;bc&quot;,&quot;abc&quot;]",
+      "input": "\"abc\"\n[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
       "expectedOutput": "7"
     },
     {
-      "input": "allowed = &quot;cad&quot;, words = [&quot;cc&quot;,&quot;acd&quot;,&quot;b&quot;,&quot;ba&quot;,&quot;bac&quot;,&quot;bad&quot;,&quot;ac&quot;,&quot;d&quot;]",
+      "input": "\"cad\"\n[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "allowed = &quot;ab&quot;, words = [&quot;ad&quot;,&quot;bd&quot;,&quot;aaab&quot;,&quot;baa&quot;,&quot;badab&quot;]",
+      "input": "\"ab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "allowed = &quot;abc&quot;, words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;ab&quot;,&quot;ac&quot;,&quot;bc&quot;,&quot;abc&quot;]",
+      "input": "\"abc\"\n[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
       "expectedOutput": "7"
     },
     {
-      "input": "allowed = &quot;cad&quot;, words = [&quot;cc&quot;,&quot;acd&quot;,&quot;b&quot;,&quot;ba&quot;,&quot;bac&quot;,&quot;bad&quot;,&quot;ac&quot;,&quot;d&quot;]",
+      "input": "\"cad\"\n[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
       "expectedOutput": "4"
     },
     {
-      "input": "\"ab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
-      "expectedOutput": null
+      "input": "allowed = \"ab\", words = [\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abc\"\n[\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
-      "expectedOutput": null
+      "input": "allowed = \"abc\", words = [\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"cad\"\n[\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
-      "expectedOutput": null
+      "input": "allowed = \"cad\", words = [\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -106,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-consistent-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.975Z",
+    "collectedAt": "2026-10-19T18:40:15.768Z",
     "sourceUpdatedAt": null
   }
 }

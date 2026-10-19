@@ -19,7 +19,13 @@
     "At most 4 * 104 calls will be made to add and getProduct.",
     "The product of the stream at any point in time will fit in a 32-bit integer."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]",
+      "output": "[null,null,null,null,null,null,20,40,0,null,32]",
+      "explanation": "ProductOfNumbers productOfNumbers = new ProductOfNumbers();\nproductOfNumbers.add(3);        // [3]\nproductOfNumbers.add(0);        // [3,0]\nproductOfNumbers.add(2);        // [3,0,2]\nproductOfNumbers.add(5);        // [3,0,2,5]\nproductOfNumbers.add(4);        // [3,0,2,5,4]\nproductOfNumbers.getProduct(2); // return 20. The product of the last 2 numbers is 5 * 4 = 20\nproductOfNumbers.getProduct(3); // return 40. The product of the last 3 numbers is 2 * 5 * 4 = 40\nproductOfNumbers.getProduct(4); // return 0. The product of the last 4 numbers is 0 * 2 * 5 * 4 = 0\nproductOfNumbers.add(8);        // [3,0,2,5,4,8]\nproductOfNumbers.getProduct(2); // return 32. The product of the last 2 numbers is 4 * 8 = 32"
+    }
+  ],
   "starterCode": {
     "cpp": "class ProductOfNumbers {\npublic:\n    ProductOfNumbers() {\n        \n    }\n    \n    void add(int num) {\n        \n    }\n    \n    int getProduct(int k) {\n        \n    }\n};\n\n/**\n * Your ProductOfNumbers object will be instantiated and called as such:\n * ProductOfNumbers* obj = new ProductOfNumbers();\n * obj->add(num);\n * int param_2 = obj->getProduct(k);\n */",
     "java": "class ProductOfNumbers {\n\n    public ProductOfNumbers() {\n        \n    }\n    \n    public void add(int num) {\n        \n    }\n    \n    public int getProduct(int k) {\n        \n    }\n}\n\n/**\n * Your ProductOfNumbers object will be instantiated and called as such:\n * ProductOfNumbers obj = new ProductOfNumbers();\n * obj.add(num);\n * int param_2 = obj.getProduct(k);\n */",
@@ -44,17 +50,13 @@
   "publicTests": [
     {
       "input": "[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,null,null,20,40,0,null,32]"
     }
   ],
   "testCases": [
     {
       "input": "[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[3],[0],[2],[5],[4],[2],[3],[4],[8],[2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"ProductOfNumbers\",\"add\",\"add\",\"add\",\"add\",\"add\",\"getProduct\",\"getProduct\",\"getProduct\",\"add\",\"getProduct\"]\n[[],[4],[1],[3],[6],[5],[3],[4],[5],[9],[3]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,null,null,20,40,0,null,32]"
     }
   ],
   "sqlSchema": null,
@@ -69,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/product-of-the-last-k-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.754Z",
+    "collectedAt": "2026-10-19T18:40:27.003Z",
     "sourceUpdatedAt": null
   }
 }

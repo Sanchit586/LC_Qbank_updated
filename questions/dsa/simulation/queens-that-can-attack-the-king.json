@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "queens = [[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]], king = [0,0]",
+      "input": "[[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]]\n[0,0]",
       "expectedOutput": "[[0,1],[1,0],[3,3]]"
     },
     {
-      "input": "queens = [[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], king = [3,3]",
+      "input": "[[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]]\n[3,3]",
       "expectedOutput": "[[2,2],[3,4],[4,4]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]]\n[0,0]",
+      "expectedOutput": "[[0,1],[1,0],[3,3]]"
+    },
+    {
+      "input": "[[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]]\n[3,3]",
+      "expectedOutput": "[[2,2],[3,4],[4,4]]"
+    },
+    {
       "input": "queens = [[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]], king = [0,0]",
       "expectedOutput": "[[0,1],[1,0],[3,3]]"
     },
     {
       "input": "queens = [[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]], king = [3,3]",
       "expectedOutput": "[[2,2],[3,4],[4,4]]"
-    },
-    {
-      "input": "[[0,1],[1,0],[4,0],[0,4],[3,3],[2,4]]\n[0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0],[1,1],[2,2],[3,4],[3,5],[4,4],[4,5]]\n[3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "queens = [[1,2],[2,1],[5,1],[1,5],[4,4],[3,5]], king = [1,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/queens-that-can-attack-the-king/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:02.202Z",
+    "collectedAt": "2026-10-19T18:40:27.071Z",
     "sourceUpdatedAt": null
   }
 }

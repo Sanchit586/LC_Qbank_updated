@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ab&quot;",
+      "input": "sequence = \"ababc\", word = \"ab\"",
       "output": "2",
-      "explanation": "&quot;abab&quot; is a substring in &quot;ababc&quot;."
+      "explanation": "\"abab\" is a substring in \"ababc\"."
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ba&quot;",
+      "input": "sequence = \"ababc\", word = \"ba\"",
       "output": "1",
-      "explanation": "&quot;ba&quot; is a substring in &quot;ababc&quot;. &quot;baba&quot; is not a substring in &quot;ababc&quot;."
+      "explanation": "\"ba\" is a substring in \"ababc\". \"baba\" is not a substring in \"ababc\"."
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ac&quot;",
+      "input": "sequence = \"ababc\", word = \"ac\"",
       "output": "0",
-      "explanation": "&quot;ac&quot; is not a substring in &quot;ababc&quot;."
+      "explanation": "\"ac\" is not a substring in \"ababc\"."
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ab&quot;",
+      "input": "\"ababc\"\n\"ab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ba&quot;",
+      "input": "\"ababc\"\n\"ba\"",
       "expectedOutput": "1"
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ac&quot;",
+      "input": "\"ababc\"\n\"ac\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ab&quot;",
+      "input": "\"ababc\"\n\"ab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ba&quot;",
+      "input": "\"ababc\"\n\"ba\"",
       "expectedOutput": "1"
     },
     {
-      "input": "sequence = &quot;ababc&quot;, word = &quot;ac&quot;",
+      "input": "\"ababc\"\n\"ac\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"ababc\"\n\"ab\"",
-      "expectedOutput": null
+      "input": "sequence = \"ababc\", word = \"ab\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"ababc\"\n\"ba\"",
-      "expectedOutput": null
+      "input": "sequence = \"ababc\", word = \"ba\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"ababc\"\n\"ac\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "sequence = \"ababc\", word = \"ac\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-repeating-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:27.226Z",
+    "collectedAt": "2026-10-19T18:40:22.511Z",
     "sourceUpdatedAt": null
   }
 }

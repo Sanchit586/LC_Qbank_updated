@@ -61,20 +61,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,1,5]",
+      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,1,5]",
       "expectedOutput": "[0,-1,4]"
     },
     {
-      "input": "n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,3,5]",
+      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,3,5]",
       "expectedOutput": "[0,2,3]"
     },
     {
-      "input": "n = 2, edges = [[0,1,1]], disappear = [1,1]",
+      "input": "2\n[[0,1,1]]\n[1,1]",
       "expectedOutput": "[0,-1]"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,1,5]",
+      "expectedOutput": "[0,-1,4]"
+    },
+    {
+      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,3,5]",
+      "expectedOutput": "[0,2,3]"
+    },
+    {
+      "input": "2\n[[0,1,1]]\n[1,1]",
+      "expectedOutput": "[0,-1]"
+    },
+    {
       "input": "n = 3, edges = [[0,1,2],[1,2,1],[0,2,4]], disappear = [1,1,5]",
       "expectedOutput": "[0,-1,4]"
     },
@@ -85,38 +97,6 @@
     {
       "input": "n = 2, edges = [[0,1,1]], disappear = [1,1]",
       "expectedOutput": "[0,-1]"
-    },
-    {
-      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,1,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1,2],[1,2,1],[0,2,4]]\n[1,3,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[[0,1,1]]\n[1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,3],[2,3,2],[1,3,5]], disappear = [2,4,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, edges = [[1,2,2]], disappear = [2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2,3],[2,3,2],[1,3,5]]\n[2,2,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2,3],[2,3,2],[1,3,5]]\n[2,4,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2,3],[2,3,2],[1,3,5]], disappear = [2,2,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-visit-disappearing-nodes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:29.500Z",
+    "collectedAt": "2026-10-19T18:40:25.267Z",
     "sourceUpdatedAt": null
   }
 }

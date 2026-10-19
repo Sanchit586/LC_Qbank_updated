@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "caption = &quot;Leetcode daily streak achieved&quot;",
-      "output": "&quot;#leetcodeDailyStreakAchieved&quot;",
+      "input": "caption = \"Leetcode daily streak achieved\"",
+      "output": "\"#leetcodeDailyStreakAchieved\"",
       "explanation": null
     },
     {
-      "input": "caption = &quot;can I Go There&quot;",
-      "output": "&quot;#canIGoThere&quot;",
+      "input": "caption = \"can I Go There\"",
+      "output": "\"#canIGoThere\"",
       "explanation": null
     },
     {
-      "input": "caption = &quot;hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;",
-      "output": "&quot;#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;",
+      "input": "caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
+      "output": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "caption = &quot;Leetcode daily streak achieved&quot;",
-      "expectedOutput": "&quot;#leetcodeDailyStreakAchieved&quot;"
+      "input": "\"Leetcode daily streak achieved\"",
+      "expectedOutput": "\"#leetcodeDailyStreakAchieved\""
     },
     {
-      "input": "caption = &quot;can I Go There&quot;",
-      "expectedOutput": "&quot;#canIGoThere&quot;"
+      "input": "\"can I Go There\"",
+      "expectedOutput": "\"#canIGoThere\""
     },
     {
-      "input": "caption = &quot;hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;",
-      "expectedOutput": "&quot;#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;"
+      "input": "\"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
+      "expectedOutput": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\""
     }
   ],
   "testCases": [
     {
-      "input": "caption = &quot;Leetcode daily streak achieved&quot;",
-      "expectedOutput": "&quot;#leetcodeDailyStreakAchieved&quot;"
-    },
-    {
-      "input": "caption = &quot;can I Go There&quot;",
-      "expectedOutput": "&quot;#canIGoThere&quot;"
-    },
-    {
-      "input": "caption = &quot;hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;",
-      "expectedOutput": "&quot;#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh&quot;"
-    },
-    {
       "input": "\"Leetcode daily streak achieved\"",
-      "expectedOutput": null
+      "expectedOutput": "\"#leetcodeDailyStreakAchieved\""
     },
     {
       "input": "\"can I Go There\"",
-      "expectedOutput": null
+      "expectedOutput": "\"#canIGoThere\""
     },
     {
       "input": "\"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
-      "expectedOutput": null
+      "expectedOutput": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "caption = \"Leetcode daily streak achieved\"",
+      "expectedOutput": "\"#leetcodeDailyStreakAchieved\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "caption = \"can I Go There\"",
+      "expectedOutput": "\"#canIGoThere\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
+      "expectedOutput": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/generate-tag-for-video-caption/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:22.094Z",
+    "collectedAt": "2026-10-19T18:40:19.162Z",
     "sourceUpdatedAt": null
   }
 }

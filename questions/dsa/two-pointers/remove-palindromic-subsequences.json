@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ababa&quot;",
+      "input": "s = \"ababa\"",
       "output": "1",
       "explanation": "s is already a palindrome, so its entirety can be removed in a single step."
     },
     {
-      "input": "s = &quot;abb&quot;",
+      "input": "s = \"abb\"",
       "output": "2",
-      "explanation": "&quot;abb&quot; -&gt; &quot;bb&quot; -&gt; &quot;&quot;. \nRemove palindromic subsequence &quot;a&quot; then &quot;bb&quot;."
+      "explanation": "\"abb\" -> \"bb\" -> \"\". \nRemove palindromic subsequence \"a\" then \"bb\"."
     },
     {
-      "input": "s = &quot;baabb&quot;",
+      "input": "s = \"baabb\"",
       "output": "2",
-      "explanation": "&quot;baabb&quot; -&gt; &quot;b&quot; -&gt; &quot;&quot;. \nRemove palindromic subsequence &quot;baab&quot; then &quot;b&quot;."
+      "explanation": "\"baabb\" -> \"b\" -> \"\". \nRemove palindromic subsequence \"baab\" then \"b\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ababa&quot;",
+      "input": "\"ababa\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abb&quot;",
+      "input": "\"abb\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;baabb&quot;",
+      "input": "\"baabb\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ababa&quot;",
+      "input": "\"ababa\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abb&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;baabb&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"ababa\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"baabb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"ababa\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abb\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"baabb\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-palindromic-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:09.970Z",
+    "collectedAt": "2026-10-19T18:40:27.592Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "croakOfFrogs = &quot;croakcroak&quot;",
+      "input": "croakOfFrogs = \"croakcroak\"",
       "output": "1",
-      "explanation": "One frog yelling &quot;croak&quot; twice."
+      "explanation": "One frog yelling \"croak\" twice."
     },
     {
-      "input": "croakOfFrogs = &quot;crcoakroak&quot;",
+      "input": "croakOfFrogs = \"crcoakroak\"",
       "output": "2",
-      "explanation": "The minimum number of frogs is two. \nThe first frog could yell &quot;crcoakroak&quot;.\nThe second frog could yell later &quot;crcoakroak&quot;."
+      "explanation": "The minimum number of frogs is two. \nThe first frog could yell \"crcoakroak\".\nThe second frog could yell later \"crcoakroak\"."
     },
     {
-      "input": "croakOfFrogs = &quot;croakcrook&quot;",
+      "input": "croakOfFrogs = \"croakcrook\"",
       "output": "-1",
-      "explanation": "The given string is an invalid combination of &quot;croak&quot; from different frogs."
+      "explanation": "The given string is an invalid combination of \"croak\" from different frogs."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "croakOfFrogs = &quot;croakcroak&quot;",
+      "input": "\"croakcroak\"",
       "expectedOutput": "1"
     },
     {
-      "input": "croakOfFrogs = &quot;crcoakroak&quot;",
+      "input": "\"crcoakroak\"",
       "expectedOutput": "2"
     },
     {
-      "input": "croakOfFrogs = &quot;croakcrook&quot;",
+      "input": "\"croakcrook\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "croakOfFrogs = &quot;croakcroak&quot;",
+      "input": "\"croakcroak\"",
       "expectedOutput": "1"
     },
     {
-      "input": "croakOfFrogs = &quot;crcoakroak&quot;",
+      "input": "\"crcoakroak\"",
       "expectedOutput": "2"
     },
     {
-      "input": "croakOfFrogs = &quot;croakcrook&quot;",
+      "input": "\"croakcrook\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"croakcroak\"",
-      "expectedOutput": null
+      "input": "croakOfFrogs = \"croakcroak\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"crcoakroak\"",
-      "expectedOutput": null
+      "input": "croakOfFrogs = \"crcoakroak\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"croakcrook\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "croakOfFrogs = \"croakcrook\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-frogs-croaking/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:09.329Z",
+    "collectedAt": "2026-10-19T18:40:24.259Z",
     "sourceUpdatedAt": null
   }
 }

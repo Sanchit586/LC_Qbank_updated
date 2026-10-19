@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, k = 2",
+      "input": "4\n2",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 3, k = 1",
+      "input": "3\n1",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "4\n2",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 4, k = 2",
       "expectedOutput": "9"
     },
     {
       "input": "n = 3, k = 1",
       "expectedOutput": "4"
-    },
-    {
-      "input": "4\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-nth-smallest-integer-with-k-one-bits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:05.913Z",
+    "collectedAt": "2026-10-19T18:40:17.997Z",
     "sourceUpdatedAt": null
   }
 }

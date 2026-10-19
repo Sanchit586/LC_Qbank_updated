@@ -19,7 +19,13 @@
     "0 <= left <= right < arr.length",
     "At most 105 calls will be made to query"
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"RangeFreqQuery\", \"query\", \"query\"]\n[[[12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]], [1, 2, 4], [0, 11, 33]]",
+      "output": "[null, 1, 2]",
+      "explanation": "RangeFreqQuery rangeFreqQuery = new RangeFreqQuery([12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]);\nrangeFreqQuery.query(1, 2, 4); // return 1. The value 4 occurs 1 time in the subarray [33, 4]\nrangeFreqQuery.query(0, 11, 33); // return 2. The value 33 occurs 2 times in the whole array."
+    }
+  ],
   "starterCode": {
     "cpp": "class RangeFreqQuery {\npublic:\n    RangeFreqQuery(vector<int>& arr) {\n        \n    }\n    \n    int query(int left, int right, int value) {\n        \n    }\n};\n\n/**\n * Your RangeFreqQuery object will be instantiated and called as such:\n * RangeFreqQuery* obj = new RangeFreqQuery(arr);\n * int param_1 = obj->query(left,right,value);\n */",
     "java": "class RangeFreqQuery {\n\n    public RangeFreqQuery(int[] arr) {\n        \n    }\n    \n    public int query(int left, int right, int value) {\n        \n    }\n}\n\n/**\n * Your RangeFreqQuery object will be instantiated and called as such:\n * RangeFreqQuery obj = new RangeFreqQuery(arr);\n * int param_1 = obj.query(left,right,value);\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"RangeFreqQuery\",\"query\",\"query\"]\n[[[12,33,4,56,22,2,34,33,22,12,34,56]],[1,2,4],[0,11,33]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"RangeFreqQuery\",\"query\",\"query\"]\n[[[12,33,4,56,22,2,34,33,22,12,34,56]],[1,2,4],[0,11,33]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2]"
     },
     {
-      "input": "[\"RangeFreqQuery\",\"query\",\"query\"]\n[[[13,34,5,57,23,3,35,34,23,13,35,57]],[2,3,5],[1,12,34]]",
-      "expectedOutput": null
+      "input": "[\"RangeFreqQuery\", \"query\", \"query\"]\n[[[12, 33, 4, 56, 22, 2, 34, 33, 22, 12, 34, 56]], [1, 2, 4], [0, 11, 33]]",
+      "expectedOutput": "[null, 1, 2]"
     }
   ],
   "sqlSchema": null,
@@ -71,7 +77,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-frequency-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.501Z",
+    "collectedAt": "2026-10-19T18:40:27.163Z",
     "sourceUpdatedAt": null
   }
 }

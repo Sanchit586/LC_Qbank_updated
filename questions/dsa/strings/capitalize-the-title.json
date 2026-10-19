@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "title = &quot;capiTalIze tHe titLe&quot;",
-      "output": "&quot;Capitalize The Title&quot;",
+      "input": "title = \"capiTalIze tHe titLe\"",
+      "output": "\"Capitalize The Title\"",
       "explanation": "Since all the words have a length of at least 3, the first letter of each word is uppercase, and the remaining letters are lowercase."
     },
     {
-      "input": "title = &quot;First leTTeR of EACH Word&quot;",
-      "output": "&quot;First Letter of Each Word&quot;",
-      "explanation": "The word &quot;of&quot; has length 2, so it is all lowercase.\nThe remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase."
+      "input": "title = \"First leTTeR of EACH Word\"",
+      "output": "\"First Letter of Each Word\"",
+      "explanation": "The word \"of\" has length 2, so it is all lowercase.\nThe remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase."
     },
     {
-      "input": "title = &quot;i lOve leetcode&quot;",
-      "output": "&quot;i Love Leetcode&quot;",
-      "explanation": "The word &quot;i&quot; has length 1, so it is lowercase.\nThe remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase."
+      "input": "title = \"i lOve leetcode\"",
+      "output": "\"i Love Leetcode\"",
+      "explanation": "The word \"i\" has length 1, so it is lowercase.\nThe remaining words have a length of at least 3, so the first letter of each remaining word is uppercase, and the remaining letters are lowercase."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "title = &quot;capiTalIze tHe titLe&quot;",
-      "expectedOutput": "&quot;Capitalize The Title&quot;"
+      "input": "\"capiTalIze tHe titLe\"",
+      "expectedOutput": "\"Capitalize The Title\""
     },
     {
-      "input": "title = &quot;First leTTeR of EACH Word&quot;",
-      "expectedOutput": "&quot;First Letter of Each Word&quot;"
+      "input": "\"First leTTeR of EACH Word\"",
+      "expectedOutput": "\"First Letter of Each Word\""
     },
     {
-      "input": "title = &quot;i lOve leetcode&quot;",
-      "expectedOutput": "&quot;i Love Leetcode&quot;"
+      "input": "\"i lOve leetcode\"",
+      "expectedOutput": "\"i Love Leetcode\""
     }
   ],
   "testCases": [
     {
-      "input": "title = &quot;capiTalIze tHe titLe&quot;",
-      "expectedOutput": "&quot;Capitalize The Title&quot;"
-    },
-    {
-      "input": "title = &quot;First leTTeR of EACH Word&quot;",
-      "expectedOutput": "&quot;First Letter of Each Word&quot;"
-    },
-    {
-      "input": "title = &quot;i lOve leetcode&quot;",
-      "expectedOutput": "&quot;i Love Leetcode&quot;"
-    },
-    {
       "input": "\"capiTalIze tHe titLe\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Capitalize The Title\""
     },
     {
       "input": "\"First leTTeR of EACH Word\"",
-      "expectedOutput": null
+      "expectedOutput": "\"First Letter of Each Word\""
     },
     {
       "input": "\"i lOve leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"i Love Leetcode\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "title = \"capiTalIze tHe titLe\"",
+      "expectedOutput": "\"Capitalize The Title\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "title = \"First leTTeR of EACH Word\"",
+      "expectedOutput": "\"First Letter of Each Word\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "title = \"i lOve leetcode\"",
+      "expectedOutput": "\"i Love Leetcode\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/capitalize-the-title/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.352Z",
+    "collectedAt": "2026-10-19T18:40:13.907Z",
     "sourceUpdatedAt": null
   }
 }

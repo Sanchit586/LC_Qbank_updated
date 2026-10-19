@@ -16,7 +16,7 @@
     {
       "input": "x = 1, y = 4",
       "output": "2",
-      "explanation": "1   (0 0 0 1)\n4   (0 1 0 0)\n       &uarr;   &uarr;\nThe above arrows point to positions where the corresponding bits are different."
+      "explanation": "1   (0 0 0 1)\n4   (0 1 0 0)\n       ↑   ↑\nThe above arrows point to positions where the corresponding bits are different."
     },
     {
       "input": "x = 3, y = 1",
@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 1, y = 4",
+      "input": "1\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "x = 3, y = 1",
+      "input": "3\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "1\n4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "x = 1, y = 4",
       "expectedOutput": "2"
     },
     {
       "input": "x = 3, y = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "1\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 2, y = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -86,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/hamming-distance/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.686Z",
+    "collectedAt": "2026-10-19T18:40:19.329Z",
     "sourceUpdatedAt": null
   }
 }

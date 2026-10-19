@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "formula = &quot;H2O&quot;",
-      "output": "&quot;H2O&quot;",
-      "explanation": "The count of elements are {&#39;H&#39;: 2, &#39;O&#39;: 1}."
+      "input": "formula = \"H2O\"",
+      "output": "\"H2O\"",
+      "explanation": "The count of elements are {'H': 2, 'O': 1}."
     },
     {
-      "input": "formula = &quot;Mg(OH)2&quot;",
-      "output": "&quot;H2MgO2&quot;",
-      "explanation": "The count of elements are {&#39;H&#39;: 2, &#39;Mg&#39;: 1, &#39;O&#39;: 2}."
+      "input": "formula = \"Mg(OH)2\"",
+      "output": "\"H2MgO2\"",
+      "explanation": "The count of elements are {'H': 2, 'Mg': 1, 'O': 2}."
     },
     {
-      "input": "formula = &quot;K4(ON(SO3)2)2&quot;",
-      "output": "&quot;K4N2O14S4&quot;",
-      "explanation": "The count of elements are {&#39;K&#39;: 4, &#39;N&#39;: 2, &#39;O&#39;: 14, &#39;S&#39;: 4}."
+      "input": "formula = \"K4(ON(SO3)2)2\"",
+      "output": "\"K4N2O14S4\"",
+      "explanation": "The count of elements are {'K': 4, 'N': 2, 'O': 14, 'S': 4}."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "formula = &quot;H2O&quot;",
-      "expectedOutput": "&quot;H2O&quot;"
+      "input": "\"H2O\"",
+      "expectedOutput": "\"H2O\""
     },
     {
-      "input": "formula = &quot;Mg(OH)2&quot;",
-      "expectedOutput": "&quot;H2MgO2&quot;"
+      "input": "\"Mg(OH)2\"",
+      "expectedOutput": "\"H2MgO2\""
     },
     {
-      "input": "formula = &quot;K4(ON(SO3)2)2&quot;",
-      "expectedOutput": "&quot;K4N2O14S4&quot;"
+      "input": "\"K4(ON(SO3)2)2\"",
+      "expectedOutput": "\"K4N2O14S4\""
     }
   ],
   "testCases": [
     {
-      "input": "formula = &quot;H2O&quot;",
-      "expectedOutput": "&quot;H2O&quot;"
-    },
-    {
-      "input": "formula = &quot;Mg(OH)2&quot;",
-      "expectedOutput": "&quot;H2MgO2&quot;"
-    },
-    {
-      "input": "formula = &quot;K4(ON(SO3)2)2&quot;",
-      "expectedOutput": "&quot;K4N2O14S4&quot;"
-    },
-    {
       "input": "\"H2O\"",
-      "expectedOutput": null
+      "expectedOutput": "\"H2O\""
     },
     {
       "input": "\"Mg(OH)2\"",
-      "expectedOutput": null
+      "expectedOutput": "\"H2MgO2\""
     },
     {
       "input": "\"K4(ON(SO3)2)2\"",
-      "expectedOutput": null
+      "expectedOutput": "\"K4N2O14S4\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "formula = \"H2O\"",
+      "expectedOutput": "\"H2O\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "formula = \"Mg(OH)2\"",
+      "expectedOutput": "\"H2MgO2\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "formula = \"K4(ON(SO3)2)2\"",
+      "expectedOutput": "\"K4N2O14S4\""
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-atoms/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.788Z",
+    "collectedAt": "2026-10-19T18:40:25.749Z",
     "sourceUpdatedAt": null
   }
 }

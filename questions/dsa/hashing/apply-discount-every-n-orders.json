@@ -27,7 +27,13 @@
     "At most 1000 calls will be made to getBill.",
     "Answers within 10-5 of the actual value will be accepted."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Cashier\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\"]\n[[3,50,[1,2,3,4,5,6,7],[100,200,300,400,300,200,100]],[[1,2],[1,2]],[[3,7],[10,10]],[[1,2,3,4,5,6,7],[1,1,1,1,1,1,1]],[[4],[10]],[[7,3],[10,10]],[[7,5,3,1,6,4,2],[10,10,10,9,9,9,7]],[[2,3,5],[5,3,2]]]",
+      "output": "[null,500.0,4000.0,800.0,4000.0,4000.0,7350.0,2500.0]",
+      "explanation": "Cashier cashier = new Cashier(3,50,[1,2,3,4,5,6,7],[100,200,300,400,300,200,100]);\ncashier.getBill([1,2],[1,2]);                        // return 500.0. 1st customer, no discount.\n                                                     // bill = 1 * 100 + 2 * 200 = 500.\ncashier.getBill([3,7],[10,10]);                      // return 4000.0. 2nd customer, no discount.\n                                                     // bill = 10 * 300 + 10 * 100 = 4000.\ncashier.getBill([1,2,3,4,5,6,7],[1,1,1,1,1,1,1]);    // return 800.0. 3rd customer, 50% discount.\n                                                     // Original bill = 1600\n                                                     // Actual bill = 1600 * ((100 - 50) / 100) = 800.\ncashier.getBill([4],[10]);                           // return 4000.0. 4th customer, no discount.\ncashier.getBill([7,3],[10,10]);                      // return 4000.0. 5th customer, no discount.\ncashier.getBill([7,5,3,1,6,4,2],[10,10,10,9,9,9,7]); // return 7350.0. 6th customer, 50% discount.\n                                                     // Original bill = 14700, but with\n                                                     // Actual bill = 14700 * ((100 - 50) / 100) = 7350.\ncashier.getBill([2,3,5],[5,3,2]);                    // return 2500.0.  7th customer, no discount."
+    }
+  ],
   "starterCode": {
     "cpp": "class Cashier {\npublic:\n    Cashier(int n, int discount, vector<int>& products, vector<int>& prices) {\n        \n    }\n    \n    double getBill(vector<int> product, vector<int> amount) {\n        \n    }\n};\n\n/**\n * Your Cashier object will be instantiated and called as such:\n * Cashier* obj = new Cashier(n, discount, products, prices);\n * double param_1 = obj->getBill(product,amount);\n */",
     "java": "class Cashier {\n\n    public Cashier(int n, int discount, int[] products, int[] prices) {\n        \n    }\n    \n    public double getBill(int[] product, int[] amount) {\n        \n    }\n}\n\n/**\n * Your Cashier object will be instantiated and called as such:\n * Cashier obj = new Cashier(n, discount, products, prices);\n * double param_1 = obj.getBill(product,amount);\n */",
@@ -52,17 +58,13 @@
   "publicTests": [
     {
       "input": "[\"Cashier\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\"]\n[[3,50,[1,2,3,4,5,6,7],[100,200,300,400,300,200,100]],[[1,2],[1,2]],[[3,7],[10,10]],[[1,2,3,4,5,6,7],[1,1,1,1,1,1,1]],[[4],[10]],[[7,3],[10,10]],[[7,5,3,1,6,4,2],[10,10,10,9,9,9,7]],[[2,3,5],[5,3,2]]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,500.0,4000.0,800.0,4000.0,4000.0,7350.0,2500.0]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Cashier\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\"]\n[[3,50,[1,2,3,4,5,6,7],[100,200,300,400,300,200,100]],[[1,2],[1,2]],[[3,7],[10,10]],[[1,2,3,4,5,6,7],[1,1,1,1,1,1,1]],[[4],[10]],[[7,3],[10,10]],[[7,5,3,1,6,4,2],[10,10,10,9,9,9,7]],[[2,3,5],[5,3,2]]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"Cashier\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\",\"getBill\"]\n[[4,51,[2,3,4,5,6,7,8],[101,201,301,401,301,201,101]],[[2,3],[2,3]],[[4,8],[11,11]],[[2,3,4,5,6,7,8],[2,2,2,2,2,2,2]],[[5],[11]],[[8,4],[11,11]],[[8,6,4,2,7,5,3],[11,11,11,10,10,10,8]],[[3,4,6],[6,4,3]]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,500.0,4000.0,800.0,4000.0,4000.0,7350.0,2500.0]"
     }
   ],
   "sqlSchema": null,
@@ -77,7 +79,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/apply-discount-every-n-orders/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.753Z",
+    "collectedAt": "2026-10-19T18:40:13.189Z",
     "sourceUpdatedAt": null
   }
 }

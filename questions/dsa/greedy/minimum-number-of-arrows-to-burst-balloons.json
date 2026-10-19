@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "points = [[10,16],[2,8],[1,6],[7,12]]",
+      "input": "[[10,16],[2,8],[1,6],[7,12]]",
       "expectedOutput": "2"
     },
     {
-      "input": "points = [[1,2],[3,4],[5,6],[7,8]]",
+      "input": "[[1,2],[3,4],[5,6],[7,8]]",
       "expectedOutput": "4"
     },
     {
-      "input": "points = [[1,2],[2,3],[3,4],[4,5]]",
+      "input": "[[1,2],[2,3],[3,4],[4,5]]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[[10,16],[2,8],[1,6],[7,12]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,2],[3,4],[5,6],[7,8]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,2],[2,3],[3,4],[4,5]]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "points = [[10,16],[2,8],[1,6],[7,12]]",
       "expectedOutput": "2"
     },
@@ -80,38 +92,6 @@
     {
       "input": "points = [[1,2],[2,3],[3,4],[4,5]]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[[10,16],[2,8],[1,6],[7,12]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[3,4],[5,6],[7,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[2,3],[3,4],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,3],[4,5],[6,7],[8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,3],[3,4],[4,5],[5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[11,17],[3,9],[2,7],[8,13]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[4,5],[6,7],[8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[11,17],[3,9],[2,7],[8,13]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-arrows-to-burst-balloons/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:06.561Z",
+    "collectedAt": "2026-10-19T18:40:24.187Z",
     "sourceUpdatedAt": null
   }
 }

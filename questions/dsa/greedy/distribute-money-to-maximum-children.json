@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "money = 20, children = 3",
+      "input": "20\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "money = 16, children = 2",
+      "input": "16\n2",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "20\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "16\n2",
+      "expectedOutput": "2"
+    },
+    {
       "input": "money = 20, children = 3",
       "expectedOutput": "1"
     },
     {
       "input": "money = 16, children = 2",
       "expectedOutput": "2"
-    },
-    {
-      "input": "20\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "16\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "money = 21, children = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distribute-money-to-maximum-children/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.062Z",
+    "collectedAt": "2026-10-19T18:40:16.785Z",
     "sourceUpdatedAt": null
   }
 }

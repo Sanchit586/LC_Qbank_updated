@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "pattern = &quot;IIIDIDDD&quot;",
-      "output": "&quot;123549876&quot;",
-      "explanation": "At indices 0, 1, 2, and 4 we must have that num[i] &lt; num[i+1].\nAt indices 3, 5, 6, and 7 we must have that num[i] &gt; num[i+1].\nSome possible values of num are &quot;245639871&quot;, &quot;135749862&quot;, and &quot;123849765&quot;.\nIt can be proven that &quot;123549876&quot; is the smallest possible num that meets the conditions.\nNote that &quot;123414321&quot; is not possible because the digit &#39;1&#39; is used more than once."
+      "input": "pattern = \"IIIDIDDD\"",
+      "output": "\"123549876\"",
+      "explanation": "At indices 0, 1, 2, and 4 we must have that num[i] < num[i+1].\nAt indices 3, 5, 6, and 7 we must have that num[i] > num[i+1].\nSome possible values of num are \"245639871\", \"135749862\", and \"123849765\".\nIt can be proven that \"123549876\" is the smallest possible num that meets the conditions.\nNote that \"123414321\" is not possible because the digit '1' is used more than once."
     },
     {
-      "input": "pattern = &quot;DDD&quot;",
-      "output": "&quot;4321&quot;",
-      "explanation": "Some possible values of num are &quot;9876&quot;, &quot;7321&quot;, and &quot;8742&quot;.\nIt can be proven that &quot;4321&quot; is the smallest possible num that meets the conditions."
+      "input": "pattern = \"DDD\"",
+      "output": "\"4321\"",
+      "explanation": "Some possible values of num are \"9876\", \"7321\", and \"8742\".\nIt can be proven that \"4321\" is the smallest possible num that meets the conditions."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "pattern = &quot;IIIDIDDD&quot;",
-      "expectedOutput": "&quot;123549876&quot;"
+      "input": "\"IIIDIDDD\"",
+      "expectedOutput": "\"123549876\""
     },
     {
-      "input": "pattern = &quot;DDD&quot;",
-      "expectedOutput": "&quot;4321&quot;"
+      "input": "\"DDD\"",
+      "expectedOutput": "\"4321\""
     }
   ],
   "testCases": [
     {
-      "input": "pattern = &quot;IIIDIDDD&quot;",
-      "expectedOutput": "&quot;123549876&quot;"
-    },
-    {
-      "input": "pattern = &quot;DDD&quot;",
-      "expectedOutput": "&quot;4321&quot;"
-    },
-    {
       "input": "\"IIIDIDDD\"",
-      "expectedOutput": null
+      "expectedOutput": "\"123549876\""
     },
     {
       "input": "\"DDD\"",
-      "expectedOutput": null
+      "expectedOutput": "\"4321\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "pattern = \"IIIDIDDD\"",
+      "expectedOutput": "\"123549876\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "pattern = \"DDD\"",
+      "expectedOutput": "\"4321\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-smallest-number-from-di-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:03.179Z",
+    "collectedAt": "2026-10-19T18:40:14.732Z",
     "sourceUpdatedAt": null
   }
 }

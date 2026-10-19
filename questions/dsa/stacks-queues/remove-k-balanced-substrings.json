@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(())&quot;, k = 1",
-      "output": "&quot;&quot;",
+      "input": "s = \"(())\", k = 1",
+      "output": "\"\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;(()(&quot;, k = 1",
-      "output": "&quot;((&quot;",
+      "input": "s = \"(()(\", k = 1",
+      "output": "\"((\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;((()))()()()&quot;, k = 3",
-      "output": "&quot;()()()&quot;",
+      "input": "s = \"((()))()()()\", k = 3",
+      "output": "\"()()()\"",
       "explanation": null
     }
   ],
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(())&quot;, k = 1",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"(())\"\n1",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;(()(&quot;, k = 1",
-      "expectedOutput": "&quot;((&quot;"
+      "input": "\"(()(\"\n1",
+      "expectedOutput": "\"((\""
     },
     {
-      "input": "s = &quot;((()))()()()&quot;, k = 3",
-      "expectedOutput": "&quot;()()()&quot;"
+      "input": "\"((()))()()()\"\n3",
+      "expectedOutput": "\"()()()\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(())&quot;, k = 1",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;(()(&quot;, k = 1",
-      "expectedOutput": "&quot;((&quot;"
-    },
-    {
-      "input": "s = &quot;((()))()()()&quot;, k = 3",
-      "expectedOutput": "&quot;()()()&quot;"
-    },
-    {
       "input": "\"(())\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"(()(\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"((\""
     },
     {
       "input": "\"((()))()()()\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"()()()\""
     },
     {
-      "input": "s = &quot;(()(&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"(())\", k = 1",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;((()))()()()&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"(()(\", k = 1",
+      "expectedOutput": "\"((\""
     },
     {
-      "input": "\"(())\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"(()(\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;(())&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"((()))()()()\", k = 3",
+      "expectedOutput": "\"()()()\""
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-k-balanced-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.522Z",
+    "collectedAt": "2026-10-19T18:40:27.539Z",
     "sourceUpdatedAt": null
   }
 }

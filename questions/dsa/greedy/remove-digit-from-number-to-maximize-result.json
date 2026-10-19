@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "number = &quot;123&quot;, digit = &quot;3&quot;",
-      "output": "&quot;12&quot;",
-      "explanation": "There is only one &#39;3&#39; in &quot;123&quot;. After removing &#39;3&#39;, the result is &quot;12&quot;."
+      "input": "number = \"123\", digit = \"3\"",
+      "output": "\"12\"",
+      "explanation": "There is only one '3' in \"123\". After removing '3', the result is \"12\"."
     },
     {
-      "input": "number = &quot;1231&quot;, digit = &quot;1&quot;",
-      "output": "&quot;231&quot;",
-      "explanation": "We can remove the first &#39;1&#39; to get &quot;231&quot; or remove the second &#39;1&#39; to get &quot;123&quot;.\nSince 231 &gt; 123, we return &quot;231&quot;."
+      "input": "number = \"1231\", digit = \"1\"",
+      "output": "\"231\"",
+      "explanation": "We can remove the first '1' to get \"231\" or remove the second '1' to get \"123\".\nSince 231 > 123, we return \"231\"."
     },
     {
-      "input": "number = &quot;551&quot;, digit = &quot;5&quot;",
-      "output": "&quot;51&quot;",
-      "explanation": "We can remove either the first or second &#39;5&#39; from &quot;551&quot;.\nBoth result in the string &quot;51&quot;."
+      "input": "number = \"551\", digit = \"5\"",
+      "output": "\"51\"",
+      "explanation": "We can remove either the first or second '5' from \"551\".\nBoth result in the string \"51\"."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "number = &quot;123&quot;, digit = &quot;3&quot;",
-      "expectedOutput": "&quot;12&quot;"
+      "input": "\"123\"\n\"3\"",
+      "expectedOutput": "\"12\""
     },
     {
-      "input": "number = &quot;1231&quot;, digit = &quot;1&quot;",
-      "expectedOutput": "&quot;231&quot;"
+      "input": "\"1231\"\n\"1\"",
+      "expectedOutput": "\"231\""
     },
     {
-      "input": "number = &quot;551&quot;, digit = &quot;5&quot;",
-      "expectedOutput": "&quot;51&quot;"
+      "input": "\"551\"\n\"5\"",
+      "expectedOutput": "\"51\""
     }
   ],
   "testCases": [
     {
-      "input": "number = &quot;123&quot;, digit = &quot;3&quot;",
-      "expectedOutput": "&quot;12&quot;"
-    },
-    {
-      "input": "number = &quot;1231&quot;, digit = &quot;1&quot;",
-      "expectedOutput": "&quot;231&quot;"
-    },
-    {
-      "input": "number = &quot;551&quot;, digit = &quot;5&quot;",
-      "expectedOutput": "&quot;51&quot;"
-    },
-    {
       "input": "\"123\"\n\"3\"",
-      "expectedOutput": null
+      "expectedOutput": "\"12\""
     },
     {
       "input": "\"1231\"\n\"1\"",
-      "expectedOutput": null
+      "expectedOutput": "\"231\""
     },
     {
       "input": "\"551\"\n\"5\"",
-      "expectedOutput": null
+      "expectedOutput": "\"51\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "number = \"123\", digit = \"3\"",
+      "expectedOutput": "\"12\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "number = \"1231\", digit = \"1\"",
+      "expectedOutput": "\"231\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"124\"\n\"4\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1232\"\n\"2\"",
-      "expectedOutput": null
+      "input": "number = \"551\", digit = \"5\"",
+      "expectedOutput": "\"51\""
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-digit-from-number-to-maximize-result/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.217Z",
+    "collectedAt": "2026-10-19T18:40:27.493Z",
     "sourceUpdatedAt": null
   }
 }

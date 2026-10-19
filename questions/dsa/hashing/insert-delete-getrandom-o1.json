@@ -18,7 +18,13 @@
     "At most 2 * 105 calls will be made to insert, remove, and getRandom.",
     "There will be at least one element in the data structure when getRandom is called."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"RandomizedSet\", \"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\"]\n[[], [1], [2], [2], [], [1], [2], []]",
+      "output": "[null, true, false, true, 2, true, false, 2]",
+      "explanation": "RandomizedSet randomizedSet = new RandomizedSet();\nrandomizedSet.insert(1); // Inserts 1 to the set. Returns true as 1 was inserted successfully.\nrandomizedSet.remove(2); // Returns false as 2 does not exist in the set.\nrandomizedSet.insert(2); // Inserts 2 to the set, returns true. Set now contains [1,2].\nrandomizedSet.getRandom(); // getRandom() should return either 1 or 2 randomly.\nrandomizedSet.remove(1); // Removes 1 from the set, returns true. Set now contains [2].\nrandomizedSet.insert(2); // 2 was already in the set, so return false.\nrandomizedSet.getRandom(); // Since 2 is the only number in the set, getRandom() will always return 2."
+    }
+  ],
   "starterCode": {
     "cpp": "class RandomizedSet {\npublic:\n    RandomizedSet() {\n        \n    }\n    \n    bool insert(int val) {\n        \n    }\n    \n    bool remove(int val) {\n        \n    }\n    \n    int getRandom() {\n        \n    }\n};\n\n/**\n * Your RandomizedSet object will be instantiated and called as such:\n * RandomizedSet* obj = new RandomizedSet();\n * bool param_1 = obj->insert(val);\n * bool param_2 = obj->remove(val);\n * int param_3 = obj->getRandom();\n */",
     "java": "class RandomizedSet {\n\n    public RandomizedSet() {\n        \n    }\n    \n    public boolean insert(int val) {\n        \n    }\n    \n    public boolean remove(int val) {\n        \n    }\n    \n    public int getRandom() {\n        \n    }\n}\n\n/**\n * Your RandomizedSet object will be instantiated and called as such:\n * RandomizedSet obj = new RandomizedSet();\n * boolean param_1 = obj.insert(val);\n * boolean param_2 = obj.remove(val);\n * int param_3 = obj.getRandom();\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[1],[2],[2],[],[1],[2],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true, 2, true, false, 2]"
     }
   ],
   "testCases": [
     {
       "input": "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[1],[2],[2],[],[1],[2],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true, 2, true, false, 2]"
     },
     {
-      "input": "[\"RandomizedSet\",\"insert\",\"remove\",\"insert\",\"getRandom\",\"remove\",\"insert\",\"getRandom\"]\n[[],[2],[3],[3],[],[2],[3],[]]",
-      "expectedOutput": null
+      "input": "[\"RandomizedSet\", \"insert\", \"remove\", \"insert\", \"getRandom\", \"remove\", \"insert\", \"getRandom\"]\n[[], [1], [2], [2], [], [1], [2], []]",
+      "expectedOutput": "[null, true, false, true, 2, true, false, 2]"
     }
   ],
   "sqlSchema": null,
@@ -65,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/insert-delete-getrandom-o1/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:30.083Z",
+    "collectedAt": "2026-10-19T18:40:19.517Z",
     "sourceUpdatedAt": null
   }
 }

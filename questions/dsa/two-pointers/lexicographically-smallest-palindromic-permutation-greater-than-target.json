@@ -17,24 +17,24 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;baba&quot;, target = &quot;abba&quot;",
-      "output": "&quot;baab&quot;",
-      "explanation": "The palindromic permutations of s (in lexicographical order) are &quot;abba&quot; and &quot;baab&quot;.\n\tThe lexicographically smallest permutation that is strictly greater than target is &quot;baab&quot;."
+      "input": "s = \"baba\", target = \"abba\"",
+      "output": "\"baab\"",
+      "explanation": "The palindromic permutations of s (in lexicographical order) are \"abba\" and \"baab\".\n\tThe lexicographically smallest permutation that is strictly greater than target is \"baab\"."
     },
     {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "The palindromic permutations of s (in lexicographical order) are &quot;abba&quot; and &quot;baab&quot;.\n\tNone of them is lexicographically strictly greater than target. Therefore, the answer is &quot;&quot;."
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "output": "\"\"",
+      "explanation": "The palindromic permutations of s (in lexicographical order) are \"abba\" and \"baab\".\n\tNone of them is lexicographically strictly greater than target. Therefore, the answer is \"\"."
     },
     {
-      "input": "s = &quot;abc&quot;, target = &quot;abb&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"abc\", target = \"abb\"",
+      "output": "\"\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;aac&quot;, target = &quot;abb&quot;",
-      "output": "&quot;aca&quot;",
-      "explanation": "The only palindromic permutation of s is &quot;aca&quot;.\n\t&quot;aca&quot; is strictly greater than target. Therefore, the answer is &quot;aca&quot;."
+      "input": "s = \"aac\", target = \"abb\"",
+      "output": "\"aca\"",
+      "explanation": "The only palindromic permutation of s is \"aca\".\n\t\"aca\" is strictly greater than target. Therefore, the answer is \"aca\"."
     }
   ],
   "starterCode": {
@@ -60,102 +60,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;baba&quot;, target = &quot;abba&quot;",
-      "expectedOutput": "&quot;baab&quot;"
+      "input": "\"baba\"\n\"abba\"",
+      "expectedOutput": "\"baab\""
     },
     {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"baba\"\n\"bbaa\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;abc&quot;, target = &quot;abb&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"abc\"\n\"abb\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;aac&quot;, target = &quot;abb&quot;",
-      "expectedOutput": "&quot;aca&quot;"
+      "input": "\"aac\"\n\"abb\"",
+      "expectedOutput": "\"aca\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;baba&quot;, target = &quot;abba&quot;",
-      "expectedOutput": "&quot;baab&quot;"
-    },
-    {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;abc&quot;, target = &quot;abb&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;aac&quot;, target = &quot;abb&quot;",
-      "expectedOutput": "&quot;aca&quot;"
-    },
-    {
       "input": "\"baba\"\n\"abba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"baab\""
     },
     {
       "input": "\"baba\"\n\"bbaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"abc\"\n\"abb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"aac\"\n\"abb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aca\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"baba\", target = \"abba\"",
+      "expectedOutput": "\"baab\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
+      "input": "s = \"abc\", target = \"abb\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"aac\", target = \"abb\"",
+      "expectedOutput": "\"aca\""
     }
   ],
   "sqlSchema": null,
@@ -173,7 +125,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-palindromic-permutation-greater-than-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.114Z",
+    "collectedAt": "2026-10-19T18:40:20.237Z",
     "sourceUpdatedAt": null
   }
 }

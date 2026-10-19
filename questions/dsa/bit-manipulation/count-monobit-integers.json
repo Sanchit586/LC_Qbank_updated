@@ -17,12 +17,12 @@
     {
       "input": "n = 1",
       "output": "2",
-      "explanation": "The integers in the range [0, 1] have binary representations &quot;0&quot; and &quot;1&quot;.\n\tEach representation consists of identical bits. Thus, the answer is 2."
+      "explanation": "The integers in the range [0, 1] have binary representations \"0\" and \"1\".\n\tEach representation consists of identical bits. Thus, the answer is 2."
     },
     {
       "input": "n = 4",
       "output": "3",
-      "explanation": "The integers in the range [0, 4] include binaries &quot;0&quot;, &quot;1&quot;, &quot;10&quot;, &quot;11&quot;, and &quot;100&quot;.\n\tOnly 0, 1 and 3 satisfy the Monobit condition. Thus, the answer is 3."
+      "explanation": "The integers in the range [0, 4] include binaries \"0\", \"1\", \"10\", \"11\", and \"100\".\n\tOnly 0, 1 and 3 satisfy the Monobit condition. Thus, the answer is 3."
     }
   ],
   "starterCode": {
@@ -48,86 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 1",
       "expectedOutput": "2"
     },
     {
       "input": "n = 4",
       "expectedOutput": "3"
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -141,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-monobit-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:13.254Z",
+    "collectedAt": "2026-10-19T18:40:15.264Z",
     "sourceUpdatedAt": null
   }
 }

@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 43261596",
+      "input": "43261596",
       "expectedOutput": "964176192"
     },
     {
-      "input": "n = 2147483644",
+      "input": "2147483644",
       "expectedOutput": "1073741822"
     }
   ],
   "testCases": [
     {
+      "input": "43261596",
+      "expectedOutput": "964176192"
+    },
+    {
+      "input": "2147483644",
+      "expectedOutput": "1073741822"
+    },
+    {
       "input": "n = 43261596",
       "expectedOutput": "964176192"
     },
     {
       "input": "n = 2147483644",
       "expectedOutput": "1073741822"
-    },
-    {
-      "input": "43261596",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483644",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-bits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.712Z",
+    "collectedAt": "2026-10-19T18:40:27.816Z",
     "sourceUpdatedAt": null
   }
 }

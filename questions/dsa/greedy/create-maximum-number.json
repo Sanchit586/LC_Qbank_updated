@@ -61,20 +61,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5",
+      "input": "[3,4,6,5]\n[9,1,2,5,8,3]\n5",
       "expectedOutput": "[9,8,6,5,3]"
     },
     {
-      "input": "nums1 = [6,7], nums2 = [6,0,4], k = 5",
+      "input": "[6,7]\n[6,0,4]\n5",
       "expectedOutput": "[6,7,6,0,4]"
     },
     {
-      "input": "nums1 = [3,9], nums2 = [8,9], k = 3",
+      "input": "[3,9]\n[8,9]\n3",
       "expectedOutput": "[9,8,9]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,4,6,5]\n[9,1,2,5,8,3]\n5",
+      "expectedOutput": "[9,8,6,5,3]"
+    },
+    {
+      "input": "[6,7]\n[6,0,4]\n5",
+      "expectedOutput": "[6,7,6,0,4]"
+    },
+    {
+      "input": "[3,9]\n[8,9]\n3",
+      "expectedOutput": "[9,8,9]"
+    },
+    {
       "input": "nums1 = [3,4,6,5], nums2 = [9,1,2,5,8,3], k = 5",
       "expectedOutput": "[9,8,6,5,3]"
     },
@@ -85,38 +97,6 @@
     {
       "input": "nums1 = [3,9], nums2 = [8,9], k = 3",
       "expectedOutput": "[9,8,9]"
-    },
-    {
-      "input": "[3,4,6,5]\n[9,1,2,5,8,3]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,7]\n[6,0,4]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,9]\n[8,9]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [7,8], nums3 = [7,1,5], k = 6",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [4,10], nums3 = [9,10], k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,5,7,6]\n[10,2,3,6,9,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,8]\n[7,1,5]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [4,5,7,6], nums3 = [10,2,3,6,9,4], k = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/create-maximum-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:31.372Z",
+    "collectedAt": "2026-10-19T18:40:16.088Z",
     "sourceUpdatedAt": null
   }
 }

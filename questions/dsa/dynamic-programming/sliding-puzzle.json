@@ -63,20 +63,32 @@
   },
   "publicTests": [
     {
-      "input": "board = [[1,2,3],[4,0,5]]",
+      "input": "[[1,2,3],[4,0,5]]",
       "expectedOutput": "1"
     },
     {
-      "input": "board = [[1,2,3],[5,4,0]]",
+      "input": "[[1,2,3],[5,4,0]]",
       "expectedOutput": "-1"
     },
     {
-      "input": "board = [[4,1,2],[5,0,3]]",
+      "input": "[[4,1,2],[5,0,3]]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[4,0,5]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[1,2,3],[5,4,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[4,1,2],[5,0,3]]",
+      "expectedOutput": "5"
+    },
+    {
       "input": "board = [[1,2,3],[4,0,5]]",
       "expectedOutput": "1"
     },
@@ -87,38 +99,6 @@
     {
       "input": "board = [[4,1,2],[5,0,3]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[[1,2,3],[4,0,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,3],[5,4,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,1,2],[5,0,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "board = [[2,3,4],[6,5,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "board = [[5,2,3],[6,1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3,4],[5,1,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3,4],[6,5,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "board = [[2,3,4],[5,1,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sliding-puzzle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:29.998Z",
+    "collectedAt": "2026-10-19T18:40:29.674Z",
     "sourceUpdatedAt": null
   }
 }

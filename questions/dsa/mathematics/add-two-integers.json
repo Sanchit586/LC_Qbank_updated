@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "num1 = 12, num2 = 5",
+      "input": "12\n5",
       "expectedOutput": "17"
     },
     {
-      "input": "num1 = -10, num2 = 4",
+      "input": "-10\n4",
       "expectedOutput": "-6"
     }
   ],
   "testCases": [
     {
+      "input": "12\n5",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "-10\n4",
+      "expectedOutput": "-6"
+    },
+    {
       "input": "num1 = 12, num2 = 5",
       "expectedOutput": "17"
     },
     {
       "input": "num1 = -10, num2 = 4",
       "expectedOutput": "-6"
-    },
-    {
-      "input": "12\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "-10\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 13, num3 = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -86,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/add-two-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.374Z",
+    "collectedAt": "2026-10-19T18:40:12.843Z",
     "sourceUpdatedAt": null
   }
 }

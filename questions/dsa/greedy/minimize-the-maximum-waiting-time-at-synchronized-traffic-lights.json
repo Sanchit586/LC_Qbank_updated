@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "period = 8, lights = [2,3], arrivalTime = [2,5,8,11]",
+      "input": "8\n[2,3]\n[2,5,8,11]",
       "expectedOutput": "5"
     },
     {
-      "input": "period = 10, lights = [3,6,8], arrivalTime = [4,9,15]",
+      "input": "10\n[3,6,8]\n[4,9,15]",
       "expectedOutput": "1"
     },
     {
-      "input": "period = 5, lights = [2], arrivalTime = [2,3,4,5,6]",
+      "input": "5\n[2]\n[2,3,4,5,6]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "8\n[2,3]\n[2,5,8,11]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "10\n[3,6,8]\n[4,9,15]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "5\n[2]\n[2,3,4,5,6]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "period = 8, lights = [2,3], arrivalTime = [2,5,8,11]",
       "expectedOutput": "5"
     },
@@ -81,38 +93,6 @@
     {
       "input": "period = 5, lights = [2], arrivalTime = [2,3,4,5,6]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "8\n[2,3]\n[2,5,8,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n[3,6,8]\n[4,9,15]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[2]\n[2,3,4,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "period = 11, lights = [4,7,9], arrivalTime = [5,10,16]",
-      "expectedOutput": null
-    },
-    {
-      "input": "period = 6, lights = [3], arrivalTime = [3,4,5,6,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n[3,4]\n[3,6,9,12]",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n[4,7,9]\n[5,10,16]",
-      "expectedOutput": null
-    },
-    {
-      "input": "period = 9, lights = [3,4], arrivalTime = [3,6,9,12]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimize-the-maximum-waiting-time-at-synchronized-traffic-lights/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:43.065Z",
+    "collectedAt": "2026-10-19T18:40:23.302Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "start = &quot;RXXLRXRXL&quot;, result = &quot;XRLXXRRLX&quot;",
+      "input": "start = \"RXXLRXRXL\", result = \"XRLXXRRLX\"",
       "output": "true",
-      "explanation": "We can transform start to result following these steps:\nRXXLRXRXL -&gt;\nXRXLRXRXL -&gt;\nXRLXRXRXL -&gt;\nXRLXXRRXL -&gt;\nXRLXXRRLX"
+      "explanation": "We can transform start to result following these steps:\nRXXLRXRXL ->\nXRXLRXRXL ->\nXRLXRXRXL ->\nXRLXXRRXL ->\nXRLXXRRLX"
     },
     {
-      "input": "start = &quot;X&quot;, result = &quot;L&quot;",
+      "input": "start = \"X\", result = \"L\"",
       "output": "false",
       "explanation": null
     }
@@ -50,78 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "start = &quot;RXXLRXRXL&quot;, result = &quot;XRLXXRRLX&quot;",
+      "input": "\"RXXLRXRXL\"\n\"XRLXXRRLX\"",
       "expectedOutput": "true"
     },
     {
-      "input": "start = &quot;X&quot;, result = &quot;L&quot;",
+      "input": "\"X\"\n\"L\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "start = &quot;RXXLRXRXL&quot;, result = &quot;XRLXXRRLX&quot;",
+      "input": "\"RXXLRXRXL\"\n\"XRLXXRRLX\"",
       "expectedOutput": "true"
     },
     {
-      "input": "start = &quot;X&quot;, result = &quot;L&quot;",
+      "input": "\"X\"\n\"L\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"RXXLRXRXL\"\n\"XRLXXRRLX\"",
-      "expectedOutput": null
+      "input": "start = \"RXXLRXRXL\", result = \"XRLXXRRLX\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"X\"\n\"L\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "start = \"X\", result = \"L\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -135,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/swap-adjacent-in-lr-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:54.543Z",
+    "collectedAt": "2026-10-19T18:40:30.791Z",
     "sourceUpdatedAt": null
   }
 }

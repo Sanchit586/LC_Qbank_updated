@@ -20,13 +20,13 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;bab&quot;,&quot;dab&quot;,&quot;cab&quot;], groups = [1,2,2]",
-      "output": "[&quot;bab&quot;,&quot;cab&quot;]",
+      "input": "words = [\"bab\",\"dab\",\"cab\"], groups = [1,2,2]",
+      "output": "[\"bab\",\"cab\"]",
       "explanation": "A subsequence that can be selected is [0,2].\n\n\n\tgroups[0] != groups[2]\n\twords[0].length == words[2].length, and the hamming distance between them is 1."
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,2,3,4]",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]",
+      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,2,3,4]",
+      "output": "[\"a\",\"b\",\"c\",\"d\"]",
       "explanation": "We can select the subsequence [0,1,2,3]."
     }
   ],
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;bab&quot;,&quot;dab&quot;,&quot;cab&quot;], groups = [1,2,2]",
-      "expectedOutput": "[&quot;bab&quot;,&quot;cab&quot;]"
+      "input": "[\"bab\",\"dab\",\"cab\"]\n[1,2,2]",
+      "expectedOutput": "[\"bab\",\"cab\"]"
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,2,3,4]",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]"
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[1,2,3,4]",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;bab&quot;,&quot;dab&quot;,&quot;cab&quot;], groups = [1,2,2]",
-      "expectedOutput": "[&quot;bab&quot;,&quot;cab&quot;]"
-    },
-    {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,2,3,4]",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;]"
-    },
-    {
       "input": "[\"bab\",\"dab\",\"cab\"]\n[1,2,2]",
-      "expectedOutput": null
+      "expectedOutput": "[\"bab\",\"cab\"]"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\"]\n[1,2,3,4]",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     },
     {
-      "input": "words = [&quot;bab&quot;,&quot;dab&quot;,&quot;cab&quot;], groups = [2,3,3]",
-      "expectedOutput": null
+      "input": "words = [\"bab\",\"dab\",\"cab\"], groups = [1,2,2]",
+      "expectedOutput": "[\"bab\",\"cab\"]"
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,2,3,4]",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.156Z",
+    "collectedAt": "2026-10-19T18:40:20.741Z",
     "sourceUpdatedAt": null
   }
 }

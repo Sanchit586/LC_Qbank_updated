@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "queries = [3,1,2,1], m = 5",
+      "input": "[3,1,2,1]\n5",
       "expectedOutput": "[2,1,2,1]"
     },
     {
-      "input": "queries = [4,1,2,2], m = 4",
+      "input": "[4,1,2,2]\n4",
       "expectedOutput": "[3,1,2,0]"
     },
     {
-      "input": "queries = [7,5,5,8,3], m = 8",
+      "input": "[7,5,5,8,3]\n8",
       "expectedOutput": "[6,5,0,7,5]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,1,2,1]\n5",
+      "expectedOutput": "[2,1,2,1]"
+    },
+    {
+      "input": "[4,1,2,2]\n4",
+      "expectedOutput": "[3,1,2,0]"
+    },
+    {
+      "input": "[7,5,5,8,3]\n8",
+      "expectedOutput": "[6,5,0,7,5]"
+    },
+    {
       "input": "queries = [3,1,2,1], m = 5",
       "expectedOutput": "[2,1,2,1]"
     },
@@ -81,74 +93,6 @@
     {
       "input": "queries = [7,5,5,8,3], m = 8",
       "expectedOutput": "[6,5,0,7,5]"
-    },
-    {
-      "input": "[3,1,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,1,2,2]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,5,5,8,3]\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/queries-on-a-permutation-with-key/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:02.207Z",
+    "collectedAt": "2026-10-19T18:40:27.076Z",
     "sourceUpdatedAt": null
   }
 }

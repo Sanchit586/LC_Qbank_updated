@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 555",
+      "input": "555",
       "expectedOutput": "888"
     },
     {
-      "input": "num = 9",
+      "input": "9",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "555",
+      "expectedOutput": "888"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "8"
+    },
+    {
       "input": "num = 555",
       "expectedOutput": "888"
     },
     {
       "input": "num = 9",
       "expectedOutput": "8"
-    },
-    {
-      "input": "555",
-      "expectedOutput": null
-    },
-    {
-      "input": "9",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/max-difference-you-can-get-from-changing-an-integer/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:01.445Z",
+    "collectedAt": "2026-10-19T18:40:21.141Z",
     "sourceUpdatedAt": null
   }
 }

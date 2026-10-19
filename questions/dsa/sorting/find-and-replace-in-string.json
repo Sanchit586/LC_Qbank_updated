@@ -23,14 +23,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;a&quot;, &quot;cd&quot;], targets = [&quot;eee&quot;, &quot;ffff&quot;]",
-      "output": "&quot;eeebffff&quot;",
-      "explanation": "&quot;a&quot; occurs at index 0 in s, so we replace it with &quot;eee&quot;.\n&quot;cd&quot; occurs at index 2 in s, so we replace it with &quot;ffff&quot;."
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"a\", \"cd\"], targets = [\"eee\", \"ffff\"]",
+      "output": "\"eeebffff\"",
+      "explanation": "\"a\" occurs at index 0 in s, so we replace it with \"eee\".\n\"cd\" occurs at index 2 in s, so we replace it with \"ffff\"."
     },
     {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;ab&quot;,&quot;ec&quot;], targets = [&quot;eee&quot;,&quot;ffff&quot;]",
-      "output": "&quot;eeecd&quot;",
-      "explanation": "&quot;ab&quot; occurs at index 0 in s, so we replace it with &quot;eee&quot;.\n&quot;ec&quot; does not occur at index 2 in s, so we do nothing."
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"ab\",\"ec\"], targets = [\"eee\",\"ffff\"]",
+      "output": "\"eeecd\"",
+      "explanation": "\"ab\" occurs at index 0 in s, so we replace it with \"eee\".\n\"ec\" does not occur at index 2 in s, so we do nothing."
     }
   ],
   "starterCode": {
@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;a&quot;, &quot;cd&quot;], targets = [&quot;eee&quot;, &quot;ffff&quot;]",
-      "expectedOutput": "&quot;eeebffff&quot;"
+      "input": "\"abcd\"\n[0, 2]\n[\"a\", \"cd\"]\n[\"eee\", \"ffff\"]",
+      "expectedOutput": "\"eeebffff\""
     },
     {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;ab&quot;,&quot;ec&quot;], targets = [&quot;eee&quot;,&quot;ffff&quot;]",
-      "expectedOutput": "&quot;eeecd&quot;"
+      "input": "\"abcd\"\n[0, 2]\n[\"ab\",\"ec\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeecd\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;a&quot;, &quot;cd&quot;], targets = [&quot;eee&quot;, &quot;ffff&quot;]",
-      "expectedOutput": "&quot;eeebffff&quot;"
-    },
-    {
-      "input": "s = &quot;abcd&quot;, indices = [0, 2], sources = [&quot;ab&quot;,&quot;ec&quot;], targets = [&quot;eee&quot;,&quot;ffff&quot;]",
-      "expectedOutput": "&quot;eeecd&quot;"
-    },
-    {
       "input": "\"abcd\"\n[0, 2]\n[\"a\", \"cd\"]\n[\"eee\", \"ffff\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"eeebffff\""
     },
     {
       "input": "\"abcd\"\n[0, 2]\n[\"ab\",\"ec\"]\n[\"eee\",\"ffff\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"eeecd\""
     },
     {
-      "input": "s = &quot;abcd&quot;, indices = [1, 3], sources = [&quot;a&quot;, &quot;cd&quot;], targets = [&quot;eee&quot;, &quot;ffff&quot;]",
-      "expectedOutput": null
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"a\", \"cd\"], targets = [\"eee\", \"ffff\"]",
+      "expectedOutput": "\"eeebffff\""
+    },
+    {
+      "input": "s = \"abcd\", indices = [0, 2], sources = [\"ab\",\"ec\"], targets = [\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeecd\""
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-and-replace-in-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:57.660Z",
+    "collectedAt": "2026-10-19T18:40:17.467Z",
     "sourceUpdatedAt": null
   }
 }

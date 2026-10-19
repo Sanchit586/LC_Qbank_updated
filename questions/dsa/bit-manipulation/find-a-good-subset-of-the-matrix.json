@@ -23,12 +23,12 @@
     {
       "input": "grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
       "output": "[0,1]",
-      "explanation": "We can choose the 0th and 1st rows to create a good subset of rows.\nThe length of the chosen subset is 2.\n- The sum of the 0th&nbsp;column is 0 + 0 = 0, which is at most half of the length of the subset.\n- The sum of the 1st&nbsp;column is 1 + 0 = 1, which is at most half of the length of the subset.\n- The sum of the 2nd&nbsp;column is 1 + 0 = 1, which is at most half of the length of the subset.\n- The sum of the 3rd&nbsp;column is 0 + 1 = 1, which is at most half of the length of the subset."
+      "explanation": "We can choose the 0th and 1st rows to create a good subset of rows.\nThe length of the chosen subset is 2.\n- The sum of the 0th column is 0 + 0 = 0, which is at most half of the length of the subset.\n- The sum of the 1st column is 1 + 0 = 1, which is at most half of the length of the subset.\n- The sum of the 2nd column is 1 + 0 = 1, which is at most half of the length of the subset.\n- The sum of the 3rd column is 0 + 1 = 1, which is at most half of the length of the subset."
     },
     {
       "input": "grid = [[0]]",
       "output": "[0]",
-      "explanation": "We can choose the 0th row to create a good subset of rows.\nThe length of the chosen subset is 1.\n- The sum of the 0th&nbsp;column is 0, which is at most half of the length of the subset."
+      "explanation": "We can choose the 0th row to create a good subset of rows.\nThe length of the chosen subset is 1.\n- The sum of the 0th column is 0, which is at most half of the length of the subset."
     },
     {
       "input": "grid = [[1,1,1],[1,1,1]]",
@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
+      "input": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "grid = [[0]]",
+      "input": "[[0]]",
       "expectedOutput": "[0]"
     },
     {
-      "input": "grid = [[1,1,1],[1,1,1]]",
+      "input": "[[1,1,1],[1,1,1]]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
+      "expectedOutput": "[0,1]"
+    },
+    {
+      "input": "[[0]]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[[1,1,1],[1,1,1]]",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "grid = [[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
       "expectedOutput": "[0,1]"
     },
@@ -83,38 +95,6 @@
     {
       "input": "grid = [[1,1,1],[1,1,1]]",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "[[0,1,1,0],[0,0,0,1],[1,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1],[1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2,2],[2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,2,1],[1,1,1,2],[2,2,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1,2,2,1],[1,1,1,2],[2,2,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-a-good-subset-of-the-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:55.469Z",
+    "collectedAt": "2026-10-19T18:40:17.363Z",
     "sourceUpdatedAt": null
   }
 }

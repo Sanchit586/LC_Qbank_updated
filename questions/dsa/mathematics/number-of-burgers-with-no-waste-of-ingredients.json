@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "tomatoSlices = 16, cheeseSlices = 7",
+      "input": "16\n7",
       "expectedOutput": "[1,6]\nExplantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.\nThere will be no remaining ingredients."
     },
     {
-      "input": "tomatoSlices = 17, cheeseSlices = 4",
+      "input": "17\n4",
       "expectedOutput": "[]\nExplantion: There will be no way to use all ingredients to make small and jumbo burgers."
     },
     {
-      "input": "tomatoSlices = 4, cheeseSlices = 17",
+      "input": "4\n17",
       "expectedOutput": "[]\nExplantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
     }
   ],
   "testCases": [
     {
+      "input": "16\n7",
+      "expectedOutput": "[1,6]\nExplantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.\nThere will be no remaining ingredients."
+    },
+    {
+      "input": "17\n4",
+      "expectedOutput": "[]\nExplantion: There will be no way to use all ingredients to make small and jumbo burgers."
+    },
+    {
+      "input": "4\n17",
+      "expectedOutput": "[]\nExplantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
+    },
+    {
       "input": "tomatoSlices = 16, cheeseSlices = 7",
       "expectedOutput": "[1,6]\nExplantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.\nThere will be no remaining ingredients."
     },
@@ -76,38 +88,6 @@
     {
       "input": "tomatoSlices = 4, cheeseSlices = 17",
       "expectedOutput": "[]\nExplantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
-    },
-    {
-      "input": "16\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "17\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n17",
-      "expectedOutput": null
-    },
-    {
-      "input": "tomatoSlices = 18, cheeseSlices = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "tomatoSlices = 5, cheeseSlices = 18",
-      "expectedOutput": null
-    },
-    {
-      "input": "17\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "18\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "tomatoSlices = 17, cheeseSlices = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-burgers-with-no-waste-of-ingredients/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.840Z",
+    "collectedAt": "2026-10-19T18:40:25.791Z",
     "sourceUpdatedAt": null
   }
 }

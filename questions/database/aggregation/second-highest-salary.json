@@ -31,38 +31,30 @@
   },
   "publicTests": [
     {
-      "input": "Employee table:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n| 2  | 200    |\n| 3  | 300    |\n+----+--------+",
+      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100],[2,200],[3,300]]}}",
       "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| 200                 |\n+---------------------+"
     },
     {
-      "input": "Employee table:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n+----+--------+",
+      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100]]}}",
       "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| null                |\n+---------------------+"
     }
   ],
   "testCases": [
     {
+      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100],[2,200],[3,300]]}}",
+      "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| 200                 |\n+---------------------+"
+    },
+    {
+      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100]]}}",
+      "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| null                |\n+---------------------+"
+    },
+    {
       "input": "Employee table:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n| 2  | 200    |\n| 3  | 300    |\n+----+--------+",
       "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| 200                 |\n+---------------------+"
     },
     {
       "input": "Employee table:\n+----+--------+\n| id | salary |\n+----+--------+\n| 1  | 100    |\n+----+--------+",
       "expectedOutput": "+---------------------+\n| SecondHighestSalary |\n+---------------------+\n| null                |\n+---------------------+"
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100],[2,200],[3,300]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,100]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"salary\"]},\"rows\":{\"Employee\":[[1,null],[2,null],[3,null]]}}",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": "Create table If Not Exists Employee (id int, salary int)\n\nTruncate table Employee",
@@ -78,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/second-highest-salary/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:17.835Z",
+    "collectedAt": "2026-10-19T18:40:28.185Z",
     "sourceUpdatedAt": null
   }
 }

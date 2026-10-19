@@ -18,7 +18,13 @@
     "0 <= value <= 109",
     "At most 2 * 105 calls will be made to get and put."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"LFUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"get\", \"put\", \"get\", \"get\", \"get\"]\n[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]",
+      "output": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]",
+      "explanation": "// cnt(x) = the use counter for key x\n// cache=[] will show the last used order for tiebreakers (leftmost element is  most recent)\nLFUCache lfu = new LFUCache(2);\nlfu.put(1, 1);   // cache=[1,_], cnt(1)=1\nlfu.put(2, 2);   // cache=[2,1], cnt(2)=1, cnt(1)=1\nlfu.get(1);      // return 1\n                 // cache=[1,2], cnt(2)=1, cnt(1)=2\nlfu.put(3, 3);   // 2 is the LFU key because cnt(2)=1 is the smallest, invalidate 2.\n                 // cache=[3,1], cnt(3)=1, cnt(1)=2\nlfu.get(2);      // return -1 (not found)\nlfu.get(3);      // return 3\n                 // cache=[3,1], cnt(3)=2, cnt(1)=2\nlfu.put(4, 4);   // Both 1 and 3 have the same cnt, but 1 is LRU, invalidate 1.\n                 // cache=[4,3], cnt(4)=1, cnt(3)=2\nlfu.get(1);      // return -1 (not found)\nlfu.get(3);      // return 3\n                 // cache=[3,4], cnt(4)=1, cnt(3)=3\nlfu.get(4);      // return 4\n                 // cache=[4,3], cnt(4)=2, cnt(3)=3"
+    }
+  ],
   "starterCode": {
     "cpp": "class LFUCache {\npublic:\n    LFUCache(int capacity) {\n        \n    }\n    \n    int get(int key) {\n        \n    }\n    \n    void put(int key, int value) {\n        \n    }\n};\n\n/**\n * Your LFUCache object will be instantiated and called as such:\n * LFUCache* obj = new LFUCache(capacity);\n * int param_1 = obj->get(key);\n * obj->put(key,value);\n */",
     "java": "class LFUCache {\n\n    public LFUCache(int capacity) {\n        \n    }\n    \n    public int get(int key) {\n        \n    }\n    \n    public void put(int key, int value) {\n        \n    }\n}\n\n/**\n * Your LFUCache object will be instantiated and called as such:\n * LFUCache obj = new LFUCache(capacity);\n * int param_1 = obj.get(key);\n * obj.put(key,value);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"LFUCache\",\"put\",\"put\",\"get\",\"put\",\"get\",\"get\",\"put\",\"get\",\"get\",\"get\"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[3],[4,4],[1],[3],[4]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]"
     }
   ],
   "testCases": [
     {
       "input": "[\"LFUCache\",\"put\",\"put\",\"get\",\"put\",\"get\",\"get\",\"put\",\"get\",\"get\",\"get\"]\n[[2],[1,1],[2,2],[1],[3,3],[2],[3],[4,4],[1],[3],[4]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]"
     },
     {
-      "input": "[\"LFUCache\",\"put\",\"put\",\"get\",\"put\",\"get\",\"get\",\"put\",\"get\",\"get\",\"get\"]\n[[3],[2,2],[3,3],[2],[4,4],[3],[4],[5,5],[2],[4],[5]]",
-      "expectedOutput": null
+      "input": "[\"LFUCache\", \"put\", \"put\", \"get\", \"put\", \"get\", \"get\", \"put\", \"get\", \"get\", \"get\"]\n[[2], [1, 1], [2, 2], [1], [3, 3], [2], [3], [4, 4], [1], [3], [4]]",
+      "expectedOutput": "[null, null, null, 1, null, -1, 3, null, -1, 3, 4]"
     }
   ],
   "sqlSchema": null,
@@ -65,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lfu-cache/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.190Z",
+    "collectedAt": "2026-10-19T18:40:20.294Z",
     "sourceUpdatedAt": null
   }
 }

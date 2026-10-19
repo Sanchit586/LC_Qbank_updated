@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;011101&quot;",
+      "input": "s = \"011101\"",
       "output": "5",
-      "explanation": "All possible ways of splitting s into two non-empty substrings are:\nleft = &quot;0&quot; and right = &quot;11101&quot;, score = 1 + 4 = 5 \nleft = &quot;01&quot; and right = &quot;1101&quot;, score = 1 + 3 = 4 \nleft = &quot;011&quot; and right = &quot;101&quot;, score = 1 + 2 = 3 \nleft = &quot;0111&quot; and right = &quot;01&quot;, score = 1 + 1 = 2 \nleft = &quot;01110&quot; and right = &quot;1&quot;, score = 2 + 1 = 3"
+      "explanation": "All possible ways of splitting s into two non-empty substrings are:\nleft = \"0\" and right = \"11101\", score = 1 + 4 = 5 \nleft = \"01\" and right = \"1101\", score = 1 + 3 = 4 \nleft = \"011\" and right = \"101\", score = 1 + 2 = 3 \nleft = \"0111\" and right = \"01\", score = 1 + 1 = 2 \nleft = \"01110\" and right = \"1\", score = 2 + 1 = 3"
     },
     {
-      "input": "s = &quot;00111&quot;",
+      "input": "s = \"00111\"",
       "output": "5",
-      "explanation": "When left = &quot;00&quot; and right = &quot;111&quot;, we get the maximum score = 2 + 3 = 5"
+      "explanation": "When left = \"00\" and right = \"111\", we get the maximum score = 2 + 3 = 5"
     },
     {
-      "input": "s = &quot;1111&quot;",
+      "input": "s = \"1111\"",
       "output": "3",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;011101&quot;",
+      "input": "\"011101\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;00111&quot;",
+      "input": "\"00111\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;1111&quot;",
+      "input": "\"1111\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;011101&quot;",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "s = &quot;00111&quot;",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "s = &quot;1111&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "\"011101\"",
-      "expectedOutput": null
+      "expectedOutput": "5"
     },
     {
       "input": "\"00111\"",
-      "expectedOutput": null
+      "expectedOutput": "5"
     },
     {
       "input": "\"1111\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"011101\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"00111\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1111\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-score-after-splitting-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:29.001Z",
+    "collectedAt": "2026-10-19T18:40:22.534Z",
     "sourceUpdatedAt": null
   }
 }

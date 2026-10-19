@@ -26,12 +26,12 @@
     {
       "input": "intervals = [[3,4],[2,3],[1,2]]",
       "output": "[-1,0,1]",
-      "explanation": "There is no right interval for [3,4].\nThe right interval for [2,3] is [3,4] since start0 = 3 is the smallest start that is &gt;= end1 = 3.\nThe right interval for [1,2] is [2,3] since start1 = 2 is the smallest start that is &gt;= end2 = 2."
+      "explanation": "There is no right interval for [3,4].\nThe right interval for [2,3] is [3,4] since start0 = 3 is the smallest start that is >= end1 = 3.\nThe right interval for [1,2] is [2,3] since start1 = 2 is the smallest start that is >= end2 = 2."
     },
     {
       "input": "intervals = [[1,4],[2,3],[3,4]]",
       "output": "[-1,2,-1]",
-      "explanation": "There is no right interval for [1,4] and [3,4].\nThe right interval for [2,3] is [3,4] since start2 = 3 is the smallest start that is &gt;= end1 = 3."
+      "explanation": "There is no right interval for [1,4] and [3,4].\nThe right interval for [2,3] is [3,4] since start2 = 3 is the smallest start that is >= end1 = 3."
     }
   ],
   "starterCode": {
@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "intervals = [[1,2]]",
+      "input": "[[1,2]]",
       "expectedOutput": "[-1]"
     },
     {
-      "input": "intervals = [[3,4],[2,3],[1,2]]",
+      "input": "[[3,4],[2,3],[1,2]]",
       "expectedOutput": "[-1,0,1]"
     },
     {
-      "input": "intervals = [[1,4],[2,3],[3,4]]",
+      "input": "[[1,4],[2,3],[3,4]]",
       "expectedOutput": "[-1,2,-1]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2]]",
+      "expectedOutput": "[-1]"
+    },
+    {
+      "input": "[[3,4],[2,3],[1,2]]",
+      "expectedOutput": "[-1,0,1]"
+    },
+    {
+      "input": "[[1,4],[2,3],[3,4]]",
+      "expectedOutput": "[-1,2,-1]"
+    },
+    {
       "input": "intervals = [[1,2]]",
       "expectedOutput": "[-1]"
     },
@@ -81,38 +93,6 @@
     {
       "input": "intervals = [[1,4],[2,3],[3,4]]",
       "expectedOutput": "[-1,2,-1]"
-    },
-    {
-      "input": "[[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,4],[2,3],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,4],[2,3],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[4,5],[3,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,5],[3,4],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,5],[3,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-right-interval/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:06.214Z",
+    "collectedAt": "2026-10-19T18:40:18.093Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;codeleet&quot;, indices = [4,5,6,7,0,2,1,3]",
-      "output": "&quot;leetcode&quot;",
-      "explanation": "As shown, &quot;codeleet&quot; becomes &quot;leetcode&quot; after shuffling."
+      "input": "s = \"codeleet\", indices = [4,5,6,7,0,2,1,3]",
+      "output": "\"leetcode\"",
+      "explanation": "As shown, \"codeleet\" becomes \"leetcode\" after shuffling."
     },
     {
-      "input": "s = &quot;abc&quot;, indices = [0,1,2]",
-      "output": "&quot;abc&quot;",
+      "input": "s = \"abc\", indices = [0,1,2]",
+      "output": "\"abc\"",
       "explanation": "After shuffling, each character remains in its position."
     }
   ],
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;codeleet&quot;, indices = [4,5,6,7,0,2,1,3]",
-      "expectedOutput": "&quot;leetcode&quot;"
+      "input": "\"codeleet\"\n[4,5,6,7,0,2,1,3]",
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "s = &quot;abc&quot;, indices = [0,1,2]",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"abc\"\n[0,1,2]",
+      "expectedOutput": "\"abc\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;codeleet&quot;, indices = [4,5,6,7,0,2,1,3]",
-      "expectedOutput": "&quot;leetcode&quot;"
-    },
-    {
-      "input": "s = &quot;abc&quot;, indices = [0,1,2]",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
       "input": "\"codeleet\"\n[4,5,6,7,0,2,1,3]",
-      "expectedOutput": null
+      "expectedOutput": "\"leetcode\""
     },
     {
       "input": "\"abc\"\n[0,1,2]",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = &quot;codeleet&quot;, indices = [5,6,7,8,1,3,2,4]",
-      "expectedOutput": null
+      "input": "s = \"codeleet\", indices = [4,5,6,7,0,2,1,3]",
+      "expectedOutput": "\"leetcode\""
+    },
+    {
+      "input": "s = \"abc\", indices = [0,1,2]",
+      "expectedOutput": "\"abc\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shuffle-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:29.038Z",
+    "collectedAt": "2026-10-19T18:40:29.591Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "cars = [[1,2],[2,1],[4,3],[7,2]]",
+      "input": "[[1,2],[2,1],[4,3],[7,2]]",
       "expectedOutput": "[1.00000,-1.00000,3.00000,-1.00000]"
     },
     {
-      "input": "cars = [[3,4],[5,4],[6,3],[9,1]]",
+      "input": "[[3,4],[5,4],[6,3],[9,1]]",
       "expectedOutput": "[2.00000,1.00000,1.50000,-1.00000]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,1],[4,3],[7,2]]",
+      "expectedOutput": "[1.00000,-1.00000,3.00000,-1.00000]"
+    },
+    {
+      "input": "[[3,4],[5,4],[6,3],[9,1]]",
+      "expectedOutput": "[2.00000,1.00000,1.50000,-1.00000]"
+    },
+    {
       "input": "cars = [[1,2],[2,1],[4,3],[7,2]]",
       "expectedOutput": "[1.00000,-1.00000,3.00000,-1.00000]"
     },
     {
       "input": "cars = [[3,4],[5,4],[6,3],[9,1]]",
       "expectedOutput": "[2.00000,1.00000,1.50000,-1.00000]"
-    },
-    {
-      "input": "[[1,2],[2,1],[4,3],[7,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,4],[5,4],[6,3],[9,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cars = [[2,3],[3,2],[5,4],[8,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/car-fleet-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.359Z",
+    "collectedAt": "2026-10-19T18:40:13.913Z",
     "sourceUpdatedAt": null
   }
 }

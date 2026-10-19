@@ -17,18 +17,18 @@
   "examples": [
     {
       "input": "n = 1, k = 3",
-      "output": "&quot;c&quot;",
-      "explanation": "The list [&quot;a&quot;, &quot;b&quot;, &quot;c&quot;] contains all happy strings of length 1. The third string is &quot;c&quot;."
+      "output": "\"c\"",
+      "explanation": "The list [\"a\", \"b\", \"c\"] contains all happy strings of length 1. The third string is \"c\"."
     },
     {
       "input": "n = 1, k = 4",
-      "output": "&quot;&quot;",
+      "output": "\"\"",
       "explanation": "There are only 3 happy strings of length 1."
     },
     {
       "input": "n = 3, k = 9",
-      "output": "&quot;cab&quot;",
-      "explanation": "There are 12 different happy string of length 3 [&quot;aba&quot;, &quot;abc&quot;, &quot;aca&quot;, &quot;acb&quot;, &quot;bab&quot;, &quot;bac&quot;, &quot;bca&quot;, &quot;bcb&quot;, &quot;cab&quot;, &quot;cac&quot;, &quot;cba&quot;, &quot;cbc&quot;]. You will find the 9th string = &quot;cab&quot;"
+      "output": "\"cab\"",
+      "explanation": "There are 12 different happy string of length 3 [\"aba\", \"abc\", \"aca\", \"acb\", \"bab\", \"bac\", \"bca\", \"bcb\", \"cab\", \"cac\", \"cba\", \"cbc\"]. You will find the 9th string = \"cab\""
     }
   ],
   "starterCode": {
@@ -54,62 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 1, k = 3",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "1\n3",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "n = 1, k = 4",
-      "expectedOutput": "&quot;&quot;"
+      "input": "1\n4",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "n = 3, k = 9",
-      "expectedOutput": "&quot;cab&quot;"
+      "input": "3\n9",
+      "expectedOutput": "\"cab\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 1, k = 3",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
-      "input": "n = 1, k = 4",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "n = 3, k = 9",
-      "expectedOutput": "&quot;cab&quot;"
-    },
-    {
       "input": "1\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
       "input": "1\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "3\n9",
-      "expectedOutput": null
+      "expectedOutput": "\"cab\""
     },
     {
-      "input": "n = 2, k = 5",
-      "expectedOutput": null
+      "input": "n = 1, k = 3",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "n = 4, k = 10",
-      "expectedOutput": null
+      "input": "n = 1, k = 4",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, k = 4",
-      "expectedOutput": null
+      "input": "n = 3, k = 9",
+      "expectedOutput": "\"cab\""
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/the-k-th-lexicographical-string-of-all-happy-strings-of-length-n/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.823Z",
+    "collectedAt": "2026-10-19T18:40:30.897Z",
     "sourceUpdatedAt": null
   }
 }

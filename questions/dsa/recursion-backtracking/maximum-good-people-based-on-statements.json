@@ -22,12 +22,12 @@
     {
       "input": "statements = [[2,1,2],[1,2,2],[2,0,2]]",
       "output": "2",
-      "explanation": "Each person makes a single statement.\n- Person 0 states that person 1 is good.\n- Person 1 states that person 0 is good.\n- Person 2 states that person 1 is bad.\nLet&#39;s take person 2 as the key.\n- Assuming that person 2 is a good person:\n    - Based on the statement made by person 2, person 1 is a bad person.\n    - Now we know for sure that person 1 is bad and person 2 is good.\n    - Based on the statement made by person 1, and since person 1 is bad, they could be:\n        - telling the truth. There will be a contradiction in this case and this assumption is invalid.\n        - lying. In this case, person 0 is also a bad person and lied in their statement.\n    - Following that person 2 is a good person, there will be only one good person in the group.\n- Assuming that person 2 is a bad person:\n    - Based on the statement made by person 2, and since person 2 is bad, they could be:\n        - telling the truth. Following this scenario, person 0 and 1 are both bad as explained before.\n            - Following that person 2 is bad but told the truth, there will be no good persons in the group.\n        - lying. In this case person 1 is a good person.\n            - Since person 1 is a good person, person 0 is also a good person.\n            - Following that person 2 is bad and lied, there will be two good persons in the group.\nWe can see that at most 2 persons are good in the best case, so we return 2.\nNote that there is more than one way to arrive at this conclusion."
+      "explanation": "Each person makes a single statement.\n- Person 0 states that person 1 is good.\n- Person 1 states that person 0 is good.\n- Person 2 states that person 1 is bad.\nLet's take person 2 as the key.\n- Assuming that person 2 is a good person:\n    - Based on the statement made by person 2, person 1 is a bad person.\n    - Now we know for sure that person 1 is bad and person 2 is good.\n    - Based on the statement made by person 1, and since person 1 is bad, they could be:\n        - telling the truth. There will be a contradiction in this case and this assumption is invalid.\n        - lying. In this case, person 0 is also a bad person and lied in their statement.\n    - Following that person 2 is a good person, there will be only one good person in the group.\n- Assuming that person 2 is a bad person:\n    - Based on the statement made by person 2, and since person 2 is bad, they could be:\n        - telling the truth. Following this scenario, person 0 and 1 are both bad as explained before.\n            - Following that person 2 is bad but told the truth, there will be no good persons in the group.\n        - lying. In this case person 1 is a good person.\n            - Since person 1 is a good person, person 0 is also a good person.\n            - Following that person 2 is bad and lied, there will be two good persons in the group.\nWe can see that at most 2 persons are good in the best case, so we return 2.\nNote that there is more than one way to arrive at this conclusion."
     },
     {
       "input": "statements = [[2,0],[0,2]]",
       "output": "1",
-      "explanation": "Each person makes a single statement.\n- Person 0 states that person 1 is bad.\n- Person 1 states that person 0 is bad.\nLet&#39;s take person 0 as the key.\n- Assuming that person 0 is a good person:\n    - Based on the statement made by person 0, person 1 is a bad person and was lying.\n    - Following that person 0 is a good person, there will be only one good person in the group.\n- Assuming that person 0 is a bad person:\n    - Based on the statement made by person 0, and since person 0 is bad, they could be:\n        - telling the truth. Following this scenario, person 0 and 1 are both bad.\n            - Following that person 0 is bad but told the truth, there will be no good persons in the group.\n        - lying. In this case person 1 is a good person.\n            - Following that person 0 is bad and lied, there will be only one good person in the group.\nWe can see that at most, one person is good in the best case, so we return 1.\nNote that there is more than one way to arrive at this conclusion."
+      "explanation": "Each person makes a single statement.\n- Person 0 states that person 1 is bad.\n- Person 1 states that person 0 is bad.\nLet's take person 0 as the key.\n- Assuming that person 0 is a good person:\n    - Based on the statement made by person 0, person 1 is a bad person and was lying.\n    - Following that person 0 is a good person, there will be only one good person in the group.\n- Assuming that person 0 is a bad person:\n    - Based on the statement made by person 0, and since person 0 is bad, they could be:\n        - telling the truth. Following this scenario, person 0 and 1 are both bad.\n            - Following that person 0 is bad but told the truth, there will be no good persons in the group.\n        - lying. In this case person 1 is a good person.\n            - Following that person 0 is bad and lied, there will be only one good person in the group.\nWe can see that at most, one person is good in the best case, so we return 1.\nNote that there is more than one way to arrive at this conclusion."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "statements = [[2,1,2],[1,2,2],[2,0,2]]",
+      "input": "[[2,1,2],[1,2,2],[2,0,2]]",
       "expectedOutput": "2"
     },
     {
-      "input": "statements = [[2,0],[0,2]]",
+      "input": "[[2,0],[0,2]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,1,2],[1,2,2],[2,0,2]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[2,0],[0,2]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "statements = [[2,1,2],[1,2,2],[2,0,2]]",
       "expectedOutput": "2"
     },
     {
       "input": "statements = [[2,0],[0,2]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[2,1,2],[1,2,2],[2,0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,0],[0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "statements = [[3,2,3],[2,3,3],[3,1,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-good-people-based-on-statements/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:13.679Z",
+    "collectedAt": "2026-10-19T18:40:21.882Z",
     "sourceUpdatedAt": null
   }
 }

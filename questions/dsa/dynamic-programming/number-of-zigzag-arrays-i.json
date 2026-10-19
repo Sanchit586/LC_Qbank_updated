@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, l = 4, r = 5",
+      "input": "3\n4\n5",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, l = 1, r = 3",
+      "input": "3\n1\n3",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "3\n4\n5",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n1\n3",
+      "expectedOutput": "10"
+    },
+    {
       "input": "n = 3, l = 4, r = 5",
       "expectedOutput": "2"
     },
     {
       "input": "n = 3, l = 1, r = 3",
       "expectedOutput": "10"
-    },
-    {
-      "input": "3\n4\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, l = 5, r = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-zigzag-arrays-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.899Z",
+    "collectedAt": "2026-10-19T18:40:26.328Z",
     "sourceUpdatedAt": null
   }
 }

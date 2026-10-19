@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "number = &quot;1-23-45 6&quot;",
-      "output": "&quot;123-456&quot;",
-      "explanation": "The digits are &quot;123456&quot;.\nStep 1: There are more than 4 digits, so group the next 3 digits. The 1st block is &quot;123&quot;.\nStep 2: There are 3 digits remaining, so put them in a single block of length 3. The 2nd block is &quot;456&quot;.\nJoining the blocks gives &quot;123-456&quot;."
+      "input": "number = \"1-23-45 6\"",
+      "output": "\"123-456\"",
+      "explanation": "The digits are \"123456\".\nStep 1: There are more than 4 digits, so group the next 3 digits. The 1st block is \"123\".\nStep 2: There are 3 digits remaining, so put them in a single block of length 3. The 2nd block is \"456\".\nJoining the blocks gives \"123-456\"."
     },
     {
-      "input": "number = &quot;123 4-567&quot;",
-      "output": "&quot;123-45-67&quot;",
-      "explanation": "The digits are &quot;1234567&quot;.\nStep 1: There are more than 4 digits, so group the next 3 digits. The 1st block is &quot;123&quot;.\nStep 2: There are 4 digits left, so split them into two blocks of length 2. The blocks are &quot;45&quot; and &quot;67&quot;.\nJoining the blocks gives &quot;123-45-67&quot;."
+      "input": "number = \"123 4-567\"",
+      "output": "\"123-45-67\"",
+      "explanation": "The digits are \"1234567\".\nStep 1: There are more than 4 digits, so group the next 3 digits. The 1st block is \"123\".\nStep 2: There are 4 digits left, so split them into two blocks of length 2. The blocks are \"45\" and \"67\".\nJoining the blocks gives \"123-45-67\"."
     },
     {
-      "input": "number = &quot;123 4-5678&quot;",
-      "output": "&quot;123-456-78&quot;",
-      "explanation": "The digits are &quot;12345678&quot;.\nStep 1: The 1st block is &quot;123&quot;.\nStep 2: The 2nd block is &quot;456&quot;.\nStep 3: There are 2 digits left, so put them in a single block of length 2. The 3rd block is &quot;78&quot;.\nJoining the blocks gives &quot;123-456-78&quot;."
+      "input": "number = \"123 4-5678\"",
+      "output": "\"123-456-78\"",
+      "explanation": "The digits are \"12345678\".\nStep 1: The 1st block is \"123\".\nStep 2: The 2nd block is \"456\".\nStep 3: There are 2 digits left, so put them in a single block of length 2. The 3rd block is \"78\".\nJoining the blocks gives \"123-456-78\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "number = &quot;1-23-45 6&quot;",
-      "expectedOutput": "&quot;123-456&quot;"
+      "input": "\"1-23-45 6\"",
+      "expectedOutput": "\"123-456\""
     },
     {
-      "input": "number = &quot;123 4-567&quot;",
-      "expectedOutput": "&quot;123-45-67&quot;"
+      "input": "\"123 4-567\"",
+      "expectedOutput": "\"123-45-67\""
     },
     {
-      "input": "number = &quot;123 4-5678&quot;",
-      "expectedOutput": "&quot;123-456-78&quot;"
+      "input": "\"123 4-5678\"",
+      "expectedOutput": "\"123-456-78\""
     }
   ],
   "testCases": [
     {
-      "input": "number = &quot;1-23-45 6&quot;",
-      "expectedOutput": "&quot;123-456&quot;"
-    },
-    {
-      "input": "number = &quot;123 4-567&quot;",
-      "expectedOutput": "&quot;123-45-67&quot;"
-    },
-    {
-      "input": "number = &quot;123 4-5678&quot;",
-      "expectedOutput": "&quot;123-456-78&quot;"
-    },
-    {
       "input": "\"1-23-45 6\"",
-      "expectedOutput": null
+      "expectedOutput": "\"123-456\""
     },
     {
       "input": "\"123 4-567\"",
-      "expectedOutput": null
+      "expectedOutput": "\"123-45-67\""
     },
     {
       "input": "\"123 4-5678\"",
-      "expectedOutput": null
+      "expectedOutput": "\"123-456-78\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "number = \"1-23-45 6\"",
+      "expectedOutput": "\"123-456\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "number = \"123 4-567\"",
+      "expectedOutput": "\"123-45-67\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "number = \"123 4-5678\"",
+      "expectedOutput": "\"123-456-78\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reformat-phone-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:07.966Z",
+    "collectedAt": "2026-10-19T18:40:27.403Z",
     "sourceUpdatedAt": null
   }
 }

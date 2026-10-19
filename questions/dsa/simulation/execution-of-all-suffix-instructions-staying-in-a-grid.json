@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "n = 3, startPos = [0,1], s = &quot;RRDDLU&quot;",
+      "input": "n = 3, startPos = [0,1], s = \"RRDDLU\"",
       "output": "[1,5,4,3,1,0]",
-      "explanation": "Starting from startPos and beginning execution from the ith instruction:\n- 0th: &quot;RRDDLU&quot;. Only one instruction &quot;R&quot; can be executed before it moves off the grid.\n- 1st:  &quot;RDDLU&quot;. All five instructions can be executed while it stays in the grid and ends at (1, 1).\n- 2nd:   &quot;DDLU&quot;. All four instructions can be executed while it stays in the grid and ends at (1, 0).\n- 3rd:    &quot;DLU&quot;. All three instructions can be executed while it stays in the grid and ends at (0, 0).\n- 4th:     &quot;LU&quot;. Only one instruction &quot;L&quot; can be executed before it moves off the grid.\n- 5th:      &quot;U&quot;. If moving up, it would move off the grid."
+      "explanation": "Starting from startPos and beginning execution from the ith instruction:\n- 0th: \"RRDDLU\". Only one instruction \"R\" can be executed before it moves off the grid.\n- 1st:  \"RDDLU\". All five instructions can be executed while it stays in the grid and ends at (1, 1).\n- 2nd:   \"DDLU\". All four instructions can be executed while it stays in the grid and ends at (1, 0).\n- 3rd:    \"DLU\". All three instructions can be executed while it stays in the grid and ends at (0, 0).\n- 4th:     \"LU\". Only one instruction \"L\" can be executed before it moves off the grid.\n- 5th:      \"U\". If moving up, it would move off the grid."
     },
     {
-      "input": "n = 2, startPos = [1,1], s = &quot;LURD&quot;",
+      "input": "n = 2, startPos = [1,1], s = \"LURD\"",
       "output": "[4,1,0,0]",
-      "explanation": "- 0th: &quot;LURD&quot;.\n- 1st:  &quot;URD&quot;.\n- 2nd:   &quot;RD&quot;.\n- 3rd:    &quot;D&quot;."
+      "explanation": "- 0th: \"LURD\".\n- 1st:  \"URD\".\n- 2nd:   \"RD\".\n- 3rd:    \"D\"."
     },
     {
-      "input": "n = 1, startPos = [0,0], s = &quot;LRUD&quot;",
+      "input": "n = 1, startPos = [0,0], s = \"LRUD\"",
       "output": "[0,0,0,0]",
       "explanation": "No matter which instruction the robot begins execution from, it would move off the grid."
     }
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, startPos = [0,1], s = &quot;RRDDLU&quot;",
+      "input": "3\n[0,1]\n\"RRDDLU\"",
       "expectedOutput": "[1,5,4,3,1,0]"
     },
     {
-      "input": "n = 2, startPos = [1,1], s = &quot;LURD&quot;",
+      "input": "2\n[1,1]\n\"LURD\"",
       "expectedOutput": "[4,1,0,0]"
     },
     {
-      "input": "n = 1, startPos = [0,0], s = &quot;LRUD&quot;",
+      "input": "1\n[0,0]\n\"LRUD\"",
       "expectedOutput": "[0,0,0,0]"
     }
   ],
   "testCases": [
     {
-      "input": "n = 3, startPos = [0,1], s = &quot;RRDDLU&quot;",
+      "input": "3\n[0,1]\n\"RRDDLU\"",
       "expectedOutput": "[1,5,4,3,1,0]"
     },
     {
-      "input": "n = 2, startPos = [1,1], s = &quot;LURD&quot;",
+      "input": "2\n[1,1]\n\"LURD\"",
       "expectedOutput": "[4,1,0,0]"
     },
     {
-      "input": "n = 1, startPos = [0,0], s = &quot;LRUD&quot;",
+      "input": "1\n[0,0]\n\"LRUD\"",
       "expectedOutput": "[0,0,0,0]"
     },
     {
-      "input": "3\n[0,1]\n\"RRDDLU\"",
-      "expectedOutput": null
+      "input": "n = 3, startPos = [0,1], s = \"RRDDLU\"",
+      "expectedOutput": "[1,5,4,3,1,0]"
     },
     {
-      "input": "2\n[1,1]\n\"LURD\"",
-      "expectedOutput": null
+      "input": "n = 2, startPos = [1,1], s = \"LURD\"",
+      "expectedOutput": "[4,1,0,0]"
     },
     {
-      "input": "1\n[0,0]\n\"LRUD\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, startPos = [2,2], s = &quot;LURD&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, startPos = [1,1], s = &quot;LRUD&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[1,2]\n\"RRDDLU\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[2,2]\n\"LURD\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, startPos = [1,2], s = &quot;RRDDLU&quot;",
-      "expectedOutput": null
+      "input": "n = 1, startPos = [0,0], s = \"LRUD\"",
+      "expectedOutput": "[0,0,0,0]"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/execution-of-all-suffix-instructions-staying-in-a-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.037Z",
+    "collectedAt": "2026-10-19T18:40:17.176Z",
     "sourceUpdatedAt": null
   }
 }

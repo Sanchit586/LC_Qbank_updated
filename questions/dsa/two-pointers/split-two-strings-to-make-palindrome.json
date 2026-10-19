@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
-      "output": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome.",
+      "input": "a = \"x\", b = \"y\"",
+      "output": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome.",
       "explanation": null
     },
     {
-      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
+      "input": "a = \"xbdef\", b = \"xecab\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
-      "output": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome.",
+      "input": "a = \"ulacfd\", b = \"jizalu\"",
+      "output": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome.",
       "explanation": null
     }
   ],
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
-      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome."
+      "input": "\"x\"\n\"y\"",
+      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome."
     },
     {
-      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
+      "input": "\"xbdef\"\n\"xecab\"",
       "expectedOutput": "false"
     },
     {
-      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
-      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome."
+      "input": "\"ulacfd\"\n\"jizalu\"",
+      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
     }
   ],
   "testCases": [
     {
-      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
-      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome."
-    },
-    {
-      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
-      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome."
-    },
-    {
       "input": "\"x\"\n\"y\"",
-      "expectedOutput": null
+      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome."
     },
     {
       "input": "\"xbdef\"\n\"xecab\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"ulacfd\"\n\"jizalu\"",
-      "expectedOutput": null
+      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "a = \"x\", b = \"y\"",
+      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome."
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "a = \"xbdef\", b = \"xecab\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "a = \"ulacfd\", b = \"jizalu\"",
+      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
     }
   ],
   "sqlSchema": null,
@@ -153,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-two-strings-to-make-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.605Z",
+    "collectedAt": "2026-10-19T18:40:30.171Z",
     "sourceUpdatedAt": null
   }
 }

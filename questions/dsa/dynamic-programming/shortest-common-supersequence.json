@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
-      "output": "&quot;cabac&quot;",
-      "explanation": "str1 = &quot;abac&quot; is a subsequence of &quot;cabac&quot; because we can delete the first &quot;c&quot;.\nstr2 = &quot;cab&quot; is a subsequence of &quot;cabac&quot; because we can delete the last &quot;ac&quot;.\nThe answer provided is the shortest such string that satisfies these properties."
+      "input": "str1 = \"abac\", str2 = \"cab\"",
+      "output": "\"cabac\"",
+      "explanation": "str1 = \"abac\" is a subsequence of \"cabac\" because we can delete the first \"c\".\nstr2 = \"cab\" is a subsequence of \"cabac\" because we can delete the last \"ac\".\nThe answer provided is the shortest such string that satisfies these properties."
     },
     {
-      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
-      "output": "&quot;aaaaaaaa&quot;",
+      "input": "str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"",
+      "output": "\"aaaaaaaa\"",
       "explanation": null
     }
   ],
@@ -50,82 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
-      "expectedOutput": "&quot;cabac&quot;"
+      "input": "\"abac\"\n\"cab\"",
+      "expectedOutput": "\"cabac\""
     },
     {
-      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
-      "expectedOutput": "&quot;aaaaaaaa&quot;"
+      "input": "\"aaaaaaaa\"\n\"aaaaaaaa\"",
+      "expectedOutput": "\"aaaaaaaa\""
     }
   ],
   "testCases": [
     {
-      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
-      "expectedOutput": "&quot;cabac&quot;"
-    },
-    {
-      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
-      "expectedOutput": "&quot;aaaaaaaa&quot;"
-    },
-    {
       "input": "\"abac\"\n\"cab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cabac\""
     },
     {
       "input": "\"aaaaaaaa\"\n\"aaaaaaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aaaaaaaa\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "str1 = \"abac\", str2 = \"cab\"",
+      "expectedOutput": "\"cabac\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "str2 = &quot;aaaaaaaa&quot;, str3 = &quot;aaaaaaaa&quot;",
-      "expectedOutput": null
+      "input": "str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"",
+      "expectedOutput": "\"aaaaaaaa\""
     }
   ],
   "sqlSchema": null,
@@ -140,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-common-supersequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:23.703Z",
+    "collectedAt": "2026-10-19T18:40:28.371Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "date = &quot;2019-01-09&quot;",
+      "input": "date = \"2019-01-09\"",
       "output": "9",
       "explanation": "Given date is the 9th day of the year in 2019."
     },
     {
-      "input": "date = &quot;2019-02-10&quot;",
+      "input": "date = \"2019-02-10\"",
       "output": "41",
       "explanation": null
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "date = &quot;2019-01-09&quot;",
+      "input": "\"2019-01-09\"",
       "expectedOutput": "9"
     },
     {
-      "input": "date = &quot;2019-02-10&quot;",
+      "input": "\"2019-02-10\"",
       "expectedOutput": "41"
     }
   ],
   "testCases": [
     {
-      "input": "date = &quot;2019-01-09&quot;",
+      "input": "\"2019-01-09\"",
       "expectedOutput": "9"
     },
     {
-      "input": "date = &quot;2019-02-10&quot;",
+      "input": "\"2019-02-10\"",
       "expectedOutput": "41"
     },
     {
-      "input": "\"2019-01-09\"",
-      "expectedOutput": null
+      "input": "date = \"2019-01-09\"",
+      "expectedOutput": "9"
     },
     {
-      "input": "\"2019-02-10\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "date = \"2019-02-10\"",
+      "expectedOutput": "41"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/day-of-the-year/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:33.786Z",
+    "collectedAt": "2026-10-19T18:40:16.170Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "licensePlate = &quot;1s3 PSt&quot;, words = [&quot;step&quot;,&quot;steps&quot;,&quot;stripe&quot;,&quot;stepple&quot;]",
-      "output": "&quot;steps&quot;",
-      "explanation": "licensePlate contains letters &#39;s&#39;, &#39;p&#39;, &#39;s&#39; (ignoring case), and &#39;t&#39;.\n&quot;step&quot; contains &#39;t&#39; and &#39;p&#39;, but only contains 1 &#39;s&#39;.\n&quot;steps&quot; contains &#39;t&#39;, &#39;p&#39;, and both &#39;s&#39; characters.\n&quot;stripe&quot; is missing an &#39;s&#39;.\n&quot;stepple&quot; is missing an &#39;s&#39;.\nSince &quot;steps&quot; is the only word containing all the letters, that is the answer."
+      "input": "licensePlate = \"1s3 PSt\", words = [\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "output": "\"steps\"",
+      "explanation": "licensePlate contains letters 's', 'p', 's' (ignoring case), and 't'.\n\"step\" contains 't' and 'p', but only contains 1 's'.\n\"steps\" contains 't', 'p', and both 's' characters.\n\"stripe\" is missing an 's'.\n\"stepple\" is missing an 's'.\nSince \"steps\" is the only word containing all the letters, that is the answer."
     },
     {
-      "input": "licensePlate = &quot;1s3 456&quot;, words = [&quot;looks&quot;,&quot;pest&quot;,&quot;stew&quot;,&quot;show&quot;]",
-      "output": "&quot;pest&quot;",
-      "explanation": "licensePlate only contains the letter &#39;s&#39;. All the words contain &#39;s&#39;, but among these &quot;pest&quot;, &quot;stew&quot;, and &quot;show&quot; are shortest. The answer is &quot;pest&quot; because it is the word that appears earliest of the 3."
+      "input": "licensePlate = \"1s3 456\", words = [\"looks\",\"pest\",\"stew\",\"show\"]",
+      "output": "\"pest\"",
+      "explanation": "licensePlate only contains the letter 's'. All the words contain 's', but among these \"pest\", \"stew\", and \"show\" are shortest. The answer is \"pest\" because it is the word that appears earliest of the 3."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "licensePlate = &quot;1s3 PSt&quot;, words = [&quot;step&quot;,&quot;steps&quot;,&quot;stripe&quot;,&quot;stepple&quot;]",
-      "expectedOutput": "&quot;steps&quot;"
+      "input": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"steps\""
     },
     {
-      "input": "licensePlate = &quot;1s3 456&quot;, words = [&quot;looks&quot;,&quot;pest&quot;,&quot;stew&quot;,&quot;show&quot;]",
-      "expectedOutput": "&quot;pest&quot;"
+      "input": "\"1s3 456\"\n[\"looks\",\"pest\",\"stew\",\"show\"]",
+      "expectedOutput": "\"pest\""
     }
   ],
   "testCases": [
     {
-      "input": "licensePlate = &quot;1s3 PSt&quot;, words = [&quot;step&quot;,&quot;steps&quot;,&quot;stripe&quot;,&quot;stepple&quot;]",
-      "expectedOutput": "&quot;steps&quot;"
-    },
-    {
-      "input": "licensePlate = &quot;1s3 456&quot;, words = [&quot;looks&quot;,&quot;pest&quot;,&quot;stew&quot;,&quot;show&quot;]",
-      "expectedOutput": "&quot;pest&quot;"
-    },
-    {
       "input": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"steps\""
     },
     {
       "input": "\"1s3 456\"\n[\"looks\",\"pest\",\"stew\",\"show\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"pest\""
     },
     {
-      "input": "licensePlate = &quot;2s4 PSt&quot;, words = [&quot;step&quot;,&quot;steps&quot;,&quot;stripe&quot;,&quot;stepple&quot;]",
-      "expectedOutput": null
+      "input": "licensePlate = \"1s3 PSt\", words = [\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"steps\""
+    },
+    {
+      "input": "licensePlate = \"1s3 456\", words = [\"looks\",\"pest\",\"stew\",\"show\"]",
+      "expectedOutput": "\"pest\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-completing-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:23.713Z",
+    "collectedAt": "2026-10-19T18:40:28.377Z",
     "sourceUpdatedAt": null
   }
 }

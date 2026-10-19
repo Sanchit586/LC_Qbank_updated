@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;abdcdbc&quot;, pattern = &quot;ac&quot;",
+      "input": "text = \"abdcdbc\", pattern = \"ac\"",
       "output": "4",
-      "explanation": "If we add pattern[0] = &#39;a&#39; in between text[1] and text[2], we get &quot;abadcdbc&quot;. Now, the number of times &quot;ac&quot; occurs as a subsequence is 4.\nSome other strings which have 4 subsequences &quot;ac&quot; after adding a character to text are &quot;aabdcdbc&quot; and &quot;abdacdbc&quot;.\nHowever, strings such as &quot;abdcadbc&quot;, &quot;abdccdbc&quot;, and &quot;abdcdbcc&quot;, although obtainable, have only 3 subsequences &quot;ac&quot; and are thus suboptimal.\nIt can be shown that it is not possible to get more than 4 subsequences &quot;ac&quot; by adding only one character."
+      "explanation": "If we add pattern[0] = 'a' in between text[1] and text[2], we get \"abadcdbc\". Now, the number of times \"ac\" occurs as a subsequence is 4.\nSome other strings which have 4 subsequences \"ac\" after adding a character to text are \"aabdcdbc\" and \"abdacdbc\".\nHowever, strings such as \"abdcadbc\", \"abdccdbc\", and \"abdcdbcc\", although obtainable, have only 3 subsequences \"ac\" and are thus suboptimal.\nIt can be shown that it is not possible to get more than 4 subsequences \"ac\" by adding only one character."
     },
     {
-      "input": "text = &quot;aabb&quot;, pattern = &quot;ab&quot;",
+      "input": "text = \"aabb\", pattern = \"ab\"",
       "output": "6",
-      "explanation": "Some of the strings which can be obtained from text and have 6 subsequences &quot;ab&quot; are &quot;aaabb&quot;, &quot;aaabb&quot;, and &quot;aabbb&quot;."
+      "explanation": "Some of the strings which can be obtained from text and have 6 subsequences \"ab\" are \"aaabb\", \"aaabb\", and \"aabbb\"."
     }
   ],
   "starterCode": {
@@ -51,78 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;abdcdbc&quot;, pattern = &quot;ac&quot;",
+      "input": "\"abdcdbc\"\n\"ac\"",
       "expectedOutput": "4"
     },
     {
-      "input": "text = &quot;aabb&quot;, pattern = &quot;ab&quot;",
+      "input": "\"aabb\"\n\"ab\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;abdcdbc&quot;, pattern = &quot;ac&quot;",
+      "input": "\"abdcdbc\"\n\"ac\"",
       "expectedOutput": "4"
     },
     {
-      "input": "text = &quot;aabb&quot;, pattern = &quot;ab&quot;",
+      "input": "\"aabb\"\n\"ab\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"abdcdbc\"\n\"ac\"",
-      "expectedOutput": null
+      "input": "text = \"abdcdbc\", pattern = \"ac\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aabb\"\n\"ab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "text = \"aabb\", pattern = \"ab\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -137,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-number-of-subsequences-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.045Z",
+    "collectedAt": "2026-10-19T18:40:21.310Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "senate = &quot;RD&quot;",
-      "output": "&quot;Radiant&quot;",
-      "explanation": "The first senator comes from Radiant and he can just ban the next senator&#39;s right in round 1. \nAnd the second senator can&#39;t exercise any rights anymore since his right has been banned. \nAnd in round 2, the first senator can just announce the victory since he is the only guy in the senate who can vote."
+      "input": "senate = \"RD\"",
+      "output": "\"Radiant\"",
+      "explanation": "The first senator comes from Radiant and he can just ban the next senator's right in round 1. \nAnd the second senator can't exercise any rights anymore since his right has been banned. \nAnd in round 2, the first senator can just announce the victory since he is the only guy in the senate who can vote."
     },
     {
-      "input": "senate = &quot;RDD&quot;",
-      "output": "&quot;Dire&quot;",
-      "explanation": "The first senator comes from Radiant and he can just ban the next senator&#39;s right in round 1. \nAnd the second senator can&#39;t exercise any rights anymore since his right has been banned. \nAnd the third senator comes from Dire and he can ban the first senator&#39;s right in round 1. \nAnd in round 2, the third senator can just announce the victory since he is the only guy in the senate who can vote."
+      "input": "senate = \"RDD\"",
+      "output": "\"Dire\"",
+      "explanation": "The first senator comes from Radiant and he can just ban the next senator's right in round 1. \nAnd the second senator can't exercise any rights anymore since his right has been banned. \nAnd the third senator comes from Dire and he can ban the first senator's right in round 1. \nAnd in round 2, the third senator can just announce the victory since he is the only guy in the senate who can vote."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "senate = &quot;RD&quot;",
-      "expectedOutput": "&quot;Radiant&quot;"
+      "input": "\"RD\"",
+      "expectedOutput": "\"Radiant\""
     },
     {
-      "input": "senate = &quot;RDD&quot;",
-      "expectedOutput": "&quot;Dire&quot;"
+      "input": "\"RDD\"",
+      "expectedOutput": "\"Dire\""
     }
   ],
   "testCases": [
     {
-      "input": "senate = &quot;RD&quot;",
-      "expectedOutput": "&quot;Radiant&quot;"
-    },
-    {
-      "input": "senate = &quot;RDD&quot;",
-      "expectedOutput": "&quot;Dire&quot;"
-    },
-    {
       "input": "\"RD\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Radiant\""
     },
     {
       "input": "\"RDD\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Dire\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "senate = \"RD\"",
+      "expectedOutput": "\"Radiant\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "senate = \"RDD\"",
+      "expectedOutput": "\"Dire\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/dota2-senate/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.897Z",
+    "collectedAt": "2026-10-19T18:40:16.871Z",
     "sourceUpdatedAt": null
   }
 }

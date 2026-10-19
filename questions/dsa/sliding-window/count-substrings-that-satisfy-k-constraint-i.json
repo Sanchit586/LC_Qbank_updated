@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;10101&quot;, k = 1",
+      "input": "s = \"10101\", k = 1",
       "output": "12",
       "explanation": null
     },
     {
-      "input": "s = &quot;1010101&quot;, k = 2",
+      "input": "s = \"1010101\", k = 2",
       "output": "25",
       "explanation": null
     },
     {
-      "input": "s = &quot;11111&quot;, k = 1",
+      "input": "s = \"11111\", k = 1",
       "output": "15",
       "explanation": null
     }
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;10101&quot;, k = 1",
+      "input": "\"10101\"\n1",
       "expectedOutput": "12"
     },
     {
-      "input": "s = &quot;1010101&quot;, k = 2",
+      "input": "\"1010101\"\n2",
       "expectedOutput": "25"
     },
     {
-      "input": "s = &quot;11111&quot;, k = 1",
+      "input": "\"11111\"\n1",
       "expectedOutput": "15"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;10101&quot;, k = 1",
+      "input": "\"10101\"\n1",
       "expectedOutput": "12"
     },
     {
-      "input": "s = &quot;1010101&quot;, k = 2",
+      "input": "\"1010101\"\n2",
       "expectedOutput": "25"
     },
     {
-      "input": "s = &quot;11111&quot;, k = 1",
+      "input": "\"11111\"\n1",
       "expectedOutput": "15"
     },
     {
-      "input": "\"10101\"\n1",
-      "expectedOutput": null
+      "input": "s = \"10101\", k = 1",
+      "expectedOutput": "12"
     },
     {
-      "input": "\"1010101\"\n2",
-      "expectedOutput": null
+      "input": "s = \"1010101\", k = 2",
+      "expectedOutput": "25"
     },
     {
-      "input": "\"11111\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;1010102&quot;, k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;11112&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"10102\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1010102\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;10102&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"11111\", k = 1",
+      "expectedOutput": "15"
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.568Z",
+    "collectedAt": "2026-10-19T18:40:15.708Z",
     "sourceUpdatedAt": null
   }
 }

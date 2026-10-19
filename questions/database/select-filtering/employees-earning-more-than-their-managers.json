@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Employee table:\n+----+-------+--------+-----------+\n| id | name  | salary | managerId |\n+----+-------+--------+-----------+\n| 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  | Null      |\n| 4  | Max   | 90000  | Null      |\n+----+-------+--------+-----------+",
+      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"salary\", \"managerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
       "expectedOutput": "+----------+\n| Employee |\n+----------+\n| Joe      |\n+----------+"
     }
   ],
   "testCases": [
     {
-      "input": "Employee table:\n+----+-------+--------+-----------+\n| id | name  | salary | managerId |\n+----+-------+--------+-----------+\n| 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  | Null      |\n| 4  | Max   | 90000  | Null      |\n+----+-------+--------+-----------+",
+      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"salary\", \"managerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
       "expectedOutput": "+----------+\n| Employee |\n+----------+\n| Joe      |\n+----------+"
     },
     {
-      "input": "{\"headers\": {\"Employee\": [\"id\", \"name\", \"salary\", \"managerId\"]}, \"rows\": {\"Employee\": [[1, \"Joe\", 70000, 3], [2, \"Henry\", 80000, 4], [3, \"Sam\", 60000, null], [4, \"Max\", 90000, null]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"salary\",\"managerId\"]},\"rows\":{\"Employee\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"salary\",\"managerId\"]},\"rows\":{\"Employee\":[[1,\"Joe\",70000,3]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employee\":[\"id\",\"name\",\"salary\",\"managerId\"]},\"rows\":{\"Employee\":[[1,\"Joe\",70000,null],[2,\"Henry\",80000,null],[3,\"Sam\",60000,null],[4,\"Max\",90000,null]]}}",
-      "expectedOutput": null
+      "input": "Employee table:\n+----+-------+--------+-----------+\n| id | name  | salary | managerId |\n+----+-------+--------+-----------+\n| 1  | Joe   | 70000  | 3         |\n| 2  | Henry | 80000  | 4         |\n| 3  | Sam   | 60000  | Null      |\n| 4  | Max   | 90000  | Null      |\n+----+-------+--------+-----------+",
+      "expectedOutput": "+----------+\n| Employee |\n+----------+\n| Joe      |\n+----------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Employee (id int, name varchar(255), salary int, managerId int)\n\nTruncate table Employee",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/employees-earning-more-than-their-managers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.134Z",
+    "collectedAt": "2026-10-19T18:40:16.995Z",
     "sourceUpdatedAt": null
   }
 }

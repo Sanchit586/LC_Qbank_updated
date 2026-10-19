@@ -24,17 +24,17 @@
   ],
   "examples": [
     {
-      "input": "grid = [[&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;abaca&quot;",
+      "input": "grid = [[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"abaca\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;aba&quot;",
+      "input": "grid = [[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"aba\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "grid = [[&quot;a&quot;]], pattern = &quot;a&quot;",
+      "input": "grid = [[\"a\"]], pattern = \"a\"",
       "output": "1",
       "explanation": null
     }
@@ -62,42 +62,42 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;abaca&quot;",
+      "input": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"abaca\"",
       "expectedOutput": "1"
     },
     {
-      "input": "grid = [[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;aba&quot;",
+      "input": "[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"aba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [[&quot;a&quot;]], pattern = &quot;a&quot;",
+      "input": "[[\"a\"]]\n\"a\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "grid = [[&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;c&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;b&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;c&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;abaca&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "grid = [[&quot;c&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;],[&quot;b&quot;,&quot;b&quot;,&quot;a&quot;,&quot;a&quot;],[&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;a&quot;]], pattern = &quot;aba&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "grid = [[&quot;a&quot;]], pattern = &quot;a&quot;",
-      "expectedOutput": "1"
-    },
-    {
       "input": "[[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"abaca\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "[[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]]\n\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "[[\"a\"]]\n\"a\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
+    },
+    {
+      "input": "grid = [[\"a\",\"a\",\"c\",\"c\"],[\"b\",\"b\",\"b\",\"c\"],[\"a\",\"a\",\"b\",\"a\"],[\"c\",\"a\",\"a\",\"c\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"abaca\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "grid = [[\"c\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"],[\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"a\"]], pattern = \"aba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "grid = [[\"a\"]], pattern = \"a\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -112,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-cells-in-overlapping-horizontal-and-vertical-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:08.395Z",
+    "collectedAt": "2026-10-19T18:40:14.996Z",
     "sourceUpdatedAt": null
   }
 }

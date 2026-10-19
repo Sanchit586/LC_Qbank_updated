@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Queue table:\n+-----------+-------------+--------+------+\n| person_id | person_name | weight | turn |\n+-----------+-------------+--------+------+\n| 5         | Alice       | 250    | 1    |\n| 4         | Bob         | 175    | 5    |\n| 3         | Alex        | 350    | 2    |\n| 6         | John Cena   | 400    | 3    |\n| 1         | Winston     | 500    | 6    |\n| 2         | Marie       | 200    | 4    |\n+-----------+-------------+--------+------+",
+      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"Alice\",250,1],[4,\"Bob\",175,5],[3,\"Alex\",350,2],[6,\"John Cena\",400,3],[1,\"Winston\",500,6],[2,\"Marie\",200,4]]}}",
       "expectedOutput": "+-------------+\n| person_name |\n+-------------+\n| John Cena   |\n+-------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Queue table:\n+-----------+-------------+--------+------+\n| person_id | person_name | weight | turn |\n+-----------+-------------+--------+------+\n| 5         | Alice       | 250    | 1    |\n| 4         | Bob         | 175    | 5    |\n| 3         | Alex        | 350    | 2    |\n| 6         | John Cena   | 400    | 3    |\n| 1         | Winston     | 500    | 6    |\n| 2         | Marie       | 200    | 4    |\n+-----------+-------------+--------+------+",
+      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"Alice\",250,1],[4,\"Bob\",175,5],[3,\"Alex\",350,2],[6,\"John Cena\",400,3],[1,\"Winston\",500,6],[2,\"Marie\",200,4]]}}",
       "expectedOutput": "+-------------+\n| person_name |\n+-------------+\n| John Cena   |\n+-------------+"
     },
     {
-      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"Alice\",250,1],[4,\"Bob\",175,5],[3,\"Alex\",350,2],[6,\"John Cena\",400,3],[1,\"Winston\",500,6],[2,\"Marie\",200,4]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"Alice\",250,1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Queue\":[\"person_id\",\"person_name\",\"weight\",\"turn\"]},\"rows\":{\"Queue\":[[5,\"Alice\",250,null],[4,\"Bob\",175,null],[3,\"Alex\",350,null],[6,\"John Cena\",400,null],[1,\"Winston\",500,null],[2,\"Marie\",200,null]]}}",
-      "expectedOutput": null
+      "input": "Queue table:\n+-----------+-------------+--------+------+\n| person_id | person_name | weight | turn |\n+-----------+-------------+--------+------+\n| 5         | Alice       | 250    | 1    |\n| 4         | Bob         | 175    | 5    |\n| 3         | Alex        | 350    | 2    |\n| 6         | John Cena   | 400    | 3    |\n| 1         | Winston     | 500    | 6    |\n| 2         | Marie       | 200    | 4    |\n+-----------+-------------+--------+------+",
+      "expectedOutput": "+-------------+\n| person_name |\n+-------------+\n| John Cena   |\n+-------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Queue (person_id int, person_name varchar(30), weight int, turn int)\n\nTruncate table Queue",
@@ -68,7 +56,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/last-person-to-fit-in-the-bus/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.150Z",
+    "collectedAt": "2026-10-19T18:40:20.062Z",
     "sourceUpdatedAt": null
   }
 }

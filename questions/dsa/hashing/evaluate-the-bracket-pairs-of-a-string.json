@@ -25,19 +25,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(name)is(age)yearsold&quot;, knowledge = [[&quot;name&quot;,&quot;bob&quot;],[&quot;age&quot;,&quot;two&quot;]]",
-      "output": "&quot;bobistwoyearsold&quot;",
-      "explanation": "The key &quot;name&quot; has a value of &quot;bob&quot;, so replace &quot;(name)&quot; with &quot;bob&quot;.\nThe key &quot;age&quot; has a value of &quot;two&quot;, so replace &quot;(age)&quot; with &quot;two&quot;."
+      "input": "s = \"(name)is(age)yearsold\", knowledge = [[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "output": "\"bobistwoyearsold\"",
+      "explanation": "The key \"name\" has a value of \"bob\", so replace \"(name)\" with \"bob\".\nThe key \"age\" has a value of \"two\", so replace \"(age)\" with \"two\"."
     },
     {
-      "input": "s = &quot;hi(name)&quot;, knowledge = [[&quot;a&quot;,&quot;b&quot;]]",
-      "output": "&quot;hi?&quot;",
-      "explanation": "As you do not know the value of the key &quot;name&quot;, replace &quot;(name)&quot; with &quot;?&quot;."
+      "input": "s = \"hi(name)\", knowledge = [[\"a\",\"b\"]]",
+      "output": "\"hi?\"",
+      "explanation": "As you do not know the value of the key \"name\", replace \"(name)\" with \"?\"."
     },
     {
-      "input": "s = &quot;(a)(a)(a)aaa&quot;, knowledge = [[&quot;a&quot;,&quot;yes&quot;]]",
-      "output": "&quot;yesyesyesaaa&quot;",
-      "explanation": "The same key can appear multiple times.\nThe key &quot;a&quot; has a value of &quot;yes&quot;, so replace all occurrences of &quot;(a)&quot; with &quot;yes&quot;.\nNotice that the &quot;a&quot;s not in a bracket pair are not evaluated."
+      "input": "s = \"(a)(a)(a)aaa\", knowledge = [[\"a\",\"yes\"]]",
+      "output": "\"yesyesyesaaa\"",
+      "explanation": "The same key can appear multiple times.\nThe key \"a\" has a value of \"yes\", so replace all occurrences of \"(a)\" with \"yes\".\nNotice that the \"a\"s not in a bracket pair are not evaluated."
     }
   ],
   "starterCode": {
@@ -63,42 +63,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(name)is(age)yearsold&quot;, knowledge = [[&quot;name&quot;,&quot;bob&quot;],[&quot;age&quot;,&quot;two&quot;]]",
-      "expectedOutput": "&quot;bobistwoyearsold&quot;"
+      "input": "\"(name)is(age)yearsold\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"bobistwoyearsold\""
     },
     {
-      "input": "s = &quot;hi(name)&quot;, knowledge = [[&quot;a&quot;,&quot;b&quot;]]",
-      "expectedOutput": "&quot;hi?&quot;"
+      "input": "\"hi(name)\"\n[[\"a\",\"b\"]]",
+      "expectedOutput": "\"hi?\""
     },
     {
-      "input": "s = &quot;(a)(a)(a)aaa&quot;, knowledge = [[&quot;a&quot;,&quot;yes&quot;]]",
-      "expectedOutput": "&quot;yesyesyesaaa&quot;"
+      "input": "\"(a)(a)(a)aaa\"\n[[\"a\",\"yes\"]]",
+      "expectedOutput": "\"yesyesyesaaa\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(name)is(age)yearsold&quot;, knowledge = [[&quot;name&quot;,&quot;bob&quot;],[&quot;age&quot;,&quot;two&quot;]]",
-      "expectedOutput": "&quot;bobistwoyearsold&quot;"
-    },
-    {
-      "input": "s = &quot;hi(name)&quot;, knowledge = [[&quot;a&quot;,&quot;b&quot;]]",
-      "expectedOutput": "&quot;hi?&quot;"
-    },
-    {
-      "input": "s = &quot;(a)(a)(a)aaa&quot;, knowledge = [[&quot;a&quot;,&quot;yes&quot;]]",
-      "expectedOutput": "&quot;yesyesyesaaa&quot;"
-    },
-    {
       "input": "\"(name)is(age)yearsold\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"bobistwoyearsold\""
     },
     {
       "input": "\"hi(name)\"\n[[\"a\",\"b\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"hi?\""
     },
     {
       "input": "\"(a)(a)(a)aaa\"\n[[\"a\",\"yes\"]]",
-      "expectedOutput": null
+      "expectedOutput": "\"yesyesyesaaa\""
+    },
+    {
+      "input": "s = \"(name)is(age)yearsold\", knowledge = [[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"bobistwoyearsold\""
+    },
+    {
+      "input": "s = \"hi(name)\", knowledge = [[\"a\",\"b\"]]",
+      "expectedOutput": "\"hi?\""
+    },
+    {
+      "input": "s = \"(a)(a)(a)aaa\", knowledge = [[\"a\",\"yes\"]]",
+      "expectedOutput": "\"yesyesyesaaa\""
     }
   ],
   "sqlSchema": null,
@@ -113,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/evaluate-the-bracket-pairs-of-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:52.880Z",
+    "collectedAt": "2026-10-19T18:40:17.096Z",
     "sourceUpdatedAt": null
   }
 }

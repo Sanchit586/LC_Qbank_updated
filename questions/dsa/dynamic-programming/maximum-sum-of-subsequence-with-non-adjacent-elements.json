@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [3,5,9], queries = [[1,-2],[0,-3]]",
+      "input": "[3,5,9]\n[[1,-2],[0,-3]]",
       "expectedOutput": "21"
     },
     {
-      "input": "nums = [0,-1], queries = [[0,-5]]",
+      "input": "[0,-1]\n[[0,-5]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[3,5,9]\n[[1,-2],[0,-3]]",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "[0,-1]\n[[0,-5]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "nums = [3,5,9], queries = [[1,-2],[0,-3]]",
       "expectedOutput": "21"
     },
     {
       "input": "nums = [0,-1], queries = [[0,-5]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[3,5,9]\n[[1,-2],[0,-3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,-1]\n[[0,-5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [4,6,10], queries = [[2,-3],[1,-4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-sum-of-subsequence-with-non-adjacent-elements/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.264Z",
+    "collectedAt": "2026-10-19T18:40:22.754Z",
     "sourceUpdatedAt": null
   }
 }

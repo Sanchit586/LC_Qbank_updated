@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[3,7,8],[9,11,13],[15,16,17]]",
+      "input": "[[3,7,8],[9,11,13],[15,16,17]]",
       "expectedOutput": "[15]"
     },
     {
-      "input": "matrix = [[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
+      "input": "[[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
       "expectedOutput": "[12]"
     },
     {
-      "input": "matrix = [[7,8],[1,2]]",
+      "input": "[[7,8],[1,2]]",
       "expectedOutput": "[7]"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,7,8],[9,11,13],[15,16,17]]",
+      "expectedOutput": "[15]"
+    },
+    {
+      "input": "[[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
+      "expectedOutput": "[12]"
+    },
+    {
+      "input": "[[7,8],[1,2]]",
+      "expectedOutput": "[7]"
+    },
+    {
       "input": "matrix = [[3,7,8],[9,11,13],[15,16,17]]",
       "expectedOutput": "[15]"
     },
@@ -81,38 +93,6 @@
     {
       "input": "matrix = [[7,8],[1,2]]",
       "expectedOutput": "[7]"
-    },
-    {
-      "input": "[[3,7,8],[9,11,13],[15,16,17]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,10,4,2],[9,3,8,7],[15,16,17,12]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[7,8],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,11,5,3],[10,4,9,8],[16,17,18,13]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[8,9],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,8,9],[10,12,14],[16,17,18]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,11,5,3],[10,4,9,8],[16,17,18,13]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[4,8,9],[10,12,14],[16,17,18]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lucky-numbers-in-a-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:58.170Z",
+    "collectedAt": "2026-10-19T18:40:20.846Z",
     "sourceUpdatedAt": null
   }
 }

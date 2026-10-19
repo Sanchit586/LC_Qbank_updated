@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;1100011000&quot;, s2 = &quot;0101001010&quot;, x = 2",
+      "input": "s1 = \"1100011000\", s2 = \"0101001010\", x = 2",
       "output": "4",
-      "explanation": "We can do the following operations:\n- Choose i = 3 and apply the second operation. The resulting string is s1 = &quot;1101111000&quot;.\n- Choose i = 4 and apply the second operation. The resulting string is s1 = &quot;1101001000&quot;.\n- Choose i = 0 and j = 8 and apply the first operation. The resulting string is s1 = &quot;0101001010&quot; = s2.\nThe total cost is 1 + 1 + 2 = 4. It can be shown that it is the minimum cost possible."
+      "explanation": "We can do the following operations:\n- Choose i = 3 and apply the second operation. The resulting string is s1 = \"1101111000\".\n- Choose i = 4 and apply the second operation. The resulting string is s1 = \"1101001000\".\n- Choose i = 0 and j = 8 and apply the first operation. The resulting string is s1 = \"0101001010\" = s2.\nThe total cost is 1 + 1 + 2 = 4. It can be shown that it is the minimum cost possible."
     },
     {
-      "input": "s1 = &quot;10110&quot;, s2 = &quot;00011&quot;, x = 4",
+      "input": "s1 = \"10110\", s2 = \"00011\", x = 4",
       "output": "-1",
       "explanation": "It is not possible to make the two strings equal."
     }
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;1100011000&quot;, s2 = &quot;0101001010&quot;, x = 2",
+      "input": "\"1100011000\"\n\"0101001010\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s1 = &quot;10110&quot;, s2 = &quot;00011&quot;, x = 4",
+      "input": "\"10110\"\n\"00011\"\n4",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;1100011000&quot;, s2 = &quot;0101001010&quot;, x = 2",
+      "input": "\"1100011000\"\n\"0101001010\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s1 = &quot;10110&quot;, s2 = &quot;00011&quot;, x = 4",
+      "input": "\"10110\"\n\"00011\"\n4",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"1100011000\"\n\"0101001010\"\n2",
-      "expectedOutput": null
+      "input": "s1 = \"1100011000\", s2 = \"0101001010\", x = 2",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"10110\"\n\"00011\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;1100011001&quot;, s3 = &quot;101001011&quot;, x = 3",
-      "expectedOutput": null
+      "input": "s1 = \"10110\", s2 = \"00011\", x = 4",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/apply-operations-to-make-two-strings-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.841Z",
+    "collectedAt": "2026-10-19T18:40:13.243Z",
     "sourceUpdatedAt": null
   }
 }

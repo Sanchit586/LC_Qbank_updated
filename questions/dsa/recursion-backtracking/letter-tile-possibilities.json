@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "tiles = &quot;AAB&quot;",
+      "input": "tiles = \"AAB\"",
       "output": "8",
-      "explanation": "The possible sequences are &quot;A&quot;, &quot;B&quot;, &quot;AA&quot;, &quot;AB&quot;, &quot;BA&quot;, &quot;AAB&quot;, &quot;ABA&quot;, &quot;BAA&quot;."
+      "explanation": "The possible sequences are \"A\", \"B\", \"AA\", \"AB\", \"BA\", \"AAB\", \"ABA\", \"BAA\"."
     },
     {
-      "input": "tiles = &quot;AAABBC&quot;",
+      "input": "tiles = \"AAABBC\"",
       "output": "188",
       "explanation": null
     },
     {
-      "input": "tiles = &quot;V&quot;",
+      "input": "tiles = \"V\"",
       "output": "1",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "tiles = &quot;AAB&quot;",
+      "input": "\"AAB\"",
       "expectedOutput": "8"
     },
     {
-      "input": "tiles = &quot;AAABBC&quot;",
+      "input": "\"AAABBC\"",
       "expectedOutput": "188"
     },
     {
-      "input": "tiles = &quot;V&quot;",
+      "input": "\"V\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "tiles = &quot;AAB&quot;",
+      "input": "\"AAB\"",
       "expectedOutput": "8"
     },
     {
-      "input": "tiles = &quot;AAABBC&quot;",
+      "input": "\"AAABBC\"",
       "expectedOutput": "188"
     },
     {
-      "input": "tiles = &quot;V&quot;",
+      "input": "\"V\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"AAB\"",
-      "expectedOutput": null
+      "input": "tiles = \"AAB\"",
+      "expectedOutput": "8"
     },
     {
-      "input": "\"AAABBC\"",
-      "expectedOutput": null
+      "input": "tiles = \"AAABBC\"",
+      "expectedOutput": "188"
     },
     {
-      "input": "\"V\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "tiles = \"V\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/letter-tile-possibilities/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:49.991Z",
+    "collectedAt": "2026-10-19T18:40:20.173Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,12 +19,12 @@
     {
       "input": "n = 8",
       "output": "3",
-      "explanation": "8 -&gt; 4 -&gt; 2 -&gt; 1"
+      "explanation": "8 -> 4 -> 2 -> 1"
     },
     {
       "input": "n = 7",
       "output": "4",
-      "explanation": "7 -&gt; 8 -&gt; 4 -&gt; 2 -&gt; 1\nor 7 -&gt; 6 -&gt; 3 -&gt; 2 -&gt; 1"
+      "explanation": "7 -> 8 -> 4 -> 2 -> 1\nor 7 -> 6 -> 3 -> 2 -> 1"
     },
     {
       "input": "n = 4",
@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 8",
+      "input": "8",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 7",
+      "input": "7",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "8",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "2"
+    },
+    {
       "input": "n = 8",
       "expectedOutput": "3"
     },
@@ -79,74 +91,6 @@
     {
       "input": "n = 4",
       "expectedOutput": "2"
-    },
-    {
-      "input": "8",
-      "expectedOutput": null
-    },
-    {
-      "input": "7",
-      "expectedOutput": null
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -158,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/integer-replacement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.345Z",
+    "collectedAt": "2026-10-19T18:40:19.547Z",
     "sourceUpdatedAt": null
   }
 }

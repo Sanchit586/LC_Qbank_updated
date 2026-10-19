@@ -21,7 +21,7 @@
     {
       "input": "dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]",
       "output": "7",
-      "explanation": "The initial health of the knight must be at least 7 if he follows the optimal path: RIGHT-&gt; RIGHT -&gt; DOWN -&gt; DOWN."
+      "explanation": "The initial health of the knight must be at least 7 if he follows the optimal path: RIGHT-> RIGHT -> DOWN -> DOWN."
     },
     {
       "input": "dungeon = [[0]]",
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]",
+      "input": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]",
       "expectedOutput": "7"
     },
     {
-      "input": "dungeon = [[0]]",
+      "input": "[[0]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[0]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "dungeon = [[-2,-3,3],[-5,-10,1],[10,30,-5]]",
       "expectedOutput": "7"
     },
     {
       "input": "dungeon = [[0]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[-2,-3,3],[-5,-10,1],[10,30,-5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "dungeon = [[-3,-4,4],[-6,-11,2],[11,31,-6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/dungeon-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.415Z",
+    "collectedAt": "2026-10-19T18:40:16.894Z",
     "sourceUpdatedAt": null
   }
 }

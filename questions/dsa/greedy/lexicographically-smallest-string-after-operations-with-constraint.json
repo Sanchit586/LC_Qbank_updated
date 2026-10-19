@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;zbbz&quot;, k = 3",
-      "output": "&quot;aaaz&quot;",
+      "input": "s = \"zbbz\", k = 3",
+      "output": "\"aaaz\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;xaxcd&quot;, k = 4",
-      "output": "&quot;aawcd&quot;",
+      "input": "s = \"xaxcd\", k = 4",
+      "output": "\"aawcd\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;lol&quot;, k = 0",
-      "output": "&quot;lol&quot;",
+      "input": "s = \"lol\", k = 0",
+      "output": "\"lol\"",
       "explanation": null
     }
   ],
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;zbbz&quot;, k = 3",
-      "expectedOutput": "&quot;aaaz&quot;"
+      "input": "\"zbbz\"\n3",
+      "expectedOutput": "\"aaaz\""
     },
     {
-      "input": "s = &quot;xaxcd&quot;, k = 4",
-      "expectedOutput": "&quot;aawcd&quot;"
+      "input": "\"xaxcd\"\n4",
+      "expectedOutput": "\"aawcd\""
     },
     {
-      "input": "s = &quot;lol&quot;, k = 0",
-      "expectedOutput": "&quot;lol&quot;"
+      "input": "\"lol\"\n0",
+      "expectedOutput": "\"lol\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;zbbz&quot;, k = 3",
-      "expectedOutput": "&quot;aaaz&quot;"
-    },
-    {
-      "input": "s = &quot;xaxcd&quot;, k = 4",
-      "expectedOutput": "&quot;aawcd&quot;"
-    },
-    {
-      "input": "s = &quot;lol&quot;, k = 0",
-      "expectedOutput": "&quot;lol&quot;"
-    },
-    {
       "input": "\"zbbz\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"aaaz\""
     },
     {
       "input": "\"xaxcd\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"aawcd\""
     },
     {
       "input": "\"lol\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "\"lol\""
     },
     {
-      "input": "s = &quot;xaxcd&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"zbbz\", k = 3",
+      "expectedOutput": "\"aaaz\""
     },
     {
-      "input": "s = &quot;lol&quot;, k = 1",
-      "expectedOutput": null
+      "input": "s = \"xaxcd\", k = 4",
+      "expectedOutput": "\"aawcd\""
     },
     {
-      "input": "\"zbbz\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"xaxcd\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;zbbz&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"lol\", k = 0",
+      "expectedOutput": "\"lol\""
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-operations-with-constraint/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.172Z",
+    "collectedAt": "2026-10-19T18:40:20.279Z",
     "sourceUpdatedAt": null
   }
 }

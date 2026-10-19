@@ -21,7 +21,7 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;lyb&quot;, queries = [[0,1,0],[2,2,1]]",
+      "input": "s = \"lyb\", queries = [[0,1,0],[2,2,1]]",
       "output": "[false,true]",
       "explanation": null
     }
@@ -49,26 +49,18 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;lyb&quot;, queries = [[0,1,0],[2,2,1]]",
+      "input": "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
       "expectedOutput": "[false,true]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;lyb&quot;, queries = [[0,1,0],[2,2,1]]",
+      "input": "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
       "expectedOutput": "[false,true]"
     },
     {
-      "input": "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"lyb\"\n[[0,1,0],[2,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;lyb&quot;, queries = [[1,2,1],[3,3,2]]",
-      "expectedOutput": null
+      "input": "s = \"lyb\", queries = [[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
     }
   ],
   "sqlSchema": null,
@@ -86,7 +78,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/can-make-palindrome-from-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.303Z",
+    "collectedAt": "2026-10-19T18:40:13.872Z",
     "sourceUpdatedAt": null
   }
 }

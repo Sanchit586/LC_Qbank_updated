@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 4, t = 1",
+      "input": "4\n1",
       "expectedOutput": "6"
     },
     {
-      "input": "num = 3, t = 2",
+      "input": "3\n2",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "4\n1",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "7"
+    },
+    {
       "input": "num = 4, t = 1",
       "expectedOutput": "6"
     },
     {
       "input": "num = 3, t = 2",
       "expectedOutput": "7"
-    },
-    {
-      "input": "4\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = 5, t = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-maximum-achievable-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.974Z",
+    "collectedAt": "2026-10-19T18:40:18.395Z",
     "sourceUpdatedAt": null
   }
 }

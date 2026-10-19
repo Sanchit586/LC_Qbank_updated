@@ -59,34 +59,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[0,1,1],[1,1,0],[1,1,0]]",
+      "input": "[[0,1,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
+      "input": "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1,1],[1,1,0],[1,1,0]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "grid = [[0,1,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "2"
     },
     {
       "input": "grid = [[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[0,1,1],[1,1,0],[1,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1,0,0,0],[0,1,0,1,0],[0,0,0,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1,2,2],[2,2,1],[2,2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-obstacle-removal-to-reach-corner/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:13.156Z",
+    "collectedAt": "2026-10-19T18:40:24.540Z",
     "sourceUpdatedAt": null
   }
 }

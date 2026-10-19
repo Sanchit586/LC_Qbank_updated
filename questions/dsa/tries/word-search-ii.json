@@ -25,12 +25,12 @@
   ],
   "examples": [
     {
-      "input": "board = [[&quot;o&quot;,&quot;a&quot;,&quot;a&quot;,&quot;n&quot;],[&quot;e&quot;,&quot;t&quot;,&quot;a&quot;,&quot;e&quot;],[&quot;i&quot;,&quot;h&quot;,&quot;k&quot;,&quot;r&quot;],[&quot;i&quot;,&quot;f&quot;,&quot;l&quot;,&quot;v&quot;]], words = [&quot;oath&quot;,&quot;pea&quot;,&quot;eat&quot;,&quot;rain&quot;]",
-      "output": "[&quot;eat&quot;,&quot;oath&quot;]",
+      "input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]",
+      "output": "[\"eat\",\"oath\"]",
       "explanation": null
     },
     {
-      "input": "board = [[&quot;a&quot;,&quot;b&quot;],[&quot;c&quot;,&quot;d&quot;]], words = [&quot;abcb&quot;]",
+      "input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcb\"]",
       "output": "[]",
       "explanation": null
     }
@@ -58,30 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "board = [[&quot;o&quot;,&quot;a&quot;,&quot;a&quot;,&quot;n&quot;],[&quot;e&quot;,&quot;t&quot;,&quot;a&quot;,&quot;e&quot;],[&quot;i&quot;,&quot;h&quot;,&quot;k&quot;,&quot;r&quot;],[&quot;i&quot;,&quot;f&quot;,&quot;l&quot;,&quot;v&quot;]], words = [&quot;oath&quot;,&quot;pea&quot;,&quot;eat&quot;,&quot;rain&quot;]",
-      "expectedOutput": "[&quot;eat&quot;,&quot;oath&quot;]"
+      "input": "[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]\n[\"oath\",\"pea\",\"eat\",\"rain\"]",
+      "expectedOutput": "[\"eat\",\"oath\"]"
     },
     {
-      "input": "board = [[&quot;a&quot;,&quot;b&quot;],[&quot;c&quot;,&quot;d&quot;]], words = [&quot;abcb&quot;]",
+      "input": "[[\"a\",\"b\"],[\"c\",\"d\"]]\n[\"abcb\"]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "board = [[&quot;o&quot;,&quot;a&quot;,&quot;a&quot;,&quot;n&quot;],[&quot;e&quot;,&quot;t&quot;,&quot;a&quot;,&quot;e&quot;],[&quot;i&quot;,&quot;h&quot;,&quot;k&quot;,&quot;r&quot;],[&quot;i&quot;,&quot;f&quot;,&quot;l&quot;,&quot;v&quot;]], words = [&quot;oath&quot;,&quot;pea&quot;,&quot;eat&quot;,&quot;rain&quot;]",
-      "expectedOutput": "[&quot;eat&quot;,&quot;oath&quot;]"
-    },
-    {
-      "input": "board = [[&quot;a&quot;,&quot;b&quot;],[&quot;c&quot;,&quot;d&quot;]], words = [&quot;abcb&quot;]",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "[[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]]\n[\"oath\",\"pea\",\"eat\",\"rain\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"eat\",\"oath\"]"
     },
     {
       "input": "[[\"a\",\"b\"],[\"c\",\"d\"]]\n[\"abcb\"]",
-      "expectedOutput": null
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "board = [[\"o\",\"a\",\"a\",\"n\"],[\"e\",\"t\",\"a\",\"e\"],[\"i\",\"h\",\"k\",\"r\"],[\"i\",\"f\",\"l\",\"v\"]], words = [\"oath\",\"pea\",\"eat\",\"rain\"]",
+      "expectedOutput": "[\"eat\",\"oath\"]"
+    },
+    {
+      "input": "board = [[\"a\",\"b\"],[\"c\",\"d\"]], words = [\"abcb\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/word-search-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.357Z",
+    "collectedAt": "2026-10-19T18:40:31.790Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "input": "s = \"RLRRLLRLRL\"",
       "output": "4",
-      "explanation": "s can be split into &quot;RL&quot;, &quot;RRLL&quot;, &quot;RL&quot;, &quot;RL&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;."
+      "explanation": "s can be split into \"RL\", \"RRLL\", \"RL\", \"RL\", each substring contains same number of 'L' and 'R'."
     },
     {
-      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "input": "s = \"RLRRRLLRLL\"",
       "output": "2",
-      "explanation": "s can be split into &quot;RL&quot;, &quot;RRRLLRLL&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;.\nNote that s cannot be split into &quot;RL&quot;, &quot;RR&quot;, &quot;RL&quot;, &quot;LR&quot;, &quot;LL&quot;, because the 2nd and 5th substrings are not balanced."
+      "explanation": "s can be split into \"RL\", \"RRRLLRLL\", each substring contains same number of 'L' and 'R'.\nNote that s cannot be split into \"RL\", \"RR\", \"RL\", \"LR\", \"LL\", because the 2nd and 5th substrings are not balanced."
     },
     {
-      "input": "s = &quot;LLLLRRRR&quot;",
+      "input": "s = \"LLLLRRRR\"",
       "output": "1",
-      "explanation": "s can be split into &quot;LLLLRRRR&quot;."
+      "explanation": "s can be split into \"LLLLRRRR\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "input": "\"RLRRLLRLRL\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "input": "\"RLRRRLLRLL\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;LLLLRRRR&quot;",
+      "input": "\"LLLLRRRR\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "input": "\"RLRRLLRLRL\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "input": "\"RLRRRLLRLL\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;LLLLRRRR&quot;",
+      "input": "\"LLLLRRRR\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"RLRRLLRLRL\"",
-      "expectedOutput": null
+      "input": "s = \"RLRRLLRLRL\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"RLRRRLLRLL\"",
-      "expectedOutput": null
+      "input": "s = \"RLRRRLLRLL\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"LLLLRRRR\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"LLLLRRRR\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-a-string-in-balanced-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:46.540Z",
+    "collectedAt": "2026-10-19T18:40:30.096Z",
     "sourceUpdatedAt": null
   }
 }

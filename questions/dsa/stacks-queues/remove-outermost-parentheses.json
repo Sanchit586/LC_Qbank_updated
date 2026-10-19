@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(()())(())&quot;",
-      "output": "&quot;()()()&quot;",
-      "explanation": "The input string is &quot;(()())(())&quot;, with primitive decomposition &quot;(()())&quot; + &quot;(())&quot;.\nAfter removing outer parentheses of each part, this is &quot;()()&quot; + &quot;()&quot; = &quot;()()()&quot;."
+      "input": "s = \"(()())(())\"",
+      "output": "\"()()()\"",
+      "explanation": "The input string is \"(()())(())\", with primitive decomposition \"(()())\" + \"(())\".\nAfter removing outer parentheses of each part, this is \"()()\" + \"()\" = \"()()()\"."
     },
     {
-      "input": "s = &quot;(()())(())(()(()))&quot;",
-      "output": "&quot;()()()()(())&quot;",
-      "explanation": "The input string is &quot;(()())(())(()(()))&quot;, with primitive decomposition &quot;(()())&quot; + &quot;(())&quot; + &quot;(()(()))&quot;.\nAfter removing outer parentheses of each part, this is &quot;()()&quot; + &quot;()&quot; + &quot;()(())&quot; = &quot;()()()()(())&quot;."
+      "input": "s = \"(()())(())(()(()))\"",
+      "output": "\"()()()()(())\"",
+      "explanation": "The input string is \"(()())(())(()(()))\", with primitive decomposition \"(()())\" + \"(())\" + \"(()(()))\".\nAfter removing outer parentheses of each part, this is \"()()\" + \"()\" + \"()(())\" = \"()()()()(())\"."
     },
     {
-      "input": "s = &quot;()()&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "The input string is &quot;()()&quot;, with primitive decomposition &quot;()&quot; + &quot;()&quot;.\nAfter removing outer parentheses of each part, this is &quot;&quot; + &quot;&quot; = &quot;&quot;."
+      "input": "s = \"()()\"",
+      "output": "\"\"",
+      "explanation": "The input string is \"()()\", with primitive decomposition \"()\" + \"()\".\nAfter removing outer parentheses of each part, this is \"\" + \"\" = \"\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(()())(())&quot;",
-      "expectedOutput": "&quot;()()()&quot;"
+      "input": "\"(()())(())\"",
+      "expectedOutput": "\"()()()\""
     },
     {
-      "input": "s = &quot;(()())(())(()(()))&quot;",
-      "expectedOutput": "&quot;()()()()(())&quot;"
+      "input": "\"(()())(())(()(()))\"",
+      "expectedOutput": "\"()()()()(())\""
     },
     {
-      "input": "s = &quot;()()&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"()()\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(()())(())&quot;",
-      "expectedOutput": "&quot;()()()&quot;"
-    },
-    {
-      "input": "s = &quot;(()())(())(()(()))&quot;",
-      "expectedOutput": "&quot;()()()()(())&quot;"
-    },
-    {
-      "input": "s = &quot;()()&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"(()())(())\"",
-      "expectedOutput": null
+      "expectedOutput": "\"()()()\""
     },
     {
       "input": "\"(()())(())(()(()))\"",
-      "expectedOutput": null
+      "expectedOutput": "\"()()()()(())\""
     },
     {
       "input": "\"()()\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"(()())(())\"",
+      "expectedOutput": "\"()()()\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(()())(())(()(()))\"",
+      "expectedOutput": "\"()()()()(())\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"()()\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-outermost-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:09.962Z",
+    "collectedAt": "2026-10-19T18:40:27.587Z",
     "sourceUpdatedAt": null
   }
 }

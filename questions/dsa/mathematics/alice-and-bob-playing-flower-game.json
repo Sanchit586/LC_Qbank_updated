@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, m = 2",
+      "input": "3\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 1, m = 1",
+      "input": "1\n1",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 3, m = 2",
       "expectedOutput": "3"
     },
     {
       "input": "n = 1, m = 1",
       "expectedOutput": "0"
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, m = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/alice-and-bob-playing-flower-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.601Z",
+    "collectedAt": "2026-10-19T18:40:12.941Z",
     "sourceUpdatedAt": null
   }
 }

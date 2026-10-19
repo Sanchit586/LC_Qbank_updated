@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, index = 2,  maxSum = 6",
+      "input": "4\n2\n6",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 6, index = 1,  maxSum = 10",
+      "input": "6\n1\n10",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "4\n2\n6",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "6\n1\n10",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 4, index = 2,  maxSum = 6",
       "expectedOutput": "2"
     },
     {
       "input": "n = 6, index = 1,  maxSum = 10",
       "expectedOutput": "3"
-    },
-    {
-      "input": "4\n2\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n1\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, index = 3,  maxSum = 7",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-value-at-a-given-index-in-a-bounded-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:35.871Z",
+    "collectedAt": "2026-10-19T18:40:22.910Z",
     "sourceUpdatedAt": null
   }
 }

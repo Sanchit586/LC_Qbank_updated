@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;, target = &quot;bba&quot;",
-      "output": "&quot;bca&quot;",
-      "explanation": "The permutations of s (in lexicographical order) are &quot;abc&quot;, &quot;acb&quot;, &quot;bac&quot;, &quot;bca&quot;, &quot;cab&quot;, and &quot;cba&quot;.\n\tThe lexicographically smallest permutation that is strictly greater than target is &quot;bca&quot;."
+      "input": "s = \"abc\", target = \"bba\"",
+      "output": "\"bca\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"abc\", \"acb\", \"bac\", \"bca\", \"cab\", and \"cba\".\n\tThe lexicographically smallest permutation that is strictly greater than target is \"bca\"."
     },
     {
-      "input": "s = &quot;leet&quot;, target = &quot;code&quot;",
-      "output": "&quot;eelt&quot;",
-      "explanation": "The permutations of s (in lexicographical order) are &quot;eelt&quot;, &quot;eetl&quot;, &quot;elet&quot;, &quot;elte&quot;, &quot;etel&quot;, &quot;etle&quot;, &quot;leet&quot;, &quot;lete&quot;, &quot;ltee&quot;, &quot;teel&quot;, &quot;tele&quot;, and &quot;tlee&quot;.\n\tThe lexicographically smallest permutation that is strictly greater than target is &quot;eelt&quot;."
+      "input": "s = \"leet\", target = \"code\"",
+      "output": "\"eelt\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"eelt\", \"eetl\", \"elet\", \"elte\", \"etel\", \"etle\", \"leet\", \"lete\", \"ltee\", \"teel\", \"tele\", and \"tlee\".\n\tThe lexicographically smallest permutation that is strictly greater than target is \"eelt\"."
     },
     {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "The permutations of s (in lexicographical order) are &quot;aabb&quot;, &quot;abab&quot;, &quot;abba&quot;, &quot;baab&quot;, &quot;baba&quot;, and &quot;bbaa&quot;.\n\tNone of them is lexicographically strictly greater than target. Therefore, the answer is &quot;&quot;."
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "output": "\"\"",
+      "explanation": "The permutations of s (in lexicographical order) are \"aabb\", \"abab\", \"abba\", \"baab\", \"baba\", and \"bbaa\".\n\tNone of them is lexicographically strictly greater than target. Therefore, the answer is \"\"."
     }
   ],
   "starterCode": {
@@ -57,90 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;, target = &quot;bba&quot;",
-      "expectedOutput": "&quot;bca&quot;"
+      "input": "\"abc\"\n\"bba\"",
+      "expectedOutput": "\"bca\""
     },
     {
-      "input": "s = &quot;leet&quot;, target = &quot;code&quot;",
-      "expectedOutput": "&quot;eelt&quot;"
+      "input": "\"leet\"\n\"code\"",
+      "expectedOutput": "\"eelt\""
     },
     {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"baba\"\n\"bbaa\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;, target = &quot;bba&quot;",
-      "expectedOutput": "&quot;bca&quot;"
-    },
-    {
-      "input": "s = &quot;leet&quot;, target = &quot;code&quot;",
-      "expectedOutput": "&quot;eelt&quot;"
-    },
-    {
-      "input": "s = &quot;baba&quot;, target = &quot;bbaa&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"abc\"\n\"bba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"bca\""
     },
     {
       "input": "\"leet\"\n\"code\"",
-      "expectedOutput": null
+      "expectedOutput": "\"eelt\""
     },
     {
       "input": "\"baba\"\n\"bbaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"abc\", target = \"bba\"",
+      "expectedOutput": "\"bca\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"leet\", target = \"code\"",
+      "expectedOutput": "\"eelt\""
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"baba\", target = \"bbaa\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-permutation-greater-than-target/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.129Z",
+    "collectedAt": "2026-10-19T18:40:20.244Z",
     "sourceUpdatedAt": null
   }
 }

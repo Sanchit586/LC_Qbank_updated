@@ -61,24 +61,40 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,2,3], forbidden = [3,2,1]",
+      "input": "[1,2,3]\n[3,2,1]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [4,6,6,5], forbidden = [4,6,5,5]",
+      "input": "[4,6,6,5]\n[4,6,5,5]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [7,7], forbidden = [8,7]",
+      "input": "[7,7]\n[8,7]",
       "expectedOutput": "-1"
     },
     {
-      "input": "nums = [1,2], forbidden = [2,1]",
+      "input": "[1,2]\n[2,1]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[3,2,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,6,6,5]\n[4,6,5,5]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[7,7]\n[8,7]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2]\n[2,1]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "nums = [1,2,3], forbidden = [3,2,1]",
       "expectedOutput": "1"
     },
@@ -93,42 +109,6 @@
     {
       "input": "nums = [1,2], forbidden = [2,1]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,2,3]\n[3,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,6,6,5]\n[4,6,5,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,7]\n[8,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2]\n[2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3], forbidden = [3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4]\n[4,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4], forbidden = [4,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [5,7,7,6], forbidden = [5,7,6,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [8,8], forbidden = [9,8]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +127,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-swaps-to-avoid-forbidden-values/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:19.893Z",
+    "collectedAt": "2026-10-19T18:40:25.095Z",
     "sourceUpdatedAt": null
   }
 }

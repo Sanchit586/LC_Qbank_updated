@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaabbb&quot;",
+      "input": "s = \"aaabbb\"",
       "output": "2",
-      "explanation": "Print &quot;aaa&quot; first and then print &quot;bbb&quot;."
+      "explanation": "Print \"aaa\" first and then print \"bbb\"."
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "s = \"aba\"",
       "output": "2",
-      "explanation": "Print &quot;aaa&quot; first and then print &quot;b&quot; from the second place of the string, which will cover the existing character &#39;a&#39;."
+      "explanation": "Print \"aaa\" first and then print \"b\" from the second place of the string, which will cover the existing character 'a'."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaabbb&quot;",
+      "input": "\"aaabbb\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aba&quot;",
+      "input": "\"aba\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaabbb&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;aba&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"aaabbb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aaabbb\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aba\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/strange-printer/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.415Z",
+    "collectedAt": "2026-10-19T18:40:30.289Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,7 +18,13 @@
     "0 <= balance[i], money <= 1012",
     "At most 104 calls will be made to each function transfer, deposit, withdraw."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Bank\", \"withdraw\", \"transfer\", \"deposit\", \"transfer\", \"withdraw\"]\n[[[10, 100, 20, 50, 30]], [3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]",
+      "output": "[null, true, true, true, false, false]",
+      "explanation": "Bank bank = new Bank([10, 100, 20, 50, 30]);\nbank.withdraw(3, 10);    // return true, account 3 has a balance of $20, so it is valid to withdraw $10.\n                         // Account 3 has $20 - $10 = $10.\nbank.transfer(5, 1, 20); // return true, account 5 has a balance of $30, so it is valid to transfer $20.\n                         // Account 5 has $30 - $20 = $10, and account 1 has $10 + $20 = $30.\nbank.deposit(5, 20);     // return true, it is valid to deposit $20 to account 5.\n                         // Account 5 has $10 + $20 = $30.\nbank.transfer(3, 4, 15); // return false, the current balance of account 3 is $10,\n                         // so it is invalid to transfer $15 from it.\nbank.withdraw(10, 50);   // return false, it is invalid because account 10 does not exist."
+    }
+  ],
   "starterCode": {
     "cpp": "class Bank {\npublic:\n    Bank(vector<long long>& balance) {\n        \n    }\n    \n    bool transfer(int account1, int account2, long long money) {\n        \n    }\n    \n    bool deposit(int account, long long money) {\n        \n    }\n    \n    bool withdraw(int account, long long money) {\n        \n    }\n};\n\n/**\n * Your Bank object will be instantiated and called as such:\n * Bank* obj = new Bank(balance);\n * bool param_1 = obj->transfer(account1,account2,money);\n * bool param_2 = obj->deposit(account,money);\n * bool param_3 = obj->withdraw(account,money);\n */",
     "java": "class Bank {\n\n    public Bank(long[] balance) {\n        \n    }\n    \n    public boolean transfer(int account1, int account2, long money) {\n        \n    }\n    \n    public boolean deposit(int account, long money) {\n        \n    }\n    \n    public boolean withdraw(int account, long money) {\n        \n    }\n}\n\n/**\n * Your Bank object will be instantiated and called as such:\n * Bank obj = new Bank(balance);\n * boolean param_1 = obj.transfer(account1,account2,money);\n * boolean param_2 = obj.deposit(account,money);\n * boolean param_3 = obj.withdraw(account,money);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"Bank\",\"withdraw\",\"transfer\",\"deposit\",\"transfer\",\"withdraw\"]\n[[[10,100,20,50,30]],[3,10],[5,1,20],[5,20],[3,4,15],[10,50]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Bank\",\"withdraw\",\"transfer\",\"deposit\",\"transfer\",\"withdraw\"]\n[[[10,100,20,50,30]],[3,10],[5,1,20],[5,20],[3,4,15],[10,50]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, false]"
     },
     {
-      "input": "[\"Bank\",\"withdraw\",\"transfer\",\"deposit\",\"transfer\",\"withdraw\"]\n[[[11,101,21,51,31]],[4,11],[6,2,21],[6,21],[4,5,16],[11,51]]",
-      "expectedOutput": null
+      "input": "[\"Bank\", \"withdraw\", \"transfer\", \"deposit\", \"transfer\", \"withdraw\"]\n[[[10, 100, 20, 50, 30]], [3, 10], [5, 1, 20], [5, 20], [3, 4, 15], [10, 50]]",
+      "expectedOutput": "[null, true, true, true, false, false]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/simple-bank-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:29.069Z",
+    "collectedAt": "2026-10-19T18:40:29.616Z",
     "sourceUpdatedAt": null
   }
 }

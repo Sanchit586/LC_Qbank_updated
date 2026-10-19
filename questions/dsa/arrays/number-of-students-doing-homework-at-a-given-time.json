@@ -19,7 +19,7 @@
     {
       "input": "startTime = [1,2,3], endTime = [3,2,7], queryTime = 4",
       "output": "1",
-      "explanation": "We have 3 students where:\nThe first student started doing homework at time 1 and finished at time 3 and wasn&#39;t doing anything at time 4.\nThe second student started doing homework at time 2 and finished at time 2 and also wasn&#39;t doing anything at time 4.\nThe third student started doing homework at time 3 and finished at time 7 and was the only student doing homework at time 4."
+      "explanation": "We have 3 students where:\nThe first student started doing homework at time 1 and finished at time 3 and wasn't doing anything at time 4.\nThe second student started doing homework at time 2 and finished at time 2 and also wasn't doing anything at time 4.\nThe third student started doing homework at time 3 and finished at time 7 and was the only student doing homework at time 4."
     },
     {
       "input": "startTime = [4], endTime = [4], queryTime = 4",
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "startTime = [1,2,3], endTime = [3,2,7], queryTime = 4",
+      "input": "[1,2,3]\n[3,2,7]\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "startTime = [4], endTime = [4], queryTime = 4",
+      "input": "[4]\n[4]\n4",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[3,2,7]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4]\n[4]\n4",
+      "expectedOutput": "1"
+    },
+    {
       "input": "startTime = [1,2,3], endTime = [3,2,7], queryTime = 4",
       "expectedOutput": "1"
     },
     {
       "input": "startTime = [4], endTime = [4], queryTime = 4",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[1,2,3]\n[3,2,7]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4]\n[4]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "startTime = [2,3,4], endTime = [4,3,8], queryTime = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-students-doing-homework-at-a-given-time/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.205Z",
+    "collectedAt": "2026-10-19T18:40:26.095Z",
     "sourceUpdatedAt": null
   }
 }

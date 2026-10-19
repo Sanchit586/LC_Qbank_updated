@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abciiidef&quot;, k = 3",
+      "input": "s = \"abciiidef\", k = 3",
       "output": "3",
-      "explanation": "The substring &quot;iii&quot; contains 3 vowel letters."
+      "explanation": "The substring \"iii\" contains 3 vowel letters."
     },
     {
-      "input": "s = &quot;aeiou&quot;, k = 2",
+      "input": "s = \"aeiou\", k = 2",
       "output": "2",
       "explanation": "Any substring of length 2 contains 2 vowels."
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 3",
+      "input": "s = \"leetcode\", k = 3",
       "output": "2",
-      "explanation": "&quot;lee&quot;, &quot;eet&quot; and &quot;ode&quot; contain 2 vowels."
+      "explanation": "\"lee\", \"eet\" and \"ode\" contain 2 vowels."
     }
   ],
   "starterCode": {
@@ -55,62 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abciiidef&quot;, k = 3",
+      "input": "\"abciiidef\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aeiou&quot;, k = 2",
+      "input": "\"aeiou\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 3",
+      "input": "\"leetcode\"\n3",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abciiidef&quot;, k = 3",
+      "input": "\"abciiidef\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aeiou&quot;, k = 2",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;, k = 3",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"abciiidef\"\n3",
-      "expectedOutput": null
-    },
-    {
       "input": "\"aeiou\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"leetcode\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aeiou&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abciiidef\", k = 3",
+      "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"aeiou\", k = 2",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abciiidef\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aeiou\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abciiidef&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", k = 3",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-vowels-in-a-substring-of-given-length/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:22.065Z",
+    "collectedAt": "2026-10-19T18:40:22.199Z",
     "sourceUpdatedAt": null
   }
 }

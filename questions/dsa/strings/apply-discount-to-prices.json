@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "sentence = &quot;there are $1 $2 and 5$ candies in the shop&quot;, discount = 50",
-      "output": "&quot;there are $0.50 $1.00 and 5$ candies in the shop&quot;",
-      "explanation": "The words which represent prices are &quot;$1&quot; and &quot;$2&quot;. \n- A 50% discount on &quot;$1&quot; yields &quot;$0.50&quot;, so &quot;$1&quot; is replaced by &quot;$0.50&quot;.\n- A 50% discount on &quot;$2&quot; yields &quot;$1&quot;. Since we need to have exactly 2 decimal places after a price, we replace &quot;$2&quot; with &quot;$1.00&quot;."
+      "input": "sentence = \"there are $1 $2 and 5$ candies in the shop\", discount = 50",
+      "output": "\"there are $0.50 $1.00 and 5$ candies in the shop\"",
+      "explanation": "The words which represent prices are \"$1\" and \"$2\". \n- A 50% discount on \"$1\" yields \"$0.50\", so \"$1\" is replaced by \"$0.50\".\n- A 50% discount on \"$2\" yields \"$1\". Since we need to have exactly 2 decimal places after a price, we replace \"$2\" with \"$1.00\"."
     },
     {
-      "input": "sentence = &quot;1 2 $3 4 $5 $6 7 8$ $9 $10$&quot;, discount = 100",
-      "output": "&quot;1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$&quot;",
-      "explanation": "Applying a 100% discount on any price will result in 0.\nThe words representing prices are &quot;$3&quot;, &quot;$5&quot;, &quot;$6&quot;, and &quot;$9&quot;.\nEach of them is replaced by &quot;$0.00&quot;."
+      "input": "sentence = \"1 2 $3 4 $5 $6 7 8$ $9 $10$\", discount = 100",
+      "output": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\"",
+      "explanation": "Applying a 100% discount on any price will result in 0.\nThe words representing prices are \"$3\", \"$5\", \"$6\", and \"$9\".\nEach of them is replaced by \"$0.00\"."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "sentence = &quot;there are $1 $2 and 5$ candies in the shop&quot;, discount = 50",
-      "expectedOutput": "&quot;there are $0.50 $1.00 and 5$ candies in the shop&quot;"
+      "input": "\"there are $1 $2 and 5$ candies in the shop\"\n50",
+      "expectedOutput": "\"there are $0.50 $1.00 and 5$ candies in the shop\""
     },
     {
-      "input": "sentence = &quot;1 2 $3 4 $5 $6 7 8$ $9 $10$&quot;, discount = 100",
-      "expectedOutput": "&quot;1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$&quot;"
+      "input": "\"1 2 $3 4 $5 $6 7 8$ $9 $10$\"\n100",
+      "expectedOutput": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\""
     }
   ],
   "testCases": [
     {
-      "input": "sentence = &quot;there are $1 $2 and 5$ candies in the shop&quot;, discount = 50",
-      "expectedOutput": "&quot;there are $0.50 $1.00 and 5$ candies in the shop&quot;"
-    },
-    {
-      "input": "sentence = &quot;1 2 $3 4 $5 $6 7 8$ $9 $10$&quot;, discount = 100",
-      "expectedOutput": "&quot;1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$&quot;"
-    },
-    {
       "input": "\"there are $1 $2 and 5$ candies in the shop\"\n50",
-      "expectedOutput": null
+      "expectedOutput": "\"there are $0.50 $1.00 and 5$ candies in the shop\""
     },
     {
       "input": "\"1 2 $3 4 $5 $6 7 8$ $9 $10$\"\n100",
-      "expectedOutput": null
+      "expectedOutput": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\""
     },
     {
-      "input": "sentence = &quot;there are $2 $3 and 6$ candies in the shop&quot;, discount = 51",
-      "expectedOutput": null
+      "input": "sentence = \"there are $1 $2 and 5$ candies in the shop\", discount = 50",
+      "expectedOutput": "\"there are $0.50 $1.00 and 5$ candies in the shop\""
+    },
+    {
+      "input": "sentence = \"1 2 $3 4 $5 $6 7 8$ $9 $10$\", discount = 100",
+      "expectedOutput": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\""
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/apply-discount-to-prices/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.765Z",
+    "collectedAt": "2026-10-19T18:40:13.204Z",
     "sourceUpdatedAt": null
   }
 }

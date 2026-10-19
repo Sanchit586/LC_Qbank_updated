@@ -46,90 +46,30 @@
   },
   "publicTests": [
     {
-      "input": "primeFactors = 5",
+      "input": "5",
       "expectedOutput": "6"
     },
     {
-      "input": "primeFactors = 8",
+      "input": "8",
       "expectedOutput": "18"
     }
   ],
   "testCases": [
     {
+      "input": "5",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "18"
+    },
+    {
       "input": "primeFactors = 5",
       "expectedOutput": "6"
     },
     {
       "input": "primeFactors = 8",
       "expectedOutput": "18"
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "8",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "9",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-number-of-nice-divisors/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.037Z",
+    "collectedAt": "2026-10-19T18:40:21.305Z",
     "sourceUpdatedAt": null
   }
 }

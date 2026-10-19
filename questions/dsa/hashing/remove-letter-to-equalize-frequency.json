@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abcc&quot;",
+      "input": "word = \"abcc\"",
       "output": "true",
-      "explanation": "Select index 3 and delete it: word becomes &quot;abc&quot; and each character has a frequency of 1."
+      "explanation": "Select index 3 and delete it: word becomes \"abc\" and each character has a frequency of 1."
     },
     {
-      "input": "word = &quot;aazz&quot;",
+      "input": "word = \"aazz\"",
       "output": "false",
-      "explanation": "We must delete a character, so either the frequency of &quot;a&quot; is 1 and the frequency of &quot;z&quot; is 2, or vice versa. It is impossible to make all present letters have equal frequency."
+      "explanation": "We must delete a character, so either the frequency of \"a\" is 1 and the frequency of \"z\" is 2, or vice versa. It is impossible to make all present letters have equal frequency."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abcc&quot;",
+      "input": "\"abcc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word = &quot;aazz&quot;",
+      "input": "\"aazz\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abcc&quot;",
+      "input": "\"abcc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word = &quot;aazz&quot;",
+      "input": "\"aazz\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"abcc\"",
-      "expectedOutput": null
+      "input": "word = \"abcc\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aazz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "word = \"aazz\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-letter-to-equalize-frequency/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.537Z",
+    "collectedAt": "2026-10-19T18:40:27.548Z",
     "sourceUpdatedAt": null
   }
 }

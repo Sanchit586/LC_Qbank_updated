@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ABA&quot;, queries = [[2,1,2],[1,1],[2,0,2]]",
+      "input": "s = \"ABA\", queries = [[2,1,2],[1,1],[2,0,2]]",
       "output": "[0,2]",
-      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 1, 2]\n\t\t\t-\n\t\t\t1\n\t\t\t2\n\t\t\t&quot;ABA&quot;\n\t\t\t&quot;BA&quot;\n\t\t\tAlready alternating\n\t\t\t0\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 1]\n\t\t\t1\n\t\t\t-\n\t\t\t-\n\t\t\t&quot;ABA&quot;\n\t\t\t-\n\t\t\tFlip s[1] from &#39;B&#39; to &#39;A&#39;\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t&quot;AAA&quot;\n\t\t\t&quot;AAA&quot;\n\t\t\tDelete any two &#39;A&#39;s to get &quot;A&quot;\n\t\t\t2"
+      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 1, 2]\n\t\t\t-\n\t\t\t1\n\t\t\t2\n\t\t\t\"ABA\"\n\t\t\t\"BA\"\n\t\t\tAlready alternating\n\t\t\t0\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 1]\n\t\t\t1\n\t\t\t-\n\t\t\t-\n\t\t\t\"ABA\"\n\t\t\t-\n\t\t\tFlip s[1] from 'B' to 'A'\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t\"AAA\"\n\t\t\t\"AAA\"\n\t\t\tDelete any two 'A's to get \"A\"\n\t\t\t2"
     },
     {
-      "input": "s = &quot;ABB&quot;, queries = [[2,0,2],[1,2],[2,0,2]]",
+      "input": "s = \"ABB\", queries = [[2,0,2],[1,2],[2,0,2]]",
       "output": "[1,0]",
-      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t&quot;ABB&quot;\n\t\t\t&quot;ABB&quot;\n\t\t\tDelete one &#39;B&#39; to get &quot;AB&quot;\n\t\t\t1\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 2]\n\t\t\t2\n\t\t\t-\n\t\t\t-\n\t\t\t&quot;ABB&quot;\n\t\t\t-\n\t\t\tFlip s[2] from &#39;B&#39; to &#39;A&#39;\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t&quot;ABA&quot;\n\t\t\t&quot;ABA&quot;\n\t\t\tAlready alternating\n\t\t\t0"
+      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t\"ABB\"\n\t\t\t\"ABB\"\n\t\t\tDelete one 'B' to get \"AB\"\n\t\t\t1\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 2]\n\t\t\t2\n\t\t\t-\n\t\t\t-\n\t\t\t\"ABB\"\n\t\t\t-\n\t\t\tFlip s[2] from 'B' to 'A'\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 0, 2]\n\t\t\t-\n\t\t\t0\n\t\t\t2\n\t\t\t\"ABA\"\n\t\t\t\"ABA\"\n\t\t\tAlready alternating\n\t\t\t0"
     },
     {
-      "input": "s = &quot;BABA&quot;, queries = [[2,0,3],[1,1],[2,1,3]]",
+      "input": "s = \"BABA\", queries = [[2,0,3],[1,1],[2,1,3]]",
       "output": "[0,1]",
-      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 0, 3]\n\t\t\t-\n\t\t\t0\n\t\t\t3\n\t\t\t&quot;BABA&quot;\n\t\t\t&quot;BABA&quot;\n\t\t\tAlready alternating\n\t\t\t0\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 1]\n\t\t\t1\n\t\t\t-\n\t\t\t-\n\t\t\t&quot;BABA&quot;\n\t\t\t-\n\t\t\tFlip s[1] from &#39;A&#39; to &#39;B&#39;\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 1, 3]\n\t\t\t-\n\t\t\t1\n\t\t\t3\n\t\t\t&quot;BBBA&quot;\n\t\t\t&quot;BBA&quot;\n\t\t\tDelete one &#39;B&#39; to get &quot;BA&quot;\n\t\t\t1"
+      "explanation": "i\n\t\t\tqueries[i]\n\t\t\tj\n\t\t\tl\n\t\t\tr\n\t\t\ts before query\n\t\t\ts[l..r]\n\t\t\tResult\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t[2, 0, 3]\n\t\t\t-\n\t\t\t0\n\t\t\t3\n\t\t\t\"BABA\"\n\t\t\t\"BABA\"\n\t\t\tAlready alternating\n\t\t\t0\n\t\t\n\t\t\n\t\t\t1\n\t\t\t[1, 1]\n\t\t\t1\n\t\t\t-\n\t\t\t-\n\t\t\t\"BABA\"\n\t\t\t-\n\t\t\tFlip s[1] from 'A' to 'B'\n\t\t\t-\n\t\t\n\t\t\n\t\t\t2\n\t\t\t[2, 1, 3]\n\t\t\t-\n\t\t\t1\n\t\t\t3\n\t\t\t\"BBBA\"\n\t\t\t\"BBA\"\n\t\t\tDelete one 'B' to get \"BA\"\n\t\t\t1"
     }
   ],
   "starterCode": {
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ABA&quot;, queries = [[2,1,2],[1,1],[2,0,2]]",
+      "input": "\"ABA\"\n[[2,1,2],[1,1],[2,0,2]]",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "s = &quot;ABB&quot;, queries = [[2,0,2],[1,2],[2,0,2]]",
+      "input": "\"ABB\"\n[[2,0,2],[1,2],[2,0,2]]",
       "expectedOutput": "[1,0]"
     },
     {
-      "input": "s = &quot;BABA&quot;, queries = [[2,0,3],[1,1],[2,1,3]]",
+      "input": "\"BABA\"\n[[2,0,3],[1,1],[2,1,3]]",
       "expectedOutput": "[0,1]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ABA&quot;, queries = [[2,1,2],[1,1],[2,0,2]]",
+      "input": "\"ABA\"\n[[2,1,2],[1,1],[2,0,2]]",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "s = &quot;ABB&quot;, queries = [[2,0,2],[1,2],[2,0,2]]",
+      "input": "\"ABB\"\n[[2,0,2],[1,2],[2,0,2]]",
       "expectedOutput": "[1,0]"
     },
     {
-      "input": "s = &quot;BABA&quot;, queries = [[2,0,3],[1,1],[2,1,3]]",
+      "input": "\"BABA\"\n[[2,0,3],[1,1],[2,1,3]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "\"ABA\"\n[[2,1,2],[1,1],[2,0,2]]",
-      "expectedOutput": null
+      "input": "s = \"ABA\", queries = [[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
     },
     {
-      "input": "\"ABB\"\n[[2,0,2],[1,2],[2,0,2]]",
-      "expectedOutput": null
+      "input": "s = \"ABB\", queries = [[2,0,2],[1,2],[2,0,2]]",
+      "expectedOutput": "[1,0]"
     },
     {
-      "input": "\"BABA\"\n[[2,0,3],[1,1],[2,1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;ABB&quot;, queries = [[3,1,3],[2,3],[3,1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;BABA&quot;, queries = [[3,1,4],[2,2],[3,2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"ABA\"\n[[3,2,3],[2,2],[3,1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"ABB\"\n[[3,1,3],[2,3],[3,1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;ABA&quot;, queries = [[3,2,3],[2,2],[3,1,3]]",
-      "expectedOutput": null
+      "input": "s = \"BABA\", queries = [[2,0,3],[1,1],[2,1,3]]",
+      "expectedOutput": "[0,1]"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-deletions-to-make-alternating-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:53.759Z",
+    "collectedAt": "2026-10-19T18:40:23.770Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,7 +19,7 @@
     {
       "input": "lo = 12, hi = 15, k = 2",
       "output": "13",
-      "explanation": "The power of 12 is 9 (12 --&gt; 6 --&gt; 3 --&gt; 10 --&gt; 5 --&gt; 16 --&gt; 8 --&gt; 4 --&gt; 2 --&gt; 1)\nThe power of 13 is 9\nThe power of 14 is 17\nThe power of 15 is 17\nThe interval sorted by the power value [12,13,14,15]. For k = 2 answer is the second element which is 13.\nNotice that 12 and 13 have the same power value and we sorted them in ascending order. Same for 14 and 15."
+      "explanation": "The power of 12 is 9 (12 --> 6 --> 3 --> 10 --> 5 --> 16 --> 8 --> 4 --> 2 --> 1)\nThe power of 13 is 9\nThe power of 14 is 17\nThe power of 15 is 17\nThe interval sorted by the power value [12,13,14,15]. For k = 2 answer is the second element which is 13.\nNotice that 12 and 13 have the same power value and we sorted them in ascending order. Same for 14 and 15."
     },
     {
       "input": "lo = 7, hi = 11, k = 4",
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "lo = 12, hi = 15, k = 2",
+      "input": "12\n15\n2",
       "expectedOutput": "13"
     },
     {
-      "input": "lo = 7, hi = 11, k = 4",
+      "input": "7\n11\n4",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "12\n15\n2",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "7\n11\n4",
+      "expectedOutput": "7"
+    },
+    {
       "input": "lo = 12, hi = 15, k = 2",
       "expectedOutput": "13"
     },
     {
       "input": "lo = 7, hi = 11, k = 4",
       "expectedOutput": "7"
-    },
-    {
-      "input": "12\n15\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n11\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "lo = 13, hi = 16, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-integers-by-the-power-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:33.089Z",
+    "collectedAt": "2026-10-19T18:40:29.968Z",
     "sourceUpdatedAt": null
   }
 }

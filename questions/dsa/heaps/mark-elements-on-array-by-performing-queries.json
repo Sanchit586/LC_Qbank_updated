@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]",
+      "input": "[1,2,2,1,2,3,1]\n[[1,2],[3,3],[4,2]]",
       "expectedOutput": "[8,3,0]"
     },
     {
-      "input": "nums = [1,4,2,3], queries = [[0,1]]",
+      "input": "[1,4,2,3]\n[[0,1]]",
       "expectedOutput": "[7]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,2,1,2,3,1]\n[[1,2],[3,3],[4,2]]",
+      "expectedOutput": "[8,3,0]"
+    },
+    {
+      "input": "[1,4,2,3]\n[[0,1]]",
+      "expectedOutput": "[7]"
+    },
+    {
       "input": "nums = [1,2,2,1,2,3,1], queries = [[1,2],[3,3],[4,2]]",
       "expectedOutput": "[8,3,0]"
     },
     {
       "input": "nums = [1,4,2,3], queries = [[0,1]]",
       "expectedOutput": "[7]"
-    },
-    {
-      "input": "[1,2,2,1,2,3,1]\n[[1,2],[3,3],[4,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,4,2,3]\n[[0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,3,2,3,4,2], queries = [[2,3],[4,4],[5,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/mark-elements-on-array-by-performing-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.451Z",
+    "collectedAt": "2026-10-19T18:40:21.063Z",
     "sourceUpdatedAt": null
   }
 }

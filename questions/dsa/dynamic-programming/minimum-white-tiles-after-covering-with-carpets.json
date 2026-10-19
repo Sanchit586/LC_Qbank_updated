@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "floor = &quot;10110101&quot;, numCarpets = 2, carpetLen = 2",
+      "input": "floor = \"10110101\", numCarpets = 2, carpetLen = 2",
       "output": "2",
       "explanation": "The figure above shows one way of covering the tiles with the carpets such that only 2 white tiles are visible.\nNo other way of covering the tiles with the carpets can leave less than 2 white tiles visible."
     },
     {
-      "input": "floor = &quot;11111&quot;, numCarpets = 2, carpetLen = 3",
+      "input": "floor = \"11111\", numCarpets = 2, carpetLen = 3",
       "output": "0",
       "explanation": "The figure above shows one way of covering the tiles with the carpets such that no white tiles are visible.\nNote that the carpets are able to overlap one another."
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "floor = &quot;10110101&quot;, numCarpets = 2, carpetLen = 2",
+      "input": "\"10110101\"\n2\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "floor = &quot;11111&quot;, numCarpets = 2, carpetLen = 3",
+      "input": "\"11111\"\n2\n3",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "floor = &quot;10110101&quot;, numCarpets = 2, carpetLen = 2",
+      "input": "\"10110101\"\n2\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "floor = &quot;11111&quot;, numCarpets = 2, carpetLen = 3",
+      "input": "\"11111\"\n2\n3",
       "expectedOutput": "0"
     },
     {
-      "input": "\"10110101\"\n2\n2",
-      "expectedOutput": null
+      "input": "floor = \"10110101\", numCarpets = 2, carpetLen = 2",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"11111\"\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "floor = &quot;10110102&quot;, numCarpets = 3, carpetLen = 3",
-      "expectedOutput": null
+      "input": "floor = \"11111\", numCarpets = 2, carpetLen = 3",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-white-tiles-after-covering-with-carpets/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:31.271Z",
+    "collectedAt": "2026-10-19T18:40:25.343Z",
     "sourceUpdatedAt": null
   }
 }

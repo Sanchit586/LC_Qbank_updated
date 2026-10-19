@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcabcbb&quot;",
+      "input": "s = \"abcabcbb\"",
       "output": "3",
-      "explanation": "The answer is &quot;abc&quot;, with the length of 3. Note that &quot;bca&quot; and &quot;cab&quot; are also correct answers."
+      "explanation": "The answer is \"abc\", with the length of 3. Note that \"bca\" and \"cab\" are also correct answers."
     },
     {
-      "input": "s = &quot;bbbbb&quot;",
+      "input": "s = \"bbbbb\"",
       "output": "1",
-      "explanation": "The answer is &quot;b&quot;, with the length of 1."
+      "explanation": "The answer is \"b\", with the length of 1."
     },
     {
-      "input": "s = &quot;pwwkew&quot;",
+      "input": "s = \"pwwkew\"",
       "output": "3",
-      "explanation": "The answer is &quot;wke&quot;, with the length of 3.\nNotice that the answer must be a substring, &quot;pwke&quot; is a subsequence and not a substring."
+      "explanation": "The answer is \"wke\", with the length of 3.\nNotice that the answer must be a substring, \"pwke\" is a subsequence and not a substring."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcabcbb&quot;",
+      "input": "\"abcabcbb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;bbbbb&quot;",
+      "input": "\"bbbbb\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;pwwkew&quot;",
+      "input": "\"pwwkew\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcabcbb&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "s = &quot;bbbbb&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;pwwkew&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "\"abcabcbb\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"bbbbb\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": "26"
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"dvdf\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"1234567890\"",
-      "expectedOutput": "10"
+      "input": "s = \"abcabcbb\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "\" \"",
+      "input": "s = \"bbbbb\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"au\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": "7"
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": "5"
+      "input": "s = \"pwwkew\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-substring-without-repeating-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-18T18:11:43.576Z",
+    "collectedAt": "2026-10-19T18:40:20.718Z",
     "sourceUpdatedAt": null
   }
 }

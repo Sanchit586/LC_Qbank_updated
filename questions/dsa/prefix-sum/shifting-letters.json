@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;, shifts = [3,5,9]",
-      "output": "&quot;rpl&quot;",
-      "explanation": "We start with &quot;abc&quot;.\nAfter shifting the first 1 letters of s by 3, we have &quot;dbc&quot;.\nAfter shifting the first 2 letters of s by 5, we have &quot;igc&quot;.\nAfter shifting the first 3 letters of s by 9, we have &quot;rpl&quot;, the answer."
+      "input": "s = \"abc\", shifts = [3,5,9]",
+      "output": "\"rpl\"",
+      "explanation": "We start with \"abc\".\nAfter shifting the first 1 letters of s by 3, we have \"dbc\".\nAfter shifting the first 2 letters of s by 5, we have \"igc\".\nAfter shifting the first 3 letters of s by 9, we have \"rpl\", the answer."
     },
     {
-      "input": "s = &quot;aaa&quot;, shifts = [1,2,3]",
-      "output": "&quot;gfd&quot;",
+      "input": "s = \"aaa\", shifts = [1,2,3]",
+      "output": "\"gfd\"",
       "explanation": null
     }
   ],
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;, shifts = [3,5,9]",
-      "expectedOutput": "&quot;rpl&quot;"
+      "input": "\"abc\"\n[3,5,9]",
+      "expectedOutput": "\"rpl\""
     },
     {
-      "input": "s = &quot;aaa&quot;, shifts = [1,2,3]",
-      "expectedOutput": "&quot;gfd&quot;"
+      "input": "\"aaa\"\n[1,2,3]",
+      "expectedOutput": "\"gfd\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;, shifts = [3,5,9]",
-      "expectedOutput": "&quot;rpl&quot;"
-    },
-    {
-      "input": "s = &quot;aaa&quot;, shifts = [1,2,3]",
-      "expectedOutput": "&quot;gfd&quot;"
-    },
-    {
       "input": "\"abc\"\n[3,5,9]",
-      "expectedOutput": null
+      "expectedOutput": "\"rpl\""
     },
     {
       "input": "\"aaa\"\n[1,2,3]",
-      "expectedOutput": null
+      "expectedOutput": "\"gfd\""
     },
     {
-      "input": "s = &quot;abc&quot;, shifts = [4,6,10]",
-      "expectedOutput": null
+      "input": "s = \"abc\", shifts = [3,5,9]",
+      "expectedOutput": "\"rpl\""
+    },
+    {
+      "input": "s = \"aaa\", shifts = [1,2,3]",
+      "expectedOutput": "\"gfd\""
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shifting-letters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:23.661Z",
+    "collectedAt": "2026-10-19T18:40:28.347Z",
     "sourceUpdatedAt": null
   }
 }

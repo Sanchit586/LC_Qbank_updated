@@ -23,17 +23,17 @@
   ],
   "examples": [
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;,&quot;.&quot;]], entrance = [1,2]",
+      "input": "maze = [[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]], entrance = [1,2]",
       "output": "1",
       "explanation": "There are 3 exits in this maze at [1,0], [0,2], and [2,3].\nInitially, you are at the entrance cell [1,2].\n- You can reach [1,0] by moving 2 steps left.\n- You can reach [0,2] by moving 1 step up.\nIt is impossible to reach [2,3] from the entrance.\nThus, the nearest exit is [0,2], which is 1 step away."
     },
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;]], entrance = [1,0]",
+      "input": "maze = [[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]], entrance = [1,0]",
       "output": "2",
       "explanation": "There is 1 exit in this maze at [1,2].\n[1,0] does not count as an exit since it is the entrance cell.\nInitially, you are at the entrance cell [1,0].\n- You can reach [1,2] by moving 2 steps right.\nThus, the nearest exit is [1,2], which is 2 steps away."
     },
     {
-      "input": "maze = [[&quot;.&quot;,&quot;+&quot;]], entrance = [0,0]",
+      "input": "maze = [[\".\",\"+\"]], entrance = [0,0]",
       "output": "-1",
       "explanation": "There are no exits in this maze."
     }
@@ -61,62 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;,&quot;.&quot;]], entrance = [1,2]",
+      "input": "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]\n[1,2]",
       "expectedOutput": "1"
     },
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;]], entrance = [1,0]",
+      "input": "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]\n[1,0]",
       "expectedOutput": "2"
     },
     {
-      "input": "maze = [[&quot;.&quot;,&quot;+&quot;]], entrance = [0,0]",
+      "input": "[[\".\",\"+\"]]\n[0,0]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;,&quot;.&quot;]], entrance = [1,2]",
+      "input": "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]\n[1,2]",
       "expectedOutput": "1"
     },
     {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;]], entrance = [1,0]",
+      "input": "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]\n[1,0]",
       "expectedOutput": "2"
     },
     {
-      "input": "maze = [[&quot;.&quot;,&quot;+&quot;]], entrance = [0,0]",
+      "input": "[[\".\",\"+\"]]\n[0,0]",
       "expectedOutput": "-1"
     },
     {
-      "input": "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]\n[1,2]",
-      "expectedOutput": null
+      "input": "maze = [[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]], entrance = [1,2]",
+      "expectedOutput": "1"
     },
     {
-      "input": "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]\n[1,0]",
-      "expectedOutput": null
+      "input": "maze = [[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]], entrance = [1,0]",
+      "expectedOutput": "2"
     },
     {
-      "input": "[[\".\",\"+\"]]\n[0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;]], entrance = [2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maze = [[&quot;.&quot;,&quot;+&quot;]], entrance = [1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[\"+\",\"+\",\".\",\"+\"],[\".\",\".\",\".\",\"+\"],[\"+\",\"+\",\"+\",\".\"]]\n[2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[\"+\",\"+\",\"+\"],[\".\",\".\",\".\"],[\"+\",\"+\",\"+\"]]\n[2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maze = [[&quot;+&quot;,&quot;+&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;+&quot;],[&quot;+&quot;,&quot;+&quot;,&quot;+&quot;,&quot;.&quot;]], entrance = [2,3]",
-      "expectedOutput": null
+      "input": "maze = [[\".\",\"+\"]], entrance = [0,0]",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/nearest-exit-from-entrance-in-maze/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:37.099Z",
+    "collectedAt": "2026-10-19T18:40:25.598Z",
     "sourceUpdatedAt": null
   }
 }

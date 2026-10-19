@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;bbbab&quot;",
+      "input": "s = \"bbbab\"",
       "output": "4",
-      "explanation": "One possible longest palindromic subsequence is &quot;bbbb&quot;."
+      "explanation": "One possible longest palindromic subsequence is \"bbbb\"."
     },
     {
-      "input": "s = &quot;cbbd&quot;",
+      "input": "s = \"cbbd\"",
       "output": "2",
-      "explanation": "One possible longest palindromic subsequence is &quot;bb&quot;."
+      "explanation": "One possible longest palindromic subsequence is \"bb\"."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;bbbab&quot;",
+      "input": "\"bbbab\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;cbbd&quot;",
+      "input": "\"cbbd\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;bbbab&quot;",
+      "input": "\"bbbab\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;cbbd&quot;",
+      "input": "\"cbbd\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"bbbab\"",
-      "expectedOutput": null
+      "input": "s = \"bbbab\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"cbbd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"cbbd\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-palindromic-subsequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:54.389Z",
+    "collectedAt": "2026-10-19T18:40:20.577Z",
     "sourceUpdatedAt": null
   }
 }

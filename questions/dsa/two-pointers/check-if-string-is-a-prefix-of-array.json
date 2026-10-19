@@ -19,12 +19,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;apples&quot;]",
+      "input": "s = \"iloveleetcode\", words = [\"i\",\"love\",\"leetcode\",\"apples\"]",
       "output": "true",
-      "explanation": "s can be made by concatenating &quot;i&quot;, &quot;love&quot;, and &quot;leetcode&quot; together."
+      "explanation": "s can be made by concatenating \"i\", \"love\", and \"leetcode\" together."
     },
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;apples&quot;,&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;]",
+      "input": "s = \"iloveleetcode\", words = [\"apples\",\"i\",\"love\",\"leetcode\"]",
       "output": "false",
       "explanation": "It is impossible to make s using a prefix of arr."
     }
@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;apples&quot;]",
+      "input": "\"iloveleetcode\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;apples&quot;,&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;]",
+      "input": "\"iloveleetcode\"\n[\"apples\",\"i\",\"love\",\"leetcode\"]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;,&quot;apples&quot;]",
+      "input": "\"iloveleetcode\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;iloveleetcode&quot;, words = [&quot;apples&quot;,&quot;i&quot;,&quot;love&quot;,&quot;leetcode&quot;]",
+      "input": "\"iloveleetcode\"\n[\"apples\",\"i\",\"love\",\"leetcode\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "\"iloveleetcode\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
-      "expectedOutput": null
+      "input": "s = \"iloveleetcode\", words = [\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"iloveleetcode\"\n[\"apples\",\"i\",\"love\",\"leetcode\"]",
-      "expectedOutput": null
+      "input": "s = \"iloveleetcode\", words = [\"apples\",\"i\",\"love\",\"leetcode\"]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -90,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-string-is-a-prefix-of-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.212Z",
+    "collectedAt": "2026-10-19T18:40:14.221Z",
     "sourceUpdatedAt": null
   }
 }

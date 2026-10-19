@@ -17,7 +17,13 @@
     "At most 2 * 104 calls will be made to push and pop.",
     "It is guaranteed that there will be at least one element in the stack before calling pop."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"]\n[[], [5], [7], [5], [7], [4], [5], [], [], [], []]",
+      "output": "[null, null, null, null, null, null, null, 5, 7, 5, 4]",
+      "explanation": "FreqStack freqStack = new FreqStack();\nfreqStack.push(5); // The stack is [5]\nfreqStack.push(7); // The stack is [5,7]\nfreqStack.push(5); // The stack is [5,7,5]\nfreqStack.push(7); // The stack is [5,7,5,7]\nfreqStack.push(4); // The stack is [5,7,5,7,4]\nfreqStack.push(5); // The stack is [5,7,5,7,4,5]\nfreqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,5,7,4].\nfreqStack.pop();   // return 7, as 5 and 7 is the most frequent, but 7 is closest to the top. The stack becomes [5,7,5,4].\nfreqStack.pop();   // return 5, as 5 is the most frequent. The stack becomes [5,7,4].\nfreqStack.pop();   // return 4, as 4, 5 and 7 is the most frequent, but 4 is closest to the top. The stack becomes [5,7]."
+    }
+  ],
   "starterCode": {
     "cpp": "class FreqStack {\npublic:\n    FreqStack() {\n        \n    }\n    \n    void push(int val) {\n        \n    }\n    \n    int pop() {\n        \n    }\n};\n\n/**\n * Your FreqStack object will be instantiated and called as such:\n * FreqStack* obj = new FreqStack();\n * obj->push(val);\n * int param_2 = obj->pop();\n */",
     "java": "class FreqStack {\n\n    public FreqStack() {\n        \n    }\n    \n    public void push(int val) {\n        \n    }\n    \n    public int pop() {\n        \n    }\n}\n\n/**\n * Your FreqStack object will be instantiated and called as such:\n * FreqStack obj = new FreqStack();\n * obj.push(val);\n * int param_2 = obj.pop();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"FreqStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, null, null, null, 5, 7, 5, 4]"
     }
   ],
   "testCases": [
     {
       "input": "[\"FreqStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[5],[7],[5],[7],[4],[5],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, null, null, null, 5, 7, 5, 4]"
     },
     {
-      "input": "[\"FreqStack\",\"push\",\"push\",\"push\",\"push\",\"push\",\"push\",\"pop\",\"pop\",\"pop\",\"pop\"]\n[[],[6],[8],[6],[8],[5],[6],[],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"FreqStack\", \"push\", \"push\", \"push\", \"push\", \"push\", \"push\", \"pop\", \"pop\", \"pop\", \"pop\"]\n[[], [5], [7], [5], [7], [4], [5], [], [], [], []]",
+      "expectedOutput": "[null, null, null, null, null, null, null, 5, 7, 5, 4]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-frequency-stack/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:12.063Z",
+    "collectedAt": "2026-10-19T18:40:21.853Z",
     "sourceUpdatedAt": null
   }
 }

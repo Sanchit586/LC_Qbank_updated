@@ -20,17 +20,17 @@
   "examples": [
     {
       "input": "destination = [2,3], k = 1",
-      "output": "&quot;HHHVV&quot;",
-      "explanation": "All the instructions that reach (2, 3) in lexicographic order are as follows:\n[&quot;HHHVV&quot;, &quot;HHVHV&quot;, &quot;HHVVH&quot;, &quot;HVHHV&quot;, &quot;HVHVH&quot;, &quot;HVVHH&quot;, &quot;VHHHV&quot;, &quot;VHHVH&quot;, &quot;VHVHH&quot;, &quot;VVHHH&quot;]."
+      "output": "\"HHHVV\"",
+      "explanation": "All the instructions that reach (2, 3) in lexicographic order are as follows:\n[\"HHHVV\", \"HHVHV\", \"HHVVH\", \"HVHHV\", \"HVHVH\", \"HVVHH\", \"VHHHV\", \"VHHVH\", \"VHVHH\", \"VVHHH\"]."
     },
     {
       "input": "destination = [2,3], k = 2",
-      "output": "&quot;HHVHV&quot;",
+      "output": "\"HHVHV\"",
       "explanation": null
     },
     {
       "input": "destination = [2,3], k = 3",
-      "output": "&quot;HHVVH&quot;",
+      "output": "\"HHVVH\"",
       "explanation": null
     }
   ],
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "destination = [2,3], k = 1",
-      "expectedOutput": "&quot;HHHVV&quot;"
+      "input": "[2,3]\n1",
+      "expectedOutput": "\"HHHVV\""
     },
     {
-      "input": "destination = [2,3], k = 2",
-      "expectedOutput": "&quot;HHVHV&quot;"
+      "input": "[2,3]\n2",
+      "expectedOutput": "\"HHVHV\""
     },
     {
-      "input": "destination = [2,3], k = 3",
-      "expectedOutput": "&quot;HHVVH&quot;"
+      "input": "[2,3]\n3",
+      "expectedOutput": "\"HHVVH\""
     }
   ],
   "testCases": [
     {
-      "input": "destination = [2,3], k = 1",
-      "expectedOutput": "&quot;HHHVV&quot;"
-    },
-    {
-      "input": "destination = [2,3], k = 2",
-      "expectedOutput": "&quot;HHVHV&quot;"
-    },
-    {
-      "input": "destination = [2,3], k = 3",
-      "expectedOutput": "&quot;HHVVH&quot;"
-    },
-    {
       "input": "[2,3]\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"HHHVV\""
     },
     {
       "input": "[2,3]\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"HHVHV\""
     },
     {
       "input": "[2,3]\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"HHVVH\""
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "destination = [2,3], k = 1",
+      "expectedOutput": "\"HHHVV\""
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
+      "input": "destination = [2,3], k = 2",
+      "expectedOutput": "\"HHVHV\""
     },
     {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
+      "input": "destination = [2,3], k = 3",
+      "expectedOutput": "\"HHVVH\""
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/kth-smallest-instructions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:39.120Z",
+    "collectedAt": "2026-10-19T18:40:19.868Z",
     "sourceUpdatedAt": null
   }
 }

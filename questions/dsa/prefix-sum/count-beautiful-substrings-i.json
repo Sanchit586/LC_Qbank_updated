@@ -21,17 +21,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;baeyh&quot;, k = 2",
+      "input": "s = \"baeyh\", k = 2",
       "output": "2",
-      "explanation": "There are 2 beautiful substrings in the given string.\n- Substring &quot;baeyh&quot;, vowels = 2 ([&quot;a&quot;,e&quot;]), consonants = 2 ([&quot;y&quot;,&quot;h&quot;]).\nYou can see that string &quot;aeyh&quot; is beautiful as vowels == consonants and vowels * consonants % k == 0.\n- Substring &quot;baeyh&quot;, vowels = 2 ([&quot;a&quot;,e&quot;]), consonants = 2 ([&quot;b&quot;,&quot;y&quot;]). \nYou can see that string &quot;baey&quot; is beautiful as vowels == consonants and vowels * consonants % k == 0.\nIt can be shown that there are only 2 beautiful substrings in the given string."
+      "explanation": "There are 2 beautiful substrings in the given string.\n- Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"y\",\"h\"]).\nYou can see that string \"aeyh\" is beautiful as vowels == consonants and vowels * consonants % k == 0.\n- Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"b\",\"y\"]). \nYou can see that string \"baey\" is beautiful as vowels == consonants and vowels * consonants % k == 0.\nIt can be shown that there are only 2 beautiful substrings in the given string."
     },
     {
-      "input": "s = &quot;abba&quot;, k = 1",
+      "input": "s = \"abba\", k = 1",
       "output": "3",
-      "explanation": "There are 3 beautiful substrings in the given string.\n- Substring &quot;abba&quot;, vowels = 1 ([&quot;a&quot;]), consonants = 1 ([&quot;b&quot;]). \n- Substring &quot;abba&quot;, vowels = 1 ([&quot;a&quot;]), consonants = 1 ([&quot;b&quot;]).\n- Substring &quot;abba&quot;, vowels = 2 ([&quot;a&quot;,&quot;a&quot;]), consonants = 2 ([&quot;b&quot;,&quot;b&quot;]).\nIt can be shown that there are only 3 beautiful substrings in the given string."
+      "explanation": "There are 3 beautiful substrings in the given string.\n- Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]). \n- Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]).\n- Substring \"abba\", vowels = 2 ([\"a\",\"a\"]), consonants = 2 ([\"b\",\"b\"]).\nIt can be shown that there are only 3 beautiful substrings in the given string."
     },
     {
-      "input": "s = &quot;bcdf&quot;, k = 1",
+      "input": "s = \"bcdf\", k = 1",
       "output": "0",
       "explanation": "There are no beautiful substrings in the given string."
     }
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;baeyh&quot;, k = 2",
+      "input": "\"baeyh\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abba&quot;, k = 1",
+      "input": "\"abba\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;bcdf&quot;, k = 1",
+      "input": "\"bcdf\"\n1",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;baeyh&quot;, k = 2",
+      "input": "\"baeyh\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abba&quot;, k = 1",
+      "input": "\"abba\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;bcdf&quot;, k = 1",
+      "input": "\"bcdf\"\n1",
       "expectedOutput": "0"
     },
     {
-      "input": "\"baeyh\"\n2",
-      "expectedOutput": null
+      "input": "s = \"baeyh\", k = 2",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abba\"\n1",
-      "expectedOutput": null
+      "input": "s = \"abba\", k = 1",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"bcdf\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abba&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;bcdf&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"baeyh\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abba\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;baeyh&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"bcdf\", k = 1",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-beautiful-substrings-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:07.572Z",
+    "collectedAt": "2026-10-19T18:40:14.961Z",
     "sourceUpdatedAt": null
   }
 }

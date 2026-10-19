@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;51230100&quot;",
-      "output": "&quot;512301&quot;",
-      "explanation": "Integer &quot;51230100&quot; has 2 trailing zeros, we remove them and return integer &quot;512301&quot;."
+      "input": "num = \"51230100\"",
+      "output": "\"512301\"",
+      "explanation": "Integer \"51230100\" has 2 trailing zeros, we remove them and return integer \"512301\"."
     },
     {
-      "input": "num = &quot;123&quot;",
-      "output": "&quot;123&quot;",
-      "explanation": "Integer &quot;123&quot; has no trailing zeros, we return integer &quot;123&quot;."
+      "input": "num = \"123\"",
+      "output": "\"123\"",
+      "explanation": "Integer \"123\" has no trailing zeros, we return integer \"123\"."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;51230100&quot;",
-      "expectedOutput": "&quot;512301&quot;"
+      "input": "\"51230100\"",
+      "expectedOutput": "\"512301\""
     },
     {
-      "input": "num = &quot;123&quot;",
-      "expectedOutput": "&quot;123&quot;"
+      "input": "\"123\"",
+      "expectedOutput": "\"123\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;51230100&quot;",
-      "expectedOutput": "&quot;512301&quot;"
-    },
-    {
-      "input": "num = &quot;123&quot;",
-      "expectedOutput": "&quot;123&quot;"
-    },
-    {
       "input": "\"51230100\"",
-      "expectedOutput": null
+      "expectedOutput": "\"512301\""
     },
     {
       "input": "\"123\"",
-      "expectedOutput": null
+      "expectedOutput": "\"123\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "num = \"51230100\"",
+      "expectedOutput": "\"512301\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "num = \"123\"",
+      "expectedOutput": "\"123\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-trailing-zeros-from-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.001Z",
+    "collectedAt": "2026-10-19T18:40:27.606Z",
     "sourceUpdatedAt": null
   }
 }

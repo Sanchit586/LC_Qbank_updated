@@ -17,7 +17,13 @@
     "There will be at least one free cell for each call to flip.",
     "At most 1000 calls will be made to flip and reset."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Solution\", \"flip\", \"flip\", \"flip\", \"reset\", \"flip\"]\n[[3, 1], [], [], [], [], []]",
+      "output": "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]",
+      "explanation": "Solution solution = new Solution(3, 1);\nsolution.flip();  // return [1, 0], [0,0], [1,0], and [2,0] should be equally likely to be returned.\nsolution.flip();  // return [2, 0], Since [1,0] was returned, [2,0] and [0,0]\nsolution.flip();  // return [0, 0], Based on the previously returned indices, only [0,0] can be returned.\nsolution.reset(); // All the values are reset to 0 and can be returned.\nsolution.flip();  // return [2, 0], [0,0], [1,0], and [2,0] should be equally likely to be returned."
+    }
+  ],
   "starterCode": {
     "cpp": "class Solution {\npublic:\n    Solution(int m, int n) {\n        \n    }\n    \n    vector<int> flip() {\n        \n    }\n    \n    void reset() {\n        \n    }\n};\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution* obj = new Solution(m, n);\n * vector<int> param_1 = obj->flip();\n * obj->reset();\n */",
     "java": "class Solution {\n\n    public Solution(int m, int n) {\n        \n    }\n    \n    public int[] flip() {\n        \n    }\n    \n    public void reset() {\n        \n    }\n}\n\n/**\n * Your Solution object will be instantiated and called as such:\n * Solution obj = new Solution(m, n);\n * int[] param_1 = obj.flip();\n * obj.reset();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"Solution\",\"flip\",\"flip\",\"flip\",\"reset\",\"flip\"]\n[[3,1],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Solution\",\"flip\",\"flip\",\"flip\",\"reset\",\"flip\"]\n[[3,1],[],[],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]"
     },
     {
-      "input": "[\"Solution\",\"flip\",\"flip\",\"flip\",\"reset\",\"flip\"]\n[[4,2],[],[],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"Solution\", \"flip\", \"flip\", \"flip\", \"reset\", \"flip\"]\n[[3, 1], [], [], [], [], []]",
+      "expectedOutput": "[null, [1, 0], [2, 0], [0, 0], null, [2, 0]]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/random-flip-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:02.955Z",
+    "collectedAt": "2026-10-19T18:40:27.130Z",
     "sourceUpdatedAt": null
   }
 }

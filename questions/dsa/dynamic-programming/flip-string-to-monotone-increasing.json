@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;00110&quot;",
+      "input": "s = \"00110\"",
       "output": "1",
       "explanation": "We flip the last digit to get 00111."
     },
     {
-      "input": "s = &quot;010110&quot;",
+      "input": "s = \"010110\"",
       "output": "2",
       "explanation": "We flip to get 011111, or alternatively 000111."
     },
     {
-      "input": "s = &quot;00011000&quot;",
+      "input": "s = \"00011000\"",
       "output": "2",
       "explanation": "We flip to get 00000000."
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;00110&quot;",
+      "input": "\"00110\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;010110&quot;",
+      "input": "\"010110\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;00011000&quot;",
+      "input": "\"00011000\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;00110&quot;",
+      "input": "\"00110\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;010110&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;00011000&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "\"00110\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"010110\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"00011000\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"00110\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"010110\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"00011000\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/flip-string-to-monotone-increasing/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:19.998Z",
+    "collectedAt": "2026-10-19T18:40:18.987Z",
     "sourceUpdatedAt": null
   }
 }

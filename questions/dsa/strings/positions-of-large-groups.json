@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abbxxxxzzy&quot;",
+      "input": "s = \"abbxxxxzzy\"",
       "output": "[[3,6]]",
-      "explanation": "&quot;xxxx&quot; is the only large group with start index 3 and end index 6."
+      "explanation": "\"xxxx\" is the only large group with start index 3 and end index 6."
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "[]",
-      "explanation": "We have groups &quot;a&quot;, &quot;b&quot;, and &quot;c&quot;, none of which are large groups."
+      "explanation": "We have groups \"a\", \"b\", and \"c\", none of which are large groups."
     },
     {
-      "input": "s = &quot;abcdddeeeeaabbbcd&quot;",
+      "input": "s = \"abcdddeeeeaabbbcd\"",
       "output": "[[3,5],[6,9],[12,14]]",
-      "explanation": "The large groups are &quot;ddd&quot;, &quot;eeee&quot;, and &quot;bbb&quot;."
+      "explanation": "The large groups are \"ddd\", \"eeee\", and \"bbb\"."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abbxxxxzzy&quot;",
+      "input": "\"abbxxxxzzy\"",
       "expectedOutput": "[[3,6]]"
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = &quot;abcdddeeeeaabbbcd&quot;",
+      "input": "\"abcdddeeeeaabbbcd\"",
       "expectedOutput": "[[3,5],[6,9],[12,14]]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abbxxxxzzy&quot;",
+      "input": "\"abbxxxxzzy\"",
       "expectedOutput": "[[3,6]]"
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = &quot;abcdddeeeeaabbbcd&quot;",
+      "input": "\"abcdddeeeeaabbbcd\"",
       "expectedOutput": "[[3,5],[6,9],[12,14]]"
     },
     {
-      "input": "\"abbxxxxzzy\"",
-      "expectedOutput": null
+      "input": "s = \"abbxxxxzzy\"",
+      "expectedOutput": "[[3,6]]"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "[]"
     },
     {
-      "input": "\"abcdddeeeeaabbbcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcdddeeeeaabbbcd\"",
+      "expectedOutput": "[[3,5],[6,9],[12,14]]"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/positions-of-large-groups/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.619Z",
+    "collectedAt": "2026-10-19T18:40:26.815Z",
     "sourceUpdatedAt": null
   }
 }

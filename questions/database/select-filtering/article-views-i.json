@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Views table:\n+------------+-----------+-----------+------------+\n| article_id | author_id | viewer_id | view_date  |\n+------------+-----------+-----------+------------+\n| 1          | 3         | 5         | 2019-08-01 |\n| 1          | 3         | 6         | 2019-08-02 |\n| 2          | 7         | 7         | 2019-08-01 |\n| 2          | 7         | 6         | 2019-08-02 |\n| 4          | 7         | 1         | 2019-07-22 |\n| 3          | 4         | 4         | 2019-07-21 |\n| 3          | 4         | 4         | 2019-07-21 |\n+------------+-----------+-----------+------------+",
+      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,\"2019-08-01\"],[1,3,6,\"2019-08-02\"],[2,7,7,\"2019-08-01\"],[2,7,6,\"2019-08-02\"],[4,7,1,\"2019-07-22\"],[3,4,4,\"2019-07-21\"],[3,4,4,\"2019-07-21\"]]}}",
       "expectedOutput": "+------+\n| id   |\n+------+\n| 4    |\n| 7    |\n+------+"
     }
   ],
   "testCases": [
     {
-      "input": "Views table:\n+------------+-----------+-----------+------------+\n| article_id | author_id | viewer_id | view_date  |\n+------------+-----------+-----------+------------+\n| 1          | 3         | 5         | 2019-08-01 |\n| 1          | 3         | 6         | 2019-08-02 |\n| 2          | 7         | 7         | 2019-08-01 |\n| 2          | 7         | 6         | 2019-08-02 |\n| 4          | 7         | 1         | 2019-07-22 |\n| 3          | 4         | 4         | 2019-07-21 |\n| 3          | 4         | 4         | 2019-07-21 |\n+------------+-----------+-----------+------------+",
+      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,\"2019-08-01\"],[1,3,6,\"2019-08-02\"],[2,7,7,\"2019-08-01\"],[2,7,6,\"2019-08-02\"],[4,7,1,\"2019-07-22\"],[3,4,4,\"2019-07-21\"],[3,4,4,\"2019-07-21\"]]}}",
       "expectedOutput": "+------+\n| id   |\n+------+\n| 4    |\n| 7    |\n+------+"
     },
     {
-      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,\"2019-08-01\"],[1,3,6,\"2019-08-02\"],[2,7,7,\"2019-08-01\"],[2,7,6,\"2019-08-02\"],[4,7,1,\"2019-07-22\"],[3,4,4,\"2019-07-21\"],[3,4,4,\"2019-07-21\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,\"2019-08-01\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Views\":[\"article_id\",\"author_id\",\"viewer_id\",\"view_date\"]},\"rows\":{\"Views\":[[1,3,5,null],[1,3,6,null],[2,7,7,null],[2,7,6,null],[4,7,1,null],[3,4,4,null],[3,4,4,null]]}}",
-      "expectedOutput": null
+      "input": "Views table:\n+------------+-----------+-----------+------------+\n| article_id | author_id | viewer_id | view_date  |\n+------------+-----------+-----------+------------+\n| 1          | 3         | 5         | 2019-08-01 |\n| 1          | 3         | 6         | 2019-08-02 |\n| 2          | 7         | 7         | 2019-08-01 |\n| 2          | 7         | 6         | 2019-08-02 |\n| 4          | 7         | 1         | 2019-07-22 |\n| 3          | 4         | 4         | 2019-07-21 |\n| 3          | 4         | 4         | 2019-07-21 |\n+------------+-----------+-----------+------------+",
+      "expectedOutput": "+------+\n| id   |\n+------+\n| 4    |\n| 7    |\n+------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Views (article_id int, author_id int, viewer_id int, view_date date)\n\nTruncate table Views",
@@ -69,7 +57,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/article-views-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:24.217Z",
+    "collectedAt": "2026-10-19T18:40:13.321Z",
     "sourceUpdatedAt": null
   }
 }

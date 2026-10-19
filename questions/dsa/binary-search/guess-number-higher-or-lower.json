@@ -50,20 +50,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 10, pick = 6",
+      "input": "10\n6",
       "expectedOutput": "6"
     },
     {
-      "input": "n = 1, pick = 1",
+      "input": "1\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 2, pick = 1",
+      "input": "2\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "10\n6",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 10, pick = 6",
       "expectedOutput": "6"
     },
@@ -74,38 +86,6 @@
     {
       "input": "n = 2, pick = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "10\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, pick = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, pick = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 11, pick = 7",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -117,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/guess-number-higher-or-lower/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.666Z",
+    "collectedAt": "2026-10-19T18:40:19.305Z",
     "sourceUpdatedAt": null
   }
 }

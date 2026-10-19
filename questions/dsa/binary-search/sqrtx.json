@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 4",
+      "input": "4",
       "expectedOutput": "2"
     },
     {
-      "input": "x = 8",
+      "input": "8",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "2"
+    },
+    {
       "input": "x = 4",
       "expectedOutput": "2"
     },
     {
       "input": "x = 8",
       "expectedOutput": "2"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "8",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sqrtx/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.629Z",
+    "collectedAt": "2026-10-19T18:40:30.185Z",
     "sourceUpdatedAt": null
   }
 }

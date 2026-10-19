@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;bcdf&quot;, maxCost = 3",
+      "input": "s = \"abcd\", t = \"bcdf\", maxCost = 3",
       "output": "3",
-      "explanation": "&quot;abc&quot; of s can change to &quot;bcd&quot;.\nThat costs 3, so the maximum length is 3."
+      "explanation": "\"abc\" of s can change to \"bcd\".\nThat costs 3, so the maximum length is 3."
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdef&quot;, maxCost = 3",
+      "input": "s = \"abcd\", t = \"cdef\", maxCost = 3",
       "output": "1",
       "explanation": "Each character in s costs 2 to change to character in t,  so the maximum length is 1."
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;acde&quot;, maxCost = 0",
+      "input": "s = \"abcd\", t = \"acde\", maxCost = 0",
       "output": "1",
       "explanation": "You cannot make any change, so the maximum length is 1."
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;bcdf&quot;, maxCost = 3",
+      "input": "\"abcd\"\n\"bcdf\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdef&quot;, maxCost = 3",
+      "input": "\"abcd\"\n\"cdef\"\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;acde&quot;, maxCost = 0",
+      "input": "\"abcd\"\n\"acde\"\n0",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;bcdf&quot;, maxCost = 3",
+      "input": "\"abcd\"\n\"bcdf\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdef&quot;, maxCost = 3",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;abcd&quot;, t = &quot;acde&quot;, maxCost = 0",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"abcd\"\n\"bcdf\"\n3",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abcd\"\n\"cdef\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"abcd\"\n\"acde\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;cdef&quot;, maxCost = 4",
-      "expectedOutput": null
+      "input": "s = \"abcd\", t = \"bcdf\", maxCost = 3",
+      "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcd&quot;, t = &quot;acde&quot;, maxCost = 1",
-      "expectedOutput": null
+      "input": "s = \"abcd\", t = \"cdef\", maxCost = 3",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"abcd\"\n\"bcdf\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcd\"\n\"cdef\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcd&quot;, t = &quot;bcdf&quot;, maxCost = 4",
-      "expectedOutput": null
+      "input": "s = \"abcd\", t = \"acde\", maxCost = 0",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/get-equal-substrings-within-budget/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:22.971Z",
+    "collectedAt": "2026-10-19T18:40:19.171Z",
     "sourceUpdatedAt": null
   }
 }

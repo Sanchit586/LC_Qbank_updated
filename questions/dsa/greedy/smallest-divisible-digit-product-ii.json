@@ -21,18 +21,18 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;1234&quot;, t = 256",
-      "output": "&quot;1488&quot;",
+      "input": "num = \"1234\", t = 256",
+      "output": "\"1488\"",
       "explanation": null
     },
     {
-      "input": "num = &quot;12355&quot;, t = 50",
-      "output": "&quot;12355&quot;",
+      "input": "num = \"12355\", t = 50",
+      "output": "\"12355\"",
       "explanation": null
     },
     {
-      "input": "num = &quot;11111&quot;, t = 26",
-      "output": "&quot;-1&quot;",
+      "input": "num = \"11111\", t = 26",
+      "output": "\"-1\"",
       "explanation": null
     }
   ],
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;1234&quot;, t = 256",
-      "expectedOutput": "&quot;1488&quot;"
+      "input": "\"1234\"\n256",
+      "expectedOutput": "\"1488\""
     },
     {
-      "input": "num = &quot;12355&quot;, t = 50",
-      "expectedOutput": "&quot;12355&quot;"
+      "input": "\"12355\"\n50",
+      "expectedOutput": "\"12355\""
     },
     {
-      "input": "num = &quot;11111&quot;, t = 26",
-      "expectedOutput": "&quot;-1&quot;"
+      "input": "\"11111\"\n26",
+      "expectedOutput": "\"-1\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;1234&quot;, t = 256",
-      "expectedOutput": "&quot;1488&quot;"
-    },
-    {
-      "input": "num = &quot;12355&quot;, t = 50",
-      "expectedOutput": "&quot;12355&quot;"
-    },
-    {
-      "input": "num = &quot;11111&quot;, t = 26",
-      "expectedOutput": "&quot;-1&quot;"
-    },
-    {
       "input": "\"1234\"\n256",
-      "expectedOutput": null
+      "expectedOutput": "\"1488\""
     },
     {
       "input": "\"12355\"\n50",
-      "expectedOutput": null
+      "expectedOutput": "\"12355\""
     },
     {
       "input": "\"11111\"\n26",
-      "expectedOutput": null
+      "expectedOutput": "\"-1\""
     },
     {
-      "input": "num = &quot;12356&quot;, t = 51",
-      "expectedOutput": null
+      "input": "num = \"1234\", t = 256",
+      "expectedOutput": "\"1488\""
     },
     {
-      "input": "num = &quot;11112&quot;, t = 27",
-      "expectedOutput": null
+      "input": "num = \"12355\", t = 50",
+      "expectedOutput": "\"12355\""
     },
     {
-      "input": "\"1235\"\n257",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"12356\"\n51",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;1235&quot;, t = 257",
-      "expectedOutput": null
+      "input": "num = \"11111\", t = 26",
+      "expectedOutput": "\"-1\""
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-divisible-digit-product-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.065Z",
+    "collectedAt": "2026-10-19T18:40:29.717Z",
     "sourceUpdatedAt": null
   }
 }

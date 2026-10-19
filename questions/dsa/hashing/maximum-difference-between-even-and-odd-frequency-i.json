@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaaaabbc&quot;",
+      "input": "s = \"aaaaabbc\"",
       "output": "3",
-      "explanation": "The character &#39;a&#39; has an odd frequency of 5, and &#39;b&#39; has an even frequency of 2.\n\tThe maximum difference is 5 - 2 = 3."
+      "explanation": "The character 'a' has an odd frequency of 5, and 'b' has an even frequency of 2.\n\tThe maximum difference is 5 - 2 = 3."
     },
     {
-      "input": "s = &quot;abcabcab&quot;",
+      "input": "s = \"abcabcab\"",
       "output": "1",
-      "explanation": "The character &#39;a&#39; has an odd frequency of 3, and &#39;c&#39; has an even frequency of 2.\n\tThe maximum difference is 3 - 2 = 1."
+      "explanation": "The character 'a' has an odd frequency of 3, and 'c' has an even frequency of 2.\n\tThe maximum difference is 3 - 2 = 1."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaaaabbc&quot;",
+      "input": "\"aaaaabbc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcabcab&quot;",
+      "input": "\"abcabcab\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaaaabbc&quot;",
+      "input": "\"aaaaabbc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abcabcab&quot;",
+      "input": "\"abcabcab\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aaaaabbc\"",
-      "expectedOutput": null
+      "input": "s = \"aaaaabbc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abcabcab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcabcab\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-difference-between-even-and-odd-frequency-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.666Z",
+    "collectedAt": "2026-10-19T18:40:21.740Z",
     "sourceUpdatedAt": null
   }
 }

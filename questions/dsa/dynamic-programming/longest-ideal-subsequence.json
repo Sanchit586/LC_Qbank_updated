@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;acfgbd&quot;, k = 2",
+      "input": "s = \"acfgbd\", k = 2",
       "output": "4",
-      "explanation": "The longest ideal string is &quot;acbd&quot;. The length of this string is 4, so 4 is returned.\nNote that &quot;acfgbd&quot; is not ideal because &#39;c&#39; and &#39;f&#39; have a difference of 3 in alphabet order."
+      "explanation": "The longest ideal string is \"acbd\". The length of this string is 4, so 4 is returned.\nNote that \"acfgbd\" is not ideal because 'c' and 'f' have a difference of 3 in alphabet order."
     },
     {
-      "input": "s = &quot;abcd&quot;, k = 3",
+      "input": "s = \"abcd\", k = 3",
       "output": "4",
-      "explanation": "The longest ideal string is &quot;abcd&quot;. The length of this string is 4, so 4 is returned."
+      "explanation": "The longest ideal string is \"abcd\". The length of this string is 4, so 4 is returned."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;acfgbd&quot;, k = 2",
+      "input": "\"acfgbd\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcd&quot;, k = 3",
+      "input": "\"abcd\"\n3",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;acfgbd&quot;, k = 2",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;abcd&quot;, k = 3",
-      "expectedOutput": "4"
-    },
-    {
       "input": "\"acfgbd\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"abcd\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;acfgbd&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"acfgbd\", k = 2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = \"abcd\", k = 3",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-ideal-subsequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.960Z",
+    "collectedAt": "2026-10-19T18:40:20.508Z",
     "sourceUpdatedAt": null
   }
 }

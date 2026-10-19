@@ -17,12 +17,12 @@
   "examples": [
     {
       "input": "n = 3, k = 27",
-      "output": "&quot;aay&quot;",
+      "output": "\"aay\"",
       "explanation": "The numeric value of the string is 1 + 1 + 25 = 27, and it is the smallest string with such a value and length equal to 3."
     },
     {
       "input": "n = 5, k = 73",
-      "output": "&quot;aaszz&quot;",
+      "output": "\"aaszz\"",
       "explanation": null
     }
   ],
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 27",
-      "expectedOutput": "&quot;aay&quot;"
+      "input": "3\n27",
+      "expectedOutput": "\"aay\""
     },
     {
-      "input": "n = 5, k = 73",
-      "expectedOutput": "&quot;aaszz&quot;"
+      "input": "5\n73",
+      "expectedOutput": "\"aaszz\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 3, k = 27",
-      "expectedOutput": "&quot;aay&quot;"
-    },
-    {
-      "input": "n = 5, k = 73",
-      "expectedOutput": "&quot;aaszz&quot;"
-    },
-    {
       "input": "3\n27",
-      "expectedOutput": null
+      "expectedOutput": "\"aay\""
     },
     {
       "input": "5\n73",
-      "expectedOutput": null
+      "expectedOutput": "\"aaszz\""
     },
     {
-      "input": "n = 4, k = 28",
-      "expectedOutput": null
+      "input": "n = 3, k = 27",
+      "expectedOutput": "\"aay\""
+    },
+    {
+      "input": "n = 5, k = 73",
+      "expectedOutput": "\"aaszz\""
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-string-with-a-given-numeric-value/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:31.416Z",
+    "collectedAt": "2026-10-19T18:40:29.829Z",
     "sourceUpdatedAt": null
   }
 }

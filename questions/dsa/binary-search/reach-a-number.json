@@ -49,82 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "target = 2",
+      "input": "2",
       "expectedOutput": "3"
     },
     {
-      "input": "target = 3",
+      "input": "3",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "2"
+    },
+    {
       "input": "target = 2",
       "expectedOutput": "3"
     },
     {
       "input": "target = 3",
       "expectedOutput": "2"
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -136,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reach-a-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:04.051Z",
+    "collectedAt": "2026-10-19T18:40:27.227Z",
     "sourceUpdatedAt": null
   }
 }

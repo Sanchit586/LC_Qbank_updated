@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;Piatti&quot;,&quot;The Grill at Torrey Pines&quot;,&quot;Hungry Hunter Steakhouse&quot;,&quot;Shogun&quot;]",
-      "output": "[&quot;Shogun&quot;]",
-      "explanation": "The only common string is &quot;Shogun&quot;."
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "output": "[\"Shogun\"]",
+      "explanation": "The only common string is \"Shogun\"."
     },
     {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;KFC&quot;,&quot;Shogun&quot;,&quot;Burger King&quot;]",
-      "output": "[&quot;Shogun&quot;]",
-      "explanation": "The common string with the least index sum is &quot;Shogun&quot; with index sum = (0 + 1) = 1."
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"KFC\",\"Shogun\",\"Burger King\"]",
+      "output": "[\"Shogun\"]",
+      "explanation": "The common string with the least index sum is \"Shogun\" with index sum = (0 + 1) = 1."
     },
     {
-      "input": "list1 = [&quot;happy&quot;,&quot;sad&quot;,&quot;good&quot;], list2 = [&quot;sad&quot;,&quot;happy&quot;,&quot;good&quot;]",
-      "output": "[&quot;sad&quot;,&quot;happy&quot;]",
-      "explanation": "There are three common strings:\n&quot;happy&quot; with index sum = (0 + 1) = 1.\n&quot;sad&quot; with index sum = (1 + 0) = 1.\n&quot;good&quot; with index sum = (2 + 2) = 4.\nThe strings with the least index sum are &quot;sad&quot; and &quot;happy&quot;."
+      "input": "list1 = [\"happy\",\"sad\",\"good\"], list2 = [\"sad\",\"happy\",\"good\"]",
+      "output": "[\"sad\",\"happy\"]",
+      "explanation": "There are three common strings:\n\"happy\" with index sum = (0 + 1) = 1.\n\"sad\" with index sum = (1 + 0) = 1.\n\"good\" with index sum = (2 + 2) = 4.\nThe strings with the least index sum are \"sad\" and \"happy\"."
     }
   ],
   "starterCode": {
@@ -59,50 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;Piatti&quot;,&quot;The Grill at Torrey Pines&quot;,&quot;Hungry Hunter Steakhouse&quot;,&quot;Shogun&quot;]",
-      "expectedOutput": "[&quot;Shogun&quot;]"
+      "input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
     },
     {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;KFC&quot;,&quot;Shogun&quot;,&quot;Burger King&quot;]",
-      "expectedOutput": "[&quot;Shogun&quot;]"
+      "input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"KFC\",\"Shogun\",\"Burger King\"]",
+      "expectedOutput": "[\"Shogun\"]"
     },
     {
-      "input": "list1 = [&quot;happy&quot;,&quot;sad&quot;,&quot;good&quot;], list2 = [&quot;sad&quot;,&quot;happy&quot;,&quot;good&quot;]",
-      "expectedOutput": "[&quot;sad&quot;,&quot;happy&quot;]"
+      "input": "[\"happy\",\"sad\",\"good\"]\n[\"sad\",\"happy\",\"good\"]",
+      "expectedOutput": "[\"sad\",\"happy\"]"
     }
   ],
   "testCases": [
     {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;Piatti&quot;,&quot;The Grill at Torrey Pines&quot;,&quot;Hungry Hunter Steakhouse&quot;,&quot;Shogun&quot;]",
-      "expectedOutput": "[&quot;Shogun&quot;]"
-    },
-    {
-      "input": "list1 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list2 = [&quot;KFC&quot;,&quot;Shogun&quot;,&quot;Burger King&quot;]",
-      "expectedOutput": "[&quot;Shogun&quot;]"
-    },
-    {
-      "input": "list1 = [&quot;happy&quot;,&quot;sad&quot;,&quot;good&quot;], list2 = [&quot;sad&quot;,&quot;happy&quot;,&quot;good&quot;]",
-      "expectedOutput": "[&quot;sad&quot;,&quot;happy&quot;]"
-    },
-    {
       "input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"Shogun\"]"
     },
     {
       "input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"KFC\",\"Shogun\",\"Burger King\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"Shogun\"]"
     },
     {
       "input": "[\"happy\",\"sad\",\"good\"]\n[\"sad\",\"happy\",\"good\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"sad\",\"happy\"]"
     },
     {
-      "input": "list2 = [&quot;Shogun&quot;,&quot;Tapioca Express&quot;,&quot;Burger King&quot;,&quot;KFC&quot;], list3 = [&quot;KFC&quot;,&quot;Shogun&quot;,&quot;Burger King&quot;]",
-      "expectedOutput": null
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
     },
     {
-      "input": "list2 = [&quot;happy&quot;,&quot;sad&quot;,&quot;good&quot;], list3 = [&quot;sad&quot;,&quot;happy&quot;,&quot;good&quot;]",
-      "expectedOutput": null
+      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"KFC\",\"Shogun\",\"Burger King\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "list1 = [\"happy\",\"sad\",\"good\"], list2 = [\"sad\",\"happy\",\"good\"]",
+      "expectedOutput": "[\"sad\",\"happy\"]"
     }
   ],
   "sqlSchema": null,
@@ -114,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-index-sum-of-two-lists/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.267Z",
+    "collectedAt": "2026-10-19T18:40:24.005Z",
     "sourceUpdatedAt": null
   }
 }

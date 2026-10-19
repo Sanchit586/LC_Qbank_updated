@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "3",
-      "explanation": "Three palindromic strings: &quot;a&quot;, &quot;b&quot;, &quot;c&quot;."
+      "explanation": "Three palindromic strings: \"a\", \"b\", \"c\"."
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "s = \"aaa\"",
       "output": "6",
-      "explanation": "Six palindromic strings: &quot;a&quot;, &quot;a&quot;, &quot;a&quot;, &quot;aa&quot;, &quot;aa&quot;, &quot;aaa&quot;."
+      "explanation": "Six palindromic strings: \"a\", \"a\", \"a\", \"aa\", \"aa\", \"aaa\"."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "\"aaa\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;aaa&quot;",
+      "input": "\"aaa\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "s = \"aaa\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/palindromic-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.064Z",
+    "collectedAt": "2026-10-19T18:40:26.489Z",
     "sourceUpdatedAt": null
   }
 }

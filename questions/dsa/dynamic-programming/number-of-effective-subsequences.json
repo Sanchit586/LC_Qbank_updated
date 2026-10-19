@@ -62,24 +62,40 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,2,3]",
+      "input": "[1,2,3]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [7,4,6]",
+      "input": "[7,4,6]",
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [8,8]",
+      "input": "[8,8]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [2,2,1]",
+      "input": "[2,2,1]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[7,4,6]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[8,8]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,2,1]",
+      "expectedOutput": "5"
+    },
+    {
       "input": "nums = [1,2,3]",
       "expectedOutput": "3"
     },
@@ -94,70 +110,6 @@
     {
       "input": "nums = [2,2,1]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,4,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[8,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,4,3,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,3,2,4,6,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1000000000,-1000000000]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -173,7 +125,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-effective-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:39.053Z",
+    "collectedAt": "2026-10-19T18:40:25.843Z",
     "sourceUpdatedAt": null
   }
 }

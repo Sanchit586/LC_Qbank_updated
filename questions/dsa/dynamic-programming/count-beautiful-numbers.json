@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "l = 10, r = 20",
+      "input": "10\n20",
       "expectedOutput": "2"
     },
     {
-      "input": "l = 1, r = 15",
+      "input": "1\n15",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "10\n20",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1\n15",
+      "expectedOutput": "10"
+    },
+    {
       "input": "l = 10, r = 20",
       "expectedOutput": "2"
     },
     {
       "input": "l = 1, r = 15",
       "expectedOutput": "10"
-    },
-    {
-      "input": "10\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n15",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 11, r = 21",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-beautiful-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:07.542Z",
+    "collectedAt": "2026-10-19T18:40:14.951Z",
     "sourceUpdatedAt": null
   }
 }

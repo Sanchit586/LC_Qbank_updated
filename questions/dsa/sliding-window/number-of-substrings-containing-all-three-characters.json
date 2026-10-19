@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcabc&quot;",
+      "input": "s = \"abcabc\"",
       "output": "10",
-      "explanation": "The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;a,&nbsp;b&nbsp;and&nbsp;c are &quot;abc&quot;, &quot;abca&quot;, &quot;abcab&quot;, &quot;abcabc&quot;, &quot;bca&quot;, &quot;bcab&quot;, &quot;bcabc&quot;, &quot;cab&quot;, &quot;cabc&quot; and &quot;abc&quot; (again)."
+      "explanation": "The substrings containing at least one occurrence of the characters a, b and c are \"abc\", \"abca\", \"abcab\", \"abcabc\", \"bca\", \"bcab\", \"bcabc\", \"cab\", \"cabc\" and \"abc\" (again)."
     },
     {
-      "input": "s = &quot;aaacb&quot;",
+      "input": "s = \"aaacb\"",
       "output": "3",
-      "explanation": "The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;a,&nbsp;b&nbsp;and&nbsp;c are &quot;aaacb&quot;, &quot;aacb&quot; and &quot;acb&quot;."
+      "explanation": "The substrings containing at least one occurrence of the characters a, b and c are \"aaacb\", \"aacb\" and \"acb\"."
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "s = \"abc\"",
       "output": "1",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcabc&quot;",
+      "input": "\"abcabc\"",
       "expectedOutput": "10"
     },
     {
-      "input": "s = &quot;aaacb&quot;",
+      "input": "\"aaacb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcabc&quot;",
+      "input": "\"abcabc\"",
       "expectedOutput": "10"
     },
     {
-      "input": "s = &quot;aaacb&quot;",
+      "input": "\"aaacb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"abcabc\"",
-      "expectedOutput": null
+      "input": "s = \"abcabc\"",
+      "expectedOutput": "10"
     },
     {
-      "input": "\"aaacb\"",
-      "expectedOutput": null
+      "input": "s = \"aaacb\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.511Z",
+    "collectedAt": "2026-10-19T18:40:26.153Z",
     "sourceUpdatedAt": null
   }
 }

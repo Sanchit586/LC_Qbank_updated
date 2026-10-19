@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 2, row = 0, column = 0",
+      "input": "3\n2\n0\n0",
       "expectedOutput": "0.06250"
     },
     {
-      "input": "n = 1, k = 0, row = 0, column = 0",
+      "input": "1\n0\n0\n0",
       "expectedOutput": "1.00000"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2\n0\n0",
+      "expectedOutput": "0.06250"
+    },
+    {
+      "input": "1\n0\n0\n0",
+      "expectedOutput": "1.00000"
+    },
+    {
       "input": "n = 3, k = 2, row = 0, column = 0",
       "expectedOutput": "0.06250"
     },
     {
       "input": "n = 1, k = 0, row = 0, column = 0",
       "expectedOutput": "1.00000"
-    },
-    {
-      "input": "3\n2\n0\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n0\n0\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 3, row = 1, column = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/knight-probability-in-chessboard/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:36.968Z",
+    "collectedAt": "2026-10-19T18:40:19.817Z",
     "sourceUpdatedAt": null
   }
 }

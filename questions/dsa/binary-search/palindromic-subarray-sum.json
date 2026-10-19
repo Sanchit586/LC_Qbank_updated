@@ -66,28 +66,48 @@
   },
   "publicTests": [
     {
-      "input": "nums = [10,10]",
+      "input": "[10,10]",
       "expectedOutput": "20"
     },
     {
-      "input": "nums = [1,2,3,2,1,5,6]",
+      "input": "[1,2,3,2,1,5,6]",
       "expectedOutput": "9"
     },
     {
-      "input": "nums = [7,1,2,1,7,3,4,3,4]",
+      "input": "[7,1,2,1,7,3,4,3,4]",
       "expectedOutput": "18"
     },
     {
-      "input": "nums = [1,2,3,4,5]",
+      "input": "[1,2,3,4,5]",
       "expectedOutput": "5"
     },
     {
-      "input": "nums = [1000]",
+      "input": "[1000]",
       "expectedOutput": "1000"
     }
   ],
   "testCases": [
     {
+      "input": "[10,10]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[1,2,3,2,1,5,6]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[7,1,2,1,7,3,4,3,4]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1000]",
+      "expectedOutput": "1000"
+    },
+    {
       "input": "nums = [10,10]",
       "expectedOutput": "20"
     },
@@ -106,66 +126,6 @@
     {
       "input": "nums = [1000]",
       "expectedOutput": "1000"
-    },
-    {
-      "input": "[10,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,2,1,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,1,2,1,7,3,4,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1000]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,4,3,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,3,2,4,6,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1000000000,-1000000000]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -185,7 +145,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/palindromic-subarray-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.056Z",
+    "collectedAt": "2026-10-19T18:40:26.484Z",
     "sourceUpdatedAt": null
   }
 }

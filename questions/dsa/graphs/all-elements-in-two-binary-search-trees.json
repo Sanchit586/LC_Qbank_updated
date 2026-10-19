@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "root1 = [2,1,4], root2 = [1,0,3]",
+      "input": "[2,1,4]\n[1,0,3]",
       "expectedOutput": "[0,1,1,2,3,4]"
     },
     {
-      "input": "root1 = [1,null,8], root2 = [8,1]",
+      "input": "[1,null,8]\n[8,1]",
       "expectedOutput": "[1,1,8,8]"
     }
   ],
   "testCases": [
     {
+      "input": "[2,1,4]\n[1,0,3]",
+      "expectedOutput": "[0,1,1,2,3,4]"
+    },
+    {
+      "input": "[1,null,8]\n[8,1]",
+      "expectedOutput": "[1,1,8,8]"
+    },
+    {
       "input": "root1 = [2,1,4], root2 = [1,0,3]",
       "expectedOutput": "[0,1,1,2,3,4]"
     },
     {
       "input": "root1 = [1,null,8], root2 = [8,1]",
       "expectedOutput": "[1,1,8,8]"
-    },
-    {
-      "input": "[2,1,4]\n[1,0,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,null,8]\n[8,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "root2 = [3,2,5], root3 = [2,1,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/all-elements-in-two-binary-search-trees/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:56.238Z",
+    "collectedAt": "2026-10-19T18:40:12.969Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,7 +17,13 @@
     "word and prefix consist only of lowercase English letters.",
     "At most 3 * 104 calls in total will be made to insert, search, and startsWith."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Trie\", \"insert\", \"search\", \"search\", \"startsWith\", \"insert\", \"search\"]\n[[], [\"apple\"], [\"apple\"], [\"app\"], [\"app\"], [\"app\"], [\"app\"]]",
+      "output": "[null, null, true, false, true, null, true]",
+      "explanation": "Trie trie = new Trie();\ntrie.insert(\"apple\");\ntrie.search(\"apple\");   // return True\ntrie.search(\"app\");     // return False\ntrie.startsWith(\"app\"); // return True\ntrie.insert(\"app\");\ntrie.search(\"app\");     // return True"
+    }
+  ],
   "starterCode": {
     "cpp": "class Trie {\npublic:\n    Trie() {\n        \n    }\n    \n    void insert(string word) {\n        \n    }\n    \n    bool search(string word) {\n        \n    }\n    \n    bool startsWith(string prefix) {\n        \n    }\n};\n\n/**\n * Your Trie object will be instantiated and called as such:\n * Trie* obj = new Trie();\n * obj->insert(word);\n * bool param_2 = obj->search(word);\n * bool param_3 = obj->startsWith(prefix);\n */",
     "java": "class Trie {\n\n    public Trie() {\n        \n    }\n    \n    public void insert(String word) {\n        \n    }\n    \n    public boolean search(String word) {\n        \n    }\n    \n    public boolean startsWith(String prefix) {\n        \n    }\n}\n\n/**\n * Your Trie object will be instantiated and called as such:\n * Trie obj = new Trie();\n * obj.insert(word);\n * boolean param_2 = obj.search(word);\n * boolean param_3 = obj.startsWith(prefix);\n */",
@@ -42,13 +48,17 @@
   "publicTests": [
     {
       "input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, true, false, true, null, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Trie\",\"insert\",\"search\",\"search\",\"startsWith\",\"insert\",\"search\"]\n[[],[\"apple\"],[\"apple\"],[\"app\"],[\"app\"],[\"app\"],[\"app\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, true, false, true, null, true]"
+    },
+    {
+      "input": "[\"Trie\", \"insert\", \"search\", \"search\", \"startsWith\", \"insert\", \"search\"]\n[[], [\"apple\"], [\"apple\"], [\"app\"], [\"app\"], [\"app\"], [\"app\"]]",
+      "expectedOutput": "[null, null, true, false, true, null, true]"
     }
   ],
   "sqlSchema": null,
@@ -60,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/implement-trie-prefix-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.643Z",
+    "collectedAt": "2026-10-19T18:40:19.476Z",
     "sourceUpdatedAt": null
   }
 }

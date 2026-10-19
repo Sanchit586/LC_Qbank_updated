@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, brightness = 5, intervals = [[6,12]]",
+      "input": "5\n5\n[[6,12]]",
       "expectedOutput": "14"
     },
     {
-      "input": "n = 2, brightness = 1, intervals = [[0,0],[2,2]]",
+      "input": "2\n1\n[[0,0],[2,2]]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 4, brightness = 2, intervals = [[1,3],[2,4]]",
+      "input": "4\n2\n[[1,3],[2,4]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "5\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "2\n1\n[[0,0],[2,2]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n2\n[[1,3],[2,4]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 5, brightness = 5, intervals = [[6,12]]",
       "expectedOutput": "14"
     },
@@ -81,38 +93,6 @@
     {
       "input": "n = 4, brightness = 2, intervals = [[1,3],[2,4]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "5\n5\n[[6,12]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n1\n[[0,0],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2\n[[1,3],[2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, brightness = 2, intervals = [[1,1],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, brightness = 3, intervals = [[2,4],[3,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n6\n[[7,13]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n[[1,1],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, brightness = 6, intervals = [[7,13]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-energy-to-maintain-brightness/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:56.955Z",
+    "collectedAt": "2026-10-19T18:40:23.902Z",
     "sourceUpdatedAt": null
   }
 }

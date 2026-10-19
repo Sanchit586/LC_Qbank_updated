@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1000",
+      "input": "1000",
       "expectedOutput": "false"
     },
     {
-      "input": "n = 19",
+      "input": "19",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "1000",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "19",
+      "expectedOutput": "true"
+    },
+    {
       "input": "n = 1000",
       "expectedOutput": "false"
     },
     {
       "input": "n = 19",
       "expectedOutput": "true"
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "19",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "20",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -145,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-good-integer/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.611Z",
+    "collectedAt": "2026-10-19T18:40:14.041Z",
     "sourceUpdatedAt": null
   }
 }

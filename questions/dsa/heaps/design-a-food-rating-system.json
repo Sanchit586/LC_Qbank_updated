@@ -25,7 +25,13 @@
     "cuisine will be a type of cuisine of at least one food item in the system across all calls to highestRated.",
     "At most 2 * 104 calls in total will be made to changeRating and highestRated."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"FoodRatings\", \"highestRated\", \"highestRated\", \"changeRating\", \"highestRated\", \"changeRating\", \"highestRated\"]\n[[[\"kimchi\", \"miso\", \"sushi\", \"moussaka\", \"ramen\", \"bulgogi\"], [\"korean\", \"japanese\", \"japanese\", \"greek\", \"japanese\", \"korean\"], [9, 12, 8, 15, 14, 7]], [\"korean\"], [\"japanese\"], [\"sushi\", 16], [\"japanese\"], [\"ramen\", 16], [\"japanese\"]]",
+      "output": "[null, \"kimchi\", \"ramen\", null, \"sushi\", null, \"ramen\"]",
+      "explanation": "FoodRatings foodRatings = new FoodRatings([\"kimchi\", \"miso\", \"sushi\", \"moussaka\", \"ramen\", \"bulgogi\"], [\"korean\", \"japanese\", \"japanese\", \"greek\", \"japanese\", \"korean\"], [9, 12, 8, 15, 14, 7]);\nfoodRatings.highestRated(\"korean\"); // return \"kimchi\"\n                                    // \"kimchi\" is the highest rated korean food with a rating of 9.\nfoodRatings.highestRated(\"japanese\"); // return \"ramen\"\n                                      // \"ramen\" is the highest rated japanese food with a rating of 14.\nfoodRatings.changeRating(\"sushi\", 16); // \"sushi\" now has a rating of 16.\nfoodRatings.highestRated(\"japanese\"); // return \"sushi\"\n                                      // \"sushi\" is the highest rated japanese food with a rating of 16.\nfoodRatings.changeRating(\"ramen\", 16); // \"ramen\" now has a rating of 16.\nfoodRatings.highestRated(\"japanese\"); // return \"ramen\"\n                                      // Both \"sushi\" and \"ramen\" have a rating of 16.\n                                      // However, \"ramen\" is lexicographically smaller than \"sushi\"."
+    }
+  ],
   "starterCode": {
     "cpp": "class FoodRatings {\npublic:\n    FoodRatings(vector<string>& foods, vector<string>& cuisines, vector<int>& ratings) {\n        \n    }\n    \n    void changeRating(string food, int newRating) {\n        \n    }\n    \n    string highestRated(string cuisine) {\n        \n    }\n};\n\n/**\n * Your FoodRatings object will be instantiated and called as such:\n * FoodRatings* obj = new FoodRatings(foods, cuisines, ratings);\n * obj->changeRating(food,newRating);\n * string param_2 = obj->highestRated(cuisine);\n */",
     "java": "class FoodRatings {\n\n    public FoodRatings(String[] foods, String[] cuisines, int[] ratings) {\n        \n    }\n    \n    public void changeRating(String food, int newRating) {\n        \n    }\n    \n    public String highestRated(String cuisine) {\n        \n    }\n}\n\n/**\n * Your FoodRatings object will be instantiated and called as such:\n * FoodRatings obj = new FoodRatings(foods, cuisines, ratings);\n * obj.changeRating(food,newRating);\n * String param_2 = obj.highestRated(cuisine);\n */",
@@ -50,17 +56,17 @@
   "publicTests": [
     {
       "input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"kimchi\",\"miso\",\"sushi\",\"moussaka\",\"ramen\",\"bulgogi\"],[\"korean\",\"japanese\",\"japanese\",\"greek\",\"japanese\",\"korean\"],[9,12,8,15,14,7]],[\"korean\"],[\"japanese\"],[\"sushi\",16],[\"japanese\"],[\"ramen\",16],[\"japanese\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"kimchi\", \"ramen\", null, \"sushi\", null, \"ramen\"]"
     }
   ],
   "testCases": [
     {
       "input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"kimchi\",\"miso\",\"sushi\",\"moussaka\",\"ramen\",\"bulgogi\"],[\"korean\",\"japanese\",\"japanese\",\"greek\",\"japanese\",\"korean\"],[9,12,8,15,14,7]],[\"korean\"],[\"japanese\"],[\"sushi\",16],[\"japanese\"],[\"ramen\",16],[\"japanese\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, \"kimchi\", \"ramen\", null, \"sushi\", null, \"ramen\"]"
     },
     {
-      "input": "[\"FoodRatings\",\"highestRated\",\"highestRated\",\"changeRating\",\"highestRated\",\"changeRating\",\"highestRated\"]\n[[[\"kimchi\",\"miso\",\"sushi\",\"moussaka\",\"ramen\",\"bulgogi\"],[\"korean\",\"japanese\",\"japanese\",\"greek\",\"japanese\",\"korean\"],[10,13,9,16,15,8]],[\"korean\"],[\"japanese\"],[\"sushi\",17],[\"japanese\"],[\"ramen\",17],[\"japanese\"]]",
-      "expectedOutput": null
+      "input": "[\"FoodRatings\", \"highestRated\", \"highestRated\", \"changeRating\", \"highestRated\", \"changeRating\", \"highestRated\"]\n[[[\"kimchi\", \"miso\", \"sushi\", \"moussaka\", \"ramen\", \"bulgogi\"], [\"korean\", \"japanese\", \"japanese\", \"greek\", \"japanese\", \"korean\"], [9, 12, 8, 15, 14, 7]], [\"korean\"], [\"japanese\"], [\"sushi\", 16], [\"japanese\"], [\"ramen\", 16], [\"japanese\"]]",
+      "expectedOutput": "[null, \"kimchi\", \"ramen\", null, \"sushi\", null, \"ramen\"]"
     }
   ],
   "sqlSchema": null,
@@ -76,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-a-food-rating-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:38.878Z",
+    "collectedAt": "2026-10-19T18:40:16.358Z",
     "sourceUpdatedAt": null
   }
 }

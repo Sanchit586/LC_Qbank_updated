@@ -29,12 +29,12 @@
   ],
   "examples": [
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is studious\",\"the student is smart\"], student_id = [1,2], k = 2",
       "output": "[1,2]",
       "explanation": "Both the students have 1 positive feedback and 3 points but since student 1 has a lower ID he ranks higher."
     },
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is not studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is not studious\",\"the student is smart\"], student_id = [1,2], k = 2",
       "output": "[2,1]",
       "explanation": "- The student with ID 1 has 1 positive feedback and 1 negative feedback, so he has 3-1=2 points. \n- The student with ID 2 has 1 positive feedback, so he has 3 points. \nSince student 2 has more points, [2,1] is returned."
     }
@@ -62,34 +62,30 @@
   },
   "publicTests": [
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is not studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is not studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[2,1]"
     }
   ],
   "testCases": [
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is not studious&quot;,&quot;the student is smart&quot;], student_id = [1,2], k = 2",
+      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is not studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[2,1]"
     },
     {
-      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
-      "expectedOutput": null
+      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is studious\",\"the student is smart\"], student_id = [1,2], k = 2",
+      "expectedOutput": "[1,2]"
     },
     {
-      "input": "[\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is not studious\",\"the student is smart\"]\n[1,2]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "positive_feedback = [&quot;smart&quot;,&quot;brilliant&quot;,&quot;studious&quot;], negative_feedback = [&quot;not&quot;], report = [&quot;this student is studious&quot;,&quot;the student is smart&quot;], student_id = [2,3], k = 3",
-      "expectedOutput": null
+      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is not studious\",\"the student is smart\"], student_id = [1,2], k = 2",
+      "expectedOutput": "[2,1]"
     }
   ],
   "sqlSchema": null,
@@ -105,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reward-top-k-students/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:13.006Z",
+    "collectedAt": "2026-10-19T18:40:27.922Z",
     "sourceUpdatedAt": null
   }
 }

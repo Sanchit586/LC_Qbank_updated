@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "DailySales table:\n+-----------+-----------+---------+------------+\n| date_id   | make_name | lead_id | partner_id |\n+-----------+-----------+---------+------------+\n| 2020-12-8 | toyota    | 0       | 1          |\n| 2020-12-8 | toyota    | 1       | 0          |\n| 2020-12-8 | toyota    | 1       | 2          |\n| 2020-12-7 | toyota    | 0       | 2          |\n| 2020-12-7 | toyota    | 0       | 1          |\n| 2020-12-8 | honda     | 1       | 2          |\n| 2020-12-8 | honda     | 2       | 1          |\n| 2020-12-7 | honda     | 0       | 1          |\n| 2020-12-7 | honda     | 1       | 2          |\n| 2020-12-7 | honda     | 2       | 1          |\n+-----------+-----------+---------+------------+",
+      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[[\"2020-12-8\",\"toyota\",0,1],[\"2020-12-8\",\"toyota\",1,0],[\"2020-12-8\",\"toyota\",1,2],[\"2020-12-7\",\"toyota\",0,2],[\"2020-12-7\",\"toyota\",0,1],[\"2020-12-8\",\"honda\",1,2],[\"2020-12-8\",\"honda\",2,1],[\"2020-12-7\",\"honda\",0,1],[\"2020-12-7\",\"honda\",1,2],[\"2020-12-7\",\"honda\",2,1]]}}",
       "expectedOutput": "+-----------+-----------+--------------+-----------------+\n| date_id   | make_name | unique_leads | unique_partners |\n+-----------+-----------+--------------+-----------------+\n| 2020-12-8 | toyota    | 2            | 3               |\n| 2020-12-7 | toyota    | 1            | 2               |\n| 2020-12-8 | honda     | 2            | 2               |\n| 2020-12-7 | honda     | 3            | 2               |\n+-----------+-----------+--------------+-----------------+"
     }
   ],
   "testCases": [
     {
-      "input": "DailySales table:\n+-----------+-----------+---------+------------+\n| date_id   | make_name | lead_id | partner_id |\n+-----------+-----------+---------+------------+\n| 2020-12-8 | toyota    | 0       | 1          |\n| 2020-12-8 | toyota    | 1       | 0          |\n| 2020-12-8 | toyota    | 1       | 2          |\n| 2020-12-7 | toyota    | 0       | 2          |\n| 2020-12-7 | toyota    | 0       | 1          |\n| 2020-12-8 | honda     | 1       | 2          |\n| 2020-12-8 | honda     | 2       | 1          |\n| 2020-12-7 | honda     | 0       | 1          |\n| 2020-12-7 | honda     | 1       | 2          |\n| 2020-12-7 | honda     | 2       | 1          |\n+-----------+-----------+---------+------------+",
+      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[[\"2020-12-8\",\"toyota\",0,1],[\"2020-12-8\",\"toyota\",1,0],[\"2020-12-8\",\"toyota\",1,2],[\"2020-12-7\",\"toyota\",0,2],[\"2020-12-7\",\"toyota\",0,1],[\"2020-12-8\",\"honda\",1,2],[\"2020-12-8\",\"honda\",2,1],[\"2020-12-7\",\"honda\",0,1],[\"2020-12-7\",\"honda\",1,2],[\"2020-12-7\",\"honda\",2,1]]}}",
       "expectedOutput": "+-----------+-----------+--------------+-----------------+\n| date_id   | make_name | unique_leads | unique_partners |\n+-----------+-----------+--------------+-----------------+\n| 2020-12-8 | toyota    | 2            | 3               |\n| 2020-12-7 | toyota    | 1            | 2               |\n| 2020-12-8 | honda     | 2            | 2               |\n| 2020-12-7 | honda     | 3            | 2               |\n+-----------+-----------+--------------+-----------------+"
     },
     {
-      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[[\"2020-12-8\",\"toyota\",0,1],[\"2020-12-8\",\"toyota\",1,0],[\"2020-12-8\",\"toyota\",1,2],[\"2020-12-7\",\"toyota\",0,2],[\"2020-12-7\",\"toyota\",0,1],[\"2020-12-8\",\"honda\",1,2],[\"2020-12-8\",\"honda\",2,1],[\"2020-12-7\",\"honda\",0,1],[\"2020-12-7\",\"honda\",1,2],[\"2020-12-7\",\"honda\",2,1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[[\"2020-12-8\",\"toyota\",0,1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"DailySales\":[\"date_id\",\"make_name\",\"lead_id\",\"partner_id\"]},\"rows\":{\"DailySales\":[[\"2020-12-8\",\"toyota\",0,null],[\"2020-12-8\",\"toyota\",1,null],[\"2020-12-8\",\"toyota\",1,null],[\"2020-12-7\",\"toyota\",0,null],[\"2020-12-7\",\"toyota\",0,null],[\"2020-12-8\",\"honda\",1,null],[\"2020-12-8\",\"honda\",2,null],[\"2020-12-7\",\"honda\",0,null],[\"2020-12-7\",\"honda\",1,null],[\"2020-12-7\",\"honda\",2,null]]}}",
-      "expectedOutput": null
+      "input": "DailySales table:\n+-----------+-----------+---------+------------+\n| date_id   | make_name | lead_id | partner_id |\n+-----------+-----------+---------+------------+\n| 2020-12-8 | toyota    | 0       | 1          |\n| 2020-12-8 | toyota    | 1       | 0          |\n| 2020-12-8 | toyota    | 1       | 2          |\n| 2020-12-7 | toyota    | 0       | 2          |\n| 2020-12-7 | toyota    | 0       | 1          |\n| 2020-12-8 | honda     | 1       | 2          |\n| 2020-12-8 | honda     | 2       | 1          |\n| 2020-12-7 | honda     | 0       | 1          |\n| 2020-12-7 | honda     | 1       | 2          |\n| 2020-12-7 | honda     | 2       | 1          |\n+-----------+-----------+---------+------------+",
+      "expectedOutput": "+-----------+-----------+--------------+-----------------+\n| date_id   | make_name | unique_leads | unique_partners |\n+-----------+-----------+--------------+-----------------+\n| 2020-12-8 | toyota    | 2            | 3               |\n| 2020-12-7 | toyota    | 1            | 2               |\n| 2020-12-8 | honda     | 2            | 2               |\n| 2020-12-7 | honda     | 3            | 2               |\n+-----------+-----------+--------------+-----------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists DailySales(date_id date, make_name varchar(20), lead_id int, partner_id int)\n\nTruncate table DailySales",
@@ -72,7 +60,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/daily-leads-and-partners/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:33.733Z",
+    "collectedAt": "2026-10-19T18:40:16.147Z",
     "sourceUpdatedAt": null
   }
 }

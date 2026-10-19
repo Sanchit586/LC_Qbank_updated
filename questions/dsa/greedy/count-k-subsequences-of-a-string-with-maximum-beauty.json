@@ -22,14 +22,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;bcca&quot;, k = 2",
+      "input": "s = \"bcca\", k = 2",
       "output": "4",
-      "explanation": "From s we have f(&#39;a&#39;) = 1, f(&#39;b&#39;) = 1, and f(&#39;c&#39;) = 2.\nThe k-subsequences of s are: \nbcca having a beauty of f(&#39;b&#39;) + f(&#39;c&#39;) = 3 \nbcca having a beauty of f(&#39;b&#39;) + f(&#39;c&#39;) = 3 \nbcca having a beauty of f(&#39;b&#39;) + f(&#39;a&#39;) = 2 \nbcca having a beauty of f(&#39;c&#39;) + f(&#39;a&#39;) = 3\nbcca having a beauty of f(&#39;c&#39;) + f(&#39;a&#39;) = 3 \nThere are 4 k-subsequences that have the maximum beauty, 3. \nHence, the answer is 4."
+      "explanation": "From s we have f('a') = 1, f('b') = 1, and f('c') = 2.\nThe k-subsequences of s are: \nbcca having a beauty of f('b') + f('c') = 3 \nbcca having a beauty of f('b') + f('c') = 3 \nbcca having a beauty of f('b') + f('a') = 2 \nbcca having a beauty of f('c') + f('a') = 3\nbcca having a beauty of f('c') + f('a') = 3 \nThere are 4 k-subsequences that have the maximum beauty, 3. \nHence, the answer is 4."
     },
     {
-      "input": "s = &quot;abbcd&quot;, k = 4",
+      "input": "s = \"abbcd\", k = 4",
       "output": "2",
-      "explanation": "From s we have f(&#39;a&#39;) = 1, f(&#39;b&#39;) = 2, f(&#39;c&#39;) = 1, and f(&#39;d&#39;) = 1. \nThe k-subsequences of s are: \nabbcd having a beauty of f(&#39;a&#39;) + f(&#39;b&#39;) + f(&#39;c&#39;) + f(&#39;d&#39;) = 5\nabbcd having a beauty of f(&#39;a&#39;) + f(&#39;b&#39;) + f(&#39;c&#39;) + f(&#39;d&#39;) = 5 \nThere are 2 k-subsequences that have the maximum beauty, 5. \nHence, the answer is 2."
+      "explanation": "From s we have f('a') = 1, f('b') = 2, f('c') = 1, and f('d') = 1. \nThe k-subsequences of s are: \nabbcd having a beauty of f('a') + f('b') + f('c') + f('d') = 5\nabbcd having a beauty of f('a') + f('b') + f('c') + f('d') = 5 \nThere are 2 k-subsequences that have the maximum beauty, 5. \nHence, the answer is 2."
     }
   ],
   "starterCode": {
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;bcca&quot;, k = 2",
+      "input": "\"bcca\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abbcd&quot;, k = 4",
+      "input": "\"abbcd\"\n4",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;bcca&quot;, k = 2",
+      "input": "\"bcca\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abbcd&quot;, k = 4",
+      "input": "\"abbcd\"\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "\"bcca\"\n2",
-      "expectedOutput": null
+      "input": "s = \"bcca\", k = 2",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abbcd\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;bcca&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"abbcd\", k = 4",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -100,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-k-subsequences-of-a-string-with-maximum-beauty/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:12.710Z",
+    "collectedAt": "2026-10-19T18:40:15.240Z",
     "sourceUpdatedAt": null
   }
 }

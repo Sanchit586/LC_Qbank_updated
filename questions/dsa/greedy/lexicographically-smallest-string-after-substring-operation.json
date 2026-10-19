@@ -16,23 +16,23 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cbabc&quot;",
-      "output": "&quot;baabc&quot;",
+      "input": "s = \"cbabc\"",
+      "output": "\"baabc\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;aa&quot;",
-      "output": "&quot;az&quot;",
+      "input": "s = \"aa\"",
+      "output": "\"az\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;acbbc&quot;",
-      "output": "&quot;abaab&quot;",
+      "input": "s = \"acbbc\"",
+      "output": "\"abaab\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "output": "&quot;kddsbncd&quot;",
+      "input": "s = \"leetcode\"",
+      "output": "\"kddsbncd\"",
       "explanation": null
     }
   ],
@@ -59,102 +59,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cbabc&quot;",
-      "expectedOutput": "&quot;baabc&quot;"
+      "input": "\"cbabc\"",
+      "expectedOutput": "\"baabc\""
     },
     {
-      "input": "s = &quot;aa&quot;",
-      "expectedOutput": "&quot;az&quot;"
+      "input": "\"aa\"",
+      "expectedOutput": "\"az\""
     },
     {
-      "input": "s = &quot;acbbc&quot;",
-      "expectedOutput": "&quot;abaab&quot;"
+      "input": "\"acbbc\"",
+      "expectedOutput": "\"abaab\""
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;kddsbncd&quot;"
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"kddsbncd\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cbabc&quot;",
-      "expectedOutput": "&quot;baabc&quot;"
-    },
-    {
-      "input": "s = &quot;aa&quot;",
-      "expectedOutput": "&quot;az&quot;"
-    },
-    {
-      "input": "s = &quot;acbbc&quot;",
-      "expectedOutput": "&quot;abaab&quot;"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;kddsbncd&quot;"
-    },
-    {
       "input": "\"cbabc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"baabc\""
     },
     {
       "input": "\"aa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"az\""
     },
     {
       "input": "\"acbbc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abaab\""
     },
     {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"kddsbncd\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"cbabc\"",
+      "expectedOutput": "\"baabc\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aa\"",
+      "expectedOutput": "\"az\""
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
+      "input": "s = \"acbbc\"",
+      "expectedOutput": "\"abaab\""
     },
     {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "\"kddsbncd\""
     }
   ],
   "sqlSchema": null,
@@ -169,7 +121,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.185Z",
+    "collectedAt": "2026-10-19T18:40:20.289Z",
     "sourceUpdatedAt": null
   }
 }

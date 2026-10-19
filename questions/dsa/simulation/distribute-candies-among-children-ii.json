@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, limit = 2",
+      "input": "5\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, limit = 3",
+      "input": "3\n3",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "5\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "10"
+    },
+    {
       "input": "n = 5, limit = 2",
       "expectedOutput": "3"
     },
     {
       "input": "n = 3, limit = 3",
       "expectedOutput": "10"
-    },
-    {
-      "input": "5\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, limit = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distribute-candies-among-children-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:47.913Z",
+    "collectedAt": "2026-10-19T18:40:16.748Z",
     "sourceUpdatedAt": null
   }
 }

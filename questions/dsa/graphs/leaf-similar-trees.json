@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
+      "input": "[3,5,1,6,2,9,8,null,null,7,4]\n[3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
       "expectedOutput": "true"
     },
     {
-      "input": "root1 = [1,2,3], root2 = [1,3,2]",
+      "input": "[1,2,3]\n[1,3,2]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[3,5,1,6,2,9,8,null,null,7,4]\n[3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,3]\n[1,3,2]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "root1 = [3,5,1,6,2,9,8,null,null,7,4], root2 = [3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
       "expectedOutput": "true"
     },
     {
       "input": "root1 = [1,2,3], root2 = [1,3,2]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[3,5,1,6,2,9,8,null,null,7,4]\n[3,5,1,6,7,4,2,null,null,null,null,null,null,9,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n[1,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "root2 = [4,6,2,7,3,10,9,null,null,8,5], root3 = [4,6,2,7,8,5,3,null,null,null,null,null,null,10,9]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/leaf-similar-trees/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.896Z",
+    "collectedAt": "2026-10-19T18:40:20.102Z",
     "sourceUpdatedAt": null
   }
 }

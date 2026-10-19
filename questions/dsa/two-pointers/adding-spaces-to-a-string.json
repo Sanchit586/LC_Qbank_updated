@@ -21,18 +21,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;LeetcodeHelpsMeLearn&quot;, spaces = [8,13,15]",
-      "output": "&quot;Leetcode Helps Me Learn&quot;",
-      "explanation": "The indices 8, 13, and 15 correspond to the underlined characters in &quot;LeetcodeHelpsMeLearn&quot;.\nWe then place spaces before those characters."
+      "input": "s = \"LeetcodeHelpsMeLearn\", spaces = [8,13,15]",
+      "output": "\"Leetcode Helps Me Learn\"",
+      "explanation": "The indices 8, 13, and 15 correspond to the underlined characters in \"LeetcodeHelpsMeLearn\".\nWe then place spaces before those characters."
     },
     {
-      "input": "s = &quot;icodeinpython&quot;, spaces = [1,5,7,9]",
-      "output": "&quot;i code in py thon&quot;",
-      "explanation": "The indices 1, 5, 7, and 9 correspond to the underlined characters in &quot;icodeinpython&quot;.\nWe then place spaces before those characters."
+      "input": "s = \"icodeinpython\", spaces = [1,5,7,9]",
+      "output": "\"i code in py thon\"",
+      "explanation": "The indices 1, 5, 7, and 9 correspond to the underlined characters in \"icodeinpython\".\nWe then place spaces before those characters."
     },
     {
-      "input": "s = &quot;spacing&quot;, spaces = [0,1,2,3,4,5,6]",
-      "output": "&quot; s p a c i n g&quot;",
+      "input": "s = \"spacing\", spaces = [0,1,2,3,4,5,6]",
+      "output": "\" s p a c i n g\"",
       "explanation": "We are also able to place spaces before the first character of the string."
     }
   ],
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;LeetcodeHelpsMeLearn&quot;, spaces = [8,13,15]",
-      "expectedOutput": "&quot;Leetcode Helps Me Learn&quot;"
+      "input": "\"LeetcodeHelpsMeLearn\"\n[8,13,15]",
+      "expectedOutput": "\"Leetcode Helps Me Learn\""
     },
     {
-      "input": "s = &quot;icodeinpython&quot;, spaces = [1,5,7,9]",
-      "expectedOutput": "&quot;i code in py thon&quot;"
+      "input": "\"icodeinpython\"\n[1,5,7,9]",
+      "expectedOutput": "\"i code in py thon\""
     },
     {
-      "input": "s = &quot;spacing&quot;, spaces = [0,1,2,3,4,5,6]",
-      "expectedOutput": "&quot; s p a c i n g&quot;"
+      "input": "\"spacing\"\n[0,1,2,3,4,5,6]",
+      "expectedOutput": "\" s p a c i n g\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;LeetcodeHelpsMeLearn&quot;, spaces = [8,13,15]",
-      "expectedOutput": "&quot;Leetcode Helps Me Learn&quot;"
-    },
-    {
-      "input": "s = &quot;icodeinpython&quot;, spaces = [1,5,7,9]",
-      "expectedOutput": "&quot;i code in py thon&quot;"
-    },
-    {
-      "input": "s = &quot;spacing&quot;, spaces = [0,1,2,3,4,5,6]",
-      "expectedOutput": "&quot; s p a c i n g&quot;"
-    },
-    {
       "input": "\"LeetcodeHelpsMeLearn\"\n[8,13,15]",
-      "expectedOutput": null
+      "expectedOutput": "\"Leetcode Helps Me Learn\""
     },
     {
       "input": "\"icodeinpython\"\n[1,5,7,9]",
-      "expectedOutput": null
+      "expectedOutput": "\"i code in py thon\""
     },
     {
       "input": "\"spacing\"\n[0,1,2,3,4,5,6]",
-      "expectedOutput": null
+      "expectedOutput": "\" s p a c i n g\""
     },
     {
-      "input": "s = &quot;icodeinpython&quot;, spaces = [2,6,8,10]",
-      "expectedOutput": null
+      "input": "s = \"LeetcodeHelpsMeLearn\", spaces = [8,13,15]",
+      "expectedOutput": "\"Leetcode Helps Me Learn\""
     },
     {
-      "input": "s = &quot;spacing&quot;, spaces = [1,2,3,4,5,6,7]",
-      "expectedOutput": null
+      "input": "s = \"icodeinpython\", spaces = [1,5,7,9]",
+      "expectedOutput": "\"i code in py thon\""
     },
     {
-      "input": "\"LeetcodeHelpsMeLearn\"\n[9,14,16]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"icodeinpython\"\n[2,6,8,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;LeetcodeHelpsMeLearn&quot;, spaces = [9,14,16]",
-      "expectedOutput": null
+      "input": "s = \"spacing\", spaces = [0,1,2,3,4,5,6]",
+      "expectedOutput": "\" s p a c i n g\""
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/adding-spaces-to-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.543Z",
+    "collectedAt": "2026-10-19T18:40:12.872Z",
     "sourceUpdatedAt": null
   }
 }

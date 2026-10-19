@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 2, target = 4",
+      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n2\n4",
       "expectedOutput": "0.16666666666666666"
     },
     {
-      "input": "n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 1, target = 7",
+      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n1\n7",
       "expectedOutput": "0.3333333333333333"
     }
   ],
   "testCases": [
     {
+      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n2\n4",
+      "expectedOutput": "0.16666666666666666"
+    },
+    {
+      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n1\n7",
+      "expectedOutput": "0.3333333333333333"
+    },
+    {
       "input": "n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 2, target = 4",
       "expectedOutput": "0.16666666666666666"
     },
     {
       "input": "n = 7, edges = [[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]], t = 1, target = 7",
       "expectedOutput": "0.3333333333333333"
-    },
-    {
-      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n2\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n[[1,2],[1,3],[1,7],[2,4],[2,6],[3,5]]\n1\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 8, edges = [[2,3],[2,4],[2,8],[3,5],[3,7],[4,6]], t = 3, target = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/frog-position-after-t-seconds/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:21.645Z",
+    "collectedAt": "2026-10-19T18:40:19.076Z",
     "sourceUpdatedAt": null
   }
 }

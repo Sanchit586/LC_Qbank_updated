@@ -15,17 +15,17 @@
   "examples": [
     {
       "input": "n = 4",
-      "output": "&quot;pppz&quot;",
-      "explanation": "&quot;pppz&quot; is a valid string since the character &#39;p&#39; occurs three times and the character &#39;z&#39; occurs once. Note that there are many other valid strings such as &quot;ohhh&quot; and &quot;love&quot;."
+      "output": "\"pppz\"",
+      "explanation": "\"pppz\" is a valid string since the character 'p' occurs three times and the character 'z' occurs once. Note that there are many other valid strings such as \"ohhh\" and \"love\"."
     },
     {
       "input": "n = 2",
-      "output": "&quot;xy&quot;",
-      "explanation": "&quot;xy&quot; is a valid string since the characters &#39;x&#39; and &#39;y&#39; occur once. Note that there are many other valid strings such as &quot;ag&quot; and &quot;ur&quot;."
+      "output": "\"xy\"",
+      "explanation": "\"xy\" is a valid string since the characters 'x' and 'y' occur once. Note that there are many other valid strings such as \"ag\" and \"ur\"."
     },
     {
       "input": "n = 7",
-      "output": "&quot;holasss&quot;",
+      "output": "\"holasss\"",
       "explanation": null
     }
   ],
@@ -52,98 +52,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 4",
-      "expectedOutput": "&quot;pppz&quot;"
+      "input": "4",
+      "expectedOutput": "\"pppz\""
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "&quot;xy&quot;"
+      "input": "2",
+      "expectedOutput": "\"xy\""
     },
     {
-      "input": "n = 7",
-      "expectedOutput": "&quot;holasss&quot;"
+      "input": "7",
+      "expectedOutput": "\"holasss\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 4",
-      "expectedOutput": "&quot;pppz&quot;"
-    },
-    {
-      "input": "n = 2",
-      "expectedOutput": "&quot;xy&quot;"
-    },
-    {
-      "input": "n = 7",
-      "expectedOutput": "&quot;holasss&quot;"
-    },
-    {
       "input": "4",
-      "expectedOutput": null
+      "expectedOutput": "\"pppz\""
     },
     {
       "input": "2",
-      "expectedOutput": null
+      "expectedOutput": "\"xy\""
     },
     {
       "input": "7",
-      "expectedOutput": null
+      "expectedOutput": "\"holasss\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 4",
+      "expectedOutput": "\"pppz\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
+      "input": "n = 2",
+      "expectedOutput": "\"xy\""
     },
     {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 7",
+      "expectedOutput": "\"holasss\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/generate-a-string-with-characters-that-have-odd-counts/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:22.049Z",
+    "collectedAt": "2026-10-19T18:40:19.139Z",
     "sourceUpdatedAt": null
   }
 }

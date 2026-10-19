@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ABFCACDB&quot;",
+      "input": "s = \"ABFCACDB\"",
       "output": "2",
-      "explanation": "We can do the following operations:\n- Remove the substring &quot;ABFCACDB&quot;, so s = &quot;FCACDB&quot;.\n- Remove the substring &quot;FCACDB&quot;, so s = &quot;FCAB&quot;.\n- Remove the substring &quot;FCAB&quot;, so s = &quot;FC&quot;.\nSo the resulting length of the string is 2.\nIt can be shown that it is the minimum length that we can obtain."
+      "explanation": "We can do the following operations:\n- Remove the substring \"ABFCACDB\", so s = \"FCACDB\".\n- Remove the substring \"FCACDB\", so s = \"FCAB\".\n- Remove the substring \"FCAB\", so s = \"FC\".\nSo the resulting length of the string is 2.\nIt can be shown that it is the minimum length that we can obtain."
     },
     {
-      "input": "s = &quot;ACBBD&quot;",
+      "input": "s = \"ACBBD\"",
       "output": "5",
       "explanation": "We cannot do any operations on the string so the length remains the same."
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ABFCACDB&quot;",
+      "input": "\"ABFCACDB\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;ACBBD&quot;",
+      "input": "\"ACBBD\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ABFCACDB&quot;",
+      "input": "\"ABFCACDB\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;ACBBD&quot;",
+      "input": "\"ACBBD\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"ABFCACDB\"",
-      "expectedOutput": null
+      "input": "s = \"ABFCACDB\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"ACBBD\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"ACBBD\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-string-length-after-removing-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:18.871Z",
+    "collectedAt": "2026-10-19T18:40:25.037Z",
     "sourceUpdatedAt": null
   }
 }

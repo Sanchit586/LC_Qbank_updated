@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addRider&quot;, &quot;matchDriverWithRider&quot;, &quot;addDriver&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [3], [2], [1], [], [5], [3], [], []]",
+      "input": "[\"RideSharingSystem\", \"addRider\", \"addDriver\", \"addRider\", \"matchDriverWithRider\", \"addDriver\", \"cancelRider\", \"matchDriverWithRider\", \"matchDriverWithRider\"]\n[[], [3], [2], [1], [], [5], [3], [], []]",
       "output": "[null, null, null, null, [2, 3], null, null, [5, 1], [-1, -1]]",
-      "explanation": null
+      "explanation": "RideSharingSystem rideSharingSystem = new RideSharingSystem(); // Initializes the system\nrideSharingSystem.addRider(3); // rider 3 joins the queue\nrideSharingSystem.addDriver(2); // driver 2 joins the queue\nrideSharingSystem.addRider(1); // rider 1 joins the queue\nrideSharingSystem.matchDriverWithRider(); // returns [2, 3]\nrideSharingSystem.addDriver(5); // driver 5 becomes available\nrideSharingSystem.cancelRider(3); // rider 3 is already matched, cancel has no effect\nrideSharingSystem.matchDriverWithRider(); // returns [5, 1]\nrideSharingSystem.matchDriverWithRider(); // returns [-1, -1]"
     },
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addDriver&quot;, &quot;matchDriverWithRider&quot;, &quot;addRider&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [8], [8], [6], [], [2], [2], []]",
+      "input": "[\"RideSharingSystem\", \"addRider\", \"addDriver\", \"addDriver\", \"matchDriverWithRider\", \"addRider\", \"cancelRider\", \"matchDriverWithRider\"]\n[[], [8], [8], [6], [], [2], [2], []]",
       "output": "[null, null, null, null, [8, 8], null, null, [-1, -1]]",
-      "explanation": null
+      "explanation": "RideSharingSystem rideSharingSystem = new RideSharingSystem(); // Initializes the system\nrideSharingSystem.addRider(8); // rider 8 joins the queue\nrideSharingSystem.addDriver(8); // driver 8 joins the queue\nrideSharingSystem.addDriver(6); // driver 6 joins the queue\nrideSharingSystem.matchDriverWithRider(); // returns [8, 8]\nrideSharingSystem.addRider(2); // rider 2 joins the queue\nrideSharingSystem.cancelRider(2); // rider 2 cancels\nrideSharingSystem.matchDriverWithRider(); // returns [-1, -1]"
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addRider&quot;, &quot;matchDriverWithRider&quot;, &quot;addDriver&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [3], [2], [1], [], [5], [3], [], []]",
+      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addRider\",\"matchDriverWithRider\",\"addDriver\",\"cancelRider\",\"matchDriverWithRider\",\"matchDriverWithRider\"]\n[[],[3],[2],[1],[],[5],[3],[],[]]",
       "expectedOutput": "[null, null, null, null, [2, 3], null, null, [5, 1], [-1, -1]]"
     },
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addDriver&quot;, &quot;matchDriverWithRider&quot;, &quot;addRider&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [8], [8], [6], [], [2], [2], []]",
+      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addDriver\",\"matchDriverWithRider\",\"addRider\",\"cancelRider\",\"matchDriverWithRider\"]\n[[],[8],[8],[6],[],[2],[2],[]]",
       "expectedOutput": "[null, null, null, null, [8, 8], null, null, [-1, -1]]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addRider&quot;, &quot;matchDriverWithRider&quot;, &quot;addDriver&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [3], [2], [1], [], [5], [3], [], []]",
+      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addRider\",\"matchDriverWithRider\",\"addDriver\",\"cancelRider\",\"matchDriverWithRider\",\"matchDriverWithRider\"]\n[[],[3],[2],[1],[],[5],[3],[],[]]",
       "expectedOutput": "[null, null, null, null, [2, 3], null, null, [5, 1], [-1, -1]]"
     },
     {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addDriver&quot;, &quot;matchDriverWithRider&quot;, &quot;addRider&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [8], [8], [6], [], [2], [2], []]",
+      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addDriver\",\"matchDriverWithRider\",\"addRider\",\"cancelRider\",\"matchDriverWithRider\"]\n[[],[8],[8],[6],[],[2],[2],[]]",
       "expectedOutput": "[null, null, null, null, [8, 8], null, null, [-1, -1]]"
     },
     {
-      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addRider\",\"matchDriverWithRider\",\"addDriver\",\"cancelRider\",\"matchDriverWithRider\",\"matchDriverWithRider\"]\n[[],[3],[2],[1],[],[5],[3],[],[]]",
-      "expectedOutput": null
+      "input": "[\"RideSharingSystem\", \"addRider\", \"addDriver\", \"addRider\", \"matchDriverWithRider\", \"addDriver\", \"cancelRider\", \"matchDriverWithRider\", \"matchDriverWithRider\"]\n[[], [3], [2], [1], [], [5], [3], [], []]",
+      "expectedOutput": "[null, null, null, null, [2, 3], null, null, [5, 1], [-1, -1]]"
     },
     {
-      "input": "[\"RideSharingSystem\",\"addRider\",\"addDriver\",\"addDriver\",\"matchDriverWithRider\",\"addRider\",\"cancelRider\",\"matchDriverWithRider\"]\n[[],[8],[8],[6],[],[2],[2],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;RideSharingSystem&quot;, &quot;addRider&quot;, &quot;addDriver&quot;, &quot;addRider&quot;, &quot;matchDriverWithRider&quot;, &quot;addDriver&quot;, &quot;cancelRider&quot;, &quot;matchDriverWithRider&quot;, &quot;matchDriverWithRider&quot;]\n[[], [4], [3], [2], [], [6], [4], [], []]",
-      "expectedOutput": null
+      "input": "[\"RideSharingSystem\", \"addRider\", \"addDriver\", \"addDriver\", \"matchDriverWithRider\", \"addRider\", \"cancelRider\", \"matchDriverWithRider\"]\n[[], [8], [8], [6], [], [2], [2], []]",
+      "expectedOutput": "[null, null, null, null, [8, 8], null, null, [-1, -1]]"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-ride-sharing-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:40.699Z",
+    "collectedAt": "2026-10-19T18:40:16.504Z",
     "sourceUpdatedAt": null
   }
 }

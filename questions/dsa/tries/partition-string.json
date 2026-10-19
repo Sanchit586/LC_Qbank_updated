@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abbccccd&quot;",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;bc&quot;,&quot;c&quot;,&quot;cc&quot;,&quot;d&quot;]",
-      "explanation": "Index\n\t\t\tSegment After Adding\n\t\t\tSeen Segments\n\t\t\tCurrent Segment Seen Before?\n\t\t\tNew Segment\n\t\t\tUpdated Seen Segments\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&quot;a&quot;\n\t\t\t[]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&quot;b&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;]\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&quot;b&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;]\n\t\t\tYes\n\t\t\t&quot;b&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;]\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&quot;bc&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;]\n\t\t\n\t\t\n\t\t\t4\n\t\t\t&quot;c&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;]\n\t\t\n\t\t\n\t\t\t5\n\t\t\t&quot;c&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;]\n\t\t\tYes\n\t\t\t&quot;c&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;]\n\t\t\n\t\t\n\t\t\t6\n\t\t\t&quot;cc&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;, &quot;cc&quot;]\n\t\t\n\t\t\n\t\t\t7\n\t\t\t&quot;d&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;, &quot;cc&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;b&quot;, &quot;bc&quot;, &quot;c&quot;, &quot;cc&quot;, &quot;d&quot;]"
+      "input": "s = \"abbccccd\"",
+      "output": "[\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]",
+      "explanation": "Index\n\t\t\tSegment After Adding\n\t\t\tSeen Segments\n\t\t\tCurrent Segment Seen Before?\n\t\t\tNew Segment\n\t\t\tUpdated Seen Segments\n\t\t\n\t\t\n\t\t\t0\n\t\t\t\"a\"\n\t\t\t[]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\"]\n\t\t\n\t\t\n\t\t\t1\n\t\t\t\"b\"\n\t\t\t[\"a\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\"]\n\t\t\n\t\t\n\t\t\t2\n\t\t\t\"b\"\n\t\t\t[\"a\", \"b\"]\n\t\t\tYes\n\t\t\t\"b\"\n\t\t\t[\"a\", \"b\"]\n\t\t\n\t\t\n\t\t\t3\n\t\t\t\"bc\"\n\t\t\t[\"a\", \"b\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\"]\n\t\t\n\t\t\n\t\t\t4\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\n\t\t\n\t\t\t5\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\tYes\n\t\t\t\"c\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\n\t\t\n\t\t\t6\n\t\t\t\"cc\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\"]\n\t\t\n\t\t\n\t\t\t7\n\t\t\t\"d\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"b\", \"bc\", \"c\", \"cc\", \"d\"]"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
-      "output": "[&quot;a&quot;,&quot;aa&quot;]",
-      "explanation": "Index\n\t\t\tSegment After Adding\n\t\t\tSeen Segments\n\t\t\tCurrent Segment Seen Before?\n\t\t\tNew Segment\n\t\t\tUpdated Seen Segments\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&quot;a&quot;\n\t\t\t[]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&quot;a&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\tYes\n\t\t\t&quot;a&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&quot;aa&quot;\n\t\t\t[&quot;a&quot;]\n\t\t\tNo\n\t\t\t&quot;&quot;\n\t\t\t[&quot;a&quot;, &quot;aa&quot;]\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&quot;a&quot;\n\t\t\t[&quot;a&quot;, &quot;aa&quot;]\n\t\t\tYes\n\t\t\t&quot;a&quot;\n\t\t\t[&quot;a&quot;, &quot;aa&quot;]"
+      "input": "s = \"aaaa\"",
+      "output": "[\"a\",\"aa\"]",
+      "explanation": "Index\n\t\t\tSegment After Adding\n\t\t\tSeen Segments\n\t\t\tCurrent Segment Seen Before?\n\t\t\tNew Segment\n\t\t\tUpdated Seen Segments\n\t\t\n\t\t\n\t\t\t0\n\t\t\t\"a\"\n\t\t\t[]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\"]\n\t\t\n\t\t\n\t\t\t1\n\t\t\t\"a\"\n\t\t\t[\"a\"]\n\t\t\tYes\n\t\t\t\"a\"\n\t\t\t[\"a\"]\n\t\t\n\t\t\n\t\t\t2\n\t\t\t\"aa\"\n\t\t\t[\"a\"]\n\t\t\tNo\n\t\t\t\"\"\n\t\t\t[\"a\", \"aa\"]\n\t\t\n\t\t\n\t\t\t3\n\t\t\t\"a\"\n\t\t\t[\"a\", \"aa\"]\n\t\t\tYes\n\t\t\t\"a\"\n\t\t\t[\"a\", \"aa\"]"
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abbccccd&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;bc&quot;,&quot;c&quot;,&quot;cc&quot;,&quot;d&quot;]"
+      "input": "\"abbccccd\"",
+      "expectedOutput": "[\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;aa&quot;]"
+      "input": "\"aaaa\"",
+      "expectedOutput": "[\"a\",\"aa\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abbccccd&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;bc&quot;,&quot;c&quot;,&quot;cc&quot;,&quot;d&quot;]"
-    },
-    {
-      "input": "s = &quot;aaaa&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;aa&quot;]"
-    },
-    {
       "input": "\"abbccccd\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]"
     },
     {
       "input": "\"aaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"aa\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abbccccd\"",
+      "expectedOutput": "[\"a\",\"b\",\"bc\",\"c\",\"cc\",\"d\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aaaa\"",
+      "expectedOutput": "[\"a\",\"aa\"]"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/partition-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:52.679Z",
+    "collectedAt": "2026-10-19T18:40:26.599Z",
     "sourceUpdatedAt": null
   }
 }

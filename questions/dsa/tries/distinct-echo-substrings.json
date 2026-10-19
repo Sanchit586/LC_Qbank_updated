@@ -21,14 +21,14 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;abcabcabc&quot;",
+      "input": "text = \"abcabcabc\"",
       "output": "3",
-      "explanation": "The 3 substrings are &quot;abcabc&quot;, &quot;bcabca&quot; and &quot;cabcab&quot;."
+      "explanation": "The 3 substrings are \"abcabc\", \"bcabca\" and \"cabcab\"."
     },
     {
-      "input": "text = &quot;leetcodeleetcode&quot;",
+      "input": "text = \"leetcodeleetcode\"",
       "output": "2",
-      "explanation": "The 2 substrings are &quot;ee&quot; and &quot;leetcodeleetcode&quot;."
+      "explanation": "The 2 substrings are \"ee\" and \"leetcodeleetcode\"."
     }
   ],
   "starterCode": {
@@ -54,94 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;abcabcabc&quot;",
+      "input": "\"abcabcabc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text = &quot;leetcodeleetcode&quot;",
+      "input": "\"leetcodeleetcode\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;abcabcabc&quot;",
+      "input": "\"abcabcabc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text = &quot;leetcodeleetcode&quot;",
+      "input": "\"leetcodeleetcode\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"abcabcabc\"",
-      "expectedOutput": null
+      "input": "text = \"abcabcabc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"leetcodeleetcode\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "text = \"leetcodeleetcode\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distinct-echo-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:47.856Z",
+    "collectedAt": "2026-10-19T18:40:16.716Z",
     "sourceUpdatedAt": null
   }
 }

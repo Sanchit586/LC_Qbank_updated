@@ -43,34 +43,30 @@
   },
   "publicTests": [
     {
-      "input": "low = 3, high = 7",
+      "input": "3\n7",
       "expectedOutput": "3"
     },
     {
-      "input": "low = 8, high = 10",
+      "input": "8\n10",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "3\n7",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "8\n10",
+      "expectedOutput": "1"
+    },
+    {
       "input": "low = 3, high = 7",
       "expectedOutput": "3"
     },
     {
       "input": "low = 8, high = 10",
       "expectedOutput": "1"
-    },
-    {
-      "input": "3\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "low = 4, high = 8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -85,7 +81,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-odd-numbers-in-an-interval-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.801Z",
+    "collectedAt": "2026-10-19T18:40:15.389Z",
     "sourceUpdatedAt": null
   }
 }

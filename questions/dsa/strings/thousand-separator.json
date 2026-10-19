@@ -15,12 +15,12 @@
   "examples": [
     {
       "input": "n = 987",
-      "output": "&quot;987&quot;",
+      "output": "\"987\"",
       "explanation": null
     },
     {
       "input": "n = 1234",
-      "output": "&quot;1.234&quot;",
+      "output": "\"1.234\"",
       "explanation": null
     }
   ],
@@ -47,90 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 987",
-      "expectedOutput": "&quot;987&quot;"
+      "input": "987",
+      "expectedOutput": "\"987\""
     },
     {
-      "input": "n = 1234",
-      "expectedOutput": "&quot;1.234&quot;"
+      "input": "1234",
+      "expectedOutput": "\"1.234\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 987",
-      "expectedOutput": "&quot;987&quot;"
-    },
-    {
-      "input": "n = 1234",
-      "expectedOutput": "&quot;1.234&quot;"
-    },
-    {
       "input": "987",
-      "expectedOutput": null
+      "expectedOutput": "\"987\""
     },
     {
       "input": "1234",
-      "expectedOutput": null
+      "expectedOutput": "\"1.234\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 987",
+      "expectedOutput": "\"987\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 1234",
+      "expectedOutput": "\"1.234\""
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/thousand-separator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:56.875Z",
+    "collectedAt": "2026-10-19T18:40:30.985Z",
     "sourceUpdatedAt": null
   }
 }

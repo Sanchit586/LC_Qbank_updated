@@ -10,24 +10,24 @@
   "constraints": [],
   "examples": [
     {
-      "input": "func = () =&gt; checkIfInstanceOf(new Date(), Date)",
+      "input": "func = () => checkIfInstanceOf(new Date(), Date)",
       "output": "true",
       "explanation": "The object returned by the Date constructor is, by definition, an instance of Date."
     },
     {
-      "input": "func = () =&gt; { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
+      "input": "func = () => { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
       "output": "true",
       "explanation": "class Animal {};\nclass Dog extends Animal {};\ncheckIfInstanceOf(new Dog(), Animal); // true\n\nDog is a subclass of Animal. Therefore, a Dog object is an instance of both Dog and Animal."
     },
     {
-      "input": "func = () =&gt; checkIfInstanceOf(Date, Date)",
+      "input": "func = () => checkIfInstanceOf(Date, Date)",
       "output": "false",
       "explanation": "A date constructor cannot logically be an instance of itself."
     },
     {
-      "input": "func = () =&gt; checkIfInstanceOf(5, Number)",
+      "input": "func = () => checkIfInstanceOf(5, Number)",
       "output": "true",
-      "explanation": "5 is a Number. Note that the &quot;instanceof&quot; keyword would return false. However, it is still considered an instance of Number because it accesses the Number methods. For example &quot;toFixed()&quot;."
+      "explanation": "5 is a Number. Note that the \"instanceof\" keyword would return false. However, it is still considered an instance of Number because it accesses the Number methods. For example \"toFixed()\"."
     }
   ],
   "starterCode": {
@@ -36,58 +36,54 @@
   },
   "publicTests": [
     {
-      "input": "func = () =&gt; checkIfInstanceOf(new Date(), Date)",
+      "input": "() => checkIfInstanceOf(new Date(), Date)",
       "expectedOutput": "true"
     },
     {
-      "input": "func = () =&gt; { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
+      "input": "() => { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
       "expectedOutput": "true"
     },
     {
-      "input": "func = () =&gt; checkIfInstanceOf(Date, Date)",
+      "input": "() => checkIfInstanceOf(Date, Date)",
       "expectedOutput": "false"
     },
     {
-      "input": "func = () =&gt; checkIfInstanceOf(5, Number)",
+      "input": "() => checkIfInstanceOf(5, Number)",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "func = () =&gt; checkIfInstanceOf(new Date(), Date)",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "func = () =&gt; { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "func = () =&gt; checkIfInstanceOf(Date, Date)",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "func = () =&gt; checkIfInstanceOf(5, Number)",
-      "expectedOutput": "true"
-    },
-    {
       "input": "() => checkIfInstanceOf(new Date(), Date)",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "() => { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "() => checkIfInstanceOf(Date, Date)",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "() => checkIfInstanceOf(5, Number)",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "func = () =&gt; checkIfInstanceOf(6, Number)",
-      "expectedOutput": null
+      "input": "func = () => checkIfInstanceOf(new Date(), Date)",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "func = () => { class Animal {}; class Dog extends Animal {}; return checkIfInstanceOf(new Dog(), Animal); }",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "func = () => checkIfInstanceOf(Date, Date)",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "func = () => checkIfInstanceOf(5, Number)",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -104,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-object-instance-of-class/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.189Z",
+    "collectedAt": "2026-10-19T18:40:14.207Z",
     "sourceUpdatedAt": null
   }
 }

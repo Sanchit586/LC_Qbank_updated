@@ -21,7 +21,7 @@
     {
       "input": "n = 4, rounds = [1,3,1,2]",
       "output": "[1,2]",
-      "explanation": "The marathon starts at sector 1. The order of the visited sectors is as follows:\n1 --&gt; 2 --&gt; 3 (end of round 1) --&gt; 4 --&gt; 1 (end of round 2) --&gt; 2 (end of round 3 and the marathon)\nWe can see that both sectors 1 and 2 are visited twice and they are the most visited sectors. Sectors 3 and 4 are visited only once."
+      "explanation": "The marathon starts at sector 1. The order of the visited sectors is as follows:\n1 --> 2 --> 3 (end of round 1) --> 4 --> 1 (end of round 2) --> 2 (end of round 3 and the marathon)\nWe can see that both sectors 1 and 2 are visited twice and they are the most visited sectors. Sectors 3 and 4 are visited only once."
     },
     {
       "input": "n = 2, rounds = [2,1,2,1,2,1,2,1,2]",
@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, rounds = [1,3,1,2]",
+      "input": "4\n[1,3,1,2]",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "n = 2, rounds = [2,1,2,1,2,1,2,1,2]",
+      "input": "2\n[2,1,2,1,2,1,2,1,2]",
       "expectedOutput": "[2]"
     },
     {
-      "input": "n = 7, rounds = [1,3,5,7]",
+      "input": "7\n[1,3,5,7]",
       "expectedOutput": "[1,2,3,4,5,6,7]"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[1,3,1,2]",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "2\n[2,1,2,1,2,1,2,1,2]",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "7\n[1,3,5,7]",
+      "expectedOutput": "[1,2,3,4,5,6,7]"
+    },
+    {
       "input": "n = 4, rounds = [1,3,1,2]",
       "expectedOutput": "[1,2]"
     },
@@ -81,38 +93,6 @@
     {
       "input": "n = 7, rounds = [1,3,5,7]",
       "expectedOutput": "[1,2,3,4,5,6,7]"
-    },
-    {
-      "input": "4\n[1,3,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[2,1,2,1,2,1,2,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n[1,3,5,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, rounds = [3,2,3,2,3,2,3,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 8, rounds = [2,4,6,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[2,4,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[3,2,3,2,3,2,3,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, rounds = [2,4,2,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/most-visited-sector-in-a-circular-track/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:34.927Z",
+    "collectedAt": "2026-10-19T18:40:25.499Z",
     "sourceUpdatedAt": null
   }
 }

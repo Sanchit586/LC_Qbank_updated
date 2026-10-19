@@ -17,17 +17,17 @@
   "examples": [
     {
       "input": "num = 2, sum = 3",
-      "output": "&quot;30&quot;",
+      "output": "\"30\"",
       "explanation": null
     },
     {
       "input": "num = 2, sum = 17",
-      "output": "&quot;98&quot;",
+      "output": "\"98\"",
       "explanation": null
     },
     {
       "input": "num = 1, sum = 10",
-      "output": "&quot;&quot;",
+      "output": "\"\"",
       "explanation": null
     }
   ],
@@ -54,62 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "num = 2, sum = 3",
-      "expectedOutput": "&quot;30&quot;"
+      "input": "2\n3",
+      "expectedOutput": "\"30\""
     },
     {
-      "input": "num = 2, sum = 17",
-      "expectedOutput": "&quot;98&quot;"
+      "input": "2\n17",
+      "expectedOutput": "\"98\""
     },
     {
-      "input": "num = 1, sum = 10",
-      "expectedOutput": "&quot;&quot;"
+      "input": "1\n10",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "num = 2, sum = 3",
-      "expectedOutput": "&quot;30&quot;"
-    },
-    {
-      "input": "num = 2, sum = 17",
-      "expectedOutput": "&quot;98&quot;"
-    },
-    {
-      "input": "num = 1, sum = 10",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "2\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"30\""
     },
     {
       "input": "2\n17",
-      "expectedOutput": null
+      "expectedOutput": "\"98\""
     },
     {
       "input": "1\n10",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "num = 3, sum = 18",
-      "expectedOutput": null
+      "input": "num = 2, sum = 3",
+      "expectedOutput": "\"30\""
     },
     {
-      "input": "num = 2, sum = 11",
-      "expectedOutput": null
+      "input": "num = 2, sum = 17",
+      "expectedOutput": "\"98\""
     },
     {
-      "input": "3\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n18",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = 3, sum = 4",
-      "expectedOutput": null
+      "input": "num = 1, sum = 10",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-sum-of-squares-of-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.159Z",
+    "collectedAt": "2026-10-19T18:40:21.378Z",
     "sourceUpdatedAt": null
   }
 }

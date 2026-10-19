@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]",
+      "input": "[[0,0],[2,2],[3,10],[5,2],[7,0]]",
       "expectedOutput": "20"
     },
     {
-      "input": "points = [[3,12],[-2,5],[-4,1]]",
+      "input": "[[3,12],[-2,5],[-4,1]]",
       "expectedOutput": "18"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,0],[2,2],[3,10],[5,2],[7,0]]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[[3,12],[-2,5],[-4,1]]",
+      "expectedOutput": "18"
+    },
+    {
       "input": "points = [[0,0],[2,2],[3,10],[5,2],[7,0]]",
       "expectedOutput": "20"
     },
     {
       "input": "points = [[3,12],[-2,5],[-4,1]]",
       "expectedOutput": "18"
-    },
-    {
-      "input": "[[0,0],[2,2],[3,10],[5,2],[7,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[3,12],[-2,5],[-4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[1,1],[3,3],[4,11],[6,3],[8,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/min-cost-to-connect-all-points/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:40.373Z",
+    "collectedAt": "2026-10-19T18:40:23.178Z",
     "sourceUpdatedAt": null
   }
 }

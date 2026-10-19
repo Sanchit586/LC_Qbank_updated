@@ -20,12 +20,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;011010&quot;, minJump = 2, maxJump = 3",
+      "input": "s = \"011010\", minJump = 2, maxJump = 3",
       "output": "true",
       "explanation": "In the first step, move from index 0 to index 3. \nIn the second step, move from index 3 to index 5."
     },
     {
-      "input": "s = &quot;01101110&quot;, minJump = 2, maxJump = 3",
+      "input": "s = \"01101110\", minJump = 2, maxJump = 3",
       "output": "false",
       "explanation": null
     }
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;011010&quot;, minJump = 2, maxJump = 3",
+      "input": "\"011010\"\n2\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;01101110&quot;, minJump = 2, maxJump = 3",
+      "input": "\"01101110\"\n2\n3",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;011010&quot;, minJump = 2, maxJump = 3",
+      "input": "\"011010\"\n2\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;01101110&quot;, minJump = 2, maxJump = 3",
+      "input": "\"01101110\"\n2\n3",
       "expectedOutput": "false"
     },
     {
-      "input": "\"011010\"\n2\n3",
-      "expectedOutput": null
+      "input": "s = \"011010\", minJump = 2, maxJump = 3",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"01101110\"\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;11011&quot;, minJump = 3, maxJump = 4",
-      "expectedOutput": null
+      "input": "s = \"01101110\", minJump = 2, maxJump = 3",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/jump-game-vii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.542Z",
+    "collectedAt": "2026-10-19T18:40:19.692Z",
     "sourceUpdatedAt": null
   }
 }

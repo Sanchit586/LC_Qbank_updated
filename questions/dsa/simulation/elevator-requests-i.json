@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, requests = [2,1,4,3]",
+      "input": "5\n[2,1,4,3]",
       "expectedOutput": "7"
     },
     {
-      "input": "n = 3, requests = [2,0,0]",
+      "input": "3\n[2,0,0]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[2,1,4,3]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "3\n[2,0,0]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 5, requests = [2,1,4,3]",
       "expectedOutput": "7"
     },
     {
       "input": "n = 3, requests = [2,0,0]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "5\n[2,1,4,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[2,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, requests = [3,2,5,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/elevator-requests-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.979Z",
+    "collectedAt": "2026-10-19T18:40:16.962Z",
     "sourceUpdatedAt": null
   }
 }

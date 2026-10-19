@@ -16,12 +16,12 @@
     {
       "input": "l = 10, n = 4, k = 1, position = [0,3,8,10], time = [5,8,3,6]",
       "output": "62",
-      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 8 + 3 = 11.\n\t\n\tAfter the merge:\n\t\n\t\tposition array: [0, 8, 10]\n\t\ttime array: [5, 11, 6]\n\t\t \n\t\n\t\n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\tSegment\n\t\t\t\tDistance (km)\n\t\t\t\tTime per km (min)\n\t\t\t\tSegment Travel Time (min)\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\t0 &rarr; 8\n\t\t\t\t8\n\t\t\t\t5\n\t\t\t\t8 &times; 5 = 40\n\t\t\t\n\t\t\t\n\t\t\t\t8 &rarr; 10\n\t\t\t\t2\n\t\t\t\t11\n\t\t\t\t2 &times; 11 = 22\n\t\t\t\n\t\t\n\t\n\t\n\tTotal Travel Time: 40 + 22 = 62, which is the minimum possible time after exactly 1 merge."
+      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 8 + 3 = 11.\n\t\n\tAfter the merge:\n\t\n\t\tposition array: [0, 8, 10]\n\t\ttime array: [5, 11, 6]\n\t\t \n\t\n\t\n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\tSegment\n\t\t\t\tDistance (km)\n\t\t\t\tTime per km (min)\n\t\t\t\tSegment Travel Time (min)\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\t0 → 8\n\t\t\t\t8\n\t\t\t\t5\n\t\t\t\t8 × 5 = 40\n\t\t\t\n\t\t\t\n\t\t\t\t8 → 10\n\t\t\t\t2\n\t\t\t\t11\n\t\t\t\t2 × 11 = 22\n\t\t\t\n\t\t\n\t\n\t\n\tTotal Travel Time: 40 + 22 = 62, which is the minimum possible time after exactly 1 merge."
     },
     {
       "input": "l = 5, n = 5, k = 1, position = [0,1,2,3,5], time = [8,3,9,3,3]",
       "output": "34",
-      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 3 + 9 = 12.\n\tAfter the merge:\n\t\n\t\tposition array: [0, 2, 3, 5]\n\t\ttime array: [8, 12, 3, 3]\n\t\t \n\t\n\t\n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\tSegment\n\t\t\t\tDistance (km)\n\t\t\t\tTime per km (min)\n\t\t\t\tSegment Travel Time (min)\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\t0 &rarr; 2\n\t\t\t\t2\n\t\t\t\t8\n\t\t\t\t2 &times; 8 = 16\n\t\t\t\n\t\t\t\n\t\t\t\t2 &rarr; 3\n\t\t\t\t1\n\t\t\t\t12\n\t\t\t\t1 &times; 12 = 12\n\t\t\t\n\t\t\t\n\t\t\t\t3 &rarr; 5\n\t\t\t\t2\n\t\t\t\t3\n\t\t\t\t2 &times; 3 = 6\n\t\t\t\n\t\t\n\t\n\t\n\tTotal Travel Time: 16 + 12 + 6 = 34, which is the minimum possible time after exactly 1 merge."
+      "explanation": "Merge the signs at indices 1 and 2. Remove the sign at index 1, and change the time at index 2 to 3 + 9 = 12.\n\tAfter the merge:\n\t\n\t\tposition array: [0, 2, 3, 5]\n\t\ttime array: [8, 12, 3, 3]\n\t\t \n\t\n\t\n\t\n\t\n\t\t\n\t\t\t\n\t\t\t\tSegment\n\t\t\t\tDistance (km)\n\t\t\t\tTime per km (min)\n\t\t\t\tSegment Travel Time (min)\n\t\t\t\n\t\t\n\t\t\n\t\t\t\n\t\t\t\t0 → 2\n\t\t\t\t2\n\t\t\t\t8\n\t\t\t\t2 × 8 = 16\n\t\t\t\n\t\t\t\n\t\t\t\t2 → 3\n\t\t\t\t1\n\t\t\t\t12\n\t\t\t\t1 × 12 = 12\n\t\t\t\n\t\t\t\n\t\t\t\t3 → 5\n\t\t\t\t2\n\t\t\t\t3\n\t\t\t\t2 × 3 = 6\n\t\t\t\n\t\t\n\t\n\t\n\tTotal Travel Time: 16 + 12 + 6 = 34, which is the minimum possible time after exactly 1 merge."
     }
   ],
   "starterCode": {
@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "l = 10, n = 4, k = 1, position = [0,3,8,10], time = [5,8,3,6]",
+      "input": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]",
       "expectedOutput": "62"
     },
     {
-      "input": "l = 5, n = 5, k = 1, position = [0,1,2,3,5], time = [8,3,9,3,3]",
+      "input": "5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
       "expectedOutput": "34"
     }
   ],
   "testCases": [
     {
+      "input": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]",
+      "expectedOutput": "62"
+    },
+    {
+      "input": "5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
+      "expectedOutput": "34"
+    },
+    {
       "input": "l = 10, n = 4, k = 1, position = [0,3,8,10], time = [5,8,3,6]",
       "expectedOutput": "62"
     },
     {
       "input": "l = 5, n = 5, k = 1, position = [0,1,2,3,5], time = [8,3,9,3,3]",
       "expectedOutput": "34"
-    },
-    {
-      "input": "10\n4\n1\n[0,3,8,10]\n[5,8,3,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n5\n1\n[0,1,2,3,5]\n[8,3,9,3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 11, n = 5, k = 2, position = [1,4,9,11], time = [6,9,4,7]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/merge-operations-for-minimum-travel-time/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:39.876Z",
+    "collectedAt": "2026-10-19T18:40:23.124Z",
     "sourceUpdatedAt": null
   }
 }

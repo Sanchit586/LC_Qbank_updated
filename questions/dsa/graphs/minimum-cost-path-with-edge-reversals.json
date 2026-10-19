@@ -27,7 +27,7 @@
     {
       "input": "n = 4, edges = [[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
       "output": "3",
-      "explanation": "No reversal is needed. Take the path 0 &rarr; 2 (cost 1), then 2 &rarr; 1 (cost 1), then 1 &rarr; 3 (cost 1).\n\tTotal cost is 1 + 1 + 1 = 3."
+      "explanation": "No reversal is needed. Take the path 0 → 2 (cost 1), then 2 → 1 (cost 1), then 1 → 3 (cost 1).\n\tTotal cost is 1 + 1 + 1 = 3."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, edges = [[0,1,3],[3,1,1],[2,3,4],[0,2,2]]",
+      "input": "4\n[[0,1,3],[3,1,1],[2,3,4],[0,2,2]]",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 4, edges = [[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
+      "input": "4\n[[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[[0,1,3],[3,1,1],[2,3,4],[0,2,2]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "4\n[[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 4, edges = [[0,1,3],[3,1,1],[2,3,4],[0,2,2]]",
       "expectedOutput": "5"
     },
     {
       "input": "n = 4, edges = [[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "4\n[[0,1,3],[3,1,1],[2,3,4],[0,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[0,2,1],[2,1,1],[1,3,1],[2,3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, edges = [[1,2,4],[4,2,2],[3,4,5],[1,3,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-path-with-edge-reversals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:47.481Z",
+    "collectedAt": "2026-10-19T18:40:23.567Z",
     "sourceUpdatedAt": null
   }
 }

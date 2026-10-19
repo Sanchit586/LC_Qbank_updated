@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 19666  |\n| Piper   | 74754  |\n| Mia     | 62509  |\n| Ulysses | 54866  |\n+---------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Jack\",19666],[\"Piper\",74754],[\"Mia\",62509],[\"Ulysses\",54866]]}}",
       "expectedOutput": "+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 39332  |\n| Piper   | 149508 |\n| Mia     | 125018 |\n| Ulysses | 109732 |\n+---------+--------+"
     }
   ],
   "testCases": [
     {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 19666  |\n| Piper   | 74754  |\n| Mia     | 62509  |\n| Ulysses | 54866  |\n+---------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Jack\",19666],[\"Piper\",74754],[\"Mia\",62509],[\"Ulysses\",54866]]}}",
       "expectedOutput": "+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 39332  |\n| Piper   | 149508 |\n| Mia     | 125018 |\n| Ulysses | 109732 |\n+---------+--------+"
     },
     {
-      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Jack\",19666],[\"Piper\",74754],[\"Mia\",62509],[\"Ulysses\",54866]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 19667  |\n| Piper   | 74755  |\n| Mia     | 62510  |\n| Ulysses | 54867  |\n+---------+--------+",
-      "expectedOutput": null
+      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 19666  |\n| Piper   | 74754  |\n| Mia     | 62509  |\n| Ulysses | 54866  |\n+---------+--------+",
+      "expectedOutput": "+---------+--------+\n| name    | salary |\n+---------+--------+\n| Jack    | 39332  |\n| Piper   | 149508 |\n| Mia     | 125018 |\n| Ulysses | 109732 |\n+---------+--------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/modify-columns/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:32.578Z",
+    "collectedAt": "2026-10-19T18:40:25.399Z",
     "sourceUpdatedAt": null
   }
 }

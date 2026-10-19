@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
+      "input": "[[1,4],[2,4],[3,6],[4,4]]\n[2,3,4,5]",
       "expectedOutput": "[3,3,1,4]"
     },
     {
-      "input": "intervals = [[2,3],[2,5],[1,8],[20,25]], queries = [2,19,5,22]",
+      "input": "[[2,3],[2,5],[1,8],[20,25]]\n[2,19,5,22]",
       "expectedOutput": "[2,-1,4,6]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,4],[2,4],[3,6],[4,4]]\n[2,3,4,5]",
+      "expectedOutput": "[3,3,1,4]"
+    },
+    {
+      "input": "[[2,3],[2,5],[1,8],[20,25]]\n[2,19,5,22]",
+      "expectedOutput": "[2,-1,4,6]"
+    },
+    {
       "input": "intervals = [[1,4],[2,4],[3,6],[4,4]], queries = [2,3,4,5]",
       "expectedOutput": "[3,3,1,4]"
     },
     {
       "input": "intervals = [[2,3],[2,5],[1,8],[20,25]], queries = [2,19,5,22]",
       "expectedOutput": "[2,-1,4,6]"
-    },
-    {
-      "input": "[[1,4],[2,4],[3,6],[4,4]]\n[2,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3],[2,5],[1,8],[20,25]]\n[2,19,5,22]",
-      "expectedOutput": null
-    },
-    {
-      "input": "intervals = [[2,5],[3,5],[4,7],[5,5]], queries = [3,4,5,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-interval-to-include-each-query/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.313Z",
+    "collectedAt": "2026-10-19T18:40:24.029Z",
     "sourceUpdatedAt": null
   }
 }

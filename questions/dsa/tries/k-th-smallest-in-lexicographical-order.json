@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 13, k = 2",
+      "input": "13\n2",
       "expectedOutput": "10"
     },
     {
-      "input": "n = 1, k = 1",
+      "input": "1\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "13\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 13, k = 2",
       "expectedOutput": "10"
     },
     {
       "input": "n = 1, k = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "13\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 14, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -86,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/k-th-smallest-in-lexicographical-order/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:35.717Z",
+    "collectedAt": "2026-10-19T18:40:19.771Z",
     "sourceUpdatedAt": null
   }
 }

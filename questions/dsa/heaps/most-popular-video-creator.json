@@ -22,13 +22,13 @@
   ],
   "examples": [
     {
-      "input": "creators = [&quot;alice&quot;,&quot;bob&quot;,&quot;alice&quot;,&quot;chris&quot;], ids = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;], views = [5,10,5,4]",
-      "output": "[[&quot;alice&quot;,&quot;one&quot;],[&quot;bob&quot;,&quot;two&quot;]]",
+      "input": "creators = [\"alice\",\"bob\",\"alice\",\"chris\"], ids = [\"one\",\"two\",\"three\",\"four\"], views = [5,10,5,4]",
+      "output": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]",
       "explanation": null
     },
     {
-      "input": "creators = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;], ids = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], views = [1,2,2]",
-      "output": "[[&quot;alice&quot;,&quot;b&quot;]]",
+      "input": "creators = [\"alice\",\"alice\",\"alice\"], ids = [\"a\",\"b\",\"c\"], views = [1,2,2]",
+      "output": "[[\"alice\",\"b\"]]",
       "explanation": null
     }
   ],
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "creators = [&quot;alice&quot;,&quot;bob&quot;,&quot;alice&quot;,&quot;chris&quot;], ids = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;], views = [5,10,5,4]",
-      "expectedOutput": "[[&quot;alice&quot;,&quot;one&quot;],[&quot;bob&quot;,&quot;two&quot;]]"
+      "input": "[\"alice\",\"bob\",\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]"
     },
     {
-      "input": "creators = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;], ids = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], views = [1,2,2]",
-      "expectedOutput": "[[&quot;alice&quot;,&quot;b&quot;]]"
+      "input": "[\"alice\",\"alice\",\"alice\"]\n[\"a\",\"b\",\"c\"]\n[1,2,2]",
+      "expectedOutput": "[[\"alice\",\"b\"]]"
     }
   ],
   "testCases": [
     {
-      "input": "creators = [&quot;alice&quot;,&quot;bob&quot;,&quot;alice&quot;,&quot;chris&quot;], ids = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;], views = [5,10,5,4]",
-      "expectedOutput": "[[&quot;alice&quot;,&quot;one&quot;],[&quot;bob&quot;,&quot;two&quot;]]"
-    },
-    {
-      "input": "creators = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;], ids = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], views = [1,2,2]",
-      "expectedOutput": "[[&quot;alice&quot;,&quot;b&quot;]]"
-    },
-    {
       "input": "[\"alice\",\"bob\",\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
-      "expectedOutput": null
+      "expectedOutput": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]"
     },
     {
       "input": "[\"alice\",\"alice\",\"alice\"]\n[\"a\",\"b\",\"c\"]\n[1,2,2]",
-      "expectedOutput": null
+      "expectedOutput": "[[\"alice\",\"b\"]]"
     },
     {
-      "input": "creators = [&quot;alice&quot;,&quot;bob&quot;,&quot;alice&quot;,&quot;chris&quot;], ids = [&quot;one&quot;,&quot;two&quot;,&quot;three&quot;,&quot;four&quot;], views = [6,11,6,5]",
-      "expectedOutput": null
+      "input": "creators = [\"alice\",\"bob\",\"alice\",\"chris\"], ids = [\"one\",\"two\",\"three\",\"four\"], views = [5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]"
+    },
+    {
+      "input": "creators = [\"alice\",\"alice\",\"alice\"], ids = [\"a\",\"b\",\"c\"], views = [1,2,2]",
+      "expectedOutput": "[[\"alice\",\"b\"]]"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/most-popular-video-creator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:34.164Z",
+    "collectedAt": "2026-10-19T18:40:25.475Z",
     "sourceUpdatedAt": null
   }
 }

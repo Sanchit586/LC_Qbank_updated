@@ -22,13 +22,13 @@
   ],
   "examples": [
     {
-      "input": "names = [&quot;Mary&quot;,&quot;John&quot;,&quot;Emma&quot;], heights = [180,165,170]",
-      "output": "[&quot;Mary&quot;,&quot;Emma&quot;,&quot;John&quot;]",
+      "input": "names = [\"Mary\",\"John\",\"Emma\"], heights = [180,165,170]",
+      "output": "[\"Mary\",\"Emma\",\"John\"]",
       "explanation": "Mary is the tallest, followed by Emma and John."
     },
     {
-      "input": "names = [&quot;Alice&quot;,&quot;Bob&quot;,&quot;Bob&quot;], heights = [155,185,150]",
-      "output": "[&quot;Bob&quot;,&quot;Alice&quot;,&quot;Bob&quot;]",
+      "input": "names = [\"Alice\",\"Bob\",\"Bob\"], heights = [155,185,150]",
+      "output": "[\"Bob\",\"Alice\",\"Bob\"]",
       "explanation": "The first Bob is the tallest, followed by Alice and the second Bob."
     }
   ],
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "names = [&quot;Mary&quot;,&quot;John&quot;,&quot;Emma&quot;], heights = [180,165,170]",
-      "expectedOutput": "[&quot;Mary&quot;,&quot;Emma&quot;,&quot;John&quot;]"
+      "input": "[\"Mary\",\"John\",\"Emma\"]\n[180,165,170]",
+      "expectedOutput": "[\"Mary\",\"Emma\",\"John\"]"
     },
     {
-      "input": "names = [&quot;Alice&quot;,&quot;Bob&quot;,&quot;Bob&quot;], heights = [155,185,150]",
-      "expectedOutput": "[&quot;Bob&quot;,&quot;Alice&quot;,&quot;Bob&quot;]"
+      "input": "[\"Alice\",\"Bob\",\"Bob\"]\n[155,185,150]",
+      "expectedOutput": "[\"Bob\",\"Alice\",\"Bob\"]"
     }
   ],
   "testCases": [
     {
-      "input": "names = [&quot;Mary&quot;,&quot;John&quot;,&quot;Emma&quot;], heights = [180,165,170]",
-      "expectedOutput": "[&quot;Mary&quot;,&quot;Emma&quot;,&quot;John&quot;]"
-    },
-    {
-      "input": "names = [&quot;Alice&quot;,&quot;Bob&quot;,&quot;Bob&quot;], heights = [155,185,150]",
-      "expectedOutput": "[&quot;Bob&quot;,&quot;Alice&quot;,&quot;Bob&quot;]"
-    },
-    {
       "input": "[\"Mary\",\"John\",\"Emma\"]\n[180,165,170]",
-      "expectedOutput": null
+      "expectedOutput": "[\"Mary\",\"Emma\",\"John\"]"
     },
     {
       "input": "[\"Alice\",\"Bob\",\"Bob\"]\n[155,185,150]",
-      "expectedOutput": null
+      "expectedOutput": "[\"Bob\",\"Alice\",\"Bob\"]"
     },
     {
-      "input": "names = [&quot;Mary&quot;,&quot;John&quot;,&quot;Emma&quot;], heights = [181,166,171]",
-      "expectedOutput": null
+      "input": "names = [\"Mary\",\"John\",\"Emma\"], heights = [180,165,170]",
+      "expectedOutput": "[\"Mary\",\"Emma\",\"John\"]"
+    },
+    {
+      "input": "names = [\"Alice\",\"Bob\",\"Bob\"], heights = [155,185,150]",
+      "expectedOutput": "[\"Bob\",\"Alice\",\"Bob\"]"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-the-people/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:33.856Z",
+    "collectedAt": "2026-10-19T18:40:29.998Z",
     "sourceUpdatedAt": null
   }
 }

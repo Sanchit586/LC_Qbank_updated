@@ -21,13 +21,13 @@
   ],
   "examples": [
     {
-      "input": "paragraph = &quot;Bob hit a ball, the hit BALL flew far after it was hit.&quot;, banned = [&quot;hit&quot;]",
-      "output": "&quot;ball&quot;",
-      "explanation": "&quot;hit&quot; occurs 3 times, but it is a banned word.\n&quot;ball&quot; occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. \nNote that words in the paragraph are not case sensitive,\nthat punctuation is ignored (even if adjacent to words, such as &quot;ball,&quot;), \nand that &quot;hit&quot; isn&#39;t the answer even though it occurs more because it is banned."
+      "input": "paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"]",
+      "output": "\"ball\"",
+      "explanation": "\"hit\" occurs 3 times, but it is a banned word.\n\"ball\" occurs twice (and no other word does), so it is the most frequent non-banned word in the paragraph. \nNote that words in the paragraph are not case sensitive,\nthat punctuation is ignored (even if adjacent to words, such as \"ball,\"), \nand that \"hit\" isn't the answer even though it occurs more because it is banned."
     },
     {
-      "input": "paragraph = &quot;a.&quot;, banned = []",
-      "output": "&quot;a&quot;",
+      "input": "paragraph = \"a.\", banned = []",
+      "output": "\"a\"",
       "explanation": null
     }
   ],
@@ -54,30 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "paragraph = &quot;Bob hit a ball, the hit BALL flew far after it was hit.&quot;, banned = [&quot;hit&quot;]",
-      "expectedOutput": "&quot;ball&quot;"
+      "input": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]",
+      "expectedOutput": "\"ball\""
     },
     {
-      "input": "paragraph = &quot;a.&quot;, banned = []",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"a.\"\n[]",
+      "expectedOutput": "\"a\""
     }
   ],
   "testCases": [
     {
-      "input": "paragraph = &quot;Bob hit a ball, the hit BALL flew far after it was hit.&quot;, banned = [&quot;hit&quot;]",
-      "expectedOutput": "&quot;ball&quot;"
-    },
-    {
-      "input": "paragraph = &quot;a.&quot;, banned = []",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
       "input": "\"Bob hit a ball, the hit BALL flew far after it was hit.\"\n[\"hit\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"ball\""
     },
     {
       "input": "\"a.\"\n[]",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "paragraph = \"Bob hit a ball, the hit BALL flew far after it was hit.\", banned = [\"hit\"]",
+      "expectedOutput": "\"ball\""
+    },
+    {
+      "input": "paragraph = \"a.\", banned = []",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,
@@ -89,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/most-common-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:33.557Z",
+    "collectedAt": "2026-10-19T18:40:25.438Z",
     "sourceUpdatedAt": null
   }
 }

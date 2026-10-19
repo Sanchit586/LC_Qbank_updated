@@ -17,7 +17,7 @@
     {
       "input": "n = 5, bad = 4",
       "output": "4",
-      "explanation": "call isBadVersion(3) -&gt; false\ncall isBadVersion(5)&nbsp;-&gt; true\ncall isBadVersion(4)&nbsp;-&gt; true\nThen 4 is the first bad version."
+      "explanation": "call isBadVersion(3) -> false\ncall isBadVersion(5) -> true\ncall isBadVersion(4) -> true\nThen 4 is the first bad version."
     },
     {
       "input": "n = 1, bad = 1",
@@ -44,34 +44,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, bad = 4",
+      "input": "5\n4",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 1, bad = 1",
+      "input": "1\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "5\n4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 5, bad = 4",
       "expectedOutput": "4"
     },
     {
       "input": "n = 1, bad = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "5\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, bad = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -83,7 +79,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/first-bad-version/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.188Z",
+    "collectedAt": "2026-10-19T18:40:18.888Z",
     "sourceUpdatedAt": null
   }
 }

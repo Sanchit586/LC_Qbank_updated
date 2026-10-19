@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 7",
+      "input": "word = \"aabbccdd\", k = 7",
       "output": "5",
       "explanation": null
     },
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 8",
+      "input": "word = \"aabbccdd\", k = 8",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "word = &quot;aaabbb&quot;, k = 3",
+      "input": "word = \"aaabbb\", k = 3",
       "output": "8",
       "explanation": null
     }
@@ -56,50 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 7",
+      "input": "\"aabbccdd\"\n7",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 8",
+      "input": "\"aabbccdd\"\n8",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;aaabbb&quot;, k = 3",
+      "input": "\"aaabbb\"\n3",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 7",
+      "input": "\"aabbccdd\"\n7",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;aabbccdd&quot;, k = 8",
+      "input": "\"aabbccdd\"\n8",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;aaabbb&quot;, k = 3",
+      "input": "\"aaabbb\"\n3",
       "expectedOutput": "8"
     },
     {
-      "input": "\"aabbccdd\"\n7",
-      "expectedOutput": null
+      "input": "word = \"aabbccdd\", k = 7",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"aabbccdd\"\n8",
-      "expectedOutput": null
+      "input": "word = \"aabbccdd\", k = 8",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aaabbb\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;aabbccdd&quot;, k = 9",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;aaabbb&quot;, k = 4",
-      "expectedOutput": null
+      "input": "word = \"aaabbb\", k = 3",
+      "expectedOutput": "8"
     }
   ],
   "sqlSchema": null,
@@ -113,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-original-typed-string-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:15.012Z",
+    "collectedAt": "2026-10-19T18:40:18.587Z",
     "sourceUpdatedAt": null
   }
 }

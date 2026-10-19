@@ -15,12 +15,12 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;cdab&quot;",
+      "input": "s1 = \"abcd\", s2 = \"cdab\"",
       "output": "true",
-      "explanation": "We can do the following operations on s1:\n- Choose the indices i = 0, j = 2. The resulting string is s1 = &quot;cbad&quot;.\n- Choose the indices i = 1, j = 3. The resulting string is s1 = &quot;cdab&quot; = s2."
+      "explanation": "We can do the following operations on s1:\n- Choose the indices i = 0, j = 2. The resulting string is s1 = \"cbad\".\n- Choose the indices i = 1, j = 3. The resulting string is s1 = \"cdab\" = s2."
     },
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;dacb&quot;",
+      "input": "s1 = \"abcd\", s2 = \"dacb\"",
       "output": "false",
       "explanation": "It is not possible to make the two strings equal."
     }
@@ -48,82 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;cdab&quot;",
+      "input": "\"abcd\"\n\"cdab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;dacb&quot;",
+      "input": "\"abcd\"\n\"dacb\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;cdab&quot;",
+      "input": "\"abcd\"\n\"cdab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;abcd&quot;, s2 = &quot;dacb&quot;",
+      "input": "\"abcd\"\n\"dacb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"abcd\"\n\"cdab\"",
-      "expectedOutput": null
+      "input": "s1 = \"abcd\", s2 = \"cdab\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"abcd\"\n\"dacb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;abcd&quot;, s3 = &quot;dacb&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"abcd\", s2 = \"dacb\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -138,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-strings-can-be-made-equal-with-operations-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:54.227Z",
+    "collectedAt": "2026-10-19T18:40:14.231Z",
     "sourceUpdatedAt": null
   }
 }

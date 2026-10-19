@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;hello world&quot;, brokenLetters = &quot;ad&quot;",
+      "input": "text = \"hello world\", brokenLetters = \"ad\"",
       "output": "1",
-      "explanation": "We cannot type &quot;world&quot; because the &#39;d&#39; key is broken."
+      "explanation": "We cannot type \"world\" because the 'd' key is broken."
     },
     {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;lt&quot;",
+      "input": "text = \"leet code\", brokenLetters = \"lt\"",
       "output": "1",
-      "explanation": "We cannot type &quot;leet&quot; because the &#39;l&#39; and &#39;t&#39; keys are broken."
+      "explanation": "We cannot type \"leet\" because the 'l' and 't' keys are broken."
     },
     {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;e&quot;",
+      "input": "text = \"leet code\", brokenLetters = \"e\"",
       "output": "0",
-      "explanation": "We cannot type either word because the &#39;e&#39; key is broken."
+      "explanation": "We cannot type either word because the 'e' key is broken."
     }
   ],
   "starterCode": {
@@ -57,90 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;hello world&quot;, brokenLetters = &quot;ad&quot;",
+      "input": "\"hello world\"\n\"ad\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;lt&quot;",
+      "input": "\"leet code\"\n\"lt\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;e&quot;",
+      "input": "\"leet code\"\n\"e\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;hello world&quot;, brokenLetters = &quot;ad&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;lt&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "text = &quot;leet code&quot;, brokenLetters = &quot;e&quot;",
-      "expectedOutput": "0"
-    },
-    {
       "input": "\"hello world\"\n\"ad\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"leet code\"\n\"lt\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"leet code\"\n\"e\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "text = \"hello world\", brokenLetters = \"ad\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "text = \"leet code\", brokenLetters = \"lt\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "text = \"leet code\", brokenLetters = \"e\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-words-you-can-type/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:22.111Z",
+    "collectedAt": "2026-10-19T18:40:22.224Z",
     "sourceUpdatedAt": null
   }
 }

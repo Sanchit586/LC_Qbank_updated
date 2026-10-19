@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = \"acb\", n1 = 4, s2 = \"ab\", n2 = 2",
+      "input": "\"acb\"\n4\n\"ab\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s1 = \"acb\", n1 = 1, s2 = \"acb\", n2 = 1",
+      "input": "\"acb\"\n1\n\"acb\"\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "\"acb\"\n4\n\"ab\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"acb\"\n1\n\"acb\"\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "s1 = \"acb\", n1 = 4, s2 = \"ab\", n2 = 2",
       "expectedOutput": "2"
     },
     {
       "input": "s1 = \"acb\", n1 = 1, s2 = \"acb\", n2 = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "\"acb\"\n4\n\"ab\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"acb\"\n1\n\"acb\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = \"acb\", n2 = 5, s3 = \"ab\", n3 = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-repetitions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.892Z",
+    "collectedAt": "2026-10-19T18:40:15.853Z",
     "sourceUpdatedAt": null
   }
 }

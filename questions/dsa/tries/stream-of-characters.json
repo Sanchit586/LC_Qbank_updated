@@ -21,7 +21,13 @@
     "letter is a lowercase English letter.",
     "At most 4 * 104 calls will be made to query."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"StreamChecker\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\"]\n[[[\"cd\", \"f\", \"kl\"]], [\"a\"], [\"b\"], [\"c\"], [\"d\"], [\"e\"], [\"f\"], [\"g\"], [\"h\"], [\"i\"], [\"j\"], [\"k\"], [\"l\"]]",
+      "output": "[null, false, false, false, true, false, true, false, false, false, false, false, true]",
+      "explanation": "StreamChecker streamChecker = new StreamChecker([\"cd\", \"f\", \"kl\"]);\nstreamChecker.query(\"a\"); // return False\nstreamChecker.query(\"b\"); // return False\nstreamChecker.query(\"c\"); // return False\nstreamChecker.query(\"d\"); // return True, because 'cd' is in the wordlist\nstreamChecker.query(\"e\"); // return False\nstreamChecker.query(\"f\"); // return True, because 'f' is in the wordlist\nstreamChecker.query(\"g\"); // return False\nstreamChecker.query(\"h\"); // return False\nstreamChecker.query(\"i\"); // return False\nstreamChecker.query(\"j\"); // return False\nstreamChecker.query(\"k\"); // return False\nstreamChecker.query(\"l\"); // return True, because 'kl' is in the wordlist"
+    }
+  ],
   "starterCode": {
     "cpp": "class StreamChecker {\npublic:\n    StreamChecker(vector<string>& words) {\n        \n    }\n    \n    bool query(char letter) {\n        \n    }\n};\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker* obj = new StreamChecker(words);\n * bool param_1 = obj->query(letter);\n */",
     "java": "class StreamChecker {\n\n    public StreamChecker(String[] words) {\n        \n    }\n    \n    public boolean query(char letter) {\n        \n    }\n}\n\n/**\n * Your StreamChecker object will be instantiated and called as such:\n * StreamChecker obj = new StreamChecker(words);\n * boolean param_1 = obj.query(letter);\n */",
@@ -46,13 +52,17 @@
   "publicTests": [
     {
       "input": "[\"StreamChecker\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\"]\n[[[\"cd\",\"f\",\"kl\"]],[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"g\"],[\"h\"],[\"i\"],[\"j\"],[\"k\"],[\"l\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, false, false, true, false, true, false, false, false, false, false, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"StreamChecker\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\",\"query\"]\n[[[\"cd\",\"f\",\"kl\"]],[\"a\"],[\"b\"],[\"c\"],[\"d\"],[\"e\"],[\"f\"],[\"g\"],[\"h\"],[\"i\"],[\"j\"],[\"k\"],[\"l\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, false, false, true, false, true, false, false, false, false, false, true]"
+    },
+    {
+      "input": "[\"StreamChecker\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\", \"query\"]\n[[[\"cd\", \"f\", \"kl\"]], [\"a\"], [\"b\"], [\"c\"], [\"d\"], [\"e\"], [\"f\"], [\"g\"], [\"h\"], [\"i\"], [\"j\"], [\"k\"], [\"l\"]]",
+      "expectedOutput": "[null, false, false, false, true, false, true, false, false, false, false, false, true]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +76,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/stream-of-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.426Z",
+    "collectedAt": "2026-10-19T18:40:30.295Z",
     "sourceUpdatedAt": null
   }
 }

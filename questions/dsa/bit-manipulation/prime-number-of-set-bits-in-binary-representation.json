@@ -19,12 +19,12 @@
     {
       "input": "left = 6, right = 10",
       "output": "4",
-      "explanation": "6  -&gt; 110 (2 set bits, 2 is prime)\n7  -&gt; 111 (3 set bits, 3 is prime)\n8  -&gt; 1000 (1 set bit, 1 is not prime)\n9  -&gt; 1001 (2 set bits, 2 is prime)\n10 -&gt; 1010 (2 set bits, 2 is prime)\n4 numbers have a prime number of set bits."
+      "explanation": "6  -> 110 (2 set bits, 2 is prime)\n7  -> 111 (3 set bits, 3 is prime)\n8  -> 1000 (1 set bit, 1 is not prime)\n9  -> 1001 (2 set bits, 2 is prime)\n10 -> 1010 (2 set bits, 2 is prime)\n4 numbers have a prime number of set bits."
     },
     {
       "input": "left = 10, right = 15",
       "output": "5",
-      "explanation": "10 -&gt; 1010 (2 set bits, 2 is prime)\n11 -&gt; 1011 (3 set bits, 3 is prime)\n12 -&gt; 1100 (2 set bits, 2 is prime)\n13 -&gt; 1101 (3 set bits, 3 is prime)\n14 -&gt; 1110 (3 set bits, 3 is prime)\n15 -&gt; 1111 (4 set bits, 4 is not prime)\n5 numbers have a prime number of set bits."
+      "explanation": "10 -> 1010 (2 set bits, 2 is prime)\n11 -> 1011 (3 set bits, 3 is prime)\n12 -> 1100 (2 set bits, 2 is prime)\n13 -> 1101 (3 set bits, 3 is prime)\n14 -> 1110 (3 set bits, 3 is prime)\n15 -> 1111 (4 set bits, 4 is not prime)\n5 numbers have a prime number of set bits."
     }
   ],
   "starterCode": {
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "left = 6, right = 10",
+      "input": "6\n10",
       "expectedOutput": "4"
     },
     {
-      "input": "left = 10, right = 15",
+      "input": "10\n15",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "6\n10",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "10\n15",
+      "expectedOutput": "5"
+    },
+    {
       "input": "left = 6, right = 10",
       "expectedOutput": "4"
     },
     {
       "input": "left = 10, right = 15",
       "expectedOutput": "5"
-    },
-    {
-      "input": "6\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n15",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 7, right = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/prime-number-of-set-bits-in-binary-representation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.154Z",
+    "collectedAt": "2026-10-19T18:40:26.900Z",
     "sourceUpdatedAt": null
   }
 }

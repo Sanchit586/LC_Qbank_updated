@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leEeetcode&quot;",
-      "output": "&quot;leetcode&quot;",
-      "explanation": "In the first step, either you choose i = 1 or i = 2, both will result &quot;leEeetcode&quot; to be reduced to &quot;leetcode&quot;."
+      "input": "s = \"leEeetcode\"",
+      "output": "\"leetcode\"",
+      "explanation": "In the first step, either you choose i = 1 or i = 2, both will result \"leEeetcode\" to be reduced to \"leetcode\"."
     },
     {
-      "input": "s = &quot;abBAcC&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "We have many possible scenarios, and all lead to the same answer. For example:\n&quot;abBAcC&quot; --&gt; &quot;aAcC&quot; --&gt; &quot;cC&quot; --&gt; &quot;&quot;\n&quot;abBAcC&quot; --&gt; &quot;abBA&quot; --&gt; &quot;aA&quot; --&gt; &quot;&quot;"
+      "input": "s = \"abBAcC\"",
+      "output": "\"\"",
+      "explanation": "We have many possible scenarios, and all lead to the same answer. For"
     },
     {
-      "input": "s = &quot;s&quot;",
-      "output": "&quot;s&quot;",
+      "input": "s = \"s\"",
+      "output": "\"s\"",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leEeetcode&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
+      "input": "\"leEeetcode\"",
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "s = &quot;abBAcC&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"abBAcC\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;s&quot;",
-      "expectedOutput": "&quot;s&quot;"
+      "input": "\"s\"",
+      "expectedOutput": "\"s\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leEeetcode&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
-    },
-    {
-      "input": "s = &quot;abBAcC&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;s&quot;",
-      "expectedOutput": "&quot;s&quot;"
-    },
-    {
       "input": "\"leEeetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"leetcode\""
     },
     {
       "input": "\"abBAcC\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"s\"",
-      "expectedOutput": null
+      "expectedOutput": "\"s\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"leEeetcode\"",
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abBAcC\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"s\"",
+      "expectedOutput": "\"s\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/make-the-string-great/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.212Z",
+    "collectedAt": "2026-10-19T18:40:20.976Z",
     "sourceUpdatedAt": null
   }
 }

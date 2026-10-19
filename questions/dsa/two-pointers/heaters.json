@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "houses = [1,2,3], heaters = [2]",
+      "input": "[1,2,3]\n[2]",
       "expectedOutput": "1"
     },
     {
-      "input": "houses = [1,2,3,4], heaters = [1,4]",
+      "input": "[1,2,3,4]\n[1,4]",
       "expectedOutput": "1"
     },
     {
-      "input": "houses = [1,5], heaters = [2]",
+      "input": "[1,5]\n[2]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[2]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,2,3,4]\n[1,4]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,5]\n[2]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "houses = [1,2,3], heaters = [2]",
       "expectedOutput": "1"
     },
@@ -80,38 +92,6 @@
     {
       "input": "houses = [1,5], heaters = [2]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[1,2,3]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4]\n[1,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "houses = [2,3,4,5], heaters = [2,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "houses = [2,6], heaters = [3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5]\n[2,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "houses = [2,3,4], heaters = [3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/heaters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.731Z",
+    "collectedAt": "2026-10-19T18:40:19.360Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,7 +20,7 @@
     {
       "input": "grid = [[1,2,3],[4,5,6],[7,8,9]]",
       "output": "13",
-      "explanation": "The possible falling paths are:\n[1,5,9], [1,5,7], [1,6,7], [1,6,8],\n[2,4,8], [2,4,9], [2,6,7], [2,6,8],\n[3,4,8], [3,4,9], [3,5,7], [3,5,9]\nThe falling path with the smallest sum is&nbsp;[1,5,7], so the answer is&nbsp;13."
+      "explanation": "The possible falling paths are:\n[1,5,9], [1,5,7], [1,6,7], [1,6,8],\n[2,4,8], [2,4,9], [2,6,7], [2,6,8],\n[3,4,8], [3,4,9], [3,5,7], [3,5,9]\nThe falling path with the smallest sum is [1,5,7], so the answer is 13."
     },
     {
       "input": "grid = [[7]]",
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2,3],[4,5,6],[7,8,9]]",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "13"
     },
     {
-      "input": "grid = [[7]]",
+      "input": "[[7]]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[7]]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "grid = [[1,2,3],[4,5,6],[7,8,9]]",
       "expectedOutput": "13"
     },
     {
       "input": "grid = [[7]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[[1,2,3],[4,5,6],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3,4],[5,6,7],[8,9,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-falling-path-sum-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:57.195Z",
+    "collectedAt": "2026-10-19T18:40:23.911Z",
     "sourceUpdatedAt": null
   }
 }

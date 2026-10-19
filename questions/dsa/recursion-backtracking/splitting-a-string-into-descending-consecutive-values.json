@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1234&quot;",
+      "input": "s = \"1234\"",
       "output": "false",
       "explanation": "There is no valid way to split s."
     },
     {
-      "input": "s = &quot;050043&quot;",
+      "input": "s = \"050043\"",
       "output": "true",
-      "explanation": "s can be split into [&quot;05&quot;, &quot;004&quot;, &quot;3&quot;] with numerical values [5,4,3].\nThe values are in descending order with adjacent values differing by 1."
+      "explanation": "s can be split into [\"05\", \"004\", \"3\"] with numerical values [5,4,3].\nThe values are in descending order with adjacent values differing by 1."
     },
     {
-      "input": "s = &quot;9080701&quot;",
+      "input": "s = \"9080701\"",
       "output": "false",
       "explanation": "There is no valid way to split s."
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1234&quot;",
+      "input": "\"1234\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;050043&quot;",
+      "input": "\"050043\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;9080701&quot;",
+      "input": "\"9080701\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1234&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;050043&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;9080701&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"1234\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"050043\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"9080701\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"1234\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"050043\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"9080701\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/splitting-a-string-into-descending-consecutive-values/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.622Z",
+    "collectedAt": "2026-10-19T18:40:30.181Z",
     "sourceUpdatedAt": null
   }
 }

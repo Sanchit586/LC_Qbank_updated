@@ -20,14 +20,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cba&quot;",
+      "input": "s = \"cba\"",
       "output": "5",
-      "explanation": "The simulation goes as follows:\nOperation 1: i=2, j=2. Swap s[1] and s[2] to get s=&quot;cab&quot;, then reverse the suffix starting at 2. Now, s=&quot;cab&quot;.\nOperation 2: i=1, j=2. Swap s[0] and s[2] to get s=&quot;bac&quot;, then reverse the suffix starting at 1. Now, s=&quot;bca&quot;.\nOperation 3: i=2, j=2. Swap s[1] and s[2] to get s=&quot;bac&quot;, then reverse the suffix starting at 2. Now, s=&quot;bac&quot;.\nOperation 4: i=1, j=1. Swap s[0] and s[1] to get s=&quot;abc&quot;, then reverse the suffix starting at 1. Now, s=&quot;acb&quot;.\nOperation 5: i=2, j=2. Swap s[1] and s[2] to get s=&quot;abc&quot;, then reverse the suffix starting at 2. Now, s=&quot;abc&quot;."
+      "explanation": "The simulation goes as follows:\nOperation 1: i=2, j=2. Swap s[1] and s[2] to get s=\"cab\", then reverse the suffix starting at 2. Now, s=\"cab\".\nOperation 2: i=1, j=2. Swap s[0] and s[2] to get s=\"bac\", then reverse the suffix starting at 1. Now, s=\"bca\".\nOperation 3: i=2, j=2. Swap s[1] and s[2] to get s=\"bac\", then reverse the suffix starting at 2. Now, s=\"bac\".\nOperation 4: i=1, j=1. Swap s[0] and s[1] to get s=\"abc\", then reverse the suffix starting at 1. Now, s=\"acb\".\nOperation 5: i=2, j=2. Swap s[1] and s[2] to get s=\"abc\", then reverse the suffix starting at 2. Now, s=\"abc\"."
     },
     {
-      "input": "s = &quot;aabaa&quot;",
+      "input": "s = \"aabaa\"",
       "output": "2",
-      "explanation": "The simulation goes as follows:\nOperation 1: i=3, j=4. Swap s[2] and s[4] to get s=&quot;aaaab&quot;, then reverse the substring starting at 3. Now, s=&quot;aaaba&quot;.\nOperation 2: i=4, j=4. Swap s[3] and s[4] to get s=&quot;aaaab&quot;, then reverse the substring starting at 4. Now, s=&quot;aaaab&quot;."
+      "explanation": "The simulation goes as follows:\nOperation 1: i=3, j=4. Swap s[2] and s[4] to get s=\"aaaab\", then reverse the substring starting at 3. Now, s=\"aaaba\".\nOperation 2: i=4, j=4. Swap s[3] and s[4] to get s=\"aaaab\", then reverse the substring starting at 4. Now, s=\"aaaab\"."
     }
   ],
   "starterCode": {
@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cba&quot;",
+      "input": "\"cba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aabaa&quot;",
+      "input": "\"aabaa\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cba&quot;",
+      "input": "\"cba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aabaa&quot;",
+      "input": "\"aabaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"cba\"",
-      "expectedOutput": null
+      "input": "s = \"cba\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"aabaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aabaa\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-operations-to-make-string-sorted/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:09.456Z",
+    "collectedAt": "2026-10-19T18:40:24.357Z",
     "sourceUpdatedAt": null
   }
 }

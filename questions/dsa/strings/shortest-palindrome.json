@@ -54,94 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"aacecaaa\"",
+      "input": "\"aacecaaa\"",
       "expectedOutput": "\"aaacecaaa\""
     },
     {
-      "input": "s = \"abcd\"",
+      "input": "\"abcd\"",
       "expectedOutput": "\"dcbabcd\""
     }
   ],
   "testCases": [
     {
+      "input": "\"aacecaaa\"",
+      "expectedOutput": "\"aaacecaaa\""
+    },
+    {
+      "input": "\"abcd\"",
+      "expectedOutput": "\"dcbabcd\""
+    },
+    {
       "input": "s = \"aacecaaa\"",
       "expectedOutput": "\"aaacecaaa\""
     },
     {
       "input": "s = \"abcd\"",
       "expectedOutput": "\"dcbabcd\""
-    },
-    {
-      "input": "\"aacecaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:26.105Z",
+    "collectedAt": "2026-10-19T18:40:28.421Z",
     "sourceUpdatedAt": null
   }
 }

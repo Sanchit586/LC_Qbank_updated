@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;12936&quot;",
+      "input": "s = \"12936\"",
       "output": "11",
       "explanation": null
     },
     {
-      "input": "s = &quot;5701283&quot;",
+      "input": "s = \"5701283\"",
       "output": "18",
       "explanation": null
     },
     {
-      "input": "s = &quot;1010101010&quot;",
+      "input": "s = \"1010101010\"",
       "output": "25",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;12936&quot;",
+      "input": "\"12936\"",
       "expectedOutput": "11"
     },
     {
-      "input": "s = &quot;5701283&quot;",
+      "input": "\"5701283\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;1010101010&quot;",
+      "input": "\"1010101010\"",
       "expectedOutput": "25"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;12936&quot;",
+      "input": "\"12936\"",
       "expectedOutput": "11"
     },
     {
-      "input": "s = &quot;5701283&quot;",
+      "input": "\"5701283\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = &quot;1010101010&quot;",
+      "input": "\"1010101010\"",
       "expectedOutput": "25"
     },
     {
-      "input": "\"12936\"",
-      "expectedOutput": null
+      "input": "s = \"12936\"",
+      "expectedOutput": "11"
     },
     {
-      "input": "\"5701283\"",
-      "expectedOutput": null
+      "input": "s = \"5701283\"",
+      "expectedOutput": "18"
     },
     {
-      "input": "\"1010101010\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1010101010\"",
+      "expectedOutput": "25"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-substrings-divisible-by-last-digit/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.507Z",
+    "collectedAt": "2026-10-19T18:40:15.685Z",
     "sourceUpdatedAt": null
   }
 }

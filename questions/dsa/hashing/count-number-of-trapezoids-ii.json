@@ -14,7 +14,7 @@
   "statement": "You are given a 2D integer array `points` where `points[i] = [x_(i), y_(i)]` represents the coordinates of the `i^(th)` point on the Cartesian plane.\n\nReturn _the number of unique_ _trapezoids_ that can be formed by choosing any four distinct points from `points`.\n\nA **trapezoid** is a convex quadrilateral with **at least one pair** of parallel sides. Two lines are parallel if and only if they have the same slope.\n\n**Example 1:**\n\n**Input:** points = \\[\\[-3,2\\],\\[3,0\\],\\[2,3\\],\\[3,2\\],\\[2,-3\\]\\]\n\n**Output:** 2\n\n**Explanation:**\n\n![](./assets/count-number-of-trapezoids-ii-1.png) ![](./assets/count-number-of-trapezoids-ii-2.png)\n\nThere are two distinct ways to pick four points that form a trapezoid:\n\n*   The points `[-3,2], [2,3], [3,2], [2,-3]` form one trapezoid.\n*   The points `[2,3], [3,2], [3,0], [2,-3]` form another trapezoid.\n\n**Example 2:**\n\n**Input:** points = \\[\\[0,0\\],\\[1,0\\],\\[0,1\\],\\[2,1\\]\\]\n\n**Output:** 1\n\n**Explanation:**\n\n![](./assets/count-number-of-trapezoids-ii-3.png)\n\nThere is only one trapezoid which can be formed.\n\n**Constraints:**\n\n*   `4 <= points.length <= 500`\n*   `–1000 <= x_(i), y_(i) <= 1000`\n*   All points are pairwise distinct.",
   "constraints": [
     "4 <= points.length <= 500",
-    "&ndash;1000 <= xi, yi <= 1000",
+    "–1000 <= xi, yi <= 1000",
     "All points are pairwise distinct."
   ],
   "examples": [
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
+      "input": "[[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
       "expectedOutput": "2"
     },
     {
-      "input": "points = [[0,0],[1,0],[0,1],[2,1]]",
+      "input": "[[0,0],[1,0],[0,1],[2,1]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[0,0],[1,0],[0,1],[2,1]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
       "expectedOutput": "2"
     },
     {
       "input": "points = [[0,0],[1,0],[0,1],[2,1]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,0],[1,0],[0,1],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[-4,3],[4,1],[3,4],[4,3],[3,-4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-number-of-trapezoids-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.394Z",
+    "collectedAt": "2026-10-19T18:40:15.371Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "binary = &quot;001&quot;",
+      "input": "binary = \"001\"",
       "output": "2",
-      "explanation": "The good subsequences of binary are [&quot;0&quot;, &quot;0&quot;, &quot;1&quot;].\nThe unique good subsequences are &quot;0&quot; and &quot;1&quot;."
+      "explanation": "The good subsequences of binary are [\"0\", \"0\", \"1\"].\nThe unique good subsequences are \"0\" and \"1\"."
     },
     {
-      "input": "binary = &quot;11&quot;",
+      "input": "binary = \"11\"",
       "output": "2",
-      "explanation": "The good subsequences of binary are [&quot;1&quot;, &quot;1&quot;, &quot;11&quot;].\nThe unique good subsequences are &quot;1&quot; and &quot;11&quot;."
+      "explanation": "The good subsequences of binary are [\"1\", \"1\", \"11\"].\nThe unique good subsequences are \"1\" and \"11\"."
     },
     {
-      "input": "binary = &quot;101&quot;",
+      "input": "binary = \"101\"",
       "output": "5",
-      "explanation": "The good subsequences of binary are [&quot;1&quot;, &quot;0&quot;, &quot;1&quot;, &quot;10&quot;, &quot;11&quot;, &quot;101&quot;]. \nThe unique good subsequences are &quot;0&quot;, &quot;1&quot;, &quot;10&quot;, &quot;11&quot;, and &quot;101&quot;."
+      "explanation": "The good subsequences of binary are [\"1\", \"0\", \"1\", \"10\", \"11\", \"101\"]. \nThe unique good subsequences are \"0\", \"1\", \"10\", \"11\", and \"101\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "binary = &quot;001&quot;",
+      "input": "\"001\"",
       "expectedOutput": "2"
     },
     {
-      "input": "binary = &quot;11&quot;",
+      "input": "\"11\"",
       "expectedOutput": "2"
     },
     {
-      "input": "binary = &quot;101&quot;",
+      "input": "\"101\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "binary = &quot;001&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "binary = &quot;11&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "binary = &quot;101&quot;",
-      "expectedOutput": "5"
-    },
-    {
       "input": "\"001\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"11\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"101\"",
-      "expectedOutput": null
+      "expectedOutput": "5"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "binary = \"001\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "binary = \"11\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "binary = \"101\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-unique-good-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.542Z",
+    "collectedAt": "2026-10-19T18:40:26.175Z",
     "sourceUpdatedAt": null
   }
 }

@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Person table:\n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n| 3  | john@example.com |\n+----+------------------+",
+      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
       "expectedOutput": "+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n+----+------------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Person table:\n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n| 3  | john@example.com |\n+----+------------------+",
+      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
       "expectedOutput": "+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n+----+------------------+"
     },
     {
-      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"john@example.com\"], [2, \"bob@example.com\"], [3, \"john@example.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[[1,\"john@example.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[[1,null],[2,null],[3,null]]}}",
-      "expectedOutput": null
+      "input": "Person table:\n+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n| 3  | john@example.com |\n+----+------------------+",
+      "expectedOutput": "+----+------------------+\n| id | email            |\n+----+------------------+\n| 1  | john@example.com |\n| 2  | bob@example.com  |\n+----+------------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Person (Id int, Email varchar(255))\n\nTruncate table Person",
@@ -65,7 +53,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/delete-duplicate-emails/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.904Z",
+    "collectedAt": "2026-10-19T18:40:16.283Z",
     "sourceUpdatedAt": null
   }
 }

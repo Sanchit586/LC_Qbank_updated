@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[1,2],[3,4]]",
+      "input": "[[1,2],[3,4]]",
       "expectedOutput": "3"
     },
     {
-      "input": "mat = [[2,2],[2,2]]",
+      "input": "[[2,2],[2,2]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[3,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[2,2],[2,2]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "mat = [[1,2],[3,4]]",
       "expectedOutput": "3"
     },
     {
       "input": "mat = [[2,2],[2,2]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[1,2],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,3],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-ways-to-choose-coprime-integers-from-rows/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.241Z",
+    "collectedAt": "2026-10-19T18:40:15.958Z",
     "sourceUpdatedAt": null
   }
 }

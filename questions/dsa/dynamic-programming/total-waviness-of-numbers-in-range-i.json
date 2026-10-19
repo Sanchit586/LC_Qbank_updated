@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "num1 = 120, num2 = 130",
+      "input": "120\n130",
       "expectedOutput": "3"
     },
     {
-      "input": "num1 = 198, num2 = 202",
+      "input": "198\n202",
       "expectedOutput": "3"
     },
     {
-      "input": "num1 = 4848, num2 = 4848",
+      "input": "4848\n4848",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "120\n130",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "198\n202",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4848\n4848",
+      "expectedOutput": "2"
+    },
+    {
       "input": "num1 = 120, num2 = 130",
       "expectedOutput": "3"
     },
@@ -78,38 +90,6 @@
     {
       "input": "num1 = 4848, num2 = 4848",
       "expectedOutput": "2"
-    },
-    {
-      "input": "120\n130",
-      "expectedOutput": null
-    },
-    {
-      "input": "198\n202",
-      "expectedOutput": null
-    },
-    {
-      "input": "4848\n4848",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 199, num3 = 203",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 4849, num3 = 4849",
-      "expectedOutput": null
-    },
-    {
-      "input": "121\n131",
-      "expectedOutput": null
-    },
-    {
-      "input": "199\n203",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 121, num3 = 131",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/total-waviness-of-numbers-in-range-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:00.067Z",
+    "collectedAt": "2026-10-19T18:40:31.148Z",
     "sourceUpdatedAt": null
   }
 }

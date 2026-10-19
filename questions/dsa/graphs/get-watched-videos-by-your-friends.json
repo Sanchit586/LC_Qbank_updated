@@ -26,13 +26,13 @@
   ],
   "examples": [
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
-      "output": "[&quot;B&quot;,&quot;C&quot;]",
-      "explanation": "You have id = 0 (green color in the figure) and your friends are (yellow color in the figure):\nPerson with id = 1 -&gt; watchedVideos = [&quot;C&quot;]&nbsp;\nPerson with id = 2 -&gt; watchedVideos = [&quot;B&quot;,&quot;C&quot;]&nbsp;\nThe frequencies of watchedVideos by your friends are:&nbsp;\nB -&gt; 1&nbsp;\nC -&gt; 2"
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
+      "output": "[\"B\",\"C\"]",
+      "explanation": "You have id = 0 (green color in the figure) and your friends are (yellow color in the figure):\nPerson with id = 1 -> watchedVideos = [\"C\"] \nPerson with id = 2 -> watchedVideos = [\"B\",\"C\"] \nThe frequencies of watchedVideos by your friends are: \nB -> 1 \nC -> 2"
     },
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
-      "output": "[&quot;D&quot;]",
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
+      "output": "[\"D\"]",
       "explanation": "You have id = 0 (green color in the figure) and the only friend of your friends is the person with id = 3 (yellow color in the figure)."
     }
   ],
@@ -59,34 +59,30 @@
   },
   "publicTests": [
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
-      "expectedOutput": "[&quot;B&quot;,&quot;C&quot;]"
+      "input": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]\n[[1,2],[0,3],[0,3],[1,2]]\n0\n1",
+      "expectedOutput": "[\"B\",\"C\"]"
     },
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
-      "expectedOutput": "[&quot;D&quot;]"
+      "input": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]\n[[1,2],[0,3],[0,3],[1,2]]\n0\n2",
+      "expectedOutput": "[\"D\"]"
     }
   ],
   "testCases": [
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
-      "expectedOutput": "[&quot;B&quot;,&quot;C&quot;]"
-    },
-    {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
-      "expectedOutput": "[&quot;D&quot;]"
-    },
-    {
       "input": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]\n[[1,2],[0,3],[0,3],[1,2]]\n0\n1",
-      "expectedOutput": null
+      "expectedOutput": "[\"B\",\"C\"]"
     },
     {
       "input": "[[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]]\n[[1,2],[0,3],[0,3],[1,2]]\n0\n2",
-      "expectedOutput": null
+      "expectedOutput": "[\"D\"]"
     },
     {
-      "input": "watchedVideos = [[&quot;A&quot;,&quot;B&quot;],[&quot;C&quot;],[&quot;B&quot;,&quot;C&quot;],[&quot;D&quot;]], friends = [[2,3],[1,4],[1,4],[2,3]], id = 1, level = 2",
-      "expectedOutput": null
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 1",
+      "expectedOutput": "[\"B\",\"C\"]"
+    },
+    {
+      "input": "watchedVideos = [[\"A\",\"B\"],[\"C\"],[\"B\",\"C\"],[\"D\"]], friends = [[1,2],[0,3],[0,3],[1,2]], id = 0, level = 2",
+      "expectedOutput": "[\"D\"]"
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/get-watched-videos-by-your-friends/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:23.522Z",
+    "collectedAt": "2026-10-19T18:40:19.190Z",
     "sourceUpdatedAt": null
   }
 }

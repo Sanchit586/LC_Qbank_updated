@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Insurance table:\n+-----+----------+----------+-----+-----+\n| pid | tiv_2015 | tiv_2016 | lat | lon |\n+-----+----------+----------+-----+-----+\n| 1   | 10       | 5        | 10  | 10  |\n| 2   | 20       | 20       | 20  | 20  |\n| 3   | 10       | 30       | 20  | 20  |\n| 4   | 10       | 40       | 40  | 40  |\n+-----+----------+----------+-----+-----+",
+      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[[1,10,5,10,10],[2,20,20,20,20],[3,10,30,20,20],[4,10,40,40,40]]}}",
       "expectedOutput": "+----------+\n| tiv_2016 |\n+----------+\n| 45.00    |\n+----------+"
     }
   ],
   "testCases": [
     {
-      "input": "Insurance table:\n+-----+----------+----------+-----+-----+\n| pid | tiv_2015 | tiv_2016 | lat | lon |\n+-----+----------+----------+-----+-----+\n| 1   | 10       | 5        | 10  | 10  |\n| 2   | 20       | 20       | 20  | 20  |\n| 3   | 10       | 30       | 20  | 20  |\n| 4   | 10       | 40       | 40  | 40  |\n+-----+----------+----------+-----+-----+",
+      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[[1,10,5,10,10],[2,20,20,20,20],[3,10,30,20,20],[4,10,40,40,40]]}}",
       "expectedOutput": "+----------+\n| tiv_2016 |\n+----------+\n| 45.00    |\n+----------+"
     },
     {
-      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[[1,10,5,10,10],[2,20,20,20,20],[3,10,30,20,20],[4,10,40,40,40]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[[1,10,5,10,10]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Insurance\":[\"pid\",\"tiv_2015\",\"tiv_2016\",\"lat\",\"lon\"]},\"rows\":{\"Insurance\":[[1,10,5,10,null],[2,20,20,20,null],[3,10,30,20,null],[4,10,40,40,null]]}}",
-      "expectedOutput": null
+      "input": "Insurance table:\n+-----+----------+----------+-----+-----+\n| pid | tiv_2015 | tiv_2016 | lat | lon |\n+-----+----------+----------+-----+-----+\n| 1   | 10       | 5        | 10  | 10  |\n| 2   | 20       | 20       | 20  | 20  |\n| 3   | 10       | 30       | 20  | 20  |\n| 4   | 10       | 40       | 40  | 40  |\n+-----+----------+----------+-----+-----+",
+      "expectedOutput": "+----------+\n| tiv_2016 |\n+----------+\n| 45.00    |\n+----------+"
     }
   ],
   "sqlSchema": "Create Table If Not Exists Insurance (pid int, tiv_2015 float, tiv_2016 float, lat float, lon float)\n\nTruncate table Insurance",
@@ -68,7 +56,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/investments-in-2016/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.151Z",
+    "collectedAt": "2026-10-19T18:40:19.621Z",
     "sourceUpdatedAt": null
   }
 }

@@ -60,34 +60,30 @@
   },
   "publicTests": [
     {
-      "input": "edges = [[0,1],[1,2],[1,3],[4,2]], guesses = [[1,3],[0,1],[1,0],[2,4]], k = 3",
+      "input": "[[0,1],[1,2],[1,3],[4,2]]\n[[1,3],[0,1],[1,0],[2,4]]\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "edges = [[0,1],[1,2],[2,3],[3,4]], guesses = [[1,0],[3,4],[2,1],[3,2]], k = 1",
+      "input": "[[0,1],[1,2],[2,3],[3,4]]\n[[1,0],[3,4],[2,1],[3,2]]\n1",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[1,2],[1,3],[4,2]]\n[[1,3],[0,1],[1,0],[2,4]]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[0,1],[1,2],[2,3],[3,4]]\n[[1,0],[3,4],[2,1],[3,2]]\n1",
+      "expectedOutput": "5"
+    },
+    {
       "input": "edges = [[0,1],[1,2],[1,3],[4,2]], guesses = [[1,3],[0,1],[1,0],[2,4]], k = 3",
       "expectedOutput": "3"
     },
     {
       "input": "edges = [[0,1],[1,2],[2,3],[3,4]], guesses = [[1,0],[3,4],[2,1],[3,2]], k = 1",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[[0,1],[1,2],[1,3],[4,2]]\n[[1,3],[0,1],[1,0],[2,4]]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1],[1,2],[2,3],[3,4]]\n[[1,0],[3,4],[2,1],[3,2]]\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "edges = [[1,2],[2,3],[2,4],[5,3]], guesses = [[2,4],[1,2],[2,1],[3,5]], k = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -103,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-number-of-possible-root-nodes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:14.537Z",
+    "collectedAt": "2026-10-19T18:40:15.338Z",
     "sourceUpdatedAt": null
   }
 }

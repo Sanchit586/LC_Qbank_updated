@@ -22,19 +22,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcacb&quot;, p = &quot;ab&quot;, removable = [3,1,0]",
-      "output": "2\nExplanation: After removing the characters at indices 3 and 1, &quot;abcacb&quot; becomes &quot;accb&quot;.\n&quot;ab&quot; is a subsequence of &quot;accb&quot;.\nIf we remove the characters at indices 3, 1, and 0, &quot;abcacb&quot; becomes &quot;ccb&quot;, and &quot;ab&quot; is no longer a subsequence.\nHence, the maximum k is 2.",
-      "explanation": null
+      "input": "s = \"abcacb\", p = \"ab\", removable = [3,1,0]",
+      "output": "2",
+      "explanation": ": After removing the characters at indices 3 and 1, \"abcacb\" becomes \"accb\".\n\"ab\" is a subsequence of \"accb\".\nIf we remove the characters at indices 3, 1, and 0, \"abcacb\" becomes \"ccb\", and \"ab\" is no longer a subsequence.\nHence, the maximum k is 2."
     },
     {
-      "input": "s = &quot;abcbddddd&quot;, p = &quot;abcd&quot;, removable = [3,2,1,4,5,6]",
-      "output": "1\nExplanation: After removing the character at index 3, &quot;abcbddddd&quot; becomes &quot;abcddddd&quot;.\n&quot;abcd&quot; is a subsequence of &quot;abcddddd&quot;.",
-      "explanation": null
+      "input": "s = \"abcbddddd\", p = \"abcd\", removable = [3,2,1,4,5,6]",
+      "output": "1",
+      "explanation": ": After removing the character at index 3, \"abcbddddd\" becomes \"abcddddd\".\n\"abcd\" is a subsequence of \"abcddddd\"."
     },
     {
-      "input": "s = &quot;abcab&quot;, p = &quot;abc&quot;, removable = [0,1,2,3,4]",
-      "output": "0\nExplanation: If you remove the first index in the array removable, &quot;abc&quot; is no longer a subsequence.",
-      "explanation": null
+      "input": "s = \"abcab\", p = \"abc\", removable = [0,1,2,3,4]",
+      "output": "0",
+      "explanation": ": If you remove the first index in the array removable, \"abc\" is no longer a subsequence."
     }
   ],
   "starterCode": {
@@ -60,62 +60,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcacb&quot;, p = &quot;ab&quot;, removable = [3,1,0]",
-      "expectedOutput": "2\nExplanation: After removing the characters at indices 3 and 1, &quot;abcacb&quot; becomes &quot;accb&quot;.\n&quot;ab&quot; is a subsequence of &quot;accb&quot;.\nIf we remove the characters at indices 3, 1, and 0, &quot;abcacb&quot; becomes &quot;ccb&quot;, and &quot;ab&quot; is no longer a subsequence.\nHence, the maximum k is 2."
+      "input": "\"abcacb\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcbddddd&quot;, p = &quot;abcd&quot;, removable = [3,2,1,4,5,6]",
-      "expectedOutput": "1\nExplanation: After removing the character at index 3, &quot;abcbddddd&quot; becomes &quot;abcddddd&quot;.\n&quot;abcd&quot; is a subsequence of &quot;abcddddd&quot;."
+      "input": "\"abcbddddd\"\n\"abcd\"\n[3,2,1,4,5,6]",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abcab&quot;, p = &quot;abc&quot;, removable = [0,1,2,3,4]",
-      "expectedOutput": "0\nExplanation: If you remove the first index in the array removable, &quot;abc&quot; is no longer a subsequence."
+      "input": "\"abcab\"\n\"abc\"\n[0,1,2,3,4]",
+      "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcacb&quot;, p = &quot;ab&quot;, removable = [3,1,0]",
-      "expectedOutput": "2\nExplanation: After removing the characters at indices 3 and 1, &quot;abcacb&quot; becomes &quot;accb&quot;.\n&quot;ab&quot; is a subsequence of &quot;accb&quot;.\nIf we remove the characters at indices 3, 1, and 0, &quot;abcacb&quot; becomes &quot;ccb&quot;, and &quot;ab&quot; is no longer a subsequence.\nHence, the maximum k is 2."
-    },
-    {
-      "input": "s = &quot;abcbddddd&quot;, p = &quot;abcd&quot;, removable = [3,2,1,4,5,6]",
-      "expectedOutput": "1\nExplanation: After removing the character at index 3, &quot;abcbddddd&quot; becomes &quot;abcddddd&quot;.\n&quot;abcd&quot; is a subsequence of &quot;abcddddd&quot;."
-    },
-    {
-      "input": "s = &quot;abcab&quot;, p = &quot;abc&quot;, removable = [0,1,2,3,4]",
-      "expectedOutput": "0\nExplanation: If you remove the first index in the array removable, &quot;abc&quot; is no longer a subsequence."
-    },
-    {
       "input": "\"abcacb\"\n\"ab\"\n[3,1,0]",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"abcbddddd\"\n\"abcd\"\n[3,2,1,4,5,6]",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"abcab\"\n\"abc\"\n[0,1,2,3,4]",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;abcbddddd&quot;, p = &quot;abcd&quot;, removable = [4,3,2,5,6,7]",
-      "expectedOutput": null
+      "input": "s = \"abcacb\", p = \"ab\", removable = [3,1,0]",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcab&quot;, p = &quot;abc&quot;, removable = [1,2,3,4,5]",
-      "expectedOutput": null
+      "input": "s = \"abcbddddd\", p = \"abcd\", removable = [3,2,1,4,5,6]",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"abcacb\"\n\"ab\"\n[4,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcbddddd\"\n\"abcd\"\n[4,3,2,5,6,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abcacb&quot;, p = &quot;ab&quot;, removable = [4,2,1]",
-      "expectedOutput": null
+      "input": "s = \"abcab\", p = \"abc\", removable = [0,1,2,3,4]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-removable-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.927Z",
+    "collectedAt": "2026-10-19T18:40:22.163Z",
     "sourceUpdatedAt": null
   }
 }

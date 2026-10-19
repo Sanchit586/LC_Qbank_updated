@@ -50,90 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 7",
+      "input": "7",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 10",
+      "input": "10",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "7",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 7",
       "expectedOutput": "0"
     },
     {
       "input": "n = 10",
       "expectedOutput": "4"
-    },
-    {
-      "input": "7",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-flips-to-reverse-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:07.931Z",
+    "collectedAt": "2026-10-19T18:40:24.249Z",
     "sourceUpdatedAt": null
   }
 }

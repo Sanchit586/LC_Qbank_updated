@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;ac&quot;, word2 = &quot;b&quot;",
+      "input": "word1 = \"ac\", word2 = \"b\"",
       "output": "false",
       "explanation": "Any pair of swaps would yield two distinct characters in the first string, and one in the second string."
     },
     {
-      "input": "word1 = &quot;abcc&quot;, word2 = &quot;aab&quot;",
+      "input": "word1 = \"abcc\", word2 = \"aab\"",
       "output": "true",
-      "explanation": "We swap index 2 of the first string with index 0 of the second string. The resulting strings are word1 = &quot;abac&quot; and word2 = &quot;cab&quot;, which both have 3 distinct characters."
+      "explanation": "We swap index 2 of the first string with index 0 of the second string. The resulting strings are word1 = \"abac\" and word2 = \"cab\", which both have 3 distinct characters."
     },
     {
-      "input": "word1 = &quot;abcde&quot;, word2 = &quot;fghij&quot;",
+      "input": "word1 = \"abcde\", word2 = \"fghij\"",
       "output": "true",
       "explanation": "Both resulting strings will have 5 distinct characters, regardless of which indices we swap."
     }
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;ac&quot;, word2 = &quot;b&quot;",
+      "input": "\"ac\"\n\"b\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = &quot;abcc&quot;, word2 = &quot;aab&quot;",
+      "input": "\"abcc\"\n\"aab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = &quot;abcde&quot;, word2 = &quot;fghij&quot;",
+      "input": "\"abcde\"\n\"fghij\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;ac&quot;, word2 = &quot;b&quot;",
+      "input": "\"ac\"\n\"b\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = &quot;abcc&quot;, word2 = &quot;aab&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "word1 = &quot;abcde&quot;, word2 = &quot;fghij&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"ac\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abcc\"\n\"aab\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abcde\"\n\"fghij\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word1 = \"ac\", word2 = \"b\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcc\", word2 = \"aab\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcde\", word2 = \"fghij\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/make-number-of-distinct-characters-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.187Z",
+    "collectedAt": "2026-10-19T18:40:20.956Z",
     "sourceUpdatedAt": null
   }
 }

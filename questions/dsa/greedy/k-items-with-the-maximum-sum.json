@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2",
+      "input": "3\n2\n0\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4",
+      "input": "3\n2\n0\n4",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n2\n0\n4",
+      "expectedOutput": "3"
+    },
+    {
       "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 2",
       "expectedOutput": "2"
     },
     {
       "input": "numOnes = 3, numZeros = 2, numNegOnes = 0, k = 4",
       "expectedOutput": "3"
-    },
-    {
-      "input": "3\n2\n0\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n0\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "numOnes = 4, numZeros = 3, numNegOnes = 1, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/k-items-with-the-maximum-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:34.750Z",
+    "collectedAt": "2026-10-19T18:40:19.741Z",
     "sourceUpdatedAt": null
   }
 }

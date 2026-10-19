@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "bottom = 2, top = 9, special = [4,6]",
+      "input": "2\n9\n[4,6]",
       "expectedOutput": "3"
     },
     {
-      "input": "bottom = 6, top = 8, special = [7,6,8]",
+      "input": "6\n8\n[7,6,8]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "2\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "6\n8\n[7,6,8]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "bottom = 2, top = 9, special = [4,6]",
       "expectedOutput": "3"
     },
     {
       "input": "bottom = 6, top = 8, special = [7,6,8]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "2\n9\n[4,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n8\n[7,6,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "bottom = 3, top = 10, special = [5,7]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-consecutive-floors-without-special-floors/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.448Z",
+    "collectedAt": "2026-10-19T18:40:21.675Z",
     "sourceUpdatedAt": null
   }
 }

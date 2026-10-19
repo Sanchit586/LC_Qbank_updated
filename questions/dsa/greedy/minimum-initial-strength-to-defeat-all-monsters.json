@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "monsters = [5,10,15], boosts = [[1,1,10]]",
+      "input": "[5,10,15]\n[[1,1,10]]",
       "expectedOutput": "30"
     },
     {
-      "input": "monsters = [5,10,15], boosts = [[1,2,10],[1,2,5]]",
+      "input": "[5,10,15]\n[[1,2,10],[1,2,5]]",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
+      "input": "[5,10,15]\n[[1,1,10]]",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "[5,10,15]\n[[1,2,10],[1,2,5]]",
+      "expectedOutput": "5"
+    },
+    {
       "input": "monsters = [5,10,15], boosts = [[1,1,10]]",
       "expectedOutput": "30"
     },
     {
       "input": "monsters = [5,10,15], boosts = [[1,2,10],[1,2,5]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "[5,10,15]\n[[1,1,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,10,15]\n[[1,2,10],[1,2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "monsters = [6,11,16], boosts = [[2,2,11]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-initial-strength-to-defeat-all-monsters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.290Z",
+    "collectedAt": "2026-10-19T18:40:24.015Z",
     "sourceUpdatedAt": null
   }
 }

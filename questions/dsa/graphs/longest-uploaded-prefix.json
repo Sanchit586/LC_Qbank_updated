@@ -23,7 +23,13 @@
     "At most 2 * 105 calls in total will be made to upload and longest.",
     "At least one call will be made to longest."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"LUPrefix\", \"upload\", \"longest\", \"upload\", \"longest\", \"upload\", \"longest\"]\n[[4], [3], [], [1], [], [2], []]",
+      "output": "[null, null, 0, null, 1, null, 3]",
+      "explanation": "LUPrefix server = new LUPrefix(4);   // Initialize a stream of 4 videos.\nserver.upload(3);                    // Upload video 3.\nserver.longest();                    // Since video 1 has not been uploaded yet, there is no prefix.\n                                     // So, we return 0.\nserver.upload(1);                    // Upload video 1.\nserver.longest();                    // The prefix [1] is the longest uploaded prefix, so we return 1.\nserver.upload(2);                    // Upload video 2.\nserver.longest();                    // The prefix [1,2,3] is the longest uploaded prefix, so we return 3."
+    }
+  ],
   "starterCode": {
     "cpp": "class LUPrefix {\npublic:\n    LUPrefix(int n) {\n        \n    }\n    \n    void upload(int video) {\n        \n    }\n    \n    int longest() {\n        \n    }\n};\n\n/**\n * Your LUPrefix object will be instantiated and called as such:\n * LUPrefix* obj = new LUPrefix(n);\n * obj->upload(video);\n * int param_2 = obj->longest();\n */",
     "java": "class LUPrefix {\n\n    public LUPrefix(int n) {\n        \n    }\n    \n    public void upload(int video) {\n        \n    }\n    \n    public int longest() {\n        \n    }\n}\n\n/**\n * Your LUPrefix object will be instantiated and called as such:\n * LUPrefix obj = new LUPrefix(n);\n * obj.upload(video);\n * int param_2 = obj.longest();\n */",
@@ -48,17 +54,17 @@
   "publicTests": [
     {
       "input": "[\"LUPrefix\",\"upload\",\"longest\",\"upload\",\"longest\",\"upload\",\"longest\"]\n[[4],[3],[],[1],[],[2],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 0, null, 1, null, 3]"
     }
   ],
   "testCases": [
     {
       "input": "[\"LUPrefix\",\"upload\",\"longest\",\"upload\",\"longest\",\"upload\",\"longest\"]\n[[4],[3],[],[1],[],[2],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 0, null, 1, null, 3]"
     },
     {
-      "input": "[\"LUPrefix\",\"upload\",\"longest\",\"upload\",\"longest\",\"upload\",\"longest\"]\n[[5],[4],[],[2],[],[3],[]]",
-      "expectedOutput": null
+      "input": "[\"LUPrefix\", \"upload\", \"longest\", \"upload\", \"longest\", \"upload\", \"longest\"]\n[[4], [3], [], [1], [], [2], []]",
+      "expectedOutput": "[null, null, 0, null, 1, null, 3]"
     }
   ],
   "sqlSchema": null,
@@ -72,7 +78,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-uploaded-prefix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.609Z",
+    "collectedAt": "2026-10-19T18:40:20.751Z",
     "sourceUpdatedAt": null
   }
 }

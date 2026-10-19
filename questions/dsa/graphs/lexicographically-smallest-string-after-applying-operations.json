@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;5525&quot;, a = 9, b = 2",
-      "output": "&quot;2050&quot;",
-      "explanation": "We can apply the following operations:\nStart:  &quot;5525&quot;\nRotate: &quot;2555&quot;\nAdd:    &quot;2454&quot;\nAdd:    &quot;2353&quot;\nRotate: &quot;5323&quot;\nAdd:    &quot;5222&quot;\nAdd:    &quot;5121&quot;\nRotate: &quot;2151&quot;\nAdd:    &quot;2050&quot;​​​​​\nThere is no way to obtain a string that is lexicographically smaller than &quot;2050&quot;."
+      "input": "s = \"5525\", a = 9, b = 2",
+      "output": "\"2050\"",
+      "explanation": "We can apply the following operations:\nStart:  \"5525\"\nRotate: \"2555\"\nAdd:    \"2454\"\nAdd:    \"2353\"\nRotate: \"5323\"\nAdd:    \"5222\"\nAdd:    \"5121\"\nRotate: \"2151\"\nAdd:    \"2050\"​​​​​\nThere is no way to obtain a string that is lexicographically smaller than \"2050\"."
     },
     {
-      "input": "s = &quot;74&quot;, a = 5, b = 1",
-      "output": "&quot;24&quot;",
-      "explanation": "We can apply the following operations:\nStart:  &quot;74&quot;\nRotate: &quot;47&quot;\n​​​​​​​Add:    &quot;42&quot;\n​​​​​​​Rotate: &quot;24&quot;​​​​​​​​​​​​\nThere is no way to obtain a string that is lexicographically smaller than &quot;24&quot;."
+      "input": "s = \"74\", a = 5, b = 1",
+      "output": "\"24\"",
+      "explanation": "We can apply the following operations:\nStart:  \"74\"\nRotate: \"47\"\n​​​​​​​Add:    \"42\"\n​​​​​​​Rotate: \"24\"​​​​​​​​​​​​\nThere is no way to obtain a string that is lexicographically smaller than \"24\"."
     },
     {
-      "input": "s = &quot;0011&quot;, a = 4, b = 2",
-      "output": "&quot;0011&quot;",
-      "explanation": "There are no sequence of operations that will give us a lexicographically smaller string than &quot;0011&quot;."
+      "input": "s = \"0011\", a = 4, b = 2",
+      "output": "\"0011\"",
+      "explanation": "There are no sequence of operations that will give us a lexicographically smaller string than \"0011\"."
     }
   ],
   "starterCode": {
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;5525&quot;, a = 9, b = 2",
-      "expectedOutput": "&quot;2050&quot;"
+      "input": "\"5525\"\n9\n2",
+      "expectedOutput": "\"2050\""
     },
     {
-      "input": "s = &quot;74&quot;, a = 5, b = 1",
-      "expectedOutput": "&quot;24&quot;"
+      "input": "\"74\"\n5\n1",
+      "expectedOutput": "\"24\""
     },
     {
-      "input": "s = &quot;0011&quot;, a = 4, b = 2",
-      "expectedOutput": "&quot;0011&quot;"
+      "input": "\"0011\"\n4\n2",
+      "expectedOutput": "\"0011\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;5525&quot;, a = 9, b = 2",
-      "expectedOutput": "&quot;2050&quot;"
-    },
-    {
-      "input": "s = &quot;74&quot;, a = 5, b = 1",
-      "expectedOutput": "&quot;24&quot;"
-    },
-    {
-      "input": "s = &quot;0011&quot;, a = 4, b = 2",
-      "expectedOutput": "&quot;0011&quot;"
-    },
-    {
       "input": "\"5525\"\n9\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"2050\""
     },
     {
       "input": "\"74\"\n5\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"24\""
     },
     {
       "input": "\"0011\"\n4\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"0011\""
     },
     {
-      "input": "s = &quot;75&quot;, a = 6, b = 2",
-      "expectedOutput": null
+      "input": "s = \"5525\", a = 9, b = 2",
+      "expectedOutput": "\"2050\""
     },
     {
-      "input": "s = &quot;12&quot;, a = 5, b = 3",
-      "expectedOutput": null
+      "input": "s = \"74\", a = 5, b = 1",
+      "expectedOutput": "\"24\""
     },
     {
-      "input": "\"5526\"\n10\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"75\"\n6\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;5526&quot;, a = 10, b = 3",
-      "expectedOutput": null
+      "input": "s = \"0011\", a = 4, b = 2",
+      "expectedOutput": "\"0011\""
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-applying-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.153Z",
+    "collectedAt": "2026-10-19T18:40:20.269Z",
     "sourceUpdatedAt": null
   }
 }

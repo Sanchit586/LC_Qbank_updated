@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 5",
+      "input": "3\n5",
       "expectedOutput": "27"
     },
     {
-      "input": "n = 1, k = 4",
+      "input": "1\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 5, k = 6",
+      "input": "5\n6",
       "expectedOutput": "2468"
     }
   ],
   "testCases": [
     {
+      "input": "3\n5",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "1\n4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "5\n6",
+      "expectedOutput": "2468"
+    },
+    {
       "input": "n = 3, k = 5",
       "expectedOutput": "27"
     },
@@ -80,38 +92,6 @@
     {
       "input": "n = 5, k = 6",
       "expectedOutput": "2468"
-    },
-    {
-      "input": "3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, k = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, k = 7",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-count-of-good-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:07.232Z",
+    "collectedAt": "2026-10-19T18:40:18.195Z",
     "sourceUpdatedAt": null
   }
 }

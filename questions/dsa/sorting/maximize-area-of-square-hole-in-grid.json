@@ -60,20 +60,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, m = 1, hBars = [2,3], vBars = [2]",
+      "input": "2\n1\n[2,3]\n[2]",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 1, m = 1, hBars = [2], vBars = [2]",
+      "input": "1\n1\n[2]\n[2]",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 2, m = 3, hBars = [2,3], vBars = [2,4]",
+      "input": "2\n3\n[2,3]\n[2,4]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "2\n1\n[2,3]\n[2]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n1\n[2]\n[2]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n3\n[2,3]\n[2,4]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 2, m = 1, hBars = [2,3], vBars = [2]",
       "expectedOutput": "4"
     },
@@ -84,38 +96,6 @@
     {
       "input": "n = 2, m = 3, hBars = [2,3], vBars = [2,4]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "2\n1\n[2,3]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n1\n[2]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3\n[2,3]\n[2,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, m = 2, hBars = [3], vBars = [3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, m = 4, hBars = [3,4], vBars = [3,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n[3,4]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2\n[3]\n[3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, m = 2, hBars = [3,4], vBars = [3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-area-of-square-hole-in-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:03.381Z",
+    "collectedAt": "2026-10-19T18:40:21.236Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,7 +19,13 @@
     "At least one call will be made to each function withdraw and deposit.",
     "Sum of banknotesCount[i] in all deposits doesn't exceed 109"
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"ATM\", \"deposit\", \"withdraw\", \"deposit\", \"withdraw\", \"withdraw\"]\n[[], [[0,0,1,2,1]], [600], [[0,1,0,1,1]], [600], [550]]",
+      "output": "[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]",
+      "explanation": "ATM atm = new ATM();\natm.deposit([0,0,1,2,1]); // Deposits 1 $100 banknote, 2 $200 banknotes,\n                          // and 1 $500 banknote.\natm.withdraw(600);        // Returns [0,0,1,0,1]. The machine uses 1 $100 banknote\n                          // and 1 $500 banknote. The banknotes left over in the\n                          // machine are [0,0,0,2,0].\natm.deposit([0,1,0,1,1]); // Deposits 1 $50, $200, and $500 banknote.\n                          // The banknotes in the machine are now [0,1,0,3,1].\natm.withdraw(600);        // Returns [-1]. The machine will try to use a $500 banknote\n                          // and then be unable to complete the remaining $100,\n                          // so the withdraw request will be rejected.\n                          // Since the request is rejected, the number of banknotes\n                          // in the machine is not modified.\natm.withdraw(550);        // Returns [0,1,0,0,1]. The machine uses 1 $50 banknote\n                          // and 1 $500 banknote."
+    }
+  ],
   "starterCode": {
     "cpp": "class ATM {\npublic:\n    ATM() {\n        \n    }\n    \n    void deposit(vector<int> banknotesCount) {\n        \n    }\n    \n    vector<int> withdraw(int amount) {\n        \n    }\n};\n\n/**\n * Your ATM object will be instantiated and called as such:\n * ATM* obj = new ATM();\n * obj->deposit(banknotesCount);\n * vector<int> param_2 = obj->withdraw(amount);\n */",
     "java": "class ATM {\n\n    public ATM() {\n        \n    }\n    \n    public void deposit(int[] banknotesCount) {\n        \n    }\n    \n    public int[] withdraw(int amount) {\n        \n    }\n}\n\n/**\n * Your ATM object will be instantiated and called as such:\n * ATM obj = new ATM();\n * obj.deposit(banknotesCount);\n * int[] param_2 = obj.withdraw(amount);\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"ATM\",\"deposit\",\"withdraw\",\"deposit\",\"withdraw\",\"withdraw\"]\n[[],[[0,0,1,2,1]],[600],[[0,1,0,1,1]],[600],[550]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"ATM\",\"deposit\",\"withdraw\",\"deposit\",\"withdraw\",\"withdraw\"]\n[[],[[0,0,1,2,1]],[600],[[0,1,0,1,1]],[600],[550]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]"
     },
     {
-      "input": "[\"ATM\",\"deposit\",\"withdraw\",\"deposit\",\"withdraw\",\"withdraw\"]\n[[],[[1,1,2,3,2]],[601],[[1,2,1,2,2]],[601],[551]]",
-      "expectedOutput": null
+      "input": "[\"ATM\", \"deposit\", \"withdraw\", \"deposit\", \"withdraw\", \"withdraw\"]\n[[], [[0,0,1,2,1]], [600], [[0,1,0,1,1]], [600], [550]]",
+      "expectedOutput": "[null, null, [0,0,1,0,1], null, [-1], [0,1,0,0,1]]"
     }
   ],
   "sqlSchema": null,
@@ -69,7 +75,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-an-atm-machine/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:38.938Z",
+    "collectedAt": "2026-10-19T18:40:16.389Z",
     "sourceUpdatedAt": null
   }
 }

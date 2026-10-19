@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "RequestAccepted table:\n+--------------+-------------+-------------+\n| requester_id | accepter_id | accept_date |\n+--------------+-------------+-------------+\n| 1            | 2           | 2016/06/03  |\n| 1            | 3           | 2016/06/08  |\n| 2            | 3           | 2016/06/08  |\n| 3            | 4           | 2016/06/09  |\n+--------------+-------------+-------------+",
+      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[[1,2,\"2016/06/03\"],[1,3,\"2016/06/08\"],[2,3,\"2016/06/08\"],[3,4,\"2016/06/09\"]]}}",
       "expectedOutput": "+----+-----+\n| id | num |\n+----+-----+\n| 3  | 3   |\n+----+-----+"
     }
   ],
   "testCases": [
     {
-      "input": "RequestAccepted table:\n+--------------+-------------+-------------+\n| requester_id | accepter_id | accept_date |\n+--------------+-------------+-------------+\n| 1            | 2           | 2016/06/03  |\n| 1            | 3           | 2016/06/08  |\n| 2            | 3           | 2016/06/08  |\n| 3            | 4           | 2016/06/09  |\n+--------------+-------------+-------------+",
+      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[[1,2,\"2016/06/03\"],[1,3,\"2016/06/08\"],[2,3,\"2016/06/08\"],[3,4,\"2016/06/09\"]]}}",
       "expectedOutput": "+----+-----+\n| id | num |\n+----+-----+\n| 3  | 3   |\n+----+-----+"
     },
     {
-      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[[1,2,\"2016/06/03\"],[1,3,\"2016/06/08\"],[2,3,\"2016/06/08\"],[3,4,\"2016/06/09\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[[1,2,\"2016/06/03\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"RequestAccepted\":[\"requester_id\",\"accepter_id\",\"accept_date\"]},\"rows\":{\"RequestAccepted\":[[1,2,null],[1,3,null],[2,3,null],[3,4,null]]}}",
-      "expectedOutput": null
+      "input": "RequestAccepted table:\n+--------------+-------------+-------------+\n| requester_id | accepter_id | accept_date |\n+--------------+-------------+-------------+\n| 1            | 2           | 2016/06/03  |\n| 1            | 3           | 2016/06/08  |\n| 2            | 3           | 2016/06/08  |\n| 3            | 4           | 2016/06/09  |\n+--------------+-------------+-------------+",
+      "expectedOutput": "+----+-----+\n| id | num |\n+----+-----+\n| 3  | 3   |\n+----+-----+"
     }
   ],
   "sqlSchema": "Create table If Not Exists RequestAccepted (requester_id int not null, accepter_id int null, accept_date date null)\n\nTruncate table RequestAccepted",
@@ -68,7 +56,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/friend-requests-ii-who-has-the-most-friends/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:20.448Z",
+    "collectedAt": "2026-10-19T18:40:19.059Z",
     "sourceUpdatedAt": null
   }
 }

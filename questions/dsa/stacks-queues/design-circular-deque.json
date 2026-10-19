@@ -17,7 +17,13 @@
     "0 <= value <= 1000",
     "At most 2000 calls will be made to insertFront, insertLast, deleteFront, deleteLast, getFront, getRear, isEmpty, isFull."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyCircularDeque\", \"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]",
+      "output": "[null, true, true, true, false, 2, true, true, true, 4]",
+      "explanation": "MyCircularDeque myCircularDeque = new MyCircularDeque(3);\nmyCircularDeque.insertLast(1);  // return True\nmyCircularDeque.insertLast(2);  // return True\nmyCircularDeque.insertFront(3); // return True\nmyCircularDeque.insertFront(4); // return False, the queue is full.\nmyCircularDeque.getRear();      // return 2\nmyCircularDeque.isFull();       // return True\nmyCircularDeque.deleteLast();   // return True\nmyCircularDeque.insertFront(4); // return True\nmyCircularDeque.getFront();     // return 4"
+    }
+  ],
   "starterCode": {
     "cpp": "class MyCircularDeque {\npublic:\n    MyCircularDeque(int k) {\n        \n    }\n    \n    bool insertFront(int value) {\n        \n    }\n    \n    bool insertLast(int value) {\n        \n    }\n    \n    bool deleteFront() {\n        \n    }\n    \n    bool deleteLast() {\n        \n    }\n    \n    int getFront() {\n        \n    }\n    \n    int getRear() {\n        \n    }\n    \n    bool isEmpty() {\n        \n    }\n    \n    bool isFull() {\n        \n    }\n};\n\n/**\n * Your MyCircularDeque object will be instantiated and called as such:\n * MyCircularDeque* obj = new MyCircularDeque(k);\n * bool param_1 = obj->insertFront(value);\n * bool param_2 = obj->insertLast(value);\n * bool param_3 = obj->deleteFront();\n * bool param_4 = obj->deleteLast();\n * int param_5 = obj->getFront();\n * int param_6 = obj->getRear();\n * bool param_7 = obj->isEmpty();\n * bool param_8 = obj->isFull();\n */",
     "java": "class MyCircularDeque {\n\n    public MyCircularDeque(int k) {\n        \n    }\n    \n    public boolean insertFront(int value) {\n        \n    }\n    \n    public boolean insertLast(int value) {\n        \n    }\n    \n    public boolean deleteFront() {\n        \n    }\n    \n    public boolean deleteLast() {\n        \n    }\n    \n    public int getFront() {\n        \n    }\n    \n    public int getRear() {\n        \n    }\n    \n    public boolean isEmpty() {\n        \n    }\n    \n    public boolean isFull() {\n        \n    }\n}\n\n/**\n * Your MyCircularDeque object will be instantiated and called as such:\n * MyCircularDeque obj = new MyCircularDeque(k);\n * boolean param_1 = obj.insertFront(value);\n * boolean param_2 = obj.insertLast(value);\n * boolean param_3 = obj.deleteFront();\n * boolean param_4 = obj.deleteLast();\n * int param_5 = obj.getFront();\n * int param_6 = obj.getRear();\n * boolean param_7 = obj.isEmpty();\n * boolean param_8 = obj.isFull();\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"MyCircularDeque\",\"insertLast\",\"insertLast\",\"insertFront\",\"insertFront\",\"getRear\",\"isFull\",\"deleteLast\",\"insertFront\",\"getFront\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, 2, true, true, true, 4]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyCircularDeque\",\"insertLast\",\"insertLast\",\"insertFront\",\"insertFront\",\"getRear\",\"isFull\",\"deleteLast\",\"insertFront\",\"getFront\"]\n[[3],[1],[2],[3],[4],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, true, false, 2, true, true, true, 4]"
     },
     {
-      "input": "[\"MyCircularDeque\",\"insertLast\",\"insertLast\",\"insertFront\",\"insertFront\",\"getRear\",\"isFull\",\"deleteLast\",\"insertFront\",\"getFront\"]\n[[4],[2],[3],[4],[5],[],[],[],[5],[]]",
-      "expectedOutput": null
+      "input": "[\"MyCircularDeque\", \"insertLast\", \"insertLast\", \"insertFront\", \"insertFront\", \"getRear\", \"isFull\", \"deleteLast\", \"insertFront\", \"getFront\"]\n[[3], [1], [2], [3], [4], [], [], [], [4], []]",
+      "expectedOutput": "[null, true, true, true, false, 2, true, true, true, 4]"
     }
   ],
   "sqlSchema": null,
@@ -64,7 +70,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-circular-deque/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.649Z",
+    "collectedAt": "2026-10-19T18:40:16.434Z",
     "sourceUpdatedAt": null
   }
 }

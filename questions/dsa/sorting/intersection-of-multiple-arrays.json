@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
+      "input": "[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
       "expectedOutput": "[3,4]"
     },
     {
-      "input": "nums = [[1,2,3],[4,5,6]]",
+      "input": "[[1,2,3],[4,5,6]]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6]]",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "nums = [[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
       "expectedOutput": "[3,4]"
     },
     {
       "input": "nums = [[1,2,3],[4,5,6]]",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "[[3,1,2,4,5],[1,2,3,4],[3,4,5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,3],[4,5,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [[4,2,3,5,6],[2,3,4,5],[4,5,6,7]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/intersection-of-multiple-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.478Z",
+    "collectedAt": "2026-10-19T18:40:19.570Z",
     "sourceUpdatedAt": null
   }
 }

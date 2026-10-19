@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;acab&quot;",
+      "input": "s = \"acab\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;wddw&quot;",
+      "input": "s = \"wddw\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "s = &quot;aaabc&quot;",
+      "input": "s = \"aaabc\"",
       "output": "2",
       "explanation": null
     }
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;acab&quot;",
+      "input": "\"acab\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;wddw&quot;",
+      "input": "\"wddw\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aaabc&quot;",
+      "input": "\"aaabbc\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;acab&quot;",
+      "input": "\"acab\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;wddw&quot;",
+      "input": "\"wddw\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aaabc&quot;",
+      "input": "\"aaabbc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"acab\"",
-      "expectedOutput": null
+      "input": "s = \"acab\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"wddw\"",
-      "expectedOutput": null
+      "input": "s = \"wddw\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aaabbc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aaabc\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -168,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-character-frequencies-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.123Z",
+    "collectedAt": "2026-10-19T18:40:24.724Z",
     "sourceUpdatedAt": null
   }
 }

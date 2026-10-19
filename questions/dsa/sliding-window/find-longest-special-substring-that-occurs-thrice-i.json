@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "s = \"aaaa\"",
       "output": "2",
-      "explanation": "The longest special substring which occurs thrice is &quot;aa&quot;: substrings &quot;aaaa&quot;, &quot;aaaa&quot;, and &quot;aaaa&quot;.\nIt can be shown that the maximum length achievable is 2."
+      "explanation": "The longest special substring which occurs thrice is \"aa\": substrings \"aaaa\", \"aaaa\", and \"aaaa\".\nIt can be shown that the maximum length achievable is 2."
     },
     {
-      "input": "s = &quot;abcdef&quot;",
+      "input": "s = \"abcdef\"",
       "output": "-1",
       "explanation": "There exists no special substring which occurs at least thrice. Hence return -1."
     },
     {
-      "input": "s = &quot;abcaba&quot;",
+      "input": "s = \"abcaba\"",
       "output": "1",
-      "explanation": "The longest special substring which occurs thrice is &quot;a&quot;: substrings &quot;abcaba&quot;, &quot;abcaba&quot;, and &quot;abcaba&quot;.\nIt can be shown that the maximum length achievable is 1."
+      "explanation": "The longest special substring which occurs thrice is \"a\": substrings \"abcaba\", \"abcaba\", and \"abcaba\".\nIt can be shown that the maximum length achievable is 1."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcdef&quot;",
+      "input": "\"abcdef\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;abcaba&quot;",
+      "input": "\"abcaba\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcdef&quot;",
+      "input": "\"abcdef\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;abcaba&quot;",
+      "input": "\"abcaba\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aaaa\"",
-      "expectedOutput": null
+      "input": "s = \"aaaa\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abcdef\"",
-      "expectedOutput": null
+      "input": "s = \"abcdef\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"abcaba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"abcaba\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-longest-special-substring-that-occurs-thrice-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:04.828Z",
+    "collectedAt": "2026-10-19T18:40:17.810Z",
     "sourceUpdatedAt": null
   }
 }

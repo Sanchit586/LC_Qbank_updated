@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "list1 = [1,2,4], list2 = [1,3,4]",
+      "input": "[1,2,4]\n[1,3,4]",
       "expectedOutput": "[1,1,2,3,4,4]"
     },
     {
-      "input": "list1 = [], list2 = []",
+      "input": "[]\n[]",
       "expectedOutput": "[]"
     },
     {
-      "input": "list1 = [], list2 = [0]",
+      "input": "[]\n[0]",
       "expectedOutput": "[0]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,4]\n[1,3,4]",
+      "expectedOutput": "[1,1,2,3,4,4]"
+    },
+    {
+      "input": "[]\n[]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[]\n[0]",
+      "expectedOutput": "[0]"
+    },
+    {
       "input": "list1 = [1,2,4], list2 = [1,3,4]",
       "expectedOutput": "[1,1,2,3,4,4]"
     },
@@ -79,30 +91,6 @@
     {
       "input": "list1 = [], list2 = [0]",
       "expectedOutput": "[0]"
-    },
-    {
-      "input": "[1,2,4]\n[1,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]\n[]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[]\n[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "list2 = [], list3 = []",
-      "expectedOutput": null
-    },
-    {
-      "input": "list2 = [], list3 = [1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,5]\n[2,4,5]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -114,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/merge-two-sorted-lists/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:40.016Z",
+    "collectedAt": "2026-10-19T18:40:23.157Z",
     "sourceUpdatedAt": null
   }
 }

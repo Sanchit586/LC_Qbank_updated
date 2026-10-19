@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
+      "input": "[[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[4,3,2],[7,6,1],[8,8,8]]",
+      "input": "[[4,3,2],[7,6,1],[8,8,8]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[4,3,2],[7,6,1],[8,8,8]]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "grid = [[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
       "expectedOutput": "3"
     },
     {
       "input": "grid = [[4,3,2],[7,6,1],[8,8,8]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[[23,17,15,3,20],[8,1,20,27,11],[9,4,6,2,21],[40,9,1,10,6],[22,7,4,5,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,3,2],[7,6,1],[8,8,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[24,18,16,4,21],[9,2,21,28,12],[10,5,7,3,22],[41,10,2,11,7],[23,8,5,6,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-trailing-zeros-in-a-cornered-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:35.275Z",
+    "collectedAt": "2026-10-19T18:40:22.857Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,12 +18,12 @@
     {
       "input": "n = 4, time = 5",
       "output": "2",
-      "explanation": "People pass the pillow in the following way: 1 -&gt; 2 -&gt; 3 -&gt; 4 -&gt; 3 -&gt; 2.\nAfter five seconds, the 2nd person is holding the pillow."
+      "explanation": "People pass the pillow in the following way: 1 -> 2 -> 3 -> 4 -> 3 -> 2.\nAfter five seconds, the 2nd person is holding the pillow."
     },
     {
       "input": "n = 3, time = 2",
       "output": "3",
-      "explanation": "People pass the pillow in the following way: 1 -&gt; 2 -&gt; 3.\nAfter two seconds, the 3rd person is holding the pillow."
+      "explanation": "People pass the pillow in the following way: 1 -> 2 -> 3.\nAfter two seconds, the 3rd person is holding the pillow."
     }
   ],
   "starterCode": {
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, time = 5",
+      "input": "4\n5",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, time = 2",
+      "input": "3\n2",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "4\n5",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 4, time = 5",
       "expectedOutput": "2"
     },
     {
       "input": "n = 3, time = 2",
       "expectedOutput": "3"
-    },
-    {
-      "input": "4\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, time = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/pass-the-pillow/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:53.159Z",
+    "collectedAt": "2026-10-19T18:40:26.621Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;111000&quot;",
-      "output": "2\nExplanation: Use the first operation two times to make s = &quot;100011&quot;.\nThen, use the second operation on the third and sixth elements to make s = &quot;101010&quot;.",
-      "explanation": null
+      "input": "s = \"111000\"",
+      "output": "2",
+      "explanation": ": Use the first operation two times to make s = \"100011\".\nThen, use the second operation on the third and sixth elements to make s = \"101010\"."
     },
     {
-      "input": "s = &quot;010&quot;",
-      "output": "0\nExplanation: The string is already alternating.",
-      "explanation": null
+      "input": "s = \"010\"",
+      "output": "0",
+      "explanation": ": The string is already alternating."
     },
     {
-      "input": "s = &quot;1110&quot;",
-      "output": "1\nExplanation: Use the second operation on the second element to make s = &quot;1010&quot;.",
-      "explanation": null
+      "input": "s = \"1110\"",
+      "output": "1",
+      "explanation": ": Use the second operation on the second element to make s = \"1010\"."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;111000&quot;",
-      "expectedOutput": "2\nExplanation: Use the first operation two times to make s = &quot;100011&quot;.\nThen, use the second operation on the third and sixth elements to make s = &quot;101010&quot;."
+      "input": "\"111000\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;010&quot;",
-      "expectedOutput": "0\nExplanation: The string is already alternating."
+      "input": "\"010\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;1110&quot;",
-      "expectedOutput": "1\nExplanation: Use the second operation on the second element to make s = &quot;1010&quot;."
+      "input": "\"1110\"",
+      "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;111000&quot;",
-      "expectedOutput": "2\nExplanation: Use the first operation two times to make s = &quot;100011&quot;.\nThen, use the second operation on the third and sixth elements to make s = &quot;101010&quot;."
-    },
-    {
-      "input": "s = &quot;010&quot;",
-      "expectedOutput": "0\nExplanation: The string is already alternating."
-    },
-    {
-      "input": "s = &quot;1110&quot;",
-      "expectedOutput": "1\nExplanation: Use the second operation on the second element to make s = &quot;1010&quot;."
-    },
-    {
       "input": "\"111000\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"010\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "\"1110\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"111000\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"010\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1110\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-flips-to-make-the-binary-string-alternating/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:07.916Z",
+    "collectedAt": "2026-10-19T18:40:24.245Z",
     "sourceUpdatedAt": null
   }
 }

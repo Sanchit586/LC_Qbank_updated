@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "digits = &quot;23&quot;",
-      "output": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]",
+      "input": "digits = \"23\"",
+      "output": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]",
       "explanation": null
     },
     {
-      "input": "digits = &quot;2&quot;",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "input": "digits = \"2\"",
+      "output": "[\"a\",\"b\",\"c\"]",
       "explanation": null
     }
   ],
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "digits = &quot;23&quot;",
-      "expectedOutput": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]"
+      "input": "\"23\"",
+      "expectedOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
     },
     {
-      "input": "digits = &quot;2&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+      "input": "\"2\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "testCases": [
     {
-      "input": "digits = &quot;23&quot;",
-      "expectedOutput": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]"
-    },
-    {
-      "input": "digits = &quot;2&quot;",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
-    },
-    {
       "input": "\"23\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
     },
     {
       "input": "\"2\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "digits = \"23\"",
+      "expectedOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "digits = \"2\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "sqlSchema": null,
@@ -149,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:49.983Z",
+    "collectedAt": "2026-10-19T18:40:20.169Z",
     "sourceUpdatedAt": null
   }
 }

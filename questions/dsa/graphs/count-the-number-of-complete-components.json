@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]",
+      "input": "6\n[[0,1],[0,2],[1,2],[3,4]]",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]",
+      "input": "6\n[[0,1],[0,2],[1,2],[3,4],[3,5]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "6\n[[0,1],[0,2],[1,2],[3,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "6\n[[0,1],[0,2],[1,2],[3,4],[3,5]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 6, edges = [[0,1],[0,2],[1,2],[3,4]]",
       "expectedOutput": "3"
     },
     {
       "input": "n = 6, edges = [[0,1],[0,2],[1,2],[3,4],[3,5]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "6\n[[0,1],[0,2],[1,2],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[0,1],[0,2],[1,2],[3,4],[3,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 7, edges = [[1,2],[1,3],[2,3],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-complete-components/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.954Z",
+    "collectedAt": "2026-10-19T18:40:15.758Z",
     "sourceUpdatedAt": null
   }
 }

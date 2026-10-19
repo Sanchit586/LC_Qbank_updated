@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;the sky is blue&quot;",
-      "output": "&quot;blue is sky the&quot;",
+      "input": "s = \"the sky is blue\"",
+      "output": "\"blue is sky the\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;  hello world  &quot;",
-      "output": "&quot;world hello&quot;",
+      "input": "s = \"  hello world  \"",
+      "output": "\"world hello\"",
       "explanation": "Your reversed string should not contain leading or trailing spaces."
     },
     {
-      "input": "s = &quot;a good   example&quot;",
-      "output": "&quot;example good a&quot;",
+      "input": "s = \"a good   example\"",
+      "output": "\"example good a\"",
       "explanation": "You need to reduce multiple spaces between two words to a single space in the reversed string."
     }
   ],
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;the sky is blue&quot;",
-      "expectedOutput": "&quot;blue is sky the&quot;"
+      "input": "\"the sky is blue\"",
+      "expectedOutput": "\"blue is sky the\""
     },
     {
-      "input": "s = &quot;  hello world  &quot;",
-      "expectedOutput": "&quot;world hello&quot;"
+      "input": "\"  hello world  \"",
+      "expectedOutput": "\"world hello\""
     },
     {
-      "input": "s = &quot;a good   example&quot;",
-      "expectedOutput": "&quot;example good a&quot;"
+      "input": "\"a good   example\"",
+      "expectedOutput": "\"example good a\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;the sky is blue&quot;",
-      "expectedOutput": "&quot;blue is sky the&quot;"
-    },
-    {
-      "input": "s = &quot;  hello world  &quot;",
-      "expectedOutput": "&quot;world hello&quot;"
-    },
-    {
-      "input": "s = &quot;a good   example&quot;",
-      "expectedOutput": "&quot;example good a&quot;"
-    },
-    {
       "input": "\"the sky is blue\"",
-      "expectedOutput": null
+      "expectedOutput": "\"blue is sky the\""
     },
     {
       "input": "\"  hello world  \"",
-      "expectedOutput": null
+      "expectedOutput": "\"world hello\""
     },
     {
       "input": "\"a good   example\"",
-      "expectedOutput": null
+      "expectedOutput": "\"example good a\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"the sky is blue\"",
+      "expectedOutput": "\"blue is sky the\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"  hello world  \"",
+      "expectedOutput": "\"world hello\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"a good   example\"",
+      "expectedOutput": "\"example good a\""
     }
   ],
   "sqlSchema": null,
@@ -158,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.985Z",
+    "collectedAt": "2026-10-19T18:40:27.912Z",
     "sourceUpdatedAt": null
   }
 }

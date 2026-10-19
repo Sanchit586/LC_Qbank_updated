@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;165462&quot;, k = 60",
+      "input": "s = \"165462\", k = 60",
       "output": "4",
-      "explanation": "We can partition the string into substrings &quot;16&quot;, &quot;54&quot;, &quot;6&quot;, and &quot;2&quot;. Each substring has a value less than or equal to k = 60.\nIt can be shown that we cannot partition the string into less than 4 substrings."
+      "explanation": "We can partition the string into substrings \"16\", \"54\", \"6\", and \"2\". Each substring has a value less than or equal to k = 60.\nIt can be shown that we cannot partition the string into less than 4 substrings."
     },
     {
-      "input": "s = &quot;238182&quot;, k = 5",
+      "input": "s = \"238182\", k = 5",
       "output": "-1",
       "explanation": "There is no good partition for this string."
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;165462&quot;, k = 60",
+      "input": "\"165462\"\n60",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;238182&quot;, k = 5",
+      "input": "\"238182\"\n5",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;165462&quot;, k = 60",
+      "input": "\"165462\"\n60",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;238182&quot;, k = 5",
+      "input": "\"238182\"\n5",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"165462\"\n60",
-      "expectedOutput": null
+      "input": "s = \"165462\", k = 60",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"238182\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;165463&quot;, k = 61",
-      "expectedOutput": null
+      "input": "s = \"238182\", k = 5",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/partition-string-into-substrings-with-values-at-most-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:52.663Z",
+    "collectedAt": "2026-10-19T18:40:26.591Z",
     "sourceUpdatedAt": null
   }
 }

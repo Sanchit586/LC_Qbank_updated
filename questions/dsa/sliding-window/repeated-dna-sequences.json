@@ -55,94 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
+      "input": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
       "expectedOutput": "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
     },
     {
-      "input": "s = \"AAAAAAAAAAAAA\"",
+      "input": "\"AAAAAAAAAAAAA\"",
       "expectedOutput": "[\"AAAAAAAAAA\"]"
     }
   ],
   "testCases": [
     {
+      "input": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
+      "expectedOutput": "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
+    },
+    {
+      "input": "\"AAAAAAAAAAAAA\"",
+      "expectedOutput": "[\"AAAAAAAAAA\"]"
+    },
+    {
       "input": "s = \"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
       "expectedOutput": "[\"AAAAACCCCC\",\"CCCCCAAAAA\"]"
     },
     {
       "input": "s = \"AAAAAAAAAAAAA\"",
       "expectedOutput": "[\"AAAAAAAAAA\"]"
-    },
-    {
-      "input": "\"AAAAACCCCCAAAAACCCCCCAAAAAGGGTTT\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"AAAAAAAAAAAAA\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/repeated-dna-sequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.462Z",
+    "collectedAt": "2026-10-19T18:40:27.668Z",
     "sourceUpdatedAt": null
   }
 }

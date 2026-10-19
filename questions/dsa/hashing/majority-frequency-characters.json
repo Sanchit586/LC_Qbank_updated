@@ -17,18 +17,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaabbbccdddde&quot;",
-      "output": "&quot;ab&quot;",
+      "input": "s = \"aaabbbccdddde\"",
+      "output": "\"ab\"",
       "explanation": "Frequency (k)\n\t\t\tDistinct characters in group\n\t\t\tGroup size\n\t\t\tMajority?\n\t\t\n\t\n\t\n\t\t\n\t\t\t4\n\t\t\t{d}\n\t\t\t1\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t3\n\t\t\t{a, b}\n\t\t\t2\n\t\t\tYes\n\t\t\n\t\t\n\t\t\t2\n\t\t\t{c}\n\t\t\t1\n\t\t\tNo\n\t\t\n\t\t\n\t\t\t1\n\t\t\t{e}\n\t\t\t1\n\t\t\tNo"
     },
     {
-      "input": "s = &quot;abcd&quot;",
-      "output": "&quot;abcd&quot;",
+      "input": "s = \"abcd\"",
+      "output": "\"abcd\"",
       "explanation": "Frequency (k)\n\t\t\tDistinct characters in group\n\t\t\tGroup size\n\t\t\tMajority?\n\t\t\n\t\n\t\n\t\t\n\t\t\t1\n\t\t\t{a, b, c, d}\n\t\t\t4\n\t\t\tYes"
     },
     {
-      "input": "s = &quot;pfpfgi&quot;",
-      "output": "&quot;fp&quot;",
+      "input": "s = \"pfpfgi\"",
+      "output": "\"fp\"",
       "explanation": "Frequency (k)\n\t\t\tDistinct characters in group\n\t\t\tGroup size\n\t\t\tMajority?\n\t\t\n\t\n\t\n\t\t\n\t\t\t2\n\t\t\t{p, f}\n\t\t\t2\n\t\t\tYes\n\t\t\n\t\t\n\t\t\t1\n\t\t\t{g, i}\n\t\t\t2\n\t\t\tNo (tied size, lower frequency)"
     }
   ],
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaabbbccdddde&quot;",
-      "expectedOutput": "&quot;ab&quot;"
+      "input": "\"aaabbbccdddde\"",
+      "expectedOutput": "\"ab\""
     },
     {
-      "input": "s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
+      "input": "\"abcd\"",
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "s = &quot;pfpfgi&quot;",
-      "expectedOutput": "&quot;fp&quot;"
+      "input": "\"pfpfgi\"",
+      "expectedOutput": "\"fp\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaabbbccdddde&quot;",
-      "expectedOutput": "&quot;ab&quot;"
-    },
-    {
-      "input": "s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
-    },
-    {
-      "input": "s = &quot;pfpfgi&quot;",
-      "expectedOutput": "&quot;fp&quot;"
-    },
-    {
       "input": "\"aaabbbccdddde\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ab\""
     },
     {
       "input": "\"abcd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abcd\""
     },
     {
       "input": "\"pfpfgi\"",
-      "expectedOutput": null
+      "expectedOutput": "\"fp\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aaabbbccdddde\"",
+      "expectedOutput": "\"ab\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abcd\"",
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"pfpfgi\"",
+      "expectedOutput": "\"fp\""
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/majority-frequency-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:58.651Z",
+    "collectedAt": "2026-10-19T18:40:20.891Z",
     "sourceUpdatedAt": null
   }
 }

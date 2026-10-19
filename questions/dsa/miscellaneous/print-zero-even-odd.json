@@ -15,12 +15,12 @@
   "examples": [
     {
       "input": "n = 2",
-      "output": "&quot;0102&quot;",
-      "explanation": "There are three threads being fired asynchronously.\nOne of them calls zero(), the other calls even(), and the last one calls odd().\n&quot;0102&quot; is the correct output."
+      "output": "\"0102\"",
+      "explanation": "There are three threads being fired asynchronously.\nOne of them calls zero(), the other calls even(), and the last one calls odd().\n\"0102\" is the correct output."
     },
     {
       "input": "n = 5",
-      "output": "&quot;0102030405&quot;",
+      "output": "\"0102030405\"",
       "explanation": null
     }
   ],
@@ -36,82 +36,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
-      "expectedOutput": "&quot;0102&quot;"
+      "input": "2",
+      "expectedOutput": "\"0102\""
     },
     {
-      "input": "n = 5",
-      "expectedOutput": "&quot;0102030405&quot;"
+      "input": "5",
+      "expectedOutput": "\"0102030405\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 2",
-      "expectedOutput": "&quot;0102&quot;"
-    },
-    {
-      "input": "n = 5",
-      "expectedOutput": "&quot;0102030405&quot;"
-    },
-    {
       "input": "2",
-      "expectedOutput": null
+      "expectedOutput": "\"0102\""
     },
     {
       "input": "5",
-      "expectedOutput": null
+      "expectedOutput": "\"0102030405\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 2",
+      "expectedOutput": "\"0102\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 5",
+      "expectedOutput": "\"0102030405\""
     }
   ],
   "sqlSchema": null,
@@ -123,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/print-zero-even-odd/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.676Z",
+    "collectedAt": "2026-10-19T18:40:26.946Z",
     "sourceUpdatedAt": null
   }
 }

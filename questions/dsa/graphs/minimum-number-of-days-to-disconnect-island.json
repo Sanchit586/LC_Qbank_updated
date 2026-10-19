@@ -29,7 +29,7 @@
     {
       "input": "grid = [[1,1]]",
       "output": "2",
-      "explanation": "Grid of full water is also disconnected ([[1,1]] -&gt; [[0,0]]), 0 islands."
+      "explanation": "Grid of full water is also disconnected ([[1,1]] -> [[0,0]]), 0 islands."
     }
   ],
   "starterCode": {
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
+      "input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [[1,1]]",
+      "input": "[[1,1]]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,1]]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "grid = [[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
       "expectedOutput": "2"
     },
     {
       "input": "grid = [[1,1]]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[[0,1,1,0],[0,1,1,0],[0,0,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[1,2,2,1],[1,2,2,1],[1,1,1,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-days-to-disconnect-island/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:06.690Z",
+    "collectedAt": "2026-10-19T18:40:24.215Z",
     "sourceUpdatedAt": null
   }
 }

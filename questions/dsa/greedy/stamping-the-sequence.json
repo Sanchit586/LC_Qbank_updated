@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "stamp = &quot;abc&quot;, target = &quot;ababc&quot;",
+      "input": "stamp = \"abc\", target = \"ababc\"",
       "output": "[0,2]",
-      "explanation": "Initially s = &quot;?????&quot;.\n- Place stamp at index 0 to get &quot;abc??&quot;.\n- Place stamp at index 2 to get &quot;ababc&quot;.\n[1,0,2] would also be accepted as an answer, as well as some other answers."
+      "explanation": "Initially s = \"?????\".\n- Place stamp at index 0 to get \"abc??\".\n- Place stamp at index 2 to get \"ababc\".\n[1,0,2] would also be accepted as an answer, as well as some other answers."
     },
     {
-      "input": "stamp = &quot;abca&quot;, target = &quot;aabcaca&quot;",
+      "input": "stamp = \"abca\", target = \"aabcaca\"",
       "output": "[3,0,1]",
-      "explanation": "Initially s = &quot;???????&quot;.\n- Place stamp at index 3 to get &quot;???abca&quot;.\n- Place stamp at index 0 to get &quot;abcabca&quot;.\n- Place stamp at index 1 to get &quot;aabcaca&quot;."
+      "explanation": "Initially s = \"???????\".\n- Place stamp at index 3 to get \"???abca\".\n- Place stamp at index 0 to get \"abcabca\".\n- Place stamp at index 1 to get \"aabcaca\"."
     }
   ],
   "starterCode": {
@@ -51,78 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "stamp = &quot;abc&quot;, target = &quot;ababc&quot;",
+      "input": "\"abc\"\n\"ababc\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "stamp = &quot;abca&quot;, target = &quot;aabcaca&quot;",
+      "input": "\"abca\"\n\"aabcaca\"",
       "expectedOutput": "[3,0,1]"
     }
   ],
   "testCases": [
     {
-      "input": "stamp = &quot;abc&quot;, target = &quot;ababc&quot;",
+      "input": "\"abc\"\n\"ababc\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "stamp = &quot;abca&quot;, target = &quot;aabcaca&quot;",
+      "input": "\"abca\"\n\"aabcaca\"",
       "expectedOutput": "[3,0,1]"
     },
     {
-      "input": "\"abc\"\n\"ababc\"",
-      "expectedOutput": null
+      "input": "stamp = \"abc\", target = \"ababc\"",
+      "expectedOutput": "[0,2]"
     },
     {
-      "input": "\"abca\"\n\"aabcaca\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "stamp = \"abca\", target = \"aabcaca\"",
+      "expectedOutput": "[3,0,1]"
     }
   ],
   "sqlSchema": null,
@@ -134,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/stamping-the-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:48.133Z",
+    "collectedAt": "2026-10-19T18:40:30.203Z",
     "sourceUpdatedAt": null
   }
 }

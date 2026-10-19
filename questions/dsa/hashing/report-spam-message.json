@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "message = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], bannedWords = [&quot;world&quot;,&quot;hello&quot;]",
+      "input": "message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "message = [&quot;hello&quot;,&quot;programming&quot;,&quot;fun&quot;], bannedWords = [&quot;world&quot;,&quot;programming&quot;,&quot;leetcode&quot;]",
+      "input": "message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]",
       "output": "false",
       "explanation": null
     }
@@ -51,30 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "message = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], bannedWords = [&quot;world&quot;,&quot;hello&quot;]",
+      "input": "[\"hello\",\"world\",\"leetcode\"]\n[\"world\",\"hello\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "message = [&quot;hello&quot;,&quot;programming&quot;,&quot;fun&quot;], bannedWords = [&quot;world&quot;,&quot;programming&quot;,&quot;leetcode&quot;]",
+      "input": "[\"hello\",\"programming\",\"fun\"]\n[\"world\",\"programming\",\"leetcode\"]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "message = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], bannedWords = [&quot;world&quot;,&quot;hello&quot;]",
+      "input": "[\"hello\",\"world\",\"leetcode\"]\n[\"world\",\"hello\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "message = [&quot;hello&quot;,&quot;programming&quot;,&quot;fun&quot;], bannedWords = [&quot;world&quot;,&quot;programming&quot;,&quot;leetcode&quot;]",
+      "input": "[\"hello\",\"programming\",\"fun\"]\n[\"world\",\"programming\",\"leetcode\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "[\"hello\",\"world\",\"leetcode\"]\n[\"world\",\"hello\"]",
-      "expectedOutput": null
+      "input": "message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]",
+      "expectedOutput": "true"
     },
     {
-      "input": "[\"hello\",\"programming\",\"fun\"]\n[\"world\",\"programming\",\"leetcode\"]",
-      "expectedOutput": null
+      "input": "message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -88,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/report-spam-message/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.556Z",
+    "collectedAt": "2026-10-19T18:40:27.738Z",
     "sourceUpdatedAt": null
   }
 }

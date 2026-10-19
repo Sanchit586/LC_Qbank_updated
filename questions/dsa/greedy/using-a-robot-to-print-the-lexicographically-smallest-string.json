@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;zza&quot;",
-      "output": "&quot;azz&quot;",
-      "explanation": "Let p denote the written string.\nInitially p=&quot;&quot;, s=&quot;zza&quot;, t=&quot;&quot;.\nPerform first operation three times p=&quot;&quot;, s=&quot;&quot;, t=&quot;zza&quot;.\nPerform second operation three times p=&quot;azz&quot;, s=&quot;&quot;, t=&quot;&quot;."
+      "input": "s = \"zza\"",
+      "output": "\"azz\"",
+      "explanation": "Let p denote the written string.\nInitially p=\"\", s=\"zza\", t=\"\".\nPerform first operation three times p=\"\", s=\"\", t=\"zza\".\nPerform second operation three times p=\"azz\", s=\"\", t=\"\"."
     },
     {
-      "input": "s = &quot;bac&quot;",
-      "output": "&quot;abc&quot;",
-      "explanation": "Let p denote the written string.\nPerform first operation twice p=&quot;&quot;, s=&quot;c&quot;, t=&quot;ba&quot;. \nPerform second operation twice p=&quot;ab&quot;, s=&quot;c&quot;, t=&quot;&quot;. \nPerform first operation p=&quot;ab&quot;, s=&quot;&quot;, t=&quot;c&quot;. \nPerform second operation p=&quot;abc&quot;, s=&quot;&quot;, t=&quot;&quot;."
+      "input": "s = \"bac\"",
+      "output": "\"abc\"",
+      "explanation": "Let p denote the written string.\nPerform first operation twice p=\"\", s=\"c\", t=\"ba\". \nPerform second operation twice p=\"ab\", s=\"c\", t=\"\". \nPerform first operation p=\"ab\", s=\"\", t=\"c\". \nPerform second operation p=\"abc\", s=\"\", t=\"\"."
     },
     {
-      "input": "s = &quot;bdda&quot;",
-      "output": "&quot;addb&quot;",
-      "explanation": "Let p denote the written string.\nInitially p=&quot;&quot;, s=&quot;bdda&quot;, t=&quot;&quot;.\nPerform first operation four times p=&quot;&quot;, s=&quot;&quot;, t=&quot;bdda&quot;.\nPerform second operation four times p=&quot;addb&quot;, s=&quot;&quot;, t=&quot;&quot;."
+      "input": "s = \"bdda\"",
+      "output": "\"addb\"",
+      "explanation": "Let p denote the written string.\nInitially p=\"\", s=\"bdda\", t=\"\".\nPerform first operation four times p=\"\", s=\"\", t=\"bdda\".\nPerform second operation four times p=\"addb\", s=\"\", t=\"\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;zza&quot;",
-      "expectedOutput": "&quot;azz&quot;"
+      "input": "\"zza\"",
+      "expectedOutput": "\"azz\""
     },
     {
-      "input": "s = &quot;bac&quot;",
-      "expectedOutput": "&quot;abc&quot;"
+      "input": "\"bac\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = &quot;bdda&quot;",
-      "expectedOutput": "&quot;addb&quot;"
+      "input": "\"bdda\"",
+      "expectedOutput": "\"addb\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;zza&quot;",
-      "expectedOutput": "&quot;azz&quot;"
-    },
-    {
-      "input": "s = &quot;bac&quot;",
-      "expectedOutput": "&quot;abc&quot;"
-    },
-    {
-      "input": "s = &quot;bdda&quot;",
-      "expectedOutput": "&quot;addb&quot;"
-    },
-    {
       "input": "\"zza\"",
-      "expectedOutput": null
+      "expectedOutput": "\"azz\""
     },
     {
       "input": "\"bac\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abc\""
     },
     {
       "input": "\"bdda\"",
-      "expectedOutput": null
+      "expectedOutput": "\"addb\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"zza\"",
+      "expectedOutput": "\"azz\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"bac\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"bdda\"",
+      "expectedOutput": "\"addb\""
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/using-a-robot-to-print-the-lexicographically-smallest-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.165Z",
+    "collectedAt": "2026-10-19T18:40:31.439Z",
     "sourceUpdatedAt": null
   }
 }

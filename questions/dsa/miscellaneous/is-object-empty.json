@@ -13,14 +13,14 @@
   ],
   "examples": [
     {
-      "input": "obj = {&quot;x&quot;: 5, &quot;y&quot;: 42}",
+      "input": "obj = {\"x\": 5, \"y\": 42}",
       "output": "false",
       "explanation": "The object has 2 key-value pairs so it is not empty."
     },
     {
       "input": "obj = {}",
       "output": "true",
-      "explanation": "The object doesn&#39;t have any key-value pairs so it is empty."
+      "explanation": "The object doesn't have any key-value pairs so it is empty."
     },
     {
       "input": "obj = [null, false, 0]",
@@ -34,21 +34,33 @@
   },
   "publicTests": [
     {
-      "input": "obj = {&quot;x&quot;: 5, &quot;y&quot;: 42}",
+      "input": "{\"x\": 5, \"y\": 42}",
       "expectedOutput": "false"
     },
     {
-      "input": "obj = {}",
+      "input": "{}",
       "expectedOutput": "true"
     },
     {
-      "input": "obj = [null, false, 0]",
+      "input": "[null, false, 0]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "obj = {&quot;x&quot;: 5, &quot;y&quot;: 42}",
+      "input": "{\"x\": 5, \"y\": 42}",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "{}",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[null, false, 0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "obj = {\"x\": 5, \"y\": 42}",
       "expectedOutput": "false"
     },
     {
@@ -58,18 +70,6 @@
     {
       "input": "obj = [null, false, 0]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "{\"x\": 5, \"y\": 42}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{}",
-      "expectedOutput": null
-    },
-    {
-      "input": "[null, false, 0]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -81,7 +81,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/is-object-empty/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.265Z",
+    "collectedAt": "2026-10-19T18:40:19.634Z",
     "sourceUpdatedAt": null
   }
 }

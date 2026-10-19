@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,2],[3,4]]",
+      "input": "[[1,2],[3,4]]",
       "expectedOutput": "[[24,12],[8,6]]"
     },
     {
-      "input": "grid = [[12345],[2],[1]]",
+      "input": "[[12345],[2],[1]]",
       "expectedOutput": "[[2],[0],[0]]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[3,4]]",
+      "expectedOutput": "[[24,12],[8,6]]"
+    },
+    {
+      "input": "[[12345],[2],[1]]",
+      "expectedOutput": "[[2],[0],[0]]"
+    },
+    {
       "input": "grid = [[1,2],[3,4]]",
       "expectedOutput": "[[24,12],[8,6]]"
     },
     {
       "input": "grid = [[12345],[2],[1]]",
       "expectedOutput": "[[2],[0],[0]]"
-    },
-    {
-      "input": "[[1,2],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[12345],[2],[1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-product-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:02.472Z",
+    "collectedAt": "2026-10-19T18:40:14.719Z",
     "sourceUpdatedAt": null
   }
 }

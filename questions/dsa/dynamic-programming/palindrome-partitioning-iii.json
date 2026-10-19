@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "s = \"abc\", k = 2",
       "output": "1",
-      "explanation": "&nbsp;You can split the string into &quot;ab&quot; and &quot;c&quot;, and change 1 character in &quot;ab&quot; to make it palindrome."
+      "explanation": " You can split the string into \"ab\" and \"c\", and change 1 character in \"ab\" to make it palindrome."
     },
     {
-      "input": "s = &quot;aabbc&quot;, k = 3",
+      "input": "s = \"aabbc\", k = 3",
       "output": "0",
-      "explanation": "&nbsp;You can split the string into &quot;aa&quot;, &quot;bb&quot; and &quot;c&quot;, all of them are palindrome."
+      "explanation": " You can split the string into \"aa\", \"bb\" and \"c\", all of them are palindrome."
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 8",
+      "input": "s = \"leetcode\", k = 8",
       "output": "0",
       "explanation": null
     }
@@ -54,62 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aabbc&quot;, k = 3",
+      "input": "\"aabbc\"\n3",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 8",
+      "input": "\"leetcode\"\n8",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aabbc&quot;, k = 3",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;, k = 8",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"abc\"\n2",
-      "expectedOutput": null
-    },
-    {
       "input": "\"aabbc\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "\"leetcode\"\n8",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aabbc&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"abc\", k = 2",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 9",
-      "expectedOutput": null
+      "input": "s = \"aabbc\", k = 3",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"abc\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aabbc\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abc&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", k = 8",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/palindrome-partitioning-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.022Z",
+    "collectedAt": "2026-10-19T18:40:26.466Z",
     "sourceUpdatedAt": null
   }
 }

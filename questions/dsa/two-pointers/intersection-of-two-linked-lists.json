@@ -24,13 +24,13 @@
   "examples": [
     {
       "input": "intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3",
-      "output": "Intersected at &#39;8&#39;",
-      "explanation": "The intersected node&#39;s value is 8 (note that this must not be 0 if the two lists intersect).\nFrom the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.\n- Note that the intersected node&#39;s value is not 1 because the nodes with value 1 in A and B (2nd node in A and 3rd node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3rd node in A and 4th node in B) point to the same location in memory."
+      "output": "Intersected at '8'",
+      "explanation": "The intersected node's value is 8 (note that this must not be 0 if the two lists intersect).\nFrom the head of A, it reads as [4,1,8,4,5]. From the head of B, it reads as [5,6,1,8,4,5]. There are 2 nodes before the intersected node in A; There are 3 nodes before the intersected node in B.\n- Note that the intersected node's value is not 1 because the nodes with value 1 in A and B (2nd node in A and 3rd node in B) are different node references. In other words, they point to two different locations in memory, while the nodes with value 8 in A and B (3rd node in A and 4th node in B) point to the same location in memory."
     },
     {
       "input": "intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1",
-      "output": "Intersected at &#39;2&#39;",
-      "explanation": "The intersected node&#39;s value is 2 (note that this must not be 0 if the two lists intersect).\nFrom the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B."
+      "output": "Intersected at '2'",
+      "explanation": "The intersected node's value is 2 (note that this must not be 0 if the two lists intersect).\nFrom the head of A, it reads as [1,9,1,2,4]. From the head of B, it reads as [3,2,4]. There are 3 nodes before the intersected node in A; There are 1 node before the intersected node in B."
     },
     {
       "input": "intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2",
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3",
-      "expectedOutput": "Intersected at &#39;8&#39;"
+      "input": "8\n[4,1,8,4,5]\n[5,6,1,8,4,5]\n2\n3",
+      "expectedOutput": "Intersected at '8'"
     },
     {
-      "input": "intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1",
-      "expectedOutput": "Intersected at &#39;2&#39;"
+      "input": "2\n[1,9,1,2,4]\n[3,2,4]\n3\n1",
+      "expectedOutput": "Intersected at '2'"
     },
     {
-      "input": "intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2",
+      "input": "0\n[2,6,4]\n[1,5]\n3\n2",
       "expectedOutput": "No intersection"
     }
   ],
   "testCases": [
     {
+      "input": "8\n[4,1,8,4,5]\n[5,6,1,8,4,5]\n2\n3",
+      "expectedOutput": "Intersected at '8'"
+    },
+    {
+      "input": "2\n[1,9,1,2,4]\n[3,2,4]\n3\n1",
+      "expectedOutput": "Intersected at '2'"
+    },
+    {
+      "input": "0\n[2,6,4]\n[1,5]\n3\n2",
+      "expectedOutput": "No intersection"
+    },
+    {
       "input": "intersectVal = 8, listA = [4,1,8,4,5], listB = [5,6,1,8,4,5], skipA = 2, skipB = 3",
-      "expectedOutput": "Intersected at &#39;8&#39;"
+      "expectedOutput": "Intersected at '8'"
     },
     {
       "input": "intersectVal = 2, listA = [1,9,1,2,4], listB = [3,2,4], skipA = 3, skipB = 1",
-      "expectedOutput": "Intersected at &#39;2&#39;"
+      "expectedOutput": "Intersected at '2'"
     },
     {
       "input": "intersectVal = 0, listA = [2,6,4], listB = [1,5], skipA = 3, skipB = 2",
       "expectedOutput": "No intersection"
-    },
-    {
-      "input": "8\n[4,1,8,4,5]\n[5,6,1,8,4,5]\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[1,9,1,2,4]\n[3,2,4]\n3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "0\n[2,6,4]\n[1,5]\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "intersectVal = 3, listA = [2,10,2,3,5], listB = [4,3,5], skipA = 4, skipB = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "intersectVal = 1, listA = [3,7,5], listB = [2,6], skipA = 4, skipB = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n[5,2,9,5,6]\n[6,7,2,9,5,6]\n3\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[2,10,2,3,5]\n[4,3,5]\n4\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "intersectVal = 9, listA = [5,2,9,5,6], listB = [6,7,2,9,5,6], skipA = 3, skipB = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/intersection-of-two-linked-lists/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.818Z",
+    "collectedAt": "2026-10-19T18:40:19.583Z",
     "sourceUpdatedAt": null
   }
 }

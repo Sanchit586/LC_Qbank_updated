@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 4325",
+      "input": "4325",
       "expectedOutput": "59"
     },
     {
-      "input": "num = 687",
+      "input": "687",
       "expectedOutput": "75"
     }
   ],
   "testCases": [
     {
+      "input": "4325",
+      "expectedOutput": "59"
+    },
+    {
+      "input": "687",
+      "expectedOutput": "75"
+    },
+    {
       "input": "num = 4325",
       "expectedOutput": "59"
     },
     {
       "input": "num = 687",
       "expectedOutput": "75"
-    },
-    {
-      "input": "4325",
-      "expectedOutput": null
-    },
-    {
-      "input": "687",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-with-minimum-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:47.613Z",
+    "collectedAt": "2026-10-19T18:40:30.177Z",
     "sourceUpdatedAt": null
   }
 }

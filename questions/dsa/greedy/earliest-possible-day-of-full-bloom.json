@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "plantTime = [1,4,3], growTime = [2,3,1]",
+      "input": "[1,4,3]\n[2,3,1]",
       "expectedOutput": "9"
     },
     {
-      "input": "plantTime = [1,2,3,2], growTime = [2,1,2,1]",
+      "input": "[1,2,3,2]\n[2,1,2,1]",
       "expectedOutput": "9"
     },
     {
-      "input": "plantTime = [1], growTime = [1]",
+      "input": "[1]\n[1]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[1,4,3]\n[2,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,2,3,2]\n[2,1,2,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1]\n[1]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "plantTime = [1,4,3], growTime = [2,3,1]",
       "expectedOutput": "9"
     },
@@ -80,38 +92,6 @@
     {
       "input": "plantTime = [1], growTime = [1]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[1,4,3]\n[2,3,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,2]\n[2,1,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]\n[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "plantTime = [2,3,4,3], growTime = [3,2,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "plantTime = [2], growTime = [2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,5,4]\n[3,4,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,3]\n[3,2,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "plantTime = [2,5,4], growTime = [3,4,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/earliest-possible-day-of-full-bloom/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.920Z",
+    "collectedAt": "2026-10-19T18:40:16.923Z",
     "sourceUpdatedAt": null
   }
 }

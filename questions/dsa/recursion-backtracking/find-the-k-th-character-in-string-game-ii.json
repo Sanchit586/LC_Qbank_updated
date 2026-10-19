@@ -20,12 +20,12 @@
   "examples": [
     {
       "input": "k = 5, operations = [0,0,0]",
-      "output": "&quot;a&quot;",
+      "output": "\"a\"",
       "explanation": null
     },
     {
       "input": "k = 10, operations = [0,1,0,1]",
-      "output": "&quot;b&quot;",
+      "output": "\"b\"",
       "explanation": null
     }
   ],
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "k = 5, operations = [0,0,0]",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "5\n[0,0,0]",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "k = 10, operations = [0,1,0,1]",
-      "expectedOutput": "&quot;b&quot;"
+      "input": "10\n[0,1,0,1]",
+      "expectedOutput": "\"b\""
     }
   ],
   "testCases": [
     {
-      "input": "k = 5, operations = [0,0,0]",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
-      "input": "k = 10, operations = [0,1,0,1]",
-      "expectedOutput": "&quot;b&quot;"
-    },
-    {
       "input": "5\n[0,0,0]",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
       "input": "10\n[0,1,0,1]",
-      "expectedOutput": null
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "k = 6, operations = [1,1,1]",
-      "expectedOutput": null
+      "input": "k = 5, operations = [0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "k = 10, operations = [0,1,0,1]",
+      "expectedOutput": "\"b\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-k-th-character-in-string-game-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:08.889Z",
+    "collectedAt": "2026-10-19T18:40:18.305Z",
     "sourceUpdatedAt": null
   }
 }

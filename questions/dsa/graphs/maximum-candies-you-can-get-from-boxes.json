@@ -61,34 +61,30 @@
   },
   "publicTests": [
     {
-      "input": "status = [1,0,1,0], candies = [7,5,4,100], keys = [[],[],[1],[]], containedBoxes = [[1,2],[3],[],[]], initialBoxes = [0]",
+      "input": "[1,0,1,0]\n[7,5,4,100]\n[[],[],[1],[]]\n[[1,2],[3],[],[]]\n[0]",
       "expectedOutput": "16"
     },
     {
-      "input": "status = [1,0,0,0,0,0], candies = [1,1,1,1,1,1], keys = [[1,2,3,4,5],[],[],[],[],[]], containedBoxes = [[1,2,3,4,5],[],[],[],[],[]], initialBoxes = [0]",
+      "input": "[1,0,0,0,0,0]\n[1,1,1,1,1,1]\n[[1,2,3,4,5],[],[],[],[],[]]\n[[1,2,3,4,5],[],[],[],[],[]]\n[0]",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "[1,0,1,0]\n[7,5,4,100]\n[[],[],[1],[]]\n[[1,2],[3],[],[]]\n[0]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[1,0,0,0,0,0]\n[1,1,1,1,1,1]\n[[1,2,3,4,5],[],[],[],[],[]]\n[[1,2,3,4,5],[],[],[],[],[]]\n[0]",
+      "expectedOutput": "6"
+    },
+    {
       "input": "status = [1,0,1,0], candies = [7,5,4,100], keys = [[],[],[1],[]], containedBoxes = [[1,2],[3],[],[]], initialBoxes = [0]",
       "expectedOutput": "16"
     },
     {
       "input": "status = [1,0,0,0,0,0], candies = [1,1,1,1,1,1], keys = [[1,2,3,4,5],[],[],[],[],[]], containedBoxes = [[1,2,3,4,5],[],[],[],[],[]], initialBoxes = [0]",
       "expectedOutput": "6"
-    },
-    {
-      "input": "[1,0,1,0]\n[7,5,4,100]\n[[],[],[1],[]]\n[[1,2],[3],[],[]]\n[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,0,0,0,0,0]\n[1,1,1,1,1,1]\n[[1,2,3,4,5],[],[],[],[],[]]\n[[1,2,3,4,5],[],[],[],[],[]]\n[0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "status = [2,1,2,1], candies = [8,6,5,101], keys = [[],[],[2],[]], containedBoxes = [[2,3],[4],[],[]], initialBoxes = [1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -102,7 +98,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-candies-you-can-get-from-boxes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:10.412Z",
+    "collectedAt": "2026-10-19T18:40:21.639Z",
     "sourceUpdatedAt": null
   }
 }

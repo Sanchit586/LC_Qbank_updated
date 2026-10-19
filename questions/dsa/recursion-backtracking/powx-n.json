@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "x = 2.00000, n = 10",
+      "input": "2.00000\n10",
       "expectedOutput": "1024.00000"
     },
     {
-      "input": "x = 2.10000, n = 3",
+      "input": "2.10000\n3",
       "expectedOutput": "9.26100"
     },
     {
-      "input": "x = 2.00000, n = -2",
+      "input": "2.00000\n-2",
       "expectedOutput": "0.25000"
     }
   ],
   "testCases": [
     {
+      "input": "2.00000\n10",
+      "expectedOutput": "1024.00000"
+    },
+    {
+      "input": "2.10000\n3",
+      "expectedOutput": "9.26100"
+    },
+    {
+      "input": "2.00000\n-2",
+      "expectedOutput": "0.25000"
+    },
+    {
       "input": "x = 2.00000, n = 10",
       "expectedOutput": "1024.00000"
     },
@@ -81,38 +93,6 @@
     {
       "input": "x = 2.00000, n = -2",
       "expectedOutput": "0.25000"
-    },
-    {
-      "input": "2.00000\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "2.10000\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "2.00000\n-2",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 3.10001, n = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 3.1, n = -3",
-      "expectedOutput": null
-    },
-    {
-      "input": "3.1\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "3.10001\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 3.1, n = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/powx-n/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.888Z",
+    "collectedAt": "2026-10-19T18:40:26.855Z",
     "sourceUpdatedAt": null
   }
 }

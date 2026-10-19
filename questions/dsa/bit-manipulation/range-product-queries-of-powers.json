@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 15, queries = [[0,1],[2,2],[0,3]]",
+      "input": "15\n[[0,1],[2,2],[0,3]]",
       "expectedOutput": "[2,4,64]"
     },
     {
-      "input": "n = 2, queries = [[0,0]]",
+      "input": "2\n[[0,0]]",
       "expectedOutput": "[2]"
     }
   ],
   "testCases": [
     {
+      "input": "15\n[[0,1],[2,2],[0,3]]",
+      "expectedOutput": "[2,4,64]"
+    },
+    {
+      "input": "2\n[[0,0]]",
+      "expectedOutput": "[2]"
+    },
+    {
       "input": "n = 15, queries = [[0,1],[2,2],[0,3]]",
       "expectedOutput": "[2,4,64]"
     },
     {
       "input": "n = 2, queries = [[0,0]]",
       "expectedOutput": "[2]"
-    },
-    {
-      "input": "15\n[[0,1],[2,2],[0,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 16, queries = [[1,2],[3,3],[1,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-product-queries-of-powers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.515Z",
+    "collectedAt": "2026-10-19T18:40:27.172Z",
     "sourceUpdatedAt": null
   }
 }

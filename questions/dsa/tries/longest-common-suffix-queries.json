@@ -22,12 +22,12 @@
   ],
   "examples": [
     {
-      "input": "wordsContainer = [&quot;abcd&quot;,&quot;bcd&quot;,&quot;xbcd&quot;], wordsQuery = [&quot;cd&quot;,&quot;bcd&quot;,&quot;xyz&quot;]",
+      "input": "wordsContainer = [\"abcd\",\"bcd\",\"xbcd\"], wordsQuery = [\"cd\",\"bcd\",\"xyz\"]",
       "output": "[1,1,1]",
       "explanation": null
     },
     {
-      "input": "wordsContainer = [&quot;abcdefgh&quot;,&quot;poiuygh&quot;,&quot;ghghgh&quot;], wordsQuery = [&quot;gh&quot;,&quot;acbfgh&quot;,&quot;acbfegh&quot;]",
+      "input": "wordsContainer = [\"abcdefgh\",\"poiuygh\",\"ghghgh\"], wordsQuery = [\"gh\",\"acbfgh\",\"acbfegh\"]",
       "output": "[2,0,2]",
       "explanation": null
     }
@@ -55,30 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "wordsContainer = [&quot;abcd&quot;,&quot;bcd&quot;,&quot;xbcd&quot;], wordsQuery = [&quot;cd&quot;,&quot;bcd&quot;,&quot;xyz&quot;]",
+      "input": "[\"abcd\",\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
       "expectedOutput": "[1,1,1]"
     },
     {
-      "input": "wordsContainer = [&quot;abcdefgh&quot;,&quot;poiuygh&quot;,&quot;ghghgh&quot;], wordsQuery = [&quot;gh&quot;,&quot;acbfgh&quot;,&quot;acbfegh&quot;]",
+      "input": "[\"abcdefgh\",\"poiuygh\",\"ghghgh\"]\n[\"gh\",\"acbfgh\",\"acbfegh\"]",
       "expectedOutput": "[2,0,2]"
     }
   ],
   "testCases": [
     {
-      "input": "wordsContainer = [&quot;abcd&quot;,&quot;bcd&quot;,&quot;xbcd&quot;], wordsQuery = [&quot;cd&quot;,&quot;bcd&quot;,&quot;xyz&quot;]",
+      "input": "[\"abcd\",\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
       "expectedOutput": "[1,1,1]"
     },
     {
-      "input": "wordsContainer = [&quot;abcdefgh&quot;,&quot;poiuygh&quot;,&quot;ghghgh&quot;], wordsQuery = [&quot;gh&quot;,&quot;acbfgh&quot;,&quot;acbfegh&quot;]",
+      "input": "[\"abcdefgh\",\"poiuygh\",\"ghghgh\"]\n[\"gh\",\"acbfgh\",\"acbfegh\"]",
       "expectedOutput": "[2,0,2]"
     },
     {
-      "input": "[\"abcd\",\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
-      "expectedOutput": null
+      "input": "wordsContainer = [\"abcd\",\"bcd\",\"xbcd\"], wordsQuery = [\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[1,1,1]"
     },
     {
-      "input": "[\"abcdefgh\",\"poiuygh\",\"ghghgh\"]\n[\"gh\",\"acbfgh\",\"acbfegh\"]",
-      "expectedOutput": null
+      "input": "wordsContainer = [\"abcdefgh\",\"poiuygh\",\"ghghgh\"], wordsQuery = [\"gh\",\"acbfgh\",\"acbfegh\"]",
+      "expectedOutput": "[2,0,2]"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-common-suffix-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.350Z",
+    "collectedAt": "2026-10-19T18:40:20.449Z",
     "sourceUpdatedAt": null
   }
 }

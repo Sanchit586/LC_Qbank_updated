@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, edges = [[2,0],[2,1],[1,3]]",
+      "input": "4\n[[2,0],[2,1],[1,3]]",
       "expectedOutput": "[1,1,0,2]"
     },
     {
-      "input": "n = 3, edges = [[1,2],[2,0]]",
+      "input": "3\n[[1,2],[2,0]]",
       "expectedOutput": "[2,0,1]"
     }
   ],
   "testCases": [
     {
+      "input": "4\n[[2,0],[2,1],[1,3]]",
+      "expectedOutput": "[1,1,0,2]"
+    },
+    {
+      "input": "3\n[[1,2],[2,0]]",
+      "expectedOutput": "[2,0,1]"
+    },
+    {
       "input": "n = 4, edges = [[2,0],[2,1],[1,3]]",
       "expectedOutput": "[1,1,0,2]"
     },
     {
       "input": "n = 3, edges = [[1,2],[2,0]]",
       "expectedOutput": "[2,0,1]"
-    },
-    {
-      "input": "4\n[[2,0],[2,1],[1,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[1,2],[2,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, edges = [[3,1],[3,2],[2,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-edge-reversals-so-every-node-is-reachable/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:55.437Z",
+    "collectedAt": "2026-10-19T18:40:23.871Z",
     "sourceUpdatedAt": null
   }
 }

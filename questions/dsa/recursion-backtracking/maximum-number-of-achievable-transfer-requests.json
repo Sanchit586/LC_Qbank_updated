@@ -21,12 +21,12 @@
   "examples": [
     {
       "input": "n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
-      "output": "5\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don&#39;t have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings.",
+      "output": "5\nExplantion: Let's see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don't have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings.",
       "explanation": null
     },
     {
       "input": "n = 3, requests = [[0,0],[1,2],[2,1]]",
-      "output": "3\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests.",
+      "output": "3\nExplantion: Let's see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests.",
       "explanation": null
     },
     {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
-      "expectedOutput": "5\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don&#39;t have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings."
+      "input": "5\n[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
+      "expectedOutput": "5\nExplantion: Let's see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don't have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings."
     },
     {
-      "input": "n = 3, requests = [[0,0],[1,2],[2,1]]",
-      "expectedOutput": "3\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests."
+      "input": "3\n[[0,0],[1,2],[2,1]]",
+      "expectedOutput": "3\nExplantion: Let's see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests."
     },
     {
-      "input": "n = 4, requests = [[0,3],[3,1],[1,2],[2,0]]",
+      "input": "4\n[[0,3],[3,1],[1,2],[2,0]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
+      "expectedOutput": "5\nExplantion: Let's see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don't have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings."
+    },
+    {
+      "input": "3\n[[0,0],[1,2],[2,1]]",
+      "expectedOutput": "3\nExplantion: Let's see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests."
+    },
+    {
+      "input": "4\n[[0,3],[3,1],[1,2],[2,0]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 5, requests = [[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
-      "expectedOutput": "5\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don&#39;t have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings."
+      "expectedOutput": "5\nExplantion: Let's see the requests:\nFrom building 0 we have employees x and y and both want to move to building 1.\nFrom building 1 we have employees a and b and they want to move to buildings 2 and 0 respectively.\nFrom building 2 we have employee z and they want to move to building 0.\nFrom building 3 we have employee c and they want to move to building 4.\nFrom building 4 we don't have any requests.\nWe can achieve the requests of users x and b by swapping their places.\nWe can achieve the requests of users y, a and z by swapping the places in the 3 buildings."
     },
     {
       "input": "n = 3, requests = [[0,0],[1,2],[2,1]]",
-      "expectedOutput": "3\nExplantion: Let&#39;s see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests."
+      "expectedOutput": "3\nExplantion: Let's see the requests:\nFrom building 0 we have employee x and they want to stay in the same building 0.\nFrom building 1 we have employee y and they want to move to building 2.\nFrom building 2 we have employee z and they want to move to building 1.\nWe can achieve all the requests."
     },
     {
       "input": "n = 4, requests = [[0,3],[3,1],[1,2],[2,0]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "5\n[[0,1],[1,0],[0,1],[1,2],[2,0],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,0],[1,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[0,3],[3,1],[1,2],[2,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, requests = [[1,1],[2,3],[3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, requests = [[1,4],[4,2],[2,3],[3,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[1,2],[2,1],[1,2],[2,3],[3,1],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,1],[2,3],[3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, requests = [[1,2],[2,1],[1,2],[2,3],[3,1],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-achievable-transfer-requests/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:16.847Z",
+    "collectedAt": "2026-10-19T18:40:21.989Z",
     "sourceUpdatedAt": null
   }
 }

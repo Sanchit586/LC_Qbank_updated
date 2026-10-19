@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;l|*e*et|c**o|*de|&quot;",
+      "input": "s = \"l|*e*et|c**o|*de|\"",
       "output": "2",
-      "explanation": "The considered characters are underlined: &quot;l|*e*et|c**o|*de|&quot;.\nThe characters between the first and second &#39;|&#39; are excluded from the answer.\nAlso, the characters between the third and fourth &#39;|&#39; are excluded from the answer.\nThere are 2 asterisks considered. Therefore, we return 2."
+      "explanation": "The considered characters are underlined: \"l|*e*et|c**o|*de|\".\nThe characters between the first and second '|' are excluded from the answer.\nAlso, the characters between the third and fourth '|' are excluded from the answer.\nThere are 2 asterisks considered. Therefore, we return 2."
     },
     {
-      "input": "s = &quot;iamprogrammer&quot;",
+      "input": "s = \"iamprogrammer\"",
       "output": "0",
       "explanation": "In this example, there are no asterisks in s. Therefore, we return 0."
     },
     {
-      "input": "s = &quot;yo|uar|e**|b|e***au|tifu|l&quot;",
+      "input": "s = \"yo|uar|e**|b|e***au|tifu|l\"",
       "output": "5",
-      "explanation": "The considered characters are underlined: &quot;yo|uar|e**|b|e***au|tifu|l&quot;. There are 5 asterisks considered. Therefore, we return 5."
+      "explanation": "The considered characters are underlined: \"yo|uar|e**|b|e***au|tifu|l\". There are 5 asterisks considered. Therefore, we return 5."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;l|*e*et|c**o|*de|&quot;",
+      "input": "\"l|*e*et|c**o|*de|\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;iamprogrammer&quot;",
+      "input": "\"iamprogrammer\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;yo|uar|e**|b|e***au|tifu|l&quot;",
+      "input": "\"yo|uar|e**|b|e***au|tifu|l\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;l|*e*et|c**o|*de|&quot;",
+      "input": "\"l|*e*et|c**o|*de|\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;iamprogrammer&quot;",
+      "input": "\"iamprogrammer\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;yo|uar|e**|b|e***au|tifu|l&quot;",
+      "input": "\"yo|uar|e**|b|e***au|tifu|l\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"l|*e*et|c**o|*de|\"",
-      "expectedOutput": null
+      "input": "s = \"l|*e*et|c**o|*de|\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"iamprogrammer\"",
-      "expectedOutput": null
+      "input": "s = \"iamprogrammer\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"yo|uar|e**|b|e***au|tifu|l\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"yo|uar|e**|b|e***au|tifu|l\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-asterisks/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:07.528Z",
+    "collectedAt": "2026-10-19T18:40:14.946Z",
     "sourceUpdatedAt": null
   }
 }

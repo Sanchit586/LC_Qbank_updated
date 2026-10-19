@@ -21,14 +21,14 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;e&quot;,&quot;a&quot;,&quot;b&quot;], groups = [0,0,1]",
-      "output": "[&quot;e&quot;,&quot;b&quot;]",
-      "explanation": "A subsequence that can be selected is [&quot;e&quot;,&quot;b&quot;] because groups[0] != groups[2]. Another subsequence that can be selected is [&quot;a&quot;,&quot;b&quot;] because groups[1] != groups[2]. It can be demonstrated that the length of the longest subsequence of indices that satisfies the condition is 2."
+      "input": "words = [\"e\",\"a\",\"b\"], groups = [0,0,1]",
+      "output": "[\"e\",\"b\"]",
+      "explanation": "A subsequence that can be selected is [\"e\",\"b\"] because groups[0] != groups[2]. Another subsequence that can be selected is [\"a\",\"b\"] because groups[1] != groups[2]. It can be demonstrated that the length of the longest subsequence of indices that satisfies the condition is 2."
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,0,1,1]",
-      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "explanation": "A subsequence that can be selected is [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;] because groups[0] != groups[1] and groups[1] != groups[2]. Another subsequence that can be selected is [&quot;a&quot;,&quot;b&quot;,&quot;d&quot;] because groups[0] != groups[1] and groups[1] != groups[3]. It can be shown that the length of the longest subsequence of indices that satisfies the condition is 3."
+      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,0,1,1]",
+      "output": "[\"a\",\"b\",\"c\"]",
+      "explanation": "A subsequence that can be selected is [\"a\",\"b\",\"c\"] because groups[0] != groups[1] and groups[1] != groups[2]. Another subsequence that can be selected is [\"a\",\"b\",\"d\"] because groups[0] != groups[1] and groups[1] != groups[3]. It can be shown that the length of the longest subsequence of indices that satisfies the condition is 3."
     }
   ],
   "starterCode": {
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;e&quot;,&quot;a&quot;,&quot;b&quot;], groups = [0,0,1]",
-      "expectedOutput": "[&quot;e&quot;,&quot;b&quot;]"
+      "input": "[\"c\"]\n[0]",
+      "expectedOutput": "[\"e\",\"b\"]"
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,0,1,1]",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+      "input": "[\"d\"]\n[1]",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;e&quot;,&quot;a&quot;,&quot;b&quot;], groups = [0,0,1]",
-      "expectedOutput": "[&quot;e&quot;,&quot;b&quot;]"
-    },
-    {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;d&quot;], groups = [1,0,1,1]",
-      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
-    },
-    {
       "input": "[\"c\"]\n[0]",
-      "expectedOutput": null
+      "expectedOutput": "[\"e\",\"b\"]"
     },
     {
       "input": "[\"d\"]\n[1]",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     },
     {
-      "input": "words = [&quot;e&quot;,&quot;a&quot;,&quot;b&quot;], groups = [1,1,2]",
-      "expectedOutput": null
+      "input": "words = [\"e\",\"a\",\"b\"], groups = [0,0,1]",
+      "expectedOutput": "[\"e\",\"b\"]"
+    },
+    {
+      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,0,1,1]",
+      "expectedOutput": "[\"a\",\"b\",\"c\"]"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-unequal-adjacent-groups-subsequence-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.144Z",
+    "collectedAt": "2026-10-19T18:40:20.736Z",
     "sourceUpdatedAt": null
   }
 }

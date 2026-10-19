@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;5023&quot;",
+      "input": "num = \"5023\"",
       "output": "false",
       "explanation": "There are no moves to be made.\nThe sum of the first half is equal to the sum of the second half: 5 + 0 = 2 + 3."
     },
     {
-      "input": "num = &quot;25??&quot;",
+      "input": "num = \"25??\"",
       "output": "true",
-      "explanation": "Alice can replace one of the &#39;?&#39;s with &#39;9&#39; and it will be impossible for Bob to make the sums equal."
+      "explanation": "Alice can replace one of the '?'s with '9' and it will be impossible for Bob to make the sums equal."
     },
     {
-      "input": "num = &quot;?3295???&quot;",
+      "input": "num = \"?3295???\"",
       "output": "false",
-      "explanation": "It can be proven that Bob will always win. One possible outcome is:\n- Alice replaces the first &#39;?&#39; with &#39;9&#39;. num = &quot;93295???&quot;.\n- Bob replaces one of the &#39;?&#39; in the right half with &#39;9&#39;. num = &quot;932959??&quot;.\n- Alice replaces one of the &#39;?&#39; in the right half with &#39;2&#39;. num = &quot;9329592?&quot;.\n- Bob replaces the last &#39;?&#39; in the right half with &#39;7&#39;. num = &quot;93295927&quot;.\nBob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7."
+      "explanation": "It can be proven that Bob will always win. One possible outcome is:\n- Alice replaces the first '?' with '9'. num = \"93295???\".\n- Bob replaces one of the '?' in the right half with '9'. num = \"932959??\".\n- Alice replaces one of the '?' in the right half with '2'. num = \"9329592?\".\n- Bob replaces the last '?' in the right half with '7'. num = \"93295927\".\nBob wins because 9 + 3 + 2 + 9 = 5 + 9 + 2 + 7."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;5023&quot;",
+      "input": "\"5023\"",
       "expectedOutput": "false"
     },
     {
-      "input": "num = &quot;25??&quot;",
+      "input": "\"25??\"",
       "expectedOutput": "true"
     },
     {
-      "input": "num = &quot;?3295???&quot;",
+      "input": "\"?3295???\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;5023&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "num = &quot;25??&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "num = &quot;?3295???&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"5023\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"25??\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"?3295???\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "num = \"5023\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "num = \"25??\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "num = \"?3295???\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sum-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:50.872Z",
+    "collectedAt": "2026-10-19T18:40:30.509Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,7 +18,13 @@
     "0 <= maxRow <= n - 1",
     "At most 5 * 104 calls in total will be made to gather and scatter."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"BookMyShow\", \"gather\", \"gather\", \"scatter\", \"scatter\"]\n[[2, 5], [4, 0], [2, 0], [5, 1], [5, 1]]",
+      "output": "[null, [0, 0], [], true, false]",
+      "explanation": "BookMyShow bms = new BookMyShow(2, 5); // There are 2 rows with 5 seats each \nbms.gather(4, 0); // return [0, 0]\n                  // The group books seats [0, 3] of row 0. \nbms.gather(2, 0); // return []\n                  // There is only 1 seat left in row 0,\n                  // so it is not possible to book 2 consecutive seats. \nbms.scatter(5, 1); // return True\n                   // The group books seat 4 of row 0 and seats [0, 3] of row 1. \nbms.scatter(5, 1); // return False\n                   // There is only one seat left in the hall."
+    }
+  ],
   "starterCode": {
     "cpp": "class BookMyShow {\npublic:\n    BookMyShow(int n, int m) {\n        \n    }\n    \n    vector<int> gather(int k, int maxRow) {\n        \n    }\n    \n    bool scatter(int k, int maxRow) {\n        \n    }\n};\n\n/**\n * Your BookMyShow object will be instantiated and called as such:\n * BookMyShow* obj = new BookMyShow(n, m);\n * vector<int> param_1 = obj->gather(k,maxRow);\n * bool param_2 = obj->scatter(k,maxRow);\n */",
     "java": "class BookMyShow {\n\n    public BookMyShow(int n, int m) {\n        \n    }\n    \n    public int[] gather(int k, int maxRow) {\n        \n    }\n    \n    public boolean scatter(int k, int maxRow) {\n        \n    }\n}\n\n/**\n * Your BookMyShow object will be instantiated and called as such:\n * BookMyShow obj = new BookMyShow(n, m);\n * int[] param_1 = obj.gather(k,maxRow);\n * boolean param_2 = obj.scatter(k,maxRow);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"BookMyShow\",\"gather\",\"gather\",\"scatter\",\"scatter\"]\n[[2,5],[4,0],[2,0],[5,1],[5,1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [0, 0], [], true, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"BookMyShow\",\"gather\",\"gather\",\"scatter\",\"scatter\"]\n[[2,5],[4,0],[2,0],[5,1],[5,1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, [0, 0], [], true, false]"
     },
     {
-      "input": "[\"BookMyShow\",\"gather\",\"gather\",\"scatter\",\"scatter\"]\n[[3,6],[5,1],[3,1],[6,2],[6,2]]",
-      "expectedOutput": null
+      "input": "[\"BookMyShow\", \"gather\", \"gather\", \"scatter\", \"scatter\"]\n[[2, 5], [4, 0], [2, 0], [5, 1], [5, 1]]",
+      "expectedOutput": "[null, [0, 0], [], true, false]"
     }
   ],
   "sqlSchema": null,
@@ -70,7 +76,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/booking-concert-tickets-in-groups/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:43.948Z",
+    "collectedAt": "2026-10-19T18:40:13.694Z",
     "sourceUpdatedAt": null
   }
 }

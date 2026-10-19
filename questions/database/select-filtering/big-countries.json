@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "World table:\n+-------------+-----------+---------+------------+--------------+\n| name        | continent | area    | population | gdp          |\n+-------------+-----------+---------+------------+--------------+\n| Afghanistan | Asia      | 652230  | 25500100   | 20343000000  |\n| Albania     | Europe    | 28748   | 2831741    | 12960000000  |\n| Algeria     | Africa    | 2381741 | 37100000   | 188681000000 |\n| Andorra     | Europe    | 468     | 78115      | 3712000000   |\n| Angola      | Africa    | 1246700 | 20609294   | 100990000000 |\n+-------------+-----------+---------+------------+--------------+",
+      "input": "{\"headers\": {\"World\": [\"name\", \"continent\",\t\"area\",\t\"population\", \"gdp\"]}, \"rows\": {\"World\": [[\"Afghanistan\", \"Asia\", 652230, 25500100, 20343000000], [\"Albania\", \"Europe\", 28748, 2831741, 12960000000], [\"Algeria\", \"Africa\", 2381741, 37100000, 188681000000], [\"Andorra\", \"Europe\", 468, 78115,\t3712000000], [\"Angola\", \"Africa\", 1246700, 20609294, 100990000000]]}}",
       "expectedOutput": "+-------------+------------+---------+\n| name        | population | area    |\n+-------------+------------+---------+\n| Afghanistan | 25500100   | 652230  |\n| Algeria     | 37100000   | 2381741 |\n+-------------+------------+---------+"
     }
   ],
   "testCases": [
     {
-      "input": "World table:\n+-------------+-----------+---------+------------+--------------+\n| name        | continent | area    | population | gdp          |\n+-------------+-----------+---------+------------+--------------+\n| Afghanistan | Asia      | 652230  | 25500100   | 20343000000  |\n| Albania     | Europe    | 28748   | 2831741    | 12960000000  |\n| Algeria     | Africa    | 2381741 | 37100000   | 188681000000 |\n| Andorra     | Europe    | 468     | 78115      | 3712000000   |\n| Angola      | Africa    | 1246700 | 20609294   | 100990000000 |\n+-------------+-----------+---------+------------+--------------+",
+      "input": "{\"headers\": {\"World\": [\"name\", \"continent\",\t\"area\",\t\"population\", \"gdp\"]}, \"rows\": {\"World\": [[\"Afghanistan\", \"Asia\", 652230, 25500100, 20343000000], [\"Albania\", \"Europe\", 28748, 2831741, 12960000000], [\"Algeria\", \"Africa\", 2381741, 37100000, 188681000000], [\"Andorra\", \"Europe\", 468, 78115,\t3712000000], [\"Angola\", \"Africa\", 1246700, 20609294, 100990000000]]}}",
       "expectedOutput": "+-------------+------------+---------+\n| name        | population | area    |\n+-------------+------------+---------+\n| Afghanistan | 25500100   | 652230  |\n| Algeria     | 37100000   | 2381741 |\n+-------------+------------+---------+"
     },
     {
-      "input": "{\"headers\": {\"World\": [\"name\", \"continent\",\t\"area\",\t\"population\", \"gdp\"]}, \"rows\": {\"World\": [[\"Afghanistan\", \"Asia\", 652230, 25500100, 20343000000], [\"Albania\", \"Europe\", 28748, 2831741, 12960000000], [\"Algeria\", \"Africa\", 2381741, 37100000, 188681000000], [\"Andorra\", \"Europe\", 468, 78115,\t3712000000], [\"Angola\", \"Africa\", 1246700, 20609294, 100990000000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"World\":[\"name\",\"continent\",\"area\",\"population\",\"gdp\"]},\"rows\":{\"World\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"World\":[\"name\",\"continent\",\"area\",\"population\",\"gdp\"]},\"rows\":{\"World\":[[\"Afghanistan\",\"Asia\",652230,25500100,20343000000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"World\":[\"name\",\"continent\",\"area\",\"population\",\"gdp\"]},\"rows\":{\"World\":[[\"Afghanistan\",\"Asia\",652230,25500100,null],[\"Albania\",\"Europe\",28748,2831741,null],[\"Algeria\",\"Africa\",2381741,37100000,null],[\"Andorra\",\"Europe\",468,78115,null],[\"Angola\",\"Africa\",1246700,20609294,null]]}}",
-      "expectedOutput": null
+      "input": "World table:\n+-------------+-----------+---------+------------+--------------+\n| name        | continent | area    | population | gdp          |\n+-------------+-----------+---------+------------+--------------+\n| Afghanistan | Asia      | 652230  | 25500100   | 20343000000  |\n| Albania     | Europe    | 28748   | 2831741    | 12960000000  |\n| Algeria     | Africa    | 2381741 | 37100000   | 188681000000 |\n| Andorra     | Europe    | 468     | 78115      | 3712000000   |\n| Angola      | Africa    | 1246700 | 20609294   | 100990000000 |\n+-------------+-----------+---------+------------+--------------+",
+      "expectedOutput": "+-------------+------------+---------+\n| name        | population | area    |\n+-------------+------------+---------+\n| Afghanistan | 25500100   | 652230  |\n| Algeria     | 37100000   | 2381741 |\n+-------------+------------+---------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists World (name varchar(255), continent varchar(255), area int, population int, gdp bigint)\n\nTruncate table World",
@@ -67,7 +55,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/big-countries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.716Z",
+    "collectedAt": "2026-10-19T18:40:13.544Z",
     "sourceUpdatedAt": null
   }
 }

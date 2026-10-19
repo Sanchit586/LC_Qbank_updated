@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ababccc&quot;",
-      "output": "5\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;b&#39;, &#39;ab&#39;, &#39;c&#39;, &#39;cc&#39;]. Splitting like [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;cc&#39;] is not valid as you have &#39;a&#39; and &#39;b&#39; multiple times.",
-      "explanation": null
+      "input": "s = \"ababccc\"",
+      "output": "5",
+      "explanation": ": One way to split maximally is ['a', 'b', 'ab', 'c', 'cc']. Splitting like ['a', 'b', 'a', 'b', 'c', 'cc'] is not valid as you have 'a' and 'b' multiple times."
     },
     {
-      "input": "s = &quot;aba&quot;",
-      "output": "2\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;ba&#39;].",
-      "explanation": null
+      "input": "s = \"aba\"",
+      "output": "2",
+      "explanation": ": One way to split maximally is ['a', 'ba']."
     },
     {
-      "input": "s = &quot;aa&quot;",
-      "output": "1\nExplanation: It is impossible to split the string any further.",
-      "explanation": null
+      "input": "s = \"aa\"",
+      "output": "1",
+      "explanation": ": It is impossible to split the string any further."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ababccc&quot;",
-      "expectedOutput": "5\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;b&#39;, &#39;ab&#39;, &#39;c&#39;, &#39;cc&#39;]. Splitting like [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;cc&#39;] is not valid as you have &#39;a&#39; and &#39;b&#39; multiple times."
+      "input": "\"ababccc\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;aba&quot;",
-      "expectedOutput": "2\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;ba&#39;]."
+      "input": "\"aba\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;aa&quot;",
-      "expectedOutput": "1\nExplanation: It is impossible to split the string any further."
+      "input": "\"aa\"",
+      "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ababccc&quot;",
-      "expectedOutput": "5\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;b&#39;, &#39;ab&#39;, &#39;c&#39;, &#39;cc&#39;]. Splitting like [&#39;a&#39;, &#39;b&#39;, &#39;a&#39;, &#39;b&#39;, &#39;c&#39;, &#39;cc&#39;] is not valid as you have &#39;a&#39; and &#39;b&#39; multiple times."
-    },
-    {
-      "input": "s = &quot;aba&quot;",
-      "expectedOutput": "2\nExplanation: One way to split maximally is [&#39;a&#39;, &#39;ba&#39;]."
-    },
-    {
-      "input": "s = &quot;aa&quot;",
-      "expectedOutput": "1\nExplanation: It is impossible to split the string any further."
-    },
-    {
       "input": "\"ababccc\"",
-      "expectedOutput": null
+      "expectedOutput": "5"
     },
     {
       "input": "\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"aa\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"ababccc\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"aba\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"aa\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-a-string-into-the-max-number-of-unique-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:46.547Z",
+    "collectedAt": "2026-10-19T18:40:30.101Z",
     "sourceUpdatedAt": null
   }
 }

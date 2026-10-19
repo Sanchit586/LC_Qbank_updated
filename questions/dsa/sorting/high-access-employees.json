@@ -23,19 +23,19 @@
   ],
   "examples": [
     {
-      "input": "access_times = [[&quot;a&quot;,&quot;0549&quot;],[&quot;b&quot;,&quot;0457&quot;],[&quot;a&quot;,&quot;0532&quot;],[&quot;a&quot;,&quot;0621&quot;],[&quot;b&quot;,&quot;0540&quot;]]",
-      "output": "[&quot;a&quot;]",
-      "explanation": "&quot;a&quot; has three access times in the one-hour period of [05:32, 06:31] which are 05:32, 05:49, and 06:21.\nBut &quot;b&quot; does not have more than two access times at all.\nSo the answer is [&quot;a&quot;]."
+      "input": "access_times = [[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]",
+      "output": "[\"a\"]",
+      "explanation": "\"a\" has three access times in the one-hour period of [05:32, 06:31] which are 05:32, 05:49, and 06:21.\nBut \"b\" does not have more than two access times at all.\nSo the answer is [\"a\"]."
     },
     {
-      "input": "access_times = [[&quot;d&quot;,&quot;0002&quot;],[&quot;c&quot;,&quot;0808&quot;],[&quot;c&quot;,&quot;0829&quot;],[&quot;e&quot;,&quot;0215&quot;],[&quot;d&quot;,&quot;1508&quot;],[&quot;d&quot;,&quot;1444&quot;],[&quot;d&quot;,&quot;1410&quot;],[&quot;c&quot;,&quot;0809&quot;]]",
-      "output": "[&quot;c&quot;,&quot;d&quot;]",
-      "explanation": "&quot;c&quot; has three access times in the one-hour period of [08:08, 09:07] which are 08:08, 08:09, and 08:29.\n&quot;d&quot; has also three access times in the one-hour period of [14:10, 15:09] which are 14:10, 14:44, and 15:08.\nHowever, &quot;e&quot; has just one access time, so it can not be in the answer and the final answer is [&quot;c&quot;,&quot;d&quot;]."
+      "input": "access_times = [[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]",
+      "output": "[\"c\",\"d\"]",
+      "explanation": "\"c\" has three access times in the one-hour period of [08:08, 09:07] which are 08:08, 08:09, and 08:29.\n\"d\" has also three access times in the one-hour period of [14:10, 15:09] which are 14:10, 14:44, and 15:08.\nHowever, \"e\" has just one access time, so it can not be in the answer and the final answer is [\"c\",\"d\"]."
     },
     {
-      "input": "access_times = [[&quot;cd&quot;,&quot;1025&quot;],[&quot;ab&quot;,&quot;1025&quot;],[&quot;cd&quot;,&quot;1046&quot;],[&quot;cd&quot;,&quot;1055&quot;],[&quot;ab&quot;,&quot;1124&quot;],[&quot;ab&quot;,&quot;1120&quot;]]",
-      "output": "[&quot;ab&quot;,&quot;cd&quot;]",
-      "explanation": "&quot;ab&quot; has three access times in the one-hour period of [10:25, 11:24] which are 10:25, 11:20, and 11:24.\n&quot;cd&quot; has also three access times in the one-hour period of [10:25, 11:24] which are 10:25, 10:46, and 10:55.\nSo the answer is [&quot;ab&quot;,&quot;cd&quot;]."
+      "input": "access_times = [[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]",
+      "output": "[\"ab\",\"cd\"]",
+      "explanation": "\"ab\" has three access times in the one-hour period of [10:25, 11:24] which are 10:25, 11:20, and 11:24.\n\"cd\" has also three access times in the one-hour period of [10:25, 11:24] which are 10:25, 10:46, and 10:55.\nSo the answer is [\"ab\",\"cd\"]."
     }
   ],
   "starterCode": {
@@ -61,62 +61,42 @@
   },
   "publicTests": [
     {
-      "input": "access_times = [[&quot;a&quot;,&quot;0549&quot;],[&quot;b&quot;,&quot;0457&quot;],[&quot;a&quot;,&quot;0532&quot;],[&quot;a&quot;,&quot;0621&quot;],[&quot;b&quot;,&quot;0540&quot;]]",
-      "expectedOutput": "[&quot;a&quot;]"
+      "input": "[[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]",
+      "expectedOutput": "[\"a\"]"
     },
     {
-      "input": "access_times = [[&quot;d&quot;,&quot;0002&quot;],[&quot;c&quot;,&quot;0808&quot;],[&quot;c&quot;,&quot;0829&quot;],[&quot;e&quot;,&quot;0215&quot;],[&quot;d&quot;,&quot;1508&quot;],[&quot;d&quot;,&quot;1444&quot;],[&quot;d&quot;,&quot;1410&quot;],[&quot;c&quot;,&quot;0809&quot;]]",
-      "expectedOutput": "[&quot;c&quot;,&quot;d&quot;]"
+      "input": "[[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]",
+      "expectedOutput": "[\"c\",\"d\"]"
     },
     {
-      "input": "access_times = [[&quot;cd&quot;,&quot;1025&quot;],[&quot;ab&quot;,&quot;1025&quot;],[&quot;cd&quot;,&quot;1046&quot;],[&quot;cd&quot;,&quot;1055&quot;],[&quot;ab&quot;,&quot;1124&quot;],[&quot;ab&quot;,&quot;1120&quot;]]",
-      "expectedOutput": "[&quot;ab&quot;,&quot;cd&quot;]"
+      "input": "[[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]",
+      "expectedOutput": "[\"ab\",\"cd\"]"
     }
   ],
   "testCases": [
     {
-      "input": "access_times = [[&quot;a&quot;,&quot;0549&quot;],[&quot;b&quot;,&quot;0457&quot;],[&quot;a&quot;,&quot;0532&quot;],[&quot;a&quot;,&quot;0621&quot;],[&quot;b&quot;,&quot;0540&quot;]]",
-      "expectedOutput": "[&quot;a&quot;]"
-    },
-    {
-      "input": "access_times = [[&quot;d&quot;,&quot;0002&quot;],[&quot;c&quot;,&quot;0808&quot;],[&quot;c&quot;,&quot;0829&quot;],[&quot;e&quot;,&quot;0215&quot;],[&quot;d&quot;,&quot;1508&quot;],[&quot;d&quot;,&quot;1444&quot;],[&quot;d&quot;,&quot;1410&quot;],[&quot;c&quot;,&quot;0809&quot;]]",
-      "expectedOutput": "[&quot;c&quot;,&quot;d&quot;]"
-    },
-    {
-      "input": "access_times = [[&quot;cd&quot;,&quot;1025&quot;],[&quot;ab&quot;,&quot;1025&quot;],[&quot;cd&quot;,&quot;1046&quot;],[&quot;cd&quot;,&quot;1055&quot;],[&quot;ab&quot;,&quot;1124&quot;],[&quot;ab&quot;,&quot;1120&quot;]]",
-      "expectedOutput": "[&quot;ab&quot;,&quot;cd&quot;]"
-    },
-    {
       "input": "[[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[\"a\"]"
     },
     {
       "input": "[[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[\"c\",\"d\"]"
     },
     {
       "input": "[[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[\"ab\",\"cd\"]"
     },
     {
-      "input": "access_times = [[&quot;d&quot;,&quot;3&quot;],[&quot;c&quot;,&quot;809&quot;],[&quot;c&quot;,&quot;830&quot;],[&quot;e&quot;,&quot;216&quot;],[&quot;d&quot;,&quot;1509&quot;],[&quot;d&quot;,&quot;1445&quot;],[&quot;d&quot;,&quot;1411&quot;],[&quot;c&quot;,&quot;810&quot;]]",
-      "expectedOutput": null
+      "input": "access_times = [[\"a\",\"0549\"],[\"b\",\"0457\"],[\"a\",\"0532\"],[\"a\",\"0621\"],[\"b\",\"0540\"]]",
+      "expectedOutput": "[\"a\"]"
     },
     {
-      "input": "access_times = [[&quot;cd&quot;,&quot;1026&quot;],[&quot;ab&quot;,&quot;1026&quot;],[&quot;cd&quot;,&quot;1047&quot;],[&quot;cd&quot;,&quot;1056&quot;],[&quot;ab&quot;,&quot;1125&quot;],[&quot;ab&quot;,&quot;1121&quot;]]",
-      "expectedOutput": null
+      "input": "access_times = [[\"d\",\"0002\"],[\"c\",\"0808\"],[\"c\",\"0829\"],[\"e\",\"0215\"],[\"d\",\"1508\"],[\"d\",\"1444\"],[\"d\",\"1410\"],[\"c\",\"0809\"]]",
+      "expectedOutput": "[\"c\",\"d\"]"
     },
     {
-      "input": "[[\"a\",\"550\"],[\"b\",\"458\"],[\"a\",\"533\"],[\"a\",\"622\"],[\"b\",\"541\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[\"d\",\"3\"],[\"c\",\"809\"],[\"c\",\"830\"],[\"e\",\"216\"],[\"d\",\"1509\"],[\"d\",\"1445\"],[\"d\",\"1411\"],[\"c\",\"810\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "access_times = [[&quot;a&quot;,&quot;550&quot;],[&quot;b&quot;,&quot;458&quot;],[&quot;a&quot;,&quot;533&quot;],[&quot;a&quot;,&quot;622&quot;],[&quot;b&quot;,&quot;541&quot;]]",
-      "expectedOutput": null
+      "input": "access_times = [[\"cd\",\"1025\"],[\"ab\",\"1025\"],[\"cd\",\"1046\"],[\"cd\",\"1055\"],[\"ab\",\"1124\"],[\"ab\",\"1120\"]]",
+      "expectedOutput": "[\"ab\",\"cd\"]"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/high-access-employees/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:27.220Z",
+    "collectedAt": "2026-10-19T18:40:19.380Z",
     "sourceUpdatedAt": null
   }
 }

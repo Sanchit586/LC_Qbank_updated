@@ -18,12 +18,12 @@
   "examples": [
     {
       "input": "k = 5",
-      "output": "&quot;b&quot;",
+      "output": "\"b\"",
       "explanation": null
     },
     {
       "input": "k = 10",
-      "output": "&quot;c&quot;",
+      "output": "\"c\"",
       "explanation": null
     }
   ],
@@ -50,90 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "k = 5",
-      "expectedOutput": "&quot;b&quot;"
+      "input": "5",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "k = 10",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "10",
+      "expectedOutput": "\"c\""
     }
   ],
   "testCases": [
     {
-      "input": "k = 5",
-      "expectedOutput": "&quot;b&quot;"
-    },
-    {
-      "input": "k = 10",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
       "input": "5",
-      "expectedOutput": null
+      "expectedOutput": "\"b\""
     },
     {
       "input": "10",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "k = 5",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
+      "input": "k = 10",
+      "expectedOutput": "\"c\""
     }
   ],
   "sqlSchema": null,
@@ -147,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-k-th-character-in-string-game-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:08.882Z",
+    "collectedAt": "2026-10-19T18:40:18.299Z",
     "sourceUpdatedAt": null
   }
 }

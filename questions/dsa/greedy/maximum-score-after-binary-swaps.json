@@ -20,12 +20,12 @@
   ],
   "examples": [
     {
-      "input": "nums = [2,1,5,2,3], s = &quot;01010&quot;",
+      "input": "nums = [2,1,5,2,3], s = \"01010\"",
       "output": "7",
       "explanation": null
     },
     {
-      "input": "nums = [4,7,2,9], s = &quot;0000&quot;",
+      "input": "nums = [4,7,2,9], s = \"0000\"",
       "output": "0",
       "explanation": null
     }
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,1,5,2,3], s = &quot;01010&quot;",
+      "input": "[2,1,5,2,3]\n\"01010\"",
       "expectedOutput": "7"
     },
     {
-      "input": "nums = [4,7,2,9], s = &quot;0000&quot;",
+      "input": "[4,7,2,9]\n\"0000\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "nums = [2,1,5,2,3], s = &quot;01010&quot;",
+      "input": "[2,1,5,2,3]\n\"01010\"",
       "expectedOutput": "7"
     },
     {
-      "input": "nums = [4,7,2,9], s = &quot;0000&quot;",
+      "input": "[4,7,2,9]\n\"0000\"",
       "expectedOutput": "0"
     },
     {
-      "input": "[2,1,5,2,3]\n\"01010\"",
-      "expectedOutput": null
+      "input": "nums = [2,1,5,2,3], s = \"01010\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "[4,7,2,9]\n\"0000\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [3,2,6,3,4], s = &quot;1011&quot;",
-      "expectedOutput": null
+      "input": "nums = [4,7,2,9], s = \"0000\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-score-after-binary-swaps/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:28.995Z",
+    "collectedAt": "2026-10-19T18:40:22.528Z",
     "sourceUpdatedAt": null
   }
 }

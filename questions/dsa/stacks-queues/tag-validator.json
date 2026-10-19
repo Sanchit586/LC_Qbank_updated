@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "code = &quot;&lt;DIV&gt;This is the first line &lt;![CDATA[&lt;div&gt;]]&gt;&lt;/DIV&gt;&quot;",
+      "input": "code = \"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
       "output": "true",
-      "explanation": "The code is wrapped in a closed tag : &lt;DIV&gt; and &lt;/DIV&gt;. \nThe TAG_NAME is valid, the TAG_CONTENT consists of some characters and cdata. \nAlthough CDATA_CONTENT has an unmatched start tag with invalid TAG_NAME, it should be considered as plain text, not parsed as a tag.\nSo TAG_CONTENT is valid, and then the code is valid. Thus return true."
+      "explanation": "The code is wrapped in a closed tag : <DIV> and </DIV>. \nThe TAG_NAME is valid, the TAG_CONTENT consists of some characters and cdata. \nAlthough CDATA_CONTENT has an unmatched start tag with invalid TAG_NAME, it should be considered as plain text, not parsed as a tag.\nSo TAG_CONTENT is valid, and then the code is valid. Thus return true."
     },
     {
-      "input": "code = &quot;&lt;DIV&gt;&gt;&gt;  ![cdata[]] &lt;![CDATA[&lt;div&gt;]&gt;]]&gt;]]&gt;&gt;]&lt;/DIV&gt;&quot;",
+      "input": "code = \"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
       "output": "true",
-      "explanation": "We first separate the code into : start_tag|tag_content|end_tag.\nstart_tag -&gt; &quot;&lt;DIV&gt;&quot;\nend_tag -&gt; &quot;&lt;/DIV&gt;&quot;\ntag_content could also be separated into : text1|cdata|text2.\ntext1 -&gt; &quot;&gt;&gt;  ![cdata[]] &quot;\ncdata -&gt; &quot;&lt;![CDATA[&lt;div&gt;]&gt;]]&gt;&quot;, where the CDATA_CONTENT is &quot;&lt;div&gt;]&gt;&quot;\ntext2 -&gt; &quot;]]&gt;&gt;]&quot;\nThe reason why start_tag is NOT &quot;&lt;DIV&gt;&gt;&gt;&quot; is because of the rule 6.\nThe reason why cdata is NOT &quot;&lt;![CDATA[&lt;div&gt;]&gt;]]&gt;]]&gt;&quot; is because of the rule 7."
+      "explanation": "We first separate the code into : start_tag|tag_content|end_tag.\nstart_tag -> \"<DIV>\"\nend_tag -> \"</DIV>\"\ntag_content could also be separated into : text1|cdata|text2.\ntext1 -> \">>  ![cdata[]] \"\ncdata -> \"<![CDATA[<div>]>]]>\", where the CDATA_CONTENT is \"<div>]>\"\ntext2 -> \"]]>>]\"\nThe reason why start_tag is NOT \"<DIV>>>\" is because of the rule 6.\nThe reason why cdata is NOT \"<![CDATA[<div>]>]]>]]>\" is because of the rule 7."
     },
     {
-      "input": "code = &quot;&lt;A&gt;  &lt;B&gt; &lt;/A&gt;   &lt;/B&gt;&quot;",
+      "input": "code = \"<A>  <B> </A>   </B>\"",
       "output": "false",
-      "explanation": "Unbalanced. If &quot;&lt;A&gt;&quot; is closed, then &quot;&lt;B&gt;&quot; must be unmatched, and vice versa."
+      "explanation": "Unbalanced. If \"<A>\" is closed, then \"<B>\" must be unmatched, and vice versa."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "code = &quot;&lt;DIV&gt;This is the first line &lt;![CDATA[&lt;div&gt;]]&gt;&lt;/DIV&gt;&quot;",
+      "input": "\"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
       "expectedOutput": "true"
     },
     {
-      "input": "code = &quot;&lt;DIV&gt;&gt;&gt;  ![cdata[]] &lt;![CDATA[&lt;div&gt;]&gt;]]&gt;]]&gt;&gt;]&lt;/DIV&gt;&quot;",
+      "input": "\"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
       "expectedOutput": "true"
     },
     {
-      "input": "code = &quot;&lt;A&gt;  &lt;B&gt; &lt;/A&gt;   &lt;/B&gt;&quot;",
+      "input": "\"<A>  <B> </A>   </B>\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "code = &quot;&lt;DIV&gt;This is the first line &lt;![CDATA[&lt;div&gt;]]&gt;&lt;/DIV&gt;&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "code = &quot;&lt;DIV&gt;&gt;&gt;  ![cdata[]] &lt;![CDATA[&lt;div&gt;]&gt;]]&gt;]]&gt;&gt;]&lt;/DIV&gt;&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "code = &quot;&lt;A&gt;  &lt;B&gt; &lt;/A&gt;   &lt;/B&gt;&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"<A>  <B> </A>   </B>\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "code = \"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "code = \"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "code = \"<A>  <B> </A>   </B>\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/tag-validator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.289Z",
+    "collectedAt": "2026-10-19T18:40:30.825Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,7 +19,7 @@
     {
       "input": "nums = [20,1,15], x = 5",
       "output": "13",
-      "explanation": "Initially, the chocolate types are [0,1,2]. We will buy the 1st&nbsp;type of chocolate at a cost of 1.\nNow, we will perform the operation at a cost of 5, and the types of chocolates will become [1,2,0]. We will buy the 2nd type of chocolate at a cost of 1.\nNow, we will again perform the operation at a cost of 5, and the chocolate types will become [2,0,1]. We will buy the 0th type of chocolate at a cost of 1. \nThus, the total cost will become (1 + 5 + 1 + 5 + 1) = 13. We can prove that this is optimal."
+      "explanation": "Initially, the chocolate types are [0,1,2]. We will buy the 1st type of chocolate at a cost of 1.\nNow, we will perform the operation at a cost of 5, and the types of chocolates will become [1,2,0]. We will buy the 2nd type of chocolate at a cost of 1.\nNow, we will again perform the operation at a cost of 5, and the chocolate types will become [2,0,1]. We will buy the 0th type of chocolate at a cost of 1. \nThus, the total cost will become (1 + 5 + 1 + 5 + 1) = 13. We can prove that this is optimal."
     },
     {
       "input": "nums = [1,2,3], x = 4",
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [20,1,15], x = 5",
+      "input": "[20,1,15]\n5",
       "expectedOutput": "13"
     },
     {
-      "input": "nums = [1,2,3], x = 4",
+      "input": "[1,2,3]\n4",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "[20,1,15]\n5",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[1,2,3]\n4",
+      "expectedOutput": "6"
+    },
+    {
       "input": "nums = [20,1,15], x = 5",
       "expectedOutput": "13"
     },
     {
       "input": "nums = [1,2,3], x = 4",
       "expectedOutput": "6"
-    },
-    {
-      "input": "[20,1,15]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/collecting-chocolates/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.568Z",
+    "collectedAt": "2026-10-19T18:40:14.510Z",
     "sourceUpdatedAt": null
   }
 }

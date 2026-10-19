@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 3",
+      "input": "3\n3",
       "expectedOutput": "\"213\""
     },
     {
-      "input": "n = 4, k = 9",
+      "input": "4\n9",
       "expectedOutput": "\"2314\""
     },
     {
-      "input": "n = 3, k = 1",
+      "input": "3\n1",
       "expectedOutput": "\"123\""
     }
   ],
   "testCases": [
     {
+      "input": "3\n3",
+      "expectedOutput": "\"213\""
+    },
+    {
+      "input": "4\n9",
+      "expectedOutput": "\"2314\""
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "\"123\""
+    },
+    {
       "input": "n = 3, k = 3",
       "expectedOutput": "\"213\""
     },
@@ -78,38 +90,6 @@
     {
       "input": "n = 3, k = 1",
       "expectedOutput": "\"123\""
-    },
-    {
-      "input": "3\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, k = 10",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -121,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/permutation-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:56.503Z",
+    "collectedAt": "2026-10-19T18:40:26.760Z",
     "sourceUpdatedAt": null
   }
 }

@@ -22,12 +22,12 @@
     {
       "input": "mat = [[1,4],[3,2]]",
       "output": "[0,1]",
-      "explanation": "&nbsp;Both 3 and 4 are peak elements so [1,0] and [0,1] are both acceptable answers."
+      "explanation": " Both 3 and 4 are peak elements so [1,0] and [0,1] are both acceptable answers."
     },
     {
       "input": "mat = [[10,20,15],[21,30,14],[7,16,32]]",
       "output": "[1,1]",
-      "explanation": "&nbsp;Both 30 and 32 are peak elements so [1,1] and [2,2] are both acceptable answers."
+      "explanation": " Both 30 and 32 are peak elements so [1,1] and [2,2] are both acceptable answers."
     }
   ],
   "starterCode": {
@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "mat = [[1,4],[3,2]]",
+      "input": "[[1,4],[3,2]]",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "mat = [[10,20,15],[21,30,14],[7,16,32]]",
+      "input": "[[10,20,15],[21,30,14],[7,16,32]]",
       "expectedOutput": "[1,1]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,4],[3,2]]",
+      "expectedOutput": "[0,1]"
+    },
+    {
+      "input": "[[10,20,15],[21,30,14],[7,16,32]]",
+      "expectedOutput": "[1,1]"
+    },
+    {
       "input": "mat = [[1,4],[3,2]]",
       "expectedOutput": "[0,1]"
     },
     {
       "input": "mat = [[10,20,15],[21,30,14],[7,16,32]]",
       "expectedOutput": "[1,1]"
-    },
-    {
-      "input": "[[1,4],[3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[10,20,15],[21,30,14],[7,16,32]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "mat = [[2,5],[4,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-a-peak-element-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:55.549Z",
+    "collectedAt": "2026-10-19T18:40:17.370Z",
     "sourceUpdatedAt": null
   }
 }

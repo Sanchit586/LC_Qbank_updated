@@ -20,12 +20,12 @@
     {
       "input": "piles = [5,4,9], k = 2",
       "output": "12",
-      "explanation": "&nbsp;Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [5,4,5].\n- Apply the operation on pile 0. The resulting piles are [3,4,5].\nThe total number of stones in [3,4,5] is 12."
+      "explanation": " Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [5,4,5].\n- Apply the operation on pile 0. The resulting piles are [3,4,5].\nThe total number of stones in [3,4,5] is 12."
     },
     {
       "input": "piles = [4,3,6,7], k = 3",
       "output": "12",
-      "explanation": "&nbsp;Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [4,3,3,7].\n- Apply the operation on pile 3. The resulting piles are [4,3,3,4].\n- Apply the operation on pile 0. The resulting piles are [2,3,3,4].\nThe total number of stones in [2,3,3,4] is 12."
+      "explanation": " Steps of a possible scenario are:\n- Apply the operation on pile 2. The resulting piles are [4,3,3,7].\n- Apply the operation on pile 3. The resulting piles are [4,3,3,4].\n- Apply the operation on pile 0. The resulting piles are [2,3,3,4].\nThe total number of stones in [2,3,3,4] is 12."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "piles = [5,4,9], k = 2",
+      "input": "[5,4,9]\n2",
       "expectedOutput": "12"
     },
     {
-      "input": "piles = [4,3,6,7], k = 3",
+      "input": "[4,3,6,7]\n3",
       "expectedOutput": "12"
     }
   ],
   "testCases": [
     {
+      "input": "[5,4,9]\n2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[4,3,6,7]\n3",
+      "expectedOutput": "12"
+    },
+    {
       "input": "piles = [5,4,9], k = 2",
       "expectedOutput": "12"
     },
     {
       "input": "piles = [4,3,6,7], k = 3",
       "expectedOutput": "12"
-    },
-    {
-      "input": "[5,4,9]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3,6,7]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-stones-to-minimize-the-total/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:09.981Z",
+    "collectedAt": "2026-10-19T18:40:27.597Z",
     "sourceUpdatedAt": null
   }
 }

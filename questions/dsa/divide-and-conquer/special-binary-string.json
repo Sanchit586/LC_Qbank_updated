@@ -18,13 +18,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;11011000&quot;",
-      "output": "&quot;11100100&quot;",
-      "explanation": "The strings &quot;10&quot; [occuring at s[1]] and &quot;1100&quot; [at s[3]] are swapped.\nThis is the lexicographically largest string possible after some number of swaps."
+      "input": "s = \"11011000\"",
+      "output": "\"11100100\"",
+      "explanation": "The strings \"10\" [occuring at s[1]] and \"1100\" [at s[3]] are swapped.\nThis is the lexicographically largest string possible after some number of swaps."
     },
     {
-      "input": "s = &quot;10&quot;",
-      "output": "&quot;10&quot;",
+      "input": "s = \"10\"",
+      "output": "\"10\"",
       "explanation": null
     }
   ],
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;11011000&quot;",
-      "expectedOutput": "&quot;11100100&quot;"
+      "input": "\"11011000\"",
+      "expectedOutput": "\"11100100\""
     },
     {
-      "input": "s = &quot;10&quot;",
-      "expectedOutput": "&quot;10&quot;"
+      "input": "\"10\"",
+      "expectedOutput": "\"10\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;11011000&quot;",
-      "expectedOutput": "&quot;11100100&quot;"
-    },
-    {
-      "input": "s = &quot;10&quot;",
-      "expectedOutput": "&quot;10&quot;"
-    },
-    {
       "input": "\"11011000\"",
-      "expectedOutput": null
+      "expectedOutput": "\"11100100\""
     },
     {
       "input": "\"10\"",
-      "expectedOutput": null
+      "expectedOutput": "\"10\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"11011000\"",
+      "expectedOutput": "\"11100100\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"10\"",
+      "expectedOutput": "\"10\""
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/special-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:34.455Z",
+    "collectedAt": "2026-10-19T18:40:30.056Z",
     "sourceUpdatedAt": null
   }
 }

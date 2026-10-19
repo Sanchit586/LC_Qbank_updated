@@ -19,12 +19,12 @@
     {
       "input": "x = 2, y = 5, z = 1",
       "output": "12",
-      "explanation": "We can concatenate the strings &quot;BB&quot;, &quot;AA&quot;, &quot;BB&quot;, &quot;AA&quot;, &quot;BB&quot;, and &quot;AB&quot; in that order. Then, our new string is &quot;BBAABBAABBAB&quot;. \nThat string has length 12, and we can show that it is impossible to construct a string of longer length."
+      "explanation": "We can concatenate the strings \"BB\", \"AA\", \"BB\", \"AA\", \"BB\", and \"AB\" in that order. Then, our new string is \"BBAABBAABBAB\". \nThat string has length 12, and we can show that it is impossible to construct a string of longer length."
     },
     {
       "input": "x = 3, y = 2, z = 2",
       "output": "14",
-      "explanation": "We can concatenate the strings &quot;AB&quot;, &quot;AB&quot;, &quot;AA&quot;, &quot;BB&quot;, &quot;AA&quot;, &quot;BB&quot;, and &quot;AA&quot; in that order. Then, our new string is &quot;ABABAABBAABBAA&quot;. \nThat string has length 14, and we can show that it is impossible to construct a string of longer length."
+      "explanation": "We can concatenate the strings \"AB\", \"AB\", \"AA\", \"BB\", \"AA\", \"BB\", and \"AA\" in that order. Then, our new string is \"ABABAABBAABBAA\". \nThat string has length 14, and we can show that it is impossible to construct a string of longer length."
     }
   ],
   "starterCode": {
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "x = 2, y = 5, z = 1",
+      "input": "2\n5\n1",
       "expectedOutput": "12"
     },
     {
-      "input": "x = 3, y = 2, z = 2",
+      "input": "3\n2\n2",
       "expectedOutput": "14"
     }
   ],
   "testCases": [
     {
+      "input": "2\n5\n1",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "3\n2\n2",
+      "expectedOutput": "14"
+    },
+    {
       "input": "x = 2, y = 5, z = 1",
       "expectedOutput": "12"
     },
     {
       "input": "x = 3, y = 2, z = 2",
       "expectedOutput": "14"
-    },
-    {
-      "input": "2\n5\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "x = 3, y = 6, z = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-the-longest-new-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:03.762Z",
+    "collectedAt": "2026-10-19T18:40:14.762Z",
     "sourceUpdatedAt": null
   }
 }

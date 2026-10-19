@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Customer table:\n+-------------+-------------+\n| customer_id | product_key |\n+-------------+-------------+\n| 1           | 5           |\n| 2           | 6           |\n| 3           | 5           |\n| 3           | 6           |\n| 1           | 6           |\n+-------------+-------------+\nProduct table:\n+-------------+\n| product_key |\n+-------------+\n| 5           |\n| 6           |\n+-------------+",
+      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
       "expectedOutput": "+-------------+\n| customer_id |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Customer table:\n+-------------+-------------+\n| customer_id | product_key |\n+-------------+-------------+\n| 1           | 5           |\n| 2           | 6           |\n| 3           | 5           |\n| 3           | 6           |\n| 1           | 6           |\n+-------------+-------------+\nProduct table:\n+-------------+\n| product_key |\n+-------------+\n| 5           |\n| 6           |\n+-------------+",
+      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
       "expectedOutput": "+-------------+\n| customer_id |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     },
     {
-      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5],[2,6],[3,5],[3,6],[1,6]],\"Product\":[[5],[6]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[],\"Product\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,5]],\"Product\":[[5]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Customer\":[\"customer_id\",\"product_key\"],\"Product\":[\"product_key\"]},\"rows\":{\"Customer\":[[1,null],[2,null],[3,null],[3,null],[1,null]],\"Product\":[[null],[null]]}}",
-      "expectedOutput": null
+      "input": "Customer table:\n+-------------+-------------+\n| customer_id | product_key |\n+-------------+-------------+\n| 1           | 5           |\n| 2           | 6           |\n| 3           | 5           |\n| 3           | 6           |\n| 1           | 6           |\n+-------------+-------------+\nProduct table:\n+-------------+\n| product_key |\n+-------------+\n| 5           |\n| 6           |\n+-------------+",
+      "expectedOutput": "+-------------+\n| customer_id |\n+-------------+\n| 1           |\n| 3           |\n+-------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Customer (customer_id int, product_key int)\n\nCreate table Product (product_key int)\n\nTruncate table Customer\n\nTruncate table Product",
@@ -69,7 +57,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/customers-who-bought-all-products/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:31.464Z",
+    "collectedAt": "2026-10-19T18:40:16.118Z",
     "sourceUpdatedAt": null
   }
 }

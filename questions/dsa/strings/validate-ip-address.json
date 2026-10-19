@@ -14,18 +14,18 @@
   ],
   "examples": [
     {
-      "input": "queryIP = &quot;172.16.254.1&quot;",
-      "output": "&quot;IPv4&quot;",
-      "explanation": "This is a valid IPv4 address, return &quot;IPv4&quot;."
+      "input": "queryIP = \"172.16.254.1\"",
+      "output": "\"IPv4\"",
+      "explanation": "This is a valid IPv4 address, return \"IPv4\"."
     },
     {
-      "input": "queryIP = &quot;2001:0db8:85a3:0:0:8A2E:0370:7334&quot;",
-      "output": "&quot;IPv6&quot;",
-      "explanation": "This is a valid IPv6 address, return &quot;IPv6&quot;."
+      "input": "queryIP = \"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
+      "output": "\"IPv6\"",
+      "explanation": "This is a valid IPv6 address, return \"IPv6\"."
     },
     {
-      "input": "queryIP = &quot;256.256.256.256&quot;",
-      "output": "&quot;Neither&quot;",
+      "input": "queryIP = \"256.256.256.256\"",
+      "output": "\"Neither\"",
       "explanation": "This is neither a IPv4 address nor a IPv6 address."
     }
   ],
@@ -52,98 +52,42 @@
   },
   "publicTests": [
     {
-      "input": "queryIP = &quot;172.16.254.1&quot;",
-      "expectedOutput": "&quot;IPv4&quot;"
+      "input": "\"172.16.254.1\"",
+      "expectedOutput": "\"IPv4\""
     },
     {
-      "input": "queryIP = &quot;2001:0db8:85a3:0:0:8A2E:0370:7334&quot;",
-      "expectedOutput": "&quot;IPv6&quot;"
+      "input": "\"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
+      "expectedOutput": "\"IPv6\""
     },
     {
-      "input": "queryIP = &quot;256.256.256.256&quot;",
-      "expectedOutput": "&quot;Neither&quot;"
+      "input": "\"256.256.256.256\"",
+      "expectedOutput": "\"Neither\""
     }
   ],
   "testCases": [
     {
-      "input": "queryIP = &quot;172.16.254.1&quot;",
-      "expectedOutput": "&quot;IPv4&quot;"
-    },
-    {
-      "input": "queryIP = &quot;2001:0db8:85a3:0:0:8A2E:0370:7334&quot;",
-      "expectedOutput": "&quot;IPv6&quot;"
-    },
-    {
-      "input": "queryIP = &quot;256.256.256.256&quot;",
-      "expectedOutput": "&quot;Neither&quot;"
-    },
-    {
       "input": "\"172.16.254.1\"",
-      "expectedOutput": null
+      "expectedOutput": "\"IPv4\""
     },
     {
       "input": "\"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
-      "expectedOutput": null
+      "expectedOutput": "\"IPv6\""
     },
     {
       "input": "\"256.256.256.256\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Neither\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "queryIP = \"172.16.254.1\"",
+      "expectedOutput": "\"IPv4\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "queryIP = \"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
+      "expectedOutput": "\"IPv6\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "queryIP = \"256.256.256.256\"",
+      "expectedOutput": "\"Neither\""
     }
   ],
   "sqlSchema": null,
@@ -155,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/validate-ip-address/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:10.282Z",
+    "collectedAt": "2026-10-19T18:40:31.564Z",
     "sourceUpdatedAt": null
   }
 }

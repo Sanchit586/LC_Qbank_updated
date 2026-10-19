@@ -16,7 +16,7 @@
     {
       "input": "n = 6",
       "output": "true",
-      "explanation": "6 = 2 &times; 3"
+      "explanation": "6 = 2 × 3"
     },
     {
       "input": "n = 1",
@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 6",
+      "input": "6",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 14",
+      "input": "14",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "6",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "false"
+    },
+    {
       "input": "n = 6",
       "expectedOutput": "true"
     },
@@ -76,74 +88,6 @@
     {
       "input": "n = 14",
       "expectedOutput": "false"
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "14",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -155,7 +99,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/ugly-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:06.342Z",
+    "collectedAt": "2026-10-19T18:40:31.344Z",
     "sourceUpdatedAt": null
   }
 }

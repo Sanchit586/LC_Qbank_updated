@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "student_data:\n[\n  [1, 15],\n  [2, 11],\n  [3, 11],\n  [4, 20]\n]",
+      "input": "[[1,15],[2,11],[3,11],[4,20]]",
       "expectedOutput": "+------------+-----+\n| student_id | age |\n+------------+-----+\n| 1          | 15  |\n| 2          | 11  |\n| 3          | 11  |\n| 4          | 20  |\n+------------+-----+"
     }
   ],
   "testCases": [
     {
-      "input": "student_data:\n[\n  [1, 15],\n  [2, 11],\n  [3, 11],\n  [4, 20]\n]",
+      "input": "[[1,15],[2,11],[3,11],[4,20]]",
       "expectedOutput": "+------------+-----+\n| student_id | age |\n+------------+-----+\n| 1          | 15  |\n| 2          | 11  |\n| 3          | 11  |\n| 4          | 20  |\n+------------+-----+"
     },
     {
-      "input": "[[1,15],[2,11],[3,11],[4,20]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "student_data:\n[\n  [2, 16],\n  [3, 12],\n  [4, 12],\n  [5, 21]\n]",
-      "expectedOutput": null
+      "input": "student_data:\n[\n  [1, 15],\n  [2, 11],\n  [3, 11],\n  [4, 20]\n]",
+      "expectedOutput": "+------------+-----+\n| student_id | age |\n+------------+-----+\n| 1          | 15  |\n| 2          | 11  |\n| 3          | 11  |\n| 4          | 20  |\n+------------+-----+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/create-a-dataframe-from-list/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:30.262Z",
+    "collectedAt": "2026-10-19T18:40:16.055Z",
     "sourceUpdatedAt": null
   }
 }

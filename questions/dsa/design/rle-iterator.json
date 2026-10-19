@@ -19,7 +19,13 @@
     "1 <= n <= 109",
     "At most 1000 calls will be made to next."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"RLEIterator\", \"next\", \"next\", \"next\", \"next\"]\n[[[3, 8, 0, 9, 2, 5]], [2], [1], [1], [2]]",
+      "output": "[null, 8, 8, 5, -1]",
+      "explanation": "RLEIterator rLEIterator = new RLEIterator([3, 8, 0, 9, 2, 5]); // This maps to the sequence [8,8,8,5,5].\nrLEIterator.next(2); // exhausts 2 terms of the sequence, returning 8. The remaining sequence is now [8, 5, 5].\nrLEIterator.next(1); // exhausts 1 term of the sequence, returning 8. The remaining sequence is now [5, 5].\nrLEIterator.next(1); // exhausts 1 term of the sequence, returning 5. The remaining sequence is now [5].\nrLEIterator.next(2); // exhausts 2 terms, returning -1. This is because the first term exhausted was 5,\nbut the second term did not exist. Since the last term exhausted does not exist, we return -1."
+    }
+  ],
   "starterCode": {
     "cpp": "class RLEIterator {\npublic:\n    RLEIterator(vector<int>& encoding) {\n        \n    }\n    \n    int next(int n) {\n        \n    }\n};\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * RLEIterator* obj = new RLEIterator(encoding);\n * int param_1 = obj->next(n);\n */",
     "java": "class RLEIterator {\n\n    public RLEIterator(int[] encoding) {\n        \n    }\n    \n    public int next(int n) {\n        \n    }\n}\n\n/**\n * Your RLEIterator object will be instantiated and called as such:\n * RLEIterator obj = new RLEIterator(encoding);\n * int param_1 = obj.next(n);\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[3,8,0,9,2,5]],[2],[1],[1],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 8, 8, 5, -1]"
     }
   ],
   "testCases": [
     {
       "input": "[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[3,8,0,9,2,5]],[2],[1],[1],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 8, 8, 5, -1]"
     },
     {
-      "input": "[\"RLEIterator\",\"next\",\"next\",\"next\",\"next\"]\n[[[4,9,1,10,3,6]],[3],[2],[2],[3]]",
-      "expectedOutput": null
+      "input": "[\"RLEIterator\", \"next\", \"next\", \"next\", \"next\"]\n[[[3, 8, 0, 9, 2, 5]], [2], [1], [1], [2]]",
+      "expectedOutput": "[null, 8, 8, 5, -1]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rle-iterator/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:14.113Z",
+    "collectedAt": "2026-10-19T18:40:27.954Z",
     "sourceUpdatedAt": null
   }
 }

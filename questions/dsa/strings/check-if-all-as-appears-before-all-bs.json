@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaabbb&quot;",
+      "input": "s = \"aaabbb\"",
       "output": "true",
-      "explanation": "The &#39;a&#39;s are at indices 0, 1, and 2, while the &#39;b&#39;s are at indices 3, 4, and 5.\nHence, every &#39;a&#39; appears before every &#39;b&#39; and we return true."
+      "explanation": "The 'a's are at indices 0, 1, and 2, while the 'b's are at indices 3, 4, and 5.\nHence, every 'a' appears before every 'b' and we return true."
     },
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "s = \"abab\"",
       "output": "false",
-      "explanation": "There is an &#39;a&#39; at index 2 and a &#39;b&#39; at index 1.\nHence, not every &#39;a&#39; appears before every &#39;b&#39; and we return false."
+      "explanation": "There is an 'a' at index 2 and a 'b' at index 1.\nHence, not every 'a' appears before every 'b' and we return false."
     },
     {
-      "input": "s = &quot;bbb&quot;",
+      "input": "s = \"bbb\"",
       "output": "true",
-      "explanation": "There are no &#39;a&#39;s, hence, every &#39;a&#39; appears before every &#39;b&#39; and we return true."
+      "explanation": "There are no 'a's, hence, every 'a' appears before every 'b' and we return true."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaabbb&quot;",
+      "input": "\"aaabbb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;abab&quot;",
+      "input": "\"abab\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;bbb&quot;",
+      "input": "\"bbb\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaabbb&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;abab&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;bbb&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"aaabbb\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"abab\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"bbb\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aaabbb\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abab\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"bbb\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-all-as-appears-before-all-bs/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:50.594Z",
+    "collectedAt": "2026-10-19T18:40:14.075Z",
     "sourceUpdatedAt": null
   }
 }

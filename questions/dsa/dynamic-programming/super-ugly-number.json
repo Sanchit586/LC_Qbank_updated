@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 12, primes = [2,7,13,19]",
+      "input": "12\n[2,7,13,19]",
       "expectedOutput": "32"
     },
     {
-      "input": "n = 1, primes = [2,3,5]",
+      "input": "1\n[2,3,5]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "12\n[2,7,13,19]",
+      "expectedOutput": "32"
+    },
+    {
+      "input": "1\n[2,3,5]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 12, primes = [2,7,13,19]",
       "expectedOutput": "32"
     },
     {
       "input": "n = 1, primes = [2,3,5]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "12\n[2,7,13,19]",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n[2,3,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 13, primes = [3,8,14,20]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/super-ugly-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:53.957Z",
+    "collectedAt": "2026-10-19T18:40:30.774Z",
     "sourceUpdatedAt": null
   }
 }

@@ -22,7 +22,7 @@
   ],
   "examples": [
     {
-      "input": "[&quot;SnapshotArray&quot;,&quot;set&quot;,&quot;snap&quot;,&quot;set&quot;,&quot;get&quot;]\n[[3],[0,5],[],[0,6],[0,0]]",
+      "input": "[\"SnapshotArray\",\"set\",\"snap\",\"set\",\"get\"]\n[[3],[0,5],[],[0,6],[0,0]]",
       "output": "[null,null,0,null,5]",
       "explanation": "SnapshotArray snapshotArr = new SnapshotArray(3); // set the length to be 3\nsnapshotArr.set(0,5);  // Set array[0] = 5\nsnapshotArr.snap();  // Take a snapshot, return snap_id = 0\nsnapshotArr.set(0,6);\nsnapshotArr.get(0,0);  // Get the value of array[0] with snap_id = 0, return 5"
     }
@@ -50,22 +50,14 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;SnapshotArray&quot;,&quot;set&quot;,&quot;snap&quot;,&quot;set&quot;,&quot;get&quot;]\n[[3],[0,5],[],[0,6],[0,0]]",
+      "input": "[\"SnapshotArray\",\"set\",\"snap\",\"set\",\"get\"]\n[[3],[0,5],[],[0,6],[0,0]]",
       "expectedOutput": "[null,null,0,null,5]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;SnapshotArray&quot;,&quot;set&quot;,&quot;snap&quot;,&quot;set&quot;,&quot;get&quot;]\n[[3],[0,5],[],[0,6],[0,0]]",
-      "expectedOutput": "[null,null,0,null,5]"
-    },
-    {
       "input": "[\"SnapshotArray\",\"set\",\"snap\",\"set\",\"get\"]\n[[3],[0,5],[],[0,6],[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;SnapshotArray&quot;,&quot;set&quot;,&quot;snap&quot;,&quot;set&quot;,&quot;get&quot;]\n[[4],[1,6],[],[1,7],[1,1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,0,null,5]"
     }
   ],
   "sqlSchema": null,
@@ -79,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/snapshot-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:32.961Z",
+    "collectedAt": "2026-10-19T18:40:29.899Z",
     "sourceUpdatedAt": null
   }
 }

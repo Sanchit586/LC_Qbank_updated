@@ -20,18 +20,18 @@
   ],
   "examples": [
     {
-      "input": "equation = &quot;x+5-3+x=6+x-2&quot;",
-      "output": "&quot;x=2&quot;",
+      "input": "equation = \"x+5-3+x=6+x-2\"",
+      "output": "\"x=2\"",
       "explanation": null
     },
     {
-      "input": "equation = &quot;x=x&quot;",
-      "output": "&quot;Infinite solutions&quot;",
+      "input": "equation = \"x=x\"",
+      "output": "\"Infinite solutions\"",
       "explanation": null
     },
     {
-      "input": "equation = &quot;2x=x&quot;",
-      "output": "&quot;x=0&quot;",
+      "input": "equation = \"2x=x\"",
+      "output": "\"x=0\"",
       "explanation": null
     }
   ],
@@ -58,98 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "equation = &quot;x+5-3+x=6+x-2&quot;",
-      "expectedOutput": "&quot;x=2&quot;"
+      "input": "\"x+5-3+x=6+x-2\"",
+      "expectedOutput": "\"x=2\""
     },
     {
-      "input": "equation = &quot;x=x&quot;",
-      "expectedOutput": "&quot;Infinite solutions&quot;"
+      "input": "\"x=x\"",
+      "expectedOutput": "\"Infinite solutions\""
     },
     {
-      "input": "equation = &quot;2x=x&quot;",
-      "expectedOutput": "&quot;x=0&quot;"
+      "input": "\"2x=x\"",
+      "expectedOutput": "\"x=0\""
     }
   ],
   "testCases": [
     {
-      "input": "equation = &quot;x+5-3+x=6+x-2&quot;",
-      "expectedOutput": "&quot;x=2&quot;"
-    },
-    {
-      "input": "equation = &quot;x=x&quot;",
-      "expectedOutput": "&quot;Infinite solutions&quot;"
-    },
-    {
-      "input": "equation = &quot;2x=x&quot;",
-      "expectedOutput": "&quot;x=0&quot;"
-    },
-    {
       "input": "\"x+5-3+x=6+x-2\"",
-      "expectedOutput": null
+      "expectedOutput": "\"x=2\""
     },
     {
       "input": "\"x=x\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Infinite solutions\""
     },
     {
       "input": "\"2x=x\"",
-      "expectedOutput": null
+      "expectedOutput": "\"x=0\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "equation = \"x+5-3+x=6+x-2\"",
+      "expectedOutput": "\"x=2\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "equation = \"x=x\"",
+      "expectedOutput": "\"Infinite solutions\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "equation = \"2x=x\"",
+      "expectedOutput": "\"x=0\""
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/solve-the-equation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:32.967Z",
+    "collectedAt": "2026-10-19T18:40:29.903Z",
     "sourceUpdatedAt": null
   }
 }

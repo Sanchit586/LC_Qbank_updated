@@ -15,12 +15,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;PPALLP&quot;",
+      "input": "s = \"PPALLP\"",
       "output": "true",
       "explanation": "The student has fewer than 2 absences and was never late 3 or more consecutive days."
     },
     {
-      "input": "s = &quot;PPALLL&quot;",
+      "input": "s = \"PPALLL\"",
       "output": "false",
       "explanation": "The student was late 3 consecutive days in the last 3 days, so is not eligible for the award."
     }
@@ -48,94 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;PPALLP&quot;",
+      "input": "\"PPALLP\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;PPALLL&quot;",
+      "input": "\"PPALLL\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;PPALLP&quot;",
+      "input": "\"PPALLP\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;PPALLL&quot;",
+      "input": "\"PPALLL\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"PPALLP\"",
-      "expectedOutput": null
+      "input": "s = \"PPALLP\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"PPALLL\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"PPALLL\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -147,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/student-attendance-record-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.541Z",
+    "collectedAt": "2026-10-19T18:40:30.360Z",
     "sourceUpdatedAt": null
   }
 }

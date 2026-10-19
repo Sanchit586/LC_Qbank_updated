@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[2,1,3],[6,5,4],[7,8,9]]",
+      "input": "[[2,1,3],[6,5,4],[7,8,9]]",
       "expectedOutput": "13"
     },
     {
-      "input": "matrix = [[-19,57],[-40,-5]]",
+      "input": "[[-19,57],[-40,-5]]",
       "expectedOutput": "-59"
     }
   ],
   "testCases": [
     {
+      "input": "[[2,1,3],[6,5,4],[7,8,9]]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[-19,57],[-40,-5]]",
+      "expectedOutput": "-59"
+    },
+    {
       "input": "matrix = [[2,1,3],[6,5,4],[7,8,9]]",
       "expectedOutput": "13"
     },
     {
       "input": "matrix = [[-19,57],[-40,-5]]",
       "expectedOutput": "-59"
-    },
-    {
-      "input": "[[2,1,3],[6,5,4],[7,8,9]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[-19,57],[-40,-5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[3,2,4],[7,6,5],[8,9,10]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-falling-path-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:57.404Z",
+    "collectedAt": "2026-10-19T18:40:23.916Z",
     "sourceUpdatedAt": null
   }
 }

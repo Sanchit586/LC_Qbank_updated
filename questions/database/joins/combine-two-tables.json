@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Person table:\n+----------+----------+-----------+\n| personId | lastName | firstName |\n+----------+----------+-----------+\n| 1        | Wang     | Allen     |\n| 2        | Alice    | Bob       |\n+----------+----------+-----------+\nAddress table:\n+-----------+----------+---------------+------------+\n| addressId | personId | city          | state      |\n+-----------+----------+---------------+------------+\n| 1         | 2        | New York City | New York   |\n| 2         | 3        | Leetcode      | California |\n+-----------+----------+---------------+------------+",
+      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[[1,\"Wang\",\"Allen\"],[2,\"Alice\",\"Bob\"]],\"Address\":[[1,2,\"New York City\",\"New York\"],[2,3,\"Leetcode\",\"California\"]]}}",
       "expectedOutput": "+-----------+----------+---------------+----------+\n| firstName | lastName | city          | state    |\n+-----------+----------+---------------+----------+\n| Allen     | Wang     | Null          | Null     |\n| Bob       | Alice    | New York City | New York |\n+-----------+----------+---------------+----------+"
     }
   ],
   "testCases": [
     {
-      "input": "Person table:\n+----------+----------+-----------+\n| personId | lastName | firstName |\n+----------+----------+-----------+\n| 1        | Wang     | Allen     |\n| 2        | Alice    | Bob       |\n+----------+----------+-----------+\nAddress table:\n+-----------+----------+---------------+------------+\n| addressId | personId | city          | state      |\n+-----------+----------+---------------+------------+\n| 1         | 2        | New York City | New York   |\n| 2         | 3        | Leetcode      | California |\n+-----------+----------+---------------+------------+",
+      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[[1,\"Wang\",\"Allen\"],[2,\"Alice\",\"Bob\"]],\"Address\":[[1,2,\"New York City\",\"New York\"],[2,3,\"Leetcode\",\"California\"]]}}",
       "expectedOutput": "+-----------+----------+---------------+----------+\n| firstName | lastName | city          | state    |\n+-----------+----------+---------------+----------+\n| Allen     | Wang     | Null          | Null     |\n| Bob       | Alice    | New York City | New York |\n+-----------+----------+---------------+----------+"
     },
     {
-      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[[1,\"Wang\",\"Allen\"],[2,\"Alice\",\"Bob\"]],\"Address\":[[1,2,\"New York City\",\"New York\"],[2,3,\"Leetcode\",\"California\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[],\"Address\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[[1,\"Wang\",\"Allen\"]],\"Address\":[[1,2,\"New York City\",\"New York\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"personId\",\"lastName\",\"firstName\"],\"Address\":[\"addressId\",\"personId\",\"city\",\"state\"]},\"rows\":{\"Person\":[[1,\"Wang\",null],[2,\"Alice\",null]],\"Address\":[[1,2,\"New York City\",null],[2,3,\"Leetcode\",null]]}}",
-      "expectedOutput": null
+      "input": "Person table:\n+----------+----------+-----------+\n| personId | lastName | firstName |\n+----------+----------+-----------+\n| 1        | Wang     | Allen     |\n| 2        | Alice    | Bob       |\n+----------+----------+-----------+\nAddress table:\n+-----------+----------+---------------+------------+\n| addressId | personId | city          | state      |\n+-----------+----------+---------------+------------+\n| 1         | 2        | New York City | New York   |\n| 2         | 3        | Leetcode      | California |\n+-----------+----------+---------------+------------+",
+      "expectedOutput": "+-----------+----------+---------------+----------+\n| firstName | lastName | city          | state    |\n+-----------+----------+---------------+----------+\n| Allen     | Wang     | Null          | Null     |\n| Bob       | Alice    | New York City | New York |\n+-----------+----------+---------------+----------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Person (personId int, firstName varchar(255), lastName varchar(255))\n\nCreate table If Not Exists Address (addressId int, personId int, city varchar(255), state varchar(255))\n\nTruncate table Person\n\nTruncate table Address",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/combine-two-tables/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.631Z",
+    "collectedAt": "2026-10-19T18:40:14.549Z",
     "sourceUpdatedAt": null
   }
 }

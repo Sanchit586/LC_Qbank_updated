@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Piper   | 4548   |\n| Grace   | 28150  |\n| Georgia | 1103   |\n| Willow  | 6593   |\n| Finn    | 74576  |\n| Thomas  | 24433  |\n+---------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Piper\",4548],[\"Grace\",28150],[\"Georgia\",1103],[\"Willow\",6593],[\"Finn\",74576],[\"Thomas\",24433]]}}",
       "expectedOutput": "+---------+--------+--------+\n| name    | salary | bonus  |\n+---------+--------+--------+\n| Piper   | 4548   | 9096   |\n| Grace   | 28150  | 56300  |\n| Georgia | 1103   | 2206   |\n| Willow  | 6593   | 13186  |\n| Finn    | 74576  | 149152 |\n| Thomas  | 24433  | 48866  |\n+---------+--------+--------+"
     }
   ],
   "testCases": [
     {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Piper   | 4548   |\n| Grace   | 28150  |\n| Georgia | 1103   |\n| Willow  | 6593   |\n| Finn    | 74576  |\n| Thomas  | 24433  |\n+---------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Piper\",4548],[\"Grace\",28150],[\"Georgia\",1103],[\"Willow\",6593],[\"Finn\",74576],[\"Thomas\",24433]]}}",
       "expectedOutput": "+---------+--------+--------+\n| name    | salary | bonus  |\n+---------+--------+--------+\n| Piper   | 4548   | 9096   |\n| Grace   | 28150  | 56300  |\n| Georgia | 1103   | 2206   |\n| Willow  | 6593   | 13186  |\n| Finn    | 74576  | 149152 |\n| Thomas  | 24433  | 48866  |\n+---------+--------+--------+"
     },
     {
-      "input": "{\"headers\":{\"employees\":[\"name\",\"salary\"]},\"rows\":{\"employees\":[[\"Piper\",4548],[\"Grace\",28150],[\"Georgia\",1103],[\"Willow\",6593],[\"Finn\",74576],[\"Thomas\",24433]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Piper   | 4549   |\n| Grace   | 28151  |\n| Georgia | 1104   |\n| Willow  | 6594   |\n| Finn    | 74577  |\n| Thomas  | 24434  |\n+---------+--------+",
-      "expectedOutput": null
+      "input": "DataFrame employees\n+---------+--------+\n| name    | salary |\n+---------+--------+\n| Piper   | 4548   |\n| Grace   | 28150  |\n| Georgia | 1103   |\n| Willow  | 6593   |\n| Finn    | 74576  |\n| Thomas  | 24433  |\n+---------+--------+",
+      "expectedOutput": "+---------+--------+--------+\n| name    | salary | bonus  |\n+---------+--------+--------+\n| Piper   | 4548   | 9096   |\n| Grace   | 28150  | 56300  |\n| Georgia | 1103   | 2206   |\n| Willow  | 6593   | 13186  |\n| Finn    | 74576  | 149152 |\n| Thomas  | 24433  | 48866  |\n+---------+--------+--------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/create-a-new-column/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:30.278Z",
+    "collectedAt": "2026-10-19T18:40:16.059Z",
     "sourceUpdatedAt": null
   }
 }

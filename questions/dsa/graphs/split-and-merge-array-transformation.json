@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [3,1,2], nums2 = [1,2,3]",
+      "input": "[3,1,2]\n[1,2,3]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums1 = [1,1,2,3,4,5], nums2 = [5,4,3,2,1,1]",
+      "input": "[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[3,1,2]\n[1,2,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "nums1 = [3,1,2], nums2 = [1,2,3]",
       "expectedOutput": "1"
     },
     {
       "input": "nums1 = [1,1,2,3,4,5], nums2 = [5,4,3,2,1,1]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[3,1,2]\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,2,3,4,5]\n[5,4,3,2,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [4,2,3], nums3 = [2,3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/split-and-merge-array-transformation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:46.557Z",
+    "collectedAt": "2026-10-19T18:40:30.106Z",
     "sourceUpdatedAt": null
   }
 }

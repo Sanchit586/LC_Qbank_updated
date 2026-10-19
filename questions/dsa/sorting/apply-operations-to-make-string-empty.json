@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabcbbca&quot;",
-      "output": "&quot;ba&quot;",
+      "input": "s = \"aabcbbca\"",
+      "output": "\"ba\"",
       "explanation": "Explained in the statement."
     },
     {
-      "input": "s = &quot;abcd&quot;",
-      "output": "&quot;abcd&quot;",
-      "explanation": "We do the following operation:\n- Remove the underlined characters s = &quot;abcd&quot;. The resulting string is s = &quot;&quot;.\nThe string just before the last operation is &quot;abcd&quot;."
+      "input": "s = \"abcd\"",
+      "output": "\"abcd\"",
+      "explanation": "We do the following operation:\n- Remove the underlined characters s = \"abcd\". The resulting string is s = \"\".\nThe string just before the last operation is \"abcd\"."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabcbbca&quot;",
-      "expectedOutput": "&quot;ba&quot;"
+      "input": "\"aabcbbca\"",
+      "expectedOutput": "\"ba\""
     },
     {
-      "input": "s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
+      "input": "\"abcd\"",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabcbbca&quot;",
-      "expectedOutput": "&quot;ba&quot;"
-    },
-    {
-      "input": "s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;abcd&quot;"
-    },
-    {
       "input": "\"aabcbbca\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ba\""
     },
     {
       "input": "\"abcd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aabcbbca\"",
+      "expectedOutput": "\"ba\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcd\"",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/apply-operations-to-make-string-empty/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:23.821Z",
+    "collectedAt": "2026-10-19T18:40:13.232Z",
     "sourceUpdatedAt": null
   }
 }

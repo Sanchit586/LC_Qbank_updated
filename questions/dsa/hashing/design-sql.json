@@ -26,14 +26,14 @@
   ],
   "examples": [
     {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;exp&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;exp&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]],[&quot;two&quot;],[&quot;two&quot;,1],[&quot;two&quot;,2,2],[&quot;two&quot;]]",
-      "output": "[null,true,&quot;third&quot;,true,[&quot;1,first,second,third&quot;,&quot;2,fourth,fifth,sixth&quot;],null,&quot;fifth&quot;,[&quot;2,fourth,fifth,sixth&quot;]]",
-      "explanation": "// Creates three tables.\nSQL sql = new SQL([&quot;one&quot;, &quot;two&quot;, &quot;three&quot;], [2, 3, 1]);\n\n// Adds a row to the table &quot;two&quot; with id 1. Returns True.\nsql.ins(&quot;two&quot;, [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;]);\n\n// Returns the value &quot;third&quot; from the third column\n// in the row with id 1 of the table &quot;two&quot;.\nsql.sel(&quot;two&quot;, 1, 3);\n\n// Adds another row to the table &quot;two&quot; with id 2. Returns True.\nsql.ins(&quot;two&quot;, [&quot;fourth&quot;, &quot;fifth&quot;, &quot;sixth&quot;]);\n\n// Exports the rows of the table &quot;two&quot;.\n// Currently, the table has 2 rows with ids 1 and 2.\nsql.exp(&quot;two&quot;);\n\n// Removes the first row of the table &quot;two&quot;. Note that the second row\n// will still have the id 2.\nsql.rmv(&quot;two&quot;, 1);\n\n// Returns the value &quot;fifth&quot; from the second column\n// in the row with id 2 of the table &quot;two&quot;.\nsql.sel(&quot;two&quot;, 2, 2);\n\n// Exports the rows of the table &quot;two&quot;.\n// Currently, the table has 1 row with id 2.\nsql.exp(&quot;two&quot;);"
+      "input": "[\"SQL\",\"ins\",\"sel\",\"ins\",\"exp\",\"rmv\",\"sel\",\"exp\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]],[\"two\"],[\"two\",1],[\"two\",2,2],[\"two\"]]",
+      "output": "[null,true,\"third\",true,[\"1,first,second,third\",\"2,fourth,fifth,sixth\"],null,\"fifth\",[\"2,fourth,fifth,sixth\"]]",
+      "explanation": "// Creates three tables.\nSQL sql = new SQL([\"one\", \"two\", \"three\"], [2, 3, 1]);\n\n// Adds a row to the table \"two\" with id 1. Returns True.\nsql.ins(\"two\", [\"first\", \"second\", \"third\"]);\n\n// Returns the value \"third\" from the third column\n// in the row with id 1 of the table \"two\".\nsql.sel(\"two\", 1, 3);\n\n// Adds another row to the table \"two\" with id 2. Returns True.\nsql.ins(\"two\", [\"fourth\", \"fifth\", \"sixth\"]);\n\n// Exports the rows of the table \"two\".\n// Currently, the table has 2 rows with ids 1 and 2.\nsql.exp(\"two\");\n\n// Removes the first row of the table \"two\". Note that the second row\n// will still have the id 2.\nsql.rmv(\"two\", 1);\n\n// Returns the value \"fifth\" from the second column\n// in the row with id 2 of the table \"two\".\nsql.sel(\"two\", 2, 2);\n\n// Exports the rows of the table \"two\".\n// Currently, the table has 1 row with id 2.\nsql.exp(\"two\");"
     },
     {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;ins&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,1],[&quot;two&quot;,1,2],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;]],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]]]",
-      "output": "[null,true,&quot;third&quot;,null,&quot;&lt;null&gt;&quot;,false,true]",
-      "explanation": "// Creates three tables.\nSQL sQL = new SQL([&quot;one&quot;, &quot;two&quot;, &quot;three&quot;], [2, 3, 1]); \n\n// Adds a row to the table &quot;two&quot; with id 1. Returns True. \nsQL.ins(&quot;two&quot;, [&quot;first&quot;, &quot;second&quot;, &quot;third&quot;]); \n\n// Returns the value &quot;third&quot; from the third column \n// in the row with id 1 of the table &quot;two&quot;.\nsQL.sel(&quot;two&quot;, 1, 3); \n\n// Removes the first row of the table &quot;two&quot;.\nsQL.rmv(&quot;two&quot;, 1); \n\n// Returns &quot;&lt;null&gt;&quot; as the cell with id 1 \n// has been removed from table &quot;two&quot;.\nsQL.sel(&quot;two&quot;, 1, 2); \n\n// Returns False as number of columns are not correct.\nsQL.ins(&quot;two&quot;, [&quot;fourth&quot;, &quot;fifth&quot;]); \n\n// Adds a row to the table &quot;two&quot; with id 2. Returns True.\nsQL.ins(&quot;two&quot;, [&quot;fourth&quot;, &quot;fifth&quot;, &quot;sixth&quot;]);"
+      "input": "[\"SQL\",\"ins\",\"sel\",\"rmv\",\"sel\",\"ins\",\"ins\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",1],[\"two\",1,2],[\"two\",[\"fourth\",\"fifth\"]],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]]]",
+      "output": "[null,true,\"third\",null,\"<null>\",false,true]",
+      "explanation": "// Creates three tables.\nSQL sQL = new SQL([\"one\", \"two\", \"three\"], [2, 3, 1]); \n\n// Adds a row to the table \"two\" with id 1. Returns True. \nsQL.ins(\"two\", [\"first\", \"second\", \"third\"]); \n\n// Returns the value \"third\" from the third column \n// in the row with id 1 of the table \"two\".\nsQL.sel(\"two\", 1, 3); \n\n// Removes the first row of the table \"two\".\nsQL.rmv(\"two\", 1); \n\n// Returns \"<null>\" as the cell with id 1 \n// has been removed from table \"two\".\nsQL.sel(\"two\", 1, 2); \n\n// Returns False as number of columns are not correct.\nsQL.ins(\"two\", [\"fourth\", \"fifth\"]); \n\n// Adds a row to the table \"two\" with id 2. Returns True.\nsQL.ins(\"two\", [\"fourth\", \"fifth\", \"sixth\"]);"
     }
   ],
   "starterCode": {
@@ -59,34 +59,22 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;exp&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;exp&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]],[&quot;two&quot;],[&quot;two&quot;,1],[&quot;two&quot;,2,2],[&quot;two&quot;]]",
-      "expectedOutput": "[null,true,&quot;third&quot;,true,[&quot;1,first,second,third&quot;,&quot;2,fourth,fifth,sixth&quot;],null,&quot;fifth&quot;,[&quot;2,fourth,fifth,sixth&quot;]]"
+      "input": "[\"SQL\",\"ins\",\"sel\",\"ins\",\"exp\",\"rmv\",\"sel\",\"exp\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]],[\"two\"],[\"two\",1],[\"two\",2,2],[\"two\"]]",
+      "expectedOutput": "[null,true,\"third\",true,[\"1,first,second,third\",\"2,fourth,fifth,sixth\"],null,\"fifth\",[\"2,fourth,fifth,sixth\"]]"
     },
     {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;ins&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,1],[&quot;two&quot;,1,2],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;]],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]]]",
-      "expectedOutput": "[null,true,&quot;third&quot;,null,&quot;&lt;null&gt;&quot;,false,true]"
+      "input": "[\"SQL\",\"ins\",\"sel\",\"rmv\",\"sel\",\"ins\",\"ins\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",1],[\"two\",1,2],[\"two\",[\"fourth\",\"fifth\"]],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]]]",
+      "expectedOutput": "[null,true,\"third\",null,\"<null>\",false,true]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;exp&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;exp&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]],[&quot;two&quot;],[&quot;two&quot;,1],[&quot;two&quot;,2,2],[&quot;two&quot;]]",
-      "expectedOutput": "[null,true,&quot;third&quot;,true,[&quot;1,first,second,third&quot;,&quot;2,fourth,fifth,sixth&quot;],null,&quot;fifth&quot;,[&quot;2,fourth,fifth,sixth&quot;]]"
-    },
-    {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;ins&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[2,3,1]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,1,3],[&quot;two&quot;,1],[&quot;two&quot;,1,2],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;]],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]]]",
-      "expectedOutput": "[null,true,&quot;third&quot;,null,&quot;&lt;null&gt;&quot;,false,true]"
-    },
-    {
       "input": "[\"SQL\",\"ins\",\"sel\",\"ins\",\"exp\",\"rmv\",\"sel\",\"exp\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]],[\"two\"],[\"two\",1],[\"two\",2,2],[\"two\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,true,\"third\",true,[\"1,first,second,third\",\"2,fourth,fifth,sixth\"],null,\"fifth\",[\"2,fourth,fifth,sixth\"]]"
     },
     {
       "input": "[\"SQL\",\"ins\",\"sel\",\"rmv\",\"sel\",\"ins\",\"ins\"]\n[[[\"one\",\"two\",\"three\"],[2,3,1]],[\"two\",[\"first\",\"second\",\"third\"]],[\"two\",1,3],[\"two\",1],[\"two\",1,2],[\"two\",[\"fourth\",\"fifth\"]],[\"two\",[\"fourth\",\"fifth\",\"sixth\"]]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;SQL&quot;,&quot;ins&quot;,&quot;sel&quot;,&quot;ins&quot;,&quot;exp&quot;,&quot;rmv&quot;,&quot;sel&quot;,&quot;exp&quot;]\n[[[&quot;one&quot;,&quot;two&quot;,&quot;three&quot;],[3,4,2]],[&quot;two&quot;,[&quot;first&quot;,&quot;second&quot;,&quot;third&quot;]],[&quot;two&quot;,2,4],[&quot;two&quot;,[&quot;fourth&quot;,&quot;fifth&quot;,&quot;sixth&quot;]],[&quot;two&quot;],[&quot;two&quot;,2],[&quot;two&quot;,3,3],[&quot;two&quot;]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,true,\"third\",null,\"<null>\",false,true]"
     }
   ],
   "sqlSchema": null,
@@ -101,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-sql/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.898Z",
+    "collectedAt": "2026-10-19T18:40:16.521Z",
     "sourceUpdatedAt": null
   }
 }

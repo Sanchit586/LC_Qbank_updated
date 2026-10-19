@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "a = &quot;aba&quot;, b = &quot;caa&quot;",
+      "input": "a = \"aba\", b = \"caa\"",
       "output": "2",
-      "explanation": "Consider the best way to make each condition true:\n1) Change b to &quot;ccc&quot; in 2 operations, then every letter in a is less than every letter in b.\n2) Change a to &quot;bbb&quot; and b to &quot;aaa&quot; in 3 operations, then every letter in b is less than every letter in a.\n3) Change a to &quot;aaa&quot; and b to &quot;aaa&quot; in 2 operations, then a and b consist of one distinct letter.\nThe best way was done in 2 operations (either condition 1 or condition 3)."
+      "explanation": "Consider the best way to make each condition true:\n1) Change b to \"ccc\" in 2 operations, then every letter in a is less than every letter in b.\n2) Change a to \"bbb\" and b to \"aaa\" in 3 operations, then every letter in b is less than every letter in a.\n3) Change a to \"aaa\" and b to \"aaa\" in 2 operations, then a and b consist of one distinct letter.\nThe best way was done in 2 operations (either condition 1 or condition 3)."
     },
     {
-      "input": "a = &quot;dabadd&quot;, b = &quot;cda&quot;",
+      "input": "a = \"dabadd\", b = \"cda\"",
       "output": "3",
-      "explanation": "The best way is to make condition 1 true by changing b to &quot;eee&quot;."
+      "explanation": "The best way is to make condition 1 true by changing b to \"eee\"."
     }
   ],
   "starterCode": {
@@ -51,78 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "a = &quot;aba&quot;, b = &quot;caa&quot;",
+      "input": "\"aba\"\n\"caa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "a = &quot;dabadd&quot;, b = &quot;cda&quot;",
+      "input": "\"dabadd\"\n\"cda\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "a = &quot;aba&quot;, b = &quot;caa&quot;",
+      "input": "\"aba\"\n\"caa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "a = &quot;dabadd&quot;, b = &quot;cda&quot;",
+      "input": "\"dabadd\"\n\"cda\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"aba\"\n\"caa\"",
-      "expectedOutput": null
+      "input": "a = \"aba\", b = \"caa\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"dabadd\"\n\"cda\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "a = \"dabadd\", b = \"cda\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -137,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/change-minimum-characters-to-satisfy-one-of-three-conditions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.081Z",
+    "collectedAt": "2026-10-19T18:40:13.994Z",
     "sourceUpdatedAt": null
   }
 }

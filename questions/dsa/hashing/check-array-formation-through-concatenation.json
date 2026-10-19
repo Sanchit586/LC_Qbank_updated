@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "arr = [15,88], pieces = [[88],[15]]",
+      "input": "[15,88]\n[[88],[15]]",
       "expectedOutput": "true"
     },
     {
-      "input": "arr = [49,18,16], pieces = [[16,18,49]]",
+      "input": "[49,18,16]\n[[16,18,49]]",
       "expectedOutput": "false"
     },
     {
-      "input": "arr = [91,4,64,78], pieces = [[78],[4,64],[91]]",
+      "input": "[91,4,64,78]\n[[78],[4,64],[91]]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "[15,88]\n[[88],[15]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[49,18,16]\n[[16,18,49]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[91,4,64,78]\n[[78],[4,64],[91]]",
+      "expectedOutput": "true"
+    },
+    {
       "input": "arr = [15,88], pieces = [[88],[15]]",
       "expectedOutput": "true"
     },
@@ -82,38 +94,6 @@
     {
       "input": "arr = [91,4,64,78], pieces = [[78],[4,64],[91]]",
       "expectedOutput": "true"
-    },
-    {
-      "input": "[15,88]\n[[88],[15]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[49,18,16]\n[[16,18,49]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[91,4,64,78]\n[[78],[4,64],[91]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [50,19,17], pieces = [[17,19,50]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [92,5,65,79], pieces = [[79],[5,65],[92]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[16,89]\n[[89],[16]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[50,19,17]\n[[17,19,50]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [16,89], pieces = [[89],[16]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-array-formation-through-concatenation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.230Z",
+    "collectedAt": "2026-10-19T18:40:14.012Z",
     "sourceUpdatedAt": null
   }
 }

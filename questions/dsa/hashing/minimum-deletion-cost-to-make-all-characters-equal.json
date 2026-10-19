@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabaac&quot;, cost = [1,2,3,4,1,10]",
+      "input": "s = \"aabaac\", cost = [1,2,3,4,1,10]",
       "output": "11",
       "explanation": null
     },
     {
-      "input": "s = &quot;abc&quot;, cost = [10,5,8]",
+      "input": "s = \"abc\", cost = [10,5,8]",
       "output": "13",
       "explanation": null
     },
     {
-      "input": "s = &quot;zzzzz&quot;, cost = [67,67,67,67,67]",
+      "input": "s = \"zzzzz\", cost = [67,67,67,67,67]",
       "output": "0",
       "explanation": null
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabaac&quot;, cost = [1,2,3,4,1,10]",
+      "input": "\"aabaac\"\n[1,2,3,4,1,10]",
       "expectedOutput": "11"
     },
     {
-      "input": "s = &quot;abc&quot;, cost = [10,5,8]",
+      "input": "\"abc\"\n[10,5,8]",
       "expectedOutput": "13"
     },
     {
-      "input": "s = &quot;zzzzz&quot;, cost = [67,67,67,67,67]",
+      "input": "\"zzzzz\"\n[67,67,67,67,67]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabaac&quot;, cost = [1,2,3,4,1,10]",
+      "input": "\"aabaac\"\n[1,2,3,4,1,10]",
       "expectedOutput": "11"
     },
     {
-      "input": "s = &quot;abc&quot;, cost = [10,5,8]",
+      "input": "\"abc\"\n[10,5,8]",
       "expectedOutput": "13"
     },
     {
-      "input": "s = &quot;zzzzz&quot;, cost = [67,67,67,67,67]",
+      "input": "\"zzzzz\"\n[67,67,67,67,67]",
       "expectedOutput": "0"
     },
     {
-      "input": "\"aabaac\"\n[1,2,3,4,1,10]",
-      "expectedOutput": null
+      "input": "s = \"aabaac\", cost = [1,2,3,4,1,10]",
+      "expectedOutput": "11"
     },
     {
-      "input": "\"abc\"\n[10,5,8]",
-      "expectedOutput": null
+      "input": "s = \"abc\", cost = [10,5,8]",
+      "expectedOutput": "13"
     },
     {
-      "input": "\"zzzzz\"\n[67,67,67,67,67]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abc&quot;, cost = [11,6,9]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;zzzzz&quot;, cost = [68,68,68,68,68]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aabaac\"\n[2,3,4,5,2,11]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n[11,6,9]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aabaac&quot;, cost = [2,3,4,5,2,11]",
-      "expectedOutput": null
+      "input": "s = \"zzzzz\", cost = [67,67,67,67,67]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-deletion-cost-to-make-all-characters-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:53.734Z",
+    "collectedAt": "2026-10-19T18:40:23.754Z",
     "sourceUpdatedAt": null
   }
 }

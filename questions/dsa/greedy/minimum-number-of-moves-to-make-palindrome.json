@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabb&quot;",
+      "input": "s = \"aabb\"",
       "output": "2",
-      "explanation": "We can obtain two palindromes from s, &quot;abba&quot; and &quot;baab&quot;. \n- We can obtain &quot;abba&quot; from s in 2 moves: &quot;aabb&quot; -&gt; &quot;abab&quot; -&gt; &quot;abba&quot;.\n- We can obtain &quot;baab&quot; from s in 2 moves: &quot;aabb&quot; -&gt; &quot;abab&quot; -&gt; &quot;baab&quot;.\nThus, the minimum number of moves needed to make s a palindrome is 2."
+      "explanation": "We can obtain two palindromes from s, \"abba\" and \"baab\". \n- We can obtain \"abba\" from s in 2 moves: \"aabb\" -> \"abab\" -> \"abba\".\n- We can obtain \"baab\" from s in 2 moves: \"aabb\" -> \"abab\" -> \"baab\".\nThus, the minimum number of moves needed to make s a palindrome is 2."
     },
     {
-      "input": "s = &quot;letelt&quot;",
+      "input": "s = \"letelt\"",
       "output": "2",
-      "explanation": "One of the palindromes we can obtain from s in 2 moves is &quot;lettel&quot;.\nOne of the ways we can obtain it is &quot;letelt&quot; -&gt; &quot;letetl&quot; -&gt; &quot;lettel&quot;.\nOther palindromes such as &quot;tleelt&quot; can also be obtained in 2 moves.\nIt can be shown that it is not possible to obtain a palindrome in less than 2 moves."
+      "explanation": "One of the palindromes we can obtain from s in 2 moves is \"lettel\".\nOne of the ways we can obtain it is \"letelt\" -> \"letetl\" -> \"lettel\".\nOther palindromes such as \"tleelt\" can also be obtained in 2 moves.\nIt can be shown that it is not possible to obtain a palindrome in less than 2 moves."
     }
   ],
   "starterCode": {
@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabb&quot;",
+      "input": "\"aabb\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;letelt&quot;",
+      "input": "\"letelt\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabb&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;letelt&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"aabb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"letelt\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aabb\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"letelt\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-moves-to-make-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:09.377Z",
+    "collectedAt": "2026-10-19T18:40:24.283Z",
     "sourceUpdatedAt": null
   }
 }

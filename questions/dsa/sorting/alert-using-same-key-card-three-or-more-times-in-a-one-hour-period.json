@@ -22,14 +22,14 @@
   ],
   "examples": [
     {
-      "input": "keyName = [&quot;daniel&quot;,&quot;daniel&quot;,&quot;daniel&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;], keyTime = [&quot;10:00&quot;,&quot;10:40&quot;,&quot;11:00&quot;,&quot;09:00&quot;,&quot;11:00&quot;,&quot;13:00&quot;,&quot;15:00&quot;]",
-      "output": "[&quot;daniel&quot;]",
-      "explanation": "&quot;daniel&quot; used the keycard 3 times in a one-hour period (&quot;10:00&quot;,&quot;10:40&quot;, &quot;11:00&quot;)."
+      "input": "keyName = [\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"], keyTime = [\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
+      "output": "[\"daniel\"]",
+      "explanation": "\"daniel\" used the keycard 3 times in a one-hour period (\"10:00\",\"10:40\", \"11:00\")."
     },
     {
-      "input": "keyName = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;], keyTime = [&quot;12:01&quot;,&quot;12:00&quot;,&quot;18:00&quot;,&quot;21:00&quot;,&quot;21:20&quot;,&quot;21:30&quot;,&quot;23:00&quot;]",
-      "output": "[&quot;bob&quot;]",
-      "explanation": "&quot;bob&quot; used the keycard 3 times in a one-hour period (&quot;21:00&quot;,&quot;21:20&quot;, &quot;21:30&quot;)."
+      "input": "keyName = [\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"], keyTime = [\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]",
+      "output": "[\"bob\"]",
+      "explanation": "\"bob\" used the keycard 3 times in a one-hour period (\"21:00\",\"21:20\", \"21:30\")."
     }
   ],
   "starterCode": {
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "keyName = [&quot;daniel&quot;,&quot;daniel&quot;,&quot;daniel&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;], keyTime = [&quot;10:00&quot;,&quot;10:40&quot;,&quot;11:00&quot;,&quot;09:00&quot;,&quot;11:00&quot;,&quot;13:00&quot;,&quot;15:00&quot;]",
-      "expectedOutput": "[&quot;daniel&quot;]"
+      "input": "[\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"]\n[\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
+      "expectedOutput": "[\"daniel\"]"
     },
     {
-      "input": "keyName = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;], keyTime = [&quot;12:01&quot;,&quot;12:00&quot;,&quot;18:00&quot;,&quot;21:00&quot;,&quot;21:20&quot;,&quot;21:30&quot;,&quot;23:00&quot;]",
-      "expectedOutput": "[&quot;bob&quot;]"
+      "input": "[\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"]\n[\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]",
+      "expectedOutput": "[\"bob\"]"
     }
   ],
   "testCases": [
     {
-      "input": "keyName = [&quot;daniel&quot;,&quot;daniel&quot;,&quot;daniel&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;], keyTime = [&quot;10:00&quot;,&quot;10:40&quot;,&quot;11:00&quot;,&quot;09:00&quot;,&quot;11:00&quot;,&quot;13:00&quot;,&quot;15:00&quot;]",
-      "expectedOutput": "[&quot;daniel&quot;]"
-    },
-    {
-      "input": "keyName = [&quot;alice&quot;,&quot;alice&quot;,&quot;alice&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;,&quot;bob&quot;], keyTime = [&quot;12:01&quot;,&quot;12:00&quot;,&quot;18:00&quot;,&quot;21:00&quot;,&quot;21:20&quot;,&quot;21:30&quot;,&quot;23:00&quot;]",
-      "expectedOutput": "[&quot;bob&quot;]"
-    },
-    {
       "input": "[\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"]\n[\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"daniel\"]"
     },
     {
       "input": "[\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"]\n[\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"bob\"]"
     },
     {
-      "input": "keyName = [&quot;daniel&quot;,&quot;daniel&quot;,&quot;daniel&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;,&quot;luis&quot;], keyTime = [&quot;11:1&quot;,&quot;11:41&quot;,&quot;12:1&quot;,&quot;10:1&quot;,&quot;12:1&quot;,&quot;14:1&quot;,&quot;16:1&quot;]",
-      "expectedOutput": null
+      "input": "keyName = [\"daniel\",\"daniel\",\"daniel\",\"luis\",\"luis\",\"luis\",\"luis\"], keyTime = [\"10:00\",\"10:40\",\"11:00\",\"09:00\",\"11:00\",\"13:00\",\"15:00\"]",
+      "expectedOutput": "[\"daniel\"]"
+    },
+    {
+      "input": "keyName = [\"alice\",\"alice\",\"alice\",\"bob\",\"bob\",\"bob\",\"bob\"], keyTime = [\"12:01\",\"12:00\",\"18:00\",\"21:00\",\"21:20\",\"21:30\",\"23:00\"]",
+      "expectedOutput": "[\"bob\"]"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/alert-using-same-key-card-three-or-more-times-in-a-one-hour-period/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.571Z",
+    "collectedAt": "2026-10-19T18:40:12.934Z",
     "sourceUpdatedAt": null
   }
 }

@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Orders table:\n+--------------+-----------------+\n| order_number | customer_number |\n+--------------+-----------------+\n| 1            | 1               |\n| 2            | 2               |\n| 3            | 3               |\n| 4            | 3               |\n+--------------+-----------------+",
+      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
       "expectedOutput": "+-----------------+\n| customer_number |\n+-----------------+\n| 3               |\n+-----------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Orders table:\n+--------------+-----------------+\n| order_number | customer_number |\n+--------------+-----------------+\n| 1            | 1               |\n| 2            | 2               |\n| 3            | 3               |\n| 4            | 3               |\n+--------------+-----------------+",
+      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
       "expectedOutput": "+-----------------+\n| customer_number |\n+-----------------+\n| 3               |\n+-----------------+"
     },
     {
-      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1],[2,2],[3,3],[4,3]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"orders\":[\"order_number\",\"customer_number\"]},\"rows\":{\"orders\":[[1,null],[2,null],[3,null],[4,null]]}}",
-      "expectedOutput": null
+      "input": "Orders table:\n+--------------+-----------------+\n| order_number | customer_number |\n+--------------+-----------------+\n| 1            | 1               |\n| 2            | 2               |\n| 3            | 3               |\n| 4            | 3               |\n+--------------+-----------------+",
+      "expectedOutput": "+-----------------+\n| customer_number |\n+-----------------+\n| 3               |\n+-----------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists orders (order_number int, customer_number int)\n\nTruncate table orders",
@@ -68,7 +56,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/customer-placing-the-largest-number-of-orders/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:31.448Z",
+    "collectedAt": "2026-10-19T18:40:16.110Z",
     "sourceUpdatedAt": null
   }
 }

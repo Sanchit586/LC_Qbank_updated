@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaaabbbbcccc&quot;",
-      "output": "&quot;abccbaabccba&quot;",
-      "explanation": "After steps 1, 2 and 3 of the first iteration, result = &quot;abc&quot;\nAfter steps 4, 5 and 6 of the first iteration, result = &quot;abccba&quot;\nFirst iteration is done. Now s = &quot;aabbcc&quot; and we go back to step 1\nAfter steps 1, 2 and 3 of the second iteration, result = &quot;abccbaabc&quot;\nAfter steps 4, 5 and 6 of the second iteration, result = &quot;abccbaabccba&quot;"
+      "input": "s = \"aaaabbbbcccc\"",
+      "output": "\"abccbaabccba\"",
+      "explanation": "After steps 1, 2 and 3 of the first iteration, result = \"abc\"\nAfter steps 4, 5 and 6 of the first iteration, result = \"abccba\"\nFirst iteration is done. Now s = \"aabbcc\" and we go back to step 1\nAfter steps 1, 2 and 3 of the second iteration, result = \"abccbaabc\"\nAfter steps 4, 5 and 6 of the second iteration, result = \"abccbaabccba\""
     },
     {
-      "input": "s = &quot;rat&quot;",
-      "output": "&quot;art&quot;",
-      "explanation": "The word &quot;rat&quot; becomes &quot;art&quot; after re-ordering it with the mentioned algorithm."
+      "input": "s = \"rat\"",
+      "output": "\"art\"",
+      "explanation": "The word \"rat\" becomes \"art\" after re-ordering it with the mentioned algorithm."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaaabbbbcccc&quot;",
-      "expectedOutput": "&quot;abccbaabccba&quot;"
+      "input": "\"aaaabbbbcccc\"",
+      "expectedOutput": "\"abccbaabccba\""
     },
     {
-      "input": "s = &quot;rat&quot;",
-      "expectedOutput": "&quot;art&quot;"
+      "input": "\"rat\"",
+      "expectedOutput": "\"art\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaaabbbbcccc&quot;",
-      "expectedOutput": "&quot;abccbaabccba&quot;"
-    },
-    {
-      "input": "s = &quot;rat&quot;",
-      "expectedOutput": "&quot;art&quot;"
-    },
-    {
       "input": "\"aaaabbbbcccc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abccbaabccba\""
     },
     {
       "input": "\"rat\"",
-      "expectedOutput": null
+      "expectedOutput": "\"art\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aaaabbbbcccc\"",
+      "expectedOutput": "\"abccbaabccba\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"rat\"",
+      "expectedOutput": "\"art\""
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/increasing-decreasing-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.651Z",
+    "collectedAt": "2026-10-19T18:40:19.481Z",
     "sourceUpdatedAt": null
   }
 }

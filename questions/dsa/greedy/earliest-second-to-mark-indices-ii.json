@@ -32,7 +32,7 @@
     {
       "input": "nums = [1,2,3], changeIndices = [1,2,3]",
       "output": "-1",
-      "explanation": "In this example, it can be shown that it is impossible to mark all indices, as we don&#39;t have enough seconds. \nHence, the answer is -1."
+      "explanation": "In this example, it can be shown that it is impossible to mark all indices, as we don't have enough seconds. \nHence, the answer is -1."
     }
   ],
   "starterCode": {
@@ -58,20 +58,32 @@
   },
   "publicTests": [
     {
-      "input": "nums = [3,2,3], changeIndices = [1,3,2,2,2,2,3]",
+      "input": "[3,2,3]\n[1,3,2,2,2,2,3]",
       "expectedOutput": "6"
     },
     {
-      "input": "nums = [0,0,1,2], changeIndices = [1,2,1,2,1,2,1,2]",
+      "input": "[0,0,1,2]\n[1,2,1,2,1,2,1,2]",
       "expectedOutput": "7"
     },
     {
-      "input": "nums = [1,2,3], changeIndices = [1,2,3]",
+      "input": "[1,2,3]\n[1,2,3]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[3,2,3]\n[1,3,2,2,2,2,3]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[0,0,1,2]\n[1,2,1,2,1,2,1,2]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1,2,3]\n[1,2,3]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums = [3,2,3], changeIndices = [1,3,2,2,2,2,3]",
       "expectedOutput": "6"
     },
@@ -82,38 +94,6 @@
     {
       "input": "nums = [1,2,3], changeIndices = [1,2,3]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[3,2,3]\n[1,3,2,2,2,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0,1,2]\n[1,2,1,2,1,2,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [1,1,2,3], changeIndices = [2,3,2,3,2,3,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,3,4], changeIndices = [2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3,4]\n[2,4,3,3,3,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,2,3]\n[2,3,2,3,2,3,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [4,3,4], changeIndices = [2,4,3,3,3,3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/earliest-second-to-mark-indices-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.935Z",
+    "collectedAt": "2026-10-19T18:40:16.933Z",
     "sourceUpdatedAt": null
   }
 }

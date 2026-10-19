@@ -16,13 +16,13 @@
   "examples": [
     {
       "input": "length = 1000, width = 35, height = 700, mass = 300",
-      "output": "&quot;Heavy&quot;",
-      "explanation": "None of the dimensions of the box is greater or equal to 104. \nIts volume = 24500000 &lt;= 109. So it cannot be categorized as &quot;Bulky&quot;.\nHowever mass &gt;= 100, so the box is &quot;Heavy&quot;.\nSince the box is not &quot;Bulky&quot; but &quot;Heavy&quot;, we return &quot;Heavy&quot;."
+      "output": "\"Heavy\"",
+      "explanation": "None of the dimensions of the box is greater or equal to 104. \nIts volume = 24500000 <= 109. So it cannot be categorized as \"Bulky\".\nHowever mass >= 100, so the box is \"Heavy\".\nSince the box is not \"Bulky\" but \"Heavy\", we return \"Heavy\"."
     },
     {
       "input": "length = 200, width = 50, height = 800, mass = 50",
-      "output": "&quot;Neither&quot;",
-      "explanation": "None of the dimensions of the box is greater or equal to 104.\nIts volume = 8 * 106 &lt;= 109. So it cannot be categorized as &quot;Bulky&quot;.\nIts mass is also less than 100, so it cannot be categorized as &quot;Heavy&quot; either. \nSince its neither of the two above categories, we return &quot;Neither&quot;."
+      "output": "\"Neither\"",
+      "explanation": "None of the dimensions of the box is greater or equal to 104.\nIts volume = 8 * 106 <= 109. So it cannot be categorized as \"Bulky\".\nIts mass is also less than 100, so it cannot be categorized as \"Heavy\" either. \nSince its neither of the two above categories, we return \"Neither\"."
     }
   ],
   "starterCode": {
@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "length = 1000, width = 35, height = 700, mass = 300",
-      "expectedOutput": "&quot;Heavy&quot;"
+      "input": "1000\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "length = 200, width = 50, height = 800, mass = 50",
-      "expectedOutput": "&quot;Neither&quot;"
+      "input": "200\n50\n800\n50",
+      "expectedOutput": "\"Neither\""
     }
   ],
   "testCases": [
     {
-      "input": "length = 1000, width = 35, height = 700, mass = 300",
-      "expectedOutput": "&quot;Heavy&quot;"
-    },
-    {
-      "input": "length = 200, width = 50, height = 800, mass = 50",
-      "expectedOutput": "&quot;Neither&quot;"
-    },
-    {
       "input": "1000\n35\n700\n300",
-      "expectedOutput": null
+      "expectedOutput": "\"Heavy\""
     },
     {
       "input": "200\n50\n800\n50",
-      "expectedOutput": null
+      "expectedOutput": "\"Neither\""
     },
     {
-      "input": "length = 1001, width = 36, height = 701, mass = 301",
-      "expectedOutput": null
+      "input": "length = 1000, width = 35, height = 700, mass = 300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "length = 200, width = 50, height = 800, mass = 50",
+      "expectedOutput": "\"Neither\""
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/categorize-box-according-to-criteria/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:46.137Z",
+    "collectedAt": "2026-10-19T18:40:13.952Z",
     "sourceUpdatedAt": null
   }
 }

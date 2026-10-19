@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabbab&quot;",
+      "input": "s = \"aabbab\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "s = \"aaaa\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "s = \"aaabb\"",
       "output": "1",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabbab&quot;",
+      "input": "\"aabbab\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "\"aaabb\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabbab&quot;",
+      "input": "\"aabbab\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaabb&quot;",
+      "input": "\"aaabb\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aabbab\"",
-      "expectedOutput": null
+      "input": "s = \"aabbab\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aaaa\"",
-      "expectedOutput": null
+      "input": "s = \"aaaa\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aaabb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"aaabb\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-string-length-after-balanced-removals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:18.864Z",
+    "collectedAt": "2026-10-19T18:40:25.033Z",
     "sourceUpdatedAt": null
   }
 }

@@ -19,7 +19,13 @@
     "0 <= val <= 5000",
     "At most 104 calls will be made to insert and get_root."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"CBTInserter\", \"insert\", \"insert\", \"get_root\"]\n[[[1, 2]], [3], [4], []]",
+      "output": "[null, 1, 2, [1, 2, 3, 4]]",
+      "explanation": "CBTInserter cBTInserter = new CBTInserter([1, 2]);\ncBTInserter.insert(3);  // return 1\ncBTInserter.insert(4);  // return 2\ncBTInserter.get_root(); // return [1, 2, 3, 4]"
+    }
+  ],
   "starterCode": {
     "cpp": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode() : val(0), left(nullptr), right(nullptr) {}\n *     TreeNode(int x) : val(x), left(nullptr), right(nullptr) {}\n *     TreeNode(int x, TreeNode *left, TreeNode *right) : val(x), left(left), right(right) {}\n * };\n */\nclass CBTInserter {\npublic:\n    CBTInserter(TreeNode* root) {\n        \n    }\n    \n    int insert(int val) {\n        \n    }\n    \n    TreeNode* get_root() {\n        \n    }\n};\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * CBTInserter* obj = new CBTInserter(root);\n * int param_1 = obj->insert(val);\n * TreeNode* param_2 = obj->get_root();\n */",
     "java": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode() {}\n *     TreeNode(int val) { this.val = val; }\n *     TreeNode(int val, TreeNode left, TreeNode right) {\n *         this.val = val;\n *         this.left = left;\n *         this.right = right;\n *     }\n * }\n */\nclass CBTInserter {\n\n    public CBTInserter(TreeNode root) {\n        \n    }\n    \n    public int insert(int val) {\n        \n    }\n    \n    public TreeNode get_root() {\n        \n    }\n}\n\n/**\n * Your CBTInserter object will be instantiated and called as such:\n * CBTInserter obj = new CBTInserter(root);\n * int param_1 = obj.insert(val);\n * TreeNode param_2 = obj.get_root();\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"CBTInserter\",\"insert\",\"insert\",\"get_root\"]\n[[[1,2]],[3],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, [1, 2, 3, 4]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"CBTInserter\",\"insert\",\"insert\",\"get_root\"]\n[[[1,2]],[3],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, [1, 2, 3, 4]]"
     },
     {
-      "input": "[\"CBTInserter\",\"insert\",\"insert\",\"get_root\"]\n[[[2,3]],[4],[5],[]]",
-      "expectedOutput": null
+      "input": "[\"CBTInserter\", \"insert\", \"insert\", \"get_root\"]\n[[[1, 2]], [3], [4], []]",
+      "expectedOutput": "[null, 1, 2, [1, 2, 3, 4]]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/complete-binary-tree-inserter/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.941Z",
+    "collectedAt": "2026-10-19T18:40:14.590Z",
     "sourceUpdatedAt": null
   }
 }

@@ -15,7 +15,13 @@
     "1 <= num <= 105",
     "At most 104 calls in total will be made to step, getPos, and getDir."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Robot\", \"step\", \"step\", \"getPos\", \"getDir\", \"step\", \"step\", \"step\", \"getPos\", \"getDir\"]\n[[6, 3], [2], [2], [], [], [2], [1], [4], [], []]",
+      "output": "[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]",
+      "explanation": "Robot robot = new Robot(6, 3); // Initialize the grid and the robot at (0, 0) facing East.\nrobot.step(2);  // It moves two steps East to (2, 0), and faces East.\nrobot.step(2);  // It moves two steps East to (4, 0), and faces East.\nrobot.getPos(); // return [4, 0]\nrobot.getDir(); // return \"East\"\nrobot.step(2);  // It moves one step East to (5, 0), and faces East.\n                // Moving the next step East would be out of bounds, so it turns and faces North.\n                // Then, it moves one step North to (5, 1), and faces North.\nrobot.step(1);  // It moves one step North to (5, 2), and faces North (not West).\nrobot.step(4);  // Moving the next step North would be out of bounds, so it turns and faces West.\n                // Then, it moves four steps West to (1, 2), and faces West.\nrobot.getPos(); // return [1, 2]\nrobot.getDir(); // return \"West\""
+    }
+  ],
   "starterCode": {
     "cpp": "class Robot {\npublic:\n    Robot(int width, int height) {\n        \n    }\n    \n    void step(int num) {\n        \n    }\n    \n    vector<int> getPos() {\n        \n    }\n    \n    string getDir() {\n        \n    }\n};\n\n/**\n * Your Robot object will be instantiated and called as such:\n * Robot* obj = new Robot(width, height);\n * obj->step(num);\n * vector<int> param_2 = obj->getPos();\n * string param_3 = obj->getDir();\n */",
     "java": "class Robot {\n\n    public Robot(int width, int height) {\n        \n    }\n    \n    public void step(int num) {\n        \n    }\n    \n    public int[] getPos() {\n        \n    }\n    \n    public String getDir() {\n        \n    }\n}\n\n/**\n * Your Robot object will be instantiated and called as such:\n * Robot obj = new Robot(width, height);\n * obj.step(num);\n * int[] param_2 = obj.getPos();\n * String param_3 = obj.getDir();\n */",
@@ -40,17 +46,17 @@
   "publicTests": [
     {
       "input": "[\"Robot\",\"step\",\"step\",\"getPos\",\"getDir\",\"step\",\"step\",\"step\",\"getPos\",\"getDir\"]\n[[6,3],[2],[2],[],[],[2],[1],[4],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Robot\",\"step\",\"step\",\"getPos\",\"getDir\",\"step\",\"step\",\"step\",\"getPos\",\"getDir\"]\n[[6,3],[2],[2],[],[],[2],[1],[4],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]"
     },
     {
-      "input": "[\"Robot\",\"step\",\"step\",\"getPos\",\"getDir\",\"step\",\"step\",\"step\",\"getPos\",\"getDir\"]\n[[7,4],[3],[3],[],[],[3],[2],[5],[],[]]",
-      "expectedOutput": null
+      "input": "[\"Robot\", \"step\", \"step\", \"getPos\", \"getDir\", \"step\", \"step\", \"step\", \"getPos\", \"getDir\"]\n[[6, 3], [2], [2], [], [], [2], [1], [4], [], []]",
+      "expectedOutput": "[null, null, null, [4, 0], \"East\", null, null, null, [1, 2], \"West\"]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/walking-robot-simulation-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.784Z",
+    "collectedAt": "2026-10-19T18:40:31.639Z",
     "sourceUpdatedAt": null
   }
 }

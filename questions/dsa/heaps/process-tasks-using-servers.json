@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "servers = [3,3,2], tasks = [1,2,3,2,1,2]",
+      "input": "[3,3,2]\n[1,2,3,2,1,2]",
       "expectedOutput": "[2,2,0,2,1,2]"
     },
     {
-      "input": "servers = [5,1,4,3,2], tasks = [2,1,2,4,5,2,1]",
+      "input": "[5,1,4,3,2]\n[2,1,2,4,5,2,1]",
       "expectedOutput": "[1,4,1,4,1,3,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,3,2]\n[1,2,3,2,1,2]",
+      "expectedOutput": "[2,2,0,2,1,2]"
+    },
+    {
+      "input": "[5,1,4,3,2]\n[2,1,2,4,5,2,1]",
+      "expectedOutput": "[1,4,1,4,1,3,2]"
+    },
+    {
       "input": "servers = [3,3,2], tasks = [1,2,3,2,1,2]",
       "expectedOutput": "[2,2,0,2,1,2]"
     },
     {
       "input": "servers = [5,1,4,3,2], tasks = [2,1,2,4,5,2,1]",
       "expectedOutput": "[1,4,1,4,1,3,2]"
-    },
-    {
-      "input": "[3,3,2]\n[1,2,3,2,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,1,4,3,2]\n[2,1,2,4,5,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "servers = [4,4,3], tasks = [2,3,4,3,2,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/process-tasks-using-servers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.742Z",
+    "collectedAt": "2026-10-19T18:40:26.992Z",
     "sourceUpdatedAt": null
   }
 }

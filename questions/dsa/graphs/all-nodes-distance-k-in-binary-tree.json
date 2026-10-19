@@ -12,7 +12,7 @@
     "Breadth-First Search",
     "Binary Tree"
   ],
-  "statement": "Given the `root` of a binary tree, the value of a target node `target`, and an integer `k`, return _an array of the values of all nodes that have a distance_ `k` _from the target node._\n\nYou can return the answer in **any order**.\n\n**Example 1:**\n\n![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/06/28/sketch0.png)\n```\nInput: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2\nOutput: [7,4,1]\nExplanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.\n```\n\n**Example 2:**\n\n```\nInput: root = [1], target = 1, k = 3\nOutput: []\n```\n\n**Constraints:**\n\n*   The number of nodes in the tree is in the range `[1, 500]`.\n*   `0 <= Node.val <= 500`\n*   All the values `Node.val` are **unique**.\n*   `target` is the value of one of the nodes in the tree.\n*   `0 <= k <= 1000`",
+  "statement": "Given the `root` of a binary tree, the value of a target node `target`, and an integer `k`, return _an array of the values of all nodes that have a distance_ `k` _from the target node._\n\nYou can return the answer in **any order**.\n\n**Example 1:**\n\n![](./assets/all-nodes-distance-k-in-binary-tree-1.png)\n```\nInput: root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2\nOutput: [7,4,1]\nExplanation: The nodes that are a distance 2 from the target node (with value 5) have values 7, 4, and 1.\n```\n\n**Example 2:**\n\n```\nInput: root = [1], target = 1, k = 3\nOutput: []\n```\n\n**Constraints:**\n\n*   The number of nodes in the tree is in the range `[1, 500]`.\n*   `0 <= Node.val <= 500`\n*   All the values `Node.val` are **unique**.\n*   `target` is the value of one of the nodes in the tree.\n*   `0 <= k <= 1000`",
   "constraints": [
     "The number of nodes in the tree is in the range [1, 500].",
     "0 <= Node.val <= 500",
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2",
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n5\n2",
       "expectedOutput": "[7,4,1]"
     },
     {
-      "input": "root = [1], target = 1, k = 3",
+      "input": "[1]\n1\n3",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n5\n2",
+      "expectedOutput": "[7,4,1]"
+    },
+    {
+      "input": "[1]\n1\n3",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "root = [3,5,1,6,2,0,8,null,null,7,4], target = 5, k = 2",
       "expectedOutput": "[7,4,1]"
     },
     {
       "input": "root = [1], target = 1, k = 3",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "[3,5,1,6,2,0,8,null,null,7,4]\n5\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]\n1\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/all-nodes-distance-k-in-binary-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:06.843Z",
+    "collectedAt": "2026-10-19T18:40:12.976Z",
     "sourceUpdatedAt": null
   }
 }

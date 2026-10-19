@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;3902&quot;",
+      "input": "s = \"3902\"",
       "output": "true",
-      "explanation": "Initially, s = &quot;3902&quot;\n\tFirst operation:\n\t\n\t\t(s[0] + s[1]) % 10 = (3 + 9) % 10 = 2\n\t\t(s[1] + s[2]) % 10 = (9 + 0) % 10 = 9\n\t\t(s[2] + s[3]) % 10 = (0 + 2) % 10 = 2\n\t\ts becomes &quot;292&quot;\n\t\n\t\n\tSecond operation:\n\t\n\t\t(s[0] + s[1]) % 10 = (2 + 9) % 10 = 1\n\t\t(s[1] + s[2]) % 10 = (9 + 2) % 10 = 1\n\t\ts becomes &quot;11&quot;\n\t\n\t\n\tSince the digits in &quot;11&quot; are the same, the output is true."
+      "explanation": "Initially, s = \"3902\"\n\tFirst operation:\n\t\n\t\t(s[0] + s[1]) % 10 = (3 + 9) % 10 = 2\n\t\t(s[1] + s[2]) % 10 = (9 + 0) % 10 = 9\n\t\t(s[2] + s[3]) % 10 = (0 + 2) % 10 = 2\n\t\ts becomes \"292\"\n\t\n\t\n\tSecond operation:\n\t\n\t\t(s[0] + s[1]) % 10 = (2 + 9) % 10 = 1\n\t\t(s[1] + s[2]) % 10 = (9 + 2) % 10 = 1\n\t\ts becomes \"11\"\n\t\n\t\n\tSince the digits in \"11\" are the same, the output is true."
     },
     {
-      "input": "s = &quot;34789&quot;",
+      "input": "s = \"34789\"",
       "output": "false",
-      "explanation": "Initially, s = &quot;34789&quot;.\n\tAfter the first operation, s = &quot;7157&quot;.\n\tAfter the second operation, s = &quot;862&quot;.\n\tAfter the third operation, s = &quot;48&quot;.\n\tSince &#39;4&#39; != &#39;8&#39;, the output is false."
+      "explanation": "Initially, s = \"34789\".\n\tAfter the first operation, s = \"7157\".\n\tAfter the second operation, s = \"862\".\n\tAfter the third operation, s = \"48\".\n\tSince '4' != '8', the output is false."
     }
   ],
   "starterCode": {
@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;3902&quot;",
+      "input": "\"3902\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;34789&quot;",
+      "input": "\"34789\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;3902&quot;",
+      "input": "\"3902\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;34789&quot;",
+      "input": "\"34789\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"3902\"",
-      "expectedOutput": null
+      "input": "s = \"3902\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"34789\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"34789\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-digits-are-equal-in-string-after-operations-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:51.101Z",
+    "collectedAt": "2026-10-19T18:40:14.134Z",
     "sourceUpdatedAt": null
   }
 }

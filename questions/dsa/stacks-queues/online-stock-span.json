@@ -16,7 +16,13 @@
     "1 <= price <= 105",
     "At most 104 calls will be made to next."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"StockSpanner\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\"]\n[[], [100], [80], [60], [70], [60], [75], [85]]",
+      "output": "[null, 1, 1, 1, 2, 1, 4, 6]",
+      "explanation": "StockSpanner stockSpanner = new StockSpanner();\nstockSpanner.next(100); // return 1\nstockSpanner.next(80);  // return 1\nstockSpanner.next(60);  // return 1\nstockSpanner.next(70);  // return 2\nstockSpanner.next(60);  // return 1\nstockSpanner.next(75);  // return 4, because the last 4 prices (including today's price of 75) were less than or equal to today's price.\nstockSpanner.next(85);  // return 6"
+    }
+  ],
   "starterCode": {
     "cpp": "class StockSpanner {\npublic:\n    StockSpanner() {\n        \n    }\n    \n    int next(int price) {\n        \n    }\n};\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * StockSpanner* obj = new StockSpanner();\n * int param_1 = obj->next(price);\n */",
     "java": "class StockSpanner {\n\n    public StockSpanner() {\n        \n    }\n    \n    public int next(int price) {\n        \n    }\n}\n\n/**\n * Your StockSpanner object will be instantiated and called as such:\n * StockSpanner obj = new StockSpanner();\n * int param_1 = obj.next(price);\n */",
@@ -40,18 +46,18 @@
   },
   "publicTests": [
     {
-      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\r\n[[],[100],[80],[60],[70],[60],[75],[85]]\r",
-      "expectedOutput": null
+      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\r\n[[],[100],[80],[60],[70],[60],[75],[85]]",
+      "expectedOutput": "[null, 1, 1, 1, 2, 1, 4, 6]"
     }
   ],
   "testCases": [
     {
       "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\r\n[[],[100],[80],[60],[70],[60],[75],[85]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 1, 1, 2, 1, 4, 6]"
     },
     {
-      "input": "[\"StockSpanner\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\",\"next\"]\r\n[[],[101],[81],[61],[71],[61],[76],[86]]",
-      "expectedOutput": null
+      "input": "[\"StockSpanner\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\", \"next\"]\n[[], [100], [80], [60], [70], [60], [75], [85]]",
+      "expectedOutput": "[null, 1, 1, 1, 2, 1, 4, 6]"
     }
   ],
   "sqlSchema": null,
@@ -63,7 +69,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/online-stock-span/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.071Z",
+    "collectedAt": "2026-10-19T18:40:26.387Z",
     "sourceUpdatedAt": null
   }
 }

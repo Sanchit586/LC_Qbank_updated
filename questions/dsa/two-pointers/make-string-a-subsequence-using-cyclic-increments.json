@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "str1 = &quot;abc&quot;, str2 = &quot;ad&quot;",
+      "input": "str1 = \"abc\", str2 = \"ad\"",
       "output": "true",
-      "explanation": "Select index 2 in str1.\nIncrement str1[2] to become &#39;d&#39;. \nHence, str1 becomes &quot;abd&quot; and str2 is now a subsequence. Therefore, true is returned."
+      "explanation": "Select index 2 in str1.\nIncrement str1[2] to become 'd'. \nHence, str1 becomes \"abd\" and str2 is now a subsequence. Therefore, true is returned."
     },
     {
-      "input": "str1 = &quot;zc&quot;, str2 = &quot;ad&quot;",
+      "input": "str1 = \"zc\", str2 = \"ad\"",
       "output": "true",
-      "explanation": "Select indices 0 and 1 in str1. \nIncrement str1[0] to become &#39;a&#39;. \nIncrement str1[1] to become &#39;d&#39;. \nHence, str1 becomes &quot;ad&quot; and str2 is now a subsequence. Therefore, true is returned."
+      "explanation": "Select indices 0 and 1 in str1. \nIncrement str1[0] to become 'a'. \nIncrement str1[1] to become 'd'. \nHence, str1 becomes \"ad\" and str2 is now a subsequence. Therefore, true is returned."
     },
     {
-      "input": "str1 = &quot;ab&quot;, str2 = &quot;d&quot;",
+      "input": "str1 = \"ab\", str2 = \"d\"",
       "output": "false",
       "explanation": "In this example, it can be shown that it is impossible to make str2 a subsequence of str1 using the operation at most once. \nTherefore, false is returned."
     }
@@ -55,90 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "str1 = &quot;abc&quot;, str2 = &quot;ad&quot;",
+      "input": "\"abc\"\n\"ad\"",
       "expectedOutput": "true"
     },
     {
-      "input": "str1 = &quot;zc&quot;, str2 = &quot;ad&quot;",
+      "input": "\"zc\"\n\"ad\"",
       "expectedOutput": "true"
     },
     {
-      "input": "str1 = &quot;ab&quot;, str2 = &quot;d&quot;",
+      "input": "\"ab\"\n\"d\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "str1 = &quot;abc&quot;, str2 = &quot;ad&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "str1 = &quot;zc&quot;, str2 = &quot;ad&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "str1 = &quot;ab&quot;, str2 = &quot;d&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"abc\"\n\"ad\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"zc\"\n\"ad\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"ab\"\n\"d\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "str1 = \"abc\", str2 = \"ad\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "str1 = \"zc\", str2 = \"ad\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "str1 = \"ab\", str2 = \"d\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/make-string-a-subsequence-using-cyclic-increments/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.196Z",
+    "collectedAt": "2026-10-19T18:40:20.964Z",
     "sourceUpdatedAt": null
   }
 }

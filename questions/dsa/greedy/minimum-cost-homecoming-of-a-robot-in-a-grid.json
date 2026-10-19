@@ -24,7 +24,7 @@
     {
       "input": "startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]",
       "output": "18",
-      "explanation": "One optimal path is that:\nStarting from (1, 0)\n-&gt; It goes down to (2, 0). This move costs rowCosts[2] = 3.\n-&gt; It goes right to (2, 1). This move costs colCosts[1] = 2.\n-&gt; It goes right to (2, 2). This move costs colCosts[2] = 6.\n-&gt; It goes right to (2, 3). This move costs colCosts[3] = 7.\nThe total cost is 3 + 2 + 6 + 7 = 18"
+      "explanation": "One optimal path is that:\nStarting from (1, 0)\n-> It goes down to (2, 0). This move costs rowCosts[2] = 3.\n-> It goes right to (2, 1). This move costs colCosts[1] = 2.\n-> It goes right to (2, 2). This move costs colCosts[2] = 6.\n-> It goes right to (2, 3). This move costs colCosts[3] = 7.\nThe total cost is 3 + 2 + 6 + 7 = 18"
     },
     {
       "input": "startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]",
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]",
+      "input": "[1,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
       "expectedOutput": "18"
     },
     {
-      "input": "startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]",
+      "input": "[0,0]\n[0,0]\n[5]\n[26]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[0,0]\n[0,0]\n[5]\n[26]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]",
       "expectedOutput": "18"
     },
     {
       "input": "startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n[0,0]\n[5]\n[26]",
-      "expectedOutput": null
-    },
-    {
-      "input": "startPos = [2, 1], homePos = [3, 4], rowCosts = [6, 5, 4], colCosts = [9, 3, 7, 8]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-homecoming-of-a-robot-in-a-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:47.212Z",
+    "collectedAt": "2026-10-19T18:40:23.533Z",
     "sourceUpdatedAt": null
   }
 }

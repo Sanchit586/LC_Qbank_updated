@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, s = 9",
+      "input": "2\n9",
       "expectedOutput": "90"
     },
     {
-      "input": "n = 2, s = 19",
+      "input": "2\n19",
       "expectedOutput": "-1"
     },
     {
-      "input": "n = 5, s = 0",
+      "input": "5\n0",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "2\n9",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "2\n19",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "5\n0",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 2, s = 9",
       "expectedOutput": "90"
     },
@@ -78,38 +90,6 @@
     {
       "input": "n = 5, s = 0",
       "expectedOutput": "0"
-    },
-    {
-      "input": "2\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, s = 20",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, s = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, s = 10",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-integer-with-given-digit-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:42.203Z",
+    "collectedAt": "2026-10-19T18:40:19.924Z",
     "sourceUpdatedAt": null
   }
 }

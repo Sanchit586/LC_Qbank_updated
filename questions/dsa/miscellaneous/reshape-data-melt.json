@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "+-------------+-----------+-----------+-----------+-----------+\n| product     | quarter_1 | quarter_2 | quarter_3 | quarter_4 |\n+-------------+-----------+-----------+-----------+-----------+\n| Umbrella    | 417       | 224       | 379       | 611       |\n| SleepingBag | 800       | 936       | 93        | 875       |\n+-------------+-----------+-----------+-----------+-----------+",
+      "input": "{\"headers\":{\"report\":[\"product\",\"quarter_1\",\"quarter_2\",\"quarter_3\",\"quarter_4\"]},\"rows\":{\"report\":[[\"Umbrella\",417,224,379,611],[\"SleepingBag\",800,936,93,875]]}}",
       "expectedOutput": "+-------------+-----------+-------+\n| product     | quarter   | sales |\n+-------------+-----------+-------+\n| Umbrella    | quarter_1 | 417   |\n| SleepingBag | quarter_1 | 800   |\n| Umbrella    | quarter_2 | 224   |\n| SleepingBag | quarter_2 | 936   |\n| Umbrella    | quarter_3 | 379   |\n| SleepingBag | quarter_3 | 93    |\n| Umbrella    | quarter_4 | 611   |\n| SleepingBag | quarter_4 | 875   |\n+-------------+-----------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "+-------------+-----------+-----------+-----------+-----------+\n| product     | quarter_1 | quarter_2 | quarter_3 | quarter_4 |\n+-------------+-----------+-----------+-----------+-----------+\n| Umbrella    | 417       | 224       | 379       | 611       |\n| SleepingBag | 800       | 936       | 93        | 875       |\n+-------------+-----------+-----------+-----------+-----------+",
+      "input": "{\"headers\":{\"report\":[\"product\",\"quarter_1\",\"quarter_2\",\"quarter_3\",\"quarter_4\"]},\"rows\":{\"report\":[[\"Umbrella\",417,224,379,611],[\"SleepingBag\",800,936,93,875]]}}",
       "expectedOutput": "+-------------+-----------+-------+\n| product     | quarter   | sales |\n+-------------+-----------+-------+\n| Umbrella    | quarter_1 | 417   |\n| SleepingBag | quarter_1 | 800   |\n| Umbrella    | quarter_2 | 224   |\n| SleepingBag | quarter_2 | 936   |\n| Umbrella    | quarter_3 | 379   |\n| SleepingBag | quarter_3 | 93    |\n| Umbrella    | quarter_4 | 611   |\n| SleepingBag | quarter_4 | 875   |\n+-------------+-----------+-------+"
     },
     {
-      "input": "{\"headers\":{\"report\":[\"product\",\"quarter_1\",\"quarter_2\",\"quarter_3\",\"quarter_4\"]},\"rows\":{\"report\":[[\"Umbrella\",417,224,379,611],[\"SleepingBag\",800,936,93,875]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "+-------------+-----------+-----------+-----------+-----------+\n| product     | quarter_2 | quarter_3 | quarter_4 | quarter_5 |\n+-------------+-----------+-----------+-----------+-----------+\n| Umbrella    | 418       | 225       | 380       | 612       |\n| SleepingBag | 801       | 937       | 94        | 876       |\n+-------------+-----------+-----------+-----------+-----------+",
-      "expectedOutput": null
+      "input": "+-------------+-----------+-----------+-----------+-----------+\n| product     | quarter_1 | quarter_2 | quarter_3 | quarter_4 |\n+-------------+-----------+-----------+-----------+-----------+\n| Umbrella    | 417       | 224       | 379       | 611       |\n| SleepingBag | 800       | 936       | 93        | 875       |\n+-------------+-----------+-----------+-----------+-----------+",
+      "expectedOutput": "+-------------+-----------+-------+\n| product     | quarter   | sales |\n+-------------+-----------+-------+\n| Umbrella    | quarter_1 | 417   |\n| SleepingBag | quarter_1 | 800   |\n| Umbrella    | quarter_2 | 224   |\n| SleepingBag | quarter_2 | 936   |\n| Umbrella    | quarter_3 | 379   |\n| SleepingBag | quarter_3 | 93    |\n| Umbrella    | quarter_4 | 611   |\n| SleepingBag | quarter_4 | 875   |\n+-------------+-----------+-------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reshape-data-melt/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.172Z",
+    "collectedAt": "2026-10-19T18:40:27.761Z",
     "sourceUpdatedAt": null
   }
 }

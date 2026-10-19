@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 3",
-      "output": "&quot;PAHNAPLSIIGYIR&quot;",
+      "input": "s = \"PAYPALISHIRING\", numRows = 3",
+      "output": "\"PAHNAPLSIIGYIR\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 4",
-      "output": "&quot;PINALSIGYAHRPI&quot;",
+      "input": "s = \"PAYPALISHIRING\", numRows = 4",
+      "output": "\"PINALSIGYAHRPI\"",
       "explanation": "P     I    N\nA   L S  I G\nY A   H R\nP     I"
     },
     {
-      "input": "s = &quot;A&quot;, numRows = 1",
-      "output": "&quot;A&quot;",
+      "input": "s = \"A\", numRows = 1",
+      "output": "\"A\"",
       "explanation": null
     }
   ],
@@ -54,50 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 3",
-      "expectedOutput": "&quot;PAHNAPLSIIGYIR&quot;"
+      "input": "\"PAYPALISHIRING\"\n3",
+      "expectedOutput": "\"PAHNAPLSIIGYIR\""
     },
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 4",
-      "expectedOutput": "&quot;PINALSIGYAHRPI&quot;"
+      "input": "\"PAYPALISHIRING\"\n4",
+      "expectedOutput": "\"PINALSIGYAHRPI\""
     },
     {
-      "input": "s = &quot;A&quot;, numRows = 1",
-      "expectedOutput": "&quot;A&quot;"
+      "input": "\"A\"\n1",
+      "expectedOutput": "\"A\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 3",
-      "expectedOutput": "&quot;PAHNAPLSIIGYIR&quot;"
-    },
-    {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 4",
-      "expectedOutput": "&quot;PINALSIGYAHRPI&quot;"
-    },
-    {
-      "input": "s = &quot;A&quot;, numRows = 1",
-      "expectedOutput": "&quot;A&quot;"
-    },
-    {
       "input": "\"PAYPALISHIRING\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"PAHNAPLSIIGYIR\""
     },
     {
       "input": "\"PAYPALISHIRING\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"PINALSIGYAHRPI\""
     },
     {
       "input": "\"A\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"A\""
     },
     {
-      "input": "s = &quot;PAYPALISHIRING&quot;, numRows = 5",
-      "expectedOutput": null
+      "input": "s = \"PAYPALISHIRING\", numRows = 3",
+      "expectedOutput": "\"PAHNAPLSIIGYIR\""
     },
     {
-      "input": "s = &quot;A&quot;, numRows = 2",
-      "expectedOutput": null
+      "input": "s = \"PAYPALISHIRING\", numRows = 4",
+      "expectedOutput": "\"PINALSIGYAHRPI\""
+    },
+    {
+      "input": "s = \"A\", numRows = 1",
+      "expectedOutput": "\"A\""
     }
   ],
   "sqlSchema": null,
@@ -109,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/zigzag-conversion/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.947Z",
+    "collectedAt": "2026-10-19T18:40:31.879Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, sick = [0,4]",
+      "input": "5\n[0,4]",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 4, sick = [1]",
+      "input": "4\n[1]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[0,4]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "4\n[1]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 5, sick = [0,4]",
       "expectedOutput": "4"
     },
     {
       "input": "n = 4, sick = [1]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "5\n[0,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, sick = [1,5]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-infection-sequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.829Z",
+    "collectedAt": "2026-10-19T18:40:15.811Z",
     "sourceUpdatedAt": null
   }
 }

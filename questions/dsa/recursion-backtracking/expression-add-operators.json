@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;123&quot;, target = 6",
-      "output": "[&quot;1*2*3&quot;,&quot;1+2+3&quot;]",
-      "explanation": "Both &quot;1*2*3&quot; and &quot;1+2+3&quot; evaluate to 6."
+      "input": "num = \"123\", target = 6",
+      "output": "[\"1*2*3\",\"1+2+3\"]",
+      "explanation": "Both \"1*2*3\" and \"1+2+3\" evaluate to 6."
     },
     {
-      "input": "num = &quot;232&quot;, target = 8",
-      "output": "[&quot;2*3+2&quot;,&quot;2+3*2&quot;]",
-      "explanation": "Both &quot;2*3+2&quot; and &quot;2+3*2&quot; evaluate to 8."
+      "input": "num = \"232\", target = 8",
+      "output": "[\"2*3+2\",\"2+3*2\"]",
+      "explanation": "Both \"2*3+2\" and \"2+3*2\" evaluate to 8."
     },
     {
-      "input": "num = &quot;3456237490&quot;, target = 9191",
+      "input": "num = \"3456237490\", target = 9191",
       "output": "[]",
-      "explanation": "There are no expressions that can be created from &quot;3456237490&quot; to evaluate to 9191."
+      "explanation": "There are no expressions that can be created from \"3456237490\" to evaluate to 9191."
     }
   ],
   "starterCode": {
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;123&quot;, target = 6",
-      "expectedOutput": "[&quot;1*2*3&quot;,&quot;1+2+3&quot;]"
+      "input": "\"123\"\n6",
+      "expectedOutput": "[\"1*2*3\",\"1+2+3\"]"
     },
     {
-      "input": "num = &quot;232&quot;, target = 8",
-      "expectedOutput": "[&quot;2*3+2&quot;,&quot;2+3*2&quot;]"
+      "input": "\"232\"\n8",
+      "expectedOutput": "[\"2*3+2\",\"2+3*2\"]"
     },
     {
-      "input": "num = &quot;3456237490&quot;, target = 9191",
+      "input": "\"3456237490\"\n9191",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;123&quot;, target = 6",
-      "expectedOutput": "[&quot;1*2*3&quot;,&quot;1+2+3&quot;]"
-    },
-    {
-      "input": "num = &quot;232&quot;, target = 8",
-      "expectedOutput": "[&quot;2*3+2&quot;,&quot;2+3*2&quot;]"
-    },
-    {
-      "input": "num = &quot;3456237490&quot;, target = 9191",
-      "expectedOutput": "[]"
-    },
-    {
       "input": "\"123\"\n6",
-      "expectedOutput": null
+      "expectedOutput": "[\"1*2*3\",\"1+2+3\"]"
     },
     {
       "input": "\"232\"\n8",
-      "expectedOutput": null
+      "expectedOutput": "[\"2*3+2\",\"2+3*2\"]"
     },
     {
       "input": "\"3456237490\"\n9191",
-      "expectedOutput": null
+      "expectedOutput": "[]"
     },
     {
-      "input": "num = &quot;233&quot;, target = 9",
-      "expectedOutput": null
+      "input": "num = \"123\", target = 6",
+      "expectedOutput": "[\"1*2*3\",\"1+2+3\"]"
     },
     {
-      "input": "num = &quot;3456237491&quot;, target = 9192",
-      "expectedOutput": null
+      "input": "num = \"232\", target = 8",
+      "expectedOutput": "[\"2*3+2\",\"2+3*2\"]"
     },
     {
-      "input": "\"124\"\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"233\"\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;124&quot;, target = 7",
-      "expectedOutput": null
+      "input": "num = \"3456237490\", target = 9191",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/expression-add-operators/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.056Z",
+    "collectedAt": "2026-10-19T18:40:17.193Z",
     "sourceUpdatedAt": null
   }
 }

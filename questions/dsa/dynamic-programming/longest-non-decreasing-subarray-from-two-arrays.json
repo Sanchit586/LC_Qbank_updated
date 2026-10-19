@@ -18,17 +18,17 @@
     {
       "input": "nums1 = [2,3,1], nums2 = [1,2,1]",
       "output": "2",
-      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums2[1], nums2[2]] =&gt; [2,2,1]. \nThe subarray starting from index 0 and ending at index 1, [2,2], forms a non-decreasing subarray of length 2. \nWe can show that 2 is the maximum achievable length."
+      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums2[1], nums2[2]] => [2,2,1]. \nThe subarray starting from index 0 and ending at index 1, [2,2], forms a non-decreasing subarray of length 2. \nWe can show that 2 is the maximum achievable length."
     },
     {
       "input": "nums1 = [1,3,2,1], nums2 = [2,2,3,4]",
       "output": "4",
-      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums2[1], nums2[2], nums2[3]] =&gt; [1,2,3,4]. \nThe entire array forms a non-decreasing subarray of length 4, making it the maximum achievable length."
+      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums2[1], nums2[2], nums2[3]] => [1,2,3,4]. \nThe entire array forms a non-decreasing subarray of length 4, making it the maximum achievable length."
     },
     {
       "input": "nums1 = [1,1], nums2 = [2,2]",
       "output": "2",
-      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums1[1]] =&gt; [1,1]. \nThe entire array forms a non-decreasing subarray of length 2, making it the maximum achievable length."
+      "explanation": "One way to construct nums3 is: \nnums3 = [nums1[0], nums1[1]] => [1,1]. \nThe entire array forms a non-decreasing subarray of length 2, making it the maximum achievable length."
     }
   ],
   "starterCode": {
@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [2,3,1], nums2 = [1,2,1]",
+      "input": "[2,3,1]\n[1,2,1]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums1 = [1,3,2,1], nums2 = [2,2,3,4]",
+      "input": "[1,3,2,1]\n[2,2,3,4]",
       "expectedOutput": "4"
     },
     {
-      "input": "nums1 = [1,1], nums2 = [2,2]",
+      "input": "[1,1]\n[2,2]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[2,3,1]\n[1,2,1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,3,2,1]\n[2,2,3,4]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,1]\n[2,2]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "nums1 = [2,3,1], nums2 = [1,2,1]",
       "expectedOutput": "2"
     },
@@ -78,38 +90,6 @@
     {
       "input": "nums1 = [1,1], nums2 = [2,2]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[2,3,1]\n[1,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,3,2,1]\n[2,2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1]\n[2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,4,3,2], nums3 = [3,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,2], nums3 = [3,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,4,2]\n[2,3,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,3,2]\n[3,3,4,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [3,4,2], nums3 = [2,3,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-non-decreasing-subarray-from-two-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:53.280Z",
+    "collectedAt": "2026-10-19T18:40:20.543Z",
     "sourceUpdatedAt": null
   }
 }

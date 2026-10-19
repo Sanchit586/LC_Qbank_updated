@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Employees table:\n+----+----------+\n| id | name     |\n+----+----------+\n| 1  | Alice    |\n| 7  | Bob      |\n| 11 | Meir     |\n| 90 | Winston  |\n| 3  | Jonathan |\n+----+----------+\nEmployeeUNI table:\n+----+-----------+\n| id | unique_id |\n+----+-----------+\n| 3  | 1         |\n| 11 | 2         |\n| 90 | 3         |\n+----+-----------+",
+      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[[1,\"Alice\"],[7,\"Bob\"],[11,\"Meir\"],[90,\"Winston\"],[3,\"Jonathan\"]],\"EmployeeUNI\":[[3,1],[11,2],[90,3]]}}",
       "expectedOutput": "+-----------+----------+\n| unique_id | name     |\n+-----------+----------+\n| null      | Alice    |\n| null      | Bob      |\n| 2         | Meir     |\n| 3         | Winston  |\n| 1         | Jonathan |\n+-----------+----------+"
     }
   ],
   "testCases": [
     {
-      "input": "Employees table:\n+----+----------+\n| id | name     |\n+----+----------+\n| 1  | Alice    |\n| 7  | Bob      |\n| 11 | Meir     |\n| 90 | Winston  |\n| 3  | Jonathan |\n+----+----------+\nEmployeeUNI table:\n+----+-----------+\n| id | unique_id |\n+----+-----------+\n| 3  | 1         |\n| 11 | 2         |\n| 90 | 3         |\n+----+-----------+",
+      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[[1,\"Alice\"],[7,\"Bob\"],[11,\"Meir\"],[90,\"Winston\"],[3,\"Jonathan\"]],\"EmployeeUNI\":[[3,1],[11,2],[90,3]]}}",
       "expectedOutput": "+-----------+----------+\n| unique_id | name     |\n+-----------+----------+\n| null      | Alice    |\n| null      | Bob      |\n| 2         | Meir     |\n| 3         | Winston  |\n| 1         | Jonathan |\n+-----------+----------+"
     },
     {
-      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[[1,\"Alice\"],[7,\"Bob\"],[11,\"Meir\"],[90,\"Winston\"],[3,\"Jonathan\"]],\"EmployeeUNI\":[[3,1],[11,2],[90,3]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[],\"EmployeeUNI\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[[1,\"Alice\"]],\"EmployeeUNI\":[[3,1]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Employees\":[\"id\",\"name\"],\"EmployeeUNI\":[\"id\",\"unique_id\"]},\"rows\":{\"Employees\":[[1,null],[7,null],[11,null],[90,null],[3,null]],\"EmployeeUNI\":[[3,null],[11,null],[90,null]]}}",
-      "expectedOutput": null
+      "input": "Employees table:\n+----+----------+\n| id | name     |\n+----+----------+\n| 1  | Alice    |\n| 7  | Bob      |\n| 11 | Meir     |\n| 90 | Winston  |\n| 3  | Jonathan |\n+----+----------+\nEmployeeUNI table:\n+----+-----------+\n| id | unique_id |\n+----+-----------+\n| 3  | 1         |\n| 11 | 2         |\n| 90 | 3         |\n+----+-----------+",
+      "expectedOutput": "+-----------+----------+\n| unique_id | name     |\n+-----------+----------+\n| null      | Alice    |\n| null      | Bob      |\n| 2         | Meir     |\n| 3         | Winston  |\n| 1         | Jonathan |\n+-----------+----------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Employees (id int, name varchar(20))\n\nCreate table If Not Exists EmployeeUNI (id int, unique_id int)\n\nTruncate table Employees\n\nTruncate table EmployeeUNI",
@@ -70,7 +58,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/replace-employee-id-with-the-unique-identifier/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.510Z",
+    "collectedAt": "2026-10-19T18:40:27.708Z",
     "sourceUpdatedAt": null
   }
 }

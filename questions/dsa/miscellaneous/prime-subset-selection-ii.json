@@ -51,20 +51,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 7, s = 20",
+      "input": "7\n20",
       "expectedOutput": "[2, 3, 5, 7]"
     },
     {
-      "input": "n = 15, s = 18",
+      "input": "15\n18",
       "expectedOutput": "[5,13]"
     },
     {
-      "input": "n = 5, s = 1",
+      "input": "5\n1",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "7\n20",
+      "expectedOutput": "[2, 3, 5, 7]"
+    },
+    {
+      "input": "15\n18",
+      "expectedOutput": "[5,13]"
+    },
+    {
+      "input": "5\n1",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 7, s = 20",
       "expectedOutput": "[2, 3, 5, 7]"
     },
@@ -75,38 +87,6 @@
     {
       "input": "n = 5, s = 1",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "7\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "15\n18",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 16, s = 19",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, s = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n21",
-      "expectedOutput": null
-    },
-    {
-      "input": "16\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 8, s = 21",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/prime-subset-selection-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.177Z",
+    "collectedAt": "2026-10-19T18:40:26.919Z",
     "sourceUpdatedAt": null
   }
 }

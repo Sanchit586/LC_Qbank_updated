@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;lEetcOde&quot;",
-      "output": "&quot;lEOtcede&quot;",
-      "explanation": "&#39;E&#39;, &#39;O&#39;, and &#39;e&#39; are the vowels in s; &#39;l&#39;, &#39;t&#39;, &#39;c&#39;, and &#39;d&#39; are all consonants. The vowels are sorted according to their ASCII values, and the consonants remain in the same places."
+      "input": "s = \"lEetcOde\"",
+      "output": "\"lEOtcede\"",
+      "explanation": "'E', 'O', and 'e' are the vowels in s; 'l', 't', 'c', and 'd' are all consonants. The vowels are sorted according to their ASCII values, and the consonants remain in the same places."
     },
     {
-      "input": "s = &quot;lYmpH&quot;",
-      "output": "&quot;lYmpH&quot;",
-      "explanation": "There are no vowels in s (all characters in s are consonants), so we return &quot;lYmpH&quot;."
+      "input": "s = \"lYmpH\"",
+      "output": "\"lYmpH\"",
+      "explanation": "There are no vowels in s (all characters in s are consonants), so we return \"lYmpH\"."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;lEetcOde&quot;",
-      "expectedOutput": "&quot;lEOtcede&quot;"
+      "input": "\"lEetcOde\"",
+      "expectedOutput": "\"lEOtcede\""
     },
     {
-      "input": "s = &quot;lYmpH&quot;",
-      "expectedOutput": "&quot;lYmpH&quot;"
+      "input": "\"lYmpH\"",
+      "expectedOutput": "\"lYmpH\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;lEetcOde&quot;",
-      "expectedOutput": "&quot;lEOtcede&quot;"
-    },
-    {
-      "input": "s = &quot;lYmpH&quot;",
-      "expectedOutput": "&quot;lYmpH&quot;"
-    },
-    {
       "input": "\"lEetcOde\"",
-      "expectedOutput": null
+      "expectedOutput": "\"lEOtcede\""
     },
     {
       "input": "\"lYmpH\"",
-      "expectedOutput": null
+      "expectedOutput": "\"lYmpH\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"lEetcOde\"",
+      "expectedOutput": "\"lEOtcede\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"lYmpH\"",
+      "expectedOutput": "\"lYmpH\""
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-vowels-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:34.371Z",
+    "collectedAt": "2026-10-19T18:40:30.014Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbcbcac&quot;",
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"",
       "output": "true",
-      "explanation": "One way to obtain s3 is:\nSplit s1 into s1 = &quot;aa&quot; + &quot;bc&quot; + &quot;c&quot;, and s2 into s2 = &quot;dbbc&quot; + &quot;a&quot;.\nInterleaving the two splits, we get &quot;aa&quot; + &quot;dbbc&quot; + &quot;bc&quot; + &quot;a&quot; + &quot;c&quot; = &quot;aadbbcbcac&quot;.\nSince s3 can be obtained by interleaving s1 and s2, we return true."
+      "explanation": "One way to obtain s3 is:\nSplit s1 into s1 = \"aa\" + \"bc\" + \"c\", and s2 into s2 = \"dbbc\" + \"a\".\nInterleaving the two splits, we get \"aa\" + \"dbbc\" + \"bc\" + \"a\" + \"c\" = \"aadbbcbcac\".\nSince s3 can be obtained by interleaving s1 and s2, we return true."
     },
     {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbbaccc&quot;",
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"",
       "output": "false",
       "explanation": "Notice how it is impossible to interleave s2 with any other string to obtain s3."
     },
     {
-      "input": "s1 = &quot;&quot;, s2 = &quot;&quot;, s3 = &quot;&quot;",
+      "input": "s1 = \"\", s2 = \"\", s3 = \"\"",
       "output": "true",
       "explanation": null
     }
@@ -55,50 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbcbcac&quot;",
+      "input": "\"aabcc\"\n\"dbbca\"\n\"aadbbcbcac\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbbaccc&quot;",
+      "input": "\"aabcc\"\n\"dbbca\"\n\"aadbbbaccc\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = &quot;&quot;, s2 = &quot;&quot;, s3 = &quot;&quot;",
+      "input": "\"\"\n\"\"\n\"\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbcbcac&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = &quot;aabcc&quot;, s2 = &quot;dbbca&quot;, s3 = &quot;aadbbbaccc&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s1 = &quot;&quot;, s2 = &quot;&quot;, s3 = &quot;&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"aabcc\"\n\"dbbca\"\n\"aadbbcbcac\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"aabcc\"\n\"dbbca\"\n\"aadbbbaccc\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"\"\n\"\"\n\"\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "s2 = &quot;aabcc&quot;, s3 = &quot;dbbca&quot;, s4 = &quot;aadbbbaccc&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbcbcac\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "s2 = &quot;&quot;, s3 = &quot;&quot;, s4 = &quot;&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"aabcc\", s2 = \"dbbca\", s3 = \"aadbbbaccc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "s1 = \"\", s2 = \"\", s3 = \"\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -110,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/interleaving-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.471Z",
+    "collectedAt": "2026-10-19T18:40:19.566Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;11&quot;, s2 = &quot;00&quot;",
+      "input": "s1 = \"11\", s2 = \"00\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s1 = &quot;01&quot;, s2 = &quot;10&quot;",
+      "input": "s1 = \"01\", s2 = \"10\"",
       "output": "3",
-      "explanation": "Change index 0 from &#39;0&#39; to &#39;1&#39;, so &quot;01&quot; becomes &quot;11&quot;.\n\tChange indices 0 and 1 from &#39;1&#39; to &#39;0&#39;, so &quot;11&quot; becomes &quot;00&quot;.\n\tChange index 0 from &#39;0&#39; to &#39;1&#39;, so &quot;00&quot; becomes &quot;10&quot;.\n\tThus, the answer is 3."
+      "explanation": "Change index 0 from '0' to '1', so \"01\" becomes \"11\".\n\tChange indices 0 and 1 from '1' to '0', so \"11\" becomes \"00\".\n\tChange index 0 from '0' to '1', so \"00\" becomes \"10\".\n\tThus, the answer is 3."
     },
     {
-      "input": "s1 = &quot;1&quot;, s2 = &quot;0&quot;",
+      "input": "s1 = \"1\", s2 = \"0\"",
       "output": "-1",
       "explanation": null
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;11&quot;, s2 = &quot;00&quot;",
+      "input": "\"11\"\n\"00\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s1 = &quot;01&quot;, s2 = &quot;10&quot;",
+      "input": "\"01\"\n\"10\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s1 = &quot;1&quot;, s2 = &quot;0&quot;",
+      "input": "\"1\"\n\"0\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;11&quot;, s2 = &quot;00&quot;",
+      "input": "\"11\"\n\"00\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s1 = &quot;01&quot;, s2 = &quot;10&quot;",
+      "input": "\"01\"\n\"10\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s1 = &quot;1&quot;, s2 = &quot;0&quot;",
+      "input": "\"1\"\n\"0\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"11\"\n\"00\"",
-      "expectedOutput": null
+      "input": "s1 = \"11\", s2 = \"00\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"01\"\n\"10\"",
-      "expectedOutput": null
+      "input": "s1 = \"01\", s2 = \"10\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"1\"\n\"0\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"12\"\n\"1\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"2\"\n\"11\"",
-      "expectedOutput": null
+      "input": "s1 = \"1\", s2 = \"0\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-transform-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.818Z",
+    "collectedAt": "2026-10-19T18:40:24.820Z",
     "sourceUpdatedAt": null
   }
 }

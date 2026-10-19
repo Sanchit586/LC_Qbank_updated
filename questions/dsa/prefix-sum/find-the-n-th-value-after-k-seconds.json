@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, k = 5",
+      "input": "4\n5",
       "expectedOutput": "56"
     },
     {
-      "input": "n = 5, k = 3",
+      "input": "5\n3",
       "expectedOutput": "35"
     }
   ],
   "testCases": [
     {
+      "input": "4\n5",
+      "expectedOutput": "56"
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "35"
+    },
+    {
       "input": "n = 4, k = 5",
       "expectedOutput": "56"
     },
     {
       "input": "n = 5, k = 3",
       "expectedOutput": "35"
-    },
-    {
-      "input": "4\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, k = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-n-th-value-after-k-seconds/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:12.602Z",
+    "collectedAt": "2026-10-19T18:40:18.510Z",
     "sourceUpdatedAt": null
   }
 }

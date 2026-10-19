@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "input": "s = \"ababcbacadefegdehijhklij\"",
       "output": "[9,7,8]",
-      "explanation": "The partition is &quot;ababcbaca&quot;, &quot;defegde&quot;, &quot;hijhklij&quot;.\nThis is a partition so that each letter appears in at most one part.\nA partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect, because it splits s into less parts."
+      "explanation": "The partition is \"ababcbaca\", \"defegde\", \"hijhklij\".\nThis is a partition so that each letter appears in at most one part.\nA partition like \"ababcbacadefegde\", \"hijhklij\" is incorrect, because it splits s into less parts."
     },
     {
-      "input": "s = &quot;eccbbbbdec&quot;",
+      "input": "s = \"eccbbbbdec\"",
       "output": "[10]",
       "explanation": null
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "input": "\"ababcbacadefegdehijhklij\"",
       "expectedOutput": "[9,7,8]"
     },
     {
-      "input": "s = &quot;eccbbbbdec&quot;",
+      "input": "\"eccbbbbdec\"",
       "expectedOutput": "[10]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "input": "\"ababcbacadefegdehijhklij\"",
       "expectedOutput": "[9,7,8]"
     },
     {
-      "input": "s = &quot;eccbbbbdec&quot;",
+      "input": "\"eccbbbbdec\"",
       "expectedOutput": "[10]"
     },
     {
-      "input": "\"ababcbacadefegdehijhklij\"",
-      "expectedOutput": null
+      "input": "s = \"ababcbacadefegdehijhklij\"",
+      "expectedOutput": "[9,7,8]"
     },
     {
-      "input": "\"eccbbbbdec\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"eccbbbbdec\"",
+      "expectedOutput": "[10]"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/partition-labels/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:52.351Z",
+    "collectedAt": "2026-10-19T18:40:26.577Z",
     "sourceUpdatedAt": null
   }
 }

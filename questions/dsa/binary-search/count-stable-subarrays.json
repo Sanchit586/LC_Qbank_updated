@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [3,1,2], queries = [[0,1],[1,2],[0,2]]",
+      "input": "[3,1,2]\n[[0,1],[1,2],[0,2]]",
       "expectedOutput": "[2,3,4]"
     },
     {
-      "input": "nums = [2,2], queries = [[0,1],[0,0]]",
+      "input": "[2,2]\n[[0,1],[0,0]]",
       "expectedOutput": "[3,1]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,1,2]\n[[0,1],[1,2],[0,2]]",
+      "expectedOutput": "[2,3,4]"
+    },
+    {
+      "input": "[2,2]\n[[0,1],[0,0]]",
+      "expectedOutput": "[3,1]"
+    },
+    {
       "input": "nums = [3,1,2], queries = [[0,1],[1,2],[0,2]]",
       "expectedOutput": "[2,3,4]"
     },
     {
       "input": "nums = [2,2], queries = [[0,1],[0,0]]",
       "expectedOutput": "[3,1]"
-    },
-    {
-      "input": "[3,1,2]\n[[0,1],[1,2],[0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2]\n[[0,1],[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [4,2,3], queries = [[1,2],[2,3],[1,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-stable-subarrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:21.418Z",
+    "collectedAt": "2026-10-19T18:40:15.596Z",
     "sourceUpdatedAt": null
   }
 }

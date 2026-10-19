@@ -36,7 +36,7 @@
     {
       "input": "kx = 0, ky = 0, positions = [[1,2],[2,4]]",
       "output": "3",
-      "explanation": "Alice picks the pawn at (2, 4) and captures it in two moves: (0, 0) -&gt; (1, 2) -&gt; (2, 4). Note that the pawn at (1, 2) is not captured.\n\tBob picks the pawn at (1, 2) and captures it in one move: (2, 4) -&gt; (1, 2)."
+      "explanation": "Alice picks the pawn at (2, 4) and captures it in two moves: (0, 0) -> (1, 2) -> (2, 4). Note that the pawn at (1, 2) is not captured.\n\tBob picks the pawn at (1, 2) and captures it in one move: (2, 4) -> (1, 2)."
     }
   ],
   "starterCode": {
@@ -62,20 +62,32 @@
   },
   "publicTests": [
     {
-      "input": "kx = 1, ky = 1, positions = [[0,0]]",
+      "input": "1\n1\n[[0,0]]",
       "expectedOutput": "4"
     },
     {
-      "input": "kx = 0, ky = 2, positions = [[1,1],[2,2],[3,3]]",
+      "input": "0\n2\n[[1,1],[2,2],[3,3]]",
       "expectedOutput": "8"
     },
     {
-      "input": "kx = 0, ky = 0, positions = [[1,2],[2,4]]",
+      "input": "0\n0\n[[1,2],[2,4]]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "1\n1\n[[0,0]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "0\n2\n[[1,1],[2,2],[3,3]]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "0\n0\n[[1,2],[2,4]]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "kx = 1, ky = 1, positions = [[0,0]]",
       "expectedOutput": "4"
     },
@@ -86,38 +98,6 @@
     {
       "input": "kx = 0, ky = 0, positions = [[1,2],[2,4]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "1\n1\n[[0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "0\n2\n[[1,1],[2,2],[3,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "0\n0\n[[1,2],[2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "kx = 1, ky = 3, positions = [[2,2],[3,3],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "kx = 1, ky = 1, positions = [[2,3],[3,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2\n[[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n3\n[[2,2],[3,3],[4,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "kx = 2, ky = 2, positions = [[1,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-moves-to-kill-all-pawns/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.655Z",
+    "collectedAt": "2026-10-19T18:40:22.089Z",
     "sourceUpdatedAt": null
   }
 }

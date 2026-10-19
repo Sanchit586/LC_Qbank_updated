@@ -19,13 +19,13 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;this apple is sweet&quot;, s2 = &quot;this apple is sour&quot;",
-      "output": "[&quot;sweet&quot;,&quot;sour&quot;]",
+      "input": "s1 = \"this apple is sweet\", s2 = \"this apple is sour\"",
+      "output": "[\"sweet\",\"sour\"]",
       "explanation": null
     },
     {
-      "input": "s1 = &quot;apple apple&quot;, s2 = &quot;banana&quot;",
-      "output": "[&quot;banana&quot;]",
+      "input": "s1 = \"apple apple\", s2 = \"banana\"",
+      "output": "[\"banana\"]",
       "explanation": null
     }
   ],
@@ -52,82 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;this apple is sweet&quot;, s2 = &quot;this apple is sour&quot;",
-      "expectedOutput": "[&quot;sweet&quot;,&quot;sour&quot;]"
+      "input": "\"this apple is sweet\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"sweet\",\"sour\"]"
     },
     {
-      "input": "s1 = &quot;apple apple&quot;, s2 = &quot;banana&quot;",
-      "expectedOutput": "[&quot;banana&quot;]"
+      "input": "\"apple apple\"\n\"banana\"",
+      "expectedOutput": "[\"banana\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;this apple is sweet&quot;, s2 = &quot;this apple is sour&quot;",
-      "expectedOutput": "[&quot;sweet&quot;,&quot;sour&quot;]"
-    },
-    {
-      "input": "s1 = &quot;apple apple&quot;, s2 = &quot;banana&quot;",
-      "expectedOutput": "[&quot;banana&quot;]"
-    },
-    {
       "input": "\"this apple is sweet\"\n\"this apple is sour\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"sweet\",\"sour\"]"
     },
     {
       "input": "\"apple apple\"\n\"banana\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"banana\"]"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s1 = \"this apple is sweet\", s2 = \"this apple is sour\"",
+      "expectedOutput": "[\"sweet\",\"sour\"]"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;apple apple&quot;, s3 = &quot;banana&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"apple apple\", s2 = \"banana\"",
+      "expectedOutput": "[\"banana\"]"
     }
   ],
   "sqlSchema": null,
@@ -139,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/uncommon-words-from-two-sentences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:06.350Z",
+    "collectedAt": "2026-10-19T18:40:31.349Z",
     "sourceUpdatedAt": null
   }
 }

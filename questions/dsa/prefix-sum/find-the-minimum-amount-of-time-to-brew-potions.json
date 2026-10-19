@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "skill = [1,5,2,4], mana = [5,1,4,2]",
+      "input": "[1,5,2,4]\n[5,1,4,2]",
       "expectedOutput": "110"
     },
     {
-      "input": "skill = [1,1,1], mana = [1,1,1]",
+      "input": "[1,1,1]\n[1,1,1]",
       "expectedOutput": "5"
     },
     {
-      "input": "skill = [1,2,3,4], mana = [1,2]",
+      "input": "[1,2,3,4]\n[1,2]",
       "expectedOutput": "21"
     }
   ],
   "testCases": [
     {
+      "input": "[1,5,2,4]\n[5,1,4,2]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "[1,1,1]\n[1,1,1]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,2,3,4]\n[1,2]",
+      "expectedOutput": "21"
+    },
+    {
       "input": "skill = [1,5,2,4], mana = [5,1,4,2]",
       "expectedOutput": "110"
     },
@@ -81,38 +93,6 @@
     {
       "input": "skill = [1,2,3,4], mana = [1,2]",
       "expectedOutput": "21"
-    },
-    {
-      "input": "[1,5,2,4]\n[5,1,4,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1]\n[1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4]\n[1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "skill = [2,2,2], mana = [2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "skill = [2,3,4,5], mana = [2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,6,3,5]\n[6,2,5,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,2,2]\n[2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "skill = [2,6,3,5], mana = [6,2,5,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-minimum-amount-of-time-to-brew-potions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:10.645Z",
+    "collectedAt": "2026-10-19T18:40:18.468Z",
     "sourceUpdatedAt": null
   }
 }

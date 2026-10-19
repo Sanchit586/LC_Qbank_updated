@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2], nums2 = [2,3]",
+      "input": "[1,2]\n[2,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums1 = [1,0,3], nums2 = [5,3,4]",
+      "input": "[1,0,3]\n[5,3,4]",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2]\n[2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,0,3]\n[5,3,4]",
+      "expectedOutput": "8"
+    },
+    {
       "input": "nums1 = [1,2], nums2 = [2,3]",
       "expectedOutput": "2"
     },
     {
       "input": "nums1 = [1,0,3], nums2 = [5,3,4]",
       "expectedOutput": "8"
-    },
-    {
-      "input": "[1,2]\n[2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,0,3]\n[5,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3], nums3 = [3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-xor-sum-of-two-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:31.296Z",
+    "collectedAt": "2026-10-19T18:40:25.367Z",
     "sourceUpdatedAt": null
   }
 }

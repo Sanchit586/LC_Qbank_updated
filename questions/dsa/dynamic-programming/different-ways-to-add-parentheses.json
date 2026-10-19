@@ -22,12 +22,12 @@
   ],
   "examples": [
     {
-      "input": "expression = &quot;2-1-1&quot;",
+      "input": "expression = \"2-1-1\"",
       "output": "[0,2]",
       "explanation": "((2-1)-1) = 0 \n(2-(1-1)) = 2"
     },
     {
-      "input": "expression = &quot;2*3-4*5&quot;",
+      "input": "expression = \"2*3-4*5\"",
       "output": "[-34,-14,-10,-10,10]",
       "explanation": "(2*(3-(4*5))) = -34 \n((2*3)-(4*5)) = -14 \n((2*(3-4))*5) = -10 \n(2*((3-4)*5)) = -10 \n(((2*3)-4)*5) = 10"
     }
@@ -55,94 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "expression = &quot;2-1-1&quot;",
+      "input": "\"2-1-1\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "expression = &quot;2*3-4*5&quot;",
+      "input": "\"2*3-4*5\"",
       "expectedOutput": "[-34,-14,-10,-10,10]"
     }
   ],
   "testCases": [
     {
-      "input": "expression = &quot;2-1-1&quot;",
+      "input": "\"2-1-1\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "expression = &quot;2*3-4*5&quot;",
+      "input": "\"2*3-4*5\"",
       "expectedOutput": "[-34,-14,-10,-10,10]"
     },
     {
-      "input": "\"2-1-1\"",
-      "expectedOutput": null
+      "input": "expression = \"2-1-1\"",
+      "expectedOutput": "[0,2]"
     },
     {
-      "input": "\"2*3-4*5\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "expression = \"2*3-4*5\"",
+      "expectedOutput": "[-34,-14,-10,-10,10]"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/different-ways-to-add-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.419Z",
+    "collectedAt": "2026-10-19T18:40:16.664Z",
     "sourceUpdatedAt": null
   }
 }

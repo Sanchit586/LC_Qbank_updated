@@ -65,24 +65,40 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], group = [1,1,1]",
+      "input": "3\n[[0,1],[1,2]]\n[1,1,1]",
       "expectedOutput": "4"
     },
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], group = [3,2,3]",
+      "input": "3\n[[0,1],[1,2]]\n[3,2,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 4, edges = [[0,1],[0,2],[0,3]], group = [1,1,4,4]",
+      "input": "4\n[[0,1],[0,2],[0,3]]\n[1,1,4,4]",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 2, edges = [[0,1]], group = [9,8]",
+      "input": "2\n[[0,1]]\n[9,8]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[0,1],[1,2]]\n[1,1,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[3,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n[[0,1],[0,2],[0,3]]\n[1,1,4,4]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n[[0,1]]\n[9,8]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "n = 3, edges = [[0,1],[1,2]], group = [1,1,1]",
       "expectedOutput": "4"
     },
@@ -97,42 +113,6 @@
     {
       "input": "n = 2, edges = [[0,1]], group = [9,8]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "3\n[[0,1],[1,2]]\n[1,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,1],[1,2]]\n[3,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[0,1],[0,2],[0,3]]\n[1,1,4,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[[0,1]]\n[9,8]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, edges = [[1,2]], group = [10,9]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1,2],[2,3]]\n[2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2],[2,3]], group = [2,2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2],[2,3]], group = [4,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, edges = [[1,2],[1,3],[1,4]], group = [2,2,5,5]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -148,7 +128,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/total-sum-of-interaction-cost-in-tree-groups/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:00.053Z",
+    "collectedAt": "2026-10-19T18:40:31.143Z",
     "sourceUpdatedAt": null
   }
 }

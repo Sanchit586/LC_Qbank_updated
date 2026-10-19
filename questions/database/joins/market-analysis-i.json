@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Users table:\n+---------+------------+----------------+\n| user_id | join_date  | favorite_brand |\n+---------+------------+----------------+\n| 1       | 2018-01-01 | Lenovo         |\n| 2       | 2018-02-09 | Samsung        |\n| 3       | 2018-01-19 | LG             |\n| 4       | 2018-05-21 | HP             |\n+---------+------------+----------------+\nOrders table:\n+----------+------------+---------+----------+-----------+\n| order_id | order_date | item_id | buyer_id | seller_id |\n+----------+------------+---------+----------+-----------+\n| 1        | 2019-08-01 | 4       | 1        | 2         |\n| 2        | 2018-08-02 | 2       | 1        | 3         |\n| 3        | 2019-08-03 | 3       | 2        | 3         |\n| 4        | 2018-08-04 | 1       | 4        | 2         |\n| 5        | 2018-08-04 | 1       | 3        | 4         |\n| 6        | 2019-08-05 | 2       | 2        | 4         |\n+----------+------------+---------+----------+-----------+\nItems table:\n+---------+------------+\n| item_id | item_brand |\n+---------+------------+\n| 1       | Samsung    |\n| 2       | Lenovo     |\n| 3       | LG         |\n| 4       | HP         |\n+---------+------------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2018-01-01\",\"Lenovo\"],[2,\"2018-02-09\",\"Samsung\"],[3,\"2018-01-19\",\"LG\"],[4,\"2018-05-21\",\"HP\"]],\"Orders\":[[1,\"2019-08-01\",4,1,2],[2,\"2018-08-02\",2,1,3],[3,\"2019-08-03\",3,2,3],[4,\"2018-08-04\",1,4,2],[5,\"2018-08-04\",1,3,4],[6,\"2019-08-05\",2,2,4]],\"Items\":[[1,\"Samsung\"],[2,\"Lenovo\"],[3,\"LG\"],[4,\"HP\"]]}}",
       "expectedOutput": "+-----------+------------+----------------+\n| buyer_id  | join_date  | orders_in_2019 |\n+-----------+------------+----------------+\n| 1         | 2018-01-01 | 1              |\n| 2         | 2018-02-09 | 2              |\n| 3         | 2018-01-19 | 0              |\n| 4         | 2018-05-21 | 0              |\n+-----------+------------+----------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Users table:\n+---------+------------+----------------+\n| user_id | join_date  | favorite_brand |\n+---------+------------+----------------+\n| 1       | 2018-01-01 | Lenovo         |\n| 2       | 2018-02-09 | Samsung        |\n| 3       | 2018-01-19 | LG             |\n| 4       | 2018-05-21 | HP             |\n+---------+------------+----------------+\nOrders table:\n+----------+------------+---------+----------+-----------+\n| order_id | order_date | item_id | buyer_id | seller_id |\n+----------+------------+---------+----------+-----------+\n| 1        | 2019-08-01 | 4       | 1        | 2         |\n| 2        | 2018-08-02 | 2       | 1        | 3         |\n| 3        | 2019-08-03 | 3       | 2        | 3         |\n| 4        | 2018-08-04 | 1       | 4        | 2         |\n| 5        | 2018-08-04 | 1       | 3        | 4         |\n| 6        | 2019-08-05 | 2       | 2        | 4         |\n+----------+------------+---------+----------+-----------+\nItems table:\n+---------+------------+\n| item_id | item_brand |\n+---------+------------+\n| 1       | Samsung    |\n| 2       | Lenovo     |\n| 3       | LG         |\n| 4       | HP         |\n+---------+------------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2018-01-01\",\"Lenovo\"],[2,\"2018-02-09\",\"Samsung\"],[3,\"2018-01-19\",\"LG\"],[4,\"2018-05-21\",\"HP\"]],\"Orders\":[[1,\"2019-08-01\",4,1,2],[2,\"2018-08-02\",2,1,3],[3,\"2019-08-03\",3,2,3],[4,\"2018-08-04\",1,4,2],[5,\"2018-08-04\",1,3,4],[6,\"2019-08-05\",2,2,4]],\"Items\":[[1,\"Samsung\"],[2,\"Lenovo\"],[3,\"LG\"],[4,\"HP\"]]}}",
       "expectedOutput": "+-----------+------------+----------------+\n| buyer_id  | join_date  | orders_in_2019 |\n+-----------+------------+----------------+\n| 1         | 2018-01-01 | 1              |\n| 2         | 2018-02-09 | 2              |\n| 3         | 2018-01-19 | 0              |\n| 4         | 2018-05-21 | 0              |\n+-----------+------------+----------------+"
     },
     {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2018-01-01\",\"Lenovo\"],[2,\"2018-02-09\",\"Samsung\"],[3,\"2018-01-19\",\"LG\"],[4,\"2018-05-21\",\"HP\"]],\"Orders\":[[1,\"2019-08-01\",4,1,2],[2,\"2018-08-02\",2,1,3],[3,\"2019-08-03\",3,2,3],[4,\"2018-08-04\",1,4,2],[5,\"2018-08-04\",1,3,4],[6,\"2019-08-05\",2,2,4]],\"Items\":[[1,\"Samsung\"],[2,\"Lenovo\"],[3,\"LG\"],[4,\"HP\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[],\"Orders\":[],\"Items\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2018-01-01\",\"Lenovo\"]],\"Orders\":[[1,\"2019-08-01\",4,1,2]],\"Items\":[[1,\"Samsung\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"join_date\",\"favorite_brand\"],\"Orders\":[\"order_id\",\"order_date\",\"item_id\",\"buyer_id\",\"seller_id\"],\"Items\":[\"item_id\",\"item_brand\"]},\"rows\":{\"Users\":[[1,\"2018-01-01\",null],[2,\"2018-02-09\",null],[3,\"2018-01-19\",null],[4,\"2018-05-21\",null]],\"Orders\":[[1,\"2019-08-01\",4,1,null],[2,\"2018-08-02\",2,1,null],[3,\"2019-08-03\",3,2,null],[4,\"2018-08-04\",1,4,null],[5,\"2018-08-04\",1,3,null],[6,\"2019-08-05\",2,2,null]],\"Items\":[[1,null],[2,null],[3,null],[4,null]]}}",
-      "expectedOutput": null
+      "input": "Users table:\n+---------+------------+----------------+\n| user_id | join_date  | favorite_brand |\n+---------+------------+----------------+\n| 1       | 2018-01-01 | Lenovo         |\n| 2       | 2018-02-09 | Samsung        |\n| 3       | 2018-01-19 | LG             |\n| 4       | 2018-05-21 | HP             |\n+---------+------------+----------------+\nOrders table:\n+----------+------------+---------+----------+-----------+\n| order_id | order_date | item_id | buyer_id | seller_id |\n+----------+------------+---------+----------+-----------+\n| 1        | 2019-08-01 | 4       | 1        | 2         |\n| 2        | 2018-08-02 | 2       | 1        | 3         |\n| 3        | 2019-08-03 | 3       | 2        | 3         |\n| 4        | 2018-08-04 | 1       | 4        | 2         |\n| 5        | 2018-08-04 | 1       | 3        | 4         |\n| 6        | 2019-08-05 | 2       | 2        | 4         |\n+----------+------------+---------+----------+-----------+\nItems table:\n+---------+------------+\n| item_id | item_brand |\n+---------+------------+\n| 1       | Samsung    |\n| 2       | Lenovo     |\n| 3       | LG         |\n| 4       | HP         |\n+---------+------------+",
+      "expectedOutput": "+-----------+------------+----------------+\n| buyer_id  | join_date  | orders_in_2019 |\n+-----------+------------+----------------+\n| 1         | 2018-01-01 | 1              |\n| 2         | 2018-02-09 | 2              |\n| 3         | 2018-01-19 | 0              |\n| 4         | 2018-05-21 | 0              |\n+-----------+------------+----------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Users (user_id int, join_date date, favorite_brand varchar(10))\n\nCreate table If Not Exists Orders (order_id int, order_date date, item_id int, buyer_id int, seller_id int)\n\nCreate table If Not Exists Items (item_id int, item_brand varchar(10))\n\nTruncate table Users\n\nTruncate table Orders\n\nTruncate table Items",
@@ -76,7 +64,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/market-analysis-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:00.460Z",
+    "collectedAt": "2026-10-19T18:40:21.072Z",
     "sourceUpdatedAt": null
   }
 }

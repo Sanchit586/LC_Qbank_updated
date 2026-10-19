@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "secret = &quot;1807&quot;, guess = &quot;7810&quot;",
-      "output": "&quot;1A3B&quot;",
-      "explanation": "Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1807&quot;\n  |\n&quot;7810&quot;"
+      "input": "secret = \"1807\", guess = \"7810\"",
+      "output": "\"1A3B\"",
+      "explanation": "Bulls are connected with a '|' and cows are underlined:\n\"1807\"\n  |\n\"7810\""
     },
     {
-      "input": "secret = &quot;1123&quot;, guess = &quot;0111&quot;",
-      "output": "&quot;1A1B&quot;",
-      "explanation": "Bulls are connected with a &#39;|&#39; and cows are underlined:\n&quot;1123&quot;        &quot;1123&quot;\n  |      or     |\n&quot;0111&quot;        &quot;0111&quot;\nNote that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull."
+      "input": "secret = \"1123\", guess = \"0111\"",
+      "output": "\"1A1B\"",
+      "explanation": "Bulls are connected with a '|' and cows are underlined:\n\"1123\"        \"1123\"\n  |      or     |\n\"0111\"        \"0111\"\nNote that only one of the two unmatched 1s is counted as a cow since the non-bull digits can only be rearranged to allow one 1 to be a bull."
     }
   ],
   "starterCode": {
@@ -51,90 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "secret = &quot;1807&quot;, guess = &quot;7810&quot;",
-      "expectedOutput": "&quot;1A3B&quot;"
+      "input": "\"1807\"\n\"7810\"",
+      "expectedOutput": "\"1A3B\""
     },
     {
-      "input": "secret = &quot;1123&quot;, guess = &quot;0111&quot;",
-      "expectedOutput": "&quot;1A1B&quot;"
+      "input": "\"1123\"\n\"0111\"",
+      "expectedOutput": "\"1A1B\""
     }
   ],
   "testCases": [
     {
-      "input": "secret = &quot;1807&quot;, guess = &quot;7810&quot;",
-      "expectedOutput": "&quot;1A3B&quot;"
-    },
-    {
-      "input": "secret = &quot;1123&quot;, guess = &quot;0111&quot;",
-      "expectedOutput": "&quot;1A1B&quot;"
-    },
-    {
       "input": "\"1807\"\n\"7810\"",
-      "expectedOutput": null
+      "expectedOutput": "\"1A3B\""
     },
     {
       "input": "\"1123\"\n\"0111\"",
-      "expectedOutput": null
+      "expectedOutput": "\"1A1B\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "secret = \"1807\", guess = \"7810\"",
+      "expectedOutput": "\"1A3B\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "secret = &quot;1124&quot;, guess = &quot;112&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1808\"\n\"7811\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1124\"\n\"112\"",
-      "expectedOutput": null
+      "input": "secret = \"1123\", guess = \"0111\"",
+      "expectedOutput": "\"1A1B\""
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/bulls-and-cows/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.144Z",
+    "collectedAt": "2026-10-19T18:40:13.777Z",
     "sourceUpdatedAt": null
   }
 }

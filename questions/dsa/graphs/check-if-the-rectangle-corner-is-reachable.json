@@ -65,24 +65,40 @@
   },
   "publicTests": [
     {
-      "input": "xCorner = 3, yCorner = 4, circles = [[2,1,1]]",
+      "input": "3\n4\n[[2,1,1]]",
       "expectedOutput": "true"
     },
     {
-      "input": "xCorner = 3, yCorner = 3, circles = [[1,1,2]]",
+      "input": "3\n3\n[[1,1,2]]",
       "expectedOutput": "false"
     },
     {
-      "input": "xCorner = 3, yCorner = 3, circles = [[2,1,1],[1,2,1]]",
+      "input": "3\n3\n[[2,1,1],[1,2,1]]",
       "expectedOutput": "false"
     },
     {
-      "input": "xCorner = 4, yCorner = 4, circles = [[5,5,1]]",
+      "input": "4\n4\n[[5,5,1]]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "3\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n3\n[[1,1,2]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n3\n[[2,1,1],[1,2,1]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4\n4\n[[5,5,1]]",
+      "expectedOutput": "true"
+    },
+    {
       "input": "xCorner = 3, yCorner = 4, circles = [[2,1,1]]",
       "expectedOutput": "true"
     },
@@ -97,42 +113,6 @@
     {
       "input": "xCorner = 4, yCorner = 4, circles = [[5,5,1]]",
       "expectedOutput": "true"
-    },
-    {
-      "input": "3\n4\n[[2,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3\n[[1,1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3\n[[2,1,1],[1,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n4\n[[5,5,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "xCorner = 5, yCorner = 5, circles = [[6,6,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n5\n[[3,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "xCorner = 4, yCorner = 5, circles = [[3,2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "xCorner = 4, yCorner = 4, circles = [[2,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "xCorner = 4, yCorner = 4, circles = [[3,2,2],[2,3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -149,7 +129,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-the-rectangle-corner-is-reachable/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:55.508Z",
+    "collectedAt": "2026-10-19T18:40:14.245Z",
     "sourceUpdatedAt": null
   }
 }

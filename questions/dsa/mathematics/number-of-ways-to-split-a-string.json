@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "s = \"10101\"",
       "output": "4",
-      "explanation": "There are four ways to split s in 3 parts where each part contain the same number of letters &#39;1&#39;.\n&quot;1|010|1&quot;\n&quot;1|01|01&quot;\n&quot;10|10|1&quot;\n&quot;10|1|01&quot;"
+      "explanation": "There are four ways to split s in 3 parts where each part contain the same number of letters '1'.\n\"1|010|1\"\n\"1|01|01\"\n\"10|10|1\"\n\"10|1|01\""
     },
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "s = \"1001\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "s = &quot;0000&quot;",
+      "input": "s = \"0000\"",
       "output": "3",
-      "explanation": "There are three ways to split s in 3 parts.\n&quot;0|0|00&quot;\n&quot;0|00|0&quot;\n&quot;00|0|0&quot;"
+      "explanation": "There are three ways to split s in 3 parts.\n\"0|0|00\"\n\"0|00|0\"\n\"00|0|0\""
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "\"10101\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "\"1001\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;0000&quot;",
+      "input": "\"0000\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;10101&quot;",
+      "input": "\"10101\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;1001&quot;",
+      "input": "\"1001\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;0000&quot;",
+      "input": "\"0000\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"10101\"",
-      "expectedOutput": null
+      "input": "s = \"10101\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"1001\"",
-      "expectedOutput": null
+      "input": "s = \"1001\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"0000\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"0000\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-split-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.837Z",
+    "collectedAt": "2026-10-19T18:40:26.299Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,7 +18,18 @@
     "There will be at most 2 * 104 calls in total to checkIn, checkOut, and getAverageTime.",
     "Answers within 10-5 of the actual value will be accepted."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"UndergroundSystem\",\"checkIn\",\"checkIn\",\"checkIn\",\"checkOut\",\"checkOut\",\"checkOut\",\"getAverageTime\",\"getAverageTime\",\"checkIn\",\"getAverageTime\",\"checkOut\",\"getAverageTime\"]\n[[],[45,\"Leyton\",3],[32,\"Paradise\",8],[27,\"Leyton\",10],[45,\"Waterloo\",15],[27,\"Waterloo\",20],[32,\"Cambridge\",22],[\"Paradise\",\"Cambridge\"],[\"Leyton\",\"Waterloo\"],[10,\"Leyton\",24],[\"Leyton\",\"Waterloo\"],[10,\"Waterloo\",38],[\"Leyton\",\"Waterloo\"]]",
+      "output": "[null,null,null,null,null,null,null,14.00000,11.00000,null,11.00000,null,12.00000]",
+      "explanation": "UndergroundSystem undergroundSystem = new UndergroundSystem();\nundergroundSystem.checkIn(45, \"Leyton\", 3);\nundergroundSystem.checkIn(32, \"Paradise\", 8);\nundergroundSystem.checkIn(27, \"Leyton\", 10);\nundergroundSystem.checkOut(45, \"Waterloo\", 15);  // Customer 45 \"Leyton\" -> \"Waterloo\" in 15-3 = 12\nundergroundSystem.checkOut(27, \"Waterloo\", 20);  // Customer 27 \"Leyton\" -> \"Waterloo\" in 20-10 = 10\nundergroundSystem.checkOut(32, \"Cambridge\", 22); // Customer 32 \"Paradise\" -> \"Cambridge\" in 22-8 = 14\nundergroundSystem.getAverageTime(\"Paradise\", \"Cambridge\"); // return 14.00000. One trip \"Paradise\" -> \"Cambridge\", (14) / 1 = 14\nundergroundSystem.getAverageTime(\"Leyton\", \"Waterloo\");    // return 11.00000. Two trips \"Leyton\" -> \"Waterloo\", (10 + 12) / 2 = 11\nundergroundSystem.checkIn(10, \"Leyton\", 24);\nundergroundSystem.getAverageTime(\"Leyton\", \"Waterloo\");    // return 11.00000\nundergroundSystem.checkOut(10, \"Waterloo\", 38);  // Customer 10 \"Leyton\" -> \"Waterloo\" in 38-24 = 14\nundergroundSystem.getAverageTime(\"Leyton\", \"Waterloo\");    // return 12.00000. Three trips \"Leyton\" -> \"Waterloo\", (10 + 12 + 14) / 3 = 12"
+    },
+    {
+      "input": "[\"UndergroundSystem\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\"]\n[[],[10,\"Leyton\",3],[10,\"Paradise\",8],[\"Leyton\",\"Paradise\"],[5,\"Leyton\",10],[5,\"Paradise\",16],[\"Leyton\",\"Paradise\"],[2,\"Leyton\",21],[2,\"Paradise\",30],[\"Leyton\",\"Paradise\"]]",
+      "output": "[null,null,null,5.00000,null,null,5.50000,null,null,6.66667]",
+      "explanation": "UndergroundSystem undergroundSystem = new UndergroundSystem();\nundergroundSystem.checkIn(10, \"Leyton\", 3);\nundergroundSystem.checkOut(10, \"Paradise\", 8); // Customer 10 \"Leyton\" -> \"Paradise\" in 8-3 = 5\nundergroundSystem.getAverageTime(\"Leyton\", \"Paradise\"); // return 5.00000, (5) / 1 = 5\nundergroundSystem.checkIn(5, \"Leyton\", 10);\nundergroundSystem.checkOut(5, \"Paradise\", 16); // Customer 5 \"Leyton\" -> \"Paradise\" in 16-10 = 6\nundergroundSystem.getAverageTime(\"Leyton\", \"Paradise\"); // return 5.50000, (5 + 6) / 2 = 5.5\nundergroundSystem.checkIn(2, \"Leyton\", 21);\nundergroundSystem.checkOut(2, \"Paradise\", 30); // Customer 2 \"Leyton\" -> \"Paradise\" in 30-21 = 9\nundergroundSystem.getAverageTime(\"Leyton\", \"Paradise\"); // return 6.66667, (5 + 6 + 9) / 3 = 6.66667"
+    }
+  ],
   "starterCode": {
     "cpp": "class UndergroundSystem {\npublic:\n    UndergroundSystem() {\n        \n    }\n    \n    void checkIn(int id, string stationName, int t) {\n        \n    }\n    \n    void checkOut(int id, string stationName, int t) {\n        \n    }\n    \n    double getAverageTime(string startStation, string endStation) {\n        \n    }\n};\n\n/**\n * Your UndergroundSystem object will be instantiated and called as such:\n * UndergroundSystem* obj = new UndergroundSystem();\n * obj->checkIn(id,stationName,t);\n * obj->checkOut(id,stationName,t);\n * double param_3 = obj->getAverageTime(startStation,endStation);\n */",
     "java": "class UndergroundSystem {\n\n    public UndergroundSystem() {\n        \n    }\n    \n    public void checkIn(int id, String stationName, int t) {\n        \n    }\n    \n    public void checkOut(int id, String stationName, int t) {\n        \n    }\n    \n    public double getAverageTime(String startStation, String endStation) {\n        \n    }\n}\n\n/**\n * Your UndergroundSystem object will be instantiated and called as such:\n * UndergroundSystem obj = new UndergroundSystem();\n * obj.checkIn(id,stationName,t);\n * obj.checkOut(id,stationName,t);\n * double param_3 = obj.getAverageTime(startStation,endStation);\n */",
@@ -43,25 +54,21 @@
   "publicTests": [
     {
       "input": "[\"UndergroundSystem\",\"checkIn\",\"checkIn\",\"checkIn\",\"checkOut\",\"checkOut\",\"checkOut\",\"getAverageTime\",\"getAverageTime\",\"checkIn\",\"getAverageTime\",\"checkOut\",\"getAverageTime\"]\n[[],[45,\"Leyton\",3],[32,\"Paradise\",8],[27,\"Leyton\",10],[45,\"Waterloo\",15],[27,\"Waterloo\",20],[32,\"Cambridge\",22],[\"Paradise\",\"Cambridge\"],[\"Leyton\",\"Waterloo\"],[10,\"Leyton\",24],[\"Leyton\",\"Waterloo\"],[10,\"Waterloo\",38],[\"Leyton\",\"Waterloo\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,null,null,null,14.00000,11.00000,null,11.00000,null,12.00000]"
     },
     {
       "input": "[\"UndergroundSystem\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\"]\n[[],[10,\"Leyton\",3],[10,\"Paradise\",8],[\"Leyton\",\"Paradise\"],[5,\"Leyton\",10],[5,\"Paradise\",16],[\"Leyton\",\"Paradise\"],[2,\"Leyton\",21],[2,\"Paradise\",30],[\"Leyton\",\"Paradise\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,5.00000,null,null,5.50000,null,null,6.66667]"
     }
   ],
   "testCases": [
     {
       "input": "[\"UndergroundSystem\",\"checkIn\",\"checkIn\",\"checkIn\",\"checkOut\",\"checkOut\",\"checkOut\",\"getAverageTime\",\"getAverageTime\",\"checkIn\",\"getAverageTime\",\"checkOut\",\"getAverageTime\"]\n[[],[45,\"Leyton\",3],[32,\"Paradise\",8],[27,\"Leyton\",10],[45,\"Waterloo\",15],[27,\"Waterloo\",20],[32,\"Cambridge\",22],[\"Paradise\",\"Cambridge\"],[\"Leyton\",\"Waterloo\"],[10,\"Leyton\",24],[\"Leyton\",\"Waterloo\"],[10,\"Waterloo\",38],[\"Leyton\",\"Waterloo\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,null,null,null,null,14.00000,11.00000,null,11.00000,null,12.00000]"
     },
     {
       "input": "[\"UndergroundSystem\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\",\"checkIn\",\"checkOut\",\"getAverageTime\"]\n[[],[10,\"Leyton\",3],[10,\"Paradise\",8],[\"Leyton\",\"Paradise\"],[5,\"Leyton\",10],[5,\"Paradise\",16],[\"Leyton\",\"Paradise\"],[2,\"Leyton\",21],[2,\"Paradise\",30],[\"Leyton\",\"Paradise\"]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"UndergroundSystem\",\"checkIn\",\"checkIn\",\"checkIn\",\"checkOut\",\"checkOut\",\"checkOut\",\"getAverageTime\",\"getAverageTime\",\"checkIn\",\"getAverageTime\",\"checkOut\",\"getAverageTime\"]\n[[],[46,\"Leyton\",4],[33,\"Paradise\",9],[28,\"Leyton\",11],[46,\"Waterloo\",16],[28,\"Waterloo\",21],[33,\"Cambridge\",23],[\"Paradise\",\"Cambridge\"],[\"Leyton\",\"Waterloo\"],[11,\"Leyton\",25],[\"Leyton\",\"Waterloo\"],[11,\"Waterloo\",39],[\"Leyton\",\"Waterloo\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null,null,null,5.00000,null,null,5.50000,null,null,6.66667]"
     }
   ],
   "sqlSchema": null,
@@ -75,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-underground-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.934Z",
+    "collectedAt": "2026-10-19T18:40:16.541Z",
     "sourceUpdatedAt": null
   }
 }

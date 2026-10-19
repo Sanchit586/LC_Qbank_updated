@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "s = \"abc\", k = 2",
       "output": "1",
-      "explanation": "s has three distinct characters: &#39;a&#39;, &#39;b&#39; and &#39;c&#39;, each with a frequency of 1.\n\tSince we can have at most k = 2 distinct characters, remove all occurrences of any one character from the string.\n\tFor example, removing all occurrences of &#39;c&#39; results in at most k distinct characters. Thus, the answer is 1."
+      "explanation": "s has three distinct characters: 'a', 'b' and 'c', each with a frequency of 1.\n\tSince we can have at most k = 2 distinct characters, remove all occurrences of any one character from the string.\n\tFor example, removing all occurrences of 'c' results in at most k distinct characters. Thus, the answer is 1."
     },
     {
-      "input": "s = &quot;aabb&quot;, k = 2",
+      "input": "s = \"aabb\", k = 2",
       "output": "0",
-      "explanation": "s has two distinct characters (&#39;a&#39; and &#39;b&#39;) with frequencies of 2 and 2, respectively.\n\tSince we can have at most k = 2 distinct characters, no deletions are required. Thus, the answer is 0."
+      "explanation": "s has two distinct characters ('a' and 'b') with frequencies of 2 and 2, respectively.\n\tSince we can have at most k = 2 distinct characters, no deletions are required. Thus, the answer is 0."
     },
     {
-      "input": "s = &quot;yyyzz&quot;, k = 1",
+      "input": "s = \"yyyzz\", k = 1",
       "output": "2",
-      "explanation": "s has two distinct characters (&#39;y&#39; and &#39;z&#39;) with frequencies of 3 and 2, respectively.\n\tSince we can have at most k = 1 distinct character, remove all occurrences of any one character from the string.\n\tRemoving all &#39;z&#39; results in at most k distinct characters. Thus, the answer is 2."
+      "explanation": "s has two distinct characters ('y' and 'z') with frequencies of 3 and 2, respectively.\n\tSince we can have at most k = 1 distinct character, remove all occurrences of any one character from the string.\n\tRemoving all 'z' results in at most k distinct characters. Thus, the answer is 2."
     }
   ],
   "starterCode": {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aabb&quot;, k = 2",
+      "input": "\"aabb\"\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;yyyzz&quot;, k = 1",
+      "input": "\"yyyzz\"\n1",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;, k = 2",
+      "input": "\"abc\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;aabb&quot;, k = 2",
+      "input": "\"aabb\"\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;yyyzz&quot;, k = 1",
+      "input": "\"yyyzz\"\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "\"abc\"\n2",
-      "expectedOutput": null
+      "input": "s = \"abc\", k = 2",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aabb\"\n2",
-      "expectedOutput": null
+      "input": "s = \"aabb\", k = 2",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"yyyzz\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aabb&quot;, k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;yyyzz&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aabb\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abc&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"yyyzz\", k = 1",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -130,7 +110,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-deletions-for-at-most-k-distinct-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:53.741Z",
+    "collectedAt": "2026-10-19T18:40:23.760Z",
     "sourceUpdatedAt": null
   }
 }

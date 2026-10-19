@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, m = 3",
+      "input": "2\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 5, m = 8",
+      "input": "5\n8",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 11, m = 13",
+      "input": "11\n13",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "2\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "5\n8",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "11\n13",
+      "expectedOutput": "6"
+    },
+    {
       "input": "n = 2, m = 3",
       "expectedOutput": "3"
     },
@@ -76,38 +88,6 @@
     {
       "input": "n = 11, m = 13",
       "expectedOutput": "6"
-    },
-    {
-      "input": "2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n8",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n13",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, m = 9",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 12, m = 14",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n9",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, m = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/tiling-a-rectangle-with-the-fewest-squares/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:57.711Z",
+    "collectedAt": "2026-10-19T18:40:31.022Z",
     "sourceUpdatedAt": null
   }
 }

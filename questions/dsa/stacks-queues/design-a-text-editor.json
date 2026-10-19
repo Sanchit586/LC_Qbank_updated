@@ -19,7 +19,13 @@
     "text consists of lowercase English letters.",
     "At most 2 * 104 calls in total will be made to addText, deleteText, cursorLeft and cursorRight."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"TextEditor\", \"addText\", \"deleteText\", \"addText\", \"cursorRight\", \"cursorLeft\", \"deleteText\", \"cursorLeft\", \"cursorRight\"]\n[[], [\"leetcode\"], [4], [\"practice\"], [3], [8], [10], [2], [6]]",
+      "output": "[null, null, 4, null, \"etpractice\", \"leet\", 4, \"\", \"practi\"]",
+      "explanation": "TextEditor textEditor = new TextEditor(); // The current text is \"|\". (The '|' character represents the cursor)\ntextEditor.addText(\"leetcode\"); // The current text is \"leetcode|\".\ntextEditor.deleteText(4); // return 4\n                          // The current text is \"leet|\". \n                          // 4 characters were deleted.\ntextEditor.addText(\"practice\"); // The current text is \"leetpractice|\". \ntextEditor.cursorRight(3); // return \"etpractice\"\n                           // The current text is \"leetpractice|\". \n                           // The cursor cannot be moved beyond the actual text and thus did not move.\n                           // \"etpractice\" is the last 10 characters to the left of the cursor.\ntextEditor.cursorLeft(8); // return \"leet\"\n                          // The current text is \"leet|practice\".\n                          // \"leet\" is the last min(10, 4) = 4 characters to the left of the cursor.\ntextEditor.deleteText(10); // return 4\n                           // The current text is \"|practice\".\n                           // Only 4 characters were deleted.\ntextEditor.cursorLeft(2); // return \"\"\n                          // The current text is \"|practice\".\n                          // The cursor cannot be moved beyond the actual text and thus did not move. \n                          // \"\" is the last min(10, 0) = 0 characters to the left of the cursor.\ntextEditor.cursorRight(6); // return \"practi\"\n                           // The current text is \"practi|ce\".\n                           // \"practi\" is the last min(10, 6) = 6 characters to the left of the cursor."
+    }
+  ],
   "starterCode": {
     "cpp": "class TextEditor {\npublic:\n    TextEditor() {\n        \n    }\n    \n    void addText(string text) {\n        \n    }\n    \n    int deleteText(int k) {\n        \n    }\n    \n    string cursorLeft(int k) {\n        \n    }\n    \n    string cursorRight(int k) {\n        \n    }\n};\n\n/**\n * Your TextEditor object will be instantiated and called as such:\n * TextEditor* obj = new TextEditor();\n * obj->addText(text);\n * int param_2 = obj->deleteText(k);\n * string param_3 = obj->cursorLeft(k);\n * string param_4 = obj->cursorRight(k);\n */",
     "java": "class TextEditor {\n\n    public TextEditor() {\n        \n    }\n    \n    public void addText(String text) {\n        \n    }\n    \n    public int deleteText(int k) {\n        \n    }\n    \n    public String cursorLeft(int k) {\n        \n    }\n    \n    public String cursorRight(int k) {\n        \n    }\n}\n\n/**\n * Your TextEditor object will be instantiated and called as such:\n * TextEditor obj = new TextEditor();\n * obj.addText(text);\n * int param_2 = obj.deleteText(k);\n * String param_3 = obj.cursorLeft(k);\n * String param_4 = obj.cursorRight(k);\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"TextEditor\",\"addText\",\"deleteText\",\"addText\",\"cursorRight\",\"cursorLeft\",\"deleteText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"leetcode\"],[4],[\"practice\"],[3],[8],[10],[2],[6]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 4, null, \"etpractice\", \"leet\", 4, \"\", \"practi\"]"
     }
   ],
   "testCases": [
     {
       "input": "[\"TextEditor\",\"addText\",\"deleteText\",\"addText\",\"cursorRight\",\"cursorLeft\",\"deleteText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"leetcode\"],[4],[\"practice\"],[3],[8],[10],[2],[6]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, 4, null, \"etpractice\", \"leet\", 4, \"\", \"practi\"]"
     },
     {
-      "input": "[\"TextEditor\",\"addText\",\"deleteText\",\"addText\",\"cursorRight\",\"cursorLeft\",\"deleteText\",\"cursorLeft\",\"cursorRight\"]\n[[],[\"leetcode\"],[5],[\"practice\"],[4],[9],[11],[3],[7]]",
-      "expectedOutput": null
+      "input": "[\"TextEditor\", \"addText\", \"deleteText\", \"addText\", \"cursorRight\", \"cursorLeft\", \"deleteText\", \"cursorLeft\", \"cursorRight\"]\n[[], [\"leetcode\"], [4], [\"practice\"], [3], [8], [10], [2], [6]]",
+      "expectedOutput": "[null, null, 4, null, \"etpractice\", \"leet\", 4, \"\", \"practi\"]"
     }
   ],
   "sqlSchema": null,
@@ -71,7 +77,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-a-text-editor/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:38.917Z",
+    "collectedAt": "2026-10-19T18:40:16.377Z",
     "sourceUpdatedAt": null
   }
 }

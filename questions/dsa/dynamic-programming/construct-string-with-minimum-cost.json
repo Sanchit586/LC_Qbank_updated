@@ -22,12 +22,12 @@
   ],
   "examples": [
     {
-      "input": "target = &quot;abcdef&quot;, words = [&quot;abdef&quot;,&quot;abc&quot;,&quot;d&quot;,&quot;def&quot;,&quot;ef&quot;], costs = [100,1,1,10,5]",
+      "input": "target = \"abcdef\", words = [\"abdef\",\"abc\",\"d\",\"def\",\"ef\"], costs = [100,1,1,10,5]",
       "output": "7",
       "explanation": null
     },
     {
-      "input": "target = &quot;aaaa&quot;, words = [&quot;z&quot;,&quot;zz&quot;,&quot;zzz&quot;], costs = [1,10,100]",
+      "input": "target = \"aaaa\", words = [\"z\",\"zz\",\"zzz\"], costs = [1,10,100]",
       "output": "-1",
       "explanation": null
     }
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "target = &quot;abcdef&quot;, words = [&quot;abdef&quot;,&quot;abc&quot;,&quot;d&quot;,&quot;def&quot;,&quot;ef&quot;], costs = [100,1,1,10,5]",
+      "input": "\"abcdef\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
       "expectedOutput": "7"
     },
     {
-      "input": "target = &quot;aaaa&quot;, words = [&quot;z&quot;,&quot;zz&quot;,&quot;zzz&quot;], costs = [1,10,100]",
+      "input": "\"aaaa\"\n[\"z\",\"zz\",\"zzz\"]\n[1,10,100]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "target = &quot;abcdef&quot;, words = [&quot;abdef&quot;,&quot;abc&quot;,&quot;d&quot;,&quot;def&quot;,&quot;ef&quot;], costs = [100,1,1,10,5]",
+      "input": "\"abcdef\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
       "expectedOutput": "7"
     },
     {
-      "input": "target = &quot;aaaa&quot;, words = [&quot;z&quot;,&quot;zz&quot;,&quot;zzz&quot;], costs = [1,10,100]",
+      "input": "\"aaaa\"\n[\"z\",\"zz\",\"zzz\"]\n[1,10,100]",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"abcdef\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
-      "expectedOutput": null
+      "input": "target = \"abcdef\", words = [\"abdef\",\"abc\",\"d\",\"def\",\"ef\"], costs = [100,1,1,10,5]",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"aaaa\"\n[\"z\",\"zz\",\"zzz\"]\n[1,10,100]",
-      "expectedOutput": null
-    },
-    {
-      "input": "target = &quot;abcdef&quot;, words = [&quot;abdef&quot;,&quot;abc&quot;,&quot;d&quot;,&quot;def&quot;,&quot;ef&quot;], costs = [101,2,2,11,6]",
-      "expectedOutput": null
+      "input": "target = \"aaaa\", words = [\"z\",\"zz\",\"zzz\"], costs = [1,10,100]",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-string-with-minimum-cost/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:03.717Z",
+    "collectedAt": "2026-10-19T18:40:14.744Z",
     "sourceUpdatedAt": null
   }
 }

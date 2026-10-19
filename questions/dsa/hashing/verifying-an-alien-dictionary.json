@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;",
+      "input": "words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"",
       "output": "true",
-      "explanation": "As &#39;h&#39; comes before &#39;l&#39; in this language, then the sequence is sorted."
+      "explanation": "As 'h' comes before 'l' in this language, then the sequence is sorted."
     },
     {
-      "input": "words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;",
+      "input": "words = [\"word\",\"world\",\"row\"], order = \"worldabcefghijkmnpqstuvxyz\"",
       "output": "false",
-      "explanation": "As &#39;d&#39; comes after &#39;l&#39; in this language, then words[0] &gt; words[1], hence the sequence is unsorted."
+      "explanation": "As 'd' comes after 'l' in this language, then words[0] > words[1], hence the sequence is unsorted."
     },
     {
-      "input": "words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;",
+      "input": "words = [\"apple\",\"app\"], order = \"abcdefghijklmnopqrstuvwxyz\"",
       "output": "false",
-      "explanation": "The first three characters &quot;app&quot; match, and the second string is shorter (in size.) According to lexicographical rules &quot;apple&quot; &gt; &quot;app&quot;, because &#39;l&#39; &gt; &#39;&empty;&#39;, where &#39;&empty;&#39; is defined as the blank character which is less than any other character (More info)."
+      "explanation": "The first three characters \"app\" match, and the second string is shorter (in size.) According to lexicographical rules \"apple\" > \"app\", because 'l' > '∅', where '∅' is defined as the blank character which is less than any other character (More info)."
     }
   ],
   "starterCode": {
@@ -57,42 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;",
+      "input": "[\"hello\",\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;",
+      "input": "[\"word\",\"world\",\"row\"]\n\"worldabcefghijkmnpqstuvxyz\"",
       "expectedOutput": "false"
     },
     {
-      "input": "words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;",
+      "input": "[\"apple\",\"app\"]\n\"abcdefghijklmnopqrstuvwxyz\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;leetcode&quot;], order = &quot;hlabcdefgijkmnopqrstuvwxyz&quot;",
+      "input": "[\"hello\",\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;], order = &quot;worldabcefghijkmnpqstuvxyz&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "words = [&quot;apple&quot;,&quot;app&quot;], order = &quot;abcdefghijklmnopqrstuvwxyz&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "[\"hello\",\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
       "input": "[\"word\",\"world\",\"row\"]\n\"worldabcefghijkmnpqstuvxyz\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "[\"apple\",\"app\"]\n\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
+    },
+    {
+      "input": "words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "words = [\"word\",\"world\",\"row\"], order = \"worldabcefghijkmnpqstuvxyz\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "words = [\"apple\",\"app\"], order = \"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -104,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/verifying-an-alien-dictionary/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:10.533Z",
+    "collectedAt": "2026-10-19T18:40:31.583Z",
     "sourceUpdatedAt": null
   }
 }

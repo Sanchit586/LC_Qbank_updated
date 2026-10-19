@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;cba&quot;, k = 1",
-      "output": "&quot;acb&quot;",
-      "explanation": "In the first move, we move the 1st character &#39;c&#39; to the end, obtaining the string &quot;bac&quot;.\nIn the second move, we move the 1st character &#39;b&#39; to the end, obtaining the final result &quot;acb&quot;."
+      "input": "s = \"cba\", k = 1",
+      "output": "\"acb\"",
+      "explanation": "In the first move, we move the 1st character 'c' to the end, obtaining the string \"bac\".\nIn the second move, we move the 1st character 'b' to the end, obtaining the final result \"acb\"."
     },
     {
-      "input": "s = &quot;baaca&quot;, k = 3",
-      "output": "&quot;aaabc&quot;",
-      "explanation": "In the first move, we move the 1st character &#39;b&#39; to the end, obtaining the string &quot;aacab&quot;.\nIn the second move, we move the 3rd character &#39;c&#39; to the end, obtaining the final result &quot;aaabc&quot;."
+      "input": "s = \"baaca\", k = 3",
+      "output": "\"aaabc\"",
+      "explanation": "In the first move, we move the 1st character 'b' to the end, obtaining the string \"aacab\".\nIn the second move, we move the 3rd character 'c' to the end, obtaining the final result \"aaabc\"."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;cba&quot;, k = 1",
-      "expectedOutput": "&quot;acb&quot;"
+      "input": "\"cba\"\n1",
+      "expectedOutput": "\"acb\""
     },
     {
-      "input": "s = &quot;baaca&quot;, k = 3",
-      "expectedOutput": "&quot;aaabc&quot;"
+      "input": "\"baaca\"\n3",
+      "expectedOutput": "\"aaabc\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;cba&quot;, k = 1",
-      "expectedOutput": "&quot;acb&quot;"
-    },
-    {
-      "input": "s = &quot;baaca&quot;, k = 3",
-      "expectedOutput": "&quot;aaabc&quot;"
-    },
-    {
       "input": "\"cba\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"acb\""
     },
     {
       "input": "\"baaca\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"aaabc\""
     },
     {
-      "input": "s = &quot;cba&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"cba\", k = 1",
+      "expectedOutput": "\"acb\""
+    },
+    {
+      "input": "s = \"baaca\", k = 3",
+      "expectedOutput": "\"aaabc\""
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/orderly-queue/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.419Z",
+    "collectedAt": "2026-10-19T18:40:26.412Z",
     "sourceUpdatedAt": null
   }
 }

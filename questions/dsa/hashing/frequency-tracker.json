@@ -15,7 +15,23 @@
     "1 <= frequency <= 105",
     "At most, 2 * 105 calls will be made to add, deleteOne, and hasFrequency in total."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"FrequencyTracker\", \"add\", \"add\", \"hasFrequency\"]\n[[], [3], [3], [2]]",
+      "output": "[null, null, null, true]",
+      "explanation": "FrequencyTracker frequencyTracker = new FrequencyTracker();\nfrequencyTracker.add(3); // The data structure now contains [3]\nfrequencyTracker.add(3); // The data structure now contains [3, 3]\nfrequencyTracker.hasFrequency(2); // Returns true, because 3 occurs twice"
+    },
+    {
+      "input": "[\"FrequencyTracker\", \"add\", \"deleteOne\", \"hasFrequency\"]\n[[], [1], [1], [1]]",
+      "output": "[null, null, null, false]",
+      "explanation": "FrequencyTracker frequencyTracker = new FrequencyTracker();\nfrequencyTracker.add(1); // The data structure now contains [1]\nfrequencyTracker.deleteOne(1); // The data structure becomes empty []\nfrequencyTracker.hasFrequency(1); // Returns false, because the data structure is empty"
+    },
+    {
+      "input": "[\"FrequencyTracker\", \"hasFrequency\", \"add\", \"hasFrequency\"]\n[[], [2], [3], [1]]",
+      "output": "[null, false, null, true]",
+      "explanation": "FrequencyTracker frequencyTracker = new FrequencyTracker();\nfrequencyTracker.hasFrequency(2); // Returns false, because the data structure is empty\nfrequencyTracker.add(3); // The data structure now contains [3]\nfrequencyTracker.hasFrequency(1); // Returns true, because 3 occurs once"
+    }
+  ],
   "starterCode": {
     "cpp": "class FrequencyTracker {\npublic:\n    FrequencyTracker() {\n        \n    }\n    \n    void add(int number) {\n        \n    }\n    \n    void deleteOne(int number) {\n        \n    }\n    \n    bool hasFrequency(int frequency) {\n        \n    }\n};\n\n/**\n * Your FrequencyTracker object will be instantiated and called as such:\n * FrequencyTracker* obj = new FrequencyTracker();\n * obj->add(number);\n * obj->deleteOne(number);\n * bool param_3 = obj->hasFrequency(frequency);\n */",
     "java": "class FrequencyTracker {\n\n    public FrequencyTracker() {\n        \n    }\n    \n    public void add(int number) {\n        \n    }\n    \n    public void deleteOne(int number) {\n        \n    }\n    \n    public boolean hasFrequency(int frequency) {\n        \n    }\n}\n\n/**\n * Your FrequencyTracker object will be instantiated and called as such:\n * FrequencyTracker obj = new FrequencyTracker();\n * obj.add(number);\n * obj.deleteOne(number);\n * boolean param_3 = obj.hasFrequency(frequency);\n */",
@@ -40,33 +56,41 @@
   "publicTests": [
     {
       "input": "[\"FrequencyTracker\",\"add\",\"add\",\"hasFrequency\"]\n[[],[3],[3],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, true]"
     },
     {
       "input": "[\"FrequencyTracker\",\"add\",\"deleteOne\",\"hasFrequency\"]\n[[],[1],[1],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, false]"
     },
     {
       "input": "[\"FrequencyTracker\",\"hasFrequency\",\"add\",\"hasFrequency\"]\n[[],[2],[3],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, null, true]"
     }
   ],
   "testCases": [
     {
       "input": "[\"FrequencyTracker\",\"add\",\"add\",\"hasFrequency\"]\n[[],[3],[3],[2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, true]"
     },
     {
       "input": "[\"FrequencyTracker\",\"add\",\"deleteOne\",\"hasFrequency\"]\n[[],[1],[1],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, false]"
     },
     {
       "input": "[\"FrequencyTracker\",\"hasFrequency\",\"add\",\"hasFrequency\"]\n[[],[2],[3],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, null, true]"
     },
     {
-      "input": "[\"FrequencyTracker\",\"add\",\"add\",\"hasFrequency\"]\n[[],[4],[4],[3]]",
-      "expectedOutput": null
+      "input": "[\"FrequencyTracker\", \"add\", \"add\", \"hasFrequency\"]\n[[], [3], [3], [2]]",
+      "expectedOutput": "[null, null, null, true]"
+    },
+    {
+      "input": "[\"FrequencyTracker\", \"add\", \"deleteOne\", \"hasFrequency\"]\n[[], [1], [1], [1]]",
+      "expectedOutput": "[null, null, null, false]"
+    },
+    {
+      "input": "[\"FrequencyTracker\", \"hasFrequency\", \"add\", \"hasFrequency\"]\n[[], [2], [3], [1]]",
+      "expectedOutput": "[null, false, null, true]"
     }
   ],
   "sqlSchema": null,
@@ -82,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/frequency-tracker/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:20.432Z",
+    "collectedAt": "2026-10-19T18:40:19.055Z",
     "sourceUpdatedAt": null
   }
 }

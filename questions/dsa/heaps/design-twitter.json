@@ -19,7 +19,13 @@
     "At most 3 * 104 calls will be made to postTweet, getNewsFeed, follow, and unfollow.",
     "A user cannot follow himself."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Twitter\", \"postTweet\", \"getNewsFeed\", \"follow\", \"postTweet\", \"getNewsFeed\", \"unfollow\", \"getNewsFeed\"]\n[[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]]",
+      "output": "[null, null, [5], null, null, [6, 5], null, [5]]",
+      "explanation": "Twitter twitter = new Twitter();\ntwitter.postTweet(1, 5); // User 1 posts a new tweet (id = 5).\ntwitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet id -> [5]. return [5]\ntwitter.follow(1, 2);    // User 1 follows user 2.\ntwitter.postTweet(2, 6); // User 2 posts a new tweet (id = 6).\ntwitter.getNewsFeed(1);  // User 1's news feed should return a list with 2 tweet ids -> [6, 5]. Tweet id 6 should precede tweet id 5 because it is posted after tweet id 5.\ntwitter.unfollow(1, 2);  // User 1 unfollows user 2.\ntwitter.getNewsFeed(1);  // User 1's news feed should return a list with 1 tweet id -> [5], since user 1 is no longer following user 2."
+    }
+  ],
   "starterCode": {
     "cpp": "class Twitter {\npublic:\n    Twitter() {\n        \n    }\n    \n    void postTweet(int userId, int tweetId) {\n        \n    }\n    \n    vector<int> getNewsFeed(int userId) {\n        \n    }\n    \n    void follow(int followerId, int followeeId) {\n        \n    }\n    \n    void unfollow(int followerId, int followeeId) {\n        \n    }\n};\n\n/**\n * Your Twitter object will be instantiated and called as such:\n * Twitter* obj = new Twitter();\n * obj->postTweet(userId,tweetId);\n * vector<int> param_2 = obj->getNewsFeed(userId);\n * obj->follow(followerId,followeeId);\n * obj->unfollow(followerId,followeeId);\n */",
     "java": "class Twitter {\n\n    public Twitter() {\n        \n    }\n    \n    public void postTweet(int userId, int tweetId) {\n        \n    }\n    \n    public List<Integer> getNewsFeed(int userId) {\n        \n    }\n    \n    public void follow(int followerId, int followeeId) {\n        \n    }\n    \n    public void unfollow(int followerId, int followeeId) {\n        \n    }\n}\n\n/**\n * Your Twitter object will be instantiated and called as such:\n * Twitter obj = new Twitter();\n * obj.postTweet(userId,tweetId);\n * List<Integer> param_2 = obj.getNewsFeed(userId);\n * obj.follow(followerId,followeeId);\n * obj.unfollow(followerId,followeeId);\n */",
@@ -44,17 +50,17 @@
   "publicTests": [
     {
       "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"postTweet\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, [5], null, null, [6, 5], null, [5]]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"postTweet\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[1,5],[1],[1,2],[2,6],[1],[1,2],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, [5], null, null, [6, 5], null, [5]]"
     },
     {
-      "input": "[\"Twitter\",\"postTweet\",\"getNewsFeed\",\"follow\",\"postTweet\",\"getNewsFeed\",\"unfollow\",\"getNewsFeed\"]\n[[],[2,6],[2],[2,3],[3,7],[2],[2,3],[2]]",
-      "expectedOutput": null
+      "input": "[\"Twitter\", \"postTweet\", \"getNewsFeed\", \"follow\", \"postTweet\", \"getNewsFeed\", \"unfollow\", \"getNewsFeed\"]\n[[], [1, 5], [1], [1, 2], [2, 6], [1], [1, 2], [1]]",
+      "expectedOutput": "[null, null, [5], null, null, [6, 5], null, [5]]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-twitter/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.923Z",
+    "collectedAt": "2026-10-19T18:40:16.533Z",
     "sourceUpdatedAt": null
   }
 }

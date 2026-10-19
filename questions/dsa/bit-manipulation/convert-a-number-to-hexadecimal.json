@@ -49,90 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "num = 26",
+      "input": "26",
       "expectedOutput": "\"1a\""
     },
     {
-      "input": "num = -1",
+      "input": "-1",
       "expectedOutput": "\"ffffffff\""
     }
   ],
   "testCases": [
     {
+      "input": "26",
+      "expectedOutput": "\"1a\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"ffffffff\""
+    },
+    {
       "input": "num = 26",
       "expectedOutput": "\"1a\""
     },
     {
       "input": "num = -1",
       "expectedOutput": "\"ffffffff\""
-    },
-    {
-      "input": "26",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/convert-a-number-to-hexadecimal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:05.773Z",
+    "collectedAt": "2026-10-19T18:40:14.839Z",
     "sourceUpdatedAt": null
   }
 }

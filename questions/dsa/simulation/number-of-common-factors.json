@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "a = 12, b = 6",
+      "input": "12\n6",
       "expectedOutput": "4"
     },
     {
-      "input": "a = 25, b = 30",
+      "input": "25\n30",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "12\n6",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "25\n30",
+      "expectedOutput": "2"
+    },
+    {
       "input": "a = 12, b = 6",
       "expectedOutput": "4"
     },
     {
       "input": "a = 25, b = 30",
       "expectedOutput": "2"
-    },
-    {
-      "input": "12\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "25\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "a = 13, b = 7",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-common-factors/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.946Z",
+    "collectedAt": "2026-10-19T18:40:25.808Z",
     "sourceUpdatedAt": null
   }
 }

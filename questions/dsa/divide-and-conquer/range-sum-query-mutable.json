@@ -22,7 +22,13 @@
     "0 <= left <= right < nums.length",
     "At most 3 * 104 calls will be made to update and sumRange."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"NumArray\", \"sumRange\", \"update\", \"sumRange\"]\n[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]",
+      "output": "[null, 9, null, 8]",
+      "explanation": "NumArray numArray = new NumArray([1, 3, 5]);\nnumArray.sumRange(0, 2); // return 1 + 3 + 5 = 9\nnumArray.update(1, 2);   // nums = [1, 2, 5]\nnumArray.sumRange(0, 2); // return 1 + 2 + 5 = 8"
+    }
+  ],
   "starterCode": {
     "cpp": "class NumArray {\npublic:\n    NumArray(vector<int>& nums) {\n        \n    }\n    \n    void update(int index, int val) {\n        \n    }\n    \n    int sumRange(int left, int right) {\n        \n    }\n};\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * NumArray* obj = new NumArray(nums);\n * obj->update(index,val);\n * int param_2 = obj->sumRange(left,right);\n */",
     "java": "class NumArray {\n\n    public NumArray(int[] nums) {\n        \n    }\n    \n    public void update(int index, int val) {\n        \n    }\n    \n    public int sumRange(int left, int right) {\n        \n    }\n}\n\n/**\n * Your NumArray object will be instantiated and called as such:\n * NumArray obj = new NumArray(nums);\n * obj.update(index,val);\n * int param_2 = obj.sumRange(left,right);\n */",
@@ -47,17 +53,17 @@
   "publicTests": [
     {
       "input": "[\"NumArray\",\"sumRange\",\"update\",\"sumRange\"]\n[[[1,3,5]],[0,2],[1,2],[0,2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 9, null, 8]"
     }
   ],
   "testCases": [
     {
       "input": "[\"NumArray\",\"sumRange\",\"update\",\"sumRange\"]\n[[[1,3,5]],[0,2],[1,2],[0,2]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 9, null, 8]"
     },
     {
-      "input": "[\"NumArray\",\"sumRange\",\"update\",\"sumRange\"]\n[[[2,4,6]],[1,3],[2,3],[1,3]]",
-      "expectedOutput": null
+      "input": "[\"NumArray\", \"sumRange\", \"update\", \"sumRange\"]\n[[[1, 3, 5]], [0, 2], [1, 2], [0, 2]]",
+      "expectedOutput": "[null, 9, null, 8]"
     }
   ],
   "sqlSchema": null,
@@ -69,7 +75,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/range-sum-query-mutable/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:03.702Z",
+    "collectedAt": "2026-10-19T18:40:27.197Z",
     "sourceUpdatedAt": null
   }
 }

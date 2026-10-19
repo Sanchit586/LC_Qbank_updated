@@ -24,7 +24,7 @@
   ],
   "examples": [
     {
-      "input": "n = 4, edges =&nbsp;[[0,1],[1,2],[2,3]]",
+      "input": "n = 4, edges = [[0,1],[1,2],[2,3]]",
       "output": "23",
       "explanation": null
     },
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, edges =&nbsp;[[0,1],[1,2],[2,3]]",
+      "input": "4\n[[0,1],[1,2],[2,3]]",
       "expectedOutput": "23"
     },
     {
-      "input": "n = 6, edges = [[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
+      "input": "6\n[[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
       "expectedOutput": "82"
     }
   ],
   "testCases": [
     {
-      "input": "n = 4, edges =&nbsp;[[0,1],[1,2],[2,3]]",
+      "input": "4\n[[0,1],[1,2],[2,3]]",
+      "expectedOutput": "23"
+    },
+    {
+      "input": "6\n[[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
+      "expectedOutput": "82"
+    },
+    {
+      "input": "n = 4, edges = [[0,1],[1,2],[2,3]]",
       "expectedOutput": "23"
     },
     {
       "input": "n = 6, edges = [[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
       "expectedOutput": "82"
-    },
-    {
-      "input": "4\n[[0,1],[1,2],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[0,3],[4,5],[2,0],[1,3],[2,4],[1,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, edges =&nbsp;[[1,2],[2,3],[3,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-sum-of-edge-values-in-a-graph/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:34.233Z",
+    "collectedAt": "2026-10-19T18:40:22.740Z",
     "sourceUpdatedAt": null
   }
 }

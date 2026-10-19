@@ -25,7 +25,7 @@
     {
       "input": "cuboids = [[38,25,45],[76,35,3]]",
       "output": "76",
-      "explanation": "You can&#39;t place any of the cuboids on the other.\nWe choose cuboid 1 and rotate it so that the 35x3 side is facing down and its height is 76."
+      "explanation": "You can't place any of the cuboids on the other.\nWe choose cuboid 1 and rotate it so that the 35x3 side is facing down and its height is 76."
     },
     {
       "input": "cuboids = [[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "cuboids = [[50,45,20],[95,37,53],[45,23,12]]",
+      "input": "[[50,45,20],[95,37,53],[45,23,12]]",
       "expectedOutput": "190"
     },
     {
-      "input": "cuboids = [[38,25,45],[76,35,3]]",
+      "input": "[[38,25,45],[76,35,3]]",
       "expectedOutput": "76"
     },
     {
-      "input": "cuboids = [[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
+      "input": "[[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
       "expectedOutput": "102"
     }
   ],
   "testCases": [
     {
+      "input": "[[50,45,20],[95,37,53],[45,23,12]]",
+      "expectedOutput": "190"
+    },
+    {
+      "input": "[[38,25,45],[76,35,3]]",
+      "expectedOutput": "76"
+    },
+    {
+      "input": "[[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
+      "expectedOutput": "102"
+    },
+    {
       "input": "cuboids = [[50,45,20],[95,37,53],[45,23,12]]",
       "expectedOutput": "190"
     },
@@ -76,38 +88,6 @@
     {
       "input": "cuboids = [[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
       "expectedOutput": "102"
-    },
-    {
-      "input": "[[50,45,20],[95,37,53],[45,23,12]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[38,25,45],[76,35,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[7,11,17],[7,17,11],[11,7,17],[11,17,7],[17,7,11],[17,11,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cuboids = [[39,26,46],[77,36,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cuboids = [[8,12,18],[8,18,12],[12,8,18],[12,18,8],[18,8,12],[18,12,8]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[51,46,21],[96,38,54],[46,24,13]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[39,26,46],[77,36,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "cuboids = [[51,46,21],[96,38,54],[46,24,13]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -122,7 +102,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-height-by-stacking-cuboids/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:14.661Z",
+    "collectedAt": "2026-10-19T18:40:21.902Z",
     "sourceUpdatedAt": null
   }
 }

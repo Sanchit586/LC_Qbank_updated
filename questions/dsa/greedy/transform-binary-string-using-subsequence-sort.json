@@ -21,19 +21,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;101&quot;, strs = [&quot;1?1&quot;,&quot;0?1&quot;,&quot;0?0&quot;]",
+      "input": "s = \"101\", strs = [\"1?1\",\"0?1\",\"0?0\"]",
       "output": "[true,true,false]",
-      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&quot;1?1&quot;\n\t\t\t? &rarr; 0\n\t\t\t&quot;101&quot;\n\t\t\tMatches s.\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&quot;0?1&quot;\n\t\t\t? &rarr; 1\n\t\t\t&quot;011&quot;\n\t\t\tSelect the&nbsp;subsequence at indices [0..2] of s &rarr; &quot;101&quot;.\n\t\t\tSort &quot;101&quot; to get &quot;011&quot; = strs[i].\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&quot;0?0&quot;\n\t\t\t? &rarr; 0 or 1\n\t\t\t&quot;000&quot; or &quot;010&quot;\n\t\t\tNot feasible.\n\t\t\tfalse"
+      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t\"1?1\"\n\t\t\t? → 0\n\t\t\t\"101\"\n\t\t\tMatches s.\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t1\n\t\t\t\"0?1\"\n\t\t\t? → 1\n\t\t\t\"011\"\n\t\t\tSelect the subsequence at indices [0..2] of s → \"101\".\n\t\t\tSort \"101\" to get \"011\" = strs[i].\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t2\n\t\t\t\"0?0\"\n\t\t\t? → 0 or 1\n\t\t\t\"000\" or \"010\"\n\t\t\tNot feasible.\n\t\t\tfalse"
     },
     {
-      "input": "s = &quot;1100&quot;, strs = [&quot;0011&quot;,&quot;11?1&quot;,&quot;1?1?&quot;]",
+      "input": "s = \"1100\", strs = [\"0011\",\"11?1\",\"1?1?\"]",
       "output": "[true,false,true]",
-      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&quot;0011&quot;\n\t\t\t-\n\t\t\t&quot;0011&quot;\n\t\t\tSelect the&nbsp;subsequence at indices [0..3] of s &rarr; &quot;1100&quot;.\n\t\t\tSort &quot;1100&quot; to get &quot;0011&quot; = strs[i].\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&quot;11?1&quot;\n\t\t\t? &rarr; 0\n\t\t\t&quot;1101&quot;\n\t\t\tNot feasible.\n\t\t\tfalse\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&quot;1?1?&quot;\n\t\t\tFirst ? &rarr; 0\n\t\t\tSecond ? &rarr; 0\n\t\t\t&quot;1010&quot;\n\t\t\tSelect the&nbsp;subsequence at indices [1, 2] of s &rarr; &quot;10&quot;.\n\t\t\tSort &quot;10&quot; to get &quot;01&quot;, so s = &quot;1010&quot;.\n\t\t\ttrue"
+      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t\"0011\"\n\t\t\t-\n\t\t\t\"0011\"\n\t\t\tSelect the subsequence at indices [0..3] of s → \"1100\".\n\t\t\tSort \"1100\" to get \"0011\" = strs[i].\n\t\t\ttrue\n\t\t\n\t\t\n\t\t\t1\n\t\t\t\"11?1\"\n\t\t\t? → 0\n\t\t\t\"1101\"\n\t\t\tNot feasible.\n\t\t\tfalse\n\t\t\n\t\t\n\t\t\t2\n\t\t\t\"1?1?\"\n\t\t\tFirst ? → 0\n\t\t\tSecond ? → 0\n\t\t\t\"1010\"\n\t\t\tSelect the subsequence at indices [1, 2] of s → \"10\".\n\t\t\tSort \"10\" to get \"01\", so s = \"1010\".\n\t\t\ttrue"
     },
     {
-      "input": "s = &quot;1010&quot;, strs = [&quot;0011&quot;]",
+      "input": "s = \"1010\", strs = [\"0011\"]",
       "output": "[true]",
-      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t&quot;0011&quot;\n\t\t\t-\n\t\t\t&quot;0011&quot;\n\t\t\tSelect the&nbsp;subsequence at indices [0, 2, 3] of s &rarr; &quot;110&quot;.\n\t\t\tSort &quot;110&quot; to get &quot;011&quot;, so s = &quot;0011&quot; = strs[i].\n\t\t\ttrue"
+      "explanation": "i\n\t\t\tstrs[i]\n\t\t\tReplacement\n\t\t\tResult strs[i]\n\t\t\tOperation(s)\n\t\t\tResult\n\t\t\n\t\t\n\t\t\t0\n\t\t\t\"0011\"\n\t\t\t-\n\t\t\t\"0011\"\n\t\t\tSelect the subsequence at indices [0, 2, 3] of s → \"110\".\n\t\t\tSort \"110\" to get \"011\", so s = \"0011\" = strs[i].\n\t\t\ttrue"
     }
   ],
   "starterCode": {
@@ -59,62 +59,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;101&quot;, strs = [&quot;1?1&quot;,&quot;0?1&quot;,&quot;0?0&quot;]",
+      "input": "\"101\"\n[\"1?1\",\"0?1\",\"0?0\"]",
       "expectedOutput": "[true,true,false]"
     },
     {
-      "input": "s = &quot;1100&quot;, strs = [&quot;0011&quot;,&quot;11?1&quot;,&quot;1?1?&quot;]",
+      "input": "\"1100\"\n[\"0011\",\"11?1\",\"1?1?\"]",
       "expectedOutput": "[true,false,true]"
     },
     {
-      "input": "s = &quot;1010&quot;, strs = [&quot;0011&quot;]",
+      "input": "\"1010\"\n[\"0011\"]",
       "expectedOutput": "[true]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;101&quot;, strs = [&quot;1?1&quot;,&quot;0?1&quot;,&quot;0?0&quot;]",
+      "input": "\"101\"\n[\"1?1\",\"0?1\",\"0?0\"]",
       "expectedOutput": "[true,true,false]"
     },
     {
-      "input": "s = &quot;1100&quot;, strs = [&quot;0011&quot;,&quot;11?1&quot;,&quot;1?1?&quot;]",
+      "input": "\"1100\"\n[\"0011\",\"11?1\",\"1?1?\"]",
       "expectedOutput": "[true,false,true]"
     },
     {
-      "input": "s = &quot;1010&quot;, strs = [&quot;0011&quot;]",
+      "input": "\"1010\"\n[\"0011\"]",
       "expectedOutput": "[true]"
     },
     {
-      "input": "\"101\"\n[\"1?1\",\"0?1\",\"0?0\"]",
-      "expectedOutput": null
+      "input": "s = \"101\", strs = [\"1?1\",\"0?1\",\"0?0\"]",
+      "expectedOutput": "[true,true,false]"
     },
     {
-      "input": "\"1100\"\n[\"0011\",\"11?1\",\"1?1?\"]",
-      "expectedOutput": null
+      "input": "s = \"1100\", strs = [\"0011\",\"11?1\",\"1?1?\"]",
+      "expectedOutput": "[true,false,true]"
     },
     {
-      "input": "\"1010\"\n[\"0011\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;1101&quot;, strs = [&quot;12&quot;,&quot;12?2&quot;,&quot;2?2?&quot;]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;1011&quot;, strs = [&quot;12&quot;]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"102\"\n[\"2?2\",\"1?2\",\"1?1\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1101\"\n[\"12\",\"12?2\",\"2?2?\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;102&quot;, strs = [&quot;2?2&quot;,&quot;1?2&quot;,&quot;1?1&quot;]",
-      "expectedOutput": null
+      "input": "s = \"1010\", strs = [\"0011\"]",
+      "expectedOutput": "[true]"
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/transform-binary-string-using-subsequence-sort/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:00.120Z",
+    "collectedAt": "2026-10-19T18:40:31.189Z",
     "sourceUpdatedAt": null
   }
 }

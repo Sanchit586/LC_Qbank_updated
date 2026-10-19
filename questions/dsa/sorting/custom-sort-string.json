@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "order = &quot;cba&quot;, s = &quot;abcd&quot;",
-      "output": "&quot;cbad&quot;",
-      "explanation": "&quot;a&quot;, &quot;b&quot;, &quot;c&quot; appear in order, so the order of &quot;a&quot;, &quot;b&quot;, &quot;c&quot; should be &quot;c&quot;, &quot;b&quot;, and &quot;a&quot;."
+      "input": "order = \"cba\", s = \"abcd\"",
+      "output": "\"cbad\"",
+      "explanation": "\"a\", \"b\", \"c\" appear in order, so the order of \"a\", \"b\", \"c\" should be \"c\", \"b\", and \"a\"."
     },
     {
-      "input": "order = &quot;bcafg&quot;, s = &quot;abcd&quot;",
-      "output": "&quot;bcad&quot;",
-      "explanation": "The characters &quot;b&quot;, &quot;c&quot;, and &quot;a&quot; from order dictate the order for the characters in s. The character &quot;d&quot; in s does not appear in order, so its position is flexible."
+      "input": "order = \"bcafg\", s = \"abcd\"",
+      "output": "\"bcad\"",
+      "explanation": "The characters \"b\", \"c\", and \"a\" from order dictate the order for the characters in s. The character \"d\" in s does not appear in order, so its position is flexible."
     }
   ],
   "starterCode": {
@@ -52,78 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "order = &quot;cba&quot;, s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;cbad&quot;"
+      "input": "\"cba\"\n\"abcd\"",
+      "expectedOutput": "\"cbad\""
     },
     {
-      "input": "order = &quot;bcafg&quot;, s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;bcad&quot;"
+      "input": "\"bcafg\"\n\"abcd\"",
+      "expectedOutput": "\"bcad\""
     }
   ],
   "testCases": [
     {
-      "input": "order = &quot;cba&quot;, s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;cbad&quot;"
-    },
-    {
-      "input": "order = &quot;bcafg&quot;, s = &quot;abcd&quot;",
-      "expectedOutput": "&quot;bcad&quot;"
-    },
-    {
       "input": "\"cba\"\n\"abcd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cbad\""
     },
     {
       "input": "\"bcafg\"\n\"abcd\"",
-      "expectedOutput": null
+      "expectedOutput": "\"bcad\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "order = \"cba\", s = \"abcd\"",
+      "expectedOutput": "\"cbad\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "order = \"bcafg\", s = \"abcd\"",
+      "expectedOutput": "\"bcad\""
     }
   ],
   "sqlSchema": null,
@@ -135,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/custom-sort-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:31.440Z",
+    "collectedAt": "2026-10-19T18:40:16.106Z",
     "sourceUpdatedAt": null
   }
 }

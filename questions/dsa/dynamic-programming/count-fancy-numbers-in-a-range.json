@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "l = 8, r = 10",
+      "input": "8\n10",
       "expectedOutput": "3"
     },
     {
-      "input": "l = 12340, r = 12341",
+      "input": "12340\n12341",
       "expectedOutput": "1"
     },
     {
-      "input": "l = 123456788, r = 123456788",
+      "input": "123456788\n123456788",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "8\n10",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "12340\n12341",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "123456788\n123456788",
+      "expectedOutput": "0"
+    },
+    {
       "input": "l = 8, r = 10",
       "expectedOutput": "3"
     },
@@ -77,38 +89,6 @@
     {
       "input": "l = 123456788, r = 123456788",
       "expectedOutput": "0"
-    },
-    {
-      "input": "8\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "12340\n12341",
-      "expectedOutput": null
-    },
-    {
-      "input": "123456788\n123456788",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 12341, r = 12342",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 123456789, r = 123456789",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "12341\n12342",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 9, r = 11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-fancy-numbers-in-a-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:11.652Z",
+    "collectedAt": "2026-10-19T18:40:15.120Z",
     "sourceUpdatedAt": null
   }
 }

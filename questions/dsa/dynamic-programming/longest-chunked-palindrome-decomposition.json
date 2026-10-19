@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;ghiabcdefhelloadamhelloabcdefghi&quot;",
+      "input": "text = \"ghiabcdefhelloadamhelloabcdefghi\"",
       "output": "7",
-      "explanation": "We can split the string on &quot;(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)&quot;."
+      "explanation": "We can split the string on \"(ghi)(abcdef)(hello)(adam)(hello)(abcdef)(ghi)\"."
     },
     {
-      "input": "text = &quot;merchant&quot;",
+      "input": "text = \"merchant\"",
       "output": "1",
-      "explanation": "We can split the string on &quot;(merchant)&quot;."
+      "explanation": "We can split the string on \"(merchant)\"."
     },
     {
-      "input": "text = &quot;antaprezatepzapreanta&quot;",
+      "input": "text = \"antaprezatepzapreanta\"",
       "output": "11",
-      "explanation": "We can split the string on &quot;(a)(nt)(a)(pre)(za)(tep)(za)(pre)(a)(nt)(a)&quot;."
+      "explanation": "We can split the string on \"(a)(nt)(a)(pre)(za)(tep)(za)(pre)(a)(nt)(a)\"."
     }
   ],
   "starterCode": {
@@ -58,98 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;ghiabcdefhelloadamhelloabcdefghi&quot;",
+      "input": "\"ghiabcdefhelloadamhelloabcdefghi\"",
       "expectedOutput": "7"
     },
     {
-      "input": "text = &quot;merchant&quot;",
+      "input": "\"merchant\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;antaprezatepzapreanta&quot;",
+      "input": "\"antaprezatepzapreanta\"",
       "expectedOutput": "11"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;ghiabcdefhelloadamhelloabcdefghi&quot;",
+      "input": "\"ghiabcdefhelloadamhelloabcdefghi\"",
       "expectedOutput": "7"
     },
     {
-      "input": "text = &quot;merchant&quot;",
+      "input": "\"merchant\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = &quot;antaprezatepzapreanta&quot;",
+      "input": "\"antaprezatepzapreanta\"",
       "expectedOutput": "11"
     },
     {
-      "input": "\"ghiabcdefhelloadamhelloabcdefghi\"",
-      "expectedOutput": null
+      "input": "text = \"ghiabcdefhelloadamhelloabcdefghi\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"merchant\"",
-      "expectedOutput": null
+      "input": "text = \"merchant\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"antaprezatepzapreanta\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "text = \"antaprezatepzapreanta\"",
+      "expectedOutput": "11"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-chunked-palindrome-decomposition/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.300Z",
+    "collectedAt": "2026-10-19T18:40:20.409Z",
     "sourceUpdatedAt": null
   }
 }

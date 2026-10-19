@@ -18,7 +18,13 @@
     "1 <= k <= 105",
     "At most 105 calls will be made to consec."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"DataStream\", \"consec\", \"consec\", \"consec\", \"consec\"]\n[[4, 3], [4], [4], [4], [3]]",
+      "output": "[null, false, false, true, false]",
+      "explanation": "DataStream dataStream = new DataStream(4, 3); //value = 4, k = 3 \ndataStream.consec(4); // Only 1 integer is parsed, so returns False. \ndataStream.consec(4); // Only 2 integers are parsed.\n                      // Since 2 is less than k, returns False. \ndataStream.consec(4); // The 3 integers parsed are all equal to value, so returns True. \ndataStream.consec(3); // The last k integers parsed in the stream are [4,4,3].\n                      // Since 3 is not equal to value, it returns False."
+    }
+  ],
   "starterCode": {
     "cpp": "class DataStream {\npublic:\n    DataStream(int value, int k) {\n        \n    }\n    \n    bool consec(int num) {\n        \n    }\n};\n\n/**\n * Your DataStream object will be instantiated and called as such:\n * DataStream* obj = new DataStream(value, k);\n * bool param_1 = obj->consec(num);\n */",
     "java": "class DataStream {\n\n    public DataStream(int value, int k) {\n        \n    }\n    \n    public boolean consec(int num) {\n        \n    }\n}\n\n/**\n * Your DataStream object will be instantiated and called as such:\n * DataStream obj = new DataStream(value, k);\n * boolean param_1 = obj.consec(num);\n */",
@@ -43,17 +49,17 @@
   "publicTests": [
     {
       "input": "[\"DataStream\",\"consec\",\"consec\",\"consec\",\"consec\"]\n[[4,3],[4],[4],[4],[3]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, false, true, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"DataStream\",\"consec\",\"consec\",\"consec\",\"consec\"]\n[[4,3],[4],[4],[4],[3]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, false, false, true, false]"
     },
     {
-      "input": "[\"DataStream\",\"consec\",\"consec\",\"consec\",\"consec\"]\n[[5,4],[5],[5],[5],[4]]",
-      "expectedOutput": null
+      "input": "[\"DataStream\", \"consec\", \"consec\", \"consec\", \"consec\"]\n[[4, 3], [4], [4], [4], [3]]",
+      "expectedOutput": "[null, false, false, true, false]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-consecutive-integers-from-a-data-stream/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:00.731Z",
+    "collectedAt": "2026-10-19T18:40:17.622Z",
     "sourceUpdatedAt": null
   }
 }

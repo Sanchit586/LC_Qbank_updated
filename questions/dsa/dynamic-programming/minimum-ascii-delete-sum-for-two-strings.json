@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;sea&quot;, s2 = &quot;eat&quot;",
+      "input": "s1 = \"sea\", s2 = \"eat\"",
       "output": "231",
-      "explanation": "Deleting &quot;s&quot; from &quot;sea&quot; adds the ASCII value of &quot;s&quot; (115) to the sum.\nDeleting &quot;t&quot; from &quot;eat&quot; adds 116 to the sum.\nAt the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this."
+      "explanation": "Deleting \"s\" from \"sea\" adds the ASCII value of \"s\" (115) to the sum.\nDeleting \"t\" from \"eat\" adds 116 to the sum.\nAt the end, both strings are equal, and 115 + 116 = 231 is the minimum sum possible to achieve this."
     },
     {
-      "input": "s1 = &quot;delete&quot;, s2 = &quot;leet&quot;",
+      "input": "s1 = \"delete\", s2 = \"leet\"",
       "output": "403",
-      "explanation": "Deleting &quot;dee&quot; from &quot;delete&quot; to turn the string into &quot;let&quot;,\nadds 100[d] + 101[e] + 101[e] to the sum.\nDeleting &quot;e&quot; from &quot;leet&quot; adds 101[e] to the sum.\nAt the end, both strings are equal to &quot;let&quot;, and the answer is 100+101+101+101 = 403.\nIf instead we turned both strings into &quot;lee&quot; or &quot;eet&quot;, we would get answers of 433 or 417, which are higher."
+      "explanation": "Deleting \"dee\" from \"delete\" to turn the string into \"let\",\nadds 100[d] + 101[e] + 101[e] to the sum.\nDeleting \"e\" from \"leet\" adds 101[e] to the sum.\nAt the end, both strings are equal to \"let\", and the answer is 100+101+101+101 = 403.\nIf instead we turned both strings into \"lee\" or \"eet\", we would get answers of 433 or 417, which are higher."
     }
   ],
   "starterCode": {
@@ -50,82 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;sea&quot;, s2 = &quot;eat&quot;",
+      "input": "\"sea\"\n\"eat\"",
       "expectedOutput": "231"
     },
     {
-      "input": "s1 = &quot;delete&quot;, s2 = &quot;leet&quot;",
+      "input": "\"delete\"\n\"leet\"",
       "expectedOutput": "403"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;sea&quot;, s2 = &quot;eat&quot;",
+      "input": "\"sea\"\n\"eat\"",
       "expectedOutput": "231"
     },
     {
-      "input": "s1 = &quot;delete&quot;, s2 = &quot;leet&quot;",
+      "input": "\"delete\"\n\"leet\"",
       "expectedOutput": "403"
     },
     {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
+      "input": "s1 = \"sea\", s2 = \"eat\"",
+      "expectedOutput": "231"
     },
     {
-      "input": "\"delete\"\n\"leet\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;sea&quot;, s3 = &quot;eat&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "s2 = &quot;delete&quot;, s3 = &quot;leet&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"delete\", s2 = \"leet\"",
+      "expectedOutput": "403"
     }
   ],
   "sqlSchema": null,
@@ -139,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-ascii-delete-sum-for-two-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:46.276Z",
+    "collectedAt": "2026-10-19T18:40:23.460Z",
     "sourceUpdatedAt": null
   }
 }

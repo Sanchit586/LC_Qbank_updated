@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;12&quot;",
+      "input": "s = \"12\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;226&quot;",
+      "input": "s = \"226\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;06&quot;",
+      "input": "s = \"06\"",
       "output": "0",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;12&quot;",
+      "input": "\"12\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;226&quot;",
+      "input": "\"226\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;06&quot;",
+      "input": "\"06\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;12&quot;",
+      "input": "\"12\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;226&quot;",
+      "input": "\"226\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;06&quot;",
+      "input": "\"06\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"12\"",
-      "expectedOutput": null
+      "input": "s = \"12\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"226\"",
-      "expectedOutput": null
+      "input": "s = \"226\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"06\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"06\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decode-ways/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.706Z",
+    "collectedAt": "2026-10-19T18:40:16.205Z",
     "sourceUpdatedAt": null
   }
 }

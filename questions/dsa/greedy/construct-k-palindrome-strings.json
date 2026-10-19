@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;annabelle&quot;, k = 2",
+      "input": "s = \"annabelle\", k = 2",
       "output": "true",
-      "explanation": "You can construct two palindromes using all characters in s.\nSome possible constructions &quot;anna&quot; + &quot;elble&quot;, &quot;anbna&quot; + &quot;elle&quot;, &quot;anellena&quot; + &quot;b&quot;"
+      "explanation": "You can construct two palindromes using all characters in s.\nSome possible constructions \"anna\" + \"elble\", \"anbna\" + \"elle\", \"anellena\" + \"b\""
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 3",
+      "input": "s = \"leetcode\", k = 3",
       "output": "false",
       "explanation": "It is impossible to construct 3 palindromes using all the characters of s."
     },
     {
-      "input": "s = &quot;true&quot;, k = 4",
+      "input": "s = \"true\", k = 4",
       "output": "true",
       "explanation": "The only possible solution is to put each character in a separate string."
     }
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;annabelle&quot;, k = 2",
+      "input": "\"annabelle\"\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 3",
+      "input": "\"leetcode\"\n3",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;true&quot;, k = 4",
+      "input": "\"true\"\n4",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;annabelle&quot;, k = 2",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;, k = 3",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;true&quot;, k = 4",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"annabelle\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"leetcode\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"true\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;leetcode&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"annabelle\", k = 2",
+      "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;true&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"leetcode\", k = 3",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"annabelle\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;annabelle&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"true\", k = 4",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/construct-k-palindrome-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:02.445Z",
+    "collectedAt": "2026-10-19T18:40:14.714Z",
     "sourceUpdatedAt": null
   }
 }

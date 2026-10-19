@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aabca&quot;",
+      "input": "s = \"aabca\"",
       "output": "3",
-      "explanation": "The 3 palindromic subsequences of length 3 are:\n- &quot;aba&quot; (subsequence of &quot;aabca&quot;)\n- &quot;aaa&quot; (subsequence of &quot;aabca&quot;)\n- &quot;aca&quot; (subsequence of &quot;aabca&quot;)"
+      "explanation": "The 3 palindromic subsequences of length 3 are:\n- \"aba\" (subsequence of \"aabca\")\n- \"aaa\" (subsequence of \"aabca\")\n- \"aca\" (subsequence of \"aabca\")"
     },
     {
-      "input": "s = &quot;adc&quot;",
+      "input": "s = \"adc\"",
       "output": "0",
-      "explanation": "There are no palindromic subsequences of length 3 in &quot;adc&quot;."
+      "explanation": "There are no palindromic subsequences of length 3 in \"adc\"."
     },
     {
-      "input": "s = &quot;bbcbaba&quot;",
+      "input": "s = \"bbcbaba\"",
       "output": "4",
-      "explanation": "The 4 palindromic subsequences of length 3 are:\n- &quot;bbb&quot; (subsequence of &quot;bbcbaba&quot;)\n- &quot;bcb&quot; (subsequence of &quot;bbcbaba&quot;)\n- &quot;bab&quot; (subsequence of &quot;bbcbaba&quot;)\n- &quot;aba&quot; (subsequence of &quot;bbcbaba&quot;)"
+      "explanation": "The 4 palindromic subsequences of length 3 are:\n- \"bbb\" (subsequence of \"bbcbaba\")\n- \"bcb\" (subsequence of \"bbcbaba\")\n- \"bab\" (subsequence of \"bbcbaba\")\n- \"aba\" (subsequence of \"bbcbaba\")"
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aabca&quot;",
+      "input": "\"aabca\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;adc&quot;",
+      "input": "\"adc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;bbcbaba&quot;",
+      "input": "\"bbcbaba\"",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aabca&quot;",
+      "input": "\"aabca\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;adc&quot;",
+      "input": "\"adc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;bbcbaba&quot;",
+      "input": "\"bbcbaba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "\"aabca\"",
-      "expectedOutput": null
+      "input": "s = \"aabca\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"adc\"",
-      "expectedOutput": null
+      "input": "s = \"adc\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"bbcbaba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"bbcbaba\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/unique-length-3-palindromic-subsequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:06.530Z",
+    "collectedAt": "2026-10-19T18:40:31.377Z",
     "sourceUpdatedAt": null
   }
 }

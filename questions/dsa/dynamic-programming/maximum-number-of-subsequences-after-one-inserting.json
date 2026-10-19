@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;LMCT&quot;",
+      "input": "s = \"LMCT\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "s = &quot;LCCT&quot;",
+      "input": "s = \"LCCT\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;L&quot;",
+      "input": "s = \"L\"",
       "output": "0",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;LMCT&quot;",
+      "input": "\"LMCT\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;LCCT&quot;",
+      "input": "\"LCCT\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;L&quot;",
+      "input": "\"L\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;LMCT&quot;",
+      "input": "\"LMCT\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;LCCT&quot;",
+      "input": "\"LCCT\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;L&quot;",
+      "input": "\"L\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"LMCT\"",
-      "expectedOutput": null
+      "input": "s = \"LMCT\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"LCCT\"",
-      "expectedOutput": null
+      "input": "s = \"LCCT\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"L\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"L\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-subsequences-after-one-inserting/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.945Z",
+    "collectedAt": "2026-10-19T18:40:22.174Z",
     "sourceUpdatedAt": null
   }
 }

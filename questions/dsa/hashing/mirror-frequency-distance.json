@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ab1z9&quot;",
+      "input": "s = \"ab1z9\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;4m7n&quot;",
+      "input": "s = \"4m7n\"",
       "output": "2",
       "explanation": "c\n\t\t\tm\n\t\t\tfreq(c)\n\t\t\tfreq(m)\n\t\t\t|freq(c) - freq(m)|\n\t\t\n\t\n\t\n\t\t\n\t\t\t4\n\t\t\t5\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\n\t\t\n\t\t\tm\n\t\t\tn\n\t\t\t1\n\t\t\t1\n\t\t\t0\n\t\t\n\t\t\n\t\t\t7\n\t\t\t2\n\t\t\t1\n\t\t\t0\n\t\t\t1"
     },
     {
-      "input": "s = &quot;byby&quot;",
+      "input": "s = \"byby\"",
       "output": "0",
       "explanation": "c\n\t\t\tm\n\t\t\tfreq(c)\n\t\t\tfreq(m)\n\t\t\t|freq(c) - freq(m)|\n\t\t\n\t\n\t\n\t\t\n\t\t\tb\n\t\t\ty\n\t\t\t2\n\t\t\t2\n\t\t\t0"
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ab1z9&quot;",
+      "input": "\"ab1z9\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;4m7n&quot;",
+      "input": "\"4m7n\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;byby&quot;",
+      "input": "\"byby\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ab1z9&quot;",
+      "input": "\"ab1z9\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;4m7n&quot;",
+      "input": "\"4m7n\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;byby&quot;",
+      "input": "\"byby\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"ab1z9\"",
-      "expectedOutput": null
+      "input": "s = \"ab1z9\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"4m7n\"",
-      "expectedOutput": null
+      "input": "s = \"4m7n\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"byby\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"byby\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/mirror-frequency-distance/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:31.316Z",
+    "collectedAt": "2026-10-19T18:40:25.381Z",
     "sourceUpdatedAt": null
   }
 }

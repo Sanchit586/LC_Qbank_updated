@@ -17,22 +17,22 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcdefg&quot;, pattern = &quot;bcdffg&quot;",
+      "input": "s = \"abcdefg\", pattern = \"bcdffg\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;ababbababa&quot;, pattern = &quot;bacaba&quot;",
+      "input": "s = \"ababbababa\", pattern = \"bacaba\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;abcd&quot;, pattern = &quot;dba&quot;",
+      "input": "s = \"abcd\", pattern = \"dba\"",
       "output": "-1",
       "explanation": null
     },
     {
-      "input": "s = &quot;dde&quot;, pattern = &quot;d&quot;",
+      "input": "s = \"dde\", pattern = \"d\"",
       "output": "0",
       "explanation": null
     }
@@ -60,102 +60,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcdefg&quot;, pattern = &quot;bcdffg&quot;",
+      "input": "\"abcdefg\"\n\"bcdffg\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;ababbababa&quot;, pattern = &quot;bacaba&quot;",
+      "input": "\"ababbababa\"\n\"bacaba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcd&quot;, pattern = &quot;dba&quot;",
+      "input": "\"abcd\"\n\"dba\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;dde&quot;, pattern = &quot;d&quot;",
+      "input": "\"dde\"\n\"d\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcdefg&quot;, pattern = &quot;bcdffg&quot;",
+      "input": "\"abcdefg\"\n\"bcdffg\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;ababbababa&quot;, pattern = &quot;bacaba&quot;",
+      "input": "\"ababbababa\"\n\"bacaba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;abcd&quot;, pattern = &quot;dba&quot;",
+      "input": "\"abcd\"\n\"dba\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;dde&quot;, pattern = &quot;d&quot;",
+      "input": "\"dde\"\n\"d\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"abcdefg\"\n\"bcdffg\"",
-      "expectedOutput": null
+      "input": "s = \"abcdefg\", pattern = \"bcdffg\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"ababbababa\"\n\"bacaba\"",
-      "expectedOutput": null
+      "input": "s = \"ababbababa\", pattern = \"bacaba\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"abcd\"\n\"dba\"",
-      "expectedOutput": null
+      "input": "s = \"abcd\", pattern = \"dba\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"dde\"\n\"d\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"dde\", pattern = \"d\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -171,7 +123,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-occurrence-of-first-almost-equal-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:14.985Z",
+    "collectedAt": "2026-10-19T18:40:18.573Z",
     "sourceUpdatedAt": null
   }
 }

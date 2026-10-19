@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;e&quot;,&quot;o&quot;]",
-      "output": "[&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;]",
+      "input": "words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"e\",\"o\"]",
+      "output": "[\"facebook\",\"google\",\"leetcode\"]",
       "explanation": null
     },
     {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;lc&quot;,&quot;eo&quot;]",
-      "output": "[&quot;leetcode&quot;]",
+      "input": "words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"lc\",\"eo\"]",
+      "output": "[\"leetcode\"]",
       "explanation": null
     },
     {
-      "input": "words1 = [&quot;acaac&quot;,&quot;cccbb&quot;,&quot;aacbb&quot;,&quot;caacc&quot;,&quot;bcbbb&quot;], words2 = [&quot;c&quot;,&quot;cc&quot;,&quot;b&quot;]",
-      "output": "[&quot;cccbb&quot;]",
+      "input": "words1 = [\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"], words2 = [\"c\",\"cc\",\"b\"]",
+      "output": "[\"cccbb\"]",
       "explanation": null
     }
   ],
@@ -57,50 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;e&quot;,&quot;o&quot;]",
-      "expectedOutput": "[&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;]"
+      "input": "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"e\",\"o\"]",
+      "expectedOutput": "[\"facebook\",\"google\",\"leetcode\"]"
     },
     {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;lc&quot;,&quot;eo&quot;]",
-      "expectedOutput": "[&quot;leetcode&quot;]"
+      "input": "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"lc\",\"eo\"]",
+      "expectedOutput": "[\"leetcode\"]"
     },
     {
-      "input": "words1 = [&quot;acaac&quot;,&quot;cccbb&quot;,&quot;aacbb&quot;,&quot;caacc&quot;,&quot;bcbbb&quot;], words2 = [&quot;c&quot;,&quot;cc&quot;,&quot;b&quot;]",
-      "expectedOutput": "[&quot;cccbb&quot;]"
+      "input": "[\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"]\n[\"c\",\"cc\",\"b\"]",
+      "expectedOutput": "[\"cccbb\"]"
     }
   ],
   "testCases": [
     {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;e&quot;,&quot;o&quot;]",
-      "expectedOutput": "[&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;]"
-    },
-    {
-      "input": "words1 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words2 = [&quot;lc&quot;,&quot;eo&quot;]",
-      "expectedOutput": "[&quot;leetcode&quot;]"
-    },
-    {
-      "input": "words1 = [&quot;acaac&quot;,&quot;cccbb&quot;,&quot;aacbb&quot;,&quot;caacc&quot;,&quot;bcbbb&quot;], words2 = [&quot;c&quot;,&quot;cc&quot;,&quot;b&quot;]",
-      "expectedOutput": "[&quot;cccbb&quot;]"
-    },
-    {
       "input": "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"e\",\"o\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"facebook\",\"google\",\"leetcode\"]"
     },
     {
       "input": "[\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"]\n[\"lc\",\"eo\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"leetcode\"]"
     },
     {
       "input": "[\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"]\n[\"c\",\"cc\",\"b\"]",
-      "expectedOutput": null
+      "expectedOutput": "[\"cccbb\"]"
     },
     {
-      "input": "words2 = [&quot;amazon&quot;,&quot;apple&quot;,&quot;facebook&quot;,&quot;google&quot;,&quot;leetcode&quot;], words3 = [&quot;lc&quot;,&quot;eo&quot;]",
-      "expectedOutput": null
+      "input": "words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"e\",\"o\"]",
+      "expectedOutput": "[\"facebook\",\"google\",\"leetcode\"]"
     },
     {
-      "input": "words2 = [&quot;acaac&quot;,&quot;cccbb&quot;,&quot;aacbb&quot;,&quot;caacc&quot;,&quot;bcbbb&quot;], words3 = [&quot;c&quot;,&quot;cc&quot;,&quot;b&quot;]",
-      "expectedOutput": null
+      "input": "words1 = [\"amazon\",\"apple\",\"facebook\",\"google\",\"leetcode\"], words2 = [\"lc\",\"eo\"]",
+      "expectedOutput": "[\"leetcode\"]"
+    },
+    {
+      "input": "words1 = [\"acaac\",\"cccbb\",\"aacbb\",\"caacc\",\"bcbbb\"], words2 = [\"c\",\"cc\",\"b\"]",
+      "expectedOutput": "[\"cccbb\"]"
     }
   ],
   "sqlSchema": null,
@@ -112,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/word-subsets/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:15.838Z",
+    "collectedAt": "2026-10-19T18:40:31.808Z",
     "sourceUpdatedAt": null
   }
 }

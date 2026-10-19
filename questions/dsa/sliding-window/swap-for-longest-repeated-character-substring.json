@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;ababa&quot;",
+      "input": "text = \"ababa\"",
       "output": "3",
-      "explanation": "We can swap the first &#39;b&#39; with the last &#39;a&#39;, or the last &#39;b&#39; with the first &#39;a&#39;. Then, the longest repeated character substring is &quot;aaa&quot; with length 3."
+      "explanation": "We can swap the first 'b' with the last 'a', or the last 'b' with the first 'a'. Then, the longest repeated character substring is \"aaa\" with length 3."
     },
     {
-      "input": "text = &quot;aaabaaa&quot;",
+      "input": "text = \"aaabaaa\"",
       "output": "6",
-      "explanation": "Swap &#39;b&#39; with the last &#39;a&#39; (or the first &#39;a&#39;), and we get longest repeated character substring &quot;aaaaaa&quot; with length 6."
+      "explanation": "Swap 'b' with the last 'a' (or the first 'a'), and we get longest repeated character substring \"aaaaaa\" with length 6."
     },
     {
-      "input": "text = &quot;aaaaa&quot;",
+      "input": "text = \"aaaaa\"",
       "output": "5",
-      "explanation": "No need to swap, longest repeated character substring is &quot;aaaaa&quot; with length is 5."
+      "explanation": "No need to swap, longest repeated character substring is \"aaaaa\" with length is 5."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;ababa&quot;",
+      "input": "\"bbaababbba\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text = &quot;aaabaaa&quot;",
+      "input": "\"bbabbbbbaaba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "text = &quot;aaaaa&quot;",
+      "input": "\"abaaaaabbbbbaa\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;ababa&quot;",
+      "input": "\"bbaababbba\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text = &quot;aaabaaa&quot;",
+      "input": "\"bbabbbbbaaba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "text = &quot;aaaaa&quot;",
+      "input": "\"abaaaaabbbbbaa\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"bbaababbba\"",
-      "expectedOutput": null
+      "input": "text = \"ababa\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"bbabbbbbaaba\"",
-      "expectedOutput": null
+      "input": "text = \"aaabaaa\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"abaaaaabbbbbaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "text = \"aaaaa\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/swap-for-longest-repeated-character-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:54.546Z",
+    "collectedAt": "2026-10-19T18:40:30.795Z",
     "sourceUpdatedAt": null
   }
 }

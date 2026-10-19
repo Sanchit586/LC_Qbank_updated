@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aababbab&quot;",
+      "input": "s = \"aababbab\"",
       "output": "2",
-      "explanation": "You can either:\nDelete the characters at 0-indexed positions 2 and 6 (&quot;aababbab&quot; -&gt; &quot;aaabbb&quot;), or\nDelete the characters at 0-indexed positions 3 and 6 (&quot;aababbab&quot; -&gt; &quot;aabbbb&quot;)."
+      "explanation": "You can either:\nDelete the characters at 0-indexed positions 2 and 6 (\"aababbab\" -> \"aaabbb\"), or\nDelete the characters at 0-indexed positions 3 and 6 (\"aababbab\" -> \"aabbbb\")."
     },
     {
-      "input": "s = &quot;bbaaaaabb&quot;",
+      "input": "s = \"bbaaaaabb\"",
       "output": "2",
       "explanation": "The only solution is to delete the first two characters."
     }
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aababbab&quot;",
+      "input": "\"aababbab\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;bbaaaaabb&quot;",
+      "input": "\"bbaaaaabb\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aababbab&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = &quot;bbaaaaabb&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"aababbab\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "\"bbaaaaabb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"aababbab\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"bbaaaaabb\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-deletions-to-make-string-balanced/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:53.797Z",
+    "collectedAt": "2026-10-19T18:40:23.791Z",
     "sourceUpdatedAt": null
   }
 }

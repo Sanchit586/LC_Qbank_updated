@@ -28,17 +28,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;7+3*1*2&quot;, answers = [20,13,42]",
+      "input": "s = \"7+3*1*2\", answers = [20,13,42]",
       "output": "7",
       "explanation": "As illustrated above, the correct answer of the expression is 13, therefore one student is rewarded 5 points: [20,13,42]\nA student might have applied the operators in this wrong order: ((7+3)*1)*2 = 20. Therefore one student is rewarded 2 points: [20,13,42]\nThe points for the students are: [2,5,0]. The sum of the points is 2+5+0=7."
     },
     {
-      "input": "s = &quot;3+5*2&quot;, answers = [13,0,10,13,13,16,16]",
+      "input": "s = \"3+5*2\", answers = [13,0,10,13,13,16,16]",
       "output": "19",
       "explanation": "The correct answer of the expression is 13, therefore three students are rewarded 5 points each: [13,0,10,13,13,16,16]\nA student might have applied the operators in this wrong order: ((3+5)*2 = 16. Therefore two students are rewarded 2 points: [13,0,10,13,13,16,16]\nThe points for the students are: [5,0,0,5,5,2,2]. The sum of the points is 5+0+0+5+5+2+2=19."
     },
     {
-      "input": "s = &quot;6+0*1&quot;, answers = [12,9,6,4,8,6]",
+      "input": "s = \"6+0*1\", answers = [12,9,6,4,8,6]",
       "output": "10",
       "explanation": "The correct answer of the expression is 6.\nIf a student had incorrectly done (6+0)*1, the answer would also be 6.\nBy the rules of grading, the students will still be rewarded 5 points (as they got the correct answer), not 2 points.\nThe points for the students are: [0,0,5,0,0,5]. The sum of the points is 10."
     }
@@ -66,62 +66,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;7+3*1*2&quot;, answers = [20,13,42]",
+      "input": "\"7+3*1*2\"\n[20,13,42]",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;3+5*2&quot;, answers = [13,0,10,13,13,16,16]",
+      "input": "\"3+5*2\"\n[13,0,10,13,13,16,16]",
       "expectedOutput": "19"
     },
     {
-      "input": "s = &quot;6+0*1&quot;, answers = [12,9,6,4,8,6]",
+      "input": "\"6+0*1\"\n[12,9,6,4,8,6]",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;7+3*1*2&quot;, answers = [20,13,42]",
+      "input": "\"7+3*1*2\"\n[20,13,42]",
       "expectedOutput": "7"
     },
     {
-      "input": "s = &quot;3+5*2&quot;, answers = [13,0,10,13,13,16,16]",
+      "input": "\"3+5*2\"\n[13,0,10,13,13,16,16]",
       "expectedOutput": "19"
     },
     {
-      "input": "s = &quot;6+0*1&quot;, answers = [12,9,6,4,8,6]",
+      "input": "\"6+0*1\"\n[12,9,6,4,8,6]",
       "expectedOutput": "10"
     },
     {
-      "input": "\"7+3*1*2\"\n[20,13,42]",
-      "expectedOutput": null
+      "input": "s = \"7+3*1*2\", answers = [20,13,42]",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"3+5*2\"\n[13,0,10,13,13,16,16]",
-      "expectedOutput": null
+      "input": "s = \"3+5*2\", answers = [13,0,10,13,13,16,16]",
+      "expectedOutput": "19"
     },
     {
-      "input": "\"6+0*1\"\n[12,9,6,4,8,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;4+6*3&quot;, answers = [14,1,11,14,14,17,17]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;7+1*2&quot;, answers = [13,10,7,5,9,7]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"8+4*2*3\"\n[21,14,43]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"4+6*3\"\n[14,1,11,14,14,17,17]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;8+4*2*3&quot;, answers = [21,14,43]",
-      "expectedOutput": null
+      "input": "s = \"6+0*1\", answers = [12,9,6,4,8,6]",
+      "expectedOutput": "10"
     }
   ],
   "sqlSchema": null,
@@ -137,7 +117,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/the-score-of-students-solving-math-expression/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:56.179Z",
+    "collectedAt": "2026-10-19T18:40:30.958Z",
     "sourceUpdatedAt": null
   }
 }

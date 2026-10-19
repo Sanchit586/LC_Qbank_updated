@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "expression = &quot;&amp;(|(f))&quot;",
+      "input": "expression = \"&(|(f))\"",
       "output": "false",
-      "explanation": "First, evaluate |(f) --&gt; f. The expression is now &quot;&amp;(f)&quot;.\nThen, evaluate &amp;(f) --&gt; f. The expression is now &quot;f&quot;.\nFinally, return false."
+      "explanation": "First, evaluate |(f) --> f. The expression is now \"&(f)\".\nThen, evaluate &(f) --> f. The expression is now \"f\".\nFinally, return false."
     },
     {
-      "input": "expression = &quot;|(f,f,f,t)&quot;",
+      "input": "expression = \"|(f,f,f,t)\"",
       "output": "true",
       "explanation": "The evaluation of (false OR false OR false OR true) is true."
     },
     {
-      "input": "expression = &quot;!(&amp;(f,t))&quot;",
+      "input": "expression = \"!(&(f,t))\"",
       "output": "true",
-      "explanation": "First, evaluate &amp;(f,t) --&gt; (false AND true) --&gt; false --&gt; f. The expression is now &quot;!(f)&quot;.\nThen, evaluate !(f) --&gt; NOT false --&gt; true. We return true."
+      "explanation": "First, evaluate &(f,t) --> (false AND true) --> false --> f. The expression is now \"!(f)\".\nThen, evaluate !(f) --> NOT false --> true. We return true."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "expression = &quot;&amp;(|(f))&quot;",
+      "input": "\"&(|(f))\"",
       "expectedOutput": "false"
     },
     {
-      "input": "expression = &quot;|(f,f,f,t)&quot;",
+      "input": "\"|(f,f,f,t)\"",
       "expectedOutput": "true"
     },
     {
-      "input": "expression = &quot;!(&amp;(f,t))&quot;",
+      "input": "\"!(&(f,t))\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "expression = &quot;&amp;(|(f))&quot;",
+      "input": "\"&(|(f))\"",
       "expectedOutput": "false"
     },
     {
-      "input": "expression = &quot;|(f,f,f,t)&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "expression = &quot;!(&amp;(f,t))&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"&(|(f))\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"|(f,f,f,t)\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"!(&(f,t))\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "expression = \"&(|(f))\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "expression = \"|(f,f,f,t)\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "expression = \"!(&(f,t))\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/parsing-a-boolean-expression/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:51.984Z",
+    "collectedAt": "2026-10-19T18:40:26.517Z",
     "sourceUpdatedAt": null
   }
 }

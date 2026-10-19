@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;book&quot;",
+      "input": "s = \"book\"",
       "output": "true",
-      "explanation": "a = &quot;bo&quot; and b = &quot;ok&quot;. a has 1 vowel and b has 1 vowel. Therefore, they are alike."
+      "explanation": "a = \"bo\" and b = \"ok\". a has 1 vowel and b has 1 vowel. Therefore, they are alike."
     },
     {
-      "input": "s = &quot;textbook&quot;",
+      "input": "s = \"textbook\"",
       "output": "false",
-      "explanation": "a = &quot;text&quot; and b = &quot;book&quot;. a has 1 vowel whereas b has 2. Therefore, they are not alike.\nNotice that the vowel o is counted twice."
+      "explanation": "a = \"text\" and b = \"book\". a has 1 vowel whereas b has 2. Therefore, they are not alike.\nNotice that the vowel o is counted twice."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;book&quot;",
+      "input": "\"book\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;textbook&quot;",
+      "input": "\"textbook\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;book&quot;",
+      "input": "\"book\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;textbook&quot;",
+      "input": "\"textbook\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"book\"",
-      "expectedOutput": null
+      "input": "s = \"book\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"textbook\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"textbook\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/determine-if-string-halves-are-alike/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:43.650Z",
+    "collectedAt": "2026-10-19T18:40:16.586Z",
     "sourceUpdatedAt": null
   }
 }

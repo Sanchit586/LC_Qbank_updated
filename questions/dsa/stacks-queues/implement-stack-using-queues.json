@@ -16,7 +16,13 @@
     "At most 100 calls will be made to push, pop, top, and empty.",
     "All the calls to pop and top are valid."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyStack\", \"push\", \"push\", \"top\", \"pop\", \"empty\"]\n[[], [1], [2], [], [], []]",
+      "output": "[null, null, null, 2, 2, false]",
+      "explanation": "MyStack myStack = new MyStack();\nmyStack.push(1);\nmyStack.push(2);\nmyStack.top(); // return 2\nmyStack.pop(); // return 2\nmyStack.empty(); // return False"
+    }
+  ],
   "starterCode": {
     "cpp": "class MyStack {\npublic:\n    MyStack() {\n        \n    }\n    \n    void push(int x) {\n        \n    }\n    \n    int pop() {\n        \n    }\n    \n    int top() {\n        \n    }\n    \n    bool empty() {\n        \n    }\n};\n\n/**\n * Your MyStack object will be instantiated and called as such:\n * MyStack* obj = new MyStack();\n * obj->push(x);\n * int param_2 = obj->pop();\n * int param_3 = obj->top();\n * bool param_4 = obj->empty();\n */",
     "java": "class MyStack {\n\n    public MyStack() {\n        \n    }\n    \n    public void push(int x) {\n        \n    }\n    \n    public int pop() {\n        \n    }\n    \n    public int top() {\n        \n    }\n    \n    public boolean empty() {\n        \n    }\n}\n\n/**\n * Your MyStack object will be instantiated and called as such:\n * MyStack obj = new MyStack();\n * obj.push(x);\n * int param_2 = obj.pop();\n * int param_3 = obj.top();\n * boolean param_4 = obj.empty();\n */",
@@ -41,17 +47,17 @@
   "publicTests": [
     {
       "input": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, 2, 2, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[1],[2],[],[],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, 2, 2, false]"
     },
     {
-      "input": "[\"MyStack\",\"push\",\"push\",\"top\",\"pop\",\"empty\"]\n[[],[2],[3],[],[],[]]",
-      "expectedOutput": null
+      "input": "[\"MyStack\", \"push\", \"push\", \"top\", \"pop\", \"empty\"]\n[[], [1], [2], [], [], []]",
+      "expectedOutput": "[null, null, null, 2, 2, false]"
     }
   ],
   "sqlSchema": null,
@@ -63,7 +69,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/implement-stack-using-queues/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.635Z",
+    "collectedAt": "2026-10-19T18:40:19.470Z",
     "sourceUpdatedAt": null
   }
 }

@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "SalesPerson table:\n+----------+------+--------+-----------------+------------+\n| sales_id | name | salary | commission_rate | hire_date  |\n+----------+------+--------+-----------------+------------+\n| 1        | John | 100000 | 6               | 4/1/2006   |\n| 2        | Amy  | 12000  | 5               | 5/1/2010   |\n| 3        | Mark | 65000  | 12              | 12/25/2008 |\n| 4        | Pam  | 25000  | 25              | 1/1/2005   |\n| 5        | Alex | 5000   | 10              | 2/3/2007   |\n+----------+------+--------+-----------------+------------+\nCompany table:\n+--------+--------+----------+\n| com_id | name   | city     |\n+--------+--------+----------+\n| 1      | RED    | Boston   |\n| 2      | ORANGE | New York |\n| 3      | YELLOW | Boston   |\n| 4      | GREEN  | Austin   |\n+--------+--------+----------+\nOrders table:\n+----------+------------+--------+----------+--------+\n| order_id | order_date | com_id | sales_id | amount |\n+----------+------------+--------+----------+--------+\n| 1        | 1/1/2014   | 3      | 4        | 10000  |\n| 2        | 2/1/2014   | 4      | 5        | 5000   |\n| 3        | 3/1/2014   | 1      | 1        | 50000  |\n| 4        | 4/1/2014   | 1      | 4        | 25000  |\n+----------+------------+--------+----------+--------+",
+      "input": "{\"headers\": {\"SalesPerson\": [\"sales_id\", \"name\", \"salary\", \"commission_rate\",\"hire_date\"], \"Company\": [\"com_id\", \"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]}, \"rows\": {\"SalesPerson\": [[1, \"John\", 100000, 6, \"4/1/2006\"], [2, \"Amy\", 12000, 5,\"5/1/2010\"], [3, \"Mark\", 65000, 12, \"12/25/2008\"], [4, \"Pam\", 25000, 25,\"1/1/2005\"],[5,\"Alex\",5000,10,\"2/3/2007\"]], \"Company\": [[1, \"RED\",\"Boston\"], [2, \"ORANGE\", \"New York\"],[3, \"YELLOW\", \"Boston\"],[4, \"GREEN\", \"Austin\"]],\"Orders\":[[1,\"1/1/2014\",3,4,10000],[2, \"2/1/2014\", 4, 5, 5000],[3, \"3/1/2014\", 1, 1, 50000],[4, \"4/1/2014\", 1, 4, 25000]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| Amy  |\n| Mark |\n| Alex |\n+------+"
     }
   ],
   "testCases": [
     {
-      "input": "SalesPerson table:\n+----------+------+--------+-----------------+------------+\n| sales_id | name | salary | commission_rate | hire_date  |\n+----------+------+--------+-----------------+------------+\n| 1        | John | 100000 | 6               | 4/1/2006   |\n| 2        | Amy  | 12000  | 5               | 5/1/2010   |\n| 3        | Mark | 65000  | 12              | 12/25/2008 |\n| 4        | Pam  | 25000  | 25              | 1/1/2005   |\n| 5        | Alex | 5000   | 10              | 2/3/2007   |\n+----------+------+--------+-----------------+------------+\nCompany table:\n+--------+--------+----------+\n| com_id | name   | city     |\n+--------+--------+----------+\n| 1      | RED    | Boston   |\n| 2      | ORANGE | New York |\n| 3      | YELLOW | Boston   |\n| 4      | GREEN  | Austin   |\n+--------+--------+----------+\nOrders table:\n+----------+------------+--------+----------+--------+\n| order_id | order_date | com_id | sales_id | amount |\n+----------+------------+--------+----------+--------+\n| 1        | 1/1/2014   | 3      | 4        | 10000  |\n| 2        | 2/1/2014   | 4      | 5        | 5000   |\n| 3        | 3/1/2014   | 1      | 1        | 50000  |\n| 4        | 4/1/2014   | 1      | 4        | 25000  |\n+----------+------------+--------+----------+--------+",
+      "input": "{\"headers\": {\"SalesPerson\": [\"sales_id\", \"name\", \"salary\", \"commission_rate\",\"hire_date\"], \"Company\": [\"com_id\", \"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]}, \"rows\": {\"SalesPerson\": [[1, \"John\", 100000, 6, \"4/1/2006\"], [2, \"Amy\", 12000, 5,\"5/1/2010\"], [3, \"Mark\", 65000, 12, \"12/25/2008\"], [4, \"Pam\", 25000, 25,\"1/1/2005\"],[5,\"Alex\",5000,10,\"2/3/2007\"]], \"Company\": [[1, \"RED\",\"Boston\"], [2, \"ORANGE\", \"New York\"],[3, \"YELLOW\", \"Boston\"],[4, \"GREEN\", \"Austin\"]],\"Orders\":[[1,\"1/1/2014\",3,4,10000],[2, \"2/1/2014\", 4, 5, 5000],[3, \"3/1/2014\", 1, 1, 50000],[4, \"4/1/2014\", 1, 4, 25000]]}}",
       "expectedOutput": "+------+\n| name |\n+------+\n| Amy  |\n| Mark |\n| Alex |\n+------+"
     },
     {
-      "input": "{\"headers\": {\"SalesPerson\": [\"sales_id\", \"name\", \"salary\", \"commission_rate\",\"hire_date\"], \"Company\": [\"com_id\", \"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]}, \"rows\": {\"SalesPerson\": [[1, \"John\", 100000, 6, \"4/1/2006\"], [2, \"Amy\", 12000, 5,\"5/1/2010\"], [3, \"Mark\", 65000, 12, \"12/25/2008\"], [4, \"Pam\", 25000, 25,\"1/1/2005\"],[5,\"Alex\",5000,10,\"2/3/2007\"]], \"Company\": [[1, \"RED\",\"Boston\"], [2, \"ORANGE\", \"New York\"],[3, \"YELLOW\", \"Boston\"],[4, \"GREEN\", \"Austin\"]],\"Orders\":[[1,\"1/1/2014\",3,4,10000],[2, \"2/1/2014\", 4, 5, 5000],[3, \"3/1/2014\", 1, 1, 50000],[4, \"4/1/2014\", 1, 4, 25000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"SalesPerson\":[\"sales_id\",\"name\",\"salary\",\"commission_rate\",\"hire_date\"],\"Company\":[\"com_id\",\"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]},\"rows\":{\"SalesPerson\":[],\"Company\":[],\"Orders\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"SalesPerson\":[\"sales_id\",\"name\",\"salary\",\"commission_rate\",\"hire_date\"],\"Company\":[\"com_id\",\"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]},\"rows\":{\"SalesPerson\":[[1,\"John\",100000,6,\"4/1/2006\"]],\"Company\":[[1,\"RED\",\"Boston\"]],\"Orders\":[[1,\"1/1/2014\",3,4,10000]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"SalesPerson\":[\"sales_id\",\"name\",\"salary\",\"commission_rate\",\"hire_date\"],\"Company\":[\"com_id\",\"name\",\"city\"],\"Orders\":[\"order_id\",\"order_date\",\"com_id\",\"sales_id\",\"amount\"]},\"rows\":{\"SalesPerson\":[[1,\"John\",100000,6,null],[2,\"Amy\",12000,5,null],[3,\"Mark\",65000,12,null],[4,\"Pam\",25000,25,null],[5,\"Alex\",5000,10,null]],\"Company\":[[1,\"RED\",null],[2,\"ORANGE\",null],[3,\"YELLOW\",null],[4,\"GREEN\",null]],\"Orders\":[[1,\"1/1/2014\",3,4,null],[2,\"2/1/2014\",4,5,null],[3,\"3/1/2014\",1,1,null],[4,\"4/1/2014\",1,4,null]]}}",
-      "expectedOutput": null
+      "input": "SalesPerson table:\n+----------+------+--------+-----------------+------------+\n| sales_id | name | salary | commission_rate | hire_date  |\n+----------+------+--------+-----------------+------------+\n| 1        | John | 100000 | 6               | 4/1/2006   |\n| 2        | Amy  | 12000  | 5               | 5/1/2010   |\n| 3        | Mark | 65000  | 12              | 12/25/2008 |\n| 4        | Pam  | 25000  | 25              | 1/1/2005   |\n| 5        | Alex | 5000   | 10              | 2/3/2007   |\n+----------+------+--------+-----------------+------------+\nCompany table:\n+--------+--------+----------+\n| com_id | name   | city     |\n+--------+--------+----------+\n| 1      | RED    | Boston   |\n| 2      | ORANGE | New York |\n| 3      | YELLOW | Boston   |\n| 4      | GREEN  | Austin   |\n+--------+--------+----------+\nOrders table:\n+----------+------------+--------+----------+--------+\n| order_id | order_date | com_id | sales_id | amount |\n+----------+------------+--------+----------+--------+\n| 1        | 1/1/2014   | 3      | 4        | 10000  |\n| 2        | 2/1/2014   | 4      | 5        | 5000   |\n| 3        | 3/1/2014   | 1      | 1        | 50000  |\n| 4        | 4/1/2014   | 1      | 4        | 25000  |\n+----------+------------+--------+----------+--------+",
+      "expectedOutput": "+------+\n| name |\n+------+\n| Amy  |\n| Mark |\n| Alex |\n+------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists SalesPerson (sales_id int, name varchar(255), salary int, commission_rate int, hire_date date)\n\nCreate table If Not Exists Company (com_id int, name varchar(255), city varchar(255))\n\nCreate table If Not Exists Orders (order_id int, order_date date, com_id int, sales_id int, amount int)\n\nTruncate table SalesPerson\n\nTruncate table Company\n\nTruncate table Orders",
@@ -77,7 +65,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sales-person/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:16.738Z",
+    "collectedAt": "2026-10-19T18:40:28.080Z",
     "sourceUpdatedAt": null
   }
 }

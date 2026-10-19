@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a#b%*&quot;, k = 1",
-      "output": "&quot;a&quot;",
-      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t&#39;a&#39;\n\t\t\tAppend &#39;a&#39;\n\t\t\t&quot;a&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate result\n\t\t\t&quot;aa&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;b&#39;\n\t\t\tAppend &#39;b&#39;\n\t\t\t&quot;aab&quot;\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&#39;%&#39;\n\t\t\tReverse result\n\t\t\t&quot;baa&quot;\n\t\t\n\t\t\n\t\t\t4\n\t\t\t&#39;*&#39;\n\t\t\tRemove the last character\n\t\t\t&quot;ba&quot;"
+      "input": "s = \"a#b%*\", k = 1",
+      "output": "\"a\"",
+      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t'a'\n\t\t\tAppend 'a'\n\t\t\t\"a\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'#'\n\t\t\tDuplicate result\n\t\t\t\"aa\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'b'\n\t\t\tAppend 'b'\n\t\t\t\"aab\"\n\t\t\n\t\t\n\t\t\t3\n\t\t\t'%'\n\t\t\tReverse result\n\t\t\t\"baa\"\n\t\t\n\t\t\n\t\t\t4\n\t\t\t'*'\n\t\t\tRemove the last character\n\t\t\t\"ba\""
     },
     {
-      "input": "s = &quot;cd%#*#&quot;, k = 3",
-      "output": "&quot;d&quot;",
-      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t&#39;c&#39;\n\t\t\tAppend &#39;c&#39;\n\t\t\t&quot;c&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;d&#39;\n\t\t\tAppend &#39;d&#39;\n\t\t\t&quot;cd&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;%&#39;\n\t\t\tReverse result\n\t\t\t&quot;dc&quot;\n\t\t\n\t\t\n\t\t\t3\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate result\n\t\t\t&quot;dcdc&quot;\n\t\t\n\t\t\n\t\t\t4\n\t\t\t&#39;*&#39;\n\t\t\tRemove the last character\n\t\t\t&quot;dcd&quot;\n\t\t\n\t\t\n\t\t\t5\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate result\n\t\t\t&quot;dcddcd&quot;"
+      "input": "s = \"cd%#*#\", k = 3",
+      "output": "\"d\"",
+      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t'c'\n\t\t\tAppend 'c'\n\t\t\t\"c\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'd'\n\t\t\tAppend 'd'\n\t\t\t\"cd\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'%'\n\t\t\tReverse result\n\t\t\t\"dc\"\n\t\t\n\t\t\n\t\t\t3\n\t\t\t'#'\n\t\t\tDuplicate result\n\t\t\t\"dcdc\"\n\t\t\n\t\t\n\t\t\t4\n\t\t\t'*'\n\t\t\tRemove the last character\n\t\t\t\"dcd\"\n\t\t\n\t\t\n\t\t\t5\n\t\t\t'#'\n\t\t\tDuplicate result\n\t\t\t\"dcddcd\""
     },
     {
-      "input": "s = &quot;z*#&quot;, k = 0",
-      "output": "&quot;.&quot;",
-      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t&#39;z&#39;\n\t\t\tAppend &#39;z&#39;\n\t\t\t&quot;z&quot;\n\t\t\n\t\t\n\t\t\t1\n\t\t\t&#39;*&#39;\n\t\t\tRemove the last character\n\t\t\t&quot;&quot;\n\t\t\n\t\t\n\t\t\t2\n\t\t\t&#39;#&#39;\n\t\t\tDuplicate the string\n\t\t\t&quot;&quot;"
+      "input": "s = \"z*#\", k = 0",
+      "output": "\".\"",
+      "explanation": "i\n\t\t\ts[i]\n\t\t\tOperation\n\t\t\tCurrent result\n\t\t\n\t\n\t\n\t\t\n\t\t\t0\n\t\t\t'z'\n\t\t\tAppend 'z'\n\t\t\t\"z\"\n\t\t\n\t\t\n\t\t\t1\n\t\t\t'*'\n\t\t\tRemove the last character\n\t\t\t\"\"\n\t\t\n\t\t\n\t\t\t2\n\t\t\t'#'\n\t\t\tDuplicate the string\n\t\t\t\"\""
     }
   ],
   "starterCode": {
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a#b%*&quot;, k = 1",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"a#b%*\"\n1",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = &quot;cd%#*#&quot;, k = 3",
-      "expectedOutput": "&quot;d&quot;"
+      "input": "\"cd%#*#\"\n3",
+      "expectedOutput": "\"d\""
     },
     {
-      "input": "s = &quot;z*#&quot;, k = 0",
-      "expectedOutput": "&quot;.&quot;"
+      "input": "\"z*#\"\n0",
+      "expectedOutput": "\".\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a#b%*&quot;, k = 1",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
-      "input": "s = &quot;cd%#*#&quot;, k = 3",
-      "expectedOutput": "&quot;d&quot;"
-    },
-    {
-      "input": "s = &quot;z*#&quot;, k = 0",
-      "expectedOutput": "&quot;.&quot;"
-    },
-    {
       "input": "\"a#b%*\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
     },
     {
       "input": "\"cd%#*#\"\n3",
-      "expectedOutput": null
+      "expectedOutput": "\"d\""
     },
     {
       "input": "\"z*#\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "\".\""
     },
     {
-      "input": "s = &quot;cd%#*#&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"a#b%*\", k = 1",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = &quot;z*#&quot;, k = 1",
-      "expectedOutput": null
+      "input": "s = \"cd%#*#\", k = 3",
+      "expectedOutput": "\"d\""
     },
     {
-      "input": "\"a#b%*\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"cd%#*#\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;a#b%*&quot;, k = 2",
-      "expectedOutput": null
+      "input": "s = \"z*#\", k = 0",
+      "expectedOutput": "\".\""
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/process-string-with-special-operations-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.735Z",
+    "collectedAt": "2026-10-19T18:40:26.984Z",
     "sourceUpdatedAt": null
   }
 }

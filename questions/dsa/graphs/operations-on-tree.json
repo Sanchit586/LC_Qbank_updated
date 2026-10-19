@@ -24,7 +24,13 @@
     "parent represents a valid tree.",
     "At most 2000 calls in total will be made to lock, unlock, and upgrade."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"LockingTree\", \"lock\", \"unlock\", \"unlock\", \"lock\", \"upgrade\", \"lock\"]\n[[[-1, 0, 0, 1, 1, 2, 2]], [2, 2], [2, 3], [2, 2], [4, 5], [0, 1], [0, 1]]",
+      "output": "[null, true, false, true, true, true, false]",
+      "explanation": "LockingTree lockingTree = new LockingTree([-1, 0, 0, 1, 1, 2, 2]);\nlockingTree.lock(2, 2);    // return true because node 2 is unlocked.\n                           // Node 2 will now be locked by user 2.\nlockingTree.unlock(2, 3);  // return false because user 3 cannot unlock a node locked by user 2.\nlockingTree.unlock(2, 2);  // return true because node 2 was previously locked by user 2.\n                           // Node 2 will now be unlocked.\nlockingTree.lock(4, 5);    // return true because node 4 is unlocked.\n                           // Node 4 will now be locked by user 5.\nlockingTree.upgrade(0, 1); // return true because node 0 is unlocked and has at least one locked descendant (node 4).\n                           // Node 0 will now be locked by user 1 and node 4 will now be unlocked.\nlockingTree.lock(0, 1);    // return false because node 0 is already locked."
+    }
+  ],
   "starterCode": {
     "cpp": "class LockingTree {\npublic:\n    LockingTree(vector<int>& parent) {\n        \n    }\n    \n    bool lock(int num, int user) {\n        \n    }\n    \n    bool unlock(int num, int user) {\n        \n    }\n    \n    bool upgrade(int num, int user) {\n        \n    }\n};\n\n/**\n * Your LockingTree object will be instantiated and called as such:\n * LockingTree* obj = new LockingTree(parent);\n * bool param_1 = obj->lock(num,user);\n * bool param_2 = obj->unlock(num,user);\n * bool param_3 = obj->upgrade(num,user);\n */",
     "java": "class LockingTree {\n\n    public LockingTree(int[] parent) {\n        \n    }\n    \n    public boolean lock(int num, int user) {\n        \n    }\n    \n    public boolean unlock(int num, int user) {\n        \n    }\n    \n    public boolean upgrade(int num, int user) {\n        \n    }\n}\n\n/**\n * Your LockingTree object will be instantiated and called as such:\n * LockingTree obj = new LockingTree(parent);\n * boolean param_1 = obj.lock(num,user);\n * boolean param_2 = obj.unlock(num,user);\n * boolean param_3 = obj.upgrade(num,user);\n */",
@@ -49,17 +55,17 @@
   "publicTests": [
     {
       "input": "[\"LockingTree\",\"lock\",\"unlock\",\"unlock\",\"lock\",\"upgrade\",\"lock\"]\n[[[-1,0,0,1,1,2,2]],[2,2],[2,3],[2,2],[4,5],[0,1],[0,1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true, true, true, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"LockingTree\",\"lock\",\"unlock\",\"unlock\",\"lock\",\"upgrade\",\"lock\"]\n[[[-1,0,0,1,1,2,2]],[2,2],[2,3],[2,2],[4,5],[0,1],[0,1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, false, true, true, true, false]"
     },
     {
-      "input": "[\"LockingTree\",\"lock\",\"unlock\",\"unlock\",\"lock\",\"upgrade\",\"lock\"]\n[[[-2,1,1,2,2,3,3]],[3,3],[3,4],[3,3],[5,6],[1,2],[1,2]]",
-      "expectedOutput": null
+      "input": "[\"LockingTree\", \"lock\", \"unlock\", \"unlock\", \"lock\", \"upgrade\", \"lock\"]\n[[[-1, 0, 0, 1, 1, 2, 2]], [2, 2], [2, 3], [2, 2], [4, 5], [0, 1], [0, 1]]",
+      "expectedOutput": "[null, true, false, true, true, true, false]"
     }
   ],
   "sqlSchema": null,
@@ -74,7 +80,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/operations-on-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:49.309Z",
+    "collectedAt": "2026-10-19T18:40:26.398Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,13 +20,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;ale&quot;,&quot;apple&quot;,&quot;monkey&quot;,&quot;plea&quot;]",
-      "output": "&quot;apple&quot;",
+      "input": "s = \"abpcplea\", dictionary = [\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "output": "\"apple\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "output": "&quot;a&quot;",
+      "input": "s = \"abpcplea\", dictionary = [\"a\",\"b\",\"c\"]",
+      "output": "\"a\"",
       "explanation": null
     }
   ],
@@ -53,30 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;ale&quot;,&quot;apple&quot;,&quot;monkey&quot;,&quot;plea&quot;]",
-      "expectedOutput": "&quot;apple&quot;"
+      "input": "\"abpcplea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"apple\""
     },
     {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "expectedOutput": "&quot;a&quot;"
+      "input": "\"abpcplea\"\n[\"a\",\"b\",\"c\"]",
+      "expectedOutput": "\"a\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;ale&quot;,&quot;apple&quot;,&quot;monkey&quot;,&quot;plea&quot;]",
-      "expectedOutput": "&quot;apple&quot;"
-    },
-    {
-      "input": "s = &quot;abpcplea&quot;, dictionary = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "expectedOutput": "&quot;a&quot;"
-    },
-    {
       "input": "\"abpcplea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"apple\""
     },
     {
       "input": "\"abpcplea\"\n[\"a\",\"b\",\"c\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "s = \"abpcplea\", dictionary = [\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"apple\""
+    },
+    {
+      "input": "s = \"abpcplea\", dictionary = [\"a\",\"b\",\"c\"]",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,
@@ -88,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-word-in-dictionary-through-deleting/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.626Z",
+    "collectedAt": "2026-10-19T18:40:20.768Z",
     "sourceUpdatedAt": null
   }
 }

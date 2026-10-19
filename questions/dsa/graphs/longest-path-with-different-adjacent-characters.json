@@ -24,14 +24,14 @@
   ],
   "examples": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;abacbe&quot;",
+      "input": "parent = [-1,0,0,1,1,2], s = \"abacbe\"",
       "output": "3",
-      "explanation": "The longest path where each two adjacent nodes have different characters in the tree is the path: 0 -&gt; 1 -&gt; 3. The length of this path is 3, so 3 is returned.\nIt can be proven that there is no longer path that satisfies the conditions."
+      "explanation": "The longest path where each two adjacent nodes have different characters in the tree is the path: 0 -> 1 -> 3. The length of this path is 3, so 3 is returned.\nIt can be proven that there is no longer path that satisfies the conditions."
     },
     {
-      "input": "parent = [-1,0,0,0], s = &quot;aabc&quot;",
+      "input": "parent = [-1,0,0,0], s = \"aabc\"",
       "output": "3",
-      "explanation": "The longest path where each two adjacent nodes have different characters is the path: 2 -&gt; 0 -&gt; 3. The length of this path is 3, so 3 is returned."
+      "explanation": "The longest path where each two adjacent nodes have different characters is the path: 2 -> 0 -> 3. The length of this path is 3, so 3 is returned."
     }
   ],
   "starterCode": {
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;abacbe&quot;",
+      "input": "[-1,0,0,1,1,2]\n\"abacbe\"",
       "expectedOutput": "3"
     },
     {
-      "input": "parent = [-1,0,0,0], s = &quot;aabc&quot;",
+      "input": "[-1,0,0,0]\n\"aabc\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;abacbe&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "parent = [-1,0,0,0], s = &quot;aabc&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "[-1,0,0,1,1,2]\n\"abacbe\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "[-1,0,0,0]\n\"aabc\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
-      "input": "parent = [-2,1,1,2,2,3], s = &quot;abacbe&quot;",
-      "expectedOutput": null
+      "input": "parent = [-1,0,0,1,1,2], s = \"abacbe\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "parent = [-1,0,0,0], s = \"aabc\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-path-with-different-adjacent-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:54.812Z",
+    "collectedAt": "2026-10-19T18:40:20.586Z",
     "sourceUpdatedAt": null
   }
 }

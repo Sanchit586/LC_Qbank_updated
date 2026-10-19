@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "22"
     },
     {
-      "input": "n = 1000",
+      "input": "1000",
       "expectedOutput": "1333"
     },
     {
-      "input": "n = 3000",
+      "input": "3000",
       "expectedOutput": "3133"
     }
   ],
   "testCases": [
     {
+      "input": "1",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "1000",
+      "expectedOutput": "1333"
+    },
+    {
+      "input": "3000",
+      "expectedOutput": "3133"
+    },
+    {
       "input": "n = 1",
       "expectedOutput": "22"
     },
@@ -80,74 +92,6 @@
     {
       "input": "n = 3000",
       "expectedOutput": "3133"
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "3000",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "1001",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/next-greater-numerically-balanced-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:38.204Z",
+    "collectedAt": "2026-10-19T18:40:25.656Z",
     "sourceUpdatedAt": null
   }
 }

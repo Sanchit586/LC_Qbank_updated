@@ -24,14 +24,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;isawsquirrelnearmysquirrelhouseohmy&quot;, a = &quot;my&quot;, b = &quot;squirrel&quot;, k = 15",
+      "input": "s = \"isawsquirrelnearmysquirrelhouseohmy\", a = \"my\", b = \"squirrel\", k = 15",
       "output": "[16,33]",
-      "explanation": "There are 2 beautiful indices: [16,33].\n- The index 16 is beautiful as s[16..17] == &quot;my&quot; and there exists an index 4 with s[4..11] == &quot;squirrel&quot; and |16 - 4| &lt;= 15.\n- The index 33 is beautiful as s[33..34] == &quot;my&quot; and there exists an index 18 with s[18..25] == &quot;squirrel&quot; and |33 - 18| &lt;= 15.\nThus we return [16,33] as the result."
+      "explanation": "There are 2 beautiful indices: [16,33].\n- The index 16 is beautiful as s[16..17] == \"my\" and there exists an index 4 with s[4..11] == \"squirrel\" and |16 - 4| <= 15.\n- The index 33 is beautiful as s[33..34] == \"my\" and there exists an index 18 with s[18..25] == \"squirrel\" and |33 - 18| <= 15.\nThus we return [16,33] as the result."
     },
     {
-      "input": "s = &quot;abcd&quot;, a = &quot;a&quot;, b = &quot;a&quot;, k = 4",
+      "input": "s = \"abcd\", a = \"a\", b = \"a\", k = 4",
       "output": "[0]",
-      "explanation": "There is 1 beautiful index: [0].\n- The index 0 is beautiful as s[0..0] == &quot;a&quot; and there exists an index 0 with s[0..0] == &quot;a&quot; and |0 - 0| &lt;= 4.\nThus we return [0] as the result."
+      "explanation": "There is 1 beautiful index: [0].\n- The index 0 is beautiful as s[0..0] == \"a\" and there exists an index 0 with s[0..0] == \"a\" and |0 - 0| <= 4.\nThus we return [0] as the result."
     }
   ],
   "starterCode": {
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;isawsquirrelnearmysquirrelhouseohmy&quot;, a = &quot;my&quot;, b = &quot;squirrel&quot;, k = 15",
+      "input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15",
       "expectedOutput": "[16,33]"
     },
     {
-      "input": "s = &quot;abcd&quot;, a = &quot;a&quot;, b = &quot;a&quot;, k = 4",
+      "input": "\"abcd\"\n\"a\"\n\"a\"\n4",
       "expectedOutput": "[0]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;isawsquirrelnearmysquirrelhouseohmy&quot;, a = &quot;my&quot;, b = &quot;squirrel&quot;, k = 15",
+      "input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15",
       "expectedOutput": "[16,33]"
     },
     {
-      "input": "s = &quot;abcd&quot;, a = &quot;a&quot;, b = &quot;a&quot;, k = 4",
+      "input": "\"abcd\"\n\"a\"\n\"a\"\n4",
       "expectedOutput": "[0]"
     },
     {
-      "input": "\"isawsquirrelnearmysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15",
-      "expectedOutput": null
+      "input": "s = \"isawsquirrelnearmysquirrelhouseohmy\", a = \"my\", b = \"squirrel\", k = 15",
+      "expectedOutput": "[16,33]"
     },
     {
-      "input": "\"abcd\"\n\"a\"\n\"a\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;isawsquirrelnearmysquirrelhouseohmy&quot;, a = &quot;my&quot;, b = &quot;squirrel&quot;, k = 16",
-      "expectedOutput": null
+      "input": "s = \"abcd\", a = \"a\", b = \"a\", k = 4",
+      "expectedOutput": "[0]"
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-beautiful-indices-in-the-given-array-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:57.695Z",
+    "collectedAt": "2026-10-19T18:40:17.490Z",
     "sourceUpdatedAt": null
   }
 }

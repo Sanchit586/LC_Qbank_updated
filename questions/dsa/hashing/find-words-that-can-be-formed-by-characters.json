@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;cat&quot;,&quot;bt&quot;,&quot;hat&quot;,&quot;tree&quot;], chars = &quot;atach&quot;",
+      "input": "words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"",
       "output": "6",
-      "explanation": "The strings that can be formed are &quot;cat&quot; and &quot;hat&quot; so the answer is 3 + 3 = 6."
+      "explanation": "The strings that can be formed are \"cat\" and \"hat\" so the answer is 3 + 3 = 6."
     },
     {
-      "input": "words = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], chars = &quot;welldonehoneyr&quot;",
+      "input": "words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"",
       "output": "10",
-      "explanation": "The strings that can be formed are &quot;hello&quot; and &quot;world&quot; so the answer is 5 + 5 = 10."
+      "explanation": "The strings that can be formed are \"hello\" and \"world\" so the answer is 5 + 5 = 10."
     }
   ],
   "starterCode": {
@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;cat&quot;,&quot;bt&quot;,&quot;hat&quot;,&quot;tree&quot;], chars = &quot;atach&quot;",
+      "input": "[\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
       "expectedOutput": "6"
     },
     {
-      "input": "words = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], chars = &quot;welldonehoneyr&quot;",
+      "input": "[\"hello\",\"world\",\"leetcode\"]\n\"welldonehoneyr\"",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;cat&quot;,&quot;bt&quot;,&quot;hat&quot;,&quot;tree&quot;], chars = &quot;atach&quot;",
+      "input": "[\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
       "expectedOutput": "6"
     },
     {
-      "input": "words = [&quot;hello&quot;,&quot;world&quot;,&quot;leetcode&quot;], chars = &quot;welldonehoneyr&quot;",
+      "input": "[\"hello\",\"world\",\"leetcode\"]\n\"welldonehoneyr\"",
       "expectedOutput": "10"
     },
     {
-      "input": "[\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
-      "expectedOutput": null
+      "input": "words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "[\"hello\",\"world\",\"leetcode\"]\n\"welldonehoneyr\"",
-      "expectedOutput": null
+      "input": "words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"",
+      "expectedOutput": "10"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-words-that-can-be-formed-by-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.036Z",
+    "collectedAt": "2026-10-19T18:40:18.801Z",
     "sourceUpdatedAt": null
   }
 }

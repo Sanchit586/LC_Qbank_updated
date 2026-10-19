@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 217        | None    | 19  |\n| 779        | Georgia | 20  |\n| 849        | Willow  | 14  |\n+------------+---------+-----+",
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[32,\"Piper\",5],[217,null,19],[779,\"Georgia\",20],[849,\"Willow\",14]]}}",
       "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 779        | Georgia | 20  | \n| 849        | Willow  | 14  | \n+------------+---------+-----+"
     }
   ],
   "testCases": [
     {
-      "input": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 217        | None    | 19  |\n| 779        | Georgia | 20  |\n| 849        | Willow  | 14  |\n+------------+---------+-----+",
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[32,\"Piper\",5],[217,null,19],[779,\"Georgia\",20],[849,\"Willow\",14]]}}",
       "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 779        | Georgia | 20  | \n| 849        | Willow  | 14  | \n+------------+---------+-----+"
     },
     {
-      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[32,\"Piper\",5],[217,null,19],[779,\"Georgia\",20],[849,\"Willow\",14]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 33         | Piper   | 6   |\n| 218        | None    | 20  |\n| 780        | Georgia | 21  |\n| 850        | Willow  | 15  |\n+------------+---------+-----+",
-      "expectedOutput": null
+      "input": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 217        | None    | 19  |\n| 779        | Georgia | 20  |\n| 849        | Willow  | 14  |\n+------------+---------+-----+",
+      "expectedOutput": "+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 32         | Piper   | 5   |\n| 779        | Georgia | 20  | \n| 849        | Willow  | 14  | \n+------------+---------+-----+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/drop-missing-data/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.194Z",
+    "collectedAt": "2026-10-19T18:40:16.889Z",
     "sourceUpdatedAt": null
   }
 }

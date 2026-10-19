@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, k = 4",
+      "input": "5\n4",
       "expectedOutput": "18"
     },
     {
-      "input": "n = 2, k = 6",
+      "input": "2\n6",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "5\n4",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "3"
+    },
+    {
       "input": "n = 5, k = 4",
       "expectedOutput": "18"
     },
     {
       "input": "n = 2, k = 6",
       "expectedOutput": "3"
-    },
-    {
-      "input": "5\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, k = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/determine-the-minimum-sum-of-a-k-avoiding-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:43.683Z",
+    "collectedAt": "2026-10-19T18:40:16.601Z",
     "sourceUpdatedAt": null
   }
 }

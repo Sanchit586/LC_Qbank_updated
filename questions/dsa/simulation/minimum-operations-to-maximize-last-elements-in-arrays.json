@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,2,7], nums2 = [4,5,3]",
+      "input": "[1,2,7]\n[4,5,3]",
       "expectedOutput": "1"
     },
     {
-      "input": "nums1 = [2,3,4,5,9], nums2 = [8,8,4,4,4]",
+      "input": "[2,3,4,5,9]\n[8,8,4,4,4]",
       "expectedOutput": "2"
     },
     {
-      "input": "nums1 = [1,5,4], nums2 = [2,5,3]",
+      "input": "[1,5,4]\n[2,5,3]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,7]\n[4,5,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,3,4,5,9]\n[8,8,4,4,4]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,5,4]\n[2,5,3]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "nums1 = [1,2,7], nums2 = [4,5,3]",
       "expectedOutput": "1"
     },
@@ -79,38 +91,6 @@
     {
       "input": "nums1 = [1,5,4], nums2 = [2,5,3]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[1,2,7]\n[4,5,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,4,5,9]\n[8,8,4,4,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,4]\n[2,5,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [3,4,5,6,10], nums3 = [9,9,5,5,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,6,5], nums3 = [3,6,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,3,8]\n[5,6,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,4,5,6,10]\n[9,9,5,5,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,3,8], nums3 = [5,6,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-maximize-last-elements-in-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.747Z",
+    "collectedAt": "2026-10-19T18:40:24.780Z",
     "sourceUpdatedAt": null
   }
 }

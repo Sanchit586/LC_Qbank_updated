@@ -50,90 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4104",
+      "input": "4104",
       "expectedOutput": "[1729,4104]"
     },
     {
-      "input": "n = 578",
+      "input": "578",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "4104",
+      "expectedOutput": "[1729,4104]"
+    },
+    {
+      "input": "578",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 4104",
       "expectedOutput": "[1729,4104]"
     },
     {
       "input": "n = 578",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "4104",
-      "expectedOutput": null
-    },
-    {
-      "input": "578",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -150,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/integers-with-multiple-sum-of-two-cubes/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.377Z",
+    "collectedAt": "2026-10-19T18:40:19.561Z",
     "sourceUpdatedAt": null
   }
 }

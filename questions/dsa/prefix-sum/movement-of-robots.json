@@ -16,18 +16,18 @@
     "2 <= nums.length <= 105",
     "-2 * 109 <= nums[i] <= 2 * 109",
     "0 <= d <= 109",
-    "nums.length == s.length",
+    "nums.length == s.length ",
     "s consists of 'L' and 'R' only",
     "nums[i] will be unique."
   ],
   "examples": [
     {
-      "input": "nums = [-2,0,2], s = &quot;RLL&quot;, d = 3",
+      "input": "nums = [-2,0,2], s = \"RLL\", d = 3",
       "output": "8",
       "explanation": "After 1 second, the positions are [-1,-1,1]. Now, the robot at index 0 will move left, and the robot at index 1 will move right.\nAfter 2 seconds, the positions are [-2,0,0]. Now, the robot at index 1 will move left, and the robot at index 2 will move right.\nAfter 3 seconds, the positions are [-3,-1,1].\nThe distance between the robot at index 0 and 1 is abs(-3 - (-1)) = 2.\nThe distance between the robot at index 0 and 2 is abs(-3 - 1) = 4.\nThe distance between the robot at index 1 and 2 is abs(-1 - 1) = 2.\nThe sum of the pairs of all distances = 2 + 4 + 2 = 8."
     },
     {
-      "input": "nums = [1,0], s = &quot;RL&quot;, d = 2",
+      "input": "nums = [1,0], s = \"RL\", d = 2",
       "output": "5",
       "explanation": "After 1 second, the positions are [2,-1].\nAfter 2 seconds, the positions are [3,-2].\nThe distance between the two robots is abs(-2 - 3) = 5."
     }
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [-2,0,2], s = &quot;RLL&quot;, d = 3",
+      "input": "[-2,0,2]\n\"RLL\"\n3",
       "expectedOutput": "8"
     },
     {
-      "input": "nums = [1,0], s = &quot;RL&quot;, d = 2",
+      "input": "[1,0]\n\"RL\"\n2",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "nums = [-2,0,2], s = &quot;RLL&quot;, d = 3",
+      "input": "[-2,0,2]\n\"RLL\"\n3",
       "expectedOutput": "8"
     },
     {
-      "input": "nums = [1,0], s = &quot;RL&quot;, d = 2",
+      "input": "[1,0]\n\"RL\"\n2",
       "expectedOutput": "5"
     },
     {
-      "input": "[-2,0,2]\n\"RLL\"\n3",
-      "expectedOutput": null
+      "input": "nums = [-2,0,2], s = \"RLL\", d = 3",
+      "expectedOutput": "8"
     },
     {
-      "input": "[1,0]\n\"RL\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [-3,1,3], s = &quot;RLL&quot;, d = 4",
-      "expectedOutput": null
+      "input": "nums = [1,0], s = \"RL\", d = 2",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/movement-of-robots/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:34.955Z",
+    "collectedAt": "2026-10-19T18:40:25.512Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,17 +17,17 @@
   "examples": [
     {
       "input": "num = 3749",
-      "output": "&quot;MMMDCCXLIX&quot;",
+      "output": "\"MMMDCCXLIX\"",
       "explanation": "3000 = MMM as 1000 (M) + 1000 (M) + 1000 (M)\n 700 = DCC as 500 (D) + 100 (C) + 100 (C)\n  40 = XL as 10 (X) less of 50 (L)\n   9 = IX as 1 (I) less of 10 (X)\nNote: 49 is not 1 (I) less of 50 (L) because the conversion is based on decimal places"
     },
     {
       "input": "num = 58",
-      "output": "&quot;LVIII&quot;",
+      "output": "\"LVIII\"",
       "explanation": "50 = L\n 8 = VIII"
     },
     {
       "input": "num = 1994",
-      "output": "&quot;MCMXCIV&quot;",
+      "output": "\"MCMXCIV\"",
       "explanation": "1000 = M\n 900 = CM\n  90 = XC\n   4 = IV"
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "num = 3749",
-      "expectedOutput": "&quot;MMMDCCXLIX&quot;"
+      "input": "3749",
+      "expectedOutput": "\"MMMDCCXLIX\""
     },
     {
-      "input": "num = 58",
-      "expectedOutput": "&quot;LVIII&quot;"
+      "input": "58",
+      "expectedOutput": "\"LVIII\""
     },
     {
-      "input": "num = 1994",
-      "expectedOutput": "&quot;MCMXCIV&quot;"
+      "input": "1994",
+      "expectedOutput": "\"MCMXCIV\""
     }
   ],
   "testCases": [
     {
-      "input": "num = 3749",
-      "expectedOutput": "&quot;MMMDCCXLIX&quot;"
-    },
-    {
-      "input": "num = 58",
-      "expectedOutput": "&quot;LVIII&quot;"
-    },
-    {
-      "input": "num = 1994",
-      "expectedOutput": "&quot;MCMXCIV&quot;"
-    },
-    {
       "input": "3749",
-      "expectedOutput": null
+      "expectedOutput": "\"MMMDCCXLIX\""
     },
     {
       "input": "58",
-      "expectedOutput": null
+      "expectedOutput": "\"LVIII\""
     },
     {
       "input": "1994",
-      "expectedOutput": null
+      "expectedOutput": "\"MCMXCIV\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "num = 3749",
+      "expectedOutput": "\"MMMDCCXLIX\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
+      "input": "num = 58",
+      "expectedOutput": "\"LVIII\""
     },
     {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
+      "input": "num = 1994",
+      "expectedOutput": "\"MCMXCIV\""
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/integer-to-roman/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.365Z",
+    "collectedAt": "2026-10-19T18:40:19.557Z",
     "sourceUpdatedAt": null
   }
 }

@@ -14,12 +14,12 @@
   ],
   "examples": [
     {
-      "input": "init = 5, calls = [&quot;increment&quot;,&quot;reset&quot;,&quot;decrement&quot;]",
+      "input": "init = 5, calls = [\"increment\",\"reset\",\"decrement\"]",
       "output": "[6,5,4]",
       "explanation": "const counter = createCounter(5);\ncounter.increment(); // 6\ncounter.reset(); // 5\ncounter.decrement(); // 4"
     },
     {
-      "input": "init = 0, calls = [&quot;increment&quot;,&quot;increment&quot;,&quot;decrement&quot;,&quot;reset&quot;,&quot;reset&quot;]",
+      "input": "init = 0, calls = [\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]",
       "output": "[1,2,1,0,0]",
       "explanation": "const counter = createCounter(0);\ncounter.increment(); // 1\ncounter.increment(); // 2\ncounter.decrement(); // 1\ncounter.reset(); // 0\ncounter.reset(); // 0"
     }
@@ -30,34 +30,30 @@
   },
   "publicTests": [
     {
-      "input": "init = 5, calls = [&quot;increment&quot;,&quot;reset&quot;,&quot;decrement&quot;]",
+      "input": "5\n[\"increment\",\"reset\",\"decrement\"]",
       "expectedOutput": "[6,5,4]"
     },
     {
-      "input": "init = 0, calls = [&quot;increment&quot;,&quot;increment&quot;,&quot;decrement&quot;,&quot;reset&quot;,&quot;reset&quot;]",
+      "input": "0\n[\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]",
       "expectedOutput": "[1,2,1,0,0]"
     }
   ],
   "testCases": [
     {
-      "input": "init = 5, calls = [&quot;increment&quot;,&quot;reset&quot;,&quot;decrement&quot;]",
+      "input": "5\n[\"increment\",\"reset\",\"decrement\"]",
       "expectedOutput": "[6,5,4]"
     },
     {
-      "input": "init = 0, calls = [&quot;increment&quot;,&quot;increment&quot;,&quot;decrement&quot;,&quot;reset&quot;,&quot;reset&quot;]",
+      "input": "0\n[\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]",
       "expectedOutput": "[1,2,1,0,0]"
     },
     {
-      "input": "5\n[\"increment\",\"reset\",\"decrement\"]",
-      "expectedOutput": null
+      "input": "init = 5, calls = [\"increment\",\"reset\",\"decrement\"]",
+      "expectedOutput": "[6,5,4]"
     },
     {
-      "input": "0\n[\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "init = 6, calls = [&quot;increment&quot;,&quot;reset&quot;,&quot;decrement&quot;]",
-      "expectedOutput": null
+      "input": "init = 0, calls = [\"increment\",\"increment\",\"decrement\",\"reset\",\"reset\"]",
+      "expectedOutput": "[1,2,1,0,0]"
     }
   ],
   "sqlSchema": null,
@@ -72,7 +68,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/counter-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.293Z",
+    "collectedAt": "2026-10-19T18:40:15.986Z",
     "sourceUpdatedAt": null
   }
 }

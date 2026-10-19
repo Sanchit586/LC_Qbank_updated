@@ -23,7 +23,13 @@
     "buildDict will be called only once before search.",
     "At most 100 calls will be made to search."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\", \"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]",
+      "output": "[null, null, false, true, false, false]",
+      "explanation": "MagicDictionary magicDictionary = new MagicDictionary();\nmagicDictionary.buildDict([\"hello\", \"leetcode\"]);\nmagicDictionary.search(\"hello\"); // return False\nmagicDictionary.search(\"hhllo\"); // We can change the second 'h' to 'e' to match \"hello\" so we return True\nmagicDictionary.search(\"hell\"); // return False\nmagicDictionary.search(\"leetcoded\"); // return False"
+    }
+  ],
   "starterCode": {
     "cpp": "class MagicDictionary {\npublic:\n    MagicDictionary() {\n        \n    }\n    \n    void buildDict(vector<string> dictionary) {\n        \n    }\n    \n    bool search(string searchWord) {\n        \n    }\n};\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * MagicDictionary* obj = new MagicDictionary();\n * obj->buildDict(dictionary);\n * bool param_2 = obj->search(searchWord);\n */",
     "java": "class MagicDictionary {\n\n    public MagicDictionary() {\n        \n    }\n    \n    public void buildDict(String[] dictionary) {\n        \n    }\n    \n    public boolean search(String searchWord) {\n        \n    }\n}\n\n/**\n * Your MagicDictionary object will be instantiated and called as such:\n * MagicDictionary obj = new MagicDictionary();\n * obj.buildDict(dictionary);\n * boolean param_2 = obj.search(searchWord);\n */",
@@ -48,13 +54,17 @@
   "publicTests": [
     {
       "input": "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\",\"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, false, true, false, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\",\"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, false, true, false, false]"
+    },
+    {
+      "input": "[\"MagicDictionary\", \"buildDict\", \"search\", \"search\", \"search\", \"search\"]\n[[], [[\"hello\", \"leetcode\"]], [\"hello\"], [\"hhllo\"], [\"hell\"], [\"leetcoded\"]]",
+      "expectedOutput": "[null, null, false, true, false, false]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +76,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/implement-magic-dictionary/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:28.592Z",
+    "collectedAt": "2026-10-19T18:40:19.445Z",
     "sourceUpdatedAt": null
   }
 }

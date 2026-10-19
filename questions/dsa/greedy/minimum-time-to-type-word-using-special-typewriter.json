@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "word = \"abc\"",
       "output": "5",
-      "explanation": "The characters are printed as follows:\n- Type the character &#39;a&#39; in 1 second since the pointer is initially on &#39;a&#39;.\n- Move the pointer clockwise to &#39;b&#39; in 1 second.\n- Type the character &#39;b&#39; in 1 second.\n- Move the pointer clockwise to &#39;c&#39; in 1 second.\n- Type the character &#39;c&#39; in 1 second."
+      "explanation": "The characters are printed as follows:\n- Type the character 'a' in 1 second since the pointer is initially on 'a'.\n- Move the pointer clockwise to 'b' in 1 second.\n- Type the character 'b' in 1 second.\n- Move the pointer clockwise to 'c' in 1 second.\n- Type the character 'c' in 1 second."
     },
     {
-      "input": "word = &quot;bza&quot;",
+      "input": "word = \"bza\"",
       "output": "7",
-      "explanation": "The characters are printed as follows:\n- Move the pointer clockwise to &#39;b&#39; in 1 second.\n- Type the character &#39;b&#39; in 1 second.\n- Move the pointer counterclockwise to &#39;z&#39; in 2 seconds.\n- Type the character &#39;z&#39; in 1 second.\n- Move the pointer clockwise to &#39;a&#39; in 1 second.\n- Type the character &#39;a&#39; in 1 second."
+      "explanation": "The characters are printed as follows:\n- Move the pointer clockwise to 'b' in 1 second.\n- Type the character 'b' in 1 second.\n- Move the pointer counterclockwise to 'z' in 2 seconds.\n- Type the character 'z' in 1 second.\n- Move the pointer clockwise to 'a' in 1 second.\n- Type the character 'a' in 1 second."
     },
     {
-      "input": "word = &quot;zjpc&quot;",
+      "input": "word = \"zjpc\"",
       "output": "34",
-      "explanation": "The characters are printed as follows:\n- Move the pointer counterclockwise to &#39;z&#39; in 1 second.\n- Type the character &#39;z&#39; in 1 second.\n- Move the pointer clockwise to &#39;j&#39; in 10 seconds.\n- Type the character &#39;j&#39; in 1 second.\n- Move the pointer clockwise to &#39;p&#39; in 6 seconds.\n- Type the character &#39;p&#39; in 1 second.\n- Move the pointer counterclockwise to &#39;c&#39; in 13 seconds.\n- Type the character &#39;c&#39; in 1 second."
+      "explanation": "The characters are printed as follows:\n- Move the pointer counterclockwise to 'z' in 1 second.\n- Type the character 'z' in 1 second.\n- Move the pointer clockwise to 'j' in 10 seconds.\n- Type the character 'j' in 1 second.\n- Move the pointer clockwise to 'p' in 6 seconds.\n- Type the character 'p' in 1 second.\n- Move the pointer counterclockwise to 'c' in 13 seconds.\n- Type the character 'c' in 1 second."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;bza&quot;",
+      "input": "\"bza\"",
       "expectedOutput": "7"
     },
     {
-      "input": "word = &quot;zjpc&quot;",
+      "input": "\"zjpc\"",
       "expectedOutput": "34"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abc&quot;",
+      "input": "\"abc\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word = &quot;bza&quot;",
+      "input": "\"bza\"",
       "expectedOutput": "7"
     },
     {
-      "input": "word = &quot;zjpc&quot;",
+      "input": "\"zjpc\"",
       "expectedOutput": "34"
     },
     {
-      "input": "\"abc\"",
-      "expectedOutput": null
+      "input": "word = \"abc\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"bza\"",
-      "expectedOutput": null
+      "input": "word = \"bza\"",
+      "expectedOutput": "7"
     },
     {
-      "input": "\"zjpc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "word = \"zjpc\"",
+      "expectedOutput": "34"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-type-word-using-special-typewriter/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:28.465Z",
+    "collectedAt": "2026-10-19T18:40:25.251Z",
     "sourceUpdatedAt": null
   }
 }

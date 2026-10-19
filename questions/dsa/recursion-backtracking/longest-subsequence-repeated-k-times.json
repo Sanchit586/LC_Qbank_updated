@@ -22,18 +22,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;letsleetcode&quot;, k = 2",
-      "output": "&quot;let&quot;",
-      "explanation": "There are two longest subsequences repeated 2 times: &quot;let&quot; and &quot;ete&quot;.\n&quot;let&quot; is the lexicographically largest one."
+      "input": "s = \"letsleetcode\", k = 2",
+      "output": "\"let\"",
+      "explanation": "There are two longest subsequences repeated 2 times: \"let\" and \"ete\".\n\"let\" is the lexicographically largest one."
     },
     {
-      "input": "s = &quot;bb&quot;, k = 2",
-      "output": "&quot;b&quot;",
-      "explanation": "The longest subsequence repeated 2 times is &quot;b&quot;."
+      "input": "s = \"bb\", k = 2",
+      "output": "\"b\"",
+      "explanation": "The longest subsequence repeated 2 times is \"b\"."
     },
     {
-      "input": "s = &quot;ab&quot;, k = 2",
-      "output": "&quot;&quot;",
+      "input": "s = \"ab\", k = 2",
+      "output": "\"\"",
       "explanation": "There is no subsequence repeated 2 times. Empty string is returned."
     }
   ],
@@ -60,62 +60,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;letsleetcode&quot;, k = 2",
-      "expectedOutput": "&quot;let&quot;"
+      "input": "\"letsleetcode\"\n2",
+      "expectedOutput": "\"let\""
     },
     {
-      "input": "s = &quot;bb&quot;, k = 2",
-      "expectedOutput": "&quot;b&quot;"
+      "input": "\"bb\"\n2",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "s = &quot;ab&quot;, k = 2",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"ab\"\n2",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;letsleetcode&quot;, k = 2",
-      "expectedOutput": "&quot;let&quot;"
-    },
-    {
-      "input": "s = &quot;bb&quot;, k = 2",
-      "expectedOutput": "&quot;b&quot;"
-    },
-    {
-      "input": "s = &quot;ab&quot;, k = 2",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"letsleetcode\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"let\""
     },
     {
       "input": "\"bb\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"b\""
     },
     {
       "input": "\"ab\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;bb&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"letsleetcode\", k = 2",
+      "expectedOutput": "\"let\""
     },
     {
-      "input": "s = &quot;ab&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"bb\", k = 2",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "\"letsleetcode\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bb\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;letsleetcode&quot;, k = 3",
-      "expectedOutput": null
+      "input": "s = \"ab\", k = 2",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -131,7 +111,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-subsequence-repeated-k-times/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.062Z",
+    "collectedAt": "2026-10-19T18:40:20.685Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,27 +17,27 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;()&quot;",
+      "input": "s = \"()\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;()[]{}&quot;",
+      "input": "s = \"()[]{}\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;(]&quot;",
+      "input": "s = \"(]\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s = &quot;([])&quot;",
+      "input": "s = \"([])\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;([)]&quot;",
+      "input": "s = \"([)]\"",
       "output": "false",
       "explanation": null
     }
@@ -65,106 +65,90 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;()&quot;",
+      "input": "\"()\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;()[]{}&quot;",
+      "input": "\"()[]{}\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;(]&quot;",
+      "input": "\"(]\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;([])&quot;",
+      "input": "\"([])\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;([)]&quot;",
+      "input": "\"([)]\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;()&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;()[]{}&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;(]&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;([])&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;([)]&quot;",
-      "expectedOutput": "false"
-    },
-    {
       "input": "\"()\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"()[]{}\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"(]\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"([])\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"([)]\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
+    },
+    {
+      "input": "s = \"()\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"()[]{}\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"(]\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "s = \"([])\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = \"([)]\"",
+      "expectedOutput": "false"
     },
     {
       "input": "\"\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "\"{[]}\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "\"(((\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
+      "input": "\")))\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
+      "input": "\"((()))\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
+      "input": "\"({[()]}())\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -180,7 +164,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.339Z",
+    "collectedAt": "2026-10-19T18:40:31.500Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,8 +18,8 @@
   ],
   "examples": [
     {
-      "input": "url = &quot;https://leetcode.com/problems/design-tinyurl&quot;",
-      "output": "&quot;https://leetcode.com/problems/design-tinyurl&quot;",
+      "input": "url = \"https://leetcode.com/problems/design-tinyurl\"",
+      "output": "\"https://leetcode.com/problems/design-tinyurl\"",
       "explanation": "Solution obj = new Solution();\nstring tiny = obj.encode(url); // returns the encoded tiny url.\nstring ans = obj.decode(tiny); // returns the original url after decoding it."
     }
   ],
@@ -42,90 +42,18 @@
   },
   "publicTests": [
     {
-      "input": "url = &quot;https://leetcode.com/problems/design-tinyurl&quot;",
-      "expectedOutput": "&quot;https://leetcode.com/problems/design-tinyurl&quot;"
+      "input": "\"https://leetcode.com/problems/design-tinyurl\"",
+      "expectedOutput": "\"https://leetcode.com/problems/design-tinyurl\""
     }
   ],
   "testCases": [
     {
-      "input": "url = &quot;https://leetcode.com/problems/design-tinyurl&quot;",
-      "expectedOutput": "&quot;https://leetcode.com/problems/design-tinyurl&quot;"
-    },
-    {
       "input": "\"https://leetcode.com/problems/design-tinyurl\"",
-      "expectedOutput": null
+      "expectedOutput": "\"https://leetcode.com/problems/design-tinyurl\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
+      "input": "url = \"https://leetcode.com/problems/design-tinyurl\"",
+      "expectedOutput": "\"https://leetcode.com/problems/design-tinyurl\""
     }
   ],
   "sqlSchema": null,
@@ -137,7 +65,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/encode-and-decode-tinyurl/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:50.154Z",
+    "collectedAt": "2026-10-19T18:40:17.011Z",
     "sourceUpdatedAt": null
   }
 }

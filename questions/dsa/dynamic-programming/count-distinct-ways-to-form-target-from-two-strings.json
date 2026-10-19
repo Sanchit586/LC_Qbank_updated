@@ -17,22 +17,22 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bac&quot;, target = &quot;abc&quot;",
+      "input": "word1 = \"abc\", word2 = \"bac\", target = \"abc\"",
       "output": "5",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;cd&quot;, word2 = &quot;cd&quot;, target = &quot;ccd&quot;",
+      "input": "word1 = \"cd\", word2 = \"cd\", target = \"ccd\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;xy&quot;, word2 = &quot;xy&quot;, target = &quot;xyxy&quot;",
+      "input": "word1 = \"xy\", word2 = \"xy\", target = \"xyxy\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;cde&quot;, target = &quot;ace&quot;",
+      "input": "word1 = \"ab\", word2 = \"cde\", target = \"ace\"",
       "output": "1",
       "explanation": null
     }
@@ -60,58 +60,54 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bac&quot;, target = &quot;abc&quot;",
+      "input": "\"abc\"\n\"bac\"\n\"abc\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word1 = &quot;cd&quot;, word2 = &quot;cd&quot;, target = &quot;ccd&quot;",
+      "input": "\"cd\"\n\"cd\"\n\"ccd\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word1 = &quot;xy&quot;, word2 = &quot;xy&quot;, target = &quot;xyxy&quot;",
+      "input": "\"xy\"\n\"xy\"\n\"xyxy\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;cde&quot;, target = &quot;ace&quot;",
+      "input": "\"ab\"\n\"cde\"\n\"ace\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;abc&quot;, word2 = &quot;bac&quot;, target = &quot;abc&quot;",
+      "input": "\"abc\"\n\"bac\"\n\"abc\"",
       "expectedOutput": "5"
     },
     {
-      "input": "word1 = &quot;cd&quot;, word2 = &quot;cd&quot;, target = &quot;ccd&quot;",
+      "input": "\"cd\"\n\"cd\"\n\"ccd\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word1 = &quot;xy&quot;, word2 = &quot;xy&quot;, target = &quot;xyxy&quot;",
+      "input": "\"xy\"\n\"xy\"\n\"xyxy\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word1 = &quot;ab&quot;, word2 = &quot;cde&quot;, target = &quot;ace&quot;",
+      "input": "\"ab\"\n\"cde\"\n\"ace\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"abc\"\n\"bac\"\n\"abc\"",
-      "expectedOutput": null
+      "input": "word1 = \"abc\", word2 = \"bac\", target = \"abc\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"cd\"\n\"cd\"\n\"ccd\"",
-      "expectedOutput": null
+      "input": "word1 = \"cd\", word2 = \"cd\", target = \"ccd\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"xy\"\n\"xy\"\n\"xyxy\"",
-      "expectedOutput": null
+      "input": "word1 = \"xy\", word2 = \"xy\", target = \"xyxy\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"ab\"\n\"cde\"\n\"ace\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "word2 = &quot;ab&quot;, word3 = &quot;cde&quot;, target = &quot;ace&quot;",
-      "expectedOutput": null
+      "input": "word1 = \"ab\", word2 = \"cde\", target = \"ace\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +124,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-distinct-ways-to-form-target-from-two-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:10.434Z",
+    "collectedAt": "2026-10-19T18:40:15.088Z",
     "sourceUpdatedAt": null
   }
 }

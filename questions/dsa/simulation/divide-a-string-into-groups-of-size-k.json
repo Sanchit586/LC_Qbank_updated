@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcdefghi&quot;, k = 3, fill = &quot;x&quot;",
-      "output": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;]",
-      "explanation": "The first 3 characters &quot;abc&quot; form the first group.\nThe next 3 characters &quot;def&quot; form the second group.\nThe last 3 characters &quot;ghi&quot; form the third group.\nSince all groups can be completely filled by characters from the string, we do not need to use fill.\nThus, the groups formed are &quot;abc&quot;, &quot;def&quot;, and &quot;ghi&quot;."
+      "input": "s = \"abcdefghi\", k = 3, fill = \"x\"",
+      "output": "[\"abc\",\"def\",\"ghi\"]",
+      "explanation": "The first 3 characters \"abc\" form the first group.\nThe next 3 characters \"def\" form the second group.\nThe last 3 characters \"ghi\" form the third group.\nSince all groups can be completely filled by characters from the string, we do not need to use fill.\nThus, the groups formed are \"abc\", \"def\", and \"ghi\"."
     },
     {
-      "input": "s = &quot;abcdefghij&quot;, k = 3, fill = &quot;x&quot;",
-      "output": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;,&quot;jxx&quot;]",
-      "explanation": "Similar to the previous example, we are forming the first three groups &quot;abc&quot;, &quot;def&quot;, and &quot;ghi&quot;.\nFor the last group, we can only use the character &#39;j&#39; from the string. To complete this group, we add &#39;x&#39; twice.\nThus, the 4 groups formed are &quot;abc&quot;, &quot;def&quot;, &quot;ghi&quot;, and &quot;jxx&quot;."
+      "input": "s = \"abcdefghij\", k = 3, fill = \"x\"",
+      "output": "[\"abc\",\"def\",\"ghi\",\"jxx\"]",
+      "explanation": "Similar to the previous example, we are forming the first three groups \"abc\", \"def\", and \"ghi\".\nFor the last group, we can only use the character 'j' from the string. To complete this group, we add 'x' twice.\nThus, the 4 groups formed are \"abc\", \"def\", \"ghi\", and \"jxx\"."
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcdefghi&quot;, k = 3, fill = &quot;x&quot;",
-      "expectedOutput": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;]"
+      "input": "\"abcdefghi\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\"]"
     },
     {
-      "input": "s = &quot;abcdefghij&quot;, k = 3, fill = &quot;x&quot;",
-      "expectedOutput": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;,&quot;jxx&quot;]"
+      "input": "\"abcdefghij\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcdefghi&quot;, k = 3, fill = &quot;x&quot;",
-      "expectedOutput": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;]"
-    },
-    {
-      "input": "s = &quot;abcdefghij&quot;, k = 3, fill = &quot;x&quot;",
-      "expectedOutput": "[&quot;abc&quot;,&quot;def&quot;,&quot;ghi&quot;,&quot;jxx&quot;]"
-    },
-    {
       "input": "\"abcdefghi\"\n3\n\"x\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\"]"
     },
     {
       "input": "\"abcdefghij\"\n3\n\"x\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
     },
     {
-      "input": "s = &quot;abcdefghi&quot;, k = 4, fill = &quot;x&quot;",
-      "expectedOutput": null
+      "input": "s = \"abcdefghi\", k = 3, fill = \"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\"]"
+    },
+    {
+      "input": "s = \"abcdefghij\", k = 3, fill = \"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/divide-a-string-into-groups-of-size-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.080Z",
+    "collectedAt": "2026-10-19T18:40:16.795Z",
     "sourceUpdatedAt": null
   }
 }

@@ -20,22 +20,22 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abaacbaecebce&quot;, p = &quot;ba*c*ce&quot;",
+      "input": "s = \"abaacbaecebce\", p = \"ba*c*ce\"",
       "output": "8",
       "explanation": null
     },
     {
-      "input": "s = &quot;baccbaadbc&quot;, p = &quot;cc*baa*adb&quot;",
+      "input": "s = \"baccbaadbc\", p = \"cc*baa*adb\"",
       "output": "-1",
       "explanation": null
     },
     {
-      "input": "s = &quot;a&quot;, p = &quot;**&quot;",
+      "input": "s = \"a\", p = \"**\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "s = &quot;madlogic&quot;, p = &quot;*adlogi*&quot;",
+      "input": "s = \"madlogic\", p = \"*adlogi*\"",
       "output": "6",
       "explanation": null
     }
@@ -63,102 +63,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abaacbaecebce&quot;, p = &quot;ba*c*ce&quot;",
+      "input": "\"abaacbaecebce\"\n\"ba*c*ce\"",
       "expectedOutput": "8"
     },
     {
-      "input": "s = &quot;baccbaadbc&quot;, p = &quot;cc*baa*adb&quot;",
+      "input": "\"baccbaadbc\"\n\"cc*baa*adb\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;a&quot;, p = &quot;**&quot;",
+      "input": "\"a\"\n\"**\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;madlogic&quot;, p = &quot;*adlogi*&quot;",
+      "input": "\"madlogic\"\n\"*adlogi*\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abaacbaecebce&quot;, p = &quot;ba*c*ce&quot;",
+      "input": "\"abaacbaecebce\"\n\"ba*c*ce\"",
       "expectedOutput": "8"
     },
     {
-      "input": "s = &quot;baccbaadbc&quot;, p = &quot;cc*baa*adb&quot;",
+      "input": "\"baccbaadbc\"\n\"cc*baa*adb\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = &quot;a&quot;, p = &quot;**&quot;",
+      "input": "\"a\"\n\"**\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;madlogic&quot;, p = &quot;*adlogi*&quot;",
+      "input": "\"madlogic\"\n\"*adlogi*\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"abaacbaecebce\"\n\"ba*c*ce\"",
-      "expectedOutput": null
+      "input": "s = \"abaacbaecebce\", p = \"ba*c*ce\"",
+      "expectedOutput": "8"
     },
     {
-      "input": "\"baccbaadbc\"\n\"cc*baa*adb\"",
-      "expectedOutput": null
+      "input": "s = \"baccbaadbc\", p = \"cc*baa*adb\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"a\"\n\"**\"",
-      "expectedOutput": null
+      "input": "s = \"a\", p = \"**\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"madlogic\"\n\"*adlogi*\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"madlogic\", p = \"*adlogi*\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -173,7 +125,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-matching-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:26.096Z",
+    "collectedAt": "2026-10-19T18:40:28.418Z",
     "sourceUpdatedAt": null
   }
 }

@@ -15,14 +15,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "s = \"leetcode\"",
       "output": "2",
-      "explanation": "The substring &quot;ee&quot; is of length 2 with the character &#39;e&#39; only."
+      "explanation": "The substring \"ee\" is of length 2 with the character 'e' only."
     },
     {
-      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "input": "s = \"abbcccddddeeeeedcba\"",
       "output": "5",
-      "explanation": "The substring &quot;eeeee&quot; is of length 5 with the character &#39;e&#39; only."
+      "explanation": "The substring \"eeeee\" is of length 5 with the character 'e' only."
     }
   ],
   "starterCode": {
@@ -48,94 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "input": "\"abbcccddddeeeeedcba\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "input": "\"abbcccddddeeeeedcba\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"leetcode\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abbcccddddeeeeedcba\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abbcccddddeeeeedcba\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/consecutive-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:01.059Z",
+    "collectedAt": "2026-10-19T18:40:14.669Z",
     "sourceUpdatedAt": null
   }
 }

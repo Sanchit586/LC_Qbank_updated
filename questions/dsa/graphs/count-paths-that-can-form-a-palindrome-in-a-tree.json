@@ -22,14 +22,14 @@
   ],
   "examples": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;acaabc&quot;",
+      "input": "parent = [-1,0,0,1,1,2], s = \"acaabc\"",
       "output": "8",
-      "explanation": "The valid pairs are:\n- All the pairs (0,1), (0,2), (1,3), (1,4) and (2,5) result in one character which is always a palindrome.\n- The pair (2,3) result in the string &quot;aca&quot; which is a palindrome.\n- The pair (1,5) result in the string &quot;cac&quot; which is a palindrome.\n- The pair (3,5) result in the string &quot;acac&quot; which can be rearranged into the palindrome &quot;acca&quot;."
+      "explanation": "The valid pairs are:\n- All the pairs (0,1), (0,2), (1,3), (1,4) and (2,5) result in one character which is always a palindrome.\n- The pair (2,3) result in the string \"aca\" which is a palindrome.\n- The pair (1,5) result in the string \"cac\" which is a palindrome.\n- The pair (3,5) result in the string \"acac\" which can be rearranged into the palindrome \"acca\"."
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aaaaa&quot;",
+      "input": "parent = [-1,0,0,0,0], s = \"aaaaa\"",
       "output": "10",
-      "explanation": "Any pair of nodes (u,v) where u &lt; v is valid."
+      "explanation": "Any pair of nodes (u,v) where u < v is valid."
     }
   ],
   "starterCode": {
@@ -55,34 +55,30 @@
   },
   "publicTests": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;acaabc&quot;",
+      "input": "[-1,0,0,1,1,2]\n\"acaabc\"",
       "expectedOutput": "8"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aaaaa&quot;",
+      "input": "[-1,0,0,0,0]\n\"aaaaa\"",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
-      "input": "parent = [-1,0,0,1,1,2], s = &quot;acaabc&quot;",
+      "input": "[-1,0,0,1,1,2]\n\"acaabc\"",
       "expectedOutput": "8"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = &quot;aaaaa&quot;",
+      "input": "[-1,0,0,0,0]\n\"aaaaa\"",
       "expectedOutput": "10"
     },
     {
-      "input": "[-1,0,0,1,1,2]\n\"acaabc\"",
-      "expectedOutput": null
+      "input": "parent = [-1,0,0,1,1,2], s = \"acaabc\"",
+      "expectedOutput": "8"
     },
     {
-      "input": "[-1,0,0,0,0]\n\"aaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "parent = [-2,1,1,2,2,3], s = &quot;acaabc&quot;",
-      "expectedOutput": null
+      "input": "parent = [-1,0,0,0,0], s = \"aaaaa\"",
+      "expectedOutput": "10"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-paths-that-can-form-a-palindrome-in-a-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:20.023Z",
+    "collectedAt": "2026-10-19T18:40:15.492Z",
     "sourceUpdatedAt": null
   }
 }

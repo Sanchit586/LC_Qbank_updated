@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abc&quot;",
-      "output": "&quot;c&quot;",
-      "explanation": "Remove &quot;ab&quot; from the string, leaving &quot;c&quot; as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is &quot;c&quot;."
+      "input": "s = \"abc\"",
+      "output": "\"c\"",
+      "explanation": "Remove \"ab\" from the string, leaving \"c\" as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is \"c\"."
     },
     {
-      "input": "s = &quot;adcb&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "Remove &quot;dc&quot; from the string, leaving &quot;ab&quot; as the remaining string.\n\tRemove &quot;ab&quot; from the string, leaving &quot;&quot; as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is &quot;&quot;."
+      "input": "s = \"adcb\"",
+      "output": "\"\"",
+      "explanation": "Remove \"dc\" from the string, leaving \"ab\" as the remaining string.\n\tRemove \"ab\" from the string, leaving \"\" as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is \"\"."
     },
     {
-      "input": "s = &quot;zadb&quot;",
-      "output": "&quot;db&quot;",
-      "explanation": "Remove &quot;za&quot; from the string, leaving &quot;db&quot; as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is &quot;db&quot;."
+      "input": "s = \"zadb\"",
+      "output": "\"db\"",
+      "explanation": "Remove \"za\" from the string, leaving \"db\" as the remaining string.\n\tNo further operations are possible. Thus, the resulting string after all possible removals is \"db\"."
     }
   ],
   "starterCode": {
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;c&quot;"
+      "input": "\"abc\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "s = &quot;adcb&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"adcb\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;zadb&quot;",
-      "expectedOutput": "&quot;db&quot;"
+      "input": "\"zadb\"",
+      "expectedOutput": "\"db\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abc&quot;",
-      "expectedOutput": "&quot;c&quot;"
-    },
-    {
-      "input": "s = &quot;adcb&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;zadb&quot;",
-      "expectedOutput": "&quot;db&quot;"
-    },
-    {
       "input": "\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "\"c\""
     },
     {
       "input": "\"adcb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"zadb\"",
-      "expectedOutput": null
+      "expectedOutput": "\"db\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"abc\"",
+      "expectedOutput": "\"c\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"adcb\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"zadb\"",
+      "expectedOutput": "\"db\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/resulting-string-after-adjacent-removals/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.688Z",
+    "collectedAt": "2026-10-19T18:40:27.804Z",
     "sourceUpdatedAt": null
   }
 }

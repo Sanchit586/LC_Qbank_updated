@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(abcd)&quot;",
-      "output": "&quot;dcba&quot;",
+      "input": "s = \"(abcd)\"",
+      "output": "\"dcba\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;(u(love)i)&quot;",
-      "output": "&quot;iloveu&quot;",
-      "explanation": "The substring &quot;love&quot; is reversed first, then the whole string is reversed."
+      "input": "s = \"(u(love)i)\"",
+      "output": "\"iloveu\"",
+      "explanation": "The substring \"love\" is reversed first, then the whole string is reversed."
     },
     {
-      "input": "s = &quot;(ed(et(oc))el)&quot;",
-      "output": "&quot;leetcode&quot;",
-      "explanation": "First, we reverse the substring &quot;oc&quot;, then &quot;etco&quot;, and finally, the whole string."
+      "input": "s = \"(ed(et(oc))el)\"",
+      "output": "\"leetcode\"",
+      "explanation": "First, we reverse the substring \"oc\", then \"etco\", and finally, the whole string."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(abcd)&quot;",
-      "expectedOutput": "&quot;dcba&quot;"
+      "input": "\"(abcd)\"",
+      "expectedOutput": "\"dcba\""
     },
     {
-      "input": "s = &quot;(u(love)i)&quot;",
-      "expectedOutput": "&quot;iloveu&quot;"
+      "input": "\"(u(love)i)\"",
+      "expectedOutput": "\"iloveu\""
     },
     {
-      "input": "s = &quot;(ed(et(oc))el)&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
+      "input": "\"(ed(et(oc))el)\"",
+      "expectedOutput": "\"leetcode\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(abcd)&quot;",
-      "expectedOutput": "&quot;dcba&quot;"
-    },
-    {
-      "input": "s = &quot;(u(love)i)&quot;",
-      "expectedOutput": "&quot;iloveu&quot;"
-    },
-    {
-      "input": "s = &quot;(ed(et(oc))el)&quot;",
-      "expectedOutput": "&quot;leetcode&quot;"
-    },
-    {
       "input": "\"(abcd)\"",
-      "expectedOutput": null
+      "expectedOutput": "\"dcba\""
     },
     {
       "input": "\"(u(love)i)\"",
-      "expectedOutput": null
+      "expectedOutput": "\"iloveu\""
     },
     {
       "input": "\"(ed(et(oc))el)\"",
-      "expectedOutput": null
+      "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"(abcd)\"",
+      "expectedOutput": "\"dcba\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(u(love)i)\"",
+      "expectedOutput": "\"iloveu\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"(ed(et(oc))el)\"",
+      "expectedOutput": "\"leetcode\""
     }
   ],
   "sqlSchema": null,
@@ -163,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-substrings-between-each-pair-of-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.961Z",
+    "collectedAt": "2026-10-19T18:40:27.897Z",
     "sourceUpdatedAt": null
   }
 }

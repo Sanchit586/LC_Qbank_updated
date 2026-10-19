@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Users table:\n+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 2       | Jonathan  | jonathanisgreat         |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n| 5       | Marwan    | quarz#2020@leetcode.com |\n| 6       | David     | david69@gmail.com       |\n| 7       | Shapiro   | .shapo@leetcode.com     |\n+---------+-----------+-------------------------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[[1,\"Winston\",\"winston@leetcode.com\"],[2,\"Jonathan\",\"jonathanisgreat\"],[3,\"Annabelle\",\"bella-@leetcode.com\"],[4,\"Sally\",\"sally.come@leetcode.com\"],[5,\"Marwan\",\"quarz#2020@leetcode.com\"],[6,\"David\",\"david69@gmail.com\"],[7,\"Shapiro\",\".shapo@leetcode.com\"]]}}",
       "expectedOutput": "+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n+---------+-----------+-------------------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Users table:\n+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 2       | Jonathan  | jonathanisgreat         |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n| 5       | Marwan    | quarz#2020@leetcode.com |\n| 6       | David     | david69@gmail.com       |\n| 7       | Shapiro   | .shapo@leetcode.com     |\n+---------+-----------+-------------------------+",
+      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[[1,\"Winston\",\"winston@leetcode.com\"],[2,\"Jonathan\",\"jonathanisgreat\"],[3,\"Annabelle\",\"bella-@leetcode.com\"],[4,\"Sally\",\"sally.come@leetcode.com\"],[5,\"Marwan\",\"quarz#2020@leetcode.com\"],[6,\"David\",\"david69@gmail.com\"],[7,\"Shapiro\",\".shapo@leetcode.com\"]]}}",
       "expectedOutput": "+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n+---------+-----------+-------------------------+"
     },
     {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[[1,\"Winston\",\"winston@leetcode.com\"],[2,\"Jonathan\",\"jonathanisgreat\"],[3,\"Annabelle\",\"bella-@leetcode.com\"],[4,\"Sally\",\"sally.come@leetcode.com\"],[5,\"Marwan\",\"quarz#2020@leetcode.com\"],[6,\"David\",\"david69@gmail.com\"],[7,\"Shapiro\",\".shapo@leetcode.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[[1,\"Winston\",\"winston@leetcode.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Users\":[\"user_id\",\"name\",\"mail\"]},\"rows\":{\"Users\":[[1,\"Winston\",null],[2,\"Jonathan\",null],[3,\"Annabelle\",null],[4,\"Sally\",null],[5,\"Marwan\",null],[6,\"David\",null],[7,\"Shapiro\",null]]}}",
-      "expectedOutput": null
+      "input": "Users table:\n+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 2       | Jonathan  | jonathanisgreat         |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n| 5       | Marwan    | quarz#2020@leetcode.com |\n| 6       | David     | david69@gmail.com       |\n| 7       | Shapiro   | .shapo@leetcode.com     |\n+---------+-----------+-------------------------+",
+      "expectedOutput": "+---------+-----------+-------------------------+\n| user_id | name      | mail                    |\n+---------+-----------+-------------------------+\n| 1       | Winston   | winston@leetcode.com    |\n| 3       | Annabelle | bella-@leetcode.com     |\n| 4       | Sally     | sally.come@leetcode.com |\n+---------+-----------+-------------------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Users (user_id int, name varchar(30), mail varchar(50))\n\nTruncate table Users",
@@ -69,7 +57,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-users-with-valid-e-mails/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:16.324Z",
+    "collectedAt": "2026-10-19T18:40:18.750Z",
     "sourceUpdatedAt": null
   }
 }

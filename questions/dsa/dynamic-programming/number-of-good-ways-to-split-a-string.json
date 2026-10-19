@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aacaba&quot;",
+      "input": "s = \"aacaba\"",
       "output": "2",
-      "explanation": "There are 5 ways to split &quot;aacaba&quot; and 2 of them are good. \n(&quot;a&quot;, &quot;acaba&quot;) Left string and right string contains 1 and 3 different letters respectively.\n(&quot;aa&quot;, &quot;caba&quot;) Left string and right string contains 1 and 3 different letters respectively.\n(&quot;aac&quot;, &quot;aba&quot;) Left string and right string contains 2 and 2 different letters respectively (good split).\n(&quot;aaca&quot;, &quot;ba&quot;) Left string and right string contains 2 and 2 different letters respectively (good split).\n(&quot;aacab&quot;, &quot;a&quot;) Left string and right string contains 3 and 1 different letters respectively."
+      "explanation": "There are 5 ways to split \"aacaba\" and 2 of them are good. \n(\"a\", \"acaba\") Left string and right string contains 1 and 3 different letters respectively.\n(\"aa\", \"caba\") Left string and right string contains 1 and 3 different letters respectively.\n(\"aac\", \"aba\") Left string and right string contains 2 and 2 different letters respectively (good split).\n(\"aaca\", \"ba\") Left string and right string contains 2 and 2 different letters respectively (good split).\n(\"aacab\", \"a\") Left string and right string contains 3 and 1 different letters respectively."
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "s = \"abcd\"",
       "output": "1",
-      "explanation": "Split the string as follows (&quot;ab&quot;, &quot;cd&quot;)."
+      "explanation": "Split the string as follows (\"ab\", \"cd\")."
     }
   ],
   "starterCode": {
@@ -52,94 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aacaba&quot;",
+      "input": "\"aacaba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "\"abcd\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aacaba&quot;",
+      "input": "\"aacaba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcd&quot;",
+      "input": "\"abcd\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"aacaba\"",
-      "expectedOutput": null
+      "input": "s = \"aacaba\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abcd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abcd\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-good-ways-to-split-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:40.468Z",
+    "collectedAt": "2026-10-19T18:40:25.897Z",
     "sourceUpdatedAt": null
   }
 }

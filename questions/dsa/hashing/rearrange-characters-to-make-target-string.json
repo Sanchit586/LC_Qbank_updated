@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;ilovecodingonleetcode&quot;, target = &quot;code&quot;",
+      "input": "s = \"ilovecodingonleetcode\", target = \"code\"",
       "output": "2",
-      "explanation": "For the first copy of &quot;code&quot;, take the letters at indices 4, 5, 6, and 7.\nFor the second copy of &quot;code&quot;, take the letters at indices 17, 18, 19, and 20.\nThe strings that are formed are &quot;ecod&quot; and &quot;code&quot; which can both be rearranged into &quot;code&quot;.\nWe can make at most two copies of &quot;code&quot;, so we return 2."
+      "explanation": "For the first copy of \"code\", take the letters at indices 4, 5, 6, and 7.\nFor the second copy of \"code\", take the letters at indices 17, 18, 19, and 20.\nThe strings that are formed are \"ecod\" and \"code\" which can both be rearranged into \"code\".\nWe can make at most two copies of \"code\", so we return 2."
     },
     {
-      "input": "s = &quot;abcba&quot;, target = &quot;abc&quot;",
+      "input": "s = \"abcba\", target = \"abc\"",
       "output": "1",
-      "explanation": "We can make one copy of &quot;abc&quot; by taking the letters at indices 0, 1, and 2.\nWe can make at most one copy of &quot;abc&quot;, so we return 1.\nNote that while there is an extra &#39;a&#39; and &#39;b&#39; at indices 3 and 4, we cannot reuse the letter &#39;c&#39; at index 2, so we cannot make a second copy of &quot;abc&quot;."
+      "explanation": "We can make one copy of \"abc\" by taking the letters at indices 0, 1, and 2.\nWe can make at most one copy of \"abc\", so we return 1.\nNote that while there is an extra 'a' and 'b' at indices 3 and 4, we cannot reuse the letter 'c' at index 2, so we cannot make a second copy of \"abc\"."
     },
     {
-      "input": "s = &quot;abbaccaddaeea&quot;, target = &quot;aaaaa&quot;",
+      "input": "s = \"abbaccaddaeea\", target = \"aaaaa\"",
       "output": "1",
-      "explanation": "We can make one copy of &quot;aaaaa&quot; by taking the letters at indices 0, 3, 6, 9, and 12.\nWe can make at most one copy of &quot;aaaaa&quot;, so we return 1."
+      "explanation": "We can make one copy of \"aaaaa\" by taking the letters at indices 0, 3, 6, 9, and 12.\nWe can make at most one copy of \"aaaaa\", so we return 1."
     }
   ],
   "starterCode": {
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;ilovecodingonleetcode&quot;, target = &quot;code&quot;",
+      "input": "\"ilovecodingonleetcode\"\n\"code\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcba&quot;, target = &quot;abc&quot;",
+      "input": "\"abcba\"\n\"abc\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;abbaccaddaeea&quot;, target = &quot;aaaaa&quot;",
+      "input": "\"abbaccaddaeea\"\n\"aaaaa\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;ilovecodingonleetcode&quot;, target = &quot;code&quot;",
+      "input": "\"ilovecodingonleetcode\"\n\"code\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abcba&quot;, target = &quot;abc&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;abbaccaddaeea&quot;, target = &quot;aaaaa&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "\"ilovecodingonleetcode\"\n\"code\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"abcba\"\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"abbaccaddaeea\"\n\"aaaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"ilovecodingonleetcode\", target = \"code\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"abcba\", target = \"abc\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"abbaccaddaeea\", target = \"aaaaa\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rearrange-characters-to-make-target-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.037Z",
+    "collectedAt": "2026-10-19T18:40:27.267Z",
     "sourceUpdatedAt": null
   }
 }

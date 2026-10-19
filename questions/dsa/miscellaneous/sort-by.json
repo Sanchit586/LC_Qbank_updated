@@ -14,19 +14,19 @@
   ],
   "examples": [
     {
-      "input": "arr = [5, 4, 1, 2, 3], fn = (x) =&gt; x",
+      "input": "arr = [5, 4, 1, 2, 3], fn = (x) => x",
       "output": "[1, 2, 3, 4, 5]",
       "explanation": "fn simply returns the number passed to it so the array is sorted in ascending order."
     },
     {
-      "input": "arr = [{&quot;x&quot;: 1}, {&quot;x&quot;: 0}, {&quot;x&quot;: -1}], fn = (d) =&gt; d.x",
-      "output": "[{&quot;x&quot;: -1}, {&quot;x&quot;: 0}, {&quot;x&quot;: 1}]",
-      "explanation": "fn returns the value for the &quot;x&quot; key. So the array is sorted based on that value."
+      "input": "arr = [{\"x\": 1}, {\"x\": 0}, {\"x\": -1}], fn = (d) => d.x",
+      "output": "[{\"x\": -1}, {\"x\": 0}, {\"x\": 1}]",
+      "explanation": "fn returns the value for the \"x\" key. So the array is sorted based on that value."
     },
     {
-      "input": "arr = [[3, 4], [5, 2], [10, 1]], fn = (x) =&gt; x[1]",
+      "input": "arr = [[3, 4], [5, 2], [10, 1]], fn = (x) => x[1]",
       "output": "[[10, 1], [5, 2], [3, 4]]",
-      "explanation": "arr is sorted in ascending order by number at index=1.&nbsp;"
+      "explanation": "arr is sorted in ascending order by number at index=1. "
     }
   ],
   "starterCode": {
@@ -35,62 +35,42 @@
   },
   "publicTests": [
     {
-      "input": "arr = [5, 4, 1, 2, 3], fn = (x) =&gt; x",
+      "input": "[5,4,1,2,3]\n(x) => x",
       "expectedOutput": "[1, 2, 3, 4, 5]"
     },
     {
-      "input": "arr = [{&quot;x&quot;: 1}, {&quot;x&quot;: 0}, {&quot;x&quot;: -1}], fn = (d) =&gt; d.x",
-      "expectedOutput": "[{&quot;x&quot;: -1}, {&quot;x&quot;: 0}, {&quot;x&quot;: 1}]"
+      "input": "[{\"x\":1},{\"x\": 0},{\"x\": -1}]\n(x) => x.x",
+      "expectedOutput": "[{\"x\": -1}, {\"x\": 0}, {\"x\": 1}]"
     },
     {
-      "input": "arr = [[3, 4], [5, 2], [10, 1]], fn = (x) =&gt; x[1]",
+      "input": "[[3,4],[5,2],[10,1]]\n(x) => x[1]",
       "expectedOutput": "[[10, 1], [5, 2], [3, 4]]"
     }
   ],
   "testCases": [
     {
-      "input": "arr = [5, 4, 1, 2, 3], fn = (x) =&gt; x",
+      "input": "[5,4,1,2,3]\n(x) => x",
       "expectedOutput": "[1, 2, 3, 4, 5]"
     },
     {
-      "input": "arr = [{&quot;x&quot;: 1}, {&quot;x&quot;: 0}, {&quot;x&quot;: -1}], fn = (d) =&gt; d.x",
-      "expectedOutput": "[{&quot;x&quot;: -1}, {&quot;x&quot;: 0}, {&quot;x&quot;: 1}]"
-    },
-    {
-      "input": "arr = [[3, 4], [5, 2], [10, 1]], fn = (x) =&gt; x[1]",
-      "expectedOutput": "[[10, 1], [5, 2], [3, 4]]"
-    },
-    {
-      "input": "[5,4,1,2,3]\n(x) => x",
-      "expectedOutput": null
-    },
-    {
       "input": "[{\"x\":1},{\"x\": 0},{\"x\": -1}]\n(x) => x.x",
-      "expectedOutput": null
+      "expectedOutput": "[{\"x\": -1}, {\"x\": 0}, {\"x\": 1}]"
     },
     {
       "input": "[[3,4],[5,2],[10,1]]\n(x) => x[1]",
-      "expectedOutput": null
+      "expectedOutput": "[[10, 1], [5, 2], [3, 4]]"
     },
     {
-      "input": "arr = [{&quot;x&quot;: 2}, {&quot;x&quot;: 1}, {&quot;x&quot;: -2}], fn = (d) =&gt; d.x",
-      "expectedOutput": null
+      "input": "arr = [5, 4, 1, 2, 3], fn = (x) => x",
+      "expectedOutput": "[1, 2, 3, 4, 5]"
     },
     {
-      "input": "arr = [[4, 5], [6, 3], [11, 2]], fn = (x) =&gt; x[2]",
-      "expectedOutput": null
+      "input": "arr = [{\"x\": 1}, {\"x\": 0}, {\"x\": -1}], fn = (d) => d.x",
+      "expectedOutput": "[{\"x\": -1}, {\"x\": 0}, {\"x\": 1}]"
     },
     {
-      "input": "[6,5,2,3,4]\n(x) => x",
-      "expectedOutput": null
-    },
-    {
-      "input": "[{\"x\":2},{\"x\": 1},{\"x\": -2}]\n(x) => x.x",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr = [6, 5, 2, 3, 4], fn = (x) =&gt; x",
-      "expectedOutput": null
+      "input": "arr = [[3, 4], [5, 2], [10, 1]], fn = (x) => x[1]",
+      "expectedOutput": "[[10, 1], [5, 2], [3, 4]]"
     }
   ],
   "sqlSchema": null,
@@ -102,7 +82,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-by/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:33.027Z",
+    "collectedAt": "2026-10-19T18:40:29.932Z",
     "sourceUpdatedAt": null
   }
 }

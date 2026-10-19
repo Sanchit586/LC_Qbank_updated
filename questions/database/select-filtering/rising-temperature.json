@@ -14,7 +14,7 @@
     {
       "input": "Weather table:\n+----+------------+-------------+\n| id | recordDate | temperature |\n+----+------------+-------------+\n| 1  | 2015-01-01 | 10          |\n| 2  | 2015-01-02 | 25          |\n| 3  | 2015-01-03 | 20          |\n| 4  | 2015-01-04 | 30          |\n+----+------------+-------------+",
       "output": "+----+\n| id |\n+----+\n| 2  |\n| 4  |\n+----+",
-      "explanation": "In 2015-01-02, the temperature was higher than the previous day (10 -&gt; 25).\nIn 2015-01-04, the temperature was higher than the previous day (20 -&gt; 30)."
+      "explanation": "In 2015-01-02, the temperature was higher than the previous day (10 -> 25).\nIn 2015-01-04, the temperature was higher than the previous day (20 -> 30)."
     }
   ],
   "starterCode": {
@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Weather table:\n+----+------------+-------------+\n| id | recordDate | temperature |\n+----+------------+-------------+\n| 1  | 2015-01-01 | 10          |\n| 2  | 2015-01-02 | 25          |\n| 3  | 2015-01-03 | 20          |\n| 4  | 2015-01-04 | 30          |\n+----+------------+-------------+",
+      "input": "{\"headers\": {\"Weather\": [\"id\", \"recordDate\", \"temperature\"]}, \"rows\": {\"Weather\": [[1, \"2015-01-01\", 10], [2, \"2015-01-02\", 25], [3, \"2015-01-03\", 20], [4, \"2015-01-04\", 30]]}}",
       "expectedOutput": "+----+\n| id |\n+----+\n| 2  |\n| 4  |\n+----+"
     }
   ],
   "testCases": [
     {
-      "input": "Weather table:\n+----+------------+-------------+\n| id | recordDate | temperature |\n+----+------------+-------------+\n| 1  | 2015-01-01 | 10          |\n| 2  | 2015-01-02 | 25          |\n| 3  | 2015-01-03 | 20          |\n| 4  | 2015-01-04 | 30          |\n+----+------------+-------------+",
+      "input": "{\"headers\": {\"Weather\": [\"id\", \"recordDate\", \"temperature\"]}, \"rows\": {\"Weather\": [[1, \"2015-01-01\", 10], [2, \"2015-01-02\", 25], [3, \"2015-01-03\", 20], [4, \"2015-01-04\", 30]]}}",
       "expectedOutput": "+----+\n| id |\n+----+\n| 2  |\n| 4  |\n+----+"
     },
     {
-      "input": "{\"headers\": {\"Weather\": [\"id\", \"recordDate\", \"temperature\"]}, \"rows\": {\"Weather\": [[1, \"2015-01-01\", 10], [2, \"2015-01-02\", 25], [3, \"2015-01-03\", 20], [4, \"2015-01-04\", 30]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Weather\":[\"id\",\"recordDate\",\"temperature\"]},\"rows\":{\"Weather\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Weather\":[\"id\",\"recordDate\",\"temperature\"]},\"rows\":{\"Weather\":[[1,\"2015-01-01\",10]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Weather\":[\"id\",\"recordDate\",\"temperature\"]},\"rows\":{\"Weather\":[[1,\"2015-01-01\",null],[2,\"2015-01-02\",null],[3,\"2015-01-03\",null],[4,\"2015-01-04\",null]]}}",
-      "expectedOutput": null
+      "input": "Weather table:\n+----+------------+-------------+\n| id | recordDate | temperature |\n+----+------------+-------------+\n| 1  | 2015-01-01 | 10          |\n| 2  | 2015-01-02 | 25          |\n| 3  | 2015-01-03 | 20          |\n| 4  | 2015-01-04 | 30          |\n+----+------------+-------------+",
+      "expectedOutput": "+----+\n| id |\n+----+\n| 2  |\n| 4  |\n+----+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Weather (id int, recordDate date, temperature int)\n\nTruncate table Weather",
@@ -66,7 +54,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rising-temperature/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:14.105Z",
+    "collectedAt": "2026-10-19T18:40:27.948Z",
     "sourceUpdatedAt": null
   }
 }

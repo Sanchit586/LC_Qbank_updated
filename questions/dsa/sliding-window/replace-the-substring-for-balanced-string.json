@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;QWER&quot;",
+      "input": "s = \"QWER\"",
       "output": "0",
       "explanation": "s is already balanced."
     },
     {
-      "input": "s = &quot;QQWE&quot;",
+      "input": "s = \"QQWE\"",
       "output": "1",
-      "explanation": "We need to replace a &#39;Q&#39; to &#39;R&#39;, so that &quot;RQWE&quot; (or &quot;QRWE&quot;) is balanced."
+      "explanation": "We need to replace a 'Q' to 'R', so that \"RQWE\" (or \"QRWE\") is balanced."
     },
     {
-      "input": "s = &quot;QQQW&quot;",
+      "input": "s = \"QQQW\"",
       "output": "2",
-      "explanation": "We can replace the first &quot;QQ&quot; to &quot;ER&quot;."
+      "explanation": "We can replace the first \"QQ\" to \"ER\"."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;QWER&quot;",
+      "input": "\"QWER\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;QQWE&quot;",
+      "input": "\"QQWE\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;QQQW&quot;",
+      "input": "\"QQQW\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;QWER&quot;",
+      "input": "\"QWER\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;QQWE&quot;",
+      "input": "\"QQWE\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;QQQW&quot;",
+      "input": "\"QQQW\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"QWER\"",
-      "expectedOutput": null
+      "input": "s = \"QWER\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"QQWE\"",
-      "expectedOutput": null
+      "input": "s = \"QQWE\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"QQQW\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"QQQW\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/replace-the-substring-for-balanced-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.539Z",
+    "collectedAt": "2026-10-19T18:40:27.729Z",
     "sourceUpdatedAt": null
   }
 }

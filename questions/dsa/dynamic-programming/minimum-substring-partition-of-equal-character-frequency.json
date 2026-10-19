@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;fabccddg&quot;",
+      "input": "s = \"fabccddg\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;abababaccddb&quot;",
+      "input": "s = \"abababaccddb\"",
       "output": "2",
       "explanation": null
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;fabccddg&quot;",
+      "input": "\"fabccddg\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abababaccddb&quot;",
+      "input": "\"abababaccddb\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;fabccddg&quot;",
+      "input": "\"fabccddg\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;abababaccddb&quot;",
+      "input": "\"abababaccddb\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"fabccddg\"",
-      "expectedOutput": null
+      "input": "s = \"fabccddg\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abababaccddb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abababaccddb\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -153,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-substring-partition-of-equal-character-frequency/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:18.890Z",
+    "collectedAt": "2026-10-19T18:40:25.053Z",
     "sourceUpdatedAt": null
   }
 }

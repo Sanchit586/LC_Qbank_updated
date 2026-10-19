@@ -15,27 +15,27 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;42&quot;",
+      "input": "s = \"42\"",
       "output": "42",
-      "explanation": "The underlined characters are what is read in and the caret is the current reader position.\nStep 1: &quot;42&quot; (no characters read because there is no leading whitespace)\n         ^\nStep 2: &quot;42&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)\n         ^\nStep 3: &quot;42&quot; (&quot;42&quot; is read in)\n           ^"
+      "explanation": "The underlined characters are what is read in and the caret is the current reader position.\nStep 1: \"42\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"42\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"42\" (\"42\" is read in)\n           ^"
     },
     {
-      "input": "s = &quot; -042&quot;",
+      "input": "s = \" -042\"",
       "output": "-42",
-      "explanation": "Step 1: &quot;   -042&quot; (leading whitespace is read and ignored)\n            ^\nStep 2: &quot;   -042&quot; (&#39;-&#39; is read, so the result should be negative)\n             ^\nStep 3: &quot;   -042&quot; (&quot;042&quot; is read in, leading zeros ignored in the result)\n               ^"
+      "explanation": "Step 1: \"   -042\" (leading whitespace is read and ignored)\n            ^\nStep 2: \"   -042\" ('-' is read, so the result should be negative)\n             ^\nStep 3: \"   -042\" (\"042\" is read in, leading zeros ignored in the result)\n               ^"
     },
     {
-      "input": "s = &quot;1337c0d3&quot;",
+      "input": "s = \"1337c0d3\"",
       "output": "1337",
-      "explanation": "Step 1: &quot;1337c0d3&quot; (no characters read because there is no leading whitespace)\n         ^\nStep 2: &quot;1337c0d3&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)\n         ^\nStep 3: &quot;1337c0d3&quot; (&quot;1337&quot; is read in; reading stops because the next character is a non-digit)\n             ^"
+      "explanation": "Step 1: \"1337c0d3\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"1337c0d3\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"1337c0d3\" (\"1337\" is read in; reading stops because the next character is a non-digit)\n             ^"
     },
     {
-      "input": "s = &quot;0-1&quot;",
+      "input": "s = \"0-1\"",
       "output": "0",
-      "explanation": "Step 1: &quot;0-1&quot; (no characters read because there is no leading whitespace)\n         ^\nStep 2: &quot;0-1&quot; (no characters read because there is neither a &#39;-&#39; nor &#39;+&#39;)\n         ^\nStep 3: &quot;0-1&quot; (&quot;0&quot; is read in; reading stops because the next character is a non-digit)\n          ^"
+      "explanation": "Step 1: \"0-1\" (no characters read because there is no leading whitespace)\n         ^\nStep 2: \"0-1\" (no characters read because there is neither a '-' nor '+')\n         ^\nStep 3: \"0-1\" (\"0\" is read in; reading stops because the next character is a non-digit)\n          ^"
     },
     {
-      "input": "s = &quot;words and 987&quot;",
+      "input": "s = \"words and 987\"",
       "output": "0",
       "explanation": null
     }
@@ -63,106 +63,66 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;42&quot;",
+      "input": "\"42\"",
       "expectedOutput": "42"
     },
     {
-      "input": "s = &quot; -042&quot;",
+      "input": "\"   -042\"",
       "expectedOutput": "-42"
     },
     {
-      "input": "s = &quot;1337c0d3&quot;",
+      "input": "\"1337c0d3\"",
       "expectedOutput": "1337"
     },
     {
-      "input": "s = &quot;0-1&quot;",
+      "input": "\"0-1\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;words and 987&quot;",
+      "input": "\"words and 987\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;42&quot;",
+      "input": "\"42\"",
       "expectedOutput": "42"
     },
     {
-      "input": "s = &quot; -042&quot;",
+      "input": "\"   -042\"",
       "expectedOutput": "-42"
     },
     {
-      "input": "s = &quot;1337c0d3&quot;",
+      "input": "\"1337c0d3\"",
       "expectedOutput": "1337"
     },
     {
-      "input": "s = &quot;0-1&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "s = &quot;words and 987&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"42\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"   -042\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1337c0d3\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"0-1\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "\"words and 987\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"42\"",
+      "expectedOutput": "42"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \" -042\"",
+      "expectedOutput": "-42"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
+      "input": "s = \"1337c0d3\"",
+      "expectedOutput": "1337"
     },
     {
-      "input": "\"aaa\"",
-      "expectedOutput": null
+      "input": "s = \"0-1\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
+      "input": "s = \"words and 987\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -174,7 +134,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/string-to-integer-atoi/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.496Z",
+    "collectedAt": "2026-10-19T18:40:30.329Z",
     "sourceUpdatedAt": null
   }
 }

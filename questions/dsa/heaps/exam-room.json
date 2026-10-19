@@ -16,7 +16,13 @@
     "It is guaranteed that there is a student sitting at seat p.",
     "At most 104 calls will be made to seat and leave."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"ExamRoom\", \"seat\", \"seat\", \"seat\", \"seat\", \"leave\", \"seat\"]\n[[10], [], [], [], [], [4], []]",
+      "output": "[null, 0, 9, 4, 2, null, 5]",
+      "explanation": "ExamRoom examRoom = new ExamRoom(10);\nexamRoom.seat(); // return 0, no one is in the room, then the student sits at seat number 0.\nexamRoom.seat(); // return 9, the student sits at the last seat number 9.\nexamRoom.seat(); // return 4, the student sits at the last seat number 4.\nexamRoom.seat(); // return 2, the student sits at the last seat number 2.\nexamRoom.leave(4);\nexamRoom.seat(); // return 5, the student sits at the last seat number 5."
+    }
+  ],
   "starterCode": {
     "cpp": "class ExamRoom {\npublic:\n    ExamRoom(int n) {\n        \n    }\n    \n    int seat() {\n        \n    }\n    \n    void leave(int p) {\n        \n    }\n};\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * ExamRoom* obj = new ExamRoom(n);\n * int param_1 = obj->seat();\n * obj->leave(p);\n */",
     "java": "class ExamRoom {\n\n    public ExamRoom(int n) {\n        \n    }\n    \n    public int seat() {\n        \n    }\n    \n    public void leave(int p) {\n        \n    }\n}\n\n/**\n * Your ExamRoom object will be instantiated and called as such:\n * ExamRoom obj = new ExamRoom(n);\n * int param_1 = obj.seat();\n * obj.leave(p);\n */",
@@ -41,17 +47,17 @@
   "publicTests": [
     {
       "input": "[\"ExamRoom\",\"seat\",\"seat\",\"seat\",\"seat\",\"leave\",\"seat\"]\n[[10],[],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0, 9, 4, 2, null, 5]"
     }
   ],
   "testCases": [
     {
       "input": "[\"ExamRoom\",\"seat\",\"seat\",\"seat\",\"seat\",\"leave\",\"seat\"]\n[[10],[],[],[],[],[4],[]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 0, 9, 4, 2, null, 5]"
     },
     {
-      "input": "[\"ExamRoom\",\"seat\",\"seat\",\"seat\",\"seat\",\"leave\",\"seat\"]\n[[11],[],[],[],[],[5],[]]",
-      "expectedOutput": null
+      "input": "[\"ExamRoom\", \"seat\", \"seat\", \"seat\", \"seat\", \"leave\", \"seat\"]\n[[10], [], [], [], [], [4], []]",
+      "expectedOutput": "[null, 0, 9, 4, 2, null, 5]"
     }
   ],
   "sqlSchema": null,
@@ -63,7 +69,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/exam-room/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:53.140Z",
+    "collectedAt": "2026-10-19T18:40:17.125Z",
     "sourceUpdatedAt": null
   }
 }

@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, maxValue = 5",
+      "input": "2\n5",
       "expectedOutput": "10"
     },
     {
-      "input": "n = 5, maxValue = 3",
+      "input": "5\n3",
       "expectedOutput": "11"
     }
   ],
   "testCases": [
     {
+      "input": "2\n5",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "11"
+    },
+    {
       "input": "n = 2, maxValue = 5",
       "expectedOutput": "10"
     },
     {
       "input": "n = 5, maxValue = 3",
       "expectedOutput": "11"
-    },
-    {
-      "input": "2\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, maxValue = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-ideal-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.809Z",
+    "collectedAt": "2026-10-19T18:40:15.799Z",
     "sourceUpdatedAt": null
   }
 }

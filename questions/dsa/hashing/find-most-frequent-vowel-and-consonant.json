@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;successes&quot;",
+      "input": "s = \"successes\"",
       "output": "6",
-      "explanation": "The vowels are: &#39;u&#39; (frequency 1), &#39;e&#39; (frequency 2). The maximum frequency is 2.\n\tThe consonants are: &#39;s&#39; (frequency 4), &#39;c&#39; (frequency 2). The maximum frequency is 4.\n\tThe output is 2 + 4 = 6."
+      "explanation": "The vowels are: 'u' (frequency 1), 'e' (frequency 2). The maximum frequency is 2.\n\tThe consonants are: 's' (frequency 4), 'c' (frequency 2). The maximum frequency is 4.\n\tThe output is 2 + 4 = 6."
     },
     {
-      "input": "s = &quot;aeiaeia&quot;",
+      "input": "s = \"aeiaeia\"",
       "output": "3",
-      "explanation": "The vowels are: &#39;a&#39; (frequency 3), &#39;e&#39; ( frequency 2), &#39;i&#39; (frequency 2). The maximum frequency is 3.\n\tThere are no consonants in s. Hence, maximum consonant frequency = 0.\n\tThe output is 3 + 0 = 3."
+      "explanation": "The vowels are: 'a' (frequency 3), 'e' ( frequency 2), 'i' (frequency 2). The maximum frequency is 3.\n\tThere are no consonants in s. Hence, maximum consonant frequency = 0.\n\tThe output is 3 + 0 = 3."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;successes&quot;",
+      "input": "\"successes\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;aeiaeia&quot;",
+      "input": "\"aeiaeia\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;successes&quot;",
+      "input": "\"successes\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = &quot;aeiaeia&quot;",
+      "input": "\"aeiaeia\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"successes\"",
-      "expectedOutput": null
+      "input": "s = \"successes\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "\"aeiaeia\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aeiaeia\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-most-frequent-vowel-and-consonant/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:05.886Z",
+    "collectedAt": "2026-10-19T18:40:17.981Z",
     "sourceUpdatedAt": null
   }
 }

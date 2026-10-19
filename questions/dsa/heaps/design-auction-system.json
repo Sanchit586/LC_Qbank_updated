@@ -20,9 +20,9 @@
   ],
   "examples": [
     {
-      "input": "[&quot;AuctionSystem&quot;, &quot;addBid&quot;, &quot;addBid&quot;, &quot;getHighestBidder&quot;, &quot;updateBid&quot;, &quot;getHighestBidder&quot;, &quot;removeBid&quot;, &quot;getHighestBidder&quot;, &quot;getHighestBidder&quot;]\n[[], [1, 7, 5], [2, 7, 6], [7], [1, 7, 8], [7], [2, 7], [7], [3]]",
+      "input": "[\"AuctionSystem\", \"addBid\", \"addBid\", \"getHighestBidder\", \"updateBid\", \"getHighestBidder\", \"removeBid\", \"getHighestBidder\", \"getHighestBidder\"]\n[[], [1, 7, 5], [2, 7, 6], [7], [1, 7, 8], [7], [2, 7], [7], [3]]",
       "output": "[null, null, null, 2, null, 1, null, 1, -1]",
-      "explanation": null
+      "explanation": "AuctionSystem auctionSystem = new AuctionSystem(); // Initialize the Auction system\nauctionSystem.addBid(1, 7, 5); // User 1 bids 5 on item 7\nauctionSystem.addBid(2, 7, 6); // User 2 bids 6 on item 7\nauctionSystem.getHighestBidder(7); // return 2 as User 2 has the highest bid\nauctionSystem.updateBid(1, 7, 8); // User 1 updates bid to 8 on item 7\nauctionSystem.getHighestBidder(7); // return 1 as User 1 now has the highest bid\nauctionSystem.removeBid(2, 7); // Remove User 2's bid on item 7\nauctionSystem.getHighestBidder(7); // return 1 as User 1 is the current highest bidder\nauctionSystem.getHighestBidder(3); // return -1 as no bids exist for item 3"
     }
   ],
   "starterCode": {
@@ -48,22 +48,18 @@
   },
   "publicTests": [
     {
-      "input": "[&quot;AuctionSystem&quot;, &quot;addBid&quot;, &quot;addBid&quot;, &quot;getHighestBidder&quot;, &quot;updateBid&quot;, &quot;getHighestBidder&quot;, &quot;removeBid&quot;, &quot;getHighestBidder&quot;, &quot;getHighestBidder&quot;]\n[[], [1, 7, 5], [2, 7, 6], [7], [1, 7, 8], [7], [2, 7], [7], [3]]",
+      "input": "[\"AuctionSystem\",\"addBid\",\"addBid\",\"getHighestBidder\",\"updateBid\",\"getHighestBidder\",\"removeBid\",\"getHighestBidder\",\"getHighestBidder\"]\n[[],[1,7,5],[2,7,6],[7],[1,7,8],[7],[2,7],[7],[3]]",
       "expectedOutput": "[null, null, null, 2, null, 1, null, 1, -1]"
     }
   ],
   "testCases": [
     {
-      "input": "[&quot;AuctionSystem&quot;, &quot;addBid&quot;, &quot;addBid&quot;, &quot;getHighestBidder&quot;, &quot;updateBid&quot;, &quot;getHighestBidder&quot;, &quot;removeBid&quot;, &quot;getHighestBidder&quot;, &quot;getHighestBidder&quot;]\n[[], [1, 7, 5], [2, 7, 6], [7], [1, 7, 8], [7], [2, 7], [7], [3]]",
+      "input": "[\"AuctionSystem\",\"addBid\",\"addBid\",\"getHighestBidder\",\"updateBid\",\"getHighestBidder\",\"removeBid\",\"getHighestBidder\",\"getHighestBidder\"]\n[[],[1,7,5],[2,7,6],[7],[1,7,8],[7],[2,7],[7],[3]]",
       "expectedOutput": "[null, null, null, 2, null, 1, null, 1, -1]"
     },
     {
-      "input": "[\"AuctionSystem\",\"addBid\",\"addBid\",\"getHighestBidder\",\"updateBid\",\"getHighestBidder\",\"removeBid\",\"getHighestBidder\",\"getHighestBidder\"]\n[[],[1,7,5],[2,7,6],[7],[1,7,8],[7],[2,7],[7],[3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[&quot;AuctionSystem&quot;, &quot;addBid&quot;, &quot;addBid&quot;, &quot;getHighestBidder&quot;, &quot;updateBid&quot;, &quot;getHighestBidder&quot;, &quot;removeBid&quot;, &quot;getHighestBidder&quot;, &quot;getHighestBidder&quot;]\n[[], [2, 8, 6], [3, 8, 7], [8], [2, 8, 9], [8], [3, 8], [8], [4]]",
-      "expectedOutput": null
+      "input": "[\"AuctionSystem\", \"addBid\", \"addBid\", \"getHighestBidder\", \"updateBid\", \"getHighestBidder\", \"removeBid\", \"getHighestBidder\", \"getHighestBidder\"]\n[[], [1, 7, 5], [2, 7, 6], [7], [1, 7, 8], [7], [2, 7], [7], [3]]",
+      "expectedOutput": "[null, null, null, 2, null, 1, null, 1, -1]"
     }
   ],
   "sqlSchema": null,
@@ -80,7 +76,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-auction-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:39.378Z",
+    "collectedAt": "2026-10-19T18:40:16.399Z",
     "sourceUpdatedAt": null
   }
 }

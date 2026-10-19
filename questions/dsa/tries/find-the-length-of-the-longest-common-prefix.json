@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "arr1 = [1,10,100], arr2 = [1000]",
+      "input": "[1,10,100]\n[1000]",
       "expectedOutput": "3"
     },
     {
-      "input": "arr1 = [1,2,3], arr2 = [4,4,4]",
+      "input": "[1,2,3]\n[4,4,4]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,10,100]\n[1000]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2,3]\n[4,4,4]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "arr1 = [1,10,100], arr2 = [1000]",
       "expectedOutput": "3"
     },
     {
       "input": "arr1 = [1,2,3], arr2 = [4,4,4]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,10,100]\n[1000]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3]\n[4,4,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr2 = [2,11,101], arr3 = [1001]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-length-of-the-longest-common-prefix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.898Z",
+    "collectedAt": "2026-10-19T18:40:18.344Z",
     "sourceUpdatedAt": null
   }
 }

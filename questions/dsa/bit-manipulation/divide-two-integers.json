@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "dividend = 10, divisor = 3",
+      "input": "10\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "dividend = 7, divisor = -3",
+      "input": "7\n-3",
       "expectedOutput": "-2"
     }
   ],
   "testCases": [
     {
+      "input": "10\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "7\n-3",
+      "expectedOutput": "-2"
+    },
+    {
       "input": "dividend = 10, divisor = 3",
       "expectedOutput": "3"
     },
     {
       "input": "dividend = 7, divisor = -3",
       "expectedOutput": "-2"
-    },
-    {
-      "input": "10\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n-3",
-      "expectedOutput": null
-    },
-    {
-      "input": "dividend = 11, divisor = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/divide-two-integers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.399Z",
+    "collectedAt": "2026-10-19T18:40:16.843Z",
     "sourceUpdatedAt": null
   }
 }

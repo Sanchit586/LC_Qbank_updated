@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;Leetcode is cool&quot;",
-      "output": "&quot;Is cool leetcode&quot;",
-      "explanation": "There are 3 words, &quot;Leetcode&quot; of length 8, &quot;is&quot; of length 2 and &quot;cool&quot; of length 4.\nOutput is ordered by length and the new first word starts with capital letter."
+      "input": "text = \"Leetcode is cool\"",
+      "output": "\"Is cool leetcode\"",
+      "explanation": "There are 3 words, \"Leetcode\" of length 8, \"is\" of length 2 and \"cool\" of length 4.\nOutput is ordered by length and the new first word starts with capital letter."
     },
     {
-      "input": "text = &quot;Keep calm and code on&quot;",
-      "output": "&quot;On and keep calm code&quot;",
-      "explanation": "Output is ordered as follows:\n&quot;On&quot; 2 letters.\n&quot;and&quot; 3 letters.\n&quot;keep&quot; 4 letters in case of tie order by position in original text.\n&quot;calm&quot; 4 letters.\n&quot;code&quot; 4 letters."
+      "input": "text = \"Keep calm and code on\"",
+      "output": "\"On and keep calm code\"",
+      "explanation": "Output is ordered as follows:\n\"On\" 2 letters.\n\"and\" 3 letters.\n\"keep\" 4 letters in case of tie order by position in original text.\n\"calm\" 4 letters.\n\"code\" 4 letters."
     },
     {
-      "input": "text = &quot;To be or not to be&quot;",
-      "output": "&quot;To be or to be not&quot;",
+      "input": "text = \"To be or not to be\"",
+      "output": "\"To be or to be not\"",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;Leetcode is cool&quot;",
-      "expectedOutput": "&quot;Is cool leetcode&quot;"
+      "input": "\"Leetcode is cool\"",
+      "expectedOutput": "\"Is cool leetcode\""
     },
     {
-      "input": "text = &quot;Keep calm and code on&quot;",
-      "expectedOutput": "&quot;On and keep calm code&quot;"
+      "input": "\"Keep calm and code on\"",
+      "expectedOutput": "\"On and keep calm code\""
     },
     {
-      "input": "text = &quot;To be or not to be&quot;",
-      "expectedOutput": "&quot;To be or to be not&quot;"
+      "input": "\"To be or not to be\"",
+      "expectedOutput": "\"To be or to be not\""
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;Leetcode is cool&quot;",
-      "expectedOutput": "&quot;Is cool leetcode&quot;"
-    },
-    {
-      "input": "text = &quot;Keep calm and code on&quot;",
-      "expectedOutput": "&quot;On and keep calm code&quot;"
-    },
-    {
-      "input": "text = &quot;To be or not to be&quot;",
-      "expectedOutput": "&quot;To be or to be not&quot;"
-    },
-    {
       "input": "\"Leetcode is cool\"",
-      "expectedOutput": null
+      "expectedOutput": "\"Is cool leetcode\""
     },
     {
       "input": "\"Keep calm and code on\"",
-      "expectedOutput": null
+      "expectedOutput": "\"On and keep calm code\""
     },
     {
       "input": "\"To be or not to be\"",
-      "expectedOutput": null
+      "expectedOutput": "\"To be or to be not\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "text = \"Leetcode is cool\"",
+      "expectedOutput": "\"Is cool leetcode\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "text = \"Keep calm and code on\"",
+      "expectedOutput": "\"On and keep calm code\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "text = \"To be or not to be\"",
+      "expectedOutput": "\"To be or to be not\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rearrange-words-in-a-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:05.079Z",
+    "collectedAt": "2026-10-19T18:40:27.292Z",
     "sourceUpdatedAt": null
   }
 }

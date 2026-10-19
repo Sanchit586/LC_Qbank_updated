@@ -57,20 +57,32 @@
   },
   "publicTests": [
     {
-      "input": "prices = [10,30,21], discounts = [50,60]",
+      "input": "[10,30,21]\n[50,60]",
       "expectedOutput": "32.50000"
     },
     {
-      "input": "prices = [100,70], discounts = [10,40,50]",
+      "input": "[100,70]\n[10,40,50]",
       "expectedOutput": "92.00000"
     },
     {
-      "input": "prices = [7,3,9], discounts = [100,100]",
+      "input": "[7,3,9]\n[100,100]",
       "expectedOutput": "3.00000"
     }
   ],
   "testCases": [
     {
+      "input": "[10,30,21]\n[50,60]",
+      "expectedOutput": "32.50000"
+    },
+    {
+      "input": "[100,70]\n[10,40,50]",
+      "expectedOutput": "92.00000"
+    },
+    {
+      "input": "[7,3,9]\n[100,100]",
+      "expectedOutput": "3.00000"
+    },
+    {
       "input": "prices = [10,30,21], discounts = [50,60]",
       "expectedOutput": "32.50000"
     },
@@ -81,38 +93,6 @@
     {
       "input": "prices = [7,3,9], discounts = [100,100]",
       "expectedOutput": "3.00000"
-    },
-    {
-      "input": "[10,30,21]\n[50,60]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,70]\n[10,40,50]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[7,3,9]\n[100,100]",
-      "expectedOutput": null
-    },
-    {
-      "input": "prices = [101,71], discounts = [11,41,51]",
-      "expectedOutput": null
-    },
-    {
-      "input": "prices = [8,4,10], discounts = [101,101]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[11,31,22]\n[51,61]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[101,71]\n[11,41,51]",
-      "expectedOutput": null
-    },
-    {
-      "input": "prices = [11,31,22], discounts = [51,61]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-total-price-after-applying-discounts/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:29.858Z",
+    "collectedAt": "2026-10-19T18:40:25.297Z",
     "sourceUpdatedAt": null
   }
 }

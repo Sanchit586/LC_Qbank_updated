@@ -60,20 +60,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, k = 2, budget = 15, composition = [[1,1,1],[1,1,10]], stock = [0,0,0], cost = [1,2,3]",
+      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, k = 2, budget = 15, composition = [[1,1,1],[1,1,10]], stock = [0,0,100], cost = [1,2,3]",
+      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,100]\n[1,2,3]",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 2, k = 3, budget = 10, composition = [[2,1],[1,2],[1,1]], stock = [1,1], cost = [5,5]",
+      "input": "2\n3\n10\n[[2,1],[1,2],[1,1]]\n[1,1]\n[5,5]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,100]\n[1,2,3]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "2\n3\n10\n[[2,1],[1,2],[1,1]]\n[1,1]\n[5,5]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "n = 3, k = 2, budget = 15, composition = [[1,1,1],[1,1,10]], stock = [0,0,0], cost = [1,2,3]",
       "expectedOutput": "2"
     },
@@ -84,38 +96,6 @@
     {
       "input": "n = 2, k = 3, budget = 10, composition = [[2,1],[1,2],[1,1]], stock = [1,1], cost = [5,5]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,100]\n[1,2,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3\n10\n[[2,1],[1,2],[1,1]]\n[1,1]\n[5,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 3, budget = 16, composition = [[2,2,2],[2,2,11]], stock = [1,1,101], cost = [2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, k = 4, budget = 11, composition = [[3,2],[2,3],[2,2]], stock = [2,2], cost = [6,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3\n16\n[[2,2,2],[2,2,11]]\n[1,1,1]\n[2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3\n16\n[[2,2,2],[2,2,11]]\n[1,1,101]\n[2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 3, budget = 16, composition = [[2,2,2],[2,2,11]], stock = [1,1,1], cost = [2,3,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -129,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-alloys/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:16.854Z",
+    "collectedAt": "2026-10-19T18:40:21.994Z",
     "sourceUpdatedAt": null
   }
 }

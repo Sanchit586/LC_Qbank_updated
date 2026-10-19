@@ -17,7 +17,7 @@
     {
       "input": "num1 = 2, num2 = 3",
       "output": "3",
-      "explanation": "- Operation 1: num1 = 2, num2 = 3. Since num1 &lt; num2, we subtract num1 from num2 and get num1 = 2, num2 = 3 - 2 = 1.\n- Operation 2: num1 = 2, num2 = 1. Since num1 &gt; num2, we subtract num2 from num1.\n- Operation 3: num1 = 1, num2 = 1. Since num1 == num2, we subtract num2 from num1.\nNow num1 = 0 and num2 = 1. Since num1 == 0, we do not need to perform any further operations.\nSo the total number of operations required is 3."
+      "explanation": "- Operation 1: num1 = 2, num2 = 3. Since num1 < num2, we subtract num1 from num2 and get num1 = 2, num2 = 3 - 2 = 1.\n- Operation 2: num1 = 2, num2 = 1. Since num1 > num2, we subtract num2 from num1.\n- Operation 3: num1 = 1, num2 = 1. Since num1 == num2, we subtract num2 from num1.\nNow num1 = 0 and num2 = 1. Since num1 == 0, we do not need to perform any further operations.\nSo the total number of operations required is 3."
     },
     {
       "input": "num1 = 10, num2 = 10",
@@ -48,34 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "num1 = 2, num2 = 3",
+      "input": "2\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "num1 = 10, num2 = 10",
+      "input": "10\n10",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "2\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "10\n10",
+      "expectedOutput": "1"
+    },
+    {
       "input": "num1 = 2, num2 = 3",
       "expectedOutput": "3"
     },
     {
       "input": "num1 = 10, num2 = 10",
       "expectedOutput": "1"
-    },
-    {
-      "input": "2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n10",
-      "expectedOutput": null
-    },
-    {
-      "input": "num2 = 3, num3 = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-operations-to-obtain-zero/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.914Z",
+    "collectedAt": "2026-10-19T18:40:15.440Z",
     "sourceUpdatedAt": null
   }
 }

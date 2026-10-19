@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "m = 2, n = 2, k = 2",
+      "input": "2\n2\n2",
       "expectedOutput": "8"
     },
     {
-      "input": "m = 1, n = 4, k = 3",
+      "input": "1\n4\n3",
       "expectedOutput": "20"
     }
   ],
   "testCases": [
     {
+      "input": "2\n2\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "1\n4\n3",
+      "expectedOutput": "20"
+    },
+    {
       "input": "m = 2, n = 2, k = 2",
       "expectedOutput": "8"
     },
     {
       "input": "m = 1, n = 4, k = 3",
       "expectedOutput": "20"
-    },
-    {
-      "input": "2\n2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 3, n = 3, k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/manhattan-distances-of-all-arrangements-of-pieces/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.938Z",
+    "collectedAt": "2026-10-19T18:40:21.028Z",
     "sourceUpdatedAt": null
   }
 }

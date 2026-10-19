@@ -23,7 +23,7 @@
     {
       "input": "n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]",
       "output": "[1,0]",
-      "explanation": "We have the initial grid with all lamps turned off. In the above picture we see the grid after turning on the lamp at grid[0][0] then turning on the lamp at grid[4][4].\nThe 0th&nbsp;query asks if the lamp at grid[1][1] is illuminated or not (the blue square). It is illuminated, so set ans[0] = 1. Then, we turn off all lamps in the red square.\n\nThe 1st&nbsp;query asks if the lamp at grid[1][0] is illuminated or not (the blue square). It is not illuminated, so set ans[1] = 0. Then, we turn off all lamps in the red rectangle."
+      "explanation": "We have the initial grid with all lamps turned off. In the above picture we see the grid after turning on the lamp at grid[0][0] then turning on the lamp at grid[4][4].\nThe 0th query asks if the lamp at grid[1][1] is illuminated or not (the blue square). It is illuminated, so set ans[0] = 1. Then, we turn off all lamps in the red square.\n\nThe 1st query asks if the lamp at grid[1][0] is illuminated or not (the blue square). It is not illuminated, so set ans[1] = 0. Then, we turn off all lamps in the red rectangle."
     },
     {
       "input": "n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,1]]",
@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]",
+      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,0]]",
       "expectedOutput": "[1,0]"
     },
     {
-      "input": "n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,1]]",
+      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,1]]",
       "expectedOutput": "[1,1]"
     },
     {
-      "input": "n = 5, lamps = [[0,0],[0,4]], queries = [[0,4],[0,1],[1,4]]",
+      "input": "5\n[[0,0],[0,4]]\n[[0,4],[0,1],[1,4]]",
       "expectedOutput": "[1,1,0]"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,0]]",
+      "expectedOutput": "[1,0]"
+    },
+    {
+      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,1]]",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "5\n[[0,0],[0,4]]\n[[0,4],[0,1],[1,4]]",
+      "expectedOutput": "[1,1,0]"
+    },
+    {
       "input": "n = 5, lamps = [[0,0],[4,4]], queries = [[1,1],[1,0]]",
       "expectedOutput": "[1,0]"
     },
@@ -83,38 +95,6 @@
     {
       "input": "n = 5, lamps = [[0,0],[0,4]], queries = [[0,4],[0,1],[1,4]]",
       "expectedOutput": "[1,1,0]"
-    },
-    {
-      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[[0,0],[4,4]]\n[[1,1],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[[0,0],[0,4]]\n[[0,4],[0,1],[1,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, lamps = [[1,1],[5,5]], queries = [[2,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, lamps = [[1,1],[1,5]], queries = [[1,5],[1,2],[2,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[1,1],[5,5]]\n[[2,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[1,1],[5,5]]\n[[2,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, lamps = [[1,1],[5,5]], queries = [[2,2],[2,1]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/grid-illumination/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.061Z",
+    "collectedAt": "2026-10-19T18:40:19.259Z",
     "sourceUpdatedAt": null
   }
 }

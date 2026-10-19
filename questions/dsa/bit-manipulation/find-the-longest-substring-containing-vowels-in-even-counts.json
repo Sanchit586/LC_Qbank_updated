@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;eleetminicoworoep&quot;",
+      "input": "s = \"eleetminicoworoep\"",
       "output": "13",
-      "explanation": "The longest substring is &quot;leetminicowor&quot; which contains two each of the vowels: e, i and o and zero of the vowels: a and u."
+      "explanation": "The longest substring is \"leetminicowor\" which contains two each of the vowels: e, i and o and zero of the vowels: a and u."
     },
     {
-      "input": "s = &quot;leetcodeisgreat&quot;",
+      "input": "s = \"leetcodeisgreat\"",
       "output": "5",
-      "explanation": "The longest substring is &quot;leetc&quot; which contains two e&#39;s."
+      "explanation": "The longest substring is \"leetc\" which contains two e's."
     },
     {
-      "input": "s = &quot;bcbcbc&quot;",
+      "input": "s = \"bcbcbc\"",
       "output": "6",
-      "explanation": "In this case, the given string &quot;bcbcbc&quot; is the longest because all vowels: a, e, i, o and u appear zero times."
+      "explanation": "In this case, the given string \"bcbcbc\" is the longest because all vowels: a, e, i, o and u appear zero times."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;eleetminicoworoep&quot;",
+      "input": "\"eleetminicoworoep\"",
       "expectedOutput": "13"
     },
     {
-      "input": "s = &quot;leetcodeisgreat&quot;",
+      "input": "\"leetcodeisgreat\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;bcbcbc&quot;",
+      "input": "\"bcbcbc\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;eleetminicoworoep&quot;",
+      "input": "\"eleetminicoworoep\"",
       "expectedOutput": "13"
     },
     {
-      "input": "s = &quot;leetcodeisgreat&quot;",
+      "input": "\"leetcodeisgreat\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;bcbcbc&quot;",
+      "input": "\"bcbcbc\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"eleetminicoworoep\"",
-      "expectedOutput": null
+      "input": "s = \"eleetminicoworoep\"",
+      "expectedOutput": "13"
     },
     {
-      "input": "\"leetcodeisgreat\"",
-      "expectedOutput": null
+      "input": "s = \"leetcodeisgreat\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"bcbcbc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"bcbcbc\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-longest-substring-containing-vowels-in-even-counts/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.951Z",
+    "collectedAt": "2026-10-19T18:40:18.379Z",
     "sourceUpdatedAt": null
   }
 }

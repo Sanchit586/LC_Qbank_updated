@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;()())()&quot;",
-      "output": "[&quot;(())()&quot;,&quot;()()()&quot;]",
+      "input": "s = \"()())()\"",
+      "output": "[\"(())()\",\"()()()\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;(a)())()&quot;",
-      "output": "[&quot;(a())()&quot;,&quot;(a)()()&quot;]",
+      "input": "s = \"(a)())()\"",
+      "output": "[\"(a())()\",\"(a)()()\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;)(&quot;",
-      "output": "[&quot;&quot;]",
+      "input": "s = \")(\"",
+      "output": "[\"\"]",
       "explanation": null
     }
   ],
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;()())()&quot;",
-      "expectedOutput": "[&quot;(())()&quot;,&quot;()()()&quot;]"
+      "input": "\"()())()\"",
+      "expectedOutput": "[\"(())()\",\"()()()\"]"
     },
     {
-      "input": "s = &quot;(a)())()&quot;",
-      "expectedOutput": "[&quot;(a())()&quot;,&quot;(a)()()&quot;]"
+      "input": "\"(a)())()\"",
+      "expectedOutput": "[\"(a())()\",\"(a)()()\"]"
     },
     {
-      "input": "s = &quot;)(&quot;",
-      "expectedOutput": "[&quot;&quot;]"
+      "input": "\")(\"",
+      "expectedOutput": "[\"\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;()())()&quot;",
-      "expectedOutput": "[&quot;(())()&quot;,&quot;()()()&quot;]"
-    },
-    {
-      "input": "s = &quot;(a)())()&quot;",
-      "expectedOutput": "[&quot;(a())()&quot;,&quot;(a)()()&quot;]"
-    },
-    {
-      "input": "s = &quot;)(&quot;",
-      "expectedOutput": "[&quot;&quot;]"
-    },
-    {
       "input": "\"()())()\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"(())()\",\"()()()\"]"
     },
     {
       "input": "\"(a)())()\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"(a())()\",\"(a)()()\"]"
     },
     {
       "input": "\")(\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"()())()\"",
+      "expectedOutput": "[\"(())()\",\"()()()\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(a)())()\"",
+      "expectedOutput": "[\"(a())()\",\"(a)()()\"]"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \")(\"",
+      "expectedOutput": "[\"\"]"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/remove-invalid-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:08.510Z",
+    "collectedAt": "2026-10-19T18:40:27.531Z",
     "sourceUpdatedAt": null
   }
 }

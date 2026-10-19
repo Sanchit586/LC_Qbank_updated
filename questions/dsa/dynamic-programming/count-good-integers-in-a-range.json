@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "l = 10, r = 15, k = 1",
+      "input": "10\n15\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "l = 201, r = 204, k = 2",
+      "input": "201\n204\n2",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "10\n15\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "201\n204\n2",
+      "expectedOutput": "2"
+    },
+    {
       "input": "l = 10, r = 15, k = 1",
       "expectedOutput": "3"
     },
     {
       "input": "l = 201, r = 204, k = 2",
       "expectedOutput": "2"
-    },
-    {
-      "input": "10\n15\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "201\n204\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 11, r = 16, k = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-good-integers-in-a-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:11.924Z",
+    "collectedAt": "2026-10-19T18:40:15.143Z",
     "sourceUpdatedAt": null
   }
 }

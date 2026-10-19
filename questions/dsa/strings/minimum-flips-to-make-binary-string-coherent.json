@@ -15,17 +15,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1010&quot;",
+      "input": "s = \"1010\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;0110&quot;",
+      "input": "s = \"0110\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "s = &quot;1000&quot;",
+      "input": "s = \"1000\"",
       "output": "0",
       "explanation": null
     }
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1010&quot;",
+      "input": "\"1010\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;0110&quot;",
+      "input": "\"0110\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;1000&quot;",
+      "input": "\"1000\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1010&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;0110&quot;",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "s = &quot;1000&quot;",
-      "expectedOutput": "0"
-    },
-    {
       "input": "\"1010\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"0110\"",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "\"1000\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"1010\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"0110\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1000\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-flips-to-make-binary-string-coherent/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:57.458Z",
+    "collectedAt": "2026-10-19T18:40:23.927Z",
     "sourceUpdatedAt": null
   }
 }

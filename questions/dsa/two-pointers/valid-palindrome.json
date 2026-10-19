@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;A man, a plan, a canal: Panama&quot;",
+      "input": "s = \"A man, a plan, a canal: Panama\"",
       "output": "true",
-      "explanation": "&quot;amanaplanacanalpanama&quot; is a palindrome."
+      "explanation": "\"amanaplanacanalpanama\" is a palindrome."
     },
     {
-      "input": "s = &quot;race a car&quot;",
+      "input": "s = \"race a car\"",
       "output": "false",
-      "explanation": "&quot;raceacar&quot; is not a palindrome."
+      "explanation": "\"raceacar\" is not a palindrome."
     },
     {
-      "input": "s = &quot; &quot;",
+      "input": "s = \" \"",
       "output": "true",
-      "explanation": "s is an empty string &quot;&quot; after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome."
+      "explanation": "s is an empty string \"\" after removing non-alphanumeric characters.\nSince an empty string reads the same forward and backward, it is a palindrome."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;A man, a plan, a canal: Panama&quot;",
+      "input": "\"A man, a plan, a canal: Panama\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;race a car&quot;",
+      "input": "\"race a car\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot; &quot;",
+      "input": "\" \"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;A man, a plan, a canal: Panama&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;race a car&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot; &quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"race a car\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\" \"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"A man, a plan, a canal: Panama\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"race a car\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "s = \" \"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.330Z",
+    "collectedAt": "2026-10-19T18:40:31.494Z",
     "sourceUpdatedAt": null
   }
 }

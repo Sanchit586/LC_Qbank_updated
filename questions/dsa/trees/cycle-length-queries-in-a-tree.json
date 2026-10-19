@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, queries = [[5,3],[4,7],[2,3]]",
+      "input": "3\n[[5,3],[4,7],[2,3]]",
       "expectedOutput": "[4,5,3]"
     },
     {
-      "input": "n = 2, queries = [[1,2]]",
+      "input": "2\n[[1,2]]",
       "expectedOutput": "[2]"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[5,3],[4,7],[2,3]]",
+      "expectedOutput": "[4,5,3]"
+    },
+    {
+      "input": "2\n[[1,2]]",
+      "expectedOutput": "[2]"
+    },
+    {
       "input": "n = 3, queries = [[5,3],[4,7],[2,3]]",
       "expectedOutput": "[4,5,3]"
     },
     {
       "input": "n = 2, queries = [[1,2]]",
       "expectedOutput": "[2]"
-    },
-    {
-      "input": "3\n[[5,3],[4,7],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, queries = [[6,4],[5,8],[3,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/cycle-length-queries-in-a-tree/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:32.274Z",
+    "collectedAt": "2026-10-19T18:40:16.131Z",
     "sourceUpdatedAt": null
   }
 }

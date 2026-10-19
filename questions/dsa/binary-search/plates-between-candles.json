@@ -21,12 +21,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;**|**|***|&quot;, queries = [[2,5],[5,9]]",
+      "input": "s = \"**|**|***|\", queries = [[2,5],[5,9]]",
       "output": "[2,3]",
       "explanation": "- queries[0] has two plates between candles.\n- queries[1] has three plates between candles."
     },
     {
-      "input": "s = &quot;***|**|*****|**||**|*&quot;, queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "input": "s = \"***|**|*****|**||**|*\", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
       "output": "[9,0,0,0,0]",
       "explanation": "- queries[0] has nine plates between candles.\n- The other queries have zero plates between candles."
     }
@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;**|**|***|&quot;, queries = [[2,5],[5,9]]",
+      "input": "\"**|**|***|\"\n[[2,5],[5,9]]",
       "expectedOutput": "[2,3]"
     },
     {
-      "input": "s = &quot;***|**|*****|**||**|*&quot;, queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "input": "\"***|**|*****|**||**|*\"\n[[1,17],[4,5],[14,17],[5,11],[15,16]]",
       "expectedOutput": "[9,0,0,0,0]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;**|**|***|&quot;, queries = [[2,5],[5,9]]",
+      "input": "\"**|**|***|\"\n[[2,5],[5,9]]",
       "expectedOutput": "[2,3]"
     },
     {
-      "input": "s = &quot;***|**|*****|**||**|*&quot;, queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "input": "\"***|**|*****|**||**|*\"\n[[1,17],[4,5],[14,17],[5,11],[15,16]]",
       "expectedOutput": "[9,0,0,0,0]"
     },
     {
-      "input": "\"**|**|***|\"\n[[2,5],[5,9]]",
-      "expectedOutput": null
+      "input": "s = \"**|**|***|\", queries = [[2,5],[5,9]]",
+      "expectedOutput": "[2,3]"
     },
     {
-      "input": "\"***|**|*****|**||**|*\"\n[[1,17],[4,5],[14,17],[5,11],[15,16]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;**|**|***|&quot;, queries = [[3,6],[6,10]]",
-      "expectedOutput": null
+      "input": "s = \"***|**|*****|**||**|*\", queries = [[1,17],[4,5],[14,17],[5,11],[15,16]]",
+      "expectedOutput": "[9,0,0,0,0]"
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/plates-between-candles/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:57.469Z",
+    "collectedAt": "2026-10-19T18:40:26.784Z",
     "sourceUpdatedAt": null
   }
 }

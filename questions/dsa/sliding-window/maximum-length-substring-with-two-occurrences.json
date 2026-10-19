@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;bcbbbcba&quot;",
+      "input": "s = \"bcbbbcba\"",
       "output": "4",
-      "explanation": "The following substring has a length of 4 and contains at most two occurrences of each character: &quot;bcbbbcba&quot;."
+      "explanation": "The following substring has a length of 4 and contains at most two occurrences of each character: \"bcbbbcba\"."
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "s = \"aaaa\"",
       "output": "2",
-      "explanation": "The following substring has a length of 2 and contains at most two occurrences of each character: &quot;aaaa&quot;."
+      "explanation": "The following substring has a length of 2 and contains at most two occurrences of each character: \"aaaa\"."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;bcbbbcba&quot;",
+      "input": "\"bcbbbcba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;bcbbbcba&quot;",
+      "input": "\"bcbbbcba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;aaaa&quot;",
+      "input": "\"aaaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"bcbbbcba\"",
-      "expectedOutput": null
+      "input": "s = \"bcbbbcba\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"aaaa\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-length-substring-with-two-occurrences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.169Z",
+    "collectedAt": "2026-10-19T18:40:21.935Z",
     "sourceUpdatedAt": null
   }
 }

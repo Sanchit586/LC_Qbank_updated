@@ -24,13 +24,13 @@
   ],
   "examples": [
     {
-      "input": "messages = [&quot;Hello userTwooo&quot;,&quot;Hi userThree&quot;,&quot;Wonderful day Alice&quot;,&quot;Nice day userThree&quot;], senders = [&quot;Alice&quot;,&quot;userTwo&quot;,&quot;userThree&quot;,&quot;Alice&quot;]",
-      "output": "&quot;Alice&quot;",
-      "explanation": "Alice sends a total of 2 + 3 = 5 words.\nuserTwo sends a total of 2 words.\nuserThree sends a total of 3 words.\nSince Alice has the largest word count, we return &quot;Alice&quot;."
+      "input": "messages = [\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"], senders = [\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "output": "\"Alice\"",
+      "explanation": "Alice sends a total of 2 + 3 = 5 words.\nuserTwo sends a total of 2 words.\nuserThree sends a total of 3 words.\nSince Alice has the largest word count, we return \"Alice\"."
     },
     {
-      "input": "messages = [&quot;How is leetcode for everyone&quot;,&quot;Leetcode is useful for practice&quot;], senders = [&quot;Bob&quot;,&quot;Charlie&quot;]",
-      "output": "&quot;Charlie&quot;",
+      "input": "messages = [\"How is leetcode for everyone\",\"Leetcode is useful for practice\"], senders = [\"Bob\",\"Charlie\"]",
+      "output": "\"Charlie\"",
       "explanation": "Bob sends a total of 5 words.\nCharlie sends a total of 5 words.\nSince there is a tie for the largest word count, we return the sender with the lexicographically larger name, Charlie."
     }
   ],
@@ -57,30 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "messages = [&quot;Hello userTwooo&quot;,&quot;Hi userThree&quot;,&quot;Wonderful day Alice&quot;,&quot;Nice day userThree&quot;], senders = [&quot;Alice&quot;,&quot;userTwo&quot;,&quot;userThree&quot;,&quot;Alice&quot;]",
-      "expectedOutput": "&quot;Alice&quot;"
+      "input": "[\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
     },
     {
-      "input": "messages = [&quot;How is leetcode for everyone&quot;,&quot;Leetcode is useful for practice&quot;], senders = [&quot;Bob&quot;,&quot;Charlie&quot;]",
-      "expectedOutput": "&quot;Charlie&quot;"
+      "input": "[\"How is leetcode for everyone\",\"Leetcode is useful for practice\"]\n[\"Bob\",\"Charlie\"]",
+      "expectedOutput": "\"Charlie\""
     }
   ],
   "testCases": [
     {
-      "input": "messages = [&quot;Hello userTwooo&quot;,&quot;Hi userThree&quot;,&quot;Wonderful day Alice&quot;,&quot;Nice day userThree&quot;], senders = [&quot;Alice&quot;,&quot;userTwo&quot;,&quot;userThree&quot;,&quot;Alice&quot;]",
-      "expectedOutput": "&quot;Alice&quot;"
-    },
-    {
-      "input": "messages = [&quot;How is leetcode for everyone&quot;,&quot;Leetcode is useful for practice&quot;], senders = [&quot;Bob&quot;,&quot;Charlie&quot;]",
-      "expectedOutput": "&quot;Charlie&quot;"
-    },
-    {
       "input": "[\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"Alice\""
     },
     {
       "input": "[\"How is leetcode for everyone\",\"Leetcode is useful for practice\"]\n[\"Bob\",\"Charlie\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"Charlie\""
+    },
+    {
+      "input": "messages = [\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"], senders = [\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "messages = [\"How is leetcode for everyone\",\"Leetcode is useful for practice\"], senders = [\"Bob\",\"Charlie\"]",
+      "expectedOutput": "\"Charlie\""
     }
   ],
   "sqlSchema": null,
@@ -95,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sender-with-largest-word-count/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:22.418Z",
+    "collectedAt": "2026-10-19T18:40:28.253Z",
     "sourceUpdatedAt": null
   }
 }

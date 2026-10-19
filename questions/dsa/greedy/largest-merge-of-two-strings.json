@@ -17,13 +17,13 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;cabaa&quot;, word2 = &quot;bcaaa&quot;",
-      "output": "&quot;cbcabaaaaa&quot;",
-      "explanation": "One way to get the lexicographically largest merge is:\n- Take from word1: merge = &quot;c&quot;, word1 = &quot;abaa&quot;, word2 = &quot;bcaaa&quot;\n- Take from word2: merge = &quot;cb&quot;, word1 = &quot;abaa&quot;, word2 = &quot;caaa&quot;\n- Take from word2: merge = &quot;cbc&quot;, word1 = &quot;abaa&quot;, word2 = &quot;aaa&quot;\n- Take from word1: merge = &quot;cbca&quot;, word1 = &quot;baa&quot;, word2 = &quot;aaa&quot;\n- Take from word1: merge = &quot;cbcab&quot;, word1 = &quot;aa&quot;, word2 = &quot;aaa&quot;\n- Append the remaining 5 a&#39;s from word1 and word2 at the end of merge."
+      "input": "word1 = \"cabaa\", word2 = \"bcaaa\"",
+      "output": "\"cbcabaaaaa\"",
+      "explanation": "One way to get the lexicographically largest merge is:\n- Take from word1: merge = \"c\", word1 = \"abaa\", word2 = \"bcaaa\"\n- Take from word2: merge = \"cb\", word1 = \"abaa\", word2 = \"caaa\"\n- Take from word2: merge = \"cbc\", word1 = \"abaa\", word2 = \"aaa\"\n- Take from word1: merge = \"cbca\", word1 = \"baa\", word2 = \"aaa\"\n- Take from word1: merge = \"cbcab\", word1 = \"aa\", word2 = \"aaa\"\n- Append the remaining 5 a's from word1 and word2 at the end of merge."
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abdcaba&quot;",
-      "output": "&quot;abdcabcabcaba&quot;",
+      "input": "word1 = \"abcabc\", word2 = \"abdcaba\"",
+      "output": "\"abdcabcabcaba\"",
       "explanation": null
     }
   ],
@@ -50,82 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;cabaa&quot;, word2 = &quot;bcaaa&quot;",
-      "expectedOutput": "&quot;cbcabaaaaa&quot;"
+      "input": "\"cabaa\"\n\"bcaaa\"",
+      "expectedOutput": "\"cbcabaaaaa\""
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abdcaba&quot;",
-      "expectedOutput": "&quot;abdcabcabcaba&quot;"
+      "input": "\"abcabc\"\n\"abdcaba\"",
+      "expectedOutput": "\"abdcabcabcaba\""
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;cabaa&quot;, word2 = &quot;bcaaa&quot;",
-      "expectedOutput": "&quot;cbcabaaaaa&quot;"
-    },
-    {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abdcaba&quot;",
-      "expectedOutput": "&quot;abdcabcabcaba&quot;"
-    },
-    {
       "input": "\"cabaa\"\n\"bcaaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"cbcabaaaaa\""
     },
     {
       "input": "\"abcabc\"\n\"abdcaba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abdcabcabcaba\""
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "word1 = \"cabaa\", word2 = \"bcaaa\"",
+      "expectedOutput": "\"cbcabaaaaa\""
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "word2 = &quot;abcabc&quot;, word3 = &quot;abdcaba&quot;",
-      "expectedOutput": null
+      "input": "word1 = \"abcabc\", word2 = \"abdcaba\"",
+      "expectedOutput": "\"abdcabcabcaba\""
     }
   ],
   "sqlSchema": null,
@@ -142,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-merge-of-two-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:44.512Z",
+    "collectedAt": "2026-10-19T18:40:19.944Z",
     "sourceUpdatedAt": null
   }
 }

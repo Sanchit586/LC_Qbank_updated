@@ -59,34 +59,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, edges = [[0,1,7],[1,3,7],[1,2,1]], query = [[0,3],[3,4]]",
+      "input": "5\n[[0,1,7],[1,3,7],[1,2,1]]\n[[0,3],[3,4]]",
       "expectedOutput": "[1,-1]"
     },
     {
-      "input": "n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]",
+      "input": "3\n[[0,2,7],[0,1,15],[1,2,6],[1,2,1]]\n[[1,2]]",
       "expectedOutput": "[0]"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[0,1,7],[1,3,7],[1,2,1]]\n[[0,3],[3,4]]",
+      "expectedOutput": "[1,-1]"
+    },
+    {
+      "input": "3\n[[0,2,7],[0,1,15],[1,2,6],[1,2,1]]\n[[1,2]]",
+      "expectedOutput": "[0]"
+    },
+    {
       "input": "n = 5, edges = [[0,1,7],[1,3,7],[1,2,1]], query = [[0,3],[3,4]]",
       "expectedOutput": "[1,-1]"
     },
     {
       "input": "n = 3, edges = [[0,2,7],[0,1,15],[1,2,6],[1,2,1]], query = [[1,2]]",
       "expectedOutput": "[0]"
-    },
-    {
-      "input": "5\n[[0,1,7],[1,3,7],[1,2,1]]\n[[0,3],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0,2,7],[0,1,15],[1,2,6],[1,2,1]]\n[[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, edges = [[1,2,8],[2,4,8],[2,3,2]], query = [[1,4],[4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-walk-in-weighted-graph/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:52.092Z",
+    "collectedAt": "2026-10-19T18:40:23.733Z",
     "sourceUpdatedAt": null
   }
 }

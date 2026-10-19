@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "&quot;112358&quot;",
+      "input": "\"112358\"",
       "output": "true",
       "explanation": "The digits can form an additive sequence: 1, 1, 2, 3, 5, 8. \n1 + 1 = 2, 1 + 2 = 3, 2 + 3 = 5, 3 + 5 = 8"
     },
     {
-      "input": "&quot;199100199&quot;",
+      "input": "\"199100199\"",
       "output": "true",
-      "explanation": "The additive sequence is: 1, 99, 100, 199.&nbsp;\n1 + 99 = 100, 99 + 100 = 199"
+      "explanation": "The additive sequence is: 1, 99, 100, 199. \n1 + 99 = 100, 99 + 100 = 199"
     }
   ],
   "starterCode": {
@@ -49,94 +49,22 @@
   },
   "publicTests": [
     {
-      "input": "&quot;112358&quot;",
+      "input": "\"112358\"",
       "expectedOutput": "true"
     },
     {
-      "input": "&quot;199100199&quot;",
+      "input": "\"199100199\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "&quot;112358&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "&quot;199100199&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"112358\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"199100199\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -148,7 +76,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/additive-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.549Z",
+    "collectedAt": "2026-10-19T18:40:12.885Z",
     "sourceUpdatedAt": null
   }
 }

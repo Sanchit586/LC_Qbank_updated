@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abaccdbbd&quot;, k = 3",
+      "input": "s = \"abaccdbbd\", k = 3",
       "output": "2",
-      "explanation": "We can select the substrings underlined in s = &quot;abaccdbbd&quot;. Both &quot;aba&quot; and &quot;dbbd&quot; are palindromes and have a length of at least k = 3.\nIt can be shown that we cannot find a selection with more than two valid substrings."
+      "explanation": "We can select the substrings underlined in s = \"abaccdbbd\". Both \"aba\" and \"dbbd\" are palindromes and have a length of at least k = 3.\nIt can be shown that we cannot find a selection with more than two valid substrings."
     },
     {
-      "input": "s = &quot;adbcda&quot;, k = 2",
+      "input": "s = \"adbcda\", k = 2",
       "output": "0",
       "explanation": "There is no palindrome substring of length at least 2 in the string."
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abaccdbbd&quot;, k = 3",
+      "input": "\"abaccdbbd\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;adbcda&quot;, k = 2",
+      "input": "\"adbcda\"\n2",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abaccdbbd&quot;, k = 3",
+      "input": "\"abaccdbbd\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;adbcda&quot;, k = 2",
+      "input": "\"adbcda\"\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "\"abaccdbbd\"\n3",
-      "expectedOutput": null
+      "input": "s = \"abaccdbbd\", k = 3",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"adbcda\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;abaccdbbd&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"adbcda\", k = 2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-palindrome-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.661Z",
+    "collectedAt": "2026-10-19T18:40:22.094Z",
     "sourceUpdatedAt": null
   }
 }

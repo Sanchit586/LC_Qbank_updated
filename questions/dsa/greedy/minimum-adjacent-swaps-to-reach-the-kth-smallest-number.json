@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;5489355142&quot;, k = 4",
+      "input": "num = \"5489355142\", k = 4",
       "output": "2",
-      "explanation": "The 4th smallest wonderful number is &quot;5489355421&quot;. To get this number:\n- Swap index 7 with index 8: &quot;5489355142&quot; -&gt; &quot;5489355412&quot;\n- Swap index 8 with index 9: &quot;5489355412&quot; -&gt; &quot;5489355421&quot;"
+      "explanation": "The 4th smallest wonderful number is \"5489355421\". To get this number:\n- Swap index 7 with index 8: \"5489355142\" -> \"5489355412\"\n- Swap index 8 with index 9: \"5489355412\" -> \"5489355421\""
     },
     {
-      "input": "num = &quot;11112&quot;, k = 4",
+      "input": "num = \"11112\", k = 4",
       "output": "4",
-      "explanation": "The 4th smallest wonderful number is &quot;21111&quot;. To get this number:\n- Swap index 3 with index 4: &quot;11112&quot; -&gt; &quot;11121&quot;\n- Swap index 2 with index 3: &quot;11121&quot; -&gt; &quot;11211&quot;\n- Swap index 1 with index 2: &quot;11211&quot; -&gt; &quot;12111&quot;\n- Swap index 0 with index 1: &quot;12111&quot; -&gt; &quot;21111&quot;"
+      "explanation": "The 4th smallest wonderful number is \"21111\". To get this number:\n- Swap index 3 with index 4: \"11112\" -> \"11121\"\n- Swap index 2 with index 3: \"11121\" -> \"11211\"\n- Swap index 1 with index 2: \"11211\" -> \"12111\"\n- Swap index 0 with index 1: \"12111\" -> \"21111\""
     },
     {
-      "input": "num = &quot;00123&quot;, k = 1",
+      "input": "num = \"00123\", k = 1",
       "output": "1",
-      "explanation": "The 1st smallest wonderful number is &quot;00132&quot;. To get this number:\n- Swap index 3 with index 4: &quot;00123&quot; -&gt; &quot;00132&quot;"
+      "explanation": "The 1st smallest wonderful number is \"00132\". To get this number:\n- Swap index 3 with index 4: \"00123\" -> \"00132\""
     }
   ],
   "starterCode": {
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;5489355142&quot;, k = 4",
+      "input": "\"5489355142\"\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;11112&quot;, k = 4",
+      "input": "\"11112\"\n4",
       "expectedOutput": "4"
     },
     {
-      "input": "num = &quot;00123&quot;, k = 1",
+      "input": "\"00123\"\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;5489355142&quot;, k = 4",
+      "input": "\"5489355142\"\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;11112&quot;, k = 4",
+      "input": "\"11112\"\n4",
       "expectedOutput": "4"
     },
     {
-      "input": "num = &quot;00123&quot;, k = 1",
+      "input": "\"00123\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "\"5489355142\"\n4",
-      "expectedOutput": null
+      "input": "num = \"5489355142\", k = 4",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"11112\"\n4",
-      "expectedOutput": null
+      "input": "num = \"11112\", k = 4",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"00123\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;11113&quot;, k = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;124&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"5489355143\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"11113\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;5489355143&quot;, k = 5",
-      "expectedOutput": null
+      "input": "num = \"00123\", k = 1",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-adjacent-swaps-to-reach-the-kth-smallest-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:43.739Z",
+    "collectedAt": "2026-10-19T18:40:23.403Z",
     "sourceUpdatedAt": null
   }
 }

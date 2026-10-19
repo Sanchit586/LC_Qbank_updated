@@ -48,86 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "184"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "22"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "184"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "22"
+    },
+    {
       "input": "n = 4",
       "expectedOutput": "184"
     },
     {
       "input": "n = 2",
       "expectedOutput": "22"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -143,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-distinct-roll-sequences/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:39.042Z",
+    "collectedAt": "2026-10-19T18:40:25.837Z",
     "sourceUpdatedAt": null
   }
 }

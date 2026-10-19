@@ -19,12 +19,12 @@
   ],
   "examples": [
     {
-      "input": "board = [[&quot;X&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;]]",
+      "input": "board = [[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "board = [[&quot;.&quot;]]",
+      "input": "board = [[\".\"]]",
       "output": "0",
       "explanation": null
     }
@@ -52,30 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "board = [[&quot;X&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;]]",
+      "input": "[[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
       "expectedOutput": "2"
     },
     {
-      "input": "board = [[&quot;.&quot;]]",
+      "input": "[[\".\"]]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "board = [[&quot;X&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;],[&quot;.&quot;,&quot;.&quot;,&quot;.&quot;,&quot;X&quot;]]",
+      "input": "[[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
       "expectedOutput": "2"
     },
     {
-      "input": "board = [[&quot;.&quot;]]",
+      "input": "[[\".\"]]",
       "expectedOutput": "0"
     },
     {
-      "input": "[[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
-      "expectedOutput": null
+      "input": "board = [[\"X\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"],[\".\",\".\",\".\",\"X\"]]",
+      "expectedOutput": "2"
     },
     {
-      "input": "[[\".\"]]",
-      "expectedOutput": null
+      "input": "board = [[\".\"]]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -87,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/battleships-in-a-board/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.657Z",
+    "collectedAt": "2026-10-19T18:40:13.454Z",
     "sourceUpdatedAt": null
   }
 }

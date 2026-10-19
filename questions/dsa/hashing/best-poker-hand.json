@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
-      "output": "&quot;Flush&quot;",
-      "explanation": "The hand with all the cards consists of 5 cards with the same suit, so we have a &quot;Flush&quot;."
+      "input": "ranks = [13,2,3,1,9], suits = [\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "output": "\"Flush\"",
+      "explanation": "The hand with all the cards consists of 5 cards with the same suit, so we have a \"Flush\"."
     },
     {
-      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "output": "&quot;Three of a Kind&quot;",
-      "explanation": "The hand with the first, second, and fourth card consists of 3 cards with the same rank, so we have a &quot;Three of a Kind&quot;.\nNote that we could also make a &quot;Pair&quot; hand but &quot;Three of a Kind&quot; is a better hand.\nAlso note that other cards could be used to make the &quot;Three of a Kind&quot; hand."
+      "input": "ranks = [4,4,2,4,4], suits = [\"d\",\"a\",\"a\",\"b\",\"c\"]",
+      "output": "\"Three of a Kind\"",
+      "explanation": "The hand with the first, second, and fourth card consists of 3 cards with the same rank, so we have a \"Three of a Kind\".\nNote that we could also make a \"Pair\" hand but \"Three of a Kind\" is a better hand.\nAlso note that other cards could be used to make the \"Three of a Kind\" hand."
     },
     {
-      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
-      "output": "&quot;Pair&quot;",
-      "explanation": "The hand with the first and second card consists of 2 cards with the same rank, so we have a &quot;Pair&quot;.\nNote that we cannot make a &quot;Flush&quot; or a &quot;Three of a Kind&quot;."
+      "input": "ranks = [10,10,2,12,9], suits = [\"a\",\"b\",\"c\",\"a\",\"d\"]",
+      "output": "\"Pair\"",
+      "explanation": "The hand with the first and second card consists of 2 cards with the same rank, so we have a \"Pair\".\nNote that we cannot make a \"Flush\" or a \"Three of a Kind\"."
     }
   ],
   "starterCode": {
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
-      "expectedOutput": "&quot;Flush&quot;"
+      "input": "[13,2,3,1,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
     },
     {
-      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "expectedOutput": "&quot;Three of a Kind&quot;"
+      "input": "[4,4,2,4,4]\n[\"d\",\"a\",\"a\",\"b\",\"c\"]",
+      "expectedOutput": "\"Three of a Kind\""
     },
     {
-      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
-      "expectedOutput": "&quot;Pair&quot;"
+      "input": "[10,10,2,12,9]\n[\"a\",\"b\",\"c\",\"a\",\"d\"]",
+      "expectedOutput": "\"Pair\""
     }
   ],
   "testCases": [
     {
-      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
-      "expectedOutput": "&quot;Flush&quot;"
-    },
-    {
-      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "expectedOutput": "&quot;Three of a Kind&quot;"
-    },
-    {
-      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
-      "expectedOutput": "&quot;Pair&quot;"
-    },
-    {
       "input": "[13,2,3,1,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"Flush\""
     },
     {
       "input": "[4,4,2,4,4]\n[\"d\",\"a\",\"a\",\"b\",\"c\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"Three of a Kind\""
     },
     {
       "input": "[10,10,2,12,9]\n[\"a\",\"b\",\"c\",\"a\",\"d\"]",
-      "expectedOutput": null
+      "expectedOutput": "\"Pair\""
     },
     {
-      "input": "ranks = [5,5,3,5,5], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
-      "expectedOutput": null
+      "input": "ranks = [13,2,3,1,9], suits = [\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
     },
     {
-      "input": "ranks = [11,11,3,13,10], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
-      "expectedOutput": null
+      "input": "ranks = [4,4,2,4,4], suits = [\"d\",\"a\",\"a\",\"b\",\"c\"]",
+      "expectedOutput": "\"Three of a Kind\""
     },
     {
-      "input": "[14,3,4,2,10]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[5,5,3,5,5]\n[\"d\",\"a\",\"a\",\"b\",\"c\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "ranks = [14,3,4,2,10], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
-      "expectedOutput": null
+      "input": "ranks = [10,10,2,12,9], suits = [\"a\",\"b\",\"c\",\"a\",\"d\"]",
+      "expectedOutput": "\"Pair\""
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/best-poker-hand/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.705Z",
+    "collectedAt": "2026-10-19T18:40:13.482Z",
     "sourceUpdatedAt": null
   }
 }

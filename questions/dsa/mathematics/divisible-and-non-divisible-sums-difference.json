@@ -16,17 +16,17 @@
     {
       "input": "n = 10, m = 3",
       "output": "19",
-      "explanation": "In the given example:\n- Integers in the range [1, 10] that are not divisible by 3 are [1,2,4,5,7,8,10], num1 is the sum of those integers = 37.\n- Integers in the range [1, 10] that are divisible by 3 are [3,6,9], num2 is the sum of those integers = 18.\nWe return 37 - 18 = 19 as the answer."
+      "explanation": "In the given"
     },
     {
       "input": "n = 5, m = 6",
       "output": "15",
-      "explanation": "In the given example:\n- Integers in the range [1, 5] that are not divisible by 6 are [1,2,3,4,5], num1 is the sum of those integers = 15.\n- Integers in the range [1, 5] that are divisible by 6 are [], num2 is the sum of those integers = 0.\nWe return 15 - 0 = 15 as the answer."
+      "explanation": "In the given"
     },
     {
       "input": "n = 5, m = 1",
       "output": "-15",
-      "explanation": "In the given example:\n- Integers in the range [1, 5] that are not divisible by 1 are [], num1 is the sum of those integers = 0.\n- Integers in the range [1, 5] that are divisible by 1 are [1,2,3,4,5], num2 is the sum of those integers = 15.\nWe return 0 - 15 = -15 as the answer."
+      "explanation": "In the given"
     }
   ],
   "starterCode": {
@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 10, m = 3",
+      "input": "10\n3",
       "expectedOutput": "19"
     },
     {
-      "input": "n = 5, m = 6",
+      "input": "5\n6",
       "expectedOutput": "15"
     },
     {
-      "input": "n = 5, m = 1",
+      "input": "5\n1",
       "expectedOutput": "-15"
     }
   ],
   "testCases": [
     {
+      "input": "10\n3",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "5\n6",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "5\n1",
+      "expectedOutput": "-15"
+    },
+    {
       "input": "n = 10, m = 3",
       "expectedOutput": "19"
     },
@@ -76,38 +88,6 @@
     {
       "input": "n = 5, m = 1",
       "expectedOutput": "-15"
-    },
-    {
-      "input": "10\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, m = 7",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, m = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "11\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 11, m = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -121,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/divisible-and-non-divisible-sums-difference/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:48.407Z",
+    "collectedAt": "2026-10-19T18:40:16.849Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "water = &quot;HOH&quot;",
-      "output": "&quot;HHO&quot;",
-      "explanation": "&quot;HOH&quot; and &quot;OHH&quot; are also valid answers."
+      "input": "water = \"HOH\"",
+      "output": "\"HHO\"",
+      "explanation": "\"HOH\" and \"OHH\" are also valid answers."
     },
     {
-      "input": "water = &quot;OOHHHH&quot;",
-      "output": "&quot;HHOHHO&quot;",
-      "explanation": "&quot;HOHHHO&quot;, &quot;OHHHHO&quot;, &quot;HHOHOH&quot;, &quot;HOHHOH&quot;, &quot;OHHHOH&quot;, &quot;HHOOHH&quot;, &quot;HOHOHH&quot; and &quot;OHHOHH&quot; are also valid answers."
+      "input": "water = \"OOHHHH\"",
+      "output": "\"HHOHHO\"",
+      "explanation": "\"HOHHHO\", \"OHHHHO\", \"HHOHOH\", \"HOHHOH\", \"OHHHOH\", \"HHOOHH\", \"HOHOHH\" and \"OHHOHH\" are also valid answers."
     }
   ],
   "starterCode": {
@@ -39,94 +39,30 @@
   },
   "publicTests": [
     {
-      "input": "water = &quot;HOH&quot;",
-      "expectedOutput": "&quot;HHO&quot;"
+      "input": "\"HOH\"",
+      "expectedOutput": "\"HHO\""
     },
     {
-      "input": "water = &quot;OOHHHH&quot;",
-      "expectedOutput": "&quot;HHOHHO&quot;"
+      "input": "\"OOHHHH\"",
+      "expectedOutput": "\"HHOHHO\""
     }
   ],
   "testCases": [
     {
-      "input": "water = &quot;HOH&quot;",
-      "expectedOutput": "&quot;HHO&quot;"
-    },
-    {
-      "input": "water = &quot;OOHHHH&quot;",
-      "expectedOutput": "&quot;HHOHHO&quot;"
-    },
-    {
       "input": "\"HOH\"",
-      "expectedOutput": null
+      "expectedOutput": "\"HHO\""
     },
     {
       "input": "\"OOHHHH\"",
-      "expectedOutput": null
+      "expectedOutput": "\"HHOHHO\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "water = \"HOH\"",
+      "expectedOutput": "\"HHO\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "water = \"OOHHHH\"",
+      "expectedOutput": "\"HHOHHO\""
     }
   ],
   "sqlSchema": null,
@@ -138,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/building-h2o/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.074Z",
+    "collectedAt": "2026-10-19T18:40:13.762Z",
     "sourceUpdatedAt": null
   }
 }

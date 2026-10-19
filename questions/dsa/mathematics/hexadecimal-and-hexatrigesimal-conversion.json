@@ -16,13 +16,13 @@
   "examples": [
     {
       "input": "n = 13",
-      "output": "&quot;A91P1&quot;",
-      "explanation": "n2 = 13 * 13 = 169. In hexadecimal, it converts to (10 * 16) + 9 = 169, which corresponds to &quot;A9&quot;.\n\tn3 = 13 * 13 * 13 = 2197. In hexatrigesimal, it converts to (1 * 362) + (25 * 36) + 1 = 2197, which corresponds to &quot;1P1&quot;.\n\tConcatenating both results gives &quot;A9&quot; + &quot;1P1&quot; = &quot;A91P1&quot;."
+      "output": "\"A91P1\"",
+      "explanation": "n2 = 13 * 13 = 169. In hexadecimal, it converts to (10 * 16) + 9 = 169, which corresponds to \"A9\".\n\tn3 = 13 * 13 * 13 = 2197. In hexatrigesimal, it converts to (1 * 362) + (25 * 36) + 1 = 2197, which corresponds to \"1P1\".\n\tConcatenating both results gives \"A9\" + \"1P1\" = \"A91P1\"."
     },
     {
       "input": "n = 36",
-      "output": "&quot;5101000&quot;",
-      "explanation": "n2 = 36 * 36 = 1296. In hexadecimal, it converts to (5 * 162) + (1 * 16) + 0 = 1296, which corresponds to &quot;510&quot;.\n\tn3 = 36 * 36 * 36 = 46656. In hexatrigesimal, it converts to (1 * 363) + (0 * 362) + (0 * 36) + 0 = 46656, which corresponds to &quot;1000&quot;.\n\tConcatenating both results gives &quot;510&quot; + &quot;1000&quot; = &quot;5101000&quot;."
+      "output": "\"5101000\"",
+      "explanation": "n2 = 36 * 36 = 1296. In hexadecimal, it converts to (5 * 162) + (1 * 16) + 0 = 1296, which corresponds to \"510\".\n\tn3 = 36 * 36 * 36 = 46656. In hexatrigesimal, it converts to (1 * 363) + (0 * 362) + (0 * 36) + 0 = 46656, which corresponds to \"1000\".\n\tConcatenating both results gives \"510\" + \"1000\" = \"5101000\"."
     }
   ],
   "starterCode": {
@@ -48,90 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 13",
-      "expectedOutput": "&quot;A91P1&quot;"
+      "input": "13",
+      "expectedOutput": "\"A91P1\""
     },
     {
-      "input": "n = 36",
-      "expectedOutput": "&quot;5101000&quot;"
+      "input": "36",
+      "expectedOutput": "\"5101000\""
     }
   ],
   "testCases": [
     {
-      "input": "n = 13",
-      "expectedOutput": "&quot;A91P1&quot;"
-    },
-    {
-      "input": "n = 36",
-      "expectedOutput": "&quot;5101000&quot;"
-    },
-    {
       "input": "13",
-      "expectedOutput": null
+      "expectedOutput": "\"A91P1\""
     },
     {
       "input": "36",
-      "expectedOutput": null
+      "expectedOutput": "\"5101000\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "n = 13",
+      "expectedOutput": "\"A91P1\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 36",
+      "expectedOutput": "\"5101000\""
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/hexadecimal-and-hexatrigesimal-conversion/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:27.218Z",
+    "collectedAt": "2026-10-19T18:40:19.375Z",
     "sourceUpdatedAt": null
   }
 }

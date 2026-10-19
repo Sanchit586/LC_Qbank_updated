@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Activities table:\n+------------+------------+\n| sell_date  | product     |\n+------------+------------+\n| 2020-05-30 | Headphone  |\n| 2020-06-01 | Pencil     |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | Basketball |\n| 2020-06-01 | Bible      |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | T-Shirt    |\n+------------+------------+",
+      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[[\"2020-05-30\",\"Headphone\"],[\"2020-06-01\",\"Pencil\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"Basketball\"],[\"2020-06-01\",\"Bible\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"T-Shirt\"]]}}",
       "expectedOutput": "+------------+----------+------------------------------+\n| sell_date  | num_sold | products                     |\n+------------+----------+------------------------------+\n| 2020-05-30 | 3        | Basketball,Headphone,T-shirt |\n| 2020-06-01 | 2        | Bible,Pencil                 |\n| 2020-06-02 | 1        | Mask                         |\n+------------+----------+------------------------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Activities table:\n+------------+------------+\n| sell_date  | product     |\n+------------+------------+\n| 2020-05-30 | Headphone  |\n| 2020-06-01 | Pencil     |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | Basketball |\n| 2020-06-01 | Bible      |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | T-Shirt    |\n+------------+------------+",
+      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[[\"2020-05-30\",\"Headphone\"],[\"2020-06-01\",\"Pencil\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"Basketball\"],[\"2020-06-01\",\"Bible\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"T-Shirt\"]]}}",
       "expectedOutput": "+------------+----------+------------------------------+\n| sell_date  | num_sold | products                     |\n+------------+----------+------------------------------+\n| 2020-05-30 | 3        | Basketball,Headphone,T-shirt |\n| 2020-06-01 | 2        | Bible,Pencil                 |\n| 2020-06-02 | 1        | Mask                         |\n+------------+----------+------------------------------+"
     },
     {
-      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[[\"2020-05-30\",\"Headphone\"],[\"2020-06-01\",\"Pencil\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"Basketball\"],[\"2020-06-01\",\"Bible\"],[\"2020-06-02\",\"Mask\"],[\"2020-05-30\",\"T-Shirt\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[[\"2020-05-30\",\"Headphone\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activities\":[\"sell_date\",\"product\"]},\"rows\":{\"Activities\":[[\"2020-05-30\",null],[\"2020-06-01\",null],[\"2020-06-02\",null],[\"2020-05-30\",null],[\"2020-06-01\",null],[\"2020-06-02\",null],[\"2020-05-30\",null]]}}",
-      "expectedOutput": null
+      "input": "Activities table:\n+------------+------------+\n| sell_date  | product     |\n+------------+------------+\n| 2020-05-30 | Headphone  |\n| 2020-06-01 | Pencil     |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | Basketball |\n| 2020-06-01 | Bible      |\n| 2020-06-02 | Mask       |\n| 2020-05-30 | T-Shirt    |\n+------------+------------+",
+      "expectedOutput": "+------------+----------+------------------------------+\n| sell_date  | num_sold | products                     |\n+------------+----------+------------------------------+\n| 2020-05-30 | 3        | Basketball,Headphone,T-shirt |\n| 2020-06-01 | 2        | Bible,Pencil                 |\n| 2020-06-02 | 1        | Mask                         |\n+------------+----------+------------------------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Activities (sell_date date, product varchar(20))\n\nTruncate table Activities",
@@ -69,7 +57,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/group-sold-products-by-the-date/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.545Z",
+    "collectedAt": "2026-10-19T18:40:19.279Z",
     "sourceUpdatedAt": null
   }
 }

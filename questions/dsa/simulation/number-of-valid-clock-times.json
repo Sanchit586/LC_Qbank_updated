@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "time = &quot;?5:00&quot;",
+      "input": "time = \"?5:00\"",
       "output": "2",
-      "explanation": "We can replace the ? with either a 0 or 1, producing &quot;05:00&quot; or &quot;15:00&quot;. Note that we cannot replace it with a 2, since the time &quot;25:00&quot; is invalid. In total, we have two choices."
+      "explanation": "We can replace the ? with either a 0 or 1, producing \"05:00\" or \"15:00\". Note that we cannot replace it with a 2, since the time \"25:00\" is invalid. In total, we have two choices."
     },
     {
-      "input": "time = &quot;0?:0?&quot;",
+      "input": "time = \"0?:0?\"",
       "output": "100",
       "explanation": "Each ? can be replaced by any digit from 0 to 9, so we have 100 total choices."
     },
     {
-      "input": "time = &quot;??:??&quot;",
+      "input": "time = \"??:??\"",
       "output": "1440",
       "explanation": "There are 24 possible choices for the hours, and 60 possible choices for the minutes. In total, we have 24 * 60 = 1440 choices."
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "time = &quot;?5:00&quot;",
+      "input": "\"?5:00\"",
       "expectedOutput": "2"
     },
     {
-      "input": "time = &quot;0?:0?&quot;",
+      "input": "\"0?:0?\"",
       "expectedOutput": "100"
     },
     {
-      "input": "time = &quot;??:??&quot;",
+      "input": "\"??:??\"",
       "expectedOutput": "1440"
     }
   ],
   "testCases": [
     {
-      "input": "time = &quot;?5:00&quot;",
+      "input": "\"?5:00\"",
       "expectedOutput": "2"
     },
     {
-      "input": "time = &quot;0?:0?&quot;",
+      "input": "\"0?:0?\"",
       "expectedOutput": "100"
     },
     {
-      "input": "time = &quot;??:??&quot;",
+      "input": "\"??:??\"",
       "expectedOutput": "1440"
     },
     {
-      "input": "\"?5:00\"",
-      "expectedOutput": null
+      "input": "time = \"?5:00\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"0?:0?\"",
-      "expectedOutput": null
+      "input": "time = \"0?:0?\"",
+      "expectedOutput": "100"
     },
     {
-      "input": "\"??:??\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "time = \"??:??\"",
+      "expectedOutput": "1440"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-valid-clock-times/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.574Z",
+    "collectedAt": "2026-10-19T18:40:26.195Z",
     "sourceUpdatedAt": null
   }
 }

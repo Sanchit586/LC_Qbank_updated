@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 1, k = 3, time = [[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "input": "1\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
       "expectedOutput": "6"
     },
     {
-      "input": "n = 3, k = 2, time = [[1,5,1,8],[10,10,10,10]]",
+      "input": "3\n2\n[[1,9,1,8],[10,10,10,10]]",
       "expectedOutput": "37"
     }
   ],
   "testCases": [
     {
+      "input": "1\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "37"
+    },
+    {
       "input": "n = 1, k = 3, time = [[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
       "expectedOutput": "6"
     },
     {
       "input": "n = 3, k = 2, time = [[1,5,1,8],[10,10,10,10]]",
       "expectedOutput": "37"
-    },
-    {
-      "input": "1\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2\n[[1,9,1,8],[10,10,10,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, k = 4, time = [[2,2,3,2],[2,2,4,2],[2,2,5,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/time-to-cross-a-bridge/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:58.893Z",
+    "collectedAt": "2026-10-19T18:40:31.059Z",
     "sourceUpdatedAt": null
   }
 }

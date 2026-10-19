@@ -18,18 +18,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;z&quot;",
-      "output": "&quot;z&quot;",
+      "input": "s = \"z\"",
+      "output": "\"z\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;babab&quot;",
-      "output": "&quot;abbba&quot;",
+      "input": "s = \"babab\"",
+      "output": "\"abbba\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;daccad&quot;",
-      "output": "&quot;acddca&quot;",
+      "input": "s = \"daccad\"",
+      "output": "\"acddca\"",
       "explanation": null
     }
   ],
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;z&quot;",
-      "expectedOutput": "&quot;z&quot;"
+      "input": "\"z\"",
+      "expectedOutput": "\"z\""
     },
     {
-      "input": "s = &quot;babab&quot;",
-      "expectedOutput": "&quot;abbba&quot;"
+      "input": "\"babab\"",
+      "expectedOutput": "\"abbba\""
     },
     {
-      "input": "s = &quot;daccad&quot;",
-      "expectedOutput": "&quot;acddca&quot;"
+      "input": "\"daccad\"",
+      "expectedOutput": "\"acddca\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;z&quot;",
-      "expectedOutput": "&quot;z&quot;"
-    },
-    {
-      "input": "s = &quot;babab&quot;",
-      "expectedOutput": "&quot;abbba&quot;"
-    },
-    {
-      "input": "s = &quot;daccad&quot;",
-      "expectedOutput": "&quot;acddca&quot;"
-    },
-    {
       "input": "\"z\"",
-      "expectedOutput": null
+      "expectedOutput": "\"z\""
     },
     {
       "input": "\"babab\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abbba\""
     },
     {
       "input": "\"daccad\"",
-      "expectedOutput": null
+      "expectedOutput": "\"acddca\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"z\"",
+      "expectedOutput": "\"z\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"babab\"",
+      "expectedOutput": "\"abbba\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"daccad\"",
+      "expectedOutput": "\"acddca\""
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:30.651Z",
+    "collectedAt": "2026-10-19T18:40:29.783Z",
     "sourceUpdatedAt": null
   }
 }

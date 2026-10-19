@@ -51,82 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 2",
       "expectedOutput": "2"
     },
     {
       "input": "n = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -138,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/beautiful-arrangement/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:26.673Z",
+    "collectedAt": "2026-10-19T18:40:13.464Z",
     "sourceUpdatedAt": null
   }
 }

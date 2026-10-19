@@ -19,18 +19,18 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;4321&quot;, k = 4",
-      "output": "&quot;1342&quot;",
+      "input": "num = \"4321\", k = 4",
+      "output": "\"1342\"",
       "explanation": "The steps to obtain the minimum integer from 4321 with 4 adjacent swaps are shown."
     },
     {
-      "input": "num = &quot;100&quot;, k = 1",
-      "output": "&quot;010&quot;",
-      "explanation": "It&#39;s ok for the output to have leading zeros, but the input is guaranteed not to have any leading zeros."
+      "input": "num = \"100\", k = 1",
+      "output": "\"010\"",
+      "explanation": "It's ok for the output to have leading zeros, but the input is guaranteed not to have any leading zeros."
     },
     {
-      "input": "num = &quot;36789&quot;, k = 1000",
-      "output": "&quot;36789&quot;",
+      "input": "num = \"36789\", k = 1000",
+      "output": "\"36789\"",
       "explanation": "We can keep the number without any swaps."
     }
   ],
@@ -57,62 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;4321&quot;, k = 4",
-      "expectedOutput": "&quot;1342&quot;"
+      "input": "\"4321\"\n4",
+      "expectedOutput": "\"1342\""
     },
     {
-      "input": "num = &quot;100&quot;, k = 1",
-      "expectedOutput": "&quot;010&quot;"
+      "input": "\"100\"\n1",
+      "expectedOutput": "\"010\""
     },
     {
-      "input": "num = &quot;36789&quot;, k = 1000",
-      "expectedOutput": "&quot;36789&quot;"
+      "input": "\"36789\"\n1000",
+      "expectedOutput": "\"36789\""
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;4321&quot;, k = 4",
-      "expectedOutput": "&quot;1342&quot;"
-    },
-    {
-      "input": "num = &quot;100&quot;, k = 1",
-      "expectedOutput": "&quot;010&quot;"
-    },
-    {
-      "input": "num = &quot;36789&quot;, k = 1000",
-      "expectedOutput": "&quot;36789&quot;"
-    },
-    {
       "input": "\"4321\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"1342\""
     },
     {
       "input": "\"100\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "\"010\""
     },
     {
       "input": "\"36789\"\n1000",
-      "expectedOutput": null
+      "expectedOutput": "\"36789\""
     },
     {
-      "input": "num = &quot;101&quot;, k = 2",
-      "expectedOutput": null
+      "input": "num = \"4321\", k = 4",
+      "expectedOutput": "\"1342\""
     },
     {
-      "input": "num = &quot;36790&quot;, k = 1001",
-      "expectedOutput": null
+      "input": "num = \"100\", k = 1",
+      "expectedOutput": "\"010\""
     },
     {
-      "input": "\"4322\"\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"101\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "num = &quot;4322&quot;, k = 5",
-      "expectedOutput": null
+      "input": "num = \"36789\", k = 1000",
+      "expectedOutput": "\"36789\""
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-possible-integer-after-at-most-k-adjacent-swaps-on-digits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:15.846Z",
+    "collectedAt": "2026-10-19T18:40:24.882Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;abcdeafdef&quot;",
+      "input": "word = \"abcdeafdef\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "word = &quot;bcdaaaab&quot;",
+      "input": "word = \"bcdaaaab\"",
       "output": "1",
       "explanation": null
     }
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;abcdeafdef&quot;",
+      "input": "\"abcdeafdef\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;bcdaaaab&quot;",
+      "input": "\"bcdaaaab\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;abcdeafdef&quot;",
+      "input": "\"abcdeafdef\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = &quot;bcdaaaab&quot;",
+      "input": "\"bcdaaaab\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"abcdeafdef\"",
-      "expectedOutput": null
+      "input": "word = \"abcdeafdef\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"bcdaaaab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "word = \"bcdaaaab\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-maximum-number-of-non-intersecting-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:05.119Z",
+    "collectedAt": "2026-10-19T18:40:17.842Z",
     "sourceUpdatedAt": null
   }
 }

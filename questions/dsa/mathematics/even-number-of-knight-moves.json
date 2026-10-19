@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "start = [1,1], target = [2,2]",
+      "input": "[1,1]\n[2,2]",
       "expectedOutput": "true"
     },
     {
-      "input": "start = [4,5], target = [6,6]",
+      "input": "[4,5]\n[6,6]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[1,1]\n[2,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,5]\n[6,6]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "start = [1,1], target = [2,2]",
       "expectedOutput": "true"
     },
     {
       "input": "start = [4,5], target = [6,6]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[1,1]\n[2,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,5]\n[6,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "start = [2,2], target = [3,3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/even-number-of-knight-moves/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:52.936Z",
+    "collectedAt": "2026-10-19T18:40:17.101Z",
     "sourceUpdatedAt": null
   }
 }

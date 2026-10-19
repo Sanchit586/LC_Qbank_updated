@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;i&quot;,&quot;am&quot;,&quot;leetcode&quot;,&quot;hello&quot;], target = &quot;hello&quot;, startIndex = 1",
+      "input": "words = [\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"], target = \"hello\", startIndex = 1",
       "output": "1",
-      "explanation": "We start from index 1 and can reach &quot;hello&quot; by\n- moving 3 units to the right to reach index 4.\n- moving 2 units to the left to reach index 4.\n- moving 4 units to the right to reach index 0.\n- moving 1 unit to the left to reach index 0.\nThe shortest distance to reach &quot;hello&quot; is 1."
+      "explanation": "We start from index 1 and can reach \"hello\" by\n- moving 3 units to the right to reach index 4.\n- moving 2 units to the left to reach index 4.\n- moving 4 units to the right to reach index 0.\n- moving 1 unit to the left to reach index 0.\nThe shortest distance to reach \"hello\" is 1."
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;leetcode&quot;], target = &quot;leetcode&quot;, startIndex = 0",
+      "input": "words = [\"a\",\"b\",\"leetcode\"], target = \"leetcode\", startIndex = 0",
       "output": "1",
-      "explanation": "We start from index 0 and can reach &quot;leetcode&quot; by\n- moving 2 units to the right to reach index 2.\n- moving 1 unit to the left to reach index 2.\nThe shortest distance to reach &quot;leetcode&quot; is 1."
+      "explanation": "We start from index 0 and can reach \"leetcode\" by\n- moving 2 units to the right to reach index 2.\n- moving 1 unit to the left to reach index 2.\nThe shortest distance to reach \"leetcode\" is 1."
     },
     {
-      "input": "words = [&quot;i&quot;,&quot;eat&quot;,&quot;leetcode&quot;], target = &quot;ate&quot;, startIndex = 0",
+      "input": "words = [\"i\",\"eat\",\"leetcode\"], target = \"ate\", startIndex = 0",
       "output": "-1",
-      "explanation": "Since &quot;ate&quot; does not exist in words, we return -1."
+      "explanation": "Since \"ate\" does not exist in words, we return -1."
     }
   ],
   "starterCode": {
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;i&quot;,&quot;am&quot;,&quot;leetcode&quot;,&quot;hello&quot;], target = &quot;hello&quot;, startIndex = 1",
+      "input": "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;leetcode&quot;], target = &quot;leetcode&quot;, startIndex = 0",
+      "input": "[\"a\",\"b\",\"leetcode\"]\n\"leetcode\"\n0",
       "expectedOutput": "1"
     },
     {
-      "input": "words = [&quot;i&quot;,&quot;eat&quot;,&quot;leetcode&quot;], target = &quot;ate&quot;, startIndex = 0",
+      "input": "[\"i\",\"eat\",\"leetcode\"]\n\"ate\"\n0",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;hello&quot;,&quot;i&quot;,&quot;am&quot;,&quot;leetcode&quot;,&quot;hello&quot;], target = &quot;hello&quot;, startIndex = 1",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;leetcode&quot;], target = &quot;leetcode&quot;, startIndex = 0",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "words = [&quot;i&quot;,&quot;eat&quot;,&quot;leetcode&quot;], target = &quot;ate&quot;, startIndex = 0",
-      "expectedOutput": "-1"
-    },
-    {
       "input": "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n1",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "[\"a\",\"b\",\"leetcode\"]\n\"leetcode\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "1"
     },
     {
       "input": "[\"i\",\"eat\",\"leetcode\"]\n\"ate\"\n0",
-      "expectedOutput": null
+      "expectedOutput": "-1"
     },
     {
-      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;leetcode&quot;], target = &quot;leetcode&quot;, startIndex = 1",
-      "expectedOutput": null
+      "input": "words = [\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"], target = \"hello\", startIndex = 1",
+      "expectedOutput": "1"
     },
     {
-      "input": "words = [&quot;i&quot;,&quot;eat&quot;,&quot;leetcode&quot;], target = &quot;ate&quot;, startIndex = 1",
-      "expectedOutput": null
+      "input": "words = [\"a\",\"b\",\"leetcode\"], target = \"leetcode\", startIndex = 0",
+      "expectedOutput": "1"
     },
     {
-      "input": "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[\"a\",\"b\",\"leetcode\"]\n\"leetcode\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "words = [&quot;hello&quot;,&quot;i&quot;,&quot;am&quot;,&quot;leetcode&quot;,&quot;hello&quot;], target = &quot;hello&quot;, startIndex = 2",
-      "expectedOutput": null
+      "input": "words = [\"i\",\"eat\",\"leetcode\"], target = \"ate\", startIndex = 0",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-distance-to-target-string-in-a-circular-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:26.078Z",
+    "collectedAt": "2026-10-19T18:40:28.405Z",
     "sourceUpdatedAt": null
   }
 }

@@ -64,24 +64,40 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,4],[2,3]]",
+      "input": "[[1,4],[2,3]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[1,2],[3,4]]",
+      "input": "[[1,2],[3,4]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[1,2,4],[2,3,5]]",
+      "input": "[[1,2,4],[2,3,5]]",
       "expectedOutput": "false"
     },
     {
-      "input": "grid = [[4,1,8],[3,2,6]]",
+      "input": "[[4,1,8],[3,2,6]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,4],[2,3]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2],[3,4]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,4],[2,3,5]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[4,1,8],[3,2,6]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "grid = [[1,4],[2,3]]",
       "expectedOutput": "true"
     },
@@ -96,42 +112,6 @@
     {
       "input": "grid = [[4,1,8],[3,2,6]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,2,4],[2,3,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[4,1,8],[3,2,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[5,2,9],[4,3,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,5],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,5],[3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3],[4,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,3,5],[3,4,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -146,7 +126,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/equal-sum-grid-partition-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:51.181Z",
+    "collectedAt": "2026-10-19T18:40:17.049Z",
     "sourceUpdatedAt": null
   }
 }

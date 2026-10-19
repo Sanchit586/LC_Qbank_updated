@@ -15,18 +15,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;Hello&quot;",
-      "output": "&quot;hello&quot;",
+      "input": "s = \"Hello\"",
+      "output": "\"hello\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;here&quot;",
-      "output": "&quot;here&quot;",
+      "input": "s = \"here\"",
+      "output": "\"here\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;LOVELY&quot;",
-      "output": "&quot;lovely&quot;",
+      "input": "s = \"LOVELY\"",
+      "output": "\"lovely\"",
       "explanation": null
     }
   ],
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;Hello&quot;",
-      "expectedOutput": "&quot;hello&quot;"
+      "input": "\"Hello\"",
+      "expectedOutput": "\"hello\""
     },
     {
-      "input": "s = &quot;here&quot;",
-      "expectedOutput": "&quot;here&quot;"
+      "input": "\"here\"",
+      "expectedOutput": "\"here\""
     },
     {
-      "input": "s = &quot;LOVELY&quot;",
-      "expectedOutput": "&quot;lovely&quot;"
+      "input": "\"LOVELY\"",
+      "expectedOutput": "\"lovely\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;Hello&quot;",
-      "expectedOutput": "&quot;hello&quot;"
-    },
-    {
-      "input": "s = &quot;here&quot;",
-      "expectedOutput": "&quot;here&quot;"
-    },
-    {
-      "input": "s = &quot;LOVELY&quot;",
-      "expectedOutput": "&quot;lovely&quot;"
-    },
-    {
       "input": "\"Hello\"",
-      "expectedOutput": null
+      "expectedOutput": "\"hello\""
     },
     {
       "input": "\"here\"",
-      "expectedOutput": null
+      "expectedOutput": "\"here\""
     },
     {
       "input": "\"LOVELY\"",
-      "expectedOutput": null
+      "expectedOutput": "\"lovely\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"Hello\"",
+      "expectedOutput": "\"hello\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"here\"",
+      "expectedOutput": "\"here\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"LOVELY\"",
+      "expectedOutput": "\"lovely\""
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/to-lower-case/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:58.922Z",
+    "collectedAt": "2026-10-19T18:40:31.078Z",
     "sourceUpdatedAt": null
   }
 }

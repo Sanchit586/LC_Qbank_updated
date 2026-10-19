@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "DataFrame employees\n+-------------+-----------+-----------------------+--------+\n| employee_id | name      | department            | salary |\n+-------------+-----------+-----------------------+--------+\n| 3           | Bob       | Operations            | 48675  |\n| 90          | Alice     | Sales                 | 11096  |\n| 9           | Tatiana   | Engineering           | 33805  |\n| 60          | Annabelle | InformationTechnology | 37678  |\n| 49          | Jonathan  | HumanResources        | 23793  |\n| 43          | Khaled    | Administration        | 40454  |\n+-------------+-----------+-----------------------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"employee_id\",\"name\",\"department\",\"salary\"]},\"rows\":{\"employees\":[[3,\"Bob\",\"Operations\",48675],[90,\"Alice\",\"Sales\",11096],[9,\"Tatiana\",\"Engineering\",33805],[60,\"Annabelle\",\"InformationTechnology\",37678],[49,\"Jonathan\",\"HumanResources\",23793],[43,\"Khaled\",\"Administration\",40454]]}}",
       "expectedOutput": "+-------------+---------+-------------+--------+\n| employee_id | name    | department  | salary |\n+-------------+---------+-------------+--------+\n| 3           | Bob     | Operations  | 48675  |\n| 90          | Alice   | Sales       | 11096  |\n| 9           | Tatiana | Engineering | 33805  |\n+-------------+---------+-------------+--------+"
     }
   ],
   "testCases": [
     {
-      "input": "DataFrame employees\n+-------------+-----------+-----------------------+--------+\n| employee_id | name      | department            | salary |\n+-------------+-----------+-----------------------+--------+\n| 3           | Bob       | Operations            | 48675  |\n| 90          | Alice     | Sales                 | 11096  |\n| 9           | Tatiana   | Engineering           | 33805  |\n| 60          | Annabelle | InformationTechnology | 37678  |\n| 49          | Jonathan  | HumanResources        | 23793  |\n| 43          | Khaled    | Administration        | 40454  |\n+-------------+-----------+-----------------------+--------+",
+      "input": "{\"headers\":{\"employees\":[\"employee_id\",\"name\",\"department\",\"salary\"]},\"rows\":{\"employees\":[[3,\"Bob\",\"Operations\",48675],[90,\"Alice\",\"Sales\",11096],[9,\"Tatiana\",\"Engineering\",33805],[60,\"Annabelle\",\"InformationTechnology\",37678],[49,\"Jonathan\",\"HumanResources\",23793],[43,\"Khaled\",\"Administration\",40454]]}}",
       "expectedOutput": "+-------------+---------+-------------+--------+\n| employee_id | name    | department  | salary |\n+-------------+---------+-------------+--------+\n| 3           | Bob     | Operations  | 48675  |\n| 90          | Alice   | Sales       | 11096  |\n| 9           | Tatiana | Engineering | 33805  |\n+-------------+---------+-------------+--------+"
     },
     {
-      "input": "{\"headers\":{\"employees\":[\"employee_id\",\"name\",\"department\",\"salary\"]},\"rows\":{\"employees\":[[3,\"Bob\",\"Operations\",48675],[90,\"Alice\",\"Sales\",11096],[9,\"Tatiana\",\"Engineering\",33805],[60,\"Annabelle\",\"InformationTechnology\",37678],[49,\"Jonathan\",\"HumanResources\",23793],[43,\"Khaled\",\"Administration\",40454]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "DataFrame employees\n+-------------+-----------+-----------------------+--------+\n| employee_id | name      | department            | salary |\n+-------------+-----------+-----------------------+--------+\n| 4           | Bob       | Operations            | 48676  |\n| 91          | Alice     | Sales                 | 11097  |\n| 10           | Tatiana   | Engineering           | 33806  |\n| 61          | Annabelle | InformationTechnology | 37679  |\n| 50          | Jonathan  | HumanResources        | 23794  |\n| 44          | Khaled    | Administration        | 40455  |\n+-------------+-----------+-----------------------+--------+",
-      "expectedOutput": null
+      "input": "DataFrame employees\n+-------------+-----------+-----------------------+--------+\n| employee_id | name      | department            | salary |\n+-------------+-----------+-----------------------+--------+\n| 3           | Bob       | Operations            | 48675  |\n| 90          | Alice     | Sales                 | 11096  |\n| 9           | Tatiana   | Engineering           | 33805  |\n| 60          | Annabelle | InformationTechnology | 37678  |\n| 49          | Jonathan  | HumanResources        | 23793  |\n| 43          | Khaled    | Administration        | 40454  |\n+-------------+-----------+-----------------------+--------+",
+      "expectedOutput": "+-------------+---------+-------------+--------+\n| employee_id | name    | department  | salary |\n+-------------+---------+-------------+--------+\n| 3           | Bob     | Operations  | 48675  |\n| 90          | Alice   | Sales       | 11096  |\n| 9           | Tatiana | Engineering | 33805  |\n+-------------+---------+-------------+--------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/display-the-first-three-rows/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:46.932Z",
+    "collectedAt": "2026-10-19T18:40:16.702Z",
     "sourceUpdatedAt": null
   }
 }

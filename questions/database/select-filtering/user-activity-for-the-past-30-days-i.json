@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Activity table:\n+---------+------------+---------------+---------------+\n| user_id | session_id | activity_date | activity_type |\n+---------+------------+---------------+---------------+\n| 1       | 1          | 2019-07-20    | open_session  |\n| 1       | 1          | 2019-07-20    | scroll_down   |\n| 1       | 1          | 2019-07-20    | end_session   |\n| 2       | 4          | 2019-07-20    | open_session  |\n| 2       | 4          | 2019-07-21    | send_message  |\n| 2       | 4          | 2019-07-21    | end_session   |\n| 3       | 2          | 2019-07-21    | open_session  |\n| 3       | 2          | 2019-07-21    | send_message  |\n| 3       | 2          | 2019-07-21    | end_session   |\n| 4       | 3          | 2019-06-25    | open_session  |\n| 4       | 3          | 2019-06-25    | end_session   |\n+---------+------------+---------------+---------------+",
+      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[[1,1,\"2019-07-20\",\"open_session\"],[1,1,\"2019-07-20\",\"scroll_down\"],[1,1,\"2019-07-20\",\"end_session\"],[2,4,\"2019-07-20\",\"open_session\"],[2,4,\"2019-07-21\",\"send_message\"],[2,4,\"2019-07-21\",\"end_session\"],[3,2,\"2019-07-21\",\"open_session\"],[3,2,\"2019-07-21\",\"send_message\"],[3,2,\"2019-07-21\",\"end_session\"],[4,3,\"2019-06-25\",\"open_session\"],[4,3,\"2019-06-25\",\"end_session\"]]}}",
       "expectedOutput": "+------------+--------------+ \n| day        | active_users |\n+------------+--------------+ \n| 2019-07-20 | 2            |\n| 2019-07-21 | 2            |\n+------------+--------------+"
     }
   ],
   "testCases": [
     {
-      "input": "Activity table:\n+---------+------------+---------------+---------------+\n| user_id | session_id | activity_date | activity_type |\n+---------+------------+---------------+---------------+\n| 1       | 1          | 2019-07-20    | open_session  |\n| 1       | 1          | 2019-07-20    | scroll_down   |\n| 1       | 1          | 2019-07-20    | end_session   |\n| 2       | 4          | 2019-07-20    | open_session  |\n| 2       | 4          | 2019-07-21    | send_message  |\n| 2       | 4          | 2019-07-21    | end_session   |\n| 3       | 2          | 2019-07-21    | open_session  |\n| 3       | 2          | 2019-07-21    | send_message  |\n| 3       | 2          | 2019-07-21    | end_session   |\n| 4       | 3          | 2019-06-25    | open_session  |\n| 4       | 3          | 2019-06-25    | end_session   |\n+---------+------------+---------------+---------------+",
+      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[[1,1,\"2019-07-20\",\"open_session\"],[1,1,\"2019-07-20\",\"scroll_down\"],[1,1,\"2019-07-20\",\"end_session\"],[2,4,\"2019-07-20\",\"open_session\"],[2,4,\"2019-07-21\",\"send_message\"],[2,4,\"2019-07-21\",\"end_session\"],[3,2,\"2019-07-21\",\"open_session\"],[3,2,\"2019-07-21\",\"send_message\"],[3,2,\"2019-07-21\",\"end_session\"],[4,3,\"2019-06-25\",\"open_session\"],[4,3,\"2019-06-25\",\"end_session\"]]}}",
       "expectedOutput": "+------------+--------------+ \n| day        | active_users |\n+------------+--------------+ \n| 2019-07-20 | 2            |\n| 2019-07-21 | 2            |\n+------------+--------------+"
     },
     {
-      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[[1,1,\"2019-07-20\",\"open_session\"],[1,1,\"2019-07-20\",\"scroll_down\"],[1,1,\"2019-07-20\",\"end_session\"],[2,4,\"2019-07-20\",\"open_session\"],[2,4,\"2019-07-21\",\"send_message\"],[2,4,\"2019-07-21\",\"end_session\"],[3,2,\"2019-07-21\",\"open_session\"],[3,2,\"2019-07-21\",\"send_message\"],[3,2,\"2019-07-21\",\"end_session\"],[4,3,\"2019-06-25\",\"open_session\"],[4,3,\"2019-06-25\",\"end_session\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[[1,1,\"2019-07-20\",\"open_session\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Activity\":[\"user_id\",\"session_id\",\"activity_date\",\"activity_type\"]},\"rows\":{\"Activity\":[[1,1,\"2019-07-20\",null],[1,1,\"2019-07-20\",null],[1,1,\"2019-07-20\",null],[2,4,\"2019-07-20\",null],[2,4,\"2019-07-21\",null],[2,4,\"2019-07-21\",null],[3,2,\"2019-07-21\",null],[3,2,\"2019-07-21\",null],[3,2,\"2019-07-21\",null],[4,3,\"2019-06-25\",null],[4,3,\"2019-06-25\",null]]}}",
-      "expectedOutput": null
+      "input": "Activity table:\n+---------+------------+---------------+---------------+\n| user_id | session_id | activity_date | activity_type |\n+---------+------------+---------------+---------------+\n| 1       | 1          | 2019-07-20    | open_session  |\n| 1       | 1          | 2019-07-20    | scroll_down   |\n| 1       | 1          | 2019-07-20    | end_session   |\n| 2       | 4          | 2019-07-20    | open_session  |\n| 2       | 4          | 2019-07-21    | send_message  |\n| 2       | 4          | 2019-07-21    | end_session   |\n| 3       | 2          | 2019-07-21    | open_session  |\n| 3       | 2          | 2019-07-21    | send_message  |\n| 3       | 2          | 2019-07-21    | end_session   |\n| 4       | 3          | 2019-06-25    | open_session  |\n| 4       | 3          | 2019-06-25    | end_session   |\n+---------+------------+---------------+---------------+",
+      "expectedOutput": "+------------+--------------+ \n| day        | active_users |\n+------------+--------------+ \n| 2019-07-20 | 2            |\n| 2019-07-21 | 2            |\n+------------+--------------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Activity (user_id int, session_id int, activity_date date, activity_type ENUM('open_session', 'end_session', 'scroll_down', 'send_message'))\n\nTruncate table Activity",
@@ -73,7 +61,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/user-activity-for-the-past-30-days-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.157Z",
+    "collectedAt": "2026-10-19T18:40:31.434Z",
     "sourceUpdatedAt": null
   }
 }

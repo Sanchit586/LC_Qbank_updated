@@ -50,86 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 10",
+      "input": "10",
       "expectedOutput": "[[3,7],[5,5]]"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "10",
+      "expectedOutput": "[[3,7],[5,5]]"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 10",
       "expectedOutput": "[[3,7],[5,5]]"
     },
     {
       "input": "n = 2",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "11",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -144,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/prime-pairs-with-target-sum/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:58.159Z",
+    "collectedAt": "2026-10-19T18:40:26.904Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;10#11#12&quot;",
-      "output": "&quot;jkab&quot;",
-      "explanation": "&quot;j&quot; -&gt; &quot;10#&quot; , &quot;k&quot; -&gt; &quot;11#&quot; , &quot;a&quot; -&gt; &quot;1&quot; , &quot;b&quot; -&gt; &quot;2&quot;."
+      "input": "s = \"10#11#12\"",
+      "output": "\"jkab\"",
+      "explanation": "\"j\" -> \"10#\" , \"k\" -> \"11#\" , \"a\" -> \"1\" , \"b\" -> \"2\"."
     },
     {
-      "input": "s = &quot;1326#&quot;",
-      "output": "&quot;acz&quot;",
+      "input": "s = \"1326#\"",
+      "output": "\"acz\"",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;10#11#12&quot;",
-      "expectedOutput": "&quot;jkab&quot;"
+      "input": "\"10#11#12\"",
+      "expectedOutput": "\"jkab\""
     },
     {
-      "input": "s = &quot;1326#&quot;",
-      "expectedOutput": "&quot;acz&quot;"
+      "input": "\"1326#\"",
+      "expectedOutput": "\"acz\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;10#11#12&quot;",
-      "expectedOutput": "&quot;jkab&quot;"
-    },
-    {
-      "input": "s = &quot;1326#&quot;",
-      "expectedOutput": "&quot;acz&quot;"
-    },
-    {
       "input": "\"10#11#12\"",
-      "expectedOutput": null
+      "expectedOutput": "\"jkab\""
     },
     {
       "input": "\"1326#\"",
-      "expectedOutput": null
+      "expectedOutput": "\"acz\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"10#11#12\"",
+      "expectedOutput": "\"jkab\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"1326#\"",
+      "expectedOutput": "\"acz\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/decrypt-string-from-alphabet-to-integer-mapping/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:35.772Z",
+    "collectedAt": "2026-10-19T18:40:16.239Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;string&quot;",
-      "output": "&quot;rtsng&quot;",
-      "explanation": "After typing first character, the text on the screen is &quot;s&quot;.\nAfter the second character, the text is &quot;st&quot;. \nAfter the third character, the text is &quot;str&quot;.\nSince the fourth character is an &#39;i&#39;, the text gets reversed and becomes &quot;rts&quot;.\nAfter the fifth character, the text is &quot;rtsn&quot;. \nAfter the sixth character, the text is &quot;rtsng&quot;. \nTherefore, we return &quot;rtsng&quot;."
+      "input": "s = \"string\"",
+      "output": "\"rtsng\"",
+      "explanation": "After typing first character, the text on the screen is \"s\".\nAfter the second character, the text is \"st\". \nAfter the third character, the text is \"str\".\nSince the fourth character is an 'i', the text gets reversed and becomes \"rts\".\nAfter the fifth character, the text is \"rtsn\". \nAfter the sixth character, the text is \"rtsng\". \nTherefore, we return \"rtsng\"."
     },
     {
-      "input": "s = &quot;poiinter&quot;",
-      "output": "&quot;ponter&quot;",
-      "explanation": "After the first character, the text on the screen is &quot;p&quot;.\nAfter the second character, the text is &quot;po&quot;. \nSince the third character you type is an &#39;i&#39;, the text gets reversed and becomes &quot;op&quot;. \nSince the fourth character you type is an &#39;i&#39;, the text gets reversed and becomes &quot;po&quot;.\nAfter the fifth character, the text is &quot;pon&quot;.\nAfter the sixth character, the text is &quot;pont&quot;. \nAfter the seventh character, the text is &quot;ponte&quot;. \nAfter the eighth character, the text is &quot;ponter&quot;. \nTherefore, we return &quot;ponter&quot;."
+      "input": "s = \"poiinter\"",
+      "output": "\"ponter\"",
+      "explanation": "After the first character, the text on the screen is \"p\".\nAfter the second character, the text is \"po\". \nSince the third character you type is an 'i', the text gets reversed and becomes \"op\". \nSince the fourth character you type is an 'i', the text gets reversed and becomes \"po\".\nAfter the fifth character, the text is \"pon\".\nAfter the sixth character, the text is \"pont\". \nAfter the seventh character, the text is \"ponte\". \nAfter the eighth character, the text is \"ponter\". \nTherefore, we return \"ponter\"."
     }
   ],
   "starterCode": {
@@ -50,94 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;string&quot;",
-      "expectedOutput": "&quot;rtsng&quot;"
+      "input": "\"string\"",
+      "expectedOutput": "\"rtsng\""
     },
     {
-      "input": "s = &quot;poiinter&quot;",
-      "expectedOutput": "&quot;ponter&quot;"
+      "input": "\"poiinter\"",
+      "expectedOutput": "\"ponter\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;string&quot;",
-      "expectedOutput": "&quot;rtsng&quot;"
-    },
-    {
-      "input": "s = &quot;poiinter&quot;",
-      "expectedOutput": "&quot;ponter&quot;"
-    },
-    {
       "input": "\"string\"",
-      "expectedOutput": null
+      "expectedOutput": "\"rtsng\""
     },
     {
       "input": "\"poiinter\"",
-      "expectedOutput": null
+      "expectedOutput": "\"ponter\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"string\"",
+      "expectedOutput": "\"rtsng\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"poiinter\"",
+      "expectedOutput": "\"ponter\""
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/faulty-keyboard/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.350Z",
+    "collectedAt": "2026-10-19T18:40:17.267Z",
     "sourceUpdatedAt": null
   }
 }

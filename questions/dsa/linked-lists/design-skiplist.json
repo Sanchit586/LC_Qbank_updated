@@ -14,7 +14,13 @@
     "0 <= num, target <= 2 * 104",
     "At most 5 * 104 calls will be made to search, add, and erase."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"Skiplist\", \"add\", \"add\", \"add\", \"search\", \"add\", \"search\", \"erase\", \"erase\", \"search\"]\n[[], [1], [2], [3], [0], [4], [1], [0], [1], [1]]",
+      "output": "[null, null, null, null, false, null, true, false, true, false]",
+      "explanation": "Skiplist skiplist = new Skiplist();\nskiplist.add(1);\nskiplist.add(2);\nskiplist.add(3);\nskiplist.search(0); // return False\nskiplist.add(4);\nskiplist.search(1); // return True\nskiplist.erase(0);  // return False, 0 is not in skiplist.\nskiplist.erase(1);  // return True\nskiplist.search(1); // return False, 1 has already been erased."
+    }
+  ],
   "starterCode": {
     "cpp": "class Skiplist {\npublic:\n    Skiplist() {\n        \n    }\n    \n    bool search(int target) {\n        \n    }\n    \n    void add(int num) {\n        \n    }\n    \n    bool erase(int num) {\n        \n    }\n};\n\n/**\n * Your Skiplist object will be instantiated and called as such:\n * Skiplist* obj = new Skiplist();\n * bool param_1 = obj->search(target);\n * obj->add(num);\n * bool param_3 = obj->erase(num);\n */",
     "java": "class Skiplist {\n\n    public Skiplist() {\n        \n    }\n    \n    public boolean search(int target) {\n        \n    }\n    \n    public void add(int num) {\n        \n    }\n    \n    public boolean erase(int num) {\n        \n    }\n}\n\n/**\n * Your Skiplist object will be instantiated and called as such:\n * Skiplist obj = new Skiplist();\n * boolean param_1 = obj.search(target);\n * obj.add(num);\n * boolean param_3 = obj.erase(num);\n */",
@@ -39,17 +45,17 @@
   "publicTests": [
     {
       "input": "[\"Skiplist\",\"add\",\"add\",\"add\",\"search\",\"add\",\"search\",\"erase\",\"erase\",\"search\"]\n[[],[1],[2],[3],[0],[4],[1],[0],[1],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, false, null, true, false, true, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"Skiplist\",\"add\",\"add\",\"add\",\"search\",\"add\",\"search\",\"erase\",\"erase\",\"search\"]\n[[],[1],[2],[3],[0],[4],[1],[0],[1],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, null, null, null, false, null, true, false, true, false]"
     },
     {
-      "input": "[\"Skiplist\",\"add\",\"add\",\"add\",\"search\",\"add\",\"search\",\"erase\",\"erase\",\"search\"]\n[[],[2],[3],[4],[1],[5],[2],[1],[2],[2]]",
-      "expectedOutput": null
+      "input": "[\"Skiplist\", \"add\", \"add\", \"add\", \"search\", \"add\", \"search\", \"erase\", \"erase\", \"search\"]\n[[], [1], [2], [3], [0], [4], [1], [0], [1], [1]]",
+      "expectedOutput": "[null, null, null, null, false, null, true, false, true, false]"
     }
   ],
   "sqlSchema": null,
@@ -61,7 +67,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-skiplist/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.863Z",
+    "collectedAt": "2026-10-19T18:40:16.510Z",
     "sourceUpdatedAt": null
   }
 }

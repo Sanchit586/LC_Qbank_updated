@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "arr1 = [1,2,3], arr2 = [6,5]",
+      "input": "[1,2,3]\n[6,5]",
       "expectedOutput": "0"
     },
     {
-      "input": "arr1 = [12], arr2 = [4]",
+      "input": "[12]\n[4]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3]\n[6,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[12]\n[4]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "arr1 = [1,2,3], arr2 = [6,5]",
       "expectedOutput": "0"
     },
     {
       "input": "arr1 = [12], arr2 = [4]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[1,2,3]\n[6,5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[12]\n[4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "arr2 = [2,3,4], arr3 = [7,6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-xor-sum-of-all-pairs-bitwise-and/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.116Z",
+    "collectedAt": "2026-10-19T18:40:18.841Z",
     "sourceUpdatedAt": null
   }
 }

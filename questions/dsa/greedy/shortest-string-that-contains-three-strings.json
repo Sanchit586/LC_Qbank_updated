@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "a = &quot;abc&quot;, b = &quot;bca&quot;, c = &quot;aaa&quot;",
-      "output": "&quot;aaabca&quot;",
-      "explanation": "We show that &quot;aaabca&quot; contains all the given strings: a = ans[2...4], b = ans[3..5], c = ans[0..2]. It can be shown that the length of the resulting string would be at least 6 and &quot;aaabca&quot; is the lexicographically smallest one."
+      "input": "a = \"abc\", b = \"bca\", c = \"aaa\"",
+      "output": "\"aaabca\"",
+      "explanation": "We show that \"aaabca\" contains all the given strings: a = ans[2...4], b = ans[3..5], c = ans[0..2]. It can be shown that the length of the resulting string would be at least 6 and \"aaabca\" is the lexicographically smallest one."
     },
     {
-      "input": "a = &quot;ab&quot;, b = &quot;ba&quot;, c = &quot;aba&quot;",
-      "output": "&quot;aba&quot;",
-      "explanation": "We show that the string &quot;aba&quot; contains all the given strings: a = ans[0..1], b = ans[1..2], c = ans[0..2]. Since the length of c is 3, the length of the resulting string would be at least 3. It can be shown that &quot;aba&quot; is the lexicographically smallest one."
+      "input": "a = \"ab\", b = \"ba\", c = \"aba\"",
+      "output": "\"aba\"",
+      "explanation": "We show that the string \"aba\" contains all the given strings: a = ans[0..1], b = ans[1..2], c = ans[0..2]. Since the length of c is 3, the length of the resulting string would be at least 3. It can be shown that \"aba\" is the lexicographically smallest one."
     }
   ],
   "starterCode": {
@@ -50,30 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "a = &quot;abc&quot;, b = &quot;bca&quot;, c = &quot;aaa&quot;",
-      "expectedOutput": "&quot;aaabca&quot;"
+      "input": "\"abc\"\n\"bca\"\n\"aaa\"",
+      "expectedOutput": "\"aaabca\""
     },
     {
-      "input": "a = &quot;ab&quot;, b = &quot;ba&quot;, c = &quot;aba&quot;",
-      "expectedOutput": "&quot;aba&quot;"
+      "input": "\"ab\"\n\"ba\"\n\"aba\"",
+      "expectedOutput": "\"aba\""
     }
   ],
   "testCases": [
     {
-      "input": "a = &quot;abc&quot;, b = &quot;bca&quot;, c = &quot;aaa&quot;",
-      "expectedOutput": "&quot;aaabca&quot;"
-    },
-    {
-      "input": "a = &quot;ab&quot;, b = &quot;ba&quot;, c = &quot;aba&quot;",
-      "expectedOutput": "&quot;aba&quot;"
-    },
-    {
       "input": "\"abc\"\n\"bca\"\n\"aaa\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aaabca\""
     },
     {
       "input": "\"ab\"\n\"ba\"\n\"aba\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "a = \"abc\", b = \"bca\", c = \"aaa\"",
+      "expectedOutput": "\"aaabca\""
+    },
+    {
+      "input": "a = \"ab\", b = \"ba\", c = \"aba\"",
+      "expectedOutput": "\"aba\""
     }
   ],
   "sqlSchema": null,
@@ -88,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/shortest-string-that-contains-three-strings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:28.688Z",
+    "collectedAt": "2026-10-19T18:40:29.529Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,17 +17,17 @@
   "examples": [
     {
       "input": "num = 123",
-      "output": "&quot;One Hundred Twenty Three&quot;",
+      "output": "\"One Hundred Twenty Three\"",
       "explanation": null
     },
     {
       "input": "num = 12345",
-      "output": "&quot;Twelve Thousand Three Hundred Forty Five&quot;",
+      "output": "\"Twelve Thousand Three Hundred Forty Five\"",
       "explanation": null
     },
     {
       "input": "num = 1234567",
-      "output": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;",
+      "output": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\"",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "num = 123",
-      "expectedOutput": "&quot;One Hundred Twenty Three&quot;"
+      "input": "123",
+      "expectedOutput": "\"One Hundred Twenty Three\""
     },
     {
-      "input": "num = 12345",
-      "expectedOutput": "&quot;Twelve Thousand Three Hundred Forty Five&quot;"
+      "input": "12345",
+      "expectedOutput": "\"Twelve Thousand Three Hundred Forty Five\""
     },
     {
-      "input": "num = 1234567",
-      "expectedOutput": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;"
+      "input": "1234567",
+      "expectedOutput": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
     }
   ],
   "testCases": [
     {
-      "input": "num = 123",
-      "expectedOutput": "&quot;One Hundred Twenty Three&quot;"
-    },
-    {
-      "input": "num = 12345",
-      "expectedOutput": "&quot;Twelve Thousand Three Hundred Forty Five&quot;"
-    },
-    {
-      "input": "num = 1234567",
-      "expectedOutput": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;"
-    },
-    {
       "input": "123",
-      "expectedOutput": null
+      "expectedOutput": "\"One Hundred Twenty Three\""
     },
     {
       "input": "12345",
-      "expectedOutput": null
+      "expectedOutput": "\"Twelve Thousand Three Hundred Forty Five\""
     },
     {
       "input": "1234567",
-      "expectedOutput": null
+      "expectedOutput": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
     },
     {
-      "input": "0",
-      "expectedOutput": null
+      "input": "num = 123",
+      "expectedOutput": "\"One Hundred Twenty Three\""
     },
     {
-      "input": "1",
-      "expectedOutput": null
+      "input": "num = 12345",
+      "expectedOutput": "\"Twelve Thousand Three Hundred Forty Five\""
     },
     {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
+      "input": "num = 1234567",
+      "expectedOutput": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/integer-to-english-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:32.351Z",
+    "collectedAt": "2026-10-19T18:40:19.551Z",
     "sourceUpdatedAt": null
   }
 }

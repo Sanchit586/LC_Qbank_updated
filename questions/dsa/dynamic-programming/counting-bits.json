@@ -17,12 +17,12 @@
     {
       "input": "n = 2",
       "output": "[0,1,1]",
-      "explanation": "0 --&gt; 0\n1 --&gt; 1\n2 --&gt; 10"
+      "explanation": "0 --> 0\n1 --> 1\n2 --> 10"
     },
     {
       "input": "n = 5",
       "output": "[0,1,1,2,1,2]",
-      "explanation": "0 --&gt; 0\n1 --&gt; 1\n2 --&gt; 10\n3 --&gt; 11\n4 --&gt; 100\n5 --&gt; 101"
+      "explanation": "0 --> 0\n1 --> 1\n2 --> 10\n3 --> 11\n4 --> 100\n5 --> 101"
     }
   ],
   "starterCode": {
@@ -48,82 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "[0,1,1]"
     },
     {
-      "input": "n = 5",
+      "input": "5",
       "expectedOutput": "[0,1,1,2,1,2]"
     }
   ],
   "testCases": [
     {
+      "input": "2",
+      "expectedOutput": "[0,1,1]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[0,1,1,2,1,2]"
+    },
+    {
       "input": "n = 2",
       "expectedOutput": "[0,1,1]"
     },
     {
       "input": "n = 5",
       "expectedOutput": "[0,1,1,2,1,2]"
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -139,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/counting-bits/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:28.309Z",
+    "collectedAt": "2026-10-19T18:40:15.995Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;igigee&quot;, k = 2",
+      "input": "word = \"igigee\", k = 2",
       "output": "3",
       "explanation": "The complete substrings where each character appears exactly twice and the difference between adjacent characters is at most 2 are: igigee, igigee, igigee."
     },
     {
-      "input": "word = &quot;aaabbbccc&quot;, k = 3",
+      "input": "word = \"aaabbbccc\", k = 3",
       "output": "6",
       "explanation": "The complete substrings where each character appears exactly three times and the difference between adjacent characters is at most 2 are: aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc, aaabbbccc."
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;igigee&quot;, k = 2",
+      "input": "\"igigee\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;aaabbbccc&quot;, k = 3",
+      "input": "\"aaabbbccc\"\n3",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;igigee&quot;, k = 2",
+      "input": "\"igigee\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "word = &quot;aaabbbccc&quot;, k = 3",
+      "input": "\"aaabbbccc\"\n3",
       "expectedOutput": "6"
     },
     {
-      "input": "\"igigee\"\n2",
-      "expectedOutput": null
+      "input": "word = \"igigee\", k = 2",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aaabbbccc\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;igigee&quot;, k = 3",
-      "expectedOutput": null
+      "input": "word = \"aaabbbccc\", k = 3",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-complete-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:08.668Z",
+    "collectedAt": "2026-10-19T18:40:15.030Z",
     "sourceUpdatedAt": null
   }
 }

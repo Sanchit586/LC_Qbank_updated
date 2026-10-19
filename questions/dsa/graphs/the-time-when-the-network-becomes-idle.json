@@ -27,7 +27,7 @@
     {
       "input": "edges = [[0,1],[1,2]], patience = [0,2,1]",
       "output": "8",
-      "explanation": "At (the beginning of) second 0,\n- Data server 1 sends its message (denoted 1A) to the master server.\n- Data server 2 sends its message (denoted 2A) to the master server.\n\nAt second 1,\n- Message 1A arrives at the master server. Master server processes message 1A instantly and sends a reply 1A back.\n- Server 1 has not received any reply. 1 second (1 &lt; patience[1] = 2) elapsed since this server has sent the message, therefore it does not resend the message.\n- Server 2 has not received any reply. 1 second (1 == patience[2] = 1) elapsed since this server has sent the message, therefore it resends the message (denoted 2B).\n\nAt second 2,\n- The reply 1A arrives at server 1. No more resending will occur from server 1.\n- Message 2A arrives at the master server. Master server processes message 2A instantly and sends a reply 2A back.\n- Server 2 resends the message (denoted 2C).\n...\nAt second 4,\n- The reply 2A arrives at server 2. No more resending will occur from server 2.\n...\nAt second 7, reply 2D arrives at server 2.\n\nStarting from the beginning of the second 8, there are no messages passing between servers or arriving at servers.\nThis is the time when the network becomes idle."
+      "explanation": "At (the beginning of) second 0,\n- Data server 1 sends its message (denoted 1A) to the master server.\n- Data server 2 sends its message (denoted 2A) to the master server.\n\nAt second 1,\n- Message 1A arrives at the master server. Master server processes message 1A instantly and sends a reply 1A back.\n- Server 1 has not received any reply. 1 second (1 < patience[1] = 2) elapsed since this server has sent the message, therefore it does not resend the message.\n- Server 2 has not received any reply. 1 second (1 == patience[2] = 1) elapsed since this server has sent the message, therefore it resends the message (denoted 2B).\n\nAt second 2,\n- The reply 1A arrives at server 1. No more resending will occur from server 1.\n- Message 2A arrives at the master server. Master server processes message 2A instantly and sends a reply 2A back.\n- Server 2 resends the message (denoted 2C).\n...\nAt second 4,\n- The reply 2A arrives at server 2. No more resending will occur from server 2.\n...\nAt second 7, reply 2D arrives at server 2.\n\nStarting from the beginning of the second 8, there are no messages passing between servers or arriving at servers.\nThis is the time when the network becomes idle."
     },
     {
       "input": "edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]",
@@ -58,34 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "edges = [[0,1],[1,2]], patience = [0,2,1]",
+      "input": "[[0,1],[1,2]]\n[0,2,1]",
       "expectedOutput": "8"
     },
     {
-      "input": "edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]",
+      "input": "[[0,1],[0,2],[1,2]]\n[0,10,10]",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1],[1,2]]\n[0,2,1]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[[0,1],[0,2],[1,2]]\n[0,10,10]",
+      "expectedOutput": "3"
+    },
+    {
       "input": "edges = [[0,1],[1,2]], patience = [0,2,1]",
       "expectedOutput": "8"
     },
     {
       "input": "edges = [[0,1],[0,2],[1,2]], patience = [0,10,10]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "[[0,1],[1,2]]\n[0,2,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[0,1],[0,2],[1,2]]\n[0,10,10]",
-      "expectedOutput": null
-    },
-    {
-      "input": "edges = [[1,2],[2,3]], patience = [1,3,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -101,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/the-time-when-the-network-becomes-idle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:56.851Z",
+    "collectedAt": "2026-10-19T18:40:30.970Z",
     "sourceUpdatedAt": null
   }
 }

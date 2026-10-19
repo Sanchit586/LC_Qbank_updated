@@ -20,17 +20,17 @@
   ],
   "examples": [
     {
-      "input": "colors = &quot;abaac&quot;, neededTime = [1,2,3,4,5]",
+      "input": "colors = \"abaac\", neededTime = [1,2,3,4,5]",
       "output": "3",
-      "explanation": "In the above image, &#39;a&#39; is blue, &#39;b&#39; is red, and &#39;c&#39; is green.\nBob can remove the blue balloon at index 2. This takes 3 seconds.\nThere are no longer two consecutive balloons of the same color. Total time = 3."
+      "explanation": "In the above image, 'a' is blue, 'b' is red, and 'c' is green.\nBob can remove the blue balloon at index 2. This takes 3 seconds.\nThere are no longer two consecutive balloons of the same color. Total time = 3."
     },
     {
-      "input": "colors = &quot;abc&quot;, neededTime = [1,2,3]",
+      "input": "colors = \"abc\", neededTime = [1,2,3]",
       "output": "0",
       "explanation": "The rope is already colorful. Bob does not need to remove any balloons from the rope."
     },
     {
-      "input": "colors = &quot;aabaa&quot;, neededTime = [1,2,3,4,1]",
+      "input": "colors = \"aabaa\", neededTime = [1,2,3,4,1]",
       "output": "2",
       "explanation": "Bob will remove the balloons at indices 0 and 4. Each balloons takes 1 second to remove.\nThere are no longer two consecutive balloons of the same color. Total time = 1 + 1 = 2."
     }
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "colors = &quot;abaac&quot;, neededTime = [1,2,3,4,5]",
+      "input": "\"abaac\"\n[1,2,3,4,5]",
       "expectedOutput": "3"
     },
     {
-      "input": "colors = &quot;abc&quot;, neededTime = [1,2,3]",
+      "input": "\"abc\"\n[1,2,3]",
       "expectedOutput": "0"
     },
     {
-      "input": "colors = &quot;aabaa&quot;, neededTime = [1,2,3,4,1]",
+      "input": "\"aabaa\"\n[1,2,3,4,1]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "colors = &quot;abaac&quot;, neededTime = [1,2,3,4,5]",
+      "input": "\"abaac\"\n[1,2,3,4,5]",
       "expectedOutput": "3"
     },
     {
-      "input": "colors = &quot;abc&quot;, neededTime = [1,2,3]",
+      "input": "\"abc\"\n[1,2,3]",
       "expectedOutput": "0"
     },
     {
-      "input": "colors = &quot;aabaa&quot;, neededTime = [1,2,3,4,1]",
+      "input": "\"aabaa\"\n[1,2,3,4,1]",
       "expectedOutput": "2"
     },
     {
-      "input": "\"abaac\"\n[1,2,3,4,5]",
-      "expectedOutput": null
+      "input": "colors = \"abaac\", neededTime = [1,2,3,4,5]",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"abc\"\n[1,2,3]",
-      "expectedOutput": null
+      "input": "colors = \"abc\", neededTime = [1,2,3]",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aabaa\"\n[1,2,3,4,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "colors = &quot;abc&quot;, neededTime = [2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "colors = &quot;aabaa&quot;, neededTime = [2,3,4,5,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abaac\"\n[2,3,4,5,6]",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n[2,3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "colors = &quot;abaac&quot;, neededTime = [2,3,4,5,6]",
-      "expectedOutput": null
+      "input": "colors = \"aabaa\", neededTime = [1,2,3,4,1]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -127,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-time-to-make-rope-colorful/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:22.713Z",
+    "collectedAt": "2026-10-19T18:40:25.189Z",
     "sourceUpdatedAt": null
   }
 }

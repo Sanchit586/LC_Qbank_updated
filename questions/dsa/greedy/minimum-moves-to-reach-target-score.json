@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "target = 5, maxDoubles = 0",
+      "input": "5\n0",
       "expectedOutput": "4"
     },
     {
-      "input": "target = 19, maxDoubles = 2",
+      "input": "19\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "target = 10, maxDoubles = 4",
+      "input": "10\n4",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "5\n0",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "19\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "10\n4",
+      "expectedOutput": "4"
+    },
+    {
       "input": "target = 5, maxDoubles = 0",
       "expectedOutput": "4"
     },
@@ -78,38 +90,6 @@
     {
       "input": "target = 10, maxDoubles = 4",
       "expectedOutput": "4"
-    },
-    {
-      "input": "5\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "19\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "target = 20, maxDoubles = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "target = 11, maxDoubles = 5",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "20\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "target = 6, maxDoubles = 1",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -124,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-reach-target-score/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:05.301Z",
+    "collectedAt": "2026-10-19T18:40:24.164Z",
     "sourceUpdatedAt": null
   }
 }

@@ -15,13 +15,13 @@
   ],
   "examples": [
     {
-      "input": "fn = (a,b,c) =&gt; (a + b + c), calls = [[1,2,3],[2,3,6]]",
-      "output": "[{&quot;calls&quot;:1,&quot;value&quot;:6}]",
+      "input": "fn = (a,b,c) => (a + b + c), calls = [[1,2,3],[2,3,6]]",
+      "output": "[{\"calls\":1,\"value\":6}]",
       "explanation": "const onceFn = once(fn);\nonceFn(1, 2, 3); // 6\nonceFn(2, 3, 6); // undefined, fn was not called"
     },
     {
-      "input": "fn = (a,b,c) =&gt; (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]",
-      "output": "[{&quot;calls&quot;:1,&quot;value&quot;:140}]",
+      "input": "fn = (a,b,c) => (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]",
+      "output": "[{\"calls\":1,\"value\":140}]",
       "explanation": "const onceFn = once(fn);\nonceFn(5, 7, 4); // 140\nonceFn(2, 3, 6); // undefined, fn was not called\nonceFn(4, 6, 8); // undefined, fn was not called"
     }
   ],
@@ -31,34 +31,30 @@
   },
   "publicTests": [
     {
-      "input": "fn = (a,b,c) =&gt; (a + b + c), calls = [[1,2,3],[2,3,6]]",
-      "expectedOutput": "[{&quot;calls&quot;:1,&quot;value&quot;:6}]"
+      "input": "(a,b,c) => (a + b + c)\n[[1,2,3],[2,3,6]]",
+      "expectedOutput": "[{\"calls\":1,\"value\":6}]"
     },
     {
-      "input": "fn = (a,b,c) =&gt; (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]",
-      "expectedOutput": "[{&quot;calls&quot;:1,&quot;value&quot;:140}]"
+      "input": "(a,b,c) => (a * b * c)\n[[5,7,4],[2,3,6],[4,6,8]]",
+      "expectedOutput": "[{\"calls\":1,\"value\":140}]"
     }
   ],
   "testCases": [
     {
-      "input": "fn = (a,b,c) =&gt; (a + b + c), calls = [[1,2,3],[2,3,6]]",
-      "expectedOutput": "[{&quot;calls&quot;:1,&quot;value&quot;:6}]"
-    },
-    {
-      "input": "fn = (a,b,c) =&gt; (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]",
-      "expectedOutput": "[{&quot;calls&quot;:1,&quot;value&quot;:140}]"
-    },
-    {
       "input": "(a,b,c) => (a + b + c)\n[[1,2,3],[2,3,6]]",
-      "expectedOutput": null
+      "expectedOutput": "[{\"calls\":1,\"value\":6}]"
     },
     {
       "input": "(a,b,c) => (a * b * c)\n[[5,7,4],[2,3,6],[4,6,8]]",
-      "expectedOutput": null
+      "expectedOutput": "[{\"calls\":1,\"value\":140}]"
     },
     {
-      "input": "fn = (a,b,c) =&gt; (a + b + c), calls = [[2,3,4],[3,4,7]]",
-      "expectedOutput": null
+      "input": "fn = (a,b,c) => (a + b + c), calls = [[1,2,3],[2,3,6]]",
+      "expectedOutput": "[{\"calls\":1,\"value\":6}]"
+    },
+    {
+      "input": "fn = (a,b,c) => (a * b * c), calls = [[5,7,4],[2,3,6],[4,6,8]]",
+      "expectedOutput": "[{\"calls\":1,\"value\":140}]"
     }
   ],
   "sqlSchema": null,
@@ -70,7 +66,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/allow-one-function-call/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:18.214Z",
+    "collectedAt": "2026-10-19T18:40:13.007Z",
     "sourceUpdatedAt": null
   }
 }

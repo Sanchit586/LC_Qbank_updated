@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,1,1],[1,0,1],[1,1,1]]",
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "9"
     },
     {
-      "input": "grid = [[1,1,0,0]]",
+      "input": "[[1,1,0,0]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[[1,1,0,0]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "grid = [[1,1,1],[1,0,1],[1,1,1]]",
       "expectedOutput": "9"
     },
     {
       "input": "grid = [[1,1,0,0]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "[[1,1,1],[1,0,1],[1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,0,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2,2],[2,1,2],[2,2,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-1-bordered-square/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:40.371Z",
+    "collectedAt": "2026-10-19T18:40:19.888Z",
     "sourceUpdatedAt": null
   }
 }

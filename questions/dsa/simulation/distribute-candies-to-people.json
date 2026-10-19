@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "candies = 7, num_people = 4",
+      "input": "7\n4",
       "expectedOutput": "[1,2,3,1]"
     },
     {
-      "input": "candies = 10, num_people = 3",
+      "input": "10\n3",
       "expectedOutput": "[5,2,3]"
     }
   ],
   "testCases": [
     {
+      "input": "7\n4",
+      "expectedOutput": "[1,2,3,1]"
+    },
+    {
+      "input": "10\n3",
+      "expectedOutput": "[5,2,3]"
+    },
+    {
       "input": "candies = 7, num_people = 4",
       "expectedOutput": "[1,2,3,1]"
     },
     {
       "input": "candies = 10, num_people = 3",
       "expectedOutput": "[5,2,3]"
-    },
-    {
-      "input": "7\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "candies = 8, num_people = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/distribute-candies-to-people/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:47.924Z",
+    "collectedAt": "2026-10-19T18:40:16.753Z",
     "sourceUpdatedAt": null
   }
 }

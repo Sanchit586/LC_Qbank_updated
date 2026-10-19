@@ -18,7 +18,7 @@
     {
       "input": "nums = [2,3,6,1,9,2], x = 5",
       "output": "13",
-      "explanation": "We can visit the following positions in the array: 0 -&gt; 2 -&gt; 3 -&gt; 4.\nThe corresponding values are 2, 6, 1 and 9. Since the integers 6 and 1 have different parities, the move 2 -&gt; 3 will make you lose a score of x = 5.\nThe total score will be: 2 + 6 + 1 + 9 - 5 = 13."
+      "explanation": "We can visit the following positions in the array: 0 -> 2 -> 3 -> 4.\nThe corresponding values are 2, 6, 1 and 9. Since the integers 6 and 1 have different parities, the move 2 -> 3 will make you lose a score of x = 5.\nThe total score will be: 2 + 6 + 1 + 9 - 5 = 13."
     },
     {
       "input": "nums = [2,4,6,8], x = 3",
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [2,3,6,1,9,2], x = 5",
+      "input": "[2,3,6,1,9,2]\n5",
       "expectedOutput": "13"
     },
     {
-      "input": "nums = [2,4,6,8], x = 3",
+      "input": "[2,4,6,8]\n3",
       "expectedOutput": "20"
     }
   ],
   "testCases": [
     {
+      "input": "[2,3,6,1,9,2]\n5",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[2,4,6,8]\n3",
+      "expectedOutput": "20"
+    },
+    {
       "input": "nums = [2,3,6,1,9,2], x = 5",
       "expectedOutput": "13"
     },
     {
       "input": "nums = [2,4,6,8], x = 3",
       "expectedOutput": "20"
-    },
-    {
-      "input": "[2,3,6,1,9,2]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/visit-array-positions-to-maximize-score/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:12.447Z",
+    "collectedAt": "2026-10-19T18:40:31.601Z",
     "sourceUpdatedAt": null
   }
 }

@@ -12,12 +12,12 @@
   ],
   "examples": [
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(2), 20)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(5), 60))",
+      "input": "promise1 = new Promise(resolve => setTimeout(() => resolve(2), 20)), \npromise2 = new Promise(resolve => setTimeout(() => resolve(5), 60))",
       "output": "7",
       "explanation": "The two input promises resolve with the values of 2 and 5 respectively. The returned promise should resolve with a value of 2 + 5 = 7. The time the returned promise resolves is not judged for this problem."
     },
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(10), 50)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(-12), 30))",
+      "input": "promise1 = new Promise(resolve => setTimeout(() => resolve(10), 50)), \npromise2 = new Promise(resolve => setTimeout(() => resolve(-12), 30))",
       "output": "-2",
       "explanation": "The two input promises resolve with the values of 10 and -12 respectively. The returned promise should resolve with a value of 10 + -12 = -2."
     }
@@ -28,34 +28,30 @@
   },
   "publicTests": [
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(2), 20)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(5), 60))",
+      "input": "new Promise(resolve => setTimeout(() => resolve(2), 20))\nnew Promise(resolve => setTimeout(() => resolve(5), 60))",
       "expectedOutput": "7"
     },
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(10), 50)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(-12), 30))",
+      "input": "new Promise(resolve => setTimeout(() => resolve(10), 50))\nnew Promise(resolve => setTimeout(() => resolve(-12), 30))",
       "expectedOutput": "-2"
     }
   ],
   "testCases": [
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(2), 20)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(5), 60))",
+      "input": "new Promise(resolve => setTimeout(() => resolve(2), 20))\nnew Promise(resolve => setTimeout(() => resolve(5), 60))",
       "expectedOutput": "7"
     },
     {
-      "input": "promise1 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(10), 50)), \npromise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(-12), 30))",
+      "input": "new Promise(resolve => setTimeout(() => resolve(10), 50))\nnew Promise(resolve => setTimeout(() => resolve(-12), 30))",
       "expectedOutput": "-2"
     },
     {
-      "input": "new Promise(resolve => setTimeout(() => resolve(2), 20))\nnew Promise(resolve => setTimeout(() => resolve(5), 60))",
-      "expectedOutput": null
+      "input": "promise1 = new Promise(resolve => setTimeout(() => resolve(2), 20)), \npromise2 = new Promise(resolve => setTimeout(() => resolve(5), 60))",
+      "expectedOutput": "7"
     },
     {
-      "input": "new Promise(resolve => setTimeout(() => resolve(10), 50))\nnew Promise(resolve => setTimeout(() => resolve(-12), 30))",
-      "expectedOutput": null
-    },
-    {
-      "input": "promise2 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(3), 21)), \npromise3 = new Promise(resolve =&gt; setTimeout(() =&gt; resolve(6), 61))",
-      "expectedOutput": null
+      "input": "promise1 = new Promise(resolve => setTimeout(() => resolve(10), 50)), \npromise2 = new Promise(resolve => setTimeout(() => resolve(-12), 30))",
+      "expectedOutput": "-2"
     }
   ],
   "sqlSchema": null,
@@ -67,7 +63,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/add-two-promises/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:04:55.539Z",
+    "collectedAt": "2026-10-19T18:40:12.861Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,12 +18,12 @@
   ],
   "examples": [
     {
-      "input": "blocks = &quot;WBBWWBBWBW&quot;, k = 7",
+      "input": "blocks = \"WBBWWBBWBW\", k = 7",
       "output": "3",
-      "explanation": "One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks\nso that blocks = &quot;BBBBBBBWBW&quot;. \nIt can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations.\nTherefore, we return 3."
+      "explanation": "One way to achieve 7 consecutive black blocks is to recolor the 0th, 3rd, and 4th blocks\nso that blocks = \"BBBBBBBWBW\". \nIt can be shown that there is no way to achieve 7 consecutive black blocks in less than 3 operations.\nTherefore, we return 3."
     },
     {
-      "input": "blocks = &quot;WBWBBBW&quot;, k = 2",
+      "input": "blocks = \"WBWBBBW\", k = 2",
       "output": "0",
       "explanation": "No changes need to be made, since 2 consecutive black blocks already exist.\nTherefore, we return 0."
     }
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "blocks = &quot;WBBWWBBWBW&quot;, k = 7",
+      "input": "\"WBBWWBBWBW\"\n7",
       "expectedOutput": "3"
     },
     {
-      "input": "blocks = &quot;WBWBBBW&quot;, k = 2",
+      "input": "\"WBWBBBW\"\n2",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "blocks = &quot;WBBWWBBWBW&quot;, k = 7",
+      "input": "\"WBBWWBBWBW\"\n7",
       "expectedOutput": "3"
     },
     {
-      "input": "blocks = &quot;WBWBBBW&quot;, k = 2",
+      "input": "\"WBWBBBW\"\n2",
       "expectedOutput": "0"
     },
     {
-      "input": "\"WBBWWBBWBW\"\n7",
-      "expectedOutput": null
+      "input": "blocks = \"WBBWWBBWBW\", k = 7",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"WBWBBBW\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "blocks = &quot;WBBWWBBWBW&quot;, k = 8",
-      "expectedOutput": null
+      "input": "blocks = \"WBWBBBW\", k = 2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-recolors-to-get-k-consecutive-black-blocks/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:16.597Z",
+    "collectedAt": "2026-10-19T18:40:24.907Z",
     "sourceUpdatedAt": null
   }
 }

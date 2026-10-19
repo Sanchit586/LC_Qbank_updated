@@ -16,7 +16,13 @@
     "carType is 1, 2, or 3",
     "At most 1000 calls will be made to addCar"
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"ParkingSystem\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]\n[[1, 1, 0], [1], [2], [3], [1]]",
+      "output": "[null, true, true, false, false]",
+      "explanation": "ParkingSystem parkingSystem = new ParkingSystem(1, 1, 0);\nparkingSystem.addCar(1); // return true because there is 1 available slot for a big car\nparkingSystem.addCar(2); // return true because there is 1 available slot for a medium car\nparkingSystem.addCar(3); // return false because there is no available slot for a small car\nparkingSystem.addCar(1); // return false because there is no available slot for a big car. It is already occupied."
+    }
+  ],
   "starterCode": {
     "cpp": "class ParkingSystem {\npublic:\n    ParkingSystem(int big, int medium, int small) {\n        \n    }\n    \n    bool addCar(int carType) {\n        \n    }\n};\n\n/**\n * Your ParkingSystem object will be instantiated and called as such:\n * ParkingSystem* obj = new ParkingSystem(big, medium, small);\n * bool param_1 = obj->addCar(carType);\n */",
     "java": "class ParkingSystem {\n\n    public ParkingSystem(int big, int medium, int small) {\n        \n    }\n    \n    public boolean addCar(int carType) {\n        \n    }\n}\n\n/**\n * Your ParkingSystem object will be instantiated and called as such:\n * ParkingSystem obj = new ParkingSystem(big, medium, small);\n * boolean param_1 = obj.addCar(carType);\n */",
@@ -41,17 +47,17 @@
   "publicTests": [
     {
       "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,0],[1],[2],[3],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, false, false]"
     }
   ],
   "testCases": [
     {
       "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[1,1,0],[1],[2],[3],[1]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, true, true, false, false]"
     },
     {
-      "input": "[\"ParkingSystem\",\"addCar\",\"addCar\",\"addCar\",\"addCar\"]\n[[2,2,1],[2],[3],[4],[2]]",
-      "expectedOutput": null
+      "input": "[\"ParkingSystem\", \"addCar\", \"addCar\", \"addCar\", \"addCar\"]\n[[1, 1, 0], [1], [2], [3], [1]]",
+      "expectedOutput": "[null, true, true, false, false]"
     }
   ],
   "sqlSchema": null,
@@ -65,7 +71,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/design-parking-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:40.689Z",
+    "collectedAt": "2026-10-19T18:40:16.499Z",
     "sourceUpdatedAt": null
   }
 }

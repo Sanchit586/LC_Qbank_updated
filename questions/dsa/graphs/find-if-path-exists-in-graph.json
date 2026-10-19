@@ -26,7 +26,7 @@
     {
       "input": "n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2",
       "output": "true",
-      "explanation": "There are two paths from vertex 0 to vertex 2:\n- 0 &rarr; 1 &rarr; 2\n- 0 &rarr; 2"
+      "explanation": "There are two paths from vertex 0 to vertex 2:\n- 0 → 1 → 2\n- 0 → 2"
     },
     {
       "input": "n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5",
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2",
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5",
+      "input": "6\n[[0,1],[0,2],[3,5],[5,4],[4,3]]\n0\n5",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "6\n[[0,1],[0,2],[3,5],[5,4],[4,3]]\n0\n5",
+      "expectedOutput": "false"
+    },
+    {
       "input": "n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2",
       "expectedOutput": "true"
     },
     {
       "input": "n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5",
       "expectedOutput": "false"
-    },
-    {
-      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[0,1],[0,2],[3,5],[5,4],[4,3]]\n0\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, edges = [[1,2],[2,3],[3,1]], source = 1, destination = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -96,7 +92,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-if-path-exists-in-graph/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:04.475Z",
+    "collectedAt": "2026-10-19T18:40:17.738Z",
     "sourceUpdatedAt": null
   }
 }

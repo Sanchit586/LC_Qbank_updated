@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "+----+---------+----------+-----+\n| id | first   | last     | age |\n+----+---------+----------+-----+\n| 1  | Mason   | King     | 6   |\n| 2  | Ava     | Wright   | 7   |\n| 3  | Taylor  | Hall     | 16  |\n| 4  | Georgia | Thompson | 18  |\n| 5  | Thomas  | Moore    | 10  |\n+----+---------+----------+-----+",
+      "input": "{\"headers\":{\"students\":[\"id\",\"first\",\"last\",\"age\"]},\"rows\":{\"employees\":[],\"students\":[[1,\"Mason\",\"King\",6],[2,\"Ava\",\"Wright\",7],[3,\"Taylor\",\"Hall\",16],[4,\"Georgia\",\"Thompson\",18],[5,\"Thomas\",\"Moore\",10]]}}",
       "expectedOutput": "+------------+------------+-----------+--------------+\n| student_id | first_name | last_name | age_in_years |\n+------------+------------+-----------+--------------+\n| 1          | Mason      | King      | 6            |\n| 2          | Ava        | Wright    | 7            |\n| 3          | Taylor     | Hall      | 16           |\n| 4          | Georgia    | Thompson  | 18           |\n| 5          | Thomas     | Moore     | 10           |\n+------------+------------+-----------+--------------+"
     }
   ],
   "testCases": [
     {
-      "input": "+----+---------+----------+-----+\n| id | first   | last     | age |\n+----+---------+----------+-----+\n| 1  | Mason   | King     | 6   |\n| 2  | Ava     | Wright   | 7   |\n| 3  | Taylor  | Hall     | 16  |\n| 4  | Georgia | Thompson | 18  |\n| 5  | Thomas  | Moore    | 10  |\n+----+---------+----------+-----+",
+      "input": "{\"headers\":{\"students\":[\"id\",\"first\",\"last\",\"age\"]},\"rows\":{\"employees\":[],\"students\":[[1,\"Mason\",\"King\",6],[2,\"Ava\",\"Wright\",7],[3,\"Taylor\",\"Hall\",16],[4,\"Georgia\",\"Thompson\",18],[5,\"Thomas\",\"Moore\",10]]}}",
       "expectedOutput": "+------------+------------+-----------+--------------+\n| student_id | first_name | last_name | age_in_years |\n+------------+------------+-----------+--------------+\n| 1          | Mason      | King      | 6            |\n| 2          | Ava        | Wright    | 7            |\n| 3          | Taylor     | Hall      | 16           |\n| 4          | Georgia    | Thompson  | 18           |\n| 5          | Thomas     | Moore     | 10           |\n+------------+------------+-----------+--------------+"
     },
     {
-      "input": "{\"headers\":{\"students\":[\"id\",\"first\",\"last\",\"age\"]},\"rows\":{\"employees\":[],\"students\":[[1,\"Mason\",\"King\",6],[2,\"Ava\",\"Wright\",7],[3,\"Taylor\",\"Hall\",16],[4,\"Georgia\",\"Thompson\",18],[5,\"Thomas\",\"Moore\",10]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "+----+---------+----------+-----+\n| id | first   | last     | age |\n+----+---------+----------+-----+\n| 2  | Mason   | King     | 7   |\n| 3  | Ava     | Wright   | 8   |\n| 4  | Taylor  | Hall     | 17  |\n| 5  | Georgia | Thompson | 19  |\n| 6  | Thomas  | Moore    | 11  |\n+----+---------+----------+-----+",
-      "expectedOutput": null
+      "input": "+----+---------+----------+-----+\n| id | first   | last     | age |\n+----+---------+----------+-----+\n| 1  | Mason   | King     | 6   |\n| 2  | Ava     | Wright   | 7   |\n| 3  | Taylor  | Hall     | 16  |\n| 4  | Georgia | Thompson | 18  |\n| 5  | Thomas  | Moore    | 10  |\n+----+---------+----------+-----+",
+      "expectedOutput": "+------------+------------+-----------+--------------+\n| student_id | first_name | last_name | age_in_years |\n+------------+------------+-----------+--------------+\n| 1          | Mason      | King      | 6            |\n| 2          | Ava        | Wright    | 7            |\n| 3          | Taylor     | Hall      | 16           |\n| 4          | Georgia    | Thompson  | 18           |\n| 5          | Thomas     | Moore     | 10           |\n+------------+------------+-----------+--------------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/rename-columns/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.050Z",
+    "collectedAt": "2026-10-19T18:40:27.636Z",
     "sourceUpdatedAt": null
   }
 }

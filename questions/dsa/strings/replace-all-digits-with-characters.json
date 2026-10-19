@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a1c1e1&quot;",
-      "output": "&quot;abcdef&quot;",
-      "explanation": "The digits are replaced as follows:\n- s[1] -&gt; shift(&#39;a&#39;,1) = &#39;b&#39;\n- s[3] -&gt; shift(&#39;c&#39;,1) = &#39;d&#39;\n- s[5] -&gt; shift(&#39;e&#39;,1) = &#39;f&#39;"
+      "input": "s = \"a1c1e1\"",
+      "output": "\"abcdef\"",
+      "explanation": "The digits are replaced as follows:\n- s[1] -> shift('a',1) = 'b'\n- s[3] -> shift('c',1) = 'd'\n- s[5] -> shift('e',1) = 'f'"
     },
     {
-      "input": "s = &quot;a1b2c3d4e&quot;",
-      "output": "&quot;abbdcfdhe&quot;",
-      "explanation": "The digits are replaced as follows:\n- s[1] -&gt; shift(&#39;a&#39;,1) = &#39;b&#39;\n- s[3] -&gt; shift(&#39;b&#39;,2) = &#39;d&#39;\n- s[5] -&gt; shift(&#39;c&#39;,3) = &#39;f&#39;\n- s[7] -&gt; shift(&#39;d&#39;,4) = &#39;h&#39;"
+      "input": "s = \"a1b2c3d4e\"",
+      "output": "\"abbdcfdhe\"",
+      "explanation": "The digits are replaced as follows:\n- s[1] -> shift('a',1) = 'b'\n- s[3] -> shift('b',2) = 'd'\n- s[5] -> shift('c',3) = 'f'\n- s[7] -> shift('d',4) = 'h'"
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a1c1e1&quot;",
-      "expectedOutput": "&quot;abcdef&quot;"
+      "input": "\"a1c1e1\"",
+      "expectedOutput": "\"abcdef\""
     },
     {
-      "input": "s = &quot;a1b2c3d4e&quot;",
-      "expectedOutput": "&quot;abbdcfdhe&quot;"
+      "input": "\"a1b2c3d4e\"",
+      "expectedOutput": "\"abbdcfdhe\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a1c1e1&quot;",
-      "expectedOutput": "&quot;abcdef&quot;"
-    },
-    {
-      "input": "s = &quot;a1b2c3d4e&quot;",
-      "expectedOutput": "&quot;abbdcfdhe&quot;"
-    },
-    {
       "input": "\"a1c1e1\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abcdef\""
     },
     {
       "input": "\"a1b2c3d4e\"",
-      "expectedOutput": null
+      "expectedOutput": "\"abbdcfdhe\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"a1c1e1\"",
+      "expectedOutput": "\"abcdef\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"a1b2c3d4e\"",
+      "expectedOutput": "\"abbdcfdhe\""
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/replace-all-digits-with-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:10.481Z",
+    "collectedAt": "2026-10-19T18:40:27.685Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;yy&quot;",
+      "input": "s1 = \"xx\", s2 = \"yy\"",
       "output": "1",
-      "explanation": "Swap s1[0] and s2[1], s1 = &quot;yx&quot;, s2 = &quot;yx&quot;."
+      "explanation": "Swap s1[0] and s2[1], s1 = \"yx\", s2 = \"yx\"."
     },
     {
-      "input": "s1 = &quot;xy&quot;, s2 = &quot;yx&quot;",
+      "input": "s1 = \"xy\", s2 = \"yx\"",
       "output": "2",
-      "explanation": "Swap s1[0] and s2[0], s1 = &quot;yy&quot;, s2 = &quot;xx&quot;.\nSwap s1[0] and s2[1], s1 = &quot;xy&quot;, s2 = &quot;xy&quot;.\nNote that you cannot swap s1[0] and s1[1] to make s1 equal to &quot;yx&quot;, cause we can only swap chars in different strings."
+      "explanation": "Swap s1[0] and s2[0], s1 = \"yy\", s2 = \"xx\".\nSwap s1[0] and s2[1], s1 = \"xy\", s2 = \"xy\".\nNote that you cannot swap s1[0] and s1[1] to make s1 equal to \"yx\", cause we can only swap chars in different strings."
     },
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;xy&quot;",
+      "input": "s1 = \"xx\", s2 = \"xy\"",
       "output": "-1",
       "explanation": null
     }
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;yy&quot;",
+      "input": "\"xx\"\n\"yy\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s1 = &quot;xy&quot;, s2 = &quot;yx&quot;",
+      "input": "\"xy\"\n\"yx\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;xy&quot;",
+      "input": "\"xx\"\n\"xy\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;yy&quot;",
+      "input": "\"xx\"\n\"yy\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s1 = &quot;xy&quot;, s2 = &quot;yx&quot;",
+      "input": "\"xy\"\n\"yx\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s1 = &quot;xx&quot;, s2 = &quot;xy&quot;",
+      "input": "\"xx\"\n\"xy\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"xx\"\n\"yy\"",
-      "expectedOutput": null
+      "input": "s1 = \"xx\", s2 = \"yy\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"xy\"\n\"yx\"",
-      "expectedOutput": null
+      "input": "s1 = \"xy\", s2 = \"yx\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"xx\"\n\"xy\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s1 = \"xx\", s2 = \"xy\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +107,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-swaps-to-make-strings-equal/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:19.917Z",
+    "collectedAt": "2026-10-19T18:40:25.107Z",
     "sourceUpdatedAt": null
   }
 }

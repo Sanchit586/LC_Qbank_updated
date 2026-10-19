@@ -19,14 +19,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;aaabb&quot;, k = 3",
+      "input": "s = \"aaabb\", k = 3",
       "output": "3",
-      "explanation": "The longest substring is &quot;aaa&quot;, as &#39;a&#39; is repeated 3 times."
+      "explanation": "The longest substring is \"aaa\", as 'a' is repeated 3 times."
     },
     {
-      "input": "s = &quot;ababbc&quot;, k = 2",
+      "input": "s = \"ababbc\", k = 2",
       "output": "5",
-      "explanation": "The longest substring is &quot;ababb&quot;, as &#39;a&#39; is repeated 2 times and &#39;b&#39; is repeated 3 times."
+      "explanation": "The longest substring is \"ababb\", as 'a' is repeated 2 times and 'b' is repeated 3 times."
     }
   ],
   "starterCode": {
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;aaabb&quot;, k = 3",
+      "input": "\"aaabb\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;ababbc&quot;, k = 2",
+      "input": "\"ababbc\"\n2",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;aaabb&quot;, k = 3",
+      "input": "\"aaabb\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;ababbc&quot;, k = 2",
+      "input": "\"ababbc\"\n2",
       "expectedOutput": "5"
     },
     {
-      "input": "\"aaabb\"\n3",
-      "expectedOutput": null
+      "input": "s = \"aaabb\", k = 3",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"ababbc\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;aaabb&quot;, k = 4",
-      "expectedOutput": null
+      "input": "s = \"ababbc\", k = 2",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-substring-with-at-least-k-repeating-characters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:56.116Z",
+    "collectedAt": "2026-10-19T18:40:20.713Z",
     "sourceUpdatedAt": null
   }
 }

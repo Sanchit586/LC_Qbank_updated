@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "l = 1, r = 9, k = 3",
+      "input": "1\n9\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "l = 8, r = 30, k = 2",
+      "input": "8\n30\n2",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
+      "input": "1\n9\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "8\n30\n2",
+      "expectedOutput": "3"
+    },
+    {
       "input": "l = 1, r = 9, k = 3",
       "expectedOutput": "2"
     },
     {
       "input": "l = 8, r = 30, k = 2",
       "expectedOutput": "3"
-    },
-    {
-      "input": "1\n9\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n30\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 2, r = 10, k = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-k-th-roots-in-a-range/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:12.725Z",
+    "collectedAt": "2026-10-19T18:40:15.245Z",
     "sourceUpdatedAt": null
   }
 }

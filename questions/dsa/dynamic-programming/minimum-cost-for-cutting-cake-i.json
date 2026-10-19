@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]",
+      "input": "3\n2\n[1,3]\n[5]",
       "expectedOutput": "13"
     },
     {
-      "input": "m = 2, n = 2, horizontalCut = [7], verticalCut = [4]",
+      "input": "2\n2\n[7]\n[4]",
       "expectedOutput": "15"
     }
   ],
   "testCases": [
     {
+      "input": "3\n2\n[1,3]\n[5]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "2\n2\n[7]\n[4]",
+      "expectedOutput": "15"
+    },
+    {
       "input": "m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]",
       "expectedOutput": "13"
     },
     {
       "input": "m = 2, n = 2, horizontalCut = [7], verticalCut = [4]",
       "expectedOutput": "15"
-    },
-    {
-      "input": "3\n2\n[1,3]\n[5]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2\n[7]\n[4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "m = 4, n = 3, horizontalCut = [2,4], verticalCut = [6]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-for-cutting-cake-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:46.911Z",
+    "collectedAt": "2026-10-19T18:40:23.510Z",
     "sourceUpdatedAt": null
   }
 }

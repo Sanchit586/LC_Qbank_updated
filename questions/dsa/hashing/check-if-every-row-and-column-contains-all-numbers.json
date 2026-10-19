@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix = [[1,2,3],[3,1,2],[2,3,1]]",
+      "input": "[[1,2,3],[3,1,2],[2,3,1]]",
       "expectedOutput": "true"
     },
     {
-      "input": "matrix = [[1,1,1],[1,2,3],[1,2,3]]",
+      "input": "[[1,1,1],[1,2,3],[1,2,3]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[3,1,2],[2,3,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,1,1],[1,2,3],[1,2,3]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "matrix = [[1,2,3],[3,1,2],[2,3,1]]",
       "expectedOutput": "true"
     },
     {
       "input": "matrix = [[1,1,1],[1,2,3],[1,2,3]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,2,3],[3,1,2],[2,3,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1,1],[1,2,3],[1,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix = [[2,3,4],[4,2,3],[3,4,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-every-row-and-column-contains-all-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:51.570Z",
+    "collectedAt": "2026-10-19T18:40:14.146Z",
     "sourceUpdatedAt": null
   }
 }

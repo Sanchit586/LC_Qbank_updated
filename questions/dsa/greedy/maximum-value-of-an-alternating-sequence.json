@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, s = 3, m = 5",
+      "input": "4\n3\n5",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 2, s = 4, m = 3",
+      "input": "2\n4\n3",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "4\n3\n5",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "2\n4\n3",
+      "expectedOutput": "7"
+    },
+    {
       "input": "n = 4, s = 3, m = 5",
       "expectedOutput": "12"
     },
     {
       "input": "n = 2, s = 4, m = 3",
       "expectedOutput": "7"
-    },
-    {
-      "input": "4\n3\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, s = 4, m = 6",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-value-of-an-alternating-sequence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:35.891Z",
+    "collectedAt": "2026-10-19T18:40:22.919Z",
     "sourceUpdatedAt": null
   }
 }

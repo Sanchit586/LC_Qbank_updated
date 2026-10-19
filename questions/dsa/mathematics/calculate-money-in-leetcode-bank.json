@@ -16,17 +16,17 @@
     {
       "input": "n = 4",
       "output": "10",
-      "explanation": "&nbsp;After the 4th day, the total is 1 + 2 + 3 + 4 = 10."
+      "explanation": " After the 4th day, the total is 1 + 2 + 3 + 4 = 10."
     },
     {
       "input": "n = 10",
       "output": "37",
-      "explanation": "&nbsp;After the 10th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4) = 37. Notice that on the 2nd Monday, Hercy only puts in $2."
+      "explanation": " After the 10th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4) = 37. Notice that on the 2nd Monday, Hercy only puts in $2."
     },
     {
       "input": "n = 20",
       "output": "96",
-      "explanation": "&nbsp;After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4 + 5 + 6 + 7 + 8) + (3 + 4 + 5 + 6 + 7 + 8) = 96."
+      "explanation": " After the 20th day, the total is (1 + 2 + 3 + 4 + 5 + 6 + 7) + (2 + 3 + 4 + 5 + 6 + 7 + 8) + (3 + 4 + 5 + 6 + 7 + 8) = 96."
     }
   ],
   "starterCode": {
@@ -52,20 +52,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4",
+      "input": "4",
       "expectedOutput": "10"
     },
     {
-      "input": "n = 10",
+      "input": "10",
       "expectedOutput": "37"
     },
     {
-      "input": "n = 20",
+      "input": "20",
       "expectedOutput": "96"
     }
   ],
   "testCases": [
     {
+      "input": "4",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "37"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "96"
+    },
+    {
       "input": "n = 4",
       "expectedOutput": "10"
     },
@@ -76,74 +88,6 @@
     {
       "input": "n = 20",
       "expectedOutput": "96"
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "20",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/calculate-money-in-leetcode-bank/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.237Z",
+    "collectedAt": "2026-10-19T18:40:13.824Z",
     "sourceUpdatedAt": null
   }
 }

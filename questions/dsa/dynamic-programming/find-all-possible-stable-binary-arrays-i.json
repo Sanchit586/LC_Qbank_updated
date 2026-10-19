@@ -53,20 +53,32 @@
   },
   "publicTests": [
     {
-      "input": "zero = 1, one = 1, limit = 2",
+      "input": "1\n1\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "zero = 1, one = 2, limit = 1",
+      "input": "1\n2\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "zero = 3, one = 3, limit = 2",
+      "input": "3\n3\n2",
       "expectedOutput": "14"
     }
   ],
   "testCases": [
     {
+      "input": "1\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1\n2\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "3\n3\n2",
+      "expectedOutput": "14"
+    },
+    {
       "input": "zero = 1, one = 1, limit = 2",
       "expectedOutput": "2"
     },
@@ -77,38 +89,6 @@
     {
       "input": "zero = 3, one = 3, limit = 2",
       "expectedOutput": "14"
-    },
-    {
-      "input": "1\n1\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "1\n2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "zero = 2, one = 3, limit = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "zero = 4, one = 4, limit = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "zero = 2, one = 2, limit = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-all-possible-stable-binary-arrays-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:57.192Z",
+    "collectedAt": "2026-10-19T18:40:17.456Z",
     "sourceUpdatedAt": null
   }
 }

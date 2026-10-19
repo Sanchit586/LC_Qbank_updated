@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a&quot;",
+      "input": "s = \"a\"",
       "output": "1",
-      "explanation": "Only the substring &quot;a&quot; of s is in base."
+      "explanation": "Only the substring \"a\" of s is in base."
     },
     {
-      "input": "s = &quot;cac&quot;",
+      "input": "s = \"cac\"",
       "output": "2",
-      "explanation": "There are two substrings (&quot;a&quot;, &quot;c&quot;) of s in base."
+      "explanation": "There are two substrings (\"a\", \"c\") of s in base."
     },
     {
-      "input": "s = &quot;zab&quot;",
+      "input": "s = \"zab\"",
       "output": "6",
-      "explanation": "There are six substrings (&quot;z&quot;, &quot;a&quot;, &quot;b&quot;, &quot;za&quot;, &quot;ab&quot;, and &quot;zab&quot;) of s in base."
+      "explanation": "There are six substrings (\"z\", \"a\", \"b\", \"za\", \"ab\", and \"zab\") of s in base."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;cac&quot;",
+      "input": "\"cac\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;zab&quot;",
+      "input": "\"zab\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;cac&quot;",
+      "input": "\"cac\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;zab&quot;",
+      "input": "\"zab\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"a\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"cac\"",
-      "expectedOutput": null
+      "input": "s = \"cac\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"zab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
+      "input": "s = \"zab\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/unique-substrings-in-wraparound-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:07.472Z",
+    "collectedAt": "2026-10-19T18:40:31.419Z",
     "sourceUpdatedAt": null
   }
 }

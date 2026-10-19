@@ -19,19 +19,19 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;2245047&quot;",
+      "input": "num = \"2245047\"",
       "output": "2",
-      "explanation": "Delete digits num[5] and num[6]. The resulting number is &quot;22450&quot; which is special since it is divisible by 25.\nIt can be shown that 2 is the minimum number of operations required to get a special number."
+      "explanation": "Delete digits num[5] and num[6]. The resulting number is \"22450\" which is special since it is divisible by 25.\nIt can be shown that 2 is the minimum number of operations required to get a special number."
     },
     {
-      "input": "num = &quot;2908305&quot;",
+      "input": "num = \"2908305\"",
       "output": "3",
-      "explanation": "Delete digits num[3], num[4], and num[6]. The resulting number is &quot;2900&quot; which is special since it is divisible by 25.\nIt can be shown that 3 is the minimum number of operations required to get a special number."
+      "explanation": "Delete digits num[3], num[4], and num[6]. The resulting number is \"2900\" which is special since it is divisible by 25.\nIt can be shown that 3 is the minimum number of operations required to get a special number."
     },
     {
-      "input": "num = &quot;10&quot;",
+      "input": "num = \"10\"",
       "output": "1",
-      "explanation": "Delete digit num[0]. The resulting number is &quot;0&quot; which is special since it is divisible by 25.\nIt can be shown that 1 is the minimum number of operations required to get a special number."
+      "explanation": "Delete digit num[0]. The resulting number is \"0\" which is special since it is divisible by 25.\nIt can be shown that 1 is the minimum number of operations required to get a special number."
     }
   ],
   "starterCode": {
@@ -57,98 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;2245047&quot;",
+      "input": "\"2245047\"",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;2908305&quot;",
+      "input": "\"2908305\"",
       "expectedOutput": "3"
     },
     {
-      "input": "num = &quot;10&quot;",
+      "input": "\"10\"",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;2245047&quot;",
+      "input": "\"2245047\"",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;2908305&quot;",
+      "input": "\"2908305\"",
       "expectedOutput": "3"
     },
     {
-      "input": "num = &quot;10&quot;",
+      "input": "\"10\"",
       "expectedOutput": "1"
     },
     {
-      "input": "\"2245047\"",
-      "expectedOutput": null
+      "input": "num = \"2245047\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"2908305\"",
-      "expectedOutput": null
+      "input": "num = \"2908305\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"10\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "num = \"10\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -164,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-a-special-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:13.314Z",
+    "collectedAt": "2026-10-19T18:40:24.638Z",
     "sourceUpdatedAt": null
   }
 }

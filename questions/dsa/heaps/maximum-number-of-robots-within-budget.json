@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "chargeTimes = [3,6,1,3,4], runningCosts = [2,1,3,4,5], budget = 25",
+      "input": "[3,6,1,3,4]\n[2,1,3,4,5]\n25",
       "expectedOutput": "3"
     },
     {
-      "input": "chargeTimes = [11,12,19], runningCosts = [10,8,7], budget = 19",
+      "input": "[11,12,19]\n[10,8,7]\n19",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[3,6,1,3,4]\n[2,1,3,4,5]\n25",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[11,12,19]\n[10,8,7]\n19",
+      "expectedOutput": "0"
+    },
+    {
       "input": "chargeTimes = [3,6,1,3,4], runningCosts = [2,1,3,4,5], budget = 25",
       "expectedOutput": "3"
     },
     {
       "input": "chargeTimes = [11,12,19], runningCosts = [10,8,7], budget = 19",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[3,6,1,3,4]\n[2,1,3,4,5]\n25",
-      "expectedOutput": null
-    },
-    {
-      "input": "[11,12,19]\n[10,8,7]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "chargeTimes = [4,7,2,4,5], runningCosts = [3,2,4,5,6], budget = 26",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -99,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-robots-within-budget/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.939Z",
+    "collectedAt": "2026-10-19T18:40:22.169Z",
     "sourceUpdatedAt": null
   }
 }

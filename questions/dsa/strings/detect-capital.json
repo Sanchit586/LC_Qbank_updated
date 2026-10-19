@@ -48,94 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "word = \"USA\"",
+      "input": "\"USA\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word = \"FlaG\"",
+      "input": "\"FlaG\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "\"USA\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"FlaG\"",
+      "expectedOutput": "false"
+    },
+    {
       "input": "word = \"USA\"",
       "expectedOutput": "true"
     },
     {
       "input": "word = \"FlaG\"",
       "expectedOutput": "false"
-    },
-    {
-      "input": "\"USA\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"FlaG\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -147,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/detect-capital/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:41.971Z",
+    "collectedAt": "2026-10-19T18:40:16.559Z",
     "sourceUpdatedAt": null
   }
 }

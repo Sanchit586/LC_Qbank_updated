@@ -16,18 +16,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;25525511135&quot;",
-      "output": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]",
+      "input": "s = \"25525511135\"",
+      "output": "[\"255.255.11.135\",\"255.255.111.35\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;0000&quot;",
-      "output": "[&quot;0.0.0.0&quot;]",
+      "input": "s = \"0000\"",
+      "output": "[\"0.0.0.0\"]",
       "explanation": null
     },
     {
-      "input": "s = &quot;101023&quot;",
-      "output": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]",
+      "input": "s = \"101023\"",
+      "output": "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]",
       "explanation": null
     }
   ],
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;25525511135&quot;",
-      "expectedOutput": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]"
+      "input": "\"25525511135\"",
+      "expectedOutput": "[\"255.255.11.135\",\"255.255.111.35\"]"
     },
     {
-      "input": "s = &quot;0000&quot;",
-      "expectedOutput": "[&quot;0.0.0.0&quot;]"
+      "input": "\"0000\"",
+      "expectedOutput": "[\"0.0.0.0\"]"
     },
     {
-      "input": "s = &quot;101023&quot;",
-      "expectedOutput": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]"
+      "input": "\"101023\"",
+      "expectedOutput": "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;25525511135&quot;",
-      "expectedOutput": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]"
-    },
-    {
-      "input": "s = &quot;0000&quot;",
-      "expectedOutput": "[&quot;0.0.0.0&quot;]"
-    },
-    {
-      "input": "s = &quot;101023&quot;",
-      "expectedOutput": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]"
-    },
-    {
       "input": "\"25525511135\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"255.255.11.135\",\"255.255.111.35\"]"
     },
     {
       "input": "\"0000\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"0.0.0.0\"]"
     },
     {
       "input": "\"101023\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"25525511135\"",
+      "expectedOutput": "[\"255.255.11.135\",\"255.255.111.35\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"0000\"",
+      "expectedOutput": "[\"0.0.0.0\"]"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"101023\"",
+      "expectedOutput": "[\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/restore-ip-addresses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:11.661Z",
+    "collectedAt": "2026-10-19T18:40:27.790Z",
     "sourceUpdatedAt": null
   }
 }

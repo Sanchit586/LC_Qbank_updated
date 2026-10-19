@@ -31,6 +31,7 @@ import {
   ensureDir,
   resolveCategory,
   getQuestionFilePath,
+  unescapeHtml,
 } from './utils.mjs';
 import { generateTestCases } from './test-engine.mjs';
 
@@ -127,7 +128,7 @@ function extractConstraints(html) {
   if (!html) return [];
 
   // Match "Constraints:" followed by <ul>...</ul>
-  const constraintsMatch = html.match(/Constraints:[\s\S]*?<ul>([\s\S]*?)<\/ul>/i);
+  const constraintsMatch = html.match(/Constraints:?[\s\S]*?<ul>([\s\S]*?)<\/ul>/i);
   if (!constraintsMatch) return [];
 
   const listHtml = constraintsMatch[1];
@@ -136,15 +137,7 @@ function extractConstraints(html) {
   let m;
 
   while ((m = liRegex.exec(listHtml)) !== null) {
-    const text = m[1]
-      .replace(/<[^>]+>/g, '')
-      .replace(/&lt;/g, '<')
-      .replace(/&gt;/g, '>')
-      .replace(/&amp;/g, '&')
-      .replace(/&nbsp;/g, ' ')
-      .replace(/&#39;/g, "'")
-      .replace(/&quot;/g, '"')
-      .trim();
+    const text = unescapeHtml(m[1].replace(/<[^>]+>/g, '').trim());
     if (text) items.push(text);
   }
 
@@ -153,7 +146,7 @@ function extractConstraints(html) {
 
 /**
  * Extracts examples from the HTML content.
- * Looks for "Example N:" sections and pulls input, output, explanation.
+ * Looks for "Example N:" or "Example:" sections and pulls input, output, explanation.
  *
  * @param {string} html - The raw HTML content string.
  * @returns {Array<{input: string, output: string, explanation: string|null}>}
@@ -163,35 +156,36 @@ function extractExamples(html) {
 
   const examples = [];
 
-  // Split by "Example N:" with any HTML wrapping tags like <strong class="example">Example 1:</strong>
-  const exampleBlocks = html.split(/<[^>]*>\s*Example\s+\d+:\s*<\/[^>]*>/i);
+  // Split by "Example N:" or "Example:" with any HTML wrapping tags (avoids matching example-block / example-io)
+  const exampleBlocks = html.split(/(?:<[^>]*>)?\s*Example(?:\s+\d+\s*:?|:)\s*(?:<\/[^>]*>)?/i);
 
   for (let i = 1; i < exampleBlocks.length; i++) {
     const block = exampleBlocks[i];
     const example = { input: '', output: '', explanation: null };
 
-    // Extract Input
+    // Extract Input (with or without colon)
     const inputMatch = block.match(
-      /(?:<strong>|<b>)?\s*Input:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Output:|$)/i
+      /(?:<strong>|<b>)?\s*Input:?\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Output:?|$)/i
     );
     if (inputMatch) {
-      example.input = inputMatch[1].replace(/<[^>]+>/g, '').trim();
+      example.input = unescapeHtml(inputMatch[1].replace(/<[^>]+>/g, '').trim());
     }
 
-    // Extract Output
+    // Extract Output (with or without colon)
     const outputMatch = block.match(
-      /(?:<strong>|<b>)?\s*Output:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Explanation:|<\/pre>|<p>|$)/i
+      /(?:<strong>|<b>)?\s*Output:?\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=(?:<strong>|<b>)?\s*Explanation:?|<\/pre>|<p>|<\/div>|$)/i
     );
     if (outputMatch) {
-      example.output = outputMatch[1].replace(/<[^>]+>/g, '').trim();
+      example.output = unescapeHtml(outputMatch[1].replace(/<[^>]+>/g, '').trim());
     }
 
     // Extract Explanation (optional)
     const explainMatch = block.match(
-      /(?:<strong>|<b>)?\s*Explanation:\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=<\/pre>|<p>|$)/i
+      /(?:<strong>|<b>)?\s*Explanation:?\s*(?:<\/strong>|<\/b>)?\s*([\s\S]*?)(?=<\/pre>|<p>|<\/div>|$)/i
     );
     if (explainMatch) {
-      example.explanation = explainMatch[1].replace(/<[^>]+>/g, '').trim() || null;
+      const exp = unescapeHtml(explainMatch[1].replace(/<[^>]+>/g, '').trim());
+      example.explanation = exp || null;
     }
 
     if (example.input || example.output) {
@@ -309,18 +303,32 @@ async function normalizeQuestion(raw) {
     }
   }
 
-  // Parse public test cases
+  // Parse public test cases (official public test cases with verified outputs)
   let publicTests = null;
-  if (examples.length > 0) {
-    publicTests = examples.map((e) => ({
-      input: e.input,
-      expectedOutput: e.output || null,
-    }));
-  } else if (raw.exampleTestcaseList && raw.exampleTestcaseList.length > 0) {
-    publicTests = raw.exampleTestcaseList.map((tc) => ({
-      input: tc,
-      expectedOutput: null,
-    }));
+  if (Array.isArray(raw.exampleTestcaseList) && raw.exampleTestcaseList.length > 0) {
+    const list = raw.exampleTestcaseList
+      .map((tc, idx) => {
+        const out = examples[idx]?.output || null;
+        if (!tc || !out) return null;
+        return {
+          input: unescapeHtml(tc.trim()),
+          expectedOutput: unescapeHtml(out.trim()),
+        };
+      })
+      .filter(Boolean);
+    if (list.length > 0) publicTests = list;
+  }
+
+  if (!publicTests || publicTests.length === 0) {
+    if (examples.length > 0) {
+      const list = examples
+        .filter((e) => e.input && e.output)
+        .map((e) => ({
+          input: unescapeHtml(e.input.trim()),
+          expectedOutput: unescapeHtml(e.output.trim()),
+        }));
+      if (list.length > 0) publicTests = list;
+    }
   }
 
   // Generate 20 comprehensive test cases

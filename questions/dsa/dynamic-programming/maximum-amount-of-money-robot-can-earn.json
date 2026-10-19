@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "coins = [[0,1,-1],[1,-2,3],[2,-3,4]]",
+      "input": "[[0,1,-1],[1,-2,3],[2,-3,4]]",
       "expectedOutput": "8"
     },
     {
-      "input": "coins = [[10,10,10],[10,10,10]]",
+      "input": "[[10,10,10],[10,10,10]]",
       "expectedOutput": "40"
     }
   ],
   "testCases": [
     {
+      "input": "[[0,1,-1],[1,-2,3],[2,-3,4]]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[[10,10,10],[10,10,10]]",
+      "expectedOutput": "40"
+    },
+    {
       "input": "coins = [[0,1,-1],[1,-2,3],[2,-3,4]]",
       "expectedOutput": "8"
     },
     {
       "input": "coins = [[10,10,10],[10,10,10]]",
       "expectedOutput": "40"
-    },
-    {
-      "input": "[[0,1,-1],[1,-2,3],[2,-3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[10,10,10],[10,10,10]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "coins = [[1,2,-2],[2,-3,4],[3,-4,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-amount-of-money-robot-can-earn/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:06.056Z",
+    "collectedAt": "2026-10-19T18:40:21.481Z",
     "sourceUpdatedAt": null
   }
 }

@@ -54,20 +54,32 @@
   },
   "publicTests": [
     {
-      "input": "num = 9669",
+      "input": "9669",
       "expectedOutput": "9969"
     },
     {
-      "input": "num = 9996",
+      "input": "9996",
       "expectedOutput": "9999"
     },
     {
-      "input": "num = 9999",
+      "input": "9999",
       "expectedOutput": "9999"
     }
   ],
   "testCases": [
     {
+      "input": "9669",
+      "expectedOutput": "9969"
+    },
+    {
+      "input": "9996",
+      "expectedOutput": "9999"
+    },
+    {
+      "input": "9999",
+      "expectedOutput": "9999"
+    },
+    {
       "input": "num = 9669",
       "expectedOutput": "9969"
     },
@@ -78,74 +90,6 @@
     {
       "input": "num = 9999",
       "expectedOutput": "9999"
-    },
-    {
-      "input": "9669",
-      "expectedOutput": null
-    },
-    {
-      "input": "9996",
-      "expectedOutput": null
-    },
-    {
-      "input": "9999",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-69-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:06.006Z",
+    "collectedAt": "2026-10-19T18:40:21.459Z",
     "sourceUpdatedAt": null
   }
 }

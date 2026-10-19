@@ -16,17 +16,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;52233&quot;",
+      "input": "s = \"52233\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;5494&quot;",
+      "input": "s = \"5494\"",
       "output": "4",
       "explanation": null
     },
     {
-      "input": "s = &quot;1111111&quot;",
+      "input": "s = \"1111111\"",
       "output": "2",
       "explanation": null
     }
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;52233&quot;",
+      "input": "\"52233\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;5494&quot;",
+      "input": "\"5494\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;1111111&quot;",
+      "input": "\"1111111\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;52233&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;5494&quot;",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "s = &quot;1111111&quot;",
-      "expectedOutput": "2"
-    },
-    {
       "input": "\"52233\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"5494\"",
-      "expectedOutput": null
+      "expectedOutput": "4"
     },
     {
       "input": "\"1111111\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"52233\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"5494\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1111111\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-longest-semi-repetitive-substring/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.946Z",
+    "collectedAt": "2026-10-19T18:40:18.374Z",
     "sourceUpdatedAt": null
   }
 }

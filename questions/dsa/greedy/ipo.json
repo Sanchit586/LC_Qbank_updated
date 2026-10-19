@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]",
+      "input": "2\n0\n[1,2,3]\n[0,1,1]",
       "expectedOutput": "4"
     },
     {
-      "input": "k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]",
+      "input": "3\n0\n[1,2,3]\n[0,1,2]",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "2\n0\n[1,2,3]\n[0,1,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n0\n[1,2,3]\n[0,1,2]",
+      "expectedOutput": "6"
+    },
+    {
       "input": "k = 2, w = 0, profits = [1,2,3], capital = [0,1,1]",
       "expectedOutput": "4"
     },
     {
       "input": "k = 3, w = 0, profits = [1,2,3], capital = [0,1,2]",
       "expectedOutput": "6"
-    },
-    {
-      "input": "2\n0\n[1,2,3]\n[0,1,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n0\n[1,2,3]\n[0,1,2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 3, w = 1, profits = [2,3,4], capital = [1,2,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/ipo/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.160Z",
+    "collectedAt": "2026-10-19T18:40:19.625Z",
     "sourceUpdatedAt": null
   }
 }

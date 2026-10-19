@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,1,0],[1,1,1],[1,2,1]]",
+      "input": "[[1,1,0],[1,1,1],[1,2,1]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[1,3,0],[1,0,0],[1,0,3]]",
+      "input": "[[1,3,0],[1,0,0],[1,0,3]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1,0],[1,1,1],[1,2,1]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,3,0],[1,0,0],[1,0,3]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "grid = [[1,1,0],[1,1,1],[1,2,1]]",
       "expectedOutput": "3"
     },
     {
       "input": "grid = [[1,3,0],[1,0,0],[1,0,3]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,1,0],[1,1,1],[1,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3,0],[1,0,0],[1,0,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2,1],[2,2,2],[2,3,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-spread-stones-over-grid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:06.519Z",
+    "collectedAt": "2026-10-19T18:40:24.173Z",
     "sourceUpdatedAt": null
   }
 }

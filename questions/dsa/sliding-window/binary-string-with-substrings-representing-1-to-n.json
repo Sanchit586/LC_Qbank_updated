@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "s = \"0110\", n = 3",
+      "input": "\"0110\"\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"0110\", n = 4",
+      "input": "\"0110\"\n4",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "\"0110\"\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"0110\"\n4",
+      "expectedOutput": "false"
+    },
+    {
       "input": "s = \"0110\", n = 3",
       "expectedOutput": "true"
     },
     {
       "input": "s = \"0110\", n = 4",
       "expectedOutput": "false"
-    },
-    {
-      "input": "\"0110\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"0110\"\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = \"111\", n = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/binary-string-with-substrings-representing-1-to-n/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.881Z",
+    "collectedAt": "2026-10-19T18:40:13.580Z",
     "sourceUpdatedAt": null
   }
 }

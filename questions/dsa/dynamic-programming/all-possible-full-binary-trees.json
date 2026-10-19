@@ -12,7 +12,7 @@
     "Memoization",
     "Binary Tree"
   ],
-  "statement": "Given an integer `n`, return _a list of all possible **full binary trees** with_ `n` _nodes_. Each node of each tree in the answer must have `Node.val == 0`.\n\nEach element of the answer is the root node of one possible tree. You may return the final list of trees in **any order**.\n\nA **full binary tree** is a binary tree where each node has exactly `0` or `2` children.\n\n**Example 1:**\n\n![](https://s3-lc-upload.s3.amazonaws.com/uploads/2018/08/22/fivetrees.png)\n```\nInput: n = 7\nOutput: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]\n```\n\n**Example 2:**\n\n```\nInput: n = 3\nOutput: [[0,0,0]]\n```\n\n**Constraints:**\n\n*   `1 <= n <= 20`",
+  "statement": "Given an integer `n`, return _a list of all possible **full binary trees** with_ `n` _nodes_. Each node of each tree in the answer must have `Node.val == 0`.\n\nEach element of the answer is the root node of one possible tree. You may return the final list of trees in **any order**.\n\nA **full binary tree** is a binary tree where each node has exactly `0` or `2` children.\n\n**Example 1:**\n\n![](./assets/all-possible-full-binary-trees-1.png)\n```\nInput: n = 7\nOutput: [[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]\n```\n\n**Example 2:**\n\n```\nInput: n = 3\nOutput: [[0,0,0]]\n```\n\n**Constraints:**\n\n*   `1 <= n <= 20`",
   "constraints": [
     "1 <= n <= 20"
   ],
@@ -51,90 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 7",
+      "input": "7",
       "expectedOutput": "[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]"
     },
     {
-      "input": "n = 3",
+      "input": "3",
       "expectedOutput": "[[0,0,0]]"
     }
   ],
   "testCases": [
     {
+      "input": "7",
+      "expectedOutput": "[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "[[0,0,0]]"
+    },
+    {
       "input": "n = 7",
       "expectedOutput": "[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]"
     },
     {
       "input": "n = 3",
       "expectedOutput": "[[0,0,0]]"
-    },
-    {
-      "input": "7",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
-    },
-    {
-      "input": "4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -146,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/all-possible-full-binary-trees/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:17.569Z",
+    "collectedAt": "2026-10-19T18:40:12.995Z",
     "sourceUpdatedAt": null
   }
 }

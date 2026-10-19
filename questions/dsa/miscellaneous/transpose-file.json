@@ -10,20 +10,26 @@
   ],
   "statement": "Given a text file `file.txt`, transpose its content.\n\nYou may assume that each row has the same number of columns, and each field is separated by the `' '` character.\n\n**Example:**\n\nIf `file.txt` has the following content:\n\n```\nname age\nalice 21\nryan 30\n```\n\nOutput the following:\n\n```\nname alice ryan\nage 21 30\n```",
   "constraints": [],
-  "examples": [],
+  "examples": [
+    {
+      "input": "",
+      "output": "the following:\n\n\nname alice ryan\nage 21 30",
+      "explanation": null
+    }
+  ],
   "starterCode": {
     "bash": "# Read from the file file.txt and print its transposed content to stdout.\n"
   },
   "publicTests": [
     {
       "input": "a",
-      "expectedOutput": null
+      "expectedOutput": "the following:\n\n\nname alice ryan\nage 21 30"
     }
   ],
   "testCases": [
     {
       "input": "a",
-      "expectedOutput": null
+      "expectedOutput": "the following:\n\n\nname alice ryan\nage 21 30"
     }
   ],
   "sqlSchema": null,
@@ -35,7 +41,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/transpose-file/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:00.863Z",
+    "collectedAt": "2026-10-19T18:40:31.204Z",
     "sourceUpdatedAt": null
   }
 }

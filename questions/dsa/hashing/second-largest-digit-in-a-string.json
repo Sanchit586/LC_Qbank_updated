@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;dfa12321afd&quot;",
+      "input": "s = \"dfa12321afd\"",
       "output": "2",
       "explanation": "The digits that appear in s are [1, 2, 3]. The second largest digit is 2."
     },
     {
-      "input": "s = &quot;abc1111&quot;",
+      "input": "s = \"abc1111\"",
       "output": "-1",
       "explanation": "The digits that appear in s are [1]. There is no second largest digit."
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;dfa12321afd&quot;",
+      "input": "\"dfa12321afd\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc1111&quot;",
+      "input": "\"abc1111\"",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;dfa12321afd&quot;",
+      "input": "\"dfa12321afd\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;abc1111&quot;",
+      "input": "\"abc1111\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "\"dfa12321afd\"",
-      "expectedOutput": null
+      "input": "s = \"dfa12321afd\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"abc1111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abc1111\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/second-largest-digit-in-a-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:17.844Z",
+    "collectedAt": "2026-10-19T18:40:28.190Z",
     "sourceUpdatedAt": null
   }
 }

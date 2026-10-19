@@ -18,9 +18,9 @@
     "0 <= p <= n - 1",
     "0 <= banned.length <= n - 1",
     "0 <= banned[i] <= n - 1",
-    "1 <= k <= n",
+    "1 <= k <= n ",
     "banned[i] != p",
-    "all values in banned are unique"
+    "all values in banned are unique "
   ],
   "examples": [
     {
@@ -62,20 +62,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, p = 0, banned = [1,2], k = 4",
+      "input": "4\n0\n[1,2]\n4",
       "expectedOutput": "[0,-1,-1,1]"
     },
     {
-      "input": "n = 5, p = 0, banned = [2,4], k = 3",
+      "input": "5\n0\n[2,4]\n3",
       "expectedOutput": "[0,-1,-1,-1,-1]"
     },
     {
-      "input": "n = 4, p = 2, banned = [0,1,3], k = 1",
+      "input": "4\n2\n[0,1,3]\n1",
       "expectedOutput": "[-1,-1,0,-1]"
     }
   ],
   "testCases": [
     {
+      "input": "4\n0\n[1,2]\n4",
+      "expectedOutput": "[0,-1,-1,1]"
+    },
+    {
+      "input": "5\n0\n[2,4]\n3",
+      "expectedOutput": "[0,-1,-1,-1,-1]"
+    },
+    {
+      "input": "4\n2\n[0,1,3]\n1",
+      "expectedOutput": "[-1,-1,0,-1]"
+    },
+    {
       "input": "n = 4, p = 0, banned = [1,2], k = 4",
       "expectedOutput": "[0,-1,-1,1]"
     },
@@ -86,38 +98,6 @@
     {
       "input": "n = 4, p = 2, banned = [0,1,3], k = 1",
       "expectedOutput": "[-1,-1,0,-1]"
-    },
-    {
-      "input": "4\n0\n[1,2]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n0\n[2,4]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n2\n[0,1,3]\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, p = 1, banned = [3,5], k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, p = 3, banned = [1,2,4], k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n1\n[2,3]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n1\n[3,5]\n4",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, p = 1, banned = [2,3], k = 5",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-reverse-operations/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:16.888Z",
+    "collectedAt": "2026-10-19T18:40:24.937Z",
     "sourceUpdatedAt": null
   }
 }

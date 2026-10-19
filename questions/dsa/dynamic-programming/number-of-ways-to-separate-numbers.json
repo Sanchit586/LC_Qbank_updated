@@ -17,17 +17,17 @@
   ],
   "examples": [
     {
-      "input": "num = &quot;327&quot;",
+      "input": "num = \"327\"",
       "output": "2",
       "explanation": "You could have written down the numbers:\n3, 27\n327"
     },
     {
-      "input": "num = &quot;094&quot;",
+      "input": "num = \"094\"",
       "output": "0",
       "explanation": "No numbers can have leading zeros and all numbers must be positive."
     },
     {
-      "input": "num = &quot;0&quot;",
+      "input": "num = \"0\"",
       "output": "0",
       "explanation": "No numbers can have leading zeros and all numbers must be positive."
     }
@@ -55,98 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "num = &quot;327&quot;",
+      "input": "\"327\"",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;094&quot;",
+      "input": "\"094\"",
       "expectedOutput": "0"
     },
     {
-      "input": "num = &quot;0&quot;",
+      "input": "\"0\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "num = &quot;327&quot;",
+      "input": "\"327\"",
       "expectedOutput": "2"
     },
     {
-      "input": "num = &quot;094&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "num = &quot;0&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"327\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"094\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "\"0\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "num = \"327\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "num = \"094\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "num = \"0\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-ways-to-separate-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:48.831Z",
+    "collectedAt": "2026-10-19T18:40:26.294Z",
     "sourceUpdatedAt": null
   }
 }

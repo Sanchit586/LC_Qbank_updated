@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "word1 = &quot;bcca&quot;, word2 = &quot;abc&quot;",
+      "input": "word1 = \"bcca\", word2 = \"abc\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abc&quot;",
+      "input": "word1 = \"abcabc\", word2 = \"abc\"",
       "output": "10",
       "explanation": null
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;aaabc&quot;",
+      "input": "word1 = \"abcabc\", word2 = \"aaabc\"",
       "output": "0",
       "explanation": null
     }
@@ -56,90 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word1 = &quot;bcca&quot;, word2 = &quot;abc&quot;",
+      "input": "\"bcca\"\n\"abc\"",
       "expectedOutput": "1"
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abc&quot;",
+      "input": "\"abcabc\"\n\"abc\"",
       "expectedOutput": "10"
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;aaabc&quot;",
+      "input": "\"abcabc\"\n\"aaabc\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "word1 = &quot;bcca&quot;, word2 = &quot;abc&quot;",
+      "input": "\"bcca\"\n\"abc\"",
       "expectedOutput": "1"
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;abc&quot;",
+      "input": "\"abcabc\"\n\"abc\"",
       "expectedOutput": "10"
     },
     {
-      "input": "word1 = &quot;abcabc&quot;, word2 = &quot;aaabc&quot;",
+      "input": "\"abcabc\"\n\"aaabc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"bcca\"\n\"abc\"",
-      "expectedOutput": null
+      "input": "word1 = \"bcca\", word2 = \"abc\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"abcabc\"\n\"abc\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcabc\", word2 = \"abc\"",
+      "expectedOutput": "10"
     },
     {
-      "input": "\"abcabc\"\n\"aaabc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "word1 = \"abcabc\", word2 = \"aaabc\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -154,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-substrings-that-can-be-rearranged-to-contain-a-string-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.537Z",
+    "collectedAt": "2026-10-19T18:40:15.694Z",
     "sourceUpdatedAt": null
   }
 }

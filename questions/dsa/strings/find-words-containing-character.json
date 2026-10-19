@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;leet&quot;,&quot;code&quot;], x = &quot;e&quot;",
+      "input": "words = [\"leet\",\"code\"], x = \"e\"",
       "output": "[0,1]",
-      "explanation": "&quot;e&quot; occurs in both words: &quot;leet&quot;, and &quot;code&quot;. Hence, we return indices 0 and 1."
+      "explanation": "\"e\" occurs in both words: \"leet\", and \"code\". Hence, we return indices 0 and 1."
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;a&quot;",
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"a\"",
       "output": "[0,2]",
-      "explanation": "&quot;a&quot; occurs in &quot;abc&quot;, and &quot;aaaa&quot;. Hence, we return indices 0 and 2."
+      "explanation": "\"a\" occurs in \"abc\", and \"aaaa\". Hence, we return indices 0 and 2."
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;z&quot;",
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"z\"",
       "output": "[]",
-      "explanation": "&quot;z&quot; does not occur in any of the words. Hence, we return an empty array."
+      "explanation": "\"z\" does not occur in any of the words. Hence, we return an empty array."
     }
   ],
   "starterCode": {
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;leet&quot;,&quot;code&quot;], x = &quot;e&quot;",
+      "input": "[\"leet\",\"code\"]\n\"e\"",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;a&quot;",
+      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"a\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;z&quot;",
+      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"z\"",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;leet&quot;,&quot;code&quot;], x = &quot;e&quot;",
+      "input": "[\"leet\",\"code\"]\n\"e\"",
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;a&quot;",
+      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"a\"",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "words = [&quot;abc&quot;,&quot;bcd&quot;,&quot;aaaa&quot;,&quot;cbc&quot;], x = &quot;z&quot;",
+      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"z\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "[\"leet\",\"code\"]\n\"e\"",
-      "expectedOutput": null
+      "input": "words = [\"leet\",\"code\"], x = \"e\"",
+      "expectedOutput": "[0,1]"
     },
     {
-      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"a\"",
-      "expectedOutput": null
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"a\"",
+      "expectedOutput": "[0,2]"
     },
     {
-      "input": "[\"abc\",\"bcd\",\"aaaa\",\"cbc\"]\n\"z\"",
-      "expectedOutput": null
+      "input": "words = [\"abc\",\"bcd\",\"aaaa\",\"cbc\"], x = \"z\"",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,
@@ -105,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-words-containing-character/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:18.025Z",
+    "collectedAt": "2026-10-19T18:40:18.795Z",
     "sourceUpdatedAt": null
   }
 }

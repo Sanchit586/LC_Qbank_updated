@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;a0b1c2&quot;",
-      "output": "&quot;0a1b2c&quot;",
-      "explanation": "No two adjacent characters have the same type in &quot;0a1b2c&quot;. &quot;a0b1c2&quot;, &quot;0a1b2c&quot;, &quot;0c2a1b&quot; are also valid permutations."
+      "input": "s = \"a0b1c2\"",
+      "output": "\"0a1b2c\"",
+      "explanation": "No two adjacent characters have the same type in \"0a1b2c\". \"a0b1c2\", \"0a1b2c\", \"0c2a1b\" are also valid permutations."
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "&quot;leetcode&quot; has only characters so we cannot separate them by digits."
+      "input": "s = \"leetcode\"",
+      "output": "\"\"",
+      "explanation": "\"leetcode\" has only characters so we cannot separate them by digits."
     },
     {
-      "input": "s = &quot;1229857369&quot;",
-      "output": "&quot;&quot;",
-      "explanation": "&quot;1229857369&quot; has only digits so we cannot separate them by characters."
+      "input": "s = \"1229857369\"",
+      "output": "\"\"",
+      "explanation": "\"1229857369\" has only digits so we cannot separate them by characters."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;a0b1c2&quot;",
-      "expectedOutput": "&quot;0a1b2c&quot;"
+      "input": "\"a0b1c2\"",
+      "expectedOutput": "\"0a1b2c\""
     },
     {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;1229857369&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"1229857369\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;a0b1c2&quot;",
-      "expectedOutput": "&quot;0a1b2c&quot;"
-    },
-    {
-      "input": "s = &quot;leetcode&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
-      "input": "s = &quot;1229857369&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"a0b1c2\"",
-      "expectedOutput": null
+      "expectedOutput": "\"0a1b2c\""
     },
     {
       "input": "\"leetcode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
       "input": "\"1229857369\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"a0b1c2\"",
+      "expectedOutput": "\"0a1b2c\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1229857369\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reformat-the-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:07.973Z",
+    "collectedAt": "2026-10-19T18:40:27.409Z",
     "sourceUpdatedAt": null
   }
 }

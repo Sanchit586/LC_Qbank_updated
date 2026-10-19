@@ -19,12 +19,12 @@
     {
       "input": "nums = [1,1,2,2,1,1], queries = [[0,5,4],[0,3,3],[2,3,2]]",
       "output": "[1,-1,2]",
-      "explanation": "Query\n\t\t\tSub-array\n\t\t\tThreshold\n\t\t\tFrequency table\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t[0, 5, 4]\n\t\t\t[1, 1, 2, 2, 1, 1]\n\t\t\t4\n\t\t\t1 &rarr; 4, 2 &rarr; 2\n\t\t\t1\n\t\t\n\t\t\n\t\t\t[0, 3, 3]\n\t\t\t[1, 1, 2, 2]\n\t\t\t3\n\t\t\t1 &rarr; 2, 2 &rarr; 2\n\t\t\t-1\n\t\t\n\t\t\n\t\t\t[2, 3, 2]\n\t\t\t[2, 2]\n\t\t\t2\n\t\t\t2 &rarr; 2\n\t\t\t2"
+      "explanation": "Query\n\t\t\tSub-array\n\t\t\tThreshold\n\t\t\tFrequency table\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t[0, 5, 4]\n\t\t\t[1, 1, 2, 2, 1, 1]\n\t\t\t4\n\t\t\t1 → 4, 2 → 2\n\t\t\t1\n\t\t\n\t\t\n\t\t\t[0, 3, 3]\n\t\t\t[1, 1, 2, 2]\n\t\t\t3\n\t\t\t1 → 2, 2 → 2\n\t\t\t-1\n\t\t\n\t\t\n\t\t\t[2, 3, 2]\n\t\t\t[2, 2]\n\t\t\t2\n\t\t\t2 → 2\n\t\t\t2"
     },
     {
       "input": "nums = [3,2,3,2,3,2,3], queries = [[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
       "output": "[3,2,3,2]",
-      "explanation": "Query\n\t\t\tSub-array\n\t\t\tThreshold\n\t\t\tFrequency table\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t[0, 6, 4]\n\t\t\t[3, 2, 3, 2, 3, 2, 3]\n\t\t\t4\n\t\t\t3 &rarr; 4, 2 &rarr; 3\n\t\t\t3\n\t\t\n\t\t\n\t\t\t[1, 5, 2]\n\t\t\t[2, 3, 2, 3, 2]\n\t\t\t2\n\t\t\t2 &rarr; 3, 3 &rarr; 2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t[2, 4, 1]\n\t\t\t[3, 2, 3]\n\t\t\t1\n\t\t\t3 &rarr; 2, 2 &rarr; 1\n\t\t\t3\n\t\t\n\t\t\n\t\t\t[3, 3, 1]\n\t\t\t[2]\n\t\t\t1\n\t\t\t2 &rarr; 1\n\t\t\t2"
+      "explanation": "Query\n\t\t\tSub-array\n\t\t\tThreshold\n\t\t\tFrequency table\n\t\t\tAnswer\n\t\t\n\t\n\t\n\t\t\n\t\t\t[0, 6, 4]\n\t\t\t[3, 2, 3, 2, 3, 2, 3]\n\t\t\t4\n\t\t\t3 → 4, 2 → 3\n\t\t\t3\n\t\t\n\t\t\n\t\t\t[1, 5, 2]\n\t\t\t[2, 3, 2, 3, 2]\n\t\t\t2\n\t\t\t2 → 3, 3 → 2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t[2, 4, 1]\n\t\t\t[3, 2, 3]\n\t\t\t1\n\t\t\t3 → 2, 2 → 1\n\t\t\t3\n\t\t\n\t\t\n\t\t\t[3, 3, 1]\n\t\t\t[2]\n\t\t\t1\n\t\t\t2 → 1\n\t\t\t2"
     }
   ],
   "starterCode": {
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [1,1,2,2,1,1], queries = [[0,5,4],[0,3,3],[2,3,2]]",
+      "input": "[1,1,2,2,1,1]\n[[0,5,4],[0,3,3],[2,3,2]]",
       "expectedOutput": "[1,-1,2]"
     },
     {
-      "input": "nums = [3,2,3,2,3,2,3], queries = [[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
+      "input": "[3,2,3,2,3,2,3]\n[[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
       "expectedOutput": "[3,2,3,2]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,1,2,2,1,1]\n[[0,5,4],[0,3,3],[2,3,2]]",
+      "expectedOutput": "[1,-1,2]"
+    },
+    {
+      "input": "[3,2,3,2,3,2,3]\n[[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
+      "expectedOutput": "[3,2,3,2]"
+    },
+    {
       "input": "nums = [1,1,2,2,1,1], queries = [[0,5,4],[0,3,3],[2,3,2]]",
       "expectedOutput": "[1,-1,2]"
     },
     {
       "input": "nums = [3,2,3,2,3,2,3], queries = [[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
       "expectedOutput": "[3,2,3,2]"
-    },
-    {
-      "input": "[1,1,2,2,1,1]\n[[0,5,4],[0,3,3],[2,3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,3,2,3,2,3]\n[[0,6,4],[1,5,2],[2,4,1],[3,3,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [2,2,3,3,2,2], queries = [[1,6,5],[1,4,4],[3,4,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/threshold-majority-queries/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:56.927Z",
+    "collectedAt": "2026-10-19T18:40:31.009Z",
     "sourceUpdatedAt": null
   }
 }

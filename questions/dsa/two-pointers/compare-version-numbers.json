@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "version1 = &quot;1.2&quot;, version2 = &quot;1.10&quot;",
+      "input": "version1 = \"1.2\", version2 = \"1.10\"",
       "output": "-1",
       "explanation": null
     },
     {
-      "input": "version1 = &quot;1.01&quot;, version2 = &quot;1.001&quot;",
+      "input": "version1 = \"1.01\", version2 = \"1.001\"",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "version1 = &quot;1.0&quot;, version2 = &quot;1.0.0.0&quot;",
+      "input": "version1 = \"1.0\", version2 = \"1.0.0.0\"",
       "output": "0",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "version1 = &quot;1.2&quot;, version2 = &quot;1.10&quot;",
+      "input": "\"1.2\"\n\"1.10\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "version1 = &quot;1.01&quot;, version2 = &quot;1.001&quot;",
+      "input": "\"1.01\"\n\"1.001\"",
       "expectedOutput": "0"
     },
     {
-      "input": "version1 = &quot;1.0&quot;, version2 = &quot;1.0.0.0&quot;",
+      "input": "\"1.0\"\n\"1.0.0.0\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "version1 = &quot;1.2&quot;, version2 = &quot;1.10&quot;",
+      "input": "\"1.2\"\n\"1.10\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "version1 = &quot;1.01&quot;, version2 = &quot;1.001&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "version1 = &quot;1.0&quot;, version2 = &quot;1.0.0.0&quot;",
-      "expectedOutput": "0"
-    },
-    {
-      "input": "\"1.2\"\n\"1.10\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"1.01\"\n\"1.001\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
       "input": "\"1.0\"\n\"1.0.0.0\"",
-      "expectedOutput": null
+      "expectedOutput": "0"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "version1 = \"1.2\", version2 = \"1.10\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "version1 = \"1.01\", version2 = \"1.001\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"2.3\"\n\"2.11\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"2.2\"\n\"2.2\"",
-      "expectedOutput": null
+      "input": "version1 = \"1.0\", version2 = \"1.0.0.0\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/compare-version-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:00.669Z",
+    "collectedAt": "2026-10-19T18:40:14.575Z",
     "sourceUpdatedAt": null
   }
 }

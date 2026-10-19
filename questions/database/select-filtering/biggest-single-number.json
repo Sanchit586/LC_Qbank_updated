@@ -31,42 +31,30 @@
   },
   "publicTests": [
     {
-      "input": "MyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 3   |\n| 3   |\n| 1   |\n| 4   |\n| 5   |\n| 6   |\n+-----+",
+      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[3],[3],[1],[4],[5],[6]]}}",
       "expectedOutput": "+-----+\n| num |\n+-----+\n| 6   |\n+-----+"
     },
     {
-      "input": "MyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 7   |\n| 7   |\n| 3   |\n| 3   |\n| 3   |\n+-----+",
+      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[7],[7],[3],[3],[3]]}}",
       "expectedOutput": "+------+\n| num  |\n+------+\n| null |\n+------+"
     }
   ],
   "testCases": [
     {
+      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[3],[3],[1],[4],[5],[6]]}}",
+      "expectedOutput": "+-----+\n| num |\n+-----+\n| 6   |\n+-----+"
+    },
+    {
+      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[7],[7],[3],[3],[3]]}}",
+      "expectedOutput": "+------+\n| num  |\n+------+\n| null |\n+------+"
+    },
+    {
       "input": "MyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 3   |\n| 3   |\n| 1   |\n| 4   |\n| 5   |\n| 6   |\n+-----+",
       "expectedOutput": "+-----+\n| num |\n+-----+\n| 6   |\n+-----+"
     },
     {
       "input": "MyNumbers table:\n+-----+\n| num |\n+-----+\n| 8   |\n| 8   |\n| 7   |\n| 7   |\n| 3   |\n| 3   |\n| 3   |\n+-----+",
       "expectedOutput": "+------+\n| num  |\n+------+\n| null |\n+------+"
-    },
-    {
-      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[3],[3],[1],[4],[5],[6]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\": {\"MyNumbers\": [\"num\"]}, \"rows\": {\"MyNumbers\": [[8],[8],[7],[7],[3],[3],[3]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"MyNumbers\":[\"num\"]},\"rows\":{\"MyNumbers\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"MyNumbers\":[\"num\"]},\"rows\":{\"MyNumbers\":[[8]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"MyNumbers\":[\"num\"]},\"rows\":{\"MyNumbers\":[[null],[null],[null],[null],[null],[null],[null],[null]]}}",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": "Create table If Not Exists MyNumbers (num int)\n\nTruncate table MyNumbers",
@@ -87,7 +75,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/biggest-single-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.723Z",
+    "collectedAt": "2026-10-19T18:40:13.548Z",
     "sourceUpdatedAt": null
   }
 }

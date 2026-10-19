@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "nums1 = [1,3], nums2 = [2]",
+      "input": "[1,3]\n[2]",
       "expectedOutput": "2.00000"
     },
     {
-      "input": "nums1 = [1,2], nums2 = [3,4]",
+      "input": "[1,2]\n[3,4]",
       "expectedOutput": "2.50000"
     }
   ],
   "testCases": [
     {
+      "input": "[1,3]\n[2]",
+      "expectedOutput": "2.00000"
+    },
+    {
+      "input": "[1,2]\n[3,4]",
+      "expectedOutput": "2.50000"
+    },
+    {
       "input": "nums1 = [1,3], nums2 = [2]",
       "expectedOutput": "2.00000"
     },
     {
       "input": "nums1 = [1,2], nums2 = [3,4]",
       "expectedOutput": "2.50000"
-    },
-    {
-      "input": "[1,3]\n[2]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2]\n[3,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums2 = [2,4], nums3 = [3]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/median-of-two-sorted-arrays/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-18T18:11:43.582Z",
+    "collectedAt": "2026-10-19T18:40:23.073Z",
     "sourceUpdatedAt": null
   }
 }

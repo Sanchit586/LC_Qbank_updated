@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "p = 2, q = 1",
+      "input": "2\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "p = 3, q = 1",
+      "input": "3\n1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "2\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "p = 2, q = 1",
       "expectedOutput": "2"
     },
     {
       "input": "p = 3, q = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "p = 3, q = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -90,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/mirror-reflection/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:32.562Z",
+    "collectedAt": "2026-10-19T18:40:25.387Z",
     "sourceUpdatedAt": null
   }
 }

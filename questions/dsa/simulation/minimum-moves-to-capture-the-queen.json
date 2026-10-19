@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "a = 1, b = 1, c = 8, d = 8, e = 2, f = 3",
+      "input": "1\n1\n8\n8\n2\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "a = 5, b = 3, c = 3, d = 4, e = 5, f = 2",
+      "input": "5\n3\n3\n4\n5\n2",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "1\n1\n8\n8\n2\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "5\n3\n3\n4\n5\n2",
+      "expectedOutput": "1"
+    },
+    {
       "input": "a = 1, b = 1, c = 8, d = 8, e = 2, f = 3",
       "expectedOutput": "2"
     },
     {
       "input": "a = 5, b = 3, c = 3, d = 4, e = 5, f = 2",
       "expectedOutput": "1"
-    },
-    {
-      "input": "1\n1\n8\n8\n2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n3\n3\n4\n5\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "a = 2, b = 2, c = 9, d = 9, e = 3, f = 4",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-moves-to-capture-the-queen/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:04.912Z",
+    "collectedAt": "2026-10-19T18:40:24.109Z",
     "sourceUpdatedAt": null
   }
 }

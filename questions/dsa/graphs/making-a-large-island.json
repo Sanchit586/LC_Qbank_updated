@@ -33,7 +33,7 @@
     {
       "input": "grid = [[1,1],[1,1]]",
       "output": "4",
-      "explanation": "Can&#39;t change any 0 to 1, only one island with area = 4."
+      "explanation": "Can't change any 0 to 1, only one island with area = 4."
     }
   ],
   "starterCode": {
@@ -59,20 +59,32 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[1,0],[0,1]]",
+      "input": "[[1,0],[0,1]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[1,1],[1,0]]",
+      "input": "[[1,1],[1,0]]",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [[1,1],[1,1]]",
+      "input": "[[1,1],[1,1]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,0],[0,1]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,1],[1,0]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,1],[1,1]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "grid = [[1,0],[0,1]]",
       "expectedOutput": "3"
     },
@@ -83,38 +95,6 @@
     {
       "input": "grid = [[1,1],[1,1]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,0],[0,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,2],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,1],[1,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,2],[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "grid = [[2,1],[1,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -126,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/making-a-large-island/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:59.243Z",
+    "collectedAt": "2026-10-19T18:40:21.001Z",
     "sourceUpdatedAt": null
   }
 }

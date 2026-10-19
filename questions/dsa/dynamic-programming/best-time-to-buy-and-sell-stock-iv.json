@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "k = 2, prices = [2,4,1]",
+      "input": "2\n[2,4,1]",
       "expectedOutput": "2"
     },
     {
-      "input": "k = 2, prices = [3,2,6,5,0,3]",
+      "input": "2\n[3,2,6,5,0,3]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
+      "input": "2\n[2,4,1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n[3,2,6,5,0,3]",
+      "expectedOutput": "7"
+    },
+    {
       "input": "k = 2, prices = [2,4,1]",
       "expectedOutput": "2"
     },
     {
       "input": "k = 2, prices = [3,2,6,5,0,3]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "2\n[2,4,1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n[3,2,6,5,0,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 3, prices = [3,5,2]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/best-time-to-buy-and-sell-stock-iv/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:27.651Z",
+    "collectedAt": "2026-10-19T18:40:13.514Z",
     "sourceUpdatedAt": null
   }
 }

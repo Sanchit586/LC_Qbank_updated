@@ -16,12 +16,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;00011&quot;",
+      "input": "s = \"00011\"",
       "output": "5",
       "explanation": null
     },
     {
-      "input": "s = &quot;101101&quot;",
+      "input": "s = \"101101\"",
       "output": "16",
       "explanation": null
     }
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;00011&quot;",
+      "input": "\"00011\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;101101&quot;",
+      "input": "\"101101\"",
       "expectedOutput": "16"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;00011&quot;",
+      "input": "\"00011\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;101101&quot;",
+      "input": "\"101101\"",
       "expectedOutput": "16"
     },
     {
-      "input": "\"00011\"",
-      "expectedOutput": null
+      "input": "s = \"00011\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"101101\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"101101\"",
+      "expectedOutput": "16"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-the-number-of-substrings-with-dominant-ones/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:25.874Z",
+    "collectedAt": "2026-10-19T18:40:15.840Z",
     "sourceUpdatedAt": null
   }
 }

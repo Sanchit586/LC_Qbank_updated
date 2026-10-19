@@ -47,34 +47,30 @@
   },
   "publicTests": [
     {
-      "input": "left = 1, right = 22",
+      "input": "1\n22",
       "expectedOutput": "[1,2,3,4,5,6,7,8,9,11,12,15,22]"
     },
     {
-      "input": "left = 47, right = 85",
+      "input": "47\n85",
       "expectedOutput": "[48,55,66,77]"
     }
   ],
   "testCases": [
     {
+      "input": "1\n22",
+      "expectedOutput": "[1,2,3,4,5,6,7,8,9,11,12,15,22]"
+    },
+    {
+      "input": "47\n85",
+      "expectedOutput": "[48,55,66,77]"
+    },
+    {
       "input": "left = 1, right = 22",
       "expectedOutput": "[1,2,3,4,5,6,7,8,9,11,12,15,22]"
     },
     {
       "input": "left = 47, right = 85",
       "expectedOutput": "[48,55,66,77]"
-    },
-    {
-      "input": "1\n22",
-      "expectedOutput": null
-    },
-    {
-      "input": "47\n85",
-      "expectedOutput": null
-    },
-    {
-      "input": "left = 2, right = 23",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/self-dividing-numbers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:20.030Z",
+    "collectedAt": "2026-10-19T18:40:28.231Z",
     "sourceUpdatedAt": null
   }
 }

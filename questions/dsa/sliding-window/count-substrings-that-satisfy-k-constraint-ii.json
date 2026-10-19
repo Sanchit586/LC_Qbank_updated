@@ -24,12 +24,12 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0001111&quot;, k = 2, queries = [[0,6]]",
+      "input": "s = \"0001111\", k = 2, queries = [[0,6]]",
       "output": "[26]",
       "explanation": null
     },
     {
-      "input": "s = &quot;010101&quot;, k = 1, queries = [[0,5],[1,4],[2,3]]",
+      "input": "s = \"010101\", k = 1, queries = [[0,5],[1,4],[2,3]]",
       "output": "[15,9,3]",
       "explanation": null
     }
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0001111&quot;, k = 2, queries = [[0,6]]",
+      "input": "\"0001111\"\n2\n[[0,6]]",
       "expectedOutput": "[26]"
     },
     {
-      "input": "s = &quot;010101&quot;, k = 1, queries = [[0,5],[1,4],[2,3]]",
+      "input": "\"010101\"\n1\n[[0,5],[1,4],[2,3]]",
       "expectedOutput": "[15,9,3]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0001111&quot;, k = 2, queries = [[0,6]]",
+      "input": "\"0001111\"\n2\n[[0,6]]",
       "expectedOutput": "[26]"
     },
     {
-      "input": "s = &quot;010101&quot;, k = 1, queries = [[0,5],[1,4],[2,3]]",
+      "input": "\"010101\"\n1\n[[0,5],[1,4],[2,3]]",
       "expectedOutput": "[15,9,3]"
     },
     {
-      "input": "\"0001111\"\n2\n[[0,6]]",
-      "expectedOutput": null
+      "input": "s = \"0001111\", k = 2, queries = [[0,6]]",
+      "expectedOutput": "[26]"
     },
     {
-      "input": "\"010101\"\n1\n[[0,5],[1,4],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "s = &quot;1112&quot;, k = 3, queries = [[1,7]]",
-      "expectedOutput": null
+      "input": "s = \"010101\", k = 1, queries = [[0,5],[1,4],[2,3]]",
+      "expectedOutput": "[15,9,3]"
     }
   ],
   "sqlSchema": null,
@@ -100,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-substrings-that-satisfy-k-constraint-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.578Z",
+    "collectedAt": "2026-10-19T18:40:15.713Z",
     "sourceUpdatedAt": null
   }
 }

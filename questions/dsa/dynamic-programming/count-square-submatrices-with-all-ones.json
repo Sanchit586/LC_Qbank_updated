@@ -18,7 +18,7 @@
   ],
   "examples": [
     {
-      "input": "matrix =\n[\n&nbsp; [0,1,1,1],\n&nbsp; [1,1,1,1],\n&nbsp; [0,1,1,1]\n]",
+      "input": "matrix =\n[\n  [0,1,1,1],\n  [1,1,1,1],\n  [0,1,1,1]\n]",
       "output": "15",
       "explanation": "There are 10 squares of side 1.\nThere are 4 squares of side 2.\nThere is  1 square of side 3.\nTotal number of squares = 10 + 4 + 1 = 15."
     },
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "matrix =\n[\n&nbsp; [0,1,1,1],\n&nbsp; [1,1,1,1],\n&nbsp; [0,1,1,1]\n]",
+      "input": "[[0,1,1,1],[1,1,1,1],[0,1,1,1]]",
       "expectedOutput": "15"
     },
     {
-      "input": "matrix = \n[\n  [1,0,1],\n  [1,1,0],\n  [1,1,0]\n]",
+      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "7"
     }
   ],
   "testCases": [
     {
-      "input": "matrix =\n[\n&nbsp; [0,1,1,1],\n&nbsp; [1,1,1,1],\n&nbsp; [0,1,1,1]\n]",
+      "input": "[[0,1,1,1],[1,1,1,1],[0,1,1,1]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "matrix =\n[\n  [0,1,1,1],\n  [1,1,1,1],\n  [0,1,1,1]\n]",
       "expectedOutput": "15"
     },
     {
       "input": "matrix = \n[\n  [1,0,1],\n  [1,1,0],\n  [1,1,0]\n]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "[[0,1,1,1],[1,1,1,1],[0,1,1,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,0,1],[1,1,0],[1,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "matrix =\n[\n&nbsp; [1,2,2,2],\n&nbsp; [2,2,2,2],\n&nbsp; [1,2,2,2]\n]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-square-submatrices-with-all-ones/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:21.398Z",
+    "collectedAt": "2026-10-19T18:40:15.587Z",
     "sourceUpdatedAt": null
   }
 }

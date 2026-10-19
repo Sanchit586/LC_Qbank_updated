@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "positions = [[1,2],[2,3],[6,1]]",
+      "input": "[[1,2],[2,3],[6,1]]",
       "expectedOutput": "[2,5,5]"
     },
     {
-      "input": "positions = [[100,100],[200,100]]",
+      "input": "[[100,100],[200,100]]",
       "expectedOutput": "[100,100]"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3],[6,1]]",
+      "expectedOutput": "[2,5,5]"
+    },
+    {
+      "input": "[[100,100],[200,100]]",
+      "expectedOutput": "[100,100]"
+    },
+    {
       "input": "positions = [[1,2],[2,3],[6,1]]",
       "expectedOutput": "[2,5,5]"
     },
     {
       "input": "positions = [[100,100],[200,100]]",
       "expectedOutput": "[100,100]"
-    },
-    {
-      "input": "[[1,2],[2,3],[6,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[100,100],[200,100]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "positions = [[2,3],[3,4],[7,2]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/falling-squares/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.332Z",
+    "collectedAt": "2026-10-19T18:40:17.238Z",
     "sourceUpdatedAt": null
   }
 }

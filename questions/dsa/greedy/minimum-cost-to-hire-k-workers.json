@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "quality = [10,20,5], wage = [70,50,30], k = 2",
+      "input": "[10,20,5]\n[70,50,30]\n2",
       "expectedOutput": "105.00000"
     },
     {
-      "input": "quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3",
+      "input": "[3,1,10,10,1]\n[4,8,2,2,7]\n3",
       "expectedOutput": "30.66667"
     }
   ],
   "testCases": [
     {
+      "input": "[10,20,5]\n[70,50,30]\n2",
+      "expectedOutput": "105.00000"
+    },
+    {
+      "input": "[3,1,10,10,1]\n[4,8,2,2,7]\n3",
+      "expectedOutput": "30.66667"
+    },
+    {
       "input": "quality = [10,20,5], wage = [70,50,30], k = 2",
       "expectedOutput": "105.00000"
     },
     {
       "input": "quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3",
       "expectedOutput": "30.66667"
-    },
-    {
-      "input": "[10,20,5]\n[70,50,30]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,1,10,10,1]\n[4,8,2,2,7]\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "quality = [11,21,6], wage = [71,51,31], k = 3",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -91,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-hire-k-workers/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:48.441Z",
+    "collectedAt": "2026-10-19T18:40:23.644Z",
     "sourceUpdatedAt": null
   }
 }

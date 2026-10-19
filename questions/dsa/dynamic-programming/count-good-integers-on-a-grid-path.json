@@ -10,23 +10,23 @@
   ],
   "statement": "You are given two integers `l` and `r`, and a string `directions` consisting of **exactly** three `'D'` characters and three `'R'` characters.\n\nFor each integer `x` in the range `[l, r]` (inclusive), perform the following steps:\n\n1.  If `x` has fewer than 16 digits, pad it on the left with **leading zeros** to obtain a 16-digit string.\n2.  Place the 16 digits into a `4 × 4` grid in **row-major** order (the first 4 digits form the first row from left to right, the next 4 digits form the second row, and so on).\n3.  Starting at the **top-left** cell (`row = 0`, `column = 0`), apply the 6 characters of `directions` in order:\n    *   `'D'` increments the row by 1.\n    *   `'R'` increments the column by 1.\n4.  Record the sequence of digits visited along the path (including the starting cell), producing a sequence of length 7.\n\nThe integer `x` is considered **good** if the recorded sequence is **non-decreasing**.\n\nReturn an integer representing the number of good integers in the range `[l, r]`.\n\n**Example 1:**\n\n**Input:** l = 8, r = 10, directions = \"DDDRRR\"\n\n**Output:** 2\n\n**Explanation:**\n\nThe grid for `x = 8`:\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n8\n\n*   Path: `(0,0) → (1,0) → (2,0) → (3,0) → (3,1) → (3,2) → (3,3)`\n*   The sequence of digits visited is `[0, 0, 0, 0, 0, 0, 8]`.\n*   As the sequence of digits visited is non-decreasing, 8 is a good integer.\n\nThe grid for `x = 9`:\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n9\n\n*   The sequence of digits visited is `[0, 0, 0, 0, 0, 0, 9]`.\n*   As the sequence of digits visited is non-decreasing, 9 is a good integer.\n\nThe grid for `x = 10`:\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n1\n\n0\n\n*   The sequence of digits visited is `[0, 0, 0, 0, 0, 1, 0]`.\n*   As the sequence of digits visited is not non-decreasing, 10 is not a good integer.\n*   Hence, only 8 and 9 are good, giving a total of 2 good integers in the range.\n\n**Example 2:**\n\n**Input:** l = 123456789, r = 123456790, directions = \"DDRRDR\"\n\n**Output:** 1\n\n**Explanation:**\n\nThe grid for `x = 123456789`:\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n8\n\n9\n\n*   Path: `(0,0) → (1,0) → (2,0) → (2,1) → (2,2) → (3,2) → (3,3)`\n*   The sequence of digits visited is `[0, 0, 2, 3, 4, 8, 9]`.\n*   As the sequence of digits visited is non-decreasing, 123456789 is a good integer.\n\nThe grid for `x = 123456790`:\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n0\n\n1\n\n2\n\n3\n\n4\n\n5\n\n6\n\n7\n\n9\n\n0\n\n*   The sequence of digits visited is `[0, 0, 2, 3, 4, 9, 0]`.\n*   As the sequence of digits visited is not non-decreasing, 123456790 is not a good integer.\n*   Hence, only 123456789 is good, giving a total of 1 good integer in the range.\n\n**Example 3:**\n\n**Input:** l = 1288561398769758, r = 1288561398769758, directions = \"RRRDDD\"\n\n**Output:** 0\n\n**Explanation:**\n\nThe grid for `x = 1288561398769758`:\n\n1\n\n2\n\n8\n\n8\n\n5\n\n6\n\n1\n\n3\n\n9\n\n8\n\n7\n\n6\n\n9\n\n7\n\n5\n\n8\n\n*   Path: `(0,0) → (0,1) → (0,2) → (0,3) → (1,3) → (2,3) → (3,3)`\n*   The sequence of digits visited is `[1, 2, 8, 8, 3, 6, 8]`.\n*   ​​​​​​​As the sequence of digits visited is not non-decreasing, 1288561398769758 is not a good integer.\n*   No numbers are good, giving a total of 0 good integers in the range.\n\n**Constraints:**\n\n*   `1 <= l <= r <= 9 × 10^(15)`\n*   `directions.length == 6`\n*   `directions` consists of **exactly** three `'D'` characters and three `'R'` characters.",
   "constraints": [
-    "1 <= l <= r <= 9 &times; 1015",
+    "1 <= l <= r <= 9 × 1015",
     "directions.length == 6",
     "directions consists of exactly three 'D' characters and three 'R' characters."
   ],
   "examples": [
     {
-      "input": "l = 8, r = 10, directions = &quot;DDDRRR&quot;",
+      "input": "l = 8, r = 10, directions = \"DDDRRR\"",
       "output": "2",
       "explanation": null
     },
     {
-      "input": "l = 123456789, r = 123456790, directions = &quot;DDRRDR&quot;",
+      "input": "l = 123456789, r = 123456790, directions = \"DDRRDR\"",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "l = 1288561398769758, r = 1288561398769758, directions = &quot;RRRDDD&quot;",
+      "input": "l = 1288561398769758, r = 1288561398769758, directions = \"RRRDDD\"",
       "output": "0",
       "explanation": null
     }
@@ -54,62 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "l = 8, r = 10, directions = &quot;DDDRRR&quot;",
+      "input": "8\n10\n\"DDDRRR\"",
       "expectedOutput": "2"
     },
     {
-      "input": "l = 123456789, r = 123456790, directions = &quot;DDRRDR&quot;",
+      "input": "123456789\n123456790\n\"DDRRDR\"",
       "expectedOutput": "1"
     },
     {
-      "input": "l = 1288561398769758, r = 1288561398769758, directions = &quot;RRRDDD&quot;",
+      "input": "1288561398769758\n1288561398769758\n\"RRRDDD\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "l = 8, r = 10, directions = &quot;DDDRRR&quot;",
+      "input": "8\n10\n\"DDDRRR\"",
       "expectedOutput": "2"
     },
     {
-      "input": "l = 123456789, r = 123456790, directions = &quot;DDRRDR&quot;",
+      "input": "123456789\n123456790\n\"DDRRDR\"",
       "expectedOutput": "1"
     },
     {
-      "input": "l = 1288561398769758, r = 1288561398769758, directions = &quot;RRRDDD&quot;",
+      "input": "1288561398769758\n1288561398769758\n\"RRRDDD\"",
       "expectedOutput": "0"
     },
     {
-      "input": "8\n10\n\"DDDRRR\"",
-      "expectedOutput": null
+      "input": "l = 8, r = 10, directions = \"DDDRRR\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "123456789\n123456790\n\"DDRRDR\"",
-      "expectedOutput": null
+      "input": "l = 123456789, r = 123456790, directions = \"DDRRDR\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "1288561398769758\n1288561398769758\n\"RRRDDD\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 123456790, r = 123456791, directions = &quot;DDRRDR&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 1288561398769759, r = 1288561398769759, directions = &quot;RRRDDD&quot;",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n11\n\"DDDRRR\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "123456790\n123456791\n\"DDRRDR\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "l = 9, r = 11, directions = &quot;DDDRRR&quot;",
-      "expectedOutput": null
+      "input": "l = 1288561398769758, r = 1288561398769758, directions = \"RRRDDD\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-good-integers-on-a-grid-path/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:11.941Z",
+    "collectedAt": "2026-10-19T18:40:15.153Z",
     "sourceUpdatedAt": null
   }
 }

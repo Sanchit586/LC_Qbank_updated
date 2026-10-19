@@ -63,20 +63,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, paths = [[0,1,2,3,4],\n                       [2,3,4],\n                       [4,0,1,2,3]]",
+      "input": "5\n[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, paths = [[0],[1],[2]]",
+      "input": "3\n[[0],[1],[2]]",
       "expectedOutput": "0"
     },
     {
-      "input": "n = 5, paths = [[0,1,2,3,4],\n                       [4,3,2,1,0]]",
+      "input": "5\n[[0,1,2,3,4],[4,3,2,1,0]]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n[[0],[1],[2]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5\n[[0,1,2,3,4],[4,3,2,1,0]]",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 5, paths = [[0,1,2,3,4],\n                       [2,3,4],\n                       [4,0,1,2,3]]",
       "expectedOutput": "2"
     },
@@ -87,38 +99,6 @@
     {
       "input": "n = 5, paths = [[0,1,2,3,4],\n                       [4,3,2,1,0]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "5\n[[0,1,2,3,4],[2,3,4],[4,0,1,2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[0],[1],[2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n[[0,1,2,3,4],[4,3,2,1,0]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, paths = [[1],[2],[3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, paths = [[1,2,3,4,5],\n                       [5,4,3,2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "6\n[[1,2,3,4,5],[3,4,5],[5,1,2,3,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n[[1],[2],[3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, paths = [[1,2,3,4,5],\n                       [3,4,5],\n                       [5,1,2,3,4]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -134,7 +114,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longest-common-subpath/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:52.335Z",
+    "collectedAt": "2026-10-19T18:40:20.437Z",
     "sourceUpdatedAt": null
   }
 }

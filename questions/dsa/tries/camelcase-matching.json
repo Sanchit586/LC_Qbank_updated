@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FB&quot;",
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FB\"",
       "output": "[true,false,true,true,false]",
-      "explanation": "&quot;FooBar&quot; can be generated like this &quot;F&quot; + &quot;oo&quot; + &quot;B&quot; + &quot;ar&quot;.\n&quot;FootBall&quot; can be generated like this &quot;F&quot; + &quot;oot&quot; + &quot;B&quot; + &quot;all&quot;.\n&quot;FrameBuffer&quot; can be generated like this &quot;F&quot; + &quot;rame&quot; + &quot;B&quot; + &quot;uffer&quot;."
+      "explanation": "\"FooBar\" can be generated like this \"F\" + \"oo\" + \"B\" + \"ar\".\n\"FootBall\" can be generated like this \"F\" + \"oot\" + \"B\" + \"all\".\n\"FrameBuffer\" can be generated like this \"F\" + \"rame\" + \"B\" + \"uffer\"."
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBa&quot;",
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBa\"",
       "output": "[true,false,true,false,false]",
-      "explanation": "&quot;FooBar&quot; can be generated like this &quot;Fo&quot; + &quot;o&quot; + &quot;Ba&quot; + &quot;r&quot;.\n&quot;FootBall&quot; can be generated like this &quot;Fo&quot; + &quot;ot&quot; + &quot;Ba&quot; + &quot;ll&quot;."
+      "explanation": "\"FooBar\" can be generated like this \"Fo\" + \"o\" + \"Ba\" + \"r\".\n\"FootBall\" can be generated like this \"Fo\" + \"ot\" + \"Ba\" + \"ll\"."
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBaT&quot;",
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBaT\"",
       "output": "[false,true,false,false,false]",
-      "explanation": "&quot;FooBarTest&quot; can be generated like this &quot;Fo&quot; + &quot;o&quot; + &quot;Ba&quot; + &quot;r&quot; + &quot;T&quot; + &quot;est&quot;."
+      "explanation": "\"FooBarTest\" can be generated like this \"Fo\" + \"o\" + \"Ba\" + \"r\" + \"T\" + \"est\"."
     }
   ],
   "starterCode": {
@@ -58,42 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FB&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
       "expectedOutput": "[true,false,true,true,false]"
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBa&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"",
       "expectedOutput": "[true,false,true,false,false]"
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBaT&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\"",
       "expectedOutput": "[false,true,false,false,false]"
     }
   ],
   "testCases": [
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FB&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
       "expectedOutput": "[true,false,true,true,false]"
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBa&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"",
       "expectedOutput": "[true,false,true,false,false]"
     },
     {
-      "input": "queries = [&quot;FooBar&quot;,&quot;FooBarTest&quot;,&quot;FootBall&quot;,&quot;FrameBuffer&quot;,&quot;ForceFeedBack&quot;], pattern = &quot;FoBaT&quot;",
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\"",
       "expectedOutput": "[false,true,false,false,false]"
     },
     {
-      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
-      "expectedOutput": null
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FB\"",
+      "expectedOutput": "[true,false,true,true,false]"
     },
     {
-      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBa\"",
-      "expectedOutput": null
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBa\"",
+      "expectedOutput": "[true,false,true,false,false]"
     },
     {
-      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FoBaT\"",
-      "expectedOutput": null
+      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBaT\"",
+      "expectedOutput": "[false,true,false,false,false]"
     }
   ],
   "sqlSchema": null,
@@ -109,7 +109,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/camelcase-matching/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.269Z",
+    "collectedAt": "2026-10-19T18:40:13.849Z",
     "sourceUpdatedAt": null
   }
 }

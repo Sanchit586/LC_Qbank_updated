@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "queries = [[1,2],[2,4]]",
+      "input": "[[1,2],[2,4]]",
       "expectedOutput": "3"
     },
     {
-      "input": "queries = [[2,6]]",
+      "input": "[[2,6]]",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[2,6]]",
+      "expectedOutput": "4"
+    },
+    {
       "input": "queries = [[1,2],[2,4]]",
       "expectedOutput": "3"
     },
     {
       "input": "queries = [[2,6]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "[[1,2],[2,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "queries = [[2,3],[3,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-make-array-elements-zero/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.038Z",
+    "collectedAt": "2026-10-19T18:40:24.662Z",
     "sourceUpdatedAt": null
   }
 }

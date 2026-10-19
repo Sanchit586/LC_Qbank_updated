@@ -19,12 +19,12 @@
   ],
   "examples": [
     {
-      "input": "n = 2, commands = [&quot;RIGHT&quot;,&quot;DOWN&quot;]",
+      "input": "n = 2, commands = [\"RIGHT\",\"DOWN\"]",
       "output": "3",
       "explanation": "0\n\t\t\t1\n\t\t\n\t\t\n\t\t\t2\n\t\t\t3\n\t\t\n\t\n\n\n\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\n\t\t\n\t\t\t2\n\t\t\t3\n\t\t\n\t\n\n\n\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\n\t\t\n\t\t\t2\n\t\t\t3"
     },
     {
-      "input": "n = 3, commands = [&quot;DOWN&quot;,&quot;RIGHT&quot;,&quot;UP&quot;]",
+      "input": "n = 3, commands = [\"DOWN\",\"RIGHT\",\"UP\"]",
       "output": "1",
       "explanation": "0\n\t\t\t1\n\t\t\t2\n\t\t\n\t\t\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\t\t\n\t\t\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\t\t\n\t\n\n\n\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\t\t\n\t\t\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\t\t\n\t\t\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\t\t\n\t\n\n\n\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\t\t\n\t\t\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\t\t\n\t\t\n\t\t\t6\n\t\t\t7\n\t\t\t8\n\t\t\n\t\n\n\n\n\t\n\t\t\n\t\t\t0\n\t\t\t1\n\t\t\t2\n\t\t\n\t\t\n\t\t\t3\n\t\t\t4\n\t\t\t5\n\t\t\n\t\t\n\t\t\t6\n\t\t\t7\n\t\t\t8"
     }
@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 2, commands = [&quot;RIGHT&quot;,&quot;DOWN&quot;]",
+      "input": "2\n[\"RIGHT\",\"DOWN\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, commands = [&quot;DOWN&quot;,&quot;RIGHT&quot;,&quot;UP&quot;]",
+      "input": "3\n[\"DOWN\",\"RIGHT\",\"UP\"]",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
-      "input": "n = 2, commands = [&quot;RIGHT&quot;,&quot;DOWN&quot;]",
+      "input": "2\n[\"RIGHT\",\"DOWN\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, commands = [&quot;DOWN&quot;,&quot;RIGHT&quot;,&quot;UP&quot;]",
+      "input": "3\n[\"DOWN\",\"RIGHT\",\"UP\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "2\n[\"RIGHT\",\"DOWN\"]",
-      "expectedOutput": null
+      "input": "n = 2, commands = [\"RIGHT\",\"DOWN\"]",
+      "expectedOutput": "3"
     },
     {
-      "input": "3\n[\"DOWN\",\"RIGHT\",\"UP\"]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, commands = [&quot;RIGHT&quot;,&quot;DOWN&quot;]",
-      "expectedOutput": null
+      "input": "n = 3, commands = [\"DOWN\",\"RIGHT\",\"UP\"]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/snake-in-matrix/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:32.718Z",
+    "collectedAt": "2026-10-19T18:40:29.889Z",
     "sourceUpdatedAt": null
   }
 }

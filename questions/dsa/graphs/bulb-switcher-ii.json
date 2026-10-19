@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 1, presses = 1",
+      "input": "1\n1",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 2, presses = 1",
+      "input": "2\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, presses = 1",
+      "input": "3\n1",
       "expectedOutput": "4"
     }
   ],
   "testCases": [
     {
+      "input": "1\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "4"
+    },
+    {
       "input": "n = 1, presses = 1",
       "expectedOutput": "2"
     },
@@ -80,38 +92,6 @@
     {
       "input": "n = 3, presses = 1",
       "expectedOutput": "4"
-    },
-    {
-      "input": "1\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, presses = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, presses = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 2, presses = 2",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -123,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/bulb-switcher-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.088Z",
+    "collectedAt": "2026-10-19T18:40:13.767Z",
     "sourceUpdatedAt": null
   }
 }

@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "patterns = [&quot;a&quot;,&quot;abc&quot;,&quot;bc&quot;,&quot;d&quot;], word = &quot;abc&quot;",
+      "input": "patterns = [\"a\",\"abc\",\"bc\",\"d\"], word = \"abc\"",
       "output": "3",
-      "explanation": "- &quot;a&quot; appears as a substring in &quot;abc&quot;.\n- &quot;abc&quot; appears as a substring in &quot;abc&quot;.\n- &quot;bc&quot; appears as a substring in &quot;abc&quot;.\n- &quot;d&quot; does not appear as a substring in &quot;abc&quot;.\n3 of the strings in patterns appear as a substring in word."
+      "explanation": "- \"a\" appears as a substring in \"abc\".\n- \"abc\" appears as a substring in \"abc\".\n- \"bc\" appears as a substring in \"abc\".\n- \"d\" does not appear as a substring in \"abc\".\n3 of the strings in patterns appear as a substring in word."
     },
     {
-      "input": "patterns = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], word = &quot;aaaaabbbbb&quot;",
+      "input": "patterns = [\"a\",\"b\",\"c\"], word = \"aaaaabbbbb\"",
       "output": "2",
-      "explanation": "- &quot;a&quot; appears as a substring in &quot;aaaaabbbbb&quot;.\n- &quot;b&quot; appears as a substring in &quot;aaaaabbbbb&quot;.\n- &quot;c&quot; does not appear as a substring in &quot;aaaaabbbbb&quot;.\n2 of the strings in patterns appear as a substring in word."
+      "explanation": "- \"a\" appears as a substring in \"aaaaabbbbb\".\n- \"b\" appears as a substring in \"aaaaabbbbb\".\n- \"c\" does not appear as a substring in \"aaaaabbbbb\".\n2 of the strings in patterns appear as a substring in word."
     },
     {
-      "input": "patterns = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;], word = &quot;ab&quot;",
+      "input": "patterns = [\"a\",\"a\",\"a\"], word = \"ab\"",
       "output": "3",
-      "explanation": "Each of the patterns appears as a substring in word &quot;ab&quot;."
+      "explanation": "Each of the patterns appears as a substring in word \"ab\"."
     }
   ],
   "starterCode": {
@@ -56,42 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "patterns = [&quot;a&quot;,&quot;abc&quot;,&quot;bc&quot;,&quot;d&quot;], word = &quot;abc&quot;",
+      "input": "[\"a\",\"abc\",\"bc\",\"d\"]\n\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "patterns = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], word = &quot;aaaaabbbbb&quot;",
+      "input": "[\"a\",\"b\",\"c\"]\n\"aaaaabbbbb\"",
       "expectedOutput": "2"
     },
     {
-      "input": "patterns = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;], word = &quot;ab&quot;",
+      "input": "[\"a\",\"a\",\"a\"]\n\"ab\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "patterns = [&quot;a&quot;,&quot;abc&quot;,&quot;bc&quot;,&quot;d&quot;], word = &quot;abc&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "patterns = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], word = &quot;aaaaabbbbb&quot;",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "patterns = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;], word = &quot;ab&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "[\"a\",\"abc\",\"bc\",\"d\"]\n\"abc\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "[\"a\",\"b\",\"c\"]\n\"aaaaabbbbb\"",
-      "expectedOutput": null
+      "expectedOutput": "2"
     },
     {
       "input": "[\"a\",\"a\",\"a\"]\n\"ab\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
+    },
+    {
+      "input": "patterns = [\"a\",\"abc\",\"bc\",\"d\"], word = \"abc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "patterns = [\"a\",\"b\",\"c\"], word = \"aaaaabbbbb\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "patterns = [\"a\",\"a\",\"a\"], word = \"ab\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -106,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-strings-that-appear-as-substrings-in-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:43.190Z",
+    "collectedAt": "2026-10-19T18:40:26.086Z",
     "sourceUpdatedAt": null
   }
 }

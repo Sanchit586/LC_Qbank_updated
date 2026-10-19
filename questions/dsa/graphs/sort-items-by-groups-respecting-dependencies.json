@@ -31,7 +31,7 @@
     {
       "input": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]",
       "output": "[]",
-      "explanation": "&nbsp;This is the same as example 1 except that 4 needs to be before 6 in the sorted list."
+      "explanation": " This is the same as"
     }
   ],
   "starterCode": {
@@ -57,34 +57,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]",
+      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3,6],[],[],[]]",
       "expectedOutput": "[6,3,4,1,5,2,0,7]"
     },
     {
-      "input": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]",
+      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3],[],[4],[]]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3,6],[],[],[]]",
+      "expectedOutput": "[6,3,4,1,5,2,0,7]"
+    },
+    {
+      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3],[],[4],[]]",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3,6],[],[],[]]",
       "expectedOutput": "[6,3,4,1,5,2,0,7]"
     },
     {
       "input": "n = 8, m = 2, group = [-1,-1,1,0,0,1,0,-1], beforeItems = [[],[6],[5],[6],[3],[],[4],[]]",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3,6],[],[],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n2\n[-1,-1,1,0,0,1,0,-1]\n[[],[6],[5],[6],[3],[],[4],[]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 9, m = 3, group = [-2,-2,2,1,1,2,1,-2], beforeItems = [[],[7],[6],[7],[4,7],[],[],[]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -100,7 +96,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/sort-items-by-groups-respecting-dependencies/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:33.327Z",
+    "collectedAt": "2026-10-19T18:40:29.973Z",
     "sourceUpdatedAt": null
   }
 }

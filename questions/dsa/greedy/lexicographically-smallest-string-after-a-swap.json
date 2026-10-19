@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;45320&quot;",
-      "output": "&quot;43520&quot;",
+      "input": "s = \"45320\"",
+      "output": "\"43520\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;001&quot;",
-      "output": "&quot;001&quot;",
+      "input": "s = \"001\"",
+      "output": "\"001\"",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;45320&quot;",
-      "expectedOutput": "&quot;43520&quot;"
+      "input": "\"45320\"",
+      "expectedOutput": "\"43520\""
     },
     {
-      "input": "s = &quot;001&quot;",
-      "expectedOutput": "&quot;001&quot;"
+      "input": "\"001\"",
+      "expectedOutput": "\"001\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;45320&quot;",
-      "expectedOutput": "&quot;43520&quot;"
-    },
-    {
-      "input": "s = &quot;001&quot;",
-      "expectedOutput": "&quot;001&quot;"
-    },
-    {
       "input": "\"45320\"",
-      "expectedOutput": null
+      "expectedOutput": "\"43520\""
     },
     {
       "input": "\"001\"",
-      "expectedOutput": null
+      "expectedOutput": "\"001\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"45320\"",
+      "expectedOutput": "\"43520\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"001\"",
+      "expectedOutput": "\"001\""
     }
   ],
   "sqlSchema": null,
@@ -150,7 +86,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-a-swap/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.136Z",
+    "collectedAt": "2026-10-19T18:40:20.249Z",
     "sourceUpdatedAt": null
   }
 }

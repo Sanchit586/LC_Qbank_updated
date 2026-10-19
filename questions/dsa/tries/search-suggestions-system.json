@@ -25,14 +25,14 @@
   ],
   "examples": [
     {
-      "input": "products = [&quot;mobile&quot;,&quot;mouse&quot;,&quot;moneypot&quot;,&quot;monitor&quot;,&quot;mousepad&quot;], searchWord = &quot;mouse&quot;",
-      "output": "[[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;]]",
-      "explanation": "products sorted lexicographically = [&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;,&quot;mouse&quot;,&quot;mousepad&quot;].\nAfter typing m and mo all products match and we show user [&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;].\nAfter typing mou, mous and mouse the system suggests [&quot;mouse&quot;,&quot;mousepad&quot;]."
+      "input": "products = [\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord = \"mouse\"",
+      "output": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]",
+      "explanation": "products sorted lexicographically = [\"mobile\",\"moneypot\",\"monitor\",\"mouse\",\"mousepad\"].\nAfter typing m and mo all products match and we show user [\"mobile\",\"moneypot\",\"monitor\"].\nAfter typing mou, mous and mouse the system suggests [\"mouse\",\"mousepad\"]."
     },
     {
-      "input": "products = [&quot;havana&quot;], searchWord = &quot;havana&quot;",
-      "output": "[[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;]]",
-      "explanation": "The only word &quot;havana&quot; will be always suggested while typing the search word."
+      "input": "products = [\"havana\"], searchWord = \"havana\"",
+      "output": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]",
+      "explanation": "The only word \"havana\" will be always suggested while typing the search word."
     }
   ],
   "starterCode": {
@@ -58,30 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "products = [&quot;mobile&quot;,&quot;mouse&quot;,&quot;moneypot&quot;,&quot;monitor&quot;,&quot;mousepad&quot;], searchWord = &quot;mouse&quot;",
-      "expectedOutput": "[[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;]]"
+      "input": "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
     },
     {
-      "input": "products = [&quot;havana&quot;], searchWord = &quot;havana&quot;",
-      "expectedOutput": "[[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;]]"
+      "input": "[\"havana\"]\n\"havana\"",
+      "expectedOutput": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
     }
   ],
   "testCases": [
     {
-      "input": "products = [&quot;mobile&quot;,&quot;mouse&quot;,&quot;moneypot&quot;,&quot;monitor&quot;,&quot;mousepad&quot;], searchWord = &quot;mouse&quot;",
-      "expectedOutput": "[[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mobile&quot;,&quot;moneypot&quot;,&quot;monitor&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;],[&quot;mouse&quot;,&quot;mousepad&quot;]]"
-    },
-    {
-      "input": "products = [&quot;havana&quot;], searchWord = &quot;havana&quot;",
-      "expectedOutput": "[[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;],[&quot;havana&quot;]]"
-    },
-    {
       "input": "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]\n\"mouse\"",
-      "expectedOutput": null
+      "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
     },
     {
       "input": "[\"havana\"]\n\"havana\"",
-      "expectedOutput": null
+      "expectedOutput": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
+    },
+    {
+      "input": "products = [\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord = \"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
+    },
+    {
+      "input": "products = [\"havana\"], searchWord = \"havana\"",
+      "expectedOutput": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
     }
   ],
   "sqlSchema": null,
@@ -97,7 +97,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/search-suggestions-system/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:17.812Z",
+    "collectedAt": "2026-10-19T18:40:28.167Z",
     "sourceUpdatedAt": null
   }
 }

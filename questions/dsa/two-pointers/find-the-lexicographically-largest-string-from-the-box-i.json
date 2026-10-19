@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;dbca&quot;, numFriends = 2",
-      "output": "&quot;dbc&quot;",
-      "explanation": "&nbsp;"
+      "input": "word = \"dbca\", numFriends = 2",
+      "output": "\"dbc\"",
+      "explanation": " "
     },
     {
-      "input": "word = &quot;gggg&quot;, numFriends = 4",
-      "output": "&quot;g&quot;",
-      "explanation": "&nbsp;"
+      "input": "word = \"gggg\", numFriends = 4",
+      "output": "\"g\"",
+      "explanation": " "
     }
   ],
   "starterCode": {
@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;dbca&quot;, numFriends = 2",
-      "expectedOutput": "&quot;dbc&quot;"
+      "input": "\"dbca\"\n2",
+      "expectedOutput": "\"dbc\""
     },
     {
-      "input": "word = &quot;gggg&quot;, numFriends = 4",
-      "expectedOutput": "&quot;g&quot;"
+      "input": "\"gggg\"\n4",
+      "expectedOutput": "\"g\""
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;dbca&quot;, numFriends = 2",
-      "expectedOutput": "&quot;dbc&quot;"
-    },
-    {
-      "input": "word = &quot;gggg&quot;, numFriends = 4",
-      "expectedOutput": "&quot;g&quot;"
-    },
-    {
       "input": "\"dbca\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"dbc\""
     },
     {
       "input": "\"gggg\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"g\""
     },
     {
-      "input": "word = &quot;dbca&quot;, numFriends = 3",
-      "expectedOutput": null
+      "input": "word = \"dbca\", numFriends = 2",
+      "expectedOutput": "\"dbc\""
+    },
+    {
+      "input": "word = \"gggg\", numFriends = 4",
+      "expectedOutput": "\"g\""
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/find-the-lexicographically-largest-string-from-the-box-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:09.910Z",
+    "collectedAt": "2026-10-19T18:40:18.349Z",
     "sourceUpdatedAt": null
   }
 }

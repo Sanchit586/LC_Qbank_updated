@@ -19,7 +19,7 @@
     "n - 1 <= edges.length <= 1000",
     "0 <= xi, yi <= n - 1",
     "1 <= timei <= 1000",
-    "1 <= passingFees[j] <= 1000",
+    "1 <= passingFees[j] <= 1000 ",
     "The graph may contain multiple edges between two nodes.",
     "The graph does not contain self loops."
   ],
@@ -27,12 +27,12 @@
     {
       "input": "maxTime = 30, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
       "output": "11",
-      "explanation": "The path to take is 0 -&gt; 1 -&gt; 2 -&gt; 5, which takes 30 minutes and has $11 worth of passing fees."
+      "explanation": "The path to take is 0 -> 1 -> 2 -> 5, which takes 30 minutes and has $11 worth of passing fees."
     },
     {
       "input": "maxTime = 29, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
       "output": "48",
-      "explanation": "The path to take is 0 -&gt; 3 -&gt; 4 -&gt; 5, which takes 26 minutes and has $48 worth of passing fees.\nYou cannot take path 0 -&gt; 1 -&gt; 2 -&gt; 5 since it would take too long."
+      "explanation": "The path to take is 0 -> 3 -> 4 -> 5, which takes 26 minutes and has $48 worth of passing fees.\nYou cannot take path 0 -> 1 -> 2 -> 5 since it would take too long."
     },
     {
       "input": "maxTime = 25, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
@@ -63,20 +63,32 @@
   },
   "publicTests": [
     {
-      "input": "maxTime = 30, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
+      "input": "30\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
       "expectedOutput": "11"
     },
     {
-      "input": "maxTime = 29, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
+      "input": "29\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
       "expectedOutput": "48"
     },
     {
-      "input": "maxTime = 25, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
+      "input": "25\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "30\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "29\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
+      "expectedOutput": "48"
+    },
+    {
+      "input": "25\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "maxTime = 30, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
       "expectedOutput": "11"
     },
@@ -87,38 +99,6 @@
     {
       "input": "maxTime = 25, edges = [[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]], passingFees = [5,1,2,20,20,3]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "30\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "29\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "25\n[[0,1,10],[1,2,10],[2,5,10],[0,3,1],[3,4,10],[4,5,15]]\n[5,1,2,20,20,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maxTime = 30, edges = [[1,2,11],[2,3,11],[3,6,11],[1,4,2],[4,5,11],[5,6,16]], passingFees = [6,2,3,21,21,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maxTime = 26, edges = [[1,2,11],[2,3,11],[3,6,11],[1,4,2],[4,5,11],[5,6,16]], passingFees = [6,2,3,21,21,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "31\n[[1,2,11],[2,3,11],[3,6,11],[1,4,2],[4,5,11],[5,6,16]]\n[6,2,3,21,21,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "30\n[[1,2,11],[2,3,11],[3,6,11],[1,4,2],[4,5,11],[5,6,16]]\n[6,2,3,21,21,4]",
-      "expectedOutput": null
-    },
-    {
-      "input": "maxTime = 31, edges = [[1,2,11],[2,3,11],[3,6,11],[1,4,2],[4,5,11],[5,6,16]], passingFees = [6,2,3,21,21,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -133,7 +113,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-cost-to-reach-destination-in-time/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:50.085Z",
+    "collectedAt": "2026-10-19T18:40:23.706Z",
     "sourceUpdatedAt": null
   }
 }

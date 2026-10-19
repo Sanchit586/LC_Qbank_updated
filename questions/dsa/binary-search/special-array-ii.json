@@ -53,34 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "nums = [3,4,1,2,6], queries = [[0,4]]",
+      "input": "[3,4,1,2,6]\n[[0,4]]",
       "expectedOutput": "[false]"
     },
     {
-      "input": "nums = [4,3,1,6], queries = [[0,2],[2,3]]",
+      "input": "[4,3,1,6]\n[[0,2],[2,3]]",
       "expectedOutput": "[false,true]"
     }
   ],
   "testCases": [
     {
+      "input": "[3,4,1,2,6]\n[[0,4]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "[4,3,1,6]\n[[0,2],[2,3]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
       "input": "nums = [3,4,1,2,6], queries = [[0,4]]",
       "expectedOutput": "[false]"
     },
     {
       "input": "nums = [4,3,1,6], queries = [[0,2],[2,3]]",
       "expectedOutput": "[false,true]"
-    },
-    {
-      "input": "[3,4,1,2,6]\n[[0,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[4,3,1,6]\n[[0,2],[2,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "nums = [4,5,2,3,7], queries = [[1,5]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/special-array-ii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:34.437Z",
+    "collectedAt": "2026-10-19T18:40:30.045Z",
     "sourceUpdatedAt": null
   }
 }

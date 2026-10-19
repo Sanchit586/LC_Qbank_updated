@@ -20,22 +20,18 @@
   },
   "publicTests": [
     {
-      "input": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | None     | 135   |\n| WirelessEarbuds | None     | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+",
+      "input": "{\"headers\":{\"products\":[\"name\",\"quantity\",\"price\"]},\"rows\":{\"products\":[[\"Wristwatch\",null,135],[\"WirelessEarbuds\",null,821],[\"GolfClubs\",779,9319],[\"Printer\",849,3051]]}}",
       "expectedOutput": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 0        | 135   |\n| WirelessEarbuds | 0        | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+"
     }
   ],
   "testCases": [
     {
-      "input": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | None     | 135   |\n| WirelessEarbuds | None     | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+",
+      "input": "{\"headers\":{\"products\":[\"name\",\"quantity\",\"price\"]},\"rows\":{\"products\":[[\"Wristwatch\",null,135],[\"WirelessEarbuds\",null,821],[\"GolfClubs\",779,9319],[\"Printer\",849,3051]]}}",
       "expectedOutput": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 0        | 135   |\n| WirelessEarbuds | 0        | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+"
     },
     {
-      "input": "{\"headers\":{\"products\":[\"name\",\"quantity\",\"price\"]},\"rows\":{\"products\":[[\"Wristwatch\",null,135],[\"WirelessEarbuds\",null,821],[\"GolfClubs\",779,9319],[\"Printer\",849,3051]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | None     | 136   |\n| WirelessEarbuds | None     | 822   |\n| GolfClubs       | 780      | 9320  |\n| Printer         | 850      | 3052  |\n+-----------------+----------+-------+",
-      "expectedOutput": null
+      "input": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | None     | 135   |\n| WirelessEarbuds | None     | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+",
+      "expectedOutput": "+-----------------+----------+-------+\n| name            | quantity | price |\n+-----------------+----------+-------+\n| Wristwatch      | 0        | 135   |\n| WirelessEarbuds | 0        | 821   |\n| GolfClubs       | 779      | 9319  |\n| Printer         | 849      | 3051  |\n+-----------------+----------+-------+"
     }
   ],
   "sqlSchema": null,
@@ -49,7 +45,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/fill-missing-data/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:54.600Z",
+    "collectedAt": "2026-10-19T18:40:17.290Z",
     "sourceUpdatedAt": null
   }
 }

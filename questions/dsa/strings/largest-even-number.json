@@ -15,18 +15,18 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1112&quot;",
-      "output": "&quot;1112&quot;",
+      "input": "s = \"1112\"",
+      "output": "\"1112\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;221&quot;",
-      "output": "&quot;22&quot;",
+      "input": "s = \"221\"",
+      "output": "\"22\"",
       "explanation": null
     },
     {
-      "input": "s = &quot;1&quot;",
-      "output": "&quot;&quot;",
+      "input": "s = \"1\"",
+      "output": "\"\"",
       "explanation": null
     }
   ],
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1112&quot;",
-      "expectedOutput": "&quot;1112&quot;"
+      "input": "\"1112\"",
+      "expectedOutput": "\"1112\""
     },
     {
-      "input": "s = &quot;221&quot;",
-      "expectedOutput": "&quot;22&quot;"
+      "input": "\"221\"",
+      "expectedOutput": "\"22\""
     },
     {
-      "input": "s = &quot;1&quot;",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"1\"",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1112&quot;",
-      "expectedOutput": "&quot;1112&quot;"
-    },
-    {
-      "input": "s = &quot;221&quot;",
-      "expectedOutput": "&quot;22&quot;"
-    },
-    {
-      "input": "s = &quot;1&quot;",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"1112\"",
-      "expectedOutput": null
+      "expectedOutput": "\"1112\""
     },
     {
       "input": "\"221\"",
-      "expectedOutput": null
+      "expectedOutput": "\"22\""
     },
     {
       "input": "\"1\"",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"1112\"",
+      "expectedOutput": "\"1112\""
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"221\"",
+      "expectedOutput": "\"22\""
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/largest-even-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:42.193Z",
+    "collectedAt": "2026-10-19T18:40:19.920Z",
     "sourceUpdatedAt": null
   }
 }

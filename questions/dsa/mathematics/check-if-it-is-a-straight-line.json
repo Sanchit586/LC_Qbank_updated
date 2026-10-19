@@ -52,34 +52,30 @@
   },
   "publicTests": [
     {
-      "input": "coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
+      "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
       "expectedOutput": "true"
     },
     {
-      "input": "coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
+      "input": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
+      "expectedOutput": "false"
+    },
+    {
       "input": "coordinates = [[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
       "expectedOutput": "true"
     },
     {
       "input": "coordinates = [[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "[[1,2],[2,3],[3,4],[4,5],[5,6],[6,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[2,2],[3,4],[4,5],[5,6],[7,7]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "coordinates = [[2,3],[3,4],[4,5],[5,6],[6,7],[7,8]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -95,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-it-is-a-straight-line/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:53.202Z",
+    "collectedAt": "2026-10-19T18:40:14.167Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,14 +17,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;abcz&quot;, k = 26",
-      "output": "&quot;abda&quot;",
-      "explanation": "The string &quot;abda&quot; is beautiful and lexicographically larger than the string &quot;abcz&quot;.\nIt can be proven that there is no string that is lexicographically larger than the string &quot;abcz&quot;, beautiful, and lexicographically smaller than the string &quot;abda&quot;."
+      "input": "s = \"abcz\", k = 26",
+      "output": "\"abda\"",
+      "explanation": "The string \"abda\" is beautiful and lexicographically larger than the string \"abcz\".\nIt can be proven that there is no string that is lexicographically larger than the string \"abcz\", beautiful, and lexicographically smaller than the string \"abda\"."
     },
     {
-      "input": "s = &quot;dc&quot;, k = 4",
-      "output": "&quot;&quot;",
-      "explanation": "It can be proven that there is no string that is lexicographically larger than the string &quot;dc&quot; and is beautiful."
+      "input": "s = \"dc\", k = 4",
+      "output": "\"\"",
+      "explanation": "It can be proven that there is no string that is lexicographically larger than the string \"dc\" and is beautiful."
     }
   ],
   "starterCode": {
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;abcz&quot;, k = 26",
-      "expectedOutput": "&quot;abda&quot;"
+      "input": "\"abcz\"\n26",
+      "expectedOutput": "\"abda\""
     },
     {
-      "input": "s = &quot;dc&quot;, k = 4",
-      "expectedOutput": "&quot;&quot;"
+      "input": "\"dc\"\n4",
+      "expectedOutput": "\"\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;abcz&quot;, k = 26",
-      "expectedOutput": "&quot;abda&quot;"
-    },
-    {
-      "input": "s = &quot;dc&quot;, k = 4",
-      "expectedOutput": "&quot;&quot;"
-    },
-    {
       "input": "\"abcz\"\n26",
-      "expectedOutput": null
+      "expectedOutput": "\"abda\""
     },
     {
       "input": "\"dc\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = &quot;abcz&quot;, k = 27",
-      "expectedOutput": null
+      "input": "s = \"abcz\", k = 26",
+      "expectedOutput": "\"abda\""
+    },
+    {
+      "input": "s = \"dc\", k = 4",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-beautiful-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.053Z",
+    "collectedAt": "2026-10-19T18:40:20.205Z",
     "sourceUpdatedAt": null
   }
 }

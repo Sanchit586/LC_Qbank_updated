@@ -17,7 +17,7 @@
     {
       "input": "n = 6",
       "output": "3",
-      "explanation": "The first 6 elements of magical string s is &quot;122112&quot; and it contains three 1&#39;s, so return 3."
+      "explanation": "The first 6 elements of magical string s is \"122112\" and it contains three 1's, so return 3."
     },
     {
       "input": "n = 1",
@@ -48,86 +48,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 6",
+      "input": "6",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "1"
     }
   ],
   "testCases": [
     {
+      "input": "6",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "1"
+    },
+    {
       "input": "n = 6",
       "expectedOutput": "3"
     },
     {
       "input": "n = 1",
       "expectedOutput": "1"
-    },
-    {
-      "input": "6",
-      "expectedOutput": null
-    },
-    {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -139,7 +83,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/magical-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:58.396Z",
+    "collectedAt": "2026-10-19T18:40:20.858Z",
     "sourceUpdatedAt": null
   }
 }

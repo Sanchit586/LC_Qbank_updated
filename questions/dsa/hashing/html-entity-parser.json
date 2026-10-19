@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "text = &quot;&amp;amp; is an HTML entity but &amp;ambassador; is not.&quot;",
-      "output": "&quot;&amp; is an HTML entity but &amp;ambassador; is not.&quot;",
-      "explanation": "The parser will replace the &amp;amp; entity by &amp;"
+      "input": "text = \"&amp; is an HTML entity but &ambassador; is not.\"",
+      "output": "\"& is an HTML entity but &ambassador; is not.\"",
+      "explanation": "The parser will replace the &amp; entity by &"
     },
     {
-      "input": "text = &quot;and I quote: &amp;quot;...&amp;quot;&quot;",
-      "output": "&quot;and I quote: \\&quot;...\\&quot;&quot;",
+      "input": "text = \"and I quote: &quot;...&quot;\"",
+      "output": "\"and I quote: \\\"...\\\"\"",
       "explanation": null
     }
   ],
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "text = &quot;&amp;amp; is an HTML entity but &amp;ambassador; is not.&quot;",
-      "expectedOutput": "&quot;&amp; is an HTML entity but &amp;ambassador; is not.&quot;"
+      "input": "\"& is an HTML entity but &ambassador; is not.\"",
+      "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
     },
     {
-      "input": "text = &quot;and I quote: &amp;quot;...&amp;quot;&quot;",
-      "expectedOutput": "&quot;and I quote: \\&quot;...\\&quot;&quot;"
+      "input": "\"and I quote: \"...\"\"",
+      "expectedOutput": "\"and I quote: \\\"...\\\"\""
     }
   ],
   "testCases": [
     {
-      "input": "text = &quot;&amp;amp; is an HTML entity but &amp;ambassador; is not.&quot;",
-      "expectedOutput": "&quot;&amp; is an HTML entity but &amp;ambassador; is not.&quot;"
+      "input": "\"& is an HTML entity but &ambassador; is not.\"",
+      "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
     },
     {
-      "input": "text = &quot;and I quote: &amp;quot;...&amp;quot;&quot;",
-      "expectedOutput": "&quot;and I quote: \\&quot;...\\&quot;&quot;"
+      "input": "\"and I quote: \"...\"\"",
+      "expectedOutput": "\"and I quote: \\\"...\\\"\""
     },
     {
-      "input": "\"&amp; is an HTML entity but &ambassador; is not.\"",
-      "expectedOutput": null
+      "input": "text = \"& is an HTML entity but &ambassador; is not.\"",
+      "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
     },
     {
-      "input": "\"and I quote: &quot;...&quot;\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "text = \"and I quote: \"...\"\"",
+      "expectedOutput": "\"and I quote: \\\"...\\\"\""
     }
   ],
   "sqlSchema": null,
@@ -151,7 +87,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/html-entity-parser/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:27.730Z",
+    "collectedAt": "2026-10-19T18:40:19.409Z",
     "sourceUpdatedAt": null
   }
 }

@@ -17,19 +17,19 @@
   ],
   "examples": [
     {
-      "input": "s1 = &quot;parker&quot;, s2 = &quot;morris&quot;, baseStr = &quot;parser&quot;",
-      "output": "&quot;makkek&quot;",
-      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [m,p], [a,o], [k,r,s], [e,i].\nThe characters in each group are equivalent and sorted in lexicographical order.\nSo the answer is &quot;makkek&quot;."
+      "input": "s1 = \"parker\", s2 = \"morris\", baseStr = \"parser\"",
+      "output": "\"makkek\"",
+      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [m,p], [a,o], [k,r,s], [e,i].\nThe characters in each group are equivalent and sorted in lexicographical order.\nSo the answer is \"makkek\"."
     },
     {
-      "input": "s1 = &quot;hello&quot;, s2 = &quot;world&quot;, baseStr = &quot;hold&quot;",
-      "output": "&quot;hdld&quot;",
-      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [h,w], [d,e,o], [l,r].\nSo only the second letter &#39;o&#39; in baseStr is changed to &#39;d&#39;, the answer is &quot;hdld&quot;."
+      "input": "s1 = \"hello\", s2 = \"world\", baseStr = \"hold\"",
+      "output": "\"hdld\"",
+      "explanation": "Based on the equivalency information in s1 and s2, we can group their characters as [h,w], [d,e,o], [l,r].\nSo only the second letter 'o' in baseStr is changed to 'd', the answer is \"hdld\"."
     },
     {
-      "input": "s1 = &quot;leetcode&quot;, s2 = &quot;programs&quot;, baseStr = &quot;sourcecode&quot;",
-      "output": "&quot;aauaaaaada&quot;",
-      "explanation": "We group the equivalent characters in s1 and s2 as [a,o,e,r,s,c], [l,p], [g,t] and [d,m], thus all letters in baseStr except &#39;u&#39; and &#39;d&#39; are transformed to &#39;a&#39;, the answer is &quot;aauaaaaada&quot;."
+      "input": "s1 = \"leetcode\", s2 = \"programs\", baseStr = \"sourcecode\"",
+      "output": "\"aauaaaaada\"",
+      "explanation": "We group the equivalent characters in s1 and s2 as [a,o,e,r,s,c], [l,p], [g,t] and [d,m], thus all letters in baseStr except 'u' and 'd' are transformed to 'a', the answer is \"aauaaaaada\"."
     }
   ],
   "starterCode": {
@@ -55,50 +55,42 @@
   },
   "publicTests": [
     {
-      "input": "s1 = &quot;parker&quot;, s2 = &quot;morris&quot;, baseStr = &quot;parser&quot;",
-      "expectedOutput": "&quot;makkek&quot;"
+      "input": "\"parker\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"makkek\""
     },
     {
-      "input": "s1 = &quot;hello&quot;, s2 = &quot;world&quot;, baseStr = &quot;hold&quot;",
-      "expectedOutput": "&quot;hdld&quot;"
+      "input": "\"hello\"\n\"world\"\n\"hold\"",
+      "expectedOutput": "\"hdld\""
     },
     {
-      "input": "s1 = &quot;leetcode&quot;, s2 = &quot;programs&quot;, baseStr = &quot;sourcecode&quot;",
-      "expectedOutput": "&quot;aauaaaaada&quot;"
+      "input": "\"leetcode\"\n\"programs\"\n\"sourcecode\"",
+      "expectedOutput": "\"aauaaaaada\""
     }
   ],
   "testCases": [
     {
-      "input": "s1 = &quot;parker&quot;, s2 = &quot;morris&quot;, baseStr = &quot;parser&quot;",
-      "expectedOutput": "&quot;makkek&quot;"
-    },
-    {
-      "input": "s1 = &quot;hello&quot;, s2 = &quot;world&quot;, baseStr = &quot;hold&quot;",
-      "expectedOutput": "&quot;hdld&quot;"
-    },
-    {
-      "input": "s1 = &quot;leetcode&quot;, s2 = &quot;programs&quot;, baseStr = &quot;sourcecode&quot;",
-      "expectedOutput": "&quot;aauaaaaada&quot;"
-    },
-    {
       "input": "\"parker\"\n\"morris\"\n\"parser\"",
-      "expectedOutput": null
+      "expectedOutput": "\"makkek\""
     },
     {
       "input": "\"hello\"\n\"world\"\n\"hold\"",
-      "expectedOutput": null
+      "expectedOutput": "\"hdld\""
     },
     {
       "input": "\"leetcode\"\n\"programs\"\n\"sourcecode\"",
-      "expectedOutput": null
+      "expectedOutput": "\"aauaaaaada\""
     },
     {
-      "input": "s2 = &quot;hello&quot;, s3 = &quot;world&quot;, baseStr = &quot;hold&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"parker\", s2 = \"morris\", baseStr = \"parser\"",
+      "expectedOutput": "\"makkek\""
     },
     {
-      "input": "s2 = &quot;leetcode&quot;, s3 = &quot;programs&quot;, baseStr = &quot;sourcecode&quot;",
-      "expectedOutput": null
+      "input": "s1 = \"hello\", s2 = \"world\", baseStr = \"hold\"",
+      "expectedOutput": "\"hdld\""
+    },
+    {
+      "input": "s1 = \"leetcode\", s2 = \"programs\", baseStr = \"sourcecode\"",
+      "expectedOutput": "\"aauaaaaada\""
     }
   ],
   "sqlSchema": null,
@@ -114,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/lexicographically-smallest-equivalent-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.065Z",
+    "collectedAt": "2026-10-19T18:40:20.211Z",
     "sourceUpdatedAt": null
   }
 }

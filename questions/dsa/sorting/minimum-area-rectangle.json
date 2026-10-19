@@ -54,34 +54,30 @@
   },
   "publicTests": [
     {
-      "input": "points = [[1,1],[1,3],[3,1],[3,3],[2,2]]",
+      "input": "[[1,1],[1,3],[3,1],[3,3],[2,2]]",
       "expectedOutput": "4"
     },
     {
-      "input": "points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]",
+      "input": "[[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,1],[1,3],[3,1],[3,3],[2,2]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]",
+      "expectedOutput": "2"
+    },
+    {
       "input": "points = [[1,1],[1,3],[3,1],[3,3],[2,2]]",
       "expectedOutput": "4"
     },
     {
       "input": "points = [[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "[[1,1],[1,3],[3,1],[3,3],[2,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,1],[1,3],[3,1],[3,3],[4,1],[4,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "points = [[2,2],[2,4],[4,2],[4,4],[3,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -93,7 +89,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-area-rectangle/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:45.188Z",
+    "collectedAt": "2026-10-19T18:40:23.431Z",
     "sourceUpdatedAt": null
   }
 }

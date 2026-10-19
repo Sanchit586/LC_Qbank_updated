@@ -15,17 +15,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0&quot;",
+      "input": "s = \"0\"",
       "output": "true",
       "explanation": null
     },
     {
-      "input": "s = &quot;e&quot;",
+      "input": "s = \"e\"",
       "output": "false",
       "explanation": null
     },
     {
-      "input": "s = &quot;.&quot;",
+      "input": "s = \".\"",
       "output": "false",
       "explanation": null
     }
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0&quot;",
+      "input": "\"0\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;e&quot;",
+      "input": "\"e\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;.&quot;",
+      "input": "\".\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0&quot;",
+      "input": "\"0\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;e&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;.&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"0\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"e\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\".\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"0\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"e\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \".\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -156,7 +100,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/valid-number/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:11:08.318Z",
+    "collectedAt": "2026-10-19T18:40:31.484Z",
     "sourceUpdatedAt": null
   }
 }

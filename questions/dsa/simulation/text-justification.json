@@ -20,18 +20,18 @@
   ],
   "examples": [
     {
-      "input": "words = [&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;], maxWidth = 16",
-      "output": "[\n&nbsp; &nbsp;&quot;This &nbsp; &nbsp;is &nbsp; &nbsp;an&quot;,\n&nbsp; &nbsp;&quot;example &nbsp;of text&quot;,\n&nbsp; &nbsp;&quot;justification. &nbsp;&quot;\n]",
+      "input": "words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16",
+      "output": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]",
       "explanation": null
     },
     {
-      "input": "words = [&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;], maxWidth = 16",
-      "output": "[\n&nbsp; &quot;What &nbsp; must &nbsp; be&quot;,\n&nbsp; &quot;acknowledgment &nbsp;&quot;,\n&nbsp; &quot;shall be &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]",
-      "explanation": "Note that the last line is &quot;shall be    &quot; instead of &quot;shall     be&quot;, because the last line must be left-justified instead of fully-justified.\nNote that the second line is also left-justified because it contains only one word."
+      "input": "words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16",
+      "output": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]",
+      "explanation": "Note that the last line is \"shall be    \" instead of \"shall     be\", because the last line must be left-justified instead of fully-justified.\nNote that the second line is also left-justified because it contains only one word."
     },
     {
-      "input": "words = [&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,&quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;], maxWidth = 20",
-      "output": "[\n&nbsp; &quot;Science &nbsp;is &nbsp;what we&quot;,\n  &quot;understand &nbsp; &nbsp; &nbsp;well&quot;,\n&nbsp; &quot;enough to explain to&quot;,\n&nbsp; &quot;a &nbsp;computer. &nbsp;Art is&quot;,\n&nbsp; &quot;everything &nbsp;else &nbsp;we&quot;,\n&nbsp; &quot;do &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]",
+      "input": "words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"], maxWidth = 20",
+      "output": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]",
       "explanation": null
     }
   ],
@@ -58,98 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "words = [&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;], maxWidth = 16",
-      "expectedOutput": "[\n&nbsp; &nbsp;&quot;This &nbsp; &nbsp;is &nbsp; &nbsp;an&quot;,\n&nbsp; &nbsp;&quot;example &nbsp;of text&quot;,\n&nbsp; &nbsp;&quot;justification. &nbsp;&quot;\n]"
+      "input": "[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]\n16",
+      "expectedOutput": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]"
     },
     {
-      "input": "words = [&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;], maxWidth = 16",
-      "expectedOutput": "[\n&nbsp; &quot;What &nbsp; must &nbsp; be&quot;,\n&nbsp; &quot;acknowledgment &nbsp;&quot;,\n&nbsp; &quot;shall be &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]"
+      "input": "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]\n16",
+      "expectedOutput": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]"
     },
     {
-      "input": "words = [&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,&quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;], maxWidth = 20",
-      "expectedOutput": "[\n&nbsp; &quot;Science &nbsp;is &nbsp;what we&quot;,\n  &quot;understand &nbsp; &nbsp; &nbsp;well&quot;,\n&nbsp; &quot;enough to explain to&quot;,\n&nbsp; &quot;a &nbsp;computer. &nbsp;Art is&quot;,\n&nbsp; &quot;everything &nbsp;else &nbsp;we&quot;,\n&nbsp; &quot;do &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]"
+      "input": "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]\n20",
+      "expectedOutput": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]"
     }
   ],
   "testCases": [
     {
-      "input": "words = [&quot;This&quot;, &quot;is&quot;, &quot;an&quot;, &quot;example&quot;, &quot;of&quot;, &quot;text&quot;, &quot;justification.&quot;], maxWidth = 16",
-      "expectedOutput": "[\n&nbsp; &nbsp;&quot;This &nbsp; &nbsp;is &nbsp; &nbsp;an&quot;,\n&nbsp; &nbsp;&quot;example &nbsp;of text&quot;,\n&nbsp; &nbsp;&quot;justification. &nbsp;&quot;\n]"
-    },
-    {
-      "input": "words = [&quot;What&quot;,&quot;must&quot;,&quot;be&quot;,&quot;acknowledgment&quot;,&quot;shall&quot;,&quot;be&quot;], maxWidth = 16",
-      "expectedOutput": "[\n&nbsp; &quot;What &nbsp; must &nbsp; be&quot;,\n&nbsp; &quot;acknowledgment &nbsp;&quot;,\n&nbsp; &quot;shall be &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]"
-    },
-    {
-      "input": "words = [&quot;Science&quot;,&quot;is&quot;,&quot;what&quot;,&quot;we&quot;,&quot;understand&quot;,&quot;well&quot;,&quot;enough&quot;,&quot;to&quot;,&quot;explain&quot;,&quot;to&quot;,&quot;a&quot;,&quot;computer.&quot;,&quot;Art&quot;,&quot;is&quot;,&quot;everything&quot;,&quot;else&quot;,&quot;we&quot;,&quot;do&quot;], maxWidth = 20",
-      "expectedOutput": "[\n&nbsp; &quot;Science &nbsp;is &nbsp;what we&quot;,\n  &quot;understand &nbsp; &nbsp; &nbsp;well&quot;,\n&nbsp; &quot;enough to explain to&quot;,\n&nbsp; &quot;a &nbsp;computer. &nbsp;Art is&quot;,\n&nbsp; &quot;everything &nbsp;else &nbsp;we&quot;,\n&nbsp; &quot;do &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&quot;\n]"
-    },
-    {
       "input": "[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]\n16",
-      "expectedOutput": null
+      "expectedOutput": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]"
     },
     {
       "input": "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]\n16",
-      "expectedOutput": null
+      "expectedOutput": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]"
     },
     {
       "input": "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]\n20",
-      "expectedOutput": null
+      "expectedOutput": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]"
     },
     {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
+      "input": "words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16",
+      "expectedOutput": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]"
     },
     {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
+      "input": "words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16",
+      "expectedOutput": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]"
     },
     {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
+      "input": "words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"], maxWidth = 20",
+      "expectedOutput": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/text-justification/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.384Z",
+    "collectedAt": "2026-10-19T18:40:30.870Z",
     "sourceUpdatedAt": null
   }
 }

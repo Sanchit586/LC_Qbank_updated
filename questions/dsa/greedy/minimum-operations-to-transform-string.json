@@ -16,14 +16,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;yz&quot;",
+      "input": "s = \"yz\"",
       "output": "2",
-      "explanation": "Change &#39;y&#39; to &#39;z&#39; to get &quot;zz&quot;.\n\tChange &#39;z&#39; to &#39;a&#39; to get &quot;aa&quot;.\n\tThus, the answer is 2."
+      "explanation": "Change 'y' to 'z' to get \"zz\".\n\tChange 'z' to 'a' to get \"aa\".\n\tThus, the answer is 2."
     },
     {
-      "input": "s = &quot;a&quot;",
+      "input": "s = \"a\"",
       "output": "0",
-      "explanation": "The string &quot;a&quot; only consists of &#39;a&#39;​​​​​​​ characters. Thus, the answer is 0."
+      "explanation": "The string \"a\" only consists of 'a'​​​​​​​ characters. Thus, the answer is 0."
     }
   ],
   "starterCode": {
@@ -49,94 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;yz&quot;",
+      "input": "\"yz\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;yz&quot;",
+      "input": "\"yz\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;a&quot;",
+      "input": "\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"yz\"",
-      "expectedOutput": null
+      "input": "s = \"yz\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"tmmzuxt\"",
-      "expectedOutput": null
+      "input": "s = \"a\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-operations-to-transform-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:14.832Z",
+    "collectedAt": "2026-10-19T18:40:24.828Z",
     "sourceUpdatedAt": null
   }
 }

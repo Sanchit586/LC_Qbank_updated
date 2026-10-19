@@ -51,34 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "n = 5, ranges = [3,4,1,1,0,0]",
+      "input": "5\n[3,4,1,1,0,0]",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 3, ranges = [0,0,0,0]",
+      "input": "3\n[0,0,0,0]",
       "expectedOutput": "-1"
     }
   ],
   "testCases": [
     {
+      "input": "5\n[3,4,1,1,0,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "3\n[0,0,0,0]",
+      "expectedOutput": "-1"
+    },
+    {
       "input": "n = 5, ranges = [3,4,1,1,0,0]",
       "expectedOutput": "1"
     },
     {
       "input": "n = 3, ranges = [0,0,0,0]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "5\n[3,4,1,1,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[0,0,0,0]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 6, ranges = [4,5,2,2,1,1]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -94,7 +90,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-number-of-taps-to-open-to-water-a-garden/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:11.275Z",
+    "collectedAt": "2026-10-19T18:40:24.494Z",
     "sourceUpdatedAt": null
   }
 }

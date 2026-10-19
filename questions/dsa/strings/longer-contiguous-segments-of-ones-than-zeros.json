@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;1101&quot;",
+      "input": "s = \"1101\"",
       "output": "true",
-      "explanation": "The longest contiguous segment of 1s has length 2: &quot;1101&quot;\nThe longest contiguous segment of 0s has length 1: &quot;1101&quot;\nThe segment of 1s is longer, so return true."
+      "explanation": "The longest contiguous segment of 1s has length 2: \"1101\"\nThe longest contiguous segment of 0s has length 1: \"1101\"\nThe segment of 1s is longer, so return true."
     },
     {
-      "input": "s = &quot;111000&quot;",
+      "input": "s = \"111000\"",
       "output": "false",
-      "explanation": "The longest contiguous segment of 1s has length 3: &quot;111000&quot;\nThe longest contiguous segment of 0s has length 3: &quot;111000&quot;\nThe segment of 1s is not longer, so return false."
+      "explanation": "The longest contiguous segment of 1s has length 3: \"111000\"\nThe longest contiguous segment of 0s has length 3: \"111000\"\nThe segment of 1s is not longer, so return false."
     },
     {
-      "input": "s = &quot;110100010&quot;",
+      "input": "s = \"110100010\"",
       "output": "false",
-      "explanation": "The longest contiguous segment of 1s has length 2: &quot;110100010&quot;\nThe longest contiguous segment of 0s has length 3: &quot;110100010&quot;\nThe segment of 1s is not longer, so return false."
+      "explanation": "The longest contiguous segment of 1s has length 2: \"110100010\"\nThe longest contiguous segment of 0s has length 3: \"110100010\"\nThe segment of 1s is not longer, so return false."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;1101&quot;",
+      "input": "\"1101\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;111000&quot;",
+      "input": "\"111000\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;110100010&quot;",
+      "input": "\"110100010\"",
       "expectedOutput": "false"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;1101&quot;",
+      "input": "\"1101\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;111000&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;110100010&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "\"1101\"",
-      "expectedOutput": null
-    },
-    {
       "input": "\"111000\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"110100010\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"1101\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"111000\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"110100010\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,
@@ -159,7 +103,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/longer-contiguous-segments-of-ones-than-zeros/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:51.536Z",
+    "collectedAt": "2026-10-19T18:40:20.350Z",
     "sourceUpdatedAt": null
   }
 }

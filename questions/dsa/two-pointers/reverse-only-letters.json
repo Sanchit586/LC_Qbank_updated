@@ -55,20 +55,32 @@
   },
   "publicTests": [
     {
-      "input": "s = \"ab-cd\"",
+      "input": "\"ab-cd\"",
       "expectedOutput": "\"dc-ba\""
     },
     {
-      "input": "s = \"a-bC-dEf-ghIj\"",
+      "input": "\"a-bC-dEf-ghIj\"",
       "expectedOutput": "\"j-Ih-gfE-dCba\""
     },
     {
-      "input": "s = \"Test1ng-Leet=code-Q!\"",
+      "input": "\"Test1ng-Leet=code-Q!\"",
       "expectedOutput": "\"Qedo1ct-eeLg=ntse-T!\""
     }
   ],
   "testCases": [
     {
+      "input": "\"ab-cd\"",
+      "expectedOutput": "\"dc-ba\""
+    },
+    {
+      "input": "\"a-bC-dEf-ghIj\"",
+      "expectedOutput": "\"j-Ih-gfE-dCba\""
+    },
+    {
+      "input": "\"Test1ng-Leet=code-Q!\"",
+      "expectedOutput": "\"Qedo1ct-eeLg=ntse-T!\""
+    },
+    {
       "input": "s = \"ab-cd\"",
       "expectedOutput": "\"dc-ba\""
     },
@@ -79,74 +91,6 @@
     {
       "input": "s = \"Test1ng-Leet=code-Q!\"",
       "expectedOutput": "\"Qedo1ct-eeLg=ntse-T!\""
-    },
-    {
-      "input": "\"ab-cd\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a-bC-dEf-ghIj\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"Test1ng-Leet=code-Q!\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/reverse-only-letters/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:12.898Z",
+    "collectedAt": "2026-10-19T18:40:27.858Z",
     "sourceUpdatedAt": null
   }
 }

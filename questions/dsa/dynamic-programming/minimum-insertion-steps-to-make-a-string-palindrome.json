@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;zzazz&quot;",
+      "input": "s = \"zzazz\"",
       "output": "0",
-      "explanation": "The string &quot;zzazz&quot; is already palindrome we do not need any insertions."
+      "explanation": "The string \"zzazz\" is already palindrome we do not need any insertions."
     },
     {
-      "input": "s = &quot;mbadm&quot;",
+      "input": "s = \"mbadm\"",
       "output": "2",
-      "explanation": "String can be &quot;mbdadbm&quot; or &quot;mdbabdm&quot;."
+      "explanation": "String can be \"mbdadbm\" or \"mdbabdm\"."
     },
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "s = \"leetcode\"",
       "output": "5",
-      "explanation": "Inserting 5 characters the string becomes &quot;leetcodocteel&quot;."
+      "explanation": "Inserting 5 characters the string becomes \"leetcodocteel\"."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;zzazz&quot;",
+      "input": "\"zzazz\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;mbadm&quot;",
+      "input": "\"mbadm\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;zzazz&quot;",
+      "input": "\"zzazz\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;mbadm&quot;",
+      "input": "\"mbadm\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = &quot;leetcode&quot;",
+      "input": "\"leetcode\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"zzazz\"",
-      "expectedOutput": null
+      "input": "s = \"zzazz\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"mbadm\"",
-      "expectedOutput": null
+      "input": "s = \"mbadm\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "\"leetcode\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"leetcode\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-insertion-steps-to-make-a-string-palindrome/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.297Z",
+    "collectedAt": "2026-10-19T18:40:24.020Z",
     "sourceUpdatedAt": null
   }
 }

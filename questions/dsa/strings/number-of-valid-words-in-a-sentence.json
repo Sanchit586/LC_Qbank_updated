@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "sentence = &quot;cat and  dog&quot;",
+      "input": "sentence = \"cat and  dog\"",
       "output": "3",
-      "explanation": "The valid words in the sentence are &quot;cat&quot;, &quot;and&quot;, and &quot;dog&quot;."
+      "explanation": "The valid words in the sentence are \"cat\", \"and\", and \"dog\"."
     },
     {
-      "input": "sentence = &quot;!this  1-s b8d!&quot;",
+      "input": "sentence = \"!this  1-s b8d!\"",
       "output": "0",
-      "explanation": "There are no valid words in the sentence.\n&quot;!this&quot; is invalid because it starts with a punctuation mark.\n&quot;1-s&quot; and &quot;b8d&quot; are invalid because they contain digits."
+      "explanation": "There are no valid words in the sentence.\n\"!this\" is invalid because it starts with a punctuation mark.\n\"1-s\" and \"b8d\" are invalid because they contain digits."
     },
     {
-      "input": "sentence = &quot;alice and  bob are playing stone-game10&quot;",
+      "input": "sentence = \"alice and  bob are playing stone-game10\"",
       "output": "5",
-      "explanation": "The valid words in the sentence are &quot;alice&quot;, &quot;and&quot;, &quot;bob&quot;, &quot;are&quot;, and &quot;playing&quot;.\n&quot;stone-game10&quot; is invalid because it contains digits."
+      "explanation": "The valid words in the sentence are \"alice\", \"and\", \"bob\", \"are\", and \"playing\".\n\"stone-game10\" is invalid because it contains digits."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "sentence = &quot;cat and  dog&quot;",
+      "input": "\"cat and  dog\"",
       "expectedOutput": "3"
     },
     {
-      "input": "sentence = &quot;!this  1-s b8d!&quot;",
+      "input": "\"!this  1-s b8d!\"",
       "expectedOutput": "0"
     },
     {
-      "input": "sentence = &quot;alice and  bob are playing stone-game10&quot;",
+      "input": "\"alice and  bob are playing stone-game10\"",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "sentence = &quot;cat and  dog&quot;",
+      "input": "\"cat and  dog\"",
       "expectedOutput": "3"
     },
     {
-      "input": "sentence = &quot;!this  1-s b8d!&quot;",
+      "input": "\"!this  1-s b8d!\"",
       "expectedOutput": "0"
     },
     {
-      "input": "sentence = &quot;alice and  bob are playing stone-game10&quot;",
+      "input": "\"alice and  bob are playing stone-game10\"",
       "expectedOutput": "5"
     },
     {
-      "input": "\"cat and  dog\"",
-      "expectedOutput": null
+      "input": "sentence = \"cat and  dog\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"!this  1-s b8d!\"",
-      "expectedOutput": null
+      "input": "sentence = \"!this  1-s b8d!\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"alice and  bob are playing stone-game10\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "sentence = \"alice and  bob are playing stone-game10\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/number-of-valid-words-in-a-sentence/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:46.109Z",
+    "collectedAt": "2026-10-19T18:40:26.209Z",
     "sourceUpdatedAt": null
   }
 }

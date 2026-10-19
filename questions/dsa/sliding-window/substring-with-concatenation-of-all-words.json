@@ -19,17 +19,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;barfoothefoobarman&quot;, words = [&quot;foo&quot;,&quot;bar&quot;]",
+      "input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]",
       "output": "[0,9]",
       "explanation": null
     },
     {
-      "input": "s = &quot;wordgoodgoodgoodbestword&quot;, words = [&quot;word&quot;,&quot;good&quot;,&quot;best&quot;,&quot;word&quot;]",
+      "input": "s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]",
       "output": "[]",
       "explanation": null
     },
     {
-      "input": "s = &quot;barfoofoobarthefoobarman&quot;, words = [&quot;bar&quot;,&quot;foo&quot;,&quot;the&quot;]",
+      "input": "s = \"barfoofoobarthefoobarman\", words = [\"bar\",\"foo\",\"the\"]",
       "output": "[6,9,12]",
       "explanation": null
     }
@@ -57,42 +57,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;barfoothefoobarman&quot;, words = [&quot;foo&quot;,&quot;bar&quot;]",
+      "input": "\"barfoothefoobarman\"\n[\"foo\",\"bar\"]",
       "expectedOutput": "[0,9]"
     },
     {
-      "input": "s = &quot;wordgoodgoodgoodbestword&quot;, words = [&quot;word&quot;,&quot;good&quot;,&quot;best&quot;,&quot;word&quot;]",
+      "input": "\"wordgoodgoodgoodbestword\"\n[\"word\",\"good\",\"best\",\"word\"]",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = &quot;barfoofoobarthefoobarman&quot;, words = [&quot;bar&quot;,&quot;foo&quot;,&quot;the&quot;]",
+      "input": "\"barfoofoobarthefoobarman\"\n[\"bar\",\"foo\",\"the\"]",
       "expectedOutput": "[6,9,12]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;barfoothefoobarman&quot;, words = [&quot;foo&quot;,&quot;bar&quot;]",
+      "input": "\"barfoothefoobarman\"\n[\"foo\",\"bar\"]",
       "expectedOutput": "[0,9]"
     },
     {
-      "input": "s = &quot;wordgoodgoodgoodbestword&quot;, words = [&quot;word&quot;,&quot;good&quot;,&quot;best&quot;,&quot;word&quot;]",
+      "input": "\"wordgoodgoodgoodbestword\"\n[\"word\",\"good\",\"best\",\"word\"]",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = &quot;barfoofoobarthefoobarman&quot;, words = [&quot;bar&quot;,&quot;foo&quot;,&quot;the&quot;]",
+      "input": "\"barfoofoobarthefoobarman\"\n[\"bar\",\"foo\",\"the\"]",
       "expectedOutput": "[6,9,12]"
     },
     {
-      "input": "\"barfoothefoobarman\"\n[\"foo\",\"bar\"]",
-      "expectedOutput": null
+      "input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]",
+      "expectedOutput": "[0,9]"
     },
     {
-      "input": "\"wordgoodgoodgoodbestword\"\n[\"word\",\"good\",\"best\",\"word\"]",
-      "expectedOutput": null
+      "input": "s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]",
+      "expectedOutput": "[]"
     },
     {
-      "input": "\"barfoofoobarthefoobarman\"\n[\"bar\",\"foo\",\"the\"]",
-      "expectedOutput": null
+      "input": "s = \"barfoofoobarthefoobarman\", words = [\"bar\",\"foo\",\"the\"]",
+      "expectedOutput": "[6,9,12]"
     }
   ],
   "sqlSchema": null,
@@ -104,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/substring-with-concatenation-of-all-words/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:49.735Z",
+    "collectedAt": "2026-10-19T18:40:30.450Z",
     "sourceUpdatedAt": null
   }
 }

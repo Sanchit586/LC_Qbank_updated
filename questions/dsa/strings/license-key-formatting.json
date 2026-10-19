@@ -16,13 +16,13 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;5F3Z-2e-9-w&quot;, k = 4",
-      "output": "&quot;5F3Z-2E9W&quot;",
+      "input": "s = \"5F3Z-2e-9-w\", k = 4",
+      "output": "\"5F3Z-2E9W\"",
       "explanation": "The string s has been split into two parts, each part has 4 characters.\nNote that the two extra dashes are not needed and can be removed."
     },
     {
-      "input": "s = &quot;2-5g-3-J&quot;, k = 2",
-      "output": "&quot;2-5G-3J&quot;",
+      "input": "s = \"2-5g-3-J\", k = 2",
+      "output": "\"2-5G-3J\"",
       "explanation": "The string s has been split into three parts, each part has 2 characters except the first part as it could be shorter as mentioned above."
     }
   ],
@@ -49,34 +49,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;5F3Z-2e-9-w&quot;, k = 4",
-      "expectedOutput": "&quot;5F3Z-2E9W&quot;"
+      "input": "\"5F3Z-2e-9-w\"\n4",
+      "expectedOutput": "\"5F3Z-2E9W\""
     },
     {
-      "input": "s = &quot;2-5g-3-J&quot;, k = 2",
-      "expectedOutput": "&quot;2-5G-3J&quot;"
+      "input": "\"2-5g-3-J\"\n2",
+      "expectedOutput": "\"2-5G-3J\""
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;5F3Z-2e-9-w&quot;, k = 4",
-      "expectedOutput": "&quot;5F3Z-2E9W&quot;"
-    },
-    {
-      "input": "s = &quot;2-5g-3-J&quot;, k = 2",
-      "expectedOutput": "&quot;2-5G-3J&quot;"
-    },
-    {
       "input": "\"5F3Z-2e-9-w\"\n4",
-      "expectedOutput": null
+      "expectedOutput": "\"5F3Z-2E9W\""
     },
     {
       "input": "\"2-5g-3-J\"\n2",
-      "expectedOutput": null
+      "expectedOutput": "\"2-5G-3J\""
     },
     {
-      "input": "s = &quot;6F4Z-3e-10-w&quot;, k = 5",
-      "expectedOutput": null
+      "input": "s = \"5F3Z-2e-9-w\", k = 4",
+      "expectedOutput": "\"5F3Z-2E9W\""
+    },
+    {
+      "input": "s = \"2-5g-3-J\", k = 2",
+      "expectedOutput": "\"2-5G-3J\""
     }
   ],
   "sqlSchema": null,
@@ -88,7 +84,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/license-key-formatting/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:50.195Z",
+    "collectedAt": "2026-10-19T18:40:20.298Z",
     "sourceUpdatedAt": null
   }
 }

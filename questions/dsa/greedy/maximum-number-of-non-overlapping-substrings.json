@@ -18,14 +18,14 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;adefaddaccc&quot;",
-      "output": "[&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;]",
-      "explanation": "&nbsp;The following are all the possible substrings that meet the conditions:\n[\n&nbsp; &quot;adefaddaccc&quot;\n&nbsp; &quot;adefadda&quot;,\n&nbsp; &quot;ef&quot;,\n&nbsp; &quot;e&quot;,\n  &quot;f&quot;,\n&nbsp; &quot;ccc&quot;,\n]\nIf we choose the first string, we cannot choose anything else and we&#39;d get only 1. If we choose &quot;adefadda&quot;, we are left with &quot;ccc&quot; which is the only one that doesn&#39;t overlap, thus obtaining 2 substrings. Notice also, that it&#39;s not optimal to choose &quot;ef&quot; since it can be split into two. Therefore, the optimal way is to choose [&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;] which gives us 3 substrings. No other solution of the same number of substrings exist."
+      "input": "s = \"adefaddaccc\"",
+      "output": "[\"e\",\"f\",\"ccc\"]",
+      "explanation": " The following are all the possible substrings that meet the conditions:\n[\n  \"adefaddaccc\"\n  \"adefadda\",\n  \"ef\",\n  \"e\",\n  \"f\",\n  \"ccc\",\n]\nIf we choose the first string, we cannot choose anything else and we'd get only 1. If we choose \"adefadda\", we are left with \"ccc\" which is the only one that doesn't overlap, thus obtaining 2 substrings. Notice also, that it's not optimal to choose \"ef\" since it can be split into two. Therefore, the optimal way is to choose [\"e\",\"f\",\"ccc\"] which gives us 3 substrings. No other solution of the same number of substrings exist."
     },
     {
-      "input": "s = &quot;abbaccd&quot;",
-      "output": "[&quot;d&quot;,&quot;bb&quot;,&quot;cc&quot;]",
-      "explanation": "Notice that while the set of substrings [&quot;d&quot;,&quot;abba&quot;,&quot;cc&quot;] also has length 3, it&#39;s considered incorrect since it has larger total length."
+      "input": "s = \"abbaccd\"",
+      "output": "[\"d\",\"bb\",\"cc\"]",
+      "explanation": "Notice that while the set of substrings [\"d\",\"abba\",\"cc\"] also has length 3, it's considered incorrect since it has larger total length."
     }
   ],
   "starterCode": {
@@ -51,94 +51,30 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;adefaddaccc&quot;",
-      "expectedOutput": "[&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;]"
+      "input": "\"adefaddaccc\"",
+      "expectedOutput": "[\"e\",\"f\",\"ccc\"]"
     },
     {
-      "input": "s = &quot;abbaccd&quot;",
-      "expectedOutput": "[&quot;d&quot;,&quot;bb&quot;,&quot;cc&quot;]"
+      "input": "\"abbaccd\"",
+      "expectedOutput": "[\"d\",\"bb\",\"cc\"]"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;adefaddaccc&quot;",
-      "expectedOutput": "[&quot;e&quot;,&quot;f&quot;,&quot;ccc&quot;]"
-    },
-    {
-      "input": "s = &quot;abbaccd&quot;",
-      "expectedOutput": "[&quot;d&quot;,&quot;bb&quot;,&quot;cc&quot;]"
-    },
-    {
       "input": "\"adefaddaccc\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"e\",\"f\",\"ccc\"]"
     },
     {
       "input": "\"abbaccd\"",
-      "expectedOutput": null
+      "expectedOutput": "[\"d\",\"bb\",\"cc\"]"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"adefaddaccc\"",
+      "expectedOutput": "[\"e\",\"f\",\"ccc\"]"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"au\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bpfbhmipx\"",
-      "expectedOutput": null
+      "input": "s = \"abbaccd\"",
+      "expectedOutput": "[\"d\",\"bb\",\"cc\"]"
     }
   ],
   "sqlSchema": null,
@@ -155,7 +91,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-number-of-non-overlapping-substrings/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:21.678Z",
+    "collectedAt": "2026-10-19T18:40:22.102Z",
     "sourceUpdatedAt": null
   }
 }

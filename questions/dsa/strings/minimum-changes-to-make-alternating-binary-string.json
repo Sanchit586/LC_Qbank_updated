@@ -15,19 +15,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;0100&quot;",
+      "input": "s = \"0100\"",
       "output": "1",
-      "explanation": "If you change the last character to &#39;1&#39;, s will be &quot;0101&quot;, which is alternating."
+      "explanation": "If you change the last character to '1', s will be \"0101\", which is alternating."
     },
     {
-      "input": "s = &quot;10&quot;",
+      "input": "s = \"10\"",
       "output": "0",
       "explanation": "s is already alternating."
     },
     {
-      "input": "s = &quot;1111&quot;",
+      "input": "s = \"1111\"",
       "output": "2",
-      "explanation": "You need two operations to reach &quot;0101&quot; or &quot;1010&quot;."
+      "explanation": "You need two operations to reach \"0101\" or \"1010\"."
     }
   ],
   "starterCode": {
@@ -53,98 +53,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;0100&quot;",
+      "input": "\"0100\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;10&quot;",
+      "input": "\"10\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;1111&quot;",
+      "input": "\"1111\"",
       "expectedOutput": "2"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;0100&quot;",
+      "input": "\"0100\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;10&quot;",
+      "input": "\"10\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;1111&quot;",
+      "input": "\"1111\"",
       "expectedOutput": "2"
     },
     {
-      "input": "\"0100\"",
-      "expectedOutput": null
+      "input": "s = \"0100\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"10\"",
-      "expectedOutput": null
+      "input": "s = \"10\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"1111\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"1111\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,
@@ -160,7 +104,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-changes-to-make-alternating-binary-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:46.656Z",
+    "collectedAt": "2026-10-19T18:40:23.488Z",
     "sourceUpdatedAt": null
   }
 }

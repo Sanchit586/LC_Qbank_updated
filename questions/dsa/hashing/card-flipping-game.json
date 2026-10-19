@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "fronts = [1,2,4,4,7], backs = [1,3,4,1,3]",
+      "input": "[1,2,4,4,7]\n[1,3,4,1,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "fronts = [1], backs = [1]",
+      "input": "[1]\n[1]",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,4,4,7]\n[1,3,4,1,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1]\n[1]",
+      "expectedOutput": "0"
+    },
+    {
       "input": "fronts = [1,2,4,4,7], backs = [1,3,4,1,3]",
       "expectedOutput": "2"
     },
     {
       "input": "fronts = [1], backs = [1]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "[1,2,4,4,7]\n[1,3,4,1,3]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1]\n[1]",
-      "expectedOutput": null
-    },
-    {
-      "input": "fronts = [2,3,5,5,8], backs = [2,4,5,2,4]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -89,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/card-flipping-game/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:45.381Z",
+    "collectedAt": "2026-10-19T18:40:13.931Z",
     "sourceUpdatedAt": null
   }
 }

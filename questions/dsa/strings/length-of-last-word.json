@@ -16,19 +16,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;Hello World&quot;",
+      "input": "s = \"Hello World\"",
       "output": "5",
-      "explanation": "The last word is &quot;World&quot; with length 5."
+      "explanation": "The last word is \"World\" with length 5."
     },
     {
-      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "input": "s = \"   fly me   to   the moon  \"",
       "output": "4",
-      "explanation": "The last word is &quot;moon&quot; with length 4."
+      "explanation": "The last word is \"moon\" with length 4."
     },
     {
-      "input": "s = &quot;luffy is still joyboy&quot;",
+      "input": "s = \"luffy is still joyboy\"",
       "output": "6",
-      "explanation": "The last word is &quot;joyboy&quot; with length 6."
+      "explanation": "The last word is \"joyboy\" with length 6."
     }
   ],
   "starterCode": {
@@ -54,98 +54,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;Hello World&quot;",
+      "input": "\"Hello World\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "input": "\"   fly me   to   the moon  \"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;luffy is still joyboy&quot;",
+      "input": "\"luffy is still joyboy\"",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;Hello World&quot;",
+      "input": "\"Hello World\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "input": "\"   fly me   to   the moon  \"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = &quot;luffy is still joyboy&quot;",
+      "input": "\"luffy is still joyboy\"",
       "expectedOutput": "6"
     },
     {
-      "input": "\"Hello World\"",
-      "expectedOutput": null
+      "input": "s = \"Hello World\"",
+      "expectedOutput": "5"
     },
     {
-      "input": "\"   fly me   to   the moon  \"",
-      "expectedOutput": null
+      "input": "s = \"   fly me   to   the moon  \"",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"luffy is still joyboy\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"luffy is still joyboy\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,
@@ -157,7 +101,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/length-of-last-word/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:48.945Z",
+    "collectedAt": "2026-10-19T18:40:20.125Z",
     "sourceUpdatedAt": null
   }
 }

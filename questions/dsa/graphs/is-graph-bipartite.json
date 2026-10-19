@@ -58,34 +58,30 @@
   },
   "publicTests": [
     {
-      "input": "graph = [[1,2,3],[0,2],[0,1,3],[0,2]]",
+      "input": "[[1,2,3],[0,2],[0,1,3],[0,2]]",
       "expectedOutput": "false"
     },
     {
-      "input": "graph = [[1,3],[0,2],[1,3],[0,2]]",
+      "input": "[[1,3],[0,2],[1,3],[0,2]]",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
+      "input": "[[1,2,3],[0,2],[0,1,3],[0,2]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,3],[0,2],[1,3],[0,2]]",
+      "expectedOutput": "true"
+    },
+    {
       "input": "graph = [[1,2,3],[0,2],[0,1,3],[0,2]]",
       "expectedOutput": "false"
     },
     {
       "input": "graph = [[1,3],[0,2],[1,3],[0,2]]",
       "expectedOutput": "true"
-    },
-    {
-      "input": "[[1,2,3],[0,2],[0,1,3],[0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[1,3],[0,2],[1,3],[0,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "graph = [[2,3,4],[1,3],[1,2,4],[1,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -97,7 +93,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/is-graph-bipartite/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:33.256Z",
+    "collectedAt": "2026-10-19T18:40:19.630Z",
     "sourceUpdatedAt": null
   }
 }

@@ -16,12 +16,17 @@
     {
       "input": "n = 1",
       "output": "5",
-      "explanation": "All possible strings are: &quot;a&quot;, &quot;e&quot;, &quot;i&quot; , &quot;o&quot; and &quot;u&quot;."
+      "explanation": "All possible strings are: \"a\", \"e\", \"i\" , \"o\" and \"u\"."
     },
     {
       "input": "n = 2",
       "output": "10",
-      "explanation": "All possible strings are: &quot;ae&quot;, &quot;ea&quot;, &quot;ei&quot;, &quot;ia&quot;, &quot;ie&quot;, &quot;io&quot;, &quot;iu&quot;, &quot;oi&quot;, &quot;ou&quot; and &quot;ua&quot;."
+      "explanation": "All possible strings are: \"ae\", \"ea\", \"ei\", \"ia\", \"ie\", \"io\", \"iu\", \"oi\", \"ou\" and \"ua\"."
+    },
+    {
+      "input": "n = 5",
+      "output": "68",
+      "explanation": null
     }
   ],
   "starterCode": {
@@ -47,16 +52,24 @@
   },
   "publicTests": [
     {
-      "input": "n = 1",
+      "input": "1",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 2",
+      "input": "2",
       "expectedOutput": "10"
     }
   ],
   "testCases": [
     {
+      "input": "1",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "10"
+    },
+    {
       "input": "n = 1",
       "expectedOutput": "5"
     },
@@ -65,64 +78,8 @@
       "expectedOutput": "10"
     },
     {
-      "input": "1",
-      "expectedOutput": null
-    },
-    {
-      "input": "2",
-      "expectedOutput": null
-    },
-    {
-      "input": "0",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1",
-      "expectedOutput": null
-    },
-    {
-      "input": "3",
-      "expectedOutput": null
-    },
-    {
-      "input": "5",
-      "expectedOutput": null
-    },
-    {
-      "input": "10",
-      "expectedOutput": null
-    },
-    {
-      "input": "15",
-      "expectedOutput": null
-    },
-    {
-      "input": "16",
-      "expectedOutput": null
-    },
-    {
-      "input": "100",
-      "expectedOutput": null
-    },
-    {
-      "input": "-100",
-      "expectedOutput": null
-    },
-    {
-      "input": "1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "-1000",
-      "expectedOutput": null
-    },
-    {
-      "input": "2147483647",
-      "expectedOutput": null
-    },
-    {
-      "input": "-2147483648",
-      "expectedOutput": null
+      "input": "n = 5",
+      "expectedOutput": "68"
     }
   ],
   "sqlSchema": null,
@@ -138,7 +95,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-vowels-permutation/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:27.542Z",
+    "collectedAt": "2026-10-19T18:40:15.941Z",
     "sourceUpdatedAt": null
   }
 }

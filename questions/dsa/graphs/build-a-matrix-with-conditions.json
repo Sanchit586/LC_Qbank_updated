@@ -56,34 +56,30 @@
   },
   "publicTests": [
     {
-      "input": "k = 3, rowConditions = [[1,2],[3,2]], colConditions = [[2,1],[3,2]]",
+      "input": "3\n[[1,2],[3,2]]\n[[2,1],[3,2]]",
       "expectedOutput": "[[3,0,0],[0,0,1],[0,2,0]]"
     },
     {
-      "input": "k = 3, rowConditions = [[1,2],[2,3],[3,1],[2,3]], colConditions = [[2,1]]",
+      "input": "3\n[[1,2],[2,3],[3,1],[2,3]]\n[[2,1]]",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "3\n[[1,2],[3,2]]\n[[2,1],[3,2]]",
+      "expectedOutput": "[[3,0,0],[0,0,1],[0,2,0]]"
+    },
+    {
+      "input": "3\n[[1,2],[2,3],[3,1],[2,3]]\n[[2,1]]",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "k = 3, rowConditions = [[1,2],[3,2]], colConditions = [[2,1],[3,2]]",
       "expectedOutput": "[[3,0,0],[0,0,1],[0,2,0]]"
     },
     {
       "input": "k = 3, rowConditions = [[1,2],[2,3],[3,1],[2,3]], colConditions = [[2,1]]",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "3\n[[1,2],[3,2]]\n[[2,1],[3,2]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n[[1,2],[2,3],[3,1],[2,3]]\n[[2,1]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "k = 4, rowConditions = [[2,3],[4,3]], colConditions = [[3,2],[4,3]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -98,7 +94,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/build-a-matrix-with-conditions/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:44.452Z",
+    "collectedAt": "2026-10-19T18:40:13.730Z",
     "sourceUpdatedAt": null
   }
 }

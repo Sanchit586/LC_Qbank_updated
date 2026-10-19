@@ -17,7 +17,13 @@
     "0 <= startTime < endTime <= 109",
     "At most 400 calls will be made to book."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"MyCalendarThree\", \"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]",
+      "output": "[null, 1, 1, 2, 3, 3, 3]",
+      "explanation": "MyCalendarThree myCalendarThree = new MyCalendarThree();\nmyCalendarThree.book(10, 20); // return 1\nmyCalendarThree.book(50, 60); // return 1\nmyCalendarThree.book(10, 40); // return 2\nmyCalendarThree.book(5, 15); // return 3\nmyCalendarThree.book(5, 10); // return 3\nmyCalendarThree.book(25, 55); // return 3"
+    }
+  ],
   "starterCode": {
     "cpp": "class MyCalendarThree {\npublic:\n    MyCalendarThree() {\n        \n    }\n    \n    int book(int startTime, int endTime) {\n        \n    }\n};\n\n/**\n * Your MyCalendarThree object will be instantiated and called as such:\n * MyCalendarThree* obj = new MyCalendarThree();\n * int param_1 = obj->book(startTime,endTime);\n */",
     "java": "class MyCalendarThree {\n\n    public MyCalendarThree() {\n        \n    }\n    \n    public int book(int startTime, int endTime) {\n        \n    }\n}\n\n/**\n * Your MyCalendarThree object will be instantiated and called as such:\n * MyCalendarThree obj = new MyCalendarThree();\n * int param_1 = obj.book(startTime,endTime);\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"MyCalendarThree\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 1, 2, 3, 3, 3]"
     }
   ],
   "testCases": [
     {
       "input": "[\"MyCalendarThree\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[10,20],[50,60],[10,40],[5,15],[5,10],[25,55]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 1, 2, 3, 3, 3]"
     },
     {
-      "input": "[\"MyCalendarThree\",\"book\",\"book\",\"book\",\"book\",\"book\",\"book\"]\n[[],[11,21],[51,61],[11,41],[6,16],[6,11],[26,56]]",
-      "expectedOutput": null
+      "input": "[\"MyCalendarThree\", \"book\", \"book\", \"book\", \"book\", \"book\", \"book\"]\n[[], [10, 20], [50, 60], [10, 40], [5, 15], [5, 10], [25, 55]]",
+      "expectedOutput": "[null, 1, 1, 2, 3, 3, 3]"
     }
   ],
   "sqlSchema": null,
@@ -66,7 +72,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/my-calendar-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:35.989Z",
+    "collectedAt": "2026-10-19T18:40:25.549Z",
     "sourceUpdatedAt": null
   }
 }

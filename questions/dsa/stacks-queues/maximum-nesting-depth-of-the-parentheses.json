@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(1+(2*3)+((8)/4))+1&quot;",
+      "input": "s = \"(1+(2*3)+((8)/4))+1\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;(1)+((2))+(((3)))&quot;",
+      "input": "s = \"(1)+((2))+(((3)))\"",
       "output": "3",
       "explanation": null
     },
     {
-      "input": "s = &quot;()(())((()()))&quot;",
+      "input": "s = \"()(())((()()))\"",
       "output": "3",
       "explanation": null
     }
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(1+(2*3)+((8)/4))+1&quot;",
+      "input": "\"(1+(2*3)+((8)/4))+1\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;(1)+((2))+(((3)))&quot;",
+      "input": "\"(1)+((2))+(((3)))\"",
       "expectedOutput": "3"
     },
     {
-      "input": "s = &quot;()(())((()()))&quot;",
+      "input": "\"()(())((()()))\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(1+(2*3)+((8)/4))+1&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "s = &quot;(1)+((2))+(((3)))&quot;",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "s = &quot;()(())((()()))&quot;",
-      "expectedOutput": "3"
-    },
-    {
       "input": "\"(1+(2*3)+((8)/4))+1\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"(1)+((2))+(((3)))\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
       "input": "\"()(())((()()))\"",
-      "expectedOutput": null
+      "expectedOutput": "3"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": null
+      "input": "s = \"(1+(2*3)+((8)/4))+1\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"a\"",
-      "expectedOutput": null
+      "input": "s = \"(1)+((2))+(((3)))\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"()(())((()()))\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -161,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximum-nesting-depth-of-the-parentheses/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:15.705Z",
+    "collectedAt": "2026-10-19T18:40:21.974Z",
     "sourceUpdatedAt": null
   }
 }

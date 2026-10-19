@@ -26,30 +26,18 @@
   },
   "publicTests": [
     {
-      "input": "Person table:\n+----+---------+\n| id | email   |\n+----+---------+\n| 1  | a@b.com |\n| 2  | c@d.com |\n| 3  | a@b.com |\n+----+---------+",
+      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
       "expectedOutput": "+---------+\n| Email   |\n+---------+\n| a@b.com |\n+---------+"
     }
   ],
   "testCases": [
     {
-      "input": "Person table:\n+----+---------+\n| id | email   |\n+----+---------+\n| 1  | a@b.com |\n| 2  | c@d.com |\n| 3  | a@b.com |\n+----+---------+",
+      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
       "expectedOutput": "+---------+\n| Email   |\n+---------+\n| a@b.com |\n+---------+"
     },
     {
-      "input": "{\"headers\": {\"Person\": [\"id\", \"email\"]}, \"rows\": {\"Person\": [[1, \"a@b.com\"], [2, \"c@d.com\"], [3, \"a@b.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[[1,\"a@b.com\"]]}}",
-      "expectedOutput": null
-    },
-    {
-      "input": "{\"headers\":{\"Person\":[\"id\",\"email\"]},\"rows\":{\"Person\":[[1,null],[2,null],[3,null]]}}",
-      "expectedOutput": null
+      "input": "Person table:\n+----+---------+\n| id | email   |\n+----+---------+\n| 1  | a@b.com |\n| 2  | c@d.com |\n| 3  | a@b.com |\n+----+---------+",
+      "expectedOutput": "+---------+\n| Email   |\n+---------+\n| a@b.com |\n+---------+"
     }
   ],
   "sqlSchema": "Create table If Not Exists Person (id int, email varchar(255))\n\nTruncate table Person",
@@ -65,7 +53,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/duplicate-emails/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.425Z",
+    "collectedAt": "2026-10-19T18:40:16.898Z",
     "sourceUpdatedAt": null
   }
 }

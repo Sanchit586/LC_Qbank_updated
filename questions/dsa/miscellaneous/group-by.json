@@ -13,18 +13,18 @@
   ],
   "examples": [
     {
-      "input": "array = [\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;2&quot;}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}",
-      "output": "{ \n&nbsp; &quot;1&quot;: [{&quot;id&quot;: &quot;1&quot;}, {&quot;id&quot;: &quot;1&quot;}], &nbsp; \n&nbsp; &quot;2&quot;: [{&quot;id&quot;: &quot;2&quot;}] \n}",
-      "explanation": "Output is from array.groupBy(fn).\nThe selector function gets the &quot;id&quot; out of each item in the array.\nThere are two objects with an &quot;id&quot; of 1. Both of those objects are put in the first array.\nThere is one object with an &quot;id&quot; of 2. That object is put in the second array."
+      "input": "array = [\n  {\"id\":\"1\"},\n  {\"id\":\"1\"},\n  {\"id\":\"2\"}\n], \nfn = function (item) { \n  return item.id; \n}",
+      "output": "{ \n  \"1\": [{\"id\": \"1\"}, {\"id\": \"1\"}],   \n  \"2\": [{\"id\": \"2\"}] \n}",
+      "explanation": "Output is from array.groupBy(fn).\nThe selector function gets the \"id\" out of each item in the array.\nThere are two objects with an \"id\" of 1. Both of those objects are put in the first array.\nThere is one object with an \"id\" of 2. That object is put in the second array."
     },
     {
-      "input": "array = [\n&nbsp; [1, 2, 3],\n&nbsp; [1, 3, 5],\n&nbsp; [1, 5, 9]\n]\nfn = function (list) { \n&nbsp; return String(list[0]); \n}",
-      "output": "{ \n&nbsp; &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}",
-      "explanation": "The array can be of any type. In this case, the selector function defines the key as being the first element in the array. \nAll the arrays have 1 as their first element so they are grouped together.\n{\n  &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]]\n}"
+      "input": "array = [\n  [1, 2, 3],\n  [1, 3, 5],\n  [1, 5, 9]\n]\nfn = function (list) { \n  return String(list[0]); \n}",
+      "output": "{ \n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}",
+      "explanation": "The array can be of any type. In this case, the selector function defines the key as being the first element in the array. \nAll the arrays have 1 as their first element so they are grouped together.\n{\n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]]\n}"
     },
     {
-      "input": "array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n&nbsp; return String(n &gt; 5);\n}",
-      "output": "{\n&nbsp; &quot;true&quot;: [6, 7, 8, 9, 10],\n&nbsp; &quot;false&quot;: [1, 2, 3, 4, 5]\n}",
+      "input": "array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n  return String(n > 5);\n}",
+      "output": "{\n  \"true\": [6, 7, 8, 9, 10],\n  \"false\": [1, 2, 3, 4, 5]\n}",
       "explanation": "The selector function splits the array by whether each number is greater than 5."
     }
   ],
@@ -34,62 +34,42 @@
   },
   "publicTests": [
     {
-      "input": "array = [\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;2&quot;}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}",
-      "expectedOutput": "{ \n&nbsp; &quot;1&quot;: [{&quot;id&quot;: &quot;1&quot;}, {&quot;id&quot;: &quot;1&quot;}], &nbsp; \n&nbsp; &quot;2&quot;: [{&quot;id&quot;: &quot;2&quot;}] \n}"
+      "input": "[{\"id\":\"1\"},{\"id\":\"1\"},{\"id\":\"2\"}]\nfunction (item) { return item.id; }",
+      "expectedOutput": "{ \n  \"1\": [{\"id\": \"1\"}, {\"id\": \"1\"}],   \n  \"2\": [{\"id\": \"2\"}] \n}"
     },
     {
-      "input": "array = [\n&nbsp; [1, 2, 3],\n&nbsp; [1, 3, 5],\n&nbsp; [1, 5, 9]\n]\nfn = function (list) { \n&nbsp; return String(list[0]); \n}",
-      "expectedOutput": "{ \n&nbsp; &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}"
+      "input": "[[1,2,3],[1,3,5],[1,5,9]]\nfunction (list) { return String(list[0]); }",
+      "expectedOutput": "{ \n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}"
     },
     {
-      "input": "array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n&nbsp; return String(n &gt; 5);\n}",
-      "expectedOutput": "{\n&nbsp; &quot;true&quot;: [6, 7, 8, 9, 10],\n&nbsp; &quot;false&quot;: [1, 2, 3, 4, 5]\n}"
+      "input": "[1,2,3,4,5,6,7,8,9,10]\nfunction (n) { return String(n > 5); }",
+      "expectedOutput": "{\n  \"true\": [6, 7, 8, 9, 10],\n  \"false\": [1, 2, 3, 4, 5]\n}"
     }
   ],
   "testCases": [
     {
-      "input": "array = [\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;1&quot;},\n&nbsp; {&quot;id&quot;:&quot;2&quot;}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}",
-      "expectedOutput": "{ \n&nbsp; &quot;1&quot;: [{&quot;id&quot;: &quot;1&quot;}, {&quot;id&quot;: &quot;1&quot;}], &nbsp; \n&nbsp; &quot;2&quot;: [{&quot;id&quot;: &quot;2&quot;}] \n}"
-    },
-    {
-      "input": "array = [\n&nbsp; [1, 2, 3],\n&nbsp; [1, 3, 5],\n&nbsp; [1, 5, 9]\n]\nfn = function (list) { \n&nbsp; return String(list[0]); \n}",
-      "expectedOutput": "{ \n&nbsp; &quot;1&quot;: [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}"
-    },
-    {
-      "input": "array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n&nbsp; return String(n &gt; 5);\n}",
-      "expectedOutput": "{\n&nbsp; &quot;true&quot;: [6, 7, 8, 9, 10],\n&nbsp; &quot;false&quot;: [1, 2, 3, 4, 5]\n}"
-    },
-    {
       "input": "[{\"id\":\"1\"},{\"id\":\"1\"},{\"id\":\"2\"}]\nfunction (item) { return item.id; }",
-      "expectedOutput": null
+      "expectedOutput": "{ \n  \"1\": [{\"id\": \"1\"}, {\"id\": \"1\"}],   \n  \"2\": [{\"id\": \"2\"}] \n}"
     },
     {
       "input": "[[1,2,3],[1,3,5],[1,5,9]]\nfunction (list) { return String(list[0]); }",
-      "expectedOutput": null
+      "expectedOutput": "{ \n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}"
     },
     {
       "input": "[1,2,3,4,5,6,7,8,9,10]\nfunction (n) { return String(n > 5); }",
-      "expectedOutput": null
+      "expectedOutput": "{\n  \"true\": [6, 7, 8, 9, 10],\n  \"false\": [1, 2, 3, 4, 5]\n}"
     },
     {
-      "input": "array = [\n&nbsp; [2, 3, 4],\n&nbsp; [2, 4, 6],\n&nbsp; [2, 6, 10]\n]\nfn = function (list) { \n&nbsp; return String(list[1]); \n}",
-      "expectedOutput": null
+      "input": "array = [\n  {\"id\":\"1\"},\n  {\"id\":\"1\"},\n  {\"id\":\"2\"}\n], \nfn = function (item) { \n  return item.id; \n}",
+      "expectedOutput": "{ \n  \"1\": [{\"id\": \"1\"}, {\"id\": \"1\"}],   \n  \"2\": [{\"id\": \"2\"}] \n}"
     },
     {
-      "input": "array = [2, 3, 4, 5, 6, 7, 8, 9, 10, 11]\nfn = function (n) { \n&nbsp; return String(n &gt; 6);\n}",
-      "expectedOutput": null
+      "input": "array = [\n  [1, 2, 3],\n  [1, 3, 5],\n  [1, 5, 9]\n]\nfn = function (list) { \n  return String(list[0]); \n}",
+      "expectedOutput": "{ \n  \"1\": [[1, 2, 3], [1, 3, 5], [1, 5, 9]] \n}"
     },
     {
-      "input": "[{\"id\":\"2\"},{\"id\":\"2\"},{\"id\":\"3\"}]\nfunction (item) { return item.id; }",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[2,3,4],[2,4,6],[2,6,10]]\nfunction (list) { return String(list[1]); }",
-      "expectedOutput": null
-    },
-    {
-      "input": "array = [\n&nbsp; {&quot;id&quot;:&quot;2&quot;},\n&nbsp; {&quot;id&quot;:&quot;2&quot;},\n&nbsp; {&quot;id&quot;:&quot;3&quot;}\n], \nfn = function (item) { \n&nbsp; return item.id; \n}",
-      "expectedOutput": null
+      "input": "array = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]\nfn = function (n) { \n  return String(n > 5);\n}",
+      "expectedOutput": "{\n  \"true\": [6, 7, 8, 9, 10],\n  \"false\": [1, 2, 3, 4, 5]\n}"
     }
   ],
   "sqlSchema": null,
@@ -105,7 +85,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/group-by/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:07:26.542Z",
+    "collectedAt": "2026-10-19T18:40:19.275Z",
     "sourceUpdatedAt": null
   }
 }

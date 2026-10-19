@@ -20,19 +20,19 @@
   ],
   "examples": [
     {
-      "input": "answerKey = &quot;TTFF&quot;, k = 2",
+      "input": "answerKey = \"TTFF\", k = 2",
       "output": "4",
-      "explanation": "We can replace both the &#39;F&#39;s with &#39;T&#39;s to make answerKey = &quot;TTTT&quot;.\nThere are four consecutive &#39;T&#39;s."
+      "explanation": "We can replace both the 'F's with 'T's to make answerKey = \"TTTT\".\nThere are four consecutive 'T's."
     },
     {
-      "input": "answerKey = &quot;TFFT&quot;, k = 1",
+      "input": "answerKey = \"TFFT\", k = 1",
       "output": "3",
-      "explanation": "We can replace the first &#39;T&#39; with an &#39;F&#39; to make answerKey = &quot;FFFT&quot;.\nAlternatively, we can replace the second &#39;T&#39; with an &#39;F&#39; to make answerKey = &quot;TFFF&quot;.\nIn both cases, there are three consecutive &#39;F&#39;s."
+      "explanation": "We can replace the first 'T' with an 'F' to make answerKey = \"FFFT\".\nAlternatively, we can replace the second 'T' with an 'F' to make answerKey = \"TFFF\".\nIn both cases, there are three consecutive 'F's."
     },
     {
-      "input": "answerKey = &quot;TTFTTFTT&quot;, k = 1",
+      "input": "answerKey = \"TTFTTFTT\", k = 1",
       "output": "5",
-      "explanation": "We can replace the first &#39;F&#39; to make answerKey = &quot;TTTTTFTT&quot;\nAlternatively, we can replace the second &#39;F&#39; to make answerKey = &quot;TTFTTTTT&quot;. \nIn both cases, there are five consecutive &#39;T&#39;s."
+      "explanation": "We can replace the first 'F' to make answerKey = \"TTTTTFTT\"\nAlternatively, we can replace the second 'F' to make answerKey = \"TTFTTTTT\". \nIn both cases, there are five consecutive 'T's."
     }
   ],
   "starterCode": {
@@ -58,62 +58,42 @@
   },
   "publicTests": [
     {
-      "input": "answerKey = &quot;TTFF&quot;, k = 2",
+      "input": "\"TTFF\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "answerKey = &quot;TFFT&quot;, k = 1",
+      "input": "\"TFFT\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "answerKey = &quot;TTFTTFTT&quot;, k = 1",
+      "input": "\"TTFTTFTT\"\n1",
       "expectedOutput": "5"
     }
   ],
   "testCases": [
     {
-      "input": "answerKey = &quot;TTFF&quot;, k = 2",
+      "input": "\"TTFF\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "answerKey = &quot;TFFT&quot;, k = 1",
+      "input": "\"TFFT\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "answerKey = &quot;TTFTTFTT&quot;, k = 1",
+      "input": "\"TTFTTFTT\"\n1",
       "expectedOutput": "5"
     },
     {
-      "input": "\"TTFF\"\n2",
-      "expectedOutput": null
+      "input": "answerKey = \"TTFF\", k = 2",
+      "expectedOutput": "4"
     },
     {
-      "input": "\"TFFT\"\n1",
-      "expectedOutput": null
+      "input": "answerKey = \"TFFT\", k = 1",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"TTFTTFTT\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "answerKey = &quot;TFFT&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "answerKey = &quot;TTFTTFTT&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"TTFF\"\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"TFFT\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "answerKey = &quot;TTFF&quot;, k = 3",
-      "expectedOutput": null
+      "input": "answerKey = \"TTFTTFTT\", k = 1",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/maximize-the-confusion-of-an-exam/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:08:04.396Z",
+    "collectedAt": "2026-10-19T18:40:21.387Z",
     "sourceUpdatedAt": null
   }
 }

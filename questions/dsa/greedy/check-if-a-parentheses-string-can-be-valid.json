@@ -20,24 +20,24 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;))()))&quot;, locked = &quot;010100&quot;",
+      "input": "s = \"))()))\", locked = \"010100\"",
       "output": "true",
-      "explanation": "locked[1] == &#39;1&#39; and locked[3] == &#39;1&#39;, so we cannot change s[1] or s[3].\nWe change s[0] and s[4] to &#39;(&#39; while leaving s[2] and s[5] unchanged to make s valid."
+      "explanation": "locked[1] == '1' and locked[3] == '1', so we cannot change s[1] or s[3].\nWe change s[0] and s[4] to '(' while leaving s[2] and s[5] unchanged to make s valid."
     },
     {
-      "input": "s = &quot;()()&quot;, locked = &quot;0000&quot;",
+      "input": "s = \"()()\", locked = \"0000\"",
       "output": "true",
       "explanation": "We do not need to make any changes because s is already valid."
     },
     {
-      "input": "s = &quot;)&quot;, locked = &quot;0&quot;",
+      "input": "s = \")\", locked = \"0\"",
       "output": "false",
-      "explanation": "locked permits us to change s[0]. \nChanging s[0] to either &#39;(&#39; or &#39;)&#39; will not make s valid."
+      "explanation": "locked permits us to change s[0]. \nChanging s[0] to either '(' or ')' will not make s valid."
     },
     {
-      "input": "s = &quot;(((())(((())&quot;, locked = &quot;111111010111&quot;",
+      "input": "s = \"(((())(((())\", locked = \"111111010111\"",
       "output": "true",
-      "explanation": "locked permits us to change s[6] and s[8]. \nWe change s[6] and s[8] to &#39;)&#39; to make s valid."
+      "explanation": "locked permits us to change s[6] and s[8]. \nWe change s[6] and s[8] to ')' to make s valid."
     }
   ],
   "starterCode": {
@@ -63,102 +63,54 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;))()))&quot;, locked = &quot;010100&quot;",
+      "input": "\"))()))\"\n\"010100\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;()()&quot;, locked = &quot;0000&quot;",
+      "input": "\"()()\"\n\"0000\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = &quot;)&quot;, locked = &quot;0&quot;",
+      "input": "\")\"\n\"0\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = &quot;(((())(((())&quot;, locked = &quot;111111010111&quot;",
+      "input": "\"(((())(((())\"\n\"111111010111\"",
       "expectedOutput": "true"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;))()))&quot;, locked = &quot;010100&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;()()&quot;, locked = &quot;0000&quot;",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = &quot;)&quot;, locked = &quot;0&quot;",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = &quot;(((())(((())&quot;, locked = &quot;111111010111&quot;",
-      "expectedOutput": "true"
-    },
-    {
       "input": "\"))()))\"\n\"010100\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\"()()\"\n\"0000\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
       "input": "\")\"\n\"0\"",
-      "expectedOutput": null
+      "expectedOutput": "false"
     },
     {
       "input": "\"(((())(((())\"\n\"111111010111\"",
-      "expectedOutput": null
+      "expectedOutput": "true"
     },
     {
-      "input": "\"\"\n\"\"",
-      "expectedOutput": null
+      "input": "s = \"))()))\", locked = \"010100\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"a\"",
-      "expectedOutput": null
+      "input": "s = \"()()\", locked = \"0000\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "\"a\"\n\"b\"",
-      "expectedOutput": null
+      "input": "s = \")\", locked = \"0\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"abc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"axc\"\n\"ahbgdc\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"sea\"\n\"eat\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"leetcode\"\n\"etco\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"programming\"\n\"gram\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"hello\"\n\"world\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"same\"\n\"same\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
-      "expectedOutput": null
+      "input": "s = \"(((())(((())\", locked = \"111111010111\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,
@@ -174,7 +126,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/check-if-a-parentheses-string-can-be-valid/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:05:49.839Z",
+    "collectedAt": "2026-10-19T18:40:14.047Z",
     "sourceUpdatedAt": null
   }
 }

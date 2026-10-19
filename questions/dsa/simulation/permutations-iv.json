@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 4, k = 6",
+      "input": "4\n6",
       "expectedOutput": "[3,4,1,2]"
     },
     {
-      "input": "n = 3, k = 2",
+      "input": "3\n2",
       "expectedOutput": "[3,2,1]"
     },
     {
-      "input": "n = 2, k = 3",
+      "input": "2\n3",
       "expectedOutput": "[]"
     }
   ],
   "testCases": [
     {
+      "input": "4\n6",
+      "expectedOutput": "[3,4,1,2]"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "[3,2,1]"
+    },
+    {
+      "input": "2\n3",
+      "expectedOutput": "[]"
+    },
+    {
       "input": "n = 4, k = 6",
       "expectedOutput": "[3,4,1,2]"
     },
@@ -80,38 +92,6 @@
     {
       "input": "n = 2, k = 3",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "4\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "3\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "2\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 4, k = 3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 3, k = 4",
-      "expectedOutput": null
-    },
-    {
-      "input": "5\n7",
-      "expectedOutput": null
-    },
-    {
-      "input": "4\n3",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 5, k = 7",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -128,7 +108,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/permutations-iv/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:56.523Z",
+    "collectedAt": "2026-10-19T18:40:26.769Z",
     "sourceUpdatedAt": null
   }
 }

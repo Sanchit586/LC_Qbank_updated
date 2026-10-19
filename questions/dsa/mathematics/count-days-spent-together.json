@@ -17,12 +17,12 @@
   ],
   "examples": [
     {
-      "input": "arriveAlice = &quot;08-15&quot;, leaveAlice = &quot;08-18&quot;, arriveBob = &quot;08-16&quot;, leaveBob = &quot;08-19&quot;",
+      "input": "arriveAlice = \"08-15\", leaveAlice = \"08-18\", arriveBob = \"08-16\", leaveBob = \"08-19\"",
       "output": "3",
       "explanation": "Alice will be in Rome from August 15 to August 18. Bob will be in Rome from August 16 to August 19. They are both in Rome together on August 16th, 17th, and 18th, so the answer is 3."
     },
     {
-      "input": "arriveAlice = &quot;10-01&quot;, leaveAlice = &quot;10-31&quot;, arriveBob = &quot;11-01&quot;, leaveBob = &quot;12-31&quot;",
+      "input": "arriveAlice = \"10-01\", leaveAlice = \"10-31\", arriveBob = \"11-01\", leaveBob = \"12-31\"",
       "output": "0",
       "explanation": "There is no day when Alice and Bob are in Rome together, so we return 0."
     }
@@ -50,34 +50,30 @@
   },
   "publicTests": [
     {
-      "input": "arriveAlice = &quot;08-15&quot;, leaveAlice = &quot;08-18&quot;, arriveBob = &quot;08-16&quot;, leaveBob = &quot;08-19&quot;",
+      "input": "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"",
       "expectedOutput": "3"
     },
     {
-      "input": "arriveAlice = &quot;10-01&quot;, leaveAlice = &quot;10-31&quot;, arriveBob = &quot;11-01&quot;, leaveBob = &quot;12-31&quot;",
+      "input": "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\"",
       "expectedOutput": "0"
     }
   ],
   "testCases": [
     {
-      "input": "arriveAlice = &quot;08-15&quot;, leaveAlice = &quot;08-18&quot;, arriveBob = &quot;08-16&quot;, leaveBob = &quot;08-19&quot;",
+      "input": "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"",
       "expectedOutput": "3"
     },
     {
-      "input": "arriveAlice = &quot;10-01&quot;, leaveAlice = &quot;10-31&quot;, arriveBob = &quot;11-01&quot;, leaveBob = &quot;12-31&quot;",
+      "input": "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\"",
       "expectedOutput": "0"
     },
     {
-      "input": "\"08-15\"\n\"08-18\"\n\"08-16\"\n\"08-19\"",
-      "expectedOutput": null
+      "input": "arriveAlice = \"08-15\", leaveAlice = \"08-18\", arriveBob = \"08-16\", leaveBob = \"08-19\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "\"10-01\"\n\"10-31\"\n\"11-01\"\n\"12-31\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "arriveAlice = &quot;9-16&quot;, leaveAlice = &quot;9-19&quot;, arriveBob = &quot;9-17&quot;, leaveBob = &quot;9-20&quot;",
-      "expectedOutput": null
+      "input": "arriveAlice = \"10-01\", leaveAlice = \"10-31\", arriveBob = \"11-01\", leaveBob = \"12-31\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
@@ -92,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-days-spent-together/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:10.369Z",
+    "collectedAt": "2026-10-19T18:40:15.056Z",
     "sourceUpdatedAt": null
   }
 }

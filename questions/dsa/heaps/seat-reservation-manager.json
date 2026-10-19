@@ -17,7 +17,13 @@
     "For each call to unreserve, it is guaranteed that seatNumber will be reserved.",
     "At most 105 calls in total will be made to reserve and unreserve."
   ],
-  "examples": [],
+  "examples": [
+    {
+      "input": "[\"SeatManager\", \"reserve\", \"reserve\", \"unreserve\", \"reserve\", \"reserve\", \"reserve\", \"reserve\", \"unreserve\"]\n[[5], [], [], [2], [], [], [], [], [5]]",
+      "output": "[null, 1, 2, null, 2, 3, 4, 5, null]",
+      "explanation": "SeatManager seatManager = new SeatManager(5); // Initializes a SeatManager with 5 seats.\nseatManager.reserve();    // All seats are available, so return the lowest numbered seat, which is 1.\nseatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.\nseatManager.unreserve(2); // Unreserve seat 2, so now the available seats are [2,3,4,5].\nseatManager.reserve();    // The available seats are [2,3,4,5], so return the lowest of them, which is 2.\nseatManager.reserve();    // The available seats are [3,4,5], so return the lowest of them, which is 3.\nseatManager.reserve();    // The available seats are [4,5], so return the lowest of them, which is 4.\nseatManager.reserve();    // The only available seat is seat 5, so return 5.\nseatManager.unreserve(5); // Unreserve seat 5, so now the available seats are [5]."
+    }
+  ],
   "starterCode": {
     "cpp": "class SeatManager {\npublic:\n    SeatManager(int n) {\n        \n    }\n    \n    int reserve() {\n        \n    }\n    \n    void unreserve(int seatNumber) {\n        \n    }\n};\n\n/**\n * Your SeatManager object will be instantiated and called as such:\n * SeatManager* obj = new SeatManager(n);\n * int param_1 = obj->reserve();\n * obj->unreserve(seatNumber);\n */",
     "java": "class SeatManager {\n\n    public SeatManager(int n) {\n        \n    }\n    \n    public int reserve() {\n        \n    }\n    \n    public void unreserve(int seatNumber) {\n        \n    }\n}\n\n/**\n * Your SeatManager object will be instantiated and called as such:\n * SeatManager obj = new SeatManager(n);\n * int param_1 = obj.reserve();\n * obj.unreserve(seatNumber);\n */",
@@ -42,17 +48,17 @@
   "publicTests": [
     {
       "input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\"]\n[[5],[],[],[2],[],[],[],[],[5]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, null, 2, 3, 4, 5, null]"
     }
   ],
   "testCases": [
     {
       "input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\"]\n[[5],[],[],[2],[],[],[],[],[5]]",
-      "expectedOutput": null
+      "expectedOutput": "[null, 1, 2, null, 2, 3, 4, 5, null]"
     },
     {
-      "input": "[\"SeatManager\",\"reserve\",\"reserve\",\"unreserve\",\"reserve\",\"reserve\",\"reserve\",\"reserve\",\"unreserve\"]\n[[6],[],[],[3],[],[],[],[],[6]]",
-      "expectedOutput": null
+      "input": "[\"SeatManager\", \"reserve\", \"reserve\", \"unreserve\", \"reserve\", \"reserve\", \"reserve\", \"reserve\", \"unreserve\"]\n[[5], [], [], [2], [], [], [], [], [5]]",
+      "expectedOutput": "[null, 1, 2, null, 2, 3, 4, 5, null]"
     }
   ],
   "sqlSchema": null,
@@ -68,7 +74,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/seat-reservation-manager/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:17.828Z",
+    "collectedAt": "2026-10-19T18:40:28.180Z",
     "sourceUpdatedAt": null
   }
 }

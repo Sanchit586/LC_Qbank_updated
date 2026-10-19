@@ -18,19 +18,19 @@
   ],
   "examples": [
     {
-      "input": "s = &quot;(()))&quot;",
+      "input": "s = \"(()))\"",
       "output": "1",
-      "explanation": "The second &#39;(&#39; has two matching &#39;))&#39;, but the first &#39;(&#39; has only &#39;)&#39; matching. We need to add one more &#39;)&#39; at the end of the string to be &quot;(())))&quot; which is balanced."
+      "explanation": "The second '(' has two matching '))', but the first '(' has only ')' matching. We need to add one more ')' at the end of the string to be \"(())))\" which is balanced."
     },
     {
-      "input": "s = &quot;())&quot;",
+      "input": "s = \"())\"",
       "output": "0",
       "explanation": "The string is already balanced."
     },
     {
-      "input": "s = &quot;))())(&quot;",
+      "input": "s = \"))())(\"",
       "output": "3",
-      "explanation": "Add &#39;(&#39; to match the first &#39;))&#39;, Add &#39;))&#39; to match the last &#39;(&#39;."
+      "explanation": "Add '(' to match the first '))', Add '))' to match the last '('."
     }
   ],
   "starterCode": {
@@ -56,98 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "s = &quot;(()))&quot;",
+      "input": "\"(()))\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;())&quot;",
+      "input": "\"())\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;))())(&quot;",
+      "input": "\"))())(\"",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "s = &quot;(()))&quot;",
+      "input": "\"(()))\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = &quot;())&quot;",
+      "input": "\"())\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = &quot;))())(&quot;",
+      "input": "\"))())(\"",
       "expectedOutput": "3"
     },
     {
-      "input": "\"(()))\"",
-      "expectedOutput": null
+      "input": "s = \"(()))\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"())\"",
-      "expectedOutput": null
+      "input": "s = \"())\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"))())(\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"a\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aaa\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"bbbbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"pwwkew\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aab\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"dvdf\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"abcabcbb\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"1234567890\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"A man, a plan, a canal: Panama\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"race a car\"",
-      "expectedOutput": null
-    },
-    {
-      "input": "\" \"",
-      "expectedOutput": null
+      "input": "s = \"))())(\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/minimum-insertions-to-balance-a-parentheses-string/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:09:00.305Z",
+    "collectedAt": "2026-10-19T18:40:24.025Z",
     "sourceUpdatedAt": null
   }
 }

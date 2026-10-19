@@ -20,7 +20,7 @@
     {
       "input": "arr = [1,2,3,4,5], k = 2",
       "output": "[5,1]",
-      "explanation": "Centre is 3, the elements of the array sorted by the strongest are [5,1,4,2,3]. The strongest 2 elements are [5, 1]. [1, 5] is also accepted answer.\nPlease note that although |5 - 3| == |1 - 3| but 5 is stronger than 1 because 5 &gt; 1."
+      "explanation": "Centre is 3, the elements of the array sorted by the strongest are [5,1,4,2,3]. The strongest 2 elements are [5, 1]. [1, 5] is also accepted answer.\nPlease note that although |5 - 3| == |1 - 3| but 5 is stronger than 1 because 5 > 1."
     },
     {
       "input": "arr = [1,1,3,5,5], k = 2",
@@ -56,20 +56,32 @@
   },
   "publicTests": [
     {
-      "input": "arr = [1,2,3,4,5], k = 2",
+      "input": "[1,2,3,4,5]\n2",
       "expectedOutput": "[5,1]"
     },
     {
-      "input": "arr = [1,1,3,5,5], k = 2",
+      "input": "[1,1,3,5,5]\n2",
       "expectedOutput": "[5,5]"
     },
     {
-      "input": "arr = [6,7,11,7,6,8], k = 5",
+      "input": "[6,7,11,7,6,8]\n5",
       "expectedOutput": "[11,8,6,6,7]"
     }
   ],
   "testCases": [
     {
+      "input": "[1,2,3,4,5]\n2",
+      "expectedOutput": "[5,1]"
+    },
+    {
+      "input": "[1,1,3,5,5]\n2",
+      "expectedOutput": "[5,5]"
+    },
+    {
+      "input": "[6,7,11,7,6,8]\n5",
+      "expectedOutput": "[11,8,6,6,7]"
+    },
+    {
       "input": "arr = [1,2,3,4,5], k = 2",
       "expectedOutput": "[5,1]"
     },
@@ -80,74 +92,6 @@
     {
       "input": "arr = [6,7,11,7,6,8], k = 5",
       "expectedOutput": "[11,8,6,6,7]"
-    },
-    {
-      "input": "[1,2,3,4,5]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,3,5,5]\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "[6,7,11,7,6,8]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -162,7 +106,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/the-k-strongest-values-in-an-array/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:10:55.801Z",
+    "collectedAt": "2026-10-19T18:40:30.893Z",
     "sourceUpdatedAt": null
   }
 }

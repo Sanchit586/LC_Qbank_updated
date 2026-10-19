@@ -60,20 +60,32 @@
   },
   "publicTests": [
     {
-      "input": "n = 9, start = 0, requests = [[0,8],[6,5]]",
+      "input": "9\n0\n[[0,8],[6,5]]",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 8, start = 5, requests = [[1,7],[7,3]]",
+      "input": "8\n5\n[[1,7],[7,3]]",
       "expectedOutput": "7"
     },
     {
-      "input": "n = 7, start = 3, requests = [[0,5],[0,1],[6,3]]",
+      "input": "7\n3\n[[0,5],[0,1],[6,3]]",
       "expectedOutput": "8"
     }
   ],
   "testCases": [
     {
+      "input": "9\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "8\n5\n[[1,7],[7,3]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "7\n3\n[[0,5],[0,1],[6,3]]",
+      "expectedOutput": "8"
+    },
+    {
       "input": "n = 9, start = 0, requests = [[0,8],[6,5]]",
       "expectedOutput": "9"
     },
@@ -84,38 +96,6 @@
     {
       "input": "n = 7, start = 3, requests = [[0,5],[0,1],[6,3]]",
       "expectedOutput": "8"
-    },
-    {
-      "input": "9\n0\n[[0,8],[6,5]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "8\n5\n[[1,7],[7,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "7\n3\n[[0,5],[0,1],[6,3]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 9, start = 6, requests = [[2,8],[8,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 8, start = 4, requests = [[1,6],[1,2],[7,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "10\n1\n[[1,9],[7,6]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "9\n6\n[[2,8],[8,4]]",
-      "expectedOutput": null
-    },
-    {
-      "input": "n = 10, start = 1, requests = [[1,9],[7,6]]",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -132,7 +112,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/elevator-requests-iii/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:49.999Z",
+    "collectedAt": "2026-10-19T18:40:16.973Z",
     "sourceUpdatedAt": null
   }
 }

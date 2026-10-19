@@ -18,17 +18,17 @@
   ],
   "examples": [
     {
-      "input": "word = &quot;aeioqq&quot;, k = 1",
+      "input": "word = \"aeioqq\", k = 1",
       "output": "0",
       "explanation": null
     },
     {
-      "input": "word = &quot;aeiou&quot;, k = 0",
+      "input": "word = \"aeiou\", k = 0",
       "output": "1",
       "explanation": null
     },
     {
-      "input": "word = &quot;ieaouqqieaouqq&quot;, k = 1",
+      "input": "word = \"ieaouqqieaouqq\", k = 1",
       "output": "3",
       "explanation": null
     }
@@ -56,62 +56,42 @@
   },
   "publicTests": [
     {
-      "input": "word = &quot;aeioqq&quot;, k = 1",
+      "input": "\"aeioqq\"\n1",
       "expectedOutput": "0"
     },
     {
-      "input": "word = &quot;aeiou&quot;, k = 0",
+      "input": "\"aeiou\"\n0",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;ieaouqqieaouqq&quot;, k = 1",
+      "input": "\"ieaouqqieaouqq\"\n1",
       "expectedOutput": "3"
     }
   ],
   "testCases": [
     {
-      "input": "word = &quot;aeioqq&quot;, k = 1",
+      "input": "\"aeioqq\"\n1",
       "expectedOutput": "0"
     },
     {
-      "input": "word = &quot;aeiou&quot;, k = 0",
+      "input": "\"aeiou\"\n0",
       "expectedOutput": "1"
     },
     {
-      "input": "word = &quot;ieaouqqieaouqq&quot;, k = 1",
+      "input": "\"ieaouqqieaouqq\"\n1",
       "expectedOutput": "3"
     },
     {
-      "input": "\"aeioqq\"\n1",
-      "expectedOutput": null
+      "input": "word = \"aeioqq\", k = 1",
+      "expectedOutput": "0"
     },
     {
-      "input": "\"aeiou\"\n0",
-      "expectedOutput": null
+      "input": "word = \"aeiou\", k = 0",
+      "expectedOutput": "1"
     },
     {
-      "input": "\"ieaouqqieaouqq\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;aeiou&quot;, k = 1",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;ieaouqqieaouqq&quot;, k = 2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aeioqq\"\n2",
-      "expectedOutput": null
-    },
-    {
-      "input": "\"aeiou\"\n1",
-      "expectedOutput": null
-    },
-    {
-      "input": "word = &quot;aeioqq&quot;, k = 2",
-      "expectedOutput": null
+      "input": "word = \"ieaouqqieaouqq\", k = 1",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,
@@ -125,7 +105,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-of-substrings-containing-every-vowel-and-k-consonants-i/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:18.882Z",
+    "collectedAt": "2026-10-19T18:40:15.427Z",
     "sourceUpdatedAt": null
   }
 }

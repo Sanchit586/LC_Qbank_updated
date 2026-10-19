@@ -53,94 +53,30 @@
   },
   "publicTests": [
     {
-      "input": "grid = [[7,6,3],[6,6,1]], k = 18",
+      "input": "[[7,6,3],[6,6,1]]\n18",
       "expectedOutput": "4"
     },
     {
-      "input": "grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20",
+      "input": "[[7,2,9],[1,5,0],[2,6,6]]\n20",
       "expectedOutput": "6"
     }
   ],
   "testCases": [
     {
+      "input": "[[7,6,3],[6,6,1]]\n18",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[7,2,9],[1,5,0],[2,6,6]]\n20",
+      "expectedOutput": "6"
+    },
+    {
       "input": "grid = [[7,6,3],[6,6,1]], k = 18",
       "expectedOutput": "4"
     },
     {
       "input": "grid = [[7,2,9],[1,5,0],[2,6,6]], k = 20",
       "expectedOutput": "6"
-    },
-    {
-      "input": "[[7,6,3],[6,6,1]]\n18",
-      "expectedOutput": null
-    },
-    {
-      "input": "[[7,2,9],[1,5,0],[2,6,6]]\n20",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1,1]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-10,-20,-30]\n-50",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,2,4]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[3,3]\n6",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,1,1,1,1,4,7]\n11",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
-      "expectedOutput": null
-    },
-    {
-      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-1000000000,1000000000]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-5,-4,-3,-2,-1]\n-9",
-      "expectedOutput": null
-    },
-    {
-      "input": "[100,-100,50,-50,25,-25]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,5,9,13,17,21]\n30",
-      "expectedOutput": null
-    },
-    {
-      "input": "[2,4,6,8,10]\n14",
-      "expectedOutput": null
-    },
-    {
-      "input": "[0,4,3,0]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[-3,4,3,90]\n0",
-      "expectedOutput": null
-    },
-    {
-      "input": "[1,2,5,6,7]\n8",
-      "expectedOutput": null
     }
   ],
   "sqlSchema": null,
@@ -152,7 +88,7 @@
     "name": "LeetCode",
     "url": "https://leetcode.com/problems/count-submatrices-with-top-left-element-and-sum-less-than-k/",
     "licenseOrPermissionReference": "Authorized collection",
-    "collectedAt": "2026-10-19T16:06:23.494Z",
+    "collectedAt": "2026-10-19T18:40:15.681Z",
     "sourceUpdatedAt": null
   }
 }
