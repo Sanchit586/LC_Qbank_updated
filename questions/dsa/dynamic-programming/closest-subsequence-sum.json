@@ -1,0 +1,174 @@
+{
+  "id": "1755",
+  "slug": "closest-subsequence-sum",
+  "title": "Closest Subsequence Sum",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Dynamic Programming",
+    "Bit Manipulation",
+    "Meet in the Middle",
+    "Sorting",
+    "Bitmask"
+  ],
+  "statement": "You are given an integer array `nums` and an integer `goal`.\n\nYou want to choose a subsequence of `nums` such that the sum of its elements is the closest possible to `goal`. That is, if the sum of the subsequence's elements is `sum`, then you want to **minimize the absolute difference** `abs(sum - goal)`.\n\nReturn _the **minimum** possible value of_ `abs(sum - goal)`.\n\nNote that a subsequence of an array is an array formed by removing some elements **(possibly all or none)** of the original array.\n\n**Example 1:**\n\n```\nInput: nums = [5,-7,3,5], goal = 6\nOutput: 0\nExplanation: Choose the whole array as a subsequence, with a sum of 6.\nThis is equal to the goal, so the absolute difference is 0.\n```\n\n**Example 2:**\n\n```\nInput: nums = [7,-9,15,-2], goal = -5\nOutput: 1\nExplanation: Choose the subsequence [7,-9,-2], with a sum of -4.\nThe absolute difference is abs(-4 - (-5)) = abs(1) = 1, which is the minimum.\n```\n\n**Example 3:**\n\n```\nInput: nums = [1,2,3], goal = -7\nOutput: 7\n```\n\n**Constraints:**\n\n*   `1 <= nums.length <= 40`\n*   `-10^(7) <= nums[i] <= 10^(7)`\n*   `-10^(9) <= goal <= 10^(9)`",
+  "constraints": [
+    "1 <= nums.length <= 40",
+    "-107 <= nums[i] <= 107",
+    "-109 <= goal <= 109"
+  ],
+  "examples": [
+    {
+      "input": "nums = [5,-7,3,5], goal = 6",
+      "output": "0",
+      "explanation": "Choose the whole array as a subsequence, with a sum of 6.\nThis is equal to the goal, so the absolute difference is 0."
+    },
+    {
+      "input": "nums = [7,-9,15,-2], goal = -5",
+      "output": "1",
+      "explanation": "Choose the subsequence [7,-9,-2], with a sum of -4.\nThe absolute difference is abs(-4 - (-5)) = abs(1) = 1, which is the minimum."
+    },
+    {
+      "input": "nums = [1,2,3], goal = -7",
+      "output": "7",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minAbsDifference(vector<int>& nums, int goal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minAbsDifference(int[] nums, int goal) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minAbsDifference(self, nums: list[int], goal: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def minAbsDifference(self, nums, goal):\n        \"\"\"\n        :type nums: List[int]\n        :type goal: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} goal\n * @return {number}\n */\nvar minAbsDifference = function(nums, goal) {\n    \n};",
+    "typescript": "function minAbsDifference(nums: number[], goal: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinAbsDifference(int[] nums, int goal) {\n        \n    }\n}",
+    "c": "int minAbsDifference(int* nums, int numsSize, int goal) {\n    \n}",
+    "golang": "func minAbsDifference(nums []int, goal int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun minAbsDifference(nums: IntArray, goal: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minAbsDifference(_ nums: [Int], _ goal: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn min_abs_difference(nums: Vec<i32>, goal: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} goal\n# @return {Integer}\ndef min_abs_difference(nums, goal)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $goal\n     * @return Integer\n     */\n    function minAbsDifference($nums, $goal) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int minAbsDifference(List<int> nums, int goal) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minAbsDifference(nums: Array[Int], goal: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec min_abs_difference(nums :: [integer], goal :: integer) :: integer\n  def min_abs_difference(nums, goal) do\n    \n  end\nend",
+    "erlang": "-spec min_abs_difference(Nums :: [integer()], Goal :: integer()) -> integer().\nmin_abs_difference(Nums, Goal) ->\n  .",
+    "racket": "(define/contract (min-abs-difference nums goal)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [5,-7,3,5], goal = 6",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "nums = [7,-9,15,-2], goal = -5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "nums = [1,2,3], goal = -7",
+      "expectedOutput": "7"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [5,-7,3,5], goal = 6",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "nums = [7,-9,15,-2], goal = -5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "nums = [1,2,3], goal = -7",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[5,-7,3,5]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[7,-9,15,-2]\n-5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3]\n-7",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "The naive solution is to check all possible subsequences. This works in O(2^n).",
+    "Divide the array into two parts of nearly is equal size.",
+    "Consider all subsets of one part and make a list of all possible subset sums and sort this list.",
+    "Consider all subsets of the other part, and for each one, let its sum = x, do binary search to get the nearest possible value to goal - x in the first part."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/closest-subsequence-sum/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:00.442Z",
+    "sourceUpdatedAt": null
+  }
+}

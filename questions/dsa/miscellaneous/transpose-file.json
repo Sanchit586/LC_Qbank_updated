@@ -1,0 +1,41 @@
+{
+  "id": "194",
+  "slug": "transpose-file",
+  "title": "Transpose File",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Medium",
+  "tags": [
+    "Shell"
+  ],
+  "statement": "Given a text file `file.txt`, transpose its content.\n\nYou may assume that each row has the same number of columns, and each field is separated by the `' '` character.\n\n**Example:**\n\nIf `file.txt` has the following content:\n\n```\nname age\nalice 21\nryan 30\n```\n\nOutput the following:\n\n```\nname alice ryan\nage 21 30\n```",
+  "constraints": [],
+  "examples": [],
+  "starterCode": {
+    "bash": "# Read from the file file.txt and print its transposed content to stdout.\n"
+  },
+  "publicTests": [
+    {
+      "input": "a",
+      "expectedOutput": null
+    }
+  ],
+  "testCases": [
+    {
+      "input": "a",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/transpose-file/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:11:00.863Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,147 @@
+{
+  "id": "2629",
+  "slug": "function-composition",
+  "title": "Function Composition",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Easy",
+  "tags": [],
+  "statement": "Given an array of functions `[f1, f_(2), f_(3), ..., f_(n)]`, return a new function `fn` that is the **function composition** of the array of functions.\n\nThe **function composition** of `[f(x), g(x), h(x)]` is `fn(x) = f(g(h(x)))`.\n\nThe **function composition** of an empty list of functions is the **identity function** `f(x) = x`.\n\nYou may assume each function in the array accepts one integer as input and returns one integer as output.\n\n**Example 1:**\n\n```\nInput: functions = [x => x + 1, x => x * x, x => 2 * x], x = 4\nOutput: 65\nExplanation:\nEvaluating from right to left ...\nStarting with x = 4.\n2 * (4) = 8\n(8) * (8) = 64\n(64) + 1 = 65\n```\n\n**Example 2:**\n\n```\nInput: functions = [x => 10 * x, x => 10 * x, x => 10 * x], x = 1\nOutput: 1000\nExplanation:\nEvaluating from right to left ...\n10 * (1) = 10\n10 * (10) = 100\n10 * (100) = 1000\n```\n\n**Example 3:**\n\n```\nInput: functions = [], x = 42\nOutput: 42\nExplanation:\nThe composition of zero functions is the identity function\n```\n\n**Constraints:**\n\n*   `-1000 <= x <= 1000`\n*   `0 <= functions.length <= 1000`\n*   all functions accept and return a single integer",
+  "constraints": [
+    "-1000 <= x <= 1000",
+    "0 <= functions.length <= 1000",
+    "all functions accept and return a single integer"
+  ],
+  "examples": [
+    {
+      "input": "functions = [x =&gt; x + 1, x =&gt; x * x, x =&gt; 2 * x], x = 4",
+      "output": "65",
+      "explanation": "Evaluating from right to left ...\nStarting with x = 4.\n2 * (4) = 8\n(8) * (8) = 64\n(64) + 1 = 65"
+    },
+    {
+      "input": "functions = [x =&gt; 10 * x, x =&gt; 10 * x, x =&gt; 10 * x], x = 1",
+      "output": "1000",
+      "explanation": "Evaluating from right to left ...\n10 * (1) = 10\n10 * (10) = 100\n10 * (100) = 1000"
+    },
+    {
+      "input": "functions = [], x = 42",
+      "output": "42",
+      "explanation": "The composition of zero functions is the identity function"
+    }
+  ],
+  "starterCode": {
+    "javascript": "/**\n * @param {Function[]} functions\n * @return {Function}\n */\nvar compose = function(functions) {\n    \n    return function(x) {\n        \n    }\n};\n\n/**\n * const fn = compose([x => x + 1, x => 2 * x])\n * fn(4) // 9\n */",
+    "typescript": "type F = (x: number) => number;\n\nfunction compose(functions: F[]): F {\n    \n    return function(x) {\n        \n    }\n};\n\n/**\n * const fn = compose([x => x + 1, x => 2 * x])\n * fn(4) // 9\n */"
+  },
+  "publicTests": [
+    {
+      "input": "functions = [x =&gt; x + 1, x =&gt; x * x, x =&gt; 2 * x], x = 4",
+      "expectedOutput": "65"
+    },
+    {
+      "input": "functions = [x =&gt; 10 * x, x =&gt; 10 * x, x =&gt; 10 * x], x = 1",
+      "expectedOutput": "1000"
+    },
+    {
+      "input": "functions = [], x = 42",
+      "expectedOutput": "42"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "functions = [x =&gt; x + 1, x =&gt; x * x, x =&gt; 2 * x], x = 4",
+      "expectedOutput": "65"
+    },
+    {
+      "input": "functions = [x =&gt; 10 * x, x =&gt; 10 * x, x =&gt; 10 * x], x = 1",
+      "expectedOutput": "1000"
+    },
+    {
+      "input": "functions = [], x = 42",
+      "expectedOutput": "42"
+    },
+    {
+      "input": "[x => x + 1, x => x * x, x => 2 * x]\n4",
+      "expectedOutput": null
+    },
+    {
+      "input": "[x => 10 * x, x => 10 * x, x => 10 * x]\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[]\n42",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Start by returning a function that takes in a number and returns a number.",
+    "Call each of the functions in the correct order. Each time passing the output of the previous function into the next function."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/function-composition/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:21.701Z",
+    "sourceUpdatedAt": null
+  }
+}

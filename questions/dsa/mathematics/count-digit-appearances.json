@@ -1,0 +1,157 @@
+{
+  "id": "3895",
+  "slug": "count-digit-appearances",
+  "title": "Count Digit Appearances",
+  "category": "dsa",
+  "subcategory": "mathematics",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "statement": "You are given an integer array `nums` and an integer `digit`.\n\nReturn the total number of times `digit` appears in the decimal representation of all elements in `nums`.\n\n**Example 1:**\n\n**Input:** nums = \\[12,54,32,22\\], digit = 2\n\n**Output:** 4\n\n**Explanation:**\n\nThe digit 2 appears once in 12 and 32, and twice in 22. Thus, the total number of times digit 2 appears is 4.\n\n**Example 2:**\n\n**Input:** nums = \\[1,34,7\\], digit = 9\n\n**Output:** 0\n\n**Explanation:**\n\nThe digit 9 does not appear in the decimal representation of any element in `nums`, so the total number of times digit 9 appears is 0.\n\n**Constraints:**\n\n*   `1 <= nums.length <= 1000`\n*   `1 <= nums[i] <= 10^(6)​​​​​​​`\n*   `0 <= digit <= 9`",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "1 <= nums[i] <= 106​​​​​​​",
+    "0 <= digit <= 9"
+  ],
+  "examples": [
+    {
+      "input": "nums = [12,54,32,22], digit = 2",
+      "output": "4",
+      "explanation": null
+    },
+    {
+      "input": "nums = [1,34,7], digit = 9",
+      "output": "0",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countDigitOccurrences(vector<int>& nums, int digit) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countDigitOccurrences(int[] nums, int digit) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def countDigitOccurrences(self, nums: list[int], digit: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def countDigitOccurrences(self, nums, digit):\n        \"\"\"\n        :type nums: List[int]\n        :type digit: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} digit\n * @return {number}\n */\nvar countDigitOccurrences = function(nums, digit) {\n    \n};",
+    "typescript": "function countDigitOccurrences(nums: number[], digit: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountDigitOccurrences(int[] nums, int digit) {\n        \n    }\n}",
+    "c": "int countDigitOccurrences(int* nums, int numsSize, int digit) {\n    \n}",
+    "golang": "func countDigitOccurrences(nums []int, digit int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun countDigitOccurrences(nums: IntArray, digit: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func countDigitOccurrences(_ nums: [Int], _ digit: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn count_digit_occurrences(nums: Vec<i32>, digit: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} digit\n# @return {Integer}\ndef count_digit_occurrences(nums, digit)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $digit\n     * @return Integer\n     */\n    function countDigitOccurrences($nums, $digit) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int countDigitOccurrences(List<int> nums, int digit) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def countDigitOccurrences(nums: Array[Int], digit: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec count_digit_occurrences(nums :: [integer], digit :: integer) :: integer\n  def count_digit_occurrences(nums, digit) do\n    \n  end\nend",
+    "erlang": "-spec count_digit_occurrences(Nums :: [integer()], Digit :: integer()) -> integer().\ncount_digit_occurrences(Nums, Digit) ->\n  .",
+    "racket": "(define/contract (count-digit-occurrences nums digit)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [12,54,32,22], digit = 2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "nums = [1,34,7], digit = 9",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [12,54,32,22], digit = 2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "nums = [1,34,7], digit = 9",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[12,54,32,22]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,34,7]\n9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Parse and simulate as described"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-digit-appearances/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:10.394Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,142 @@
+{
+  "id": "3146",
+  "slug": "permutation-difference-between-two-strings",
+  "title": "Permutation Difference between Two Strings",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "statement": "You are given two strings `s` and `t` such that every character occurs at most once in `s` and `t` is a permutation of `s`.\n\nThe **permutation difference** between `s` and `t` is defined as the **sum** of the absolute difference between the index of the occurrence of each character in `s` and the index of the occurrence of the same character in `t`.\n\nReturn the **permutation difference** between `s` and `t`.\n\n**Example 1:**\n\n**Input:** s = \"abc\", t = \"bac\"\n\n**Output:** 2\n\n**Explanation:**\n\nFor `s = \"abc\"` and `t = \"bac\"`, the permutation difference of `s` and `t` is equal to the sum of:\n\n*   The absolute difference between the index of the occurrence of `\"a\"` in `s` and the index of the occurrence of `\"a\"` in `t`.\n*   The absolute difference between the index of the occurrence of `\"b\"` in `s` and the index of the occurrence of `\"b\"` in `t`.\n*   The absolute difference between the index of the occurrence of `\"c\"` in `s` and the index of the occurrence of `\"c\"` in `t`.\n\nThat is, the permutation difference between `s` and `t` is equal to `|0 - 1| + |1 - 0| + |2 - 2| = 2`.\n\n**Example 2:**\n\n**Input:** s = \"abcde\", t = \"edbac\"\n\n**Output:** 12\n\n**Explanation:** The permutation difference between `s` and `t` is equal to `|0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12`.\n\n**Constraints:**\n\n*   `1 <= s.length <= 26`\n*   Each character occurs at most once in `s`.\n*   `t` is a permutation of `s`.\n*   `s` consists only of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 26",
+    "Each character occurs at most once in s.",
+    "t is a permutation of s.",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abc&quot;, t = &quot;bac&quot;",
+      "output": "2",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;abcde&quot;, t = &quot;edbac&quot;",
+      "output": "12",
+      "explanation": "The permutation difference between s and t is equal to |0 - 3| + |1 - 2| + |2 - 4| + |3 - 1| + |4 - 0| = 12."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findPermutationDifference(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findPermutationDifference(String s, String t) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def findPermutationDifference(self, s: str, t: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def findPermutationDifference(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {string} t\n * @return {number}\n */\nvar findPermutationDifference = function(s, t) {\n    \n};",
+    "typescript": "function findPermutationDifference(s: string, t: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindPermutationDifference(string s, string t) {\n        \n    }\n}",
+    "c": "int findPermutationDifference(char* s, char* t) {\n    \n}",
+    "golang": "func findPermutationDifference(s string, t string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun findPermutationDifference(s: String, t: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func findPermutationDifference(_ s: String, _ t: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn find_permutation_difference(s: String, t: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {String} t\n# @return {Integer}\ndef find_permutation_difference(s, t)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Integer\n     */\n    function findPermutationDifference($s, $t) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int findPermutationDifference(String s, String t) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def findPermutationDifference(s: String, t: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec find_permutation_difference(s :: String.t, t :: String.t) :: integer\n  def find_permutation_difference(s, t) do\n    \n  end\nend",
+    "erlang": "-spec find_permutation_difference(S :: unicode:unicode_binary(), T :: unicode:unicode_binary()) -> integer().\nfind_permutation_difference(S, T) ->\n  .",
+    "racket": "(define/contract (find-permutation-difference s t)\n  (-> string? string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abc&quot;, t = &quot;bac&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abcde&quot;, t = &quot;edbac&quot;",
+      "expectedOutput": "12"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abc&quot;, t = &quot;bac&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abcde&quot;, t = &quot;edbac&quot;",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"abc\"\n\"bac\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcde\"\n\"edbac\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "For each character, find the indices of its occurrences in string <code>s</code> then in string <code>t</code>."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/permutation-difference-between-two-strings/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:56.491Z",
+    "sourceUpdatedAt": null
+  }
+}

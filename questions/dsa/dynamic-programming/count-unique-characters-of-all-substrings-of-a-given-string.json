@@ -1,0 +1,164 @@
+{
+  "id": "828",
+  "slug": "count-unique-characters-of-all-substrings-of-a-given-string",
+  "title": "Count Unique Characters of All Substrings of a Given String",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Dynamic Programming"
+  ],
+  "statement": "Let's define a function `countUniqueChars(s)` that returns the number of unique characters in `s`.\n\n*   For example, calling `countUniqueChars(s)` if `s = \"LEETCODE\"` then `\"L\"`, `\"T\"`, `\"C\"`, `\"O\"`, `\"D\"` are the unique characters since they appear only once in `s`, therefore `countUniqueChars(s) = 5`.\n\nGiven a string `s`, return the sum of `countUniqueChars(t)` where `t` is a substring of `s`. The test cases are generated such that the answer fits in a 32-bit integer.\n\nNotice that some substrings can be repeated so in this case you have to count the repeated ones too.\n\n**Example 1:**\n\n```\nInput: s = \"ABC\"\nOutput: 10\nExplanation: All possible substrings are: \"A\",\"B\",\"C\",\"AB\",\"BC\" and \"ABC\".\nEvery substring is composed with only unique letters.\nSum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10\n```\n\n**Example 2:**\n\n```\ncountUniqueChars\n```\n\n**Example 3:**\n\n```\nInput: s = \"LEETCODE\"\nOutput: 92\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(5)`\n*   `s` consists of uppercase English letters only.",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of uppercase English letters only."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;ABC&quot;",
+      "output": "10",
+      "explanation": "All possible substrings are: &quot;A&quot;,&quot;B&quot;,&quot;C&quot;,&quot;AB&quot;,&quot;BC&quot; and &quot;ABC&quot;.\nEvery substring is composed with only unique letters.\nSum of lengths of all substring is 1 + 1 + 1 + 2 + 2 + 3 = 10"
+    },
+    {
+      "input": "s = &quot;ABA&quot;",
+      "output": "8",
+      "explanation": "The same as example 1, except countUniqueChars(&quot;ABA&quot;) = 1."
+    },
+    {
+      "input": "s = &quot;LEETCODE&quot;",
+      "output": "92",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int uniqueLetterString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int uniqueLetterString(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def uniqueLetterString(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def uniqueLetterString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar uniqueLetterString = function(s) {\n    \n};",
+    "typescript": "function uniqueLetterString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int UniqueLetterString(string s) {\n        \n    }\n}",
+    "c": "int uniqueLetterString(char* s) {\n    \n}",
+    "golang": "func uniqueLetterString(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun uniqueLetterString(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func uniqueLetterString(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn unique_letter_string(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef unique_letter_string(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function uniqueLetterString($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int uniqueLetterString(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def uniqueLetterString(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec unique_letter_string(s :: String.t) :: integer\n  def unique_letter_string(s) do\n    \n  end\nend",
+    "erlang": "-spec unique_letter_string(S :: unicode:unicode_binary()) -> integer().\nunique_letter_string(S) ->\n  .",
+    "racket": "(define/contract (unique-letter-string s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;ABC&quot;",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "s = &quot;ABA&quot;",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "s = &quot;LEETCODE&quot;",
+      "expectedOutput": "92"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;ABC&quot;",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "s = &quot;ABA&quot;",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "s = &quot;LEETCODE&quot;",
+      "expectedOutput": "92"
+    },
+    {
+      "input": "\"ABC\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"ABA\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"LEETCODE\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-unique-characters-of-all-substrings-of-a-given-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:26.375Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,94 @@
+{
+  "id": "2185",
+  "slug": "counting-words-with-a-given-prefix",
+  "title": "Counting Words With a Given Prefix",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "Array",
+    "String",
+    "String Matching"
+  ],
+  "statement": "You are given an array of strings `words` and a string `pref`.\n\nReturn _the number of strings in_ `words` _that contain_ `pref` _as a **prefix**_.\n\nA **prefix** of a string `s` is any leading contiguous substring of `s`.\n\n**Example 1:**\n\n```\npref\n```\n\n**Example 2:**\n\n```\npref\n```\n\n**Constraints:**\n\n*   `1 <= words.length <= 100`\n*   `1 <= words[i].length, pref.length <= 100`\n*   `words[i]` and `pref` consist of lowercase English letters.",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length, pref.length <= 100",
+    "words[i] and pref consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "output": "2",
+      "explanation": "The 2 strings that contain &quot;at&quot; as a prefix are: &quot;attention&quot; and &quot;attend&quot;."
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "output": "0",
+      "explanation": "There are no strings that contain &quot;code&quot; as a prefix."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int prefixCount(vector<string>& words, string pref) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int prefixCount(String[] words, String pref) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def prefixCount(self, words: list[str], pref: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def prefixCount(self, words, pref):\n        \"\"\"\n        :type words: List[str]\n        :type pref: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} words\n * @param {string} pref\n * @return {number}\n */\nvar prefixCount = function(words, pref) {\n    \n};",
+    "typescript": "function prefixCount(words: string[], pref: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int PrefixCount(string[] words, string pref) {\n        \n    }\n}",
+    "c": "int prefixCount(char** words, int wordsSize, char* pref) {\n    \n}",
+    "golang": "func prefixCount(words []string, pref string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun prefixCount(words: Array<String>, pref: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func prefixCount(_ words: [String], _ pref: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn prefix_count(words: Vec<String>, pref: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String[]} words\n# @param {String} pref\n# @return {Integer}\ndef prefix_count(words, pref)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $pref\n     * @return Integer\n     */\n    function prefixCount($words, $pref) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int prefixCount(List<String> words, String pref) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def prefixCount(words: Array[String], pref: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec prefix_count(words :: [String.t], pref :: String.t) :: integer\n  def prefix_count(words, pref) do\n    \n  end\nend",
+    "erlang": "-spec prefix_count(Words :: [unicode:unicode_binary()], Pref :: unicode:unicode_binary()) -> integer().\nprefix_count(Words, Pref) ->\n  .",
+    "racket": "(define/contract (prefix-count words pref)\n  (-> (listof string?) string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "words = [&quot;pay&quot;,&quot;attention&quot;,&quot;practice&quot;,&quot;attend&quot;], pref = &quot;at&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;,&quot;win&quot;,&quot;loops&quot;,&quot;success&quot;], pref = &quot;code&quot;",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"leetcode\",\"win\",\"loops\",\"success\"]\n\"code\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Go through each word in words and increment the answer if pref is a prefix of the word."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/counting-words-with-a-given-prefix/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:28.316Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "id": "763",
+  "slug": "partition-labels",
+  "title": "Partition Labels",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "Two Pointers",
+    "String",
+    "Greedy"
+  ],
+  "statement": "You are given a string `s`. We want to partition the string into as many parts as possible so that each letter appears in at most one part. For example, the string `\"ababcc\"` can be partitioned into `[\"abab\", \"cc\"]`, but partitions such as `[\"aba\", \"bcc\"]` or `[\"ab\", \"ab\", \"cc\"]` are invalid.\n\nNote that the partition is done so that after concatenating all the parts in order, the resultant string should be `s`.\n\nReturn _a list of integers representing the size of these parts_.\n\n**Example 1:**\n\n```\nInput: s = \"ababcbacadefegdehijhklij\"\nOutput: [9,7,8]\nExplanation:\nThe partition is \"ababcbaca\", \"defegde\", \"hijhklij\".\nThis is a partition so that each letter appears in at most one part.\nA partition like \"ababcbacadefegde\", \"hijhklij\" is incorrect, because it splits s into less parts.\n```\n\n**Example 2:**\n\n```\nInput: s = \"eccbbbbdec\"\nOutput: [10]\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 500`\n*   `s` consists of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "output": "[9,7,8]",
+      "explanation": "The partition is &quot;ababcbaca&quot;, &quot;defegde&quot;, &quot;hijhklij&quot;.\nThis is a partition so that each letter appears in at most one part.\nA partition like &quot;ababcbacadefegde&quot;, &quot;hijhklij&quot; is incorrect, because it splits s into less parts."
+    },
+    {
+      "input": "s = &quot;eccbbbbdec&quot;",
+      "output": "[10]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> partitionLabels(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<Integer> partitionLabels(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def partitionLabels(self, s: str) -> list[int]:\n        ",
+    "python": "class Solution(object):\n    def partitionLabels(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[int]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number[]}\n */\nvar partitionLabels = function(s) {\n    \n};",
+    "typescript": "function partitionLabels(s: string): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<int> PartitionLabels(string s) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* partitionLabels(char* s, int* returnSize) {\n    \n}",
+    "golang": "func partitionLabels(s string) []int {\n    \n}",
+    "kotlin": "class Solution {\n    fun partitionLabels(s: String): List<Int> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func partitionLabels(_ s: String) -> [Int] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn partition_labels(s: String) -> Vec<i32> {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer[]}\ndef partition_labels(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer[]\n     */\n    function partitionLabels($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<int> partitionLabels(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def partitionLabels(s: String): List[Int] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec partition_labels(s :: String.t) :: [integer]\n  def partition_labels(s) do\n    \n  end\nend",
+    "erlang": "-spec partition_labels(S :: unicode:unicode_binary()) -> [integer()].\npartition_labels(S) ->\n  .",
+    "racket": "(define/contract (partition-labels s)\n  (-> string? (listof exact-integer?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "expectedOutput": "[9,7,8]"
+    },
+    {
+      "input": "s = &quot;eccbbbbdec&quot;",
+      "expectedOutput": "[10]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;ababcbacadefegdehijhklij&quot;",
+      "expectedOutput": "[9,7,8]"
+    },
+    {
+      "input": "s = &quot;eccbbbbdec&quot;",
+      "expectedOutput": "[10]"
+    },
+    {
+      "input": "\"ababcbacadefegdehijhklij\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"eccbbbbdec\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Try to greedily choose the smallest partition that includes the first letter.  If you have something like \"abaccbdeffed\", then you might need to add b.  You can use an map like \"last['b'] = 5\" to help you expand the width of your partition."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/partition-labels/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:52.351Z",
+    "sourceUpdatedAt": null
+  }
+}

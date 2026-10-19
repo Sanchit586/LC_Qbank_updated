@@ -1,0 +1,167 @@
+{
+  "id": "2309",
+  "slug": "greatest-english-letter-in-upper-and-lower-case",
+  "title": "Greatest English Letter in Upper and Lower Case",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Enumeration"
+  ],
+  "statement": "Given a string of English letters `s`, return _the **greatest** English letter which occurs as **both** a lowercase and uppercase letter in_ `s`. The returned letter should be in **uppercase**. If no such letter exists, return _an empty string_.\n\nAn English letter `b` is **greater** than another letter `a` if `b` appears **after** `a` in the English alphabet.\n\n**Example 1:**\n\n```\nInput: s = \"lEeTcOdE\"\nOutput: \"E\"\nExplanation:\nThe letter 'E' is the only letter to appear in both lower and upper case.\n```\n\n**Example 2:**\n\n```\nInput: s = \"arRAzFif\"\nOutput: \"R\"\nExplanation:\nThe letter 'R' is the greatest letter to appear in both lower and upper case.\nNote that 'A' and 'F' also appear in both lower and upper case, but 'R' is greater than 'F' or 'A'.\n```\n\n**Example 3:**\n\n```\nInput: s = \"AbCdEfGhIjK\"\nOutput: \"\"\nExplanation:\nThere is no letter that appears in both lower and upper case.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 1000`\n*   `s` consists of lowercase and uppercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "s consists of lowercase and uppercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;lEeTcOdE&quot;",
+      "output": "&quot;E&quot;",
+      "explanation": "The letter &#39;E&#39; is the only letter to appear in both lower and upper case."
+    },
+    {
+      "input": "s = &quot;arRAzFif&quot;",
+      "output": "&quot;R&quot;",
+      "explanation": "The letter &#39;R&#39; is the greatest letter to appear in both lower and upper case.\nNote that &#39;A&#39; and &#39;F&#39; also appear in both lower and upper case, but &#39;R&#39; is greater than &#39;F&#39; or &#39;A&#39;."
+    },
+    {
+      "input": "s = &quot;AbCdEfGhIjK&quot;",
+      "output": "&quot;&quot;",
+      "explanation": "There is no letter that appears in both lower and upper case."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string greatestLetter(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String greatestLetter(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def greatestLetter(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def greatestLetter(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar greatestLetter = function(s) {\n    \n};",
+    "typescript": "function greatestLetter(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string GreatestLetter(string s) {\n        \n    }\n}",
+    "c": "char* greatestLetter(char* s) {\n    \n}",
+    "golang": "func greatestLetter(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun greatestLetter(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func greatestLetter(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn greatest_letter(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef greatest_letter(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function greatestLetter($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String greatestLetter(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def greatestLetter(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec greatest_letter(s :: String.t) :: String.t\n  def greatest_letter(s) do\n    \n  end\nend",
+    "erlang": "-spec greatest_letter(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\ngreatest_letter(S) ->\n  .",
+    "racket": "(define/contract (greatest-letter s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;lEeTcOdE&quot;",
+      "expectedOutput": "&quot;E&quot;"
+    },
+    {
+      "input": "s = &quot;arRAzFif&quot;",
+      "expectedOutput": "&quot;R&quot;"
+    },
+    {
+      "input": "s = &quot;AbCdEfGhIjK&quot;",
+      "expectedOutput": "&quot;&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;lEeTcOdE&quot;",
+      "expectedOutput": "&quot;E&quot;"
+    },
+    {
+      "input": "s = &quot;arRAzFif&quot;",
+      "expectedOutput": "&quot;R&quot;"
+    },
+    {
+      "input": "s = &quot;AbCdEfGhIjK&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "\"lEeTcOdE\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"arRAzFif\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"AbCdEfGhIjK\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Consider iterating through the string and storing each unique character that occurs in a set.",
+    "From Z to A, check whether both the uppercase and lowercase version occur in the set."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/greatest-english-letter-in-upper-and-lower-case/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:24.286Z",
+    "sourceUpdatedAt": null
+  }
+}

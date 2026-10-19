@@ -1,0 +1,152 @@
+{
+  "id": "383",
+  "slug": "ransom-note",
+  "title": "Ransom Note",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Counting"
+  ],
+  "statement": "Given two strings `ransomNote` and `magazine`, return `true` _if_ `ransomNote` _can be constructed by using the letters from_ `magazine` _and_ `false` _otherwise_.\n\nEach letter in `magazine` can only be used once in `ransomNote`.\n\n**Example 1:**\n\n```\nInput: ransomNote = \"a\", magazine = \"b\"\nOutput: false\n```\n\n**Example 2:**\n\n```\nInput: ransomNote = \"aa\", magazine = \"ab\"\nOutput: false\n```\n\n**Example 3:**\n\n```\nInput: ransomNote = \"aa\", magazine = \"aab\"\nOutput: true\n```\n\n**Constraints:**\n\n*   `1 <= ransomNote.length, magazine.length <= 10^(5)`\n*   `ransomNote` and `magazine` consist of lowercase English letters.",
+  "constraints": [
+    "1 <= ransomNote.length, magazine.length <= 105",
+    "ransomNote and magazine consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "ransomNote = \"a\", magazine = \"b\"",
+      "output": "false",
+      "explanation": null
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"ab\"",
+      "output": "false",
+      "explanation": null
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"aab\"",
+      "output": "true",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool canConstruct(string ransomNote, string magazine) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean canConstruct(String ransomNote, String magazine) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def canConstruct(self, ransomNote: str, magazine: str) -> bool:\n        ",
+    "python": "class Solution(object):\n    def canConstruct(self, ransomNote, magazine):\n        \"\"\"\n        :type ransomNote: str\n        :type magazine: str\n        :rtype: bool\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} ransomNote\n * @param {string} magazine\n * @return {boolean}\n */\nvar canConstruct = function(ransomNote, magazine) {\n    \n};",
+    "typescript": "function canConstruct(ransomNote: string, magazine: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CanConstruct(string ransomNote, string magazine) {\n        \n    }\n}",
+    "c": "bool canConstruct(char* ransomNote, char* magazine) {\n    \n}",
+    "golang": "func canConstruct(ransomNote string, magazine string) bool {\n    \n}",
+    "kotlin": "class Solution {\n    fun canConstruct(ransomNote: String, magazine: String): Boolean {\n        \n    }\n}",
+    "swift": "class Solution {\n    func canConstruct(_ ransomNote: String, _ magazine: String) -> Bool {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn can_construct(ransom_note: String, magazine: String) -> bool {\n        \n    }\n}",
+    "ruby": "# @param {String} ransom_note\n# @param {String} magazine\n# @return {Boolean}\ndef can_construct(ransom_note, magazine)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $ransomNote\n     * @param String $magazine\n     * @return Boolean\n     */\n    function canConstruct($ransomNote, $magazine) {\n        \n    }\n}",
+    "dart": "class Solution {\n  bool canConstruct(String ransomNote, String magazine) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def canConstruct(ransomNote: String, magazine: String): Boolean = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec can_construct(ransom_note :: String.t, magazine :: String.t) :: boolean\n  def can_construct(ransom_note, magazine) do\n    \n  end\nend",
+    "erlang": "-spec can_construct(RansomNote :: unicode:unicode_binary(), Magazine :: unicode:unicode_binary()) -> boolean().\ncan_construct(RansomNote, Magazine) ->\n  .",
+    "racket": "(define/contract (can-construct ransomNote magazine)\n  (-> string? string? boolean?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "ransomNote = \"a\", magazine = \"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"aab\"",
+      "expectedOutput": "true"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "ransomNote = \"a\", magazine = \"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "ransomNote = \"aa\", magazine = \"aab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"\n\"ab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"\n\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/ransom-note/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:04.047Z",
+    "sourceUpdatedAt": null
+  }
+}

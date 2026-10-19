@@ -1,0 +1,158 @@
+{
+  "id": "2217",
+  "slug": "find-palindrome-with-fixed-length",
+  "title": "Find Palindrome With Fixed Length",
+  "category": "dsa",
+  "subcategory": "mathematics",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Math"
+  ],
+  "statement": "Given an integer array `queries` and a **positive** integer `intLength`, return _an array_ `answer` _where_ `answer[i]` _is either the_ `queries[i]^(th)` _smallest **positive palindrome** of length_ `intLength` _or_ `-1` _if no such palindrome exists_.\n\nA **palindrome** is a number that reads the same backwards and forwards. Palindromes cannot have leading zeros.\n\n**Example 1:**\n\n```\nInput: queries = [1,2,3,4,5,90], intLength = 3\nOutput: [101,111,121,131,141,999]\nExplanation:\nThe first few palindromes of length 3 are:\n101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 202, ...\nThe 90th palindrome of length 3 is 999.\n```\n\n**Example 2:**\n\n```\nInput: queries = [2,4,6], intLength = 4\nOutput: [1111,1331,1551]\nExplanation:\nThe first six palindromes of length 4 are:\n1001, 1111, 1221, 1331, 1441, and 1551.\n```\n\n**Constraints:**\n\n*   `1 <= queries.length <= 5 * 10^(4)`\n*   `1 <= queries[i] <= 10^(9)`\n*   `1 <= intLength <= 15`",
+  "constraints": [
+    "1 <= queries.length <= 5 * 104",
+    "1 <= queries[i] <= 109",
+    "1 <= intLength <= 15"
+  ],
+  "examples": [
+    {
+      "input": "queries = [1,2,3,4,5,90], intLength = 3",
+      "output": "[101,111,121,131,141,999]",
+      "explanation": "The first few palindromes of length 3 are:\n101, 111, 121, 131, 141, 151, 161, 171, 181, 191, 202, ...\nThe 90th palindrome of length 3 is 999."
+    },
+    {
+      "input": "queries = [2,4,6], intLength = 4",
+      "output": "[1111,1331,1551]",
+      "explanation": "The first six palindromes of length 4 are:\n1001, 1111, 1221, 1331, 1441, and 1551."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<long long> kthPalindrome(vector<int>& queries, int intLength) {\n        \n    }\n};",
+    "java": "class Solution {\n    public long[] kthPalindrome(int[] queries, int intLength) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def kthPalindrome(self, queries: list[int], intLength: int) -> list[int]:\n        ",
+    "python": "class Solution(object):\n    def kthPalindrome(self, queries, intLength):\n        \"\"\"\n        :type queries: List[int]\n        :type intLength: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} queries\n * @param {number} intLength\n * @return {number[]}\n */\nvar kthPalindrome = function(queries, intLength) {\n    \n};",
+    "typescript": "function kthPalindrome(queries: number[], intLength: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public long[] KthPalindrome(int[] queries, int intLength) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nlong long* kthPalindrome(int* queries, int queriesSize, int intLength, int* returnSize) {\n    \n}",
+    "golang": "func kthPalindrome(queries []int, intLength int) []int64 {\n    \n}",
+    "kotlin": "class Solution {\n    fun kthPalindrome(queries: IntArray, intLength: Int): LongArray {\n        \n    }\n}",
+    "swift": "class Solution {\n    func kthPalindrome(_ queries: [Int], _ intLength: Int) -> [Int] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn kth_palindrome(queries: Vec<i32>, int_length: i32) -> Vec<i64> {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} queries\n# @param {Integer} int_length\n# @return {Integer[]}\ndef kth_palindrome(queries, int_length)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $queries\n     * @param Integer $intLength\n     * @return Integer[]\n     */\n    function kthPalindrome($queries, $intLength) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<int> kthPalindrome(List<int> queries, int intLength) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def kthPalindrome(queries: Array[Int], intLength: Int): Array[Long] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec kth_palindrome(queries :: [integer], int_length :: integer) :: [integer]\n  def kth_palindrome(queries, int_length) do\n    \n  end\nend",
+    "erlang": "-spec kth_palindrome(Queries :: [integer()], IntLength :: integer()) -> [integer()].\nkth_palindrome(Queries, IntLength) ->\n  .",
+    "racket": "(define/contract (kth-palindrome queries intLength)\n  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "queries = [1,2,3,4,5,90], intLength = 3",
+      "expectedOutput": "[101,111,121,131,141,999]"
+    },
+    {
+      "input": "queries = [2,4,6], intLength = 4",
+      "expectedOutput": "[1111,1331,1551]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "queries = [1,2,3,4,5,90], intLength = 3",
+      "expectedOutput": "[101,111,121,131,141,999]"
+    },
+    {
+      "input": "queries = [2,4,6], intLength = 4",
+      "expectedOutput": "[1111,1331,1551]"
+    },
+    {
+      "input": "[1,2,3,4,5,90]\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6]\n4",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "For any value of queries[i] and intLength, how can you check if there exists at least queries[i] palindromes of length intLength?",
+    "Since a palindrome reads the same forwards and backwards, consider how you can efficiently find the first half (ceil(intLength/2) digits) of the palindrome."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/find-palindrome-with-fixed-length/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:06.117Z",
+    "sourceUpdatedAt": null
+  }
+}

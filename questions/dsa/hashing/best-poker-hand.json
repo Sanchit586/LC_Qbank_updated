@@ -1,0 +1,132 @@
+{
+  "id": "2347",
+  "slug": "best-poker-hand",
+  "title": "Best Poker Hand",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Counting"
+  ],
+  "statement": "You are given an integer array `ranks` and a character array `suits`. You have `5` cards where the `i^(th)` card has a rank of `ranks[i]` and a suit of `suits[i]`.\n\nThe following are the types of **poker hands** you can make from best to worst:\n\n1.  `\"Flush\"`: Five cards of the same suit.\n2.  `\"Three of a Kind\"`: Three cards of the same rank.\n3.  `\"Pair\"`: Two cards of the same rank.\n4.  `\"High Card\"`: Any single card.\n\nReturn _a string representing the **best** type of **poker hand** you can make with the given cards._\n\n**Note** that the return values are **case-sensitive**.\n\n**Example 1:**\n\n```\nInput: ranks = [13,2,3,1,9], suits = [\"a\",\"a\",\"a\",\"a\",\"a\"]\nOutput: \"Flush\"\nExplanation: The hand with all the cards consists of 5 cards with the same suit, so we have a \"Flush\".\n```\n\n**Example 2:**\n\n```\nInput: ranks = [4,4,2,4,4], suits = [\"d\",\"a\",\"a\",\"b\",\"c\"]\nOutput: \"Three of a Kind\"\nExplanation: The hand with the first, second, and fourth card consists of 3 cards with the same rank, so we have a \"Three of a Kind\".\nNote that we could also make a \"Pair\" hand but \"Three of a Kind\" is a better hand.\nAlso note that other cards could be used to make the \"Three of a Kind\" hand.\n```\n\n**Example 3:**\n\n```\nInput: ranks = [10,10,2,12,9], suits = [\"a\",\"b\",\"c\",\"a\",\"d\"]\nOutput: \"Pair\"\nExplanation: The hand with the first and second card consists of 2 cards with the same rank, so we have a \"Pair\".\nNote that we cannot make a \"Flush\" or a \"Three of a Kind\".\n```\n\n**Constraints:**\n\n*   `ranks.length == suits.length == 5`\n*   `1 <= ranks[i] <= 13`\n*   `'a' <= suits[i] <= 'd'`\n*   No two cards have the same rank and suit.",
+  "constraints": [
+    "ranks.length == suits.length == 5",
+    "1 <= ranks[i] <= 13",
+    "'a' <= suits[i] <= 'd'",
+    "No two cards have the same rank and suit."
+  ],
+  "examples": [
+    {
+      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
+      "output": "&quot;Flush&quot;",
+      "explanation": "The hand with all the cards consists of 5 cards with the same suit, so we have a &quot;Flush&quot;."
+    },
+    {
+      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "output": "&quot;Three of a Kind&quot;",
+      "explanation": "The hand with the first, second, and fourth card consists of 3 cards with the same rank, so we have a &quot;Three of a Kind&quot;.\nNote that we could also make a &quot;Pair&quot; hand but &quot;Three of a Kind&quot; is a better hand.\nAlso note that other cards could be used to make the &quot;Three of a Kind&quot; hand."
+    },
+    {
+      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
+      "output": "&quot;Pair&quot;",
+      "explanation": "The hand with the first and second card consists of 2 cards with the same rank, so we have a &quot;Pair&quot;.\nNote that we cannot make a &quot;Flush&quot; or a &quot;Three of a Kind&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string bestHand(vector<int>& ranks, vector<char>& suits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String bestHand(int[] ranks, char[] suits) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def bestHand(self, ranks: list[int], suits: list[str]) -> str:\n        ",
+    "python": "class Solution(object):\n    def bestHand(self, ranks, suits):\n        \"\"\"\n        :type ranks: List[int]\n        :type suits: List[str]\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} ranks\n * @param {character[]} suits\n * @return {string}\n */\nvar bestHand = function(ranks, suits) {\n    \n};",
+    "typescript": "function bestHand(ranks: number[], suits: string[]): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string BestHand(int[] ranks, char[] suits) {\n        \n    }\n}",
+    "c": "char* bestHand(int* ranks, int ranksSize, char* suits, int suitsSize) {\n    \n}",
+    "golang": "func bestHand(ranks []int, suits []byte) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun bestHand(ranks: IntArray, suits: CharArray): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func bestHand(_ ranks: [Int], _ suits: [Character]) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn best_hand(ranks: Vec<i32>, suits: Vec<char>) -> String {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} ranks\n# @param {Character[]} suits\n# @return {String}\ndef best_hand(ranks, suits)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $ranks\n     * @param String[] $suits\n     * @return String\n     */\n    function bestHand($ranks, $suits) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String bestHand(List<int> ranks, List<String> suits) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def bestHand(ranks: Array[Int], suits: Array[Char]): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec best_hand(ranks :: [integer], suits :: [char]) :: String.t\n  def best_hand(ranks, suits) do\n    \n  end\nend",
+    "erlang": "-spec best_hand(Ranks :: [integer()], Suits :: [char()]) -> unicode:unicode_binary().\nbest_hand(Ranks, Suits) ->\n  .",
+    "racket": "(define/contract (best-hand ranks suits)\n  (-> (listof exact-integer?) (listof char?) string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
+      "expectedOutput": "&quot;Flush&quot;"
+    },
+    {
+      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "expectedOutput": "&quot;Three of a Kind&quot;"
+    },
+    {
+      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
+      "expectedOutput": "&quot;Pair&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "ranks = [13,2,3,1,9], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
+      "expectedOutput": "&quot;Flush&quot;"
+    },
+    {
+      "input": "ranks = [4,4,2,4,4], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "expectedOutput": "&quot;Three of a Kind&quot;"
+    },
+    {
+      "input": "ranks = [10,10,2,12,9], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
+      "expectedOutput": "&quot;Pair&quot;"
+    },
+    {
+      "input": "[13,2,3,1,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[4,4,2,4,4]\n[\"d\",\"a\",\"a\",\"b\",\"c\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,10,2,12,9]\n[\"a\",\"b\",\"c\",\"a\",\"d\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "ranks = [5,5,3,5,5], suits = [&quot;d&quot;,&quot;a&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "expectedOutput": null
+    },
+    {
+      "input": "ranks = [11,11,3,13,10], suits = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;a&quot;,&quot;d&quot;]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[14,3,4,2,10]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[5,5,3,5,5]\n[\"d\",\"a\",\"a\",\"b\",\"c\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "ranks = [14,3,4,2,10], suits = [&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;,&quot;a&quot;]",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Sequentially check the conditions 1 through 4, and return the outcome corresponding to the first met condition."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/best-poker-hand/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:05:26.705Z",
+    "sourceUpdatedAt": null
+  }
+}

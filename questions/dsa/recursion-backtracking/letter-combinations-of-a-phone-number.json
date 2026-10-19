@@ -1,0 +1,155 @@
+{
+  "id": "17",
+  "slug": "letter-combinations-of-a-phone-number",
+  "title": "Letter Combinations of a Phone Number",
+  "category": "dsa",
+  "subcategory": "recursion-backtracking",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Backtracking"
+  ],
+  "statement": "Given a string containing digits from `2-9` inclusive, return all possible letter combinations that the number could represent. Return the answer in **any order**.\n\nA mapping of digits to letters (just like on the telephone buttons) is given below. Note that 1 does not map to any letters.\n\n![](./assets/letter-combinations-of-a-phone-number-1.png)\n\n**Example 1:**\n\n```\nInput: digits = \"23\"\nOutput: [\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]\n```\n\n**Example 2:**\n\n```\nInput: digits = \"2\"\nOutput: [\"a\",\"b\",\"c\"]\n```\n\n**Constraints:**\n\n*   `1 <= digits.length <= 4`\n*   `digits[i]` is a digit in the range `['2', '9']`.",
+  "constraints": [
+    "1 <= digits.length <= 4",
+    "digits[i] is a digit in the range ['2', '9']."
+  ],
+  "examples": [
+    {
+      "input": "digits = &quot;23&quot;",
+      "output": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]",
+      "explanation": null
+    },
+    {
+      "input": "digits = &quot;2&quot;",
+      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> letterCombinations(string digits) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> letterCombinations(String digits) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def letterCombinations(self, digits: str) -> list[str]:\n        ",
+    "python": "class Solution(object):\n    def letterCombinations(self, digits):\n        \"\"\"\n        :type digits: str\n        :rtype: List[str]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} digits\n * @return {string[]}\n */\nvar letterCombinations = function(digits) {\n    \n};",
+    "typescript": "function letterCombinations(digits: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> LetterCombinations(string digits) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** letterCombinations(char* digits, int* returnSize) {\n    \n}",
+    "golang": "func letterCombinations(digits string) []string {\n    \n}",
+    "kotlin": "class Solution {\n    fun letterCombinations(digits: String): List<String> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func letterCombinations(_ digits: String) -> [String] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn letter_combinations(digits: String) -> Vec<String> {\n        \n    }\n}",
+    "ruby": "# @param {String} digits\n# @return {String[]}\ndef letter_combinations(digits)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $digits\n     * @return String[]\n     */\n    function letterCombinations($digits) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<String> letterCombinations(String digits) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def letterCombinations(digits: String): List[String] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec letter_combinations(digits :: String.t) :: [String.t]\n  def letter_combinations(digits) do\n    \n  end\nend",
+    "erlang": "-spec letter_combinations(Digits :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nletter_combinations(Digits) ->\n  .",
+    "racket": "(define/contract (letter-combinations digits)\n  (-> string? (listof string?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "digits = &quot;23&quot;",
+      "expectedOutput": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]"
+    },
+    {
+      "input": "digits = &quot;2&quot;",
+      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "digits = &quot;23&quot;",
+      "expectedOutput": "[&quot;ad&quot;,&quot;ae&quot;,&quot;af&quot;,&quot;bd&quot;,&quot;be&quot;,&quot;bf&quot;,&quot;cd&quot;,&quot;ce&quot;,&quot;cf&quot;]"
+    },
+    {
+      "input": "digits = &quot;2&quot;",
+      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+    },
+    {
+      "input": "\"23\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"2\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/letter-combinations-of-a-phone-number/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:49.983Z",
+    "sourceUpdatedAt": null
+  }
+}

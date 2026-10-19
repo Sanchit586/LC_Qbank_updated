@@ -1,0 +1,156 @@
+{
+  "id": "2710",
+  "slug": "remove-trailing-zeros-from-a-string",
+  "title": "Remove Trailing Zeros From a String",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "String"
+  ],
+  "statement": "Given a **positive** integer `num` represented as a string, return _the integer_ `num` _without trailing zeros as a string_.\n\n**Example 1:**\n\n```\nInput: num = \"51230100\"\nOutput: \"512301\"\nExplanation: Integer \"51230100\" has 2 trailing zeros, we remove them and return integer \"512301\".\n```\n\n**Example 2:**\n\n```\nInput: num = \"123\"\nOutput: \"123\"\nExplanation: Integer \"123\" has no trailing zeros, we return integer \"123\".\n```\n\n**Constraints:**\n\n*   `1 <= num.length <= 1000`\n*   `num` consists of only digits.\n*   `num` doesn't have any leading zeros.",
+  "constraints": [
+    "1 <= num.length <= 1000",
+    "num consists of only digits.",
+    "num doesn't have any leading zeros."
+  ],
+  "examples": [
+    {
+      "input": "num = &quot;51230100&quot;",
+      "output": "&quot;512301&quot;",
+      "explanation": "Integer &quot;51230100&quot; has 2 trailing zeros, we remove them and return integer &quot;512301&quot;."
+    },
+    {
+      "input": "num = &quot;123&quot;",
+      "output": "&quot;123&quot;",
+      "explanation": "Integer &quot;123&quot; has no trailing zeros, we return integer &quot;123&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string removeTrailingZeros(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String removeTrailingZeros(String num) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def removeTrailingZeros(self, num: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def removeTrailingZeros(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} num\n * @return {string}\n */\nvar removeTrailingZeros = function(num) {\n    \n};",
+    "typescript": "function removeTrailingZeros(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string RemoveTrailingZeros(string num) {\n        \n    }\n}",
+    "c": "char* removeTrailingZeros(char* num) {\n    \n}",
+    "golang": "func removeTrailingZeros(num string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun removeTrailingZeros(num: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func removeTrailingZeros(_ num: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn remove_trailing_zeros(num: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} num\n# @return {String}\ndef remove_trailing_zeros(num)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $num\n     * @return String\n     */\n    function removeTrailingZeros($num) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String removeTrailingZeros(String num) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def removeTrailingZeros(num: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec remove_trailing_zeros(num :: String.t) :: String.t\n  def remove_trailing_zeros(num) do\n    \n  end\nend",
+    "erlang": "-spec remove_trailing_zeros(Num :: unicode:unicode_binary()) -> unicode:unicode_binary().\nremove_trailing_zeros(Num) ->\n  .",
+    "racket": "(define/contract (remove-trailing-zeros num)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "num = &quot;51230100&quot;",
+      "expectedOutput": "&quot;512301&quot;"
+    },
+    {
+      "input": "num = &quot;123&quot;",
+      "expectedOutput": "&quot;123&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "num = &quot;51230100&quot;",
+      "expectedOutput": "&quot;512301&quot;"
+    },
+    {
+      "input": "num = &quot;123&quot;",
+      "expectedOutput": "&quot;123&quot;"
+    },
+    {
+      "input": "\"51230100\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"123\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Find the last non-zero digit in num."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/remove-trailing-zeros-from-a-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:10.001Z",
+    "sourceUpdatedAt": null
+  }
+}

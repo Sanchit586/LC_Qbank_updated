@@ -1,0 +1,168 @@
+{
+  "id": "3775",
+  "slug": "reverse-words-with-same-vowel-count",
+  "title": "Reverse Words With Same Vowel Count",
+  "category": "dsa",
+  "subcategory": "two-pointers",
+  "difficulty": "Medium",
+  "tags": [
+    "Two Pointers",
+    "String",
+    "Simulation"
+  ],
+  "statement": "You are given a string `s` consisting of lowercase English words, each separated by a single space.\n\nDetermine how many vowels appear in the **first** word. Then, reverse each following word that has the **same vowel count**. Leave all remaining words unchanged.\n\nReturn the resulting string.\n\nVowels are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`.\n\n**Example 1:**\n\n**Input:** s = \"cat and mice\"\n\n**Output:** \"cat dna mice\"\n\n**Explanation:**​​​​​​​\n\n*   The first word `\"cat\"` has 1 vowel.\n*   `\"and\"` has 1 vowel, so it is reversed to form `\"dna\"`.\n*   `\"mice\"` has 2 vowels, so it remains unchanged.\n*   Thus, the resulting string is `\"cat dna mice\"`.\n\n**Example 2:**\n\n**Input:** s = \"book is nice\"\n\n**Output:** \"book is ecin\"\n\n**Explanation:**\n\n*   The first word `\"book\"` has 2 vowels.\n*   `\"is\"` has 1 vowel, so it remains unchanged.\n*   `\"nice\"` has 2 vowels, so it is reversed to form `\"ecin\"`.\n*   Thus, the resulting string is `\"book is ecin\"`.\n\n**Example 3:**\n\n**Input:** s = \"banana healthy\"\n\n**Output:** \"banana healthy\"\n\n**Explanation:**\n\n*   The first word `\"banana\"` has 3 vowels.\n*   `\"healthy\"` has 2 vowels, so it remains unchanged.\n*   Thus, the resulting string is `\"banana healthy\"`.\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(5)`\n*   `s` consists of lowercase English letters and spaces.\n*   Words in `s` are separated by a **single** space.\n*   `s` does **not** contain leading or trailing spaces.",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters and spaces.",
+    "Words in s are separated by a single space.",
+    "s does not contain leading or trailing spaces."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;cat and mice&quot;",
+      "output": "&quot;cat dna mice&quot;",
+      "explanation": "​​​​​​​\n\n\n\tThe first word &quot;cat&quot; has 1 vowel.\n\t&quot;and&quot; has 1 vowel, so it is reversed to form &quot;dna&quot;.\n\t&quot;mice&quot; has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is &quot;cat dna mice&quot;."
+    },
+    {
+      "input": "s = &quot;book is nice&quot;",
+      "output": "&quot;book is ecin&quot;",
+      "explanation": "The first word &quot;book&quot; has 2 vowels.\n\t&quot;is&quot; has 1 vowel, so it remains unchanged.\n\t&quot;nice&quot; has 2 vowels, so it is reversed to form &quot;ecin&quot;.\n\tThus, the resulting string is &quot;book is ecin&quot;."
+    },
+    {
+      "input": "s = &quot;banana healthy&quot;",
+      "output": "&quot;banana healthy&quot;",
+      "explanation": "The first word &quot;banana&quot; has 3 vowels.\n\t&quot;healthy&quot; has 2 vowels, so it remains unchanged.\n\tThus, the resulting string is &quot;banana healthy&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseWords(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseWords(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def reverseWords(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def reverseWords(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar reverseWords = function(s) {\n    \n};",
+    "typescript": "function reverseWords(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseWords(string s) {\n        \n    }\n}",
+    "c": "char* reverseWords(char* s) {\n    \n}",
+    "golang": "func reverseWords(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun reverseWords(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func reverseWords(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn reverse_words(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef reverse_words(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function reverseWords($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String reverseWords(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def reverseWords(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec reverse_words(s :: String.t) :: String.t\n  def reverse_words(s) do\n    \n  end\nend",
+    "erlang": "-spec reverse_words(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nreverse_words(S) ->\n  .",
+    "racket": "(define/contract (reverse-words s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;cat and mice&quot;",
+      "expectedOutput": "&quot;cat dna mice&quot;"
+    },
+    {
+      "input": "s = &quot;book is nice&quot;",
+      "expectedOutput": "&quot;book is ecin&quot;"
+    },
+    {
+      "input": "s = &quot;banana healthy&quot;",
+      "expectedOutput": "&quot;banana healthy&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;cat and mice&quot;",
+      "expectedOutput": "&quot;cat dna mice&quot;"
+    },
+    {
+      "input": "s = &quot;book is nice&quot;",
+      "expectedOutput": "&quot;book is ecin&quot;"
+    },
+    {
+      "input": "s = &quot;banana healthy&quot;",
+      "expectedOutput": "&quot;banana healthy&quot;"
+    },
+    {
+      "input": "\"cat and mice\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"book is nice\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"banana healthy\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Simulate as described"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/reverse-words-with-same-vowel-count/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:12.995Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "1542",
+  "slug": "find-longest-awesome-substring",
+  "title": "Find Longest Awesome Substring",
+  "category": "dsa",
+  "subcategory": "bit-manipulation",
+  "difficulty": "Hard",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Bit Manipulation"
+  ],
+  "statement": "You are given a string `s`. An **awesome** substring is a non-empty substring of `s` such that we can make any number of swaps in order to make it a palindrome.\n\nReturn _the length of the maximum length **awesome substring** of_ `s`.\n\n**Example 1:**\n\n```\nInput: s = \"3242415\"\nOutput: 5\nExplanation: \"24241\" is the longest awesome substring, we can form the palindrome \"24142\" with some swaps.\n```\n\n**Example 2:**\n\n```\nInput: s = \"12345678\"\nOutput: 1\n```\n\n**Example 3:**\n\n```\nInput: s = \"213123\"\nOutput: 6\nExplanation: \"213123\" is the longest awesome substring, we can form the palindrome \"231132\" with some swaps.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(5)`\n*   `s` consists only of digits.",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists only of digits."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;3242415&quot;",
+      "output": "5",
+      "explanation": "&quot;24241&quot; is the longest awesome substring, we can form the palindrome &quot;24142&quot; with some swaps."
+    },
+    {
+      "input": "s = &quot;12345678&quot;",
+      "output": "1",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;213123&quot;",
+      "output": "6",
+      "explanation": "&quot;213123&quot; is the longest awesome substring, we can form the palindrome &quot;231132&quot; with some swaps."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int longestAwesome(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int longestAwesome(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def longestAwesome(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def longestAwesome(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar longestAwesome = function(s) {\n    \n};",
+    "typescript": "function longestAwesome(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LongestAwesome(string s) {\n        \n    }\n}",
+    "c": "int longestAwesome(char* s) {\n    \n}",
+    "golang": "func longestAwesome(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun longestAwesome(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func longestAwesome(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn longest_awesome(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef longest_awesome(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function longestAwesome($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int longestAwesome(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def longestAwesome(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec longest_awesome(s :: String.t) :: integer\n  def longest_awesome(s) do\n    \n  end\nend",
+    "erlang": "-spec longest_awesome(S :: unicode:unicode_binary()) -> integer().\nlongest_awesome(S) ->\n  .",
+    "racket": "(define/contract (longest-awesome s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;3242415&quot;",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "s = &quot;12345678&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;213123&quot;",
+      "expectedOutput": "6"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;3242415&quot;",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "s = &quot;12345678&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;213123&quot;",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"3242415\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"12345678\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"213123\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Given the character counts, under what conditions can a palindrome be formed ?",
+    "From left to right, use bitwise xor-operation to compute for any prefix the number of times modulo 2 of each digit.  (mask ^= (1<<(s[i]-'0')).",
+    "Expected complexity is O(n*A) where A is the alphabet (10)."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/find-longest-awesome-substring/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:04.819Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "id": "1616",
+  "slug": "split-two-strings-to-make-palindrome",
+  "title": "Split Two Strings to Make Palindrome",
+  "category": "dsa",
+  "subcategory": "two-pointers",
+  "difficulty": "Medium",
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "statement": "You are given two strings `a` and `b` of the same length. Choose an index and split both strings **at the same index**, splitting `a` into two strings: `a_(prefix)` and `a_(suffix)` where `a = a_(prefix) + a_(suffix)`, and splitting `b` into two strings: `b_(prefix)` and `b_(suffix)` where `b = b_(prefix) + b_(suffix)`. Check if `a_(prefix) + b_(suffix)` or `b_(prefix) + a_(suffix)` forms a palindrome.\n\nWhen you split a string `s` into `s_(prefix)` and `s_(suffix)`, either `s_(suffix)` or `s_(prefix)` is allowed to be empty. For example, if `s = \"abc\"`, then `\"\" + \"abc\"`, `\"a\" + \"bc\"`, `\"ab\" + \"c\"` , and `\"abc\" + \"\"` are valid splits.\n\nReturn `true` _if it is possible to form_ _a palindrome string, otherwise return_ `false`.\n\n**Notice** that `x + y` denotes the concatenation of strings `x` and `y`.\n\n**Example 1:**\n\n```\nInput: a = \"x\", b = \"y\"\nOutput: true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome.\n```\n\n**Example 2:**\n\n```\nInput: a = \"xbdef\", b = \"xecab\"\nOutput: false\n```\n\n**Example 3:**\n\n```\nInput: a = \"ulacfd\", b = \"jizalu\"\nOutput: true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome.\n```\n\n**Constraints:**\n\n*   `1 <= a.length, b.length <= 10^(5)`\n*   `a.length == b.length`\n*   `a` and `b` consist of lowercase English letters",
+  "constraints": [
+    "1 <= a.length, b.length <= 105",
+    "a.length == b.length",
+    "a and b consist of lowercase English letters"
+  ],
+  "examples": [
+    {
+      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
+      "output": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome.",
+      "explanation": null
+    },
+    {
+      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
+      "output": "false",
+      "explanation": null
+    },
+    {
+      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
+      "output": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome.",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool checkPalindromeFormation(string a, string b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean checkPalindromeFormation(String a, String b) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def checkPalindromeFormation(self, a: str, b: str) -> bool:\n        ",
+    "python": "class Solution(object):\n    def checkPalindromeFormation(self, a, b):\n        \"\"\"\n        :type a: str\n        :type b: str\n        :rtype: bool\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} a\n * @param {string} b\n * @return {boolean}\n */\nvar checkPalindromeFormation = function(a, b) {\n    \n};",
+    "typescript": "function checkPalindromeFormation(a: string, b: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool CheckPalindromeFormation(string a, string b) {\n        \n    }\n}",
+    "c": "bool checkPalindromeFormation(char* a, char* b) {\n    \n}",
+    "golang": "func checkPalindromeFormation(a string, b string) bool {\n    \n}",
+    "kotlin": "class Solution {\n    fun checkPalindromeFormation(a: String, b: String): Boolean {\n        \n    }\n}",
+    "swift": "class Solution {\n    func checkPalindromeFormation(_ a: String, _ b: String) -> Bool {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn check_palindrome_formation(a: String, b: String) -> bool {\n        \n    }\n}",
+    "ruby": "# @param {String} a\n# @param {String} b\n# @return {Boolean}\ndef check_palindrome_formation(a, b)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $a\n     * @param String $b\n     * @return Boolean\n     */\n    function checkPalindromeFormation($a, $b) {\n        \n    }\n}",
+    "dart": "class Solution {\n  bool checkPalindromeFormation(String a, String b) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def checkPalindromeFormation(a: String, b: String): Boolean = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec check_palindrome_formation(a :: String.t, b :: String.t) :: boolean\n  def check_palindrome_formation(a, b) do\n    \n  end\nend",
+    "erlang": "-spec check_palindrome_formation(A :: unicode:unicode_binary(), B :: unicode:unicode_binary()) -> boolean().\ncheck_palindrome_formation(A, B) ->\n  .",
+    "racket": "(define/contract (check-palindrome-formation a b)\n  (-> string? string? boolean?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
+      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome."
+    },
+    {
+      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
+      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome."
+    }
+  ],
+  "testCases": [
+    {
+      "input": "a = &quot;x&quot;, b = &quot;y&quot;",
+      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = &quot;&quot;, asuffix = &quot;x&quot;\nbprefix = &quot;&quot;, bsuffix = &quot;y&quot;\nThen, aprefix + bsuffix = &quot;&quot; + &quot;y&quot; = &quot;y&quot;, which is a palindrome."
+    },
+    {
+      "input": "a = &quot;xbdef&quot;, b = &quot;xecab&quot;",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "a = &quot;ulacfd&quot;, b = &quot;jizalu&quot;",
+      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = &quot;ula&quot;, asuffix = &quot;cfd&quot;\nbprefix = &quot;jiz&quot;, bsuffix = &quot;alu&quot;\nThen, aprefix + bsuffix = &quot;ula&quot; + &quot;alu&quot; = &quot;ulaalu&quot;, which is a palindrome."
+    },
+    {
+      "input": "\"x\"\n\"y\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"xbdef\"\n\"xecab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"ulacfd\"\n\"jizalu\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Try finding the largest prefix from a that matches a suffix in b",
+    "Try string matching"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/split-two-strings-to-make-palindrome/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:47.605Z",
+    "sourceUpdatedAt": null
+  }
+}

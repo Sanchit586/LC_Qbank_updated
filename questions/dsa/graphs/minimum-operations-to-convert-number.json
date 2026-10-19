@@ -1,0 +1,169 @@
+{
+  "id": "2059",
+  "slug": "minimum-operations-to-convert-number",
+  "title": "Minimum Operations to Convert Number",
+  "category": "dsa",
+  "subcategory": "graphs",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Breadth-First Search"
+  ],
+  "statement": "You are given a **0-indexed** integer array `nums` containing **distinct** numbers, an integer `start`, and an integer `goal`. There is an integer `x` that is initially set to `start`, and you want to perform operations on `x` such that it is converted to `goal`. You can perform the following operation repeatedly on the number `x`:\n\nIf `0 <= x <= 1000`, then for any index `i` in the array (`0 <= i < nums.length`), you can set `x` to any of the following:\n\n*   `x + nums[i]`\n*   `x - nums[i]`\n*   `x ^ nums[i]` (bitwise-XOR)\n\nNote that you can use each `nums[i]` any number of times in any order. Operations that set `x` to be out of the range `0 <= x <= 1000` are valid, but no more operations can be done afterward.\n\nReturn _the **minimum** number of operations needed to convert_ `x = start` _into_ `goal`_, and_ `-1` _if it is not possible_.\n\n**Example 1:**\n\n```\nInput: nums = [2,4,12], start = 2, goal = 12\nOutput: 2\nExplanation: We can go from 2 → 14 → 12 with the following 2 operations.\n- 2 + 12 = 14\n- 14 - 2 = 12\n```\n\n**Example 2:**\n\n```\nInput: nums = [3,5,7], start = 0, goal = -4\nOutput: 2\nExplanation: We can go from 0 → 3 → -4 with the following 2 operations. \n- 0 + 3 = 3\n- 3 - 7 = -4\nNote that the last operation sets x out of the range 0 <= x <= 1000, which is valid.\n```\n\n**Example 3:**\n\n```\nInput: nums = [2,8,16], start = 0, goal = 1\nOutput: -1\nExplanation: There is no way to convert 0 into 1.\n```\n\n**Constraints:**\n\n*   `1 <= nums.length <= 1000`\n*   `-10^(9) <= nums[i], goal <= 10^(9)`\n*   `0 <= start <= 1000`\n*   `start != goal`\n*   All the integers in `nums` are distinct.",
+  "constraints": [
+    "1 <= nums.length <= 1000",
+    "-109 <= nums[i], goal <= 109",
+    "0 <= start <= 1000",
+    "start != goal",
+    "All the integers in nums are distinct."
+  ],
+  "examples": [
+    {
+      "input": "nums = [2,4,12], start = 2, goal = 12",
+      "output": "2",
+      "explanation": "We can go from 2 &rarr; 14 &rarr; 12 with the following 2 operations.\n- 2 + 12 = 14\n- 14 - 2 = 12"
+    },
+    {
+      "input": "nums = [3,5,7], start = 0, goal = -4",
+      "output": "2",
+      "explanation": "We can go from 0 &rarr; 3 &rarr; -4 with the following 2 operations. \n- 0 + 3 = 3\n- 3 - 7 = -4\nNote that the last operation sets x out of the range 0 &lt;= x &lt;= 1000, which is valid."
+    },
+    {
+      "input": "nums = [2,8,16], start = 0, goal = 1",
+      "output": "-1",
+      "explanation": "There is no way to convert 0 into 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minimumOperations(vector<int>& nums, int start, int goal) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minimumOperations(int[] nums, int start, int goal) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minimumOperations(self, nums: list[int], start: int, goal: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def minimumOperations(self, nums, start, goal):\n        \"\"\"\n        :type nums: List[int]\n        :type start: int\n        :type goal: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} start\n * @param {number} goal\n * @return {number}\n */\nvar minimumOperations = function(nums, start, goal) {\n    \n};",
+    "typescript": "function minimumOperations(nums: number[], start: number, goal: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinimumOperations(int[] nums, int start, int goal) {\n        \n    }\n}",
+    "c": "int minimumOperations(int* nums, int numsSize, int start, int goal) {\n    \n}",
+    "golang": "func minimumOperations(nums []int, start int, goal int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun minimumOperations(nums: IntArray, start: Int, goal: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minimumOperations(_ nums: [Int], _ start: Int, _ goal: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn minimum_operations(nums: Vec<i32>, start: i32, goal: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} start\n# @param {Integer} goal\n# @return {Integer}\ndef minimum_operations(nums, start, goal)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $start\n     * @param Integer $goal\n     * @return Integer\n     */\n    function minimumOperations($nums, $start, $goal) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int minimumOperations(List<int> nums, int start, int goal) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minimumOperations(nums: Array[Int], start: Int, goal: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec minimum_operations(nums :: [integer], start :: integer, goal :: integer) :: integer\n  def minimum_operations(nums, start, goal) do\n    \n  end\nend",
+    "erlang": "-spec minimum_operations(Nums :: [integer()], Start :: integer(), Goal :: integer()) -> integer().\nminimum_operations(Nums, Start, Goal) ->\n  .",
+    "racket": "(define/contract (minimum-operations nums start goal)\n  (-> (listof exact-integer?) exact-integer? exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [2,4,12], start = 2, goal = 12",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "nums = [3,5,7], start = 0, goal = -4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "nums = [2,8,16], start = 0, goal = 1",
+      "expectedOutput": "-1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [2,4,12], start = 2, goal = 12",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "nums = [3,5,7], start = 0, goal = -4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "nums = [2,8,16], start = 0, goal = 1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[2,4,12]\n2\n12",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,5,7]\n0\n-4",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,8,16]\n0\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Once x drops below 0 or goes above 1000, is it possible to continue performing operations on x?",
+    "How can you use BFS to find the minimum operations?"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-operations-to-convert-number/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:13.211Z",
+    "sourceUpdatedAt": null
+  }
+}

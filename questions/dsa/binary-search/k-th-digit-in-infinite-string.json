@@ -1,0 +1,167 @@
+{
+  "id": "4022",
+  "slug": "k-th-digit-in-infinite-string",
+  "title": "K-th Digit in Infinite String",
+  "category": "dsa",
+  "subcategory": "binary-search",
+  "difficulty": "Medium",
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "statement": "You are given an integer `k`.\n\nAn **infinite** string is formed by **concatenating** the **decimal** representations of the **positive** integers, without separators.\n\nFor every nonnegative integer `b`, block `b` contains the **positive** integers from `10 * b` through `10 * b + 9`. The integers in each block are appended as follows:\n\n*   If `b` is even, append the integers in **increasing** order.\n*   If `b` is odd, append the integers in **decreasing** order.\n\nTherefore, the string starts with the integers 1 through 9, followed by 19 through 10, then 20 through 29, then 39 through 30, and so on.\n\nReturn the `k^(th)` digit (1-indexed) of this string.\n\n**Example 1:**\n\n**Input:** k = 4\n\n**Output:** 4\n\n**Explanation:**\n\nThe string begins as `\"123456789..\"`. The 4^(th) digit is `'4'`.\n\n**Example 2:**\n\n**Input:** k = 15\n\n**Output:** 7\n\n**Explanation:**\n\nThe string begins as `\"123456789191817..\"`. The 15^(th) digit is `'7'`.\n\n**Example 3:**\n\n**Input:** k = 11\n\n**Output:** 9\n\n**Explanation:**\n\nThe string begins as `\"12345678919..\"`. The 11^(th) digit is `'9'`.\n\n**Constraints:**\n\n*   `1 <= k <= 10^(15)`",
+  "constraints": [
+    "1 <= k <= 1015"
+  ],
+  "examples": [
+    {
+      "input": "k = 4",
+      "output": "4",
+      "explanation": null
+    },
+    {
+      "input": "k = 15",
+      "output": "7",
+      "explanation": null
+    },
+    {
+      "input": "k = 11",
+      "output": "9",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int kthDigit(long long k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int kthDigit(long k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def kthDigit(self, k: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def kthDigit(self, k):\n        \"\"\"\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} k\n * @return {number}\n */\nvar kthDigit = function(k) {\n    \n};",
+    "typescript": "function kthDigit(k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int KthDigit(long k) {\n        \n    }\n}",
+    "c": "int kthDigit(long long k) {\n    \n}",
+    "golang": "func kthDigit(k int64) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun kthDigit(k: Long): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func kthDigit(_ k: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn kth_digit(k: i64) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer} k\n# @return {Integer}\ndef kth_digit(k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $k\n     * @return Integer\n     */\n    function kthDigit($k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int kthDigit(int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def kthDigit(k: Long): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec kth_digit(k :: integer) :: integer\n  def kth_digit(k) do\n    \n  end\nend",
+    "erlang": "-spec kth_digit(K :: integer()) -> integer().\nkth_digit(K) ->\n  .",
+    "racket": "(define/contract (kth-digit k)\n  (-> exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "k = 4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "k = 15",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "k = 11",
+      "expectedOutput": "9"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "k = 4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "k = 15",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "k = 11",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "4",
+      "expectedOutput": null
+    },
+    {
+      "input": "15",
+      "expectedOutput": null
+    },
+    {
+      "input": "11",
+      "expectedOutput": null
+    },
+    {
+      "input": "0",
+      "expectedOutput": null
+    },
+    {
+      "input": "1",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1",
+      "expectedOutput": null
+    },
+    {
+      "input": "2",
+      "expectedOutput": null
+    },
+    {
+      "input": "3",
+      "expectedOutput": null
+    },
+    {
+      "input": "5",
+      "expectedOutput": null
+    },
+    {
+      "input": "10",
+      "expectedOutput": null
+    },
+    {
+      "input": "16",
+      "expectedOutput": null
+    },
+    {
+      "input": "100",
+      "expectedOutput": null
+    },
+    {
+      "input": "-100",
+      "expectedOutput": null
+    },
+    {
+      "input": "1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "2147483647",
+      "expectedOutput": null
+    },
+    {
+      "input": "-2147483648",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "<p>The order inside a block does not affect its total number of digits. After finishing block <code>b</code>, the string has used exactly the same number of digits as writing all integers from 1 through <code>10 * b + 9</code> in the usual order.</p>",
+    "<p>Write a function that computes the total number of decimal digits needed to write all integers from 1 through <code>x</code>. Compute it by grouping numbers according to their digit length.</p>",
+    "<p>Binary search for the first block <code>b</code> whose cumulative number of digits is at least <code>k</code>. Then subtract the number of digits before that block to obtain the 1-indexed position inside the block.</p>",
+    "<p>For <code>b &gt; 0</code>, all 10 integers in the block have the same number of digits. Use the position inside the block to determine which integer and which digit it refers to. If <code>b</code> is odd, remember that the integers appear in decreasing order.</p>"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/k-th-digit-in-infinite-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:35.001Z",
+    "sourceUpdatedAt": null
+  }
+}

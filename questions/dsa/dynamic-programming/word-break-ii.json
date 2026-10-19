@@ -1,0 +1,116 @@
+{
+  "id": "140",
+  "slug": "word-break-ii",
+  "title": "Word Break II",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Trie",
+    "Memoization"
+  ],
+  "statement": "Given a string `s` and a dictionary of strings `wordDict`, add spaces in `s` to construct a sentence where each word is a valid dictionary word. Return all such possible sentences in **any order**.\n\n**Note** that the same word in the dictionary may be reused multiple times in the segmentation.\n\n**Example 1:**\n\n```\nInput: s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]\nOutput: [\"cats and dog\",\"cat sand dog\"]\n```\n\n**Example 2:**\n\n```\nInput: s = \"pineapplepenapple\", wordDict = [\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]\nOutput: [\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]\nExplanation: Note that you are allowed to reuse a dictionary word.\n```\n\n**Example 3:**\n\n```\nInput: s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]\nOutput: []\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 20`\n*   `1 <= wordDict.length <= 1000`\n*   `1 <= wordDict[i].length <= 10`\n*   `s` and `wordDict[i]` consist of only lowercase English letters.\n*   All the strings of `wordDict` are **unique**.\n*   Input is generated in a way that the length of the answer doesn't exceed 10^(5).",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "1 <= wordDict.length <= 1000",
+    "1 <= wordDict[i].length <= 10",
+    "s and wordDict[i] consist of only lowercase English letters.",
+    "All the strings of wordDict are unique.",
+    "Input is generated in a way that the length of the answer doesn't exceed 105."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
+      "output": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
+      "output": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]",
+      "explanation": "Note that you are allowed to reuse a dictionary word."
+    },
+    {
+      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "output": "[]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> wordBreak(string s, vector<string>& wordDict) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> wordBreak(String s, List<String> wordDict) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def wordBreak(self, s: str, wordDict: list[str]) -> list[str]:\n        ",
+    "python": "class Solution(object):\n    def wordBreak(self, s, wordDict):\n        \"\"\"\n        :type s: str\n        :type wordDict: List[str]\n        :rtype: List[str]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {string[]} wordDict\n * @return {string[]}\n */\nvar wordBreak = function(s, wordDict) {\n    \n};",
+    "typescript": "function wordBreak(s: string, wordDict: string[]): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> WordBreak(string s, IList<string> wordDict) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** wordBreak(char* s, char** wordDict, int wordDictSize, int* returnSize) {\n    \n}",
+    "golang": "func wordBreak(s string, wordDict []string) []string {\n    \n}",
+    "kotlin": "class Solution {\n    fun wordBreak(s: String, wordDict: List<String>): List<String> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func wordBreak(_ s: String, _ wordDict: [String]) -> [String] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn word_break(s: String, word_dict: Vec<String>) -> Vec<String> {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {String[]} word_dict\n# @return {String[]}\ndef word_break(s, word_dict)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String[] $wordDict\n     * @return String[]\n     */\n    function wordBreak($s, $wordDict) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<String> wordBreak(String s, List<String> wordDict) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def wordBreak(s: String, wordDict: List[String]): List[String] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec word_break(s :: String.t, word_dict :: [String.t]) :: [String.t]\n  def word_break(s, word_dict) do\n    \n  end\nend",
+    "erlang": "-spec word_break(S :: unicode:unicode_binary(), WordDict :: [unicode:unicode_binary()]) -> [unicode:unicode_binary()].\nword_break(S, WordDict) ->\n  .",
+    "racket": "(define/contract (word-break s wordDict)\n  (-> string? (listof string?) (listof string?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
+      "expectedOutput": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]"
+    },
+    {
+      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
+      "expectedOutput": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]"
+    },
+    {
+      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "expectedOutput": "[]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;catsanddog&quot;, wordDict = [&quot;cat&quot;,&quot;cats&quot;,&quot;and&quot;,&quot;sand&quot;,&quot;dog&quot;]",
+      "expectedOutput": "[&quot;cats and dog&quot;,&quot;cat sand dog&quot;]"
+    },
+    {
+      "input": "s = &quot;pineapplepenapple&quot;, wordDict = [&quot;apple&quot;,&quot;pen&quot;,&quot;applepen&quot;,&quot;pine&quot;,&quot;pineapple&quot;]",
+      "expectedOutput": "[&quot;pine apple pen apple&quot;,&quot;pineapple pen apple&quot;,&quot;pine applepen apple&quot;]"
+    },
+    {
+      "input": "s = &quot;catsandog&quot;, wordDict = [&quot;cats&quot;,&quot;dog&quot;,&quot;sand&quot;,&quot;and&quot;,&quot;cat&quot;]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pineapplepenapple\"\n[\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/word-break-ii/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:11:14.342Z",
+    "sourceUpdatedAt": null
+  }
+}

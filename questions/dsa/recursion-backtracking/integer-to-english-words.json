@@ -1,0 +1,167 @@
+{
+  "id": "273",
+  "slug": "integer-to-english-words",
+  "title": "Integer to English Words",
+  "category": "dsa",
+  "subcategory": "recursion-backtracking",
+  "difficulty": "Hard",
+  "tags": [
+    "Math",
+    "String",
+    "Recursion"
+  ],
+  "statement": "Convert a non-negative integer `num` to its English words representation.\n\n**Example 1:**\n\n```\nInput: num = 123\nOutput: \"One Hundred Twenty Three\"\n```\n\n**Example 2:**\n\n```\nInput: num = 12345\nOutput: \"Twelve Thousand Three Hundred Forty Five\"\n```\n\n**Example 3:**\n\n```\nInput: num = 1234567\nOutput: \"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\"\n```\n\n**Constraints:**\n\n*   `0 <= num <= 2^(31) - 1`",
+  "constraints": [
+    "0 <= num <= 231 - 1"
+  ],
+  "examples": [
+    {
+      "input": "num = 123",
+      "output": "&quot;One Hundred Twenty Three&quot;",
+      "explanation": null
+    },
+    {
+      "input": "num = 12345",
+      "output": "&quot;Twelve Thousand Three Hundred Forty Five&quot;",
+      "explanation": null
+    },
+    {
+      "input": "num = 1234567",
+      "output": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string numberToWords(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String numberToWords(int num) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def numberToWords(self, num: int) -> str:\n        ",
+    "python": "class Solution(object):\n    def numberToWords(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} num\n * @return {string}\n */\nvar numberToWords = function(num) {\n    \n};",
+    "typescript": "function numberToWords(num: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string NumberToWords(int num) {\n        \n    }\n}",
+    "c": "char* numberToWords(int num) {\n    \n}",
+    "golang": "func numberToWords(num int) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun numberToWords(num: Int): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func numberToWords(_ num: Int) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn number_to_words(num: i32) -> String {\n        \n    }\n}",
+    "ruby": "# @param {Integer} num\n# @return {String}\ndef number_to_words(num)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return String\n     */\n    function numberToWords($num) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String numberToWords(int num) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def numberToWords(num: Int): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec number_to_words(num :: integer) :: String.t\n  def number_to_words(num) do\n    \n  end\nend",
+    "erlang": "-spec number_to_words(Num :: integer()) -> unicode:unicode_binary().\nnumber_to_words(Num) ->\n  .",
+    "racket": "(define/contract (number-to-words num)\n  (-> exact-integer? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "num = 123",
+      "expectedOutput": "&quot;One Hundred Twenty Three&quot;"
+    },
+    {
+      "input": "num = 12345",
+      "expectedOutput": "&quot;Twelve Thousand Three Hundred Forty Five&quot;"
+    },
+    {
+      "input": "num = 1234567",
+      "expectedOutput": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "num = 123",
+      "expectedOutput": "&quot;One Hundred Twenty Three&quot;"
+    },
+    {
+      "input": "num = 12345",
+      "expectedOutput": "&quot;Twelve Thousand Three Hundred Forty Five&quot;"
+    },
+    {
+      "input": "num = 1234567",
+      "expectedOutput": "&quot;One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven&quot;"
+    },
+    {
+      "input": "123",
+      "expectedOutput": null
+    },
+    {
+      "input": "12345",
+      "expectedOutput": null
+    },
+    {
+      "input": "1234567",
+      "expectedOutput": null
+    },
+    {
+      "input": "0",
+      "expectedOutput": null
+    },
+    {
+      "input": "1",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1",
+      "expectedOutput": null
+    },
+    {
+      "input": "2",
+      "expectedOutput": null
+    },
+    {
+      "input": "3",
+      "expectedOutput": null
+    },
+    {
+      "input": "5",
+      "expectedOutput": null
+    },
+    {
+      "input": "10",
+      "expectedOutput": null
+    },
+    {
+      "input": "15",
+      "expectedOutput": null
+    },
+    {
+      "input": "16",
+      "expectedOutput": null
+    },
+    {
+      "input": "100",
+      "expectedOutput": null
+    },
+    {
+      "input": "-100",
+      "expectedOutput": null
+    },
+    {
+      "input": "1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "2147483647",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Did you see a pattern in dividing the number into chunk of words? For example, 123 and 123000.",
+    "Group the number by thousands (3 digits). You can write a helper function that takes a number less than 1000 and convert just that chunk to words.",
+    "There are many edge cases. What are some good test cases? Does your code work with input such as 0? Or 1000010? (middle chunk is zero and should not be printed out)"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/integer-to-english-words/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:32.351Z",
+    "sourceUpdatedAt": null
+  }
+}

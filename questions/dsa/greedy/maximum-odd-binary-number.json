@@ -1,0 +1,158 @@
+{
+  "id": "2864",
+  "slug": "maximum-odd-binary-number",
+  "title": "Maximum Odd Binary Number",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Easy",
+  "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "statement": "You are given a **binary** string `s` that contains at least one `'1'`.\n\nYou have to **rearrange** the bits in such a way that the resulting binary number is the **maximum odd binary number** that can be created from this combination.\n\nReturn _a string representing the maximum odd binary number that can be created from the given combination._\n\n**Note** that the resulting string **can** have leading zeros.\n\n**Example 1:**\n\n```\nInput: s = \"010\"\nOutput: \"001\"\nExplanation: Because there is just one '1', it must be in the last position. So the answer is \"001\".\n```\n\n**Example 2:**\n\n```\nInput: s = \"0101\"\nOutput: \"1001\"\nExplanation: One of the '1's must be in the last position. The maximum number that can be made with the remaining digits is \"100\". So the answer is \"1001\".\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 100`\n*   `s` consists only of `'0'` and `'1'`.\n*   `s` contains at least one `'1'`.",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists only of '0' and '1'.",
+    "s contains at least one '1'."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;010&quot;",
+      "output": "&quot;001&quot;",
+      "explanation": "Because there is just one &#39;1&#39;, it must be in the last position. So the answer is &quot;001&quot;."
+    },
+    {
+      "input": "s = &quot;0101&quot;",
+      "output": "&quot;1001&quot;",
+      "explanation": "One of the &#39;1&#39;s must be in the last position. The maximum number that can be made with the remaining digits is &quot;100&quot;. So the answer is &quot;1001&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string maximumOddBinaryNumber(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String maximumOddBinaryNumber(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maximumOddBinaryNumber(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def maximumOddBinaryNumber(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar maximumOddBinaryNumber = function(s) {\n    \n};",
+    "typescript": "function maximumOddBinaryNumber(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MaximumOddBinaryNumber(string s) {\n        \n    }\n}",
+    "c": "char* maximumOddBinaryNumber(char* s) {\n    \n}",
+    "golang": "func maximumOddBinaryNumber(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun maximumOddBinaryNumber(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maximumOddBinaryNumber(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn maximum_odd_binary_number(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef maximum_odd_binary_number(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function maximumOddBinaryNumber($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String maximumOddBinaryNumber(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maximumOddBinaryNumber(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec maximum_odd_binary_number(s :: String.t) :: String.t\n  def maximum_odd_binary_number(s) do\n    \n  end\nend",
+    "erlang": "-spec maximum_odd_binary_number(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nmaximum_odd_binary_number(S) ->\n  .",
+    "racket": "(define/contract (maximum-odd-binary-number s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;010&quot;",
+      "expectedOutput": "&quot;001&quot;"
+    },
+    {
+      "input": "s = &quot;0101&quot;",
+      "expectedOutput": "&quot;1001&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;010&quot;",
+      "expectedOutput": "&quot;001&quot;"
+    },
+    {
+      "input": "s = &quot;0101&quot;",
+      "expectedOutput": "&quot;1001&quot;"
+    },
+    {
+      "input": "\"010\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"0101\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "The binary representation of an odd number contains <code>'1'</code> in the least significant place."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-odd-binary-number/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:22.140Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "id": "3518",
+  "slug": "smallest-palindromic-rearrangement-ii",
+  "title": "Smallest Palindromic Rearrangement II",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Hard",
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Combinatorics",
+    "Counting"
+  ],
+  "statement": "You are given a **palindromic** string `s` and an integer `k`.\n\nReturn the **k-th** **lexicographically smallest** palindromic permutation of `s`. If there are fewer than `k` distinct palindromic permutations, return an empty string.\n\n**Note:** Different rearrangements that yield the same palindromic string are considered identical and are counted once.\n\n**Example 1:**\n\n**Input:** s = \"abba\", k = 2\n\n**Output:** \"baab\"\n\n**Explanation:**\n\n*   The two distinct palindromic rearrangements of `\"abba\"` are `\"abba\"` and `\"baab\"`.\n*   Lexicographically, `\"abba\"` comes before `\"baab\"`. Since `k = 2`, the output is `\"baab\"`.\n\n**Example 2:**\n\n**Input:** s = \"aa\", k = 2\n\n**Output:** \"\"\n\n**Explanation:**\n\n*   There is only one palindromic rearrangement: `\"aa\"`.\n*   The output is an empty string since `k = 2` exceeds the number of possible rearrangements.\n\n**Example 3:**\n\n**Input:** s = \"bacab\", k = 1\n\n**Output:** \"abcba\"\n\n**Explanation:**\n\n*   The two distinct palindromic rearrangements of `\"bacab\"` are `\"abcba\"` and `\"bacab\"`.\n*   Lexicographically, `\"abcba\"` comes before `\"bacab\"`. Since `k = 1`, the output is `\"abcba\"`.\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(4)`\n*   `s` consists of lowercase English letters.\n*   `s` is guaranteed to be palindromic.\n*   `1 <= k <= 10^(6)`",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s consists of lowercase English letters.",
+    "s is guaranteed to be palindromic.",
+    "1 <= k <= 106"
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abba&quot;, k = 2",
+      "output": "&quot;baab&quot;",
+      "explanation": "The two distinct palindromic rearrangements of &quot;abba&quot; are &quot;abba&quot; and &quot;baab&quot;.\n\tLexicographically, &quot;abba&quot; comes before &quot;baab&quot;. Since k = 2, the output is &quot;baab&quot;."
+    },
+    {
+      "input": "s = &quot;aa&quot;, k = 2",
+      "output": "&quot;&quot;",
+      "explanation": "There is only one palindromic rearrangement: &quot;aa&quot;.\n\tThe output is an empty string since k = 2 exceeds the number of possible rearrangements."
+    },
+    {
+      "input": "s = &quot;bacab&quot;, k = 1",
+      "output": "&quot;abcba&quot;",
+      "explanation": "The two distinct palindromic rearrangements of &quot;bacab&quot; are &quot;abcba&quot; and &quot;bacab&quot;.\n\tLexicographically, &quot;abcba&quot; comes before &quot;bacab&quot;. Since k = 1, the output is &quot;abcba&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestPalindrome(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestPalindrome(String s, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def smallestPalindrome(self, s: str, k: int) -> str:\n        ",
+    "python": "class Solution(object):\n    def smallestPalindrome(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {number} k\n * @return {string}\n */\nvar smallestPalindrome = function(s, k) {\n    \n};",
+    "typescript": "function smallestPalindrome(s: string, k: number): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestPalindrome(string s, int k) {\n        \n    }\n}",
+    "c": "char* smallestPalindrome(char* s, int k) {\n    \n}",
+    "golang": "func smallestPalindrome(s string, k int) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun smallestPalindrome(s: String, k: Int): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func smallestPalindrome(_ s: String, _ k: Int) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn smallest_palindrome(s: String, k: i32) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {Integer} k\n# @return {String}\ndef smallest_palindrome(s, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return String\n     */\n    function smallestPalindrome($s, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String smallestPalindrome(String s, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def smallestPalindrome(s: String, k: Int): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec smallest_palindrome(s :: String.t, k :: integer) :: String.t\n  def smallest_palindrome(s, k) do\n    \n  end\nend",
+    "erlang": "-spec smallest_palindrome(S :: unicode:unicode_binary(), K :: integer()) -> unicode:unicode_binary().\nsmallest_palindrome(S, K) ->\n  .",
+    "racket": "(define/contract (smallest-palindrome s k)\n  (-> string? exact-integer? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abba&quot;, k = 2",
+      "expectedOutput": "&quot;baab&quot;"
+    },
+    {
+      "input": "s = &quot;aa&quot;, k = 2",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "s = &quot;bacab&quot;, k = 1",
+      "expectedOutput": "&quot;abcba&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abba&quot;, k = 2",
+      "expectedOutput": "&quot;baab&quot;"
+    },
+    {
+      "input": "s = &quot;aa&quot;, k = 2",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "s = &quot;bacab&quot;, k = 1",
+      "expectedOutput": "&quot;abcba&quot;"
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bacab\"\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;aa&quot;, k = 3",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;bacab&quot;, k = 2",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abba\"\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;abba&quot;, k = 3",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Only build <code>floor(n / 2)</code> characters (the rest are determined by symmetry).",
+    "Count character frequencies and use half the counts for construction.",
+    "Incrementally choose each character (from smallest to largest) and calculate how many valid arrangements result if that character is chosen at the current index.",
+    "If the count is at least <code>k</code>, fix that character; otherwise, subtract the count from <code>k</code> and try the next candidate.",
+    "Use combinatorics to compute the number of permutations at each step."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/smallest-palindromic-rearrangement-ii/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:30.657Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "id": "3969",
+  "slug": "valid-subarrays-with-matching-sum-digits-i",
+  "title": "Valid Subarrays With Matching Sum Digits I",
+  "category": "dsa",
+  "subcategory": "sliding-window",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sliding Window",
+    "Enumeration",
+    "Prefix Sum"
+  ],
+  "statement": "You are given an integer array `nums` and an integer digit `x`.\n\nA **subarray** `nums[l..r]` is considered **valid** if the sum of its elements satisfies both of the following conditions:\n\n*   The first digit of the sum is equal to `x`.\n*   The last digit of the sum is equal to `x`.\n\nReturn the number of valid subarrays.\n\n**Example 1:**\n\n**Input:** nums = \\[1,100,1\\], x = 1\n\n**Output:** 4\n\n**Explanation:**\n\nThe valid subarrays are:\n\n*   `nums[0..0]`: `sum = 1`\n*   `nums[0..1]`: `sum = 1 + 100 = 101`\n*   `nums[1..2]`: `sum = 100 + 1 = 101`\n*   `nums[2..2]`: `sum = 1`\n\nThus, the answer is 4.\n\n**Example 2:**\n\n**Input:** nums = \\[1\\], x = 2\n\n**Output:** 0\n\n**Explanation:**\n\nThe only subarray is `nums[0..0]` with a sum of 1, which does not satisfy the conditions.\n\nThus, the answer is 0.\n\n**Constraints:**\n\n*   `1 <= nums.length <= 1500`\n*   `1 <= nums[i] <= 10^(9)`\n*   `1 <= x <= 9`",
+  "constraints": [
+    "1 <= nums.length <= 1500",
+    "1 <= nums[i] <= 109",
+    "1 <= x <= 9"
+  ],
+  "examples": [
+    {
+      "input": "nums = [1,100,1], x = 1",
+      "output": "4",
+      "explanation": null
+    },
+    {
+      "input": "nums = [1], x = 2",
+      "output": "0",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countValidSubarrays(vector<int>& nums, int x) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countValidSubarrays(int[] nums, int x) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def countValidSubarrays(self, nums: list[int], x: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def countValidSubarrays(self, nums, x):\n        \"\"\"\n        :type nums: List[int]\n        :type x: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} x\n * @return {number}\n */\nvar countValidSubarrays = function(nums, x) {\n    \n};",
+    "typescript": "function countValidSubarrays(nums: number[], x: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountValidSubarrays(int[] nums, int x) {\n        \n    }\n}",
+    "c": "int countValidSubarrays(int* nums, int numsSize, int x) {\n    \n}",
+    "golang": "func countValidSubarrays(nums []int, x int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun countValidSubarrays(nums: IntArray, x: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func countValidSubarrays(_ nums: [Int], _ x: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn count_valid_subarrays(nums: Vec<i32>, x: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} x\n# @return {Integer}\ndef count_valid_subarrays(nums, x)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $x\n     * @return Integer\n     */\n    function countValidSubarrays($nums, $x) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int countValidSubarrays(List<int> nums, int x) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def countValidSubarrays(nums: Array[Int], x: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec count_valid_subarrays(nums :: [integer], x :: integer) :: integer\n  def count_valid_subarrays(nums, x) do\n    \n  end\nend",
+    "erlang": "-spec count_valid_subarrays(Nums :: [integer()], X :: integer()) -> integer().\ncount_valid_subarrays(Nums, X) ->\n  .",
+    "racket": "(define/contract (count-valid-subarrays nums x)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [1,100,1], x = 1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "nums = [1], x = 2",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [1,100,1], x = 1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "nums = [1], x = 2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,100,1]\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Enumerate all subarrays with two loops. Since <code>nums.length <= 1500</code>, checking all <code>O(n<sup>2</sup>)</code> subarrays is acceptable.",
+    "You can use prefix sums so the sum of any <code>nums[l..r]</code> can be computed in constant time. Alternatively, you can enumerate the starting index <code>i</code>, then extend the ending index <code>j</code> while maintaining the running sum of <code>nums[i..j]</code>.",
+    "For each subarray sum, check whether its last digit is <code>x</code>, then repeatedly divide by 10 to get its first digit."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/valid-subarrays-with-matching-sum-digits-i/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:11:08.383Z",
+    "sourceUpdatedAt": null
+  }
+}

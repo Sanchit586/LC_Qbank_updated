@@ -1,0 +1,159 @@
+{
+  "id": "2375",
+  "slug": "construct-smallest-number-from-di-string",
+  "title": "Construct Smallest Number From DI String",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Backtracking",
+    "Stack",
+    "Greedy"
+  ],
+  "statement": "You are given a **0-indexed** string `pattern` of length `n` consisting of the characters `'I'` meaning **increasing** and `'D'` meaning **decreasing**.\n\nA **0-indexed** string `num` of length `n + 1` is created using the following conditions:\n\n*   `num` consists of the digits `'1'` to `'9'`, where each digit is used **at most** once.\n*   If `pattern[i] == 'I'`, then `num[i] < num[i + 1]`.\n*   If `pattern[i] == 'D'`, then `num[i] > num[i + 1]`.\n\nReturn _the lexicographically **smallest** possible string_ `num` _that meets the conditions._\n\n**Example 1:**\n\n```\nInput: pattern = \"IIIDIDDD\"\nOutput: \"123549876\"\nExplanation:\nAt indices 0, 1, 2, and 4 we must have that num[i] < num[i+1].\nAt indices 3, 5, 6, and 7 we must have that num[i] > num[i+1].\nSome possible values of num are \"245639871\", \"135749862\", and \"123849765\".\nIt can be proven that \"123549876\" is the smallest possible num that meets the conditions.\nNote that \"123414321\" is not possible because the digit '1' is used more than once.\n```\n\n**Example 2:**\n\n```\nInput: pattern = \"DDD\"\nOutput: \"4321\"\nExplanation:\nSome possible values of num are \"9876\", \"7321\", and \"8742\".\nIt can be proven that \"4321\" is the smallest possible num that meets the conditions.\n```\n\n**Constraints:**\n\n*   `1 <= pattern.length <= 8`\n*   `pattern` consists of only the letters `'I'` and `'D'`.",
+  "constraints": [
+    "1 <= pattern.length <= 8",
+    "pattern consists of only the letters 'I' and 'D'."
+  ],
+  "examples": [
+    {
+      "input": "pattern = &quot;IIIDIDDD&quot;",
+      "output": "&quot;123549876&quot;",
+      "explanation": "At indices 0, 1, 2, and 4 we must have that num[i] &lt; num[i+1].\nAt indices 3, 5, 6, and 7 we must have that num[i] &gt; num[i+1].\nSome possible values of num are &quot;245639871&quot;, &quot;135749862&quot;, and &quot;123849765&quot;.\nIt can be proven that &quot;123549876&quot; is the smallest possible num that meets the conditions.\nNote that &quot;123414321&quot; is not possible because the digit &#39;1&#39; is used more than once."
+    },
+    {
+      "input": "pattern = &quot;DDD&quot;",
+      "output": "&quot;4321&quot;",
+      "explanation": "Some possible values of num are &quot;9876&quot;, &quot;7321&quot;, and &quot;8742&quot;.\nIt can be proven that &quot;4321&quot; is the smallest possible num that meets the conditions."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestNumber(string pattern) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestNumber(String pattern) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def smallestNumber(self, pattern: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def smallestNumber(self, pattern):\n        \"\"\"\n        :type pattern: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} pattern\n * @return {string}\n */\nvar smallestNumber = function(pattern) {\n    \n};",
+    "typescript": "function smallestNumber(pattern: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestNumber(string pattern) {\n        \n    }\n}",
+    "c": "char* smallestNumber(char* pattern) {\n    \n}",
+    "golang": "func smallestNumber(pattern string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun smallestNumber(pattern: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func smallestNumber(_ pattern: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn smallest_number(pattern: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} pattern\n# @return {String}\ndef smallest_number(pattern)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $pattern\n     * @return String\n     */\n    function smallestNumber($pattern) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String smallestNumber(String pattern) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def smallestNumber(pattern: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec smallest_number(pattern :: String.t) :: String.t\n  def smallest_number(pattern) do\n    \n  end\nend",
+    "erlang": "-spec smallest_number(Pattern :: unicode:unicode_binary()) -> unicode:unicode_binary().\nsmallest_number(Pattern) ->\n  .",
+    "racket": "(define/contract (smallest-number pattern)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "pattern = &quot;IIIDIDDD&quot;",
+      "expectedOutput": "&quot;123549876&quot;"
+    },
+    {
+      "input": "pattern = &quot;DDD&quot;",
+      "expectedOutput": "&quot;4321&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "pattern = &quot;IIIDIDDD&quot;",
+      "expectedOutput": "&quot;123549876&quot;"
+    },
+    {
+      "input": "pattern = &quot;DDD&quot;",
+      "expectedOutput": "&quot;4321&quot;"
+    },
+    {
+      "input": "\"IIIDIDDD\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"DDD\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "With the constraints, could we generate every possible string?",
+    "Yes we can. Now we just need to check if the string meets all the conditions."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/construct-smallest-number-from-di-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:03.179Z",
+    "sourceUpdatedAt": null
+  }
+}

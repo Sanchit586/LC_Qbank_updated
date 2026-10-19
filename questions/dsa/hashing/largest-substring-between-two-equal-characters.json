@@ -1,0 +1,166 @@
+{
+  "id": "1624",
+  "slug": "largest-substring-between-two-equal-characters",
+  "title": "Largest Substring Between Two Equal Characters",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "statement": "Given a string `s`, return _the length of the longest substring between two equal characters, excluding the two characters._ If there is no such substring return `-1`.\n\nA **substring** is a contiguous sequence of characters within a string.\n\n**Example 1:**\n\n```\n'a's\n```\n\n**Example 2:**\n\n```\nInput: s = \"abca\"\nOutput: 2\nExplanation: The optimal substring here is \"bc\".\n```\n\n**Example 3:**\n\n```\nInput: s = \"cbzxy\"\nOutput: -1\nExplanation: There are no characters that appear twice in s.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 300`\n*   `s` contains only lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 300",
+    "s contains only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;aa&quot;",
+      "output": "0",
+      "explanation": "The optimal substring here is an empty substring between the two &#39;a&#39;s."
+    },
+    {
+      "input": "s = &quot;abca&quot;",
+      "output": "2",
+      "explanation": "The optimal substring here is &quot;bc&quot;."
+    },
+    {
+      "input": "s = &quot;cbzxy&quot;",
+      "output": "-1",
+      "explanation": "There are no characters that appear twice in s."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxLengthBetweenEqualCharacters(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxLengthBetweenEqualCharacters(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxLengthBetweenEqualCharacters(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def maxLengthBetweenEqualCharacters(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxLengthBetweenEqualCharacters = function(s) {\n    \n};",
+    "typescript": "function maxLengthBetweenEqualCharacters(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxLengthBetweenEqualCharacters(string s) {\n        \n    }\n}",
+    "c": "int maxLengthBetweenEqualCharacters(char* s) {\n    \n}",
+    "golang": "func maxLengthBetweenEqualCharacters(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxLengthBetweenEqualCharacters(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxLengthBetweenEqualCharacters(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_length_between_equal_characters(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef max_length_between_equal_characters(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxLengthBetweenEqualCharacters($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int maxLengthBetweenEqualCharacters(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxLengthBetweenEqualCharacters(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_length_between_equal_characters(s :: String.t) :: integer\n  def max_length_between_equal_characters(s) do\n    \n  end\nend",
+    "erlang": "-spec max_length_between_equal_characters(S :: unicode:unicode_binary()) -> integer().\nmax_length_between_equal_characters(S) ->\n  .",
+    "racket": "(define/contract (max-length-between-equal-characters s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;aa&quot;",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "s = &quot;abca&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;cbzxy&quot;",
+      "expectedOutput": "-1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;aa&quot;",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "s = &quot;abca&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;cbzxy&quot;",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abca\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"cbzxy\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Try saving the first and last position of each character",
+    "Try finding every pair of indexes with equal characters"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/largest-substring-between-two-equal-characters/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:45.886Z",
+    "sourceUpdatedAt": null
+  }
+}

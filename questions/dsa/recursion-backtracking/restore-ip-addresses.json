@@ -1,0 +1,163 @@
+{
+  "id": "93",
+  "slug": "restore-ip-addresses",
+  "title": "Restore IP Addresses",
+  "category": "dsa",
+  "subcategory": "recursion-backtracking",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Backtracking"
+  ],
+  "statement": "A **valid IP address** consists of exactly four integers separated by single dots. Each integer is between `0` and `255` (**inclusive**) and cannot have leading zeros.\n\n*   For example, `\"0.1.2.201\"` and `\"192.168.1.1\"` are **valid** IP addresses, but `\"0.011.255.245\"`, `\"192.168.1.312\"` and `\"192.168@1.1\"` are **invalid** IP addresses.\n\nGiven a string `s` containing only digits, return _all possible valid IP addresses that can be formed by inserting dots into_ `s`. You are **not** allowed to reorder or remove any digits in `s`. You may return the valid IP addresses in **any** order.\n\n**Example 1:**\n\n```\nInput: s = \"25525511135\"\nOutput: [\"255.255.11.135\",\"255.255.111.35\"]\n```\n\n**Example 2:**\n\n```\nInput: s = \"0000\"\nOutput: [\"0.0.0.0\"]\n```\n\n**Example 3:**\n\n```\nInput: s = \"101023\"\nOutput: [\"1.0.10.23\",\"1.0.102.3\",\"10.1.0.23\",\"10.10.2.3\",\"101.0.2.3\"]\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 20`\n*   `s` consists of digits only.",
+  "constraints": [
+    "1 <= s.length <= 20",
+    "s consists of digits only."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;25525511135&quot;",
+      "output": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;0000&quot;",
+      "output": "[&quot;0.0.0.0&quot;]",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;101023&quot;",
+      "output": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> restoreIpAddresses(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> restoreIpAddresses(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def restoreIpAddresses(self, s: str) -> list[str]:\n        ",
+    "python": "class Solution(object):\n    def restoreIpAddresses(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: List[str]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string[]}\n */\nvar restoreIpAddresses = function(s) {\n    \n};",
+    "typescript": "function restoreIpAddresses(s: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> RestoreIpAddresses(string s) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** restoreIpAddresses(char* s, int* returnSize) {\n    \n}",
+    "golang": "func restoreIpAddresses(s string) []string {\n    \n}",
+    "kotlin": "class Solution {\n    fun restoreIpAddresses(s: String): List<String> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func restoreIpAddresses(_ s: String) -> [String] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn restore_ip_addresses(s: String) -> Vec<String> {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String[]}\ndef restore_ip_addresses(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String[]\n     */\n    function restoreIpAddresses($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<String> restoreIpAddresses(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def restoreIpAddresses(s: String): List[String] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec restore_ip_addresses(s :: String.t) :: [String.t]\n  def restore_ip_addresses(s) do\n    \n  end\nend",
+    "erlang": "-spec restore_ip_addresses(S :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nrestore_ip_addresses(S) ->\n  .",
+    "racket": "(define/contract (restore-ip-addresses s)\n  (-> string? (listof string?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;25525511135&quot;",
+      "expectedOutput": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]"
+    },
+    {
+      "input": "s = &quot;0000&quot;",
+      "expectedOutput": "[&quot;0.0.0.0&quot;]"
+    },
+    {
+      "input": "s = &quot;101023&quot;",
+      "expectedOutput": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;25525511135&quot;",
+      "expectedOutput": "[&quot;255.255.11.135&quot;,&quot;255.255.111.35&quot;]"
+    },
+    {
+      "input": "s = &quot;0000&quot;",
+      "expectedOutput": "[&quot;0.0.0.0&quot;]"
+    },
+    {
+      "input": "s = &quot;101023&quot;",
+      "expectedOutput": "[&quot;1.0.10.23&quot;,&quot;1.0.102.3&quot;,&quot;10.1.0.23&quot;,&quot;10.10.2.3&quot;,&quot;101.0.2.3&quot;]"
+    },
+    {
+      "input": "\"25525511135\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"0000\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"101023\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/restore-ip-addresses/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:11.661Z",
+    "sourceUpdatedAt": null
+  }
+}

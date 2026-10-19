@@ -1,0 +1,158 @@
+{
+  "id": "521",
+  "slug": "longest-uncommon-subsequence-i",
+  "title": "Longest Uncommon Subsequence I",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "String"
+  ],
+  "statement": "Given two strings `a` and `b`, return _the length of the **longest uncommon subsequence** between_ `a` _and_ `b`. _If no such uncommon subsequence exists, return_ `-1`_._\n\nAn **uncommon subsequence** between two strings is a string that is a **subsequence of exactly one of them**.\n\n**Example 1:**\n\n```\nInput: a = \"aba\", b = \"cdc\"\nOutput: 3\nExplanation: One longest uncommon subsequence is \"aba\" because \"aba\" is a subsequence of \"aba\" but not \"cdc\".\nNote that \"cdc\" is also a longest uncommon subsequence.\n```\n\n**Example 2:**\n\n```\nInput: a = \"aaa\", b = \"bbb\"\nOutput: 3\nExplanation: The longest uncommon subsequences are \"aaa\" and \"bbb\".\n```\n\n**Example 3:**\n\n```\n-1\n```\n\n**Constraints:**\n\n*   `1 <= a.length, b.length <= 100`\n*   `a` and `b` consist of lower-case English letters.",
+  "constraints": [
+    "1 <= a.length, b.length <= 100",
+    "a and b consist of lower-case English letters."
+  ],
+  "examples": [
+    {
+      "input": "a = &quot;aba&quot;, b = &quot;cdc&quot;",
+      "output": "3",
+      "explanation": "One longest uncommon subsequence is &quot;aba&quot; because &quot;aba&quot; is a subsequence of &quot;aba&quot; but not &quot;cdc&quot;.\nNote that &quot;cdc&quot; is also a longest uncommon subsequence."
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;bbb&quot;",
+      "output": "3",
+      "explanation": "&nbsp;The longest uncommon subsequences are &quot;aaa&quot; and &quot;bbb&quot;."
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;aaa&quot;",
+      "output": "-1",
+      "explanation": "&nbsp;Every subsequence of string a is also a subsequence of string b. Similarly, every subsequence of string b is also a subsequence of string a. So the answer would be -1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findLUSlength(string a, string b) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findLUSlength(String a, String b) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def findLUSlength(self, a: str, b: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def findLUSlength(self, a, b):\n        \"\"\"\n        :type a: str\n        :type b: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} a\n * @param {string} b\n * @return {number}\n */\nvar findLUSlength = function(a, b) {\n    \n};",
+    "typescript": "function findLUSlength(a: string, b: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindLUSlength(string a, string b) {\n        \n    }\n}",
+    "c": "int findLUSlength(char* a, char* b) {\n    \n}",
+    "golang": "func findLUSlength(a string, b string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun findLUSlength(a: String, b: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func findLUSlength(_ a: String, _ b: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn find_lu_slength(a: String, b: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} a\n# @param {String} b\n# @return {Integer}\ndef find_lu_slength(a, b)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $a\n     * @param String $b\n     * @return Integer\n     */\n    function findLUSlength($a, $b) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int findLUSlength(String a, String b) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def findLUSlength(a: String, b: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec find_lu_slength(a :: String.t, b :: String.t) :: integer\n  def find_lu_slength(a, b) do\n    \n  end\nend",
+    "erlang": "-spec find_lu_slength(A :: unicode:unicode_binary(), B :: unicode:unicode_binary()) -> integer().\nfind_lu_slength(A, B) ->\n  .",
+    "racket": "(define/contract (find-lu-slength a b)\n  (-> string? string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "a = &quot;aba&quot;, b = &quot;cdc&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;bbb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;aaa&quot;",
+      "expectedOutput": "-1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "a = &quot;aba&quot;, b = &quot;cdc&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;bbb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "a = &quot;aaa&quot;, b = &quot;aaa&quot;",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n\"cdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"\n\"bbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"\n\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Think very simple.",
+    "If <code>a == b</code>, the answer is -1.",
+    "Otherwise, the answer is the string <code>a</code> or the string <code>b</code>."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-uncommon-subsequence-i/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:56.131Z",
+    "sourceUpdatedAt": null
+  }
+}

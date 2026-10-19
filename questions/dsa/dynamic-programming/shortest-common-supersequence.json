@@ -1,0 +1,146 @@
+{
+  "id": "1092",
+  "slug": "shortest-common-supersequence",
+  "title": "Shortest Common Supersequence ",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Longest Common Subsequence"
+  ],
+  "statement": "Given two strings `str1` and `str2`, return _the shortest string that has both_ `str1` _and_ `str2` _as **subsequences**_. If there are multiple valid strings, return **any** of them.\n\nA string `s` is a **subsequence** of string `t` if deleting some number of characters from `t` (possibly `0`) results in the string `s`.\n\n**Example 1:**\n\n```\nInput: str1 = \"abac\", str2 = \"cab\"\nOutput: \"cabac\"\nExplanation: \nstr1 = \"abac\" is a subsequence of \"cabac\" because we can delete the first \"c\".\nstr2 = \"cab\" is a subsequence of \"cabac\" because we can delete the last \"ac\".\nThe answer provided is the shortest such string that satisfies these properties.\n```\n\n**Example 2:**\n\n```\nInput: str1 = \"aaaaaaaa\", str2 = \"aaaaaaaa\"\nOutput: \"aaaaaaaa\"\n```\n\n**Constraints:**\n\n*   `1 <= str1.length, str2.length <= 1000`\n*   `str1` and `str2` consist of lowercase English letters.",
+  "constraints": [
+    "1 <= str1.length, str2.length <= 1000",
+    "str1 and str2 consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
+      "output": "&quot;cabac&quot;",
+      "explanation": "str1 = &quot;abac&quot; is a subsequence of &quot;cabac&quot; because we can delete the first &quot;c&quot;.\nstr2 = &quot;cab&quot; is a subsequence of &quot;cabac&quot; because we can delete the last &quot;ac&quot;.\nThe answer provided is the shortest such string that satisfies these properties."
+    },
+    {
+      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
+      "output": "&quot;aaaaaaaa&quot;",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string shortestCommonSupersequence(string str1, string str2) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String shortestCommonSupersequence(String str1, String str2) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def shortestCommonSupersequence(self, str1: str, str2: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def shortestCommonSupersequence(self, str1, str2):\n        \"\"\"\n        :type str1: str\n        :type str2: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} str1\n * @param {string} str2\n * @return {string}\n */\nvar shortestCommonSupersequence = function(str1, str2) {\n    \n};",
+    "typescript": "function shortestCommonSupersequence(str1: string, str2: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ShortestCommonSupersequence(string str1, string str2) {\n        \n    }\n}",
+    "c": "char* shortestCommonSupersequence(char* str1, char* str2) {\n    \n}",
+    "golang": "func shortestCommonSupersequence(str1 string, str2 string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun shortestCommonSupersequence(str1: String, str2: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func shortestCommonSupersequence(_ str1: String, _ str2: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn shortest_common_supersequence(str1: String, str2: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} str1\n# @param {String} str2\n# @return {String}\ndef shortest_common_supersequence(str1, str2)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $str1\n     * @param String $str2\n     * @return String\n     */\n    function shortestCommonSupersequence($str1, $str2) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String shortestCommonSupersequence(String str1, String str2) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def shortestCommonSupersequence(str1: String, str2: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec shortest_common_supersequence(str1 :: String.t, str2 :: String.t) :: String.t\n  def shortest_common_supersequence(str1, str2) do\n    \n  end\nend",
+    "erlang": "-spec shortest_common_supersequence(Str1 :: unicode:unicode_binary(), Str2 :: unicode:unicode_binary()) -> unicode:unicode_binary().\nshortest_common_supersequence(Str1, Str2) ->\n  .",
+    "racket": "(define/contract (shortest-common-supersequence str1 str2)\n  (-> string? string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
+      "expectedOutput": "&quot;cabac&quot;"
+    },
+    {
+      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
+      "expectedOutput": "&quot;aaaaaaaa&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "str1 = &quot;abac&quot;, str2 = &quot;cab&quot;",
+      "expectedOutput": "&quot;cabac&quot;"
+    },
+    {
+      "input": "str1 = &quot;aaaaaaaa&quot;, str2 = &quot;aaaaaaaa&quot;",
+      "expectedOutput": "&quot;aaaaaaaa&quot;"
+    },
+    {
+      "input": "\"abac\"\n\"cab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaa\"\n\"aaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "str2 = &quot;aaaaaaaa&quot;, str3 = &quot;aaaaaaaa&quot;",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "We can find the length of the longest common subsequence between str1[i:] and str2[j:] (for all (i, j)) by using dynamic programming.",
+    "We can use this information to recover the shortest common supersequence."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/shortest-common-supersequence/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:23.703Z",
+    "sourceUpdatedAt": null
+  }
+}

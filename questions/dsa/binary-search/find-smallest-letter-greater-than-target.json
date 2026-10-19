@@ -1,0 +1,112 @@
+{
+  "id": "744",
+  "slug": "find-smallest-letter-greater-than-target",
+  "title": "Find Smallest Letter Greater Than Target",
+  "category": "dsa",
+  "subcategory": "binary-search",
+  "difficulty": "Easy",
+  "tags": [
+    "Array",
+    "Binary Search"
+  ],
+  "statement": "You are given an array of characters `letters` that is sorted in **non-decreasing order**, and a character `target`. There are **at least two different** characters in `letters`.\n\nReturn _the smallest character in_ `letters` _that is lexicographically greater than_ `target`. If such a character does not exist, return the first character in `letters`.\n\n**Example 1:**\n\n```\nInput: letters = [\"c\",\"f\",\"j\"], target = \"a\"\nOutput: \"c\"\nExplanation: The smallest character that is lexicographically greater than 'a' in letters is 'c'.\n```\n\n**Example 2:**\n\n```\nInput: letters = [\"c\",\"f\",\"j\"], target = \"c\"\nOutput: \"f\"\nExplanation: The smallest character that is lexicographically greater than 'c' in letters is 'f'.\n```\n\n**Example 3:**\n\n```\nInput: letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"\nOutput: \"x\"\nExplanation: There are no characters in letters that is lexicographically greater than 'z' so we return letters[0].\n```\n\n**Constraints:**\n\n*   `2 <= letters.length <= 10^(4)`\n*   `letters[i]` is a lowercase English letter.\n*   `letters` is sorted in **non-decreasing** order.\n*   `letters` contains at least two different characters.\n*   `target` is a lowercase English letter.",
+  "constraints": [
+    "2 <= letters.length <= 104",
+    "letters[i] is a lowercase English letter.",
+    "letters is sorted in non-decreasing order.",
+    "letters contains at least two different characters.",
+    "target is a lowercase English letter."
+  ],
+  "examples": [
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
+      "output": "&quot;c&quot;",
+      "explanation": "The smallest character that is lexicographically greater than &#39;a&#39; in letters is &#39;c&#39;."
+    },
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
+      "output": "&quot;f&quot;",
+      "explanation": "The smallest character that is lexicographically greater than &#39;c&#39; in letters is &#39;f&#39;."
+    },
+    {
+      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
+      "output": "&quot;x&quot;",
+      "explanation": "There are no characters in letters that is lexicographically greater than &#39;z&#39; so we return letters[0]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    char nextGreatestLetter(vector<char>& letters, char target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public char nextGreatestLetter(char[] letters, char target) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def nextGreatestLetter(self, letters: list[str], target: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def nextGreatestLetter(self, letters, target):\n        \"\"\"\n        :type letters: List[str]\n        :type target: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {character[]} letters\n * @param {character} target\n * @return {character}\n */\nvar nextGreatestLetter = function(letters, target) {\n    \n};",
+    "typescript": "function nextGreatestLetter(letters: string[], target: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public char NextGreatestLetter(char[] letters, char target) {\n        \n    }\n}",
+    "c": "char nextGreatestLetter(char* letters, int lettersSize, char target) {\n    \n}",
+    "golang": "func nextGreatestLetter(letters []byte, target byte) byte {\n    \n}",
+    "kotlin": "class Solution {\n    fun nextGreatestLetter(letters: CharArray, target: Char): Char {\n        \n    }\n}",
+    "swift": "class Solution {\n    func nextGreatestLetter(_ letters: [Character], _ target: Character) -> Character {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn next_greatest_letter(letters: Vec<char>, target: char) -> char {\n        \n    }\n}",
+    "ruby": "# @param {Character[]} letters\n# @param {Character} target\n# @return {Character}\ndef next_greatest_letter(letters, target)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $letters\n     * @param String $target\n     * @return String\n     */\n    function nextGreatestLetter($letters, $target) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String nextGreatestLetter(List<String> letters, String target) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def nextGreatestLetter(letters: Array[Char], target: Char): Char = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec next_greatest_letter(letters :: [char], target :: char) :: char\n  def next_greatest_letter(letters, target) do\n    \n  end\nend",
+    "erlang": "-spec next_greatest_letter(Letters :: [char()], Target :: char()) -> char().\nnext_greatest_letter(Letters, Target) ->\n  .",
+    "racket": "(define/contract (next-greatest-letter letters target)\n  (-> (listof char?) char? char?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
+      "expectedOutput": "&quot;c&quot;"
+    },
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
+      "expectedOutput": "&quot;f&quot;"
+    },
+    {
+      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
+      "expectedOutput": "&quot;x&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;a&quot;",
+      "expectedOutput": "&quot;c&quot;"
+    },
+    {
+      "input": "letters = [&quot;c&quot;,&quot;f&quot;,&quot;j&quot;], target = &quot;c&quot;",
+      "expectedOutput": "&quot;f&quot;"
+    },
+    {
+      "input": "letters = [&quot;x&quot;,&quot;x&quot;,&quot;y&quot;,&quot;y&quot;], target = &quot;z&quot;",
+      "expectedOutput": "&quot;x&quot;"
+    },
+    {
+      "input": "[\"c\",\"f\",\"j\"]\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"c\",\"f\",\"j\"]\n\"c\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"x\",\"x\",\"y\",\"y\"]\n\"z\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Try to find whether each of 26 next letters are in the given string array."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/find-smallest-letter-greater-than-target/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:06.449Z",
+    "sourceUpdatedAt": null
+  }
+}

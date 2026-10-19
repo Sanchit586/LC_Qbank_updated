@@ -1,0 +1,163 @@
+{
+  "id": "926",
+  "slug": "flip-string-to-monotone-increasing",
+  "title": "Flip String to Monotone Increasing",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "statement": "A binary string is monotone increasing if it consists of some number of `0`'s (possibly none), followed by some number of `1`'s (also possibly none).\n\nYou are given a binary string `s`. You can flip `s[i]` changing it from `0` to `1` or from `1` to `0`.\n\nReturn _the minimum number of flips to make_ `s` _monotone increasing_.\n\n**Example 1:**\n\n```\nInput: s = \"00110\"\nOutput: 1\nExplanation: We flip the last digit to get 00111.\n```\n\n**Example 2:**\n\n```\nInput: s = \"010110\"\nOutput: 2\nExplanation: We flip to get 011111, or alternatively 000111.\n```\n\n**Example 3:**\n\n```\nInput: s = \"00011000\"\nOutput: 2\nExplanation: We flip to get 00000000.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(5)`\n*   `s[i]` is either `'0'` or `'1'`.",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s[i] is either '0' or '1'."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;00110&quot;",
+      "output": "1",
+      "explanation": "We flip the last digit to get 00111."
+    },
+    {
+      "input": "s = &quot;010110&quot;",
+      "output": "2",
+      "explanation": "We flip to get 011111, or alternatively 000111."
+    },
+    {
+      "input": "s = &quot;00011000&quot;",
+      "output": "2",
+      "explanation": "We flip to get 00000000."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minFlipsMonoIncr(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minFlipsMonoIncr(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minFlipsMonoIncr(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def minFlipsMonoIncr(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar minFlipsMonoIncr = function(s) {\n    \n};",
+    "typescript": "function minFlipsMonoIncr(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinFlipsMonoIncr(string s) {\n        \n    }\n}",
+    "c": "int minFlipsMonoIncr(char* s) {\n    \n}",
+    "golang": "func minFlipsMonoIncr(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun minFlipsMonoIncr(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minFlipsMonoIncr(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn min_flips_mono_incr(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef min_flips_mono_incr(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function minFlipsMonoIncr($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int minFlipsMonoIncr(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minFlipsMonoIncr(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec min_flips_mono_incr(s :: String.t) :: integer\n  def min_flips_mono_incr(s) do\n    \n  end\nend",
+    "erlang": "-spec min_flips_mono_incr(S :: unicode:unicode_binary()) -> integer().\nmin_flips_mono_incr(S) ->\n  .",
+    "racket": "(define/contract (min-flips-mono-incr s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;00110&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;010110&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;00011000&quot;",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;00110&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;010110&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;00011000&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"00110\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"010110\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"00011000\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/flip-string-to-monotone-increasing/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:19.998Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "1234",
+  "slug": "replace-the-substring-for-balanced-string",
+  "title": "Replace the Substring for Balanced String",
+  "category": "dsa",
+  "subcategory": "sliding-window",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Sliding Window"
+  ],
+  "statement": "You are given a string s of length `n` containing only four kinds of characters: `'Q'`, `'W'`, `'E'`, and `'R'`.\n\nA string is said to be **balanced** if each of its characters appears `n / 4` times where `n` is the length of the string.\n\nReturn _the minimum length of the substring that can be replaced with **any** other string of the same length to make_ `s` _**balanced**_. If s is already **balanced**, return `0`.\n\n**Example 1:**\n\n```\nInput: s = \"QWER\"\nOutput: 0\nExplanation: s is already balanced.\n```\n\n**Example 2:**\n\n```\nInput: s = \"QQWE\"\nOutput: 1\nExplanation: We need to replace a 'Q' to 'R', so that \"RQWE\" (or \"QRWE\") is balanced.\n```\n\n**Example 3:**\n\n```\nInput: s = \"QQQW\"\nOutput: 2\nExplanation: We can replace the first \"QQ\" to \"ER\".\n```\n\n**Constraints:**\n\n*   `n == s.length`\n*   `4 <= n <= 10^(5)`\n*   `n` is a multiple of `4`.\n*   `s` contains only `'Q'`, `'W'`, `'E'`, and `'R'`.",
+  "constraints": [
+    "n == s.length",
+    "4 <= n <= 105",
+    "n is a multiple of 4.",
+    "s contains only 'Q', 'W', 'E', and 'R'."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;QWER&quot;",
+      "output": "0",
+      "explanation": "s is already balanced."
+    },
+    {
+      "input": "s = &quot;QQWE&quot;",
+      "output": "1",
+      "explanation": "We need to replace a &#39;Q&#39; to &#39;R&#39;, so that &quot;RQWE&quot; (or &quot;QRWE&quot;) is balanced."
+    },
+    {
+      "input": "s = &quot;QQQW&quot;",
+      "output": "2",
+      "explanation": "We can replace the first &quot;QQ&quot; to &quot;ER&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int balancedString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int balancedString(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def balancedString(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def balancedString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar balancedString = function(s) {\n    \n};",
+    "typescript": "function balancedString(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BalancedString(string s) {\n        \n    }\n}",
+    "c": "int balancedString(char* s) {\n    \n}",
+    "golang": "func balancedString(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun balancedString(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func balancedString(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn balanced_string(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef balanced_string(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function balancedString($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int balancedString(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def balancedString(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec balanced_string(s :: String.t) :: integer\n  def balanced_string(s) do\n    \n  end\nend",
+    "erlang": "-spec balanced_string(S :: unicode:unicode_binary()) -> integer().\nbalanced_string(S) ->\n  .",
+    "racket": "(define/contract (balanced-string s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;QWER&quot;",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "s = &quot;QQWE&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;QQQW&quot;",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;QWER&quot;",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "s = &quot;QQWE&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;QQQW&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"QWER\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"QQWE\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"QQQW\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Use 2-pointers algorithm to make sure all amount of characters outside the 2 pointers are smaller or equal to n/4.",
+    "That means you need to count the amount of each letter and make sure the amount is enough."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/replace-the-substring-for-balanced-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:10.539Z",
+    "sourceUpdatedAt": null
+  }
+}

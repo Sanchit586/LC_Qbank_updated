@@ -1,0 +1,169 @@
+{
+  "id": "2002",
+  "slug": "maximum-product-of-the-length-of-two-palindromic-subsequences",
+  "title": "Maximum Product of the Length of Two Palindromic Subsequences",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Bitmask"
+  ],
+  "statement": "Given a string `s`, find two **disjoint palindromic subsequences** of `s` such that the **product** of their lengths is **maximized**. The two subsequences are **disjoint** if they do not both pick a character at the same index.\n\nReturn _the **maximum** possible **product** of the lengths of the two palindromic subsequences_.\n\nA **subsequence** is a string that can be derived from another string by deleting some or no characters without changing the order of the remaining characters. A string is **palindromic** if it reads the same forward and backward.\n\n**Example 1:**\n\n![example-1](./assets/maximum-product-of-the-length-of-two-palindromic-subsequences-1.png)\n```\nInput: s = \"leetcodecom\"\nOutput: 9\nExplanation: An optimal solution is to choose \"ete\" for the 1st subsequence and \"cdc\" for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9.\n```\n\n**Example 2:**\n\n```\nInput: s = \"bb\"\nOutput: 1\nExplanation: An optimal solution is to choose \"b\" (the first character) for the 1st subsequence and \"b\" (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1.\n```\n\n**Example 3:**\n\n```\nInput: s = \"accbcaxxcxx\"\nOutput: 25\nExplanation: An optimal solution is to choose \"accca\" for the 1st subsequence and \"xxcxx\" for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25.\n```\n\n**Constraints:**\n\n*   `2 <= s.length <= 12`\n*   `s` consists of lowercase English letters only.",
+  "constraints": [
+    "2 <= s.length <= 12",
+    "s consists of lowercase English letters only."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;leetcodecom&quot;",
+      "output": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9.",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;bb&quot;",
+      "output": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1.",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;accbcaxxcxx&quot;",
+      "output": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25.",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxProduct(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxProduct(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxProduct(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def maxProduct(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxProduct = function(s) {\n    \n};",
+    "typescript": "function maxProduct(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxProduct(string s) {\n        \n    }\n}",
+    "c": "int maxProduct(char* s) {\n    \n}",
+    "golang": "func maxProduct(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxProduct(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxProduct(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_product(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef max_product(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxProduct($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int maxProduct(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxProduct(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_product(s :: String.t) :: integer\n  def max_product(s) do\n    \n  end\nend",
+    "erlang": "-spec max_product(S :: unicode:unicode_binary()) -> integer().\nmax_product(S) ->\n  .",
+    "racket": "(define/contract (max-product s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;leetcodecom&quot;",
+      "expectedOutput": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9."
+    },
+    {
+      "input": "s = &quot;bb&quot;",
+      "expectedOutput": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1."
+    },
+    {
+      "input": "s = &quot;accbcaxxcxx&quot;",
+      "expectedOutput": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25."
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;leetcodecom&quot;",
+      "expectedOutput": "9\nExplanation: An optimal solution is to choose &quot;ete&quot; for the 1st subsequence and &quot;cdc&quot; for the 2nd subsequence.\nThe product of their lengths is: 3 * 3 = 9."
+    },
+    {
+      "input": "s = &quot;bb&quot;",
+      "expectedOutput": "1\nExplanation: An optimal solution is to choose &quot;b&quot; (the first character) for the 1st subsequence and &quot;b&quot; (the second character) for the 2nd subsequence.\nThe product of their lengths is: 1 * 1 = 1."
+    },
+    {
+      "input": "s = &quot;accbcaxxcxx&quot;",
+      "expectedOutput": "25\nExplanation: An optimal solution is to choose &quot;accca&quot; for the 1st subsequence and &quot;xxcxx&quot; for the 2nd subsequence.\nThe product of their lengths is: 5 * 5 = 25."
+    },
+    {
+      "input": "\"leetcodecom\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"accbcaxxcxx\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Could you generate all possible pairs of disjoint subsequences?",
+    "Could you find the maximum length palindrome in each subsequence for a pair of disjoint subsequences?"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-product-of-the-length-of-two-palindromic-subsequences/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:25.018Z",
+    "sourceUpdatedAt": null
+  }
+}

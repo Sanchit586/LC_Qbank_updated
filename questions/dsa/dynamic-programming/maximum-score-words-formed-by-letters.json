@@ -1,0 +1,140 @@
+{
+  "id": "1255",
+  "slug": "maximum-score-words-formed-by-letters",
+  "title": "Maximum Score Words Formed by Letters",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String",
+    "Dynamic Programming",
+    "Backtracking",
+    "Bit Manipulation",
+    "Counting",
+    "Bitmask"
+  ],
+  "statement": "Given a list of `words`, list of  single `letters` (might be repeating) and `score` of every character.\n\nReturn the maximum score of **any** valid set of words formed by using the given letters (`words[i]` cannot be used two or more times).\n\nIt is not necessary to use all characters in `letters` and each letter can only be used once. Score of letters `'a'`, `'b'`, `'c'`, ... ,`'z'` is given by `score[0]`, `score[1]`, ... , `score[25]` respectively.\n\n**Example 1:**\n\n```\nInput: words = [\"dog\",\"cat\",\"dad\",\"good\"], letters = [\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]\nOutput: 23\nExplanation:\nScore  a=1, c=9, d=5, g=3, o=2\nGiven letters, we can form the words \"dad\" (5+1+5) and \"good\" (3+2+2+5) with a score of 23.\nWords \"dad\" and \"dog\" only get a score of 21.\n```\n\n**Example 2:**\n\n```\nInput: words = [\"xxxz\",\"ax\",\"bx\",\"cx\"], letters = [\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]\nOutput: 27\nExplanation:\nScore  a=4, b=4, c=4, x=5, z=10\nGiven letters, we can form the words \"ax\" (4+5), \"bx\" (4+5) and \"cx\" (4+5) with a score of 27.\nWord \"xxxz\" only get a score of 25.\n```\n\n**Example 3:**\n\n```\nInput: words = [\"leetcode\"], letters = [\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]\nOutput: 0\nExplanation:\nLetter \"e\" can only be used once.\n```\n\n**Constraints:**\n\n*   `1 <= words.length <= 14`\n*   `1 <= words[i].length <= 15`\n*   `1 <= letters.length <= 100`\n*   `letters[i].length == 1`\n*   `score.length == 26`\n*   `0 <= score[i] <= 10`\n*   `words[i]`, `letters[i]` contains only lower case English letters.",
+  "constraints": [
+    "1 <= words.length <= 14",
+    "1 <= words[i].length <= 15",
+    "1 <= letters.length <= 100",
+    "letters[i].length == 1",
+    "score.length == 26",
+    "0 <= score[i] <= 10",
+    "words[i], letters[i] contains only lower case English letters."
+  ],
+  "examples": [
+    {
+      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "output": "23",
+      "explanation": "Score  a=1, c=9, d=5, g=3, o=2\nGiven letters, we can form the words &quot;dad&quot; (5+1+5) and &quot;good&quot; (3+2+2+5) with a score of 23.\nWords &quot;dad&quot; and &quot;dog&quot; only get a score of 21."
+    },
+    {
+      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "output": "27",
+      "explanation": "Score  a=4, b=4, c=4, x=5, z=10\nGiven letters, we can form the words &quot;ax&quot; (4+5), &quot;bx&quot; (4+5) and &quot;cx&quot; (4+5) with a score of 27.\nWord &quot;xxxz&quot; only get a score of 25."
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "output": "0",
+      "explanation": "Letter &quot;e&quot; can only be used once."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxScoreWords(vector<string>& words, vector<char>& letters, vector<int>& score) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxScoreWords(String[] words, char[] letters, int[] score) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxScoreWords(self, words: list[str], letters: list[str], score: list[int]) -> int:\n        ",
+    "python": "class Solution(object):\n    def maxScoreWords(self, words, letters, score):\n        \"\"\"\n        :type words: List[str]\n        :type letters: List[str]\n        :type score: List[int]\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} words\n * @param {character[]} letters\n * @param {number[]} score\n * @return {number}\n */\nvar maxScoreWords = function(words, letters, score) {\n    \n};",
+    "typescript": "function maxScoreWords(words: string[], letters: string[], score: number[]): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxScoreWords(string[] words, char[] letters, int[] score) {\n        \n    }\n}",
+    "c": "int maxScoreWords(char** words, int wordsSize, char* letters, int lettersSize, int* score, int scoreSize) {\n    \n}",
+    "golang": "func maxScoreWords(words []string, letters []byte, score []int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxScoreWords(words: Array<String>, letters: CharArray, score: IntArray): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxScoreWords(_ words: [String], _ letters: [Character], _ score: [Int]) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_score_words(words: Vec<String>, letters: Vec<char>, score: Vec<i32>) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String[]} words\n# @param {Character[]} letters\n# @param {Integer[]} score\n# @return {Integer}\ndef max_score_words(words, letters, score)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String[] $letters\n     * @param Integer[] $score\n     * @return Integer\n     */\n    function maxScoreWords($words, $letters, $score) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int maxScoreWords(List<String> words, List<String> letters, List<int> score) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxScoreWords(words: Array[String], letters: Array[Char], score: Array[Int]): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_score_words(words :: [String.t], letters :: [char], score :: [integer]) :: integer\n  def max_score_words(words, letters, score) do\n    \n  end\nend",
+    "erlang": "-spec max_score_words(Words :: [unicode:unicode_binary()], Letters :: [char()], Score :: [integer()]) -> integer().\nmax_score_words(Words, Letters, Score) ->\n  .",
+    "racket": "(define/contract (max-score-words words letters score)\n  (-> (listof string?) (listof char?) (listof exact-integer?) exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "expectedOutput": "23"
+    },
+    {
+      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "expectedOutput": "23"
+    },
+    {
+      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[1,0,9,5,0,0,3,0,0,0,0,0,0,0,2,0,0,0,0,0,0,0,0,0,0,0]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[4,4,4,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,5,0,10]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"leetcode\"]\n[\"l\",\"e\",\"t\",\"c\",\"o\",\"d\"]\n[0,0,1,1,1,0,0,0,0,0,0,1,0,0,1,0,0,0,0,1,0,0,0,0,0,0]",
+      "expectedOutput": null
+    },
+    {
+      "input": "words = [&quot;xxxz&quot;,&quot;ax&quot;,&quot;bx&quot;,&quot;cx&quot;], letters = [&quot;z&quot;,&quot;a&quot;,&quot;b&quot;,&quot;c&quot;,&quot;x&quot;,&quot;x&quot;,&quot;x&quot;], score = [5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,11]",
+      "expectedOutput": null
+    },
+    {
+      "input": "words = [&quot;leetcode&quot;], letters = [&quot;l&quot;,&quot;e&quot;,&quot;t&quot;,&quot;c&quot;,&quot;o&quot;,&quot;d&quot;], score = [1,1,2,2,2,1,1,1,1,1,1,2,1,1,2,1,1,1,1,2,1,1,1,1,1,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"dog\",\"cat\",\"dad\",\"good\"]\n[\"a\",\"a\",\"c\",\"d\",\"d\",\"d\",\"g\",\"o\",\"o\"]\n[2,1,10,6,1,1,4,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"xxxz\",\"ax\",\"bx\",\"cx\"]\n[\"z\",\"a\",\"b\",\"c\",\"x\",\"x\",\"x\"]\n[5,5,5,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,6,1,11]",
+      "expectedOutput": null
+    },
+    {
+      "input": "words = [&quot;dog&quot;,&quot;cat&quot;,&quot;dad&quot;,&quot;good&quot;], letters = [&quot;a&quot;,&quot;a&quot;,&quot;c&quot;,&quot;d&quot;,&quot;d&quot;,&quot;d&quot;,&quot;g&quot;,&quot;o&quot;,&quot;o&quot;], score = [2,1,10,6,1,1,4,1,1,1,1,1,1,1,3,1,1,1,1,1,1,1,1,1,1,1]",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Note that words.length is small. This means you can iterate over every subset of words (2^N)."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-score-words-formed-by-letters/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:30.139Z",
+    "sourceUpdatedAt": null
+  }
+}

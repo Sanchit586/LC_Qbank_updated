@@ -1,0 +1,167 @@
+{
+  "id": "1358",
+  "slug": "number-of-substrings-containing-all-three-characters",
+  "title": "Number of Substrings Containing All Three Characters",
+  "category": "dsa",
+  "subcategory": "sliding-window",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "statement": "Given a string `s` consisting only of characters _a_, _b_ and _c_.\n\nReturn the number of substrings containing **at least** one occurrence of all these characters _a_, _b_ and _c_.\n\n**Example 1:**\n\n```\nInput: s = \"abcabc\"\nOutput: 10\nExplanation: The substrings containing at least one occurrence of the characters a, b and c are \"abc\", \"abca\", \"abcab\", \"abcabc\", \"bca\", \"bcab\", \"bcabc\", \"cab\", \"cabc\" and \"abc\" (again).\n```\n\n**Example 2:**\n\n```\nInput: s = \"aaacb\"\nOutput: 3\nExplanation: The substrings containing at least one occurrence of the characters a, b and c are \"aaacb\", \"aacb\" and \"acb\".\n```\n\n**Example 3:**\n\n```\nInput: s = \"abc\"\nOutput: 1\n```\n\n**Constraints:**\n\n*   `3 <= s.length <= 5 x 10^(4)`\n*   `s` only consists of `'a'`, `'b'` or `'c'` characters.",
+  "constraints": [
+    "3 <= s.length <= 5 x 104",
+    "s only consists of 'a', 'b' or 'c' characters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abcabc&quot;",
+      "output": "10",
+      "explanation": "The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;a,&nbsp;b&nbsp;and&nbsp;c are &quot;abc&quot;, &quot;abca&quot;, &quot;abcab&quot;, &quot;abcabc&quot;, &quot;bca&quot;, &quot;bcab&quot;, &quot;bcabc&quot;, &quot;cab&quot;, &quot;cabc&quot; and &quot;abc&quot; (again)."
+    },
+    {
+      "input": "s = &quot;aaacb&quot;",
+      "output": "3",
+      "explanation": "The substrings containing&nbsp;at least&nbsp;one occurrence of the characters&nbsp;a,&nbsp;b&nbsp;and&nbsp;c are &quot;aaacb&quot;, &quot;aacb&quot; and &quot;acb&quot;."
+    },
+    {
+      "input": "s = &quot;abc&quot;",
+      "output": "1",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numberOfSubstrings(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numberOfSubstrings(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def numberOfSubstrings(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def numberOfSubstrings(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar numberOfSubstrings = function(s) {\n    \n};",
+    "typescript": "function numberOfSubstrings(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumberOfSubstrings(string s) {\n        \n    }\n}",
+    "c": "int numberOfSubstrings(char* s) {\n    \n}",
+    "golang": "func numberOfSubstrings(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun numberOfSubstrings(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func numberOfSubstrings(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn number_of_substrings(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef number_of_substrings(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function numberOfSubstrings($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int numberOfSubstrings(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def numberOfSubstrings(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec number_of_substrings(s :: String.t) :: integer\n  def number_of_substrings(s) do\n    \n  end\nend",
+    "erlang": "-spec number_of_substrings(S :: unicode:unicode_binary()) -> integer().\nnumber_of_substrings(S) ->\n  .",
+    "racket": "(define/contract (number-of-substrings s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abcabc&quot;",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "s = &quot;aaacb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abcabc&quot;",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "s = &quot;aaacb&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcabc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaacb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "For each position we simply need to find the first occurrence of a/b/c on or after this position.",
+    "So we can pre-compute three link-list of indices of each a, b, and c."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-substrings-containing-all-three-characters/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:43.511Z",
+    "sourceUpdatedAt": null
+  }
+}

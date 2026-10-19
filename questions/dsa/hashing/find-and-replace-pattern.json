@@ -1,0 +1,93 @@
+{
+  "id": "890",
+  "slug": "find-and-replace-pattern",
+  "title": "Find and Replace Pattern",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "String"
+  ],
+  "statement": "Given a list of strings `words` and a string `pattern`, return _a list of_ `words[i]` _that match_ `pattern`. You may return the answer in **any order**.\n\nA word matches the pattern if there exists a permutation of letters `p` so that after replacing every letter `x` in the pattern with `p(x)`, we get the desired word.\n\nRecall that a permutation of letters is a bijection from letters to letters: every letter maps to another letter, and no two letters map to the same letter.\n\n**Example 1:**\n\n```\nInput: words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"\nOutput: [\"mee\",\"aqq\"]\nExplanation: \"mee\" matches the pattern because there is a permutation {a -> m, b -> e, ...}. \n\"ccc\" does not match the pattern because {a -> c, b -> c, ...} is not a permutation, since a and b map to the same letter.\n```\n\n**Example 2:**\n\n```\nInput: words = [\"a\",\"b\",\"c\"], pattern = \"a\"\nOutput: [\"a\",\"b\",\"c\"]\n```\n\n**Constraints:**\n\n*   `1 <= pattern.length <= 20`\n*   `1 <= words.length <= 50`\n*   `words[i].length == pattern.length`\n*   `pattern` and `words[i]` are lowercase English letters.",
+  "constraints": [
+    "1 <= pattern.length <= 20",
+    "1 <= words.length <= 50",
+    "words[i].length == pattern.length",
+    "pattern and words[i] are lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
+      "output": "[&quot;mee&quot;,&quot;aqq&quot;]",
+      "explanation": "&quot;mee&quot; matches the pattern because there is a permutation {a -&gt; m, b -&gt; e, ...}. \n&quot;ccc&quot; does not match the pattern because {a -&gt; c, b -&gt; c, ...} is not a permutation, since a and b map to the same letter."
+    },
+    {
+      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
+      "output": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> findAndReplacePattern(vector<string>& words, string pattern) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> findAndReplacePattern(String[] words, String pattern) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def findAndReplacePattern(self, words: list[str], pattern: str) -> list[str]:\n        ",
+    "python": "class Solution(object):\n    def findAndReplacePattern(self, words, pattern):\n        \"\"\"\n        :type words: List[str]\n        :type pattern: str\n        :rtype: List[str]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} words\n * @param {string} pattern\n * @return {string[]}\n */\nvar findAndReplacePattern = function(words, pattern) {\n    \n};",
+    "typescript": "function findAndReplacePattern(words: string[], pattern: string): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> FindAndReplacePattern(string[] words, string pattern) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** findAndReplacePattern(char** words, int wordsSize, char* pattern, int* returnSize) {\n    \n}",
+    "golang": "func findAndReplacePattern(words []string, pattern string) []string {\n    \n}",
+    "kotlin": "class Solution {\n    fun findAndReplacePattern(words: Array<String>, pattern: String): List<String> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func findAndReplacePattern(_ words: [String], _ pattern: String) -> [String] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {\n        \n    }\n}",
+    "ruby": "# @param {String[]} words\n# @param {String} pattern\n# @return {String[]}\ndef find_and_replace_pattern(words, pattern)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $pattern\n     * @return String[]\n     */\n    function findAndReplacePattern($words, $pattern) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<String> findAndReplacePattern(List<String> words, String pattern) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def findAndReplacePattern(words: Array[String], pattern: String): List[String] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec find_and_replace_pattern(words :: [String.t], pattern :: String.t) :: [String.t]\n  def find_and_replace_pattern(words, pattern) do\n    \n  end\nend",
+    "erlang": "-spec find_and_replace_pattern(Words :: [unicode:unicode_binary()], Pattern :: unicode:unicode_binary()) -> [unicode:unicode_binary()].\nfind_and_replace_pattern(Words, Pattern) ->\n  .",
+    "racket": "(define/contract (find-and-replace-pattern words pattern)\n  (-> (listof string?) string? (listof string?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
+      "expectedOutput": "[&quot;mee&quot;,&quot;aqq&quot;]"
+    },
+    {
+      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
+      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "words = [&quot;abc&quot;,&quot;deq&quot;,&quot;mee&quot;,&quot;aqq&quot;,&quot;dkd&quot;,&quot;ccc&quot;], pattern = &quot;abb&quot;",
+      "expectedOutput": "[&quot;mee&quot;,&quot;aqq&quot;]"
+    },
+    {
+      "input": "words = [&quot;a&quot;,&quot;b&quot;,&quot;c&quot;], pattern = &quot;a&quot;",
+      "expectedOutput": "[&quot;a&quot;,&quot;b&quot;,&quot;c&quot;]"
+    },
+    {
+      "input": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\"]\n\"a\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/find-and-replace-pattern/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:57.673Z",
+    "sourceUpdatedAt": null
+  }
+}

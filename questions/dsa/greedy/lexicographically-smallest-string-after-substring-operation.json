@@ -1,0 +1,175 @@
+{
+  "id": "2734",
+  "slug": "lexicographically-smallest-string-after-substring-operation",
+  "title": "Lexicographically Smallest String After Substring Operation",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Greedy"
+  ],
+  "statement": "Given a string `s` consisting of lowercase English letters. Perform the following operation:\n\n*   Select any non-empty substring then replace every letter of the substring with the preceding letter of the English alphabet. For example, 'b' is converted to 'a', and 'a' is converted to 'z'.\n\nReturn the **lexicographically smallest** string **after performing the operation**.\n\n**Example 1:**\n\n**Input:** s = \"cbabc\"\n\n**Output:** \"baabc\"\n\n**Explanation:**\n\nPerform the operation on the substring starting at index 0, and ending at index 1 inclusive.\n\n**Example 2:**\n\n**Input:** s = \"aa\"\n\n**Output:** \"az\"\n\n**Explanation:**\n\nPerform the operation on the last letter.\n\n**Example 3:**\n\n**Input:** s = \"acbbc\"\n\n**Output:** \"abaab\"\n\n**Explanation:**\n\nPerform the operation on the substring starting at index 1, and ending at index 4 inclusive.\n\n**Example 4:**\n\n**Input:** s = \"leetcode\"\n\n**Output:** \"kddsbncd\"\n\n**Explanation:**\n\nPerform the operation on the entire string.\n\n**Constraints:**\n\n*   `1 <= s.length <= 3 * 10^(5)`\n*   `s` consists of lowercase English letters",
+  "constraints": [
+    "1 <= s.length <= 3 * 105",
+    "s consists of lowercase English letters"
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;cbabc&quot;",
+      "output": "&quot;baabc&quot;",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;aa&quot;",
+      "output": "&quot;az&quot;",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;acbbc&quot;",
+      "output": "&quot;abaab&quot;",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "output": "&quot;kddsbncd&quot;",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestString(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def smallestString(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def smallestString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar smallestString = function(s) {\n    \n};",
+    "typescript": "function smallestString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestString(string s) {\n        \n    }\n}",
+    "c": "char* smallestString(char* s) {\n    \n}",
+    "golang": "func smallestString(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun smallestString(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func smallestString(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn smallest_string(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef smallest_string(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function smallestString($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String smallestString(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def smallestString(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec smallest_string(s :: String.t) :: String.t\n  def smallest_string(s) do\n    \n  end\nend",
+    "erlang": "-spec smallest_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nsmallest_string(S) ->\n  .",
+    "racket": "(define/contract (smallest-string s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;cbabc&quot;",
+      "expectedOutput": "&quot;baabc&quot;"
+    },
+    {
+      "input": "s = &quot;aa&quot;",
+      "expectedOutput": "&quot;az&quot;"
+    },
+    {
+      "input": "s = &quot;acbbc&quot;",
+      "expectedOutput": "&quot;abaab&quot;"
+    },
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "expectedOutput": "&quot;kddsbncd&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;cbabc&quot;",
+      "expectedOutput": "&quot;baabc&quot;"
+    },
+    {
+      "input": "s = &quot;aa&quot;",
+      "expectedOutput": "&quot;az&quot;"
+    },
+    {
+      "input": "s = &quot;acbbc&quot;",
+      "expectedOutput": "&quot;abaab&quot;"
+    },
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "expectedOutput": "&quot;kddsbncd&quot;"
+    },
+    {
+      "input": "\"cbabc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"acbbc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "When a character is replaced by the one that comes before it on the alphabet, it makes the string lexicographically smaller, except for ‘a'.",
+    "Find the leftmost substring that doesn’t contain the character 'a' and change all characters in it."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-substring-operation/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:50.185Z",
+    "sourceUpdatedAt": null
+  }
+}

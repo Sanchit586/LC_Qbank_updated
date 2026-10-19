@@ -1,0 +1,168 @@
+{
+  "id": "3563",
+  "slug": "lexicographically-smallest-string-after-adjacent-removals",
+  "title": "Lexicographically Smallest String After Adjacent Removals",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "statement": "You are given a string `s` consisting of lowercase English letters.\n\nYou can perform the following operation any number of times (including zero):\n\n*   Remove **any** pair of **adjacent** characters in the string that are **consecutive** in the alphabet, in either order (e.g., `'a'` and `'b'`, or `'b'` and `'a'`).\n*   Shift the remaining characters to the left to fill the gap.\n\nReturn the **lexicographically smallest** string that can be obtained after performing the operations optimally.\n\n**Note:** Consider the alphabet as circular, thus `'a'` and `'z'` are consecutive.\n\n**Example 1:**\n\n**Input:** s = \"abc\"\n\n**Output:** \"a\"\n\n**Explanation:**\n\n*   Remove `\"bc\"` from the string, leaving `\"a\"` as the remaining string.\n*   No further operations are possible. Thus, the lexicographically smallest string after all possible removals is `\"a\"`.\n\n**Example 2:**\n\n**Input:** s = \"bcda\"\n\n**Output:** \"\"\n\n**Explanation:**\n\n*   **​​​​​​​**Remove `\"cd\"` from the string, leaving `\"ba\"` as the remaining string.\n*   Remove `\"ba\"` from the string, leaving `\"\"` as the remaining string.\n*   No further operations are possible. Thus, the lexicographically smallest string after all possible removals is `\"\"`.\n\n**Example 3:**\n\n**Input:** s = \"zdce\"\n\n**Output:** \"zdce\"\n\n**Explanation:**\n\n*   Remove `\"dc\"` from the string, leaving `\"ze\"` as the remaining string.\n*   No further operations are possible on `\"ze\"`.\n*   However, since `\"zdce\"` is lexicographically smaller than `\"ze\"`, the smallest string after all possible removals is `\"zdce\"`.\n\n**Constraints:**\n\n*   `1 <= s.length <= 250`\n*   `s` consists only of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 250",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "output": "&quot;a&quot;",
+      "explanation": "Remove &quot;bc&quot; from the string, leaving &quot;a&quot; as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is &quot;a&quot;."
+    },
+    {
+      "input": "s = &quot;bcda&quot;",
+      "output": "&quot;&quot;",
+      "explanation": "​​​​​​​Remove &quot;cd&quot; from the string, leaving &quot;ba&quot; as the remaining string.\n\tRemove &quot;ba&quot; from the string, leaving &quot;&quot; as the remaining string.\n\tNo further operations are possible. Thus, the lexicographically smallest string after all possible removals is &quot;&quot;."
+    },
+    {
+      "input": "s = &quot;zdce&quot;",
+      "output": "&quot;zdce&quot;",
+      "explanation": "Remove &quot;dc&quot; from the string, leaving &quot;ze&quot; as the remaining string.\n\tNo further operations are possible on &quot;ze&quot;.\n\tHowever, since &quot;zdce&quot; is lexicographically smaller than &quot;ze&quot;, the smallest string after all possible removals is &quot;zdce&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lexicographicallySmallestString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lexicographicallySmallestString(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def lexicographicallySmallestString(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def lexicographicallySmallestString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar lexicographicallySmallestString = function(s) {\n    \n};",
+    "typescript": "function lexicographicallySmallestString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LexicographicallySmallestString(string s) {\n        \n    }\n}",
+    "c": "char* lexicographicallySmallestString(char* s) {\n    \n}",
+    "golang": "func lexicographicallySmallestString(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun lexicographicallySmallestString(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func lexicographicallySmallestString(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn lexicographically_smallest_string(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef lexicographically_smallest_string(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function lexicographicallySmallestString($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String lexicographicallySmallestString(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def lexicographicallySmallestString(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec lexicographically_smallest_string(s :: String.t) :: String.t\n  def lexicographically_smallest_string(s) do\n    \n  end\nend",
+    "erlang": "-spec lexicographically_smallest_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlexicographically_smallest_string(S) ->\n  .",
+    "racket": "(define/contract (lexicographically-smallest-string s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "&quot;a&quot;"
+    },
+    {
+      "input": "s = &quot;bcda&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "s = &quot;zdce&quot;",
+      "expectedOutput": "&quot;zdce&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "&quot;a&quot;"
+    },
+    {
+      "input": "s = &quot;bcda&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "s = &quot;zdce&quot;",
+      "expectedOutput": "&quot;zdce&quot;"
+    },
+    {
+      "input": "\"abc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bcda\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"zdce\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "As a result of the operation, some of the substrings can be removed",
+    "Find out using DP, which substrings can we remove",
+    "Now, try to build the ans using this DP",
+    "Define ans[i] = lex smallest string that can be made in [i, n - 1], then ans[i] = lex_smallest of { choose one char s[j] in [i, n - 1] + ans[j + 1] }"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/lexicographically-smallest-string-after-adjacent-removals/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:50.144Z",
+    "sourceUpdatedAt": null
+  }
+}

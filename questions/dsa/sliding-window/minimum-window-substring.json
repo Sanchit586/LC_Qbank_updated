@@ -1,0 +1,159 @@
+{
+  "id": "76",
+  "slug": "minimum-window-substring",
+  "title": "Minimum Window Substring",
+  "category": "dsa",
+  "subcategory": "sliding-window",
+  "difficulty": "Hard",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Sliding Window"
+  ],
+  "statement": "Given two strings `s` and `t` of lengths `m` and `n` respectively, return _the **minimum window**_ **_substring_** _of_ `s` _such that every character in_ `t` _(**including duplicates**) is included in the window_. If there is no such substring, return _the empty string_ `\"\"`.\n\nThe testcases will be generated such that the answer is **unique**.\n\n**Example 1:**\n\n```\nInput: s = \"ADOBECODEBANC\", t = \"ABC\"\nOutput: \"BANC\"\nExplanation: The minimum window substring \"BANC\" includes 'A', 'B', and 'C' from string t.\n```\n\n**Example 2:**\n\n```\nInput: s = \"a\", t = \"a\"\nOutput: \"a\"\nExplanation: The entire string s is the minimum window.\n```\n\n**Example 3:**\n\n```\nInput: s = \"a\", t = \"aa\"\nOutput: \"\"\nExplanation: Both 'a's from t must be included in the window.\nSince the largest window of s only has one 'a', return empty string.\n```\n\n**Constraints:**\n\n*   `m == s.length`\n*   `n == t.length`\n*   `1 <= m, n <= 10^(5)`\n*   `s` and `t` consist of uppercase and lowercase English letters.\n\n**Follow up:** Could you find an algorithm that runs in `O(m + n)` time?",
+  "constraints": [
+    "m == s.length",
+    "n == t.length",
+    "1 <= m, n <= 105",
+    "s and t consist of uppercase and lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
+      "output": "&quot;BANC&quot;",
+      "explanation": "The minimum window substring &quot;BANC&quot; includes &#39;A&#39;, &#39;B&#39;, and &#39;C&#39; from string t."
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "output": "&quot;a&quot;",
+      "explanation": "The entire string s is the minimum window."
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
+      "output": "&quot;&quot;",
+      "explanation": "Both &#39;a&#39;s from t must be included in the window.\nSince the largest window of s only has one &#39;a&#39;, return empty string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minWindow(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minWindow(String s, String t) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minWindow(self, s: str, t: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def minWindow(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {string} t\n * @return {string}\n */\nvar minWindow = function(s, t) {\n    \n};",
+    "typescript": "function minWindow(s: string, t: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinWindow(string s, string t) {\n        \n    }\n}",
+    "c": "char* minWindow(char* s, char* t) {\n    \n}",
+    "golang": "func minWindow(s string, t string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun minWindow(s: String, t: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minWindow(_ s: String, _ t: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn min_window(s: String, t: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {String} t\n# @return {String}\ndef min_window(s, t)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return String\n     */\n    function minWindow($s, $t) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String minWindow(String s, String t) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minWindow(s: String, t: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec min_window(s :: String.t, t :: String.t) :: String.t\n  def min_window(s, t) do\n    \n  end\nend",
+    "erlang": "-spec min_window(S :: unicode:unicode_binary(), T :: unicode:unicode_binary()) -> unicode:unicode_binary().\nmin_window(S, T) ->\n  .",
+    "racket": "(define/contract (min-window s t)\n  (-> string? string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
+      "expectedOutput": "&quot;BANC&quot;"
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "expectedOutput": "&quot;a&quot;"
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
+      "expectedOutput": "&quot;&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;ADOBECODEBANC&quot;, t = &quot;ABC&quot;",
+      "expectedOutput": "&quot;BANC&quot;"
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;a&quot;",
+      "expectedOutput": "&quot;a&quot;"
+    },
+    {
+      "input": "s = &quot;a&quot;, t = &quot;aa&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "\"ADOBECODEBANC\"\n\"ABC\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Use two pointers to create a window of letters in s, which would have all the characters from t.",
+    "Expand the right pointer until all the characters of t are covered.",
+    "Once all the characters are covered, move the left pointer and ensure that all the characters are still covered to minimize the subarray size.",
+    "Continue expanding the right and left pointers until you reach the end of s."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-window-substring/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:31.277Z",
+    "sourceUpdatedAt": null
+  }
+}

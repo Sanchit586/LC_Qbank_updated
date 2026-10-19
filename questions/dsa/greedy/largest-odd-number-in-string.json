@@ -1,0 +1,167 @@
+{
+  "id": "1903",
+  "slug": "largest-odd-number-in-string",
+  "title": "Largest Odd Number in String",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Easy",
+  "tags": [
+    "Math",
+    "String",
+    "Greedy"
+  ],
+  "statement": "You are given a string `num`, representing a large integer. Return _the **largest-valued odd** integer (as a string) that is a **non-empty substring** of_ `num`_, or an empty string_ `\"\"` _if no odd integer exists_.\n\nA **substring** is a contiguous sequence of characters within a string.\n\n**Example 1:**\n\n```\nInput: num = \"52\"\nOutput: \"5\"\nExplanation: The only non-empty substrings are \"5\", \"2\", and \"52\". \"5\" is the only odd number.\n```\n\n**Example 2:**\n\n```\nInput: num = \"4206\"\nOutput: \"\"\nExplanation: There are no odd numbers in \"4206\".\n```\n\n**Example 3:**\n\n```\nInput: num = \"35427\"\nOutput: \"35427\"\nExplanation: \"35427\" is already an odd number.\n```\n\n**Constraints:**\n\n*   `1 <= num.length <= 10^(5)`\n*   `num` only consists of digits and does not contain any leading zeros.",
+  "constraints": [
+    "1 <= num.length <= 105",
+    "num only consists of digits and does not contain any leading zeros."
+  ],
+  "examples": [
+    {
+      "input": "num = &quot;52&quot;",
+      "output": "&quot;5&quot;",
+      "explanation": "The only non-empty substrings are &quot;5&quot;, &quot;2&quot;, and &quot;52&quot;. &quot;5&quot; is the only odd number."
+    },
+    {
+      "input": "num = &quot;4206&quot;",
+      "output": "&quot;&quot;",
+      "explanation": "There are no odd numbers in &quot;4206&quot;."
+    },
+    {
+      "input": "num = &quot;35427&quot;",
+      "output": "&quot;35427&quot;",
+      "explanation": "&quot;35427&quot; is already an odd number."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestOddNumber(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestOddNumber(String num) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def largestOddNumber(self, num: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def largestOddNumber(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} num\n * @return {string}\n */\nvar largestOddNumber = function(num) {\n    \n};",
+    "typescript": "function largestOddNumber(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestOddNumber(string num) {\n        \n    }\n}",
+    "c": "char* largestOddNumber(char* num) {\n    \n}",
+    "golang": "func largestOddNumber(num string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun largestOddNumber(num: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func largestOddNumber(_ num: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn largest_odd_number(num: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} num\n# @return {String}\ndef largest_odd_number(num)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $num\n     * @return String\n     */\n    function largestOddNumber($num) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String largestOddNumber(String num) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def largestOddNumber(num: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec largest_odd_number(num :: String.t) :: String.t\n  def largest_odd_number(num) do\n    \n  end\nend",
+    "erlang": "-spec largest_odd_number(Num :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlargest_odd_number(Num) ->\n  .",
+    "racket": "(define/contract (largest-odd-number num)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "num = &quot;52&quot;",
+      "expectedOutput": "&quot;5&quot;"
+    },
+    {
+      "input": "num = &quot;4206&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "num = &quot;35427&quot;",
+      "expectedOutput": "&quot;35427&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "num = &quot;52&quot;",
+      "expectedOutput": "&quot;5&quot;"
+    },
+    {
+      "input": "num = &quot;4206&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "num = &quot;35427&quot;",
+      "expectedOutput": "&quot;35427&quot;"
+    },
+    {
+      "input": "\"52\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"4206\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"35427\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "In what order should you iterate through the digits?",
+    "If an odd number exists, where must the number start from?"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/largest-odd-number-in-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:44.562Z",
+    "sourceUpdatedAt": null
+  }
+}

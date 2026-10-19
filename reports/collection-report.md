@@ -1,50 +1,72 @@
 # LeetCode Question Bank — Collection Report
 
-> Generated at **2026-10-18T18:13:39.867Z**
+> Generated at **2026-10-19T16:11:52.074Z**
 
 ## Overview
 
 | Metric             | Value |
 | ------------------ | ----- |
-| Total Collected    | 12 |
+| Total Collected    | 3269 |
 | Total Discovered   | 4082 |
-| Completion Rate    | 0.3% |
+| Completion Rate    | 80.1% |
 
 ## By Difficulty
 
 | Difficulty | Count |
 | ---------- | ----- |
-| Easy | 4 |
-| Medium | 7 |
-| Hard | 1 |
+| Easy | 837 |
+| Medium | 1651 |
+| Hard | 781 |
 
 ## By Category
 
 | Category | Count |
 | -------- | ----- |
-| dsa | 7 |
-| database | 5 |
+| dsa | 3164 |
+| database | 105 |
 
 ## By Subcategory
 
 | Subcategory | Count |
 | ----------- | ----- |
-| dsa/hashing | 1 |
-| dsa/recursion-backtracking | 2 |
-| dsa/sliding-window | 1 |
-| dsa/divide-and-conquer | 1 |
-| dsa/dynamic-programming | 1 |
-| database/joins | 1 |
-| database/aggregation | 2 |
+| dsa/hashing | 239 |
+| dsa/recursion-backtracking | 86 |
+| dsa/sliding-window | 107 |
+| dsa/divide-and-conquer | 34 |
+| dsa/dynamic-programming | 594 |
+| dsa/strings | 94 |
+| dsa/mathematics | 171 |
+| dsa/greedy | 368 |
+| dsa/tries | 32 |
+| dsa/two-pointers | 146 |
+| dsa/stacks-queues | 75 |
+| dsa/heaps | 82 |
+| dsa/bit-manipulation | 92 |
+| dsa/binary-search | 129 |
+| dsa/simulation | 149 |
+| dsa/sorting | 102 |
+| dsa/arrays | 80 |
+| dsa/graphs | 335 |
+| dsa/linked-lists | 26 |
+| dsa/trees | 22 |
+| database/joins | 2 |
+| database/aggregation | 6 |
 | database/window-functions | 1 |
-| database/select-filtering | 1 |
-| dsa/graphs | 1 |
+| database/select-filtering | 80 |
+| database/null-handling | 9 |
+| dsa/miscellaneous | 79 |
+| dsa/prefix-sum | 91 |
+| dsa/design | 6 |
+| dsa/advanced-data-structures | 25 |
+| database/string-functions | 4 |
+| database/date-time | 1 |
+| database/set-operations | 2 |
 
 ## Validation
 
 | Status  | Count |
 | ------- | ----- |
-| Valid   | 12 |
+| Valid   | 3269 |
 | Invalid | 0 |
 
 ---

@@ -1,0 +1,168 @@
+{
+  "id": "1763",
+  "slug": "longest-nice-substring",
+  "title": "Longest Nice Substring",
+  "category": "dsa",
+  "subcategory": "divide-and-conquer",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Divide and Conquer",
+    "Bit Manipulation",
+    "Sliding Window"
+  ],
+  "statement": "A string `s` is **nice** if, for every letter of the alphabet that `s` contains, it appears **both** in uppercase and lowercase. For example, `\"abABB\"` is nice because `'A'` and `'a'` appear, and `'B'` and `'b'` appear. However, `\"abA\"` is not because `'b'` appears, but `'B'` does not.\n\nGiven a string `s`, return _the longest **substring** of `s` that is **nice**. If there are multiple, return the substring of the **earliest** occurrence. If there are none, return an empty string_.\n\n**Example 1:**\n\n```\nInput: s = \"YazaAay\"\nOutput: \"aAa\"\nExplanation: \"aAa\" is a nice string because 'A/a' is the only letter of the alphabet in s, and both 'A' and 'a' appear.\n\"aAa\" is the longest nice substring.\n```\n\n**Example 2:**\n\n```\nInput: s = \"Bb\"\nOutput: \"Bb\"\nExplanation: \"Bb\" is a nice string because both 'B' and 'b' appear. The whole string is a substring.\n```\n\n**Example 3:**\n\n```\nInput: s = \"c\"\nOutput: \"\"\nExplanation: There are no nice substrings.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 100`\n*   `s` consists of uppercase and lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists of uppercase and lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;YazaAay&quot;",
+      "output": "&quot;aAa&quot;",
+      "explanation": "&quot;aAa&quot; is a nice string because &#39;A/a&#39; is the only letter of the alphabet in s, and both &#39;A&#39; and &#39;a&#39; appear.\n&quot;aAa&quot; is the longest nice substring."
+    },
+    {
+      "input": "s = &quot;Bb&quot;",
+      "output": "&quot;Bb&quot;",
+      "explanation": "&quot;Bb&quot; is a nice string because both &#39;B&#39; and &#39;b&#39; appear. The whole string is a substring."
+    },
+    {
+      "input": "s = &quot;c&quot;",
+      "output": "&quot;&quot;",
+      "explanation": "There are no nice substrings."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string longestNiceSubstring(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String longestNiceSubstring(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def longestNiceSubstring(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def longestNiceSubstring(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar longestNiceSubstring = function(s) {\n    \n};",
+    "typescript": "function longestNiceSubstring(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LongestNiceSubstring(string s) {\n        \n    }\n}",
+    "c": "char* longestNiceSubstring(char* s) {\n    \n}",
+    "golang": "func longestNiceSubstring(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun longestNiceSubstring(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func longestNiceSubstring(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn longest_nice_substring(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef longest_nice_substring(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function longestNiceSubstring($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String longestNiceSubstring(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def longestNiceSubstring(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec longest_nice_substring(s :: String.t) :: String.t\n  def longest_nice_substring(s) do\n    \n  end\nend",
+    "erlang": "-spec longest_nice_substring(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlongest_nice_substring(S) ->\n  .",
+    "racket": "(define/contract (longest-nice-substring s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;YazaAay&quot;",
+      "expectedOutput": "&quot;aAa&quot;"
+    },
+    {
+      "input": "s = &quot;Bb&quot;",
+      "expectedOutput": "&quot;Bb&quot;"
+    },
+    {
+      "input": "s = &quot;c&quot;",
+      "expectedOutput": "&quot;&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;YazaAay&quot;",
+      "expectedOutput": "&quot;aAa&quot;"
+    },
+    {
+      "input": "s = &quot;Bb&quot;",
+      "expectedOutput": "&quot;Bb&quot;"
+    },
+    {
+      "input": "s = &quot;c&quot;",
+      "expectedOutput": "&quot;&quot;"
+    },
+    {
+      "input": "\"YazaAay\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"Bb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"c\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Brute force and check each substring to see if it is nice."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/longest-nice-substring/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:53.266Z",
+    "sourceUpdatedAt": null
+  }
+}

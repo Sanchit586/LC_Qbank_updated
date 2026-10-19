@@ -1,0 +1,111 @@
+{
+  "id": "2828",
+  "slug": "check-if-a-string-is-an-acronym-of-words",
+  "title": "Check if a String Is an Acronym of Words",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "Array",
+    "String"
+  ],
+  "statement": "Given an array of strings `words` and a string `s`, determine if `s` is an **acronym** of words.\n\nThe string `s` is considered an acronym of `words` if it can be formed by concatenating the **first** character of each string in `words` **in order**. For example, `\"ab\"` can be formed from `[\"apple\", \"banana\"]`, but it can't be formed from `[\"bear\", \"aardvark\"]`.\n\nReturn `true` _if_ `s` _is an acronym of_ `words`_, and_ `false` _otherwise._\n\n**Example 1:**\n\n```\nInput: words = [\"alice\",\"bob\",\"charlie\"], s = \"abc\"\nOutput: true\nExplanation: The first character in the words \"alice\", \"bob\", and \"charlie\" are 'a', 'b', and 'c', respectively. Hence, s = \"abc\" is the acronym.\n```\n\n**Example 2:**\n\n```\nInput: words = [\"an\",\"apple\"], s = \"a\"\nOutput: false\nExplanation: The first character in the words \"an\" and \"apple\" are 'a' and 'a', respectively. \nThe acronym formed by concatenating these characters is \"aa\". \nHence, s = \"a\" is not the acronym.\n```\n\n**Example 3:**\n\n```\nInput: words = [\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"], s = \"ngguoy\"\nOutput: true\nExplanation: By concatenating the first character of the words in the array, we get the string \"ngguoy\". \nHence, s = \"ngguoy\" is the acronym.\n```\n\n**Constraints:**\n\n*   `1 <= words.length <= 100`\n*   `1 <= words[i].length <= 10`\n*   `1 <= s.length <= 100`\n*   `words[i]` and `s` consist of lowercase English letters.",
+  "constraints": [
+    "1 <= words.length <= 100",
+    "1 <= words[i].length <= 10",
+    "1 <= s.length <= 100",
+    "words[i] and s consist of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
+      "output": "true",
+      "explanation": "The first character in the words &quot;alice&quot;, &quot;bob&quot;, and &quot;charlie&quot; are &#39;a&#39;, &#39;b&#39;, and &#39;c&#39;, respectively. Hence, s = &quot;abc&quot; is the acronym."
+    },
+    {
+      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
+      "output": "false",
+      "explanation": "The first character in the words &quot;an&quot; and &quot;apple&quot; are &#39;a&#39; and &#39;a&#39;, respectively. \nThe acronym formed by concatenating these characters is &quot;aa&quot;. \nHence, s = &quot;a&quot; is not the acronym."
+    },
+    {
+      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
+      "output": "true",
+      "explanation": "By concatenating the first character of the words in the array, we get the string &quot;ngguoy&quot;. \nHence, s = &quot;ngguoy&quot; is the acronym."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isAcronym(vector<string>& words, string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isAcronym(List<String> words, String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def isAcronym(self, words: List[str], s: str) -> bool:\n        ",
+    "python": "class Solution(object):\n    def isAcronym(self, words, s):\n        \"\"\"\n        :type words: List[str]\n        :type s: str\n        :rtype: bool\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} words\n * @param {string} s\n * @return {boolean}\n */\nvar isAcronym = function(words, s) {\n    \n};",
+    "typescript": "function isAcronym(words: string[], s: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsAcronym(IList<string> words, string s) {\n        \n    }\n}",
+    "c": "bool isAcronym(char** words, int wordsSize, char* s) {\n    \n}",
+    "golang": "func isAcronym(words []string, s string) bool {\n    \n}",
+    "kotlin": "class Solution {\n    fun isAcronym(words: List<String>, s: String): Boolean {\n        \n    }\n}",
+    "swift": "class Solution {\n    func isAcronym(_ words: [String], _ s: String) -> Bool {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn is_acronym(words: Vec<String>, s: String) -> bool {\n        \n    }\n}",
+    "ruby": "# @param {String[]} words\n# @param {String} s\n# @return {Boolean}\ndef is_acronym(words, s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $words\n     * @param String $s\n     * @return Boolean\n     */\n    function isAcronym($words, $s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  bool isAcronym(List<String> words, String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def isAcronym(words: List[String], s: String): Boolean = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec is_acronym(words :: [String.t], s :: String.t) :: boolean\n  def is_acronym(words, s) do\n    \n  end\nend",
+    "erlang": "-spec is_acronym(Words :: [unicode:unicode_binary()], S :: unicode:unicode_binary()) -> boolean().\nis_acronym(Words, S) ->\n  .",
+    "racket": "(define/contract (is-acronym words s)\n  (-> (listof string?) string? boolean?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
+      "expectedOutput": "true"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "words = [&quot;alice&quot;,&quot;bob&quot;,&quot;charlie&quot;], s = &quot;abc&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "words = [&quot;an&quot;,&quot;apple&quot;], s = &quot;a&quot;",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "words = [&quot;never&quot;,&quot;gonna&quot;,&quot;give&quot;,&quot;up&quot;,&quot;on&quot;,&quot;you&quot;], s = &quot;ngguoy&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"an\",\"apple\"]\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"]\n\"ngguoy\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "<div class=\"_1l1MA\">Concatenate the first characters of the strings in <code>words</code>, and compare the resulting concatenation to <code>s</code>.</div>"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/check-if-a-string-is-an-acronym-of-words/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:05:49.870Z",
+    "sourceUpdatedAt": null
+  }
+}

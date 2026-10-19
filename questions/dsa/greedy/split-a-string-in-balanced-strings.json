@@ -1,0 +1,168 @@
+{
+  "id": "1221",
+  "slug": "split-a-string-in-balanced-strings",
+  "title": "Split a String in Balanced Strings",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Easy",
+  "tags": [
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "statement": "**Balanced** strings are those that have an equal quantity of `'L'` and `'R'` characters.\n\nGiven a **balanced** string `s`, split it into some number of substrings such that:\n\n*   Each substring is balanced.\n\nReturn _the **maximum** number of balanced strings you can obtain._\n\n**Example 1:**\n\n```\nInput: s = \"RLRRLLRLRL\"\nOutput: 4\nExplanation: s can be split into \"RL\", \"RRLL\", \"RL\", \"RL\", each substring contains same number of 'L' and 'R'.\n```\n\n**Example 2:**\n\n```\nInput: s = \"RLRRRLLRLL\"\nOutput: 2\nExplanation: s can be split into \"RL\", \"RRRLLRLL\", each substring contains same number of 'L' and 'R'.\nNote that s cannot be split into \"RL\", \"RR\", \"RL\", \"LR\", \"LL\", because the 2nd and 5th substrings are not balanced.\n```\n\n**Example 3:**\n\n```\nInput: s = \"LLLLRRRR\"\nOutput: 1\nExplanation: s can be split into \"LLLLRRRR\".\n```\n\n**Constraints:**\n\n*   `2 <= s.length <= 1000`\n*   `s[i]` is either `'L'` or `'R'`.\n*   `s` is a **balanced** string.",
+  "constraints": [
+    "2 <= s.length <= 1000",
+    "s[i] is either 'L' or 'R'.",
+    "s is a balanced string."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "output": "4",
+      "explanation": "s can be split into &quot;RL&quot;, &quot;RRLL&quot;, &quot;RL&quot;, &quot;RL&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;."
+    },
+    {
+      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "output": "2",
+      "explanation": "s can be split into &quot;RL&quot;, &quot;RRRLLRLL&quot;, each substring contains same number of &#39;L&#39; and &#39;R&#39;.\nNote that s cannot be split into &quot;RL&quot;, &quot;RR&quot;, &quot;RL&quot;, &quot;LR&quot;, &quot;LL&quot;, because the 2nd and 5th substrings are not balanced."
+    },
+    {
+      "input": "s = &quot;LLLLRRRR&quot;",
+      "output": "1",
+      "explanation": "s can be split into &quot;LLLLRRRR&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int balancedStringSplit(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int balancedStringSplit(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def balancedStringSplit(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def balancedStringSplit(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar balancedStringSplit = function(s) {\n    \n};",
+    "typescript": "function balancedStringSplit(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BalancedStringSplit(string s) {\n        \n    }\n}",
+    "c": "int balancedStringSplit(char* s) {\n    \n}",
+    "golang": "func balancedStringSplit(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun balancedStringSplit(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func balancedStringSplit(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn balanced_string_split(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef balanced_string_split(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function balancedStringSplit($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int balancedStringSplit(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def balancedStringSplit(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec balanced_string_split(s :: String.t) :: integer\n  def balanced_string_split(s) do\n    \n  end\nend",
+    "erlang": "-spec balanced_string_split(S :: unicode:unicode_binary()) -> integer().\nbalanced_string_split(S) ->\n  .",
+    "racket": "(define/contract (balanced-string-split s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;LLLLRRRR&quot;",
+      "expectedOutput": "1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;RLRRLLRLRL&quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;RLRRRLLRLL&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;LLLLRRRR&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"RLRRLLRLRL\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"RLRRRLLRLL\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"LLLLRRRR\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Loop from left to right maintaining a balance variable when it gets an L increase it by one otherwise decrease it by one.",
+    "Whenever the balance variable reaches zero then we increase the answer by one."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/split-a-string-in-balanced-strings/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:46.540Z",
+    "sourceUpdatedAt": null
+  }
+}

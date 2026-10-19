@@ -1,0 +1,159 @@
+{
+  "id": "474",
+  "slug": "ones-and-zeroes",
+  "title": "Ones and Zeroes",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "String",
+    "Dynamic Programming",
+    "Knapsack Problem",
+    "0-1 Knapsack"
+  ],
+  "statement": "You are given an array of binary strings `strs` and two integers `m` and `n`.\n\nReturn _the size of the largest subset of `strs` such that there are **at most**_ `m` `0`_'s and_ `n` `1`_'s in the subset_.\n\nA set `x` is a **subset** of a set `y` if all elements of `x` are also elements of `y`.\n\n**Example 1:**\n\n```\nInput: strs = [\"10\",\"0001\",\"111001\",\"1\",\"0\"], m = 5, n = 3\nOutput: 4\nExplanation: The largest subset with at most 5 0's and 3 1's is {\"10\", \"0001\", \"1\", \"0\"}, so the answer is 4.\nOther valid but smaller subsets include {\"0001\", \"1\"} and {\"10\", \"1\", \"0\"}.\n{\"111001\"} is an invalid subset because it contains 4 1's, greater than the maximum of 3.\n```\n\n**Example 2:**\n\n```\nInput: strs = [\"10\",\"0\",\"1\"], m = 1, n = 1\nOutput: 2\nExplanation: The largest subset is {\"0\", \"1\"}, so the answer is 2.\n```\n\n**Constraints:**\n\n*   `1 <= strs.length <= 600`\n*   `1 <= strs[i].length <= 100`\n*   `strs[i]` consists only of digits `'0'` and `'1'`.\n*   `1 <= m, n <= 100`",
+  "constraints": [
+    "1 <= strs.length <= 600",
+    "1 <= strs[i].length <= 100",
+    "strs[i] consists only of digits '0' and '1'.",
+    "1 <= m, n <= 100"
+  ],
+  "examples": [
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0001&quot;,&quot;111001&quot;,&quot;1&quot;,&quot;0&quot;], m = 5, n = 3",
+      "output": "4",
+      "explanation": "The largest subset with at most 5 0&#39;s and 3 1&#39;s is {&quot;10&quot;, &quot;0001&quot;, &quot;1&quot;, &quot;0&quot;}, so the answer is 4.\nOther valid but smaller subsets include {&quot;0001&quot;, &quot;1&quot;} and {&quot;10&quot;, &quot;1&quot;, &quot;0&quot;}.\n{&quot;111001&quot;} is an invalid subset because it contains 4 1&#39;s, greater than the maximum of 3."
+    },
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0&quot;,&quot;1&quot;], m = 1, n = 1",
+      "output": "2",
+      "explanation": "The largest subset is {&quot;0&quot;, &quot;1&quot;}, so the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int findMaxForm(vector<string>& strs, int m, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int findMaxForm(String[] strs, int m, int n) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def findMaxForm(self, strs: list[str], m: int, n: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def findMaxForm(self, strs, m, n):\n        \"\"\"\n        :type strs: List[str]\n        :type m: int\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} strs\n * @param {number} m\n * @param {number} n\n * @return {number}\n */\nvar findMaxForm = function(strs, m, n) {\n    \n};",
+    "typescript": "function findMaxForm(strs: string[], m: number, n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int FindMaxForm(string[] strs, int m, int n) {\n        \n    }\n}",
+    "c": "int findMaxForm(char** strs, int strsSize, int m, int n) {\n    \n}",
+    "golang": "func findMaxForm(strs []string, m int, n int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun findMaxForm(strs: Array<String>, m: Int, n: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func findMaxForm(_ strs: [String], _ m: Int, _ n: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn find_max_form(strs: Vec<String>, m: i32, n: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String[]} strs\n# @param {Integer} m\n# @param {Integer} n\n# @return {Integer}\ndef find_max_form(strs, m, n)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $strs\n     * @param Integer $m\n     * @param Integer $n\n     * @return Integer\n     */\n    function findMaxForm($strs, $m, $n) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int findMaxForm(List<String> strs, int m, int n) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def findMaxForm(strs: Array[String], m: Int, n: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec find_max_form(strs :: [String.t], m :: integer, n :: integer) :: integer\n  def find_max_form(strs, m, n) do\n    \n  end\nend",
+    "erlang": "-spec find_max_form(Strs :: [unicode:unicode_binary()], M :: integer(), N :: integer()) -> integer().\nfind_max_form(Strs, M, N) ->\n  .",
+    "racket": "(define/contract (find-max-form strs m n)\n  (-> (listof string?) exact-integer? exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0001&quot;,&quot;111001&quot;,&quot;1&quot;,&quot;0&quot;], m = 5, n = 3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0&quot;,&quot;1&quot;], m = 1, n = 1",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0001&quot;,&quot;111001&quot;,&quot;1&quot;,&quot;0&quot;], m = 5, n = 3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "strs = [&quot;10&quot;,&quot;0&quot;,&quot;1&quot;], m = 1, n = 1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"10\",\"0001\",\"111001\",\"1\",\"0\"]\n5\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"10\",\"0\",\"1\"]\n1\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/ones-and-zeroes/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:49.047Z",
+    "sourceUpdatedAt": null
+  }
+}

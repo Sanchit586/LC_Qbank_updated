@@ -1,0 +1,154 @@
+{
+  "id": "1379",
+  "slug": "find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree",
+  "title": "Find a Corresponding Node of a Binary Tree in a Clone of That Tree",
+  "category": "dsa",
+  "subcategory": "graphs",
+  "difficulty": "Easy",
+  "tags": [
+    "Tree",
+    "Depth-First Search",
+    "Breadth-First Search",
+    "Binary Tree"
+  ],
+  "statement": "Given two binary trees `original` and `cloned` and given a reference to a node `target` in the original tree.\n\nThe `cloned` tree is a **copy of** the `original` tree.\n\nReturn _a reference to the same node_ in the `cloned` tree.\n\n**Note** that you are **not allowed** to change any of the two trees or the `target` node and the answer **must be** a reference to a node in the `cloned` tree.\n\n**Example 1:**\n\n![](./assets/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree-1.png)\n```\nInput: tree = [7,4,3,null,null,6,19], target = 3\nOutput: 3\nExplanation: In all examples the original and cloned trees are shown. The target node is a green node from the original tree. The answer is the yellow node from the cloned tree.\n```\n\n**Example 2:**\n\n![](./assets/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree-2.png)\n```\nInput: tree = [7], target =  7\nOutput: 7\n```\n\n**Example 3:**\n\n![](./assets/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree-3.png)\n```\nInput: tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4\nOutput: 4\n```\n\n**Constraints:**\n\n*   The number of nodes in the `tree` is in the range `[1, 10^(4)]`.\n*   The values of the nodes of the `tree` are unique.\n*   `target` node is a node from the `original` tree and is not `null`.\n\n**Follow up:** Could you solve the problem if repeated values on the tree are allowed?",
+  "constraints": [
+    "The number of nodes in the tree is in the range [1, 104].",
+    "The values of the nodes of the tree are unique.",
+    "target node is a node from the original tree and is not null."
+  ],
+  "examples": [
+    {
+      "input": "tree = [7,4,3,null,null,6,19], target = 3",
+      "output": "3",
+      "explanation": "In all examples the original and cloned trees are shown. The target node is a green node from the original tree. The answer is the yellow node from the cloned tree."
+    },
+    {
+      "input": "tree = [7], target =  7",
+      "output": "7",
+      "explanation": null
+    },
+    {
+      "input": "tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4",
+      "output": "4",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for a binary tree node.\n * struct TreeNode {\n *     int val;\n *     TreeNode *left;\n *     TreeNode *right;\n *     TreeNode(int x) : val(x), left(NULL), right(NULL) {}\n * };\n */\n\nclass Solution {\npublic:\n    TreeNode* getTargetCopy(TreeNode* original, TreeNode* cloned, TreeNode* target) {\n        \n    }\n};",
+    "java": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     int val;\n *     TreeNode left;\n *     TreeNode right;\n *     TreeNode(int x) { val = x; }\n * }\n */\n\nclass Solution {\n    public final TreeNode getTargetCopy(final TreeNode original, final TreeNode cloned, final TreeNode target) {\n        \n    }\n}",
+    "python3": "# Definition for a binary tree node.\n# class TreeNode:\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution:\n    def getTargetCopy(self, original: TreeNode, cloned: TreeNode, target: TreeNode) -> TreeNode:\n        ",
+    "python": "# Definition for a binary tree node.\n# class TreeNode(object):\n#     def __init__(self, x):\n#         self.val = x\n#         self.left = None\n#         self.right = None\n\nclass Solution(object):\n    def getTargetCopy(self, original, cloned, target):\n        \"\"\"\n        :type original: TreeNode\n        :type cloned: TreeNode\n        :type target: TreeNode\n        :rtype: TreeNode\n        \"\"\"\n        ",
+    "javascript": "/**\n * Definition for a binary tree node.\n * function TreeNode(val) {\n *     this.val = val;\n *     this.left = this.right = null;\n * }\n */\n/**\n * @param {TreeNode} original\n * @param {TreeNode} cloned\n * @param {TreeNode} target\n * @return {TreeNode}\n */\n\nvar getTargetCopy = function(original, cloned, target) {\n    \n};",
+    "typescript": "/**\n * Definition for a binary tree node.\n * class TreeNode {\n *     val: number\n *     left: TreeNode | null\n *     right: TreeNode | null\n *     constructor(val?: number, left?: TreeNode | null, right?: TreeNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.left = (left===undefined ? null : left)\n *         this.right = (right===undefined ? null : right)\n *     }\n * }\n */\n\nfunction getTargetCopy(original: TreeNode | null, cloned: TreeNode | null, target: TreeNode | null): TreeNode | null {\n\n};",
+    "csharp": "/**\n * Definition for a binary tree node.\n * public class TreeNode {\n *     public int val;\n *     public TreeNode left;\n *     public TreeNode right;\n *     public TreeNode(int x) { val = x; }\n * }\n */\n\npublic class Solution {\n    public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target) {\n        \n    }\n}"
+  },
+  "publicTests": [
+    {
+      "input": "tree = [7,4,3,null,null,6,19], target = 3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "tree = [7], target =  7",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4",
+      "expectedOutput": "4"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "tree = [7,4,3,null,null,6,19], target = 3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "tree = [7], target =  7",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "tree = [8,null,6,null,5,null,4,null,3,null,2,null,1], target = 4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[7,4,3,null,null,6,19]\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "[7]\n7",
+      "expectedOutput": null
+    },
+    {
+      "input": "[8,null,6,null,5,null,4,null,3,null,2,null,1]\n4",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/find-a-corresponding-node-of-a-binary-tree-in-a-clone-of-that-tree/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:55.452Z",
+    "sourceUpdatedAt": null
+  }
+}

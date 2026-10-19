@@ -1,0 +1,134 @@
+{
+  "id": "2947",
+  "slug": "count-beautiful-substrings-i",
+  "title": "Count Beautiful Substrings I",
+  "category": "dsa",
+  "subcategory": "prefix-sum",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "Math",
+    "String",
+    "Enumeration",
+    "Number Theory",
+    "Prefix Sum"
+  ],
+  "statement": "You are given a string `s` and a positive integer `k`.\n\nLet `vowels` and `consonants` be the number of vowels and consonants in a string.\n\nA string is **beautiful** if:\n\n*   `vowels == consonants`.\n*   `(vowels * consonants) % k == 0`, in other terms the multiplication of `vowels` and `consonants` is divisible by `k`.\n\nReturn _the number of **non-empty beautiful substrings** in the given string_ `s`.\n\nA **substring** is a contiguous sequence of characters in a string.\n\n**Vowel letters** in English are `'a'`, `'e'`, `'i'`, `'o'`, and `'u'`.\n\n**Consonant letters** in English are every letter except vowels.\n\n**Example 1:**\n\n```\nInput: s = \"baeyh\", k = 2\nOutput: 2\nExplanation: There are 2 beautiful substrings in the given string.\n- Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"y\",\"h\"]).\nYou can see that string \"aeyh\" is beautiful as vowels == consonants and vowels * consonants % k == 0.\n- Substring \"baeyh\", vowels = 2 ([\"a\",e\"]), consonants = 2 ([\"b\",\"y\"]). \nYou can see that string \"baey\" is beautiful as vowels == consonants and vowels * consonants % k == 0.\nIt can be shown that there are only 2 beautiful substrings in the given string.\n```\n\n**Example 2:**\n\n```\nInput: s = \"abba\", k = 1\nOutput: 3\nExplanation: There are 3 beautiful substrings in the given string.\n- Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]). \n- Substring \"abba\", vowels = 1 ([\"a\"]), consonants = 1 ([\"b\"]).\n- Substring \"abba\", vowels = 2 ([\"a\",\"a\"]), consonants = 2 ([\"b\",\"b\"]).\nIt can be shown that there are only 3 beautiful substrings in the given string.\n```\n\n**Example 3:**\n\n```\nInput: s = \"bcdf\", k = 1\nOutput: 0\nExplanation: There are no beautiful substrings in the given string.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 1000`\n*   `1 <= k <= 1000`\n*   `s` consists of only English lowercase letters.",
+  "constraints": [
+    "1 <= s.length <= 1000",
+    "1 <= k <= 1000",
+    "s consists of only English lowercase letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;baeyh&quot;, k = 2",
+      "output": "2",
+      "explanation": "There are 2 beautiful substrings in the given string.\n- Substring &quot;baeyh&quot;, vowels = 2 ([&quot;a&quot;,e&quot;]), consonants = 2 ([&quot;y&quot;,&quot;h&quot;]).\nYou can see that string &quot;aeyh&quot; is beautiful as vowels == consonants and vowels * consonants % k == 0.\n- Substring &quot;baeyh&quot;, vowels = 2 ([&quot;a&quot;,e&quot;]), consonants = 2 ([&quot;b&quot;,&quot;y&quot;]). \nYou can see that string &quot;baey&quot; is beautiful as vowels == consonants and vowels * consonants % k == 0.\nIt can be shown that there are only 2 beautiful substrings in the given string."
+    },
+    {
+      "input": "s = &quot;abba&quot;, k = 1",
+      "output": "3",
+      "explanation": "There are 3 beautiful substrings in the given string.\n- Substring &quot;abba&quot;, vowels = 1 ([&quot;a&quot;]), consonants = 1 ([&quot;b&quot;]). \n- Substring &quot;abba&quot;, vowels = 1 ([&quot;a&quot;]), consonants = 1 ([&quot;b&quot;]).\n- Substring &quot;abba&quot;, vowels = 2 ([&quot;a&quot;,&quot;a&quot;]), consonants = 2 ([&quot;b&quot;,&quot;b&quot;]).\nIt can be shown that there are only 3 beautiful substrings in the given string."
+    },
+    {
+      "input": "s = &quot;bcdf&quot;, k = 1",
+      "output": "0",
+      "explanation": "There are no beautiful substrings in the given string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int beautifulSubstrings(string s, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int beautifulSubstrings(String s, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def beautifulSubstrings(self, s: str, k: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def beautifulSubstrings(self, s, k):\n        \"\"\"\n        :type s: str\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {number} k\n * @return {number}\n */\nvar beautifulSubstrings = function(s, k) {\n    \n};",
+    "typescript": "function beautifulSubstrings(s: string, k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int BeautifulSubstrings(string s, int k) {\n        \n    }\n}",
+    "c": "int beautifulSubstrings(char* s, int k) {\n    \n}",
+    "golang": "func beautifulSubstrings(s string, k int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun beautifulSubstrings(s: String, k: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func beautifulSubstrings(_ s: String, _ k: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn beautiful_substrings(s: String, k: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {Integer} k\n# @return {Integer}\ndef beautiful_substrings(s, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param Integer $k\n     * @return Integer\n     */\n    function beautifulSubstrings($s, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int beautifulSubstrings(String s, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def beautifulSubstrings(s: String, k: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec beautiful_substrings(s :: String.t, k :: integer) :: integer\n  def beautiful_substrings(s, k) do\n    \n  end\nend",
+    "erlang": "-spec beautiful_substrings(S :: unicode:unicode_binary(), K :: integer()) -> integer().\nbeautiful_substrings(S, K) ->\n  .",
+    "racket": "(define/contract (beautiful-substrings s k)\n  (-> string? exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;baeyh&quot;, k = 2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abba&quot;, k = 1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;bcdf&quot;, k = 1",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;baeyh&quot;, k = 2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abba&quot;, k = 1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "s = &quot;bcdf&quot;, k = 1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"baeyh\"\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abba\"\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bcdf\"\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;abba&quot;, k = 2",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;bcdf&quot;, k = 2",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"baeyh\"\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "s = &quot;baeyh&quot;, k = 3",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Iterate over all substrings and maintain the frequencies of vowels and consonants."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-beautiful-substrings-i/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:07.572Z",
+    "sourceUpdatedAt": null
+  }
+}

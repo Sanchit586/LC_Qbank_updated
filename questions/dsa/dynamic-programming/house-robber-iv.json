@@ -1,0 +1,162 @@
+{
+  "id": "2560",
+  "slug": "house-robber-iv",
+  "title": "House Robber IV",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Binary Search",
+    "Dynamic Programming",
+    "Greedy"
+  ],
+  "statement": "There are several consecutive houses along a street, each of which has some money inside. There is also a robber, who wants to steal money from the homes, but he **refuses to steal from adjacent homes**.\n\nThe **capability** of the robber is the maximum amount of money he steals from one house of all the houses he robbed.\n\nYou are given an integer array `nums` representing how much money is stashed in each house. More formally, the `i^(th)` house from the left has `nums[i]` dollars.\n\nYou are also given an integer `k`, representing the **minimum** number of houses the robber will steal from. It is always possible to steal at least `k` houses.\n\nReturn _the **minimum** capability of the robber out of all the possible ways to steal at least_ `k` _houses_.\n\n**Example 1:**\n\n```\nInput: nums = [2,3,5,9], k = 2\nOutput: 5\nExplanation: \nThere are three ways to rob at least 2 houses:\n- Rob the houses at indices 0 and 2. Capability is max(nums[0], nums[2]) = 5.\n- Rob the houses at indices 0 and 3. Capability is max(nums[0], nums[3]) = 9.\n- Rob the houses at indices 1 and 3. Capability is max(nums[1], nums[3]) = 9.\nTherefore, we return min(5, 9, 9) = 5.\n```\n\n**Example 2:**\n\n```\nInput: nums = [2,7,9,3,1], k = 2\nOutput: 2\nExplanation: There are 7 ways to rob the houses. The way which leads to minimum capability is to rob the house at index 0 and 4. Return max(nums[0], nums[4]) = 2.\n```\n\n**Constraints:**\n\n*   `1 <= nums.length <= 10^(5)`\n*   `1 <= nums[i] <= 10^(9)`\n*   `1 <= k <= (nums.length + 1)/2`",
+  "constraints": [
+    "1 <= nums.length <= 105",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= (nums.length + 1)/2"
+  ],
+  "examples": [
+    {
+      "input": "nums = [2,3,5,9], k = 2",
+      "output": "5",
+      "explanation": "There are three ways to rob at least 2 houses:\n- Rob the houses at indices 0 and 2. Capability is max(nums[0], nums[2]) = 5.\n- Rob the houses at indices 0 and 3. Capability is max(nums[0], nums[3]) = 9.\n- Rob the houses at indices 1 and 3. Capability is max(nums[1], nums[3]) = 9.\nTherefore, we return min(5, 9, 9) = 5."
+    },
+    {
+      "input": "nums = [2,7,9,3,1], k = 2",
+      "output": "2",
+      "explanation": "There are 7 ways to rob the houses. The way which leads to minimum capability is to rob the house at index 0 and 4. Return max(nums[0], nums[4]) = 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minCapability(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minCapability(int[] nums, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minCapability(self, nums: List[int], k: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def minCapability(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar minCapability = function(nums, k) {\n    \n};",
+    "typescript": "function minCapability(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinCapability(int[] nums, int k) {\n        \n    }\n}",
+    "c": "int minCapability(int* nums, int numsSize, int k) {\n    \n}",
+    "golang": "func minCapability(nums []int, k int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun minCapability(nums: IntArray, k: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minCapability(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn min_capability(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef min_capability(nums, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function minCapability($nums, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int minCapability(List<int> nums, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minCapability(nums: Array[Int], k: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec min_capability(nums :: [integer], k :: integer) :: integer\n  def min_capability(nums, k) do\n    \n  end\nend",
+    "erlang": "-spec min_capability(Nums :: [integer()], K :: integer()) -> integer().\nmin_capability(Nums, K) ->\n  .",
+    "racket": "(define/contract (min-capability nums k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [2,3,5,9], k = 2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "nums = [2,7,9,3,1], k = 2",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [2,3,5,9], k = 2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "nums = [2,7,9,3,1], k = 2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,3,5,9]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,7,9,3,1]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Can we use binary search to find the minimum value of a non-contiguous subsequence of a given size k?",
+    "Initialize the search range with the minimum and maximum elements of the input array.",
+    "Use a check function to determine if it is possible to select k non-consecutive elements that are less than or equal to the current \"guess\" value.",
+    "Adjust the search range based on the outcome of the check function, until the range converges and the minimum value is found."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/house-robber-iv/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:27.705Z",
+    "sourceUpdatedAt": null
+  }
+}

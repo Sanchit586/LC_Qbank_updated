@@ -1,0 +1,169 @@
+{
+  "id": "1074",
+  "slug": "number-of-submatrices-that-sum-to-target",
+  "title": "Number of Submatrices That Sum to Target",
+  "category": "dsa",
+  "subcategory": "prefix-sum",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Matrix",
+    "Prefix Sum"
+  ],
+  "statement": "Given a `matrix` and a `target`, return the number of non-empty submatrices that sum to target.\n\nA submatrix `x1, y1, x2, y2` is the set of all cells `matrix[x][y]` with `x1 <= x <= x2` and `y1 <= y <= y2`.\n\nTwo submatrices `(x1, y1, x2, y2)` and `(x1', y1', x2', y2')` are different if they have some coordinate that is different: for example, if `x1 != x1'`.\n\n**Example 1:**\n\n![](./assets/number-of-submatrices-that-sum-to-target-1.jpg)\n```\nInput: matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0\nOutput: 4\nExplanation: The four 1x1 submatrices that only contain 0.\n```\n\n**Example 2:**\n\n```\nInput: matrix = [[1,-1],[-1,1]], target = 0\nOutput: 5\nExplanation: The two 1x2 submatrices, plus the two 2x1 submatrices, plus the 2x2 submatrix.\n```\n\n**Example 3:**\n\n```\nInput: matrix = [[904]], target = 0\nOutput: 0\n```\n\n**Constraints:**\n\n*   `1 <= matrix.length <= 100`\n*   `1 <= matrix[0].length <= 100`\n*   `-1000 <= matrix[i][j] <= 1000`\n*   `-10^8 <= target <= 10^8`",
+  "constraints": [
+    "1 <= matrix.length <= 100",
+    "1 <= matrix[0].length <= 100",
+    "-1000 <= matrix[i][j] <= 1000",
+    "-10^8 <= target <= 10^8"
+  ],
+  "examples": [
+    {
+      "input": "matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0",
+      "output": "4",
+      "explanation": "The four 1x1 submatrices that only contain 0."
+    },
+    {
+      "input": "matrix = [[1,-1],[-1,1]], target = 0",
+      "output": "5",
+      "explanation": "The two 1x2 submatrices, plus the two 2x1 submatrices, plus the 2x2 submatrix."
+    },
+    {
+      "input": "matrix = [[904]], target = 0",
+      "output": "0",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numSubmatrixSumTarget(vector<vector<int>>& matrix, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def numSubmatrixSumTarget(self, matrix: list[list[int]], target: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def numSubmatrixSumTarget(self, matrix, target):\n        \"\"\"\n        :type matrix: List[List[int]]\n        :type target: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[][]} matrix\n * @param {number} target\n * @return {number}\n */\nvar numSubmatrixSumTarget = function(matrix, target) {\n    \n};",
+    "typescript": "function numSubmatrixSumTarget(matrix: number[][], target: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumSubmatrixSumTarget(int[][] matrix, int target) {\n        \n    }\n}",
+    "c": "int numSubmatrixSumTarget(int** matrix, int matrixSize, int* matrixColSize, int target) {\n    \n}",
+    "golang": "func numSubmatrixSumTarget(matrix [][]int, target int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun numSubmatrixSumTarget(matrix: Array<IntArray>, target: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func numSubmatrixSumTarget(_ matrix: [[Int]], _ target: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn num_submatrix_sum_target(matrix: Vec<Vec<i32>>, target: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[][]} matrix\n# @param {Integer} target\n# @return {Integer}\ndef num_submatrix_sum_target(matrix, target)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[][] $matrix\n     * @param Integer $target\n     * @return Integer\n     */\n    function numSubmatrixSumTarget($matrix, $target) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int numSubmatrixSumTarget(List<List<int>> matrix, int target) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def numSubmatrixSumTarget(matrix: Array[Array[Int]], target: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec num_submatrix_sum_target(matrix :: [[integer]], target :: integer) :: integer\n  def num_submatrix_sum_target(matrix, target) do\n    \n  end\nend",
+    "erlang": "-spec num_submatrix_sum_target(Matrix :: [[integer()]], Target :: integer()) -> integer().\nnum_submatrix_sum_target(Matrix, Target) ->\n  .",
+    "racket": "(define/contract (num-submatrix-sum-target matrix target)\n  (-> (listof (listof exact-integer?)) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "matrix = [[1,-1],[-1,1]], target = 0",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "matrix = [[904]], target = 0",
+      "expectedOutput": "0"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "matrix = [[0,1,0],[1,1,1],[0,1,0]], target = 0",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "matrix = [[1,-1],[-1,1]], target = 0",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "matrix = [[904]], target = 0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[0,1,0],[1,1,1],[0,1,0]]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[[1,-1],[-1,1]]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[[904]]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Using a 2D prefix sum, we can query the sum of any submatrix in O(1) time.\r\nNow for each (r1, r2), we can find the largest sum of a submatrix that uses every row in [r1, r2] in linear time using a sliding window."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-submatrices-that-sum-to-target/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:43.497Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,96 @@
+{
+  "id": "2466",
+  "slug": "count-ways-to-build-good-strings",
+  "title": "Count Ways To Build Good Strings",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Medium",
+  "tags": [
+    "Dynamic Programming"
+  ],
+  "statement": "Given the integers `zero`, `one`, `low`, and `high`, we can construct a string by starting with an empty string, and then at each step perform either of the following:\n\n*   Append the character `'0'` `zero` times.\n*   Append the character `'1'` `one` times.\n\nThis can be performed any number of times.\n\nA **good** string is a string constructed by the above process having a **length** between `low` and `high` (**inclusive**).\n\nReturn _the number of **different** good strings that can be constructed satisfying these properties._ Since the answer can be large, return it **modulo** `10^(9) + 7`.\n\n**Example 1:**\n\n```\nInput: low = 3, high = 3, zero = 1, one = 1\nOutput: 8\nExplanation: \nOne possible valid good string is \"011\". \nIt can be constructed as follows: \"\" -> \"0\" -> \"01\" -> \"011\". \nAll binary strings from \"000\" to \"111\" are good strings in this example.\n```\n\n**Example 2:**\n\n```\nInput: low = 2, high = 3, zero = 1, one = 2\nOutput: 5\nExplanation: The good strings are \"00\", \"11\", \"000\", \"110\", and \"011\".\n```\n\n**Constraints:**\n\n*   `1 <= low <= high <= 10^(5)`\n*   `1 <= zero, one <= low`",
+  "constraints": [
+    "1 <= low <= high <= 105",
+    "1 <= zero, one <= low"
+  ],
+  "examples": [
+    {
+      "input": "low = 3, high = 3, zero = 1, one = 1",
+      "output": "8",
+      "explanation": "One possible valid good string is &quot;011&quot;. \nIt can be constructed as follows: &quot;&quot; -&gt; &quot;0&quot; -&gt; &quot;01&quot; -&gt; &quot;011&quot;. \nAll binary strings from &quot;000&quot; to &quot;111&quot; are good strings in this example."
+    },
+    {
+      "input": "low = 2, high = 3, zero = 1, one = 2",
+      "output": "5",
+      "explanation": "The good strings are &quot;00&quot;, &quot;11&quot;, &quot;000&quot;, &quot;110&quot;, and &quot;011&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def countGoodStrings(self, low: int, high: int, zero: int, one: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def countGoodStrings(self, low, high, zero, one):\n        \"\"\"\n        :type low: int\n        :type high: int\n        :type zero: int\n        :type one: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} low\n * @param {number} high\n * @param {number} zero\n * @param {number} one\n * @return {number}\n */\nvar countGoodStrings = function(low, high, zero, one) {\n    \n};",
+    "typescript": "function countGoodStrings(low: number, high: number, zero: number, one: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountGoodStrings(int low, int high, int zero, int one) {\n        \n    }\n}",
+    "c": "int countGoodStrings(int low, int high, int zero, int one) {\n    \n}",
+    "golang": "func countGoodStrings(low int, high int, zero int, one int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func countGoodStrings(_ low: Int, _ high: Int, _ zero: Int, _ one: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn count_good_strings(low: i32, high: i32, zero: i32, one: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer} low\n# @param {Integer} high\n# @param {Integer} zero\n# @param {Integer} one\n# @return {Integer}\ndef count_good_strings(low, high, zero, one)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $low\n     * @param Integer $high\n     * @param Integer $zero\n     * @param Integer $one\n     * @return Integer\n     */\n    function countGoodStrings($low, $high, $zero, $one) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int countGoodStrings(int low, int high, int zero, int one) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def countGoodStrings(low: Int, high: Int, zero: Int, one: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec count_good_strings(low :: integer, high :: integer, zero :: integer, one :: integer) :: integer\n  def count_good_strings(low, high, zero, one) do\n    \n  end\nend",
+    "erlang": "-spec count_good_strings(Low :: integer(), High :: integer(), Zero :: integer(), One :: integer()) -> integer().\ncount_good_strings(Low, High, Zero, One) ->\n  .",
+    "racket": "(define/contract (count-good-strings low high zero one)\n  (-> exact-integer? exact-integer? exact-integer? exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "low = 3, high = 3, zero = 1, one = 1",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "low = 2, high = 3, zero = 1, one = 2",
+      "expectedOutput": "5"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "low = 3, high = 3, zero = 1, one = 1",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "low = 2, high = 3, zero = 1, one = 2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "3\n3\n1\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "2\n3\n1\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "low = 4, high = 4, zero = 2, one = 2",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Calculate the number of good strings with length less or equal to some constant x.",
+    "Apply dynamic programming using the group size of consecutive zeros and ones."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-ways-to-build-good-strings/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:27.551Z",
+    "sourceUpdatedAt": null
+  }
+}

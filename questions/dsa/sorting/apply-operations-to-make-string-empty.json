@@ -1,0 +1,159 @@
+{
+  "id": "3039",
+  "slug": "apply-operations-to-make-string-empty",
+  "title": "Apply Operations to Make String Empty",
+  "category": "dsa",
+  "subcategory": "sorting",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Sorting",
+    "Counting"
+  ],
+  "statement": "You are given a string `s`.\n\nConsider performing the following operation until `s` becomes **empty**:\n\n*   For **every** alphabet character from `'a'` to `'z'`, remove the **first** occurrence of that character in `s` (if it exists).\n\nFor example, let initially `s = \"aabcbbca\"`. We do the following operations:\n\n*   Remove the underlined characters `s = \"**a**a**bc**bbca\"`. The resulting string is `s = \"abbca\"`.\n*   Remove the underlined characters `s = \"**ab**b**c**a\"`. The resulting string is `s = \"ba\"`.\n*   Remove the underlined characters `s = \"**ba**\"`. The resulting string is `s = \"\"`.\n\nReturn _the value of the string_ `s` _right **before** applying the **last** operation_. In the example above, answer is `\"ba\"`.\n\n**Example 1:**\n\n```\nInput: s = \"aabcbbca\"\nOutput: \"ba\"\nExplanation: Explained in the statement.\n```\n\n**Example 2:**\n\n```\nInput: s = \"abcd\"\nOutput: \"abcd\"\nExplanation: We do the following operation:\n- Remove the underlined characters s = \"abcd\". The resulting string is s = \"\".\nThe string just before the last operation is \"abcd\".\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 5 * 10^(5)`\n*   `s` consists only of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 5 * 105",
+    "s consists only of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;aabcbbca&quot;",
+      "output": "&quot;ba&quot;",
+      "explanation": "Explained in the statement."
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "output": "&quot;abcd&quot;",
+      "explanation": "We do the following operation:\n- Remove the underlined characters s = &quot;abcd&quot;. The resulting string is s = &quot;&quot;.\nThe string just before the last operation is &quot;abcd&quot;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string lastNonEmptyString(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String lastNonEmptyString(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def lastNonEmptyString(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def lastNonEmptyString(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar lastNonEmptyString = function(s) {\n    \n};",
+    "typescript": "function lastNonEmptyString(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LastNonEmptyString(string s) {\n        \n    }\n}",
+    "c": "char* lastNonEmptyString(char* s) {\n    \n}",
+    "golang": "func lastNonEmptyString(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun lastNonEmptyString(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func lastNonEmptyString(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn last_non_empty_string(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef last_non_empty_string(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function lastNonEmptyString($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String lastNonEmptyString(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def lastNonEmptyString(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec last_non_empty_string(s :: String.t) :: String.t\n  def last_non_empty_string(s) do\n    \n  end\nend",
+    "erlang": "-spec last_non_empty_string(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlast_non_empty_string(S) ->\n  .",
+    "racket": "(define/contract (last-non-empty-string s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;aabcbbca&quot;",
+      "expectedOutput": "&quot;ba&quot;"
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "expectedOutput": "&quot;abcd&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;aabcbbca&quot;",
+      "expectedOutput": "&quot;ba&quot;"
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "expectedOutput": "&quot;abcd&quot;"
+    },
+    {
+      "input": "\"aabcbbca\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcd\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Before the last operation, only the most frequent characters in the original string will remain.",
+    "Keep only the last occurence of each of the most frequent characters."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/apply-operations-to-make-string-empty/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:05:23.821Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "id": "2384",
+  "slug": "largest-palindromic-number",
+  "title": "Largest Palindromic Number",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "String",
+    "Greedy",
+    "Counting"
+  ],
+  "statement": "You are given a string `num` consisting of digits only.\n\nReturn _the **largest palindromic** integer (in the form of a string) that can be formed using digits taken from_ `num`. It should not contain **leading zeroes**.\n\n**Notes:**\n\n*   You do **not** need to use all the digits of `num`, but you must use **at least** one digit.\n*   The digits can be reordered.\n\n**Example 1:**\n\n```\nInput: num = \"444947137\"\nOutput: \"7449447\"\nExplanation: \nUse the digits \"4449477\" from \"444947137\" to form the palindromic integer \"7449447\".\nIt can be shown that \"7449447\" is the largest palindromic integer that can be formed.\n```\n\n**Example 2:**\n\n```\nInput: num = \"00009\"\nOutput: \"9\"\nExplanation: \nIt can be shown that \"9\" is the largest palindromic integer that can be formed.\nNote that the integer returned should not contain leading zeroes.\n```\n\n**Constraints:**\n\n*   `1 <= num.length <= 10^(5)`\n*   `num` consists of digits.",
+  "constraints": [
+    "1 <= num.length <= 105",
+    "num consists of digits."
+  ],
+  "examples": [
+    {
+      "input": "num = &quot;444947137&quot;",
+      "output": "&quot;7449447&quot;",
+      "explanation": "Use the digits &quot;4449477&quot; from &quot;444947137&quot; to form the palindromic integer &quot;7449447&quot;.\nIt can be shown that &quot;7449447&quot; is the largest palindromic integer that can be formed."
+    },
+    {
+      "input": "num = &quot;00009&quot;",
+      "output": "&quot;9&quot;",
+      "explanation": "It can be shown that &quot;9&quot; is the largest palindromic integer that can be formed.\nNote that the integer returned should not contain leading zeroes."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string largestPalindromic(string num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String largestPalindromic(String num) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def largestPalindromic(self, num: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def largestPalindromic(self, num):\n        \"\"\"\n        :type num: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} num\n * @return {string}\n */\nvar largestPalindromic = function(num) {\n    \n};",
+    "typescript": "function largestPalindromic(num: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string LargestPalindromic(string num) {\n        \n    }\n}",
+    "c": "char* largestPalindromic(char* num) {\n    \n}",
+    "golang": "func largestPalindromic(num string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun largestPalindromic(num: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func largestPalindromic(_ num: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn largest_palindromic(num: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} num\n# @return {String}\ndef largest_palindromic(num)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $num\n     * @return String\n     */\n    function largestPalindromic($num) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String largestPalindromic(String num) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def largestPalindromic(num: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec largest_palindromic(num :: String.t) :: String.t\n  def largest_palindromic(num) do\n    \n  end\nend",
+    "erlang": "-spec largest_palindromic(Num :: unicode:unicode_binary()) -> unicode:unicode_binary().\nlargest_palindromic(Num) ->\n  .",
+    "racket": "(define/contract (largest-palindromic num)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "num = &quot;444947137&quot;",
+      "expectedOutput": "&quot;7449447&quot;"
+    },
+    {
+      "input": "num = &quot;00009&quot;",
+      "expectedOutput": "&quot;9&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "num = &quot;444947137&quot;",
+      "expectedOutput": "&quot;7449447&quot;"
+    },
+    {
+      "input": "num = &quot;00009&quot;",
+      "expectedOutput": "&quot;9&quot;"
+    },
+    {
+      "input": "\"444947137\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"00009\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "In order to form a valid palindrome, other than the middle digit in an odd-length palindrome, every digit needs to exist on both sides.",
+    "A longer palindrome implies a larger valued palindrome. For palindromes of the same length, the larger digits should occur first.",
+    "We can count the occurrences of each digit and build the palindrome starting from the ends. Starting from the larger digits, if there are still at least 2 occurrences of a digit, we can place these digits on each side.",
+    "Make sure to consider the special case for the center digit (if any) and zeroes. There should not be leading zeroes."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/largest-palindromic-number/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:44.578Z",
+    "sourceUpdatedAt": null
+  }
+}

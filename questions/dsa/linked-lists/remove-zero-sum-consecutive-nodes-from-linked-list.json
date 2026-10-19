@@ -1,0 +1,167 @@
+{
+  "id": "1171",
+  "slug": "remove-zero-sum-consecutive-nodes-from-linked-list",
+  "title": "Remove Zero Sum Consecutive Nodes from Linked List",
+  "category": "dsa",
+  "subcategory": "linked-lists",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "Linked List"
+  ],
+  "statement": "Given the `head` of a linked list, we repeatedly delete consecutive sequences of nodes that sum to `0` until there are no such sequences.\n\nAfter doing so, return the head of the final linked list.  You may return any such answer.\n\n(Note that in the examples below, all sequences are serializations of `ListNode` objects.)\n\n**Example 1:**\n\n```\nInput: head = [1,2,-3,3,1]\nOutput: [3,1]\nNote: The answer [1,2,1] would also be accepted.\n```\n\n**Example 2:**\n\n```\nInput: head = [1,2,3,-3,4]\nOutput: [1,2,4]\n```\n\n**Example 3:**\n\n```\nInput: head = [1,2,3,-3,-2]\nOutput: [1]\n```\n\n**Constraints:**\n\n*   The given linked list will contain between `1` and `1000` nodes.\n*   Each node in the linked list has `-1000 <= node.val <= 1000`.",
+  "constraints": [
+    "The given linked list will contain between 1 and 1000 nodes.",
+    "Each node in the linked list has -1000 <= node.val <= 1000."
+  ],
+  "examples": [
+    {
+      "input": "head = [1,2,-3,3,1]",
+      "output": "[3,1]\nNote: The answer [1,2,1] would also be accepted.",
+      "explanation": null
+    },
+    {
+      "input": "head = [1,2,3,-3,4]",
+      "output": "[1,2,4]",
+      "explanation": null
+    },
+    {
+      "input": "head = [1,2,3,-3,-2]",
+      "output": "[1]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     ListNode *next;\n *     ListNode() : val(0), next(nullptr) {}\n *     ListNode(int x) : val(x), next(nullptr) {}\n *     ListNode(int x, ListNode *next) : val(x), next(next) {}\n * };\n */\nclass Solution {\npublic:\n    ListNode* removeZeroSumSublists(ListNode* head) {\n        \n    }\n};",
+    "java": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     int val;\n *     ListNode next;\n *     ListNode() {}\n *     ListNode(int val) { this.val = val; }\n *     ListNode(int val, ListNode next) { this.val = val; this.next = next; }\n * }\n */\nclass Solution {\n    public ListNode removeZeroSumSublists(ListNode head) {\n        \n    }\n}",
+    "python3": "# Definition for singly-linked list.\n# class ListNode:\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution:\n    def removeZeroSumSublists(self, head: ListNode | None) -> ListNode | None:\n        ",
+    "python": "# Definition for singly-linked list.\n# class ListNode(object):\n#     def __init__(self, val=0, next=None):\n#         self.val = val\n#         self.next = next\nclass Solution(object):\n    def removeZeroSumSublists(self, head):\n        \"\"\"\n        :type head: Optional[ListNode]\n        :rtype: Optional[ListNode]\n        \"\"\"\n        ",
+    "javascript": "/**\n * Definition for singly-linked list.\n * function ListNode(val, next) {\n *     this.val = (val===undefined ? 0 : val)\n *     this.next = (next===undefined ? null : next)\n * }\n */\n/**\n * @param {ListNode} head\n * @return {ListNode}\n */\nvar removeZeroSumSublists = function(head) {\n    \n};",
+    "typescript": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *     val: number\n *     next: ListNode | null\n *     constructor(val?: number, next?: ListNode | null) {\n *         this.val = (val===undefined ? 0 : val)\n *         this.next = (next===undefined ? null : next)\n *     }\n * }\n */\n\nfunction removeZeroSumSublists(head: ListNode | null): ListNode | null {\n    \n};",
+    "csharp": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public int val;\n *     public ListNode next;\n *     public ListNode(int val=0, ListNode next=null) {\n *         this.val = val;\n *         this.next = next;\n *     }\n * }\n */\npublic class Solution {\n    public ListNode RemoveZeroSumSublists(ListNode head) {\n        \n    }\n}",
+    "c": "/**\n * Definition for singly-linked list.\n * struct ListNode {\n *     int val;\n *     struct ListNode *next;\n * };\n */\nstruct ListNode* removeZeroSumSublists(struct ListNode* head) {\n    \n}",
+    "golang": "/**\n * Definition for singly-linked list.\n * type ListNode struct {\n *     Val int\n *     Next *ListNode\n * }\n */\nfunc removeZeroSumSublists(head *ListNode) *ListNode {\n    \n}",
+    "kotlin": "/**\n * Example:\n * var li = ListNode(5)\n * var v = li.`val`\n * Definition for singly-linked list.\n * class ListNode(var `val`: Int) {\n *     var next: ListNode? = null\n * }\n */\nclass Solution {\n    fun removeZeroSumSublists(head: ListNode?): ListNode? {\n        \n    }\n}",
+    "swift": "/**\n * Definition for singly-linked list.\n * public class ListNode {\n *     public var val: Int\n *     public var next: ListNode?\n *     public init() { self.val = 0; self.next = nil; }\n *     public init(_ val: Int) { self.val = val; self.next = nil; }\n *     public init(_ val: Int, _ next: ListNode?) { self.val = val; self.next = next; }\n * }\n */\nclass Solution {\n    func removeZeroSumSublists(_ head: ListNode?) -> ListNode? {\n        \n    }\n}",
+    "rust": "// Definition for singly-linked list.\n// #[derive(PartialEq, Eq, Clone, Debug)]\n// pub struct ListNode {\n//   pub val: i32,\n//   pub next: Option<Box<ListNode>>\n// }\n// \n// impl ListNode {\n//   #[inline]\n//   fn new(val: i32) -> Self {\n//     ListNode {\n//       next: None,\n//       val\n//     }\n//   }\n// }\nimpl Solution {\n    pub fn remove_zero_sum_sublists(head: Option<Box<ListNode>>) -> Option<Box<ListNode>> {\n        \n    }\n}",
+    "ruby": "# Definition for singly-linked list.\n# class ListNode\n#     attr_accessor :val, :next\n#     def initialize(val = 0, _next = nil)\n#         @val = val\n#         @next = _next\n#     end\n# end\n# @param {ListNode} head\n# @return {ListNode}\ndef remove_zero_sum_sublists(head)\n    \nend",
+    "php": "/**\n * Definition for a singly-linked list.\n * class ListNode {\n *     public $val = 0;\n *     public $next = null;\n *     function __construct($val = 0, $next = null) {\n *         $this->val = $val;\n *         $this->next = $next;\n *     }\n * }\n */\nclass Solution {\n\n    /**\n     * @param ListNode $head\n     * @return ListNode\n     */\n    function removeZeroSumSublists($head) {\n        \n    }\n}",
+    "dart": "/**\n * Definition for singly-linked list.\n * class ListNode {\n *   int val;\n *   ListNode? next;\n *   ListNode([this.val = 0, this.next]);\n * }\n */\nclass Solution {\n  ListNode? removeZeroSumSublists(ListNode? head) {\n    \n  }\n}",
+    "scala": "/**\n * Definition for singly-linked list.\n * class ListNode(_x: Int = 0, _next: ListNode = null) {\n *   var next: ListNode = _next\n *   var x: Int = _x\n * }\n */\nobject Solution {\n    def removeZeroSumSublists(head: ListNode): ListNode = {\n        \n    }\n}",
+    "elixir": "# Definition for singly-linked list.\n#\n# defmodule ListNode do\n#   @type t :: %__MODULE__{\n#           val: integer,\n#           next: ListNode.t() | nil\n#         }\n#   defstruct val: 0, next: nil\n# end\n\ndefmodule Solution do\n  @spec remove_zero_sum_sublists(head :: ListNode.t | nil) :: ListNode.t | nil\n  def remove_zero_sum_sublists(head) do\n    \n  end\nend",
+    "erlang": "%% Definition for singly-linked list.\n%%\n%% -record(list_node, {val = 0 :: integer(),\n%%                     next = null :: 'null' | #list_node{}}).\n\n-spec remove_zero_sum_sublists(Head :: #list_node{} | null) -> #list_node{} | null.\nremove_zero_sum_sublists(Head) ->\n  .",
+    "racket": "; Definition for singly-linked list:\n#|\n\n; val : integer?\n; next : (or/c list-node? #f)\n(struct list-node\n  (val next) #:mutable #:transparent)\n\n; constructor\n(define (make-list-node [val 0])\n  (list-node val #f))\n\n|#\n\n(define/contract (remove-zero-sum-sublists head)\n  (-> (or/c list-node? #f) (or/c list-node? #f))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "head = [1,2,-3,3,1]",
+      "expectedOutput": "[3,1]\nNote: The answer [1,2,1] would also be accepted."
+    },
+    {
+      "input": "head = [1,2,3,-3,4]",
+      "expectedOutput": "[1,2,4]"
+    },
+    {
+      "input": "head = [1,2,3,-3,-2]",
+      "expectedOutput": "[1]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "head = [1,2,-3,3,1]",
+      "expectedOutput": "[3,1]\nNote: The answer [1,2,1] would also be accepted."
+    },
+    {
+      "input": "head = [1,2,3,-3,4]",
+      "expectedOutput": "[1,2,4]"
+    },
+    {
+      "input": "head = [1,2,3,-3,-2]",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "[1,2,-3,3,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,-3,4]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,-3,-2]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0,0,0,0]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,3,2,4,6,5]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1000000000,-1000000000]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,42,43,44,45,46,47,48,49,50,51,52,53,54,55,56,57,58,59,60,61,62,63,64,65,66,67,68,69,70,71,72,73,74,75,76,77,78,79,80,81,82,83,84,85,86,87,88,89,90,91,92,93,94,95,96,97,98,99,100,101,102,103,104,105,106,107,108,109,110,111,112,113,114,115,116,117,118,119,120,121,122,123,124,125,126,127,128,129,130,131,132,133,134,135,136,137,138,139,140,141,142,143,144,145,146,147,148,149,150,151,152,153,154,155,156,157,158,159,160,161,162,163,164,165,166,167,168,169,170,171,172,173,174,175,176,177,178,179,180,181,182,183,184,185,186,187,188,189,190,191,192,193,194,195,196,197,198,199,200,201,202,203,204,205,206,207,208,209,210,211,212,213,214,215,216,217,218,219,220,221,222,223,224,225,226,227,228,229,230,231,232,233,234,235,236,237,238,239,240,241,242,243,244,245,246,247,248,249,250,251,252,253,254,255,256,257,258,259,260,261,262,263,264,265,266,267,268,269,270,271,272,273,274,275,276,277,278,279,280,281,282,283,284,285,286,287,288,289,290,291,292,293,294,295,296,297,298,299,300,301,302,303,304,305,306,307,308,309,310,311,312,313,314,315,316,317,318,319,320,321,322,323,324,325,326,327,328,329,330,331,332,333,334,335,336,337,338,339,340,341,342,343,344,345,346,347,348,349,350,351,352,353,354,355,356,357,358,359,360,361,362,363,364,365,366,367,368,369,370,371,372,373,374,375,376,377,378,379,380,381,382,383,384,385,386,387,388,389,390,391,392,393,394,395,396,397,398,399,400,401,402,403,404,405,406,407,408,409,410,411,412,413,414,415,416,417,418,419,420,421,422,423,424,425,426,427,428,429,430,431,432,433,434,435,436,437,438,439,440,441,442,443,444,445,446,447,448,449,450,451,452,453,454,455,456,457,458,459,460,461,462,463,464,465,466,467,468,469,470,471,472,473,474,475,476,477,478,479,480,481,482,483,484,485,486,487,488,489,490,491,492,493,494,495,496,497,498,499,500,501,502,503,504,505,506,507,508,509,510,511,512,513,514,515,516,517,518,519,520,521,522,523,524,525,526,527,528,529,530,531,532,533,534,535,536,537,538,539,540,541,542,543,544,545,546,547,548,549,550,551,552,553,554,555,556,557,558,559,560,561,562,563,564,565,566,567,568,569,570,571,572,573,574,575,576,577,578,579,580,581,582,583,584,585,586,587,588,589,590,591,592,593,594,595,596,597,598,599,600,601,602,603,604,605,606,607,608,609,610,611,612,613,614,615,616,617,618,619,620,621,622,623,624,625,626,627,628,629,630,631,632,633,634,635,636,637,638,639,640,641,642,643,644,645,646,647,648,649,650,651,652,653,654,655,656,657,658,659,660,661,662,663,664,665,666,667,668,669,670,671,672,673,674,675,676,677,678,679,680,681,682,683,684,685,686,687,688,689,690,691,692,693,694,695,696,697,698,699,700,701,702,703,704,705,706,707,708,709,710,711,712,713,714,715,716,717,718,719,720,721,722,723,724,725,726,727,728,729,730,731,732,733,734,735,736,737,738,739,740,741,742,743,744,745,746,747,748,749,750,751,752,753,754,755,756,757,758,759,760,761,762,763,764,765,766,767,768,769,770,771,772,773,774,775,776,777,778,779,780,781,782,783,784,785,786,787,788,789,790,791,792,793,794,795,796,797,798,799,800,801,802,803,804,805,806,807,808,809,810,811,812,813,814,815,816,817,818,819,820,821,822,823,824,825,826,827,828,829,830,831,832,833,834,835,836,837,838,839,840,841,842,843,844,845,846,847,848,849,850,851,852,853,854,855,856,857,858,859,860,861,862,863,864,865,866,867,868,869,870,871,872,873,874,875,876,877,878,879,880,881,882,883,884,885,886,887,888,889,890,891,892,893,894,895,896,897,898,899,900,901,902,903,904,905,906,907,908,909,910,911,912,913,914,915,916,917,918,919,920,921,922,923,924,925,926,927,928,929,930,931,932,933,934,935,936,937,938,939,940,941,942,943,944,945,946,947,948,949,950,951,952,953,954,955,956,957,958,959,960,961,962,963,964,965,966,967,968,969,970,971,972,973,974,975,976,977,978,979,980,981,982,983,984,985,986,987,988,989,990,991,992,993,994,995,996,997,998,999]",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Convert the linked list into an array.",
+    "While you can find a non-empty subarray with sum = 0, erase it.",
+    "Convert the array into a linked list."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:10.011Z",
+    "sourceUpdatedAt": null
+  }
+}

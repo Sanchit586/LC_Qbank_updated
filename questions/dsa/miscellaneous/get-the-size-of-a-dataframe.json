@@ -1,0 +1,55 @@
+{
+  "id": "2878",
+  "slug": "get-the-size-of-a-dataframe",
+  "title": "Get the Size of a DataFrame",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Easy",
+  "tags": [],
+  "statement": "```\nplayers:\n```\n\nWrite a solution to calculate and display the **number of rows and columns** of `players`.\n\nReturn the result as an array:\n\n`[number of rows, number of columns]`\n\nThe result format is in the following example.\n\n**Example 1:**\n\n```\nInput:\n+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 846       | Mason    | 21  | Forward     | RealMadrid         |\n| 749       | Riley    | 30  | Winger      | Barcelona          |\n| 155       | Bob      | 28  | Striker     | ManchesterUnited   |\n| 583       | Isabella | 32  | Goalkeeper  | Liverpool          |\n| 388       | Zachary  | 24  | Midfielder  | BayernMunich       |\n| 883       | Ava      | 23  | Defender    | Chelsea            |\n| 355       | Violet   | 18  | Striker     | Juventus           |\n| 247       | Thomas   | 27  | Striker     | ParisSaint-Germain |\n| 761       | Jack     | 33  | Midfielder  | ManchesterCity     |\n| 642       | Charlie  | 36  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+\nOutput:\n[10, 5]\nExplanation:\nThis DataFrame contains 10 rows and 5 columns.\n```",
+  "constraints": [],
+  "examples": [
+    {
+      "input": "+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 846       | Mason    | 21  | Forward     | RealMadrid         |\n| 749       | Riley    | 30  | Winger      | Barcelona          |\n| 155       | Bob      | 28  | Striker     | ManchesterUnited   |\n| 583       | Isabella | 32  | Goalkeeper  | Liverpool          |\n| 388       | Zachary  | 24  | Midfielder  | BayernMunich       |\n| 883       | Ava      | 23  | Defender    | Chelsea            |\n| 355       | Violet   | 18  | Striker     | Juventus           |\n| 247       | Thomas   | 27  | Striker     | ParisSaint-Germain |\n| 761       | Jack     | 33  | Midfielder  | ManchesterCity     |\n| 642       | Charlie  | 36  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+",
+      "output": "[10, 5]",
+      "explanation": "This DataFrame contains 10 rows and 5 columns."
+    }
+  ],
+  "starterCode": {
+    "pythondata": "import pandas as pd\n\ndef getDataframeSize(players: pd.DataFrame) -> List[int]:\n    "
+  },
+  "publicTests": [
+    {
+      "input": "+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 846       | Mason    | 21  | Forward     | RealMadrid         |\n| 749       | Riley    | 30  | Winger      | Barcelona          |\n| 155       | Bob      | 28  | Striker     | ManchesterUnited   |\n| 583       | Isabella | 32  | Goalkeeper  | Liverpool          |\n| 388       | Zachary  | 24  | Midfielder  | BayernMunich       |\n| 883       | Ava      | 23  | Defender    | Chelsea            |\n| 355       | Violet   | 18  | Striker     | Juventus           |\n| 247       | Thomas   | 27  | Striker     | ParisSaint-Germain |\n| 761       | Jack     | 33  | Midfielder  | ManchesterCity     |\n| 642       | Charlie  | 36  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+",
+      "expectedOutput": "[10, 5]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 846       | Mason    | 21  | Forward     | RealMadrid         |\n| 749       | Riley    | 30  | Winger      | Barcelona          |\n| 155       | Bob      | 28  | Striker     | ManchesterUnited   |\n| 583       | Isabella | 32  | Goalkeeper  | Liverpool          |\n| 388       | Zachary  | 24  | Midfielder  | BayernMunich       |\n| 883       | Ava      | 23  | Defender    | Chelsea            |\n| 355       | Violet   | 18  | Striker     | Juventus           |\n| 247       | Thomas   | 27  | Striker     | ParisSaint-Germain |\n| 761       | Jack     | 33  | Midfielder  | ManchesterCity     |\n| 642       | Charlie  | 36  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+",
+      "expectedOutput": "[10, 5]"
+    },
+    {
+      "input": "{\"headers\":{\"players\":[\"player_id\",\"name\",\"age\",\"position\",\"team\"]},\"rows\":{\"players\":[[846,\"Mason\",21,\"Forward\",\"RealMadrid\"],[749,\"Riley\",30,\"Winger\",\"Barcelona\"],[155,\"Bob\",28,\"Striker\",\"ManchesterUnited\"],[583,\"Isabella\",32,\"Goalkeeper\",\"Liverpool\"],[388,\"Zachary\",24,\"Midfielder\",\"BayernMunich\"],[883,\"Ava\",23,\"Defender\",\"Chelsea\"],[355,\"Violet\",18,\"Striker\",\"Juventus\"],[247,\"Thomas\",27,\"Striker\",\"ParisSaint-Germain\"],[761,\"Jack\",33,\"Midfielder\",\"ManchesterCity\"],[642,\"Charlie\",36,\"Center-back\",\"Arsenal\"]]}}",
+      "expectedOutput": null
+    },
+    {
+      "input": "+-----------+----------+-----+-------------+--------------------+\n| player_id | name     | age | position    | team               |\n+-----------+----------+-----+-------------+--------------------+\n| 847       | Mason    | 22  | Forward     | RealMadrid         |\n| 750       | Riley    | 31  | Winger      | Barcelona          |\n| 156       | Bob      | 29  | Striker     | ManchesterUnited   |\n| 584       | Isabella | 33  | Goalkeeper  | Liverpool          |\n| 389       | Zachary  | 25  | Midfielder  | BayernMunich       |\n| 884       | Ava      | 24  | Defender    | Chelsea            |\n| 356       | Violet   | 19  | Striker     | Juventus           |\n| 248       | Thomas   | 28  | Striker     | ParisSaint-Germain |\n| 762       | Jack     | 34  | Midfielder  | ManchesterCity     |\n| 643       | Charlie  | 37  | Center-back | Arsenal            |\n+-----------+----------+-----+-------------+--------------------+",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Consider using a built-in function in pandas library to get the size of a DataFrame."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/get-the-size-of-a-dataframe/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:23.266Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "id": "1425",
+  "slug": "constrained-subsequence-sum",
+  "title": "Constrained Subsequence Sum",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Dynamic Programming",
+    "Queue",
+    "Sliding Window",
+    "Heap (Priority Queue)",
+    "Monotonic Queue"
+  ],
+  "statement": "Given an integer array `nums` and an integer `k`, return the maximum sum of a **non-empty** subsequence of that array such that for every two **consecutive** integers in the subsequence, `nums[i]` and `nums[j]`, where `i < j`, the condition `j - i <= k` is satisfied.\n\nA _subsequence_ of an array is obtained by deleting some number of elements (can be zero) from the array, leaving the remaining elements in their original order.\n\n**Example 1:**\n\n```\nInput: nums = [10,2,-10,5,20], k = 2\nOutput: 37\nExplanation: The subsequence is [10, 2, 5, 20].\n```\n\n**Example 2:**\n\n```\nInput: nums = [-1,-2,-3], k = 1\nOutput: -1\nExplanation: The subsequence must be non-empty, so we choose the largest number.\n```\n\n**Example 3:**\n\n```\nInput: nums = [10,-2,-10,-5,20], k = 2\nOutput: 23\nExplanation: The subsequence is [10, -2, -5, 20].\n```\n\n**Constraints:**\n\n*   `1 <= k <= nums.length <= 10^(5)`\n*   `-10^(4) <= nums[i] <= 10^(4)`",
+  "constraints": [
+    "1 <= k <= nums.length <= 105",
+    "-104 <= nums[i] <= 104"
+  ],
+  "examples": [
+    {
+      "input": "nums = [10,2,-10,5,20], k = 2",
+      "output": "37",
+      "explanation": "The subsequence is [10, 2, 5, 20]."
+    },
+    {
+      "input": "nums = [-1,-2,-3], k = 1",
+      "output": "-1",
+      "explanation": "The subsequence must be non-empty, so we choose the largest number."
+    },
+    {
+      "input": "nums = [10,-2,-10,-5,20], k = 2",
+      "output": "23",
+      "explanation": "The subsequence is [10, -2, -5, 20]."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int constrainedSubsetSum(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int constrainedSubsetSum(int[] nums, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def constrainedSubsetSum(self, nums: list[int], k: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def constrainedSubsetSum(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number}\n */\nvar constrainedSubsetSum = function(nums, k) {\n    \n};",
+    "typescript": "function constrainedSubsetSum(nums: number[], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ConstrainedSubsetSum(int[] nums, int k) {\n        \n    }\n}",
+    "c": "int constrainedSubsetSum(int* nums, int numsSize, int k) {\n    \n}",
+    "golang": "func constrainedSubsetSum(nums []int, k int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun constrainedSubsetSum(nums: IntArray, k: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func constrainedSubsetSum(_ nums: [Int], _ k: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn constrained_subset_sum(nums: Vec<i32>, k: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer}\ndef constrained_subset_sum(nums, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer\n     */\n    function constrainedSubsetSum($nums, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int constrainedSubsetSum(List<int> nums, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def constrainedSubsetSum(nums: Array[Int], k: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec constrained_subset_sum(nums :: [integer], k :: integer) :: integer\n  def constrained_subset_sum(nums, k) do\n    \n  end\nend",
+    "erlang": "-spec constrained_subset_sum(Nums :: [integer()], K :: integer()) -> integer().\nconstrained_subset_sum(Nums, K) ->\n  .",
+    "racket": "(define/contract (constrained-subset-sum nums k)\n  (-> (listof exact-integer?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [10,2,-10,5,20], k = 2",
+      "expectedOutput": "37"
+    },
+    {
+      "input": "nums = [-1,-2,-3], k = 1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "nums = [10,-2,-10,-5,20], k = 2",
+      "expectedOutput": "23"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [10,2,-10,5,20], k = 2",
+      "expectedOutput": "37"
+    },
+    {
+      "input": "nums = [-1,-2,-3], k = 1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "nums = [10,-2,-10,-5,20], k = 2",
+      "expectedOutput": "23"
+    },
+    {
+      "input": "[10,2,-10,5,20]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,-2,-3]\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,-2,-10,-5,20]\n2",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Use dynamic programming.",
+    "Let dp[i] be the solution for the prefix of the array that ends at index i, if the element at index i is in the subsequence.",
+    "dp[i] = nums[i] + max(0, dp[i-k], dp[i-k+1], ..., dp[i-1])",
+    "Use a heap with the sliding window technique to optimize the dp."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/constrained-subsequence-sum/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:01.079Z",
+    "sourceUpdatedAt": null
+  }
+}

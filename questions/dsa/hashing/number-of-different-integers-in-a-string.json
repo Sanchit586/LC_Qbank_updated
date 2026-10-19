@@ -1,0 +1,166 @@
+{
+  "id": "1805",
+  "slug": "number-of-different-integers-in-a-string",
+  "title": "Number of Different Integers in a String",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "statement": "You are given a string `word` that consists of digits and lowercase English letters.\n\nYou will replace every non-digit character with a space. For example, `\"a123bc34d8ef34\"` will become `\" 123  34 8  34\"`. Notice that you are left with some integers that are separated by at least one space: `\"123\"`, `\"34\"`, `\"8\"`, and `\"34\"`.\n\nReturn _the number of **different** integers after performing the replacement operations on_ `word`.\n\nTwo integers are considered different if their decimal representations **without any leading zeros** are different.\n\n**Example 1:**\n\n```\nInput: word = \"a123bc34d8ef34\"\nOutput: 3\nExplanation: The three different integers are \"123\", \"34\", and \"8\". Notice that \"34\" is only counted once.\n```\n\n**Example 2:**\n\n```\nInput: word = \"leet1234code234\"\nOutput: 2\n```\n\n**Example 3:**\n\n```\nInput: word = \"a1b01c001\"\nOutput: 1\nExplanation: The three integers \"1\", \"01\", and \"001\" all represent the same integer because\nthe leading zeros are ignored when comparing their decimal values.\n```\n\n**Constraints:**\n\n*   `1 <= word.length <= 1000`\n*   `word` consists of digits and lowercase English letters.",
+  "constraints": [
+    "1 <= word.length <= 1000",
+    "word consists of digits and lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "output": "3",
+      "explanation": "The three different integers are &quot;123&quot;, &quot;34&quot;, and &quot;8&quot;. Notice that &quot;34&quot; is only counted once."
+    },
+    {
+      "input": "word = &quot;leet1234code234&quot;",
+      "output": "2",
+      "explanation": null
+    },
+    {
+      "input": "word = &quot;a1b01c001&quot;",
+      "output": "1",
+      "explanation": "The three integers &quot;1&quot;, &quot;01&quot;, and &quot;001&quot; all represent the same integer because\nthe leading zeros are ignored when comparing their decimal values."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int numDifferentIntegers(string word) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int numDifferentIntegers(String word) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def numDifferentIntegers(self, word: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def numDifferentIntegers(self, word):\n        \"\"\"\n        :type word: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} word\n * @return {number}\n */\nvar numDifferentIntegers = function(word) {\n    \n};",
+    "typescript": "function numDifferentIntegers(word: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int NumDifferentIntegers(string word) {\n        \n    }\n}",
+    "c": "int numDifferentIntegers(char* word) {\n    \n}",
+    "golang": "func numDifferentIntegers(word string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun numDifferentIntegers(word: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func numDifferentIntegers(_ word: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn num_different_integers(word: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} word\n# @return {Integer}\ndef num_different_integers(word)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $word\n     * @return Integer\n     */\n    function numDifferentIntegers($word) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int numDifferentIntegers(String word) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def numDifferentIntegers(word: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec num_different_integers(word :: String.t) :: integer\n  def num_different_integers(word) do\n    \n  end\nend",
+    "erlang": "-spec num_different_integers(Word :: unicode:unicode_binary()) -> integer().\nnum_different_integers(Word) ->\n  .",
+    "racket": "(define/contract (num-different-integers word)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "word = &quot;leet1234code234&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "word = &quot;a1b01c001&quot;",
+      "expectedOutput": "1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "word = &quot;a123bc34d8ef34&quot;",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "word = &quot;leet1234code234&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "word = &quot;a1b01c001&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a123bc34d8ef34\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leet1234code234\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a1b01c001\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Try to split the string so that each integer is in a different string.",
+    "Try to remove each integer's leading zeroes and compare the strings to find how many of them are unique."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/number-of-different-integers-in-a-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:38.971Z",
+    "sourceUpdatedAt": null
+  }
+}

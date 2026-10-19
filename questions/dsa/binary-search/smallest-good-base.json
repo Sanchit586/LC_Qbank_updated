@@ -1,0 +1,163 @@
+{
+  "id": "483",
+  "slug": "smallest-good-base",
+  "title": "Smallest Good Base",
+  "category": "dsa",
+  "subcategory": "binary-search",
+  "difficulty": "Hard",
+  "tags": [
+    "Math",
+    "Binary Search"
+  ],
+  "statement": "Given an integer `n` represented as a string, return _the smallest **good base** of_ `n`.\n\nWe call `k >= 2` a **good base** of `n`, if all digits of `n` base `k` are `1`'s.\n\n**Example 1:**\n\n```\nInput: n = \"13\"\nOutput: \"3\"\nExplanation: 13 base 3 is 111.\n```\n\n**Example 2:**\n\n```\nInput: n = \"4681\"\nOutput: \"8\"\nExplanation: 4681 base 8 is 11111.\n```\n\n**Example 3:**\n\n```\nInput: n = \"1000000000000000000\"\nOutput: \"999999999999999999\"\nExplanation: 1000000000000000000 base 999999999999999999 is 11.\n```\n\n**Constraints:**\n\n*   `n` is an integer in the range `[3, 10^(18)]`.\n*   `n` does not contain any leading zeros.",
+  "constraints": [
+    "n is an integer in the range [3, 1018].",
+    "n does not contain any leading zeros."
+  ],
+  "examples": [
+    {
+      "input": "n = &quot;13&quot;",
+      "output": "&quot;3&quot;",
+      "explanation": "13 base 3 is 111."
+    },
+    {
+      "input": "n = &quot;4681&quot;",
+      "output": "&quot;8&quot;",
+      "explanation": "4681 base 8 is 11111."
+    },
+    {
+      "input": "n = &quot;1000000000000000000&quot;",
+      "output": "&quot;999999999999999999&quot;",
+      "explanation": "1000000000000000000 base 999999999999999999 is 11."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string smallestGoodBase(string n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String smallestGoodBase(String n) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def smallestGoodBase(self, n: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def smallestGoodBase(self, n):\n        \"\"\"\n        :type n: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} n\n * @return {string}\n */\nvar smallestGoodBase = function(n) {\n    \n};",
+    "typescript": "function smallestGoodBase(n: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string SmallestGoodBase(string n) {\n        \n    }\n}",
+    "c": "char* smallestGoodBase(char* n) {\n    \n}",
+    "golang": "func smallestGoodBase(n string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun smallestGoodBase(n: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func smallestGoodBase(_ n: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn smallest_good_base(n: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} n\n# @return {String}\ndef smallest_good_base(n)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $n\n     * @return String\n     */\n    function smallestGoodBase($n) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String smallestGoodBase(String n) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def smallestGoodBase(n: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec smallest_good_base(n :: String.t) :: String.t\n  def smallest_good_base(n) do\n    \n  end\nend",
+    "erlang": "-spec smallest_good_base(N :: unicode:unicode_binary()) -> unicode:unicode_binary().\nsmallest_good_base(N) ->\n  .",
+    "racket": "(define/contract (smallest-good-base n)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "n = &quot;13&quot;",
+      "expectedOutput": "&quot;3&quot;"
+    },
+    {
+      "input": "n = &quot;4681&quot;",
+      "expectedOutput": "&quot;8&quot;"
+    },
+    {
+      "input": "n = &quot;1000000000000000000&quot;",
+      "expectedOutput": "&quot;999999999999999999&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "n = &quot;13&quot;",
+      "expectedOutput": "&quot;3&quot;"
+    },
+    {
+      "input": "n = &quot;4681&quot;",
+      "expectedOutput": "&quot;8&quot;"
+    },
+    {
+      "input": "n = &quot;1000000000000000000&quot;",
+      "expectedOutput": "&quot;999999999999999999&quot;"
+    },
+    {
+      "input": "\"13\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"4681\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1000000000000000000\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/smallest-good-base/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:30.079Z",
+    "sourceUpdatedAt": null
+  }
+}

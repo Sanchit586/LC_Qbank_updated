@@ -1,0 +1,165 @@
+{
+  "id": "3760",
+  "slug": "maximum-substrings-with-distinct-start",
+  "title": "Maximum Substrings With Distinct Start",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Medium",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "statement": "You are given a string `s` consisting of lowercase English letters.\n\nReturn an integer denoting the **maximum** number of substrings you can split `s` into such that each **substring** starts with a **distinct** character (i.e., no two substrings start with the same character).\n\n**Example 1:**\n\n**Input:** s = \"abab\"\n\n**Output:** 2\n\n**Explanation:**\n\n*   Split `\"abab\"` into `\"a\"` and `\"bab\"`.\n*   Each substring starts with a distinct character i.e `'a'` and `'b'`. Thus, the answer is 2.\n\n**Example 2:**\n\n**Input:** s = \"abcd\"\n\n**Output:** 4\n\n**Explanation:**\n\n*   Split `\"abcd\"` into `\"a\"`, `\"b\"`, `\"c\"`, and `\"d\"`.\n*   Each substring starts with a distinct character. Thus, the answer is 4.\n\n**Example 3:**\n\n**Input:** s = \"aaaa\"\n\n**Output:** 1\n\n**Explanation:**\n\n*   All characters in `\"aaaa\"` are `'a'`.\n*   Only one substring can start with `'a'`. Thus, the answer is 1.\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(5)`\n*   `s` consists of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 105",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abab&quot;",
+      "output": "2",
+      "explanation": "Split &quot;abab&quot; into &quot;a&quot; and &quot;bab&quot;.\n\tEach substring starts with a distinct character i.e &#39;a&#39; and &#39;b&#39;. Thus, the answer is 2."
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "output": "4",
+      "explanation": "Split &quot;abcd&quot; into &quot;a&quot;, &quot;b&quot;, &quot;c&quot;, and &quot;d&quot;.\n\tEach substring starts with a distinct character. Thus, the answer is 4."
+    },
+    {
+      "input": "s = &quot;aaaa&quot;",
+      "output": "1",
+      "explanation": "All characters in &quot;aaaa&quot; are &#39;a&#39;.\n\tOnly one substring can start with &#39;a&#39;. Thus, the answer is 1."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxDistinct(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxDistinct(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxDistinct(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def maxDistinct(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxDistinct = function(s) {\n    \n};",
+    "typescript": "function maxDistinct(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxDistinct(string s) {\n        \n    }\n}",
+    "c": "int maxDistinct(char* s) {\n    \n}",
+    "golang": "func maxDistinct(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxDistinct(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxDistinct(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_distinct(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef max_distinct(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxDistinct($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int maxDistinct(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxDistinct(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_distinct(s :: String.t) :: integer\n  def max_distinct(s) do\n    \n  end\nend",
+    "erlang": "-spec max_distinct(S :: unicode:unicode_binary()) -> integer().\nmax_distinct(S) ->\n  .",
+    "racket": "(define/contract (max-distinct s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abab&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;aaaa&quot;",
+      "expectedOutput": "1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abab&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abcd&quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;aaaa&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcd\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Count the number of distinct characters in <code>s</code>"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/maximum-substrings-with-distinct-start/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:32.590Z",
+    "sourceUpdatedAt": null
+  }
+}

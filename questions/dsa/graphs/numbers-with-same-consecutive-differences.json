@@ -1,0 +1,94 @@
+{
+  "id": "967",
+  "slug": "numbers-with-same-consecutive-differences",
+  "title": "Numbers With Same Consecutive Differences",
+  "category": "dsa",
+  "subcategory": "graphs",
+  "difficulty": "Medium",
+  "tags": [
+    "Backtracking",
+    "Breadth-First Search"
+  ],
+  "statement": "Given two integers n and k, return _an array of all the integers of length_ `n` _where the difference between every two consecutive digits is_ `k`. You may return the answer in **any order**.\n\nNote that the integers should not have leading zeros. Integers as `02` and `043` are not allowed.\n\n**Example 1:**\n\n```\nInput: n = 3, k = 7\nOutput: [181,292,707,818,929]\nExplanation: Note that 070 is not a valid number, because it has leading zeroes.\n```\n\n**Example 2:**\n\n```\nInput: n = 2, k = 1\nOutput: [10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]\n```\n\n**Constraints:**\n\n*   `2 <= n <= 9`\n*   `0 <= k <= 9`",
+  "constraints": [
+    "2 <= n <= 9",
+    "0 <= k <= 9"
+  ],
+  "examples": [
+    {
+      "input": "n = 3, k = 7",
+      "output": "[181,292,707,818,929]",
+      "explanation": "Note that 070 is not a valid number, because it has leading zeroes."
+    },
+    {
+      "input": "n = 2, k = 1",
+      "output": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> numsSameConsecDiff(int n, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] numsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def numsSameConsecDiff(self, n: int, k: int) -> list[int]:\n        ",
+    "python": "class Solution(object):\n    def numsSameConsecDiff(self, n, k):\n        \"\"\"\n        :type n: int\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} n\n * @param {number} k\n * @return {number[]}\n */\nvar numsSameConsecDiff = function(n, k) {\n    \n};",
+    "typescript": "function numsSameConsecDiff(n: number, k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] NumsSameConsecDiff(int n, int k) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* numsSameConsecDiff(int n, int k, int* returnSize) {\n    \n}",
+    "golang": "func numsSameConsecDiff(n int, k int) []int {\n    \n}",
+    "kotlin": "class Solution {\n    fun numsSameConsecDiff(n: Int, k: Int): IntArray {\n        \n    }\n}",
+    "swift": "class Solution {\n    func numsSameConsecDiff(_ n: Int, _ k: Int) -> [Int] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn nums_same_consec_diff(n: i32, k: i32) -> Vec<i32> {\n        \n    }\n}",
+    "ruby": "# @param {Integer} n\n# @param {Integer} k\n# @return {Integer[]}\ndef nums_same_consec_diff(n, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $n\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function numsSameConsecDiff($n, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<int> numsSameConsecDiff(int n, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def numsSameConsecDiff(n: Int, k: Int): Array[Int] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec nums_same_consec_diff(n :: integer, k :: integer) :: [integer]\n  def nums_same_consec_diff(n, k) do\n    \n  end\nend",
+    "erlang": "-spec nums_same_consec_diff(N :: integer(), K :: integer()) -> [integer()].\nnums_same_consec_diff(N, K) ->\n  .",
+    "racket": "(define/contract (nums-same-consec-diff n k)\n  (-> exact-integer? exact-integer? (listof exact-integer?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "n = 3, k = 7",
+      "expectedOutput": "[181,292,707,818,929]"
+    },
+    {
+      "input": "n = 2, k = 1",
+      "expectedOutput": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "n = 3, k = 7",
+      "expectedOutput": "[181,292,707,818,929]"
+    },
+    {
+      "input": "n = 2, k = 1",
+      "expectedOutput": "[10,12,21,23,32,34,43,45,54,56,65,67,76,78,87,89,98]"
+    },
+    {
+      "input": "3\n7",
+      "expectedOutput": null
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "n = 4, k = 8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/numbers-with-same-consecutive-differences/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:48.929Z",
+    "sourceUpdatedAt": null
+  }
+}

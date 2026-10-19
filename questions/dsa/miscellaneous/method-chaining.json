@@ -1,0 +1,53 @@
+{
+  "id": "2891",
+  "slug": "method-chaining",
+  "title": "Method Chaining",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Easy",
+  "tags": [],
+  "statement": "```\nanimals\n```\n\nWrite a solution to list the names of animals that weigh **strictly more than** `100` kilograms.\n\nReturn the animals sorted by weight in **descending order**.\n\nThe result format is in the following example.\n\n**Example 1:**\n\n```\nInput: \nDataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 98  | 464    |\n| Khaled   | Giraffe | 50  | 41     |\n| Alex     | Leopard | 6   | 328    |\n| Jonathan | Monkey  | 45  | 463    |\n| Stefan   | Bear    | 100 | 50     |\n| Tommy    | Panda   | 26  | 349    |\n+----------+---------+-----+--------+\nOutput: \n+----------+\n| name     |\n+----------+\n| Tatiana  |\n| Jonathan |\n| Tommy    |\n| Alex     |\n+----------+\nExplanation: \nAll animals weighing more than 100 should be included in the results table.\nTatiana's weight is 464, Jonathan's weight is 463, Tommy's weight is 349, and Alex's weight is 328.\nThe results should be sorted in descending order of weight.\n```\n\nIn Pandas, **method chaining** enables us to perform operations on a DataFrame without breaking up each operation into a separate line or creating multiple temporary variables. \n\nCan you complete this task in just **one line** of code using method chaining?",
+  "constraints": [],
+  "examples": [
+    {
+      "input": "DataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 98  | 464    |\n| Khaled   | Giraffe | 50  | 41     |\n| Alex     | Leopard | 6   | 328    |\n| Jonathan | Monkey  | 45  | 463    |\n| Stefan   | Bear    | 100 | 50     |\n| Tommy    | Panda   | 26  | 349    |\n+----------+---------+-----+--------+",
+      "output": "+----------+\n| name     |\n+----------+\n| Tatiana  |\n| Jonathan |\n| Tommy    |\n| Alex     |\n+----------+",
+      "explanation": "All animals weighing more than 100 should be included in the results table.\nTatiana&#39;s weight is 464, Jonathan&#39;s weight is 463, Tommy&#39;s weight is 349, and Alex&#39;s weight is 328.\nThe results should be sorted in descending order of weight."
+    }
+  ],
+  "starterCode": {
+    "pythondata": "import pandas as pd\n\ndef findHeavyAnimals(animals: pd.DataFrame) -> pd.DataFrame:\n    "
+  },
+  "publicTests": [
+    {
+      "input": "DataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 98  | 464    |\n| Khaled   | Giraffe | 50  | 41     |\n| Alex     | Leopard | 6   | 328    |\n| Jonathan | Monkey  | 45  | 463    |\n| Stefan   | Bear    | 100 | 50     |\n| Tommy    | Panda   | 26  | 349    |\n+----------+---------+-----+--------+",
+      "expectedOutput": "+----------+\n| name     |\n+----------+\n| Tatiana  |\n| Jonathan |\n| Tommy    |\n| Alex     |\n+----------+"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "DataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 98  | 464    |\n| Khaled   | Giraffe | 50  | 41     |\n| Alex     | Leopard | 6   | 328    |\n| Jonathan | Monkey  | 45  | 463    |\n| Stefan   | Bear    | 100 | 50     |\n| Tommy    | Panda   | 26  | 349    |\n+----------+---------+-----+--------+",
+      "expectedOutput": "+----------+\n| name     |\n+----------+\n| Tatiana  |\n| Jonathan |\n| Tommy    |\n| Alex     |\n+----------+"
+    },
+    {
+      "input": "{\"headers\":{\"animals\":[\"name\",\"species\",\"age\",\"weight\"]},\"rows\":{\"animals\":[[\"Tatiana\",\"Snake\",98,464],[\"Khaled\",\"Giraffe\",50,41],[\"Alex\",\"Leopard\",6,328],[\"Jonathan\",\"Monkey\",45,463],[\"Stefan\",\"Bear\",100,50],[\"Tommy\",\"Panda\",26,349]]}}",
+      "expectedOutput": null
+    },
+    {
+      "input": "DataFrame animals:\n+----------+---------+-----+--------+\n| name     | species | age | weight |\n+----------+---------+-----+--------+\n| Tatiana  | Snake   | 99  | 465    |\n| Khaled   | Giraffe | 51  | 42     |\n| Alex     | Leopard | 7   | 329    |\n| Jonathan | Monkey  | 46  | 464    |\n| Stefan   | Bear    | 101 | 51     |\n| Tommy    | Panda   | 27  | 350    |\n+----------+---------+-----+--------+",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/method-chaining/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:40.021Z",
+    "sourceUpdatedAt": null
+  }
+}

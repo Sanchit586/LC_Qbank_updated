@@ -1,0 +1,154 @@
+{
+  "id": "664",
+  "slug": "strange-printer",
+  "title": "Strange Printer",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "String",
+    "Dynamic Programming"
+  ],
+  "statement": "There is a strange printer with the following two special properties:\n\n*   The printer can only print a sequence of **the same character** each time.\n*   At each turn, the printer can print new characters starting from and ending at any place and will cover the original existing characters.\n\nGiven a string `s`, return _the minimum number of turns the printer needed to print it_.\n\n**Example 1:**\n\n```\nInput: s = \"aaabbb\"\nOutput: 2\nExplanation: Print \"aaa\" first and then print \"bbb\".\n```\n\n**Example 2:**\n\n```\nInput: s = \"aba\"\nOutput: 2\nExplanation: Print \"aaa\" first and then print \"b\" from the second place of the string, which will cover the existing character 'a'.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 100`\n*   `s` consists of lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s consists of lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;aaabbb&quot;",
+      "output": "2",
+      "explanation": "Print &quot;aaa&quot; first and then print &quot;bbb&quot;."
+    },
+    {
+      "input": "s = &quot;aba&quot;",
+      "output": "2",
+      "explanation": "Print &quot;aaa&quot; first and then print &quot;b&quot; from the second place of the string, which will cover the existing character &#39;a&#39;."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int strangePrinter(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int strangePrinter(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def strangePrinter(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def strangePrinter(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar strangePrinter = function(s) {\n    \n};",
+    "typescript": "function strangePrinter(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int StrangePrinter(string s) {\n        \n    }\n}",
+    "c": "int strangePrinter(char* s) {\n    \n}",
+    "golang": "func strangePrinter(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun strangePrinter(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func strangePrinter(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn strange_printer(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef strange_printer(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function strangePrinter($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int strangePrinter(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def strangePrinter(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec strange_printer(s :: String.t) :: integer\n  def strange_printer(s) do\n    \n  end\nend",
+    "erlang": "-spec strange_printer(S :: unicode:unicode_binary()) -> integer().\nstrange_printer(S) ->\n  .",
+    "racket": "(define/contract (strange-printer s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;aaabbb&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;aba&quot;",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;aaabbb&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;aba&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaabbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/strange-printer/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:49.415Z",
+    "sourceUpdatedAt": null
+  }
+}

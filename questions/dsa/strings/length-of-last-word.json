@@ -1,0 +1,163 @@
+{
+  "id": "58",
+  "slug": "length-of-last-word",
+  "title": "Length of Last Word",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "String"
+  ],
+  "statement": "Given a string `s` consisting of words and spaces, return _the length of the **last** word in the string._\n\nA **word** is a maximal substring consisting of non-space characters only.\n\n**Example 1:**\n\n```\nInput: s = \"Hello World\"\nOutput: 5\nExplanation: The last word is \"World\" with length 5.\n```\n\n**Example 2:**\n\n```\nInput: s = \"   fly me   to   the moon  \"\nOutput: 4\nExplanation: The last word is \"moon\" with length 4.\n```\n\n**Example 3:**\n\n```\nInput: s = \"luffy is still joyboy\"\nOutput: 6\nExplanation: The last word is \"joyboy\" with length 6.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(4)`\n*   `s` consists of only English letters and spaces `' '`.\n*   There will be at least one word in `s`.",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s consists of only English letters and spaces ' '.",
+    "There will be at least one word in s."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;Hello World&quot;",
+      "output": "5",
+      "explanation": "The last word is &quot;World&quot; with length 5."
+    },
+    {
+      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "output": "4",
+      "explanation": "The last word is &quot;moon&quot; with length 4."
+    },
+    {
+      "input": "s = &quot;luffy is still joyboy&quot;",
+      "output": "6",
+      "explanation": "The last word is &quot;joyboy&quot; with length 6."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int lengthOfLastWord(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int lengthOfLastWord(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def lengthOfLastWord(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def lengthOfLastWord(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar lengthOfLastWord = function(s) {\n    \n};",
+    "typescript": "function lengthOfLastWord(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int LengthOfLastWord(string s) {\n        \n    }\n}",
+    "c": "int lengthOfLastWord(char* s) {\n    \n}",
+    "golang": "func lengthOfLastWord(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun lengthOfLastWord(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func lengthOfLastWord(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn length_of_last_word(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef length_of_last_word(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function lengthOfLastWord($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int lengthOfLastWord(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def lengthOfLastWord(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec length_of_last_word(s :: String.t) :: integer\n  def length_of_last_word(s) do\n    \n  end\nend",
+    "erlang": "-spec length_of_last_word(S :: unicode:unicode_binary()) -> integer().\nlength_of_last_word(S) ->\n  .",
+    "racket": "(define/contract (length-of-last-word s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;Hello World&quot;",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;luffy is still joyboy&quot;",
+      "expectedOutput": "6"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;Hello World&quot;",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "s = &quot;   fly me   to   the moon  &quot;",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "s = &quot;luffy is still joyboy&quot;",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"Hello World\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"   fly me   to   the moon  \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"luffy is still joyboy\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/length-of-last-word/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:07:48.945Z",
+    "sourceUpdatedAt": null
+  }
+}

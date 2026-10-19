@@ -1,0 +1,169 @@
+{
+  "id": "2232",
+  "slug": "minimize-result-by-adding-parentheses-to-expression",
+  "title": "Minimize Result by Adding Parentheses to Expression",
+  "category": "dsa",
+  "subcategory": "simulation",
+  "difficulty": "Medium",
+  "tags": [
+    "String",
+    "Enumeration"
+  ],
+  "statement": "You are given a **0-indexed** string `expression` of the form `\"<num1>+<num2>\"` where `<num1>` and `<num2>` represent positive integers.\n\nAdd a pair of parentheses to `expression` such that after the addition of parentheses, `expression` is a **valid** mathematical expression and evaluates to the **smallest** possible value. The left parenthesis **must** be added to the left of `'+'` and the right parenthesis **must** be added to the right of `'+'`.\n\nReturn `expression` _after adding a pair of parentheses such that_ `expression` _evaluates to the **smallest** possible value._ If there are multiple answers that yield the same result, return any of them.\n\nThe input has been generated such that the original value of `expression`, and the value of `expression` after adding any pair of parentheses that meets the requirements fits within a signed 32-bit integer.\n\n**Example 1:**\n\n```\nexpression\n```\n\n**Example 2:**\n\n```\nInput: expression = \"12+34\"\nOutput: \"1(2+3)4\"\nExplanation: The expression evaluates to 1 * (2 + 3) * 4 = 1 * 5 * 4 = 20.\n```\n\n**Example 3:**\n\n```\nexpression\n```\n\n**Constraints:**\n\n*   `3 <= expression.length <= 10`\n*   `expression` consists of digits from `'1'` to `'9'` and `'+'`.\n*   `expression` starts and ends with digits.\n*   `expression` contains exactly one `'+'`.\n*   The original value of `expression`, and the value of `expression` after adding any pair of parentheses that meets the requirements fits within a signed 32-bit integer.",
+  "constraints": [
+    "3 <= expression.length <= 10",
+    "expression consists of digits from '1' to '9' and '+'.",
+    "expression starts and ends with digits.",
+    "expression contains exactly one '+'.",
+    "The original value of expression, and the value of expression after adding any pair of parentheses that meets the requirements fits within a signed 32-bit integer."
+  ],
+  "examples": [
+    {
+      "input": "expression = &quot;247+38&quot;",
+      "output": "&quot;2(47+38)&quot;",
+      "explanation": "The expression evaluates to 2 * (47 + 38) = 2 * 85 = 170.\nNote that &quot;2(4)7+38&quot; is invalid because the right parenthesis must be to the right of the &#39;+&#39;.\nIt can be shown that 170 is the smallest possible value."
+    },
+    {
+      "input": "expression = &quot;12+34&quot;",
+      "output": "&quot;1(2+3)4&quot;",
+      "explanation": "The expression evaluates to 1 * (2 + 3) * 4 = 1 * 5 * 4 = 20."
+    },
+    {
+      "input": "expression = &quot;999+999&quot;",
+      "output": "&quot;(999+999)&quot;",
+      "explanation": "The expression evaluates to 999 + 999 = 1998."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string minimizeResult(string expression) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String minimizeResult(String expression) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minimizeResult(self, expression: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def minimizeResult(self, expression):\n        \"\"\"\n        :type expression: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} expression\n * @return {string}\n */\nvar minimizeResult = function(expression) {\n    \n};",
+    "typescript": "function minimizeResult(expression: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string MinimizeResult(string expression) {\n        \n    }\n}",
+    "c": "char* minimizeResult(char* expression) {\n    \n}",
+    "golang": "func minimizeResult(expression string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun minimizeResult(expression: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minimizeResult(_ expression: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn minimize_result(expression: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} expression\n# @return {String}\ndef minimize_result(expression)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $expression\n     * @return String\n     */\n    function minimizeResult($expression) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String minimizeResult(String expression) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minimizeResult(expression: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec minimize_result(expression :: String.t) :: String.t\n  def minimize_result(expression) do\n    \n  end\nend",
+    "erlang": "-spec minimize_result(Expression :: unicode:unicode_binary()) -> unicode:unicode_binary().\nminimize_result(Expression) ->\n  .",
+    "racket": "(define/contract (minimize-result expression)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "expression = &quot;247+38&quot;",
+      "expectedOutput": "&quot;2(47+38)&quot;"
+    },
+    {
+      "input": "expression = &quot;12+34&quot;",
+      "expectedOutput": "&quot;1(2+3)4&quot;"
+    },
+    {
+      "input": "expression = &quot;999+999&quot;",
+      "expectedOutput": "&quot;(999+999)&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "expression = &quot;247+38&quot;",
+      "expectedOutput": "&quot;2(47+38)&quot;"
+    },
+    {
+      "input": "expression = &quot;12+34&quot;",
+      "expectedOutput": "&quot;1(2+3)4&quot;"
+    },
+    {
+      "input": "expression = &quot;999+999&quot;",
+      "expectedOutput": "&quot;(999+999)&quot;"
+    },
+    {
+      "input": "\"247+38\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"12+34\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"999+999\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "The maximum length of expression is very low. We can try every possible spot to place the parentheses.",
+    "Every possibility of expression is of the form a * (b + c) * d where a, b, c, d represent integers. Note the edge cases where a and/or d do not exist, in which case use 1 instead of them."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/minimize-result-by-adding-parentheses-to-expression/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:41.764Z",
+    "sourceUpdatedAt": null
+  }
+}

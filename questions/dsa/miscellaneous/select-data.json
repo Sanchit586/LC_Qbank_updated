@@ -1,0 +1,45 @@
+{
+  "id": "2880",
+  "slug": "select-data",
+  "title": "Select Data",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Easy",
+  "tags": [],
+  "statement": "```\nDataFrame students\n+-------------+--------+\n| Column Name | Type   |\n+-------------+--------+\n| student_id  | int    |\n| name        | object |\n| age         | int    |\n+-------------+--------+\n```\n\nWrite a solution to select the name and age of the student with `student_id = 101`.\n\nThe result format is in the following example.\n\n```\nExample 1:\nInput:\n+------------+---------+-----+\n| student_id | name    | age |\n+------------+---------+-----+\n| 101        | Ulysses | 13  |\n| 53         | William | 10  |\n| 128        | Henry   | 6   |\n| 3          | Henry   | 11  |\n+------------+---------+-----+\nOutput:\n+---------+-----+\n| name    | age | \n+---------+-----+\n| Ulysses | 13  |\n+---------+-----+\nExplanation:\nStudent Ulysses has student_id = 101, we select the name and age.\n```",
+  "constraints": [],
+  "examples": [],
+  "starterCode": {
+    "pythondata": "import pandas as pd\n\ndef selectData(students: pd.DataFrame) -> pd.DataFrame:\n    "
+  },
+  "publicTests": [
+    {
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[101,\"Ulysses\",13],[53,\"William\",10],[128,\"Henry\",6],[3,\"Henry\",11]]}}",
+      "expectedOutput": null
+    }
+  ],
+  "testCases": [
+    {
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[101,\"Ulysses\",13],[53,\"William\",10],[128,\"Henry\",6],[3,\"Henry\",11]]}}",
+      "expectedOutput": null
+    },
+    {
+      "input": "{\"headers\":{\"students\":[\"student_id\",\"name\",\"age\"]},\"rows\":{\"students\":[[102,\"Ulysses\",14],[54,\"William\",11],[129,\"Henry\",7],[4,\"Henry\",12]]}}",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Consider applying both row and column filtering to select the desired data."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/select-data/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:19.282Z",
+    "sourceUpdatedAt": null
+  }
+}

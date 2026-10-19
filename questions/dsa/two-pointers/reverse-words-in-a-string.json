@@ -1,0 +1,164 @@
+{
+  "id": "151",
+  "slug": "reverse-words-in-a-string",
+  "title": "Reverse Words in a String",
+  "category": "dsa",
+  "subcategory": "two-pointers",
+  "difficulty": "Medium",
+  "tags": [
+    "Two Pointers",
+    "String"
+  ],
+  "statement": "Given an input string `s`, reverse the order of the **words**.\n\nA **word** is defined as a sequence of non-space characters. The **words** in `s` will be separated by at least one space.\n\nReturn _a string of the words in reverse order concatenated by a single space._\n\n**Note** that `s` may contain leading or trailing spaces or multiple spaces between two words. The returned string should only have a single space separating the words. Do not include any extra spaces.\n\n**Example 1:**\n\n```\nInput: s = \"the sky is blue\"\nOutput: \"blue is sky the\"\n```\n\n**Example 2:**\n\n```\nInput: s = \"  hello world  \"\nOutput: \"world hello\"\nExplanation: Your reversed string should not contain leading or trailing spaces.\n```\n\n**Example 3:**\n\n```\nInput: s = \"a good   example\"\nOutput: \"example good a\"\nExplanation: You need to reduce multiple spaces between two words to a single space in the reversed string.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 10^(4)`\n*   `s` contains English letters (upper-case and lower-case), digits, and spaces `' '`.\n*   There is **at least one** word in `s`.\n\n**Follow-up:** If the string data type is mutable in your language, can you solve it **in-place** with `O(1)` extra space?",
+  "constraints": [
+    "1 <= s.length <= 104",
+    "s contains English letters (upper-case and lower-case), digits, and spaces ' '.",
+    "There is at least one word in s."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;the sky is blue&quot;",
+      "output": "&quot;blue is sky the&quot;",
+      "explanation": null
+    },
+    {
+      "input": "s = &quot;  hello world  &quot;",
+      "output": "&quot;world hello&quot;",
+      "explanation": "Your reversed string should not contain leading or trailing spaces."
+    },
+    {
+      "input": "s = &quot;a good   example&quot;",
+      "output": "&quot;example good a&quot;",
+      "explanation": "You need to reduce multiple spaces between two words to a single space in the reversed string."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    string reverseWords(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public String reverseWords(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def reverseWords(self, s: str) -> str:\n        ",
+    "python": "class Solution(object):\n    def reverseWords(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: str\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {string}\n */\nvar reverseWords = function(s) {\n    \n};",
+    "typescript": "function reverseWords(s: string): string {\n    \n};",
+    "csharp": "public class Solution {\n    public string ReverseWords(string s) {\n        \n    }\n}",
+    "c": "char* reverseWords(char* s) {\n    \n}",
+    "golang": "func reverseWords(s string) string {\n    \n}",
+    "kotlin": "class Solution {\n    fun reverseWords(s: String): String {\n        \n    }\n}",
+    "swift": "class Solution {\n    func reverseWords(_ s: String) -> String {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn reverse_words(s: String) -> String {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {String}\ndef reverse_words(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return String\n     */\n    function reverseWords($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  String reverseWords(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def reverseWords(s: String): String = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec reverse_words(s :: String.t) :: String.t\n  def reverse_words(s) do\n    \n  end\nend",
+    "erlang": "-spec reverse_words(S :: unicode:unicode_binary()) -> unicode:unicode_binary().\nreverse_words(S) ->\n  .",
+    "racket": "(define/contract (reverse-words s)\n  (-> string? string?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;the sky is blue&quot;",
+      "expectedOutput": "&quot;blue is sky the&quot;"
+    },
+    {
+      "input": "s = &quot;  hello world  &quot;",
+      "expectedOutput": "&quot;world hello&quot;"
+    },
+    {
+      "input": "s = &quot;a good   example&quot;",
+      "expectedOutput": "&quot;example good a&quot;"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;the sky is blue&quot;",
+      "expectedOutput": "&quot;blue is sky the&quot;"
+    },
+    {
+      "input": "s = &quot;  hello world  &quot;",
+      "expectedOutput": "&quot;world hello&quot;"
+    },
+    {
+      "input": "s = &quot;a good   example&quot;",
+      "expectedOutput": "&quot;example good a&quot;"
+    },
+    {
+      "input": "\"the sky is blue\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"  hello world  \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a good   example\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/reverse-words-in-a-string/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:12.985Z",
+    "sourceUpdatedAt": null
+  }
+}

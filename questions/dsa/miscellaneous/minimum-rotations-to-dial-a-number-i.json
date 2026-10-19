@@ -1,0 +1,153 @@
+{
+  "id": "4070",
+  "slug": "minimum-rotations-to-dial-a-number-i",
+  "title": "Minimum Rotations to Dial a Number I",
+  "category": "dsa",
+  "subcategory": "miscellaneous",
+  "difficulty": "Easy",
+  "tags": [],
+  "statement": "You are given a string `s` of length 10 consisting of digits.\n\nThe dial contains the digits 0 through 9 in order and is **circular**, so 0 and 9 are adjacent. The pointer initially points to 0.\n\nTo dial each digit of `s` **in order**, rotate the pointer until it points to that digit. Each rotation moves the pointer to an **adjacent** digit, and you may rotate in **either** direction. Dialing a digit that the pointer already points to requires no rotations.\n\nReturn the **minimum** total number of rotations needed to dial every digit of `s`.\n\n**Example 1:**\n\n**Input:** s = \"0192837465\"\n\n**Output:** 25\n\n**Explanation:**\n\nStep\n\nFrom\n\nTo\n\nRotations\n\n1\n\n0\n\n0\n\n0\n\n2\n\n0\n\n1\n\n1\n\n3\n\n1\n\n9\n\n2\n\n4\n\n9\n\n2\n\n3\n\n5\n\n2\n\n8\n\n4\n\n6\n\n8\n\n3\n\n5\n\n7\n\n3\n\n7\n\n4\n\n8\n\n7\n\n4\n\n3\n\n9\n\n4\n\n6\n\n2\n\n10\n\n6\n\n5\n\n1\n\nThe total is `0 + 1 + 2 + 3 + 4 + 5 + 4 + 3 + 2 + 1 = 25`, which is the minimum total number of rotations.\n\n**Example 2:**\n\n**Input:** s = \"1200210200\"\n\n**Output:** 12\n\n**Explanation:**\n\nStep\n\nFrom\n\nTo\n\nRotations\n\n1\n\n0\n\n1\n\n1\n\n2\n\n1\n\n2\n\n1\n\n3\n\n2\n\n0\n\n2\n\n4\n\n0\n\n0\n\n0\n\n5\n\n0\n\n2\n\n2\n\n6\n\n2\n\n1\n\n1\n\n7\n\n1\n\n0\n\n1\n\n8\n\n0\n\n2\n\n2\n\n9\n\n2\n\n0\n\n2\n\n10\n\n0\n\n0\n\n0\n\nThe total is `1 + 1 + 2 + 0 + 2 + 1 + 1 + 2 + 2 + 0 = 12`, which is the minimum total number of rotations.\n\n**Constraints:**\n\n*   `s.length == 10`\n*   `s` consists only of digits `'0'` to `'9'`",
+  "constraints": [
+    "s.length == 10",
+    "s consists only of digits '0' to '9'"
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;0192837465&quot;",
+      "output": "25",
+      "explanation": "Step\n\t\t\tFrom\n\t\t\tTo\n\t\t\tRotations\n\t\t\n\t\n\t\n\t\t\n\t\t\t1\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\t\t\n\t\t\n\t\t\t2\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t3\n\t\t\t1\n\t\t\t9\n\t\t\t2\n\t\t\n\t\t\n\t\t\t4\n\t\t\t9\n\t\t\t2\n\t\t\t3\n\t\t\n\t\t\n\t\t\t5\n\t\t\t2\n\t\t\t8\n\t\t\t4\n\t\t\n\t\t\n\t\t\t6\n\t\t\t8\n\t\t\t3\n\t\t\t5\n\t\t\n\t\t\n\t\t\t7\n\t\t\t3\n\t\t\t7\n\t\t\t4\n\t\t\n\t\t\n\t\t\t8\n\t\t\t7\n\t\t\t4\n\t\t\t3\n\t\t\n\t\t\n\t\t\t9\n\t\t\t4\n\t\t\t6\n\t\t\t2\n\t\t\n\t\t\n\t\t\t10\n\t\t\t6\n\t\t\t5\n\t\t\t1"
+    },
+    {
+      "input": "s = &quot;1200210200&quot;",
+      "output": "12",
+      "explanation": "Step\n\t\t\tFrom\n\t\t\tTo\n\t\t\tRotations\n\t\t\n\t\n\t\n\t\t\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t2\n\t\t\t1\n\t\t\t2\n\t\t\t1\n\t\t\n\t\t\n\t\t\t3\n\t\t\t2\n\t\t\t0\n\t\t\t2\n\t\t\n\t\t\n\t\t\t4\n\t\t\t0\n\t\t\t0\n\t\t\t0\n\t\t\n\t\t\n\t\t\t5\n\t\t\t0\n\t\t\t2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t6\n\t\t\t2\n\t\t\t1\n\t\t\t1\n\t\t\n\t\t\n\t\t\t7\n\t\t\t1\n\t\t\t0\n\t\t\t1\n\t\t\n\t\t\n\t\t\t8\n\t\t\t0\n\t\t\t2\n\t\t\t2\n\t\t\n\t\t\n\t\t\t9\n\t\t\t2\n\t\t\t0\n\t\t\t2\n\t\t\n\t\t\n\t\t\t10\n\t\t\t0\n\t\t\t0\n\t\t\t0"
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int minRotations(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int minRotations(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def minRotations(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def minRotations(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar minRotations = function(s) {\n    \n};",
+    "typescript": "function minRotations(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MinRotations(string s) {\n        \n    }\n}",
+    "c": "int minRotations(char* s) {\n    \n}",
+    "golang": "func minRotations(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun minRotations(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func minRotations(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn min_rotations(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef min_rotations(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function minRotations($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int minRotations(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def minRotations(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec min_rotations(s :: String.t) :: integer\n  def min_rotations(s) do\n    \n  end\nend",
+    "erlang": "-spec min_rotations(S :: unicode:unicode_binary()) -> integer().\nmin_rotations(S) ->\n  .",
+    "racket": "(define/contract (min-rotations s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;0192837465&quot;",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "s = &quot;1200210200&quot;",
+      "expectedOutput": "12"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;0192837465&quot;",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "s = &quot;1200210200&quot;",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"0192837465\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1200210200\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "For each digit, let <code>d</code> be its absolute difference from the pointer's current digit. The minimum rotations needed are <code>min(d, 10 - d)</code>."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/minimum-rotations-to-dial-a-number-i/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:16.907Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "id": "3803",
+  "slug": "count-residue-prefixes",
+  "title": "Count Residue Prefixes",
+  "category": "dsa",
+  "subcategory": "hashing",
+  "difficulty": "Easy",
+  "tags": [
+    "Hash Table",
+    "String"
+  ],
+  "statement": "You are given a string `s` consisting only of lowercase English letters.\n\nA **prefix** of `s` is called a **residue** if the number of **distinct characters** in the **prefix** is equal to `len(prefix) % 3`.\n\nReturn the count of **residue** prefixes in `s`.\n\nA **prefix** of a string is a **non-empty substring** that starts from the beginning of the string and extends to any point within it.\n\n**Example 1:**\n\n**Input:** s = \"abc\"\n\n**Output:** 2\n\n**Explanation:**​​​​​​​\n\n*   Prefix `\"a\"` has 1 distinct character and length modulo 3 is 1, so it is a residue.\n*   Prefix `\"ab\"` has 2 distinct characters and length modulo 3 is 2, so it is a residue.\n*   Prefix `\"abc\"` does not satisfy the condition. Thus, the answer is 2.\n\n**Example 2:**\n\n**Input:** s = \"dd\"\n\n**Output:** 1\n\n**Explanation:**\n\n*   Prefix `\"d\"` has 1 distinct character and length modulo 3 is 1, so it is a residue.\n*   Prefix `\"dd\"` has 1 distinct character but length modulo 3 is 2, so it is not a residue. Thus, the answer is 1.\n\n**Example 3:**\n\n**Input:** s = \"bob\"\n\n**Output:** 2\n\n**Explanation:**\n\n*   Prefix `\"b\"` has 1 distinct character and length modulo 3 is 1, so it is a residue.\n*   Prefix `\"bo\"` has 2 distinct characters and length mod 3 is 2, so it is a residue. Thus, the answer is 2.\n\n**Constraints:**\n\n*   `1 <= s.length <= 100`\n*   `s` contains only lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 100",
+    "s contains only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "output": "2",
+      "explanation": "​​​​​​​\n\n\n\tPrefix &quot;a&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;ab&quot; has 2 distinct characters and length modulo 3 is 2, so it is a residue.\n\tPrefix &quot;abc&quot; does not satisfy the condition. Thus, the answer is 2."
+    },
+    {
+      "input": "s = &quot;dd&quot;",
+      "output": "1",
+      "explanation": "Prefix &quot;d&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;dd&quot; has 1 distinct character but length modulo 3 is 2, so it is not a residue. Thus, the answer is 1."
+    },
+    {
+      "input": "s = &quot;bob&quot;",
+      "output": "2",
+      "explanation": "Prefix &quot;b&quot; has 1 distinct character and length modulo 3 is 1, so it is a residue.\n\tPrefix &quot;bo&quot; has 2 distinct characters and length mod 3 is 2, so it is a residue. Thus, the answer is 2."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int residuePrefixes(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int residuePrefixes(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def residuePrefixes(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def residuePrefixes(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar residuePrefixes = function(s) {\n    \n};",
+    "typescript": "function residuePrefixes(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ResiduePrefixes(string s) {\n        \n    }\n}",
+    "c": "int residuePrefixes(char* s) {\n    \n}",
+    "golang": "func residuePrefixes(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun residuePrefixes(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func residuePrefixes(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn residue_prefixes(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef residue_prefixes(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function residuePrefixes($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int residuePrefixes(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def residuePrefixes(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec residue_prefixes(s :: String.t) :: integer\n  def residue_prefixes(s) do\n    \n  end\nend",
+    "erlang": "-spec residue_prefixes(S :: unicode:unicode_binary()) -> integer().\nresidue_prefixes(S) ->\n  .",
+    "racket": "(define/contract (residue-prefixes s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;dd&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;bob&quot;",
+      "expectedOutput": "2"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;abc&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;dd&quot;",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "s = &quot;bob&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dd\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bob\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Simulate as described"
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-residue-prefixes/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:20.109Z",
+    "sourceUpdatedAt": null
+  }
+}

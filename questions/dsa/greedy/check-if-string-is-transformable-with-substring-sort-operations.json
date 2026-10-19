@@ -1,0 +1,168 @@
+{
+  "id": "1585",
+  "slug": "check-if-string-is-transformable-with-substring-sort-operations",
+  "title": "Check If String Is Transformable With Substring Sort Operations",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Hard",
+  "tags": [
+    "String",
+    "Greedy",
+    "Sorting"
+  ],
+  "statement": "Given two strings `s` and `t`, transform string `s` into string `t` using the following operation any number of times:\n\n*   Choose a **non-empty** substring in `s` and sort it in place so the characters are in **ascending order**.\n    *   For example, applying the operation on the underlined substring in `\"14234\"` results in `\"12344\"`.\n\nReturn `true` if _it is possible to transform `s` into `t`_. Otherwise, return `false`.\n\nA **substring** is a contiguous sequence of characters within a string.\n\n**Example 1:**\n\n```\nInput: s = \"84532\", t = \"34852\"\nOutput: true\nExplanation: You can transform s into t using the following sort operations:\n\"84532\" (from index 2 to 3) -> \"84352\"\n\"84352\" (from index 0 to 2) -> \"34852\"\n```\n\n**Example 2:**\n\n```\nInput: s = \"34521\", t = \"23415\"\nOutput: true\nExplanation: You can transform s into t using the following sort operations:\n\"34521\" -> \"23451\"\n\"23451\" -> \"23415\"\n```\n\n**Example 3:**\n\n```\nInput: s = \"12345\", t = \"12435\"\nOutput: false\n```\n\n**Constraints:**\n\n*   `s.length == t.length`\n*   `1 <= s.length <= 10^(5)`\n*   `s` and `t` consist of only digits.",
+  "constraints": [
+    "s.length == t.length",
+    "1 <= s.length <= 105",
+    "s and t consist of only digits."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
+      "output": "true",
+      "explanation": "You can transform s into t using the following sort operations:\n&quot;84532&quot; (from index 2 to 3) -&gt; &quot;84352&quot;\n&quot;84352&quot; (from index 0 to 2) -&gt; &quot;34852&quot;"
+    },
+    {
+      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
+      "output": "true",
+      "explanation": "You can transform s into t using the following sort operations:\n&quot;34521&quot; -&gt; &quot;23451&quot;\n&quot;23451&quot; -&gt; &quot;23415&quot;"
+    },
+    {
+      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
+      "output": "false",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    bool isTransformable(string s, string t) {\n        \n    }\n};",
+    "java": "class Solution {\n    public boolean isTransformable(String s, String t) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def isTransformable(self, s: str, t: str) -> bool:\n        ",
+    "python": "class Solution(object):\n    def isTransformable(self, s, t):\n        \"\"\"\n        :type s: str\n        :type t: str\n        :rtype: bool\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @param {string} t\n * @return {boolean}\n */\nvar isTransformable = function(s, t) {\n    \n};",
+    "typescript": "function isTransformable(s: string, t: string): boolean {\n    \n};",
+    "csharp": "public class Solution {\n    public bool IsTransformable(string s, string t) {\n        \n    }\n}",
+    "c": "bool isTransformable(char* s, char* t) {\n    \n}",
+    "golang": "func isTransformable(s string, t string) bool {\n    \n}",
+    "kotlin": "class Solution {\n    fun isTransformable(s: String, t: String): Boolean {\n        \n    }\n}",
+    "swift": "class Solution {\n    func isTransformable(_ s: String, _ t: String) -> Bool {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn is_transformable(s: String, t: String) -> bool {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @param {String} t\n# @return {Boolean}\ndef is_transformable(s, t)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @param String $t\n     * @return Boolean\n     */\n    function isTransformable($s, $t) {\n        \n    }\n}",
+    "dart": "class Solution {\n  bool isTransformable(String s, String t) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def isTransformable(s: String, t: String): Boolean = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec is_transformable(s :: String.t, t :: String.t) :: boolean\n  def is_transformable(s, t) do\n    \n  end\nend",
+    "erlang": "-spec is_transformable(S :: unicode:unicode_binary(), T :: unicode:unicode_binary()) -> boolean().\nis_transformable(S, T) ->\n  .",
+    "racket": "(define/contract (is-transformable s t)\n  (-> string? string? boolean?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
+      "expectedOutput": "false"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;84532&quot;, t = &quot;34852&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = &quot;34521&quot;, t = &quot;23415&quot;",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "s = &quot;12345&quot;, t = &quot;12435&quot;",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"34852\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"34521\"\n\"23415\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"12345\"\n\"12435\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"\n\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"axc\"\n\"ahbgdc\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"sea\"\n\"eat\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"leetcode\"\n\"etco\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"programming\"\n\"gram\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"hello\"\n\"world\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"same\"\n\"same\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"\n\"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"\n\"abababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababababab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"84533\"\n\"34853\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"34522\"\n\"23416\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Suppose the first digit you need is 'd'. How can you determine if it's possible to get that digit there?",
+    "Consider swapping adjacent characters to maintain relative ordering."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/check-if-string-is-transformable-with-substring-sort-operations/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:05:54.220Z",
+    "sourceUpdatedAt": null
+  }
+}

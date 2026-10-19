@@ -1,0 +1,156 @@
+{
+  "id": "1446",
+  "slug": "consecutive-characters",
+  "title": "Consecutive Characters",
+  "category": "dsa",
+  "subcategory": "strings",
+  "difficulty": "Easy",
+  "tags": [
+    "String"
+  ],
+  "statement": "The **power** of the string is the maximum length of a non-empty substring that contains only one unique character.\n\nGiven a string `s`, return _the **power** of_ `s`.\n\n**Example 1:**\n\n```\nInput: s = \"leetcode\"\nOutput: 2\nExplanation: The substring \"ee\" is of length 2 with the character 'e' only.\n```\n\n**Example 2:**\n\n```\nInput: s = \"abbcccddddeeeeedcba\"\nOutput: 5\nExplanation: The substring \"eeeee\" is of length 5 with the character 'e' only.\n```\n\n**Constraints:**\n\n*   `1 <= s.length <= 500`\n*   `s` consists of only lowercase English letters.",
+  "constraints": [
+    "1 <= s.length <= 500",
+    "s consists of only lowercase English letters."
+  ],
+  "examples": [
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "output": "2",
+      "explanation": "The substring &quot;ee&quot; is of length 2 with the character &#39;e&#39; only."
+    },
+    {
+      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "output": "5",
+      "explanation": "The substring &quot;eeeee&quot; is of length 5 with the character &#39;e&#39; only."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int maxPower(string s) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int maxPower(String s) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxPower(self, s: str) -> int:\n        ",
+    "python": "class Solution(object):\n    def maxPower(self, s):\n        \"\"\"\n        :type s: str\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string} s\n * @return {number}\n */\nvar maxPower = function(s) {\n    \n};",
+    "typescript": "function maxPower(s: string): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int MaxPower(string s) {\n        \n    }\n}",
+    "c": "int maxPower(char* s) {\n    \n}",
+    "golang": "func maxPower(s string) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxPower(s: String): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxPower(_ s: String) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_power(s: String) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String} s\n# @return {Integer}\ndef max_power(s)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String $s\n     * @return Integer\n     */\n    function maxPower($s) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int maxPower(String s) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxPower(s: String): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_power(s :: String.t) :: integer\n  def max_power(s) do\n    \n  end\nend",
+    "erlang": "-spec max_power(S :: unicode:unicode_binary()) -> integer().\nmax_power(S) ->\n  .",
+    "racket": "(define/contract (max-power s)\n  (-> string? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "expectedOutput": "5"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "s = &quot;leetcode&quot;",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "s = &quot;abbcccddddeeeeedcba&quot;",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abbcccddddeeeeedcba\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcdefghijklmnopqrstuvwxyz\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"pwwkew\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"dvdf\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"abcabcbb\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"1234567890\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"A man, a plan, a canal: Panama\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"race a car\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"au\"",
+      "expectedOutput": null
+    },
+    {
+      "input": "\"bpfbhmipx\"",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Keep an array power where power[i] is the maximum power of the i-th character.",
+    "The answer is max(power[i])."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/consecutive-characters/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:01.059Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,170 @@
+{
+  "id": "902",
+  "slug": "numbers-at-most-n-given-digit-set",
+  "title": "Numbers At Most N Given Digit Set",
+  "category": "dsa",
+  "subcategory": "dynamic-programming",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Math",
+    "String",
+    "Binary Search",
+    "Dynamic Programming"
+  ],
+  "statement": "Given an array of `digits` which is sorted in **non-decreasing** order. You can write numbers using each `digits[i]` as many times as we want. For example, if `digits = ['1','3','5']`, we may write numbers such as `'13'`, `'551'`, and `'1351315'`.\n\nReturn _the number of positive integers that can be generated_ that are less than or equal to a given integer `n`.\n\n**Example 1:**\n\n```\nInput: digits = [\"1\",\"3\",\"5\",\"7\"], n = 100\nOutput: 20\nExplanation: \nThe 20 numbers that can be written are:\n1, 3, 5, 7, 11, 13, 15, 17, 31, 33, 35, 37, 51, 53, 55, 57, 71, 73, 75, 77.\n```\n\n**Example 2:**\n\n```\nInput: digits = [\"1\",\"4\",\"9\"], n = 1000000000\nOutput: 29523\nExplanation: \nWe can write 3 one digit numbers, 9 two digit numbers, 27 three digit numbers,\n81 four digit numbers, 243 five digit numbers, 729 six digit numbers,\n2187 seven digit numbers, 6561 eight digit numbers, and 19683 nine digit numbers.\nIn total, this is 29523 integers that can be written using the digits array.\n```\n\n**Example 3:**\n\n```\nInput: digits = [\"7\"], n = 8\nOutput: 1\n```\n\n**Constraints:**\n\n*   `1 <= digits.length <= 9`\n*   `digits[i].length == 1`\n*   `digits[i]` is a digit from `'1'` to `'9'`.\n*   All the values in `digits` are **unique**.\n*   `digits` is sorted in **non-decreasing** order.\n*   `1 <= n <= 10^(9)`",
+  "constraints": [
+    "1 <= digits.length <= 9",
+    "digits[i].length == 1",
+    "digits[i] is a digit from '1' to '9'.",
+    "All the values in digits are unique.",
+    "digits is sorted in non-decreasing order.",
+    "1 <= n <= 109"
+  ],
+  "examples": [
+    {
+      "input": "digits = [&quot;1&quot;,&quot;3&quot;,&quot;5&quot;,&quot;7&quot;], n = 100",
+      "output": "20",
+      "explanation": "The 20 numbers that can be written are:\n1, 3, 5, 7, 11, 13, 15, 17, 31, 33, 35, 37, 51, 53, 55, 57, 71, 73, 75, 77."
+    },
+    {
+      "input": "digits = [&quot;1&quot;,&quot;4&quot;,&quot;9&quot;], n = 1000000000",
+      "output": "29523",
+      "explanation": "We can write 3 one digit numbers, 9 two digit numbers, 27 three digit numbers,\n81 four digit numbers, 243 five digit numbers, 729 six digit numbers,\n2187 seven digit numbers, 6561 eight digit numbers, and 19683 nine digit numbers.\nIn total, this is 29523 integers that can be written using the digits array."
+    },
+    {
+      "input": "digits = [&quot;7&quot;], n = 8",
+      "output": "1",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int atMostNGivenDigitSet(vector<string>& digits, int n) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int atMostNGivenDigitSet(String[] digits, int n) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def atMostNGivenDigitSet(self, digits: list[str], n: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def atMostNGivenDigitSet(self, digits, n):\n        \"\"\"\n        :type digits: List[str]\n        :type n: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {string[]} digits\n * @param {number} n\n * @return {number}\n */\nvar atMostNGivenDigitSet = function(digits, n) {\n    \n};",
+    "typescript": "function atMostNGivenDigitSet(digits: string[], n: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int AtMostNGivenDigitSet(string[] digits, int n) {\n        \n    }\n}",
+    "c": "int atMostNGivenDigitSet(char** digits, int digitsSize, int n) {\n    \n}",
+    "golang": "func atMostNGivenDigitSet(digits []string, n int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun atMostNGivenDigitSet(digits: Array<String>, n: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func atMostNGivenDigitSet(_ digits: [String], _ n: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn at_most_n_given_digit_set(digits: Vec<String>, n: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {String[]} digits\n# @param {Integer} n\n# @return {Integer}\ndef at_most_n_given_digit_set(digits, n)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param String[] $digits\n     * @param Integer $n\n     * @return Integer\n     */\n    function atMostNGivenDigitSet($digits, $n) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int atMostNGivenDigitSet(List<String> digits, int n) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def atMostNGivenDigitSet(digits: Array[String], n: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec at_most_n_given_digit_set(digits :: [String.t], n :: integer) :: integer\n  def at_most_n_given_digit_set(digits, n) do\n    \n  end\nend",
+    "erlang": "-spec at_most_n_given_digit_set(Digits :: [unicode:unicode_binary()], N :: integer()) -> integer().\nat_most_n_given_digit_set(Digits, N) ->\n  .",
+    "racket": "(define/contract (at-most-n-given-digit-set digits n)\n  (-> (listof string?) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "digits = [&quot;1&quot;,&quot;3&quot;,&quot;5&quot;,&quot;7&quot;], n = 100",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "digits = [&quot;1&quot;,&quot;4&quot;,&quot;9&quot;], n = 1000000000",
+      "expectedOutput": "29523"
+    },
+    {
+      "input": "digits = [&quot;7&quot;], n = 8",
+      "expectedOutput": "1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "digits = [&quot;1&quot;,&quot;3&quot;,&quot;5&quot;,&quot;7&quot;], n = 100",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "digits = [&quot;1&quot;,&quot;4&quot;,&quot;9&quot;], n = 1000000000",
+      "expectedOutput": "29523"
+    },
+    {
+      "input": "digits = [&quot;7&quot;], n = 8",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"1\",\"3\",\"5\",\"7\"]\n100",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"1\",\"4\",\"9\"]\n1000000000",
+      "expectedOutput": null
+    },
+    {
+      "input": "[\"7\"]\n8",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/numbers-at-most-n-given-digit-set/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:09:48.915Z",
+    "sourceUpdatedAt": null
+  }
+}

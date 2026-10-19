@@ -1,0 +1,148 @@
+{
+  "id": "401",
+  "slug": "binary-watch",
+  "title": "Binary Watch",
+  "category": "dsa",
+  "subcategory": "recursion-backtracking",
+  "difficulty": "Easy",
+  "tags": [
+    "Backtracking",
+    "Bit Manipulation"
+  ],
+  "statement": "A binary watch has 4 LEDs on the top to represent the hours (0-11), and 6 LEDs on the bottom to represent the minutes (0-59). Each LED represents a zero or one, with the least significant bit on the right.\n\n*   For example, the below binary watch reads `\"4:51\"`.\n\n![](./assets/binary-watch-1.jpg)\n\nGiven an integer `turnedOn` which represents the number of LEDs that are currently on (ignoring the PM), return _all possible times the watch could represent_. You may return the answer in **any order**.\n\nThe hour must not contain a leading zero.\n\n*   For example, `\"01:00\"` is not valid. It should be `\"1:00\"`.\n\nThe minute must consist of two digits and may contain a leading zero.\n\n*   For example, `\"10:2\"` is not valid. It should be `\"10:02\"`.\n\n**Example 1:**\n\n```\nInput: turnedOn = 1\nOutput: [\"0:01\",\"0:02\",\"0:04\",\"0:08\",\"0:16\",\"0:32\",\"1:00\",\"2:00\",\"4:00\",\"8:00\"]\n```\n\n**Example 2:**\n\n```\nInput: turnedOn = 9\nOutput: []\n```\n\n**Constraints:**\n\n*   `0 <= turnedOn <= 10`",
+  "constraints": [
+    "0 <= turnedOn <= 10"
+  ],
+  "examples": [
+    {
+      "input": "turnedOn = 1",
+      "output": "[\"0:01\",\"0:02\",\"0:04\",\"0:08\",\"0:16\",\"0:32\",\"1:00\",\"2:00\",\"4:00\",\"8:00\"]",
+      "explanation": null
+    },
+    {
+      "input": "turnedOn = 9",
+      "output": "[]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<string> readBinaryWatch(int turnedOn) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<String> readBinaryWatch(int turnedOn) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def readBinaryWatch(self, turnedOn: int) -> list[str]:\n        ",
+    "python": "class Solution(object):\n    def readBinaryWatch(self, turnedOn):\n        \"\"\"\n        :type turnedOn: int\n        :rtype: List[str]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} turnedOn\n * @return {string[]}\n */\nvar readBinaryWatch = function(turnedOn) {\n    \n};",
+    "typescript": "function readBinaryWatch(turnedOn: number): string[] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<string> ReadBinaryWatch(int turnedOn) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nchar** readBinaryWatch(int turnedOn, int* returnSize) {\n    \n}",
+    "golang": "func readBinaryWatch(turnedOn int) []string {\n    \n}",
+    "kotlin": "class Solution {\n    fun readBinaryWatch(turnedOn: Int): List<String> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func readBinaryWatch(_ turnedOn: Int) -> [String] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn read_binary_watch(turned_on: i32) -> Vec<String> {\n        \n    }\n}",
+    "ruby": "# @param {Integer} turned_on\n# @return {String[]}\ndef read_binary_watch(turned_on)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $turnedOn\n     * @return String[]\n     */\n    function readBinaryWatch($turnedOn) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<String> readBinaryWatch(int turnedOn) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def readBinaryWatch(turnedOn: Int): List[String] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec read_binary_watch(turned_on :: integer) :: [String.t]\n  def read_binary_watch(turned_on) do\n    \n  end\nend",
+    "erlang": "-spec read_binary_watch(TurnedOn :: integer()) -> [unicode:unicode_binary()].\nread_binary_watch(TurnedOn) ->\n  .",
+    "racket": "(define/contract (read-binary-watch turnedOn)\n  (-> exact-integer? (listof string?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "turnedOn = 1",
+      "expectedOutput": "[\"0:01\",\"0:02\",\"0:04\",\"0:08\",\"0:16\",\"0:32\",\"1:00\",\"2:00\",\"4:00\",\"8:00\"]"
+    },
+    {
+      "input": "turnedOn = 9",
+      "expectedOutput": "[]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "turnedOn = 1",
+      "expectedOutput": "[\"0:01\",\"0:02\",\"0:04\",\"0:08\",\"0:16\",\"0:32\",\"1:00\",\"2:00\",\"4:00\",\"8:00\"]"
+    },
+    {
+      "input": "turnedOn = 9",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "1",
+      "expectedOutput": null
+    },
+    {
+      "input": "9",
+      "expectedOutput": null
+    },
+    {
+      "input": "0",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1",
+      "expectedOutput": null
+    },
+    {
+      "input": "2",
+      "expectedOutput": null
+    },
+    {
+      "input": "3",
+      "expectedOutput": null
+    },
+    {
+      "input": "5",
+      "expectedOutput": null
+    },
+    {
+      "input": "10",
+      "expectedOutput": null
+    },
+    {
+      "input": "15",
+      "expectedOutput": null
+    },
+    {
+      "input": "16",
+      "expectedOutput": null
+    },
+    {
+      "input": "100",
+      "expectedOutput": null
+    },
+    {
+      "input": "-100",
+      "expectedOutput": null
+    },
+    {
+      "input": "1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "2147483647",
+      "expectedOutput": null
+    },
+    {
+      "input": "-2147483648",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Simplify by seeking for solutions that involve comparing set bit counts.",
+    "Consider precomputing all possible times for comparison."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/binary-watch/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:05:43.416Z",
+    "sourceUpdatedAt": null
+  }
+}

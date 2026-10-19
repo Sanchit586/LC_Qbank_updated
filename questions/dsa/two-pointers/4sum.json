@@ -1,0 +1,156 @@
+{
+  "id": "18",
+  "slug": "4sum",
+  "title": "4Sum",
+  "category": "dsa",
+  "subcategory": "two-pointers",
+  "difficulty": "Medium",
+  "tags": [
+    "Array",
+    "Two Pointers",
+    "Sorting"
+  ],
+  "statement": "Given an array `nums` of `n` integers, return _an array of all the **unique** quadruplets_ `[nums[a], nums[b], nums[c], nums[d]]` such that:\n\n*   `0 <= a, b, c, d < n`\n*   `a`, `b`, `c`, and `d` are **distinct**.\n*   `nums[a] + nums[b] + nums[c] + nums[d] == target`\n\nYou may return the answer in **any order**.\n\n**Example 1:**\n\n```\nInput: nums = [1,0,-1,0,-2,2], target = 0\nOutput: [[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]\n```\n\n**Example 2:**\n\n```\nInput: nums = [2,2,2,2,2], target = 8\nOutput: [[2,2,2,2]]\n```\n\n**Constraints:**\n\n*   `1 <= nums.length <= 200`\n*   `-10^(9) <= nums[i] <= 10^(9)`\n*   `-10^(9) <= target <= 10^(9)`",
+  "constraints": [
+    "1 <= nums.length <= 200",
+    "-109 <= nums[i] <= 109",
+    "-109 <= target <= 109"
+  ],
+  "examples": [
+    {
+      "input": "nums = [1,0,-1,0,-2,2], target = 0",
+      "output": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]",
+      "explanation": null
+    },
+    {
+      "input": "nums = [2,2,2,2,2], target = 8",
+      "output": "[[2,2,2,2]]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<vector<int>> fourSum(vector<int>& nums, int target) {\n        \n    }\n};",
+    "java": "class Solution {\n    public List<List<Integer>> fourSum(int[] nums, int target) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def fourSum(self, nums: list[int], target: int) -> list[list[int]]:\n        ",
+    "python": "class Solution(object):\n    def fourSum(self, nums, target):\n        \"\"\"\n        :type nums: List[int]\n        :type target: int\n        :rtype: List[List[int]]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} target\n * @return {number[][]}\n */\nvar fourSum = function(nums, target) {\n    \n};",
+    "typescript": "function fourSum(nums: number[], target: number): number[][] {\n    \n};",
+    "csharp": "public class Solution {\n    public IList<IList<int>> FourSum(int[] nums, int target) {\n        \n    }\n}",
+    "c": "/**\n * Return an array of arrays of size *returnSize.\n * The sizes of the arrays are returned as *returnColumnSizes array.\n * Note: Both returned array and *columnSizes array must be malloced, assume caller calls free().\n */\nint** fourSum(int* nums, int numsSize, int target, int* returnSize, int** returnColumnSizes) {\n    \n}",
+    "golang": "func fourSum(nums []int, target int) [][]int {\n    \n}",
+    "kotlin": "class Solution {\n    fun fourSum(nums: IntArray, target: Int): List<List<Int>> {\n        \n    }\n}",
+    "swift": "class Solution {\n    func fourSum(_ nums: [Int], _ target: Int) -> [[Int]] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn four_sum(nums: Vec<i32>, target: i32) -> Vec<Vec<i32>> {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} target\n# @return {Integer[][]}\ndef four_sum(nums, target)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $target\n     * @return Integer[][]\n     */\n    function fourSum($nums, $target) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<List<int>> fourSum(List<int> nums, int target) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def fourSum(nums: Array[Int], target: Int): List[List[Int]] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec four_sum(nums :: [integer], target :: integer) :: [[integer]]\n  def four_sum(nums, target) do\n    \n  end\nend",
+    "erlang": "-spec four_sum(Nums :: [integer()], Target :: integer()) -> [[integer()]].\nfour_sum(Nums, Target) ->\n  .",
+    "racket": "(define/contract (four-sum nums target)\n  (-> (listof exact-integer?) exact-integer? (listof (listof exact-integer?)))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [1,0,-1,0,-2,2], target = 0",
+      "expectedOutput": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+    },
+    {
+      "input": "nums = [2,2,2,2,2], target = 8",
+      "expectedOutput": "[[2,2,2,2]]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [1,0,-1,0,-2,2], target = 0",
+      "expectedOutput": "[[-2,-1,1,2],[-2,0,0,2],[-1,0,0,1]]"
+    },
+    {
+      "input": "nums = [2,2,2,2,2], target = 8",
+      "expectedOutput": "[[2,2,2,2]]"
+    },
+    {
+      "input": "[1,0,-1,0,-2,2]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,2,2,2,2]\n8",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/4sum/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:04:54.539Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,168 @@
+{
+  "id": "3684",
+  "slug": "maximize-sum-of-at-most-k-distinct-elements",
+  "title": "Maximize Sum of At Most K Distinct Elements",
+  "category": "dsa",
+  "subcategory": "greedy",
+  "difficulty": "Easy",
+  "tags": [
+    "Array",
+    "Hash Table",
+    "Greedy",
+    "Sorting"
+  ],
+  "statement": "You are given a **positive** integer array `nums` and an integer `k`.\n\nChoose at most `k` elements from `nums` so that their sum is maximized. However, the chosen numbers must be **distinct**.\n\nReturn an array containing the chosen numbers in **strictly descending** order.\n\n**Example 1:**\n\n**Input:** nums = \\[84,93,100,77,90\\], k = 3\n\n**Output:** \\[100,93,90\\]\n\n**Explanation:**\n\nThe maximum sum is 283, which is attained by choosing 93, 100 and 90. We rearrange them in strictly descending order as `[100, 93, 90]`.\n\n**Example 2:**\n\n**Input:** nums = \\[84,93,100,77,93\\], k = 3\n\n**Output:** \\[100,93,84\\]\n\n**Explanation:**\n\nThe maximum sum is 277, which is attained by choosing 84, 93 and 100. We rearrange them in strictly descending order as `[100, 93, 84]`. We cannot choose 93, 100 and 93 because the chosen numbers must be distinct.\n\n**Example 3:**\n\n**Input:** nums = \\[1,1,1,2,2,2\\], k = 6\n\n**Output:** \\[2,1\\]\n\n**Explanation:**\n\nThe maximum sum is 3, which is attained by choosing 1 and 2. We rearrange them in strictly descending order as `[2, 1]`.\n\n**Constraints:**\n\n*   `1 <= nums.length <= 100`\n*   `1 <= nums[i] <= 10^(9)`\n*   `1 <= k <= nums.length`",
+  "constraints": [
+    "1 <= nums.length <= 100",
+    "1 <= nums[i] <= 109",
+    "1 <= k <= nums.length"
+  ],
+  "examples": [
+    {
+      "input": "nums = [84,93,100,77,90], k = 3",
+      "output": "[100,93,90]",
+      "explanation": null
+    },
+    {
+      "input": "nums = [84,93,100,77,93], k = 3",
+      "output": "[100,93,84]",
+      "explanation": null
+    },
+    {
+      "input": "nums = [1,1,1,2,2,2], k = 6",
+      "output": "[2,1]",
+      "explanation": null
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    vector<int> maxKDistinct(vector<int>& nums, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int[] maxKDistinct(int[] nums, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def maxKDistinct(self, nums: List[int], k: int) -> List[int]:\n        ",
+    "python": "class Solution(object):\n    def maxKDistinct(self, nums, k):\n        \"\"\"\n        :type nums: List[int]\n        :type k: int\n        :rtype: List[int]\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[]} nums\n * @param {number} k\n * @return {number[]}\n */\nvar maxKDistinct = function(nums, k) {\n    \n};",
+    "typescript": "function maxKDistinct(nums: number[], k: number): number[] {\n    \n};",
+    "csharp": "public class Solution {\n    public int[] MaxKDistinct(int[] nums, int k) {\n        \n    }\n}",
+    "c": "/**\n * Note: The returned array must be malloced, assume caller calls free().\n */\nint* maxKDistinct(int* nums, int numsSize, int k, int* returnSize) {\n    \n}",
+    "golang": "func maxKDistinct(nums []int, k int) []int {\n    \n}",
+    "kotlin": "class Solution {\n    fun maxKDistinct(nums: IntArray, k: Int): IntArray {\n        \n    }\n}",
+    "swift": "class Solution {\n    func maxKDistinct(_ nums: [Int], _ k: Int) -> [Int] {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn max_k_distinct(nums: Vec<i32>, k: i32) -> Vec<i32> {\n        \n    }\n}",
+    "ruby": "# @param {Integer[]} nums\n# @param {Integer} k\n# @return {Integer[]}\ndef max_k_distinct(nums, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[] $nums\n     * @param Integer $k\n     * @return Integer[]\n     */\n    function maxKDistinct($nums, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  List<int> maxKDistinct(List<int> nums, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def maxKDistinct(nums: Array[Int], k: Int): Array[Int] = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec max_k_distinct(nums :: [integer], k :: integer) :: [integer]\n  def max_k_distinct(nums, k) do\n    \n  end\nend",
+    "erlang": "-spec max_k_distinct(Nums :: [integer()], K :: integer()) -> [integer()].\nmax_k_distinct(Nums, K) ->\n  .",
+    "racket": "(define/contract (max-k-distinct nums k)\n  (-> (listof exact-integer?) exact-integer? (listof exact-integer?))\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "nums = [84,93,100,77,90], k = 3",
+      "expectedOutput": "[100,93,90]"
+    },
+    {
+      "input": "nums = [84,93,100,77,93], k = 3",
+      "expectedOutput": "[100,93,84]"
+    },
+    {
+      "input": "nums = [1,1,1,2,2,2], k = 6",
+      "expectedOutput": "[2,1]"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "nums = [84,93,100,77,90], k = 3",
+      "expectedOutput": "[100,93,90]"
+    },
+    {
+      "input": "nums = [84,93,100,77,93], k = 3",
+      "expectedOutput": "[100,93,84]"
+    },
+    {
+      "input": "nums = [1,1,1,2,2,2], k = 6",
+      "expectedOutput": "[2,1]"
+    },
+    {
+      "input": "[84,93,100,77,90]\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "[84,93,100,77,93]\n3",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,2,2,2]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Use a set to dedupe then sort descending and pick top <code>k</code>."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/maximize-sum-of-at-most-k-distinct-elements/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:08:04.142Z",
+    "sourceUpdatedAt": null
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "id": "2180",
+  "slug": "count-integers-with-even-digit-sum",
+  "title": "Count Integers With Even Digit Sum",
+  "category": "dsa",
+  "subcategory": "simulation",
+  "difficulty": "Easy",
+  "tags": [
+    "Math",
+    "Simulation"
+  ],
+  "statement": "Given a positive integer `num`, return _the number of positive integers **less than or equal to**_ `num` _whose digit sums are **even**_.\n\nThe **digit sum** of a positive integer is the sum of all its digits.\n\n**Example 1:**\n\n```\nInput: num = 4\nOutput: 2\nExplanation:\nThe only integers less than or equal to 4 whose digit sums are even are 2 and 4.\n```\n\n**Example 2:**\n\n```\nInput: num = 30\nOutput: 14\nExplanation:\nThe 14 integers less than or equal to 30 whose digit sums are even are\n2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28.\n```\n\n**Constraints:**\n\n*   `1 <= num <= 1000`",
+  "constraints": [
+    "1 <= num <= 1000"
+  ],
+  "examples": [
+    {
+      "input": "num = 4",
+      "output": "2",
+      "explanation": "The only integers less than or equal to 4 whose digit sums are even are 2 and 4."
+    },
+    {
+      "input": "num = 30",
+      "output": "14",
+      "explanation": "The 14 integers less than or equal to 30 whose digit sums are even are\n2, 4, 6, 8, 11, 13, 15, 17, 19, 20, 22, 24, 26, and 28."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int countEven(int num) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int countEven(int num) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def countEven(self, num: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def countEven(self, num):\n        \"\"\"\n        :type num: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number} num\n * @return {number}\n */\nvar countEven = function(num) {\n    \n};",
+    "typescript": "function countEven(num: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int CountEven(int num) {\n        \n    }\n}",
+    "c": "int countEven(int num) {\n    \n}",
+    "golang": "func countEven(num int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun countEven(num: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func countEven(_ num: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn count_even(num: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer} num\n# @return {Integer}\ndef count_even(num)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer $num\n     * @return Integer\n     */\n    function countEven($num) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int countEven(int num) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def countEven(num: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec count_even(num :: integer) :: integer\n  def count_even(num) do\n    \n  end\nend",
+    "erlang": "-spec count_even(Num :: integer()) -> integer().\ncount_even(Num) ->\n  .",
+    "racket": "(define/contract (count-even num)\n  (-> exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "num = 4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "num = 30",
+      "expectedOutput": "14"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "num = 4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "num = 30",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "4",
+      "expectedOutput": null
+    },
+    {
+      "input": "30",
+      "expectedOutput": null
+    },
+    {
+      "input": "0",
+      "expectedOutput": null
+    },
+    {
+      "input": "1",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1",
+      "expectedOutput": null
+    },
+    {
+      "input": "2",
+      "expectedOutput": null
+    },
+    {
+      "input": "3",
+      "expectedOutput": null
+    },
+    {
+      "input": "5",
+      "expectedOutput": null
+    },
+    {
+      "input": "10",
+      "expectedOutput": null
+    },
+    {
+      "input": "15",
+      "expectedOutput": null
+    },
+    {
+      "input": "16",
+      "expectedOutput": null
+    },
+    {
+      "input": "100",
+      "expectedOutput": null
+    },
+    {
+      "input": "-100",
+      "expectedOutput": null
+    },
+    {
+      "input": "1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "-1000",
+      "expectedOutput": null
+    },
+    {
+      "input": "2147483647",
+      "expectedOutput": null
+    },
+    {
+      "input": "-2147483648",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Iterate through all integers from 1 to num.",
+    "For any integer, extract the individual digits to compute their sum and check if it is even."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/count-integers-with-even-digit-sum/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:06:12.174Z",
+    "sourceUpdatedAt": null
+  }
+}

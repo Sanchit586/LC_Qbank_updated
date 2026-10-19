@@ -1,0 +1,162 @@
+{
+  "id": "1293",
+  "slug": "shortest-path-in-a-grid-with-obstacles-elimination",
+  "title": "Shortest Path in a Grid with Obstacles Elimination",
+  "category": "dsa",
+  "subcategory": "graphs",
+  "difficulty": "Hard",
+  "tags": [
+    "Array",
+    "Breadth-First Search",
+    "Matrix"
+  ],
+  "statement": "You are given an `m x n` integer matrix `grid` where each cell is either `0` (empty) or `1` (obstacle). You can move up, down, left, or right from and to an empty cell in **one step**.\n\nReturn _the minimum number of **steps** to walk from the upper left corner_ `(0, 0)` _to the lower right corner_ `(m - 1, n - 1)` _given that you can eliminate **at most**_ `k` _obstacles_. If it is not possible to find such walk return `-1`.\n\n**Example 1:**\n\n![](./assets/shortest-path-in-a-grid-with-obstacles-elimination-1.jpg)\n```\nInput: grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1\nOutput: 6\nExplanation: \nThe shortest path without eliminating any obstacle is 10.\nThe shortest path with one obstacle elimination at position (3,2) is 6. Such path is (0,0) -> (0,1) -> (0,2) -> (1,2) -> (2,2) -> (3,2) -> (4,2).\n```\n\n**Example 2:**\n\n![](./assets/shortest-path-in-a-grid-with-obstacles-elimination-2.jpg)\n```\nInput: grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1\nOutput: -1\nExplanation: We need to eliminate at least two obstacles to find such a walk.\n```\n\n**Constraints:**\n\n*   `m == grid.length`\n*   `n == grid[i].length`\n*   `1 <= m, n <= 40`\n*   `1 <= k <= m * n`\n*   `grid[i][j]` is either `0` **or** `1`.\n*   `grid[0][0] == grid[m - 1][n - 1] == 0`",
+  "constraints": [
+    "m == grid.length",
+    "n == grid[i].length",
+    "1 <= m, n <= 40",
+    "1 <= k <= m * n",
+    "grid[i][j] is either 0 or 1.",
+    "grid[0][0] == grid[m - 1][n - 1] == 0"
+  ],
+  "examples": [
+    {
+      "input": "grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1",
+      "output": "6",
+      "explanation": "The shortest path without eliminating any obstacle is 10.\nThe shortest path with one obstacle elimination at position (3,2) is 6. Such path is (0,0) -&gt; (0,1) -&gt; (0,2) -&gt; (1,2) -&gt; (2,2) -&gt; (3,2) -&gt; (4,2)."
+    },
+    {
+      "input": "grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1",
+      "output": "-1",
+      "explanation": "We need to eliminate at least two obstacles to find such a walk."
+    }
+  ],
+  "starterCode": {
+    "cpp": "class Solution {\npublic:\n    int shortestPath(vector<vector<int>>& grid, int k) {\n        \n    }\n};",
+    "java": "class Solution {\n    public int shortestPath(int[][] grid, int k) {\n        \n    }\n}",
+    "python3": "class Solution:\n    def shortestPath(self, grid: list[list[int]], k: int) -> int:\n        ",
+    "python": "class Solution(object):\n    def shortestPath(self, grid, k):\n        \"\"\"\n        :type grid: List[List[int]]\n        :type k: int\n        :rtype: int\n        \"\"\"\n        ",
+    "javascript": "/**\n * @param {number[][]} grid\n * @param {number} k\n * @return {number}\n */\nvar shortestPath = function(grid, k) {\n    \n};",
+    "typescript": "function shortestPath(grid: number[][], k: number): number {\n    \n};",
+    "csharp": "public class Solution {\n    public int ShortestPath(int[][] grid, int k) {\n        \n    }\n}",
+    "c": "int shortestPath(int** grid, int gridSize, int* gridColSize, int k) {\n    \n}",
+    "golang": "func shortestPath(grid [][]int, k int) int {\n    \n}",
+    "kotlin": "class Solution {\n    fun shortestPath(grid: Array<IntArray>, k: Int): Int {\n        \n    }\n}",
+    "swift": "class Solution {\n    func shortestPath(_ grid: [[Int]], _ k: Int) -> Int {\n        \n    }\n}",
+    "rust": "impl Solution {\n    pub fn shortest_path(grid: Vec<Vec<i32>>, k: i32) -> i32 {\n        \n    }\n}",
+    "ruby": "# @param {Integer[][]} grid\n# @param {Integer} k\n# @return {Integer}\ndef shortest_path(grid, k)\n    \nend",
+    "php": "class Solution {\n\n    /**\n     * @param Integer[][] $grid\n     * @param Integer $k\n     * @return Integer\n     */\n    function shortestPath($grid, $k) {\n        \n    }\n}",
+    "dart": "class Solution {\n  int shortestPath(List<List<int>> grid, int k) {\n    \n  }\n}",
+    "scala": "object Solution {\n    def shortestPath(grid: Array[Array[Int]], k: Int): Int = {\n        \n    }\n}",
+    "elixir": "defmodule Solution do\n  @spec shortest_path(grid :: [[integer]], k :: integer) :: integer\n  def shortest_path(grid, k) do\n    \n  end\nend",
+    "erlang": "-spec shortest_path(Grid :: [[integer()]], K :: integer()) -> integer().\nshortest_path(Grid, K) ->\n  .",
+    "racket": "(define/contract (shortest-path grid k)\n  (-> (listof (listof exact-integer?)) exact-integer? exact-integer?)\n  )"
+  },
+  "publicTests": [
+    {
+      "input": "grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1",
+      "expectedOutput": "-1"
+    }
+  ],
+  "testCases": [
+    {
+      "input": "grid = [[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]], k = 1",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "grid = [[0,1,1],[1,1,1],[1,0,0]], k = 1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[0,0,0],[1,1,0],[0,0,0],[0,1,1],[0,0,0]]\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[[0,1,1],[1,1,1],[1,0,0]]\n1",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1,1]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-10,-20,-30]\n-50",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,2,4]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[3,3]\n6",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,1,1,1,1,4,7]\n11",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,3,4,5,6,7,8,9,10]\n19",
+      "expectedOutput": null
+    },
+    {
+      "input": "[10,9,8,7,6,5,4,3,2,1]\n5",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-1000000000,1000000000]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n-9",
+      "expectedOutput": null
+    },
+    {
+      "input": "[100,-100,50,-50,25,-25]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,5,9,13,17,21]\n30",
+      "expectedOutput": null
+    },
+    {
+      "input": "[2,4,6,8,10]\n14",
+      "expectedOutput": null
+    },
+    {
+      "input": "[0,4,3,0]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[-3,4,3,90]\n0",
+      "expectedOutput": null
+    },
+    {
+      "input": "[1,2,5,6,7]\n8",
+      "expectedOutput": null
+    }
+  ],
+  "sqlSchema": null,
+  "sqlSetup": null,
+  "expectedOutput": null,
+  "solution": null,
+  "hints": [
+    "Use BFS.",
+    "BFS on (x,y,r) x,y is coordinate, r is remain number of obstacles you can remove."
+  ],
+  "source": {
+    "name": "LeetCode",
+    "url": "https://leetcode.com/problems/shortest-path-in-a-grid-with-obstacles-elimination/",
+    "licenseOrPermissionReference": "Authorized collection",
+    "collectedAt": "2026-10-19T16:10:26.616Z",
+    "sourceUpdatedAt": null
+  }
+}
