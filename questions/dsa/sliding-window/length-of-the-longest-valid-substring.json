@@ -72,12 +72,76 @@
       "expectedOutput": "4"
     },
     {
-      "input": "word = \"cbaaaabc\", forbidden = [\"aaa\",\"cb\"]",
+      "input": "\"cbaa\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aabc\"\n[\"aaa\",\"cb\"]",
       "expectedOutput": "4"
     },
     {
-      "input": "word = \"leetcode\", forbidden = [\"de\",\"le\",\"e\"]",
+      "input": "\"c\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cb\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cbaaaabccbaaaabc\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"cccccc\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"CBAAAABC\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"a\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"\n[\"aaa\",\"cb\"]",
       "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abcde\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aab\"\n[\"aaa\",\"cb\"]",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

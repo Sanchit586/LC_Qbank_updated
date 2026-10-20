@@ -84,16 +84,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "colors = \"abaac\", neededTime = [1,2,3,4,5]",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "colors = \"abc\", neededTime = [1,2,3]",
+      "input": "\"ab\"\n[1,2,3,4,5]",
       "expectedOutput": "0"
     },
     {
-      "input": "colors = \"aabaa\", neededTime = [1,2,3,4,1]",
+      "input": "\"aac\"\n[1,2,3,4,5]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"caaba\"\n[1,2,3,4,5]",
       "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"\n[1,2,3,4,5]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"ABAAC\"\n[1,2,3,4,5]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"b\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n[1,2,3,4,5]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n[1,2,3,4,5]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abcde\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"\n[1,2,3,4,5]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"0\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n[1,2,3,4,5]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

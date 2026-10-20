@@ -70,11 +70,75 @@
       "expectedOutput": "\"d\""
     },
     {
-      "input": "s = \"abccbaacz\"",
+      "input": "\"abcc\"",
       "expectedOutput": "\"c\""
     },
     {
-      "input": "s = \"abcdd\"",
+      "input": "\"baacz\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"zcaabccba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abccbaaczabccbaacz\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abccbaaczzcaabccba\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"ABCCBAACZ\"",
+      "expectedOutput": "\"C\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "\"l\""
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"cdd\"",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "\"ddcba\"",
       "expectedOutput": "\"d\""
     }
   ],

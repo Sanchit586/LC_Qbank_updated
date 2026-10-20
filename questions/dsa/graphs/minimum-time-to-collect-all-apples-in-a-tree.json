@@ -86,15 +86,39 @@
       "expectedOutput": "0"
     },
     {
-      "input": "n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,true,true,false]",
+      "input": "8\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,true,true,false]",
       "expectedOutput": "8"
     },
     {
-      "input": "n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,true,false,false,true,false]",
+      "input": "9\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,true,true,false]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "10\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,true,true,false]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "8\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,false,true,false]",
       "expectedOutput": "6"
     },
     {
-      "input": "n = 7, edges = [[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]], hasApple = [false,false,false,false,false,false,false]",
+      "input": "9\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,false,true,false]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "10\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,true,false,false,true,false]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "8\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,false,false,false,false,false]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "9\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,false,false,false,false,false]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "10\n[[0,1],[0,2],[1,4],[1,5],[2,3],[2,6]]\n[false,false,false,false,false,false,false]",
       "expectedOutput": "0"
     }
   ],

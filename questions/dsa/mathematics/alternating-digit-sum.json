@@ -78,16 +78,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "n = 521",
-      "expectedOutput": "4"
+      "input": "520",
+      "expectedOutput": "3"
     },
     {
-      "input": "n = 111",
+      "input": "522",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "519",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "523",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "518",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "524",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "1042",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "260",
+      "expectedOutput": "-4"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 886996",
-      "expectedOutput": "0"
+      "input": "2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "50",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

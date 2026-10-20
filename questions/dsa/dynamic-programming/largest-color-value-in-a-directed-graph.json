@@ -74,11 +74,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "colors = \"abaca\", edges = [[0,1],[0,2],[2,3],[3,4]]",
+      "input": "\"acaba\"\n[[0,1],[0,2],[2,3],[3,4]]",
       "expectedOutput": "3"
     },
     {
-      "input": "colors = \"a\", edges = [[0,0]]",
+      "input": "\"abacaabaca\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaa\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abacaacaba\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abcde\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"racecar\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"hello\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"leetcode\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"world\"\n[[0,1],[0,2],[2,3],[3,4]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"A\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n[[0,0]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n[[0,0]]",
       "expectedOutput": "-1"
     }
   ],

@@ -82,18 +82,6 @@
     {
       "input": "[[1,2,2],[4,5,2],[7,9,3]]",
       "expectedOutput": "11"
-    },
-    {
-      "input": "meetings = [[2,5,4],[6,8,3]]",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "meetings = [[3,5,4],[4,7,8],[8,10,3]]",
-      "expectedOutput": "12"
-    },
-    {
-      "input": "meetings = [[1,2,2],[4,5,2],[7,9,3]]",
-      "expectedOutput": "11"
     }
   ],
   "sqlSchema": null,

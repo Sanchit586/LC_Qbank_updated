@@ -67,12 +67,76 @@
       "expectedOutput": "[1,1]"
     },
     {
-      "input": "n = 11, firstPlayer = 2, secondPlayer = 4",
+      "input": "10\n2\n4",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "12\n2\n4",
       "expectedOutput": "[3,4]"
     },
     {
-      "input": "n = 5, firstPlayer = 1, secondPlayer = 5",
+      "input": "9\n2\n4",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "13\n2\n4",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "8\n2\n4",
+      "expectedOutput": "[2,3]"
+    },
+    {
+      "input": "14\n2\n4",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "5\n2\n4",
       "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "4\n2\n4",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "11\n1\n4",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "11\n3\n4",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "11\n4\n4",
+      "expectedOutput": "[3,5]"
+    },
+    {
+      "input": "11\n5\n4",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "11\n6\n4",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "11\n7\n4",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "11\n2\n1",
+      "expectedOutput": "[4,4]"
+    },
+    {
+      "input": "11\n2\n2",
+      "expectedOutput": "[3,5]"
+    },
+    {
+      "input": "11\n2\n3",
+      "expectedOutput": "[4,4]"
+    },
+    {
+      "input": "11\n2\n5",
+      "expectedOutput": "[2,4]"
     }
   ],
   "sqlSchema": null,

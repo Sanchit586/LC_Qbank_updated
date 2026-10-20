@@ -67,11 +67,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "bills = [5,5,5,10,20]",
+      "input": "[5,5]",
       "expectedOutput": "true"
     },
     {
-      "input": "bills = [5,5,10,10,20]",
+      "input": "[5,10,20]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,20]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[20,10,5,5,5]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[5,5,5,5,5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,5,5,10,20,5,5,5,10,20]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[10,10,10,20,40]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[6,6,6,11,21]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[4,4,4,9,19]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-5,-5,-5,-10,-20]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2]",
       "expectedOutput": "false"
     }
   ],

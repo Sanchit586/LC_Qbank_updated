@@ -84,16 +84,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "a = 2, b = [3]",
-      "expectedOutput": "8"
+      "input": "0\n[3]",
+      "expectedOutput": "0"
     },
     {
-      "input": "a = 2, b = [1,0]",
-      "expectedOutput": "1024"
-    },
-    {
-      "input": "a = 1, b = [4,3,3,8,5,2]",
+      "input": "1\n[3]",
       "expectedOutput": "1"
+    },
+    {
+      "input": "3\n[3]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "4\n[3]",
+      "expectedOutput": "64"
+    },
+    {
+      "input": "5\n[3]",
+      "expectedOutput": "125"
+    },
+    {
+      "input": "6\n[3]",
+      "expectedOutput": "216"
+    },
+    {
+      "input": "7\n[3]",
+      "expectedOutput": "343"
+    },
+    {
+      "input": "-1\n[3]",
+      "expectedOutput": "1336"
+    },
+    {
+      "input": "-2\n[3]",
+      "expectedOutput": "1329"
+    },
+    {
+      "input": "2\n[3,3]",
+      "expectedOutput": "1058"
+    },
+    {
+      "input": "2\n[6]",
+      "expectedOutput": "64"
+    },
+    {
+      "input": "2\n[4]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "2\n[2]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "2\n[-3]",
+      "expectedOutput": "1170"
+    },
+    {
+      "input": "2\n[0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2\n[1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n[-1]",
+      "expectedOutput": "669"
     }
   ],
   "sqlSchema": null,

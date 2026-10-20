@@ -67,12 +67,76 @@
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"rabbbit\", t = \"rabbit\"",
-      "expectedOutput": "3"
+      "input": "\"rab\"\n\"rabbit\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"babgbag\", t = \"bag\"",
-      "expectedOutput": "5"
+      "input": "\"bbit\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"r\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ra\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"tibbbar\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"rabbbitrabbbit\"\n\"rabbit\"",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "\"rrrrrr\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"rabbbittibbbar\"\n\"rabbit\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"RABBBIT\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n\"rabbit\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n\"rabbit\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

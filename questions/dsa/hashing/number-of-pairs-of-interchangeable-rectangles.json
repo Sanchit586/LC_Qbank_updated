@@ -70,14 +70,6 @@
     {
       "input": "[[4,5],[7,8]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "rectangles = [[4,8],[3,6],[10,20],[15,30]]",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "rectangles = [[4,5],[7,8]]",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -70,12 +70,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "arr = [-7,9,5], brr = [7,-2,-5], k = 2",
+      "input": "[-7]\n[7,-2,-5]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[9,5]\n[7,-2,-5]\n2",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-7,5]\n[7,-2,-5]\n2",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[-7,9]\n[7,-2,-5]\n2",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[5,9,-7]\n[7,-2,-5]\n2",
       "expectedOutput": "13"
     },
     {
-      "input": "arr = [2,1], brr = [2,1], k = 0",
-      "expectedOutput": "0"
+      "input": "[-7,5,9]\n[7,-2,-5]\n2",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[9,5,-7]\n[7,-2,-5]\n2",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[-7,-7,-7]\n[7,-2,-5]\n2",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "[-7,9,5,-7,9,5]\n[7,-2,-5]\n2",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[-14,18,10]\n[7,-2,-5]\n2",
+      "expectedOutput": "34"
+    },
+    {
+      "input": "[-6,10,6]\n[7,-2,-5]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[-8,8,4]\n[7,-2,-5]\n2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[7,-9,-5]\n[7,-2,-5]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[0,0,0]\n[7,-2,-5]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[1,1,1]\n[7,-2,-5]\n2",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[0]\n[7,-2,-5]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1]\n[7,-2,-5]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[-1]\n[7,-2,-5]\n2",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

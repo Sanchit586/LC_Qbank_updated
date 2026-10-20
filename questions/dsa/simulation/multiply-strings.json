@@ -69,12 +69,76 @@
       "expectedOutput": "\"56088\""
     },
     {
-      "input": "num1 = \"2\", num2 = \"3\"",
-      "expectedOutput": "\"6\""
+      "input": "\"22\"\n\"3\"",
+      "expectedOutput": "\"66\""
     },
     {
-      "input": "num1 = \"123\", num2 = \"456\"",
-      "expectedOutput": "\"56088\""
+      "input": "\"0\"\n\"3\"",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"\n\"3\"",
+      "expectedOutput": "\"363\""
+    },
+    {
+      "input": "\"2\"\n\"33\"",
+      "expectedOutput": "\"66\""
+    },
+    {
+      "input": "\"2\"\n\"0\"",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"2\"\n\"121\"",
+      "expectedOutput": "\"242\""
+    },
+    {
+      "input": "\"1\"\n\"456\"",
+      "expectedOutput": "\"456\""
+    },
+    {
+      "input": "\"23\"\n\"456\"",
+      "expectedOutput": "\"10488\""
+    },
+    {
+      "input": "\"12\"\n\"456\"",
+      "expectedOutput": "\"5472\""
+    },
+    {
+      "input": "\"321\"\n\"456\"",
+      "expectedOutput": "\"146376\""
+    },
+    {
+      "input": "\"123123\"\n\"456\"",
+      "expectedOutput": "\"56144088\""
+    },
+    {
+      "input": "\"111\"\n\"456\"",
+      "expectedOutput": "\"50616\""
+    },
+    {
+      "input": "\"123321\"\n\"456\"",
+      "expectedOutput": "\"56234376\""
+    },
+    {
+      "input": "\"0\"\n\"456\"",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"\n\"456\"",
+      "expectedOutput": "\"55176\""
+    },
+    {
+      "input": "\"123\"\n\"4\"",
+      "expectedOutput": "\"492\""
+    },
+    {
+      "input": "\"123\"\n\"56\"",
+      "expectedOutput": "\"6888\""
+    },
+    {
+      "input": "\"123\"\n\"45\"",
+      "expectedOutput": "\"5535\""
     }
   ],
   "sqlSchema": null,

@@ -65,11 +65,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "n = 99",
+      "input": "98",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "100",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 23",
+      "input": "97",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "101",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "96",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "102",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "198",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "49",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "50",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "22",
       "expectedOutput": "false"
     }
   ],

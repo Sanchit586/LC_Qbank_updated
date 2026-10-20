@@ -66,12 +66,76 @@
       "expectedOutput": "[6,0,4]"
     },
     {
-      "input": "memory1 = 2, memory2 = 2",
-      "expectedOutput": "[3,1,0]"
+      "input": "0\n2",
+      "expectedOutput": "[2,0,1]"
     },
     {
-      "input": "memory1 = 8, memory2 = 11",
-      "expectedOutput": "[6,0,4]"
+      "input": "1\n2",
+      "expectedOutput": "[2,1,1]"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "[3,0,2]"
+    },
+    {
+      "input": "4\n2",
+      "expectedOutput": "[3,1,2]"
+    },
+    {
+      "input": "5\n2",
+      "expectedOutput": "[3,2,2]"
+    },
+    {
+      "input": "6\n2",
+      "expectedOutput": "[4,0,2]"
+    },
+    {
+      "input": "7\n2",
+      "expectedOutput": "[4,1,2]"
+    },
+    {
+      "input": "-1\n2",
+      "expectedOutput": "[2,-1,1]"
+    },
+    {
+      "input": "-2\n2",
+      "expectedOutput": "[2,-2,1]"
+    },
+    {
+      "input": "2\n0",
+      "expectedOutput": "[2,1,0]"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "[2,1,1]"
+    },
+    {
+      "input": "2\n3",
+      "expectedOutput": "[3,0,2]"
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "[3,2,1]"
+    },
+    {
+      "input": "2\n5",
+      "expectedOutput": "[3,2,2]"
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "[4,2,0]"
+    },
+    {
+      "input": "2\n7",
+      "expectedOutput": "[4,2,1]"
+    },
+    {
+      "input": "2\n-1",
+      "expectedOutput": "[2,1,-1]"
+    },
+    {
+      "input": "2\n-2",
+      "expectedOutput": "[2,1,-2]"
     }
   ],
   "sqlSchema": null,

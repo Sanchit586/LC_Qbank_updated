@@ -68,11 +68,75 @@
       "expectedOutput": "4"
     },
     {
-      "input": "word1 = \"sea\", word2 = \"eat\"",
+      "input": "\"s\"\n\"eat\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ea\"\n\"eat\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"se\"\n\"eat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aes\"\n\"eat\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"seasea\"\n\"eat\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"sss\"\n\"eat\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"seaaes\"\n\"eat\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"SEA\"\n\"eat\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"\n\"eat\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word1 = \"leetcode\", word2 = \"etco\"",
+      "input": "\"b\"\n\"eat\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aa\"\n\"eat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ab\"\n\"eat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ba\"\n\"eat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aba\"\n\"eat\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abba\"\n\"eat\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aaaaa\"\n\"eat\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"abcde\"\n\"eat\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"edcba\"\n\"eat\"",
       "expectedOutput": "4"
     }
   ],

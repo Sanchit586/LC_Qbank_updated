@@ -68,12 +68,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "directions = \"RLRSLL\"",
+      "input": "\"RLR\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"SLL\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"R\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"RL\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"LLSRLR\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"RLRSLLRLRSLL\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"RRRRRR\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"RLRSLLLLSRLR\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"rlrsll\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
       "expectedOutput": "5"
     },
     {
-      "input": "directions = \"LLRR\"",
-      "expectedOutput": "0"
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

@@ -83,16 +83,72 @@
       "expectedOutput": "\"K4N2O14S4\""
     },
     {
-      "input": "formula = \"H2O\"",
-      "expectedOutput": "\"H2O\""
+      "input": "\"H\"",
+      "expectedOutput": "\"H\""
     },
     {
-      "input": "formula = \"Mg(OH)2\"",
-      "expectedOutput": "\"H2MgO2\""
+      "input": "\"2O\"",
+      "expectedOutput": "\"O\""
     },
     {
-      "input": "formula = \"K4(ON(SO3)2)2\"",
-      "expectedOutput": "\"K4N2O14S4\""
+      "input": "\"H2\"",
+      "expectedOutput": "\"H2\""
+    },
+    {
+      "input": "\"O2H\"",
+      "expectedOutput": "\"HO2\""
+    },
+    {
+      "input": "\"H2OH2O\"",
+      "expectedOutput": "\"H4O2\""
+    },
+    {
+      "input": "\"HHH\"",
+      "expectedOutput": "\"H3\""
+    },
+    {
+      "input": "\"H2OO2H\"",
+      "expectedOutput": "\"H3O3\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,

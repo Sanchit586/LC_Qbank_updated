@@ -80,15 +80,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,2,3,4,10]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "nums = [1,2,3,4,5,14]",
+      "input": "[1,2]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [5,5,5,25]",
+      "input": "[3,4,10]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,10]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[10,4,3,2,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,3,4,10,1,2,3,4,10]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,4,6,8,20]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,3,4,5,11]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,1,2,3,9]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1,-2,-3,-4,-10]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,1]",
       "expectedOutput": "true"
     }
   ],

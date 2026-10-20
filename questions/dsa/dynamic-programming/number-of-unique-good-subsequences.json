@@ -80,15 +80,71 @@
       "expectedOutput": "5"
     },
     {
-      "input": "binary = \"001\"",
+      "input": "\"0\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"01\"",
       "expectedOutput": "2"
     },
     {
-      "input": "binary = \"11\"",
+      "input": "\"00\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"100\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"001001\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"000\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"001100\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "binary = \"101\"",
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
       "expectedOutput": "5"
     }
   ],

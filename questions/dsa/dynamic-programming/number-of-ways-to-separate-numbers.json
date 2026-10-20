@@ -81,16 +81,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "num = \"327\"",
+      "input": "\"3\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"27\"",
       "expectedOutput": "2"
     },
     {
-      "input": "num = \"094\"",
-      "expectedOutput": "0"
+      "input": "\"32\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "num = \"0\"",
-      "expectedOutput": "0"
+      "input": "\"723\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"327327\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"333\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"327723\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

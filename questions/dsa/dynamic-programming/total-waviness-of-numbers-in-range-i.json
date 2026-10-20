@@ -80,16 +80,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "num1 = 120, num2 = 130",
+      "input": "119\n130",
       "expectedOutput": "3"
     },
     {
-      "input": "num1 = 198, num2 = 202",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "num1 = 4848, num2 = 4848",
+      "input": "121\n130",
       "expectedOutput": "2"
+    },
+    {
+      "input": "118\n130",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "122\n130",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "117\n130",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "123\n130",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "240\n130",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "60\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "0\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "1\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "2\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "3\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "4\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "5\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "10\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "20\n130",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "50\n130",
+      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,

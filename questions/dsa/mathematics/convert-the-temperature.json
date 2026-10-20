@@ -58,19 +58,11 @@
   "testCases": [
     {
       "input": "36.50",
-      "expectedOutput": "[309.65000,97.70000]"
+      "expectedOutput": "[309.65,97.7]"
     },
     {
       "input": "122.11",
-      "expectedOutput": "[395.26000,251.79800]"
-    },
-    {
-      "input": "celsius = 36.50",
-      "expectedOutput": "[309.65000,97.70000]"
-    },
-    {
-      "input": "celsius = 122.11",
-      "expectedOutput": "[395.26000,251.79800]"
+      "expectedOutput": "[395.26,251.798]"
     }
   ],
   "sqlSchema": null,

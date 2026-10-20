@@ -67,12 +67,40 @@
       "expectedOutput": "18"
     },
     {
-      "input": "s = \"FFF\"",
-      "expectedOutput": "3"
+      "input": "\"F\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = \"FWEFW\"",
+      "input": "\"FF\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"FFFFFF\"",
+      "expectedOutput": "32"
+    },
+    {
+      "input": "\"FW\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"EFW\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"WFEWF\"",
       "expectedOutput": "18"
+    },
+    {
+      "input": "\"FWEFWFWEFW\"",
+      "expectedOutput": "657"
+    },
+    {
+      "input": "\"FFFFF\"",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "\"FWEFWWFEWF\"",
+      "expectedOutput": "654"
     }
   ],
   "sqlSchema": null,

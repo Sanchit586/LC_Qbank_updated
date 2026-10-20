@@ -69,12 +69,76 @@
       "expectedOutput": "\"45\""
     },
     {
-      "input": "s = \"owoztneoer\"",
+      "input": "\"owozt\"",
+      "expectedOutput": "\"02\""
+    },
+    {
+      "input": "\"neoer\"",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"o\"",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"ow\"",
+      "expectedOutput": "\"2\""
+    },
+    {
+      "input": "\"reoentzowo\"",
       "expectedOutput": "\"012\""
     },
     {
-      "input": "s = \"fviefuro\"",
-      "expectedOutput": "\"45\""
+      "input": "\"owoztneoerowoztneoer\"",
+      "expectedOutput": "\"001122\""
+    },
+    {
+      "input": "\"oooooo\"",
+      "expectedOutput": "\"111111\""
+    },
+    {
+      "input": "\"owoztneoerreoentzowo\"",
+      "expectedOutput": "\"001122\""
+    },
+    {
+      "input": "\"OWOZTNEOER\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,

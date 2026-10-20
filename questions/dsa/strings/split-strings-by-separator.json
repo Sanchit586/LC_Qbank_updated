@@ -82,16 +82,28 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "words = [\"one.two.three\",\"four.five\",\"six\"], separator = \".\"",
-      "expectedOutput": "[\"one\",\"two\",\"three\",\"four\",\"five\",\"six\"]"
+      "input": "[\"one.two.three\",\"four.five\",\"six\"]\n\"$\"",
+      "expectedOutput": "[\"one.two.three\",\"four.five\",\"six\"]"
     },
     {
-      "input": "words = [\"$easy$\",\"$problem$\"], separator = \"$\"",
-      "expectedOutput": "[\"easy\",\"problem\"]"
+      "input": "[\"one.two.three\",\"four.five\",\"six\"]\n\"|\"",
+      "expectedOutput": "[\"one.two.three\",\"four.five\",\"six\"]"
     },
     {
-      "input": "words = [\"|||\"], separator = \"|\"",
-      "expectedOutput": "[]"
+      "input": "[\"$easy$\",\"$problem$\"]\n\".\"",
+      "expectedOutput": "[\"$easy$\",\"$problem$\"]"
+    },
+    {
+      "input": "[\"$easy$\",\"$problem$\"]\n\"|\"",
+      "expectedOutput": "[\"$easy$\",\"$problem$\"]"
+    },
+    {
+      "input": "[\"|||\"]\n\".\"",
+      "expectedOutput": "[\"|||\"]"
+    },
+    {
+      "input": "[\"|||\"]\n\"$\"",
+      "expectedOutput": "[\"|||\"]"
     }
   ],
   "sqlSchema": null,

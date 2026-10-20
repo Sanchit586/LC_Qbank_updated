@@ -74,11 +74,75 @@
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"abcde\", words = [\"a\",\"bb\",\"acd\",\"ace\"]",
-      "expectedOutput": "3"
+      "input": "\"ab\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = \"dsahjpjauf\", words = [\"ahjpjau\",\"ja\",\"ahbwzgqnuk\",\"tnmlanowax\"]",
+      "input": "\"cde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeabcde\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeedcba\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ABCDE\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"racecar\"\n[\"a\",\"bb\",\"acd\",\"ace\"]",
       "expectedOutput": "2"
     }
   ],

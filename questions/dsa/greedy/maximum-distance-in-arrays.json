@@ -69,14 +69,6 @@
     {
       "input": "[[1],[1]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "arrays = [[1,2,3],[4,5],[1,2,3]]",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "arrays = [[1],[1]]",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -83,15 +83,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "event1 = [\"01:15\",\"02:00\"], event2 = [\"02:00\",\"03:00\"]",
+      "input": "[\"02:00\",\"01:15\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"01:15\",\"01:15\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"01:15\",\"02:00\",\"01:15\",\"02:00\"]\n[\"02:00\",\"03:00\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "event1 = [\"01:00\",\"02:00\"], event2 = [\"01:20\",\"03:00\"]",
-      "expectedOutput": "true"
+      "input": "[\"a\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
     },
     {
-      "input": "event1 = [\"10:00\",\"11:00\"], event2 = [\"14:00\",\"15:00\"]",
+      "input": "[\"a\",\"b\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]\n[\"02:00\",\"03:00\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]\n[\"02:00\",\"03:00\"]",
       "expectedOutput": "false"
     }
   ],

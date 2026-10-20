@@ -69,12 +69,76 @@
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [1,-1,1], limit = 3, goal = -4",
+      "input": "[1]\n3\n-4",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [1,-10,9,1], limit = 100, goal = 0",
+      "input": "[-1,1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,-1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-1,1,1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,-1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1]\n3\n-4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,-1,1,1,-1,1]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,-2,2]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,0,2]\n3\n-4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,-2,0]\n3\n-4",
       "expectedOutput": "1"
+    },
+    {
+      "input": "[-1,1,-1]\n3\n-4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0,0]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-1]\n3\n-4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n3\n-4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2]\n3\n-4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,1]\n3\n-4",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

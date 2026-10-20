@@ -73,12 +73,76 @@
       "expectedOutput": "1"
     },
     {
-      "input": "strs = [\"tars\",\"rats\",\"arts\",\"star\"]",
+      "input": "[\"tars\",\"rats\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"arts\",\"star\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "strs = [\"omv\",\"ovm\"]",
+      "input": "[\"tars\"]",
       "expectedOutput": "1"
+    },
+    {
+      "input": "[\"tars\",\"star\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"star\",\"arts\",\"rats\",\"tars\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"arts\",\"rats\",\"star\",\"tars\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"tars\",\"star\",\"rats\",\"arts\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"tars\",\"tars\",\"tars\",\"tars\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"tars\",\"rats\",\"arts\",\"star\",\"tars\",\"rats\",\"arts\",\"star\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

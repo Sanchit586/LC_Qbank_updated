@@ -70,14 +70,6 @@
     {
       "input": "[[10,8,6,4,2],[9,7,5,3,2]]",
       "expectedOutput": "386"
-    },
-    {
-      "input": "values = [[8,5,2],[6,4,1],[9,7,3]]",
-      "expectedOutput": "285"
-    },
-    {
-      "input": "values = [[10,8,6,4,2],[9,7,5,3,2]]",
-      "expectedOutput": "386"
     }
   ],
   "sqlSchema": null,

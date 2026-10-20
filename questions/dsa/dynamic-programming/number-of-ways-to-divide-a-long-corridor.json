@@ -82,15 +82,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "corridor = \"SSPPSPS\"",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "corridor = \"PPSPSP\"",
+      "input": "\"SSP\"",
       "expectedOutput": "1"
     },
     {
-      "input": "corridor = \"S\"",
+      "input": "\"PSPS\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"SS\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"SPSPPSS\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"SSPPSPSSSPPSPS\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"SSSSSS\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"SSPPSPSSPSPPSS\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"ssppsps\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
       "expectedOutput": "0"
     }
   ],

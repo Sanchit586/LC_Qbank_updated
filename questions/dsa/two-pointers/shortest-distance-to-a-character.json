@@ -69,12 +69,76 @@
       "expectedOutput": "[3,2,1,0]"
     },
     {
-      "input": "s = \"loveleetcode\", c = \"e\"",
-      "expectedOutput": "[3,2,1,0,1,0,0,1,2,2,1,0]"
+      "input": "\"lovele\"\n\"e\"",
+      "expectedOutput": "[3,2,1,0,1,0]"
     },
     {
-      "input": "s = \"aaab\", c = \"b\"",
-      "expectedOutput": "[3,2,1,0]"
+      "input": "\"etcode\"\n\"e\"",
+      "expectedOutput": "[0,1,2,2,1,0]"
+    },
+    {
+      "input": "\"l\"\n\"e\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"lo\"\n\"e\"",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "\"edocteelevol\"\n\"e\"",
+      "expectedOutput": "[0,1,2,2,1,0,0,1,0,1,2,3]"
+    },
+    {
+      "input": "\"llllll\"\n\"e\"",
+      "expectedOutput": "[6,6,6,6,6,6]"
+    },
+    {
+      "input": "\"LOVELEETCODE\"\n\"e\"",
+      "expectedOutput": "[12,12,12,12,12,12,12,12,12,12,12,12]"
+    },
+    {
+      "input": "\"a\"\n\"e\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"b\"\n\"e\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"aa\"\n\"e\"",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "\"ab\"\n\"e\"",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "\"ba\"\n\"e\"",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "\"aba\"\n\"e\"",
+      "expectedOutput": "[3,3,3]"
+    },
+    {
+      "input": "\"abba\"\n\"e\"",
+      "expectedOutput": "[4,4,4,4]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"e\"",
+      "expectedOutput": "[5,5,5,5,5]"
+    },
+    {
+      "input": "\"abcde\"\n\"e\"",
+      "expectedOutput": "[4,3,2,1,0]"
+    },
+    {
+      "input": "\"edcba\"\n\"e\"",
+      "expectedOutput": "[0,1,2,3,4]"
+    },
+    {
+      "input": "\"aab\"\n\"e\"",
+      "expectedOutput": "[3,3,3]"
     }
   ],
   "sqlSchema": null,

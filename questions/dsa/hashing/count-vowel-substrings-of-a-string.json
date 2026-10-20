@@ -80,16 +80,72 @@
       "expectedOutput": "7"
     },
     {
-      "input": "word = \"aeiouu\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "word = \"unicornarihan\"",
+      "input": "\"aei\"",
       "expectedOutput": "0"
     },
     {
-      "input": "word = \"cuaieuouac\"",
-      "expectedOutput": "7"
+      "input": "\"ouu\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ae\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"uuoiea\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aeiouuaeiouu\"",
+      "expectedOutput": "31"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aeiouuuuoiea\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"AEIOUU\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

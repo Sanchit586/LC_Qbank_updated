@@ -87,16 +87,72 @@
       "expectedOutput": "\"ZMNAGUEDSJYLBOPHRQICWFXTVK\""
     },
     {
-      "input": "votes = [\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]",
+      "input": "[\"ABC\",\"ACB\"]",
+      "expectedOutput": "\"ABC\""
+    },
+    {
+      "input": "[\"ABC\",\"ACB\",\"ACB\"]",
       "expectedOutput": "\"ACB\""
     },
     {
-      "input": "votes = [\"WXYZ\",\"XYZW\"]",
-      "expectedOutput": "\"XWYZ\""
+      "input": "[\"ABC\"]",
+      "expectedOutput": "\"ABC\""
     },
     {
-      "input": "votes = [\"ZMNAGUEDSJYLBOPHRQICWFXTVK\"]",
-      "expectedOutput": "\"ZMNAGUEDSJYLBOPHRQICWFXTVK\""
+      "input": "[\"ACB\",\"ACB\",\"ABC\",\"ACB\",\"ABC\"]",
+      "expectedOutput": "\"ACB\""
+    },
+    {
+      "input": "[\"ABC\",\"ABC\",\"ACB\",\"ACB\",\"ACB\"]",
+      "expectedOutput": "\"ACB\""
+    },
+    {
+      "input": "[\"ACB\",\"ACB\",\"ACB\",\"ABC\",\"ABC\"]",
+      "expectedOutput": "\"ACB\""
+    },
+    {
+      "input": "[\"ABC\",\"ABC\",\"ABC\",\"ABC\",\"ABC\"]",
+      "expectedOutput": "\"ABC\""
+    },
+    {
+      "input": "[\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\",\"ABC\",\"ACB\",\"ABC\",\"ACB\",\"ACB\"]",
+      "expectedOutput": "\"ACB\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"taenb\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "\"actdgo\""
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "\"hwoelrd\""
     }
   ],
   "sqlSchema": null,

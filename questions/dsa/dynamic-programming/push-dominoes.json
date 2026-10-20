@@ -69,12 +69,76 @@
       "expectedOutput": "\"LL.RR.LLRRLL..\""
     },
     {
-      "input": "dominoes = \"RR.L\"",
-      "expectedOutput": "\"RR.L\""
+      "input": "\"RR\"",
+      "expectedOutput": "\"RR\""
     },
     {
-      "input": "dominoes = \".L.R...LR..L..\"",
-      "expectedOutput": "\"LL.RR.LLRRLL..\""
+      "input": "\".L\"",
+      "expectedOutput": "\"LL\""
+    },
+    {
+      "input": "\"R\"",
+      "expectedOutput": "\"R\""
+    },
+    {
+      "input": "\"L.RR\"",
+      "expectedOutput": "\"L.RR\""
+    },
+    {
+      "input": "\"RR.LRR.L\"",
+      "expectedOutput": "\"RR.LRR.L\""
+    },
+    {
+      "input": "\"RRRR\"",
+      "expectedOutput": "\"RRRR\""
+    },
+    {
+      "input": "\"RR.LL.RR\"",
+      "expectedOutput": "\"RR.LL.RR\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

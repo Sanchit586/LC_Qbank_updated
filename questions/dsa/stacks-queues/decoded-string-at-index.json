@@ -84,16 +84,72 @@
       "expectedOutput": "\"a\""
     },
     {
-      "input": "s = \"leet2code3\", k = 10",
+      "input": "\"leet2\"\n10",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"code3\"\n10",
       "expectedOutput": "\"o\""
     },
     {
-      "input": "s = \"ha22\", k = 5",
-      "expectedOutput": "\"h\""
+      "input": "\"l\"\n10",
+      "expectedOutput": "\"l\""
     },
     {
-      "input": "s = \"a2345678999999999999999\", k = 1",
+      "input": "\"le\"\n10",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"3edoc2teel\"\n10",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"leet2code3leet2code3\"\n10",
+      "expectedOutput": "\"o\""
+    },
+    {
+      "input": "\"llllll\"\n10",
+      "expectedOutput": "\"l\""
+    },
+    {
+      "input": "\"leet2code33edoc2teel\"\n10",
+      "expectedOutput": "\"o\""
+    },
+    {
+      "input": "\"a\"\n10",
       "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n10",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n10",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n10",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"ba\"\n10",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aba\"\n10",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"\n10",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aaaaa\"\n10",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abcde\"\n10",
+      "expectedOutput": "\"e\""
     }
   ],
   "sqlSchema": null,

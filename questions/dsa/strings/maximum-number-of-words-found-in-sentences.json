@@ -70,12 +70,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "sentences = [\"alice and bob love leetcode\", \"i think so too\", \"this is great thanks very much\"]",
+      "input": "[\"alice and bob love leetcode\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"i think so too\",\"this is great thanks very much\"]",
       "expectedOutput": "6"
     },
     {
-      "input": "sentences = [\"please wait\", \"continue to fight\", \"continue to win\"]",
-      "expectedOutput": "3"
+      "input": "[\"alice and bob love leetcode\",\"this is great thanks very much\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"alice and bob love leetcode\",\"i think so too\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"this is great thanks very much\",\"i think so too\",\"alice and bob love leetcode\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"alice and bob love leetcode\",\"alice and bob love leetcode\",\"alice and bob love leetcode\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"alice and bob love leetcode\",\"i think so too\",\"this is great thanks very much\",\"alice and bob love leetcode\",\"i think so too\",\"this is great thanks very much\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

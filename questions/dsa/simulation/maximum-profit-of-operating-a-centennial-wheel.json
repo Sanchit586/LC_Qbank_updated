@@ -82,15 +82,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "customers = [8,3], boardingCost = 5, runningCost = 6",
+      "input": "[8]\n5\n6",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[3]\n5\n6",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[3,8]\n5\n6",
       "expectedOutput": "3"
     },
     {
-      "input": "customers = [10,9,6], boardingCost = 6, runningCost = 4",
-      "expectedOutput": "7"
+      "input": "[8,8]\n5\n6",
+      "expectedOutput": "4"
     },
     {
-      "input": "customers = [3,4,0,5,1], boardingCost = 1, runningCost = 92",
+      "input": "[8,3,8,3]\n5\n6",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[16,6]\n5\n6",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[9,4]\n5\n6",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[7,2]\n5\n6",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-8,-3]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0,0]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,1]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[-1]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2]\n5\n6",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,1]\n5\n6",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1,1]\n5\n6",
       "expectedOutput": "-1"
     }
   ],

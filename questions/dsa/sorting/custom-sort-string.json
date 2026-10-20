@@ -63,19 +63,83 @@
   "testCases": [
     {
       "input": "\"cba\"\n\"abcd\"",
-      "expectedOutput": "\"cbad\""
+      "expectedOutput": "\"cdba\""
     },
     {
       "input": "\"bcafg\"\n\"abcd\"",
-      "expectedOutput": "\"bcad\""
+      "expectedOutput": "\"bdca\""
     },
     {
-      "input": "order = \"cba\", s = \"abcd\"",
-      "expectedOutput": "\"cbad\""
+      "input": "\"c\"\n\"abcd\"",
+      "expectedOutput": "\"abcd\""
     },
     {
-      "input": "order = \"bcafg\", s = \"abcd\"",
-      "expectedOutput": "\"bcad\""
+      "input": "\"ba\"\n\"abcd\"",
+      "expectedOutput": "\"bcda\""
+    },
+    {
+      "input": "\"cb\"\n\"abcd\"",
+      "expectedOutput": "\"acdb\""
+    },
+    {
+      "input": "\"abc\"\n\"abcd\"",
+      "expectedOutput": "\"adbc\""
+    },
+    {
+      "input": "\"cbacba\"\n\"abcd\"",
+      "expectedOutput": "\"dcba\""
+    },
+    {
+      "input": "\"ccc\"\n\"abcd\"",
+      "expectedOutput": "\"abdc\""
+    },
+    {
+      "input": "\"cbaabc\"\n\"abcd\"",
+      "expectedOutput": "\"dabc\""
+    },
+    {
+      "input": "\"CBA\"\n\"abcd\"",
+      "expectedOutput": "\"abcd\""
+    },
+    {
+      "input": "\"a\"\n\"abcd\"",
+      "expectedOutput": "\"abcd\""
+    },
+    {
+      "input": "\"b\"\n\"abcd\"",
+      "expectedOutput": "\"abcd\""
+    },
+    {
+      "input": "\"aa\"\n\"abcd\"",
+      "expectedOutput": "\"bcda\""
+    },
+    {
+      "input": "\"ab\"\n\"abcd\"",
+      "expectedOutput": "\"acdb\""
+    },
+    {
+      "input": "\"aba\"\n\"abcd\"",
+      "expectedOutput": "\"cdba\""
+    },
+    {
+      "input": "\"abba\"\n\"abcd\"",
+      "expectedOutput": "\"cdba\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"abcd\"",
+      "expectedOutput": "\"bcda\""
+    },
+    {
+      "input": "\"abcde\"\n\"abcd\"",
+      "expectedOutput": "\"abcd\""
+    },
+    {
+      "input": "\"edcba\"\n\"abcd\"",
+      "expectedOutput": "\"dcba\""
+    },
+    {
+      "input": "\"aab\"\n\"abcd\"",
+      "expectedOutput": "\"cdab\""
     }
   ],
   "sqlSchema": null,

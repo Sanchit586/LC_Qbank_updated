@@ -72,11 +72,75 @@
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [1,4,5], k = 1, numOperations = 2",
+      "input": "[1]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,5]\n1\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [5,11,20,20], k = 5, numOperations = 1",
+      "input": "[1,5]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,4]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[5,4,1]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1]\n1\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,4,5,1,4,5]\n1\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[2,8,10]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,5,6]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,3,4]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-1,-4,-5]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,0,0]\n1\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,1]\n1\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n1\n2",
       "expectedOutput": "2"
     }
   ],

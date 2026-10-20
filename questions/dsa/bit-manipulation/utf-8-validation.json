@@ -67,12 +67,76 @@
       "expectedOutput": "false"
     },
     {
-      "input": "data = [197,130,1]",
+      "input": "[197]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[130,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[197,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[197,130]",
       "expectedOutput": "true"
     },
     {
-      "input": "data = [235,140,4]",
+      "input": "[1,130,197]",
       "expectedOutput": "false"
+    },
+    {
+      "input": "[197,197,197]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[197,130,1,197,130,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[394,260,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[198,131,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[196,129,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-197,-130,-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

@@ -61,19 +61,83 @@
   "testCases": [
     {
       "input": "\"a1b2\"",
-      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
+      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1B2\",\"A1b2\"]"
     },
     {
       "input": "\"3z4\"",
       "expectedOutput": "[\"3z4\",\"3Z4\"]"
     },
     {
-      "input": "s = \"a1b2\"",
-      "expectedOutput": "[\"a1b2\",\"a1B2\",\"A1b2\",\"A1B2\"]"
+      "input": "\"a1\"",
+      "expectedOutput": "[\"a1\",\"A1\"]"
     },
     {
-      "input": "s = \"3z4\"",
-      "expectedOutput": "[\"3z4\",\"3Z4\"]"
+      "input": "\"b2\"",
+      "expectedOutput": "[\"b2\",\"B2\"]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[\"a\",\"A\"]"
+    },
+    {
+      "input": "\"2b1a\"",
+      "expectedOutput": "[\"2b1a\",\"2b1A\",\"2B1A\",\"2B1a\"]"
+    },
+    {
+      "input": "\"a1b2a1b2\"",
+      "expectedOutput": "[\"a1b2a1b2\",\"a1b2a1B2\",\"a1b2A1B2\",\"a1b2A1b2\",\"a1B2A1b2\",\"a1B2A1B2\",\"a1B2a1B2\",\"a1B2a1b2\",\"A1B2a1b2\",\"A1B2a1B2\",\"A1B2A1B2\",\"A1B2A1b2\",\"A1b2A1b2\",\"A1b2A1B2\",\"A1b2a1B2\",\"A1b2a1b2\"]"
+    },
+    {
+      "input": "\"aaaa\"",
+      "expectedOutput": "[\"aaaa\",\"aaaA\",\"aaAA\",\"aaAa\",\"aAAa\",\"aAAA\",\"aAaA\",\"aAaa\",\"AAaa\",\"AAaA\",\"AAAA\",\"AAAa\",\"AaAa\",\"AaAA\",\"AaaA\",\"Aaaa\"]"
+    },
+    {
+      "input": "\"a1b22b1a\"",
+      "expectedOutput": "[\"a1b22b1a\",\"a1b22b1A\",\"a1b22B1A\",\"a1b22B1a\",\"a1B22B1a\",\"a1B22B1A\",\"a1B22b1A\",\"a1B22b1a\",\"A1B22b1a\",\"A1B22b1A\",\"A1B22B1A\",\"A1B22B1a\",\"A1b22B1a\",\"A1b22B1A\",\"A1b22b1A\",\"A1b22b1a\"]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[\"b\",\"B\"]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[\"aa\",\"aA\",\"AA\",\"Aa\"]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[\"ab\",\"aB\",\"AB\",\"Ab\"]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[\"ba\",\"bA\",\"BA\",\"Ba\"]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[\"aba\",\"abA\",\"aBA\",\"aBa\",\"ABa\",\"ABA\",\"AbA\",\"Aba\"]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[\"abba\",\"abbA\",\"abBA\",\"abBa\",\"aBBa\",\"aBBA\",\"aBbA\",\"aBba\",\"ABba\",\"ABbA\",\"ABBA\",\"ABBa\",\"AbBa\",\"AbBA\",\"AbbA\",\"Abba\"]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[\"aaaaa\",\"aaaaA\",\"aaaAA\",\"aaaAa\",\"aaAAa\",\"aaAAA\",\"aaAaA\",\"aaAaa\",\"aAAaa\",\"aAAaA\",\"aAAAA\",\"aAAAa\",\"aAaAa\",\"aAaAA\",\"aAaaA\",\"aAaaa\",\"AAaaa\",\"AAaaA\",\"AAaAA\",\"AAaAa\",\"AAAAa\",\"AAAAA\",\"AAAaA\",\"AAAaa\",\"AaAaa\",\"AaAaA\",\"AaAAA\",\"AaAAa\",\"AaaAa\",\"AaaAA\",\"AaaaA\",\"Aaaaa\"]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[\"abcde\",\"abcdE\",\"abcDE\",\"abcDe\",\"abCDe\",\"abCDE\",\"abCdE\",\"abCde\",\"aBCde\",\"aBCdE\",\"aBCDE\",\"aBCDe\",\"aBcDe\",\"aBcDE\",\"aBcdE\",\"aBcde\",\"ABcde\",\"ABcdE\",\"ABcDE\",\"ABcDe\",\"ABCDe\",\"ABCDE\",\"ABCdE\",\"ABCde\",\"AbCde\",\"AbCdE\",\"AbCDE\",\"AbCDe\",\"AbcDe\",\"AbcDE\",\"AbcdE\",\"Abcde\"]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[\"edcba\",\"edcbA\",\"edcBA\",\"edcBa\",\"edCBa\",\"edCBA\",\"edCbA\",\"edCba\",\"eDCba\",\"eDCbA\",\"eDCBA\",\"eDCBa\",\"eDcBa\",\"eDcBA\",\"eDcbA\",\"eDcba\",\"EDcba\",\"EDcbA\",\"EDcBA\",\"EDcBa\",\"EDCBa\",\"EDCBA\",\"EDCbA\",\"EDCba\",\"EdCba\",\"EdCbA\",\"EdCBA\",\"EdCBa\",\"EdcBa\",\"EdcBA\",\"EdcbA\",\"Edcba\"]"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "[\"aab\",\"aaB\",\"aAB\",\"aAb\",\"AAb\",\"AAB\",\"AaB\",\"Aab\"]"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "[\"aA\",\"aa\",\"Aa\",\"AA\"]"
     }
   ],
   "sqlSchema": null,

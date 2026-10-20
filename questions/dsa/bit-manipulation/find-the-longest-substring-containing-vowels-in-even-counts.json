@@ -82,16 +82,72 @@
       "expectedOutput": "6"
     },
     {
-      "input": "s = \"eleetminicoworoep\"",
-      "expectedOutput": "13"
-    },
-    {
-      "input": "s = \"leetcodeisgreat\"",
+      "input": "\"eleetmin\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"bcbcbc\"",
+      "input": "\"icoworoep\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"e\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"el\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"peorowocinimteele\"",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "\"eeeeee\"",
       "expectedOutput": "6"
+    },
+    {
+      "input": "\"ELEETMINICOWOROEP\"",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

@@ -84,16 +84,12 @@
       "expectedOutput": "\"x=0\""
     },
     {
-      "input": "equation = \"x+5-3+x=6+x-2\"",
-      "expectedOutput": "\"x=2\""
+      "input": "\"x=6+x-2\"",
+      "expectedOutput": "\"No solution\""
     },
     {
-      "input": "equation = \"x=x\"",
-      "expectedOutput": "\"Infinite solutions\""
-    },
-    {
-      "input": "equation = \"2x=x\"",
-      "expectedOutput": "\"x=0\""
+      "input": "\"2-x+6=x+3-5+x\"",
+      "expectedOutput": "\"x=3\""
     }
   ],
   "sqlSchema": null,

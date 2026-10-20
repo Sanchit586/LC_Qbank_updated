@@ -78,16 +78,72 @@
       "expectedOutput": "90"
     },
     {
-      "input": "purchaseAmount = 9",
+      "input": "0",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "5",
       "expectedOutput": "90"
     },
     {
-      "input": "purchaseAmount = 15",
+      "input": "6",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "16",
       "expectedOutput": "80"
     },
     {
-      "input": "purchaseAmount = 10",
+      "input": "13",
       "expectedOutput": "90"
+    },
+    {
+      "input": "17",
+      "expectedOutput": "80"
+    },
+    {
+      "input": "12",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "18",
+      "expectedOutput": "80"
     }
   ],
   "sqlSchema": null,

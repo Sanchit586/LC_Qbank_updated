@@ -67,12 +67,56 @@
       "expectedOutput": "\"acz\""
     },
     {
-      "input": "s = \"10#11#12\"",
-      "expectedOutput": "\"jkab\""
+      "input": "\"10#1\"",
+      "expectedOutput": "\"ja\""
     },
     {
-      "input": "s = \"1326#\"",
-      "expectedOutput": "\"acz\""
+      "input": "\"1\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"10\"",
+      "expectedOutput": "\"a`\""
+    },
+    {
+      "input": "\"21#11#01\"",
+      "expectedOutput": "\"uk`a\""
+    },
+    {
+      "input": "\"10#11#1210#11#12\"",
+      "expectedOutput": "\"jkabjkab\""
+    },
+    {
+      "input": "\"111111\"",
+      "expectedOutput": "\"aaaaaa\""
+    },
+    {
+      "input": "\"10#11#1221#11#01\"",
+      "expectedOutput": "\"jkabuk`a\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"`\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"13\"",
+      "expectedOutput": "\"ac\""
+    },
+    {
+      "input": "\"26#\"",
+      "expectedOutput": "\"z\""
+    },
+    {
+      "input": "\"1326#1326#\"",
+      "expectedOutput": "\"aczacz\""
+    },
+    {
+      "input": "\"11111\"",
+      "expectedOutput": "\"aaaaa\""
     }
   ],
   "sqlSchema": null,

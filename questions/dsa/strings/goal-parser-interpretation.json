@@ -75,16 +75,72 @@
       "expectedOutput": "\"alGalooG\""
     },
     {
-      "input": "command = \"G()(al)\"",
-      "expectedOutput": "\"Goal\""
+      "input": "\"G()\"",
+      "expectedOutput": "\"Go\""
     },
     {
-      "input": "command = \"G()()()()(al)\"",
-      "expectedOutput": "\"Gooooal\""
+      "input": "\"(al)\"",
+      "expectedOutput": "\"al\""
     },
     {
-      "input": "command = \"(al)G(al)()()G\"",
-      "expectedOutput": "\"alGalooG\""
+      "input": "\"G\"",
+      "expectedOutput": "\"G\""
+    },
+    {
+      "input": "\"G(\"",
+      "expectedOutput": "\"G(\""
+    },
+    {
+      "input": "\")la()(G\"",
+      "expectedOutput": "\")lao(G\""
+    },
+    {
+      "input": "\"G()(al)G()(al)\"",
+      "expectedOutput": "\"GoalGoal\""
+    },
+    {
+      "input": "\"GGGGGG\"",
+      "expectedOutput": "\"GGGGGG\""
+    },
+    {
+      "input": "\"G()(al))la()(G\"",
+      "expectedOutput": "\"Goal)lao(G\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
     }
   ],
   "sqlSchema": null,

@@ -97,20 +97,68 @@
       "expectedOutput": "6"
     },
     {
-      "input": "s = \"abaacbaecebce\", p = \"ba*c*ce\"",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "s = \"baccbaadbc\", p = \"cc*baa*adb\"",
+      "input": "\"abaacb\"\n\"ba*c*ce\"",
       "expectedOutput": "-1"
     },
     {
-      "input": "s = \"a\", p = \"**\"",
-      "expectedOutput": "0"
+      "input": "\"aecebce\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "s = \"madlogic\", p = \"*adlogi*\"",
-      "expectedOutput": "6"
+      "input": "\"a\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ecbeceabcaaba\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ABAACBAECEBCE\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"edcba\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aab\"\n\"ba*c*ce\"",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

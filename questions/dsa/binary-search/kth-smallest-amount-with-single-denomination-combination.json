@@ -73,12 +73,76 @@
       "expectedOutput": "12"
     },
     {
-      "input": "coins = [3,6,9], k = 3",
+      "input": "[3]\n3",
       "expectedOutput": "9"
     },
     {
-      "input": "coins = [5,2], k = 7",
+      "input": "[6,9]\n3",
       "expectedOutput": "12"
+    },
+    {
+      "input": "[3,9]\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[3,6]\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[9,6,3]\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[3,3,3]\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[6,12,18]\n3",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[4,7,10]\n3",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[2,5,8]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-3,-6,-9]\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,1,1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-1,1]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2,3]\n3",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

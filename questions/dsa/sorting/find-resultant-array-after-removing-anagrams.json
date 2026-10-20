@@ -70,12 +70,76 @@
       "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
     },
     {
-      "input": "words = [\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
+      "input": "[\"abba\",\"baba\"]",
+      "expectedOutput": "[\"abba\"]"
+    },
+    {
+      "input": "[\"bbaa\",\"cd\",\"cd\"]",
+      "expectedOutput": "[\"bbaa\",\"cd\"]"
+    },
+    {
+      "input": "[\"abba\"]",
+      "expectedOutput": "[\"abba\"]"
+    },
+    {
+      "input": "[\"abba\",\"cd\"]",
       "expectedOutput": "[\"abba\",\"cd\"]"
     },
     {
-      "input": "words = [\"a\",\"b\",\"c\",\"d\",\"e\"]",
-      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+      "input": "[\"cd\",\"cd\",\"bbaa\",\"baba\",\"abba\"]",
+      "expectedOutput": "[\"cd\",\"bbaa\"]"
+    },
+    {
+      "input": "[\"abba\",\"abba\",\"abba\",\"abba\",\"abba\"]",
+      "expectedOutput": "[\"abba\"]"
+    },
+    {
+      "input": "[\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\",\"abba\",\"baba\",\"bbaa\",\"cd\",\"cd\"]",
+      "expectedOutput": "[\"abba\",\"cd\",\"abba\",\"cd\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[\"eat\",\"tan\",\"ate\",\"nat\",\"bat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[\"one\",\"two\",\"three\"]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "[\"hello\",\"world\"]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     }
   ],
   "sqlSchema": null,

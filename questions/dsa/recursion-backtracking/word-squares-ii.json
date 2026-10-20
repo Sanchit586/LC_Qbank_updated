@@ -72,11 +72,75 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "words = [\"able\",\"area\",\"echo\",\"also\"]",
+      "input": "[\"able\",\"area\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"echo\",\"also\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"able\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"able\",\"also\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"also\",\"echo\",\"area\",\"able\"]",
       "expectedOutput": "[[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"]]"
     },
     {
-      "input": "words = [\"code\",\"cafe\",\"eden\",\"edge\"]",
+      "input": "[\"able\",\"also\",\"area\",\"echo\"]",
+      "expectedOutput": "[[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"]]"
+    },
+    {
+      "input": "[\"echo\",\"area\",\"also\",\"able\"]",
+      "expectedOutput": "[[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"]]"
+    },
+    {
+      "input": "[\"able\",\"able\",\"able\",\"able\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"able\",\"area\",\"echo\",\"also\",\"able\",\"area\",\"echo\",\"also\"]",
+      "expectedOutput": "[[\"able\",\"able\",\"echo\",\"echo\"],[\"able\",\"able\",\"echo\",\"echo\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"able\",\"echo\",\"echo\"],[\"able\",\"able\",\"echo\",\"echo\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"able\",\"area\",\"echo\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"area\",\"able\",\"able\"],[\"area\",\"area\",\"able\",\"able\"],[\"area\",\"area\",\"also\",\"also\"],[\"area\",\"area\",\"also\",\"also\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"able\",\"also\",\"echo\"],[\"area\",\"area\",\"able\",\"able\"],[\"area\",\"area\",\"able\",\"able\"],[\"area\",\"area\",\"also\",\"also\"],[\"area\",\"area\",\"also\",\"also\"]]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
       "expectedOutput": "[]"
     }
   ],

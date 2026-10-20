@@ -71,12 +71,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "n = 15",
+      "input": "14",
       "expectedOutput": "5"
     },
     {
-      "input": "n = 3",
-      "expectedOutput": "3"
+      "input": "16",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "13",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "17",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "12",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "18",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "30",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "-15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

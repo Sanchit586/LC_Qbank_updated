@@ -82,16 +82,72 @@
       "expectedOutput": "[1,null,-3,4]"
     },
     {
-      "input": "root = [1,2,3,4,-99,-99,7,8,9,-99,-99,12,13,-99,14], limit = 1",
-      "expectedOutput": "[1,2,3,4,null,null,7,8,9,null,14]"
+      "input": "[1]\n1",
+      "expectedOutput": "[1]"
     },
     {
-      "input": "root = [5,4,8,11,null,17,4,7,1,null,null,5,3], limit = 22",
-      "expectedOutput": "[5,4,8,11,null,17,4,7,null,null,null,5]"
+      "input": "[1,2]\n1",
+      "expectedOutput": "[1,2]"
     },
     {
-      "input": "root = [1,2,-3,-5,null,4,null], limit = -1",
-      "expectedOutput": "[1,null,-3,4]"
+      "input": "[14,-99,13,12,-99,-99,9,8,7,-99,-99,4,3,2,1]\n1",
+      "expectedOutput": "[14,null,13,null,9,2,1]"
+    },
+    {
+      "input": "[1,2,null]\n1",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[1,null,2]\n1",
+      "expectedOutput": "[1,null,2]"
+    },
+    {
+      "input": "[0]\n1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[-1]\n1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[1,2,3]\n1",
+      "expectedOutput": "[1,2,3]"
+    },
+    {
+      "input": "[1,2,null,3]\n1",
+      "expectedOutput": "[1,2,null,3]"
+    },
+    {
+      "input": "[1,null,2,null,3]\n1",
+      "expectedOutput": "[1,null,2,null,3]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n1",
+      "expectedOutput": "[1,2,3,4,5,6,7]"
+    },
+    {
+      "input": "[1,2,2,3,4,4,3]\n1",
+      "expectedOutput": "[1,2,2,3,4,4,3]"
+    },
+    {
+      "input": "[5,3,6,2,4,null,null,1]\n1",
+      "expectedOutput": "[5,3,6,2,4,null,null,1]"
+    },
+    {
+      "input": "[10,5,15,null,null,6,20]\n1",
+      "expectedOutput": "[10,5,15,null,null,6,20]"
+    },
+    {
+      "input": "[-10,9,20,null,null,15,7]\n1",
+      "expectedOutput": "[-10,null,20,15,7]"
+    },
+    {
+      "input": "[3,1,4,null,2]\n1",
+      "expectedOutput": "[3,1,4,null,2]"
+    },
+    {
+      "input": "[1,2,3,null,null,4,5]\n1",
+      "expectedOutput": "[1,2,3,null,null,4,5]"
     }
   ],
   "sqlSchema": null,

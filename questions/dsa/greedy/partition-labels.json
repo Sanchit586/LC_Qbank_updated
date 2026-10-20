@@ -69,12 +69,76 @@
       "expectedOutput": "[10]"
     },
     {
-      "input": "s = \"ababcbacadefegdehijhklij\"",
+      "input": "\"ababcbacadef\"",
+      "expectedOutput": "[9,1,1,1]"
+    },
+    {
+      "input": "\"egdehijhklij\"",
+      "expectedOutput": "[4,8]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"jilkhjihedgefedacabcbaba\"",
+      "expectedOutput": "[8,7,9]"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "[6]"
+    },
+    {
+      "input": "\"ABABCBACADEFEGDEHIJHKLIJ\"",
       "expectedOutput": "[9,7,8]"
     },
     {
-      "input": "s = \"eccbbbbdec\"",
-      "expectedOutput": "[10]"
+      "input": "\"b\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[4]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[5]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[1,1,1,1,1]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[1,1,1,1,1]"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "[2,1]"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "[1]"
     }
   ],
   "sqlSchema": null,

@@ -72,11 +72,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "ideas = [\"coffee\",\"donuts\",\"time\",\"toffee\"]",
+      "input": "[\"coffee\",\"donuts\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"time\",\"toffee\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"coffee\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"coffee\",\"toffee\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"toffee\",\"time\",\"donuts\",\"coffee\"]",
       "expectedOutput": "6"
     },
     {
-      "input": "ideas = [\"lack\",\"back\"]",
+      "input": "[\"coffee\",\"coffee\",\"coffee\",\"coffee\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"coffee\",\"donuts\",\"time\",\"toffee\",\"coffee\",\"donuts\",\"time\",\"toffee\"]",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
       "expectedOutput": "0"
     }
   ],

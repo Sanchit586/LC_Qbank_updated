@@ -66,16 +66,80 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"abcac\", k = 2",
+      "input": "\"ab\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"cac\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"cacba\"\n2",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"abcdef\", k = 2",
+      "input": "\"abcacabcac\"\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"aabbaa\", k = 3",
+      "input": "\"aaaaa\"\n2",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcaccacba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ABCAC\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"aba\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abcde\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edcba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"aA\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"0\"\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"121\"\n2",
+      "expectedOutput": "inf"
     }
   ],
   "sqlSchema": null,

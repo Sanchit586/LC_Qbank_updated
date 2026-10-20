@@ -69,12 +69,76 @@
       "expectedOutput": "\"4321\""
     },
     {
-      "input": "pattern = \"IIIDIDDD\"",
-      "expectedOutput": "\"123549876\""
+      "input": "\"IIID\"",
+      "expectedOutput": "\"12354\""
     },
     {
-      "input": "pattern = \"DDD\"",
-      "expectedOutput": "\"4321\""
+      "input": "\"IDDD\"",
+      "expectedOutput": "\"15432\""
+    },
+    {
+      "input": "\"I\"",
+      "expectedOutput": "\"12\""
+    },
+    {
+      "input": "\"II\"",
+      "expectedOutput": "\"123\""
+    },
+    {
+      "input": "\"DDDIDIII\"",
+      "expectedOutput": "\"432165789\""
+    },
+    {
+      "input": "\"IIIIII\"",
+      "expectedOutput": "\"1234567\""
+    },
+    {
+      "input": "\"iiididdd\"",
+      "expectedOutput": "\"123456789\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"12\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"12\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"123\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"123\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"123\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"1234\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"12345\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"123456\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"123456\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"123456\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"1234\""
     }
   ],
   "sqlSchema": null,

@@ -83,16 +83,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "words1 = [\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"], words2 = [\"amazing\",\"leetcode\",\"is\"]",
+      "input": "[\"leetcode\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "words1 = [\"b\",\"bb\",\"bbb\"], words2 = [\"a\",\"aa\",\"aaa\"]",
+      "input": "[\"amazing\",\"as\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"leetcode\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"is\",\"as\",\"amazing\",\"is\",\"leetcode\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"amazing\",\"as\",\"is\",\"is\",\"leetcode\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"leetcode\",\"is\",\"is\",\"as\",\"amazing\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"leetcode\",\"leetcode\",\"leetcode\",\"leetcode\",\"leetcode\"]\n[\"amazing\",\"leetcode\",\"is\"]",
       "expectedOutput": "0"
     },
     {
-      "input": "words1 = [\"a\",\"ab\"], words2 = [\"a\",\"a\",\"a\",\"ab\"]",
-      "expectedOutput": "1"
+      "input": "[\"leetcode\",\"is\",\"amazing\",\"as\",\"is\",\"leetcode\",\"is\",\"amazing\",\"as\",\"is\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"amazing\",\"leetcode\",\"is\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

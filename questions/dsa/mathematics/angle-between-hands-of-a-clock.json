@@ -79,16 +79,72 @@
       "expectedOutput": "7.5"
     },
     {
-      "input": "hour = 12, minutes = 30",
+      "input": "11\n30",
       "expectedOutput": "165"
     },
     {
-      "input": "hour = 3, minutes = 30",
+      "input": "13\n30",
+      "expectedOutput": "135"
+    },
+    {
+      "input": "10\n30",
+      "expectedOutput": "135"
+    },
+    {
+      "input": "14\n30",
+      "expectedOutput": "105"
+    },
+    {
+      "input": "9\n30",
+      "expectedOutput": "105"
+    },
+    {
+      "input": "15\n30",
       "expectedOutput": "75"
     },
     {
-      "input": "hour = 3, minutes = 15",
-      "expectedOutput": "7.5"
+      "input": "24\n30",
+      "expectedOutput": "-195"
+    },
+    {
+      "input": "6\n30",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "-12\n30",
+      "expectedOutput": "-165"
+    },
+    {
+      "input": "0\n30",
+      "expectedOutput": "165"
+    },
+    {
+      "input": "1\n30",
+      "expectedOutput": "135"
+    },
+    {
+      "input": "2\n30",
+      "expectedOutput": "105"
+    },
+    {
+      "input": "4\n30",
+      "expectedOutput": "45"
+    },
+    {
+      "input": "5\n30",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "-1\n30",
+      "expectedOutput": "165"
+    },
+    {
+      "input": "-2\n30",
+      "expectedOutput": "135"
+    },
+    {
+      "input": "-3\n30",
+      "expectedOutput": "105"
     }
   ],
   "sqlSchema": null,

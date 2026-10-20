@@ -59,20 +59,84 @@
   ],
   "testCases": [
     {
+      "input": "\"&amp; is an HTML entity but &ambassador; is not.\"",
+      "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
+    },
+    {
+      "input": "\"and I quote: &quot;...&quot;\"",
+      "expectedOutput": "\"and I quote: \\\"...\\\"\""
+    },
+    {
       "input": "\"& is an HTML entity but &ambassador; is not.\"",
       "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
     },
     {
-      "input": "\"and I quote: \"...\"\"",
-      "expectedOutput": "\"and I quote: \\\"...\\\"\""
+      "input": "\"&amp; is an HTML entity \"",
+      "expectedOutput": "\"& is an HTML entity \""
     },
     {
-      "input": "text = \"& is an HTML entity but &ambassador; is not.\"",
-      "expectedOutput": "\"& is an HTML entity but &ambassador; is not.\""
+      "input": "\"but &ambassador; is not.\"",
+      "expectedOutput": "\"but &ambassador; is not.\""
     },
     {
-      "input": "text = \"and I quote: \"...\"\"",
-      "expectedOutput": "\"and I quote: \\\"...\\\"\""
+      "input": "\"&\"",
+      "expectedOutput": "\"&\""
+    },
+    {
+      "input": "\"&a\"",
+      "expectedOutput": "\"&a\""
+    },
+    {
+      "input": "\".ton si ;rodassabma& tub ytitne LMTH na si ;pma&\"",
+      "expectedOutput": "\".ton si ;rodassabma& tub ytitne LMTH na si ;pma&\""
+    },
+    {
+      "input": "\"&&&&&&\"",
+      "expectedOutput": "\"&&&&&&\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

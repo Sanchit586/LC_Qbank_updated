@@ -71,12 +71,76 @@
       "expectedOutput": "37"
     },
     {
-      "input": "garbage = [\"G\",\"P\",\"GP\",\"GG\"], travel = [2,4,3]",
+      "input": "[\"G\",\"P\"]\n[2,4,3]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"GP\",\"GG\"]\n[2,4,3]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"G\"]\n[2,4,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"G\",\"GG\"]\n[2,4,3]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"GG\",\"GP\",\"P\",\"G\"]\n[2,4,3]",
       "expectedOutput": "21"
     },
     {
-      "input": "garbage = [\"MMM\",\"PGM\",\"GP\"], travel = [3,10]",
-      "expectedOutput": "37"
+      "input": "[\"G\",\"GG\",\"GP\",\"P\"]\n[2,4,3]",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "[\"P\",\"GP\",\"GG\",\"G\"]\n[2,4,3]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[\"G\",\"G\",\"G\",\"G\"]\n[2,4,3]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[\"G\",\"P\",\"GP\",\"GG\",\"G\",\"P\",\"GP\",\"GG\"]\n[2,4,3]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[\"a\"]\n[2,4,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]\n[2,4,3]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[2,4,3]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[2,4,3]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[2,4,3]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[2,4,3]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[2,4,3]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[2,4,3]",
+      "expectedOutput": "42"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[2,4,3]",
+      "expectedOutput": "39"
     }
   ],
   "sqlSchema": null,

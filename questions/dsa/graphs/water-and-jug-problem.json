@@ -68,16 +68,80 @@
       "expectedOutput": "true"
     },
     {
-      "input": "x = 3, y = 5, target = 4",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "x = 2, y = 6, target = 5",
+      "input": "0\n5\n4",
       "expectedOutput": "false"
     },
     {
-      "input": "x = 1, y = 2, target = 3",
+      "input": "1\n5\n4",
       "expectedOutput": "true"
+    },
+    {
+      "input": "2\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "4\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5\n5\n4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "6\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "7\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-1\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-2\n5\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n0\n4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n1\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n2\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n3\n4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n4\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n6\n4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n7\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n8\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n9\n4",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

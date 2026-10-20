@@ -69,12 +69,48 @@
       "expectedOutput": "[[0,0,0]]"
     },
     {
-      "input": "n = 7",
-      "expectedOutput": "[[0,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,0,0],[0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0]]"
+      "input": "0",
+      "expectedOutput": "[]"
     },
     {
-      "input": "n = 3",
-      "expectedOutput": "[[0,0,0]]"
+      "input": "1",
+      "expectedOutput": "[[0]]"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[[0,0,0,null,null,0,0],[0,0,0,0,0]]"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "[[0,0,0,null,null,0,0,null,null,0,0,null,null,0,0],[0,0,0,null,null,0,0,null,null,0,0,0,0],[0,0,0,null,null,0,0,0,0,0,0],[0,0,0,null,null,0,0,0,0,null,null,null,null,0,0],[0,0,0,null,null,0,0,0,0,null,null,0,0],[0,0,0,0,0,0,0,null,null,null,null,null,null,0,0],[0,0,0,0,0,0,0,null,null,null,null,0,0],[0,0,0,0,0,0,0,null,null,0,0],[0,0,0,0,0,0,0,0,0],[0,0,0,0,0,null,null,null,null,0,0,null,null,0,0],[0,0,0,0,0,null,null,null,null,0,0,0,0],[0,0,0,0,0,null,null,0,0,0,0],[0,0,0,0,0,null,null,0,0,null,null,null,null,0,0],[0,0,0,0,0,null,null,0,0,null,null,0,0]]"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

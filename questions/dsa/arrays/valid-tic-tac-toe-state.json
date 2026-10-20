@@ -81,15 +81,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "board = [\"O  \",\"   \",\"   \"]",
+      "input": "[\"   \",\"   \",\"O  \"]",
       "expectedOutput": "false"
     },
     {
-      "input": "board = [\"XOX\",\" X \",\"   \"]",
+      "input": "[\"O  \",\"O  \",\"O  \"]",
       "expectedOutput": "false"
     },
     {
-      "input": "board = [\"XOX\",\"O O\",\"XOX\"]",
+      "input": "[\"O  \",\"   \",\"   \",\"O  \",\"   \",\"   \"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"apple\",\"pear\",\"banana\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"blue\",\"red\",\"green\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"code\",\"leet\",\"love\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"   \",\" X \",\"XOX\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"XOX\",\"XOX\",\"XOX\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"XOX\",\" X \",\"   \",\"XOX\",\" X \",\"   \"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"O O\",\"XOX\",\"XOX\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"XOX\",\"XOX\",\"O O\"]",
       "expectedOutput": "true"
     }
   ],

@@ -82,16 +82,60 @@
       "expectedOutput": "0"
     },
     {
-      "input": "word = \"b\"",
+      "input": "\"bb\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = \"aaa\"",
+      "input": "\"aa\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"bc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cba\"",
       "expectedOutput": "6"
     },
     {
-      "input": "word = \"abc\"",
+      "input": "\"abcabc\"",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"abccba\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

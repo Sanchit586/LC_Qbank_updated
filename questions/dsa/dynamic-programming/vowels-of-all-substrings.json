@@ -82,16 +82,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "word = \"aba\"",
-      "expectedOutput": "6"
+      "input": "\"a\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "word = \"abc\"",
-      "expectedOutput": "3"
+      "input": "\"ba\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "word = \"ltcd\"",
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abaaba\"",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"ABA\"",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "35"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "40"
     }
   ],
   "sqlSchema": null,

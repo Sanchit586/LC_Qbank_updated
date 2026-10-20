@@ -66,12 +66,76 @@
       "expectedOutput": "8"
     },
     {
-      "input": "num = 555",
-      "expectedOutput": "888"
+      "input": "554",
+      "expectedOutput": "880"
     },
     {
-      "input": "num = 9",
+      "input": "556",
+      "expectedOutput": "880"
+    },
+    {
+      "input": "553",
+      "expectedOutput": "880"
+    },
+    {
+      "input": "557",
+      "expectedOutput": "880"
+    },
+    {
+      "input": "552",
+      "expectedOutput": "880"
+    },
+    {
+      "input": "558",
+      "expectedOutput": "880"
+    },
+    {
+      "input": "1110",
+      "expectedOutput": "8880"
+    },
+    {
+      "input": "277",
+      "expectedOutput": "800"
+    },
+    {
+      "input": "-555",
+      "expectedOutput": "8000"
+    },
+    {
+      "input": "0",
       "expectedOutput": "8"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "80"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "80"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "80"
     }
   ],
   "sqlSchema": null,

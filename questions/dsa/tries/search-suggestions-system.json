@@ -76,12 +76,76 @@
       "expectedOutput": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
     },
     {
-      "input": "products = [\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"], searchWord = \"mouse\"",
+      "input": "[\"mobile\",\"mouse\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"mouse\"],[\"mobile\",\"mouse\"],[\"mouse\"],[\"mouse\"],[\"mouse\"]]"
+    },
+    {
+      "input": "[\"moneypot\",\"monitor\",\"mousepad\"]\n\"mouse\"",
+      "expectedOutput": "[[\"moneypot\",\"monitor\",\"mousepad\"],[\"moneypot\",\"monitor\",\"mousepad\"],[\"mousepad\"],[\"mousepad\"],[\"mousepad\"]]"
+    },
+    {
+      "input": "[\"mobile\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\"],[\"mobile\"],[],[],[]]"
+    },
+    {
+      "input": "[\"mobile\",\"mousepad\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"mousepad\"],[\"mobile\",\"mousepad\"],[\"mousepad\"],[\"mousepad\"],[\"mousepad\"]]"
+    },
+    {
+      "input": "[\"mousepad\",\"monitor\",\"moneypot\",\"mouse\",\"mobile\"]\n\"mouse\"",
       "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
     },
     {
-      "input": "products = [\"havana\"], searchWord = \"havana\"",
-      "expectedOutput": "[[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"],[\"havana\"]]"
+      "input": "[\"mobile\",\"moneypot\",\"monitor\",\"mouse\",\"mousepad\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
+    },
+    {
+      "input": "[\"mousepad\",\"mouse\",\"monitor\",\"moneypot\",\"mobile\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"moneypot\",\"monitor\"],[\"mobile\",\"moneypot\",\"monitor\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"],[\"mouse\",\"mousepad\"]]"
+    },
+    {
+      "input": "[\"mobile\",\"mobile\",\"mobile\",\"mobile\",\"mobile\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"mobile\",\"mobile\"],[\"mobile\",\"mobile\",\"mobile\"],[],[],[]]"
+    },
+    {
+      "input": "[\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\",\"mobile\",\"mouse\",\"moneypot\",\"monitor\",\"mousepad\"]\n\"mouse\"",
+      "expectedOutput": "[[\"mobile\",\"mobile\",\"moneypot\"],[\"mobile\",\"mobile\",\"moneypot\"],[\"mouse\",\"mouse\",\"mousepad\"],[\"mouse\",\"mouse\",\"mousepad\"],[\"mouse\",\"mouse\",\"mousepad\"]]"
+    },
+    {
+      "input": "[\"a\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"mouse\"",
+      "expectedOutput": "[[],[],[],[],[]]"
     }
   ],
   "sqlSchema": null,

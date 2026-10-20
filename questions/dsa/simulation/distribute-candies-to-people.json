@@ -67,12 +67,76 @@
       "expectedOutput": "[5,2,3]"
     },
     {
-      "input": "candies = 7, num_people = 4",
-      "expectedOutput": "[1,2,3,1]"
+      "input": "0\n4",
+      "expectedOutput": "[0,0,0,0]"
     },
     {
-      "input": "candies = 10, num_people = 3",
-      "expectedOutput": "[5,2,3]"
+      "input": "1\n4",
+      "expectedOutput": "[1,0,0,0]"
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "[1,1,0,0]"
+    },
+    {
+      "input": "3\n4",
+      "expectedOutput": "[1,2,0,0]"
+    },
+    {
+      "input": "4\n4",
+      "expectedOutput": "[1,2,1,0]"
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "[1,2,2,0]"
+    },
+    {
+      "input": "6\n4",
+      "expectedOutput": "[1,2,3,0]"
+    },
+    {
+      "input": "8\n4",
+      "expectedOutput": "[1,2,3,2]"
+    },
+    {
+      "input": "9\n4",
+      "expectedOutput": "[1,2,3,3]"
+    },
+    {
+      "input": "10\n4",
+      "expectedOutput": "[1,2,3,4]"
+    },
+    {
+      "input": "-1\n4",
+      "expectedOutput": "[-1,0,0,0]"
+    },
+    {
+      "input": "-2\n4",
+      "expectedOutput": "[-2,0,0,0]"
+    },
+    {
+      "input": "7\n1",
+      "expectedOutput": "[7]"
+    },
+    {
+      "input": "7\n2",
+      "expectedOutput": "[4,3]"
+    },
+    {
+      "input": "7\n3",
+      "expectedOutput": "[2,2,3]"
+    },
+    {
+      "input": "7\n5",
+      "expectedOutput": "[1,2,3,1,0]"
+    },
+    {
+      "input": "7\n6",
+      "expectedOutput": "[1,2,3,1,0,0]"
+    },
+    {
+      "input": "7\n7",
+      "expectedOutput": "[1,2,3,1,0,0,0]"
     }
   ],
   "sqlSchema": null,

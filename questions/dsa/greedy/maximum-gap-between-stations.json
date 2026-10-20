@@ -84,16 +84,72 @@
       "expectedOutput": "4"
     },
     {
-      "input": "skill = \"aa\", station = \"aaaa\"",
-      "expectedOutput": "3"
+      "input": "\"a\"\n\"aaaa\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "skill = \"xyz\", station = \"xyzz\"",
+      "input": "\"aaaa\"\n\"aaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n\"aaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"0\"\n\"aaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"aaaaaaaa\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"aa\"\n\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"aba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "skill = \"cbc\", station = \"cbcdbc\"",
+      "input": "\"aa\"\n\"abba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aa\"\n\"aaaaa\"",
       "expectedOutput": "4"
+    },
+    {
+      "input": "\"aa\"\n\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"aab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"aA\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

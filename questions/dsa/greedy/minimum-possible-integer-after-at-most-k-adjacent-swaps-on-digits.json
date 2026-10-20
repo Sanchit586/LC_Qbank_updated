@@ -83,16 +83,72 @@
       "expectedOutput": "\"36789\""
     },
     {
-      "input": "num = \"4321\", k = 4",
-      "expectedOutput": "\"1342\""
+      "input": "\"43\"\n4",
+      "expectedOutput": "\"34\""
     },
     {
-      "input": "num = \"100\", k = 1",
-      "expectedOutput": "\"010\""
+      "input": "\"21\"\n4",
+      "expectedOutput": "\"12\""
     },
     {
-      "input": "num = \"36789\", k = 1000",
-      "expectedOutput": "\"36789\""
+      "input": "\"4\"\n4",
+      "expectedOutput": "\"4\""
+    },
+    {
+      "input": "\"1234\"\n4",
+      "expectedOutput": "\"1234\""
+    },
+    {
+      "input": "\"43214321\"\n4",
+      "expectedOutput": "\"13424321\""
+    },
+    {
+      "input": "\"4444\"\n4",
+      "expectedOutput": "\"4444\""
+    },
+    {
+      "input": "\"43211234\"\n4",
+      "expectedOutput": "\"13421234\""
+    },
+    {
+      "input": "\"0\"\n4",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"\n4",
+      "expectedOutput": "\"112\""
+    },
+    {
+      "input": "\"4321\"\n0",
+      "expectedOutput": "\"4321\""
+    },
+    {
+      "input": "\"4321\"\n1",
+      "expectedOutput": "\"3421\""
+    },
+    {
+      "input": "\"4321\"\n2",
+      "expectedOutput": "\"2431\""
+    },
+    {
+      "input": "\"4321\"\n3",
+      "expectedOutput": "\"1432\""
+    },
+    {
+      "input": "\"4321\"\n5",
+      "expectedOutput": "\"1243\""
+    },
+    {
+      "input": "\"4321\"\n6",
+      "expectedOutput": "\"1234\""
+    },
+    {
+      "input": "\"4321\"\n7",
+      "expectedOutput": "\"1234\""
+    },
+    {
+      "input": "\"4321\"\n8",
+      "expectedOutput": "\"1234\""
     }
   ],
   "sqlSchema": null,

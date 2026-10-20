@@ -65,11 +65,43 @@
       "expectedOutput": "false"
     },
     {
-      "input": "n = 6",
+      "input": "0",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 5",
+      "input": "4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
       "expectedOutput": "false"
     }
   ],

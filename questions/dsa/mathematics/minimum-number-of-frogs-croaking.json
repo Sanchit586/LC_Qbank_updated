@@ -80,15 +80,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "croakOfFrogs = \"croakcroak\"",
+      "input": "\"croak\"",
       "expectedOutput": "1"
     },
     {
-      "input": "croakOfFrogs = \"crcoakroak\"",
-      "expectedOutput": "2"
+      "input": "\"c\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "croakOfFrogs = \"croakcrook\"",
+      "input": "\"cr\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"kaorckaorc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"croakcroakcroakcroak\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cccccc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"croakcroakkaorckaorc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "-1"
     }
   ],

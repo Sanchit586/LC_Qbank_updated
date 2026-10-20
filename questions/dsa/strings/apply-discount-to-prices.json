@@ -71,12 +71,76 @@
       "expectedOutput": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\""
     },
     {
-      "input": "sentence = \"there are $1 $2 and 5$ candies in the shop\", discount = 50",
-      "expectedOutput": "\"there are $0.50 $1.00 and 5$ candies in the shop\""
+      "input": "\"there are $1 $2 and 5\"\n50",
+      "expectedOutput": "\"there are $0.50 $1.00 and 5\""
     },
     {
-      "input": "sentence = \"1 2 $3 4 $5 $6 7 8$ $9 $10$\", discount = 100",
-      "expectedOutput": "\"1 2 $0.00 4 $0.00 $0.00 7 8$ $0.00 $10$\""
+      "input": "\"$ candies in the shop\"\n50",
+      "expectedOutput": "\"$ candies in the shop\""
+    },
+    {
+      "input": "\"t\"\n50",
+      "expectedOutput": "\"t\""
+    },
+    {
+      "input": "\"th\"\n50",
+      "expectedOutput": "\"th\""
+    },
+    {
+      "input": "\"pohs eht ni seidnac $5 dna 2$ 1$ era ereht\"\n50",
+      "expectedOutput": "\"pohs eht ni seidnac $2.50 dna 2$ 1$ era ereht\""
+    },
+    {
+      "input": "\"tttttt\"\n50",
+      "expectedOutput": "\"tttttt\""
+    },
+    {
+      "input": "\"a\"\n50",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n50",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n50",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n50",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n50",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n50",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n50",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n50",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n50",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"\n50",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"\n50",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"\n50",
+      "expectedOutput": "\"aA\""
     }
   ],
   "sqlSchema": null,

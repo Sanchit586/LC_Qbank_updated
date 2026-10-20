@@ -75,12 +75,76 @@
       "expectedOutput": "\"Charlie\""
     },
     {
-      "input": "messages = [\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"], senders = [\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "input": "[\"Hello userTwooo\",\"Hi userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"Wonderful day Alice\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"Hello userTwooo\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
       "expectedOutput": "\"Alice\""
     },
     {
-      "input": "messages = [\"How is leetcode for everyone\",\"Leetcode is useful for practice\"], senders = [\"Bob\",\"Charlie\"]",
-      "expectedOutput": "\"Charlie\""
+      "input": "[\"Hello userTwooo\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"Nice day userThree\",\"Wonderful day Alice\",\"Hi userThree\",\"Hello userTwooo\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"Hello userTwooo\",\"Hi userThree\",\"Nice day userThree\",\"Wonderful day Alice\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"Wonderful day Alice\",\"Nice day userThree\",\"Hi userThree\",\"Hello userTwooo\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"Hello userTwooo\",\"Hello userTwooo\",\"Hello userTwooo\",\"Hello userTwooo\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\",\"Hello userTwooo\",\"Hi userThree\",\"Wonderful day Alice\",\"Nice day userThree\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"a\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"Alice\",\"userTwo\",\"userThree\",\"Alice\"]",
+      "expectedOutput": "\"userTwo\""
     }
   ],
   "sqlSchema": null,

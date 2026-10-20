@@ -68,12 +68,76 @@
       "expectedOutput": "403"
     },
     {
-      "input": "s1 = \"sea\", s2 = \"eat\"",
-      "expectedOutput": "231"
+      "input": "\"s\"\n\"eat\"",
+      "expectedOutput": "429"
     },
     {
-      "input": "s1 = \"delete\", s2 = \"leet\"",
-      "expectedOutput": "403"
+      "input": "\"ea\"\n\"eat\"",
+      "expectedOutput": "116"
+    },
+    {
+      "input": "\"se\"\n\"eat\"",
+      "expectedOutput": "328"
+    },
+    {
+      "input": "\"aes\"\n\"eat\"",
+      "expectedOutput": "425"
+    },
+    {
+      "input": "\"seasea\"\n\"eat\"",
+      "expectedOutput": "544"
+    },
+    {
+      "input": "\"sss\"\n\"eat\"",
+      "expectedOutput": "659"
+    },
+    {
+      "input": "\"seaaes\"\n\"eat\"",
+      "expectedOutput": "544"
+    },
+    {
+      "input": "\"SEA\"\n\"eat\"",
+      "expectedOutput": "531"
+    },
+    {
+      "input": "\"a\"\n\"eat\"",
+      "expectedOutput": "217"
+    },
+    {
+      "input": "\"b\"\n\"eat\"",
+      "expectedOutput": "412"
+    },
+    {
+      "input": "\"aa\"\n\"eat\"",
+      "expectedOutput": "314"
+    },
+    {
+      "input": "\"ab\"\n\"eat\"",
+      "expectedOutput": "315"
+    },
+    {
+      "input": "\"ba\"\n\"eat\"",
+      "expectedOutput": "315"
+    },
+    {
+      "input": "\"aba\"\n\"eat\"",
+      "expectedOutput": "412"
+    },
+    {
+      "input": "\"abba\"\n\"eat\"",
+      "expectedOutput": "510"
+    },
+    {
+      "input": "\"aaaaa\"\n\"eat\"",
+      "expectedOutput": "605"
+    },
+    {
+      "input": "\"abcde\"\n\"eat\"",
+      "expectedOutput": "607"
+    },
+    {
+      "input": "\"edcba\"\n\"eat\"",
+      "expectedOutput": "413"
     }
   ],
   "sqlSchema": null,

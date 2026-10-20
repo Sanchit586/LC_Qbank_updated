@@ -86,15 +86,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCCED\"",
+      "input": "[[\"A\",\"B\",\"C\",\"E\"]]\n\"ABCCED\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\"],[\"S\"],[\"A\"]]\n\"ABCCED\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"D\",\"E\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"B\",\"C\",\"E\"]]\n\"ABCCED\"",
       "expectedOutput": "true"
     },
     {
-      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"SEE\"",
+      "input": "[[\"A\",\"S\",\"A\"],[\"B\",\"F\",\"D\"],[\"C\",\"C\",\"E\"],[\"E\",\"S\",\"E\"]]\n\"ABCCED\"",
       "expectedOutput": "true"
     },
     {
-      "input": "board = [[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]], word = \"ABCB\"",
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"ABC\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"CED\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"A\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"AB\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"DECCBA\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"ABCCEDABCCED\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"AAAAAA\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"ABCCEDDECCBA\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"abcced\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"A\",\"B\",\"C\",\"E\"],[\"S\",\"F\",\"C\",\"S\"],[\"A\",\"D\",\"E\",\"E\"]]\n\"ab\"",
       "expectedOutput": "false"
     }
   ],

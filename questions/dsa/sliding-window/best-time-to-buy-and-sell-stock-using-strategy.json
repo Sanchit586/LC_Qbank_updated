@@ -71,12 +71,76 @@
       "expectedOutput": "9"
     },
     {
-      "input": "prices = [4,2,8], strategy = [-1,0,1], k = 2",
-      "expectedOutput": "10"
+      "input": "[4]\n[-1,0,1]\n2",
+      "expectedOutput": "-4"
     },
     {
-      "input": "prices = [5,4,3], strategy = [1,1,0], k = 2",
-      "expectedOutput": "9"
+      "input": "[2,8]\n[-1,0,1]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[4,8]\n[-1,0,1]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[4,2]\n[-1,0,1]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[8,2,4]\n[-1,0,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[2,4,8]\n[-1,0,1]\n2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[8,4,2]\n[-1,0,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[4,4,4]\n[-1,0,1]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[4,2,8,4,2,8]\n[-1,0,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[8,4,16]\n[-1,0,1]\n2",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[5,3,9]\n[-1,0,1]\n2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[3,1,7]\n[-1,0,1]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-4,-2,-8]\n[-1,0,1]\n2",
+      "expectedOutput": "-4"
+    },
+    {
+      "input": "[0,0,0]\n[-1,0,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1]\n[-1,0,1]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]\n[-1,0,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n[-1,0,1]\n2",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[-1]\n[-1,0,1]\n2",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -69,12 +69,76 @@
       "expectedOutput": "\"i\""
     },
     {
-      "input": "s = \"abcd\", k = 2",
-      "expectedOutput": "\"bf\""
+      "input": "\"ab\"\n2",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "s = \"mxz\", k = 3",
-      "expectedOutput": "\"i\""
+      "input": "\"cd\"\n2",
+      "expectedOutput": "\"f\""
+    },
+    {
+      "input": "\"dcba\"\n2",
+      "expectedOutput": "\"fb\""
+    },
+    {
+      "input": "\"abcdabcd\"\n2",
+      "expectedOutput": "\"bfbf\""
+    },
+    {
+      "input": "\"aaaa\"\n2",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"abcddcba\"\n2",
+      "expectedOutput": "\"bffb\""
+    },
+    {
+      "input": "\"ABCD\"\n2",
+      "expectedOutput": "\"pt\""
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "\"bb\""
+    },
+    {
+      "input": "\"aA\"\n2",
+      "expectedOutput": "\"u\""
+    },
+    {
+      "input": "\"leetcode\"\n2",
+      "expectedOutput": "\"pxqh\""
+    },
+    {
+      "input": "\"()\"\n2",
+      "expectedOutput": "\"r\""
+    },
+    {
+      "input": "\"()[]{}\"\n2",
+      "expectedOutput": "\"rqc\""
+    },
+    {
+      "input": "\"(]\"\n2",
+      "expectedOutput": "\"r\""
+    },
+    {
+      "input": "\"([)]\"\n2",
+      "expectedOutput": "\"ps\""
+    },
+    {
+      "input": "\"{[]}\"\n2",
+      "expectedOutput": "\"uy\""
+    },
+    {
+      "input": "\"abcd\"\n1",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "sqlSchema": null,

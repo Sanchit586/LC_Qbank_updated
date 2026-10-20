@@ -82,16 +82,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "num = 58, k = 9",
-      "expectedOutput": "2"
+      "input": "57\n9",
+      "expectedOutput": "3"
     },
     {
-      "input": "num = 37, k = 2",
+      "input": "59\n9",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "56\n9",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "60\n9",
       "expectedOutput": "-1"
     },
     {
-      "input": "num = 0, k = 7",
+      "input": "55\n9",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "61\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "116\n9",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "29\n9",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "-58\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "0\n9",
       "expectedOutput": "0"
+    },
+    {
+      "input": "1\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "2\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "3\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "4\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "5\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "-1\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "-2\n9",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

@@ -82,16 +82,72 @@
       "expectedOutput": "240"
     },
     {
-      "input": "m = 2, n = 3, introvertsCount = 1, extrovertsCount = 2",
+      "input": "0\n3\n1\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n3\n1\n2",
+      "expectedOutput": "230"
+    },
+    {
+      "input": "3\n3\n1\n2",
       "expectedOutput": "240"
     },
     {
-      "input": "m = 3, n = 1, introvertsCount = 2, extrovertsCount = 1",
-      "expectedOutput": "260"
+      "input": "4\n3\n1\n2",
+      "expectedOutput": "240"
     },
     {
-      "input": "m = 2, n = 2, introvertsCount = 4, extrovertsCount = 0",
+      "input": "5\n3\n1\n2",
       "expectedOutput": "240"
+    },
+    {
+      "input": "6\n3\n1\n2",
+      "expectedOutput": "240"
+    },
+    {
+      "input": "7\n3\n1\n2",
+      "expectedOutput": "240"
+    },
+    {
+      "input": "2\n0\n1\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "2\n1\n1\n2",
+      "expectedOutput": "150"
+    },
+    {
+      "input": "2\n2\n1\n2",
+      "expectedOutput": "230"
+    },
+    {
+      "input": "2\n3\n0\n2",
+      "expectedOutput": "120"
+    },
+    {
+      "input": "2\n3\n2\n2",
+      "expectedOutput": "350"
+    },
+    {
+      "input": "2\n3\n3\n2",
+      "expectedOutput": "400"
+    },
+    {
+      "input": "2\n3\n4\n2",
+      "expectedOutput": "440"
+    },
+    {
+      "input": "2\n3\n5\n2",
+      "expectedOutput": "440"
+    },
+    {
+      "input": "2\n3\n6\n2",
+      "expectedOutput": "440"
+    },
+    {
+      "input": "2\n3\n-1\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

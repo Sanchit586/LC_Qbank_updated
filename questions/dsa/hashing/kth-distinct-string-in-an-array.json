@@ -83,16 +83,72 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "arr = [\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"], k = 2",
+      "input": "[\"d\",\"b\",\"c\"]\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "[\"b\",\"c\",\"a\"]\n2",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"d\"]\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"d\",\"a\"]\n2",
       "expectedOutput": "\"a\""
     },
     {
-      "input": "arr = [\"aaa\",\"aa\",\"a\"], k = 1",
-      "expectedOutput": "\"aaa\""
+      "input": "[\"d\",\"b\"]\n2",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "arr = [\"a\",\"b\",\"a\"], k = 3",
+      "input": "[\"a\",\"c\",\"b\",\"c\",\"b\",\"d\"]\n2",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "[\"a\",\"b\",\"b\",\"c\",\"c\",\"d\"]\n2",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "[\"d\",\"c\",\"c\",\"b\",\"b\",\"a\"]\n2",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"d\",\"d\",\"d\",\"d\",\"d\"]\n2",
       "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"d\",\"b\",\"c\",\"b\",\"c\",\"a\",\"d\",\"b\",\"c\",\"b\",\"c\",\"a\"]\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\"]\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"\"]\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "[\"a\",\"a\"]\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n2",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n2",
+      "expectedOutput": "\"bca\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n2",
+      "expectedOutput": "\"tea\""
     }
   ],
   "sqlSchema": null,

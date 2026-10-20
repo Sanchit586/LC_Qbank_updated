@@ -82,15 +82,71 @@
       "expectedOutput": "1"
     },
     {
-      "input": "rolls = [4,2,1,2,3,3,2,4,1], k = 4",
-      "expectedOutput": "3"
+      "input": "[4,2,1,2]\n4",
+      "expectedOutput": "1"
     },
     {
-      "input": "rolls = [1,1,2,2], k = 2",
+      "input": "[3,3,2,4,1]\n4",
       "expectedOutput": "2"
     },
     {
-      "input": "rolls = [1,1,3,2,2,2,3,3], k = 4",
+      "input": "[4]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,1]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,2]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,4,2,3,3,2,1,2,4]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,2,2,2,3,3,4,4]\n4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[4,4,3,3,2,2,2,1,1]\n4",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[4,4,4,4,4]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[8,4,2,4,6,6,4,8,2]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[5,3,2,3,4,4,3,5,2]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[3,1,0,1,2,2,1,3,0]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-4,-2,-1,-2,-3,-3,-2,-4,-1]\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0,0]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1,1,1]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1]\n4",
       "expectedOutput": "1"
     }
   ],

@@ -73,12 +73,76 @@
       "expectedOutput": "14"
     },
     {
-      "input": "s = \"babab\"",
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"bab\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"bababbabab\"",
+      "expectedOutput": "23"
+    },
+    {
+      "input": "\"bbbbb\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"BABAB\"",
       "expectedOutput": "9"
     },
     {
-      "input": "s = \"azbazbzaz\"",
-      "expectedOutput": "14"
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

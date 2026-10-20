@@ -80,15 +80,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "word = \"aeiaaioaaaaeiiiiouuuooaauuaeiu\"",
-      "expectedOutput": "13"
+      "input": "\"aeiaaioaaaaeiii\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "word = \"aeeeiiiioooauuuaeiou\"",
-      "expectedOutput": "5"
+      "input": "\"iouuuooaauuaeiu\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "word = \"a\"",
+      "input": "\"ae\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"uieauuaaoouuuoiiiieaaaaoiaaiea\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"AEIAAIOAAAAEIIIIOUUUOOAAUUAEIU\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"",
       "expectedOutput": "0"
     }
   ],

@@ -80,15 +80,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "possible = [1,0,1,0]",
+      "input": "[1,0]",
       "expectedOutput": "1"
     },
     {
-      "input": "possible = [1,1,1,1,1]",
+      "input": "[1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0,1,0,1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0,0,1,1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,1,0,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1,1,1]",
       "expectedOutput": "3"
     },
     {
-      "input": "possible = [0,0]",
+      "input": "[1,0,1,0,1,0,1,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,0,2,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,1,2,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,-1,0,-1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[-1,0,-1,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,1]",
       "expectedOutput": "-1"
     }
   ],

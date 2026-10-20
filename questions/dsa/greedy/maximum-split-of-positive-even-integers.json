@@ -77,19 +77,75 @@
     },
     {
       "input": "28",
-      "expectedOutput": "[6,8,2,12]"
+      "expectedOutput": "[2,4,6,16]"
     },
     {
-      "input": "finalSum = 12",
-      "expectedOutput": "[2,4,6]"
-    },
-    {
-      "input": "finalSum = 7",
+      "input": "11",
       "expectedOutput": "[]"
     },
     {
-      "input": "finalSum = 28",
-      "expectedOutput": "[6,8,2,12]"
+      "input": "13",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "[2,8]"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "[2,4,8]"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "24",
+      "expectedOutput": "[2,4,6,12]"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "[2,4]"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "[4]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "[2,4,6,8]"
+    },
+    {
+      "input": "50",
+      "expectedOutput": "[2,4,6,8,10,20]"
     }
   ],
   "sqlSchema": null,

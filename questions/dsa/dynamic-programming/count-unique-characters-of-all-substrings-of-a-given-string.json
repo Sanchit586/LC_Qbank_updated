@@ -81,16 +81,72 @@
       "expectedOutput": "92"
     },
     {
-      "input": "s = \"ABC\"",
+      "input": "\"A\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"BC\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"AB\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"CBA\"",
       "expectedOutput": "10"
     },
     {
-      "input": "s = \"ABA\"",
+      "input": "\"ABCABC\"",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "\"AAA\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ABCCBA\"",
+      "expectedOutput": "28"
+    },
+    {
+      "input": "\"abc\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aba\"",
       "expectedOutput": "8"
     },
     {
-      "input": "s = \"LEETCODE\"",
-      "expectedOutput": "92"
+      "input": "\"abba\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "35"
     }
   ],
   "sqlSchema": null,

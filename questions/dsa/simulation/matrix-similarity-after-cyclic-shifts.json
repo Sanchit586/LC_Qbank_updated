@@ -84,15 +84,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "mat = [[1,2,3],[4,5,6],[7,8,9]], k = 4",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "mat = [[1,2,1,2],[5,5,5,5],[6,3,6,3]], k = 2",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n0",
       "expectedOutput": "true"
     },
     {
-      "input": "mat = [[2,2],[2,2]], k = 3",
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n6",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n7",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n8",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n9",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,3],[4,5,6],[7,8,9]]\n-2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[1,2,1,2],[5,5,5,5],[6,3,6,3]]\n6",
       "expectedOutput": "true"
     }
   ],

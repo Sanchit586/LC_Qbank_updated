@@ -67,14 +67,6 @@
     {
       "input": "[1,1]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "nums = [1,2,1]",
-      "expectedOutput": "15"
-    },
-    {
-      "input": "nums = [1,1]",
-      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

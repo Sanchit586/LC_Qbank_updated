@@ -84,16 +84,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"aabaac\", cost = [1,2,3,4,1,10]",
+      "input": "\"aab\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aac\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"a\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"caabaa\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aabaacaabaac\"\n[1,2,3,4,1,10]",
       "expectedOutput": "11"
     },
     {
-      "input": "s = \"abc\", cost = [10,5,8]",
-      "expectedOutput": "13"
+      "input": "\"aaaaaa\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"zzzzz\", cost = [67,67,67,67,67]",
+      "input": "\"aabaaccaabaa\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "\"AABAAC\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "\"b\"\n[1,2,3,4,1,10]",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aaaaa\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"edcba\"\n[1,2,3,4,1,10]",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

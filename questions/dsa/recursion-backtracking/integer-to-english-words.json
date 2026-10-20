@@ -80,16 +80,72 @@
       "expectedOutput": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
     },
     {
-      "input": "num = 123",
-      "expectedOutput": "\"One Hundred Twenty Three\""
+      "input": "122",
+      "expectedOutput": "\"One Hundred Twenty Two\""
     },
     {
-      "input": "num = 12345",
-      "expectedOutput": "\"Twelve Thousand Three Hundred Forty Five\""
+      "input": "124",
+      "expectedOutput": "\"One Hundred Twenty Four\""
     },
     {
-      "input": "num = 1234567",
-      "expectedOutput": "\"One Million Two Hundred Thirty Four Thousand Five Hundred Sixty Seven\""
+      "input": "121",
+      "expectedOutput": "\"One Hundred Twenty One\""
+    },
+    {
+      "input": "125",
+      "expectedOutput": "\"One Hundred Twenty Five\""
+    },
+    {
+      "input": "120",
+      "expectedOutput": "\"One Hundred Twenty\""
+    },
+    {
+      "input": "126",
+      "expectedOutput": "\"One Hundred Twenty Six\""
+    },
+    {
+      "input": "246",
+      "expectedOutput": "\"Two Hundred Forty Six\""
+    },
+    {
+      "input": "61",
+      "expectedOutput": "\"Sixty One\""
+    },
+    {
+      "input": "-123",
+      "expectedOutput": "\"Nineteen Billion Nine Hundred Ninety Nine Million Nine Hundred Ninety Nine Thousand Eight Hundred Seventy Seven\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"Zero\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"One\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"Two\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"Three\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"Four\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"Five\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"Nineteen Billion Nine Hundred Ninety Nine Million Nine Hundred Ninety Nine Thousand Nine Hundred Ninety Nine\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"Nineteen Billion Nine Hundred Ninety Nine Million Nine Hundred Ninety Nine Thousand Nine Hundred Ninety Eight\""
     }
   ],
   "sqlSchema": null,

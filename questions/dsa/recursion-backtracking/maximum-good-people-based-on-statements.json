@@ -69,14 +69,6 @@
     {
       "input": "[[2,0],[0,2]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "statements = [[2,1,2],[1,2,2],[2,0,2]]",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "statements = [[2,0],[0,2]]",
-      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

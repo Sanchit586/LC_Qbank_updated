@@ -68,14 +68,6 @@
     {
       "input": "[[10,10,10],[10,10,10]]",
       "expectedOutput": "40"
-    },
-    {
-      "input": "coins = [[0,1,-1],[1,-2,3],[2,-3,4]]",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "coins = [[10,10,10],[10,10,10]]",
-      "expectedOutput": "40"
     }
   ],
   "sqlSchema": null,

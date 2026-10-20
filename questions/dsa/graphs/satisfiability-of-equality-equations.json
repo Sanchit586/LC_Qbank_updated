@@ -73,11 +73,75 @@
       "expectedOutput": "true"
     },
     {
-      "input": "equations = [\"a==b\",\"b!=a\"]",
+      "input": "[\"a==b\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"b!=a\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"b!=a\",\"a==b\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "equations = [\"b==a\",\"a==b\"]",
+      "input": "[\"a==b\",\"a==b\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a==b\",\"b!=a\",\"a==b\",\"b!=a\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"rat\",\"car\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"apple\",\"pear\",\"banana\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"blue\",\"red\",\"green\"]",
       "expectedOutput": "true"
     }
   ],

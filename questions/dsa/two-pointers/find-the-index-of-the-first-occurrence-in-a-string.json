@@ -71,11 +71,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "haystack = \"sadbutsad\", needle = \"sad\"",
+      "input": "\"sadb\"\n\"sad\"",
       "expectedOutput": "0"
     },
     {
-      "input": "haystack = \"leetcode\", needle = \"leeto\"",
+      "input": "\"utsad\"\n\"sad\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"s\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"sa\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"dastubdas\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"sadbutsadsadbutsad\"\n\"sad\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ssssss\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"sadbutsaddastubdas\"\n\"sad\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"SADBUTSAD\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"a\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"sad\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"\n\"sad\"",
       "expectedOutput": "-1"
     }
   ],

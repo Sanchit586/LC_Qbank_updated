@@ -84,16 +84,72 @@
       "expectedOutput": "[false,true,false,false,false]"
     },
     {
-      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FB\"",
-      "expectedOutput": "[true,false,true,true,false]"
+      "input": "[\"FooBar\",\"FooBarTest\"]\n\"FB\"",
+      "expectedOutput": "[true,false]"
     },
     {
-      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBa\"",
-      "expectedOutput": "[true,false,true,false,false]"
+      "input": "[\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
+      "expectedOutput": "[true,true,false]"
     },
     {
-      "input": "queries = [\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"], pattern = \"FoBaT\"",
-      "expectedOutput": "[false,true,false,false,false]"
+      "input": "[\"FooBar\"]\n\"FB\"",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "[\"FooBar\",\"ForceFeedBack\"]\n\"FB\"",
+      "expectedOutput": "[true,false]"
+    },
+    {
+      "input": "[\"ForceFeedBack\",\"FrameBuffer\",\"FootBall\",\"FooBarTest\",\"FooBar\"]\n\"FB\"",
+      "expectedOutput": "[false,true,true,false,true]"
+    },
+    {
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"ForceFeedBack\",\"FrameBuffer\"]\n\"FB\"",
+      "expectedOutput": "[true,false,true,false,true]"
+    },
+    {
+      "input": "[\"FrameBuffer\",\"ForceFeedBack\",\"FootBall\",\"FooBarTest\",\"FooBar\"]\n\"FB\"",
+      "expectedOutput": "[true,false,true,false,true]"
+    },
+    {
+      "input": "[\"FooBar\",\"FooBar\",\"FooBar\",\"FooBar\",\"FooBar\"]\n\"FB\"",
+      "expectedOutput": "[true,true,true,true,true]"
+    },
+    {
+      "input": "[\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\",\"FooBar\",\"FooBarTest\",\"FootBall\",\"FrameBuffer\",\"ForceFeedBack\"]\n\"FB\"",
+      "expectedOutput": "[true,false,true,true,false,true,false,true,true,false]"
+    },
+    {
+      "input": "[\"a\"]\n\"FB\"",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "[\"\"]\n\"FB\"",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"FB\"",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"FB\"",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"FB\"",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"FB\"",
+      "expectedOutput": "[false,false,false]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"FB\"",
+      "expectedOutput": "[false,false,false,false,false,false]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"FB\"",
+      "expectedOutput": "[false,false,false,false,false]"
     }
   ],
   "sqlSchema": null,

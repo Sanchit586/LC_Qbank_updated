@@ -80,16 +80,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "n = 5, k = 3",
+      "input": "0\n3",
+      "expectedOutput": "999749132"
+    },
+    {
+      "input": "1\n3",
+      "expectedOutput": "923277569"
+    },
+    {
+      "input": "2\n3",
+      "expectedOutput": "164646177"
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "4\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "n = 3, k = 2",
-      "expectedOutput": "2"
+      "input": "6\n3",
+      "expectedOutput": "10"
     },
     {
-      "input": "n = 5, k = 5",
+      "input": "7\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "8\n3",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "9\n3",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "-1\n3",
+      "expectedOutput": "911325394"
+    },
+    {
+      "input": "-2\n3",
+      "expectedOutput": "998749135"
+    },
+    {
+      "input": "5\n0",
+      "expectedOutput": "665858475"
+    },
+    {
+      "input": "5\n1",
       "expectedOutput": "0"
+    },
+    {
+      "input": "5\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "5\n6",
+      "expectedOutput": "665858475"
+    },
+    {
+      "input": "5\n7",
+      "expectedOutput": "150979525"
     }
   ],
   "sqlSchema": null,

@@ -69,12 +69,76 @@
       "expectedOutput": "2"
     },
     {
-      "input": "candidates = [16,17,71,62,12,24,14]",
+      "input": "[16,17,71]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[62,12,24,14]",
       "expectedOutput": "4"
     },
     {
-      "input": "candidates = [8,8]",
+      "input": "[16]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[16,14]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[16,17]",
       "expectedOutput": "2"
+    },
+    {
+      "input": "[14,24,12,62,71,17,16]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[12,14,16,17,24,62,71]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[71,62,24,17,16,14,12]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[16,16,16,16,16]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[16,17,71,62,12,24,14,16,17,71,62,12,24,14]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[32,34,142,124,24,48,28]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[17,18,72,63,13,25,15]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[15,16,70,61,11,23,13]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-16,-17,-71,-62,-12,-24,-14]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

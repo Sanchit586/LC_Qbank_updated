@@ -83,15 +83,71 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "words = [\"mass\",\"as\",\"hero\",\"superhero\"]",
+      "input": "[\"mass\",\"as\"]",
+      "expectedOutput": "[\"as\"]"
+    },
+    {
+      "input": "[\"hero\",\"superhero\"]",
+      "expectedOutput": "[\"hero\"]"
+    },
+    {
+      "input": "[\"mass\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"mass\",\"superhero\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"superhero\",\"hero\",\"as\",\"mass\"]",
+      "expectedOutput": "[\"hero\",\"as\"]"
+    },
+    {
+      "input": "[\"as\",\"hero\",\"mass\",\"superhero\"]",
       "expectedOutput": "[\"as\",\"hero\"]"
     },
     {
-      "input": "words = [\"leetcode\",\"et\",\"code\"]",
-      "expectedOutput": "[\"et\",\"code\"]"
+      "input": "[\"superhero\",\"mass\",\"hero\",\"as\"]",
+      "expectedOutput": "[\"hero\",\"as\"]"
     },
     {
-      "input": "words = [\"blue\",\"green\",\"bu\"]",
+      "input": "[\"mass\",\"mass\",\"mass\",\"mass\"]",
+      "expectedOutput": "[\"mass\",\"mass\",\"mass\",\"mass\"]"
+    },
+    {
+      "input": "[\"mass\",\"as\",\"hero\",\"superhero\",\"mass\",\"as\",\"hero\",\"superhero\"]",
+      "expectedOutput": "[\"mass\",\"as\",\"hero\",\"superhero\",\"mass\",\"as\",\"hero\",\"superhero\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
       "expectedOutput": "[]"
     }
   ],

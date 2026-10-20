@@ -76,18 +76,6 @@
     {
       "input": "\"26th May 1960\"",
       "expectedOutput": "\"1960-05-26\""
-    },
-    {
-      "input": "date = \"20th Oct 2052\"",
-      "expectedOutput": "\"2052-10-20\""
-    },
-    {
-      "input": "date = \"6th Jun 1933\"",
-      "expectedOutput": "\"1933-06-06\""
-    },
-    {
-      "input": "date = \"26th May 1960\"",
-      "expectedOutput": "\"1960-05-26\""
     }
   ],
   "sqlSchema": null,

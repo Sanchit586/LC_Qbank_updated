@@ -80,16 +80,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "s = \"aa\"",
-      "expectedOutput": "0"
+      "input": "\"a\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "s = \"abca\"",
+      "input": "\"aaaa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"cbzxy\"",
+      "input": "\"b\"",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"world\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ca\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"acba\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

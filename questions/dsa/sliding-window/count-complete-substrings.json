@@ -69,12 +69,76 @@
       "expectedOutput": "6"
     },
     {
-      "input": "word = \"igigee\", k = 2",
+      "input": "\"igi\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"gee\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"i\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ig\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"eegigi\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "word = \"aaabbbccc\", k = 3",
+      "input": "\"igigeeigigee\"\n2",
       "expectedOutput": "6"
+    },
+    {
+      "input": "\"iiiiii\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"igigeeeegigi\"\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"IGIGEE\"\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abcde\"\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -74,12 +74,76 @@
       "expectedOutput": "[0,1,3,2,0]"
     },
     {
-      "input": "words = [\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"], puzzles = [\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "input": "[\"aaaa\",\"asas\",\"able\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,3,2,2,0]"
+    },
+    {
+      "input": "[\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[0,0,0,0,2,0]"
+    },
+    {
+      "input": "[\"aaaa\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,1,1,1,0]"
+    },
+    {
+      "input": "[\"aaaa\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,1,1,2,0]"
+    },
+    {
+      "input": "[\"aaaa\",\"asas\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,2,2,2,0]"
+    },
+    {
+      "input": "[\"access\",\"actor\",\"actt\",\"ability\",\"able\",\"asas\",\"aaaa\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
       "expectedOutput": "[1,1,3,2,4,0]"
     },
     {
-      "input": "words = [\"apple\",\"pleas\",\"please\"], puzzles = [\"aelwxyz\",\"aelpxyz\",\"aelpsxy\",\"saelpxy\",\"xaelpsy\"]",
-      "expectedOutput": "[0,1,3,2,0]"
+      "input": "[\"aaaa\",\"ability\",\"able\",\"access\",\"actor\",\"actt\",\"asas\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,3,2,4,0]"
+    },
+    {
+      "input": "[\"asas\",\"actt\",\"actor\",\"access\",\"able\",\"ability\",\"aaaa\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,3,2,4,0]"
+    },
+    {
+      "input": "[\"aaaa\",\"aaaa\",\"aaaa\",\"aaaa\",\"aaaa\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[5,5,5,5,5,0]"
+    },
+    {
+      "input": "[\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\",\"aaaa\",\"asas\",\"able\",\"ability\",\"actt\",\"actor\",\"access\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[2,2,6,4,8,0]"
+    },
+    {
+      "input": "[\"a\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,1,1,1,0]"
+    },
+    {
+      "input": "[\"\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[0,0,0,0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[1,1,1,1,1,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[2,2,2,2,2,0]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[2,2,2,2,0,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[0,0,0,0,0,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[0,0,4,0,3,0]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"aboveyz\",\"abrodyz\",\"abslute\",\"absoryz\",\"actresz\",\"gaswxyz\"]",
+      "expectedOutput": "[0,0,0,0,3,0]"
     }
   ],
   "sqlSchema": null,

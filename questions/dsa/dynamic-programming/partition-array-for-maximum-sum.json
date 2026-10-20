@@ -81,16 +81,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "arr = [1,15,7,9,2,5,10], k = 3",
+      "input": "[1,15,7]\n3",
+      "expectedOutput": "45"
+    },
+    {
+      "input": "[9,2,5,10]\n3",
+      "expectedOutput": "39"
+    },
+    {
+      "input": "[1]\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,10]\n3",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[1,15]\n3",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "[10,5,2,9,7,15,1]\n3",
       "expectedOutput": "84"
     },
     {
-      "input": "arr = [1,4,1,5,7,3,6,1,9,9,3], k = 4",
-      "expectedOutput": "83"
+      "input": "[1,2,5,7,9,10,15]\n3",
+      "expectedOutput": "67"
     },
     {
-      "input": "arr = [1], k = 1",
-      "expectedOutput": "1"
+      "input": "[15,10,9,7,5,2,1]\n3",
+      "expectedOutput": "67"
+    },
+    {
+      "input": "[1,1,1,1,1]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,15,7,9,2,5,10,1,15,7,9,2,5,10]\n3",
+      "expectedOutput": "168"
+    },
+    {
+      "input": "[2,30,14,18,4,10,20]\n3",
+      "expectedOutput": "168"
+    },
+    {
+      "input": "[2,16,8,10,3,6,11]\n3",
+      "expectedOutput": "91"
+    },
+    {
+      "input": "[0,14,6,8,1,4,9]\n3",
+      "expectedOutput": "77"
+    },
+    {
+      "input": "[-1,-15,-7,-9,-2,-5,-10]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]\n3",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -69,12 +69,76 @@
       "expectedOutput": "[\"yellow\"]"
     },
     {
-      "input": "wordlist = [\"KiTe\",\"kite\",\"hare\",\"Hare\"], queries = [\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "input": "[\"KiTe\",\"kite\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"\",\"\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"Hare\",\"hare\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"KiTe\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"KiTe\",\"KiTe\",\"KiTe\",\"\",\"\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"KiTe\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"KiTe\",\"KiTe\",\"KiTe\",\"Hare\",\"Hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"Hare\",\"hare\",\"kite\",\"KiTe\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"kite\",\"kite\",\"KiTe\",\"Hare\",\"Hare\",\"\",\"\",\"kite\",\"\",\"kite\"]"
+    },
+    {
+      "input": "[\"Hare\",\"KiTe\",\"hare\",\"kite\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"Hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"kite\",\"hare\",\"KiTe\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"kite\",\"kite\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"kite\",\"\",\"kite\"]"
+    },
+    {
+      "input": "[\"KiTe\",\"KiTe\",\"KiTe\",\"KiTe\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"KiTe\",\"KiTe\",\"KiTe\",\"\",\"\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
+    },
+    {
+      "input": "[\"KiTe\",\"kite\",\"hare\",\"Hare\",\"KiTe\",\"kite\",\"hare\",\"Hare\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
       "expectedOutput": "[\"kite\",\"KiTe\",\"KiTe\",\"Hare\",\"hare\",\"\",\"\",\"KiTe\",\"\",\"KiTe\"]"
     },
     {
-      "input": "wordlist = [\"yellow\"], queries = [\"YellOw\"]",
-      "expectedOutput": "[\"yellow\"]"
+      "input": "[\"a\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"kite\",\"Kite\",\"KiTe\",\"Hare\",\"HARE\",\"Hear\",\"hear\",\"keti\",\"keet\",\"keto\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
     }
   ],
   "sqlSchema": null,

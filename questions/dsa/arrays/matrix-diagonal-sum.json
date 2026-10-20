@@ -79,18 +79,6 @@
     {
       "input": "[[5]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "mat = [[1,2,3],\n              [4,5,6],\n              [7,8,9]]",
-      "expectedOutput": "25"
-    },
-    {
-      "input": "mat = [[1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1],\n              [1,1,1,1]]",
-      "expectedOutput": "8"
-    },
-    {
-      "input": "mat = [[5]]",
-      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

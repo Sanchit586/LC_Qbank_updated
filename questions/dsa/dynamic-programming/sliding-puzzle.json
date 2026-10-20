@@ -87,18 +87,6 @@
     {
       "input": "[[4,1,2],[5,0,3]]",
       "expectedOutput": "5"
-    },
-    {
-      "input": "board = [[1,2,3],[4,0,5]]",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "board = [[1,2,3],[5,4,0]]",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "board = [[4,1,2],[5,0,3]]",
-      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

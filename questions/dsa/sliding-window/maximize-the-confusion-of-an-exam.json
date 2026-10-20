@@ -84,15 +84,71 @@
       "expectedOutput": "5"
     },
     {
-      "input": "answerKey = \"TTFF\", k = 2",
+      "input": "\"TT\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"FF\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"T\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"FFTT\"\n2",
       "expectedOutput": "4"
     },
     {
-      "input": "answerKey = \"TFFT\", k = 1",
+      "input": "\"TTFFTTFF\"\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"TTTT\"\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"TTFFFFTT\"\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"ttff\"\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "answerKey = \"TTFTTFTT\", k = 1",
+      "input": "\"abba\"\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n2",
       "expectedOutput": "5"
     }
   ],

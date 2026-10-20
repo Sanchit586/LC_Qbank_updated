@@ -68,11 +68,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "candies = [5,8,6], k = 3",
+      "input": "[5]\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[8,6]\n3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[5,6]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[5,8]\n3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[6,8,5]\n3",
       "expectedOutput": "5"
     },
     {
-      "input": "candies = [2,5], k = 11",
+      "input": "[5,6,8]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[8,6,5]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[5,5,5]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[5,8,6,5,8,6]\n3",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[10,16,12]\n3",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[6,9,7]\n3",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[4,7,5]\n3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-5,-8,-6]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1]\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n3",
       "expectedOutput": "0"
     }
   ],

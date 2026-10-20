@@ -83,16 +83,72 @@
       "expectedOutput": "\"x\""
     },
     {
-      "input": "letters = [\"c\",\"f\",\"j\"], target = \"a\"",
+      "input": "[\"c\"]\n\"a\"",
       "expectedOutput": "\"c\""
     },
     {
-      "input": "letters = [\"c\",\"f\",\"j\"], target = \"c\"",
+      "input": "[\"f\",\"j\"]\n\"a\"",
       "expectedOutput": "\"f\""
     },
     {
-      "input": "letters = [\"x\",\"x\",\"y\",\"y\"], target = \"z\"",
-      "expectedOutput": "\"x\""
+      "input": "[\"c\",\"j\"]\n\"a\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"c\",\"f\"]\n\"a\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"j\",\"f\",\"c\"]\n\"a\"",
+      "expectedOutput": "\"j\""
+    },
+    {
+      "input": "[\"c\",\"c\",\"c\"]\n\"a\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"c\",\"f\",\"j\",\"c\",\"f\",\"j\"]\n\"a\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"a\"]\n\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"a\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n\"a\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\"]\n\"a\"",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "[\"c\"]\n\"c\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "[\"f\",\"j\"]\n\"c\"",
+      "expectedOutput": "\"f\""
+    },
+    {
+      "input": "[\"c\",\"j\"]\n\"c\"",
+      "expectedOutput": "\"j\""
+    },
+    {
+      "input": "[\"c\",\"f\"]\n\"c\"",
+      "expectedOutput": "\"f\""
+    },
+    {
+      "input": "[\"j\",\"f\",\"c\"]\n\"c\"",
+      "expectedOutput": "\"j\""
     }
   ],
   "sqlSchema": null,

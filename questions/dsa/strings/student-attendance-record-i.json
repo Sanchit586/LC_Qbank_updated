@@ -66,12 +66,76 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"PPALLP\"",
+      "input": "\"PPA\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"PPALLL\"",
+      "input": "\"LLP\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"P\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"PP\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"PLLAPP\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"PPALLPPPALLP\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"PPPPPP\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"PPALLPPLLAPP\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ppallp\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

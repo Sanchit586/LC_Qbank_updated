@@ -85,15 +85,63 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "n = 2, trust = [[1,2]]",
-      "expectedOutput": "2"
+      "input": "3\n[[1,2]]",
+      "expectedOutput": "-1"
     },
     {
-      "input": "n = 3, trust = [[1,3],[2,3]]",
-      "expectedOutput": "3"
+      "input": "4\n[[1,2]]",
+      "expectedOutput": "-1"
     },
     {
-      "input": "n = 3, trust = [[1,3],[2,3],[3,1]]",
+      "input": "5\n[[1,2]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "6\n[[1,2]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "7\n[[1,2]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "4\n[[1,3],[2,3]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "5\n[[1,3],[2,3]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "6\n[[1,3],[2,3]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "7\n[[1,3],[2,3]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "8\n[[1,3],[2,3]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "4\n[[1,3],[2,3],[3,1]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "5\n[[1,3],[2,3],[3,1]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "6\n[[1,3],[2,3],[3,1]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "7\n[[1,3],[2,3],[3,1]]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "8\n[[1,3],[2,3],[3,1]]",
       "expectedOutput": "-1"
     }
   ],

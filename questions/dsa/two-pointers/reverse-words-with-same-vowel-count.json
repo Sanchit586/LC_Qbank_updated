@@ -83,16 +83,72 @@
       "expectedOutput": "\"banana healthy\""
     },
     {
-      "input": "s = \"cat and mice\"",
-      "expectedOutput": "\"cat dna mice\""
+      "input": "\"cat an\"",
+      "expectedOutput": "\"cat na\""
     },
     {
-      "input": "s = \"book is nice\"",
-      "expectedOutput": "\"book is ecin\""
+      "input": "\"d mice\"",
+      "expectedOutput": "\"d mice\""
     },
     {
-      "input": "s = \"banana healthy\"",
-      "expectedOutput": "\"banana healthy\""
+      "input": "\"c\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"ca\"",
+      "expectedOutput": "\"ca\""
+    },
+    {
+      "input": "\"ecim dna tac\"",
+      "expectedOutput": "\"ecim dna tac\""
+    },
+    {
+      "input": "\"cccccc\"",
+      "expectedOutput": "\"cccccc\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

@@ -69,14 +69,6 @@
     {
       "input": "[[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
       "expectedOutput": "\"bad\""
-    },
-    {
-      "input": "responses = [[\"good\",\"ok\",\"good\",\"ok\"],[\"ok\",\"bad\",\"good\",\"ok\",\"ok\"],[\"good\"],[\"bad\"]]",
-      "expectedOutput": "\"good\""
-    },
-    {
-      "input": "responses = [[\"good\",\"ok\",\"good\"],[\"ok\",\"bad\"],[\"bad\",\"notsure\"],[\"great\",\"good\"]]",
-      "expectedOutput": "\"bad\""
     }
   ],
   "sqlSchema": null,

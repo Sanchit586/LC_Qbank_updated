@@ -79,16 +79,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "firstWord = \"acb\", secondWord = \"cba\", targetWord = \"cdb\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aab\"",
+      "input": "\"a\"\n\"cba\"\n\"cdb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "firstWord = \"aaa\", secondWord = \"a\", targetWord = \"aaaa\"",
+      "input": "\"cb\"\n\"cba\"\n\"cdb\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"ac\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"bca\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"acbacb\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaa\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"acbbca\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ACB\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"cba\"\n\"cdb\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

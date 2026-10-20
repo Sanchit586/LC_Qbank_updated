@@ -80,16 +80,72 @@
       "expectedOutput": "5"
     },
     {
-      "input": "sentence = \"cat and  dog\"",
+      "input": "\"cat an\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"d  dog\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"c\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ca\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"god  dna tac\"",
       "expectedOutput": "3"
     },
     {
-      "input": "sentence = \"!this  1-s b8d!\"",
-      "expectedOutput": "0"
+      "input": "\"cccccc\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "sentence = \"alice and  bob are playing stone-game10\"",
-      "expectedOutput": "5"
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -71,12 +71,76 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "strs = [\"aba\",\"cdc\",\"eae\"]",
+      "input": "[\"aba\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "strs = [\"aaa\",\"aaa\",\"aa\"]",
+      "input": "[\"cdc\",\"eae\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"aba\",\"eae\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"aba\",\"cdc\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eae\",\"cdc\",\"aba\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"aba\",\"aba\",\"aba\"]",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"aba\",\"cdc\",\"eae\",\"aba\",\"cdc\",\"eae\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -68,11 +68,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"1010\", target = \"0110\"",
+      "input": "\"10\"\n\"0110\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"11\", target = \"00\"",
+      "input": "\"1\"\n\"0110\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"0101\"\n\"0110\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"10101010\"\n\"0110\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"1111\"\n\"0110\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"10100101\"\n\"0110\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"0110\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"0110\"",
       "expectedOutput": "false"
     }
   ],

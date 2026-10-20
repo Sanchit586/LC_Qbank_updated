@@ -80,16 +80,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [1,2,3,4], k = 4",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "nums = [3,3,3], k = 4",
+      "input": "[1,2]\n4",
       "expectedOutput": "0"
     },
     {
-      "input": "nums = [6,6], k = 2",
-      "expectedOutput": "2"
+      "input": "[3,4]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,4]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[4,3,2,1]\n4",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[1,1,1,1]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4,1,2,3,4]\n4",
+      "expectedOutput": "232"
+    },
+    {
+      "input": "[2,4,6,8]\n4",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[2,3,4,5]\n4",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[0,1,2,3]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,1]\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1]\n4",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

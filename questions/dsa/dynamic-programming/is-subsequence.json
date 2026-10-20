@@ -69,11 +69,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"abc\", t = \"ahbgdc\"",
+      "input": "\"a\"\n\"ahbgdc\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"axc\", t = \"ahbgdc\"",
+      "input": "\"bc\"\n\"ahbgdc\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"\n\"ahbgdc\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"cba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcabc\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaa\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abccba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ABC\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"ahbgdc\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"ahbgdc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"ahbgdc\"",
       "expectedOutput": "false"
     }
   ],

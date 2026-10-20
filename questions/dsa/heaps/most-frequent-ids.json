@@ -72,12 +72,76 @@
       "expectedOutput": "[2,0,1]"
     },
     {
-      "input": "nums = [2,3,2,1], freq = [3,2,-3,1]",
+      "input": "[2,3]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3]"
+    },
+    {
+      "input": "[2,1]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3]"
+    },
+    {
+      "input": "[2]\n[3,2,-3,1]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[1,2,3,2]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,3,3]"
+    },
+    {
+      "input": "[1,2,2,3]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,3,3]"
+    },
+    {
+      "input": "[3,2,2,1]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,3,3]"
+    },
+    {
+      "input": "[2,2,2,2]\n[3,2,-3,1]",
+      "expectedOutput": "[3,5,2,3]"
+    },
+    {
+      "input": "[2,3,2,1,2,3,2,1]\n[3,2,-3,1]",
       "expectedOutput": "[3,3,2,2]"
     },
     {
-      "input": "nums = [5,5,3], freq = [2,-2,1]",
-      "expectedOutput": "[2,0,1]"
+      "input": "[4,6,4,2]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,2,2]"
+    },
+    {
+      "input": "[3,4,3,2]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,2,2]"
+    },
+    {
+      "input": "[1,2,1,0]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,2,2]"
+    },
+    {
+      "input": "[-2,-3,-2,-1]\n[3,2,-3,1]",
+      "expectedOutput": "[3,3,2,2]"
+    },
+    {
+      "input": "[0,0,0,0]\n[3,2,-3,1]",
+      "expectedOutput": "[3,5,2,3]"
+    },
+    {
+      "input": "[1,1,1,1]\n[3,2,-3,1]",
+      "expectedOutput": "[3,5,2,3]"
+    },
+    {
+      "input": "[0]\n[3,2,-3,1]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[1]\n[3,2,-3,1]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[-1]\n[3,2,-3,1]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[0,0]\n[3,2,-3,1]",
+      "expectedOutput": "[3,5]"
     }
   ],
   "sqlSchema": null,

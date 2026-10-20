@@ -79,16 +79,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "a = \"aba\", b = \"cdc\"",
+      "input": "\"a\"\n\"cdc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "a = \"aaa\", b = \"bbb\"",
+      "input": "\"ba\"\n\"cdc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "a = \"aaa\", b = \"aaa\"",
-      "expectedOutput": "-1"
+      "input": "\"ab\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abaaba\"\n\"cdc\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aaa\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ABA\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"b\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aa\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"\n\"cdc\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n\"cdc\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n\"cdc\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n\"cdc\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aA\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"0\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"121\"\n\"cdc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"racecar\"\n\"cdc\"",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

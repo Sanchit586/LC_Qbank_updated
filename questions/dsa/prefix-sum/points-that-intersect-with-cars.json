@@ -67,14 +67,6 @@
     {
       "input": "[[1,3],[5,8]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "nums = [[3,6],[1,5],[4,7]]",
-      "expectedOutput": "7"
-    },
-    {
-      "input": "nums = [[1,3],[5,8]]",
-      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

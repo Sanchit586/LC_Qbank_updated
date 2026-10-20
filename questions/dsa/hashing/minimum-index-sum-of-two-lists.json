@@ -82,19 +82,75 @@
     },
     {
       "input": "[\"happy\",\"sad\",\"good\"]\n[\"sad\",\"happy\",\"good\"]",
-      "expectedOutput": "[\"sad\",\"happy\"]"
+      "expectedOutput": "[\"happy\",\"sad\"]"
     },
     {
-      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "input": "[\"Shogun\",\"Tapioca Express\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
       "expectedOutput": "[\"Shogun\"]"
     },
     {
-      "input": "list1 = [\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"], list2 = [\"KFC\",\"Shogun\",\"Burger King\"]",
+      "input": "[\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"Shogun\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
       "expectedOutput": "[\"Shogun\"]"
     },
     {
-      "input": "list1 = [\"happy\",\"sad\",\"good\"], list2 = [\"sad\",\"happy\",\"good\"]",
-      "expectedOutput": "[\"sad\",\"happy\"]"
+      "input": "[\"Shogun\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"KFC\",\"Burger King\",\"Tapioca Express\",\"Shogun\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"Burger King\",\"KFC\",\"Shogun\",\"Tapioca Express\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"Tapioca Express\",\"Shogun\",\"KFC\",\"Burger King\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"Shogun\",\"Shogun\",\"Shogun\",\"Shogun\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\",\"Shogun\",\"Tapioca Express\",\"Burger King\",\"KFC\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[\"Shogun\"]"
+    },
+    {
+      "input": "[\"a\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"Piatti\",\"The Grill at Torrey Pines\",\"Hungry Hunter Steakhouse\",\"Shogun\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

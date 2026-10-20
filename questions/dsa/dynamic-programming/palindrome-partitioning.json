@@ -68,12 +68,76 @@
       "expectedOutput": "[[\"a\"]]"
     },
     {
-      "input": "s = \"aab\"",
-      "expectedOutput": "[[\"a\",\"a\",\"b\"],[\"aa\",\"b\"]]"
+      "input": "\"ab\"",
+      "expectedOutput": "[[\"a\",\"b\"]]"
     },
     {
-      "input": "s = \"a\"",
-      "expectedOutput": "[[\"a\"]]"
+      "input": "\"aa\"",
+      "expectedOutput": "[[\"a\",\"a\"],[\"aa\"]]"
+    },
+    {
+      "input": "\"baa\"",
+      "expectedOutput": "[[\"b\",\"a\",\"a\"],[\"b\",\"aa\"]]"
+    },
+    {
+      "input": "\"aabaab\"",
+      "expectedOutput": "[[\"a\",\"a\",\"b\",\"a\",\"a\",\"b\"],[\"a\",\"a\",\"b\",\"aa\",\"b\"],[\"a\",\"a\",\"baab\"],[\"a\",\"aba\",\"a\",\"b\"],[\"aa\",\"b\",\"a\",\"a\",\"b\"],[\"aa\",\"b\",\"aa\",\"b\"],[\"aa\",\"baab\"],[\"aabaa\",\"b\"]]"
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "[[\"a\",\"a\",\"a\"],[\"a\",\"aa\"],[\"aa\",\"a\"],[\"aaa\"]]"
+    },
+    {
+      "input": "\"aabbaa\"",
+      "expectedOutput": "[[\"a\",\"a\",\"b\",\"b\",\"a\",\"a\"],[\"a\",\"a\",\"b\",\"b\",\"aa\"],[\"a\",\"a\",\"bb\",\"a\",\"a\"],[\"a\",\"a\",\"bb\",\"aa\"],[\"a\",\"abba\",\"a\"],[\"aa\",\"b\",\"b\",\"a\",\"a\"],[\"aa\",\"b\",\"b\",\"aa\"],[\"aa\",\"bb\",\"a\",\"a\"],[\"aa\",\"bb\",\"aa\"],[\"aabbaa\"]]"
+    },
+    {
+      "input": "\"AAB\"",
+      "expectedOutput": "[[\"A\",\"A\",\"B\"],[\"AA\",\"B\"]]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[[\"b\"]]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[[\"b\",\"a\"]]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[[\"a\",\"b\",\"a\"],[\"aba\"]]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"bb\",\"a\"],[\"abba\"]]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[[\"a\",\"a\",\"a\",\"a\",\"a\"],[\"a\",\"a\",\"a\",\"aa\"],[\"a\",\"a\",\"aa\",\"a\"],[\"a\",\"a\",\"aaa\"],[\"a\",\"aa\",\"a\",\"a\"],[\"a\",\"aa\",\"aa\"],[\"a\",\"aaa\",\"a\"],[\"a\",\"aaaa\"],[\"aa\",\"a\",\"a\",\"a\"],[\"aa\",\"a\",\"aa\"],[\"aa\",\"aa\",\"a\"],[\"aa\",\"aaa\"],[\"aaa\",\"a\",\"a\"],[\"aaa\",\"aa\"],[\"aaaa\",\"a\"],[\"aaaaa\"]]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[[\"a\",\"b\",\"c\",\"d\",\"e\"]]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[[\"e\",\"d\",\"c\",\"b\",\"a\"]]"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "[[\"a\",\"A\"]]"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "[[\"0\"]]"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "[[\"1\",\"2\",\"1\"],[\"121\"]]"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "[[\"r\",\"a\",\"c\",\"e\",\"c\",\"a\",\"r\"],[\"r\",\"a\",\"cec\",\"a\",\"r\"],[\"r\",\"aceca\",\"r\"],[\"racecar\"]]"
     }
   ],
   "sqlSchema": null,

@@ -81,16 +81,72 @@
       "expectedOutput": "3"
     },
     {
-      "input": "word = \"aaaaa\"",
+      "input": "\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaaaaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"AAAAA\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = \"abddez\"",
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = \"zyxyxyz\"",
-      "expectedOutput": "3"
+      "input": "\"abcde\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

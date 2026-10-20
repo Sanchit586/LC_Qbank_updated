@@ -82,16 +82,72 @@
       "expectedOutput": "1440"
     },
     {
-      "input": "time = \"?5:00\"",
+      "input": "\"?5\"",
+      "expectedOutput": "120"
+    },
+    {
+      "input": "\":00\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"?\"",
+      "expectedOutput": "1440"
+    },
+    {
+      "input": "\"00:5?\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"?5:00?5:00\"",
       "expectedOutput": "2"
     },
     {
-      "input": "time = \"0?:0?\"",
-      "expectedOutput": "100"
+      "input": "\"?????\"",
+      "expectedOutput": "1440"
     },
     {
-      "input": "time = \"??:??\"",
-      "expectedOutput": "1440"
+      "input": "\"?5:0000:5?\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -74,7 +74,7 @@
   "testCases": [
     {
       "input": "[1,1]",
-      "expectedOutput": "1.00000"
+      "expectedOutput": "1"
     },
     {
       "input": "[2,1,1]",
@@ -82,19 +82,75 @@
     },
     {
       "input": "[1,2,1,2]",
-      "expectedOutput": "0.60000"
+      "expectedOutput": "0.6"
     },
     {
-      "input": "balls = [1,1]",
-      "expectedOutput": "1.00000"
+      "input": "[1]",
+      "expectedOutput": "0"
     },
     {
-      "input": "balls = [2,1,1]",
-      "expectedOutput": "0.66667"
+      "input": "[1,1,1,1]",
+      "expectedOutput": "1"
     },
     {
-      "input": "balls = [1,2,1,2]",
-      "expectedOutput": "0.60000"
+      "input": "[2,2]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "[-1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "0.3"
+    },
+    {
+      "input": "[3,2,1]",
+      "expectedOutput": "0.3"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "expectedOutput": "0.54749"
+    },
+    {
+      "input": "[5,4,3,2,1]",
+      "expectedOutput": "0.54749"
+    },
+    {
+      "input": "[1,3,2,5,4]",
+      "expectedOutput": "0.54749"
+    },
+    {
+      "input": "[-10,0,10]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[100,-100]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

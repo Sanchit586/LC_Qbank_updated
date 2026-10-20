@@ -69,12 +69,76 @@
       "expectedOutput": "20"
     },
     {
-      "input": "s = \"cdbcbbaaabab\", x = 4, y = 5",
-      "expectedOutput": "19"
+      "input": "\"cdbcbb\"\n4\n5",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"aabbaaxybbaabb\", x = 5, y = 4",
-      "expectedOutput": "20"
+      "input": "\"aaabab\"\n4\n5",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"c\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"cd\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"babaaabbcbdc\"\n4\n5",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "\"cccccc\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"CDBCBBAAABAB\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n4\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ba\"\n4\n5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aba\"\n4\n5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abba\"\n4\n5",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"aaaaa\"\n4\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n4\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"edcba\"\n4\n5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"\n4\n5",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

@@ -71,12 +71,76 @@
       "expectedOutput": "\"apple\""
     },
     {
-      "input": "words = [\"w\",\"wo\",\"wor\",\"worl\",\"world\"]",
+      "input": "[\"w\",\"wo\"]",
+      "expectedOutput": "\"wo\""
+    },
+    {
+      "input": "[\"wor\",\"worl\",\"world\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"w\"]",
+      "expectedOutput": "\"w\""
+    },
+    {
+      "input": "[\"w\",\"world\"]",
+      "expectedOutput": "\"w\""
+    },
+    {
+      "input": "[\"world\",\"worl\",\"wor\",\"wo\",\"w\"]",
       "expectedOutput": "\"world\""
     },
     {
-      "input": "words = [\"a\",\"banana\",\"app\",\"appl\",\"ap\",\"apply\",\"apple\"]",
-      "expectedOutput": "\"apple\""
+      "input": "[\"w\",\"w\",\"w\",\"w\",\"w\"]",
+      "expectedOutput": "\"w\""
+    },
+    {
+      "input": "[\"w\",\"wo\",\"wor\",\"worl\",\"world\",\"w\",\"wo\",\"wor\",\"worl\",\"world\"]",
+      "expectedOutput": "\"world\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,

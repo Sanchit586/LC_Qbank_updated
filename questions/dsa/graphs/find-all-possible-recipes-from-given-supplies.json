@@ -89,16 +89,72 @@
       "expectedOutput": "[\"bread\",\"sandwich\",\"burger\"]"
     },
     {
-      "input": "recipes = [\"bread\"], ingredients = [[\"yeast\",\"flour\"]], supplies = [\"yeast\",\"flour\",\"corn\"]",
+      "input": "[\"bread\",\"bread\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
       "expectedOutput": "[\"bread\"]"
     },
     {
-      "input": "recipes = [\"bread\",\"sandwich\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
-      "expectedOutput": "[\"bread\",\"sandwich\"]"
+      "input": "[\"a\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"a\"]"
     },
     {
-      "input": "recipes = [\"bread\",\"sandwich\",\"burger\"], ingredients = [[\"yeast\",\"flour\"],[\"bread\",\"meat\"],[\"sandwich\",\"meat\",\"bread\"]], supplies = [\"yeast\",\"flour\",\"meat\"]",
-      "expectedOutput": "[\"bread\",\"sandwich\",\"burger\"]"
+      "input": "[\"\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"eat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"cat\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"one\"]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"hello\"]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"flow\"]"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"word\"]"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"listen\"]"
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"anagram\"]"
+    },
+    {
+      "input": "[\"rat\",\"car\"]\n[[\"yeast\",\"flour\"]]\n[\"yeast\",\"flour\",\"corn\"]",
+      "expectedOutput": "[\"rat\"]"
     }
   ],
   "sqlSchema": null,

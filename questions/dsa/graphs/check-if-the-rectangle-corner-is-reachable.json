@@ -99,19 +99,67 @@
       "expectedOutput": "true"
     },
     {
-      "input": "xCorner = 3, yCorner = 4, circles = [[2,1,1]]",
+      "input": "0\n4\n[[2,1,1]]",
       "expectedOutput": "true"
     },
     {
-      "input": "xCorner = 3, yCorner = 3, circles = [[1,1,2]]",
+      "input": "1\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "2\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "4\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "6\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "7\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-1\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-2\n4\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n0\n[[2,1,1]]",
       "expectedOutput": "false"
     },
     {
-      "input": "xCorner = 3, yCorner = 3, circles = [[2,1,1],[1,2,1]]",
+      "input": "3\n1\n[[2,1,1]]",
       "expectedOutput": "false"
     },
     {
-      "input": "xCorner = 4, yCorner = 4, circles = [[5,5,1]]",
+      "input": "3\n2\n[[2,1,1]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n3\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n5\n[[2,1,1]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n6\n[[2,1,1]]",
       "expectedOutput": "true"
     }
   ],

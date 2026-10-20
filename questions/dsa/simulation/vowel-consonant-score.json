@@ -80,15 +80,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"cooear\"",
+      "input": "\"coo\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"axeyizou\"",
+      "input": "\"ear\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"c\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"co\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"au 123\"",
+      "input": "\"raeooc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"cooearcooear\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"cccccc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"cooearraeooc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"COOEAR\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"",
       "expectedOutput": "0"
     }
   ],

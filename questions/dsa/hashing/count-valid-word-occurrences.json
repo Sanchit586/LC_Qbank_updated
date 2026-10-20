@@ -89,16 +89,72 @@
       "expectedOutput": "[1,1,1,0]"
     },
     {
-      "input": "chunks = [\"hello wor\",\"ld hello\"], queries = [\"hello\",\"world\",\"wor\"]",
-      "expectedOutput": "[2,1,0]"
+      "input": "[\"hello wor\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[1,0,1]"
     },
     {
-      "input": "chunks = [\"a-b a--b \",\"a-\",\"b\"], queries = [\"a-b\",\"a\",\"b\"]",
-      "expectedOutput": "[2,1,1]"
+      "input": "[\"ld hello\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[1,0,0]"
     },
     {
-      "input": "chunks = [\"-cat dog- mouse\"], queries = [\"cat\",\"dog\",\"mouse\",\"cat-dog\"]",
-      "expectedOutput": "[1,1,1,0]"
+      "input": "[\"ld hello\",\"hello wor\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,1]"
+    },
+    {
+      "input": "[\"hello wor\",\"hello wor\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[1,0,1]"
+    },
+    {
+      "input": "[\"hello wor\",\"ld hello\",\"hello wor\",\"ld hello\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[2,2,0]"
+    },
+    {
+      "input": "[\"a\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n[\"hello\",\"world\",\"wor\"]",
+      "expectedOutput": "[0,0,0]"
     }
   ],
   "sqlSchema": null,

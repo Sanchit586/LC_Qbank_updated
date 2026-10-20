@@ -83,16 +83,72 @@
       "expectedOutput": "[6,9,12]"
     },
     {
-      "input": "s = \"barfoothefoobarman\", words = [\"foo\",\"bar\"]",
-      "expectedOutput": "[0,9]"
+      "input": "\"barfoothe\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[0]"
     },
     {
-      "input": "s = \"wordgoodgoodgoodbestword\", words = [\"word\",\"good\",\"best\",\"word\"]",
+      "input": "\"foobarman\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "\"b\"\n[\"foo\",\"bar\"]",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = \"barfoofoobarthefoobarman\", words = [\"bar\",\"foo\",\"the\"]",
-      "expectedOutput": "[6,9,12]"
+      "input": "\"ba\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"namraboofehtoofrab\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"bbbbbb\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"BARFOOTHEFOOBARMAN\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"a\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abba\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcde\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"edcba\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aab\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aA\"\n[\"foo\",\"bar\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

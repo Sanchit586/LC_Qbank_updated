@@ -87,16 +87,24 @@
       "expectedOutput": "12"
     },
     {
-      "input": "pieces = [\"rook\"], positions = [[1,1]]",
-      "expectedOutput": "15"
-    },
-    {
-      "input": "pieces = [\"queen\"], positions = [[1,1]]",
+      "input": "[\"a\"]\n[[1,1]]",
       "expectedOutput": "22"
     },
     {
-      "input": "pieces = [\"bishop\"], positions = [[4,3]]",
-      "expectedOutput": "12"
+      "input": "[\"a\"]\n[[4,3]]",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "[\"rook\"]\n[[4,3]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[\"queen\"]\n[[4,3]]",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "[\"bishop\"]\n[[1,1]]",
+      "expectedOutput": "8"
     }
   ],
   "sqlSchema": null,

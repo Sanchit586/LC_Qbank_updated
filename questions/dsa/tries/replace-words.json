@@ -76,12 +76,76 @@
       "expectedOutput": "\"a a b c\""
     },
     {
-      "input": "dictionary = [\"cat\",\"bat\",\"rat\"], sentence = \"the cattle was rattled by the battery\"",
-      "expectedOutput": "\"the cat was rat by the bat\""
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"the cattle was rat\"",
+      "expectedOutput": "\"the cat was rat\""
     },
     {
-      "input": "dictionary = [\"a\",\"b\",\"c\"], sentence = \"aadsfasf absbs bbab cadsfafs\"",
-      "expectedOutput": "\"a a b c\""
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"tled by the battery\"",
+      "expectedOutput": "\"tled by the bat\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"t\"",
+      "expectedOutput": "\"t\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"th\"",
+      "expectedOutput": "\"th\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"yrettab eht yb delttar saw elttac eht\"",
+      "expectedOutput": "\"yrettab eht yb delttar saw elttac eht\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"tttttt\"",
+      "expectedOutput": "\"tttttt\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"aab\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "[\"cat\",\"bat\",\"rat\"]\n\"aA\"",
+      "expectedOutput": "\"aA\""
     }
   ],
   "sqlSchema": null,

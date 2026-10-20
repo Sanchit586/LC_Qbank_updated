@@ -80,15 +80,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "code = \"<DIV>This is the first line <![CDATA[<div>]]></DIV>\"",
+      "input": "\"<DIV>This is the first li\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ne <![CDATA[<div>]]></DIV>\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"<\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"<D\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\">VID/<>]]>vid<[ATADC[!< enil tsrif eht si sihT>VID<\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"<<<<<<\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "true"
     },
     {
-      "input": "code = \"<DIV>>>  ![cdata[]] <![CDATA[<div>]>]]>]]>>]</DIV>\"",
+      "input": "\"b\"",
       "expectedOutput": "true"
     },
     {
-      "input": "code = \"<A>  <B> </A>   </B>\"",
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "false"
     }
   ],

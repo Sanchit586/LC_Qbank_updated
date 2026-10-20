@@ -86,16 +86,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"abcacb\", p = \"ab\", removable = [3,1,0]",
+      "input": "\"bcacba\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abcacbabcacb\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcacbbcacba\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ABCACB\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n\"ab\"\n[3,1,0]",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"abcbddddd\", p = \"abcd\", removable = [3,2,1,4,5,6]",
+      "input": "\"aaaaa\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n\"ab\"\n[3,1,0]",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"abcab\", p = \"abc\", removable = [0,1,2,3,4]",
+      "input": "\"edcba\"\n\"ab\"\n[3,1,0]",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"racecar\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hello\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"leetcode\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"world\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"()[]{}\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"([)]\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"{[]}\"\n\"ab\"\n[3,1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcacb\"\n\"a\"\n[3,1,0]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

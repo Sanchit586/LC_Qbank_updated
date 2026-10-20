@@ -65,12 +65,24 @@
       "expectedOutput": "9"
     },
     {
-      "input": "n = 1",
-      "expectedOutput": "4"
+      "input": "3",
+      "expectedOutput": "25"
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "9"
+      "input": "4",
+      "expectedOutput": "64"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "169"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "441"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "1156"
     }
   ],
   "sqlSchema": null,

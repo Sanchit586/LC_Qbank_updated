@@ -67,12 +67,60 @@
       "expectedOutput": "13"
     },
     {
-      "input": "num = 2932",
-      "expectedOutput": "52"
+      "input": "2931",
+      "expectedOutput": "42"
     },
     {
-      "input": "num = 4009",
-      "expectedOutput": "13"
+      "input": "2933",
+      "expectedOutput": "62"
+    },
+    {
+      "input": "2930",
+      "expectedOutput": "32"
+    },
+    {
+      "input": "2934",
+      "expectedOutput": "63"
+    },
+    {
+      "input": "2929",
+      "expectedOutput": "58"
+    },
+    {
+      "input": "2935",
+      "expectedOutput": "64"
+    },
+    {
+      "input": "1466",
+      "expectedOutput": "62"
+    },
+    {
+      "input": "4008",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "4010",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "4007",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "4011",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "4006",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "4012",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "2004",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

@@ -67,14 +67,6 @@
     {
       "input": "[[-19,57],[-40,-5]]",
       "expectedOutput": "-59"
-    },
-    {
-      "input": "matrix = [[2,1,3],[6,5,4],[7,8,9]]",
-      "expectedOutput": "13"
-    },
-    {
-      "input": "matrix = [[-19,57],[-40,-5]]",
-      "expectedOutput": "-59"
     }
   ],
   "sqlSchema": null,

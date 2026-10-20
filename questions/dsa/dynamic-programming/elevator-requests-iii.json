@@ -86,16 +86,72 @@
       "expectedOutput": "8"
     },
     {
-      "input": "n = 9, start = 0, requests = [[0,8],[6,5]]",
+      "input": "0\n0\n[[0,8],[6,5]]",
       "expectedOutput": "9"
     },
     {
-      "input": "n = 8, start = 5, requests = [[1,7],[7,3]]",
+      "input": "1\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "2\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "3\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "4\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "5\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "6\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "7\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "8\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "10\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "-1\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "-2\n0\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "9\n1\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "9\n2\n[[0,8],[6,5]]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "9\n3\n[[0,8],[6,5]]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "9\n4\n[[0,8],[6,5]]",
       "expectedOutput": "7"
     },
     {
-      "input": "n = 7, start = 3, requests = [[0,5],[0,1],[6,3]]",
-      "expectedOutput": "8"
+      "input": "9\n5\n[[0,8],[6,5]]",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

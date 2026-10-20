@@ -67,12 +67,12 @@
       "expectedOutput": "\"0+-2i\""
     },
     {
-      "input": "num1 = \"1+1i\", num2 = \"1+1i\"",
-      "expectedOutput": "\"0+2i\""
+      "input": "\"1+1i\"\n\"1+-1i\"",
+      "expectedOutput": "\"2+0i\""
     },
     {
-      "input": "num1 = \"1+-1i\", num2 = \"1+-1i\"",
-      "expectedOutput": "\"0+-2i\""
+      "input": "\"1+-1i\"\n\"1+1i\"",
+      "expectedOutput": "\"2+0i\""
     }
   ],
   "sqlSchema": null,

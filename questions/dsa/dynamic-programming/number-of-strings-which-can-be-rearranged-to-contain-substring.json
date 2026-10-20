@@ -67,12 +67,40 @@
       "expectedOutput": "83943898"
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "12"
+      "input": "0",
+      "expectedOutput": "0"
     },
     {
-      "input": "n = 10",
-      "expectedOutput": "83943898"
+      "input": "1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "1460"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "106620"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "6058192"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "295164156"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "947613240"
     }
   ],
   "sqlSchema": null,

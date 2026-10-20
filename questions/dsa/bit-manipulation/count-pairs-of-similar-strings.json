@@ -84,16 +84,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "words = [\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]",
+      "input": "[\"aba\",\"aabb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abcd\",\"bac\",\"aabc\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"aba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"aba\",\"aabc\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"aabc\",\"bac\",\"abcd\",\"aabb\",\"aba\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [\"aabb\",\"ab\",\"ba\"]",
+      "input": "[\"aabb\",\"aabc\",\"aba\",\"abcd\",\"bac\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"bac\",\"abcd\",\"aba\",\"aabc\",\"aabb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"aba\",\"aba\",\"aba\",\"aba\",\"aba\"]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\",\"aba\",\"aabb\",\"abcd\",\"bac\",\"aabc\"]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "words = [\"nba\",\"cba\",\"dba\"]",
-      "expectedOutput": "0"
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

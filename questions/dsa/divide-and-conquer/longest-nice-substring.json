@@ -83,15 +83,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"YazaAay\"",
+      "input": "\"Yaz\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aAay\"",
       "expectedOutput": "\"aAa\""
     },
     {
-      "input": "s = \"Bb\"",
-      "expectedOutput": "\"Bb\""
+      "input": "\"Y\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"c\"",
+      "input": "\"Ya\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"yaAazaY\"",
+      "expectedOutput": "\"aAa\""
+    },
+    {
+      "input": "\"YazaAayYazaAay\"",
+      "expectedOutput": "\"aAayYa\""
+    },
+    {
+      "input": "\"YYYYYY\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"YazaAayyaAazaY\"",
+      "expectedOutput": "\"aAa\""
+    },
+    {
+      "input": "\"yazaaay\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"YAZAAAY\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"",
       "expectedOutput": "\"\""
     }
   ],

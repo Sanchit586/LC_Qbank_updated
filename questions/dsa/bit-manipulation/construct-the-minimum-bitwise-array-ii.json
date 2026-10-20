@@ -66,14 +66,6 @@
     {
       "input": "[11,13,31]",
       "expectedOutput": "[9,12,15]"
-    },
-    {
-      "input": "nums = [2,3,5,7]",
-      "expectedOutput": "[-1,1,4,3]"
-    },
-    {
-      "input": "nums = [11,13,31]",
-      "expectedOutput": "[9,12,15]"
     }
   ],
   "sqlSchema": null,

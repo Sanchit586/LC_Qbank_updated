@@ -81,16 +81,72 @@
       "expectedOutput": "false"
     },
     {
-      "input": "coordinates = \"a1\"",
+      "input": "\"1a\"",
       "expectedOutput": "false"
     },
     {
-      "input": "coordinates = \"h3\"",
+      "input": "\"a1a1\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a11a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
       "expectedOutput": "true"
     },
     {
-      "input": "coordinates = \"c7\"",
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

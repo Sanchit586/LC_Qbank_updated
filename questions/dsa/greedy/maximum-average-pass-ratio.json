@@ -70,12 +70,76 @@
       "expectedOutput": "0.53485"
     },
     {
-      "input": "classes = [[1,2],[3,5],[2,2]], extraStudents = 2",
-      "expectedOutput": "0.78333"
+      "input": "[[1,2],[3,5],[2,2]]\n0",
+      "expectedOutput": "0.7"
     },
     {
-      "input": "classes = [[2,4],[3,9],[4,5],[2,10]], extraStudents = 4",
-      "expectedOutput": "0.53485"
+      "input": "[[1,2],[3,5],[2,2]]\n1",
+      "expectedOutput": "0.75556"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n3",
+      "expectedOutput": "0.80556"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n4",
+      "expectedOutput": "0.82222"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n5",
+      "expectedOutput": "0.8381"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n6",
+      "expectedOutput": "0.85"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n7",
+      "expectedOutput": "0.86111"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n-1",
+      "expectedOutput": "0.7"
+    },
+    {
+      "input": "[[1,2],[3,5],[2,2]]\n-2",
+      "expectedOutput": "0.7"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n0",
+      "expectedOutput": "0.45833"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n1",
+      "expectedOutput": "0.48333"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n2",
+      "expectedOutput": "0.50152"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n3",
+      "expectedOutput": "0.51818"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n5",
+      "expectedOutput": "0.55"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n6",
+      "expectedOutput": "0.56364"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n7",
+      "expectedOutput": "0.57646"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n8",
+      "expectedOutput": "0.58836"
+    },
+    {
+      "input": "[[2,4],[3,9],[4,5],[2,10]]\n9",
+      "expectedOutput": "0.59973"
     }
   ],
   "sqlSchema": null,

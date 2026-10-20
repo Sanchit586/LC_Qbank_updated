@@ -67,14 +67,6 @@
     {
       "input": "[[3,0],[0,3]]",
       "expectedOutput": "3"
-    },
-    {
-      "input": "transactions = [[2,1],[5,0],[4,2]]",
-      "expectedOutput": "10"
-    },
-    {
-      "input": "transactions = [[3,0],[0,3]]",
-      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

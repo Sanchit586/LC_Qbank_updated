@@ -73,27 +73,83 @@
   "testCases": [
     {
       "input": "\"tree\"",
-      "expectedOutput": "\"eert\""
+      "expectedOutput": "\"eetr\""
     },
     {
       "input": "\"cccaaa\"",
-      "expectedOutput": "\"aaaccc\""
+      "expectedOutput": "\"cccaaa\""
     },
     {
       "input": "\"Aabb\"",
       "expectedOutput": "\"bbAa\""
     },
     {
-      "input": "s = \"tree\"",
+      "input": "\"tr\"",
+      "expectedOutput": "\"tr\""
+    },
+    {
+      "input": "\"ee\"",
+      "expectedOutput": "\"ee\""
+    },
+    {
+      "input": "\"t\"",
+      "expectedOutput": "\"t\""
+    },
+    {
+      "input": "\"eert\"",
       "expectedOutput": "\"eert\""
     },
     {
-      "input": "s = \"cccaaa\"",
-      "expectedOutput": "\"aaaccc\""
+      "input": "\"treetree\"",
+      "expectedOutput": "\"eeeettrr\""
     },
     {
-      "input": "s = \"Aabb\"",
-      "expectedOutput": "\"bbAa\""
+      "input": "\"tttt\"",
+      "expectedOutput": "\"tttt\""
+    },
+    {
+      "input": "\"treeeert\"",
+      "expectedOutput": "\"eeeettrr\""
+    },
+    {
+      "input": "\"TREE\"",
+      "expectedOutput": "\"EETR\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"aabb\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
     }
   ],
   "sqlSchema": null,

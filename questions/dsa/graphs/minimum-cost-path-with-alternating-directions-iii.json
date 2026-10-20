@@ -86,16 +86,32 @@
       "expectedOutput": "12"
     },
     {
-      "input": "m = 2, n = 2, penalty = [[5,3],[1,4]]",
-      "expectedOutput": "8"
+      "input": "1\n2\n[[5,3],[1,4]]",
+      "expectedOutput": "3"
     },
     {
-      "input": "m = 2, n = 2, penalty = [[0,7],[3,2]]",
+      "input": "2\n1\n[[5,3],[1,4]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "1\n2\n[[0,7],[3,2]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n1\n[[0,7],[3,2]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "1\n3\n[[8,0,9],[7,4,1]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "2\n1\n[[8,0,9],[7,4,1]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n2\n[[8,0,9],[7,4,1]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "m = 2, n = 3, penalty = [[8,0,9],[7,4,1]]",
-      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,

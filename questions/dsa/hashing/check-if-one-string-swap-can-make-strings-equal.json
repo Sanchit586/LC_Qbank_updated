@@ -82,16 +82,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = \"bank\", s2 = \"kanb\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s1 = \"attack\", s2 = \"defend\"",
+      "input": "\"ba\"\n\"kanb\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = \"kelb\", s2 = \"kelb\"",
+      "input": "\"nk\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"knab\"\n\"kanb\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"bankbank\"\n\"kanb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"bbbb\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"bankknab\"\n\"kanb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"BANK\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"kanb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"kanb\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

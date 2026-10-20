@@ -83,15 +83,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"aa\", p = \"a\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "s = \"aa\", p = \"*\"",
+      "input": "\"a\"\n\"a\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"cb\", p = \"?a\"",
+      "input": "\"aaaa\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"AA\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"racecar\"\n\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"hello\"\n\"a\"",
       "expectedOutput": "false"
     }
   ],

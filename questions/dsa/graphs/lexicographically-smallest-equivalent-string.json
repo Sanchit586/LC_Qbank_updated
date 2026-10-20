@@ -81,16 +81,72 @@
       "expectedOutput": "\"aauaaaaada\""
     },
     {
-      "input": "s1 = \"parker\", s2 = \"morris\", baseStr = \"parser\"",
+      "input": "\"par\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"marser\""
+    },
+    {
+      "input": "\"ker\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"p\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"marser\""
+    },
+    {
+      "input": "\"pa\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"marser\""
+    },
+    {
+      "input": "\"rekrap\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"pakpek\""
+    },
+    {
+      "input": "\"parkerparker\"\n\"morris\"\n\"parser\"",
       "expectedOutput": "\"makkek\""
     },
     {
-      "input": "s1 = \"hello\", s2 = \"world\", baseStr = \"hold\"",
-      "expectedOutput": "\"hdld\""
+      "input": "\"pppppp\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"iaiiei\""
     },
     {
-      "input": "s1 = \"leetcode\", s2 = \"programs\", baseStr = \"sourcecode\"",
-      "expectedOutput": "\"aauaaaaada\""
+      "input": "\"parkerrekrap\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"makkek\""
+    },
+    {
+      "input": "\"a\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"b\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"aa\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"ab\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"ba\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"parser\""
+    },
+    {
+      "input": "\"aba\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"paasea\""
+    },
+    {
+      "input": "\"abba\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"paasea\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"paasea\""
+    },
+    {
+      "input": "\"abcde\"\n\"morris\"\n\"parser\"",
+      "expectedOutput": "\"pacsec\""
     }
   ],
   "sqlSchema": null,

@@ -62,19 +62,51 @@
   "testCases": [
     {
       "input": "2",
-      "expectedOutput": "false\nExplantion: 2 has only two divisors: 1 and 2."
+      "expectedOutput": "false"
     },
     {
       "input": "4",
-      "expectedOutput": "true\nExplantion: 4 has three divisors: 1, 2, and 4."
+      "expectedOutput": "true"
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "false\nExplantion: 2 has only two divisors: 1 and 2."
+      "input": "0",
+      "expectedOutput": "false"
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "true\nExplantion: 4 has three divisors: 1, 2, and 4."
+      "input": "1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

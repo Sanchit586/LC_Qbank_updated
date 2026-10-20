@@ -80,16 +80,72 @@
       "expectedOutput": "\"cab\""
     },
     {
-      "input": "n = 1, k = 3",
-      "expectedOutput": "\"c\""
-    },
-    {
-      "input": "n = 1, k = 4",
+      "input": "0\n3",
       "expectedOutput": "\"\""
     },
     {
-      "input": "n = 3, k = 9",
-      "expectedOutput": "\"cab\""
+      "input": "2\n3",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "\"aca\""
+    },
+    {
+      "input": "4\n3",
+      "expectedOutput": "\"abca\""
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "\"abaca\""
+    },
+    {
+      "input": "6\n3",
+      "expectedOutput": "\"ababca\""
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "1\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "1\n5",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "1\n6",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "1\n7",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "1\n8",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "0\n4",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "\"bc\""
+    },
+    {
+      "input": "3\n4",
+      "expectedOutput": "\"acb\""
+    },
+    {
+      "input": "4\n4",
+      "expectedOutput": "\"abcb\""
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "\"abacb\""
     }
   ],
   "sqlSchema": null,

@@ -64,15 +64,79 @@
       "expectedOutput": "true"
     },
     {
-      "input": "[1,2,1,2]",
+      "input": "[4,1]",
       "expectedOutput": "false"
     },
     {
-      "input": "cards = [4,1,8,7]",
+      "input": "[8,7]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[4]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[4,7]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[7,8,1,4]",
       "expectedOutput": "true"
     },
     {
-      "input": "cards = [1,2,1,2]",
+      "input": "[1,4,7,8]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[8,7,4,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,4,4,4]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,1,8,7,4,1,8,7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[8,2,16,14]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,2,9,8]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,0,7,6]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-4,-1,-8,-7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,1]",
       "expectedOutput": "false"
     }
   ],

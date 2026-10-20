@@ -68,12 +68,76 @@
       "expectedOutput": "[1111,1331,1551]"
     },
     {
-      "input": "queries = [1,2,3,4,5,90], intLength = 3",
-      "expectedOutput": "[101,111,121,131,141,999]"
+      "input": "[1,2,3]\n3",
+      "expectedOutput": "[101,111,121]"
     },
     {
-      "input": "queries = [2,4,6], intLength = 4",
-      "expectedOutput": "[1111,1331,1551]"
+      "input": "[4,5,90]\n3",
+      "expectedOutput": "[131,141,999]"
+    },
+    {
+      "input": "[1]\n3",
+      "expectedOutput": "[101]"
+    },
+    {
+      "input": "[1,90]\n3",
+      "expectedOutput": "[101,999]"
+    },
+    {
+      "input": "[1,2]\n3",
+      "expectedOutput": "[101,111]"
+    },
+    {
+      "input": "[90,5,4,3,2,1]\n3",
+      "expectedOutput": "[999,141,131,121,111,101]"
+    },
+    {
+      "input": "[1,1,1,1,1]\n3",
+      "expectedOutput": "[101,101,101,101,101]"
+    },
+    {
+      "input": "[1,2,3,4,5,90,1,2,3,4,5,90]\n3",
+      "expectedOutput": "[101,111,121,131,141,999,101,111,121,131,141,999]"
+    },
+    {
+      "input": "[2,4,6,8,10,180]\n3",
+      "expectedOutput": "[111,131,151,171,191,-1]"
+    },
+    {
+      "input": "[2,3,4,5,6,91]\n3",
+      "expectedOutput": "[111,121,131,141,151,-1]"
+    },
+    {
+      "input": "[0,1,2,3,4,89]\n3",
+      "expectedOutput": "[9,101,111,121,131,989]"
+    },
+    {
+      "input": "[0,0,0,0]\n3",
+      "expectedOutput": "[9,9,9,9]"
+    },
+    {
+      "input": "[1,1,1,1]\n3",
+      "expectedOutput": "[101,101,101,101]"
+    },
+    {
+      "input": "[0]\n3",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[-1]\n3",
+      "expectedOutput": "[8]"
+    },
+    {
+      "input": "[0,0]\n3",
+      "expectedOutput": "[9,9]"
+    },
+    {
+      "input": "[2,1]\n3",
+      "expectedOutput": "[111,101]"
+    },
+    {
+      "input": "[1,1]\n3",
+      "expectedOutput": "[101,101]"
     }
   ],
   "sqlSchema": null,

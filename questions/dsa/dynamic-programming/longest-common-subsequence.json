@@ -81,15 +81,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "text1 = \"abcde\", text2 = \"ace\"",
+      "input": "\"ab\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cde\"\n\"ace\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"a\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeabcde\"\n\"ace\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text1 = \"abc\", text2 = \"abc\"",
+      "input": "\"aaaaa\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcdeedcba\"\n\"ace\"",
       "expectedOutput": "3"
     },
     {
-      "input": "text1 = \"abc\", text2 = \"def\"",
+      "input": "\"ABCDE\"\n\"ace\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"ace\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"\n\"ace\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"\n\"ace\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n\"ace\"",
       "expectedOutput": "0"
     }
   ],

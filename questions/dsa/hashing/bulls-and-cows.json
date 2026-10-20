@@ -69,12 +69,76 @@
       "expectedOutput": "\"1A1B\""
     },
     {
-      "input": "secret = \"1807\", guess = \"7810\"",
+      "input": "\"18\"\n\"7810\"",
+      "expectedOutput": "\"1A0B\""
+    },
+    {
+      "input": "\"07\"\n\"7810\"",
+      "expectedOutput": "\"0A1B\""
+    },
+    {
+      "input": "\"1\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"7081\"\n\"7810\"",
       "expectedOutput": "\"1A3B\""
     },
     {
-      "input": "secret = \"1123\", guess = \"0111\"",
-      "expectedOutput": "\"1A1B\""
+      "input": "\"18071807\"\n\"7810\"",
+      "expectedOutput": "\"1A3B\""
+    },
+    {
+      "input": "\"1111\"\n\"7810\"",
+      "expectedOutput": "\"1A0B\""
+    },
+    {
+      "input": "\"18077081\"\n\"7810\"",
+      "expectedOutput": "\"1A3B\""
+    },
+    {
+      "input": "\"a\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"b\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"aa\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"ab\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"ba\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"aba\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"abba\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"abcde\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"edcba\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
+    },
+    {
+      "input": "\"aab\"\n\"7810\"",
+      "expectedOutput": "\"0A0B\""
     }
   ],
   "sqlSchema": null,

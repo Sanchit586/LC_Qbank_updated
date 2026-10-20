@@ -68,14 +68,6 @@
     {
       "input": "[[2,6]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "queries = [[1,2],[2,4]]",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "queries = [[2,6]]",
-      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

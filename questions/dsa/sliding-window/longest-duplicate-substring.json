@@ -75,12 +75,76 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"banana\"",
+      "input": "\"ban\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ana\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ananab\"",
       "expectedOutput": "\"ana\""
     },
     {
-      "input": "s = \"abcd\"",
+      "input": "\"bananabanana\"",
+      "expectedOutput": "\"banana\""
+    },
+    {
+      "input": "\"bbbbbb\"",
+      "expectedOutput": "\"bbbbb\""
+    },
+    {
+      "input": "\"bananaananab\"",
+      "expectedOutput": "\"anana\""
+    },
+    {
+      "input": "\"BANANA\"",
+      "expectedOutput": "\"ANA\""
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,

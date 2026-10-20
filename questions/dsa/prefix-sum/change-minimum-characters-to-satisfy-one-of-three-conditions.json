@@ -69,12 +69,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "a = \"aba\", b = \"caa\"",
+      "input": "\"a\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n\"caa\"",
       "expectedOutput": "2"
     },
     {
-      "input": "a = \"dabadd\", b = \"cda\"",
+      "input": "\"ab\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abaaba\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaa\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edcba\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"\n\"caa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"racecar\"\n\"caa\"",
       "expectedOutput": "3"
+    },
+    {
+      "input": "\"hello\"\n\"caa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"leetcode\"\n\"caa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"world\"\n\"caa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n\"c\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n\"aa\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

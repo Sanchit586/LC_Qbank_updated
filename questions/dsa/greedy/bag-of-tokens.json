@@ -82,16 +82,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "tokens = [100], power = 50",
+      "input": "[100,100]\n50",
       "expectedOutput": "0"
     },
     {
-      "input": "tokens = [200,100], power = 150",
+      "input": "[200]\n50",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[101]\n50",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[99]\n50",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-100]\n50",
       "expectedOutput": "1"
     },
     {
-      "input": "tokens = [100,200,300,400], power = 200",
+      "input": "[0]\n50",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1]\n50",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n50",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n50",
       "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2]\n50",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,1]\n50",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n50",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-1,1]\n50",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2,3]\n50",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[3,2,1]\n50",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,1]\n50",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,1,0]\n50",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

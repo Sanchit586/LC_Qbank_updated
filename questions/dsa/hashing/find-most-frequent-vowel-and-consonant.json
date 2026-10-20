@@ -68,12 +68,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "s = \"successes\"",
+      "input": "\"succ\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"esses\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"s\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"su\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"sesseccus\"",
       "expectedOutput": "6"
     },
     {
-      "input": "s = \"aeiaeia\"",
+      "input": "\"successessuccesses\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"ssssss\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"successessesseccus\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"SUCCESSES\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
       "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

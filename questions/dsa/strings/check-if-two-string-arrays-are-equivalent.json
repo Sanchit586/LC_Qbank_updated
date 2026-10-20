@@ -82,16 +82,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = [\"ab\", \"c\"], word2 = [\"a\", \"bc\"]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "word1 = [\"a\", \"cb\"], word2 = [\"ab\", \"c\"]",
+      "input": "[\"ab\"]\n[\"a\",\"bc\"]",
       "expectedOutput": "false"
     },
     {
-      "input": "word1  = [\"abc\", \"d\", \"defg\"], word2 = [\"abcddefg\"]",
+      "input": "[\"c\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"c\"]\n[\"a\",\"bc\"]",
       "expectedOutput": "true"
+    },
+    {
+      "input": "[\"c\",\"ab\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ab\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"c\",\"ab\",\"c\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"a\",\"bc\"]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

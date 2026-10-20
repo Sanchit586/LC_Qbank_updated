@@ -68,7 +68,7 @@
   "testCases": [
     {
       "input": "\"a0b1c2\"",
-      "expectedOutput": "\"0a1b2c\""
+      "expectedOutput": "\"a0b1c2\""
     },
     {
       "input": "\"leetcode\"",
@@ -79,15 +79,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"a0b1c2\"",
-      "expectedOutput": "\"0a1b2c\""
+      "input": "\"a0b\"",
+      "expectedOutput": "\"a0b\""
     },
     {
-      "input": "s = \"leetcode\"",
+      "input": "\"1c2\"",
+      "expectedOutput": "\"1c2\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"a0\"",
+      "expectedOutput": "\"a0\""
+    },
+    {
+      "input": "\"2c1b0a\"",
+      "expectedOutput": "\"c2b1a0\""
+    },
+    {
+      "input": "\"a0b1c2a0b1c2\"",
+      "expectedOutput": "\"a0b1c2a0b1c2\""
+    },
+    {
+      "input": "\"aaaaaa\"",
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"1229857369\"",
+      "input": "\"a0b1c22c1b0a\"",
+      "expectedOutput": "\"a0b1c2c2b1a0\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"",
       "expectedOutput": "\"\""
     }
   ],

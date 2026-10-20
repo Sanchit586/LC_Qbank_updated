@@ -79,15 +79,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "num = \"6777133339\"",
+      "input": "\"67771\"",
       "expectedOutput": "\"777\""
     },
     {
-      "input": "num = \"2300019\"",
-      "expectedOutput": "\"000\""
+      "input": "\"33339\"",
+      "expectedOutput": "\"333\""
     },
     {
-      "input": "num = \"42352338\"",
+      "input": "\"6\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"67\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"9333317776\"",
+      "expectedOutput": "\"777\""
+    },
+    {
+      "input": "\"67771333396777133339\"",
+      "expectedOutput": "\"777\""
+    },
+    {
+      "input": "\"666666\"",
+      "expectedOutput": "\"666\""
+    },
+    {
+      "input": "\"67771333399333317776\"",
+      "expectedOutput": "\"777\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"",
       "expectedOutput": "\"\""
     }
   ],

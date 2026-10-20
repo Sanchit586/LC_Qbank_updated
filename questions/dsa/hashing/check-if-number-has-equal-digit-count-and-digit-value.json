@@ -69,11 +69,55 @@
       "expectedOutput": "false"
     },
     {
-      "input": "num = \"1210\"",
-      "expectedOutput": "true"
+      "input": "\"12\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "num = \"030\"",
+      "input": "\"10\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0121\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"12101210\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1111\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"12100121\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"30\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"03\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"030030\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"000\"",
       "expectedOutput": "false"
     }
   ],

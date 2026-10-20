@@ -85,16 +85,72 @@
       "expectedOutput": "28"
     },
     {
-      "input": "m = 5, k = 5, nums = [1,10,100,10000,1000000]",
-      "expectedOutput": "991600007"
+      "input": "0\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
     },
     {
-      "input": "m = 2, k = 2, nums = [5,4,3,2,1]",
-      "expectedOutput": "170"
+      "input": "1\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
     },
     {
-      "input": "m = 1, k = 1, nums = [28]",
-      "expectedOutput": "28"
+      "input": "2\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "4\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "416415952"
+    },
+    {
+      "input": "7\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "318256949"
+    },
+    {
+      "input": "8\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "617964988"
+    },
+    {
+      "input": "9\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "289311705"
+    },
+    {
+      "input": "-1\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "-2\n5\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5\n0\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5\n1\n[1,10,100,10000,1000000]",
+      "expectedOutput": "354510150"
+    },
+    {
+      "input": "5\n2\n[1,10,100,10000,1000000]",
+      "expectedOutput": "775415009"
+    },
+    {
+      "input": "5\n3\n[1,10,100,10000,1000000]",
+      "expectedOutput": "936729386"
+    },
+    {
+      "input": "5\n4\n[1,10,100,10000,1000000]",
+      "expectedOutput": "929654880"
+    },
+    {
+      "input": "5\n6\n[1,10,100,10000,1000000]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

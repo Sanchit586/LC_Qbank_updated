@@ -67,12 +67,76 @@
       "expectedOutput": "\"2-5G-3J\""
     },
     {
-      "input": "s = \"5F3Z-2e-9-w\", k = 4",
-      "expectedOutput": "\"5F3Z-2E9W\""
+      "input": "\"5F3Z-\"\n4",
+      "expectedOutput": "\"5F3Z\""
     },
     {
-      "input": "s = \"2-5g-3-J\", k = 2",
-      "expectedOutput": "\"2-5G-3J\""
+      "input": "\"2e-9-w\"\n4",
+      "expectedOutput": "\"2E9W\""
+    },
+    {
+      "input": "\"5\"\n4",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "\"5F\"\n4",
+      "expectedOutput": "\"5F\""
+    },
+    {
+      "input": "\"w-9-e2-Z3F5\"\n4",
+      "expectedOutput": "\"W9E2-Z3F5\""
+    },
+    {
+      "input": "\"555555\"\n4",
+      "expectedOutput": "\"55-5555\""
+    },
+    {
+      "input": "\"a\"\n4",
+      "expectedOutput": "\"A\""
+    },
+    {
+      "input": "\"b\"\n4",
+      "expectedOutput": "\"B\""
+    },
+    {
+      "input": "\"aa\"\n4",
+      "expectedOutput": "\"AA\""
+    },
+    {
+      "input": "\"ab\"\n4",
+      "expectedOutput": "\"AB\""
+    },
+    {
+      "input": "\"ba\"\n4",
+      "expectedOutput": "\"BA\""
+    },
+    {
+      "input": "\"aba\"\n4",
+      "expectedOutput": "\"ABA\""
+    },
+    {
+      "input": "\"abba\"\n4",
+      "expectedOutput": "\"ABBA\""
+    },
+    {
+      "input": "\"aaaaa\"\n4",
+      "expectedOutput": "\"A-AAAA\""
+    },
+    {
+      "input": "\"abcde\"\n4",
+      "expectedOutput": "\"A-BCDE\""
+    },
+    {
+      "input": "\"edcba\"\n4",
+      "expectedOutput": "\"E-DCBA\""
+    },
+    {
+      "input": "\"aab\"\n4",
+      "expectedOutput": "\"AAB\""
+    },
+    {
+      "input": "\"aA\"\n4",
+      "expectedOutput": "\"AA\""
     }
   ],
   "sqlSchema": null,

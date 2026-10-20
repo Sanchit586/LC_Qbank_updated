@@ -61,19 +61,83 @@
   "testCases": [
     {
       "input": "[10,1,2,7,6,1,5]\n8",
-      "expectedOutput": "[\n[1,1,6],\n[1,2,5],\n[1,7],\n[2,6]\n]"
+      "expectedOutput": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
     },
     {
       "input": "[2,5,2,1,2]\n5",
-      "expectedOutput": "[\n[1,2,2],\n[5]\n]"
+      "expectedOutput": "[[1,2,2],[5]]"
     },
     {
-      "input": "candidates = [10,1,2,7,6,1,5], target = 8",
-      "expectedOutput": "[\n[1,1,6],\n[1,2,5],\n[1,7],\n[2,6]\n]"
+      "input": "[10,1,2]\n8",
+      "expectedOutput": "[]"
     },
     {
-      "input": "candidates = [2,5,2,1,2], target = 5",
-      "expectedOutput": "[\n[1,2,2],\n[5]\n]"
+      "input": "[7,6,1,5]\n8",
+      "expectedOutput": "[[1,7]]"
+    },
+    {
+      "input": "[10]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[10,5]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[10,1]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[5,1,6,7,2,1,10]\n8",
+      "expectedOutput": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "[1,1,2,5,6,7,10]\n8",
+      "expectedOutput": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "[10,7,6,5,2,1,1]\n8",
+      "expectedOutput": "[[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "[10,10,10,10,10]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[10,1,2,7,6,1,5,10,1,2,7,6,1,5]\n8",
+      "expectedOutput": "[[1,1,1,1,2,2],[1,1,1,5],[1,1,6],[1,2,5],[1,7],[2,6]]"
+    },
+    {
+      "input": "[20,2,4,14,12,2,10]\n8",
+      "expectedOutput": "[[2,2,4]]"
+    },
+    {
+      "input": "[11,2,3,8,7,2,6]\n8",
+      "expectedOutput": "[[2,6],[8]]"
+    },
+    {
+      "input": "[9,0,1,6,5,0,4]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[-10,-1,-2,-7,-6,-1,-5]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[0,0,0,0]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[1,1,1,1]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[0]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[1]\n8",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

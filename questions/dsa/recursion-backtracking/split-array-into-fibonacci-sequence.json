@@ -80,15 +80,71 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "num = \"1101111\"",
-      "expectedOutput": "[11,0,11,11]"
-    },
-    {
-      "input": "num = \"112358130\"",
+      "input": "\"110\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "num = \"0123\"",
+      "input": "\"1111\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"11\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"1111011\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"11011111101111\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"111111\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"11011111111011\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"1123\"",
+      "expectedOutput": "[1,1,2,3]"
+    },
+    {
+      "input": "\"58130\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"031853211\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"112358130112358130\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"112358130031853211\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"01\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"23\"",
       "expectedOutput": "[]"
     }
   ],

@@ -82,15 +82,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "preorder = \"9,3,4,#,#,1,#,#,2,#,6,#,#\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "preorder = \"1,#\"",
+      "input": "\"9,3,4,#,#,1,\"",
       "expectedOutput": "false"
     },
     {
-      "input": "preorder = \"9,#,#,1\"",
+      "input": "\"#,#,2,#,6,#,#\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"9\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"9,\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"#,#,6,#,2,#,#,1,#,#,4,3,9\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"999999\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "false"
     }
   ],

@@ -69,12 +69,76 @@
       "expectedOutput": "\"g\""
     },
     {
-      "input": "word = \"dbca\", numFriends = 2",
-      "expectedOutput": "\"dbc\""
+      "input": "\"db\"\n2",
+      "expectedOutput": "\"d\""
     },
     {
-      "input": "word = \"gggg\", numFriends = 4",
-      "expectedOutput": "\"g\""
+      "input": "\"ca\"\n2",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"d\"\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"acbd\"\n2",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "\"dbcadbca\"\n2",
+      "expectedOutput": "\"dbcadbc\""
+    },
+    {
+      "input": "\"dddd\"\n2",
+      "expectedOutput": "\"ddd\""
+    },
+    {
+      "input": "\"dbcaacbd\"\n2",
+      "expectedOutput": "\"dbcaacb\""
+    },
+    {
+      "input": "\"DBCA\"\n2",
+      "expectedOutput": "\"DBC\""
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aba\"\n2",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "\"bba\""
+    },
+    {
+      "input": "\"aaaaa\"\n2",
+      "expectedOutput": "\"aaaa\""
+    },
+    {
+      "input": "\"abcde\"\n2",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"edcba\"\n2",
+      "expectedOutput": "\"edcb\""
     }
   ],
   "sqlSchema": null,

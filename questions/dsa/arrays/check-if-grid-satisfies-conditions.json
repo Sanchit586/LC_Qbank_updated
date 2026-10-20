@@ -78,18 +78,6 @@
     {
       "input": "[[1],[2],[3]]",
       "expectedOutput": "false"
-    },
-    {
-      "input": "grid = [[1,0,2],[1,0,2]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "grid = [[1,1,1],[0,0,0]]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "grid = [[1],[2],[3]]",
-      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

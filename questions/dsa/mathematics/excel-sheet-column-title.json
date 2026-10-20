@@ -79,16 +79,72 @@
       "expectedOutput": "\"ZY\""
     },
     {
-      "input": "columnNumber = 1",
-      "expectedOutput": "\"A\""
+      "input": "0",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "columnNumber = 28",
-      "expectedOutput": "\"AB\""
+      "input": "2",
+      "expectedOutput": "\"B\""
     },
     {
-      "input": "columnNumber = 701",
-      "expectedOutput": "\"ZY\""
+      "input": "3",
+      "expectedOutput": "\"C\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"D\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"E\""
+    },
+    {
+      "input": "6",
+      "expectedOutput": "\"F\""
+    },
+    {
+      "input": "27",
+      "expectedOutput": "\"AA\""
+    },
+    {
+      "input": "29",
+      "expectedOutput": "\"AC\""
+    },
+    {
+      "input": "26",
+      "expectedOutput": "\"Z\""
+    },
+    {
+      "input": "30",
+      "expectedOutput": "\"AD\""
+    },
+    {
+      "input": "25",
+      "expectedOutput": "\"Y\""
+    },
+    {
+      "input": "31",
+      "expectedOutput": "\"AE\""
+    },
+    {
+      "input": "56",
+      "expectedOutput": "\"BD\""
+    },
+    {
+      "input": "14",
+      "expectedOutput": "\"N\""
+    },
+    {
+      "input": "10",
+      "expectedOutput": "\"J\""
+    },
+    {
+      "input": "20",
+      "expectedOutput": "\"T\""
+    },
+    {
+      "input": "50",
+      "expectedOutput": "\"AX\""
     }
   ],
   "sqlSchema": null,

@@ -63,19 +63,11 @@
   "testCases": [
     {
       "input": "[[0,0],[0,1],[1,0],[0,2],[2,0]]",
-      "expectedOutput": "2.00000"
+      "expectedOutput": "2"
     },
     {
       "input": "[[1,0],[0,0],[0,1]]",
-      "expectedOutput": "0.50000"
-    },
-    {
-      "input": "points = [[0,0],[0,1],[1,0],[0,2],[2,0]]",
-      "expectedOutput": "2.00000"
-    },
-    {
-      "input": "points = [[1,0],[0,0],[0,1]]",
-      "expectedOutput": "0.50000"
+      "expectedOutput": "0.5"
     }
   ],
   "sqlSchema": null,

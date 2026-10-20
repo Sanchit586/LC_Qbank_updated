@@ -69,12 +69,76 @@
       "expectedOutput": "[11,8,5,4,3,4]"
     },
     {
-      "input": "boxes = \"110\"",
-      "expectedOutput": "[1,1,3]"
+      "input": "\"1\"",
+      "expectedOutput": "[0]"
     },
     {
-      "input": "boxes = \"001011\"",
-      "expectedOutput": "[11,8,5,4,3,4]"
+      "input": "\"10\"",
+      "expectedOutput": "[0,1]"
+    },
+    {
+      "input": "\"11\"",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"011\"",
+      "expectedOutput": "[3,1,1]"
+    },
+    {
+      "input": "\"110110\"",
+      "expectedOutput": "[8,6,6,6,8,12]"
+    },
+    {
+      "input": "\"111\"",
+      "expectedOutput": "[3,2,3]"
+    },
+    {
+      "input": "\"110011\"",
+      "expectedOutput": "[10,8,8,8,8,10]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[0,0,0,0]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "[0,0,0]"
     }
   ],
   "sqlSchema": null,

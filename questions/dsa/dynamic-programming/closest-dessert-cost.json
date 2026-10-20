@@ -86,16 +86,72 @@
       "expectedOutput": "8"
     },
     {
-      "input": "baseCosts = [1,7], toppingCosts = [3,4], target = 10",
+      "input": "[1]\n[3,4]\n10",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[7]\n[3,4]\n10",
       "expectedOutput": "10"
     },
     {
-      "input": "baseCosts = [2,3], toppingCosts = [4,5,100], target = 18",
-      "expectedOutput": "17"
+      "input": "[7,1]\n[3,4]\n10",
+      "expectedOutput": "10"
     },
     {
-      "input": "baseCosts = [3,10], toppingCosts = [2,5], target = 9",
-      "expectedOutput": "8"
+      "input": "[1,1]\n[3,4]\n10",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,7,1,7]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2,14]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2,8]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[0,6]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-1,-7]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[0,0]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[0]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-1]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1,2]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2,1]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-1,1]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1,2,3]\n[3,4]\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[3,2,1]\n[3,4]\n10",
+      "expectedOutput": "10"
     }
   ],
   "sqlSchema": null,

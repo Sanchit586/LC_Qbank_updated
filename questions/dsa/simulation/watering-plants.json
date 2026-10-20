@@ -82,16 +82,72 @@
       "expectedOutput": "49"
     },
     {
-      "input": "plants = [2,2,3,3], capacity = 5",
-      "expectedOutput": "14"
+      "input": "[2,2]\n5",
+      "expectedOutput": "2"
     },
     {
-      "input": "plants = [1,1,1,4,2,3], capacity = 4",
-      "expectedOutput": "30"
+      "input": "[3,3]\n5",
+      "expectedOutput": "4"
     },
     {
-      "input": "plants = [7,7,7,7,7,7,7], capacity = 8",
-      "expectedOutput": "49"
+      "input": "[2]\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,3]\n5",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[3,3,2,2]\n5",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[2,2,2,2]\n5",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[2,2,3,3,2,2,3,3]\n5",
+      "expectedOutput": "42"
+    },
+    {
+      "input": "[4,4,6,6]\n5",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[3,3,4,4]\n5",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[1,1,2,2]\n5",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-2,-2,-3,-3]\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0,0,0,0]\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,1,1,1]\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1]\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n5",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

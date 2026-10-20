@@ -66,12 +66,76 @@
       "expectedOutput": "\"5101000\""
     },
     {
-      "input": "n = 13",
-      "expectedOutput": "\"A91P1\""
+      "input": "12",
+      "expectedOutput": "\"901C0\""
     },
     {
-      "input": "n = 36",
-      "expectedOutput": "\"5101000\""
+      "input": "14",
+      "expectedOutput": "\"C4248\""
+    },
+    {
+      "input": "11",
+      "expectedOutput": "\"7910Z\""
+    },
+    {
+      "input": "15",
+      "expectedOutput": "\"E12LR\""
+    },
+    {
+      "input": "10",
+      "expectedOutput": "\"64RS\""
+    },
+    {
+      "input": "16",
+      "expectedOutput": "\"10035S\""
+    },
+    {
+      "input": "26",
+      "expectedOutput": "\"2A4DK8\""
+    },
+    {
+      "input": "6",
+      "expectedOutput": "\"2460\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"11\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"48\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"9R\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"101S\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"193H\""
+    },
+    {
+      "input": "20",
+      "expectedOutput": "\"190668\""
+    },
+    {
+      "input": "50",
+      "expectedOutput": "\"9C42OG8\""
+    },
+    {
+      "input": "100",
+      "expectedOutput": "\"2710LFLS\""
+    },
+    {
+      "input": "35",
+      "expectedOutput": "\"4C9X2Z\""
     }
   ],
   "sqlSchema": null,

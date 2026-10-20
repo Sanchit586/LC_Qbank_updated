@@ -79,18 +79,6 @@
     {
       "input": "[3,2,5,5,2,3]",
       "expectedOutput": "18"
-    },
-    {
-      "input": "maxHeights = [5,3,4,1,1]",
-      "expectedOutput": "13"
-    },
-    {
-      "input": "maxHeights = [6,5,3,9,2,7]",
-      "expectedOutput": "22"
-    },
-    {
-      "input": "maxHeights = [3,2,5,5,2,3]",
-      "expectedOutput": "18"
     }
   ],
   "sqlSchema": null,

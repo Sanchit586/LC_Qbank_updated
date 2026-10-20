@@ -68,12 +68,12 @@
       "expectedOutput": "41"
     },
     {
-      "input": "date = \"2019-01-09\"",
-      "expectedOutput": "9"
+      "input": "\"90-10-9102\"",
+      "expectedOutput": "9375"
     },
     {
-      "input": "date = \"2019-02-10\"",
-      "expectedOutput": "41"
+      "input": "\"01-20-9102\"",
+      "expectedOutput": "9467"
     }
   ],
   "sqlSchema": null,

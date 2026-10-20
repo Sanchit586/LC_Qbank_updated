@@ -92,20 +92,68 @@
       "expectedOutput": "2"
     },
     {
-      "input": "red = 2, blue = 4",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "red = 2, blue = 1",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "red = 1, blue = 1",
+      "input": "0\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "red = 10, blue = 1",
+      "input": "1\n4",
       "expectedOutput": "2"
+    },
+    {
+      "input": "3\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "6\n4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "7\n4",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "-1\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "-2\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2\n0",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n5",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n7",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "2\n8",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

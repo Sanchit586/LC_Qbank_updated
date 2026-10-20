@@ -65,19 +65,83 @@
   "testCases": [
     {
       "input": "[\"c\"]\n[0]",
-      "expectedOutput": "[\"e\",\"b\"]"
+      "expectedOutput": "[\"c\"]"
     },
     {
       "input": "[\"d\"]\n[1]",
-      "expectedOutput": "[\"a\",\"b\",\"c\"]"
+      "expectedOutput": "[\"d\"]"
     },
     {
-      "input": "words = [\"e\",\"a\",\"b\"], groups = [0,0,1]",
-      "expectedOutput": "[\"e\",\"b\"]"
+      "input": "[\"c\",\"c\"]\n[0]",
+      "expectedOutput": "[\"c\"]"
     },
     {
-      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,0,1,1]",
-      "expectedOutput": "[\"a\",\"b\",\"c\"]"
+      "input": "[\"a\"]\n[0]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]\n[0]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[0]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[0]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[0]",
+      "expectedOutput": "[\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[0]",
+      "expectedOutput": "[\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[0]",
+      "expectedOutput": "[\"eat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[0]",
+      "expectedOutput": "[\"cat\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[0]",
+      "expectedOutput": "[\"one\"]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[0]",
+      "expectedOutput": "[\"hello\"]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[0]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n[0]",
+      "expectedOutput": "[\"flow\"]"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]\n[0]",
+      "expectedOutput": "[\"word\"]"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]\n[0]",
+      "expectedOutput": "[\"listen\"]"
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]\n[0]",
+      "expectedOutput": "[\"anagram\"]"
+    },
+    {
+      "input": "[\"rat\",\"car\"]\n[0]",
+      "expectedOutput": "[\"rat\"]"
+    },
+    {
+      "input": "[\"apple\",\"pear\",\"banana\"]\n[0]",
+      "expectedOutput": "[\"apple\"]"
     }
   ],
   "sqlSchema": null,

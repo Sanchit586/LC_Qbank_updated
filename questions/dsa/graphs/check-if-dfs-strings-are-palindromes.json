@@ -75,12 +75,76 @@
       "expectedOutput": "[true,true,true,true,true]"
     },
     {
-      "input": "parent = [-1,0,0,1,1,2], s = \"aababa\"",
+      "input": "[-1,0,0,1,1,2,-1,0,0,1,1,2]\n\"aababa\"",
       "expectedOutput": "[true,true,false,true,true,true]"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = \"aabcb\"",
+      "input": "[-2,0,0,2,2,4]\n\"aababa\"",
+      "expectedOutput": "[false,true,false,true,false,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aab\"",
+      "expectedOutput": "[true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aba\"",
+      "expectedOutput": "[false,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"a\"",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aa\"",
+      "expectedOutput": "[true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"ababaa\"",
+      "expectedOutput": "[false,true,true,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aaaaaa\"",
+      "expectedOutput": "[true,true,true,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"AABABA\"",
+      "expectedOutput": "[true,true,false,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"b\"",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"ab\"",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"ba\"",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"abba\"",
+      "expectedOutput": "[true,false,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aaaaa\"",
       "expectedOutput": "[true,true,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"abcde\"",
+      "expectedOutput": "[false,false,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"edcba\"",
+      "expectedOutput": "[false,false,true,true,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aA\"",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"0\"",
+      "expectedOutput": "[true]"
     }
   ],
   "sqlSchema": null,

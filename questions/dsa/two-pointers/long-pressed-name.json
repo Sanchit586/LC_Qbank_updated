@@ -67,11 +67,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "name = \"alex\", typed = \"aaleex\"",
-      "expectedOutput": "true"
+      "input": "\"al\"\n\"aaleex\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "name = \"saeed\", typed = \"ssaaedd\"",
+      "input": "\"ex\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"xela\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"alexalex\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaa\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"alexxela\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ALEX\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"aaleex\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"aaleex\"",
       "expectedOutput": "false"
     }
   ],

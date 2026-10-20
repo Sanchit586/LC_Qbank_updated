@@ -69,11 +69,39 @@
       "expectedOutput": "\"09:59\""
     },
     {
-      "input": "s = \"1?:?4\"",
+      "input": "\"1?\"",
+      "expectedOutput": "\"11:59\""
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "\"11:59\""
+    },
+    {
+      "input": "\"1?:?41?:?4\"",
       "expectedOutput": "\"11:54\""
     },
     {
-      "input": "s = \"0?:5?\"",
+      "input": "\"1?:?44?:?1\"",
+      "expectedOutput": "\"11:54\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"09:59\""
+    },
+    {
+      "input": "\"0?\"",
+      "expectedOutput": "\"09:59\""
+    },
+    {
+      "input": "\"?5:?0\"",
+      "expectedOutput": "\"05:50\""
+    },
+    {
+      "input": "\"0?:5?0?:5?\"",
+      "expectedOutput": "\"09:59\""
+    },
+    {
+      "input": "\"0?:5??5:?0\"",
       "expectedOutput": "\"09:59\""
     }
   ],

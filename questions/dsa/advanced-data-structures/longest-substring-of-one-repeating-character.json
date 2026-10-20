@@ -73,12 +73,76 @@
       "expectedOutput": "[2,3]"
     },
     {
-      "input": "s = \"babacc\", queryCharacters = \"bcb\", queryIndices = [1,3,3]",
+      "input": "\"ccabab\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "\"babaccbabacc\"\n\"bcb\"\n[1,3,3]",
       "expectedOutput": "[3,3,4]"
     },
     {
-      "input": "s = \"abyzz\", queryCharacters = \"aa\", queryIndices = [2,1]",
-      "expectedOutput": "[2,3]"
+      "input": "\"bbbbbb\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[6,3,6]"
+    },
+    {
+      "input": "\"babaccccabab\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[4,5,4]"
+    },
+    {
+      "input": "\"BABACC\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[2,2,2]"
+    },
+    {
+      "input": "\"abba\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[2,2,3]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[3,1,1]"
+    },
+    {
+      "input": "\"abcde\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,2,1]"
+    },
+    {
+      "input": "\"edcba\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,2,1]"
+    },
+    {
+      "input": "\"racecar\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,3,1]"
+    },
+    {
+      "input": "\"hello\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[2,1,1]"
+    },
+    {
+      "input": "\"leetcode\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,2,1]"
+    },
+    {
+      "input": "\"world\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "\"()[]{}\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "\"([)]\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "\"{[]}\"\n\"bcb\"\n[1,3,3]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "\"babacc\"\n\"b\"\n[1,3,3]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "\"babacc\"\n\"cb\"\n[1,3,3]",
+      "expectedOutput": "[2,2]"
     }
   ],
   "sqlSchema": null,

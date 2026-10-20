@@ -70,11 +70,75 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "variables = [[2,3,3,10],[3,3,3,1],[6,1,1,4]], target = 2",
-      "expectedOutput": "[0,2]"
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n0",
+      "expectedOutput": "[1]"
     },
     {
-      "input": "variables = [[39,3,1000,1000]], target = 17",
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n3",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n4",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n5",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n6",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n-1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[2,3,3,10],[3,3,3,1],[6,1,1,4]]\n-2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n16",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n18",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n19",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n14",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n20",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n34",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n8",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[[39,3,1000,1000]]\n-17",
       "expectedOutput": "[]"
     }
   ],

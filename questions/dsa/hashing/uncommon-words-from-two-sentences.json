@@ -70,12 +70,76 @@
       "expectedOutput": "[\"banana\"]"
     },
     {
-      "input": "s1 = \"this apple is sweet\", s2 = \"this apple is sour\"",
-      "expectedOutput": "[\"sweet\",\"sour\"]"
+      "input": "\"this appl\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"appl\",\"apple\",\"is\",\"sour\"]"
     },
     {
-      "input": "s1 = \"apple apple\", s2 = \"banana\"",
-      "expectedOutput": "[\"banana\"]"
+      "input": "\"e is sweet\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"e\",\"sweet\",\"this\",\"apple\",\"sour\"]"
+    },
+    {
+      "input": "\"t\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"t\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"th\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"th\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"teews si elppa siht\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"teews\",\"si\",\"elppa\",\"siht\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"tttttt\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"tttttt\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"a\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"a\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"b\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"b\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"aa\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"aa\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"ab\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"ab\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"ba\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"ba\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"aba\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"aba\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"abba\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"abba\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"aaaaa\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"abcde\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"abcde\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"edcba\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"edcba\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"aab\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"aab\",\"this\",\"apple\",\"is\",\"sour\"]"
+    },
+    {
+      "input": "\"aA\"\n\"this apple is sour\"",
+      "expectedOutput": "[\"aA\",\"this\",\"apple\",\"is\",\"sour\"]"
     }
   ],
   "sqlSchema": null,

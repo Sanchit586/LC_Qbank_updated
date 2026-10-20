@@ -82,16 +82,72 @@
       "expectedOutput": "\"abcd\""
     },
     {
-      "input": "word = \"abcdefd\", ch = \"d\"",
-      "expectedOutput": "\"dcbaefd\""
+      "input": "\"abc\"\n\"d\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "word = \"xyxzxe\", ch = \"z\"",
-      "expectedOutput": "\"zxyxxe\""
+      "input": "\"defd\"\n\"d\"",
+      "expectedOutput": "\"defd\""
     },
     {
-      "input": "word = \"abcd\", ch = \"z\"",
-      "expectedOutput": "\"abcd\""
+      "input": "\"a\"\n\"d\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n\"d\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"dfedcba\"\n\"d\"",
+      "expectedOutput": "\"dfedcba\""
+    },
+    {
+      "input": "\"abcdefdabcdefd\"\n\"d\"",
+      "expectedOutput": "\"dcbaefdabcdefd\""
+    },
+    {
+      "input": "\"aaaaaa\"\n\"d\"",
+      "expectedOutput": "\"aaaaaa\""
+    },
+    {
+      "input": "\"abcdefddfedcba\"\n\"d\"",
+      "expectedOutput": "\"dcbaefddfedcba\""
+    },
+    {
+      "input": "\"ABCDEFD\"\n\"d\"",
+      "expectedOutput": "\"ABCDEFD\""
+    },
+    {
+      "input": "\"b\"\n\"d\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n\"d\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ba\"\n\"d\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n\"d\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n\"d\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"d\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n\"d\"",
+      "expectedOutput": "\"dcbae\""
+    },
+    {
+      "input": "\"edcba\"\n\"d\"",
+      "expectedOutput": "\"decba\""
     }
   ],
   "sqlSchema": null,

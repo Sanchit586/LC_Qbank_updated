@@ -66,12 +66,76 @@
       "expectedOutput": "\"Neither\""
     },
     {
-      "input": "length = 1000, width = 35, height = 700, mass = 300",
+      "input": "999\n35\n700\n300",
       "expectedOutput": "\"Heavy\""
     },
     {
-      "input": "length = 200, width = 50, height = 800, mass = 50",
-      "expectedOutput": "\"Neither\""
+      "input": "1001\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "998\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "1002\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "997\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "1003\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "2000\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "500\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "-1000\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "0\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "1\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "2\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "3\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "4\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "5\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "-1\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "-2\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
+    },
+    {
+      "input": "-3\n35\n700\n300",
+      "expectedOutput": "\"Heavy\""
     }
   ],
   "sqlSchema": null,

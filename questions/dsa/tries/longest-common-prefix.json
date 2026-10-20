@@ -69,11 +69,75 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "strs = [\"flower\",\"flow\",\"flight\"]",
+      "input": "[\"flower\"]",
+      "expectedOutput": "\"flower\""
+    },
+    {
+      "input": "[\"flow\",\"flight\"]",
       "expectedOutput": "\"fl\""
     },
     {
-      "input": "strs = [\"dog\",\"racecar\",\"car\"]",
+      "input": "[\"flower\",\"flight\"]",
+      "expectedOutput": "\"fl\""
+    },
+    {
+      "input": "[\"flower\",\"flow\"]",
+      "expectedOutput": "\"flow\""
+    },
+    {
+      "input": "[\"flight\",\"flow\",\"flower\"]",
+      "expectedOutput": "\"fl\""
+    },
+    {
+      "input": "[\"flower\",\"flower\",\"flower\"]",
+      "expectedOutput": "\"flower\""
+    },
+    {
+      "input": "[\"flower\",\"flow\",\"flight\",\"flower\",\"flow\",\"flight\"]",
+      "expectedOutput": "\"fl\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
       "expectedOutput": "\"\""
     }
   ],

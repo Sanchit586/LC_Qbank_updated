@@ -69,11 +69,75 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "arr = [1,2,3,4]",
+      "input": "[1,2]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[3,4]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[1,4]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[4,3,2,1]",
       "expectedOutput": "\"23:41\""
     },
     {
-      "input": "arr = [5,5,5,5]",
+      "input": "[1,1,1,1]",
+      "expectedOutput": "\"11:11\""
+    },
+    {
+      "input": "[1,2,3,4,1,2,3,4]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[2,4,6,8]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[2,3,4,5]",
+      "expectedOutput": "\"23:54\""
+    },
+    {
+      "input": "[0,1,2,3]",
+      "expectedOutput": "\"23:10\""
+    },
+    {
+      "input": "[-1,-2,-3,-4]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "\"00:00\""
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[-1,1]",
       "expectedOutput": "\"\""
     }
   ],

@@ -68,11 +68,75 @@
       "expectedOutput": "3"
     },
     {
-      "input": "moves = \"L_D_\"",
+      "input": "\"L_\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"D_\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"L\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"_D_L\"",
       "expectedOutput": "4"
     },
     {
-      "input": "moves = \"U_R\"",
+      "input": "\"L_D_L_D_\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"LLLL\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"L_D__D_L\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "3"
     }
   ],

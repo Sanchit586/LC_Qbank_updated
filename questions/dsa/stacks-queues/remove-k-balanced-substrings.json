@@ -82,16 +82,72 @@
       "expectedOutput": "\"()()()\""
     },
     {
-      "input": "s = \"(())\", k = 1",
-      "expectedOutput": "\"\""
-    },
-    {
-      "input": "s = \"(()(\", k = 1",
+      "input": "\"((\"\n1",
       "expectedOutput": "\"((\""
     },
     {
-      "input": "s = \"((()))()()()\", k = 3",
-      "expectedOutput": "\"()()()\""
+      "input": "\"))\"\n1",
+      "expectedOutput": "\"))\""
+    },
+    {
+      "input": "\"(\"\n1",
+      "expectedOutput": "\"(\""
+    },
+    {
+      "input": "\"))((\"\n1",
+      "expectedOutput": "\"))((\""
+    },
+    {
+      "input": "\"(())(())\"\n1",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"((((\"\n1",
+      "expectedOutput": "\"((((\""
+    },
+    {
+      "input": "\"(())))((\"\n1",
+      "expectedOutput": "\"))((\""
+    },
+    {
+      "input": "\"a\"\n1",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n1",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n1",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n1",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n1",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n1",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n1",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n1",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n1",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"\n1",
+      "expectedOutput": "\"edcba\""
     }
   ],
   "sqlSchema": null,

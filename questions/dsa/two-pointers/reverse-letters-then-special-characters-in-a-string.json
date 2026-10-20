@@ -81,16 +81,72 @@
       "expectedOutput": "\")(*&^%$#@!\""
     },
     {
-      "input": "s = \")ebc#da@f(\"",
-      "expectedOutput": "\"(fad@cb#e)\""
+      "input": "\")ebc#\"",
+      "expectedOutput": "\"#cbe)\""
     },
     {
-      "input": "s = \"z\"",
-      "expectedOutput": "\"z\""
+      "input": "\"da@f(\"",
+      "expectedOutput": "\"fa(d@\""
     },
     {
-      "input": "s = \"!@#$%^&*()\"",
-      "expectedOutput": "\")(*&^%$#@!\""
+      "input": "\")\"",
+      "expectedOutput": "\")\""
+    },
+    {
+      "input": "\")e\"",
+      "expectedOutput": "\")e\""
+    },
+    {
+      "input": "\"(f@ad#cbe)\"",
+      "expectedOutput": "\")e#bc@daf(\""
+    },
+    {
+      "input": "\")ebc#da@f()ebc#da@f(\"",
+      "expectedOutput": "\"(fad@cb#e)(fad@cb#e)\""
+    },
+    {
+      "input": "\"))))))\"",
+      "expectedOutput": "\"))))))\""
+    },
+    {
+      "input": "\")ebc#da@f((f@ad#cbe)\"",
+      "expectedOutput": "\")ebc#da@f((f@ad#cbe)\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"edcba\""
     }
   ],
   "sqlSchema": null,

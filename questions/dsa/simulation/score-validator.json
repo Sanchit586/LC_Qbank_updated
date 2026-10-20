@@ -81,16 +81,72 @@
       "expectedOutput": "[0,10]"
     },
     {
-      "input": "events = [\"1\",\"4\",\"W\",\"6\",\"WD\"]",
+      "input": "[\"1\",\"4\"]",
+      "expectedOutput": "[5,0]"
+    },
+    {
+      "input": "[\"W\",\"6\",\"WD\"]",
+      "expectedOutput": "[7,1]"
+    },
+    {
+      "input": "[\"1\"]",
+      "expectedOutput": "[1,0]"
+    },
+    {
+      "input": "[\"1\",\"WD\"]",
+      "expectedOutput": "[2,0]"
+    },
+    {
+      "input": "[\"WD\",\"6\",\"W\",\"4\",\"1\"]",
       "expectedOutput": "[12,1]"
     },
     {
-      "input": "events = [\"WD\",\"NB\",\"0\",\"4\",\"4\"]",
-      "expectedOutput": "[10,0]"
+      "input": "[\"1\",\"4\",\"6\",\"W\",\"WD\"]",
+      "expectedOutput": "[12,1]"
     },
     {
-      "input": "events = [\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\",\"W\"]",
-      "expectedOutput": "[0,10]"
+      "input": "[\"WD\",\"W\",\"6\",\"4\",\"1\"]",
+      "expectedOutput": "[12,1]"
+    },
+    {
+      "input": "[\"1\",\"1\",\"1\",\"1\",\"1\"]",
+      "expectedOutput": "[5,0]"
+    },
+    {
+      "input": "[\"1\",\"4\",\"W\",\"6\",\"WD\",\"1\",\"4\",\"W\",\"6\",\"WD\"]",
+      "expectedOutput": "[24,2]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[1,0]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[1,0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[2,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[2,0]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[2,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[3,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[6,0]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[5,0]"
     }
   ],
   "sqlSchema": null,

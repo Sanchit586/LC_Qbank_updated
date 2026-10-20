@@ -70,14 +70,6 @@
     {
       "input": "[[1,1,-1],[1,-1,1],[-1,1,1]]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "grid = [[0,1,-1],[1,0,-1],[1,1,1]]",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "grid = [[1,1,-1],[1,-1,1],[-1,1,1]]",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

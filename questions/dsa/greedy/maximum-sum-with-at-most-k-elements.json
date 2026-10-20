@@ -74,12 +74,76 @@
       "expectedOutput": "21"
     },
     {
-      "input": "grid = [[1,2],[3,4]], limits = [1,2], k = 2",
+      "input": "[[1,2],[3,4]]\n[1]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[2]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[2,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,2,1,2]\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "grid = [[5,3,7],[8,2,6]], limits = [2,2], k = 3",
-      "expectedOutput": "21"
+      "input": "[[1,2],[3,4]]\n[0,1]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[-1,-2]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[0,0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[-1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[-1,1]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,2,3]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,1,1]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[0,1,0]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,2,3,4,5]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[-5,-4,-3,-2,-1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[-10,0,10]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2],[3,4]]\n[1,1,2,2,3,3]\n2",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

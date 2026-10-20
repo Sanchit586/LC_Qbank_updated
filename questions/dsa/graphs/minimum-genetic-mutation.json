@@ -70,12 +70,76 @@
       "expectedOutput": "2"
     },
     {
-      "input": "startGene = \"AACCGGTT\", endGene = \"AACCGGTA\", bank = [\"AACCGGTA\"]",
+      "input": "\"AACC\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"GGTT\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"A\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"AA\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"TTGGCCAA\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"AACCGGTTAACCGGTT\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "startGene = \"AACCGGTT\", endGene = \"AAACGGTA\", bank = [\"AACCGGTA\",\"AACCGCTA\",\"AAACGGTA\"]",
-      "expectedOutput": "2"
+      "input": "\"AAAAAA\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"AACCGGTTTTGGCCAA\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaccggtt\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"a\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"\n\"AACCGGTA\"\n[\"AACCGGTA\"]",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

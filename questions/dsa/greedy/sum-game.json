@@ -83,16 +83,72 @@
       "expectedOutput": "false"
     },
     {
-      "input": "num = \"5023\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "num = \"25??\"",
+      "input": "\"50\"",
       "expectedOutput": "true"
     },
     {
-      "input": "num = \"?3295???\"",
+      "input": "\"23\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"5\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"3205\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"50235023\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"5555\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"50233205\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"25\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"??\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"2\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"??52\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"25??25??\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"2222\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"25????52\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"?329\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

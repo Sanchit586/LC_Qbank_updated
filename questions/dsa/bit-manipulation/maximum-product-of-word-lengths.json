@@ -82,15 +82,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "words = [\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]",
+      "input": "[\"abcw\",\"baz\",\"foo\"]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[\"bar\",\"xtfn\",\"abcdef\"]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[\"abcw\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abcw\",\"abcdef\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abcw\",\"baz\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abcdef\",\"xtfn\",\"bar\",\"foo\",\"baz\",\"abcw\"]",
       "expectedOutput": "16"
     },
     {
-      "input": "words = [\"a\",\"ab\",\"abc\",\"d\",\"cd\",\"bcd\",\"abcd\"]",
-      "expectedOutput": "4"
+      "input": "[\"abcdef\",\"abcw\",\"bar\",\"baz\",\"foo\",\"xtfn\"]",
+      "expectedOutput": "16"
     },
     {
-      "input": "words = [\"a\",\"aa\",\"aaa\",\"aaaa\"]",
+      "input": "[\"xtfn\",\"foo\",\"baz\",\"bar\",\"abcw\",\"abcdef\"]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[\"abcw\",\"abcw\",\"abcw\",\"abcw\",\"abcw\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\",\"abcw\",\"baz\",\"foo\",\"bar\",\"xtfn\",\"abcdef\"]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
       "expectedOutput": "0"
     }
   ],

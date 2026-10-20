@@ -72,11 +72,75 @@
       "expectedOutput": "15"
     },
     {
-      "input": "m = 3, n = 2, horizontalCut = [1,3], verticalCut = [5]",
+      "input": "0\n2\n[1,3]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "1\n2\n[1,3]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "2\n2\n[1,3]\n[5]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "-1\n2\n[1,3]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "-2\n2\n[1,3]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "3\n1\n[1,3]\n[5]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "3\n2\n[3,1]\n[5]",
       "expectedOutput": "13"
     },
     {
-      "input": "m = 2, n = 2, horizontalCut = [7], verticalCut = [4]",
+      "input": "3\n2\n[1,1]\n[5]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "3\n2\n[1,3,1,3]\n[5]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "3\n2\n[2,6]\n[5]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "3\n2\n[2,4]\n[5]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "3\n2\n[0,2]\n[5]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "3\n2\n[-1,-3]\n[5]",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "3\n2\n[0,0]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "3\n2\n[1,2]\n[5]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "3\n2\n[2,1]\n[5]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "3\n2\n[-1,1]\n[5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "3\n2\n[1,2,3]\n[5]",
       "expectedOutput": "15"
     }
   ],

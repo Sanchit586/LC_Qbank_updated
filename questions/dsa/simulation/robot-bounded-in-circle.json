@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "instructions = \"GGLLGG\"",
+      "input": "\"GGL\"",
       "expectedOutput": "true"
     },
     {
-      "input": "instructions = \"GG\"",
+      "input": "\"LGG\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"G\"",
       "expectedOutput": "false"
     },
     {
-      "input": "instructions = \"GL\"",
+      "input": "\"GGLLGGGGLLGG\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"GGGGGG\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ggllgg\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

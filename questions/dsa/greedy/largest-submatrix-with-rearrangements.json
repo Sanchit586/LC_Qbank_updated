@@ -82,18 +82,6 @@
     {
       "input": "[[1,1,0],[1,0,1]]",
       "expectedOutput": "2"
-    },
-    {
-      "input": "matrix = [[0,0,1],[1,1,1],[1,0,1]]",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "matrix = [[1,0,1,0,1]]",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "matrix = [[1,1,0],[1,0,1]]",
-      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

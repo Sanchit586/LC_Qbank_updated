@@ -81,15 +81,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "str1 = \"abc\", str2 = \"ad\"",
+      "input": "\"a\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"bc\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"cba\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcabc\"\n\"ad\"",
       "expectedOutput": "true"
     },
     {
-      "input": "str1 = \"zc\", str2 = \"ad\"",
+      "input": "\"aaa\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abccba\"\n\"ad\"",
       "expectedOutput": "true"
     },
     {
-      "input": "str1 = \"ab\", str2 = \"d\"",
+      "input": "\"ABC\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"ad\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"\n\"ad\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"ad\"",
       "expectedOutput": "false"
     }
   ],

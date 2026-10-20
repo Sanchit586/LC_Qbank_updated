@@ -69,12 +69,76 @@
       "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
     },
     {
-      "input": "s = \"abcdefghi\", k = 3, fill = \"x\"",
-      "expectedOutput": "[\"abc\",\"def\",\"ghi\"]"
+      "input": "\"abcd\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"dxx\"]"
     },
     {
-      "input": "s = \"abcdefghij\", k = 3, fill = \"x\"",
-      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"jxx\"]"
+      "input": "\"efghi\"\n3\n\"x\"",
+      "expectedOutput": "[\"efg\",\"hix\"]"
+    },
+    {
+      "input": "\"a\"\n3\n\"x\"",
+      "expectedOutput": "[\"axx\"]"
+    },
+    {
+      "input": "\"ab\"\n3\n\"x\"",
+      "expectedOutput": "[\"abx\"]"
+    },
+    {
+      "input": "\"ihgfedcba\"\n3\n\"x\"",
+      "expectedOutput": "[\"ihg\",\"fed\",\"cba\"]"
+    },
+    {
+      "input": "\"abcdefghiabcdefghi\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"abc\",\"def\",\"ghi\"]"
+    },
+    {
+      "input": "\"aaaaaa\"\n3\n\"x\"",
+      "expectedOutput": "[\"aaa\",\"aaa\"]"
+    },
+    {
+      "input": "\"abcdefghiihgfedcba\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"def\",\"ghi\",\"ihg\",\"fed\",\"cba\"]"
+    },
+    {
+      "input": "\"ABCDEFGHI\"\n3\n\"x\"",
+      "expectedOutput": "[\"ABC\",\"DEF\",\"GHI\"]"
+    },
+    {
+      "input": "\"b\"\n3\n\"x\"",
+      "expectedOutput": "[\"bxx\"]"
+    },
+    {
+      "input": "\"aa\"\n3\n\"x\"",
+      "expectedOutput": "[\"aax\"]"
+    },
+    {
+      "input": "\"ba\"\n3\n\"x\"",
+      "expectedOutput": "[\"bax\"]"
+    },
+    {
+      "input": "\"aba\"\n3\n\"x\"",
+      "expectedOutput": "[\"aba\"]"
+    },
+    {
+      "input": "\"abba\"\n3\n\"x\"",
+      "expectedOutput": "[\"abb\",\"axx\"]"
+    },
+    {
+      "input": "\"aaaaa\"\n3\n\"x\"",
+      "expectedOutput": "[\"aaa\",\"aax\"]"
+    },
+    {
+      "input": "\"abcde\"\n3\n\"x\"",
+      "expectedOutput": "[\"abc\",\"dex\"]"
+    },
+    {
+      "input": "\"edcba\"\n3\n\"x\"",
+      "expectedOutput": "[\"edc\",\"bax\"]"
+    },
+    {
+      "input": "\"aab\"\n3\n\"x\"",
+      "expectedOutput": "[\"aab\"]"
     }
   ],
   "sqlSchema": null,

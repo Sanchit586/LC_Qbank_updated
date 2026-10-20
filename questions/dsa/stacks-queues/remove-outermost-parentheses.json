@@ -82,15 +82,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"(()())(())\"",
+      "input": "\"(()()\"",
+      "expectedOutput": "\"()()\""
+    },
+    {
+      "input": "\")(())\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"(\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"((\"",
+      "expectedOutput": "\"(\""
+    },
+    {
+      "input": "\"))(())()((\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"(()())(())(()())(())\"",
+      "expectedOutput": "\"()()()()()()\""
+    },
+    {
+      "input": "\"((((((\"",
+      "expectedOutput": "\"(((((\""
+    },
+    {
+      "input": "\"(()())(())))(())()((\"",
       "expectedOutput": "\"()()()\""
     },
     {
-      "input": "s = \"(()())(())(()(()))\"",
-      "expectedOutput": "\"()()()()(())\""
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"()()\"",
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"",
       "expectedOutput": "\"\""
     }
   ],

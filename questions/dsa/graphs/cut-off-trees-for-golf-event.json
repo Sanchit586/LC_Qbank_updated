@@ -83,18 +83,6 @@
     {
       "input": "[[2,3,4],[0,0,5],[8,7,6]]",
       "expectedOutput": "6"
-    },
-    {
-      "input": "forest = [[1,2,3],[0,0,4],[7,6,5]]",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "forest = [[1,2,3],[0,0,0],[7,6,5]]",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "forest = [[2,3,4],[0,0,5],[8,7,6]]",
-      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

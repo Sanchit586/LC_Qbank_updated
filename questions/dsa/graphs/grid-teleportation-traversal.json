@@ -71,12 +71,76 @@
       "expectedOutput": "13"
     },
     {
-      "input": "matrix = [\"A..\",\".A.\",\"...\"]",
+      "input": "[\"A..\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "matrix = [\".#...\",\".#.#.\",\".#.#.\",\"...#.\"]",
-      "expectedOutput": "13"
+      "input": "[\".A.\",\"...\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"A..\",\"...\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"A..\",\".A.\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"...\",\".A.\",\"A..\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"A..\",\"A..\",\"A..\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"A..\",\".A.\",\"...\",\"A..\",\".A.\",\"...\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

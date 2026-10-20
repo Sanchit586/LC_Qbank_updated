@@ -68,12 +68,76 @@
       "expectedOutput": "\"abdcabcabcaba\""
     },
     {
-      "input": "word1 = \"cabaa\", word2 = \"bcaaa\"",
-      "expectedOutput": "\"cbcabaaaaa\""
+      "input": "\"ca\"\n\"bcaaa\"",
+      "expectedOutput": "\"cbcaaaa\""
     },
     {
-      "input": "word1 = \"abcabc\", word2 = \"abdcaba\"",
-      "expectedOutput": "\"abdcabcabcaba\""
+      "input": "\"baa\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcbaaaaa\""
+    },
+    {
+      "input": "\"c\"\n\"bcaaa\"",
+      "expectedOutput": "\"cbcaaa\""
+    },
+    {
+      "input": "\"aabac\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcaabacaaa\""
+    },
+    {
+      "input": "\"cabaacabaa\"\n\"bcaaa\"",
+      "expectedOutput": "\"cbcabaacabaaaaa\""
+    },
+    {
+      "input": "\"ccccc\"\n\"bcaaa\"",
+      "expectedOutput": "\"cccccbcaaa\""
+    },
+    {
+      "input": "\"cabaaaabac\"\n\"bcaaa\"",
+      "expectedOutput": "\"cbcabaaaabacaaa\""
+    },
+    {
+      "input": "\"CABAA\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcaaaCABAA\""
+    },
+    {
+      "input": "\"a\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcaaaa\""
+    },
+    {
+      "input": "\"b\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcbaaa\""
+    },
+    {
+      "input": "\"aa\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcaaaaa\""
+    },
+    {
+      "input": "\"ab\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcabaaa\""
+    },
+    {
+      "input": "\"ba\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcbaaaa\""
+    },
+    {
+      "input": "\"aba\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcabaaaa\""
+    },
+    {
+      "input": "\"abba\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcabbaaaa\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcaaaaaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n\"bcaaa\"",
+      "expectedOutput": "\"bcabcdeaaa\""
+    },
+    {
+      "input": "\"edcba\"\n\"bcaaa\"",
+      "expectedOutput": "\"edcbcbaaaa\""
     }
   ],
   "sqlSchema": null,

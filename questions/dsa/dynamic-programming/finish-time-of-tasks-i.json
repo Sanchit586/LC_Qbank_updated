@@ -89,16 +89,72 @@
       "expectedOutput": "18"
     },
     {
-      "input": "n = 3, edges = [[0,1],[1,2]], baseTime = [9,5,3]",
+      "input": "4\n[[0,1],[1,2]]\n[9,5,3]",
       "expectedOutput": "17"
     },
     {
-      "input": "n = 3, edges = [[0,1],[0,2]], baseTime = [4,7,6]",
-      "expectedOutput": "12"
+      "input": "5\n[[0,1],[1,2]]\n[9,5,3]",
+      "expectedOutput": "17"
     },
     {
-      "input": "n = 4, edges = [[0,1],[0,2],[2,3]], baseTime = [5,8,2,1]",
-      "expectedOutput": "18"
+      "input": "6\n[[0,1],[1,2]]\n[9,5,3]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "7\n[[0,1],[1,2]]\n[9,5,3]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "8\n[[0,1],[1,2]]\n[9,5,3]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[3,5,9]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[9,9,9]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[9,5,3,9,5,3]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[18,10,6]",
+      "expectedOutput": "34"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[10,6,4]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[8,4,2]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[-9,-5,-3]",
+      "expectedOutput": "-17"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[1,1,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[1,2,3]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[3,2,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n[[0,1],[1,2]]\n[0,1,0]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

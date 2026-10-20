@@ -83,15 +83,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "sentence = \"i love eating burger\", searchWord = \"burg\"",
-      "expectedOutput": "4"
+      "input": "\"i love eat\"\n\"burg\"",
+      "expectedOutput": "-1"
     },
     {
-      "input": "sentence = \"this problem is an easy problem\", searchWord = \"pro\"",
+      "input": "\"ing burger\"\n\"burg\"",
       "expectedOutput": "2"
     },
     {
-      "input": "sentence = \"i am tired\", searchWord = \"you\"",
+      "input": "\"i\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"i \"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"regrub gnitae evol i\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"iiiiii\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"a\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"edcba\"\n\"burg\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aab\"\n\"burg\"",
       "expectedOutput": "-1"
     }
   ],

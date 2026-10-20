@@ -80,15 +80,71 @@
       "expectedOutput": "3"
     },
     {
-      "input": "s = \"ca\"",
+      "input": "\"c\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ac\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"cabaabac\"",
+      "input": "\"caca\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"cc\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"aabccabba\"",
+      "input": "\"caac\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"CA\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "3"
     }
   ],

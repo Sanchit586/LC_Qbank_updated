@@ -79,16 +79,72 @@
       "expectedOutput": "false"
     },
     {
-      "input": "word = \"234Adas\"",
+      "input": "\"234\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"Adas\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word = \"b3\"",
+      "input": "\"2\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word = \"a3$e\"",
+      "input": "\"23\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"sadA432\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"234Adas234Adas\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"222222\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"234AdassadA432\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

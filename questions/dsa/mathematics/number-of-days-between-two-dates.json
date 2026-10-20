@@ -66,12 +66,16 @@
       "expectedOutput": "15"
     },
     {
-      "input": "date1 = \"2019-06-29\", date2 = \"2019-06-30\"",
-      "expectedOutput": "1"
+      "input": "\"51-10-0202\"\n\"2019-12-31\"",
+      "expectedOutput": "17422"
     },
     {
-      "input": "date1 = \"2020-01-15\", date2 = \"2019-12-31\"",
-      "expectedOutput": "15"
+      "input": "\"2019-06-29\"\n\"2019-12-31\"",
+      "expectedOutput": "185"
+    },
+    {
+      "input": "\"2020-01-15\"\n\"2019-06-30\"",
+      "expectedOutput": "199"
     }
   ],
   "sqlSchema": null,

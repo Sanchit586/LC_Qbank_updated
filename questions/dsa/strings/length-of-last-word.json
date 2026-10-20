@@ -80,16 +80,72 @@
       "expectedOutput": "6"
     },
     {
-      "input": "s = \"Hello World\"",
+      "input": "\"Hello\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"   fly me   to   the moon  \"",
+      "input": "\" World\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"H\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"He\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"dlroW olleH\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"HHHHHH\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = \"luffy is still joyboy\"",
-      "expectedOutput": "6"
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

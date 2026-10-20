@@ -69,12 +69,40 @@
       "expectedOutput": "false"
     },
     {
-      "input": "n = 2",
+      "input": "0",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 3",
+      "input": "1",
       "expectedOutput": "false"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

@@ -86,15 +86,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "stones = [2,1]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "stones = [2]",
+      "input": "[1]",
       "expectedOutput": "false"
     },
     {
-      "input": "stones = [5,1,2,4,3]",
+      "input": "[1,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,1,2,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-2,-1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[3,2,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,1,0]",
       "expectedOutput": "false"
     }
   ],

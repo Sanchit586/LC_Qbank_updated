@@ -65,12 +65,36 @@
       "expectedOutput": "5"
     },
     {
-      "input": "n = 1",
+      "input": "0",
       "expectedOutput": "1"
     },
     {
-      "input": "n = 2",
+      "input": "3",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "41"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "61"
+    },
+    {
+      "input": "-1",
       "expectedOutput": "5"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "85"
     }
   ],
   "sqlSchema": null,

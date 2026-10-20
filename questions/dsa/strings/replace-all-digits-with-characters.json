@@ -67,12 +67,44 @@
       "expectedOutput": "\"abbdcfdhe\""
     },
     {
-      "input": "s = \"a1c1e1\"",
-      "expectedOutput": "\"abcdef\""
+      "input": "\"a1c\"",
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = \"a1b2c3d4e\"",
-      "expectedOutput": "\"abbdcfdhe\""
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"a1\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"a1c1e1a1c1e1\"",
+      "expectedOutput": "\"abcdefabcdef\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"131\""
+    },
+    {
+      "input": "\"a1b2\"",
+      "expectedOutput": "\"abbd\""
+    },
+    {
+      "input": "\"c3d4e\"",
+      "expectedOutput": "\"cfdhe\""
+    },
+    {
+      "input": "\"e4d3c2b1a\"",
+      "expectedOutput": "\"eidgcebca\""
     }
   ],
   "sqlSchema": null,

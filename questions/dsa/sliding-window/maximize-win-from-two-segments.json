@@ -70,11 +70,75 @@
       "expectedOutput": "2"
     },
     {
-      "input": "prizePositions = [1,1,2,2,3,3,5], k = 2",
+      "input": "[1,1,2]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,3,3,5]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,5]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[5,3,3,2,2,1,1]\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "prizePositions = [1,2,3,4], k = 0",
+      "input": "[1,1,1,1,1]\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,1,2,2,3,3,5,1,1,2,2,3,3,5]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[2,2,4,4,6,6,10]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[2,2,3,3,4,4,6]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[0,0,1,1,2,2,4]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[-1,-1,-2,-2,-3,-3,-5]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,1,1,1]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2]\n2",
       "expectedOutput": "2"
     }
   ],

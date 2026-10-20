@@ -82,16 +82,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"leetcode\", p = \"ee*e\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"car\", p = \"c*v\"",
+      "input": "\"leet\"\n\"ee*e\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"luck\", p = \"u*\"",
+      "input": "\"code\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"l\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"le\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edocteel\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcodeleetcode\"\n\"ee*e\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"llllll\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcodeedocteel\"\n\"ee*e\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"LEETCODE\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"ee*e\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ee*e\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

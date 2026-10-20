@@ -71,12 +71,76 @@
       "expectedOutput": "\"abab\""
     },
     {
-      "input": "s = \"level\"",
-      "expectedOutput": "\"l\""
+      "input": "\"le\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"ababab\"",
-      "expectedOutput": "\"abab\""
+      "input": "\"vel\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"l\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"levellevel\"",
+      "expectedOutput": "\"level\""
+    },
+    {
+      "input": "\"lllll\"",
+      "expectedOutput": "\"llll\""
+    },
+    {
+      "input": "\"LEVEL\"",
+      "expectedOutput": "\"L\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,

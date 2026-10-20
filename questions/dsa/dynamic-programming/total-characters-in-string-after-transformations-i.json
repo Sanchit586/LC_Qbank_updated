@@ -71,12 +71,76 @@
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"abcyy\", t = 2",
+      "input": "\"ab\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"cyy\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"yycba\"\n2",
       "expectedOutput": "7"
     },
     {
-      "input": "s = \"azbk\", t = 1",
+      "input": "\"abcyyabcyy\"\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "\"aaaaa\"\n2",
       "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcyyyycba\"\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abcde\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"racecar\"\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"hello\"\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"leetcode\"\n2",
+      "expectedOutput": "8"
     }
   ],
   "sqlSchema": null,

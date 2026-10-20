@@ -81,15 +81,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "text = \"nlaebolko\"",
+      "input": "\"nlae\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"bolko\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"n\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"nl\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"oklobealn\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = \"loonbalxballpoon\"",
+      "input": "\"nlaebolkonlaebolko\"",
       "expectedOutput": "2"
     },
     {
-      "input": "text = \"leetcode\"",
+      "input": "\"nnnnnn\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"nlaebolkooklobealn\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"NLAEBOLKO\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
       "expectedOutput": "0"
     }
   ],

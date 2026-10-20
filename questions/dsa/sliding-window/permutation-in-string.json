@@ -69,11 +69,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = \"ab\", s2 = \"eidbaooo\"",
+      "input": "\"a\"\n\"eidbaooo\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = \"ab\", s2 = \"eidboaoo\"",
+      "input": "\"b\"\n\"eidbaooo\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"eidbaooo\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abab\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"AB\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"racecar\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"hello\"\n\"eidbaooo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcode\"\n\"eidbaooo\"",
       "expectedOutput": "false"
     }
   ],

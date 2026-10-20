@@ -86,16 +86,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "pizza = [\"A..\",\"AAA\",\"...\"], k = 3",
+      "input": "[\"A..\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"AAA\",\"...\"]\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"A..\",\"...\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"A..\",\"AAA\"]\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "pizza = [\"A..\",\"AA.\",\"...\"], k = 3",
+      "input": "[\"...\",\"AAA\",\"A..\"]\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "pizza = [\"A..\",\"A..\",\"...\"], k = 1",
+      "input": "[\"...\",\"A..\",\"AAA\"]\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"AAA\",\"A..\",\"...\"]\n3",
       "expectedOutput": "1"
+    },
+    {
+      "input": "[\"A..\",\"A..\",\"A..\"]\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"A..\",\"AAA\",\"...\",\"A..\",\"AAA\",\"...\"]\n3",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[\"a\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n3",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

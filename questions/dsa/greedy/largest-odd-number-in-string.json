@@ -81,16 +81,72 @@
       "expectedOutput": "\"35427\""
     },
     {
-      "input": "num = \"52\"",
+      "input": "\"5\"",
       "expectedOutput": "\"5\""
     },
     {
-      "input": "num = \"4206\"",
+      "input": "\"2\"",
       "expectedOutput": "\"\""
     },
     {
-      "input": "num = \"35427\"",
-      "expectedOutput": "\"35427\""
+      "input": "\"25\"",
+      "expectedOutput": "\"25\""
+    },
+    {
+      "input": "\"5252\"",
+      "expectedOutput": "\"525\""
+    },
+    {
+      "input": "\"55\"",
+      "expectedOutput": "\"55\""
+    },
+    {
+      "input": "\"5225\"",
+      "expectedOutput": "\"5225\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"121\""
+    },
+    {
+      "input": "\"42\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"06\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"4\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"6024\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"42064206\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"4444\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"42066024\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"35\"",
+      "expectedOutput": "\"35\""
+    },
+    {
+      "input": "\"427\"",
+      "expectedOutput": "\"427\""
     }
   ],
   "sqlSchema": null,

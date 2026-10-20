@@ -73,12 +73,76 @@
       "expectedOutput": "[0,2,2,0,0]"
     },
     {
-      "input": "m = 3, n = 3, coordinates = [[0,0]]",
-      "expectedOutput": "[3,1,0,0,0]"
+      "input": "0\n3\n[[0,0]]",
+      "expectedOutput": "[-2,0,0,0,0]"
     },
     {
-      "input": "m = 3, n = 3, coordinates = [[0,0],[1,1],[0,2]]",
-      "expectedOutput": "[0,2,2,0,0]"
+      "input": "1\n3\n[[0,0]]",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "2\n3\n[[0,0]]",
+      "expectedOutput": "[1,1,0,0,0]"
+    },
+    {
+      "input": "4\n3\n[[0,0]]",
+      "expectedOutput": "[5,1,0,0,0]"
+    },
+    {
+      "input": "5\n3\n[[0,0]]",
+      "expectedOutput": "[7,1,0,0,0]"
+    },
+    {
+      "input": "6\n3\n[[0,0]]",
+      "expectedOutput": "[9,1,0,0,0]"
+    },
+    {
+      "input": "7\n3\n[[0,0]]",
+      "expectedOutput": "[11,1,0,0,0]"
+    },
+    {
+      "input": "8\n3\n[[0,0]]",
+      "expectedOutput": "[13,1,0,0,0]"
+    },
+    {
+      "input": "-1\n3\n[[0,0]]",
+      "expectedOutput": "[-4,0,0,0,0]"
+    },
+    {
+      "input": "-2\n3\n[[0,0]]",
+      "expectedOutput": "[-6,0,0,0,0]"
+    },
+    {
+      "input": "3\n0\n[[0,0]]",
+      "expectedOutput": "[-2,0,0,0,0]"
+    },
+    {
+      "input": "3\n1\n[[0,0]]",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "3\n2\n[[0,0]]",
+      "expectedOutput": "[1,1,0,0,0]"
+    },
+    {
+      "input": "3\n4\n[[0,0]]",
+      "expectedOutput": "[5,1,0,0,0]"
+    },
+    {
+      "input": "3\n5\n[[0,0]]",
+      "expectedOutput": "[7,1,0,0,0]"
+    },
+    {
+      "input": "3\n6\n[[0,0]]",
+      "expectedOutput": "[9,1,0,0,0]"
+    },
+    {
+      "input": "3\n7\n[[0,0]]",
+      "expectedOutput": "[11,1,0,0,0]"
+    },
+    {
+      "input": "3\n8\n[[0,0]]",
+      "expectedOutput": "[13,1,0,0,0]"
     }
   ],
   "sqlSchema": null,

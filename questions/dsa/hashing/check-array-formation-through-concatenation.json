@@ -84,16 +84,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "arr = [15,88], pieces = [[88],[15]]",
+      "input": "[15]\n[[88],[15]]",
       "expectedOutput": "true"
     },
     {
-      "input": "arr = [49,18,16], pieces = [[16,18,49]]",
+      "input": "[88]\n[[88],[15]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[88,15]\n[[88],[15]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[15,15]\n[[88],[15]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[15,88,15,88]\n[[88],[15]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[30,176]\n[[88],[15]]",
       "expectedOutput": "false"
     },
     {
-      "input": "arr = [91,4,64,78], pieces = [[78],[4,64],[91]]",
-      "expectedOutput": "true"
+      "input": "[16,89]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[14,87]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-15,-88]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,1]\n[[88],[15]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,1]\n[[88],[15]]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

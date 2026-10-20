@@ -68,12 +68,76 @@
       "expectedOutput": "\"heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa\""
     },
     {
-      "input": "sentence = \"I speak Goat Latin\"",
-      "expectedOutput": "\"Imaa peaksmaaa oatGmaaaa atinLmaaaaa\""
+      "input": "\"I speak G\"",
+      "expectedOutput": "\"Imaa peaksmaaa Gmaaaa\""
     },
     {
-      "input": "sentence = \"The quick brown fox jumped over the lazy dog\"",
-      "expectedOutput": "\"heTmaa uickqmaaa rownbmaaaa oxfmaaaaa umpedjmaaaaaa overmaaaaaaa hetmaaaaaaaa azylmaaaaaaaaa ogdmaaaaaaaaaa\""
+      "input": "\"oat Latin\"",
+      "expectedOutput": "\"oatmaa atinLmaaa\""
+    },
+    {
+      "input": "\"I\"",
+      "expectedOutput": "\"Imaa\""
+    },
+    {
+      "input": "\"I \"",
+      "expectedOutput": "\"Imaa\""
+    },
+    {
+      "input": "\"nitaL taoG kaeps I\"",
+      "expectedOutput": "\"itaLnmaa aoGtmaaa aepskmaaaa Imaaaaa\""
+    },
+    {
+      "input": "\"IIIIII\"",
+      "expectedOutput": "\"IIIIIImaa\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"amaa\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"bmaa\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aamaa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"abmaa\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"abmaa\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"abamaa\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abbamaa\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaamaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcdemaa\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcbamaa\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aabmaa\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"aAmaa\""
     }
   ],
   "sqlSchema": null,

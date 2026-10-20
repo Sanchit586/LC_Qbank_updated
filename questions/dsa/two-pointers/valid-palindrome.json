@@ -80,16 +80,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"A man, a plan, a canal: Panama\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"race a car\"",
+      "input": "\"A man, a plan, \"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \" \"",
+      "input": "\"a canal: Panama\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"A\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"A \"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"amanaP :lanac a ,nalp a ,nam A\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"AAAAAA\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

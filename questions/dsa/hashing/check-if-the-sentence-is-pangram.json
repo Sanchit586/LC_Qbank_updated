@@ -67,11 +67,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "sentence = \"thequickbrownfoxjumpsoverthelazydog\"",
+      "input": "\"thequickbrownfoxj\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"umpsoverthelazydog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"t\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"th\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"godyzalehtrevospmujxofnworbkciuqeht\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence = \"leetcode\"",
+      "input": "\"tttttt\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"THEQUICKBROWNFOXJUMPSOVERTHELAZYDOG\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "false"
     }
   ],

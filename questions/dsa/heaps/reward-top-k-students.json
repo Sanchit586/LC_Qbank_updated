@@ -80,12 +80,76 @@
       "expectedOutput": "[2,1]"
     },
     {
-      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is studious\",\"the student is smart\"], student_id = [1,2], k = 2",
+      "input": "[\"smart\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[2,1]"
+    },
+    {
+      "input": "[\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[1,2]"
     },
     {
-      "input": "positive_feedback = [\"smart\",\"brilliant\",\"studious\"], negative_feedback = [\"not\"], report = [\"this student is not studious\",\"the student is smart\"], student_id = [1,2], k = 2",
+      "input": "[\"smart\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"smart\",\"brilliant\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
       "expectedOutput": "[2,1]"
+    },
+    {
+      "input": "[\"studious\",\"brilliant\",\"smart\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"brilliant\",\"smart\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"studious\",\"smart\",\"brilliant\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"smart\",\"smart\",\"smart\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[2,1]"
+    },
+    {
+      "input": "[\"smart\",\"brilliant\",\"studious\",\"smart\",\"brilliant\",\"studious\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"a\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"not\"]\n[\"this student is studious\",\"the student is smart\"]\n[1,2]\n2",
+      "expectedOutput": "[1,2]"
     }
   ],
   "sqlSchema": null,

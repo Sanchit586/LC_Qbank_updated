@@ -72,12 +72,76 @@
       "expectedOutput": "43"
     },
     {
-      "input": "nums1 = [1,2,3,4], nums2 = [2,10,20,19], k1 = 0, k2 = 0",
+      "input": "[1,2]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "65"
+    },
+    {
+      "input": "[3,4]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "37"
+    },
+    {
+      "input": "[1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,4]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "37"
+    },
+    {
+      "input": "[4,3,2,1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "701"
+    },
+    {
+      "input": "[1,1,1,1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "767"
+    },
+    {
+      "input": "[1,2,3,4,1,2,3,4]\n[2,10,20,19]\n0\n0",
       "expectedOutput": "579"
     },
     {
-      "input": "nums1 = [1,4,10,12], nums2 = [5,8,6,9], k1 = 1, k2 = 1",
-      "expectedOutput": "43"
+      "input": "[2,4,6,8]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "353"
+    },
+    {
+      "input": "[2,3,4,5]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "501"
+    },
+    {
+      "input": "[0,1,2,3]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "665"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "1211"
+    },
+    {
+      "input": "[0,0,0,0]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "865"
+    },
+    {
+      "input": "[0]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[0,0]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "104"
+    },
+    {
+      "input": "[2,1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "81"
+    },
+    {
+      "input": "[1,1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "82"
+    },
+    {
+      "input": "[-1,1]\n[2,10,20,19]\n0\n0",
+      "expectedOutput": "90"
     }
   ],
   "sqlSchema": null,

@@ -72,27 +72,83 @@
   "testCases": [
     {
       "input": "[10,30,21]\n[50,60]",
-      "expectedOutput": "32.50000"
+      "expectedOutput": "32.5"
     },
     {
       "input": "[100,70]\n[10,40,50]",
-      "expectedOutput": "92.00000"
+      "expectedOutput": "92"
     },
     {
       "input": "[7,3,9]\n[100,100]",
-      "expectedOutput": "3.00000"
+      "expectedOutput": "3"
     },
     {
-      "input": "prices = [10,30,21], discounts = [50,60]",
-      "expectedOutput": "32.50000"
+      "input": "[10]\n[50,60]",
+      "expectedOutput": "4"
     },
     {
-      "input": "prices = [100,70], discounts = [10,40,50]",
-      "expectedOutput": "92.00000"
+      "input": "[30,21]\n[50,60]",
+      "expectedOutput": "22.5"
     },
     {
-      "input": "prices = [7,3,9], discounts = [100,100]",
-      "expectedOutput": "3.00000"
+      "input": "[10,21]\n[50,60]",
+      "expectedOutput": "13.4"
+    },
+    {
+      "input": "[10,30]\n[50,60]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[21,30,10]\n[50,60]",
+      "expectedOutput": "32.5"
+    },
+    {
+      "input": "[10,21,30]\n[50,60]",
+      "expectedOutput": "32.5"
+    },
+    {
+      "input": "[30,21,10]\n[50,60]",
+      "expectedOutput": "32.5"
+    },
+    {
+      "input": "[10,10,10]\n[50,60]",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[10,30,21,10,30,21]\n[50,60]",
+      "expectedOutput": "89"
+    },
+    {
+      "input": "[20,60,42]\n[50,60]",
+      "expectedOutput": "65"
+    },
+    {
+      "input": "[11,31,22]\n[50,60]",
+      "expectedOutput": "34.4"
+    },
+    {
+      "input": "[9,29,20]\n[50,60]",
+      "expectedOutput": "30.6"
+    },
+    {
+      "input": "[-10,-30,-21]\n[50,60]",
+      "expectedOutput": "-44.5"
+    },
+    {
+      "input": "[0,0,0]\n[50,60]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1]\n[50,60]",
+      "expectedOutput": "1.9"
+    },
+    {
+      "input": "[0]\n[50,60]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n[50,60]",
+      "expectedOutput": "0.4"
     }
   ],
   "sqlSchema": null,

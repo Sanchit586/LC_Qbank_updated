@@ -70,11 +70,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "hours = [9,9,6,0,6,6,9]",
+      "input": "[9,9,6]",
       "expectedOutput": "3"
     },
     {
-      "input": "hours = [6,6,6]",
+      "input": "[0,6,6,9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[9,9]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[9,6,6,0,6,9,9]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,6,6,6,9,9,9]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[9,9,9,6,6,6,0]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[9,9,9,9,9]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[9,9,6,0,6,6,9,9,9,6,0,6,6,9]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[18,18,12,0,12,12,18]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[10,10,7,1,7,7,10]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[8,8,5,-1,5,5,8]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-9,-9,-6,0,-6,-6,-9]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]",
       "expectedOutput": "0"
     }
   ],

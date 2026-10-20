@@ -86,15 +86,71 @@
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, k = 2, budget = 15, composition = [[1,1,1],[1,1,10]], stock = [0,0,0], cost = [1,2,3]",
+      "input": "0\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, k = 2, budget = 15, composition = [[1,1,1],[1,1,10]], stock = [0,0,100], cost = [1,2,3]",
-      "expectedOutput": "5"
+      "input": "1\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
     },
     {
-      "input": "n = 2, k = 3, budget = 10, composition = [[2,1],[1,2],[1,1]], stock = [1,1], cost = [5,5]",
+      "input": "2\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "5\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "6\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "7\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "8\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "-1\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "-2\n2\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n0\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n1\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n3\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n4\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n5\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n6\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n7\n15\n[[1,1,1],[1,1,10]]\n[0,0,0]\n[1,2,3]",
       "expectedOutput": "2"
     }
   ],

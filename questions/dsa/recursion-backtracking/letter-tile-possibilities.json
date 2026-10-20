@@ -82,16 +82,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "tiles = \"AAB\"",
+      "input": "\"A\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"AB\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"AA\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"BAA\"",
       "expectedOutput": "8"
     },
     {
-      "input": "tiles = \"AAABBC\"",
-      "expectedOutput": "188"
+      "input": "\"AABAAB\"",
+      "expectedOutput": "54"
     },
     {
-      "input": "tiles = \"V\"",
+      "input": "\"AAA\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"AABBAA\"",
+      "expectedOutput": "54"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "325"
     }
   ],
   "sqlSchema": null,

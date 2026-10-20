@@ -75,11 +75,75 @@
       "expectedOutput": "true"
     },
     {
-      "input": "blocked = [[0,1],[1,0]], source = [0,0], target = [0,2]",
+      "input": "[[0,1],[1,0]]\n[0,0,0,0]\n[0,2]",
       "expectedOutput": "false"
     },
     {
-      "input": "blocked = [], source = [0,0], target = [999999,999999]",
+      "input": "[[0,1],[1,0]]\n[1,1]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[-1,-1]\n[0,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,2]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[2,1]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[-1,1]\n[0,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,2,3]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[3,2,1]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,1,1]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[0,1,0]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,2,3,4,5]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[5,4,3,2,1]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[-5,-4,-3,-2,-1]\n[0,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,3,2,5,4]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[-10,0,10]\n[0,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[100,-100]\n[0,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[1,1,2,2,3,3]\n[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[[0,1],[1,0]]\n[10,20,30,40,50]\n[0,2]",
       "expectedOutput": "true"
     }
   ],

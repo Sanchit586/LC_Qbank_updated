@@ -81,15 +81,71 @@
       "expectedOutput": "9"
     },
     {
-      "input": "n = \"32\"",
+      "input": "\"3\"",
       "expectedOutput": "3"
     },
     {
-      "input": "n = \"82734\"",
+      "input": "\"2\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"23\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"3232\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"33\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"3223\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"82\"",
       "expectedOutput": "8"
     },
     {
-      "input": "n = \"27346209830709182346\"",
+      "input": "\"734\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"8\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"43728\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"8273482734\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"88888\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"8273443728\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"2734620983\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"0709182346\"",
       "expectedOutput": "9"
     }
   ],

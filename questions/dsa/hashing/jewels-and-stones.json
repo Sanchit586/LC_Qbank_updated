@@ -68,11 +68,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "jewels = \"aA\", stones = \"aAAbbbb\"",
+      "input": "\"a\"\n\"aAAbbbb\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"A\"\n\"aAAbbbb\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"Aa\"\n\"aAAbbbb\"",
       "expectedOutput": "3"
     },
     {
-      "input": "jewels = \"z\", stones = \"ZZ\"",
+      "input": "\"aAaA\"\n\"aAAbbbb\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aa\"\n\"aAAbbbb\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aAAa\"\n\"aAAbbbb\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"AA\"\n\"aAAbbbb\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"b\"\n\"aAAbbbb\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ab\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"ba\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aba\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abba\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aAAbbbb\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"\n\"aAAbbbb\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"0\"\n\"aAAbbbb\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n\"aAAbbbb\"",
       "expectedOutput": "0"
     }
   ],

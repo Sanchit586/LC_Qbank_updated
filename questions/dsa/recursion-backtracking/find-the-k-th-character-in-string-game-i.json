@@ -68,12 +68,40 @@
       "expectedOutput": "\"c\""
     },
     {
-      "input": "k = 5",
+      "input": "0",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "2",
       "expectedOutput": "\"b\""
     },
     {
-      "input": "k = 10",
+      "input": "3",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "4",
       "expectedOutput": "\"c\""
+    },
+    {
+      "input": "6",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "7",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "8",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "9",
+      "expectedOutput": "\"b\""
     }
   ],
   "sqlSchema": null,

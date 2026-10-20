@@ -80,16 +80,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "l = 8, r = 10, directions = \"DDDRRR\"",
-      "expectedOutput": "2"
+      "input": "0\n10\n\"DDDRRR\"",
+      "expectedOutput": "10"
     },
     {
-      "input": "l = 123456789, r = 123456790, directions = \"DDRRDR\"",
+      "input": "1\n10\n\"DDDRRR\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "2\n10\n\"DDDRRR\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "3\n10\n\"DDDRRR\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "4\n10\n\"DDDRRR\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "5\n10\n\"DDDRRR\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "6\n10\n\"DDDRRR\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "7\n10\n\"DDDRRR\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "9\n10\n\"DDDRRR\"",
       "expectedOutput": "1"
     },
     {
-      "input": "l = 1288561398769758, r = 1288561398769758, directions = \"RRRDDD\"",
+      "input": "10\n10\n\"DDDRRR\"",
       "expectedOutput": "0"
+    },
+    {
+      "input": "-1\n10\n\"DDDRRR\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "-2\n10\n\"DDDRRR\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "8\n0\n\"DDDRRR\"",
+      "expectedOutput": "-7"
+    },
+    {
+      "input": "8\n1\n\"DDDRRR\"",
+      "expectedOutput": "-6"
+    },
+    {
+      "input": "8\n2\n\"DDDRRR\"",
+      "expectedOutput": "-5"
+    },
+    {
+      "input": "8\n3\n\"DDDRRR\"",
+      "expectedOutput": "-4"
+    },
+    {
+      "input": "8\n4\n\"DDDRRR\"",
+      "expectedOutput": "-3"
     }
   ],
   "sqlSchema": null,

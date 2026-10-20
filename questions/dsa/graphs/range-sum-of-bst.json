@@ -71,12 +71,76 @@
       "expectedOutput": "23"
     },
     {
-      "input": "root = [10,5,15,3,7,null,18], low = 7, high = 15",
-      "expectedOutput": "32"
+      "input": "[10]\n7\n15",
+      "expectedOutput": "10"
     },
     {
-      "input": "root = [10,5,15,3,7,13,18,1,null,6], low = 6, high = 10",
-      "expectedOutput": "23"
+      "input": "[10,5]\n7\n15",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[18,null,7,3,15,5,10]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[10,5,null]\n7\n15",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[10,null,5]\n7\n15",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,null,2]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,null,3]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,null,2,null,3]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]\n7\n15",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1,2,2,3,4,4,3]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[5,3,6,2,4,null,null,1]\n7\n15",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[10,5,15,null,null,6,20]\n7\n15",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "[-10,9,20,null,null,15,7]\n7\n15",
+      "expectedOutput": "15"
     }
   ],
   "sqlSchema": null,

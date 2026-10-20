@@ -68,12 +68,76 @@
       "expectedOutput": "2"
     },
     {
-      "input": "words = [\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\"], s = \"abc\"",
+      "input": "[\"a\",\"b\",\"c\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ab\",\"bc\",\"abc\"]\n\"abc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"abc\"]\n\"abc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bc\",\"ab\",\"c\",\"b\",\"a\"]\n\"abc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "words = [\"a\",\"a\"], s = \"aa\"",
+      "input": "[\"a\",\"ab\",\"abc\",\"b\",\"bc\",\"c\"]\n\"abc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"c\",\"bc\",\"b\",\"abc\",\"ab\",\"a\"]\n\"abc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\",\"a\",\"a\"]\n\"abc\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\",\"a\",\"b\",\"c\",\"ab\",\"bc\",\"abc\"]\n\"abc\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"abc\"",
       "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n\"abc\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

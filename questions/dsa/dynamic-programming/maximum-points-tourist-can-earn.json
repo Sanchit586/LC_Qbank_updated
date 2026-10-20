@@ -73,12 +73,28 @@
       "expectedOutput": "8"
     },
     {
-      "input": "n = 2, k = 1, stayScore = [[2,3]], travelScore = [[0,2],[1,0]]",
-      "expectedOutput": "3"
+      "input": "1\n1\n[[2,3]]\n[[0,2],[1,0]]",
+      "expectedOutput": "2"
     },
     {
-      "input": "n = 3, k = 2, stayScore = [[3,4,2],[2,1,2]], travelScore = [[0,2,1],[2,0,4],[3,2,0]]",
-      "expectedOutput": "8"
+      "input": "2\n0\n[[2,3]]\n[[0,2],[1,0]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n2\n[[3,4,2],[2,1,2]]\n[[0,2,1],[2,0,4],[3,2,0]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "2\n2\n[[3,4,2],[2,1,2]]\n[[0,2,1],[2,0,4],[3,2,0]]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n0\n[[3,4,2],[2,1,2]]\n[[0,2,1],[2,0,4],[3,2,0]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n1\n[[3,4,2],[2,1,2]]\n[[0,2,1],[2,0,4],[3,2,0]]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

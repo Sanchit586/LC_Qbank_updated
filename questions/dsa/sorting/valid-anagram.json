@@ -68,11 +68,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"anagram\", t = \"nagaram\"",
+      "input": "\"ana\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"gram\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"an\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"margana\"\n\"nagaram\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"rat\", t = \"car\"",
+      "input": "\"anagramanagram\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"anagrammargana\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ANAGRAM\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"nagaram\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"nagaram\"",
       "expectedOutput": "false"
     }
   ],

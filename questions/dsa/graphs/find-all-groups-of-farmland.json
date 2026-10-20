@@ -83,18 +83,6 @@
     {
       "input": "[[0]]",
       "expectedOutput": "[]"
-    },
-    {
-      "input": "land = [[1,0,0],[0,1,1],[0,1,1]]",
-      "expectedOutput": "[[0,0,0,0],[1,1,2,2]]"
-    },
-    {
-      "input": "land = [[1,1],[1,1]]",
-      "expectedOutput": "[[0,0,1,1]]"
-    },
-    {
-      "input": "land = [[0]]",
-      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

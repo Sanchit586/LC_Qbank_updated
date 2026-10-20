@@ -68,12 +68,76 @@
       "expectedOutput": "5"
     },
     {
-      "input": "left = 6, right = 10",
-      "expectedOutput": "4"
+      "input": "0\n10",
+      "expectedOutput": "6"
     },
     {
-      "input": "left = 10, right = 15",
+      "input": "1\n10",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "2\n10",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "3\n10",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "4\n10",
       "expectedOutput": "5"
+    },
+    {
+      "input": "5\n10",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "7\n10",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "8\n10",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "9\n10",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "-1\n10",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "-2\n10",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "6\n0",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "6\n6",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -85,16 +85,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "words = [\"abbb\",\"ba\",\"aa\"]",
-      "expectedOutput": "3"
+      "input": "[\"abbb\"]",
+      "expectedOutput": "0"
     },
     {
-      "input": "words = [\"abc\",\"ab\"]",
+      "input": "[\"ba\",\"aa\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abbb\",\"aa\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abbb\",\"ba\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [\"cd\",\"ef\",\"a\"]",
+      "input": "[\"aa\",\"ba\",\"abbb\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"aa\",\"abbb\",\"ba\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"ba\",\"abbb\",\"aa\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"abbb\",\"abbb\",\"abbb\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abbb\",\"ba\",\"aa\",\"abbb\",\"ba\",\"aa\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"a\"]",
       "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

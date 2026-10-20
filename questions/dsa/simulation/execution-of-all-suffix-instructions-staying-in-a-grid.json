@@ -83,16 +83,72 @@
       "expectedOutput": "[0,0,0,0]"
     },
     {
-      "input": "n = 3, startPos = [0,1], s = \"RRDDLU\"",
-      "expectedOutput": "[1,5,4,3,1,0]"
+      "input": "0\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,0,0,0,0]"
     },
     {
-      "input": "n = 2, startPos = [1,1], s = \"LURD\"",
-      "expectedOutput": "[4,1,0,0]"
+      "input": "1\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,0,0,1,0]"
     },
     {
-      "input": "n = 1, startPos = [0,0], s = \"LRUD\"",
-      "expectedOutput": "[0,0,0,0]"
+      "input": "2\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,1,3,1,0]"
+    },
+    {
+      "input": "4\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,4,3,1,0]"
+    },
+    {
+      "input": "5\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,4,3,1,0]"
+    },
+    {
+      "input": "6\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,4,3,1,0]"
+    },
+    {
+      "input": "7\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,4,3,1,0]"
+    },
+    {
+      "input": "8\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,4,3,1,0]"
+    },
+    {
+      "input": "-1\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,0,0,0,0]"
+    },
+    {
+      "input": "-2\n[0,1]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,0,0,0,0]"
+    },
+    {
+      "input": "3\n[1,0]\n\"RRDDLU\"",
+      "expectedOutput": "[3,2,1,1,0,1]"
+    },
+    {
+      "input": "3\n[0,0]\n\"RRDDLU\"",
+      "expectedOutput": "[6,5,2,1,0,0]"
+    },
+    {
+      "input": "3\n[0,2]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,4,3,1,0]"
+    },
+    {
+      "input": "3\n[1,2]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,1,3,2,1]"
+    },
+    {
+      "input": "3\n[-1,0]\n\"RRDDLU\"",
+      "expectedOutput": "[0,0,2,1,0,0]"
+    },
+    {
+      "input": "3\n[0,-1]\n\"RRDDLU\"",
+      "expectedOutput": "[6,3,0,0,0,0]"
+    },
+    {
+      "input": "3\n[1,1]\n\"RRDDLU\"",
+      "expectedOutput": "[1,2,1,3,2,1]"
     }
   ],
   "sqlSchema": null,

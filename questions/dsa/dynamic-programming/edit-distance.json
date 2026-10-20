@@ -67,11 +67,75 @@
       "expectedOutput": "5"
     },
     {
-      "input": "word1 = \"horse\", word2 = \"ros\"",
+      "input": "\"ho\"\n\"ros\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"rse\"\n\"ros\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"h\"\n\"ros\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word1 = \"intention\", word2 = \"execution\"",
+      "input": "\"esroh\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"horsehorse\"\n\"ros\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"hhhhh\"\n\"ros\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"horseesroh\"\n\"ros\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"HORSE\"\n\"ros\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"a\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"b\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aa\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ab\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ba\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aba\"\n\"ros\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"\n\"ros\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ros\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n\"ros\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n\"ros\"",
       "expectedOutput": "5"
     }
   ],

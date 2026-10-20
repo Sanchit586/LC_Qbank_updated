@@ -74,11 +74,67 @@
       "expectedOutput": "3"
     },
     {
-      "input": "emails = [\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+      "input": "[\"test.email+alex@leetcode.com\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "emails = [\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\"]",
+      "input": "[\"test.email+alex@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"testemail+david@lee.tcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"test.email+alex@leetcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"test.e.mail+bob.cathy@leetcode.com\",\"test.email+alex@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"testemail+david@lee.tcode.com\",\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"test.email+alex@leetcode.com\",\"test.email+alex@leetcode.com\",\"test.email+alex@leetcode.com\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\",\"test.email+alex@leetcode.com\",\"test.e.mail+bob.cathy@leetcode.com\",\"testemail+david@lee.tcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a@leetcode.com\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"b@leetcode.com\",\"c@leetcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a@leetcode.com\",\"c@leetcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a@leetcode.com\",\"b@leetcode.com\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"c@leetcode.com\",\"b@leetcode.com\",\"a@leetcode.com\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a@leetcode.com\",\"a@leetcode.com\",\"a@leetcode.com\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\",\"a@leetcode.com\",\"b@leetcode.com\",\"c@leetcode.com\"]",
       "expectedOutput": "3"
     }
   ],

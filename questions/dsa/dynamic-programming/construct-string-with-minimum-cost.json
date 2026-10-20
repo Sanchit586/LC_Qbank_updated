@@ -73,11 +73,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "target = \"abcdef\", words = [\"abdef\",\"abc\",\"d\",\"def\",\"ef\"], costs = [100,1,1,10,5]",
-      "expectedOutput": "7"
+      "input": "\"abc\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "1"
     },
     {
-      "input": "target = \"aaaa\", words = [\"z\",\"zz\",\"zzz\"], costs = [1,10,100]",
+      "input": "\"def\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"fedcba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcdefabcdef\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "\"aaaaaa\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcdeffedcba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ABCDEF\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abcde\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"edcba\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aab\"\n[\"abdef\",\"abc\",\"d\",\"def\",\"ef\"]\n[100,1,1,10,5]",
       "expectedOutput": "-1"
     }
   ],

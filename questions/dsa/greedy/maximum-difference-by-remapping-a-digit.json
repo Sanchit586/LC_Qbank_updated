@@ -66,12 +66,76 @@
       "expectedOutput": "99"
     },
     {
-      "input": "num = 11891",
-      "expectedOutput": "99009"
+      "input": "11890",
+      "expectedOutput": "99000"
     },
     {
-      "input": "num = 90",
-      "expectedOutput": "99"
+      "input": "11892",
+      "expectedOutput": "99000"
+    },
+    {
+      "input": "11889",
+      "expectedOutput": "99000"
+    },
+    {
+      "input": "11893",
+      "expectedOutput": "99000"
+    },
+    {
+      "input": "11888",
+      "expectedOutput": "99000"
+    },
+    {
+      "input": "11894",
+      "expectedOutput": "99000"
+    },
+    {
+      "input": "5945",
+      "expectedOutput": "9009"
+    },
+    {
+      "input": "-11891",
+      "expectedOutput": "900000"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "90"
     }
   ],
   "sqlSchema": null,

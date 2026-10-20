@@ -67,15 +67,67 @@
     },
     {
       "input": "3\n2\n[[1,9,1,8],[10,10,10,10]]",
-      "expectedOutput": "37"
+      "expectedOutput": "50"
     },
     {
-      "input": "n = 1, k = 3, time = [[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
-      "expectedOutput": "6"
+      "input": "2\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "9"
     },
     {
-      "input": "n = 3, k = 2, time = [[1,5,1,8],[10,10,10,10]]",
-      "expectedOutput": "37"
+      "input": "3\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "4\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "5\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "6\n3\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "1\n1\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n2\n[[1,1,2,1],[1,1,3,1],[1,1,4,1]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "1\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "2\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "31"
+    },
+    {
+      "input": "4\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "70"
+    },
+    {
+      "input": "5\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "71"
+    },
+    {
+      "input": "6\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "7\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "8\n2\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "111"
+    },
+    {
+      "input": "3\n1\n[[1,9,1,8],[10,10,10,10]]",
+      "expectedOutput": "49"
     }
   ],
   "sqlSchema": null,

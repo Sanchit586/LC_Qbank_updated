@@ -70,12 +70,76 @@
       "expectedOutput": "[4]"
     },
     {
-      "input": "words = [\"abc\",\"ab\",\"bc\",\"b\"]",
-      "expectedOutput": "[5,4,3,2]"
+      "input": "[\"abc\",\"ab\"]",
+      "expectedOutput": "[5,4]"
     },
     {
-      "input": "words = [\"abcd\"]",
-      "expectedOutput": "[4]"
+      "input": "[\"bc\",\"b\"]",
+      "expectedOutput": "[3,2]"
+    },
+    {
+      "input": "[\"abc\"]",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[\"abc\",\"b\"]",
+      "expectedOutput": "[3,1]"
+    },
+    {
+      "input": "[\"b\",\"bc\",\"ab\",\"abc\"]",
+      "expectedOutput": "[2,3,4,5]"
+    },
+    {
+      "input": "[\"ab\",\"abc\",\"b\",\"bc\"]",
+      "expectedOutput": "[4,5,2,3]"
+    },
+    {
+      "input": "[\"bc\",\"b\",\"abc\",\"ab\"]",
+      "expectedOutput": "[3,2,5,4]"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\",\"abc\"]",
+      "expectedOutput": "[12,12,12,12]"
+    },
+    {
+      "input": "[\"abc\",\"ab\",\"bc\",\"b\",\"abc\",\"ab\",\"bc\",\"b\"]",
+      "expectedOutput": "[10,8,6,4,10,8,6,4]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[3,3,3]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[3,4,4,3,3,3]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[3,3,3,3,3]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[3,4,6]"
     }
   ],
   "sqlSchema": null,

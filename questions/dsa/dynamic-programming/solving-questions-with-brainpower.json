@@ -66,14 +66,6 @@
     {
       "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "questions = [[3,2],[4,3],[4,4],[2,5]]",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "questions = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
-      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

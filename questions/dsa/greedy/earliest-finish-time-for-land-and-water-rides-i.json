@@ -67,12 +67,76 @@
       "expectedOutput": "14"
     },
     {
-      "input": "landStartTime = [2,8], landDuration = [4,1], waterStartTime = [6], waterDuration = [3]",
+      "input": "[2]\n[4,1]\n[6]\n[3]",
       "expectedOutput": "9"
     },
     {
-      "input": "landStartTime = [5], landDuration = [3], waterStartTime = [1], waterDuration = [10]",
-      "expectedOutput": "14"
+      "input": "[8]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[8,2]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,2]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,8,2,8]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[4,16]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[3,9]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1,7]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-2,-8]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[0,0]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,1]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[0]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-1]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,2]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,1]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-1,1]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,2,3]\n[4,1]\n[6]\n[3]",
+      "expectedOutput": "9"
     }
   ],
   "sqlSchema": null,

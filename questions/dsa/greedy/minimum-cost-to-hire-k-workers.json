@@ -63,19 +63,83 @@
   "testCases": [
     {
       "input": "[10,20,5]\n[70,50,30]\n2",
-      "expectedOutput": "105.00000"
+      "expectedOutput": "105"
     },
     {
       "input": "[3,1,10,10,1]\n[4,8,2,2,7]\n3",
       "expectedOutput": "30.66667"
     },
     {
-      "input": "quality = [10,20,5], wage = [70,50,30], k = 2",
-      "expectedOutput": "105.00000"
+      "input": "[10]\n[70,50,30]\n2",
+      "expectedOutput": "inf"
     },
     {
-      "input": "quality = [3,1,10,10,1], wage = [4,8,2,2,7], k = 3",
-      "expectedOutput": "30.66667"
+      "input": "[20,5]\n[70,50,30]\n2",
+      "expectedOutput": "250"
+    },
+    {
+      "input": "[10,5]\n[70,50,30]\n2",
+      "expectedOutput": "150"
+    },
+    {
+      "input": "[10,20]\n[70,50,30]\n2",
+      "expectedOutput": "210"
+    },
+    {
+      "input": "[5,20,10]\n[70,50,30]\n2",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "[5,10,20]\n[70,50,30]\n2",
+      "expectedOutput": "150"
+    },
+    {
+      "input": "[20,10,5]\n[70,50,30]\n2",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "[10,10,10]\n[70,50,30]\n2",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "[10,20,5,10,20,5]\n[70,50,30]\n2",
+      "expectedOutput": "105"
+    },
+    {
+      "input": "[20,40,10]\n[70,50,30]\n2",
+      "expectedOutput": "105"
+    },
+    {
+      "input": "[11,21,6]\n[70,50,30]\n2",
+      "expectedOutput": "108.18182"
+    },
+    {
+      "input": "[9,19,4]\n[70,50,30]\n2",
+      "expectedOutput": "101.11111"
+    },
+    {
+      "input": "[-10,-20,-5]\n[70,50,30]\n2",
+      "expectedOutput": "75"
+    },
+    {
+      "input": "[1,1,1]\n[70,50,30]\n2",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "[1]\n[70,50,30]\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[-1]\n[70,50,30]\n2",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[1,2]\n[70,50,30]\n2",
+      "expectedOutput": "210"
+    },
+    {
+      "input": "[2,1]\n[70,50,30]\n2",
+      "expectedOutput": "150"
     }
   ],
   "sqlSchema": null,

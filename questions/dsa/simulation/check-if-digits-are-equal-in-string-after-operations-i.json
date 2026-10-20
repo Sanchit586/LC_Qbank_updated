@@ -70,12 +70,56 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"3902\"",
+      "input": "\"39\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"02\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"2093\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"34789\"",
+      "input": "\"39023902\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"3333\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"39022093\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"34\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"789\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"98743\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"3478934789\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"33333\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"3478998743\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

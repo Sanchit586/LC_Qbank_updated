@@ -56,10 +56,82 @@
   "testCases": [
     {
       "input": "\"abcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,true]"
+    },
+    {
+      "input": "\"lyb\"\n[[0,1,0],[2,2,1]]",
       "expectedOutput": "[false,true]"
     },
     {
-      "input": "s = \"lyb\", queries = [[0,1,0],[2,2,1]]",
+      "input": "\"adcba\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,true]"
+    },
+    {
+      "input": "\"abcdaabcda\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,true]"
+    },
+    {
+      "input": "\"aaaaa\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,true,true,true,true]"
+    },
+    {
+      "input": "\"abcdaadcba\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,true]"
+    },
+    {
+      "input": "\"abcde\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,false]"
+    },
+    {
+      "input": "\"edcba\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,false]"
+    },
+    {
+      "input": "\"racecar\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,true]"
+    },
+    {
+      "input": "\"hello\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,true,true,true]"
+    },
+    {
+      "input": "\"leetcode\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,true,true,true,true]"
+    },
+    {
+      "input": "\"world\"\n[[3,3,0],[1,2,0],[0,3,1],[0,3,2],[0,4,1]]",
+      "expectedOutput": "[true,false,false,true,false]"
+    },
+    {
+      "input": "\"byl\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "\"lyblyb\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "\"lll\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[true,true]"
+    },
+    {
+      "input": "\"lybbyl\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "\"aba\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "\"abba\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "\"aaaaa\"\n[[0,1,0],[2,2,1]]",
+      "expectedOutput": "[true,true]"
+    },
+    {
+      "input": "\"abcde\"\n[[0,1,0],[2,2,1]]",
       "expectedOutput": "[false,true]"
     }
   ],

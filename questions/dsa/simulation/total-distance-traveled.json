@@ -66,12 +66,76 @@
       "expectedOutput": "10"
     },
     {
-      "input": "mainTank = 5, additionalTank = 10",
+      "input": "0\n10",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "1\n10",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "2\n10",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "3\n10",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "4\n10",
+      "expectedOutput": "40"
+    },
+    {
+      "input": "6\n10",
+      "expectedOutput": "70"
+    },
+    {
+      "input": "7\n10",
+      "expectedOutput": "80"
+    },
+    {
+      "input": "8\n10",
+      "expectedOutput": "90"
+    },
+    {
+      "input": "9\n10",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "5\n0",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "5\n1",
       "expectedOutput": "60"
     },
     {
-      "input": "mainTank = 1, additionalTank = 2",
-      "expectedOutput": "10"
+      "input": "5\n2",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n5",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n6",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n7",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "5\n8",
+      "expectedOutput": "60"
     }
   ],
   "sqlSchema": null,

@@ -88,15 +88,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"leetcode\", wordDict = [\"leet\",\"code\"]",
+      "input": "\"leet\"\n[\"leet\",\"code\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"applepenapple\", wordDict = [\"apple\",\"pen\"]",
+      "input": "\"code\"\n[\"leet\",\"code\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "input": "\"l\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"le\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edocteel\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcodeleetcode\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"llllll\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcodeedocteel\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"LEETCODE\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n[\"leet\",\"code\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"leet\",\"code\"]",
       "expectedOutput": "false"
     }
   ],

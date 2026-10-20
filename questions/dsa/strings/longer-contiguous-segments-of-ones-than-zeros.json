@@ -79,15 +79,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"1101\"",
+      "input": "\"11\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"111000\"",
+      "input": "\"01\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"110100010\"",
+      "input": "\"1\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"1011\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"11011101\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"1111\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"11011011\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
       "expectedOutput": "false"
     }
   ],

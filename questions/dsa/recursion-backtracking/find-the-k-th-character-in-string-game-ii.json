@@ -70,12 +70,76 @@
       "expectedOutput": "\"b\""
     },
     {
-      "input": "k = 5, operations = [0,0,0]",
+      "input": "0\n[0,0,0]",
       "expectedOutput": "\"a\""
     },
     {
-      "input": "k = 10, operations = [0,1,0,1]",
+      "input": "1\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "2\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "3\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "4\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "6\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "7\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "8\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "-1\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "-2\n[0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "5\n[0,0,0,0,0,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "5\n[1,1,1]",
       "expectedOutput": "\"b\""
+    },
+    {
+      "input": "5\n[-1,-1,-1]",
+      "expectedOutput": "\"z\""
+    },
+    {
+      "input": "5\n[1,2,3]",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "5\n[3,2,1]",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "5\n[0,1,0]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "5\n[1,2,3,4,5]",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "5\n[5,4,3,2,1]",
+      "expectedOutput": "\"d\""
     }
   ],
   "sqlSchema": null,

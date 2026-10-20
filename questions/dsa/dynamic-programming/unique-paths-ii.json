@@ -68,14 +68,6 @@
     {
       "input": "[[0,1],[0,0]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "obstacleGrid = [[0,0,0],[0,1,0],[0,0,0]]",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "obstacleGrid = [[0,1],[0,0]]",
-      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

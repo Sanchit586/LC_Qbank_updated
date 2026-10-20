@@ -82,16 +82,72 @@
       "expectedOutput": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece(4)\"]"
     },
     {
-      "input": "names = [\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]",
-      "expectedOutput": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]"
+      "input": "[\"pes\",\"fifa\"]",
+      "expectedOutput": "[\"pes\",\"fifa\"]"
     },
     {
-      "input": "names = [\"gta\",\"gta(1)\",\"gta\",\"avalon\"]",
-      "expectedOutput": "[\"gta\",\"gta(1)\",\"gta(2)\",\"avalon\"]"
+      "input": "[\"gta\",\"pes(2019)\"]",
+      "expectedOutput": "[\"gta\",\"pes(2019)\"]"
     },
     {
-      "input": "names = [\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece\"]",
-      "expectedOutput": "[\"onepiece\",\"onepiece(1)\",\"onepiece(2)\",\"onepiece(3)\",\"onepiece(4)\"]"
+      "input": "[\"pes\"]",
+      "expectedOutput": "[\"pes\"]"
+    },
+    {
+      "input": "[\"pes\",\"pes(2019)\"]",
+      "expectedOutput": "[\"pes\",\"pes(2019)\"]"
+    },
+    {
+      "input": "[\"pes(2019)\",\"gta\",\"fifa\",\"pes\"]",
+      "expectedOutput": "[\"pes(2019)\",\"gta\",\"fifa\",\"pes\"]"
+    },
+    {
+      "input": "[\"fifa\",\"gta\",\"pes\",\"pes(2019)\"]",
+      "expectedOutput": "[\"fifa\",\"gta\",\"pes\",\"pes(2019)\"]"
+    },
+    {
+      "input": "[\"pes(2019)\",\"pes\",\"gta\",\"fifa\"]",
+      "expectedOutput": "[\"pes(2019)\",\"pes\",\"gta\",\"fifa\"]"
+    },
+    {
+      "input": "[\"pes\",\"pes\",\"pes\",\"pes\"]",
+      "expectedOutput": "[\"pes\",\"pes(1)\",\"pes(2)\",\"pes(3)\"]"
+    },
+    {
+      "input": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\",\"pes\",\"fifa\",\"gta\",\"pes(2019)\"]",
+      "expectedOutput": "[\"pes\",\"fifa\",\"gta\",\"pes(2019)\",\"pes(1)\",\"fifa(1)\",\"gta(1)\",\"pes(2019)(1)\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\",\"a(1)\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[\"abc\",\"bca\",\"cab\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]"
     }
   ],
   "sqlSchema": null,

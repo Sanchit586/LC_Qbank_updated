@@ -71,19 +71,35 @@
   "testCases": [
     {
       "input": "[\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
-      "expectedOutput": "[0,2]"
+      "expectedOutput": "[2,0]"
     },
     {
       "input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
-      "expectedOutput": "[1,2]"
+      "expectedOutput": "[2,1]"
     },
     {
-      "input": "req_skills = [\"java\",\"nodejs\",\"reactjs\"], people = [[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+      "input": "[\"reactjs\",\"nodejs\",\"java\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "req_skills = [\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"], people = [[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "input": "[\"java\",\"nodejs\",\"reactjs\",\"java\",\"nodejs\",\"reactjs\"]\n[[\"java\"],[\"nodejs\"],[\"nodejs\",\"reactjs\"]]",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[\"aws\",\"csharp\",\"reactjs\",\"java\",\"math\",\"algorithms\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
       "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"algorithms\",\"aws\",\"csharp\",\"java\",\"math\",\"reactjs\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"reactjs\",\"math\",\"java\",\"csharp\",\"aws\",\"algorithms\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "expectedOutput": "[1,2]"
+    },
+    {
+      "input": "[\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\",\"algorithms\",\"math\",\"java\",\"reactjs\",\"csharp\",\"aws\"]\n[[\"algorithms\",\"math\",\"java\"],[\"algorithms\",\"math\",\"reactjs\"],[\"java\",\"csharp\",\"aws\"],[\"reactjs\",\"csharp\"],[\"csharp\",\"math\"],[\"aws\",\"java\"]]",
+      "expectedOutput": "[0]"
     }
   ],
   "sqlSchema": null,

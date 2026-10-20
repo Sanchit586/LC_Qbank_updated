@@ -72,12 +72,32 @@
       "expectedOutput": "1504"
     },
     {
-      "input": "startTime = \"01:00:00\", endTime = \"01:00:25\"",
-      "expectedOutput": "25"
+      "input": "\"00:00:10\"\n\"01:00:25\"",
+      "expectedOutput": "3615"
     },
     {
-      "input": "startTime = \"12:34:56\", endTime = \"13:00:00\"",
-      "expectedOutput": "1504"
+      "input": "\"01:00:00\"\n\"52:00:10\"",
+      "expectedOutput": "183610"
+    },
+    {
+      "input": "\"65:43:21\"\n\"13:00:00\"",
+      "expectedOutput": "-189801"
+    },
+    {
+      "input": "\"12:34:56\"\n\"00:00:31\"",
+      "expectedOutput": "-45265"
+    },
+    {
+      "input": "\"00:00:10\"\n\"52:00:10\"",
+      "expectedOutput": "187200"
+    },
+    {
+      "input": "\"01:00:00\"\n\"13:00:00\"",
+      "expectedOutput": "43200"
+    },
+    {
+      "input": "\"12:34:56\"\n\"01:00:25\"",
+      "expectedOutput": "-41671"
     }
   ],
   "sqlSchema": null,

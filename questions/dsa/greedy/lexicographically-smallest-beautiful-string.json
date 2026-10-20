@@ -68,12 +68,76 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"abcz\", k = 26",
-      "expectedOutput": "\"abda\""
+      "input": "\"ab\"\n26",
+      "expectedOutput": "\"ac\""
     },
     {
-      "input": "s = \"dc\", k = 4",
-      "expectedOutput": "\"\""
+      "input": "\"cz\"\n26",
+      "expectedOutput": "\"da\""
+    },
+    {
+      "input": "\"a\"\n26",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"zcba\"\n26",
+      "expectedOutput": "\"zcbd\""
+    },
+    {
+      "input": "\"abczabcz\"\n26",
+      "expectedOutput": "\"abczabda\""
+    },
+    {
+      "input": "\"aaaa\"\n26",
+      "expectedOutput": "\"aaab\""
+    },
+    {
+      "input": "\"abczzcba\"\n26",
+      "expectedOutput": "\"abczzcbd\""
+    },
+    {
+      "input": "\"ABCZ\"\n26",
+      "expectedOutput": "\"ABC[\""
+    },
+    {
+      "input": "\"b\"\n26",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"aa\"\n26",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n26",
+      "expectedOutput": "\"bc\""
+    },
+    {
+      "input": "\"aba\"\n26",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "\"abba\"\n26",
+      "expectedOutput": "\"abbc\""
+    },
+    {
+      "input": "\"aaaaa\"\n26",
+      "expectedOutput": "\"aaaab\""
+    },
+    {
+      "input": "\"abcde\"\n26",
+      "expectedOutput": "\"abcdf\""
+    },
+    {
+      "input": "\"edcba\"\n26",
+      "expectedOutput": "\"edcbd\""
+    },
+    {
+      "input": "\"aab\"\n26",
+      "expectedOutput": "\"aac\""
+    },
+    {
+      "input": "\"aA\"\n26",
+      "expectedOutput": "\"aB\""
     }
   ],
   "sqlSchema": null,

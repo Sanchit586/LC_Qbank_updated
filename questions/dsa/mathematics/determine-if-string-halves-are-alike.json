@@ -68,12 +68,76 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"book\"",
+      "input": "\"bo\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ok\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"textbook\"",
+      "input": "\"koob\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"bookbook\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"bbbb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"bookkoob\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"BOOK\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

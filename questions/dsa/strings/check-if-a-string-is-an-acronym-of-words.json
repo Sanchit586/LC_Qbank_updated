@@ -82,16 +82,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "words = [\"alice\",\"bob\",\"charlie\"], s = \"abc\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "words = [\"an\",\"apple\"], s = \"a\"",
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"a\"",
       "expectedOutput": "false"
     },
     {
-      "input": "words = [\"never\",\"gonna\",\"give\",\"up\",\"on\",\"you\"], s = \"ngguoy\"",
-      "expectedOutput": "true"
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"bc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"cba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abcabc\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"aaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abccba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"ABC\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"charlie\"]\n\"aab\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

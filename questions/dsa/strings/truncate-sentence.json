@@ -83,16 +83,72 @@
       "expectedOutput": "\"chopper is not a tanuki\""
     },
     {
-      "input": "s = \"Hello how are you Contestant\", k = 4",
-      "expectedOutput": "\"Hello how are you\""
+      "input": "\"Hello how are \"\n4",
+      "expectedOutput": "\"Hello how are\""
     },
     {
-      "input": "s = \"What is the solution to this problem\", k = 4",
-      "expectedOutput": "\"What is the solution\""
+      "input": "\"you Contestant\"\n4",
+      "expectedOutput": "\"you Contestant\""
     },
     {
-      "input": "s = \"chopper is not a tanuki\", k = 5",
-      "expectedOutput": "\"chopper is not a tanuki\""
+      "input": "\"H\"\n4",
+      "expectedOutput": "\"H\""
+    },
+    {
+      "input": "\"He\"\n4",
+      "expectedOutput": "\"He\""
+    },
+    {
+      "input": "\"tnatsetnoC uoy era woh olleH\"\n4",
+      "expectedOutput": "\"tnatsetnoC uoy era woh\""
+    },
+    {
+      "input": "\"HHHHHH\"\n4",
+      "expectedOutput": "\"HHHHHH\""
+    },
+    {
+      "input": "\"a\"\n4",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n4",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n4",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n4",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n4",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n4",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n4",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n4",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n4",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"\n4",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"\n4",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

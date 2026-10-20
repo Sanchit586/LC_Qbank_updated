@@ -84,16 +84,72 @@
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"3+2*2\"",
+      "input": "\"3+\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"2*2\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"3\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"2*2+3\"",
       "expectedOutput": "7"
     },
     {
-      "input": "s = \" 3/2 \"",
-      "expectedOutput": "1"
+      "input": "\"3+2*23+2*2\"",
+      "expectedOutput": "53"
     },
     {
-      "input": "s = \" 3+5 / 2 \"",
-      "expectedOutput": "5"
+      "input": "\"33333\"",
+      "expectedOutput": "33333"
+    },
+    {
+      "input": "\"3+2*22*2+3\"",
+      "expectedOutput": "94"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

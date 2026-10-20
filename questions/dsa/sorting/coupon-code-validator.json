@@ -72,12 +72,76 @@
       "expectedOutput": "[\"ELECTRONICS_50\"]"
     },
     {
-      "input": "code = [\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"], businessLine = [\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"], isActive = [true,true,true,true]",
+      "input": "[\"SAVE20\",\"\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"SAVE20\"]"
+    },
+    {
+      "input": "[\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"PHARMA5\"]"
+    },
+    {
+      "input": "[\"SAVE20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"SAVE20\"]"
+    },
+    {
+      "input": "[\"SAVE20\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"SAVE20\"]"
+    },
+    {
+      "input": "[\"SAVE@20\",\"PHARMA5\",\"\",\"SAVE20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
       "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
     },
     {
-      "input": "code = [\"GROCERY15\",\"ELECTRONICS_50\",\"DISCOUNT10\"], businessLine = [\"grocery\",\"electronics\",\"invalid\"], isActive = [false,true,true]",
-      "expectedOutput": "[\"ELECTRONICS_50\"]"
+      "input": "[\"\",\"PHARMA5\",\"SAVE20\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
+    },
+    {
+      "input": "[\"SAVE@20\",\"SAVE20\",\"PHARMA5\",\"\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"SAVE20\",\"PHARMA5\"]"
+    },
+    {
+      "input": "[\"SAVE20\",\"SAVE20\",\"SAVE20\",\"SAVE20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"SAVE20\",\"SAVE20\",\"SAVE20\",\"SAVE20\"]"
+    },
+    {
+      "input": "[\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\",\"SAVE20\",\"\",\"PHARMA5\",\"SAVE@20\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"PHARMA5\",\"SAVE20\"]"
+    },
+    {
+      "input": "[\"a\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"b\",\"a\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"ba\",\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"bca\",\"cab\",\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"tea\",\"tan\",\"ate\",\"eat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"dog\",\"tac\",\"cat\",\"god\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"restaurant\",\"grocery\",\"pharmacy\",\"restaurant\"]\n[true,true,true,true]",
+      "expectedOutput": "[\"two\",\"three\",\"one\"]"
     }
   ],
   "sqlSchema": null,

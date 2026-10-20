@@ -81,15 +81,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "sentence = \"leetcode exercises sound delightful\"",
+      "input": "\"leetcode exercise\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"s sound delightful\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"l\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence = \"eetcode\"",
+      "input": "\"le\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"lufthgiled dnuos sesicrexe edocteel\"",
       "expectedOutput": "true"
     },
     {
-      "input": "sentence = \"Leetcode is cool\"",
+      "input": "\"llllll\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "false"
     }
   ],

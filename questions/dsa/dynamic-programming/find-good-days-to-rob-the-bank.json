@@ -81,15 +81,71 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "security = [5,3,3,3,5,6,2], time = 2",
+      "input": "[5,3,3]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[3,5,6,2]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[5]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[5,2]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[5,3]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[2,6,5,3,3,3,5]\n2",
+      "expectedOutput": "[3,4]"
+    },
+    {
+      "input": "[2,3,3,3,5,5,6]\n2",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[6,5,5,3,3,3,2]\n2",
+      "expectedOutput": "[3]"
+    },
+    {
+      "input": "[5,5,5,5,5]\n2",
+      "expectedOutput": "[2]"
+    },
+    {
+      "input": "[5,3,3,3,5,6,2,5,3,3,3,5,6,2]\n2",
+      "expectedOutput": "[2,3,9,10]"
+    },
+    {
+      "input": "[10,6,6,6,10,12,4]\n2",
       "expectedOutput": "[2,3]"
     },
     {
-      "input": "security = [1,1,1,1,1], time = 0",
-      "expectedOutput": "[0,1,2,3,4]"
+      "input": "[6,4,4,4,6,7,3]\n2",
+      "expectedOutput": "[2,3]"
     },
     {
-      "input": "security = [1,2,3,4,5,6], time = 2",
+      "input": "[4,2,2,2,4,5,1]\n2",
+      "expectedOutput": "[2,3]"
+    },
+    {
+      "input": "[-5,-3,-3,-3,-5,-6,-2]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[1,1,1,1]\n2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[0]\n2",
       "expectedOutput": "[]"
     }
   ],

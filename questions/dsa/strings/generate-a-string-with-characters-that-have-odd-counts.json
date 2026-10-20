@@ -67,27 +67,55 @@
   "testCases": [
     {
       "input": "4",
-      "expectedOutput": "\"pppz\""
+      "expectedOutput": "\"aaab\""
     },
     {
       "input": "2",
-      "expectedOutput": "\"xy\""
+      "expectedOutput": "\"ab\""
     },
     {
       "input": "7",
-      "expectedOutput": "\"holasss\""
+      "expectedOutput": "\"aaaaaaa\""
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "\"pppz\""
+      "input": "0",
+      "expectedOutput": "\"b\""
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "\"xy\""
+      "input": "1",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "n = 7",
-      "expectedOutput": "\"holasss\""
+      "input": "3",
+      "expectedOutput": "\"aaa\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "6",
+      "expectedOutput": "\"aaaaab\""
+    },
+    {
+      "input": "8",
+      "expectedOutput": "\"aaaaaaab\""
+    },
+    {
+      "input": "9",
+      "expectedOutput": "\"aaaaaaaaa\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "10",
+      "expectedOutput": "\"aaaaaaaaab\""
     }
   ],
   "sqlSchema": null,

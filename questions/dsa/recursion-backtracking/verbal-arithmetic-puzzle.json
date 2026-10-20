@@ -72,10 +72,6 @@
   ],
   "testCases": [
     {
-      "input": "[\"SEND\",\"MORE\"]\n\"MONEY\"",
-      "expectedOutput": "true"
-    },
-    {
       "input": "[\"SIX\",\"SEVEN\",\"SEVEN\"]\n\"TWENTY\"",
       "expectedOutput": "true"
     },
@@ -84,15 +80,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "words = [\"SEND\",\"MORE\"], result = \"MONEY\"",
+      "input": "[\"SIX\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"SEVEN\",\"SEVEN\"]\n\"TWENTY\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [\"SIX\",\"SEVEN\",\"SEVEN\"], result = \"TWENTY\"",
+      "input": "[\"a\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"TWENTY\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"CODE\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"CODE\",\"LEET\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\",\"LEET\"]\n\"POINT\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [\"LEET\",\"CODE\"], result = \"POINT\"",
+      "input": "[\"LEET\",\"CODE\",\"LEET\",\"CODE\"]\n\"POINT\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"POINT\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"LEET\",\"CODE\"]\n\"INT\"",
       "expectedOutput": "false"
     }
   ],

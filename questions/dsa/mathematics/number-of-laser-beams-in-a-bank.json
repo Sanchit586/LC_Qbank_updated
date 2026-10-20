@@ -71,11 +71,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "bank = [\"011001\",\"000000\",\"010100\",\"001000\"]",
+      "input": "[\"011001\",\"000000\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"010100\",\"001000\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"011001\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"011001\",\"001000\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"001000\",\"010100\",\"000000\",\"011001\"]",
       "expectedOutput": "8"
     },
     {
-      "input": "bank = [\"000\",\"111\",\"000\"]",
+      "input": "[\"000000\",\"001000\",\"010100\",\"011001\"]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[\"011001\",\"010100\",\"001000\",\"000000\"]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[\"011001\",\"011001\",\"011001\",\"011001\"]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "[\"011001\",\"000000\",\"010100\",\"001000\",\"011001\",\"000000\",\"010100\",\"001000\"]",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
       "expectedOutput": "0"
     }
   ],

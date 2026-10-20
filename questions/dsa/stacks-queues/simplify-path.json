@@ -107,24 +107,64 @@
       "expectedOutput": "\"/.../b/d\""
     },
     {
-      "input": "path = \"/home/\"",
-      "expectedOutput": "\"/home\""
+      "input": "\"/ho\"",
+      "expectedOutput": "\"/ho\""
     },
     {
-      "input": "path = \"/home//foo/\"",
-      "expectedOutput": "\"/home/foo\""
+      "input": "\"me/\"",
+      "expectedOutput": "\"/me\""
     },
     {
-      "input": "path = \"/home/user/Documents/../Pictures\"",
-      "expectedOutput": "\"/home/user/Pictures\""
-    },
-    {
-      "input": "path = \"/../\"",
+      "input": "\"/\"",
       "expectedOutput": "\"/\""
     },
     {
-      "input": "path = \"/.../a/../b/c/../d/./\"",
-      "expectedOutput": "\"/.../b/d\""
+      "input": "\"/h\"",
+      "expectedOutput": "\"/h\""
+    },
+    {
+      "input": "\"/emoh/\"",
+      "expectedOutput": "\"/emoh\""
+    },
+    {
+      "input": "\"/home//home/\"",
+      "expectedOutput": "\"/home/home\""
+    },
+    {
+      "input": "\"//////\"",
+      "expectedOutput": "\"/\""
+    },
+    {
+      "input": "\"/home//emoh/\"",
+      "expectedOutput": "\"/home/emoh\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"/a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"/b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"/aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"/ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"/ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"/aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"/abba\""
     }
   ],
   "sqlSchema": null,

@@ -85,16 +85,72 @@
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "s = \"ABA\", queries = [[2,1,2],[1,1],[2,0,2]]",
+      "input": "\"ABAABA\"\n[[2,1,2],[1,1],[2,0,2]]",
       "expectedOutput": "[0,2]"
     },
     {
-      "input": "s = \"ABB\", queries = [[2,0,2],[1,2],[2,0,2]]",
+      "input": "\"AAA\"\n[[2,1,2],[1,1],[2,0,2]]",
       "expectedOutput": "[1,0]"
     },
     {
-      "input": "s = \"BABA\", queries = [[2,0,3],[1,1],[2,1,3]]",
+      "input": "\"aba\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"abba\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"aaaaa\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[1,0]"
+    },
+    {
+      "input": "\"abcde\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"edcba\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"aab\"\n[[2,1,2],[1,1],[2,0,2]]",
       "expectedOutput": "[0,1]"
+    },
+    {
+      "input": "\"121\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"racecar\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"hello\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"leetcode\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"world\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"()[]{}\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"([)]\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"{[]}\"\n[[2,1,2],[1,1],[2,0,2]]",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "\"BBA\"\n[[2,0,2],[1,2],[2,0,2]]",
+      "expectedOutput": "[1,2]"
     }
   ],
   "sqlSchema": null,

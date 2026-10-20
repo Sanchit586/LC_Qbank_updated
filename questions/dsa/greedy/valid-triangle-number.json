@@ -70,12 +70,76 @@
       "expectedOutput": "4"
     },
     {
-      "input": "nums = [2,2,3,4]",
+      "input": "[2,2]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[3,4]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,4]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[4,3,2,2]",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [4,2,3,4]",
+      "input": "[2,2,2,2]",
       "expectedOutput": "4"
+    },
+    {
+      "input": "[2,2,3,4,2,2,3,4]",
+      "expectedOutput": "44"
+    },
+    {
+      "input": "[4,4,6,8]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[3,3,4,5]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,1,2,3]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-2,-2,-3,-4]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

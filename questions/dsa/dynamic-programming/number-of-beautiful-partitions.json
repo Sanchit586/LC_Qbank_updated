@@ -81,16 +81,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"23542185131\", k = 3, minLength = 2",
-      "expectedOutput": "3"
+      "input": "\"23542\"\n3\n2",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"23542185131\", k = 3, minLength = 3",
-      "expectedOutput": "1"
+      "input": "\"185131\"\n3\n2",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"3312958\", k = 3, minLength = 1",
-      "expectedOutput": "1"
+      "input": "\"2\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"23\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"13158124532\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"222222\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"\n3\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"\n3\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

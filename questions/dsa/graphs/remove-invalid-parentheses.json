@@ -71,7 +71,7 @@
   "testCases": [
     {
       "input": "\"()())()\"",
-      "expectedOutput": "[\"(())()\",\"()()()\"]"
+      "expectedOutput": "[\"()()()\",\"(())()\"]"
     },
     {
       "input": "\"(a)())()\"",
@@ -82,16 +82,72 @@
       "expectedOutput": "[\"\"]"
     },
     {
-      "input": "s = \"()())()\"",
-      "expectedOutput": "[\"(())()\",\"()()()\"]"
+      "input": "\"()(\"",
+      "expectedOutput": "[\"()\"]"
     },
     {
-      "input": "s = \"(a)())()\"",
-      "expectedOutput": "[\"(a())()\",\"(a)()()\"]"
+      "input": "\"))()\"",
+      "expectedOutput": "[\"()\"]"
     },
     {
-      "input": "s = \")(\"",
+      "input": "\"(\"",
       "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "\"()\"",
+      "expectedOutput": "[\"()\"]"
+    },
+    {
+      "input": "\")())()(\"",
+      "expectedOutput": "[\"()()\"]"
+    },
+    {
+      "input": "\"()())()()())()\"",
+      "expectedOutput": "[\"()(()()())()\",\"()()()(())()\",\"(())()()()()\",\"(()()()())()\",\"()()()()()()\",\"(())(()())()\",\"()()(()())()\",\"(())()(())()\"]"
+    },
+    {
+      "input": "\"((((((\"",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "\"()())())())()(\"",
+      "expectedOutput": "[\"(()()())()\",\"()(()())()\",\"()()()()()\",\"(())()()()\",\"()(())()()\",\"(())(())()\",\"(()())()()\",\"((())())()\",\"()()(())()\"]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[\"b\"]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[\"aa\"]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[\"ab\"]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[\"ba\"]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[\"aba\"]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[\"abba\"]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[\"aaaaa\"]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[\"abcde\"]"
     }
   ],
   "sqlSchema": null,

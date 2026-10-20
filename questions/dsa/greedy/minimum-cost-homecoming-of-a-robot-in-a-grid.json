@@ -73,12 +73,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "startPos = [1, 0], homePos = [2, 3], rowCosts = [5, 4, 3], colCosts = [8, 2, 6, 7]",
+      "input": "[0,1]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "20"
+    },
+    {
+      "input": "[1,1]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[2,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[2,1]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[0,-1]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "[-1,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "[0,0]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "[1,2]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-1,1]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "[100,-100]\n[2,3]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "[1,0]\n[3,2]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[1,0]\n[2,2]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[1,0]\n[4,6]\n[5,4,3]\n[8,2,6,7]",
       "expectedOutput": "18"
     },
     {
-      "input": "startPos = [0, 0], homePos = [0, 0], rowCosts = [5], colCosts = [26]",
+      "input": "[1,0]\n[3,4]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[1,0]\n[1,2]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[1,0]\n[-2,-3]\n[5,4,3]\n[8,2,6,7]",
       "expectedOutput": "0"
+    },
+    {
+      "input": "[1,0]\n[0,0]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,0]\n[1,1]\n[5,4,3]\n[8,2,6,7]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

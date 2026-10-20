@@ -84,16 +84,72 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"1 box has 3 blue 4 red 6 green and 12 yellow marbles\"",
+      "input": "\"1 box has 3 blue 4 red 6 g\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"hello world 5 x 5\"",
+      "input": "\"reen and 12 yellow marbles\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"1 \"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"selbram wolley 21 dna neerg 6 der 4 eulb 3 sah xob 1\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"sunset is at 7 51 pm overnight lows will be in the low 50 and 60 s\"",
-      "expectedOutput": "false"
+      "input": "\"111111\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

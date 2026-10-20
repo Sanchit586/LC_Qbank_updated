@@ -85,16 +85,40 @@
       "expectedOutput": "73741817"
     },
     {
-      "input": "nums = [231]",
-      "expectedOutput": "8"
+      "input": "[231,231]",
+      "expectedOutput": "16"
     },
     {
-      "input": "nums = [2522,2101]",
+      "input": "[2522]",
+      "expectedOutput": "625"
+    },
+    {
+      "input": "[2101]",
+      "expectedOutput": "1024"
+    },
+    {
+      "input": "[2101,2522]",
       "expectedOutput": "1649"
     },
     {
-      "input": "nums = [2301]",
-      "expectedOutput": "73741817"
+      "input": "[2522,2522]",
+      "expectedOutput": "1250"
+    },
+    {
+      "input": "[2522,2101,2522,2101]",
+      "expectedOutput": "3298"
+    },
+    {
+      "input": "[2301,2301]",
+      "expectedOutput": "147483634"
+    },
+    {
+      "input": "[4602]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2302]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,
