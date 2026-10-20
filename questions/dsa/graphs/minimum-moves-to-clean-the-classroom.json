@@ -87,16 +87,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "classroom = [\"S.\", \"XL\"], energy = 2",
+      "input": "[\"S.\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"XL\"]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"S.\",\"XL\"]\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "classroom = [\"LS\", \"RL\"], energy = 4",
-      "expectedOutput": "3"
+      "input": "[\"XL\",\"S.\"]\n2",
+      "expectedOutput": "2"
     },
     {
-      "input": "classroom = [\"L.S\", \"RXL\"], energy = 3",
+      "input": "[\"S.\",\"S.\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"S.\",\"XL\",\"S.\",\"XL\"]\n2",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -79,16 +79,72 @@
       "expectedOutput": "33"
     },
     {
-      "input": "nums = [10,20,30,5,10,50]",
+      "input": "[10,20,30]",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[5,10,50]",
       "expectedOutput": "65"
     },
     {
-      "input": "nums = [10,20,30,40,50]",
-      "expectedOutput": "150"
+      "input": "[10]",
+      "expectedOutput": "10"
     },
     {
-      "input": "nums = [12,17,15,13,10,11,12]",
-      "expectedOutput": "33"
+      "input": "[10,50]",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[10,20]",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "[50,10,5,30,20,10]",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "[5,10,10,20,30,50]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "[50,30,20,10,10,5]",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "[10,10,10,10,10]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[10,20,30,5,10,50,10,20,30,5,10,50]",
+      "expectedOutput": "65"
+    },
+    {
+      "input": "[20,40,60,10,20,100]",
+      "expectedOutput": "130"
+    },
+    {
+      "input": "[11,21,31,6,11,51]",
+      "expectedOutput": "68"
+    },
+    {
+      "input": "[9,19,29,4,9,49]",
+      "expectedOutput": "62"
+    },
+    {
+      "input": "[-10,-20,-30,-5,-10,-50]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

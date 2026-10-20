@@ -69,11 +69,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "message = [\"hello\",\"world\",\"leetcode\"], bannedWords = [\"world\",\"hello\"]",
+      "input": "[\"hello\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"world\",\"leetcode\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"hello\",\"leetcode\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"world\",\"hello\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "message = [\"hello\",\"programming\",\"fun\"], bannedWords = [\"world\",\"programming\",\"leetcode\"]",
+      "input": "[\"leetcode\",\"world\",\"hello\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"hello\",\"leetcode\",\"world\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"world\",\"leetcode\",\"hello\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"hello\",\"hello\",\"hello\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"hello\",\"world\",\"leetcode\",\"hello\",\"world\",\"leetcode\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"world\",\"hello\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"world\",\"hello\"]",
       "expectedOutput": "false"
     }
   ],

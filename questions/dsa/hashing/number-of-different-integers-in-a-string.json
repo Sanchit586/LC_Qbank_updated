@@ -80,16 +80,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "word = \"a123bc34d8ef34\"",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "word = \"leet1234code234\"",
+      "input": "\"a123bc3\"",
       "expectedOutput": "2"
     },
     {
-      "input": "word = \"a1b01c001\"",
+      "input": "\"4d8ef34\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a1\"",
       "expectedOutput": "1"
+    },
+    {
+      "input": "\"43fe8d43cb321a\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

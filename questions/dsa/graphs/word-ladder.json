@@ -74,11 +74,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
-      "expectedOutput": "5"
+      "input": "\"h\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
     },
     {
-      "input": "beginWord = \"hit\", endWord = \"cog\", wordList = [\"hot\",\"dot\",\"dog\",\"lot\",\"log\"]",
+      "input": "\"it\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hi\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"tih\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hithit\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hhh\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hittih\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"HIT\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"\n\"cog\"\n[\"hot\",\"dot\",\"dog\",\"lot\",\"log\",\"cog\"]",
       "expectedOutput": "0"
     }
   ],

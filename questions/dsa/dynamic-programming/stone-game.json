@@ -73,12 +73,76 @@
       "expectedOutput": "true"
     },
     {
-      "input": "piles = [5,3,4,5]",
+      "input": "[5,3]",
       "expectedOutput": "true"
     },
     {
-      "input": "piles = [3,7,2,3]",
+      "input": "[4,5]",
       "expectedOutput": "true"
+    },
+    {
+      "input": "[5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,5]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[5,4,3,5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,4,5,5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,5,4,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,5,5,5]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[5,3,4,5,5,3,4,5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[10,6,8,10]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[6,4,5,6]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[4,2,3,4]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-5,-3,-4,-5]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

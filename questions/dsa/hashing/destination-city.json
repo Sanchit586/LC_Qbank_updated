@@ -82,18 +82,6 @@
     {
       "input": "[[\"A\",\"Z\"]]",
       "expectedOutput": "\"Z\""
-    },
-    {
-      "input": "paths = [[\"London\",\"New York\"],[\"New York\",\"Lima\"],[\"Lima\",\"Sao Paulo\"]]",
-      "expectedOutput": "\"Sao Paulo\""
-    },
-    {
-      "input": "paths = [[\"B\",\"C\"],[\"D\",\"B\"],[\"C\",\"A\"]]",
-      "expectedOutput": "\"A\""
-    },
-    {
-      "input": "paths = [[\"A\",\"Z\"]]",
-      "expectedOutput": "\"Z\""
     }
   ],
   "sqlSchema": null,

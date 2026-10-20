@@ -70,12 +70,76 @@
       "expectedOutput": "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]"
     },
     {
-      "input": "score = [5,4,3,2,1]",
+      "input": "[5,4]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\"]"
+    },
+    {
+      "input": "[3,2,1]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\"]"
+    },
+    {
+      "input": "[5]",
+      "expectedOutput": "[\"Gold Medal\"]"
+    },
+    {
+      "input": "[5,1]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\"]"
+    },
+    {
+      "input": "[1,2,3,4,5]",
+      "expectedOutput": "[\"5\",\"4\",\"Bronze Medal\",\"Silver Medal\",\"Gold Medal\"]"
+    },
+    {
+      "input": "[5,5,5,5,5]",
       "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]"
     },
     {
-      "input": "score = [10,3,8,9,4]",
-      "expectedOutput": "[\"Gold Medal\",\"5\",\"Bronze Medal\",\"Silver Medal\",\"4\"]"
+      "input": "[5,4,3,2,1,5,4,3,2,1]",
+      "expectedOutput": "[\"Gold Medal\",\"Bronze Medal\",\"5\",\"7\",\"9\",\"Silver Medal\",\"4\",\"6\",\"8\",\"10\"]"
+    },
+    {
+      "input": "[10,8,6,4,2]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]"
+    },
+    {
+      "input": "[6,5,4,3,2]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]"
+    },
+    {
+      "input": "[4,3,2,1,0]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\",\"5\"]"
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]",
+      "expectedOutput": "[\"5\",\"4\",\"Bronze Medal\",\"Silver Medal\",\"Gold Medal\"]"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\"]"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\",\"Bronze Medal\",\"4\"]"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "[\"Gold Medal\"]"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "[\"Gold Medal\"]"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "[\"Gold Medal\"]"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "[\"Gold Medal\",\"Silver Medal\"]"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "[\"Silver Medal\",\"Gold Medal\"]"
     }
   ],
   "sqlSchema": null,

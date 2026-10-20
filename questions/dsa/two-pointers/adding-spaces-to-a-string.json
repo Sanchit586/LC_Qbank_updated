@@ -85,16 +85,72 @@
       "expectedOutput": "\" s p a c i n g\""
     },
     {
-      "input": "s = \"LeetcodeHelpsMeLearn\", spaces = [8,13,15]",
-      "expectedOutput": "\"Leetcode Helps Me Learn\""
+      "input": "\"LeetcodeHe\"\n[8,13,15]",
+      "expectedOutput": "\"Leetcode He\""
     },
     {
-      "input": "s = \"icodeinpython\", spaces = [1,5,7,9]",
-      "expectedOutput": "\"i code in py thon\""
+      "input": "\"lpsMeLearn\"\n[8,13,15]",
+      "expectedOutput": "\"lpsMeLea rn\""
     },
     {
-      "input": "s = \"spacing\", spaces = [0,1,2,3,4,5,6]",
-      "expectedOutput": "\" s p a c i n g\""
+      "input": "\"L\"\n[8,13,15]",
+      "expectedOutput": "\"L\""
+    },
+    {
+      "input": "\"Le\"\n[8,13,15]",
+      "expectedOutput": "\"Le\""
+    },
+    {
+      "input": "\"nraeLeMspleHedocteeL\"\n[8,13,15]",
+      "expectedOutput": "\"nraeLeMs pleHe do cteeL\""
+    },
+    {
+      "input": "\"LLLLLL\"\n[8,13,15]",
+      "expectedOutput": "\"LLLLLL\""
+    },
+    {
+      "input": "\"leetcodehelpsmelearn\"\n[8,13,15]",
+      "expectedOutput": "\"leetcode helps me learn\""
+    },
+    {
+      "input": "\"LEETCODEHELPSMELEARN\"\n[8,13,15]",
+      "expectedOutput": "\"LEETCODE HELPS ME LEARN\""
+    },
+    {
+      "input": "\"a\"\n[8,13,15]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n[8,13,15]",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n[8,13,15]",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n[8,13,15]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n[8,13,15]",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n[8,13,15]",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n[8,13,15]",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n[8,13,15]",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n[8,13,15]",
+      "expectedOutput": "\"abcde\""
     }
   ],
   "sqlSchema": null,

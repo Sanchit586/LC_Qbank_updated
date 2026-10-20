@@ -61,19 +61,83 @@
   "testCases": [
     {
       "input": "[4000,3000,1000,2000]",
-      "expectedOutput": "2500.00000"
+      "expectedOutput": "2500"
     },
     {
       "input": "[1000,2000,3000]",
-      "expectedOutput": "2000.00000"
+      "expectedOutput": "2000"
     },
     {
-      "input": "salary = [4000,3000,1000,2000]",
-      "expectedOutput": "2500.00000"
+      "input": "[4000]",
+      "expectedOutput": "4000"
     },
     {
-      "input": "salary = [1000,2000,3000]",
-      "expectedOutput": "2000.00000"
+      "input": "[2000,1000,3000,4000]",
+      "expectedOutput": "2500"
+    },
+    {
+      "input": "[1000,2000,3000,4000]",
+      "expectedOutput": "2500"
+    },
+    {
+      "input": "[4000,3000,2000,1000]",
+      "expectedOutput": "2500"
+    },
+    {
+      "input": "[4000,4000,4000,4000]",
+      "expectedOutput": "4000"
+    },
+    {
+      "input": "[4000,3000,1000,2000,4000,3000,1000,2000]",
+      "expectedOutput": "2500"
+    },
+    {
+      "input": "[8000,6000,2000,4000]",
+      "expectedOutput": "5000"
+    },
+    {
+      "input": "[4001,3001,1001,2001]",
+      "expectedOutput": "2501"
+    },
+    {
+      "input": "[3999,2999,999,1999]",
+      "expectedOutput": "2499"
+    },
+    {
+      "input": "[-4000,-3000,-1000,-2000]",
+      "expectedOutput": "-2500"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "-0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[3,2,1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

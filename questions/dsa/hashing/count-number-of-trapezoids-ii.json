@@ -68,14 +68,6 @@
     {
       "input": "[[0,0],[1,0],[0,1],[2,1]]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "points = [[-3,2],[3,0],[2,3],[3,2],[2,-3]]",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "points = [[0,0],[1,0],[0,1],[2,1]]",
-      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

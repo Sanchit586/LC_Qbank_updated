@@ -85,15 +85,39 @@
       "expectedOutput": "false"
     },
     {
-      "input": "grid = [[\"a\",\"a\",\"a\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"b\",\"b\",\"a\"],[\"a\",\"a\",\"a\",\"a\"]]",
+      "input": "[[\"a\",\"a\",\"a\",\"a\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"a\"],[\"a\"],[\"a\"],[\"a\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"c\",\"c\",\"c\",\"a\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"c\"],[\"c\"],[\"c\"],[\"f\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"f\",\"c\",\"c\",\"c\"],[\"c\",\"c\",\"e\",\"c\"],[\"c\",\"d\",\"c\",\"c\"],[\"c\",\"c\",\"c\",\"a\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[\"c\",\"c\",\"c\",\"a\"],[\"c\",\"d\",\"c\",\"c\"],[\"c\",\"c\",\"e\",\"c\"],[\"f\",\"c\",\"c\",\"c\"]]",
+      "input": "[[\"c\",\"c\",\"c\",\"f\"],[\"c\",\"d\",\"c\",\"c\"],[\"c\",\"c\",\"e\",\"c\"],[\"a\",\"c\",\"c\",\"c\"]]",
       "expectedOutput": "true"
     },
     {
-      "input": "grid = [[\"a\",\"b\",\"b\"],[\"b\",\"z\",\"b\"],[\"b\",\"b\",\"a\"]]",
+      "input": "[[\"a\",\"b\",\"b\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"a\"],[\"b\"],[\"b\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[\"b\",\"b\",\"a\"],[\"b\",\"z\",\"b\"],[\"a\",\"b\",\"b\"]]",
       "expectedOutput": "false"
     }
   ],

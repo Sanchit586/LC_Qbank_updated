@@ -81,16 +81,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "hamsters = \"H..H\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "hamsters = \".H.H.\"",
+      "input": "\"H.\"",
       "expectedOutput": "1"
     },
     {
-      "input": "hamsters = \".HHH.\"",
+      "input": "\".H\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"H\"",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "\"H..HH..H\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"HHHH\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

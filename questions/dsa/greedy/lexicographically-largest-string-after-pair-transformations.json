@@ -69,12 +69,76 @@
       "expectedOutput": "[\"ba\",\"da\",\"a\"]"
     },
     {
-      "input": "nums = [2,5,7]",
-      "expectedOutput": "[\"b\",\"ca\",\"cba\"]"
+      "input": "[2]",
+      "expectedOutput": "[\"b\"]"
     },
     {
-      "input": "nums = [3,9,1]",
-      "expectedOutput": "[\"ba\",\"da\",\"a\"]"
+      "input": "[5,7]",
+      "expectedOutput": "[\"ca\",\"cba\"]"
+    },
+    {
+      "input": "[2,7]",
+      "expectedOutput": "[\"b\",\"cba\"]"
+    },
+    {
+      "input": "[2,5]",
+      "expectedOutput": "[\"b\",\"ca\"]"
+    },
+    {
+      "input": "[7,5,2]",
+      "expectedOutput": "[\"cba\",\"ca\",\"b\"]"
+    },
+    {
+      "input": "[2,2,2]",
+      "expectedOutput": "[\"b\",\"b\",\"b\"]"
+    },
+    {
+      "input": "[2,5,7,2,5,7]",
+      "expectedOutput": "[\"b\",\"ca\",\"cba\",\"b\",\"ca\",\"cba\"]"
+    },
+    {
+      "input": "[4,10,14]",
+      "expectedOutput": "[\"c\",\"db\",\"dcb\"]"
+    },
+    {
+      "input": "[3,6,8]",
+      "expectedOutput": "[\"ba\",\"cb\",\"d\"]"
+    },
+    {
+      "input": "[1,4,6]",
+      "expectedOutput": "[\"a\",\"c\",\"cb\"]"
+    },
+    {
+      "input": "[-2,-5,-7]",
+      "expectedOutput": "[\"yxwvutsrqponmlkjihgfedcb\",\"yxwvutsrqponmlkjihgfedba\",\"yxwvutsrqponmlkjihgfeda\"]"
+    },
+    {
+      "input": "[0,0,0]",
+      "expectedOutput": "[\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "[\"a\",\"a\",\"a\"]"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "[\"yxwvutsrqponmlkjihgfedcba\"]"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "[\"\",\"\"]"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "[\"a\",\"b\"]"
     }
   ],
   "sqlSchema": null,

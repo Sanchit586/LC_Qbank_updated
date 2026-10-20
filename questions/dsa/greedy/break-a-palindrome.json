@@ -67,12 +67,76 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "palindrome = \"abccba\"",
-      "expectedOutput": "\"aaccba\""
+      "input": "\"abc\"",
+      "expectedOutput": "\"abb\""
     },
     {
-      "input": "palindrome = \"a\"",
+      "input": "\"cba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"abccbaabccba\"",
+      "expectedOutput": "\"aaccbaabccba\""
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "\"aaaaab\""
+    },
+    {
+      "input": "\"ABCCBA\"",
+      "expectedOutput": "\"aBCCBA\""
+    },
+    {
+      "input": "\"b\"",
       "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"abb\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"aaba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaab\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"aacde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"adcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"a21\""
     }
   ],
   "sqlSchema": null,

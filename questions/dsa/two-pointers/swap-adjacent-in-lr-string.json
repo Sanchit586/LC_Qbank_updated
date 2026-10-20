@@ -68,11 +68,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "start = \"RXXLRXRXL\", result = \"XRLXXRRLX\"",
+      "input": "\"RXXL\"\n\"XRLXXRRLX\"",
       "expectedOutput": "true"
     },
     {
-      "input": "start = \"X\", result = \"L\"",
+      "input": "\"RXRXL\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"R\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"RX\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"LXRXRLXXR\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"RRRRRR\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"rxxlrxrxl\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"XRLXXRRLX\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"XRLXXRRLX\"",
       "expectedOutput": "false"
     }
   ],

@@ -83,16 +83,72 @@
       "expectedOutput": "3"
     },
     {
-      "input": "strs = [\"cba\",\"daf\",\"ghi\"]",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "strs = [\"a\",\"b\"]",
+      "input": "[\"cba\"]",
       "expectedOutput": "0"
     },
     {
-      "input": "strs = [\"zyx\",\"wvu\",\"tsr\"]",
+      "input": "[\"daf\",\"ghi\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cba\",\"ghi\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cba\",\"daf\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ghi\",\"daf\",\"cba\"]",
       "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cba\",\"cba\",\"cba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cba\",\"daf\",\"ghi\",\"cba\",\"daf\",\"ghi\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

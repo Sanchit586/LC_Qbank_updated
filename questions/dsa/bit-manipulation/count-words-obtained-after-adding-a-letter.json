@@ -72,12 +72,76 @@
       "expectedOutput": "1"
     },
     {
-      "input": "startWords = [\"ant\",\"act\",\"tack\"], targetWords = [\"tack\",\"act\",\"acti\"]",
+      "input": "[\"ant\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "startWords = [\"ab\",\"a\"], targetWords = [\"abc\",\"abcd\"]",
-      "expectedOutput": "1"
+      "input": "[\"ant\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ant\",\"act\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"tack\",\"act\",\"ant\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"act\",\"ant\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"tack\",\"ant\",\"act\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ant\",\"ant\",\"ant\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ant\",\"act\",\"tack\",\"ant\",\"act\",\"tack\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"tack\",\"act\",\"acti\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

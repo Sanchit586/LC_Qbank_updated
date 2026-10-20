@@ -70,14 +70,6 @@
     {
       "input": "[[1,1],[2,2],[3,3],[4,4],[5,5]]",
       "expectedOutput": "[1,2,3,10,5]"
-    },
-    {
-      "input": "queries = [[2,6],[5,1],[73,660]]",
-      "expectedOutput": "[4,1,50734910]"
-    },
-    {
-      "input": "queries = [[1,1],[2,2],[3,3],[4,4],[5,5]]",
-      "expectedOutput": "[1,2,3,10,5]"
     }
   ],
   "sqlSchema": null,

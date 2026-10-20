@@ -82,16 +82,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "n = 3, m = 2, k = 1",
-      "expectedOutput": "4"
+      "input": "0\n2\n1",
+      "expectedOutput": "0"
     },
     {
-      "input": "n = 4, m = 2, k = 2",
+      "input": "1\n2\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "2\n2\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n2\n1",
       "expectedOutput": "6"
     },
     {
-      "input": "n = 5, m = 2, k = 0",
-      "expectedOutput": "2"
+      "input": "5\n2\n1",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "6\n2\n1",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "7\n2\n1",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "8\n2\n1",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "-1\n2\n1",
+      "expectedOutput": "200018"
+    },
+    {
+      "input": "-2\n2\n1",
+      "expectedOutput": "200016"
+    },
+    {
+      "input": "3\n0\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n1\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "3\n3\n1",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "3\n4\n1",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "3\n5\n1",
+      "expectedOutput": "40"
+    },
+    {
+      "input": "3\n6\n1",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "3\n7\n1",
+      "expectedOutput": "84"
     }
   ],
   "sqlSchema": null,

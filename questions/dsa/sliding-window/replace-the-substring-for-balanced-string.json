@@ -82,16 +82,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"QWER\"",
-      "expectedOutput": "0"
+      "input": "\"QW\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = \"QQWE\"",
+      "input": "\"ER\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"Q\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"QQQW\"",
+      "input": "\"REWQ\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"QWERQWER\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"QQQQ\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"QWERREWQ\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"qwer\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
       "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

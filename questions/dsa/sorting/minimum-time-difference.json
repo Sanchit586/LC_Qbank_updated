@@ -67,14 +67,6 @@
     {
       "input": "[\"00:00\",\"23:59\",\"00:00\"]",
       "expectedOutput": "0"
-    },
-    {
-      "input": "timePoints = [\"23:59\",\"00:00\"]",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "timePoints = [\"00:00\",\"23:59\",\"00:00\"]",
-      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

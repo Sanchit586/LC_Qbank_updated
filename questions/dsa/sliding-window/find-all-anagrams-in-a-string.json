@@ -68,12 +68,76 @@
       "expectedOutput": "[0,1,2]"
     },
     {
-      "input": "s = \"cbaebabacd\", p = \"abc\"",
-      "expectedOutput": "[0,6]"
+      "input": "\"cbaeb\"\n\"abc\"",
+      "expectedOutput": "[0]"
     },
     {
-      "input": "s = \"abab\", p = \"ab\"",
-      "expectedOutput": "[0,1,2]"
+      "input": "\"abacd\"\n\"abc\"",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"c\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"cb\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"dcababeabc\"\n\"abc\"",
+      "expectedOutput": "[1,7]"
+    },
+    {
+      "input": "\"cbaebabacdcbaebabacd\"\n\"abc\"",
+      "expectedOutput": "[0,6,10,16]"
+    },
+    {
+      "input": "\"cccccc\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"cbaebabacddcababeabc\"\n\"abc\"",
+      "expectedOutput": "[0,6,11,17]"
+    },
+    {
+      "input": "\"CBAEBABACD\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"a\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"b\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ba\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abba\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcde\"\n\"abc\"",
+      "expectedOutput": "[0]"
     }
   ],
   "sqlSchema": null,

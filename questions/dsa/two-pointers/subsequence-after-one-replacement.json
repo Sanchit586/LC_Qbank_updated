@@ -67,11 +67,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"cat\", t = \"chat\"",
+      "input": "\"c\"\n\"chat\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"plane\", t = \"apple\"",
+      "input": "\"at\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ca\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"tac\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"catcat\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ccc\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"cattac\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"CAT\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"chat\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"chat\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"chat\"",
       "expectedOutput": "false"
     }
   ],

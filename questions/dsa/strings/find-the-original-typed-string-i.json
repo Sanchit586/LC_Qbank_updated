@@ -79,16 +79,72 @@
       "expectedOutput": "4"
     },
     {
-      "input": "word = \"abbcccc\"",
-      "expectedOutput": "5"
+      "input": "\"abb\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "word = \"abcd\"",
+      "input": "\"cccc\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "1"
     },
     {
-      "input": "word = \"aaaa\"",
-      "expectedOutput": "4"
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ccccbba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abbccccabbcccc\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"abbccccccccbba\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"ABBCCCC\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

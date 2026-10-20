@@ -83,16 +83,72 @@
       "expectedOutput": "3"
     },
     {
-      "input": "heights = [4,2,7,6,9,14,12], bricks = 5, ladders = 1",
+      "input": "[4,2,7]\n5\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[6,9,14,12]\n5\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[4]\n5\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[4,12]\n5\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,2]\n5\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[12,14,9,6,7,2,4]\n5\n1",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[2,4,6,7,9,12,14]\n5\n1",
       "expectedOutput": "4"
     },
     {
-      "input": "heights = [4,12,2,7,3,18,20,3,19], bricks = 10, ladders = 2",
-      "expectedOutput": "7"
+      "input": "[14,12,9,7,6,4,2]\n5\n1",
+      "expectedOutput": "6"
     },
     {
-      "input": "heights = [14,3,19,3], bricks = 17, ladders = 0",
+      "input": "[4,4,4,4,4]\n5\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[4,2,7,6,9,14,12,4,2,7,6,9,14,12]\n5\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[8,4,14,12,18,28,24]\n5\n1",
       "expectedOutput": "3"
+    },
+    {
+      "input": "[5,3,8,7,10,15,13]\n5\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[3,1,6,5,8,13,11]\n5\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-4,-2,-7,-6,-9,-14,-12]\n5\n1",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[0,0,0,0]\n5\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,1,1]\n5\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0]\n5\n1",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

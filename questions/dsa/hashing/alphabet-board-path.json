@@ -56,19 +56,83 @@
   "testCases": [
     {
       "input": "\"leet\"",
-      "expectedOutput": "\"DDR!UURRR!!DDD!\""
+      "expectedOutput": "\"RDD!UURRR!!DDD!\""
     },
     {
       "input": "\"code\"",
-      "expectedOutput": "\"RR!DDRR!UUL!R!\""
+      "expectedOutput": "\"RR!RRDD!LUU!R!\""
     },
     {
-      "input": "target = \"leet\"",
-      "expectedOutput": "\"DDR!UURRR!!DDD!\""
+      "input": "\"le\"",
+      "expectedOutput": "\"RDD!UURRR!\""
     },
     {
-      "input": "target = \"code\"",
-      "expectedOutput": "\"RR!DDRR!UUL!R!\""
+      "input": "\"et\"",
+      "expectedOutput": "\"RRRR!DDD!\""
+    },
+    {
+      "input": "\"l\"",
+      "expectedOutput": "\"RDD!\""
+    },
+    {
+      "input": "\"teel\"",
+      "expectedOutput": "\"RRRRDDD!UUU!!LLLDD!\""
+    },
+    {
+      "input": "\"leetleet\"",
+      "expectedOutput": "\"RDD!UURRR!!DDD!LLLU!UURRR!!DDD!\""
+    },
+    {
+      "input": "\"llll\"",
+      "expectedOutput": "\"RDD!!!!\""
+    },
+    {
+      "input": "\"leetteel\"",
+      "expectedOutput": "\"RDD!UURRR!!DDD!!UUU!!LLLDD!\""
+    },
+    {
+      "input": "\"LEET\"",
+      "expectedOutput": "\"UUUUURRRR!LLU!!DDD!\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"!\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"R!\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"!!\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"!R!\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"R!L!\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"!R!L!\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"!R!!L!\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"!!!!!\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"!R!R!R!R!\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"RRRR!L!L!L!L!\""
     }
   ],
   "sqlSchema": null,

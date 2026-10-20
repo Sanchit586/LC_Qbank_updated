@@ -69,11 +69,75 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"DID\"",
-      "expectedOutput": "5"
+      "input": "\"ID\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = \"D\"",
+      "input": "\"DI\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"DIDDID\"",
+      "expectedOutput": "169"
+    },
+    {
+      "input": "\"DDD\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"did\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"",
       "expectedOutput": "1"
     }
   ],

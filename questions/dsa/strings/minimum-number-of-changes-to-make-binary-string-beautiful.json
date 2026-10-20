@@ -80,15 +80,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"1001\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = \"10\"",
+      "input": "\"01\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"0000\"",
+      "input": "\"1\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"10011001\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"1111\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"",
       "expectedOutput": "0"
     }
   ],

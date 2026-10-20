@@ -67,12 +67,76 @@
       "expectedOutput": "30228214"
     },
     {
-      "input": "n = 1",
+      "input": "0",
       "expectedOutput": "12"
     },
     {
-      "input": "n = 5000",
-      "expectedOutput": "30228214"
+      "input": "2",
+      "expectedOutput": "54"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "246"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "1122"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "5118"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "23346"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "4999",
+      "expectedOutput": "134620719"
+    },
+    {
+      "input": "5001",
+      "expectedOutput": "881899639"
+    },
+    {
+      "input": "4998",
+      "expectedOutput": "821437694"
+    },
+    {
+      "input": "5002",
+      "expectedOutput": "349041739"
+    },
+    {
+      "input": "4997",
+      "expectedOutput": "486283865"
+    },
+    {
+      "input": "5003",
+      "expectedOutput": "981409424"
+    },
+    {
+      "input": "2500",
+      "expectedOutput": "80958521"
+    },
+    {
+      "input": "-5000",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "10107954"
     }
   ],
   "sqlSchema": null,

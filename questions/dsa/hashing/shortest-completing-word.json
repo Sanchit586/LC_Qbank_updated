@@ -71,12 +71,76 @@
       "expectedOutput": "\"pest\""
     },
     {
-      "input": "licensePlate = \"1s3 PSt\", words = [\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "input": "\"1s3\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\" PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"1\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"1s\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"tSP 3s1\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
       "expectedOutput": "\"steps\""
     },
     {
-      "input": "licensePlate = \"1s3 456\", words = [\"looks\",\"pest\",\"stew\",\"show\"]",
-      "expectedOutput": "\"pest\""
+      "input": "\"111111\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"0\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"121\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"()\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"()[]{}\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"(]\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"([)]\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"{[]}\"\n[\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"step\""
+    },
+    {
+      "input": "\"1s3 PSt\"\n[\"step\",\"steps\"]",
+      "expectedOutput": "\"steps\""
+    },
+    {
+      "input": "\"1s3 PSt\"\n[\"stepple\",\"stripe\",\"steps\",\"step\"]",
+      "expectedOutput": "\"steps\""
+    },
+    {
+      "input": "\"1s3 PSt\"\n[\"step\",\"stepple\",\"steps\",\"stripe\"]",
+      "expectedOutput": "\"steps\""
+    },
+    {
+      "input": "\"1s3 PSt\"\n[\"stripe\",\"steps\",\"stepple\",\"step\"]",
+      "expectedOutput": "\"steps\""
+    },
+    {
+      "input": "\"1s3 PSt\"\n[\"step\",\"steps\",\"stripe\",\"stepple\",\"step\",\"steps\",\"stripe\",\"stepple\"]",
+      "expectedOutput": "\"steps\""
     }
   ],
   "sqlSchema": null,

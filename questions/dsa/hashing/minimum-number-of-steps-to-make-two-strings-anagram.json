@@ -82,16 +82,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"bab\", t = \"aba\"",
+      "input": "\"b\"\n\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n\"aba\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"leetcode\", t = \"practice\"",
-      "expectedOutput": "5"
+      "input": "\"ba\"\n\"aba\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "s = \"anagram\", t = \"mangaar\"",
+      "input": "\"babbab\"\n\"aba\"",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"bbb\"\n\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"BAB\"\n\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"a\"\n\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aa\"\n\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"\n\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"\n\"aba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"0\"\n\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"121\"\n\"aba\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

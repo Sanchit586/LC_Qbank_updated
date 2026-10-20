@@ -64,12 +64,72 @@
       "expectedOutput": "12"
     },
     {
-      "input": "s = \"0192837465\"",
-      "expectedOutput": "25"
+      "input": "\"01928\"",
+      "expectedOutput": "10"
     },
     {
-      "input": "s = \"1200210200\"",
-      "expectedOutput": "12"
+      "input": "\"37465\"",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"01\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"5647382910\"",
+      "expectedOutput": "30"
+    },
+    {
+      "input": "\"01928374650192837465\"",
+      "expectedOutput": "55"
+    },
+    {
+      "input": "\"000000\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"01928374655647382910\"",
+      "expectedOutput": "50"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"12002\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"10200\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"12\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"0020120021\"",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "\"12002102001200210200\"",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "\"111111\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"12002102000020120021\"",
+      "expectedOutput": "23"
     }
   ],
   "sqlSchema": null,

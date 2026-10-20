@@ -69,12 +69,76 @@
       "expectedOutput": "10"
     },
     {
-      "input": "receiver = [2,0,1], k = 4",
+      "input": "[2,0,1]\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,0,1]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,0,1]\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[2,0,1]\n5",
       "expectedOutput": "6"
     },
     {
-      "input": "receiver = [1,1,1,2,3], k = 3",
-      "expectedOutput": "10"
+      "input": "[2,0,1]\n6",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[2,0,1]\n7",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,0,1]\n8",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,0,1]\n9",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[2,0,1]\n-1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,0,1]\n-2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,1,2,3]\n1",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1,1,1,2,3]\n2",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,1,1,2,3]\n4",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[1,1,1,2,3]\n5",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[1,1,1,2,3]\n6",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[1,1,1,2,3]\n7",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[1,1,1,2,3]\n8",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[1,1,1,2,3]\n-1",
+      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

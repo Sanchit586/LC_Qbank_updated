@@ -80,16 +80,72 @@
       "expectedOutput": "\"***-***-7890\""
     },
     {
-      "input": "s = \"LeetCode@LeetCode.com\"",
-      "expectedOutput": "\"l*****e@leetcode.com\""
+      "input": "\"LeetCode@L\"",
+      "expectedOutput": "\"l*****e@l\""
     },
     {
-      "input": "s = \"AB@qq.com\"",
-      "expectedOutput": "\"a*****b@qq.com\""
+      "input": "\"eetCode.com\"",
+      "expectedOutput": "\"e*****om\""
     },
     {
-      "input": "s = \"1(234)567-890\"",
-      "expectedOutput": "\"***-***-7890\""
+      "input": "\"L\"",
+      "expectedOutput": "\"l*****l\""
+    },
+    {
+      "input": "\"Le\"",
+      "expectedOutput": "\"l*****le\""
+    },
+    {
+      "input": "\"moc.edoCteeL@edoCteeL\"",
+      "expectedOutput": "\"m*****l@edocteel\""
+    },
+    {
+      "input": "\"LLLLLL\"",
+      "expectedOutput": "\"l*****ll\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a*****a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b*****b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a*****aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"a*****ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"b*****ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a*****ba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"a*****ba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"a*****aa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"a*****de\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"e*****ba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"a*****ab\""
     }
   ],
   "sqlSchema": null,

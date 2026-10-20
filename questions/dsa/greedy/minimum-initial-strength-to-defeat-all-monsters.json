@@ -73,12 +73,76 @@
       "expectedOutput": "5"
     },
     {
-      "input": "monsters = [5,10,15], boosts = [[1,1,10]]",
+      "input": "[10,15]\n[[1,1,10]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[5,15]\n[[1,1,10]]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[5,10]\n[[1,1,10]]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[15,10,5]\n[[1,1,10]]",
       "expectedOutput": "30"
     },
     {
-      "input": "monsters = [5,10,15], boosts = [[1,2,10],[1,2,5]]",
-      "expectedOutput": "5"
+      "input": "[5,5,5]\n[[1,1,10]]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[5,10,15,5,10,15]\n[[1,1,10]]",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[10,20,30]\n[[1,1,10]]",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[6,11,16]\n[[1,1,10]]",
+      "expectedOutput": "33"
+    },
+    {
+      "input": "[4,9,14]\n[[1,1,10]]",
+      "expectedOutput": "27"
+    },
+    {
+      "input": "[-5,-10,-15]\n[[1,1,10]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0]\n[[1,1,10]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1]\n[[1,1,10]]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0]\n[[1,1,10]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]\n[[1,1,10]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,1]\n[[1,1,10]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n[[1,1,10]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1,1]\n[[1,1,10]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3]\n[[1,1,10]]",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

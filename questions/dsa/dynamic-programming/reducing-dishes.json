@@ -83,16 +83,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "satisfaction = [-1,-8,0,5,-9]",
+      "input": "[-1,-8]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,5,-7]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1,-7]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-7,5,0,-8,-1]",
       "expectedOutput": "14"
     },
     {
-      "input": "satisfaction = [4,3,2]",
-      "expectedOutput": "20"
+      "input": "[-8,-7,-1,0,5]",
+      "expectedOutput": "14"
     },
     {
-      "input": "satisfaction = [-1,-4,-5]",
+      "input": "[5,0,-1,-7,-8]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[-1,-1,-1,-1,-1]",
       "expectedOutput": "0"
+    },
+    {
+      "input": "[-1,-8,0,5,-7,-1,-8,0,5,-7]",
+      "expectedOutput": "53"
+    },
+    {
+      "input": "[-2,-16,0,10,-14]",
+      "expectedOutput": "28"
+    },
+    {
+      "input": "[0,-7,1,6,-6]",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "[-2,-9,-1,4,-8]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[1,8,0,-5,7]",
+      "expectedOutput": "66"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

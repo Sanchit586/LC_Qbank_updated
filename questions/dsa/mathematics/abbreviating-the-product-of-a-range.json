@@ -79,16 +79,72 @@
       "expectedOutput": "\"7219856259e3\""
     },
     {
-      "input": "left = 1, right = 4",
+      "input": "2\n4",
       "expectedOutput": "\"24e0\""
     },
     {
-      "input": "left = 2, right = 11",
-      "expectedOutput": "\"399168e2\""
+      "input": "3\n4",
+      "expectedOutput": "\"12e0\""
     },
     {
-      "input": "left = 371, right = 375",
-      "expectedOutput": "\"7219856259e3\""
+      "input": "4\n4",
+      "expectedOutput": "\"4e0\""
+    },
+    {
+      "input": "5\n4",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "6\n4",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "1\n0",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "1\n1",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "1\n2",
+      "expectedOutput": "\"2e0\""
+    },
+    {
+      "input": "1\n3",
+      "expectedOutput": "\"6e0\""
+    },
+    {
+      "input": "1\n5",
+      "expectedOutput": "\"12e1\""
+    },
+    {
+      "input": "1\n6",
+      "expectedOutput": "\"72e1\""
+    },
+    {
+      "input": "1\n7",
+      "expectedOutput": "\"504e1\""
+    },
+    {
+      "input": "1\n8",
+      "expectedOutput": "\"4032e1\""
+    },
+    {
+      "input": "1\n9",
+      "expectedOutput": "\"36288e1\""
+    },
+    {
+      "input": "1\n-1",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "1\n-2",
+      "expectedOutput": "\"1e0\""
+    },
+    {
+      "input": "1\n11",
+      "expectedOutput": "\"399168e2\""
     }
   ],
   "sqlSchema": null,

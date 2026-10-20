@@ -83,16 +83,72 @@
       "expectedOutput": "4"
     },
     {
-      "input": "n = 5, brightness = 5, intervals = [[6,12]]",
+      "input": "0\n5\n[[6,12]]",
       "expectedOutput": "14"
     },
     {
-      "input": "n = 2, brightness = 1, intervals = [[0,0],[2,2]]",
-      "expectedOutput": "2"
+      "input": "1\n5\n[[6,12]]",
+      "expectedOutput": "14"
     },
     {
-      "input": "n = 4, brightness = 2, intervals = [[1,3],[2,4]]",
-      "expectedOutput": "4"
+      "input": "2\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "3\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "4\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "6\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "7\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "8\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "9\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "-1\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "-2\n5\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "5\n0\n[[6,12]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "5\n1\n[[6,12]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "5\n2\n[[6,12]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "5\n3\n[[6,12]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "5\n4\n[[6,12]]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "5\n6\n[[6,12]]",
+      "expectedOutput": "14"
     }
   ],
   "sqlSchema": null,

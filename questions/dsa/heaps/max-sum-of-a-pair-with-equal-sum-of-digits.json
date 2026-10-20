@@ -69,11 +69,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "nums = [18,43,36,13,7]",
+      "input": "[18,43]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[36,13,7]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[18]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[18,7]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[7,13,36,43,18]",
       "expectedOutput": "54"
     },
     {
-      "input": "nums = [10,12,19,14]",
+      "input": "[7,13,18,36,43]",
+      "expectedOutput": "54"
+    },
+    {
+      "input": "[43,36,18,13,7]",
+      "expectedOutput": "54"
+    },
+    {
+      "input": "[18,18,18,18,18]",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "[18,43,36,13,7,18,43,36,13,7]",
+      "expectedOutput": "86"
+    },
+    {
+      "input": "[36,86,72,26,14]",
+      "expectedOutput": "108"
+    },
+    {
+      "input": "[19,44,37,14,8]",
+      "expectedOutput": "56"
+    },
+    {
+      "input": "[17,42,35,12,6]",
+      "expectedOutput": "52"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]",
       "expectedOutput": "-1"
     }
   ],

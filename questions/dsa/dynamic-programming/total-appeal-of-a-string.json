@@ -68,12 +68,76 @@
       "expectedOutput": "20"
     },
     {
-      "input": "s = \"abbca\"",
+      "input": "\"ab\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"bca\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"acbba\"",
       "expectedOutput": "28"
     },
     {
-      "input": "s = \"code\"",
-      "expectedOutput": "20"
+      "input": "\"abbcaabbca\"",
+      "expectedOutput": "126"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"abbcaacbba\"",
+      "expectedOutput": "126"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "35"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "35"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "70"
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "29"
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": "105"
     }
   ],
   "sqlSchema": null,

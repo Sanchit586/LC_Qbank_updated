@@ -83,16 +83,12 @@
       "expectedOutput": "\"(999+999)\""
     },
     {
-      "input": "expression = \"247+38\"",
-      "expectedOutput": "\"2(47+38)\""
+      "input": "\"83+742\"",
+      "expectedOutput": "\"(83+74)2\""
     },
     {
-      "input": "expression = \"12+34\"",
-      "expectedOutput": "\"1(2+3)4\""
-    },
-    {
-      "input": "expression = \"999+999\"",
-      "expectedOutput": "\"(999+999)\""
+      "input": "\"43+21\"",
+      "expectedOutput": "\"4(3+2)1\""
     }
   ],
   "sqlSchema": null,

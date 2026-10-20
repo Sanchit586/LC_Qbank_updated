@@ -70,12 +70,76 @@
       "expectedOutput": "[0,0,0]"
     },
     {
-      "input": "words = [\"jump\",\"run\",\"run\",\"jump\",\"run\"], k = 2",
-      "expectedOutput": "[3,4,4,3,4]"
+      "input": "[\"jump\",\"run\"]\n2",
+      "expectedOutput": "[0,0]"
     },
     {
-      "input": "words = [\"dog\",\"racer\",\"car\"], k = 2",
+      "input": "[\"run\",\"jump\",\"run\"]\n2",
+      "expectedOutput": "[0,3,0]"
+    },
+    {
+      "input": "[\"jump\"]\n2",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[\"run\",\"jump\",\"run\",\"run\",\"jump\"]\n2",
+      "expectedOutput": "[4,3,4,4,3]"
+    },
+    {
+      "input": "[\"jump\",\"jump\",\"run\",\"run\",\"run\"]\n2",
+      "expectedOutput": "[3,3,4,4,4]"
+    },
+    {
+      "input": "[\"run\",\"run\",\"run\",\"jump\",\"jump\"]\n2",
+      "expectedOutput": "[4,4,4,3,3]"
+    },
+    {
+      "input": "[\"jump\",\"jump\",\"jump\",\"jump\",\"jump\"]\n2",
+      "expectedOutput": "[4,4,4,4,4]"
+    },
+    {
+      "input": "[\"jump\",\"run\",\"run\",\"jump\",\"run\",\"jump\",\"run\",\"run\",\"jump\",\"run\"]\n2",
+      "expectedOutput": "[4,4,4,4,4,4,4,4,4,4]"
+    },
+    {
+      "input": "[\"a\"]\n2",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[\"\"]\n2",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n2",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n2",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n2",
+      "expectedOutput": "[0,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n2",
       "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n2",
+      "expectedOutput": "[1,0,0,1,1,1]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n2",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n2",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n2",
+      "expectedOutput": "[0,0]"
     }
   ],
   "sqlSchema": null,

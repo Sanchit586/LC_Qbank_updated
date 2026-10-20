@@ -73,12 +73,76 @@
       "expectedOutput": "[[\"alice\",\"b\"]]"
     },
     {
-      "input": "creators = [\"alice\",\"bob\",\"alice\",\"chris\"], ids = [\"one\",\"two\",\"three\",\"four\"], views = [5,10,5,4]",
+      "input": "[\"alice\",\"bob\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"bob\",\"two\"]]"
+    },
+    {
+      "input": "[\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"chris\",\"two\"]]"
+    },
+    {
+      "input": "[\"alice\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"one\"]]"
+    },
+    {
+      "input": "[\"chris\",\"alice\",\"bob\",\"alice\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"two\"]]"
+    },
+    {
+      "input": "[\"alice\",\"alice\",\"bob\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"two\"]]"
+    },
+    {
+      "input": "[\"chris\",\"bob\",\"alice\",\"alice\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"bob\",\"two\"]]"
+    },
+    {
+      "input": "[\"alice\",\"alice\",\"alice\",\"alice\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"alice\",\"two\"]]"
+    },
+    {
+      "input": "[\"alice\",\"bob\",\"alice\",\"chris\",\"alice\",\"bob\",\"alice\",\"chris\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
       "expectedOutput": "[[\"alice\",\"one\"],[\"bob\",\"two\"]]"
     },
     {
-      "input": "creators = [\"alice\",\"alice\",\"alice\"], ids = [\"a\",\"b\",\"c\"], views = [1,2,2]",
-      "expectedOutput": "[[\"alice\",\"b\"]]"
+      "input": "[\"a\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"a\",\"one\"]]"
+    },
+    {
+      "input": "[\"\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"\",\"one\"]]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"b\",\"two\"]]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"a\",\"two\"]]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"ba\",\"two\"]]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"bca\",\"two\"]]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"tea\",\"two\"]]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"dog\",\"two\"]]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"two\",\"two\"]]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"one\",\"two\",\"three\",\"four\"]\n[5,10,5,4]",
+      "expectedOutput": "[[\"world\",\"two\"]]"
     }
   ],
   "sqlSchema": null,

@@ -71,12 +71,76 @@
       "expectedOutput": "[20]"
     },
     {
-      "input": "nums = [3,1,6,8], queries = [1,5]",
+      "input": "[3,1]\n[1,5]",
+      "expectedOutput": "[2,6]"
+    },
+    {
+      "input": "[6,8]\n[1,5]",
+      "expectedOutput": "[12,4]"
+    },
+    {
+      "input": "[3]\n[1,5]",
+      "expectedOutput": "[2,2]"
+    },
+    {
+      "input": "[3,8]\n[1,5]",
+      "expectedOutput": "[9,5]"
+    },
+    {
+      "input": "[8,6,1,3]\n[1,5]",
       "expectedOutput": "[14,10]"
     },
     {
-      "input": "nums = [2,9,6,3], queries = [10]",
-      "expectedOutput": "[20]"
+      "input": "[1,3,6,8]\n[1,5]",
+      "expectedOutput": "[14,10]"
+    },
+    {
+      "input": "[8,6,3,1]\n[1,5]",
+      "expectedOutput": "[14,10]"
+    },
+    {
+      "input": "[3,3,3,3]\n[1,5]",
+      "expectedOutput": "[8,8]"
+    },
+    {
+      "input": "[3,1,6,8,3,1,6,8]\n[1,5]",
+      "expectedOutput": "[28,20]"
+    },
+    {
+      "input": "[6,2,12,16]\n[1,5]",
+      "expectedOutput": "[32,22]"
+    },
+    {
+      "input": "[4,2,7,9]\n[1,5]",
+      "expectedOutput": "[18,10]"
+    },
+    {
+      "input": "[2,0,5,7]\n[1,5]",
+      "expectedOutput": "[12,10]"
+    },
+    {
+      "input": "[-3,-1,-6,-8]\n[1,5]",
+      "expectedOutput": "[22,38]"
+    },
+    {
+      "input": "[0,0,0,0]\n[1,5]",
+      "expectedOutput": "[4,20]"
+    },
+    {
+      "input": "[1,1,1,1]\n[1,5]",
+      "expectedOutput": "[0,16]"
+    },
+    {
+      "input": "[0]\n[1,5]",
+      "expectedOutput": "[1,5]"
+    },
+    {
+      "input": "[1]\n[1,5]",
+      "expectedOutput": "[0,4]"
+    },
+    {
+      "input": "[-1]\n[1,5]",
+      "expectedOutput": "[2,6]"
     }
   ],
   "sqlSchema": null,

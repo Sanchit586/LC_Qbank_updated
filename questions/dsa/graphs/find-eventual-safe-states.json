@@ -74,14 +74,6 @@
     {
       "input": "[[1,2,3,4],[1,2],[3,4],[0,4],[]]",
       "expectedOutput": "[4]"
-    },
-    {
-      "input": "graph = [[1,2],[2,3],[5],[0],[5],[],[]]",
-      "expectedOutput": "[2,4,5,6]"
-    },
-    {
-      "input": "graph = [[1,2,3,4],[1,2],[3,4],[0,4],[]]",
-      "expectedOutput": "[4]"
     }
   ],
   "sqlSchema": null,

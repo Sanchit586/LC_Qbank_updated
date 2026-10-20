@@ -68,14 +68,6 @@
     {
       "input": "[[12345],[2],[1]]",
       "expectedOutput": "[[2],[0],[0]]"
-    },
-    {
-      "input": "grid = [[1,2],[3,4]]",
-      "expectedOutput": "[[24,12],[8,6]]"
-    },
-    {
-      "input": "grid = [[12345],[2],[1]]",
-      "expectedOutput": "[[2],[0],[0]]"
     }
   ],
   "sqlSchema": null,

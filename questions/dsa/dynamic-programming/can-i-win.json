@@ -84,15 +84,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "maxChoosableInteger = 10, desiredTotal = 11",
+      "input": "0\n11",
       "expectedOutput": "false"
     },
     {
-      "input": "maxChoosableInteger = 10, desiredTotal = 0",
+      "input": "1\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "5\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "6\n11",
       "expectedOutput": "true"
     },
     {
-      "input": "maxChoosableInteger = 10, desiredTotal = 1",
+      "input": "7\n11",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8\n11",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "9\n11",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-1\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2\n11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "10\n10",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n12",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n9",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n13",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "10\n8",
       "expectedOutput": "true"
     }
   ],

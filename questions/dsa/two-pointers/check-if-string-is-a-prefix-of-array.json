@@ -70,11 +70,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"iloveleetcode\", words = [\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "input": "\"ilovel\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"eetcode\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"i\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"iloveleetcode\", words = [\"apples\",\"i\",\"love\",\"leetcode\"]",
+      "input": "\"il\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edocteelevoli\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"iiiiii\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ILOVELEETCODE\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n[\"i\",\"love\",\"leetcode\",\"apples\"]",
       "expectedOutput": "false"
     }
   ],

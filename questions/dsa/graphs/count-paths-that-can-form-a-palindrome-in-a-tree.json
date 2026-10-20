@@ -73,12 +73,60 @@
       "expectedOutput": "10"
     },
     {
-      "input": "parent = [-1,0,0,1,1,2], s = \"acaabc\"",
+      "input": "[-1,0,0,1,1,2]\n\"cbaaca\"",
       "expectedOutput": "8"
     },
     {
-      "input": "parent = [-1,0,0,0,0], s = \"aaaaa\"",
+      "input": "[-1,0,0,1,1,2]\n\"acaabcacaabc\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"aaaaaa\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"acaabccbaaca\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"racecar\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-1,0,0,1,1,2]\n\"leetcode\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"aaaaaaaaaa\"",
       "expectedOutput": "10"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"abcde\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"edcba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"racecar\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"hello\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"leetcode\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"world\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-1,0,0,0,0]\n\"acaabc\"",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

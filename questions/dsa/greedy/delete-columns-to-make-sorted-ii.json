@@ -83,16 +83,72 @@
       "expectedOutput": "3"
     },
     {
-      "input": "strs = [\"ca\",\"bb\",\"ac\"]",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "strs = [\"xc\",\"yb\",\"za\"]",
+      "input": "[\"ca\"]",
       "expectedOutput": "0"
     },
     {
-      "input": "strs = [\"zyx\",\"wvu\",\"tsr\"]",
+      "input": "[\"bb\",\"ac\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ca\",\"ac\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ca\",\"bb\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"ac\",\"bb\",\"ca\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ca\",\"ca\",\"ca\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ca\",\"bb\",\"ac\",\"ca\",\"bb\",\"ac\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
       "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

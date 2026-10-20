@@ -81,15 +81,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"1234\"",
+      "input": "\"12\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"050043\"",
+      "input": "\"34\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"4321\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"9080701\"",
+      "input": "\"12341234\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1111\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"12344321\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"050\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"043\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"05\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"340050\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"050043050043\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"000000\"",
       "expectedOutput": "false"
     }
   ],

@@ -66,12 +66,76 @@
       "expectedOutput": "\"-10\""
     },
     {
-      "input": "num = 100",
-      "expectedOutput": "\"202\""
+      "input": "99",
+      "expectedOutput": "\"201\""
     },
     {
-      "input": "num = -7",
-      "expectedOutput": "\"-10\""
+      "input": "101",
+      "expectedOutput": "\"203\""
+    },
+    {
+      "input": "98",
+      "expectedOutput": "\"200\""
+    },
+    {
+      "input": "102",
+      "expectedOutput": "\"204\""
+    },
+    {
+      "input": "97",
+      "expectedOutput": "\"166\""
+    },
+    {
+      "input": "103",
+      "expectedOutput": "\"205\""
+    },
+    {
+      "input": "200",
+      "expectedOutput": "\"404\""
+    },
+    {
+      "input": "50",
+      "expectedOutput": "\"101\""
+    },
+    {
+      "input": "-100",
+      "expectedOutput": "\"-202\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"2\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"3\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"4\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"-1\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"-2\""
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "\"-3\""
     }
   ],
   "sqlSchema": null,

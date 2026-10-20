@@ -64,12 +64,76 @@
       "expectedOutput": "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]"
     },
     {
-      "input": "s = [\"h\",\"e\",\"l\",\"l\",\"o\"]",
-      "expectedOutput": "[\"o\",\"l\",\"l\",\"e\",\"h\"]"
+      "input": "[\"h\",\"e\"]",
+      "expectedOutput": "[\"e\",\"h\"]"
     },
     {
-      "input": "s = [\"H\",\"a\",\"n\",\"n\",\"a\",\"h\"]",
-      "expectedOutput": "[\"h\",\"a\",\"n\",\"n\",\"a\",\"H\"]"
+      "input": "[\"l\",\"l\",\"o\"]",
+      "expectedOutput": "[\"o\",\"l\",\"l\"]"
+    },
+    {
+      "input": "[\"h\"]",
+      "expectedOutput": "[\"h\"]"
+    },
+    {
+      "input": "[\"h\",\"o\"]",
+      "expectedOutput": "[\"o\",\"h\"]"
+    },
+    {
+      "input": "[\"o\",\"l\",\"l\",\"e\",\"h\"]",
+      "expectedOutput": "[\"h\",\"e\",\"l\",\"l\",\"o\"]"
+    },
+    {
+      "input": "[\"e\",\"h\",\"l\",\"l\",\"o\"]",
+      "expectedOutput": "[\"o\",\"l\",\"l\",\"h\",\"e\"]"
+    },
+    {
+      "input": "[\"o\",\"l\",\"l\",\"h\",\"e\"]",
+      "expectedOutput": "[\"e\",\"h\",\"l\",\"l\",\"o\"]"
+    },
+    {
+      "input": "[\"h\",\"h\",\"h\",\"h\",\"h\"]",
+      "expectedOutput": "[\"h\",\"h\",\"h\",\"h\",\"h\"]"
+    },
+    {
+      "input": "[\"h\",\"e\",\"l\",\"l\",\"o\",\"h\",\"e\",\"l\",\"l\",\"o\"]",
+      "expectedOutput": "[\"o\",\"l\",\"l\",\"e\",\"h\",\"o\",\"l\",\"l\",\"e\",\"h\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"b\",\"a\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[\"ba\",\"ab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[\"cab\",\"bca\",\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[\"bat\",\"nat\",\"ate\",\"tan\",\"tea\",\"eat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[\"act\",\"god\",\"tac\",\"dog\",\"cat\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[\"three\",\"two\",\"one\"]"
     }
   ],
   "sqlSchema": null,

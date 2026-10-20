@@ -82,15 +82,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = \"aaaa\", word2 = \"bccb\"",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "word1 = \"abcdeef\", word2 = \"abaaacc\"",
+      "input": "\"aa\"\n\"bccb\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = \"cccddabba\", word2 = \"babababab\"",
+      "input": "\"a\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaaaaa\"\n\"bccb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"AAAA\"\n\"bccb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"\n\"bccb\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aA\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"0\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"121\"\n\"bccb\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"racecar\"\n\"bccb\"",
       "expectedOutput": "true"
     }
   ],

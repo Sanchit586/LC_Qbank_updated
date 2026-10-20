@@ -83,16 +83,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "nums = [2,3,1,4], target1 = 1, target2 = 5",
+      "input": "[2,3]\n1\n5",
       "expectedOutput": "1"
     },
     {
-      "input": "nums = [1,0,0], target1 = 1, target2 = 0",
-      "expectedOutput": "3"
+      "input": "[1,4]\n1\n5",
+      "expectedOutput": "0"
     },
     {
-      "input": "nums = [7], target1 = 1, target2 = 7",
+      "input": "[2]\n1\n5",
       "expectedOutput": "0"
+    },
+    {
+      "input": "[2,4]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[4,1,3,2]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4]\n1\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,3,2,1]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,2,2,2]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,3,1,4,2,3,1,4]\n1\n5",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,6,2,8]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[3,4,2,5]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,0,3]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-2,-3,-1,-4]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n1\n5",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

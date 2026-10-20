@@ -94,20 +94,68 @@
       "expectedOutput": "\"aca\""
     },
     {
-      "input": "s = \"baba\", target = \"abba\"",
+      "input": "\"ba\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"\n\"abba\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"abab\"\n\"abba\"",
       "expectedOutput": "\"baab\""
     },
     {
-      "input": "s = \"baba\", target = \"bbaa\"",
+      "input": "\"babababa\"\n\"abba\"",
+      "expectedOutput": "\"abbaabba\""
+    },
+    {
+      "input": "\"bbbb\"\n\"abba\"",
+      "expectedOutput": "\"bbbb\""
+    },
+    {
+      "input": "\"babaabab\"\n\"abba\"",
+      "expectedOutput": "\"abbaabba\""
+    },
+    {
+      "input": "\"a\"\n\"abba\"",
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"abc\", target = \"abb\"",
+      "input": "\"aa\"\n\"abba\"",
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"aac\", target = \"abb\"",
-      "expectedOutput": "\"aca\""
+      "input": "\"ab\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"\n\"abba\"",
+      "expectedOutput": "\"baab\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aab\"\n\"abba\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"racecar\"\n\"abba\"",
+      "expectedOutput": "\"acrerca\""
     }
   ],
   "sqlSchema": null,

@@ -82,15 +82,71 @@
       "expectedOutput": "3"
     },
     {
-      "input": "patterns = [\"a\",\"abc\",\"bc\",\"d\"], word = \"abc\"",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "patterns = [\"a\",\"b\",\"c\"], word = \"aaaaabbbbb\"",
+      "input": "[\"a\",\"abc\"]\n\"abc\"",
       "expectedOutput": "2"
     },
     {
-      "input": "patterns = [\"a\",\"a\",\"a\"], word = \"ab\"",
+      "input": "[\"bc\",\"d\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"d\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"d\",\"bc\",\"abc\",\"a\"]\n\"abc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\",\"a\",\"a\",\"a\"]\n\"abc\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"a\",\"abc\",\"bc\",\"d\",\"a\",\"abc\",\"bc\",\"d\"]\n\"abc\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"abc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"abc\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"abc\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n\"abc\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n\"abc\"",
       "expectedOutput": "3"
     }
   ],

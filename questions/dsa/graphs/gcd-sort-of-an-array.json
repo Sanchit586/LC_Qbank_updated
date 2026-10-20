@@ -83,19 +83,75 @@
     },
     {
       "input": "[10,5,9,3,15]",
-      "expectedOutput": "true\nWe can sort [10,5,9,3,15] by performing the following operations:\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [15,5,9,3,10]\n- Swap 15 and 3 because gcd(15,3) = 3. nums = [3,5,9,15,10]\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [3,5,9,10,15]"
-    },
-    {
-      "input": "nums = [7,21,3]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [5,2,6,2]",
+      "input": "[7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[21,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[7,3]",
       "expectedOutput": "false"
     },
     {
-      "input": "nums = [10,5,9,3,15]",
-      "expectedOutput": "true\nWe can sort [10,5,9,3,15] by performing the following operations:\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [15,5,9,3,10]\n- Swap 15 and 3 because gcd(15,3) = 3. nums = [3,5,9,15,10]\n- Swap 10 and 15 because gcd(10,15) = 5. nums = [3,5,9,10,15]"
+      "input": "[7,21]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,21,7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,7,21]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[21,7,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[7,7,7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[7,21,3,7,21,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[14,42,6]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[8,22,4]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[6,20,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-7,-21,-3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

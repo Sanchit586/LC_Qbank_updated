@@ -81,16 +81,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "nums = [10,2], sum = 13",
+      "input": "[10]\n13",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[2]\n13",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[2,10]\n13",
       "expectedOutput": "3"
     },
     {
-      "input": "nums = [6,3], sum = 8",
+      "input": "[10,10]\n13",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[10,2,10,2]\n13",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[20,4]\n13",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[11,3]\n13",
       "expectedOutput": "2"
     },
     {
-      "input": "nums = [2,2], sum = 7",
+      "input": "[9,1]\n13",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1]\n13",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "[1]\n13",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2]\n13",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[2,1]\n13",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2,3]\n13",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[3,2,1]\n13",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1]\n13",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,2,3,4,5]\n13",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[5,4,3,2,1]\n13",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

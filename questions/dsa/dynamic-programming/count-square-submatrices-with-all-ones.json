@@ -67,14 +67,6 @@
     {
       "input": "[[1,0,1],[1,1,0],[1,1,0]]",
       "expectedOutput": "7"
-    },
-    {
-      "input": "matrix =\n[\n  [0,1,1,1],\n  [1,1,1,1],\n  [0,1,1,1]\n]",
-      "expectedOutput": "15"
-    },
-    {
-      "input": "matrix = \n[\n  [1,0,1],\n  [1,1,0],\n  [1,1,0]\n]",
-      "expectedOutput": "7"
     }
   ],
   "sqlSchema": null,

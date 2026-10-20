@@ -69,11 +69,75 @@
       "expectedOutput": "\"Dire\""
     },
     {
-      "input": "senate = \"RD\"",
+      "input": "\"R\"",
       "expectedOutput": "\"Radiant\""
     },
     {
-      "input": "senate = \"RDD\"",
+      "input": "\"D\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"DR\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"RDRD\"",
+      "expectedOutput": "\"Radiant\""
+    },
+    {
+      "input": "\"RR\"",
+      "expectedOutput": "\"Radiant\""
+    },
+    {
+      "input": "\"RDDR\"",
+      "expectedOutput": "\"Radiant\""
+    },
+    {
+      "input": "\"rd\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"Dire\""
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "\"Dire\""
     }
   ],

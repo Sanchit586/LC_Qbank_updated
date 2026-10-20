@@ -73,12 +73,76 @@
       "expectedOutput": "20"
     },
     {
-      "input": "buses = [10,20], passengers = [2,17,18,19], capacity = 2",
+      "input": "[10]\n[2,17,18,19]\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[20]\n[2,17,18,19]\n2",
       "expectedOutput": "16"
     },
     {
-      "input": "buses = [20,30,10], passengers = [19,13,26,4,25,11,21], capacity = 2",
+      "input": "[20,10]\n[2,17,18,19]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[10,10]\n[2,17,18,19]\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[10,20,10,20]\n[2,17,18,19]\n2",
       "expectedOutput": "20"
+    },
+    {
+      "input": "[20,40]\n[2,17,18,19]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[11,21]\n[2,17,18,19]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[9,19]\n[2,17,18,19]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[-10,-20]\n[2,17,18,19]\n2",
+      "expectedOutput": "-10"
+    },
+    {
+      "input": "[0,0]\n[2,17,18,19]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1]\n[2,17,18,19]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]\n[2,17,18,19]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n[2,17,18,19]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n[2,17,18,19]\n2",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,2]\n[2,17,18,19]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,1]\n[2,17,18,19]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1,1]\n[2,17,18,19]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,2,3]\n[2,17,18,19]\n2",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

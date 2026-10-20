@@ -88,15 +88,63 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "grid = [\"@.a..\",\"###.#\",\"b.A.B\"]",
+      "input": "[\"@.a..\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"@.a..\",\"b.A.B\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"@.a..\",\"###.#\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"b.A.B\",\"###.#\",\"@.a..\"]",
       "expectedOutput": "8"
     },
     {
-      "input": "grid = [\"@..aA\",\"..B#.\",\"....b\"]",
+      "input": "[\"###.#\",\"@.a..\",\"b.A.B\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"b.A.B\",\"@.a..\",\"###.#\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"@.a..\",\"@.a..\",\"@.a..\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"@.a..\",\"###.#\",\"b.A.B\",\"@.a..\",\"###.#\",\"b.A.B\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"@..aA\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"@..aA\",\"....b\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"@..aA\",\"..B#.\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"....b\",\"..B#.\",\"@..aA\"]",
       "expectedOutput": "6"
     },
     {
-      "input": "grid = [\"@Aa\"]",
+      "input": "[\"@..aA\",\"@..aA\",\"@..aA\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"@..aA\",\"..B#.\",\"....b\",\"@..aA\",\"..B#.\",\"....b\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"@Aa\",\"@Aa\"]",
       "expectedOutput": "-1"
     }
   ],

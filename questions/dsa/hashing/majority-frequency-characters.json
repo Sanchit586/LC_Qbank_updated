@@ -78,19 +78,75 @@
     },
     {
       "input": "\"pfpfgi\"",
-      "expectedOutput": "\"fp\""
+      "expectedOutput": "\"pf\""
     },
     {
-      "input": "s = \"aaabbbccdddde\"",
+      "input": "\"aaabbb\"",
       "expectedOutput": "\"ab\""
     },
     {
-      "input": "s = \"abcd\"",
-      "expectedOutput": "\"abcd\""
+      "input": "\"ccdddde\"",
+      "expectedOutput": "\"d\""
     },
     {
-      "input": "s = \"pfpfgi\"",
-      "expectedOutput": "\"fp\""
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"eddddccbbbaaa\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"AAABBBCCDDDDE\"",
+      "expectedOutput": "\"AB\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"aA\""
     }
   ],
   "sqlSchema": null,

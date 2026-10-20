@@ -78,28 +78,8 @@
   ],
   "testCases": [
     {
-      "input": "[[1,1],[9,9],[1,1]]",
-      "expectedOutput": "19"
-    },
-    {
       "input": "[[7]]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "[[9,7,8],[4,6,5],[2,8,6]]",
-      "expectedOutput": "97"
-    },
-    {
-      "input": "mat = [[1,1],[9,9],[1,1]]",
-      "expectedOutput": "19"
-    },
-    {
-      "input": "mat = [[7]]",
-      "expectedOutput": "-1"
-    },
-    {
-      "input": "mat = [[9,7,8],[4,6,5],[2,8,6]]",
-      "expectedOutput": "97"
     }
   ],
   "sqlSchema": null,

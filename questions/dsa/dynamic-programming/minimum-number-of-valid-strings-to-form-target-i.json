@@ -92,15 +92,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "words = [\"abc\",\"aaaaa\",\"bcdef\"], target = \"aabcdabc\"",
+      "input": "[\"abc\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"abc\",\"bcdef\"]\n\"aabcdabc\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"abc\",\"aaaaa\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"bcdef\",\"aaaaa\",\"abc\"]\n\"aabcdabc\"",
       "expectedOutput": "3"
     },
     {
-      "input": "words = [\"abababab\",\"ab\"], target = \"ababaababa\"",
-      "expectedOutput": "2"
+      "input": "[\"aaaaa\",\"abc\",\"bcdef\"]\n\"aabcdabc\"",
+      "expectedOutput": "3"
     },
     {
-      "input": "words = [\"abcdef\"], target = \"xyz\"",
+      "input": "[\"bcdef\",\"abc\",\"aaaaa\"]\n\"aabcdabc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"abc\",\"aaaaa\",\"bcdef\",\"abc\",\"aaaaa\",\"bcdef\"]\n\"aabcdabc\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"aabcdabc\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"aabcdabc\"",
       "expectedOutput": "-1"
     }
   ],

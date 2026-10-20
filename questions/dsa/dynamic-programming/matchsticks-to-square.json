@@ -70,11 +70,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "matchsticks = [1,1,2,2,2]",
+      "input": "[1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,2,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,2,2,1,1]",
       "expectedOutput": "true"
     },
     {
-      "input": "matchsticks = [3,3,3,3,4]",
+      "input": "[1,1,1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,2,2,2,1,1,2,2,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,2,4,4,4]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,2,3,3,3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,-1,-2,-2,-2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,1]",
       "expectedOutput": "false"
     }
   ],

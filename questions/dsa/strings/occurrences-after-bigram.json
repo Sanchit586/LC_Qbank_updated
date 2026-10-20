@@ -70,12 +70,76 @@
       "expectedOutput": "[\"we\",\"rock\"]"
     },
     {
-      "input": "text = \"alice is a good girl she is a good student\", first = \"a\", second = \"good\"",
-      "expectedOutput": "[\"girl\",\"student\"]"
+      "input": "\"alice is a good girl \"\n\"a\"\n\"good\"",
+      "expectedOutput": "[\"girl\"]"
     },
     {
-      "input": "text = \"we will we will rock you\", first = \"we\", second = \"will\"",
-      "expectedOutput": "[\"we\",\"rock\"]"
+      "input": "\"she is a good student\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[\"student\"]"
+    },
+    {
+      "input": "\"a\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"al\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"tneduts doog a si ehs lrig doog a si ecila\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"b\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ba\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abba\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcde\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"edcba\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aab\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aA\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"0\"\n\"a\"\n\"good\"",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

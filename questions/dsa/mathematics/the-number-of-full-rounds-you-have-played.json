@@ -69,12 +69,60 @@
       "expectedOutput": "22"
     },
     {
-      "input": "loginTime = \"09:31\", logoutTime = \"10:14\"",
-      "expectedOutput": "1"
+      "input": "\"13:90\"\n\"10:14\"",
+      "expectedOutput": "78"
     },
     {
-      "input": "loginTime = \"21:30\", logoutTime = \"03:00\"",
-      "expectedOutput": "22"
+      "input": "\"00000\"\n\"10:14\"",
+      "expectedOutput": "40"
+    },
+    {
+      "input": "\"09:31\"\n\"41:01\"",
+      "expectedOutput": "125"
+    },
+    {
+      "input": "\"09:31\"\n\"11111\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"03:12\"\n\"03:00\"",
+      "expectedOutput": "95"
+    },
+    {
+      "input": "\"22222\"\n\"03:00\"",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "\"21:30\"\n\"00:30\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "\"21:30\"\n\"00000\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"13:90\"\n\"41:01\"",
+      "expectedOutput": "106"
+    },
+    {
+      "input": "\"13:90\"\n\"11111\"",
+      "expectedOutput": "82"
+    },
+    {
+      "input": "\"00000\"\n\"41:01\"",
+      "expectedOutput": "164"
+    },
+    {
+      "input": "\"00000\"\n\"11111\"",
+      "expectedOutput": "44"
+    },
+    {
+      "input": "\"09:31\"\n\"03:00\"",
+      "expectedOutput": "69"
+    },
+    {
+      "input": "\"21:30\"\n\"10:14\"",
+      "expectedOutput": "50"
     }
   ],
   "sqlSchema": null,

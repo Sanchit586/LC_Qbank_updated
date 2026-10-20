@@ -73,12 +73,76 @@
       "expectedOutput": "[2,0,2]"
     },
     {
-      "input": "wordsContainer = [\"abcd\",\"bcd\",\"xbcd\"], wordsQuery = [\"cd\",\"bcd\",\"xyz\"]",
+      "input": "[\"abcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abcd\",\"bcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
       "expectedOutput": "[1,1,1]"
     },
     {
-      "input": "wordsContainer = [\"abcdefgh\",\"poiuygh\",\"ghghgh\"], wordsQuery = [\"gh\",\"acbfgh\",\"acbfegh\"]",
-      "expectedOutput": "[2,0,2]"
+      "input": "[\"xbcd\",\"bcd\",\"abcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "[\"abcd\",\"abcd\",\"abcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abcd\",\"bcd\",\"xbcd\",\"abcd\",\"bcd\",\"xbcd\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[1,1,1]"
+    },
+    {
+      "input": "[\"a\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[3,3,0]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[1,1,0]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[\"cd\",\"bcd\",\"xyz\"]",
+      "expectedOutput": "[3,3,0]"
     }
   ],
   "sqlSchema": null,

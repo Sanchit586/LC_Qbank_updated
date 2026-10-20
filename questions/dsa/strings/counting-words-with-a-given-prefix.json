@@ -69,11 +69,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "words = [\"pay\",\"attention\",\"practice\",\"attend\"], pref = \"at\"",
+      "input": "[\"pay\",\"attention\"]\n\"at\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"practice\",\"attend\"]\n\"at\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"pay\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"pay\",\"attend\"]\n\"at\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"attend\",\"practice\",\"attention\",\"pay\"]\n\"at\"",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [\"leetcode\",\"win\",\"loops\",\"success\"], pref = \"code\"",
+      "input": "[\"attend\",\"attention\",\"pay\",\"practice\"]\n\"at\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"practice\",\"pay\",\"attention\",\"attend\"]\n\"at\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"pay\",\"pay\",\"pay\",\"pay\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"pay\",\"attention\",\"practice\",\"attend\",\"pay\",\"attention\",\"practice\",\"attend\"]\n\"at\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"a\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"at\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"at\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"at\"",
       "expectedOutput": "0"
     }
   ],

@@ -79,16 +79,72 @@
       "expectedOutput": "\"lovely\""
     },
     {
-      "input": "s = \"Hello\"",
+      "input": "\"He\"",
+      "expectedOutput": "\"he\""
+    },
+    {
+      "input": "\"llo\"",
+      "expectedOutput": "\"llo\""
+    },
+    {
+      "input": "\"H\"",
+      "expectedOutput": "\"h\""
+    },
+    {
+      "input": "\"olleH\"",
+      "expectedOutput": "\"olleh\""
+    },
+    {
+      "input": "\"HelloHello\"",
+      "expectedOutput": "\"hellohello\""
+    },
+    {
+      "input": "\"HHHHH\"",
+      "expectedOutput": "\"hhhhh\""
+    },
+    {
+      "input": "\"HelloolleH\"",
+      "expectedOutput": "\"helloolleh\""
+    },
+    {
+      "input": "\"hello\"",
       "expectedOutput": "\"hello\""
     },
     {
-      "input": "s = \"here\"",
-      "expectedOutput": "\"here\""
+      "input": "\"HELLO\"",
+      "expectedOutput": "\"hello\""
     },
     {
-      "input": "s = \"LOVELY\"",
-      "expectedOutput": "\"lovely\""
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
     }
   ],
   "sqlSchema": null,

@@ -72,26 +72,82 @@
   "testCases": [
     {
       "input": "[11,10,18,14,12,11,16,20,13,11]",
-      "expectedOutput": "3"
+      "expectedOutput": "8"
     },
     {
       "input": "[17,32,32,29,4,29,19,5,26,35,35,6,10,27,11,35,0,31]",
-      "expectedOutput": "4"
+      "expectedOutput": "15"
     },
     {
       "input": "[1,8,34,2,3,22,18,27,3,1,0,12,21,23,8,7,17]",
-      "expectedOutput": "0"
+      "expectedOutput": "14"
     },
     {
-      "input": "arr = [1,2,3,10,4,2,3,5]",
+      "input": "[11,10,18,14,12]",
       "expectedOutput": "3"
     },
     {
-      "input": "arr = [5,4,3,2,1]",
-      "expectedOutput": "4"
+      "input": "[11,16,20,13,11]",
+      "expectedOutput": "2"
     },
     {
-      "input": "arr = [1,2,3]",
+      "input": "[11]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[11,11]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[11,10]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[11,13,20,16,11,12,14,18,10,11]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[10,11,11,11,12,13,14,16,18,20]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[20,18,16,14,13,12,11,11,11,10]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[11,11,11,11,11]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[22,20,36,28,24,22,32,40,26,22]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[12,11,19,15,13,12,17,21,14,12]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[10,9,17,13,11,10,15,19,12,10]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-11,-10,-18,-14,-12,-11,-16,-20,-13,-11]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
       "expectedOutput": "0"
     }
   ],

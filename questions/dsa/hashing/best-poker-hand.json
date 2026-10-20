@@ -83,16 +83,72 @@
       "expectedOutput": "\"Pair\""
     },
     {
-      "input": "ranks = [13,2,3,1,9], suits = [\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "input": "[13,2]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
       "expectedOutput": "\"Flush\""
     },
     {
-      "input": "ranks = [4,4,2,4,4], suits = [\"d\",\"a\",\"a\",\"b\",\"c\"]",
-      "expectedOutput": "\"Three of a Kind\""
+      "input": "[3,1,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
     },
     {
-      "input": "ranks = [10,10,2,12,9], suits = [\"a\",\"b\",\"c\",\"a\",\"d\"]",
-      "expectedOutput": "\"Pair\""
+      "input": "[13]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[13,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[9,1,3,2,13]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[1,2,3,9,13]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[13,9,3,2,1]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[13,13,13,13,13]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[13,2,3,1,9,13,2,3,1,9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[26,4,6,2,18]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[14,3,4,2,10]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[12,1,2,0,8]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[-13,-2,-3,-1,-9]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[0,0,0,0]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[1,1,1,1]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[0]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
+    },
+    {
+      "input": "[1]\n[\"a\",\"a\",\"a\",\"a\",\"a\"]",
+      "expectedOutput": "\"Flush\""
     }
   ],
   "sqlSchema": null,

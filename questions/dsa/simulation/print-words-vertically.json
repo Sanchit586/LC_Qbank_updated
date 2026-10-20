@@ -78,16 +78,72 @@
       "expectedOutput": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
     },
     {
-      "input": "s = \"HOW ARE YOU\"",
-      "expectedOutput": "[\"HAY\",\"ORO\",\"WEU\"]"
+      "input": "\"HOW A\"",
+      "expectedOutput": "[\"HA\",\"O\",\"W\"]"
     },
     {
-      "input": "s = \"TO BE OR NOT TO BE\"",
-      "expectedOutput": "[\"TBONTB\",\"OEROOE\",\"   T\"]"
+      "input": "\"RE YOU\"",
+      "expectedOutput": "[\"RY\",\"EO\",\" U\"]"
     },
     {
-      "input": "s = \"CONTEST IS COMING\"",
-      "expectedOutput": "[\"CIC\",\"OSO\",\"N M\",\"T I\",\"E N\",\"S G\",\"T\"]"
+      "input": "\"H\"",
+      "expectedOutput": "[\"H\"]"
+    },
+    {
+      "input": "\"HO\"",
+      "expectedOutput": "[\"H\",\"O\"]"
+    },
+    {
+      "input": "\"UOY ERA WOH\"",
+      "expectedOutput": "[\"UEW\",\"ORO\",\"YAH\"]"
+    },
+    {
+      "input": "\"HHHHHH\"",
+      "expectedOutput": "[\"H\",\"H\",\"H\",\"H\",\"H\",\"H\"]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[\"b\"]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[\"b\",\"a\"]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[\"a\",\"b\",\"a\"]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[\"a\",\"b\",\"b\",\"a\"]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[\"a\",\"a\",\"a\",\"a\",\"a\"]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[\"e\",\"d\",\"c\",\"b\",\"a\"]"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "[\"a\",\"a\",\"b\"]"
     }
   ],
   "sqlSchema": null,

@@ -68,12 +68,76 @@
       "expectedOutput": "\"ponter\""
     },
     {
-      "input": "s = \"string\"",
-      "expectedOutput": "\"rtsng\""
+      "input": "\"str\"",
+      "expectedOutput": "\"str\""
     },
     {
-      "input": "s = \"poiinter\"",
-      "expectedOutput": "\"ponter\""
+      "input": "\"ing\"",
+      "expectedOutput": "\"ng\""
+    },
+    {
+      "input": "\"s\"",
+      "expectedOutput": "\"s\""
+    },
+    {
+      "input": "\"st\"",
+      "expectedOutput": "\"st\""
+    },
+    {
+      "input": "\"gnirts\"",
+      "expectedOutput": "\"ngrts\""
+    },
+    {
+      "input": "\"stringstring\"",
+      "expectedOutput": "\"rtsgnstrng\""
+    },
+    {
+      "input": "\"ssssss\"",
+      "expectedOutput": "\"ssssss\""
+    },
+    {
+      "input": "\"stringgnirts\"",
+      "expectedOutput": "\"nggnstrrts\""
+    },
+    {
+      "input": "\"STRING\"",
+      "expectedOutput": "\"STRING\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
     }
   ],
   "sqlSchema": null,

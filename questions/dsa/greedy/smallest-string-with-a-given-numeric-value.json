@@ -67,12 +67,76 @@
       "expectedOutput": "\"aaszz\""
     },
     {
-      "input": "n = 3, k = 27",
-      "expectedOutput": "\"aay\""
+      "input": "1\n27",
+      "expectedOutput": "\"{\""
     },
     {
-      "input": "n = 5, k = 73",
-      "expectedOutput": "\"aaszz\""
+      "input": "2\n27",
+      "expectedOutput": "\"az\""
+    },
+    {
+      "input": "4\n27",
+      "expectedOutput": "\"aaax\""
+    },
+    {
+      "input": "5\n27",
+      "expectedOutput": "\"aaaaw\""
+    },
+    {
+      "input": "6\n27",
+      "expectedOutput": "\"aaaaav\""
+    },
+    {
+      "input": "7\n27",
+      "expectedOutput": "\"aaaaaau\""
+    },
+    {
+      "input": "8\n27",
+      "expectedOutput": "\"aaaaaaat\""
+    },
+    {
+      "input": "3\n26",
+      "expectedOutput": "\"aax\""
+    },
+    {
+      "input": "3\n28",
+      "expectedOutput": "\"aaz\""
+    },
+    {
+      "input": "3\n25",
+      "expectedOutput": "\"aaw\""
+    },
+    {
+      "input": "3\n29",
+      "expectedOutput": "\"abz\""
+    },
+    {
+      "input": "3\n24",
+      "expectedOutput": "\"aav\""
+    },
+    {
+      "input": "3\n30",
+      "expectedOutput": "\"acz\""
+    },
+    {
+      "input": "3\n54",
+      "expectedOutput": "\"bzz\""
+    },
+    {
+      "input": "3\n13",
+      "expectedOutput": "\"aak\""
+    },
+    {
+      "input": "3\n-27",
+      "expectedOutput": "\"aaC\""
+    },
+    {
+      "input": "3\n0",
+      "expectedOutput": "\"aa^\""
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "\"aa_\""
     }
   ],
   "sqlSchema": null,

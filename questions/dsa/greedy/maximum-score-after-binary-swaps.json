@@ -71,11 +71,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "nums = [2,1,5,2,3], s = \"01010\"",
+      "input": "[2,1]\n\"01010\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[5,2,3]\n\"01010\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[2]\n\"01010\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,3]\n\"01010\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[3,2,5,1,2]\n\"01010\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[1,2,2,3,5]\n\"01010\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[5,3,2,2,1]\n\"01010\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[2,2,2,2,2]\n\"01010\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[2,1,5,2,3,2,1,5,2,3]\n\"01010\"",
       "expectedOutput": "7"
     },
     {
-      "input": "nums = [4,7,2,9], s = \"0000\"",
+      "input": "[4,2,10,4,6]\n\"01010\"",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[3,2,6,3,4]\n\"01010\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,0,4,1,2]\n\"01010\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-2,-1,-5,-2,-3]\n\"01010\"",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "[0,0,0,0]\n\"01010\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n\"01010\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]\n\"01010\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n\"01010\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n\"01010\"",
       "expectedOutput": "0"
     }
   ],

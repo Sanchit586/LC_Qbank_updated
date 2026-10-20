@@ -80,16 +80,72 @@
       "expectedOutput": "\"i Love Leetcode\""
     },
     {
-      "input": "title = \"capiTalIze tHe titLe\"",
-      "expectedOutput": "\"Capitalize The Title\""
+      "input": "\"capiTalIze\"",
+      "expectedOutput": "\"Capitalize\""
     },
     {
-      "input": "title = \"First leTTeR of EACH Word\"",
-      "expectedOutput": "\"First Letter of Each Word\""
+      "input": "\" tHe titLe\"",
+      "expectedOutput": "\"The Title\""
     },
     {
-      "input": "title = \"i lOve leetcode\"",
-      "expectedOutput": "\"i Love Leetcode\""
+      "input": "\"c\"",
+      "expectedOutput": "\"c\""
+    },
+    {
+      "input": "\"ca\"",
+      "expectedOutput": "\"ca\""
+    },
+    {
+      "input": "\"eLtit eHt ezIlaTipac\"",
+      "expectedOutput": "\"Eltit Eht Ezilatipac\""
+    },
+    {
+      "input": "\"cccccc\"",
+      "expectedOutput": "\"Cccccc\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"Aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"Abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"Aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"Abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"Edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"Aab\""
     }
   ],
   "sqlSchema": null,

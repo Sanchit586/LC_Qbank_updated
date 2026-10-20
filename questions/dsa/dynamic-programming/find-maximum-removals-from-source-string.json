@@ -101,20 +101,68 @@
       "expectedOutput": "2"
     },
     {
-      "input": "source = \"abbaa\", pattern = \"aba\", targetIndices = [0,1,2]",
-      "expectedOutput": "1"
+      "input": "\"ab\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
     },
     {
-      "input": "source = \"bcda\", pattern = \"d\", targetIndices = [0,3]",
+      "input": "\"baa\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"a\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"aabba\"\n\"aba\"\n[0,1,2]",
       "expectedOutput": "2"
     },
     {
-      "input": "source = \"dda\", pattern = \"dda\", targetIndices = [0,1,2]",
+      "input": "\"abbaaabbaa\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaa\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"abbaaaabba\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ABBAA\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"b\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"aa\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"ba\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"aba\"\n\"aba\"\n[0,1,2]",
       "expectedOutput": "0"
     },
     {
-      "input": "source = \"yeyeykyded\", pattern = \"yeyyd\", targetIndices = [0,2,3,4]",
-      "expectedOutput": "2"
+      "input": "\"abba\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"edcba\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
+    },
+    {
+      "input": "\"aab\"\n\"aba\"\n[0,1,2]",
+      "expectedOutput": "-inf"
     }
   ],
   "sqlSchema": null,

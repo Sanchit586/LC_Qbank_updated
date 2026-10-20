@@ -69,12 +69,76 @@
       "expectedOutput": "6"
     },
     {
-      "input": "text = \"abdcdbc\", pattern = \"ac\"",
-      "expectedOutput": "4"
+      "input": "\"abd\"\n\"ac\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "text = \"aabb\", pattern = \"ab\"",
+      "input": "\"cdbc\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"a\"\n\"ac\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n\"ac\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"cbdcdba\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abdcdbcabdcdbc\"\n\"ac\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"ac\"",
       "expectedOutput": "6"
+    },
+    {
+      "input": "\"abdcdbccbdcdba\"\n\"ac\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"ABDCDBC\"\n\"ac\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"ac\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n\"ac\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ac\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n\"ac\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edcba\"\n\"ac\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"\n\"ac\"",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

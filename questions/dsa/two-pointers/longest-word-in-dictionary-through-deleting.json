@@ -71,12 +71,76 @@
       "expectedOutput": "\"a\""
     },
     {
-      "input": "s = \"abpcplea\", dictionary = [\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "input": "\"abpc\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"plea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"plea\""
+    },
+    {
+      "input": "\"a\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aelpcpba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abpcpleaabpcplea\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
       "expectedOutput": "\"apple\""
     },
     {
-      "input": "s = \"abpcplea\", dictionary = [\"a\",\"b\",\"c\"]",
-      "expectedOutput": "\"a\""
+      "input": "\"aaaaaa\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abpcpleaaelpcpba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"apple\""
+    },
+    {
+      "input": "\"ABPCPLEA\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aab\"\n[\"ale\",\"apple\",\"monkey\",\"plea\"]",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,

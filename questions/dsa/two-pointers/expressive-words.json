@@ -69,12 +69,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "s = \"heeellooo\", words = [\"hello\", \"hi\", \"helo\"]",
+      "input": "\"heee\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"llooo\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"h\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"he\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ooolleeeh\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"heeelloooheeellooo\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hhhhhh\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"heeelloooooolleeeh\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"heeellooo\"\n[\"hello\",\"hi\",\"helo\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"zzzzzyyyyy\", words = [\"zzyy\",\"zy\",\"zyy\"]",
-      "expectedOutput": "3"
+      "input": "\"HEEELLOOO\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"hello\",\"hi\",\"helo\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

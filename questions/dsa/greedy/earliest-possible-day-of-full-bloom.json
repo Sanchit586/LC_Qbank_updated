@@ -82,16 +82,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "plantTime = [1,4,3], growTime = [2,3,1]",
+      "input": "[1]\n[2,3,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[4,3]\n[2,3,1]",
       "expectedOutput": "9"
     },
     {
-      "input": "plantTime = [1,2,3,2], growTime = [2,1,2,1]",
+      "input": "[1,3]\n[2,3,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[1,4]\n[2,3,1]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[3,4,1]\n[2,3,1]",
       "expectedOutput": "9"
     },
     {
-      "input": "plantTime = [1], growTime = [1]",
+      "input": "[1,3,4]\n[2,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[4,3,1]\n[2,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[1,1,1]\n[2,3,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,4,3,1,4,3]\n[2,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[2,8,6]\n[2,3,1]",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[2,5,4]\n[2,3,1]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[0,3,2]\n[2,3,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[-1,-4,-3]\n[2,3,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0]\n[2,3,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0]\n[2,3,1]",
       "expectedOutput": "2"
+    },
+    {
+      "input": "[-1]\n[2,3,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,0]\n[2,3,1]",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

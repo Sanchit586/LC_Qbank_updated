@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "triplets = [[2,5,3],[1,8,4],[1,7,5]], target = [2,7,5]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "triplets = [[3,4,5],[4,5,6]], target = [3,2,5]",
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[5,7,2]",
       "expectedOutput": "false"
     },
     {
-      "input": "triplets = [[2,5,3],[2,3,4],[1,2,5],[5,2,3]], target = [5,5,5]",
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[2,5,7]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[7,5,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[2,2,2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[4,14,10]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[3,8,6]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[1,6,4]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[-2,-7,-5]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[0,0,0]",
       "expectedOutput": "true"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[1,1,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[1,2,3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[3,2,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[0,1,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[-10,0,10]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[1,0,0]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[2,5,3],[1,8,4],[1,7,5]]\n[0,0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[[3,4,5],[4,5,6]]\n[5,2,3]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

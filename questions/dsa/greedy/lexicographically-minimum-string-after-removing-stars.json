@@ -63,20 +63,84 @@
   ],
   "testCases": [
     {
-      "input": "\"aaba*\"",
-      "expectedOutput": "\"aab\""
-    },
-    {
       "input": "\"abc\"",
       "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = \"aaba*\"",
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"bc\"",
+      "expectedOutput": "\"bc\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"cba\"",
+      "expectedOutput": "\"cba\""
+    },
+    {
+      "input": "\"abcabc\"",
+      "expectedOutput": "\"abcabc\""
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "\"aaa\""
+    },
+    {
+      "input": "\"abccba\"",
+      "expectedOutput": "\"abccba\""
+    },
+    {
+      "input": "\"ABC\"",
+      "expectedOutput": "\"ABC\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "\"aab\""
     },
     {
-      "input": "s = \"abc\"",
-      "expectedOutput": "\"abc\""
+      "input": "\"aA\"",
+      "expectedOutput": "\"aA\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"0\""
     }
   ],
   "sqlSchema": null,

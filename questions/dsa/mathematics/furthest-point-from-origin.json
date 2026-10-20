@@ -80,16 +80,72 @@
       "expectedOutput": "7"
     },
     {
-      "input": "moves = \"L_RL__R\"",
+      "input": "\"L_R\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"L__R\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"L\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"L_\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"R__LR_L\"",
       "expectedOutput": "3"
     },
     {
-      "input": "moves = \"_R__LL_\"",
-      "expectedOutput": "5"
+      "input": "\"L_RL__RL_RL__R\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "moves = \"_______\"",
-      "expectedOutput": "7"
+      "input": "\"LLLLLL\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"L_RL__RR__LR_L\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

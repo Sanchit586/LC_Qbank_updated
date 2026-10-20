@@ -83,16 +83,72 @@
       "expectedOutput": "\"51\""
     },
     {
-      "input": "number = \"123\", digit = \"3\"",
-      "expectedOutput": "\"12\""
+      "input": "\"23\"\n\"3\"",
+      "expectedOutput": "\"2\""
     },
     {
-      "input": "number = \"1231\", digit = \"1\"",
-      "expectedOutput": "\"231\""
+      "input": "\"321\"\n\"3\"",
+      "expectedOutput": "\"21\""
     },
     {
-      "input": "number = \"551\", digit = \"5\"",
-      "expectedOutput": "\"51\""
+      "input": "\"123123\"\n\"3\"",
+      "expectedOutput": "\"12312\""
+    },
+    {
+      "input": "\"123321\"\n\"3\"",
+      "expectedOutput": "\"12321\""
+    },
+    {
+      "input": "\"12\"\n\"1\"",
+      "expectedOutput": "\"2\""
+    },
+    {
+      "input": "\"31\"\n\"1\"",
+      "expectedOutput": "\"3\""
+    },
+    {
+      "input": "\"1\"\n\"1\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"1321\"\n\"1\"",
+      "expectedOutput": "\"321\""
+    },
+    {
+      "input": "\"12311231\"\n\"1\"",
+      "expectedOutput": "\"2311231\""
+    },
+    {
+      "input": "\"1111\"\n\"1\"",
+      "expectedOutput": "\"111\""
+    },
+    {
+      "input": "\"12311321\"\n\"1\"",
+      "expectedOutput": "\"2311321\""
+    },
+    {
+      "input": "\"121\"\n\"1\"",
+      "expectedOutput": "\"21\""
+    },
+    {
+      "input": "\"5\"\n\"5\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"51\"\n\"5\"",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"55\"\n\"5\"",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "\"155\"\n\"5\"",
+      "expectedOutput": "\"15\""
+    },
+    {
+      "input": "\"551551\"\n\"5\"",
+      "expectedOutput": "\"55151\""
     }
   ],
   "sqlSchema": null,

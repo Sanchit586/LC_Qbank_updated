@@ -69,12 +69,76 @@
       "expectedOutput": "[-3,2,4,3]"
     },
     {
-      "input": "nums = [9,12,5,10,14,3,10], pivot = 10",
-      "expectedOutput": "[9,5,3,10,10,12,14]"
+      "input": "[9,12,5]\n10",
+      "expectedOutput": "[9,5,12]"
     },
     {
-      "input": "nums = [-3,4,3,2], pivot = 2",
-      "expectedOutput": "[-3,2,4,3]"
+      "input": "[10,14,3,10]\n10",
+      "expectedOutput": "[3,10,10,14]"
+    },
+    {
+      "input": "[9]\n10",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[9,10]\n10",
+      "expectedOutput": "[9,10]"
+    },
+    {
+      "input": "[9,12]\n10",
+      "expectedOutput": "[9,12]"
+    },
+    {
+      "input": "[10,3,14,10,5,12,9]\n10",
+      "expectedOutput": "[3,5,9,10,10,14,12]"
+    },
+    {
+      "input": "[3,5,9,10,10,12,14]\n10",
+      "expectedOutput": "[3,5,9,10,10,12,14]"
+    },
+    {
+      "input": "[14,12,10,10,9,5,3]\n10",
+      "expectedOutput": "[9,5,3,10,10,14,12]"
+    },
+    {
+      "input": "[9,9,9,9,9]\n10",
+      "expectedOutput": "[9,9,9,9,9]"
+    },
+    {
+      "input": "[9,12,5,10,14,3,10,9,12,5,10,14,3,10]\n10",
+      "expectedOutput": "[9,5,3,9,5,3,10,10,10,10,12,14,12,14]"
+    },
+    {
+      "input": "[18,24,10,20,28,6,20]\n10",
+      "expectedOutput": "[6,10,18,24,20,28,20]"
+    },
+    {
+      "input": "[10,13,6,11,15,4,11]\n10",
+      "expectedOutput": "[6,4,10,13,11,15,11]"
+    },
+    {
+      "input": "[8,11,4,9,13,2,9]\n10",
+      "expectedOutput": "[8,4,9,2,9,11,13]"
+    },
+    {
+      "input": "[-9,-12,-5,-10,-14,-3,-10]\n10",
+      "expectedOutput": "[-9,-12,-5,-10,-14,-3,-10]"
+    },
+    {
+      "input": "[0,0,0,0]\n10",
+      "expectedOutput": "[0,0,0,0]"
+    },
+    {
+      "input": "[1,1,1,1]\n10",
+      "expectedOutput": "[1,1,1,1]"
+    },
+    {
+      "input": "[0]\n10",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[1]\n10",
+      "expectedOutput": "[1]"
     }
   ],
   "sqlSchema": null,

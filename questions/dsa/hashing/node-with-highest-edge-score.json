@@ -69,11 +69,75 @@
       "expectedOutput": "0"
     },
     {
-      "input": "edges = [1,0,0,0,0,7,7,5]",
+      "input": "[1,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[5,7,7,0,0,0,0,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0,1,5,7,7]",
       "expectedOutput": "7"
     },
     {
-      "input": "edges = [2,0,0,2]",
+      "input": "[7,7,5,1,0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,0,0,0,0,7,7,5,1,0,0,0,0,7,7,5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,-1,-1,-1,-1,6,6,4]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[-1,0,0,0,0,-7,-7,-5]",
+      "expectedOutput": "-7"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1,1]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0,1,0]",
       "expectedOutput": "0"
     }
   ],

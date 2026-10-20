@@ -75,12 +75,76 @@
       "expectedOutput": "[-1]"
     },
     {
-      "input": "inorder = [9,3,15,20,7], postorder = [9,15,7,20,3]",
+      "input": "[9]\n[9,15,7,20,3]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[3,7,9,15,20]\n[9,15,7,20,3]",
+      "expectedOutput": "[3,null,20,7,null,null,15,9]"
+    },
+    {
+      "input": "[20,15,9,7,3]\n[9,15,7,20,3]",
+      "expectedOutput": "[3,20,null,null,7,15,null,null,9]"
+    },
+    {
+      "input": "[9,3,15,20,7]\n[3,20,7,15,9]",
+      "expectedOutput": "[9,null,15,3,7,null,null,20]"
+    },
+    {
+      "input": "[9,3,15,20,7]\n[9,15,7,20,3,9,15,7,20,3]",
       "expectedOutput": "[3,9,20,null,null,15,7]"
     },
     {
-      "input": "inorder = [-1], postorder = [-1]",
+      "input": "[-1]\n[-1,-1]",
       "expectedOutput": "[-1]"
+    },
+    {
+      "input": "[-1]\n[-1,1]",
+      "expectedOutput": "[-1]"
+    },
+    {
+      "input": "[9,3]\n[9,3]",
+      "expectedOutput": "[3,9]"
+    },
+    {
+      "input": "[9]\n[9,15]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[9]\n[9]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[9]\n[9,3]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[9]\n[9,9,9,9,9]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[9]\n[9,15,7,20,3,9,15,7,20,3]",
+      "expectedOutput": "[9]"
+    },
+    {
+      "input": "[3,7,9,15,20]\n[3,7,9,15,20]",
+      "expectedOutput": "[20,15,null,9,null,7,null,3]"
+    },
+    {
+      "input": "[3,7,9,15,20]\n[20,15,9,7,3]",
+      "expectedOutput": "[3,null,7,null,9,null,15,null,20]"
+    },
+    {
+      "input": "[3,7,9,15,20]\n[9,15,7,20,3,9,15,7,20,3]",
+      "expectedOutput": "[3,null,20,7,null,null,15,9]"
+    },
+    {
+      "input": "[20,15,9,7,3]\n[3,7,9,15,20]",
+      "expectedOutput": "[20,null,15,null,9,null,7,null,3]"
+    },
+    {
+      "input": "[20,15,9,7,3]\n[20,15,9,7,3]",
+      "expectedOutput": "[3,7,null,9,null,15,null,20]"
     }
   ],
   "sqlSchema": null,

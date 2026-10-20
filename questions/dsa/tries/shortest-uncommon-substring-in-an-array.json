@@ -71,12 +71,76 @@
       "expectedOutput": "[\"\",\"\",\"abcd\"]"
     },
     {
-      "input": "arr = [\"cab\",\"ad\",\"bad\",\"c\"]",
+      "input": "[\"cab\",\"ad\"]",
+      "expectedOutput": "[\"b\",\"d\"]"
+    },
+    {
+      "input": "[\"bad\",\"c\"]",
+      "expectedOutput": "[\"a\",\"c\"]"
+    },
+    {
+      "input": "[\"cab\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"cab\",\"c\"]",
+      "expectedOutput": "[\"a\",\"\"]"
+    },
+    {
+      "input": "[\"c\",\"bad\",\"ad\",\"cab\"]",
+      "expectedOutput": "[\"\",\"ba\",\"\",\"ab\"]"
+    },
+    {
+      "input": "[\"ad\",\"bad\",\"c\",\"cab\"]",
+      "expectedOutput": "[\"\",\"ba\",\"\",\"ab\"]"
+    },
+    {
+      "input": "[\"cab\",\"c\",\"bad\",\"ad\"]",
       "expectedOutput": "[\"ab\",\"\",\"ba\",\"\"]"
     },
     {
-      "input": "arr = [\"abc\",\"bcd\",\"abcd\"]",
-      "expectedOutput": "[\"\",\"\",\"abcd\"]"
+      "input": "[\"cab\",\"cab\",\"cab\",\"cab\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"cab\",\"ad\",\"bad\",\"c\",\"cab\",\"ad\",\"bad\",\"c\"]",
+      "expectedOutput": "[\"\",\"\",\"\",\"\",\"\",\"\",\"\",\"\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"\",\"\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[\"abc\",\"bca\",\"cab\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[\"eat\",\"tea\",\"an\",\"ate\",\"na\",\"b\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[\"at\",\"do\",\"ta\",\"go\",\"ct\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[\"n\",\"w\",\"h\"]"
     }
   ],
   "sqlSchema": null,

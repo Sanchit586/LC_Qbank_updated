@@ -67,12 +67,76 @@
       "expectedOutput": "20"
     },
     {
-      "input": "nums = [2,3,6,1,9,2], x = 5",
+      "input": "[2,3,6]\n5",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[1,9,2]\n5",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2]\n5",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,2]\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[2,3]\n5",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,9,1,6,3,2]\n5",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[1,2,2,3,6,9]\n5",
       "expectedOutput": "13"
     },
     {
-      "input": "nums = [2,4,6,8], x = 3",
-      "expectedOutput": "20"
+      "input": "[9,6,3,2,2,1]\n5",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[2,2,2,2,2]\n5",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[2,3,6,1,9,2,2,3,6,1,9,2]\n5",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "[4,6,12,2,18,4]\n5",
+      "expectedOutput": "46"
+    },
+    {
+      "input": "[3,4,7,2,10,3]\n5",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[1,2,5,0,8,1]\n5",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[-2,-3,-6,-1,-9,-2]\n5",
+      "expectedOutput": "-10"
+    },
+    {
+      "input": "[0,0,0,0]\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n5",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[0]\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n5",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

@@ -81,15 +81,67 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"2523533\"",
-      "expectedOutput": "\"23\""
+      "input": "\"252\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"221\"",
-      "expectedOutput": "\"21\""
+      "input": "\"3533\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"22\"",
+      "input": "\"2\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"25\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"3353252\"",
+      "expectedOutput": "\"32\""
+    },
+    {
+      "input": "\"25235332523533\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"222222\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"25235333353252\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"21\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"122\"",
+      "expectedOutput": "\"12\""
+    },
+    {
+      "input": "\"221221\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"222\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"221122\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"2222\"",
       "expectedOutput": "\"\""
     }
   ],

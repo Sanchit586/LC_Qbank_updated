@@ -105,23 +105,63 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"42\"",
-      "expectedOutput": "42"
+      "input": "\"4\"",
+      "expectedOutput": "4"
     },
     {
-      "input": "s = \" -042\"",
-      "expectedOutput": "-42"
+      "input": "\"2\"",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = \"1337c0d3\"",
-      "expectedOutput": "1337"
+      "input": "\"24\"",
+      "expectedOutput": "24"
     },
     {
-      "input": "s = \"0-1\"",
+      "input": "\"4242\"",
+      "expectedOutput": "4242"
+    },
+    {
+      "input": "\"44\"",
+      "expectedOutput": "44"
+    },
+    {
+      "input": "\"4224\"",
+      "expectedOutput": "4224"
+    },
+    {
+      "input": "\"a\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"words and 987\"",
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
       "expectedOutput": "0"
     }
   ],

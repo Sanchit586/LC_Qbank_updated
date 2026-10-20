@@ -81,16 +81,72 @@
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"coaching\", t = \"coding\"",
+      "input": "\"coac\"\n\"coding\"",
       "expectedOutput": "4"
     },
     {
-      "input": "s = \"abcde\", t = \"a\"",
-      "expectedOutput": "0"
+      "input": "\"hing\"\n\"coding\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "s = \"z\", t = \"abcde\"",
+      "input": "\"c\"\n\"coding\"",
       "expectedOutput": "5"
+    },
+    {
+      "input": "\"co\"\n\"coding\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"gnihcaoc\"\n\"coding\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"coachingcoaching\"\n\"coding\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"cccccc\"\n\"coding\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"coachinggnihcaoc\"\n\"coding\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"COACHING\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"a\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"b\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aa\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"ab\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"ba\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aba\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"abba\"\n\"coding\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aaaaa\"\n\"coding\"",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

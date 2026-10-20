@@ -69,11 +69,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "flowerbed = [1,0,0,0,1], n = 1",
+      "input": "[1,0]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,1]\n1",
       "expectedOutput": "true"
     },
     {
-      "input": "flowerbed = [1,0,0,0,1], n = 2",
+      "input": "[1]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0,1,1]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,0,0,0]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,1,1,1]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,0,0,0,1,1,0,0,0,1]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,0,0,0,2]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,1,1,1,2]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,-1,-1,-1,0]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,0,0,0,-1]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0,0,0]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,1,1]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1]\n1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2]\n1",
       "expectedOutput": "false"
     }
   ],

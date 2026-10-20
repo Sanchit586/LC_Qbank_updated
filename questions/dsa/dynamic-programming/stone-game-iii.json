@@ -84,16 +84,72 @@
       "expectedOutput": "\"Tie\""
     },
     {
-      "input": "stoneValue = [1,2,3,7]",
-      "expectedOutput": "\"Bob\""
-    },
-    {
-      "input": "stoneValue = [1,2,3,-9]",
+      "input": "[1,2]",
       "expectedOutput": "\"Alice\""
     },
     {
-      "input": "stoneValue = [1,2,3,6]",
+      "input": "[3,7]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[1,7]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[7,3,2,1]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[1,2,3,7,1,2,3,7]",
+      "expectedOutput": "\"Bob\""
+    },
+    {
+      "input": "[2,4,6,14]",
+      "expectedOutput": "\"Bob\""
+    },
+    {
+      "input": "[2,3,4,8]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[0,1,2,6]",
+      "expectedOutput": "\"Bob\""
+    },
+    {
+      "input": "[-1,-2,-3,-7]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[0,0,0,0]",
       "expectedOutput": "\"Tie\""
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "\"Tie\""
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "\"Bob\""
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "\"Tie\""
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "\"Alice\""
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "\"Alice\""
     }
   ],
   "sqlSchema": null,

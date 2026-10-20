@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = \"ac\", word2 = \"b\"",
+      "input": "\"a\"\n\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"c\"\n\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ca\"\n\"b\"",
       "expectedOutput": "false"
     },
     {
-      "input": "word1 = \"abcc\", word2 = \"aab\"",
+      "input": "\"acac\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"acca\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"AC\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"b\"",
       "expectedOutput": "true"
     },
     {
-      "input": "word1 = \"abcde\", word2 = \"fghij\"",
+      "input": "\"ab\"\n\"b\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"b\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

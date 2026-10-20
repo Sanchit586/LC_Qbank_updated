@@ -67,27 +67,51 @@
   "testCases": [
     {
       "input": "2",
-      "expectedOutput": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2"
+      "expectedOutput": "\"110\""
     },
     {
       "input": "3",
-      "expectedOutput": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
+      "expectedOutput": "\"111\""
     },
     {
       "input": "4",
-      "expectedOutput": "\"100\"\nExplantion: (-2)2 = 4"
+      "expectedOutput": "\"100\""
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "\"110\"\nExplantion: (-2)2 + (-2)1 = 2"
+      "input": "0",
+      "expectedOutput": "\"0\""
     },
     {
-      "input": "n = 3",
-      "expectedOutput": "\"111\"\nExplantion: (-2)2 + (-2)1 + (-2)0 = 3"
+      "input": "1",
+      "expectedOutput": "\"1\""
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "\"100\"\nExplantion: (-2)2 = 4"
+      "input": "5",
+      "expectedOutput": "\"101\""
+    },
+    {
+      "input": "6",
+      "expectedOutput": "\"11010\""
+    },
+    {
+      "input": "7",
+      "expectedOutput": "\"11011\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"11\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"10\""
+    },
+    {
+      "input": "8",
+      "expectedOutput": "\"11000\""
+    },
+    {
+      "input": "9",
+      "expectedOutput": "\"11001\""
     }
   ],
   "sqlSchema": null,

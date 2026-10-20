@@ -69,11 +69,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = \"abcdba\", s2 = \"cabdab\"",
-      "expectedOutput": "true"
+      "input": "\"abc\"\n\"cabdab\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "s1 = \"abe\", s2 = \"bea\"",
+      "input": "\"dba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abdcba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcdbaabcdba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaaa\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcdbaabdcba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ABCDBA\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"cabdab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"cabdab\"",
       "expectedOutput": "false"
     }
   ],

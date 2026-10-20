@@ -67,12 +67,76 @@
       "expectedOutput": "\"aaa\""
     },
     {
-      "input": "s = \"dart\", k = 3",
-      "expectedOutput": "\"tdar\""
+      "input": "\"da\"\n3",
+      "expectedOutput": "\"ad\""
     },
     {
-      "input": "s = \"aaa\", k = 1",
-      "expectedOutput": "\"aaa\""
+      "input": "\"rt\"\n3",
+      "expectedOutput": "\"tr\""
+    },
+    {
+      "input": "\"d\"\n3",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "\"trad\"\n3",
+      "expectedOutput": "\"dtra\""
+    },
+    {
+      "input": "\"dartdart\"\n3",
+      "expectedOutput": "\"tdartdar\""
+    },
+    {
+      "input": "\"dddd\"\n3",
+      "expectedOutput": "\"dddd\""
+    },
+    {
+      "input": "\"darttrad\"\n3",
+      "expectedOutput": "\"ttraddar\""
+    },
+    {
+      "input": "\"DART\"\n3",
+      "expectedOutput": "\"TDAR\""
+    },
+    {
+      "input": "\"a\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n3",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n3",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n3",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"ba\"\n3",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aba\"\n3",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n3",
+      "expectedOutput": "\"aabb\""
+    },
+    {
+      "input": "\"aaaaa\"\n3",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n3",
+      "expectedOutput": "\"deabc\""
+    },
+    {
+      "input": "\"edcba\"\n3",
+      "expectedOutput": "\"baedc\""
     }
   ],
   "sqlSchema": null,

@@ -82,15 +82,71 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"000001\", numOps = 1",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = \"0000\", numOps = 2",
+      "input": "\"000\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"0101\", numOps = 0",
+      "input": "\"001\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"00\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"100000\"\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"000001000001\"\n1",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"000000\"\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"000001100000\"\n1",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"a\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n1",
       "expectedOutput": "1"
     }
   ],

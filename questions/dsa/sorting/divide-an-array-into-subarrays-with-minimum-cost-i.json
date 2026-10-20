@@ -81,16 +81,72 @@
       "expectedOutput": "12"
     },
     {
-      "input": "nums = [1,2,3,12]",
-      "expectedOutput": "6"
+      "input": "[1,2]",
+      "expectedOutput": "inf"
     },
     {
-      "input": "nums = [5,4,3]",
+      "input": "[3,12]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[1,12]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[12,3,2,1]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2,3,12,1,2,3,12]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[2,4,6,24]",
       "expectedOutput": "12"
     },
     {
-      "input": "nums = [10,3,1,1]",
-      "expectedOutput": "12"
+      "input": "[2,3,4,13]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[0,1,2,11]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-1,-2,-3,-12]",
+      "expectedOutput": "-16"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "inf"
     }
   ],
   "sqlSchema": null,

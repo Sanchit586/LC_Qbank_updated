@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"egg\", t = \"add\"",
+      "input": "\"e\"\n\"add\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"f11\", t = \"b23\"",
+      "input": "\"gg\"\n\"add\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"paper\", t = \"title\"",
+      "input": "\"eg\"\n\"add\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"gge\"\n\"add\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"eggegg\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"eee\"\n\"add\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"egggge\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"EGG\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n\"add\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"add\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"add\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"\n\"add\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"add\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

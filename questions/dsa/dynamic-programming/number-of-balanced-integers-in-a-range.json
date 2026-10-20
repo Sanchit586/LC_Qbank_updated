@@ -78,15 +78,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "low = 1, high = 100",
+      "input": "0\n100",
       "expectedOutput": "9"
     },
     {
-      "input": "low = 120, high = 129",
-      "expectedOutput": "1"
+      "input": "2\n100",
+      "expectedOutput": "9"
     },
     {
-      "input": "low = 1234, high = 1234",
+      "input": "3\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "4\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "5\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "6\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "-1\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "-2\n100",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1\n99",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1\n101",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1\n98",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "1\n102",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1\n97",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "1\n103",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "1\n200",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "1\n50",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n-100",
       "expectedOutput": "0"
     }
   ],

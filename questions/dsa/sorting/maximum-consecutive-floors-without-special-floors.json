@@ -68,12 +68,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "bottom = 2, top = 9, special = [4,6]",
+      "input": "0\n9\n[4,6]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "1\n9\n[4,6]",
       "expectedOutput": "3"
     },
     {
-      "input": "bottom = 6, top = 8, special = [7,6,8]",
-      "expectedOutput": "0"
+      "input": "3\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "5\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "6\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "7\n9\n[4,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "-1\n9\n[4,6]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "-2\n9\n[4,6]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "2\n0\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n1\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n2\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n3\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n4\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n5\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n6\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n7\n[4,6]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2\n8\n[4,6]",
+      "expectedOutput": "2"
     }
   ],
   "sqlSchema": null,

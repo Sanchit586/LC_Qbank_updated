@@ -87,16 +87,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "edges = [[0,1,10],[0,2,1],[1,2,2]], maxMoves = 6, n = 3",
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n0\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n1\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n2\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n3\n3",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n4\n3",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n5\n3",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n7\n3",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n8\n3",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n9\n3",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n-1\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n-2\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n2",
       "expectedOutput": "13"
     },
     {
-      "input": "edges = [[0,1,4],[1,2,6],[0,2,8],[1,3,1]], maxMoves = 10, n = 4",
-      "expectedOutput": "23"
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n4",
+      "expectedOutput": "13"
     },
     {
-      "input": "edges = [[1,2,4],[1,4,5],[1,3,1],[2,3,4],[3,4,5]], maxMoves = 17, n = 5",
-      "expectedOutput": "1"
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n5",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n6",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n7",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[[0,1,10],[0,2,1],[1,2,2]]\n6\n8",
+      "expectedOutput": "13"
     }
   ],
   "sqlSchema": null,

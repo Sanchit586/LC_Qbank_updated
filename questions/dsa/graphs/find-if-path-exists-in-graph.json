@@ -75,11 +75,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "n = 3, edges = [[0,1],[1,2],[2,0]], source = 0, destination = 2",
+      "input": "4\n[[0,1],[1,2],[2,0]]\n0\n2",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 6, edges = [[0,1],[0,2],[3,5],[5,4],[4,3]], source = 0, destination = 5",
+      "input": "5\n[[0,1],[1,2],[2,0]]\n0\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "6\n[[0,1],[1,2],[2,0]]\n0\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "7\n[[0,1],[1,2],[2,0]]\n0\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "8\n[[0,1],[1,2],[2,0]]\n0\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n1\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n2\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n-1\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n-2\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n-3\n2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n6",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n7",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3\n[[0,1],[1,2],[2,0]]\n0\n-1",
       "expectedOutput": "false"
     }
   ],

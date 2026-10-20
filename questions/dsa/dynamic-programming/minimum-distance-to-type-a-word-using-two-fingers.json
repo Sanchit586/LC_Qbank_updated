@@ -67,12 +67,72 @@
       "expectedOutput": "6"
     },
     {
-      "input": "word = \"CAKE\"",
+      "input": "\"CA\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"KE\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"C\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"EKAC\"",
       "expectedOutput": "3"
     },
     {
-      "input": "word = \"HAPPY\"",
+      "input": "\"CAKECAKE\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"CCCC\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"CAKEEKAC\"",
       "expectedOutput": "6"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"()\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"HA\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"PPY\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"H\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"YPPAH\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"HAPPYHAPPY\"",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "\"HHHHH\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"HAPPYYPPAH\"",
+      "expectedOutput": "12"
     }
   ],
   "sqlSchema": null,

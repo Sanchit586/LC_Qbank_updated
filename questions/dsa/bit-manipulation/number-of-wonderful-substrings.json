@@ -79,16 +79,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "word = \"aba\"",
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abaaba\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"aaa\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"hello\"",
       "expectedOutput": "4"
     },
     {
-      "input": "word = \"aabb\"",
-      "expectedOutput": "9"
+      "input": "\"leetcode\"",
+      "expectedOutput": "6"
     },
     {
-      "input": "word = \"he\"",
-      "expectedOutput": "2"
+      "input": "\"world\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"bb\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

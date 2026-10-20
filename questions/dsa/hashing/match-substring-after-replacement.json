@@ -86,16 +86,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"fool3e7bar\", sub = \"leet\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"fooleetbar\", sub = \"f00l\", mappings = [[\"o\",\"0\"]]",
+      "input": "\"fool3\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"Fool33tbaR\", sub = \"leetd\", mappings = [[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"],[\"d\",\"b\"],[\"p\",\"b\"]]",
+      "input": "\"e7bar\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"f\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"fo\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"rab7e3loof\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"fool3e7barfool3e7bar\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"ffffff\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"fool3e7barrab7e3loof\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"leet\"\n[[\"e\",\"3\"],[\"t\",\"7\"],[\"t\",\"8\"]]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

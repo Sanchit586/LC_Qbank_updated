@@ -85,16 +85,36 @@
       "expectedOutput": "5"
     },
     {
-      "input": "expression = \"(let x 2 (mult x (let x 3 y 4 (add x y))))\"",
-      "expectedOutput": "14"
+      "input": "\" x 3 y 4 (add x y))))\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "expression = \"(let x 3 x 2 x)\"",
-      "expectedOutput": "2"
+      "input": "\"))))y x dda( 4 y 3 x tel( x tlum( 2 x tel(\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "expression = \"(let x 1 y 2 x (add x y) (add x y))\"",
-      "expectedOutput": "5"
+      "input": "\"0\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "121"
+    },
+    {
+      "input": "\"{[]}\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"3 x 2 x)\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\")x 2 x 3 x tel(\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"))y x dda( )y x dda( x 2 y 1 x tel(\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

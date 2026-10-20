@@ -82,16 +82,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "sentence1 = \"My name is Haley\", sentence2 = \"My Haley\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "sentence1 = \"of\", sentence2 = \"A lot of words\"",
+      "input": "\"My name \"\n\"My Haley\"",
       "expectedOutput": "false"
     },
     {
-      "input": "sentence1 = \"Eating right now\", sentence2 = \"Eating\"",
+      "input": "\"is Haley\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"M\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"My\"\n\"My Haley\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"yelaH si eman yM\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"MMMMMM\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"My Haley\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"My Haley\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

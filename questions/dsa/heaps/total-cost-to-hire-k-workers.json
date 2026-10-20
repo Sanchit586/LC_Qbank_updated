@@ -70,12 +70,76 @@
       "expectedOutput": "4"
     },
     {
-      "input": "costs = [17,12,10,2,7,2,11,20,8], k = 3, candidates = 4",
+      "input": "[17,12,10,2]\n3\n4",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "[7,2,11,20,8]\n3\n4",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[17]\n3\n4",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[17,8]\n3\n4",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "[17,12]\n3\n4",
+      "expectedOutput": "29"
+    },
+    {
+      "input": "[8,20,11,2,7,2,10,12,17]\n3\n4",
       "expectedOutput": "11"
     },
     {
-      "input": "costs = [1,2,4,1], k = 3, candidates = 3",
-      "expectedOutput": "4"
+      "input": "[2,2,7,8,10,11,12,17,20]\n3\n4",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[20,17,12,11,10,8,7,2,2]\n3\n4",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[17,17,17,17,17]\n3\n4",
+      "expectedOutput": "51"
+    },
+    {
+      "input": "[34,24,20,4,14,4,22,40,16]\n3\n4",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "[18,13,11,3,8,3,12,21,9]\n3\n4",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[16,11,9,1,6,1,10,19,7]\n3\n4",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[-17,-12,-10,-2,-7,-2,-11,-20,-8]\n3\n4",
+      "expectedOutput": "-49"
+    },
+    {
+      "input": "[0,0,0,0]\n3\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n3\n4",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0]\n3\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n3\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[-1]\n3\n4",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

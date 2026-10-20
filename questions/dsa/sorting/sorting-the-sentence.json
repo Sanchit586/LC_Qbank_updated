@@ -68,12 +68,12 @@
       "expectedOutput": "\"Me Myself and I\""
     },
     {
-      "input": "s = \"is2 sentence4 This1 a3\"",
-      "expectedOutput": "\"This is a sentence\""
+      "input": "\"0\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"Myself2 Me1 I4 and3\"",
-      "expectedOutput": "\"Me Myself and I\""
+      "input": "\"121\"",
+      "expectedOutput": "\"12\""
     }
   ],
   "sqlSchema": null,

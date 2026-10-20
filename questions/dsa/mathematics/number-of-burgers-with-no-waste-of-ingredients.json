@@ -67,27 +67,83 @@
   "testCases": [
     {
       "input": "16\n7",
-      "expectedOutput": "[1,6]\nExplantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.\nThere will be no remaining ingredients."
+      "expectedOutput": "[1,6]"
     },
     {
       "input": "17\n4",
-      "expectedOutput": "[]\nExplantion: There will be no way to use all ingredients to make small and jumbo burgers."
+      "expectedOutput": "[]"
     },
     {
       "input": "4\n17",
-      "expectedOutput": "[]\nExplantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
+      "expectedOutput": "[]"
     },
     {
-      "input": "tomatoSlices = 16, cheeseSlices = 7",
-      "expectedOutput": "[1,6]\nExplantion: To make one jumbo burger and 6 small burgers we need 4*1 + 2*6 = 16 tomato and 1 + 6 = 7 cheese.\nThere will be no remaining ingredients."
+      "input": "15\n7",
+      "expectedOutput": "[]"
     },
     {
-      "input": "tomatoSlices = 17, cheeseSlices = 4",
-      "expectedOutput": "[]\nExplantion: There will be no way to use all ingredients to make small and jumbo burgers."
+      "input": "17\n7",
+      "expectedOutput": "[]"
     },
     {
-      "input": "tomatoSlices = 4, cheeseSlices = 17",
-      "expectedOutput": "[]\nExplantion: Making 1 jumbo burger there will be 16 cheese remaining and making 2 small burgers there will be 15 cheese remaining."
+      "input": "14\n7",
+      "expectedOutput": "[0,7]"
+    },
+    {
+      "input": "18\n7",
+      "expectedOutput": "[2,5]"
+    },
+    {
+      "input": "13\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "19\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "32\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "8\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-16\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "0\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "1\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "2\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "3\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "4\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "5\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-1\n7",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-2\n7",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

@@ -66,12 +66,32 @@
       "expectedOutput": "22"
     },
     {
-      "input": "n = 4",
-      "expectedOutput": "184"
+      "input": "1",
+      "expectedOutput": "6"
     },
     {
-      "input": "n = 2",
-      "expectedOutput": "22"
+      "input": "3",
+      "expectedOutput": "66"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "516"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "1472"
+    },
+    {
+      "input": "7",
+      "expectedOutput": "4136"
+    },
+    {
+      "input": "8",
+      "expectedOutput": "11672"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "33008"
     }
   ],
   "sqlSchema": null,

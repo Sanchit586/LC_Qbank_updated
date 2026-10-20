@@ -80,16 +80,72 @@
       "expectedOutput": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\""
     },
     {
-      "input": "caption = \"Leetcode daily streak achieved\"",
-      "expectedOutput": "\"#leetcodeDailyStreakAchieved\""
+      "input": "\"Leetcode daily \"",
+      "expectedOutput": "\"#leetcodeDaily\""
     },
     {
-      "input": "caption = \"can I Go There\"",
-      "expectedOutput": "\"#canIGoThere\""
+      "input": "\"streak achieved\"",
+      "expectedOutput": "\"#streakAchieved\""
     },
     {
-      "input": "caption = \"hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\"",
-      "expectedOutput": "\"#hhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhhh\""
+      "input": "\"L\"",
+      "expectedOutput": "\"#l\""
+    },
+    {
+      "input": "\"Le\"",
+      "expectedOutput": "\"#le\""
+    },
+    {
+      "input": "\"deveihca kaerts yliad edocteeL\"",
+      "expectedOutput": "\"#deveihcaKaertsYliadEdocteel\""
+    },
+    {
+      "input": "\"LLLLLL\"",
+      "expectedOutput": "\"#llllll\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"#a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"#b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"#aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"#ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"#ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"#aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"#abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"#aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"#abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"#edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"#aab\""
     }
   ],
   "sqlSchema": null,

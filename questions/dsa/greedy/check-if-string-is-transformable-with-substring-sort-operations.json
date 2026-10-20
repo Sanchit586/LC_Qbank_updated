@@ -82,15 +82,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"84532\", t = \"34852\"",
+      "input": "\"84\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"532\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"8\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"23548\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"8453284532\"\n\"34852\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"34521\", t = \"23415\"",
+      "input": "\"88888\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"8453223548\"\n\"34852\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"12345\", t = \"12435\"",
+      "input": "\"0\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"34852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"34\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"84532\"\n\"852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"84532\"\n\"25843\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"3485234852\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"33333\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"3485225843\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"84532\"\n\"0\"",
       "expectedOutput": "false"
     }
   ],

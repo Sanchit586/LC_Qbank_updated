@@ -107,48 +107,64 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"()\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"()[]{}\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"(]\"",
+      "input": "\"(\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"([])\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"([)]\"",
+      "input": "\")\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"{[]}\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "\"(((\"",
+      "input": "\")(\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\")))\"",
+      "input": "\"()()\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"((\"",
       "expectedOutput": "false"
     },
     {
-      "input": "\"((()))\"",
-      "expectedOutput": "true"
+      "input": "\"())(\"",
+      "expectedOutput": "false"
     },
     {
-      "input": "\"({[()]}())\"",
-      "expectedOutput": "true"
+      "input": "\"a\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

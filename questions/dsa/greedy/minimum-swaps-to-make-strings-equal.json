@@ -82,16 +82,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "s1 = \"xx\", s2 = \"yy\"",
+      "input": "\"x\"\n\"yy\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"xxxx\"\n\"yy\"",
       "expectedOutput": "1"
     },
     {
-      "input": "s1 = \"xy\", s2 = \"yx\"",
-      "expectedOutput": "2"
+      "input": "\"XX\"\n\"yy\"",
+      "expectedOutput": "1"
     },
     {
-      "input": "s1 = \"xx\", s2 = \"xy\"",
+      "input": "\"a\"\n\"yy\"",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n\"yy\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"\n\"yy\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"\n\"yy\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"121\"\n\"yy\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

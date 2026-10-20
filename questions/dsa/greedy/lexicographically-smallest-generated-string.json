@@ -80,19 +80,75 @@
     },
     {
       "input": "\"FT\"\n\"aa\"",
-      "expectedOutput": "\"a\""
+      "expectedOutput": "\"baa\""
     },
     {
-      "input": "str1 = \"TFTF\", str2 = \"ab\"",
-      "expectedOutput": "\"ababa\""
+      "input": "\"TF\"\n\"ab\"",
+      "expectedOutput": "\"aba\""
     },
     {
-      "input": "str1 = \"TFTF\", str2 = \"abc\"",
+      "input": "\"T\"\n\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"FTFT\"\n\"ab\"",
+      "expectedOutput": "\"aabab\""
+    },
+    {
+      "input": "\"TFTFTFTF\"\n\"ab\"",
+      "expectedOutput": "\"ababababa\""
+    },
+    {
+      "input": "\"TTTT\"\n\"ab\"",
       "expectedOutput": "\"\""
     },
     {
-      "input": "str1 = \"F\", str2 = \"d\"",
-      "expectedOutput": "\"a\""
+      "input": "\"TFTFFTFT\"\n\"ab\"",
+      "expectedOutput": "\"ababaabab\""
+    },
+    {
+      "input": "\"tftf\"\n\"ab\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"a\"\n\"ab\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"b\"\n\"ab\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"aa\"\n\"ab\"",
+      "expectedOutput": "\"aaa\""
+    },
+    {
+      "input": "\"ab\"\n\"ab\"",
+      "expectedOutput": "\"aaa\""
+    },
+    {
+      "input": "\"ba\"\n\"ab\"",
+      "expectedOutput": "\"aaa\""
+    },
+    {
+      "input": "\"aba\"\n\"ab\"",
+      "expectedOutput": "\"aaaa\""
+    },
+    {
+      "input": "\"abba\"\n\"ab\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"ab\"",
+      "expectedOutput": "\"aaaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n\"ab\"",
+      "expectedOutput": "\"aaaaaa\""
+    },
+    {
+      "input": "\"edcba\"\n\"ab\"",
+      "expectedOutput": "\"aaaaaa\""
     }
   ],
   "sqlSchema": null,

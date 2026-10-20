@@ -95,20 +95,68 @@
       "expectedOutput": "[0,1]"
     },
     {
-      "input": "word1 = \"vbcca\", word2 = \"abc\"",
-      "expectedOutput": "[0,1,2]"
-    },
-    {
-      "input": "word1 = \"bacdc\", word2 = \"abc\"",
-      "expectedOutput": "[1,2,4]"
-    },
-    {
-      "input": "word1 = \"aaaaaa\", word2 = \"aaabc\"",
+      "input": "\"vb\"\n\"abc\"",
       "expectedOutput": "[]"
     },
     {
-      "input": "word1 = \"abc\", word2 = \"ab\"",
-      "expectedOutput": "[0,1]"
+      "input": "\"cca\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"v\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"accbv\"\n\"abc\"",
+      "expectedOutput": "[0,1,2]"
+    },
+    {
+      "input": "\"vbccavbcca\"\n\"abc\"",
+      "expectedOutput": "[0,1,2]"
+    },
+    {
+      "input": "\"vvvvv\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"vbccaaccbv\"\n\"abc\"",
+      "expectedOutput": "[0,1,2]"
+    },
+    {
+      "input": "\"VBCCA\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"a\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"b\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ba\"\n\"abc\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n\"abc\"",
+      "expectedOutput": "[0,1,2]"
+    },
+    {
+      "input": "\"abba\"\n\"abc\"",
+      "expectedOutput": "[0,1,2]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"abc\"",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

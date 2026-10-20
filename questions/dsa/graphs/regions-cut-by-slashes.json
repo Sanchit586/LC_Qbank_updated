@@ -86,16 +86,72 @@
       "expectedOutput": "5"
     },
     {
-      "input": "grid = [\" /\",\"/ \"]",
+      "input": "[\"/ \",\" /\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\" /\",\" /\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "grid = [\" /\",\"  \"]",
+      "input": "[\" /\",\"/ \",\" /\",\"/ \"]",
+      "expectedOutput": "31"
+    },
+    {
+      "input": "[\"a\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "grid = [\"/\\\\\",\"\\\\/\"]",
-      "expectedOutput": "5"
+      "input": "[\"\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "67"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]",
+      "expectedOutput": "45"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\"]",
+      "expectedOutput": "22"
+    },
+    {
+      "input": "[\"  \",\" /\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\" /\",\"  \",\" /\",\"  \"]",
+      "expectedOutput": "29"
+    },
+    {
+      "input": "[\"\\\\/\",\"/\\\\\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"/\\\\\",\"/\\\\\"]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

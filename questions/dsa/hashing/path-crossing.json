@@ -67,11 +67,75 @@
       "expectedOutput": "true"
     },
     {
-      "input": "path = \"NES\"",
+      "input": "\"N\"",
       "expectedOutput": "false"
     },
     {
-      "input": "path = \"NESWW\"",
+      "input": "\"ES\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"NE\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"SEN\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"NESNES\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"NNN\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"NESSEN\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"nes\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"",
       "expectedOutput": "true"
     }
   ],

@@ -80,16 +80,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"ab\", goal = \"ba\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"ab\", goal = \"ab\"",
+      "input": "\"a\"\n\"ba\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"aa\", goal = \"aa\"",
-      "expectedOutput": "true"
+      "input": "\"b\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abab\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"AB\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"racecar\"\n\"ba\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"hello\"\n\"ba\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

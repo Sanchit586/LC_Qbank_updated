@@ -83,15 +83,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = \"abc\", s2 = \"xya\"",
+      "input": "\"a\"\n\"xya\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s1 = \"abe\", s2 = \"acd\"",
+      "input": "\"bc\"\n\"xya\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s1 = \"leetcodee\", s2 = \"interview\"",
+      "input": "\"ab\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"cba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcabc\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaa\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abccba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ABC\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"\n\"xya\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"\n\"xya\"",
       "expectedOutput": "true"
     }
   ],

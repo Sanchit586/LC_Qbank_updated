@@ -70,12 +70,76 @@
       "expectedOutput": "[\"ab\"]"
     },
     {
-      "input": "source = [\"/*Test program */\", \"int main()\", \"{ \", \"  // variable declaration \", \"int a, b, c;\", \"/* This is a test\", \"   multiline  \", \"   comment for \", \"   testing */\", \"a = b + c;\", \"}\"]",
-      "expectedOutput": "[\"int main()\",\"{ \",\"  \",\"int a, b, c;\",\"a = b + c;\",\"}\"]"
+      "input": "[\"/*Test program */\",\"int main()\",\"{ \",\"  // variable declaration \",\"int a, b, c;\"]",
+      "expectedOutput": "[\"int main()\",\"{ \",\"  \",\"int a, b, c;\"]"
     },
     {
-      "input": "source = [\"a/*comment\", \"line\", \"more_comment*/b\"]",
-      "expectedOutput": "[\"ab\"]"
+      "input": "[\"/* This is a test\",\"   multiline  \",\"   comment for \",\"   testing */\",\"a = b + c;\",\"}\"]",
+      "expectedOutput": "[\"a = b + c;\",\"}\"]"
+    },
+    {
+      "input": "[\"/*Test program */\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"/*Test program */\",\"}\"]",
+      "expectedOutput": "[\"}\"]"
+    },
+    {
+      "input": "[\"/*Test program */\",\"int main()\"]",
+      "expectedOutput": "[\"int main()\"]"
+    },
+    {
+      "input": "[\"}\",\"a = b + c;\",\"   testing */\",\"   comment for \",\"   multiline  \",\"/* This is a test\",\"int a, b, c;\",\"  // variable declaration \",\"{ \",\"int main()\",\"/*Test program */\"]",
+      "expectedOutput": "[\"}\",\"a = b + c;\",\"   testing */\",\"   comment for \",\"   multiline  \"]"
+    },
+    {
+      "input": "[\"   comment for \",\"   multiline  \",\"   testing */\",\"  // variable declaration \",\"/* This is a test\",\"/*Test program */\",\"a = b + c;\",\"int a, b, c;\",\"int main()\",\"{ \",\"}\"]",
+      "expectedOutput": "[\"   comment for \",\"   multiline  \",\"   testing */\",\"  \",\"a = b + c;\",\"int a, b, c;\",\"int main()\",\"{ \",\"}\"]"
+    },
+    {
+      "input": "[\"}\",\"{ \",\"int main()\",\"int a, b, c;\",\"a = b + c;\",\"/*Test program */\",\"/* This is a test\",\"  // variable declaration \",\"   testing */\",\"   multiline  \",\"   comment for \"]",
+      "expectedOutput": "[\"}\",\"{ \",\"int main()\",\"int a, b, c;\",\"a = b + c;\",\"   multiline  \",\"   comment for \"]"
+    },
+    {
+      "input": "[\"/*Test program */\",\"/*Test program */\",\"/*Test program */\",\"/*Test program */\",\"/*Test program */\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[\"abc\",\"bca\",\"cab\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[\"one\",\"two\",\"three\"]"
     }
   ],
   "sqlSchema": null,

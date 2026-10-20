@@ -67,12 +67,76 @@
       "expectedOutput": "false"
     },
     {
-      "input": "moves = \"UD\"",
+      "input": "\"U\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"D\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"DU\"",
       "expectedOutput": "true"
     },
     {
-      "input": "moves = \"LL\"",
+      "input": "\"UDUD\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"UU\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"UDDU\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ud\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

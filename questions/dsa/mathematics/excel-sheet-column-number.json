@@ -81,16 +81,72 @@
       "expectedOutput": "701"
     },
     {
-      "input": "columnTitle = \"A\"",
-      "expectedOutput": "1"
+      "input": "\"AA\"",
+      "expectedOutput": "27"
     },
     {
-      "input": "columnTitle = \"AB\"",
-      "expectedOutput": "28"
+      "input": "\"a\"",
+      "expectedOutput": "33"
     },
     {
-      "input": "columnTitle = \"ZY\"",
-      "expectedOutput": "701"
+      "input": "\"b\"",
+      "expectedOutput": "34"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "891"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "892"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "917"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "23225"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "603909"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "15683415"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "15702425"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "17565425"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "23200"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "859"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "-16"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "-10519"
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "15854543248"
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "18960287"
     }
   ],
   "sqlSchema": null,

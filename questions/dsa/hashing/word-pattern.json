@@ -84,15 +84,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "pattern = \"abba\", s = \"dog cat cat dog\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "pattern = \"abba\", s = \"dog cat cat fish\"",
+      "input": "\"ab\"\n\"dog cat cat dog\"",
       "expectedOutput": "false"
     },
     {
-      "input": "pattern = \"aaaa\", s = \"dog cat cat dog\"",
+      "input": "\"ba\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abbaabba\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ABBA\"\n\"dog cat cat dog\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"racecar\"\n\"dog cat cat dog\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"hello\"\n\"dog cat cat dog\"",
       "expectedOutput": "false"
     }
   ],

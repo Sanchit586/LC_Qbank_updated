@@ -70,12 +70,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "word = \"leetcodeleet\", k = 4",
+      "input": "\"leetco\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"deleet\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"l\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"le\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"teeledocteel\"\n4",
       "expectedOutput": "1"
     },
     {
-      "input": "word = \"leetcoleet\", k = 2",
-      "expectedOutput": "3"
+      "input": "\"llllll\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"LEETCODELEET\"\n4",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"b\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aa\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ab\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"ba\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"aba\"\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "\"abba\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"\n4",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"\n4",
+      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

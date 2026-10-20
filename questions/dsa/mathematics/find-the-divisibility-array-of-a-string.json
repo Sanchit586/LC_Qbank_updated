@@ -70,12 +70,76 @@
       "expectedOutput": "[0,1,0,1]"
     },
     {
-      "input": "word = \"998244353\", m = 3",
-      "expectedOutput": "[1,1,0,0,0,1,1,0,0]"
+      "input": "\"9982\"\n3",
+      "expectedOutput": "[1,1,0,0]"
     },
     {
-      "input": "word = \"1010\", m = 10",
-      "expectedOutput": "[0,1,0,1]"
+      "input": "\"44353\"\n3",
+      "expectedOutput": "[0,0,0,0,0]"
+    },
+    {
+      "input": "\"9\"\n3",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"99\"\n3",
+      "expectedOutput": "[1,1]"
+    },
+    {
+      "input": "\"353442899\"\n3",
+      "expectedOutput": "[1,0,0,1,0,1,0,0,0]"
+    },
+    {
+      "input": "\"998244353998244353\"\n3",
+      "expectedOutput": "[1,1,0,0,0,1,1,0,0,0,0,0,1,0,0,0,0,0]"
+    },
+    {
+      "input": "\"999999\"\n3",
+      "expectedOutput": "[1,1,1,1,1,1]"
+    },
+    {
+      "input": "\"998244353353442899\"\n3",
+      "expectedOutput": "[1,1,0,0,0,1,1,0,0,0,0,0,0,1,0,0,0,0]"
+    },
+    {
+      "input": "\"0\"\n3",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "\"121\"\n3",
+      "expectedOutput": "[0,1,0]"
+    },
+    {
+      "input": "\"998244353\"\n1",
+      "expectedOutput": "[1,1,1,1,1,1,1,1,1]"
+    },
+    {
+      "input": "\"998244353\"\n2",
+      "expectedOutput": "[0,0,1,1,1,1,0,0,0]"
+    },
+    {
+      "input": "\"998244353\"\n4",
+      "expectedOutput": "[0,0,0,0,1,1,0,0,0]"
+    },
+    {
+      "input": "\"998244353\"\n5",
+      "expectedOutput": "[0,0,0,0,0,0,0,1,0]"
+    },
+    {
+      "input": "\"998244353\"\n6",
+      "expectedOutput": "[0,0,0,0,0,1,0,0,0]"
+    },
+    {
+      "input": "\"998244353\"\n7",
+      "expectedOutput": "[0,0,0,1,0,0,0,0,0]"
+    },
+    {
+      "input": "\"998244353\"\n8",
+      "expectedOutput": "[0,0,0,0,1,0,0,0,0]"
+    },
+    {
+      "input": "\"998244353\"\n-1",
+      "expectedOutput": "[1,1,1,1,1,1,1,1,1]"
     }
   ],
   "sqlSchema": null,

@@ -81,16 +81,72 @@
       "expectedOutput": "8"
     },
     {
-      "input": "s = \"iiii\", k = 1",
-      "expectedOutput": "36"
+      "input": "\"ii\"\n1",
+      "expectedOutput": "18"
     },
     {
-      "input": "s = \"leetcode\", k = 2",
+      "input": "\"i\"\n1",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"iiiiiiii\"\n1",
+      "expectedOutput": "72"
+    },
+    {
+      "input": "\"a\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aa\"\n1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ba\"\n1",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aba\"\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abba\"\n1",
       "expectedOutput": "6"
     },
     {
-      "input": "s = \"zbax\", k = 2",
-      "expectedOutput": "8"
+      "input": "\"aaaaa\"\n1",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n1",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"edcba\"\n1",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"aab\"\n1",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"racecar\"\n1",
+      "expectedOutput": "31"
+    },
+    {
+      "input": "\"hello\"\n1",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "\"leetcode\"\n1",
+      "expectedOutput": "33"
     }
   ],
   "sqlSchema": null,

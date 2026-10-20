@@ -82,16 +82,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"ilovecodingonleetcode\", target = \"code\"",
+      "input": "\"ilovecodin\"\n\"code\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"gonleetcode\"\n\"code\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"i\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"il\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edocteelnognidocevoli\"\n\"code\"",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"abcba\", target = \"abc\"",
-      "expectedOutput": "1"
+      "input": "\"iiiiii\"\n\"code\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "s = \"abbaccaddaeea\", target = \"aaaaa\"",
-      "expectedOutput": "1"
+      "input": "\"ILOVECODINGONLEETCODE\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n\"code\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"\n\"code\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

@@ -67,19 +67,83 @@
   "testCases": [
     {
       "input": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
-      "expectedOutput": "[\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]"
+      "expectedOutput": "[\"dogcatsdog\",\"catsdogcats\",\"ratcatdogcat\"]"
     },
     {
       "input": "[\"cat\",\"dog\",\"catdog\"]",
       "expectedOutput": "[\"catdog\"]"
     },
     {
-      "input": "words = [\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
-      "expectedOutput": "[\"catsdogcats\",\"dogcatsdog\",\"ratcatdogcat\"]"
+      "input": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\"]",
+      "expectedOutput": "[\"catsdogcats\"]"
     },
     {
-      "input": "words = [\"cat\",\"dog\",\"catdog\"]",
-      "expectedOutput": "[\"catdog\"]"
+      "input": "[\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"ratcatdogcat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"cats\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"ratcatdogcat\",\"rat\",\"hippopotamuses\",\"dogcatsdog\",\"dog\",\"catsdogcats\",\"cats\",\"cat\"]",
+      "expectedOutput": "[\"dogcatsdog\",\"catsdogcats\",\"ratcatdogcat\"]"
+    },
+    {
+      "input": "[\"cat\",\"cat\",\"cat\",\"cat\",\"cat\"]",
+      "expectedOutput": "[\"cat\",\"cat\",\"cat\",\"cat\"]"
+    },
+    {
+      "input": "[\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\",\"cat\",\"cats\",\"catsdogcats\",\"dog\",\"dogcatsdog\",\"hippopotamuses\",\"rat\",\"ratcatdogcat\"]",
+      "expectedOutput": "[\"cat\",\"dog\",\"rat\",\"cats\",\"dogcatsdog\",\"dogcatsdog\",\"catsdogcats\",\"catsdogcats\",\"ratcatdogcat\",\"ratcatdogcat\",\"hippopotamuses\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

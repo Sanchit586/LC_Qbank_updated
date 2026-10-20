@@ -70,12 +70,76 @@
       "expectedOutput": "10"
     },
     {
-      "input": "words = [\"cat\",\"bt\",\"hat\",\"tree\"], chars = \"atach\"",
+      "input": "[\"cat\",\"bt\"]\n\"atach\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"hat\",\"tree\"]\n\"atach\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cat\"]\n\"atach\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"cat\",\"tree\"]\n\"atach\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"tree\",\"hat\",\"bt\",\"cat\"]\n\"atach\"",
       "expectedOutput": "6"
     },
     {
-      "input": "words = [\"hello\",\"world\",\"leetcode\"], chars = \"welldonehoneyr\"",
-      "expectedOutput": "10"
+      "input": "[\"bt\",\"cat\",\"hat\",\"tree\"]\n\"atach\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"tree\",\"hat\",\"cat\",\"bt\"]\n\"atach\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"cat\",\"cat\",\"cat\",\"cat\"]\n\"atach\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[\"cat\",\"bt\",\"hat\",\"tree\",\"cat\",\"bt\",\"hat\",\"tree\"]\n\"atach\"",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[\"a\"]\n\"atach\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]\n\"atach\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"atach\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"atach\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"atach\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"atach\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"atach\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"atach\"",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"atach\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

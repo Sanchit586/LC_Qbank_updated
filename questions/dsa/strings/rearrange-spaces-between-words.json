@@ -67,12 +67,76 @@
       "expectedOutput": "\"practice   makes   perfect \""
     },
     {
-      "input": "text = \"  this   is  a sentence \"",
-      "expectedOutput": "\"this   is   a   sentence\""
+      "input": "\"  this   is \"",
+      "expectedOutput": "\"this      is\""
     },
     {
-      "input": "text = \" practice   makes   perfect\"",
-      "expectedOutput": "\"practice   makes   perfect \""
+      "input": "\" a sentence \"",
+      "expectedOutput": "\"a   sentence\""
+    },
+    {
+      "input": "\" \"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"  \"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\" ecnetnes a  si   siht  \"",
+      "expectedOutput": "\"ecnetnes   a   si   siht\""
+    },
+    {
+      "input": "\"      \"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"aA\""
     }
   ],
   "sqlSchema": null,

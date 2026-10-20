@@ -72,27 +72,83 @@
   "testCases": [
     {
       "input": "\"aabc\"\n\"a\"\n\"c\"",
-      "expectedOutput": "\"cbaa\""
+      "expectedOutput": "\"caba\""
     },
     {
       "input": "\"dcab\"\n\"d\"\n\"b\"",
-      "expectedOutput": "\"cabd\""
+      "expectedOutput": "\"bcad\""
     },
     {
       "input": "\"axe\"\n\"o\"\n\"x\"",
-      "expectedOutput": "\"axe\""
+      "expectedOutput": "\"xae\""
     },
     {
-      "input": "s = \"aabc\", x = \"a\", y = \"c\"",
+      "input": "\"aa\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"bc\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"cb\""
+    },
+    {
+      "input": "\"a\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"cbaa\"\n\"a\"\n\"c\"",
       "expectedOutput": "\"cbaa\""
     },
     {
-      "input": "s = \"dcab\", x = \"d\", y = \"b\"",
-      "expectedOutput": "\"cabd\""
+      "input": "\"aabcaabc\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"ccbaaaba\""
     },
     {
-      "input": "s = \"axe\", x = \"o\", y = \"x\"",
-      "expectedOutput": "\"axe\""
+      "input": "\"aaaa\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"aaaa\""
+    },
+    {
+      "input": "\"aabccbaa\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"ccbaabaa\""
+    },
+    {
+      "input": "\"AABC\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"AABC\""
+    },
+    {
+      "input": "\"b\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"ab\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"cbade\""
+    },
+    {
+      "input": "\"edcba\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"cdeba\""
+    },
+    {
+      "input": "\"aab\"\n\"a\"\n\"c\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

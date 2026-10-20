@@ -73,12 +73,76 @@
       "expectedOutput": "\"gctaagttcatgcatc\""
     },
     {
-      "input": "words = [\"alex\",\"loves\",\"leetcode\"]",
-      "expectedOutput": "\"alexlovesleetcode\""
+      "input": "[\"alex\"]",
+      "expectedOutput": "\"alex\""
     },
     {
-      "input": "words = [\"catg\",\"ctaagt\",\"gcta\",\"ttca\",\"atgcatc\"]",
-      "expectedOutput": "\"gctaagttcatgcatc\""
+      "input": "[\"loves\",\"leetcode\"]",
+      "expectedOutput": "\"lovesleetcode\""
+    },
+    {
+      "input": "[\"alex\",\"leetcode\"]",
+      "expectedOutput": "\"alexleetcode\""
+    },
+    {
+      "input": "[\"alex\",\"loves\"]",
+      "expectedOutput": "\"alexloves\""
+    },
+    {
+      "input": "[\"leetcode\",\"loves\",\"alex\"]",
+      "expectedOutput": "\"leetcodelovesalex\""
+    },
+    {
+      "input": "[\"alex\",\"leetcode\",\"loves\"]",
+      "expectedOutput": "\"alexleetcodeloves\""
+    },
+    {
+      "input": "[\"loves\",\"leetcode\",\"alex\"]",
+      "expectedOutput": "\"lovesleetcodealex\""
+    },
+    {
+      "input": "[\"alex\",\"alex\",\"alex\"]",
+      "expectedOutput": "\"alex\""
+    },
+    {
+      "input": "[\"alex\",\"loves\",\"leetcode\",\"alex\",\"loves\",\"leetcode\"]",
+      "expectedOutput": "\"leetcodelovesalex\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"bab\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"bcabc\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"batanateat\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "\"catactgodog\""
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "\"twonethree\""
     }
   ],
   "sqlSchema": null,

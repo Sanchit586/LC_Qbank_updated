@@ -81,16 +81,72 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "machines = [1,0,5]",
-      "expectedOutput": "3"
+      "input": "[1]",
+      "expectedOutput": "0"
     },
     {
-      "input": "machines = [0,3,0]",
+      "input": "[0,5]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[1,5]",
       "expectedOutput": "2"
     },
     {
-      "input": "machines = [0,2,0]",
+      "input": "[1,0]",
       "expectedOutput": "-1"
+    },
+    {
+      "input": "[5,0,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,1,5]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[5,1,0]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,0,5,1,0,5]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[2,0,10]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[2,1,6]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,-1,4]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[-1,0,-5]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

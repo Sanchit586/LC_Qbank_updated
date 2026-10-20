@@ -78,26 +78,82 @@
   "testCases": [
     {
       "input": "\"catsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
-      "expectedOutput": "[\"cats and dog\",\"cat sand dog\"]"
+      "expectedOutput": "[\"cat sand dog\",\"cats and dog\"]"
     },
     {
       "input": "\"pineapplepenapple\"\n[\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
-      "expectedOutput": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]"
+      "expectedOutput": "[\"pine apple pen apple\",\"pine applepen apple\",\"pineapple pen apple\"]"
     },
     {
       "input": "\"catsandog\"\n[\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
       "expectedOutput": "[]"
     },
     {
-      "input": "s = \"catsanddog\", wordDict = [\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
-      "expectedOutput": "[\"cats and dog\",\"cat sand dog\"]"
+      "input": "\"catsa\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
     },
     {
-      "input": "s = \"pineapplepenapple\", wordDict = [\"apple\",\"pen\",\"applepen\",\"pine\",\"pineapple\"]",
-      "expectedOutput": "[\"pine apple pen apple\",\"pineapple pen apple\",\"pine applepen apple\"]"
+      "input": "\"nddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
     },
     {
-      "input": "s = \"catsandog\", wordDict = [\"cats\",\"dog\",\"sand\",\"and\",\"cat\"]",
+      "input": "\"c\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ca\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"goddnastac\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"catsanddogcatsanddog\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[\"cat sand dog cat sand dog\",\"cat sand dog cats and dog\",\"cats and dog cat sand dog\",\"cats and dog cats and dog\"]"
+    },
+    {
+      "input": "\"cccccc\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"catsanddoggoddnastac\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"a\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"b\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ba\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abba\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcde\"\n[\"cat\",\"cats\",\"and\",\"sand\",\"dog\"]",
       "expectedOutput": "[]"
     }
   ],

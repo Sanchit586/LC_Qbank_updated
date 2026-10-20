@@ -68,11 +68,75 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "n = 4104",
+      "input": "4103",
+      "expectedOutput": "[1729]"
+    },
+    {
+      "input": "4105",
       "expectedOutput": "[1729,4104]"
     },
     {
-      "input": "n = 578",
+      "input": "4102",
+      "expectedOutput": "[1729]"
+    },
+    {
+      "input": "4106",
+      "expectedOutput": "[1729,4104]"
+    },
+    {
+      "input": "4101",
+      "expectedOutput": "[1729]"
+    },
+    {
+      "input": "4107",
+      "expectedOutput": "[1729,4104]"
+    },
+    {
+      "input": "2052",
+      "expectedOutput": "[1729]"
+    },
+    {
+      "input": "-4104",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "10",
       "expectedOutput": "[]"
     }
   ],

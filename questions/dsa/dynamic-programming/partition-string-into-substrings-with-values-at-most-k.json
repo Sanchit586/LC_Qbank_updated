@@ -69,12 +69,76 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "s = \"165462\", k = 60",
+      "input": "\"165\"\n60",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"462\"\n60",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"1\"\n60",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"16\"\n60",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"264561\"\n60",
       "expectedOutput": "4"
     },
     {
-      "input": "s = \"238182\", k = 5",
-      "expectedOutput": "-1"
+      "input": "\"165462165462\"\n60",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"111111\"\n60",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"165462264561\"\n60",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"0\"\n60",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"121\"\n60",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"165462\"\n59",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"165462\"\n61",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"165462\"\n58",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"165462\"\n62",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"165462\"\n57",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"165462\"\n63",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"165462\"\n120",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"165462\"\n30",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

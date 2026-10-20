@@ -75,12 +75,76 @@
       "expectedOutput": "[\"the\",\"is\",\"sunny\",\"day\"]"
     },
     {
-      "input": "words = [\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"], k = 2",
+      "input": "[\"i\",\"love\",\"leetcode\"]\n2",
+      "expectedOutput": "[\"i\",\"leetcode\"]"
+    },
+    {
+      "input": "[\"i\",\"love\",\"coding\"]\n2",
+      "expectedOutput": "[\"coding\",\"i\"]"
+    },
+    {
+      "input": "[\"i\"]\n2",
+      "expectedOutput": "[\"i\"]"
+    },
+    {
+      "input": "[\"i\",\"coding\"]\n2",
+      "expectedOutput": "[\"coding\",\"i\"]"
+    },
+    {
+      "input": "[\"i\",\"love\"]\n2",
       "expectedOutput": "[\"i\",\"love\"]"
     },
     {
-      "input": "words = [\"the\",\"day\",\"is\",\"sunny\",\"the\",\"the\",\"the\",\"sunny\",\"is\",\"is\"], k = 4",
-      "expectedOutput": "[\"the\",\"is\",\"sunny\",\"day\"]"
+      "input": "[\"coding\",\"love\",\"i\",\"leetcode\",\"love\",\"i\"]\n2",
+      "expectedOutput": "[\"i\",\"love\"]"
+    },
+    {
+      "input": "[\"coding\",\"i\",\"i\",\"leetcode\",\"love\",\"love\"]\n2",
+      "expectedOutput": "[\"i\",\"love\"]"
+    },
+    {
+      "input": "[\"love\",\"love\",\"leetcode\",\"i\",\"i\",\"coding\"]\n2",
+      "expectedOutput": "[\"i\",\"love\"]"
+    },
+    {
+      "input": "[\"i\",\"i\",\"i\",\"i\",\"i\"]\n2",
+      "expectedOutput": "[\"i\"]"
+    },
+    {
+      "input": "[\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\",\"i\",\"love\",\"leetcode\",\"i\",\"love\",\"coding\"]\n2",
+      "expectedOutput": "[\"i\",\"love\"]"
+    },
+    {
+      "input": "[\"a\"]\n2",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]\n2",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n2",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n2",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n2",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n2",
+      "expectedOutput": "[\"abc\",\"bca\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n2",
+      "expectedOutput": "[\"ate\",\"bat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n2",
+      "expectedOutput": "[\"act\",\"cat\"]"
     }
   ],
   "sqlSchema": null,

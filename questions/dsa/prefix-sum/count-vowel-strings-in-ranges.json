@@ -72,12 +72,76 @@
       "expectedOutput": "[3,2,1]"
     },
     {
-      "input": "words = [\"aba\",\"bcb\",\"ece\",\"aa\",\"e\"], queries = [[0,2],[1,4],[1,1]]",
+      "input": "[\"aba\",\"bcb\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"ece\",\"aa\",\"e\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[3,2,1]"
+    },
+    {
+      "input": "[\"aba\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"aba\",\"e\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[2,1,1]"
+    },
+    {
+      "input": "[\"e\",\"aa\",\"ece\",\"bcb\",\"aba\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[3,3,1]"
+    },
+    {
+      "input": "[\"aa\",\"aba\",\"bcb\",\"e\",\"ece\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[2,3,1]"
+    },
+    {
+      "input": "[\"ece\",\"e\",\"bcb\",\"aba\",\"aa\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[2,3,1]"
+    },
+    {
+      "input": "[\"aba\",\"aba\",\"aba\",\"aba\",\"aba\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[3,4,1]"
+    },
+    {
+      "input": "[\"aba\",\"bcb\",\"ece\",\"aa\",\"e\",\"aba\",\"bcb\",\"ece\",\"aa\",\"e\"]\n[[0,2],[1,4],[1,1]]",
       "expectedOutput": "[2,3,0]"
     },
     {
-      "input": "words = [\"a\",\"e\",\"i\"], queries = [[0,2],[0,1],[2,2]]",
-      "expectedOutput": "[3,2,1]"
+      "input": "[\"a\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[2,1,1]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[0,1,0]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[0,0,0]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[1,0,0]"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n[[0,2],[1,4],[1,1]]",
+      "expectedOutput": "[0,0,0]"
     }
   ],
   "sqlSchema": null,

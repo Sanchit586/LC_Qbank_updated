@@ -81,15 +81,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "root = [3,9,20,null,null,15,7]",
+      "input": "[3]",
       "expectedOutput": "true"
     },
     {
-      "input": "root = [1,2,2,3,3,null,null,4,4]",
+      "input": "[3,9]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[7,15,null,null,20,9,3]",
       "expectedOutput": "false"
     },
     {
-      "input": "root = []",
+      "input": "[3,9,null]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[3,null,9]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,null,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,null,3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,null,2,null,3]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,2,3,4,4,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[5,3,6,2,4,null,null,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[10,5,15,null,null,6,20]",
       "expectedOutput": "true"
     }
   ],

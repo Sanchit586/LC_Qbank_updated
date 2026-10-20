@@ -81,15 +81,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "start = \"_L__R__R_\", target = \"L______RR\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "start = \"R_L_\", target = \"__LR\"",
+      "input": "\"_L__\"\n\"L______RR\"",
       "expectedOutput": "false"
     },
     {
-      "input": "start = \"_R\", target = \"R_\"",
+      "input": "\"R__R_\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"_\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"_L\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"_R__R__L_\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"_L__R__R__L__R__R_\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"______\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"_L__R__R__R__R__L_\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"L______RR\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"L______RR\"",
       "expectedOutput": "false"
     }
   ],

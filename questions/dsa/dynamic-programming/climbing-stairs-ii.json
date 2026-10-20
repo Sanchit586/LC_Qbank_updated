@@ -80,16 +80,72 @@
       "expectedOutput": "12"
     },
     {
-      "input": "n = 4, costs = [1,2,3,4]",
+      "input": "0\n[1,2,3,4]",
       "expectedOutput": "13"
     },
     {
-      "input": "n = 4, costs = [5,1,6,2]",
-      "expectedOutput": "11"
+      "input": "1\n[1,2,3,4]",
+      "expectedOutput": "13"
     },
     {
-      "input": "n = 3, costs = [9,8,3]",
+      "input": "2\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "3\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "5\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "6\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "7\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "8\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "9\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "-1\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "-2\n[1,2,3,4]",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "4\n[1,2]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "4\n[3,4]",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "4\n[1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "4\n[1,4]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "4\n[4,3,2,1]",
       "expectedOutput": "12"
+    },
+    {
+      "input": "4\n[1,1,1,1]",
+      "expectedOutput": "8"
     }
   ],
   "sqlSchema": null,

@@ -97,20 +97,68 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"))()))\", locked = \"010100\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"()()\", locked = \"0000\"",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \")\", locked = \"0\"",
+      "input": "\"))(\"\n\"010100\"",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"(((())(((())\", locked = \"111111010111\"",
+      "input": "\")))\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\")\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"))\"\n\"010100\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\")))())\"\n\"010100\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"))))))\"\n\"010100\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"010100\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"010100\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

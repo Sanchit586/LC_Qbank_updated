@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"input\", t = \"ouput\", k = 9",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "s = \"abc\", t = \"bcd\", k = 10",
+      "input": "\"in\"\n\"ouput\"\n9",
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"aab\", t = \"bbb\", k = 27",
-      "expectedOutput": "true"
+      "input": "\"put\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"i\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"tupni\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"inputinput\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"iiiii\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"inputtupni\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"INPUT\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"b\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"ouput\"\n9",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

@@ -76,27 +76,83 @@
   "testCases": [
     {
       "input": "\"dcab\"\n[[0,3],[1,2]]",
-      "expectedOutput": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\""
+      "expectedOutput": "\"bacd\""
     },
     {
       "input": "\"dcab\"\n[[0,3],[1,2],[0,2]]",
-      "expectedOutput": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\""
+      "expectedOutput": "\"abcd\""
     },
     {
       "input": "\"cba\"\n[[0,1],[1,2]]",
-      "expectedOutput": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\""
+      "expectedOutput": "\"abc\""
     },
     {
-      "input": "s = \"dcab\", pairs = [[0,3],[1,2]]",
-      "expectedOutput": "\"bacd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[1] and s[2], s = \"bacd\""
+      "input": "\"bacd\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"bacd\""
     },
     {
-      "input": "s = \"dcab\", pairs = [[0,3],[1,2],[0,2]]",
-      "expectedOutput": "\"abcd\"\nExplaination: \nSwap s[0] and s[3], s = \"bcad\"\nSwap s[0] and s[2], s = \"acbd\"\nSwap s[1] and s[2], s = \"abcd\""
+      "input": "\"dcabdcab\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"bacddcab\""
     },
     {
-      "input": "s = \"cba\", pairs = [[0,1],[1,2]]",
-      "expectedOutput": "\"abc\"\nExplaination: \nSwap s[0] and s[1], s = \"bca\"\nSwap s[1] and s[2], s = \"bac\"\nSwap s[0] and s[1], s = \"abc\""
+      "input": "\"dddd\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"dddd\""
+    },
+    {
+      "input": "\"dcabbacd\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"bacdbacd\""
+    },
+    {
+      "input": "\"DCAB\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"BACD\""
+    },
+    {
+      "input": "\"abba\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"bcdea\""
+    },
+    {
+      "input": "\"racecar\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"eacrcar\""
+    },
+    {
+      "input": "\"hello\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"hello\""
+    },
+    {
+      "input": "\"leetcode\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"leetcode\""
+    },
+    {
+      "input": "\"world\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"lorwd\""
+    },
+    {
+      "input": "\"()[]{}\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"()[]{}\""
+    },
+    {
+      "input": "\"([)]\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"()[]\""
+    },
+    {
+      "input": "\"{[]}\"\n[[0,3],[1,2]]",
+      "expectedOutput": "\"{[]}\""
+    },
+    {
+      "input": "\"bacd\"\n[[0,3],[1,2],[0,2]]",
+      "expectedOutput": "\"abcd\""
     }
   ],
   "sqlSchema": null,

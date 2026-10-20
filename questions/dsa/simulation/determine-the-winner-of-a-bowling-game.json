@@ -94,19 +94,67 @@
       "expectedOutput": "2"
     },
     {
-      "input": "player1 = [5,10,3,2], player2 = [6,5,7,3]",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "player1 = [3,5,7,6], player2 = [8,10,10,2]",
+      "input": "[5,10]\n[6,5,7,3]",
       "expectedOutput": "2"
     },
     {
-      "input": "player1 = [2,3], player2 = [4,1]",
-      "expectedOutput": "0"
+      "input": "[3,2]\n[6,5,7,3]",
+      "expectedOutput": "2"
     },
     {
-      "input": "player1 = [1,1,1,10,10,10,10], player2 = [10,10,10,10,1,1,1]",
+      "input": "[5]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[5,2]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[2,3,10,5]\n[6,5,7,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,3,5,10]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[10,5,3,2]\n[6,5,7,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[5,5,5,5]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[5,10,3,2,5,10,3,2]\n[6,5,7,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[10,20,6,4]\n[6,5,7,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[6,11,4,3]\n[6,5,7,3]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,9,2,1]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-5,-10,-3,-2]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,0,0,0]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1,1]\n[6,5,7,3]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]\n[6,5,7,3]",
       "expectedOutput": "2"
     }
   ],

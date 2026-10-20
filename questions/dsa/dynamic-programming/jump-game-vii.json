@@ -71,11 +71,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"011010\", minJump = 2, maxJump = 3",
+      "input": "\"011\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"010\"\n2\n3",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"01101110\", minJump = 2, maxJump = 3",
+      "input": "\"0\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"01\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"010110\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"011010011010\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"000000\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"011010010110\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n2\n3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ab\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n2\n3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n2\n3",
       "expectedOutput": "false"
     }
   ],

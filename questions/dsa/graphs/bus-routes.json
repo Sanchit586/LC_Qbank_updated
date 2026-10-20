@@ -72,11 +72,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "routes = [[1,2,7],[3,6,7]], source = 1, target = 6",
+      "input": "[[1,2,7],[3,6,7]]\n0\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n2\n6",
       "expectedOutput": "2"
     },
     {
-      "input": "routes = [[7,12],[4,5,15],[6],[15,19],[9,12,13]], source = 15, target = 12",
+      "input": "[[1,2,7],[3,6,7]]\n3\n6",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n4\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n5\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n6\n6",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n-1\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n-2\n6",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n0",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n4",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n5",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n7",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n8",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n9",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[[1,2,7],[3,6,7]]\n1\n-1",
       "expectedOutput": "-1"
     }
   ],

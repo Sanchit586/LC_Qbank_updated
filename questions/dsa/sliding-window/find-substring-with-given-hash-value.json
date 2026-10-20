@@ -72,12 +72,76 @@
       "expectedOutput": "\"fbx\""
     },
     {
-      "input": "s = \"leetcode\", power = 7, modulo = 20, k = 2, hashValue = 0",
+      "input": "\"leet\"\n7\n20\n2\n0",
       "expectedOutput": "\"ee\""
     },
     {
-      "input": "s = \"fbxzaad\", power = 31, modulo = 100, k = 3, hashValue = 32",
-      "expectedOutput": "\"fbx\""
+      "input": "\"code\"\n7\n20\n2\n0",
+      "expectedOutput": "\"de\""
+    },
+    {
+      "input": "\"l\"\n7\n20\n2\n0",
+      "expectedOutput": "\"l\""
+    },
+    {
+      "input": "\"le\"\n7\n20\n2\n0",
+      "expectedOutput": "\"le\""
+    },
+    {
+      "input": "\"edocteel\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ee\""
+    },
+    {
+      "input": "\"leetcodeleetcode\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ee\""
+    },
+    {
+      "input": "\"llllll\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ll\""
+    },
+    {
+      "input": "\"leetcodeedocteel\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ee\""
+    },
+    {
+      "input": "\"LEETCODE\"\n7\n20\n2\n0",
+      "expectedOutput": "\"DE\""
+    },
+    {
+      "input": "\"a\"\n7\n20\n2\n0",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n7\n20\n2\n0",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n7\n20\n2\n0",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"abba\"\n7\n20\n2\n0",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aaaaa\"\n7\n20\n2\n0",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"abcde\"\n7\n20\n2\n0",
+      "expectedOutput": "\"de\""
     }
   ],
   "sqlSchema": null,

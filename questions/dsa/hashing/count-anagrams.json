@@ -72,12 +72,76 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"too hot\"",
+      "input": "\"too\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\" hot\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"t\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"to\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"toh oot\"",
       "expectedOutput": "18"
     },
     {
-      "input": "s = \"aa\"",
+      "input": "\"too hottoo hot\"",
+      "expectedOutput": "1080"
+    },
+    {
+      "input": "\"tttttt\"",
       "expectedOutput": "1"
+    },
+    {
+      "input": "\"too hottoh oot\"",
+      "expectedOutput": "810"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "120"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "120"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

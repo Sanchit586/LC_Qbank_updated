@@ -70,12 +70,76 @@
       "expectedOutput": "[]"
     },
     {
-      "input": "queries = [\"word\",\"note\",\"ants\",\"wood\"], dictionary = [\"wood\",\"joke\",\"moat\"]",
-      "expectedOutput": "[\"word\",\"note\",\"wood\"]"
+      "input": "[\"word\",\"note\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"note\"]"
     },
     {
-      "input": "queries = [\"yes\"], dictionary = [\"not\"]",
-      "expectedOutput": "[]"
+      "input": "[\"ants\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"wood\"]"
+    },
+    {
+      "input": "[\"word\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\"]"
+    },
+    {
+      "input": "[\"word\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"wood\"]"
+    },
+    {
+      "input": "[\"wood\",\"ants\",\"note\",\"word\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"wood\",\"note\",\"word\"]"
+    },
+    {
+      "input": "[\"ants\",\"note\",\"wood\",\"word\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"note\",\"wood\",\"word\"]"
+    },
+    {
+      "input": "[\"word\",\"wood\",\"note\",\"ants\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"wood\",\"note\"]"
+    },
+    {
+      "input": "[\"word\",\"word\",\"word\",\"word\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"word\",\"word\",\"word\"]"
+    },
+    {
+      "input": "[\"word\",\"note\",\"ants\",\"wood\",\"word\",\"note\",\"ants\",\"wood\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"word\",\"note\",\"wood\",\"word\",\"note\",\"wood\"]"
+    },
+    {
+      "input": "[\"a\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"bca\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"tea\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"dog\",\"god\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[\"wood\",\"joke\",\"moat\"]",
+      "expectedOutput": "[\"two\"]"
     }
   ],
   "sqlSchema": null,

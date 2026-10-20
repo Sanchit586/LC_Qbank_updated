@@ -69,12 +69,36 @@
       "expectedOutput": "\"0\""
     },
     {
-      "input": "n = \"123\"",
-      "expectedOutput": "\"121\""
+      "input": "\"23\"",
+      "expectedOutput": "\"22\""
     },
     {
-      "input": "n = \"1\"",
-      "expectedOutput": "\"0\""
+      "input": "\"12\"",
+      "expectedOutput": "\"11\""
+    },
+    {
+      "input": "\"321\"",
+      "expectedOutput": "\"323\""
+    },
+    {
+      "input": "\"123123\"",
+      "expectedOutput": "\"123321\""
+    },
+    {
+      "input": "\"111\"",
+      "expectedOutput": "\"101\""
+    },
+    {
+      "input": "\"123321\"",
+      "expectedOutput": "\"122221\""
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "\"111\""
+    },
+    {
+      "input": "\"11\"",
+      "expectedOutput": "\"9\""
     }
   ],
   "sqlSchema": null,

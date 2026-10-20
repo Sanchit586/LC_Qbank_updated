@@ -83,16 +83,72 @@
       "expectedOutput": "\"coding\""
     },
     {
-      "input": "encodedText = \"ch   ie   pr\", rows = 3",
-      "expectedOutput": "\"cipher\""
+      "input": "\"ch   i\"\n3",
+      "expectedOutput": "\"c h\""
     },
     {
-      "input": "encodedText = \"iveo    eed   l te   olc\", rows = 4",
-      "expectedOutput": "\"i love leetcode\""
+      "input": "\"e   pr\"\n3",
+      "expectedOutput": "\"e\""
     },
     {
-      "input": "encodedText = \"coding\", rows = 1",
-      "expectedOutput": "\"coding\""
+      "input": "\"c\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ch\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"rp   ei   hc\"\n3",
+      "expectedOutput": "\"rehpic\""
+    },
+    {
+      "input": "\"cccccc\"\n3",
+      "expectedOutput": "\"ccc\""
+    },
+    {
+      "input": "\"a\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abba\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aaaaa\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"abcde\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"edcba\"\n3",
+      "expectedOutput": "\"e\""
+    },
+    {
+      "input": "\"aab\"\n3",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,

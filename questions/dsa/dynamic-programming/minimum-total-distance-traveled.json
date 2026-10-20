@@ -71,12 +71,12 @@
       "expectedOutput": "2"
     },
     {
-      "input": "robot = [0,4,6], factory = [[2,2],[6,2]]",
-      "expectedOutput": "4"
+      "input": "[0,4,6]\n[[-2,1],[2,1]]",
+      "expectedOutput": "inf"
     },
     {
-      "input": "robot = [1,-1], factory = [[-2,1],[2,1]]",
-      "expectedOutput": "2"
+      "input": "[1,-1]\n[[2,2],[6,2]]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

@@ -83,15 +83,47 @@
       "expectedOutput": "0"
     },
     {
-      "input": "ops = [\"5\",\"2\",\"C\",\"D\",\"+\"]",
-      "expectedOutput": "30"
+      "input": "[\"5\",\"2\"]",
+      "expectedOutput": "7"
     },
     {
-      "input": "ops = [\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]",
-      "expectedOutput": "27"
+      "input": "[\"5\"]",
+      "expectedOutput": "5"
     },
     {
-      "input": "ops = [\"1\",\"C\"]",
+      "input": "[\"5\",\"5\",\"5\",\"5\",\"5\"]",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "[\"5\",\"2\",\"C\",\"D\",\"+\",\"5\",\"2\",\"C\",\"D\",\"+\"]",
+      "expectedOutput": "60"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"5\",\"-2\",\"4\",\"C\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"5\",\"-2\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\",\"5\",\"-2\",\"4\",\"C\",\"D\",\"9\",\"+\",\"+\"]",
+      "expectedOutput": "54"
+    },
+    {
+      "input": "[\"1\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"1\",\"1\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"1\",\"C\",\"1\",\"C\"]",
       "expectedOutput": "0"
     }
   ],

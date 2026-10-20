@@ -72,14 +72,6 @@
     {
       "input": "[1,2,3,4,0]",
       "expectedOutput": "[5,5,5,5,5]"
-    },
-    {
-      "input": "edges = [1,2,0,0]",
-      "expectedOutput": "[3,3,3,4]"
-    },
-    {
-      "input": "edges = [1,2,3,4,0]",
-      "expectedOutput": "[5,5,5,5,5]"
     }
   ],
   "sqlSchema": null,

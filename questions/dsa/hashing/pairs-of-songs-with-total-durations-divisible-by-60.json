@@ -68,12 +68,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "time = [30,20,150,100,40]",
+      "input": "[30,20]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[150,100,40]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[30]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[30,40]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[40,100,150,20,30]",
       "expectedOutput": "3"
     },
     {
-      "input": "time = [60,60,60]",
+      "input": "[20,30,40,100,150]",
       "expectedOutput": "3"
+    },
+    {
+      "input": "[150,100,40,30,20]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[30,30,30,30,30]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "[30,20,150,100,40,30,20,150,100,40]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[60,40,300,200,80]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[31,21,151,101,41]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[29,19,149,99,39]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-30,-20,-150,-100,-40]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

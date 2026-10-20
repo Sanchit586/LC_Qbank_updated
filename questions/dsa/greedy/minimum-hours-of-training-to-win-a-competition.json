@@ -68,12 +68,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "initialEnergy = 5, initialExperience = 3, energy = [1,4,3,2], experience = [2,6,3,1]",
-      "expectedOutput": "8"
+      "input": "0\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "13"
     },
     {
-      "input": "initialEnergy = 2, initialExperience = 4, energy = [1], experience = [3]",
-      "expectedOutput": "0"
+      "input": "1\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "2\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "3\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "4\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "6\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "7\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "8\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "9\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "-1\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "-2\n3\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "5\n0\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "5\n1\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "5\n2\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "5\n4\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "5\n5\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "5\n6\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "5\n7\n[1,4,3,2]\n[2,6,3,1]",
+      "expectedOutput": "6"
     }
   ],
   "sqlSchema": null,

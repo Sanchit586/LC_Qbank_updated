@@ -81,15 +81,39 @@
       "expectedOutput": "0"
     },
     {
-      "input": "grid = [[\"X\",\"Y\",\".\"],[\"Y\",\".\",\".\"]]",
+      "input": "[[\"X\",\"Y\",\".\"]]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[[\"X\"],[\"Y\"]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"Y\",\".\",\".\"],[\"X\",\"Y\",\".\"]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"X\",\"Y\"],[\"Y\",\".\"],[\".\",\".\"]]",
       "expectedOutput": "3"
     },
     {
-      "input": "grid = [[\"X\",\"X\"],[\"X\",\"Y\"]]",
+      "input": "[[\"X\",\"X\"]]",
       "expectedOutput": "0"
     },
     {
-      "input": "grid = [[\".\",\".\"],[\".\",\".\"]]",
+      "input": "[[\"X\"],[\"X\"]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"X\",\"Y\"],[\"X\",\"X\"]]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\".\",\".\"]]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\".\"],[\".\"]]",
       "expectedOutput": "0"
     }
   ],

@@ -82,15 +82,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "input = \"dir\\n\\tsubdir1\\n\\tsubdir2\\n\\t\\tfile.ext\"",
-      "expectedOutput": "20"
+      "input": "\"dir\\n\\tsubdir1\\n\\tsu\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "input = \"dir\\n\\tsubdir1\\n\\t\\tfile1.ext\\n\\t\\tsubsubdir1\\n\\tsubdir2\\n\\t\\tsubsubdir2\\n\\t\\t\\tfile2.ext\"",
-      "expectedOutput": "32"
+      "input": "\"bdir2\\n\\t\\tfile.ext\"",
+      "expectedOutput": "14"
     },
     {
-      "input": "input = \"a\"",
+      "input": "\"d\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"di\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"txe.elif\\t\\t\\n2ridbus\\t\\n1ridbus\\t\\nrid\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"dddddd\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aA\"",
       "expectedOutput": "0"
     }
   ],

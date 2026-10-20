@@ -85,16 +85,72 @@
       "expectedOutput": "\"0011\""
     },
     {
-      "input": "s = \"5525\", a = 9, b = 2",
+      "input": "\"55\"\n9\n2",
+      "expectedOutput": "\"50\""
+    },
+    {
+      "input": "\"25\"\n9\n2",
+      "expectedOutput": "\"20\""
+    },
+    {
+      "input": "\"5\"\n9\n2",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "\"5255\"\n9\n2",
+      "expectedOutput": "\"5053\""
+    },
+    {
+      "input": "\"55255525\"\n9\n2",
+      "expectedOutput": "\"20502050\""
+    },
+    {
+      "input": "\"5555\"\n9\n2",
+      "expectedOutput": "\"5050\""
+    },
+    {
+      "input": "\"55255255\"\n9\n2",
+      "expectedOutput": "\"20575050\""
+    },
+    {
+      "input": "\"a\"\n9\n2",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"\n9\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"0\"\n9\n2",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"\n9\n2",
+      "expectedOutput": "\"000\""
+    },
+    {
+      "input": "\"5525\"\n0\n2",
+      "expectedOutput": "\"2555\""
+    },
+    {
+      "input": "\"5525\"\n1\n2",
       "expectedOutput": "\"2050\""
     },
     {
-      "input": "s = \"74\", a = 5, b = 1",
-      "expectedOutput": "\"24\""
+      "input": "\"5525\"\n2\n2",
+      "expectedOutput": "\"2151\""
     },
     {
-      "input": "s = \"0011\", a = 4, b = 2",
-      "expectedOutput": "\"0011\""
+      "input": "\"5525\"\n3\n2",
+      "expectedOutput": "\"2050\""
+    },
+    {
+      "input": "\"5525\"\n4\n2",
+      "expectedOutput": "\"2151\""
+    },
+    {
+      "input": "\"5525\"\n5\n2",
+      "expectedOutput": "\"2050\""
     }
   ],
   "sqlSchema": null,

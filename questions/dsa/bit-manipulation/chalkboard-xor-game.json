@@ -73,27 +73,63 @@
   ],
   "testCases": [
     {
-      "input": "[1,1,2]",
-      "expectedOutput": "false"
-    },
-    {
       "input": "[0,1]",
       "expectedOutput": "true"
     },
     {
-      "input": "[1,2,3]",
+      "input": "[1,0]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,1,2]",
-      "expectedOutput": "false"
-    },
-    {
-      "input": "nums = [0,1]",
+      "input": "[0,0]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,2,3]",
+      "input": "[0,1,0,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,-1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[-1,1]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[100,-100]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,1,2,2,3,3]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[1,2,3,4]",
       "expectedOutput": "true"
     }
   ],

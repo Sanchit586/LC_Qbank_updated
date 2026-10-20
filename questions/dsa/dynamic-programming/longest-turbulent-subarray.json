@@ -81,15 +81,71 @@
       "expectedOutput": "1"
     },
     {
-      "input": "arr = [9,4,2,10,7,8,8,1,9]",
-      "expectedOutput": "5"
+      "input": "[9,4,2,10]",
+      "expectedOutput": "3"
     },
     {
-      "input": "arr = [4,8,12,16]",
+      "input": "[7,8,8,1,9]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[9,9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[9,4]",
       "expectedOutput": "2"
     },
     {
-      "input": "arr = [100]",
+      "input": "[9,1,8,8,7,10,2,4,9]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[1,2,4,7,8,8,9,9,10]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[10,9,9,8,8,7,4,2,1]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[9,9,9,9,9]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[18,8,4,20,14,16,16,2,18]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[10,5,3,11,8,9,9,2,10]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[8,3,1,9,6,7,7,0,8]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[-9,-4,-2,-10,-7,-8,-8,-1,-9]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[1]",
       "expectedOutput": "1"
     }
   ],

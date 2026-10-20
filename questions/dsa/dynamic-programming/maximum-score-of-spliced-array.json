@@ -81,16 +81,72 @@
       "expectedOutput": "31"
     },
     {
-      "input": "nums1 = [60,60,60], nums2 = [10,90,10]",
-      "expectedOutput": "210"
+      "input": "[60]\n[10,90,10]",
+      "expectedOutput": "160"
     },
     {
-      "input": "nums1 = [20,40,20,70,30], nums2 = [50,20,50,40,20]",
-      "expectedOutput": "220"
+      "input": "[60,60]\n[10,90,10]",
+      "expectedOutput": "160"
     },
     {
-      "input": "nums1 = [7,11,13], nums2 = [1,1,1]",
-      "expectedOutput": "31"
+      "input": "[60,60,60,60,60,60]\n[10,90,10]",
+      "expectedOutput": "390"
+    },
+    {
+      "input": "[120,120,120]\n[10,90,10]",
+      "expectedOutput": "360"
+    },
+    {
+      "input": "[61,61,61]\n[10,90,10]",
+      "expectedOutput": "212"
+    },
+    {
+      "input": "[59,59,59]\n[10,90,10]",
+      "expectedOutput": "208"
+    },
+    {
+      "input": "[-60,-60,-60]\n[10,90,10]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "[0,0,0]\n[10,90,10]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "[1,1,1]\n[10,90,10]",
+      "expectedOutput": "110"
+    },
+    {
+      "input": "[0]\n[10,90,10]",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "[1]\n[10,90,10]",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "[-1]\n[10,90,10]",
+      "expectedOutput": "99"
+    },
+    {
+      "input": "[0,0]\n[10,90,10]",
+      "expectedOutput": "100"
+    },
+    {
+      "input": "[1,2]\n[10,90,10]",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "[2,1]\n[10,90,10]",
+      "expectedOutput": "102"
+    },
+    {
+      "input": "[1,1]\n[10,90,10]",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "[-1,1]\n[10,90,10]",
+      "expectedOutput": "100"
     }
   ],
   "sqlSchema": null,

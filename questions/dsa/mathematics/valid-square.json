@@ -80,16 +80,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,1]",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "p1 = [0,0], p2 = [1,1], p3 = [1,0], p4 = [0,12]",
+      "input": "[1,1]\n[1,1]\n[1,0]\n[0,1]",
       "expectedOutput": "false"
     },
     {
-      "input": "p1 = [1,0], p2 = [-1,0], p3 = [0,1], p4 = [0,-1]",
-      "expectedOutput": "true"
+      "input": "[-1,-1]\n[1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,2]\n[1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,1]\n[1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,1]\n[1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[100,-100]\n[1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[2,2]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[0,0]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[-1,-1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[1,2]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[2,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[-1,1]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[100,-100]\n[1,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[1,1]\n[0,1]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[1,1]\n[1,1]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[1,1]\n[2,0]\n[0,1]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[1,1]\n[2,1]\n[0,1]",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

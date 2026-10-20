@@ -84,16 +84,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "logs = [\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]",
+      "input": "[\"d1/\",\"d2/\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "logs = [\"d1/\",\"d2/\",\"./\",\"d3/\",\"../\",\"d31/\"]",
+      "input": "[\"../\",\"d21/\",\"./\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"d1/\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"d1/\",\"./\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"./\",\"d21/\",\"../\",\"d2/\",\"d1/\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"../\",\"./\",\"d1/\",\"d2/\",\"d21/\"]",
       "expectedOutput": "3"
     },
     {
-      "input": "logs = [\"d1/\",\"../\",\"../\",\"../\"]",
-      "expectedOutput": "0"
+      "input": "[\"d21/\",\"d2/\",\"d1/\",\"./\",\"../\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"d1/\",\"d1/\",\"d1/\",\"d1/\",\"d1/\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\",\"d1/\",\"d2/\",\"../\",\"d21/\",\"./\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

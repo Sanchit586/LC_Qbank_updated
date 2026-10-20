@@ -69,12 +69,76 @@
       "expectedOutput": "2"
     },
     {
-      "input": "items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"color\", ruleValue = \"silver\"",
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"co\"\n\"silver\"",
       "expectedOutput": "1"
     },
     {
-      "input": "items = [[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"phone\"],[\"phone\",\"gold\",\"iphone\"]], ruleKey = \"type\", ruleValue = \"phone\"",
-      "expectedOutput": "2"
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"lor\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"c\"\n\"silver\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"roloc\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"colorcolor\"\n\"silver\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"ccccc\"\n\"silver\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"colorroloc\"\n\"silver\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"COLOR\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"a\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"b\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"aa\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"ab\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"ba\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"aba\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"abba\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"aaaaa\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"abcde\"\n\"silver\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[[\"phone\",\"blue\",\"pixel\"],[\"computer\",\"silver\",\"lenovo\"],[\"phone\",\"gold\",\"iphone\"]]\n\"edcba\"\n\"silver\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

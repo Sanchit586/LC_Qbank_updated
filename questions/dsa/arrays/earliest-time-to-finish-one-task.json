@@ -65,14 +65,6 @@
     {
       "input": "[[100,100],[100,100],[100,100]]",
       "expectedOutput": "200"
-    },
-    {
-      "input": "tasks = [[1,6],[2,3]]",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "tasks = [[100,100],[100,100],[100,100]]",
-      "expectedOutput": "200"
     }
   ],
   "sqlSchema": null,

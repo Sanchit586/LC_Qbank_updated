@@ -85,16 +85,72 @@
       "expectedOutput": "\"-1\""
     },
     {
-      "input": "num = \"1234\", t = 256",
+      "input": "\"12\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"34\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"1\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"4321\"\n256",
+      "expectedOutput": "\"4388\""
+    },
+    {
+      "input": "\"12341234\"\n256",
+      "expectedOutput": "\"12341244\""
+    },
+    {
+      "input": "\"1111\"\n256",
       "expectedOutput": "\"1488\""
     },
     {
-      "input": "num = \"12355\", t = 50",
-      "expectedOutput": "\"12355\""
+      "input": "\"12344321\"\n256",
+      "expectedOutput": "\"12344324\""
     },
     {
-      "input": "num = \"11111\", t = 26",
-      "expectedOutput": "\"-1\""
+      "input": "\"a\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"b\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"aa\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"ab\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"ba\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"aA\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"0\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"121\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"()\"\n256",
+      "expectedOutput": "\"488\""
+    },
+    {
+      "input": "\"(]\"\n256",
+      "expectedOutput": "\"488\""
     }
   ],
   "sqlSchema": null,

@@ -68,12 +68,64 @@
       "expectedOutput": "false"
     },
     {
-      "input": "coordinate1 = \"a1\", coordinate2 = \"c3\"",
+      "input": "\"a1a1\"\n\"c3\"",
       "expectedOutput": "true"
     },
     {
-      "input": "coordinate1 = \"a1\", coordinate2 = \"h3\"",
+      "input": "\"a11a\"\n\"c3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"121\"\n\"c3\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"a1\"\n\"c3c3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a1\"\n\"c33c\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a1\"\n\"121\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a1a1\"\n\"h3\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a11a\"\n\"h3\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"h3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a1\"\n\"h3h3\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a1\"\n\"h33h\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a1a1\"\n\"c3c3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a1a1\"\n\"c33c\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a11a\"\n\"c3c3\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"a11a\"\n\"c33c\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

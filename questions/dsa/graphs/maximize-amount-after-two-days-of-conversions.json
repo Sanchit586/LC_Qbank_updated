@@ -83,27 +83,83 @@
   "testCases": [
     {
       "input": "\"EUR\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
-      "expectedOutput": "720.00000"
+      "expectedOutput": "720"
     },
     {
       "input": "\"NGN\"\n[[\"NGN\",\"EUR\"]]\n[9.0]\n[[\"NGN\",\"EUR\"]]\n[6.0]",
-      "expectedOutput": "1.50000"
+      "expectedOutput": "1.5"
     },
     {
       "input": "\"USD\"\n[[\"USD\",\"EUR\"]]\n[1.0]\n[[\"EUR\",\"JPY\"]]\n[10.0]",
-      "expectedOutput": "1.00000"
+      "expectedOutput": "1"
     },
     {
-      "input": "initialCurrency = \"EUR\", pairs1 = [[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]], rates1 = [2.0,3.0], pairs2 = [[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]], rates2 = [4.0,5.0,6.0]",
-      "expectedOutput": "720.00000"
+      "input": "\"E\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
     },
     {
-      "input": "initialCurrency = \"NGN\", pairs1 = [[\"NGN\",\"EUR\"]], rates1 = [9.0], pairs2 = [[\"NGN\",\"EUR\"]], rates2 = [6.0]",
-      "expectedOutput": "1.50000"
+      "input": "\"UR\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
     },
     {
-      "input": "initialCurrency = \"USD\", pairs1 = [[\"USD\",\"EUR\"]], rates1 = [1.0], pairs2 = [[\"EUR\",\"JPY\"]], rates2 = [10.0]",
-      "expectedOutput": "1.00000"
+      "input": "\"EU\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"RUE\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"EUREUR\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"EEE\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"EURRUE\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"eur\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"\n[[\"EUR\",\"USD\"],[\"USD\",\"JPY\"]]\n[2.0,3.0]\n[[\"JPY\",\"USD\"],[\"USD\",\"CHF\"],[\"CHF\",\"EUR\"]]\n[4.0,5.0,6.0]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

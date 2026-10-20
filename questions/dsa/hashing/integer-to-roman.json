@@ -80,16 +80,72 @@
       "expectedOutput": "\"MCMXCIV\""
     },
     {
-      "input": "num = 3749",
-      "expectedOutput": "\"MMMDCCXLIX\""
+      "input": "3748",
+      "expectedOutput": "\"MMMDCCXLVIII\""
     },
     {
-      "input": "num = 58",
-      "expectedOutput": "\"LVIII\""
+      "input": "3750",
+      "expectedOutput": "\"MMMDCCL\""
     },
     {
-      "input": "num = 1994",
-      "expectedOutput": "\"MCMXCIV\""
+      "input": "3747",
+      "expectedOutput": "\"MMMDCCXLVII\""
+    },
+    {
+      "input": "3751",
+      "expectedOutput": "\"MMMDCCLI\""
+    },
+    {
+      "input": "3746",
+      "expectedOutput": "\"MMMDCCXLVI\""
+    },
+    {
+      "input": "3752",
+      "expectedOutput": "\"MMMDCCLII\""
+    },
+    {
+      "input": "1874",
+      "expectedOutput": "\"MDCCCLXXIV\""
+    },
+    {
+      "input": "-3749",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"I\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"II\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"III\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"IV\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"V\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "\"\""
     }
   ],
   "sqlSchema": null,

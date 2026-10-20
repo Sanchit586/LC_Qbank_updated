@@ -84,16 +84,72 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"abcd\", t = \"bcdf\", maxCost = 3",
-      "expectedOutput": "3"
+      "input": "\"ab\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
     },
     {
-      "input": "s = \"abcd\", t = \"cdef\", maxCost = 3",
+      "input": "\"cd\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"a\"\n\"bcdf\"\n3",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"abcd\", t = \"acde\", maxCost = 0",
+      "input": "\"dcba\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaa\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ABCD\"\n\"bcdf\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"bcdf\"\n3",
       "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aab\"\n\"bcdf\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aA\"\n\"bcdf\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"0\"\n\"bcdf\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n\"bcdf\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"()\"\n\"bcdf\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"(]\"\n\"bcdf\"\n3",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

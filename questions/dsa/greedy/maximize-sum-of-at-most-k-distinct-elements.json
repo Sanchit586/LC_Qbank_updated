@@ -83,16 +83,72 @@
       "expectedOutput": "[2,1]"
     },
     {
-      "input": "nums = [84,93,100,77,90], k = 3",
+      "input": "[84,93]\n3",
+      "expectedOutput": "[93,84]"
+    },
+    {
+      "input": "[100,77,90]\n3",
+      "expectedOutput": "[100,90,77]"
+    },
+    {
+      "input": "[84]\n3",
+      "expectedOutput": "[84]"
+    },
+    {
+      "input": "[84,90]\n3",
+      "expectedOutput": "[90,84]"
+    },
+    {
+      "input": "[90,77,100,93,84]\n3",
       "expectedOutput": "[100,93,90]"
     },
     {
-      "input": "nums = [84,93,100,77,93], k = 3",
-      "expectedOutput": "[100,93,84]"
+      "input": "[77,84,90,93,100]\n3",
+      "expectedOutput": "[100,93,90]"
     },
     {
-      "input": "nums = [1,1,1,2,2,2], k = 6",
-      "expectedOutput": "[2,1]"
+      "input": "[100,93,90,84,77]\n3",
+      "expectedOutput": "[100,93,90]"
+    },
+    {
+      "input": "[84,84,84,84,84]\n3",
+      "expectedOutput": "[84]"
+    },
+    {
+      "input": "[84,93,100,77,90,84,93,100,77,90]\n3",
+      "expectedOutput": "[100,93,90]"
+    },
+    {
+      "input": "[168,186,200,154,180]\n3",
+      "expectedOutput": "[200,186,180]"
+    },
+    {
+      "input": "[85,94,101,78,91]\n3",
+      "expectedOutput": "[101,94,91]"
+    },
+    {
+      "input": "[83,92,99,76,89]\n3",
+      "expectedOutput": "[99,92,89]"
+    },
+    {
+      "input": "[-84,-93,-100,-77,-90]\n3",
+      "expectedOutput": "[-77,-84,-90]"
+    },
+    {
+      "input": "[0,0,0,0]\n3",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[1,1,1,1]\n3",
+      "expectedOutput": "[1]"
+    },
+    {
+      "input": "[0]\n3",
+      "expectedOutput": "[0]"
+    },
+    {
+      "input": "[1]\n3",
+      "expectedOutput": "[1]"
     }
   ],
   "sqlSchema": null,

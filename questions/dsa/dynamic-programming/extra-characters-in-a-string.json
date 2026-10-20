@@ -73,12 +73,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "s = \"leetscode\", dictionary = [\"leet\",\"code\",\"leetcode\"]",
+      "input": "\"leet\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"scode\"\n[\"leet\",\"code\",\"leetcode\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"sayhelloworld\", dictionary = [\"hello\",\"world\"]",
+      "input": "\"l\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"le\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"edocsteel\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"leetscodeleetscode\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"llllll\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"leetscodeedocsteel\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"LEETSCODE\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"a\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ba\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aba\"\n[\"leet\",\"code\",\"leetcode\"]",
       "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n[\"leet\",\"code\",\"leetcode\"]",
+      "expectedOutput": "5"
     }
   ],
   "sqlSchema": null,

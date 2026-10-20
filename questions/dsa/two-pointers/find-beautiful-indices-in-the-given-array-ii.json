@@ -75,12 +75,76 @@
       "expectedOutput": "[0]"
     },
     {
-      "input": "s = \"isawsquirrelnearmysquirrelhouseohmy\", a = \"my\", b = \"squirrel\", k = 15",
-      "expectedOutput": "[16,33]"
+      "input": "\"isawsquirrelnearm\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
     },
     {
-      "input": "s = \"abcd\", a = \"a\", b = \"a\", k = 4",
-      "expectedOutput": "[0]"
+      "input": "\"ysquirrelhouseohmy\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[16]"
+    },
+    {
+      "input": "\"i\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"is\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ymhoesuohlerriuqsymraenlerriuqswasi\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"iiiiii\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ISAWSQUIRRELNEARMYSQUIRRELHOUSEOHMY\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"a\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"b\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aa\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ab\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"ba\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aba\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abba\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aaaaa\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"abcde\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"edcba\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "\"aab\"\n\"my\"\n\"squirrel\"\n15",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

@@ -80,16 +80,72 @@
       "expectedOutput": "\"To be or to be not\""
     },
     {
-      "input": "text = \"Leetcode is cool\"",
-      "expectedOutput": "\"Is cool leetcode\""
+      "input": "\"Leetcode\"",
+      "expectedOutput": "\"Leetcode\""
     },
     {
-      "input": "text = \"Keep calm and code on\"",
-      "expectedOutput": "\"On and keep calm code\""
+      "input": "\" is cool\"",
+      "expectedOutput": "\"Is cool\""
     },
     {
-      "input": "text = \"To be or not to be\"",
-      "expectedOutput": "\"To be or to be not\""
+      "input": "\"L\"",
+      "expectedOutput": "\"L\""
+    },
+    {
+      "input": "\"Le\"",
+      "expectedOutput": "\"Le\""
+    },
+    {
+      "input": "\"looc si edocteeL\"",
+      "expectedOutput": "\"Si looc edocteeL\""
+    },
+    {
+      "input": "\"LLLLLL\"",
+      "expectedOutput": "\"Llllll\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"A\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"B\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"Aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"Ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"Ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"Aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"Abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"Aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"Abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"Edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"Aab\""
     }
   ],
   "sqlSchema": null,

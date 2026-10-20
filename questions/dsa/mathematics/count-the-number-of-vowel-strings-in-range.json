@@ -70,12 +70,76 @@
       "expectedOutput": "3"
     },
     {
-      "input": "words = [\"are\",\"amy\",\"u\"], left = 0, right = 2",
+      "input": "[\"are\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"amy\",\"u\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"are\",\"u\"]\n0\n2",
       "expectedOutput": "2"
     },
     {
-      "input": "words = [\"hey\",\"aeo\",\"mu\",\"ooo\",\"artro\"], left = 1, right = 4",
+      "input": "[\"are\",\"amy\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"u\",\"amy\",\"are\"]\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"amy\",\"are\",\"u\"]\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"u\",\"are\",\"amy\"]\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"are\",\"are\",\"are\"]\n0\n2",
       "expectedOutput": "3"
+    },
+    {
+      "input": "[\"are\",\"amy\",\"u\",\"are\",\"amy\",\"u\"]\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n0\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n0\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n0\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n0\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n0\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n0\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n0\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

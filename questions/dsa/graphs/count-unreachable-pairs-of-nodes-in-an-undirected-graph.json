@@ -73,12 +73,36 @@
       "expectedOutput": "14"
     },
     {
-      "input": "n = 3, edges = [[0,1],[0,2],[1,2]]",
-      "expectedOutput": "0"
+      "input": "4\n[[0,1],[0,2],[1,2]]",
+      "expectedOutput": "3"
     },
     {
-      "input": "n = 7, edges = [[0,2],[0,5],[2,4],[1,6],[5,4]]",
-      "expectedOutput": "14"
+      "input": "5\n[[0,1],[0,2],[1,2]]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "6\n[[0,1],[0,2],[1,2]]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "7\n[[0,1],[0,2],[1,2]]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "8\n[[0,1],[0,2],[1,2]]",
+      "expectedOutput": "25"
+    },
+    {
+      "input": "8\n[[0,2],[0,5],[2,4],[1,6],[5,4]]",
+      "expectedOutput": "21"
+    },
+    {
+      "input": "9\n[[0,2],[0,5],[2,4],[1,6],[5,4]]",
+      "expectedOutput": "29"
+    },
+    {
+      "input": "10\n[[0,2],[0,5],[2,4],[1,6],[5,4]]",
+      "expectedOutput": "38"
     }
   ],
   "sqlSchema": null,

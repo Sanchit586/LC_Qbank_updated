@@ -83,15 +83,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "words = [\"hello\",\"leetcode\"], order = \"hlabcdefgijkmnopqrstuvwxyz\"",
+      "input": "[\"hello\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
       "expectedOutput": "true"
     },
     {
-      "input": "words = [\"word\",\"world\",\"row\"], order = \"worldabcefghijkmnpqstuvxyz\"",
+      "input": "[\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"leetcode\",\"hello\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
       "expectedOutput": "false"
     },
     {
-      "input": "words = [\"apple\",\"app\"], order = \"abcdefghijklmnopqrstuvwxyz\"",
+      "input": "[\"hello\",\"hello\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"hello\",\"leetcode\",\"hello\",\"leetcode\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"a\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[\"hello\",\"world\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n\"hlabcdefgijkmnopqrstuvwxyz\"",
       "expectedOutput": "false"
     }
   ],

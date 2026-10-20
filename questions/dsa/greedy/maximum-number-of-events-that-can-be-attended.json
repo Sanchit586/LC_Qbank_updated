@@ -68,14 +68,6 @@
     {
       "input": "[[1,2],[2,3],[3,4],[1,2]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "events = [[1,2],[2,3],[3,4]]",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "events= [[1,2],[2,3],[3,4],[1,2]]",
-      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

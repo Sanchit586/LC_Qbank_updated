@@ -82,16 +82,72 @@
       "expectedOutput": "[\"adsdf\",\"sfd\"]"
     },
     {
-      "input": "words = [\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]",
-      "expectedOutput": "[\"Alaska\",\"Dad\"]"
+      "input": "[\"Hello\",\"Alaska\"]",
+      "expectedOutput": "[\"Alaska\"]"
     },
     {
-      "input": "words = [\"omk\"]",
+      "input": "[\"Dad\",\"Peace\"]",
+      "expectedOutput": "[\"Dad\"]"
+    },
+    {
+      "input": "[\"Hello\"]",
       "expectedOutput": "[]"
     },
     {
-      "input": "words = [\"adsdf\",\"sfd\"]",
-      "expectedOutput": "[\"adsdf\",\"sfd\"]"
+      "input": "[\"Hello\",\"Peace\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"Peace\",\"Dad\",\"Alaska\",\"Hello\"]",
+      "expectedOutput": "[\"Dad\",\"Alaska\"]"
+    },
+    {
+      "input": "[\"Alaska\",\"Dad\",\"Hello\",\"Peace\"]",
+      "expectedOutput": "[\"Alaska\",\"Dad\"]"
+    },
+    {
+      "input": "[\"Peace\",\"Hello\",\"Dad\",\"Alaska\"]",
+      "expectedOutput": "[\"Dad\",\"Alaska\"]"
+    },
+    {
+      "input": "[\"Hello\",\"Hello\",\"Hello\",\"Hello\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"Hello\",\"Alaska\",\"Dad\",\"Peace\",\"Hello\",\"Alaska\",\"Dad\",\"Peace\"]",
+      "expectedOutput": "[\"Alaska\",\"Dad\",\"Alaska\",\"Dad\"]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

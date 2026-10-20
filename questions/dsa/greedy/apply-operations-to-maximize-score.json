@@ -73,12 +73,76 @@
       "expectedOutput": "4788"
     },
     {
-      "input": "nums = [8,3,9,3,8], k = 2",
-      "expectedOutput": "81"
+      "input": "[8,3,9,3,8]\n0",
+      "expectedOutput": "1"
     },
     {
-      "input": "nums = [19,12,14,6,10,18], k = 3",
-      "expectedOutput": "4788"
+      "input": "[8,3,9,3,8]\n1",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "[8,3,9,3,8]\n3",
+      "expectedOutput": "729"
+    },
+    {
+      "input": "[8,3,9,3,8]\n4",
+      "expectedOutput": "5832"
+    },
+    {
+      "input": "[8,3,9,3,8]\n5",
+      "expectedOutput": "46656"
+    },
+    {
+      "input": "[8,3,9,3,8]\n6",
+      "expectedOutput": "373248"
+    },
+    {
+      "input": "[8,3,9,3,8]\n7",
+      "expectedOutput": "2985984"
+    },
+    {
+      "input": "[8,3,9,3,8]\n-1",
+      "expectedOutput": "111111112"
+    },
+    {
+      "input": "[8,3,9,3,8]\n-2",
+      "expectedOutput": "123456791"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n0",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n1",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n2",
+      "expectedOutput": "342"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n4",
+      "expectedOutput": "67032"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n5",
+      "expectedOutput": "938448"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n6",
+      "expectedOutput": "13138272"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n7",
+      "expectedOutput": "157659264"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n8",
+      "expectedOutput": "891911161"
+    },
+    {
+      "input": "[19,12,14,6,10,18]\n-1",
+      "expectedOutput": "157894738"
     }
   ],
   "sqlSchema": null,

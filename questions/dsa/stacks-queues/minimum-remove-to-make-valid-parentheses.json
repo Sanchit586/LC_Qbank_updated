@@ -80,16 +80,72 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"lee(t(c)o)de)\"",
-      "expectedOutput": "\"lee(t(c)o)de\""
+      "input": "\"lee(t(\"",
+      "expectedOutput": "\"leet\""
     },
     {
-      "input": "s = \"a)b(c)d\"",
-      "expectedOutput": "\"ab(c)d\""
+      "input": "\"c)o)de)\"",
+      "expectedOutput": "\"code\""
     },
     {
-      "input": "s = \"))((\"",
-      "expectedOutput": "\"\""
+      "input": "\"l\"",
+      "expectedOutput": "\"l\""
+    },
+    {
+      "input": "\"le\"",
+      "expectedOutput": "\"le\""
+    },
+    {
+      "input": "\")ed)o)c(t(eel\"",
+      "expectedOutput": "\"edocteel\""
+    },
+    {
+      "input": "\"llllll\"",
+      "expectedOutput": "\"llllll\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

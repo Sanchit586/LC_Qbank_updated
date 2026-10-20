@@ -66,15 +66,79 @@
     },
     {
       "input": "\"abbaccd\"",
-      "expectedOutput": "[\"d\",\"bb\",\"cc\"]"
+      "expectedOutput": "[\"bb\",\"cc\",\"d\"]"
     },
     {
-      "input": "s = \"adefaddaccc\"",
-      "expectedOutput": "[\"e\",\"f\",\"ccc\"]"
+      "input": "\"adefa\"",
+      "expectedOutput": "[\"d\",\"e\",\"f\"]"
     },
     {
-      "input": "s = \"abbaccd\"",
-      "expectedOutput": "[\"d\",\"bb\",\"cc\"]"
+      "input": "\"ddaccc\"",
+      "expectedOutput": "[\"dd\",\"a\",\"ccc\"]"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "\"ad\"",
+      "expectedOutput": "[\"a\",\"d\"]"
+    },
+    {
+      "input": "\"cccaddafeda\"",
+      "expectedOutput": "[\"ccc\",\"f\",\"e\"]"
+    },
+    {
+      "input": "\"aaaaaa\"",
+      "expectedOutput": "[\"aaaaaa\"]"
+    },
+    {
+      "input": "\"ADEFADDACCC\"",
+      "expectedOutput": "[\"E\",\"F\",\"CCC\"]"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "[\"b\"]"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "[\"aa\"]"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "[\"b\",\"a\"]"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "[\"b\"]"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "[\"bb\"]"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "[\"aaaaa\"]"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\",\"e\"]"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "[\"e\",\"d\",\"c\",\"b\",\"a\"]"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "[\"aa\",\"b\"]"
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "[\"a\",\"A\"]"
     }
   ],
   "sqlSchema": null,

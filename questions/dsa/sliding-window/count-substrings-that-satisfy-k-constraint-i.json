@@ -81,16 +81,72 @@
       "expectedOutput": "15"
     },
     {
-      "input": "s = \"10101\", k = 1",
-      "expectedOutput": "12"
+      "input": "\"10\"\n1",
+      "expectedOutput": "3"
     },
     {
-      "input": "s = \"1010101\", k = 2",
-      "expectedOutput": "25"
+      "input": "\"101\"\n1",
+      "expectedOutput": "6"
     },
     {
-      "input": "s = \"11111\", k = 1",
+      "input": "\"1\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"1010110101\"\n1",
+      "expectedOutput": "29"
+    },
+    {
+      "input": "\"0\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"10101\"\n0",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"10101\"\n2",
       "expectedOutput": "15"
+    },
+    {
+      "input": "\"10101\"\n3",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"10101\"\n4",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"10101\"\n5",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"10101\"\n6",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "\"101\"\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"0101\"\n2",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"1\"\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"10\"\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"10101011010101\"\n2",
+      "expectedOutput": "63"
+    },
+    {
+      "input": "\"111111\"\n2",
+      "expectedOutput": "21"
     }
   ],
   "sqlSchema": null,

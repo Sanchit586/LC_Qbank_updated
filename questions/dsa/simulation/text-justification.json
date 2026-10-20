@@ -73,27 +73,83 @@
   "testCases": [
     {
       "input": "[\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"]\n16",
-      "expectedOutput": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]"
+      "expectedOutput": "[\"This    is    an\",\"example  of text\",\"justification.  \"]"
     },
     {
       "input": "[\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"]\n16",
-      "expectedOutput": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]"
+      "expectedOutput": "[\"What   must   be\",\"acknowledgment  \",\"shall be        \"]"
     },
     {
       "input": "[\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"]\n20",
-      "expectedOutput": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]"
+      "expectedOutput": "[\"Science  is  what we\",\"understand      well\",\"enough to explain to\",\"a  computer.  Art is\",\"everything  else  we\",\"do                  \"]"
     },
     {
-      "input": "words = [\"This\", \"is\", \"an\", \"example\", \"of\", \"text\", \"justification.\"], maxWidth = 16",
-      "expectedOutput": "[\n   \"This    is    an\",\n   \"example  of text\",\n   \"justification.  \"\n]"
+      "input": "[\"This\",\"is\",\"an\"]\n16",
+      "expectedOutput": "[\"This is an      \"]"
     },
     {
-      "input": "words = [\"What\",\"must\",\"be\",\"acknowledgment\",\"shall\",\"be\"], maxWidth = 16",
-      "expectedOutput": "[\n  \"What   must   be\",\n  \"acknowledgment  \",\n  \"shall be        \"\n]"
+      "input": "[\"example\",\"of\",\"text\",\"justification.\"]\n16",
+      "expectedOutput": "[\"example  of text\",\"justification.  \"]"
     },
     {
-      "input": "words = [\"Science\",\"is\",\"what\",\"we\",\"understand\",\"well\",\"enough\",\"to\",\"explain\",\"to\",\"a\",\"computer.\",\"Art\",\"is\",\"everything\",\"else\",\"we\",\"do\"], maxWidth = 20",
-      "expectedOutput": "[\n  \"Science  is  what we\",\n  \"understand      well\",\n  \"enough to explain to\",\n  \"a  computer.  Art is\",\n  \"everything  else  we\",\n  \"do                  \"\n]"
+      "input": "[\"This\"]\n16",
+      "expectedOutput": "[\"This            \"]"
+    },
+    {
+      "input": "[\"This\",\"justification.\"]\n16",
+      "expectedOutput": "[\"This            \",\"justification.  \"]"
+    },
+    {
+      "input": "[\"This\",\"is\"]\n16",
+      "expectedOutput": "[\"This is         \"]"
+    },
+    {
+      "input": "[\"justification.\",\"text\",\"of\",\"example\",\"an\",\"is\",\"This\"]\n16",
+      "expectedOutput": "[\"justification.  \",\"text  of example\",\"an is This      \"]"
+    },
+    {
+      "input": "[\"This\",\"an\",\"example\",\"is\",\"justification.\",\"of\",\"text\"]\n16",
+      "expectedOutput": "[\"This  an example\",\"is              \",\"justification.  \",\"of text         \"]"
+    },
+    {
+      "input": "[\"text\",\"of\",\"justification.\",\"is\",\"example\",\"an\",\"This\"]\n16",
+      "expectedOutput": "[\"text          of\",\"justification.  \",\"is   example  an\",\"This            \"]"
+    },
+    {
+      "input": "[\"This\",\"This\",\"This\",\"This\",\"This\"]\n16",
+      "expectedOutput": "[\"This  This  This\",\"This This       \"]"
+    },
+    {
+      "input": "[\"This\",\"is\",\"an\",\"example\",\"of\",\"text\",\"justification.\",\"This\",\"is\",\"an\",\"example\",\"of\",\"text\",\"justification.\"]\n16",
+      "expectedOutput": "[\"This    is    an\",\"example  of text\",\"justification.  \",\"This    is    an\",\"example  of text\",\"justification.  \"]"
+    },
+    {
+      "input": "[\"a\"]\n16",
+      "expectedOutput": "[\"a               \"]"
+    },
+    {
+      "input": "[\"\"]\n16",
+      "expectedOutput": "[\"                \"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n16",
+      "expectedOutput": "[\"a b             \"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n16",
+      "expectedOutput": "[\"a a             \"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n16",
+      "expectedOutput": "[\"ab ba           \"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n16",
+      "expectedOutput": "[\"abc bca cab     \"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n16",
+      "expectedOutput": "[\"eat  tea tan ate\",\"nat bat         \"]"
     }
   ],
   "sqlSchema": null,

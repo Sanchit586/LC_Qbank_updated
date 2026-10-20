@@ -67,11 +67,75 @@
       "expectedOutput": "[false,false,false]"
     },
     {
-      "input": "nums = [0,1,1]",
+      "input": "[0]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "[1,1]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[0,1]",
+      "expectedOutput": "[true,false]"
+    },
+    {
+      "input": "[1,1,0]",
+      "expectedOutput": "[false,false,false]"
+    },
+    {
+      "input": "[0,0,0]",
+      "expectedOutput": "[true,true,true]"
+    },
+    {
+      "input": "[0,1,1,0,1,1]",
+      "expectedOutput": "[true,false,false,false,false,false]"
+    },
+    {
+      "input": "[0,2,2]",
       "expectedOutput": "[true,false,false]"
     },
     {
-      "input": "nums = [1,1,1]",
+      "input": "[1,2,2]",
+      "expectedOutput": "[false,false,false]"
+    },
+    {
+      "input": "[-1,0,0]",
+      "expectedOutput": "[false,false,false]"
+    },
+    {
+      "input": "[0,-1,-1]",
+      "expectedOutput": "[true,false,false]"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "[0,0]",
+      "expectedOutput": "[true,true]"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[2,1]",
+      "expectedOutput": "[false,true]"
+    },
+    {
+      "input": "[-1,1]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "[false,false,false]"
+    },
+    {
+      "input": "[3,2,1]",
       "expectedOutput": "[false,false,false]"
     }
   ],

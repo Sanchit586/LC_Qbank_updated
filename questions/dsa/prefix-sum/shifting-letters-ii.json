@@ -71,12 +71,76 @@
       "expectedOutput": "\"catz\""
     },
     {
-      "input": "s = \"abc\", shifts = [[0,1,0],[1,2,1],[0,2,1]]",
-      "expectedOutput": "\"ace\""
+      "input": "\"cba\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"ccc\""
     },
     {
-      "input": "s = \"dztz\", shifts = [[0,0,0],[1,1,1]]",
-      "expectedOutput": "\"catz\""
+      "input": "\"abcabc\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"aceabc\""
+    },
+    {
+      "input": "\"aaa\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "\"abccba\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"acecba\""
+    },
+    {
+      "input": "\"ABC\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"uwy\""
+    },
+    {
+      "input": "\"aba\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"acc\""
+    },
+    {
+      "input": "\"abba\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"acda\""
+    },
+    {
+      "input": "\"aaaaa\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"abcaa\""
+    },
+    {
+      "input": "\"abcde\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"acede\""
+    },
+    {
+      "input": "\"edcba\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"eeeba\""
+    },
+    {
+      "input": "\"aab\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"abd\""
+    },
+    {
+      "input": "\"121\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"egg\""
+    },
+    {
+      "input": "\"racecar\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"rbeecar\""
+    },
+    {
+      "input": "\"hello\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"hfnlo\""
+    },
+    {
+      "input": "\"leetcode\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"lfgtcode\""
+    },
+    {
+      "input": "\"world\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"wptld\""
+    },
+    {
+      "input": "\"()[]{}\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"vxwwac\""
+    },
+    {
+      "input": "\"([)]\"\n[[0,1,0],[1,2,1],[0,2,1]]",
+      "expectedOutput": "\"vvyw\""
     }
   ],
   "sqlSchema": null,

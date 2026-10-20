@@ -79,27 +79,67 @@
   "testCases": [
     {
       "input": "6\n[[4,5],[3,4],[2,3],[1,2],[0,1]]\n[[0,5]]",
-      "expectedOutput": "[false,true]"
+      "expectedOutput": "[true]"
     },
     {
       "input": "3\n[[0,1],[1,2]]\n[[0,2]]",
-      "expectedOutput": "[false,false]"
+      "expectedOutput": "[true]"
     },
     {
       "input": "4\n[[0,1],[2,3]]\n[[0,3]]",
-      "expectedOutput": "[true,true]"
+      "expectedOutput": "[false]"
     },
     {
-      "input": "numCourses = 2, prerequisites = [[1,0]], queries = [[0,1],[1,0]]",
-      "expectedOutput": "[false,true]"
+      "input": "7\n[[4,5],[3,4],[2,3],[1,2],[0,1]]\n[[0,5]]",
+      "expectedOutput": "[true]"
     },
     {
-      "input": "numCourses = 2, prerequisites = [], queries = [[1,0],[0,1]]",
-      "expectedOutput": "[false,false]"
+      "input": "8\n[[4,5],[3,4],[2,3],[1,2],[0,1]]\n[[0,5]]",
+      "expectedOutput": "[true]"
     },
     {
-      "input": "numCourses = 3, prerequisites = [[1,2],[1,0],[2,0]], queries = [[1,0],[1,2]]",
-      "expectedOutput": "[true,true]"
+      "input": "9\n[[4,5],[3,4],[2,3],[1,2],[0,1]]\n[[0,5]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "4\n[[0,1],[1,2]]\n[[0,2]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "5\n[[0,1],[1,2]]\n[[0,2]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "6\n[[0,1],[1,2]]\n[[0,2]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "7\n[[0,1],[1,2]]\n[[0,2]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "8\n[[0,1],[1,2]]\n[[0,2]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "5\n[[0,1],[2,3]]\n[[0,3]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "6\n[[0,1],[2,3]]\n[[0,3]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "7\n[[0,1],[2,3]]\n[[0,3]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "8\n[[0,1],[2,3]]\n[[0,3]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "9\n[[0,1],[2,3]]\n[[0,3]]",
+      "expectedOutput": "[false]"
     }
   ],
   "sqlSchema": null,

@@ -80,16 +80,72 @@
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"l|*e*et|c**o|*de|\"",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "s = \"iamprogrammer\"",
+      "input": "\"l|*e*et|\"",
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"yo|uar|e**|b|e***au|tifu|l\"",
-      "expectedOutput": "5"
+      "input": "\"c**o|*de|\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"l\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"l|\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"|ed*|o**c|te*e*|l\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"llllll\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

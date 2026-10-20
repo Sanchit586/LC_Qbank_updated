@@ -69,12 +69,76 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"leet**cod*e\"",
-      "expectedOutput": "\"lecoe\""
+      "input": "\"leet*\"",
+      "expectedOutput": "\"lee\""
     },
     {
-      "input": "s = \"erase*****\"",
-      "expectedOutput": "\"\""
+      "input": "\"l\"",
+      "expectedOutput": "\"l\""
+    },
+    {
+      "input": "\"le\"",
+      "expectedOutput": "\"le\""
+    },
+    {
+      "input": "\"e*doc**teel\"",
+      "expectedOutput": "\"dteel\""
+    },
+    {
+      "input": "\"llllll\"",
+      "expectedOutput": "\"llllll\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"aA\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"0\""
     }
   ],
   "sqlSchema": null,

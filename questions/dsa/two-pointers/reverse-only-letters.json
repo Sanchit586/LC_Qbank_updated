@@ -81,16 +81,72 @@
       "expectedOutput": "\"Qedo1ct-eeLg=ntse-T!\""
     },
     {
-      "input": "s = \"ab-cd\"",
-      "expectedOutput": "\"dc-ba\""
+      "input": "\"ab\"",
+      "expectedOutput": "\"ba\""
     },
     {
-      "input": "s = \"a-bC-dEf-ghIj\"",
-      "expectedOutput": "\"j-Ih-gfE-dCba\""
+      "input": "\"-cd\"",
+      "expectedOutput": "\"-dc\""
     },
     {
-      "input": "s = \"Test1ng-Leet=code-Q!\"",
-      "expectedOutput": "\"Qedo1ct-eeLg=ntse-T!\""
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"dc-ba\"",
+      "expectedOutput": "\"ab-cd\""
+    },
+    {
+      "input": "\"ab-cdab-cd\"",
+      "expectedOutput": "\"dc-badc-ba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"ab-cddc-ba\"",
+      "expectedOutput": "\"ab-cddc-ba\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"baa\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"Aa\""
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "\"0\""
     }
   ],
   "sqlSchema": null,

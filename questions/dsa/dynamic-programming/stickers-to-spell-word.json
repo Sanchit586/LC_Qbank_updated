@@ -76,11 +76,75 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "stickers = [\"with\",\"example\",\"science\"], target = \"thehat\"",
+      "input": "[\"with\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"example\",\"science\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"with\",\"science\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"with\",\"example\"]\n\"thehat\"",
       "expectedOutput": "3"
     },
     {
-      "input": "stickers = [\"notice\",\"possible\"], target = \"basicbasic\"",
+      "input": "[\"science\",\"example\",\"with\"]\n\"thehat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"example\",\"science\",\"with\"]\n\"thehat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"with\",\"science\",\"example\"]\n\"thehat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"with\",\"with\",\"with\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"with\",\"example\",\"science\",\"with\",\"example\",\"science\"]\n\"thehat\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"a\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"thehat\"",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n\"thehat\"",
       "expectedOutput": "-1"
     }
   ],

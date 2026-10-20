@@ -69,14 +69,6 @@
     {
       "input": "[[4,3,2],[3,2,1]]",
       "expectedOutput": "-1"
-    },
-    {
-      "input": "grid = [[9,5,7,3],[8,9,6,1],[6,7,14,3],[2,5,3,1]]",
-      "expectedOutput": "9"
-    },
-    {
-      "input": "grid = [[4,3,2],[3,2,1]]",
-      "expectedOutput": "-1"
     }
   ],
   "sqlSchema": null,

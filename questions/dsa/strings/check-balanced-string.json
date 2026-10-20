@@ -66,11 +66,67 @@
       "expectedOutput": "true"
     },
     {
-      "input": "num = \"1234\"",
+      "input": "\"12\"",
       "expectedOutput": "false"
     },
     {
-      "input": "num = \"24123\"",
+      "input": "\"34\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"4321\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"12341234\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"1111\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"12344321\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"24\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"123\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"2\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"32142\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"2412324123\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"22222\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"2412332142\"",
       "expectedOutput": "true"
     }
   ],

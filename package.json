@@ -15,6 +15,7 @@
     "sync": "node scripts/sync-github.mjs --sync",
     "sync:dry-run": "node scripts/sync-github.mjs --dry-run",
     "report": "node scripts/generate-report.mjs",
+    "generate-tests": "python scripts/batch_test_engine.py",
     "test": "vitest run",
     "full-pipeline": "node scripts/discover.mjs && node scripts/collect.mjs && node scripts/normalize.mjs && node scripts/validate.mjs && node scripts/deduplicate.mjs && node scripts/generate-report.mjs"
   },

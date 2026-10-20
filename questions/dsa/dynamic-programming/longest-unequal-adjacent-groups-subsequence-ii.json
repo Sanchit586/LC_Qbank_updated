@@ -64,19 +64,83 @@
   "testCases": [
     {
       "input": "[\"bab\",\"dab\",\"cab\"]\n[1,2,2]",
-      "expectedOutput": "[\"bab\",\"cab\"]"
+      "expectedOutput": "[\"bab\",\"dab\"]"
     },
     {
       "input": "[\"a\",\"b\",\"c\",\"d\"]\n[1,2,3,4]",
       "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
     },
     {
-      "input": "words = [\"bab\",\"dab\",\"cab\"], groups = [1,2,2]",
+      "input": "[\"cab\",\"dab\",\"bab\"]\n[1,2,2]",
+      "expectedOutput": "[\"cab\",\"dab\"]"
+    },
+    {
+      "input": "[\"bab\",\"cab\",\"dab\"]\n[1,2,2]",
       "expectedOutput": "[\"bab\",\"cab\"]"
     },
     {
-      "input": "words = [\"a\",\"b\",\"c\",\"d\"], groups = [1,2,3,4]",
-      "expectedOutput": "[\"a\",\"b\",\"c\",\"d\"]"
+      "input": "[\"dab\",\"cab\",\"bab\"]\n[1,2,2]",
+      "expectedOutput": "[\"dab\",\"cab\"]"
+    },
+    {
+      "input": "[\"bab\",\"bab\",\"bab\"]\n[1,2,2]",
+      "expectedOutput": "[\"bab\"]"
+    },
+    {
+      "input": "[\"bab\",\"dab\",\"cab\",\"bab\",\"dab\",\"cab\"]\n[1,2,2]",
+      "expectedOutput": "[\"bab\",\"dab\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n[1,2,2]",
+      "expectedOutput": "[\"abc\"]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n[1,2,2]",
+      "expectedOutput": "[\"eat\"]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n[1,2,2]",
+      "expectedOutput": "[\"cat\"]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n[1,2,2]",
+      "expectedOutput": "[\"one\"]"
+    },
+    {
+      "input": "[\"a\",\"b\",\"c\",\"d\"]\n[1,2,2]",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]\n[1,2,2]",
+      "expectedOutput": "[\"flow\"]"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]\n[1,2,2]",
+      "expectedOutput": "[\"word\"]"
+    },
+    {
+      "input": "[\"apple\",\"pear\",\"banana\"]\n[1,2,2]",
+      "expectedOutput": "[\"apple\"]"
+    },
+    {
+      "input": "[\"blue\",\"red\",\"green\"]\n[1,2,2]",
+      "expectedOutput": "[\"blue\"]"
+    },
+    {
+      "input": "[\"1\",\"2\",\"3\"]\n[1,2,2]",
+      "expectedOutput": "[\"1\",\"2\"]"
+    },
+    {
+      "input": "[\"code\",\"leet\",\"love\"]\n[1,2,2]",
+      "expectedOutput": "[\"code\"]"
+    },
+    {
+      "input": "[\"bab\",\"dab\",\"cab\"]\n[1]",
+      "expectedOutput": "[\"bab\"]"
+    },
+    {
+      "input": "[\"bab\",\"dab\",\"cab\"]\n[2,2]",
+      "expectedOutput": "[\"bab\"]"
     }
   ],
   "sqlSchema": null,

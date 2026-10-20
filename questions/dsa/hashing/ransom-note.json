@@ -81,16 +81,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "ransomNote = \"a\", magazine = \"b\"",
+      "input": "\"aa\"\n\"b\"",
       "expectedOutput": "false"
     },
     {
-      "input": "ransomNote = \"aa\", magazine = \"ab\"",
+      "input": "\"A\"\n\"b\"",
       "expectedOutput": "false"
     },
     {
-      "input": "ransomNote = \"aa\", magazine = \"aab\"",
+      "input": "\"b\"\n\"b\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"ba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aaaaa\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"abcde\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"edcba\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aab\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aA\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"0\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"121\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"racecar\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"hello\"\n\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcode\"\n\"b\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

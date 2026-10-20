@@ -81,16 +81,68 @@
       "expectedOutput": "true"
     },
     {
-      "input": "expression = \"&(|(f))\"",
+      "input": "\"&(|\"",
       "expectedOutput": "false"
     },
     {
-      "input": "expression = \"|(f,f,f,t)\"",
+      "input": "\"&\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"&(\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"&(|(f))&(|(f))\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"&&&&&&\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcode\"",
       "expectedOutput": "true"
     },
     {
-      "input": "expression = \"!(&(f,t))\"",
+      "input": "\"|(f,f\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"|\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"|(\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"|(f,f,f,t)|(f,f,f,t)\"",
       "expectedOutput": "true"
+    },
+    {
+      "input": "\"||||||\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"!(&(\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"!\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"!(\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"!(&(f,t))!(&(f,t))\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"!!!!!!\"",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

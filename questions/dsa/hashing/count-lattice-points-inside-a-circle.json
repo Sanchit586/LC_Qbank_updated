@@ -70,14 +70,6 @@
     {
       "input": "[[2,2,2],[3,4,1]]",
       "expectedOutput": "16"
-    },
-    {
-      "input": "circles = [[2,2,1]]",
-      "expectedOutput": "5"
-    },
-    {
-      "input": "circles = [[2,2,2],[3,4,1]]",
-      "expectedOutput": "16"
     }
   ],
   "sqlSchema": null,

@@ -82,15 +82,71 @@
       "expectedOutput": "[-1,-1]"
     },
     {
-      "input": "nums = [5,1,4,1], indexDifference = 2, valueDifference = 4",
+      "input": "[5,1]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[4,1]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[5]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[1,4,1,5]\n2\n4",
       "expectedOutput": "[0,3]"
     },
     {
-      "input": "nums = [2,1], indexDifference = 0, valueDifference = 0",
-      "expectedOutput": "[0,0]"
+      "input": "[1,1,4,5]\n2\n4",
+      "expectedOutput": "[0,3]"
     },
     {
-      "input": "nums = [1,2,3], indexDifference = 2, valueDifference = 4",
+      "input": "[5,4,1,1]\n2\n4",
+      "expectedOutput": "[0,2]"
+    },
+    {
+      "input": "[5,5,5,5]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[5,1,4,1,5,1,4,1]\n2\n4",
+      "expectedOutput": "[0,3]"
+    },
+    {
+      "input": "[10,2,8,2]\n2\n4",
+      "expectedOutput": "[0,3]"
+    },
+    {
+      "input": "[6,2,5,2]\n2\n4",
+      "expectedOutput": "[0,3]"
+    },
+    {
+      "input": "[4,0,3,0]\n2\n4",
+      "expectedOutput": "[0,3]"
+    },
+    {
+      "input": "[-5,-1,-4,-1]\n2\n4",
+      "expectedOutput": "[0,3]"
+    },
+    {
+      "input": "[0,0,0,0]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[1,1,1,1]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[0]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[1]\n2\n4",
+      "expectedOutput": "[-1,-1]"
+    },
+    {
+      "input": "[-1]\n2\n4",
       "expectedOutput": "[-1,-1]"
     }
   ],

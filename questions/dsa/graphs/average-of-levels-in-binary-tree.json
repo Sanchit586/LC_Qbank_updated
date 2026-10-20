@@ -62,19 +62,83 @@
   "testCases": [
     {
       "input": "[3,9,20,null,null,15,7]",
-      "expectedOutput": "[3.00000,14.50000,11.00000]"
+      "expectedOutput": "[3.0,14.5,11.0]"
     },
     {
       "input": "[3,9,20,15,7]",
-      "expectedOutput": "[3.00000,14.50000,11.00000]"
+      "expectedOutput": "[3.0,14.5,11.0]"
     },
     {
-      "input": "root = [3,9,20,null,null,15,7]",
-      "expectedOutput": "[3.00000,14.50000,11.00000]"
+      "input": "[3]",
+      "expectedOutput": "[3.0]"
     },
     {
-      "input": "root = [3,9,20,15,7]",
-      "expectedOutput": "[3.00000,14.50000,11.00000]"
+      "input": "[3,9]",
+      "expectedOutput": "[3.0,9.0]"
+    },
+    {
+      "input": "[7,15,null,null,20,9,3]",
+      "expectedOutput": "[7.0,15.0,20.0,6.0]"
+    },
+    {
+      "input": "[3,9,null]",
+      "expectedOutput": "[3.0,9.0]"
+    },
+    {
+      "input": "[3,null,9]",
+      "expectedOutput": "[3.0,9.0]"
+    },
+    {
+      "input": "[1]",
+      "expectedOutput": "[1.0]"
+    },
+    {
+      "input": "[0]",
+      "expectedOutput": "[0.0]"
+    },
+    {
+      "input": "[-1]",
+      "expectedOutput": "[-1.0]"
+    },
+    {
+      "input": "[1,2]",
+      "expectedOutput": "[1.0,2.0]"
+    },
+    {
+      "input": "[1,null,2]",
+      "expectedOutput": "[1.0,2.0]"
+    },
+    {
+      "input": "[1,2,3]",
+      "expectedOutput": "[1.0,2.5]"
+    },
+    {
+      "input": "[1,2,null,3]",
+      "expectedOutput": "[1.0,2.0,3.0]"
+    },
+    {
+      "input": "[1,null,2,null,3]",
+      "expectedOutput": "[1.0,2.0,3.0]"
+    },
+    {
+      "input": "[1,2,3,4,5,6,7]",
+      "expectedOutput": "[1.0,2.5,5.5]"
+    },
+    {
+      "input": "[1,2,2,3,4,4,3]",
+      "expectedOutput": "[1.0,2.0,3.5]"
+    },
+    {
+      "input": "[5,3,6,2,4,null,null,1]",
+      "expectedOutput": "[5.0,4.5,3.0,1.0]"
+    },
+    {
+      "input": "[10,5,15,null,null,6,20]",
+      "expectedOutput": "[10.0,10.0,13.0]"
+    },
+    {
+      "input": "[-10,9,20,null,null,15,7]",
+      "expectedOutput": "[-10.0,14.5,11.0]"
     }
   ],
   "sqlSchema": null,

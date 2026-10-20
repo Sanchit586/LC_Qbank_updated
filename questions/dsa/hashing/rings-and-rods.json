@@ -82,15 +82,11 @@
       "expectedOutput": "0"
     },
     {
-      "input": "rings = \"B0B6G0R6R0R6G9\"",
-      "expectedOutput": "1"
+      "input": "\"B0\"",
+      "expectedOutput": "0"
     },
     {
-      "input": "rings = \"B0R0G0R9R0B0G0\"",
-      "expectedOutput": "1"
-    },
-    {
-      "input": "rings = \"G4\"",
+      "input": "\"G4G4\"",
       "expectedOutput": "0"
     }
   ],

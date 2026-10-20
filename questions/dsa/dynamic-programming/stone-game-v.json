@@ -82,15 +82,71 @@
       "expectedOutput": "0"
     },
     {
-      "input": "stoneValue = [6,2,3,4,5,5]",
+      "input": "[6,2,3]",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[4,5,5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[6]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[6,5]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[6,2]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[5,5,4,3,2,6]",
       "expectedOutput": "18"
     },
     {
-      "input": "stoneValue = [7,7,7,7,7,7,7]",
-      "expectedOutput": "28"
+      "input": "[2,3,4,5,5,6]",
+      "expectedOutput": "16"
     },
     {
-      "input": "stoneValue = [4]",
+      "input": "[6,5,5,4,3,2]",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[6,6,6,6,6]",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "[6,2,3,4,5,5,6,2,3,4,5,5]",
+      "expectedOutput": "43"
+    },
+    {
+      "input": "[12,4,6,8,10,10]",
+      "expectedOutput": "36"
+    },
+    {
+      "input": "[7,3,4,5,6,6]",
+      "expectedOutput": "24"
+    },
+    {
+      "input": "[5,1,2,3,4,4]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[-6,-2,-3,-4,-5,-5]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0]",
       "expectedOutput": "0"
     }
   ],

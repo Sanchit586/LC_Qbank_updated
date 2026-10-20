@@ -67,11 +67,75 @@
       "expectedOutput": "1"
     },
     {
-      "input": "s = \"Hello, my name is John\"",
+      "input": "\"Hello, my n\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ame is John\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"H\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"He\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"nhoJ si eman ym ,olleH\"",
       "expectedOutput": "5"
     },
     {
-      "input": "s = \"Hello\"",
+      "input": "\"HHHHHH\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aA\"",
       "expectedOutput": "1"
     }
   ],

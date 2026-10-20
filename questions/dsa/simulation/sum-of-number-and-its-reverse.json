@@ -79,16 +79,72 @@
       "expectedOutput": "true"
     },
     {
-      "input": "num = 443",
-      "expectedOutput": "true"
-    },
-    {
-      "input": "num = 63",
+      "input": "442",
       "expectedOutput": "false"
     },
     {
-      "input": "num = 181",
+      "input": "444",
       "expectedOutput": "true"
+    },
+    {
+      "input": "441",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "445",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "440",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "446",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "886",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "221",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-443",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "false"
     }
   ],
   "sqlSchema": null,

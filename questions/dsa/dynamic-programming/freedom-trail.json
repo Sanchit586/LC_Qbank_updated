@@ -70,12 +70,76 @@
       "expectedOutput": "13"
     },
     {
-      "input": "ring = \"godding\", key = \"gd\"",
+      "input": "\"god\"\n\"gd\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ding\"\n\"gd\"",
       "expectedOutput": "4"
     },
     {
-      "input": "ring = \"godding\", key = \"godding\"",
-      "expectedOutput": "13"
+      "input": "\"gniddog\"\n\"gd\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"goddinggodding\"\n\"gd\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"goddinggniddog\"\n\"gd\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abcde\"\n\"gd\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"edcba\"\n\"gd\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"leetcode\"\n\"gd\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"world\"\n\"gd\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"godding\"\n\"g\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"godding\"\n\"d\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"godding\"\n\"dg\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"godding\"\n\"gdgd\"",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"godding\"\n\"gg\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"godding\"\n\"gddg\"",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "\"godding\"\n\"hello\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"godding\"\n\"world\"",
+      "expectedOutput": "inf"
+    },
+    {
+      "input": "\"god\"\n\"godding\"",
+      "expectedOutput": "inf"
     }
   ],
   "sqlSchema": null,

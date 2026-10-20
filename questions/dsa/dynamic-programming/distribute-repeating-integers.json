@@ -90,15 +90,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,2,3,4], quantity = [2]",
+      "input": "[1,2]\n[2]",
       "expectedOutput": "false"
     },
     {
-      "input": "nums = [1,2,3,3], quantity = [2]",
+      "input": "[3,4]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,4]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[4,3,2,1]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1,1,1]\n[2]",
       "expectedOutput": "true"
     },
     {
-      "input": "nums = [1,1,2,2], quantity = [2,2]",
+      "input": "[1,2,3,4,1,2,3,4]\n[2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,4,6,8]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[2,3,4,5]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,1,2,3]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0,0,0]\n[2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[0]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[-1]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[0,0]\n[2]",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "[2,1]\n[2]",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "[1,1]\n[2]",
       "expectedOutput": "true"
     }
   ],

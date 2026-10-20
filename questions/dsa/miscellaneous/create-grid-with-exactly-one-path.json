@@ -65,27 +65,83 @@
   "testCases": [
     {
       "input": "2\n3",
-      "expectedOutput": "[\"..#\",\"#..\"]"
+      "expectedOutput": "[\"...\",\"##.\"]"
     },
     {
       "input": "3\n3",
-      "expectedOutput": "[\"..#\",\"#..\",\"##.\"]"
+      "expectedOutput": "[\"...\",\"##.\",\"##.\"]"
     },
     {
       "input": "1\n4",
       "expectedOutput": "[\"....\"]"
     },
     {
-      "input": "m = 2, n = 3",
-      "expectedOutput": "[\"..#\",\"#..\"]"
+      "input": "1\n3",
+      "expectedOutput": "[\"...\"]"
     },
     {
-      "input": "m = 3, n = 3",
-      "expectedOutput": "[\"..#\",\"#..\",\"##.\"]"
+      "input": "4\n3",
+      "expectedOutput": "[\"...\",\"##.\",\"##.\",\"##.\"]"
     },
     {
-      "input": "m = 1, n = 4",
-      "expectedOutput": "[\"....\"]"
+      "input": "5\n3",
+      "expectedOutput": "[\"...\",\"##.\",\"##.\",\"##.\",\"##.\"]"
+    },
+    {
+      "input": "6\n3",
+      "expectedOutput": "[\"...\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\"]"
+    },
+    {
+      "input": "7\n3",
+      "expectedOutput": "[\"...\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\"]"
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "[\".\",\".\"]"
+    },
+    {
+      "input": "2\n2",
+      "expectedOutput": "[\"..\",\"#.\"]"
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "[\"....\",\"###.\"]"
+    },
+    {
+      "input": "2\n5",
+      "expectedOutput": "[\".....\",\"####.\"]"
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "[\"......\",\"#####.\"]"
+    },
+    {
+      "input": "2\n7",
+      "expectedOutput": "[\".......\",\"######.\"]"
+    },
+    {
+      "input": "2\n8",
+      "expectedOutput": "[\"........\",\"#######.\"]"
+    },
+    {
+      "input": "8\n3",
+      "expectedOutput": "[\"...\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\",\"##.\"]"
+    },
+    {
+      "input": "3\n1",
+      "expectedOutput": "[\".\",\".\",\".\"]"
+    },
+    {
+      "input": "3\n2",
+      "expectedOutput": "[\"..\",\"#.\",\"#.\"]"
+    },
+    {
+      "input": "3\n4",
+      "expectedOutput": "[\"....\",\"###.\",\"###.\"]"
+    },
+    {
+      "input": "3\n5",
+      "expectedOutput": "[\".....\",\"####.\",\"####.\"]"
     }
   ],
   "sqlSchema": null,

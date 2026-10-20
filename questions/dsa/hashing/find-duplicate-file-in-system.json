@@ -65,19 +65,83 @@
   "testCases": [
     {
       "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
-      "expectedOutput": "[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+      "expectedOutput": "[[\"root/a/1.txt\",\"root/c/3.txt\"],[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"]]"
     },
     {
       "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]",
-      "expectedOutput": "[[\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+      "expectedOutput": "[[\"root/a/1.txt\",\"root/c/3.txt\"],[\"root/a/2.txt\",\"root/c/d/4.txt\"]]"
     },
     {
-      "input": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
-      "expectedOutput": "[[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+      "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\"]",
+      "expectedOutput": "[[\"root/a/1.txt\",\"root/c/3.txt\"]]"
     },
     {
-      "input": "paths = [\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]",
-      "expectedOutput": "[[\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+      "input": "[\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/c/d/4.txt\",\"root/4.txt\"]]"
+    },
+    {
+      "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root 4.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/a/2.txt\",\"root/4.txt\"]]"
+    },
+    {
+      "input": "[\"root 4.txt(efgh)\",\"root/c/d 4.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/a 1.txt(abcd) 2.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/4.txt\",\"root/c/d/4.txt\",\"root/a/2.txt\"],[\"root/c/3.txt\",\"root/a/1.txt\"]]"
+    },
+    {
+      "input": "[\"root 4.txt(efgh)\",\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/4.txt\",\"root/a/2.txt\",\"root/c/d/4.txt\"],[\"root/a/1.txt\",\"root/c/3.txt\"]]"
+    },
+    {
+      "input": "[\"root/c/d 4.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root 4.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/c/d/4.txt\",\"root/a/2.txt\",\"root/4.txt\"],[\"root/c/3.txt\",\"root/a/1.txt\"]]"
+    },
+    {
+      "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/a 1.txt(abcd) 2.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/a/1.txt\",\"root/a/1.txt\",\"root/a/1.txt\",\"root/a/1.txt\"],[\"root/a/2.txt\",\"root/a/2.txt\",\"root/a/2.txt\",\"root/a/2.txt\"]]"
+    },
+    {
+      "input": "[\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\",\"root/a 1.txt(abcd) 2.txt(efgh)\",\"root/c 3.txt(abcd)\",\"root/c/d 4.txt(efgh)\",\"root 4.txt(efgh)\"]",
+      "expectedOutput": "[[\"root/a/1.txt\",\"root/c/3.txt\",\"root/a/1.txt\",\"root/c/3.txt\"],[\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\",\"root/a/2.txt\",\"root/c/d/4.txt\",\"root/4.txt\"]]"
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

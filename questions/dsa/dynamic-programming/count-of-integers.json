@@ -68,12 +68,76 @@
       "expectedOutput": "5"
     },
     {
-      "input": "num1 = \"1\", num2 = \"12\", min_sum = 1, max_sum = 8",
+      "input": "\"11\"\n\"12\"\n1\n8",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"121\"\n\"12\"\n1\n8",
+      "expectedOutput": "999999958"
+    },
+    {
+      "input": "\"1\"\n\"1\"\n1\n8",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"1\"\n\"2\"\n1\n8",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"1\"\n\"21\"\n1\n8",
+      "expectedOutput": "18"
+    },
+    {
+      "input": "\"1\"\n\"1212\"\n1\n8",
+      "expectedOutput": "237"
+    },
+    {
+      "input": "\"1\"\n\"11\"\n1\n8",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "\"1\"\n\"1221\"\n1\n8",
+      "expectedOutput": "241"
+    },
+    {
+      "input": "\"1\"\n\"0\"\n1\n8",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"1\"\n\"121\"\n1\n8",
+      "expectedOutput": "61"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n0\n8",
       "expectedOutput": "11"
     },
     {
-      "input": "num1 = \"1\", num2 = \"5\", min_sum = 1, max_sum = 5",
+      "input": "\"1\"\n\"12\"\n2\n8",
+      "expectedOutput": "9"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n3\n8",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n4\n8",
       "expectedOutput": "5"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n5\n8",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n6\n8",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n-1\n8",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "\"1\"\n\"12\"\n-2\n8",
+      "expectedOutput": "11"
     }
   ],
   "sqlSchema": null,

@@ -89,16 +89,72 @@
       "expectedOutput": "\"yesyesyesaaa\""
     },
     {
-      "input": "s = \"(name)is(age)yearsold\", knowledge = [[\"name\",\"bob\"],[\"age\",\"two\"]]",
-      "expectedOutput": "\"bobistwoyearsold\""
+      "input": "\"ge)yearsold\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"ge)yearsold\""
     },
     {
-      "input": "s = \"hi(name)\", knowledge = [[\"a\",\"b\"]]",
-      "expectedOutput": "\"hi?\""
+      "input": "\"a\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"a\""
     },
     {
-      "input": "s = \"(a)(a)(a)aaa\", knowledge = [[\"a\",\"yes\"]]",
-      "expectedOutput": "\"yesyesyesaaa\""
+      "input": "\"b\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"aA\""
+    },
+    {
+      "input": "\"0\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"121\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"121\""
+    },
+    {
+      "input": "\"racecar\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"racecar\""
+    },
+    {
+      "input": "\"hello\"\n[[\"name\",\"bob\"],[\"age\",\"two\"]]",
+      "expectedOutput": "\"hello\""
     }
   ],
   "sqlSchema": null,

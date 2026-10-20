@@ -80,15 +80,71 @@
       "expectedOutput": "101"
     },
     {
-      "input": "n = 6",
+      "input": "0",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "7",
       "expectedOutput": "7"
     },
     {
-      "input": "n = 8",
+      "input": "9",
       "expectedOutput": "11"
     },
     {
-      "input": "n = 13",
+      "input": "10",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "12",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "11",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "15",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "16",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "26",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "20",
+      "expectedOutput": "101"
+    },
+    {
+      "input": "50",
       "expectedOutput": "101"
     }
   ],

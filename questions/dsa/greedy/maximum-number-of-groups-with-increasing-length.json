@@ -81,18 +81,6 @@
     {
       "input": "[1,1]",
       "expectedOutput": "1"
-    },
-    {
-      "input": "usageLimits = [1,2,5]",
-      "expectedOutput": "3"
-    },
-    {
-      "input": "usageLimits = [2,1,2]",
-      "expectedOutput": "2"
-    },
-    {
-      "input": "usageLimits = [1,1]",
-      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

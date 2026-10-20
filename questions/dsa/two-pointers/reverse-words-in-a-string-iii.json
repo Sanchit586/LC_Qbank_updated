@@ -70,12 +70,76 @@
       "expectedOutput": "\"rM gniD\""
     },
     {
-      "input": "s = \"Let's take LeetCode contest\"",
-      "expectedOutput": "\"s'teL ekat edoCteeL tsetnoc\""
+      "input": "\"Let's take Le\"",
+      "expectedOutput": "\"s'teL ekat eL\""
     },
     {
-      "input": "s = \"Mr Ding\"",
-      "expectedOutput": "\"rM gniD\""
+      "input": "\"etCode contest\"",
+      "expectedOutput": "\"edoCte tsetnoc\""
+    },
+    {
+      "input": "\"L\"",
+      "expectedOutput": "\"L\""
+    },
+    {
+      "input": "\"Le\"",
+      "expectedOutput": "\"eL\""
+    },
+    {
+      "input": "\"tsetnoc edoCteeL ekat s'teL\"",
+      "expectedOutput": "\"contest LeetCode take Let's\""
+    },
+    {
+      "input": "\"LLLLLL\"",
+      "expectedOutput": "\"LLLLLL\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"baa\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"Aa\""
     }
   ],
   "sqlSchema": null,

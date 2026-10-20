@@ -67,11 +67,75 @@
       "expectedOutput": "\"Invalid\""
     },
     {
-      "input": "timer = 60",
+      "input": "59",
       "expectedOutput": "\"Red\""
     },
     {
-      "input": "timer = 5",
+      "input": "61",
+      "expectedOutput": "\"Red\""
+    },
+    {
+      "input": "58",
+      "expectedOutput": "\"Red\""
+    },
+    {
+      "input": "62",
+      "expectedOutput": "\"Red\""
+    },
+    {
+      "input": "57",
+      "expectedOutput": "\"Red\""
+    },
+    {
+      "input": "63",
+      "expectedOutput": "\"Red\""
+    },
+    {
+      "input": "120",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "30",
+      "expectedOutput": "\"Orange\""
+    },
+    {
+      "input": "-60",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"Green\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "\"Invalid\""
+    },
+    {
+      "input": "10",
       "expectedOutput": "\"Invalid\""
     }
   ],

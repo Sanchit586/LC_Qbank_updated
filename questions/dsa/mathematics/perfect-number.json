@@ -65,11 +65,75 @@
       "expectedOutput": "false"
     },
     {
-      "input": "num = 28",
-      "expectedOutput": "true"
+      "input": "27",
+      "expectedOutput": "false"
     },
     {
-      "input": "num = 7",
+      "input": "29",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "26",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "30",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "25",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "31",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "56",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "14",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-28",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-3",
       "expectedOutput": "false"
     }
   ],

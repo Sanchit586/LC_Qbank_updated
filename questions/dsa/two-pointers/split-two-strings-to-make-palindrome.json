@@ -70,7 +70,7 @@
   "testCases": [
     {
       "input": "\"x\"\n\"y\"",
-      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome."
+      "expectedOutput": "true"
     },
     {
       "input": "\"xbdef\"\n\"xecab\"",
@@ -78,19 +78,75 @@
     },
     {
       "input": "\"ulacfd\"\n\"jizalu\"",
-      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
+      "expectedOutput": "true"
     },
     {
-      "input": "a = \"x\", b = \"y\"",
-      "expectedOutput": "true\nExplaination: If either a or b are palindromes the answer is true since you can split in the following way:\naprefix = \"\", asuffix = \"x\"\nbprefix = \"\", bsuffix = \"y\"\nThen, aprefix + bsuffix = \"\" + \"y\" = \"y\", which is a palindrome."
+      "input": "\"xx\"\n\"y\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "a = \"xbdef\", b = \"xecab\"",
-      "expectedOutput": "false"
+      "input": "\"X\"\n\"y\"",
+      "expectedOutput": "true"
     },
     {
-      "input": "a = \"ulacfd\", b = \"jizalu\"",
-      "expectedOutput": "true\nExplaination: Split them at index 3:\naprefix = \"ula\", asuffix = \"cfd\"\nbprefix = \"jiz\", bsuffix = \"alu\"\nThen, aprefix + bsuffix = \"ula\" + \"alu\" = \"ulaalu\", which is a palindrome."
+      "input": "\"a\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aa\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"edcba\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aab\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aA\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"0\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"121\"\n\"y\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"racecar\"\n\"y\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

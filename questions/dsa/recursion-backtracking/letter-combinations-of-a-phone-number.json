@@ -68,12 +68,32 @@
       "expectedOutput": "[\"a\",\"b\",\"c\"]"
     },
     {
-      "input": "digits = \"23\"",
-      "expectedOutput": "[\"ad\",\"ae\",\"af\",\"bd\",\"be\",\"bf\",\"cd\",\"ce\",\"cf\"]"
+      "input": "\"3\"",
+      "expectedOutput": "[\"d\",\"e\",\"f\"]"
     },
     {
-      "input": "digits = \"2\"",
-      "expectedOutput": "[\"a\",\"b\",\"c\"]"
+      "input": "\"32\"",
+      "expectedOutput": "[\"da\",\"db\",\"dc\",\"ea\",\"eb\",\"ec\",\"fa\",\"fb\",\"fc\"]"
+    },
+    {
+      "input": "\"2323\"",
+      "expectedOutput": "[\"adad\",\"adae\",\"adaf\",\"adbd\",\"adbe\",\"adbf\",\"adcd\",\"adce\",\"adcf\",\"aead\",\"aeae\",\"aeaf\",\"aebd\",\"aebe\",\"aebf\",\"aecd\",\"aece\",\"aecf\",\"afad\",\"afae\",\"afaf\",\"afbd\",\"afbe\",\"afbf\",\"afcd\",\"afce\",\"afcf\",\"bdad\",\"bdae\",\"bdaf\",\"bdbd\",\"bdbe\",\"bdbf\",\"bdcd\",\"bdce\",\"bdcf\",\"bead\",\"beae\",\"beaf\",\"bebd\",\"bebe\",\"bebf\",\"becd\",\"bece\",\"becf\",\"bfad\",\"bfae\",\"bfaf\",\"bfbd\",\"bfbe\",\"bfbf\",\"bfcd\",\"bfce\",\"bfcf\",\"cdad\",\"cdae\",\"cdaf\",\"cdbd\",\"cdbe\",\"cdbf\",\"cdcd\",\"cdce\",\"cdcf\",\"cead\",\"ceae\",\"ceaf\",\"cebd\",\"cebe\",\"cebf\",\"cecd\",\"cece\",\"cecf\",\"cfad\",\"cfae\",\"cfaf\",\"cfbd\",\"cfbe\",\"cfbf\",\"cfcd\",\"cfce\",\"cfcf\"]"
+    },
+    {
+      "input": "\"22\"",
+      "expectedOutput": "[\"aa\",\"ab\",\"ac\",\"ba\",\"bb\",\"bc\",\"ca\",\"cb\",\"cc\"]"
+    },
+    {
+      "input": "\"2332\"",
+      "expectedOutput": "[\"adda\",\"addb\",\"addc\",\"adea\",\"adeb\",\"adec\",\"adfa\",\"adfb\",\"adfc\",\"aeda\",\"aedb\",\"aedc\",\"aeea\",\"aeeb\",\"aeec\",\"aefa\",\"aefb\",\"aefc\",\"afda\",\"afdb\",\"afdc\",\"afea\",\"afeb\",\"afec\",\"affa\",\"affb\",\"affc\",\"bdda\",\"bddb\",\"bddc\",\"bdea\",\"bdeb\",\"bdec\",\"bdfa\",\"bdfb\",\"bdfc\",\"beda\",\"bedb\",\"bedc\",\"beea\",\"beeb\",\"beec\",\"befa\",\"befb\",\"befc\",\"bfda\",\"bfdb\",\"bfdc\",\"bfea\",\"bfeb\",\"bfec\",\"bffa\",\"bffb\",\"bffc\",\"cdda\",\"cddb\",\"cddc\",\"cdea\",\"cdeb\",\"cdec\",\"cdfa\",\"cdfb\",\"cdfc\",\"ceda\",\"cedb\",\"cedc\",\"ceea\",\"ceeb\",\"ceec\",\"cefa\",\"cefb\",\"cefc\",\"cfda\",\"cfdb\",\"cfdc\",\"cfea\",\"cfeb\",\"cfec\",\"cffa\",\"cffb\",\"cffc\"]"
+    },
+    {
+      "input": "\"0\"",
+      "expectedOutput": "[\"t\",\"u\",\"v\"]"
+    },
+    {
+      "input": "\"121\"",
+      "expectedOutput": "[\"waw\",\"wax\",\"way\",\"waz\",\"wbw\",\"wbx\",\"wby\",\"wbz\",\"wcw\",\"wcx\",\"wcy\",\"wcz\",\"xaw\",\"xax\",\"xay\",\"xaz\",\"xbw\",\"xbx\",\"xby\",\"xbz\",\"xcw\",\"xcx\",\"xcy\",\"xcz\",\"yaw\",\"yax\",\"yay\",\"yaz\",\"ybw\",\"ybx\",\"yby\",\"ybz\",\"ycw\",\"ycx\",\"ycy\",\"ycz\",\"zaw\",\"zax\",\"zay\",\"zaz\",\"zbw\",\"zbx\",\"zby\",\"zbz\",\"zcw\",\"zcx\",\"zcy\",\"zcz\"]"
     }
   ],
   "sqlSchema": null,

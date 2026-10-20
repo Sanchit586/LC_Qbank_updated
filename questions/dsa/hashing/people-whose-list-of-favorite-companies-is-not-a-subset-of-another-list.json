@@ -83,18 +83,6 @@
     {
       "input": "[[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
       "expectedOutput": "[0,1,2,3]"
-    },
-    {
-      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"google\",\"microsoft\"],[\"google\",\"facebook\"],[\"google\"],[\"amazon\"]]",
-      "expectedOutput": "[0,1,4]"
-    },
-    {
-      "input": "favoriteCompanies = [[\"leetcode\",\"google\",\"facebook\"],[\"leetcode\",\"amazon\"],[\"facebook\",\"google\"]]",
-      "expectedOutput": "[0,1]"
-    },
-    {
-      "input": "favoriteCompanies = [[\"leetcode\"],[\"google\"],[\"facebook\"],[\"amazon\"]]",
-      "expectedOutput": "[0,1,2,3]"
     }
   ],
   "sqlSchema": null,

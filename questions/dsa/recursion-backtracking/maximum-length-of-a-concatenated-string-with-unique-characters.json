@@ -81,18 +81,6 @@
     {
       "input": "[\"abcdefghijklmnopqrstuvwxyz\"]",
       "expectedOutput": "26"
-    },
-    {
-      "input": "arr = [\"un\",\"iq\",\"ue\"]",
-      "expectedOutput": "4"
-    },
-    {
-      "input": "arr = [\"cha\",\"r\",\"act\",\"ers\"]",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "arr = [\"abcdefghijklmnopqrstuvwxyz\"]",
-      "expectedOutput": "26"
     }
   ],
   "sqlSchema": null,

@@ -68,14 +68,6 @@
     {
       "input": "[[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
       "expectedOutput": "24"
-    },
-    {
-      "input": "mat = [[1,0,1],[1,1,0],[1,1,0]]",
-      "expectedOutput": "13"
-    },
-    {
-      "input": "mat = [[0,1,1,0],[0,1,1,1],[1,1,1,0]]",
-      "expectedOutput": "24"
     }
   ],
   "sqlSchema": null,

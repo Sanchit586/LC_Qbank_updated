@@ -69,12 +69,76 @@
       "expectedOutput": "false"
     },
     {
-      "input": "s = \"leetcoder\"",
+      "input": "\"leet\"",
       "expectedOutput": "true"
     },
     {
-      "input": "s = \"bbcd\"",
+      "input": "\"coder\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"l\"",
       "expectedOutput": "false"
+    },
+    {
+      "input": "\"le\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"redocteel\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"leetcoderleetcoder\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"llllll\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"leetcoderredocteel\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"LEETCODER\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "true"
     }
   ],
   "sqlSchema": null,

@@ -65,12 +65,76 @@
       "expectedOutput": "[1234,2345,3456,4567,5678,6789,12345]"
     },
     {
-      "input": "low = 100, high = 300",
+      "input": "99\n300",
       "expectedOutput": "[123,234]"
     },
     {
-      "input": "low = 1000, high = 13000",
-      "expectedOutput": "[1234,2345,3456,4567,5678,6789,12345]"
+      "input": "101\n300",
+      "expectedOutput": "[123,234]"
+    },
+    {
+      "input": "98\n300",
+      "expectedOutput": "[123,234]"
+    },
+    {
+      "input": "102\n300",
+      "expectedOutput": "[123,234]"
+    },
+    {
+      "input": "97\n300",
+      "expectedOutput": "[123,234]"
+    },
+    {
+      "input": "103\n300",
+      "expectedOutput": "[123,234]"
+    },
+    {
+      "input": "200\n300",
+      "expectedOutput": "[234]"
+    },
+    {
+      "input": "50\n300",
+      "expectedOutput": "[56,67,78,89,123,234]"
+    },
+    {
+      "input": "-100\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "0\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "1\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "2\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "3\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "4\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "5\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "-1\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "-2\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
+    },
+    {
+      "input": "-3\n300",
+      "expectedOutput": "[12,23,34,45,56,67,78,89,123,234]"
     }
   ],
   "sqlSchema": null,

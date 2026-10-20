@@ -70,12 +70,76 @@
       "expectedOutput": "\"bob\""
     },
     {
-      "input": "words = [\"adc\",\"wzy\",\"abc\"]",
+      "input": "[\"adc\"]",
+      "expectedOutput": "\"adc\""
+    },
+    {
+      "input": "[\"wzy\",\"abc\"]",
+      "expectedOutput": "\"wzy\""
+    },
+    {
+      "input": "[\"adc\",\"abc\"]",
+      "expectedOutput": "\"adc\""
+    },
+    {
+      "input": "[\"abc\",\"wzy\",\"adc\"]",
       "expectedOutput": "\"abc\""
     },
     {
-      "input": "words = [\"aaa\",\"bob\",\"ccc\",\"ddd\"]",
-      "expectedOutput": "\"bob\""
+      "input": "[\"abc\",\"adc\",\"wzy\"]",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "[\"wzy\",\"adc\",\"abc\"]",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"abc\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"eat\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "\"cat\""
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "\"one\""
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "\"hello\""
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
+      "expectedOutput": "\"flow\""
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]",
+      "expectedOutput": "\"word\""
+    },
+    {
+      "input": "[\"listen\",\"silent\"]",
+      "expectedOutput": "\"listen\""
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]",
+      "expectedOutput": "\"anagram\""
     }
   ],
   "sqlSchema": null,

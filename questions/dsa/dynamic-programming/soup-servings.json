@@ -60,19 +60,83 @@
   "testCases": [
     {
       "input": "50",
-      "expectedOutput": "0.62500"
+      "expectedOutput": "0.625"
     },
     {
       "input": "100",
       "expectedOutput": "0.71875"
     },
     {
-      "input": "n = 50",
-      "expectedOutput": "0.62500"
+      "input": "49",
+      "expectedOutput": "0.625"
     },
     {
-      "input": "n = 100",
-      "expectedOutput": "0.71875"
+      "input": "51",
+      "expectedOutput": "0.65625"
+    },
+    {
+      "input": "48",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "52",
+      "expectedOutput": "0.65625"
+    },
+    {
+      "input": "47",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "53",
+      "expectedOutput": "0.65625"
+    },
+    {
+      "input": "25",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "-50",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "0.625"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "0.5"
+    },
+    {
+      "input": "10",
+      "expectedOutput": "0.625"
     }
   ],
   "sqlSchema": null,

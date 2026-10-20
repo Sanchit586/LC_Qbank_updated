@@ -82,16 +82,72 @@
       "expectedOutput": "4"
     },
     {
-      "input": "allowed = \"ab\", words = [\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "input": "\"a\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"ba\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
       "expectedOutput": "2"
     },
     {
-      "input": "allowed = \"abc\", words = [\"a\",\"b\",\"c\",\"ab\",\"ac\",\"bc\",\"abc\"]",
-      "expectedOutput": "7"
+      "input": "\"abab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "2"
     },
     {
-      "input": "allowed = \"cad\", words = [\"cc\",\"acd\",\"b\",\"ba\",\"bac\",\"bad\",\"ac\",\"d\"]",
-      "expectedOutput": "4"
+      "input": "\"aa\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abba\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"AB\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aba\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aaaaa\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"abcde\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"edcba\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"aab\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"aA\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"0\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"121\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"racecar\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"hello\"\n[\"ad\",\"bd\",\"aaab\",\"baa\",\"badab\"]",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,

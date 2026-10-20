@@ -73,12 +73,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "s = \"adaa\", chars = \"d\", vals = [-1000]",
+      "input": "\"ad\"\n\"d\"\n[-1000]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"\n\"d\"\n[-1000]",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"abc\", chars = \"abc\", vals = [-1,-1,-1]",
+      "input": "\"a\"\n\"d\"\n[-1000]",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aada\"\n\"d\"\n[-1000]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"adaaadaa\"\n\"d\"\n[-1000]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaa\"\n\"d\"\n[-1000]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"adaaaada\"\n\"d\"\n[-1000]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"ADAA\"\n\"d\"\n[-1000]",
       "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n\"d\"\n[-1000]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"\n\"d\"\n[-1000]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ba\"\n\"d\"\n[-1000]",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aba\"\n\"d\"\n[-1000]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"abba\"\n\"d\"\n[-1000]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aaaaa\"\n\"d\"\n[-1000]",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"\n\"d\"\n[-1000]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"edcba\"\n\"d\"\n[-1000]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"aab\"\n\"d\"\n[-1000]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aA\"\n\"d\"\n[-1000]",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

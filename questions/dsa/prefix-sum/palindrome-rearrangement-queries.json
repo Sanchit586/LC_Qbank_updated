@@ -89,15 +89,71 @@
       "expectedOutput": "[true]"
     },
     {
-      "input": "s = \"abcabc\", queries = [[1,1,3,5],[0,2,5,5]]",
+      "input": "\"cbacba\"\n[[1,1,3,5],[0,2,5,5]]",
       "expectedOutput": "[true,true]"
     },
     {
-      "input": "s = \"abbcdecbba\", queries = [[0,2,7,9]]",
+      "input": "\"aaaaaa\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[true,true]"
+    },
+    {
+      "input": "\"abcde\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "\"edcba\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "\"hello\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "\"leetcode\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "\"world\"\n[[1,1,3,5],[0,2,5,5]]",
+      "expectedOutput": "[false,false]"
+    },
+    {
+      "input": "\"abbcedcbba\"\n[[0,2,7,9]]",
       "expectedOutput": "[false]"
     },
     {
-      "input": "s = \"acbcab\", queries = [[1,2,4,5]]",
+      "input": "\"aaaaaa\"\n[[0,2,7,9]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "\"racecar\"\n[[0,2,7,9]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "\"leetcode\"\n[[0,2,7,9]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "\"bacbca\"\n[[1,2,4,5]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "\"acbcabacbcab\"\n[[1,2,4,5]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "\"aaaaaa\"\n[[1,2,4,5]]",
+      "expectedOutput": "[true]"
+    },
+    {
+      "input": "\"abcde\"\n[[1,2,4,5]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "\"edcba\"\n[[1,2,4,5]]",
+      "expectedOutput": "[false]"
+    },
+    {
+      "input": "\"racecar\"\n[[1,2,4,5]]",
       "expectedOutput": "[true]"
     }
   ],

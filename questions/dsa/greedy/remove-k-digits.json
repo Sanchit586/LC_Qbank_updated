@@ -83,16 +83,72 @@
       "expectedOutput": "\"0\""
     },
     {
-      "input": "num = \"1432219\", k = 3",
-      "expectedOutput": "\"1219\""
-    },
-    {
-      "input": "num = \"10200\", k = 1",
-      "expectedOutput": "\"200\""
-    },
-    {
-      "input": "num = \"10\", k = 2",
+      "input": "\"143\"\n3",
       "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"2219\"\n3",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"1\"\n3",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"14\"\n3",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "\"9122341\"\n3",
+      "expectedOutput": "\"1221\""
+    },
+    {
+      "input": "\"14322191432219\"\n3",
+      "expectedOutput": "\"12191432219\""
+    },
+    {
+      "input": "\"111111\"\n3",
+      "expectedOutput": "\"111\""
+    },
+    {
+      "input": "\"14322199122341\"\n3",
+      "expectedOutput": "\"12199122341\""
+    },
+    {
+      "input": "\"a\"\n3",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"b\"\n3",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"aa\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ba\"\n3",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"aba\"\n3",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "\"abba\"\n3",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"aaaaa\"\n3",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"abcde\"\n3",
+      "expectedOutput": "\"ab\""
     }
   ],
   "sqlSchema": null,

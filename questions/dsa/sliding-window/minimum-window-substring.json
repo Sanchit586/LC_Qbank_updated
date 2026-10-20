@@ -83,15 +83,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"ADOBECODEBANC\", t = \"ABC\"",
+      "input": "\"ADOBEC\"\n\"ABC\"",
+      "expectedOutput": "\"ADOBEC\""
+    },
+    {
+      "input": "\"ODEBANC\"\n\"ABC\"",
       "expectedOutput": "\"BANC\""
     },
     {
-      "input": "s = \"a\", t = \"a\"",
-      "expectedOutput": "\"a\""
+      "input": "\"A\"\n\"ABC\"",
+      "expectedOutput": "\"\""
     },
     {
-      "input": "s = \"a\", t = \"aa\"",
+      "input": "\"AD\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"CNABEDOCEBODA\"\n\"ABC\"",
+      "expectedOutput": "\"CNAB\""
+    },
+    {
+      "input": "\"AAAAAA\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"adobecodebanc\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"a\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"b\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aa\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ab\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"ba\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aba\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abba\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"aaaaa\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"abcde\"\n\"ABC\"",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "\"edcba\"\n\"ABC\"",
       "expectedOutput": "\"\""
     }
   ],

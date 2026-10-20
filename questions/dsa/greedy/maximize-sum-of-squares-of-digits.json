@@ -80,16 +80,72 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "num = 2, sum = 3",
-      "expectedOutput": "\"30\""
-    },
-    {
-      "input": "num = 2, sum = 17",
-      "expectedOutput": "\"98\""
-    },
-    {
-      "input": "num = 1, sum = 10",
+      "input": "0\n3",
       "expectedOutput": "\"\""
+    },
+    {
+      "input": "1\n3",
+      "expectedOutput": "\"3\""
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "\"300\""
+    },
+    {
+      "input": "4\n3",
+      "expectedOutput": "\"3000\""
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "\"30000\""
+    },
+    {
+      "input": "6\n3",
+      "expectedOutput": "\"300000\""
+    },
+    {
+      "input": "7\n3",
+      "expectedOutput": "\"3000000\""
+    },
+    {
+      "input": "-1\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "-2\n3",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "2\n0",
+      "expectedOutput": "\"00\""
+    },
+    {
+      "input": "2\n1",
+      "expectedOutput": "\"10\""
+    },
+    {
+      "input": "2\n2",
+      "expectedOutput": "\"20\""
+    },
+    {
+      "input": "2\n4",
+      "expectedOutput": "\"40\""
+    },
+    {
+      "input": "2\n5",
+      "expectedOutput": "\"50\""
+    },
+    {
+      "input": "2\n6",
+      "expectedOutput": "\"60\""
+    },
+    {
+      "input": "2\n7",
+      "expectedOutput": "\"70\""
+    },
+    {
+      "input": "2\n8",
+      "expectedOutput": "\"80\""
     }
   ],
   "sqlSchema": null,

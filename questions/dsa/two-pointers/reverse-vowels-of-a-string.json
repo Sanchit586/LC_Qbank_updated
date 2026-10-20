@@ -67,12 +67,76 @@
       "expectedOutput": "\"leotcede\""
     },
     {
-      "input": "s = \"IceCreAm\"",
-      "expectedOutput": "\"AceCreIm\""
+      "input": "\"IceC\"",
+      "expectedOutput": "\"ecIC\""
     },
     {
-      "input": "s = \"leetcode\"",
-      "expectedOutput": "\"leotcede\""
+      "input": "\"reAm\"",
+      "expectedOutput": "\"rAem\""
+    },
+    {
+      "input": "\"I\"",
+      "expectedOutput": "\"I\""
+    },
+    {
+      "input": "\"Ic\"",
+      "expectedOutput": "\"Ic\""
+    },
+    {
+      "input": "\"mAerCecI\"",
+      "expectedOutput": "\"mIerCecA\""
+    },
+    {
+      "input": "\"IceCreAmIceCreAm\"",
+      "expectedOutput": "\"AceCreImAceCreIm\""
+    },
+    {
+      "input": "\"IIIIII\"",
+      "expectedOutput": "\"IIIIII\""
+    },
+    {
+      "input": "\"IceCreAmmAerCecI\"",
+      "expectedOutput": "\"IceCreAmmAerCecI\""
+    },
+    {
+      "input": "\"icecream\"",
+      "expectedOutput": "\"acecreim\""
+    },
+    {
+      "input": "\"ICECREAM\"",
+      "expectedOutput": "\"ACECREIM\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
     }
   ],
   "sqlSchema": null,

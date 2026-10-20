@@ -78,15 +78,71 @@
       "expectedOutput": "false"
     },
     {
-      "input": "n = 12",
+      "input": "11",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "13",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 91",
+      "input": "10",
       "expectedOutput": "true"
     },
     {
-      "input": "n = 21",
+      "input": "14",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "9",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "15",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "24",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "6",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-12",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "0",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "false"
+    },
+    {
+      "input": "-2",
       "expectedOutput": "false"
     }
   ],

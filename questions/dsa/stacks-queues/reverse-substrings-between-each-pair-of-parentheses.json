@@ -82,16 +82,72 @@
       "expectedOutput": "\"leetcode\""
     },
     {
-      "input": "s = \"(abcd)\"",
-      "expectedOutput": "\"dcba\""
+      "input": "\"(ab\"",
+      "expectedOutput": "\"(ab\""
     },
     {
-      "input": "s = \"(u(love)i)\"",
-      "expectedOutput": "\"iloveu\""
+      "input": "\"(\"",
+      "expectedOutput": "\"(\""
     },
     {
-      "input": "s = \"(ed(et(oc))el)\"",
-      "expectedOutput": "\"leetcode\""
+      "input": "\"(a\"",
+      "expectedOutput": "\"(a\""
+    },
+    {
+      "input": "\"(abcd)(abcd)\"",
+      "expectedOutput": "\"dcbadcba\""
+    },
+    {
+      "input": "\"((((((\"",
+      "expectedOutput": "\"((((((\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"",
+      "expectedOutput": "\"aab\""
+    },
+    {
+      "input": "\"aA\"",
+      "expectedOutput": "\"aA\""
     }
   ],
   "sqlSchema": null,

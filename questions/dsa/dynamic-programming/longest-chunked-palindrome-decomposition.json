@@ -84,16 +84,72 @@
       "expectedOutput": "11"
     },
     {
-      "input": "text = \"ghiabcdefhelloadamhelloabcdefghi\"",
-      "expectedOutput": "7"
-    },
-    {
-      "input": "text = \"merchant\"",
+      "input": "\"ghiabcdefhelload\"",
       "expectedOutput": "1"
     },
     {
-      "input": "text = \"antaprezatepzapreanta\"",
-      "expectedOutput": "11"
+      "input": "\"amhelloabcdefghi\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"g\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"gh\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ihgfedcbaollehmadaollehfedcbaihg\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"gggggg\"",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "\"GHIABCDEFHELLOADAMHELLOABCDEFGHI\"",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

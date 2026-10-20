@@ -67,12 +67,76 @@
       "expectedOutput": "\"123\""
     },
     {
-      "input": "num = \"51230100\"",
-      "expectedOutput": "\"512301\""
+      "input": "\"5123\"",
+      "expectedOutput": "\"5123\""
     },
     {
-      "input": "num = \"123\"",
-      "expectedOutput": "\"123\""
+      "input": "\"0100\"",
+      "expectedOutput": "\"01\""
+    },
+    {
+      "input": "\"5\"",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "\"51\"",
+      "expectedOutput": "\"51\""
+    },
+    {
+      "input": "\"00103215\"",
+      "expectedOutput": "\"00103215\""
+    },
+    {
+      "input": "\"5123010051230100\"",
+      "expectedOutput": "\"51230100512301\""
+    },
+    {
+      "input": "\"555555\"",
+      "expectedOutput": "\"555555\""
+    },
+    {
+      "input": "\"5123010000103215\"",
+      "expectedOutput": "\"5123010000103215\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"aba\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"abba\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
     }
   ],
   "sqlSchema": null,

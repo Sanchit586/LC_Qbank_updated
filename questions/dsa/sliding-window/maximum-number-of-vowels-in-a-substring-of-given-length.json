@@ -81,16 +81,72 @@
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"abciiidef\", k = 3",
+      "input": "\"abci\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"iidef\"\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "\"a\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"ab\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"fediiicba\"\n3",
       "expectedOutput": "3"
     },
     {
-      "input": "s = \"aeiou\", k = 2",
+      "input": "\"abciiidefabciiidef\"\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"aaaaaa\"\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abciiideffediiicba\"\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"ABCIIIDEF\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"b\"\n3",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "\"aa\"\n3",
       "expectedOutput": "2"
     },
     {
-      "input": "s = \"leetcode\", k = 3",
+      "input": "\"ba\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aba\"\n3",
       "expectedOutput": "2"
+    },
+    {
+      "input": "\"abba\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"aaaaa\"\n3",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "\"abcde\"\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "\"edcba\"\n3",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

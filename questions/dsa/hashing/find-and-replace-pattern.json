@@ -70,12 +70,76 @@
       "expectedOutput": "[\"a\",\"b\",\"c\"]"
     },
     {
-      "input": "words = [\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"], pattern = \"abb\"",
+      "input": "[\"abc\",\"deq\",\"mee\"]\n\"abb\"",
+      "expectedOutput": "[\"mee\"]"
+    },
+    {
+      "input": "[\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
+      "expectedOutput": "[\"aqq\"]"
+    },
+    {
+      "input": "[\"abc\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"ccc\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"deq\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"ccc\",\"dkd\",\"aqq\",\"mee\",\"deq\",\"abc\"]\n\"abb\"",
+      "expectedOutput": "[\"aqq\",\"mee\"]"
+    },
+    {
+      "input": "[\"abc\",\"aqq\",\"ccc\",\"deq\",\"dkd\",\"mee\"]\n\"abb\"",
+      "expectedOutput": "[\"aqq\",\"mee\"]"
+    },
+    {
+      "input": "[\"mee\",\"dkd\",\"deq\",\"ccc\",\"aqq\",\"abc\"]\n\"abb\"",
       "expectedOutput": "[\"mee\",\"aqq\"]"
     },
     {
-      "input": "words = [\"a\",\"b\",\"c\"], pattern = \"a\"",
-      "expectedOutput": "[\"a\",\"b\",\"c\"]"
+      "input": "[\"abc\",\"abc\",\"abc\",\"abc\",\"abc\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\",\"abc\",\"deq\",\"mee\",\"aqq\",\"dkd\",\"ccc\"]\n\"abb\"",
+      "expectedOutput": "[\"mee\",\"aqq\",\"mee\",\"aqq\"]"
+    },
+    {
+      "input": "[\"a\"]\n\"abb\"",
+      "expectedOutput": "[\"a\"]"
+    },
+    {
+      "input": "[\"\"]\n\"abb\"",
+      "expectedOutput": "[\"\"]"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"abb\"",
+      "expectedOutput": "[\"a\",\"b\"]"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"abb\"",
+      "expectedOutput": "[\"a\",\"a\"]"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"abb\"",
+      "expectedOutput": "[\"ab\",\"ba\"]"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"abb\"",
+      "expectedOutput": "[]"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"abb\"",
+      "expectedOutput": "[]"
     }
   ],
   "sqlSchema": null,

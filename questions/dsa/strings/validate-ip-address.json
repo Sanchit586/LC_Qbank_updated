@@ -78,15 +78,71 @@
       "expectedOutput": "\"Neither\""
     },
     {
-      "input": "queryIP = \"172.16.254.1\"",
-      "expectedOutput": "\"IPv4\""
+      "input": "\"172.16\"",
+      "expectedOutput": "\"Neither\""
     },
     {
-      "input": "queryIP = \"2001:0db8:85a3:0:0:8A2E:0370:7334\"",
-      "expectedOutput": "\"IPv6\""
+      "input": "\".254.1\"",
+      "expectedOutput": "\"Neither\""
     },
     {
-      "input": "queryIP = \"256.256.256.256\"",
+      "input": "\"1\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"17\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"1.452.61.271\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"111111\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"a\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"b\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"aa\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"ab\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"ba\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"aba\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"abba\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"Neither\""
+    },
+    {
+      "input": "\"aab\"",
       "expectedOutput": "\"Neither\""
     }
   ],

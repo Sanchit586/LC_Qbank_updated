@@ -82,18 +82,6 @@
     {
       "input": "[[0,1],[1,2]]",
       "expectedOutput": "4"
-    },
-    {
-      "input": "moveTime = [[0,4],[4,4]]",
-      "expectedOutput": "7"
-    },
-    {
-      "input": "moveTime = [[0,0,0,0],[0,0,0,0]]",
-      "expectedOutput": "6"
-    },
-    {
-      "input": "moveTime = [[0,1],[1,2]]",
-      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

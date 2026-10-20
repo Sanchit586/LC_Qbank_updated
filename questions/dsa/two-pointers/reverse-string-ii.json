@@ -68,12 +68,76 @@
       "expectedOutput": "\"bacd\""
     },
     {
-      "input": "s = \"abcdefg\", k = 2",
-      "expectedOutput": "\"bacdfeg\""
+      "input": "\"abc\"\n2",
+      "expectedOutput": "\"bac\""
     },
     {
-      "input": "s = \"abcd\", k = 2",
-      "expectedOutput": "\"bacd\""
+      "input": "\"defg\"\n2",
+      "expectedOutput": "\"edfg\""
+    },
+    {
+      "input": "\"a\"\n2",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "\"ab\"\n2",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"gfedcba\"\n2",
+      "expectedOutput": "\"fgedbca\""
+    },
+    {
+      "input": "\"abcdefgabcdefg\"\n2",
+      "expectedOutput": "\"bacdfegacbdegf\""
+    },
+    {
+      "input": "\"aaaaaa\"\n2",
+      "expectedOutput": "\"aaaaaa\""
+    },
+    {
+      "input": "\"abcdefggfedcba\"\n2",
+      "expectedOutput": "\"bacdfeggefdcab\""
+    },
+    {
+      "input": "\"ABCDEFG\"\n2",
+      "expectedOutput": "\"BACDFEG\""
+    },
+    {
+      "input": "\"b\"\n2",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n2",
+      "expectedOutput": "\"aa\""
+    },
+    {
+      "input": "\"ba\"\n2",
+      "expectedOutput": "\"ab\""
+    },
+    {
+      "input": "\"aba\"\n2",
+      "expectedOutput": "\"baa\""
+    },
+    {
+      "input": "\"abba\"\n2",
+      "expectedOutput": "\"baba\""
+    },
+    {
+      "input": "\"aaaaa\"\n2",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n2",
+      "expectedOutput": "\"bacde\""
+    },
+    {
+      "input": "\"edcba\"\n2",
+      "expectedOutput": "\"decba\""
+    },
+    {
+      "input": "\"aab\"\n2",
+      "expectedOutput": "\"aab\""
     }
   ],
   "sqlSchema": null,

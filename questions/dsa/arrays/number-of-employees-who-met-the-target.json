@@ -66,12 +66,76 @@
       "expectedOutput": "0"
     },
     {
-      "input": "hours = [0,1,2,3,4], target = 2",
+      "input": "[0,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[2,3,4]\n2",
       "expectedOutput": "3"
     },
     {
-      "input": "hours = [5,1,4,2,2], target = 6",
+      "input": "[0]\n2",
       "expectedOutput": "0"
+    },
+    {
+      "input": "[0,4]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[4,3,2,1,0]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[0,0,0,0,0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,1,2,3,4,0,1,2,3,4]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[0,2,4,6,8]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,2,3,4,5]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[-1,0,1,2,3]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,-1,-2,-3,-4]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,1]\n2",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

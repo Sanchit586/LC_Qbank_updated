@@ -85,16 +85,72 @@
       "expectedOutput": "10"
     },
     {
-      "input": "tasks = [\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"], n = 2",
+      "input": "[\"A\",\"A\",\"A\"]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[\"B\",\"B\",\"B\"]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[\"A\"]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"A\",\"B\"]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"A\",\"A\"]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"B\",\"B\",\"B\",\"A\",\"A\",\"A\"]\n2",
       "expectedOutput": "8"
     },
     {
-      "input": "tasks = [\"A\",\"C\",\"A\",\"B\",\"D\",\"B\"], n = 1",
+      "input": "[\"A\",\"A\",\"A\",\"A\",\"A\"]\n2",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[\"A\",\"A\",\"A\",\"B\",\"B\",\"B\",\"A\",\"A\",\"A\",\"B\",\"B\",\"B\"]\n2",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "[\"a\"]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"\"]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n2",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n2",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n2",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n2",
       "expectedOutput": "6"
     },
     {
-      "input": "tasks = [\"A\",\"A\",\"A\", \"B\",\"B\",\"B\"], n = 3",
-      "expectedOutput": "10"
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n2",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]\n2",
+      "expectedOutput": "3"
     }
   ],
   "sqlSchema": null,

@@ -80,16 +80,72 @@
       "expectedOutput": "\"19:22\""
     },
     {
-      "input": "time = \"2?:?0\"",
+      "input": "\"0?:?2\"",
+      "expectedOutput": "\"09:52\""
+    },
+    {
+      "input": "\"2?:?02?:?0\"",
+      "expectedOutput": "\"23:502?:?0\""
+    },
+    {
+      "input": "\"22222\"",
+      "expectedOutput": "\"22222\""
+    },
+    {
+      "input": "\"2?:?00?:?2\"",
+      "expectedOutput": "\"23:500?:?2\""
+    },
+    {
+      "input": "\"aaaaa\"",
+      "expectedOutput": "\"aaaaa\""
+    },
+    {
+      "input": "\"abcde\"",
+      "expectedOutput": "\"abcde\""
+    },
+    {
+      "input": "\"edcba\"",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"racecar\"",
+      "expectedOutput": "\"racecar\""
+    },
+    {
+      "input": "\"hello\"",
+      "expectedOutput": "\"hello\""
+    },
+    {
+      "input": "\"leetcode\"",
+      "expectedOutput": "\"leetcode\""
+    },
+    {
+      "input": "\"world\"",
+      "expectedOutput": "\"world\""
+    },
+    {
+      "input": "\"()[]{}\"",
+      "expectedOutput": "\"()[]{}\""
+    },
+    {
+      "input": "\"?3:?0\"",
       "expectedOutput": "\"23:50\""
     },
     {
-      "input": "time = \"0?:3?\"",
-      "expectedOutput": "\"09:39\""
+      "input": "\"0?:3?0?:3?\"",
+      "expectedOutput": "\"09:390?:3?\""
     },
     {
-      "input": "time = \"1?:22\"",
-      "expectedOutput": "\"19:22\""
+      "input": "\"00000\"",
+      "expectedOutput": "\"00000\""
+    },
+    {
+      "input": "\"0?:3??3:?0\"",
+      "expectedOutput": "\"09:39?3:?0\""
+    },
+    {
+      "input": "\"22:?1\"",
+      "expectedOutput": "\"22:51\""
     }
   ],
   "sqlSchema": null,

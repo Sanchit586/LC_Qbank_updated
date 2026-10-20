@@ -81,16 +81,72 @@
       "expectedOutput": "0"
     },
     {
-      "input": "operations = [\"--X\",\"X++\",\"X++\"]",
+      "input": "[\"--X\"]",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"X++\",\"X++\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"--X\",\"X++\"]",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"X++\",\"X++\",\"--X\"]",
       "expectedOutput": "1"
     },
     {
-      "input": "operations = [\"++X\",\"++X\",\"X++\"]",
-      "expectedOutput": "3"
+      "input": "[\"--X\",\"--X\",\"--X\"]",
+      "expectedOutput": "-3"
     },
     {
-      "input": "operations = [\"X++\",\"++X\",\"--X\",\"X--\"]",
-      "expectedOutput": "0"
+      "input": "[\"--X\",\"X++\",\"X++\",\"--X\",\"X++\",\"X++\"]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "-6"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
+      "expectedOutput": "-5"
+    },
+    {
+      "input": "[\"one\",\"two\",\"three\"]",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "[\"hello\",\"world\"]",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "[\"flow\",\"flower\",\"flight\"]",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "[\"word\",\"world\",\"row\"]",
+      "expectedOutput": "-3"
+    },
+    {
+      "input": "[\"listen\",\"silent\"]",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "[\"anagram\",\"nagaram\"]",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "[\"rat\",\"car\"]",
+      "expectedOutput": "-2"
     }
   ],
   "sqlSchema": null,

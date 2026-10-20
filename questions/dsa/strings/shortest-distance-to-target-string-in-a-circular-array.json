@@ -82,15 +82,71 @@
       "expectedOutput": "-1"
     },
     {
-      "input": "words = [\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"], target = \"hello\", startIndex = 1",
+      "input": "[\"hello\",\"i\"]\n\"hello\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "words = [\"a\",\"b\",\"leetcode\"], target = \"leetcode\", startIndex = 0",
+      "input": "[\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n1",
       "expectedOutput": "1"
     },
     {
-      "input": "words = [\"i\",\"eat\",\"leetcode\"], target = \"ate\", startIndex = 0",
+      "input": "[\"hello\"]\n\"hello\"\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"hello\"]\n\"hello\"\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"leetcode\",\"am\",\"i\",\"hello\"]\n\"hello\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"am\",\"hello\",\"hello\",\"i\",\"leetcode\"]\n\"hello\"\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"leetcode\",\"i\",\"hello\",\"hello\",\"am\"]\n\"hello\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"hello\",\"hello\",\"hello\",\"hello\",\"hello\"]\n\"hello\"\n1",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[\"hello\",\"i\",\"am\",\"leetcode\",\"hello\",\"hello\",\"i\",\"am\",\"leetcode\",\"hello\"]\n\"hello\"\n1",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[\"a\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"b\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"a\",\"a\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"ab\",\"ba\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]\n\"hello\"\n1",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]\n\"hello\"\n1",
       "expectedOutput": "-1"
     }
   ],

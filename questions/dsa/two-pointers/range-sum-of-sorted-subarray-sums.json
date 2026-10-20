@@ -85,16 +85,72 @@
       "expectedOutput": "50"
     },
     {
-      "input": "nums = [1,2,3,4], n = 4, left = 1, right = 5",
+      "input": "[4,3,2,1]\n4\n1\n5",
       "expectedOutput": "13"
     },
     {
-      "input": "nums = [1,2,3,4], n = 4, left = 3, right = 4",
+      "input": "[1,1,1,1]\n4\n1\n5",
       "expectedOutput": "6"
     },
     {
-      "input": "nums = [1,2,3,4], n = 4, left = 1, right = 10",
-      "expectedOutput": "50"
+      "input": "[1,2,3,4,1,2,3,4]\n4\n1\n5",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[2,4,6,8]\n4\n1\n5",
+      "expectedOutput": "26"
+    },
+    {
+      "input": "[2,3,4,5]\n4\n1\n5",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[0,1,2,3]\n4\n1\n5",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[-1,-2,-3,-4]\n4\n1\n5",
+      "expectedOutput": "999999970"
+    },
+    {
+      "input": "[0,0,0,0]\n4\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4,5]\n4\n1\n5",
+      "expectedOutput": "13"
+    },
+    {
+      "input": "[5,4,3,2,1]\n4\n1\n5",
+      "expectedOutput": "19"
+    },
+    {
+      "input": "[-5,-4,-3,-2,-1]\n4\n1\n5",
+      "expectedOutput": "999999956"
+    },
+    {
+      "input": "[1,3,2,5,4]\n4\n1\n5",
+      "expectedOutput": "15"
+    },
+    {
+      "input": "[1,1,2,2,3,3]\n4\n1\n5",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[10,20,30,40,50]\n4\n1\n5",
+      "expectedOutput": "130"
+    },
+    {
+      "input": "[0,1,0,3,12]\n4\n1\n5",
+      "expectedOutput": "3"
+    },
+    {
+      "input": "[1,2,3,4]\n0\n1\n5",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2,3,4]\n1\n1\n5",
+      "expectedOutput": "1"
     }
   ],
   "sqlSchema": null,

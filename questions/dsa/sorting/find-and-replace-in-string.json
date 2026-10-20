@@ -74,12 +74,76 @@
       "expectedOutput": "\"eeecd\""
     },
     {
-      "input": "s = \"abcd\", indices = [0, 2], sources = [\"a\", \"cd\"], targets = [\"eee\", \"ffff\"]",
+      "input": "\"ab\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeeb\""
+    },
+    {
+      "input": "\"cd\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"cd\""
+    },
+    {
+      "input": "\"a\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eee\""
+    },
+    {
+      "input": "\"dcba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"dcba\""
+    },
+    {
+      "input": "\"abcdabcd\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeebffffabcd\""
+    },
+    {
+      "input": "\"aaaa\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeeaaa\""
+    },
+    {
+      "input": "\"abcddcba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeebffffdcba\""
+    },
+    {
+      "input": "\"abcd\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
       "expectedOutput": "\"eeebffff\""
     },
     {
-      "input": "s = \"abcd\", indices = [0, 2], sources = [\"ab\",\"ec\"], targets = [\"eee\",\"ffff\"]",
-      "expectedOutput": "\"eeecd\""
+      "input": "\"ABCD\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"ABCD\""
+    },
+    {
+      "input": "\"b\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"b\""
+    },
+    {
+      "input": "\"aa\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeea\""
+    },
+    {
+      "input": "\"ba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"ba\""
+    },
+    {
+      "input": "\"aba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeeba\""
+    },
+    {
+      "input": "\"abba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeebba\""
+    },
+    {
+      "input": "\"aaaaa\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeeaaaa\""
+    },
+    {
+      "input": "\"abcde\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeebffffe\""
+    },
+    {
+      "input": "\"edcba\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"edcba\""
+    },
+    {
+      "input": "\"aab\"\n[0,2]\n[\"a\",\"cd\"]\n[\"eee\",\"ffff\"]",
+      "expectedOutput": "\"eeeab\""
     }
   ],
   "sqlSchema": null,

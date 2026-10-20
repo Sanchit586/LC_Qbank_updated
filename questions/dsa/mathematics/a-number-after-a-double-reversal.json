@@ -78,15 +78,71 @@
       "expectedOutput": "true"
     },
     {
-      "input": "num = 526",
+      "input": "525",
       "expectedOutput": "true"
     },
     {
-      "input": "num = 1800",
-      "expectedOutput": "false"
+      "input": "527",
+      "expectedOutput": "true"
     },
     {
-      "input": "num = 0",
+      "input": "524",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "528",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "523",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "529",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1052",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "263",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-526",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "3",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "4",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "5",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-1",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "true"
+    },
+    {
+      "input": "-3",
       "expectedOutput": "true"
     }
   ],

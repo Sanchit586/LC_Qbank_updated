@@ -67,12 +67,76 @@
       "expectedOutput": "19"
     },
     {
-      "input": "numBottles = 9, numExchange = 3",
-      "expectedOutput": "13"
+      "input": "0\n3",
+      "expectedOutput": "0"
     },
     {
-      "input": "numBottles = 15, numExchange = 4",
-      "expectedOutput": "19"
+      "input": "1\n3",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "2\n3",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "3\n3",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "4\n3",
+      "expectedOutput": "5"
+    },
+    {
+      "input": "5\n3",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "6\n3",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "7\n3",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "8\n3",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "10\n3",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "-1\n3",
+      "expectedOutput": "-1"
+    },
+    {
+      "input": "-2\n3",
+      "expectedOutput": "-2"
+    },
+    {
+      "input": "9\n2",
+      "expectedOutput": "17"
+    },
+    {
+      "input": "9\n4",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "9\n5",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "9\n6",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "9\n7",
+      "expectedOutput": "10"
+    },
+    {
+      "input": "9\n8",
+      "expectedOutput": "10"
     }
   ],
   "sqlSchema": null,

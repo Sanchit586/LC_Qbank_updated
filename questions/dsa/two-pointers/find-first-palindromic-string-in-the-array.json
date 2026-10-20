@@ -82,15 +82,71 @@
       "expectedOutput": "\"\""
     },
     {
-      "input": "words = [\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]",
+      "input": "[\"abc\",\"car\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"ada\",\"racecar\",\"cool\"]",
       "expectedOutput": "\"ada\""
     },
     {
-      "input": "words = [\"notapalindrome\",\"racecar\"]",
+      "input": "[\"abc\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"abc\",\"cool\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"cool\",\"racecar\",\"ada\",\"car\",\"abc\"]",
       "expectedOutput": "\"racecar\""
     },
     {
-      "input": "words = [\"def\",\"ghi\"]",
+      "input": "[\"abc\",\"ada\",\"car\",\"cool\",\"racecar\"]",
+      "expectedOutput": "\"ada\""
+    },
+    {
+      "input": "[\"racecar\",\"cool\",\"car\",\"ada\",\"abc\"]",
+      "expectedOutput": "\"racecar\""
+    },
+    {
+      "input": "[\"abc\",\"abc\",\"abc\",\"abc\",\"abc\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"abc\",\"car\",\"ada\",\"racecar\",\"cool\",\"abc\",\"car\",\"ada\",\"racecar\",\"cool\"]",
+      "expectedOutput": "\"ada\""
+    },
+    {
+      "input": "[\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"a\",\"b\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"a\",\"a\"]",
+      "expectedOutput": "\"a\""
+    },
+    {
+      "input": "[\"ab\",\"ba\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"abc\",\"bca\",\"cab\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"eat\",\"tea\",\"tan\",\"ate\",\"nat\",\"bat\"]",
+      "expectedOutput": "\"\""
+    },
+    {
+      "input": "[\"cat\",\"dog\",\"tac\",\"god\",\"act\"]",
       "expectedOutput": "\"\""
     }
   ],

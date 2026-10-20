@@ -70,12 +70,76 @@
       "expectedOutput": "\"-123\""
     },
     {
-      "input": "n = \"99\", x = 9",
-      "expectedOutput": "\"999\""
+      "input": "\"9\"\n9",
+      "expectedOutput": "\"99\""
     },
     {
-      "input": "n = \"-13\", x = 2",
-      "expectedOutput": "\"-123\""
+      "input": "\"9999\"\n9",
+      "expectedOutput": "\"99999\""
+    },
+    {
+      "input": "\"0\"\n9",
+      "expectedOutput": "\"90\""
+    },
+    {
+      "input": "\"121\"\n9",
+      "expectedOutput": "\"9121\""
+    },
+    {
+      "input": "\"99\"\n0",
+      "expectedOutput": "\"990\""
+    },
+    {
+      "input": "\"99\"\n1",
+      "expectedOutput": "\"991\""
+    },
+    {
+      "input": "\"99\"\n2",
+      "expectedOutput": "\"992\""
+    },
+    {
+      "input": "\"99\"\n3",
+      "expectedOutput": "\"993\""
+    },
+    {
+      "input": "\"99\"\n4",
+      "expectedOutput": "\"994\""
+    },
+    {
+      "input": "\"99\"\n5",
+      "expectedOutput": "\"995\""
+    },
+    {
+      "input": "\"99\"\n6",
+      "expectedOutput": "\"996\""
+    },
+    {
+      "input": "\"99\"\n7",
+      "expectedOutput": "\"997\""
+    },
+    {
+      "input": "\"99\"\n8",
+      "expectedOutput": "\"998\""
+    },
+    {
+      "input": "\"99\"\n10",
+      "expectedOutput": "\"1099\""
+    },
+    {
+      "input": "\"99\"\n-1",
+      "expectedOutput": "\"99-1\""
+    },
+    {
+      "input": "\"99\"\n-2",
+      "expectedOutput": "\"99-2\""
+    },
+    {
+      "input": "\"-\"\n2",
+      "expectedOutput": "\"-2\""
+    },
+    {
+      "input": "\"13\"\n2",
+      "expectedOutput": "\"213\""
     }
   ],
   "sqlSchema": null,

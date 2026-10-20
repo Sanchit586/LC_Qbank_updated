@@ -67,12 +67,76 @@
       "expectedOutput": "\"ffffffff\""
     },
     {
-      "input": "num = 26",
-      "expectedOutput": "\"1a\""
+      "input": "25",
+      "expectedOutput": "\"19\""
     },
     {
-      "input": "num = -1",
-      "expectedOutput": "\"ffffffff\""
+      "input": "27",
+      "expectedOutput": "\"1b\""
+    },
+    {
+      "input": "24",
+      "expectedOutput": "\"18\""
+    },
+    {
+      "input": "28",
+      "expectedOutput": "\"1c\""
+    },
+    {
+      "input": "23",
+      "expectedOutput": "\"17\""
+    },
+    {
+      "input": "29",
+      "expectedOutput": "\"1d\""
+    },
+    {
+      "input": "52",
+      "expectedOutput": "\"34\""
+    },
+    {
+      "input": "13",
+      "expectedOutput": "\"d\""
+    },
+    {
+      "input": "-26",
+      "expectedOutput": "\"ffffffe6\""
+    },
+    {
+      "input": "0",
+      "expectedOutput": "\"0\""
+    },
+    {
+      "input": "1",
+      "expectedOutput": "\"1\""
+    },
+    {
+      "input": "2",
+      "expectedOutput": "\"2\""
+    },
+    {
+      "input": "3",
+      "expectedOutput": "\"3\""
+    },
+    {
+      "input": "4",
+      "expectedOutput": "\"4\""
+    },
+    {
+      "input": "5",
+      "expectedOutput": "\"5\""
+    },
+    {
+      "input": "-2",
+      "expectedOutput": "\"fffffffe\""
+    },
+    {
+      "input": "-3",
+      "expectedOutput": "\"fffffffd\""
+    },
+    {
+      "input": "10",
+      "expectedOutput": "\"a\""
     }
   ],
   "sqlSchema": null,

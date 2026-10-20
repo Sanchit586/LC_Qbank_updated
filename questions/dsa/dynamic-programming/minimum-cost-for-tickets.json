@@ -70,12 +70,76 @@
       "expectedOutput": "17"
     },
     {
-      "input": "days = [1,4,6,7,8,20], costs = [2,7,15]",
+      "input": "[1,4,6]\n[2,7,15]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[7,8,20]\n[2,7,15]",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[1]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,20]\n[2,7,15]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[1,4]\n[2,7,15]",
+      "expectedOutput": "4"
+    },
+    {
+      "input": "[20,8,7,6,4,1]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1,1,1]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,4,6,7,8,20,1,4,6,7,8,20]\n[2,7,15]",
       "expectedOutput": "11"
     },
     {
-      "input": "days = [1,2,3,4,5,6,7,8,9,10,30,31], costs = [2,7,15]",
-      "expectedOutput": "17"
+      "input": "[2,8,12,14,16,40]\n[2,7,15]",
+      "expectedOutput": "12"
+    },
+    {
+      "input": "[2,5,7,8,9,21]\n[2,7,15]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[0,3,5,6,7,19]\n[2,7,15]",
+      "expectedOutput": "11"
+    },
+    {
+      "input": "[-1,-4,-6,-7,-8,-20]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,0,0,0]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,1,1,1]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[-1]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[0,0]\n[2,7,15]",
+      "expectedOutput": "2"
+    },
+    {
+      "input": "[1,2]\n[2,7,15]",
+      "expectedOutput": "4"
     }
   ],
   "sqlSchema": null,

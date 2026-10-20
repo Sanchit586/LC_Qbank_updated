@@ -68,12 +68,76 @@
       "expectedOutput": "36"
     },
     {
-      "input": "prices = [1,7,9,8,2], k = 2",
+      "input": "[1,7]\n2",
+      "expectedOutput": "6"
+    },
+    {
+      "input": "[9,8,2]\n2",
+      "expectedOutput": "7"
+    },
+    {
+      "input": "[1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,2]\n2",
+      "expectedOutput": "1"
+    },
+    {
+      "input": "[2,8,9,7,1]\n2",
       "expectedOutput": "14"
     },
     {
-      "input": "prices = [12,16,19,19,8,1,19,13,9], k = 3",
-      "expectedOutput": "36"
+      "input": "[1,2,7,8,9]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[9,8,7,2,1]\n2",
+      "expectedOutput": "8"
+    },
+    {
+      "input": "[1,1,1,1,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,7,9,8,2,1,7,9,8,2]\n2",
+      "expectedOutput": "16"
+    },
+    {
+      "input": "[2,14,18,16,4]\n2",
+      "expectedOutput": "28"
+    },
+    {
+      "input": "[2,8,10,9,3]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[0,6,8,7,1]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[-1,-7,-9,-8,-2]\n2",
+      "expectedOutput": "14"
+    },
+    {
+      "input": "[0,0,0,0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[1,1,1,1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[-1]\n2",
+      "expectedOutput": "0"
+    },
+    {
+      "input": "[0,0]\n2",
+      "expectedOutput": "0"
     }
   ],
   "sqlSchema": null,
